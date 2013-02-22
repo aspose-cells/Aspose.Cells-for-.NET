@@ -25,7 +25,7 @@ namespace Excel2PDFConversion
             //Save the document in PDF format
             workbook.Save(dataDir + "outBook1.pdf", SaveFormat.Pdf);
 
-            // Display result, so that use know the processing has finished.
+            // Display result, so that user knows the processing has finished.
             System.Console.WriteLine("Conversion completed.");
         }
     }

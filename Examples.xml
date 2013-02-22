@@ -34,6 +34,22 @@
               </OutputFiles>
               <Type>Console</Type>
             </Example>
+            <Example>
+              <Title>Chart To Image</Title>
+              <Description>Example to convert charts in Excel files to images. This helps to present data in an easy to read and easy to maintain way for users.</Description>
+              <FolderName>ChartToImage</FolderName>
+              <Order>2</Order>
+              <DocLink>
+                <DisplayName>Converting Chart to Image</DisplayName>
+                <Url>Converting+Chart+to+Image</Url>
+              </DocLink>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\Chart.emf</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
           </Examples>
         </Folder>
       </Folders>

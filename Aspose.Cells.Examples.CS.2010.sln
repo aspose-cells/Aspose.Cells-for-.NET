@@ -6,6 +6,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UtilityFeatures", "UtilityF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel2PDFConversion", "ProgrammersGuide\UtilityFeatures\Excel2PDFConversion\CSharp\Excel2PDFConversion.csproj", "{373BBCDF-FAAA-4533-BD3B-C69292B23C3E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartToImage", "ProgrammersGuide\UtilityFeatures\ChartToImage\CSharp\ChartToImage.csproj", "{08FECC17-944E-4C4E-B5C3-D140EF1AE76F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,9 @@ Global
 		{373BBCDF-FAAA-4533-BD3B-C69292B23C3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{373BBCDF-FAAA-4533-BD3B-C69292B23C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{373BBCDF-FAAA-4533-BD3B-C69292B23C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08FECC17-944E-4C4E-B5C3-D140EF1AE76F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08FECC17-944E-4C4E-B5C3-D140EF1AE76F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08FECC17-944E-4C4E-B5C3-D140EF1AE76F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -22,5 +27,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{BA711239-F9A3-4F93-94E3-D3B2F20A8633} = {6A5BC87A-6292-4770-AC26-6566C43DE1FA}
 		{373BBCDF-FAAA-4533-BD3B-C69292B23C3E} = {BA711239-F9A3-4F93-94E3-D3B2F20A8633}
+		{08FECC17-944E-4C4E-B5C3-D140EF1AE76F} = {BA711239-F9A3-4F93-94E3-D3B2F20A8633}
 	EndGlobalSection
 EndGlobal
