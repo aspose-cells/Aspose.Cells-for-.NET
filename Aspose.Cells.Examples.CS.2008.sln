@@ -1,0 +1,26 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProgrammersGuide", "ProgrammersGuide", "{6A5BC87A-6292-4770-AC26-6566C43DE1FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UtilityFeatures", "UtilityFeatures", "{BA711239-F9A3-4F93-94E3-D3B2F20A8633}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel2PDFConversion", "ProgrammersGuide\UtilityFeatures\Excel2PDFConversion\CSharp\Excel2PDFConversion.csproj", "{373BBCDF-FAAA-4533-BD3B-C69292B23C3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{373BBCDF-FAAA-4533-BD3B-C69292B23C3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{373BBCDF-FAAA-4533-BD3B-C69292B23C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{373BBCDF-FAAA-4533-BD3B-C69292B23C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BA711239-F9A3-4F93-94E3-D3B2F20A8633} = {6A5BC87A-6292-4770-AC26-6566C43DE1FA}
+		{373BBCDF-FAAA-4533-BD3B-C69292B23C3E} = {BA711239-F9A3-4F93-94E3-D3B2F20A8633}
+	EndGlobalSection
+EndGlobal

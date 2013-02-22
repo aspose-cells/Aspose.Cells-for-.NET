@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <Folders>
+    <Folder>
+      <Title>Programmers Guide</Title>
+      <Description>Programmers Guide provides code samples about key programming concepts to build .NET and other applications that use Aspose.Cells for .NET</Description>
+      <FolderName>ProgrammersGuide</FolderName>
+      <Order>1</Order>
+      <Folders>
+        <Folder>
+          <Title>Utility Features</Title>
+          <Description>Includes Examples for Rendering/Conversion to other formats, Managing Document Properties and Encryption of Documents etc.</Description>
+          <FolderName>UtilityFeatures</FolderName>
+          <Order>1</Order>
+          <Examples>
+            <Example>
+              <Title>Excel to PDF Conversion</Title>
+              <Description>Aspose.Cells for .NET supports conversion from spreadsheets to PDF independently of other software. Save an Excel file to PDF using the Workbook class' Save method. The Save method provides the SaveFormat.Pdf enum member that converts the native Excel files to PDF format.</Description>
+              <FolderName>Excel2PDFConversion</FolderName>
+              <Order>1</Order>
+              <DocLink>
+                <DisplayName>Converting to PDF Files</DisplayName>
+                <Url>Converting+to+PDF+Files</Url>
+              </DocLink>
+              <InputFiles>
+                <DataFile>
+                  <Path>..\Data\Book1.xls</Path>
+                </DataFile>
+              </InputFiles>
+              <OutputFiles>
+                <DataFile>
+                  <Path>..\Data\outBook1.pdf</Path>
+                </DataFile>
+              </OutputFiles>
+              <Type>Console</Type>
+            </Example>
+          </Examples>
+        </Folder>
+      </Folders>
+    </Folder>
+  </Folders>
+</Data>
