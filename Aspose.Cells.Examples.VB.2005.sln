@@ -2,9 +2,13 @@ Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProgrammersGuide", "ProgrammersGuide", "{6A5BC87A-6292-4770-AC26-6566C43DE1FA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithFiles", "WorkingWithFiles", "{F3A27E22-D6AA-488A-BF0D-27AA6B43D114}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UtilityFeatures", "UtilityFeatures", "{BA711239-F9A3-4F93-94E3-D3B2F20A8633}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel2PDFConversion", "ProgrammersGuide\UtilityFeatures\Excel2PDFConversion\VisualBasic\Excel2PDFConversion.vbproj", "{373BBCDF-FAAA-4533-BD3B-C69292B23C3E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel2PDFConversion", "ProgrammersGuide\WorkingWithFiles\UtilityFeatures\Excel2PDFConversion\VisualBasic\Excel2PDFConversion.vbproj", "{373BBCDF-FAAA-4533-BD3B-C69292B23C3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartToImage", "ProgrammersGuide\WorkingWithFiles\UtilityFeatures\ChartToImage\VisualBasic\ChartToImage.vbproj", "{08FECC17-944E-4C4E-B5C3-D140EF1AE76F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,13 +22,18 @@ Global
 		{08FECC17-944E-4C4E-B5C3-D140EF1AE76F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{08FECC17-944E-4C4E-B5C3-D140EF1AE76F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08FECC17-944E-4C4E-B5C3-D140EF1AE76F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC04101C-8030-48A9-BDFA-00BEE56EAE11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC04101C-8030-48A9-BDFA-00BEE56EAE11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC04101C-8030-48A9-BDFA-00BEE56EAE11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{BA711239-F9A3-4F93-94E3-D3B2F20A8633} = {6A5BC87A-6292-4770-AC26-6566C43DE1FA}
+		{F3A27E22-D6AA-488A-BF0D-27AA6B43D114} = {6A5BC87A-6292-4770-AC26-6566C43DE1FA}
+		{BA711239-F9A3-4F93-94E3-D3B2F20A8633} = {F3A27E22-D6AA-488A-BF0D-27AA6B43D114}
 		{373BBCDF-FAAA-4533-BD3B-C69292B23C3E} = {BA711239-F9A3-4F93-94E3-D3B2F20A8633}
 		{08FECC17-944E-4C4E-B5C3-D140EF1AE76F} = {BA711239-F9A3-4F93-94E3-D3B2F20A8633}
+		{EC04101C-8030-48A9-BDFA-00BEE56EAE11} = {BA711239-F9A3-4F93-94E3-D3B2F20A8633}
 	EndGlobalSection
 EndGlobal
