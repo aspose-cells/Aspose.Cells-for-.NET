@@ -8,76 +8,271 @@
       <Order>1</Order>
       <Folders>
         <Folder>
-          <Title>Working With Files</Title>
-          <Description>Contains examples for file handling and utility features.</Description>
-          <FolderName>WorkingWithFiles</FolderName>
+          <Title>Aspose.Cells</Title>
+          <Description>This section includes examples related to the following topics: 
+
+- Introduction of Aspose.Cells for .NET
+- Working with Files
+- Working with Worksheets
+- Working with Rows and Columns
+- Working with Data
+- Working with Data Formatting
+- Working with Tables
+- Working with Formulas
+- Creating Charts
+- Working with Other Drawing Objects
+- Working with Pivot Tables
+- Working with CellsHelper Methods
+- Advanced Topics
+- Utilize Aspose.Cells in other Programming Languages</Description>
+          <FolderName>AsposeCells</FolderName>
           <Order>1</Order>
           <Folders>
             <Folder>
-              <Title>Utility Features</Title>
-              <Description>Includes Examples for Rendering/Conversion to other formats, Managing Document Properties and Encryption of Documents etc.</Description>
-              <FolderName>UtilityFeatures</FolderName>
+              <Title>Working With Files</Title>
+              <Description>Contains examples for file handling and utility features.</Description>
+              <FolderName>WorkingWithFiles</FolderName>
               <Order>1</Order>
-              <Examples>
-                <Example>
-                  <Title>Excel to PDF Conversion</Title>
-                  <Description>Aspose.Cells for .NET supports conversion from spreadsheets to PDF independently of other software. Save an Excel file to PDF using the Workbook class' Save method. The Save method provides the SaveFormat.Pdf enum member that converts the native Excel files to PDF format.</Description>
-                  <FolderName>Excel2PDFConversion</FolderName>
+              <Folders>
+                <Folder>
+                  <Title>Utility Features</Title>
+                  <Description>Includes Examples for Rendering/Conversion to other formats, Managing Document Properties and Encryption of Documents etc.</Description>
+                  <FolderName>UtilityFeatures</FolderName>
                   <Order>1</Order>
-                  <DocLink>
-                    <DisplayName>Converting to PDF Files</DisplayName>
-                    <Url>Converting+to+PDF+Files</Url>
-                  </DocLink>
-                  <InputFiles>
-                    <DataFile>
-                      <Path>..\Data\Book1.xls</Path>
-                    </DataFile>
-                  </InputFiles>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\Data\outBook1.pdf</Path>
-                    </DataFile>
-                  </OutputFiles>
-                  <Type>Console</Type>
-                </Example>
-                <Example>
-                  <Title>Chart To Image</Title>
-                  <Description>Example to convert charts in Excel files to images. This helps to present data in an easy to read and easy to maintain way for users.</Description>
-                  <FolderName>ChartToImage</FolderName>
-                  <Order>2</Order>
-                  <DocLink>
-                    <DisplayName>Converting Chart to Image</DisplayName>
-                    <Url>Converting+Chart+to+Image</Url>
-                  </DocLink>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\Data\Chart.emf</Path>
-                    </DataFile>
-                  </OutputFiles>
-                  <Type>Console</Type>
-                </Example>
-                <Example>
-                  <Title>Worksheet to Image</Title>
-                  <Description>Aspose.Cells supports converting Excel worksheets to images. To use this feature, you need to import the Aspose.Cells.Rendering namespace to your program or  and use ToImage method, that can convert a worksheet to image file(s) with different attributes or options.</Description>
-                  <FolderName>WorksheetToImage</FolderName>
-                  <Order>3</Order>
-                  <DocLink>
-                    <DisplayName>Converting Worksheet to Image</DisplayName>
-                    <Url>Converting+Worksheet+to+Image</Url>
-                  </DocLink>
-                  <InputFiles>
-                    <DataFile>
-                      <Path>..\Data\MyTestBook1.xls</Path>
-                    </DataFile>
-                  </InputFiles>
-                  <OutputFiles>
-                    <DataFile>
-                      <Path>..\Data\SheetImage.jpg</Path>
-                    </DataFile>
-                  </OutputFiles>
-                  <Type>Console</Type>
-                </Example>
-              </Examples>
+                  <Examples>
+                    <Example>
+                      <Title>Excel to PDF Conversion</Title>
+                      <Description>Aspose.Cells for .NET supports conversion from spreadsheets to PDF independently of other software. Save an Excel file to PDF using the Workbook class' Save method. The Save method provides the SaveFormat.Pdf enum member that converts the native Excel files to PDF format.</Description>
+                      <FolderName>Excel2PDFConversion</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Converting to PDF Files</DisplayName>
+                        <Url>Converting+to+PDF+Files</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\Book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\outBook1.pdf</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Chart To Image</Title>
+                      <Description>Example to convert charts in Excel files to images. This helps to present data in an easy to read and easy to maintain way for users.</Description>
+                      <FolderName>ChartToImage</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Converting Chart to Image</DisplayName>
+                        <Url>Converting+Chart+to+Image</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\Chart.emf</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Worksheet to Image</Title>
+                      <Description>Aspose.Cells supports converting Excel worksheets to images. To use this feature, you need to import the Aspose.Cells.Rendering namespace to your program or  and use ToImage method, that can convert a worksheet to image file(s) with different attributes or options.</Description>
+                      <FolderName>WorksheetToImage</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>Converting Worksheet to Image</DisplayName>
+                        <Url>Converting+Worksheet+to+Image</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\MyTestBook1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\SheetImage.jpg</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
+            </Folder>
+            <Folder>
+              <Title>Working with Worksheets</Title>
+              <Description>This section includes examples related to the following topics: 
+
+- Management Features
+- Display Features
+- Security Features
+- Page Setup Features
+- Value Features</Description>
+              <FolderName>WorkingWithWorksheets</FolderName>
+              <Order>2</Order>
+              <Folders>
+                <Folder>
+                  <Title>Display Features</Title>
+                  <Description>This Section includes examples related to following topics: 
+
+- Hide or Unhide a Worksheet
+- Display or Hide Tabs
+- Display or Hide Scroll Bars
+- Display or Hide Gridlines
+- Display or Hide Row Column Headers
+- Page Break Preview
+- Zoom Factor
+- Freeze Panes
+- Split Panes</Description>
+                  <FolderName>DisplayFeatures</FolderName>
+                  <Order>1</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Hide or Unhide a Worksheet</Title>
+                      <Description>An Excel file can have one or more than one worksheets. Whenever we create an Excel file, we add worksheets to the Excel file in which we work. Each worksheet in an Excel file is independent from the other worksheet by having its own data and formatting settings etc. Sometimes, developers may require to make few worksheets hidden and others visible in the Excel file for their own interest. So, Aspose.Cells allows developers to control the visibility of the worksheets in their Excel files.
+
+Aspose.Cells provides a class, Workbook that represents an Excel file. Workbook class contains a Worksheets collection that allows to access each worksheet in the Excel file.
+
+A worksheet is represented by the Worksheet class. Worksheet class provides a wide range of properties and methods to manage a worksheet. But, to control the visibility of a worksheet, developers may use IsVisible property of the Worksheet class. IsVisible is a boolean property, which means that it can only store a true or false value. This example elaborates the use of this property according to his/her requirements.</Description>
+                      <FolderName>HideUnhideWorksheet</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Hide or Unhide a Worksheet</DisplayName>
+                        <Url>Hide+or+Unhide+a+Worksheet</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Display or Hide Tabs</Title>
+                      <Description>Sheet Tabs are the tabs that represent all worksheets in the Excel file. You can click on any desired tab to switch to a particular worksheet. The more worksheets you have, the more sheet tabs will be created. If your Excel file has a good number of worksheets then you would also need some buttons to navigate through all of these sheet tabs.
+
+Aspose.Cells provides a class, Workbook that represents an Excel file. Workbook class provides a wide range of properties and methods to manage an Excel file. But, to control the visibility of the tabs in the Excel file, developers may use ShowTabs property of the Workbook class. ShowTabs is a boolean property, which means that it can only store a true or false value. Developers can hide the tabs of the Excel file by setting the ShowTabs property of the Workbook class to false. In this example this is explained in detail.</Description>
+                      <FolderName>DisplayHideTabs</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Display or Hide Tabs</DisplayName>
+                        <Url>Display+or+Hide+Tabs</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Display or Hide Scroll Bars</Title>
+                      <Description>Microsoft Excel also provides Horizontal &amp; Vertical Scroll Bars to scroll through the contents of the worksheets. Using Aspose.Cells, developers can control the visibility of both of these scroll bars in their Excel files. Developers can hide the vertical or horizontal scroll bars of the Excel file by setting the IsVScrollBarVisible or IsHScrollBarVisible property of the Workbook class to false. This example describes the use of this property in detail.</Description>
+                      <FolderName>DisplayHideScrollBars</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>Display or Hide Scroll Bars</DisplayName>
+                        <Url>Display+or+Hide+Scroll+Bars</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Display or Hide Gridlines</Title>
+                      <Description>All Excel worksheets have Gridlines by default, which helps us in entering data to particular cells of a worksheet. Gridlines enable us to view a worksheet as a collection of cells, where each cell is easily identifiable. Using, Aspose.Cells , developers can also control the visibility of the gridlines in their worksheets.
+
+Developers can hide gridlines by setting the IsGridlinesVisible property of the Worksheet class to false. In this example this is explained in detail.</Description>
+                      <FolderName>DisplayHideGridlines</FolderName>
+                      <Order>4</Order>
+                      <DocLink>
+                        <DisplayName>Display or Hide Gridlines</DisplayName>
+                        <Url>Display+or+Hide+Gridlines</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Page Break Preview</Title>
+                      <Description>All worksheets can be viewed in two modes:
+
+- Normal View
+- Page Break Preview
+
+Normal View is the default view of a worksheet that we normally experience while working on worksheets where as Page Break Preview is an editing view that displays a worksheet as it will print. Page Break Preview shows that what data will go on each page so, you can adjust the print area and page breaks. Using Aspose.Cells, developers can enable normal view or page break preview modes for their desired worksheets using IsPageBreakPreview property of the Worksheet class. IsPageBreakPreview is a boolean property, which means that it can only store a true or false value. This example describes the Page Break Preview in detail.</Description>
+                      <FolderName>PageBreakPreview</FolderName>
+                      <Order>5</Order>
+                      <DocLink>
+                        <DisplayName>Page Break Preview</DisplayName>
+                        <Url>Page+Break+Preview</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Zoom Factor</Title>
+                      <Description>Microsoft Excel provides a feature to set the Zoom or Scaling Factor of the worksheets. This feature helps users to see the contents of their worksheets in smaller or larger views. Aspose.Cells provides a class, Workbook that represents an Excel file. Workbook class contains a Worksheets collection that allows to access each worksheet in the Excel file.
+A worksheet is represented by the Worksheet class. Worksheet class provides a wide range of properties and methods to manage a worksheet. But, to set the zoom factor of a worksheet, developers may use Zoom property of the Worksheet class. Developers can assign a numeric (integer) value to the Zoom property as a zoom factor. This example explains the usage of Zoom property in detail.</Description>
+                      <FolderName>ZoomFactor</FolderName>
+                      <Order>6</Order>
+                      <DocLink>
+                        <DisplayName>Zoom Factor</DisplayName>
+                        <Url>Zoom+Factor</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
             </Folder>
           </Folders>
         </Folder>

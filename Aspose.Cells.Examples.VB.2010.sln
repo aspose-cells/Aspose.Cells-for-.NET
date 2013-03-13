@@ -2,13 +2,31 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProgrammersGuide", "ProgrammersGuide", "{6A5BC87A-6292-4770-AC26-6566C43DE1FA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AsposeCells", "AsposeCells", "{08BE30B5-0442-4C58-A8CD-665126E93A16}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithFiles", "WorkingWithFiles", "{F3A27E22-D6AA-488A-BF0D-27AA6B43D114}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UtilityFeatures", "UtilityFeatures", "{BA711239-F9A3-4F93-94E3-D3B2F20A8633}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel2PDFConversion", "ProgrammersGuide\WorkingWithFiles\UtilityFeatures\Excel2PDFConversion\VisualBasic\Excel2PDFConversion.vbproj", "{373BBCDF-FAAA-4533-BD3B-C69292B23C3E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel2PDFConversion", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\Excel2PDFConversion\VisualBasic\Excel2PDFConversion.vbproj", "{373BBCDF-FAAA-4533-BD3B-C69292B23C3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartToImage", "ProgrammersGuide\WorkingWithFiles\UtilityFeatures\ChartToImage\VisualBasic\ChartToImage.vbproj", "{08FECC17-944E-4C4E-B5C3-D140EF1AE76F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartToImage", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\ChartToImage\VisualBasic\ChartToImage.vbproj", "{08FECC17-944E-4C4E-B5C3-D140EF1AE76F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorksheetToImage", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\WorksheetToImage\VisualBasic\WorksheetToImage.vbproj", "{EC04101C-8030-48A9-BDFA-00BEE56EAE11}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithWorksheets", "WorkingWithWorksheets", "{26558868-19A9-415F-AE95-91A9101DB851}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DisplayFeatures", "DisplayFeatures", "{A140B3AC-E5BE-42B0-A7DE-070AD443BFD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HideUnhideWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\HideUnhideWorksheet\VisualBasic\HideUnhideWorksheet.vbproj", "{61BAA8BA-ECB7-4682-B53C-51D5634F3060}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayHideTabs", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\DisplayHideTabs\VisualBasic\DisplayHideTabs.vbproj", "{9FD95A59-BF4A-42F9-BDAE-7F103F791E9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayHideScrollBars", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\DisplayHideScrollBars\VisualBasic\DisplayHideScrollBars.vbproj", "{35CB6E11-51D5-4ED1-AF6E-3F14C0ECB3C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayHideGridlines", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\DisplayHideGridlines\VisualBasic\DisplayHideGridlines.vbproj", "{42E66C9C-C62F-4809-9A7D-D0612AC041DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageBreakPreview", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\PageBreakPreview\VisualBasic\PageBreakPreview.vbproj", "{512D0817-F5FA-4285-A422-66E204801C90}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,15 +43,42 @@ Global
 		{EC04101C-8030-48A9-BDFA-00BEE56EAE11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EC04101C-8030-48A9-BDFA-00BEE56EAE11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC04101C-8030-48A9-BDFA-00BEE56EAE11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61BAA8BA-ECB7-4682-B53C-51D5634F3060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61BAA8BA-ECB7-4682-B53C-51D5634F3060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61BAA8BA-ECB7-4682-B53C-51D5634F3060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FD95A59-BF4A-42F9-BDAE-7F103F791E9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FD95A59-BF4A-42F9-BDAE-7F103F791E9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FD95A59-BF4A-42F9-BDAE-7F103F791E9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35CB6E11-51D5-4ED1-AF6E-3F14C0ECB3C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35CB6E11-51D5-4ED1-AF6E-3F14C0ECB3C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35CB6E11-51D5-4ED1-AF6E-3F14C0ECB3C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42E66C9C-C62F-4809-9A7D-D0612AC041DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42E66C9C-C62F-4809-9A7D-D0612AC041DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42E66C9C-C62F-4809-9A7D-D0612AC041DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{512D0817-F5FA-4285-A422-66E204801C90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{512D0817-F5FA-4285-A422-66E204801C90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{512D0817-F5FA-4285-A422-66E204801C90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64DD5034-1DE5-4C14-A708-EE02555B6740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64DD5034-1DE5-4C14-A708-EE02555B6740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64DD5034-1DE5-4C14-A708-EE02555B6740}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{F3A27E22-D6AA-488A-BF0D-27AA6B43D114} = {6A5BC87A-6292-4770-AC26-6566C43DE1FA}
+		{08BE30B5-0442-4C58-A8CD-665126E93A16} = {6A5BC87A-6292-4770-AC26-6566C43DE1FA}
+		{F3A27E22-D6AA-488A-BF0D-27AA6B43D114} = {08BE30B5-0442-4C58-A8CD-665126E93A16}
 		{BA711239-F9A3-4F93-94E3-D3B2F20A8633} = {F3A27E22-D6AA-488A-BF0D-27AA6B43D114}
 		{373BBCDF-FAAA-4533-BD3B-C69292B23C3E} = {BA711239-F9A3-4F93-94E3-D3B2F20A8633}
 		{08FECC17-944E-4C4E-B5C3-D140EF1AE76F} = {BA711239-F9A3-4F93-94E3-D3B2F20A8633}
 		{EC04101C-8030-48A9-BDFA-00BEE56EAE11} = {BA711239-F9A3-4F93-94E3-D3B2F20A8633}
+		{26558868-19A9-415F-AE95-91A9101DB851} = {08BE30B5-0442-4C58-A8CD-665126E93A16}
+		{A140B3AC-E5BE-42B0-A7DE-070AD443BFD7} = {26558868-19A9-415F-AE95-91A9101DB851}
+		{61BAA8BA-ECB7-4682-B53C-51D5634F3060} = {A140B3AC-E5BE-42B0-A7DE-070AD443BFD7}
+		{9FD95A59-BF4A-42F9-BDAE-7F103F791E9B} = {A140B3AC-E5BE-42B0-A7DE-070AD443BFD7}
+		{35CB6E11-51D5-4ED1-AF6E-3F14C0ECB3C2} = {A140B3AC-E5BE-42B0-A7DE-070AD443BFD7}
+		{42E66C9C-C62F-4809-9A7D-D0612AC041DF} = {A140B3AC-E5BE-42B0-A7DE-070AD443BFD7}
+		{512D0817-F5FA-4285-A422-66E204801C90} = {A140B3AC-E5BE-42B0-A7DE-070AD443BFD7}
+		{64DD5034-1DE5-4C14-A708-EE02555B6740} = {A140B3AC-E5BE-42B0-A7DE-070AD443BFD7}
 	EndGlobalSection
 EndGlobal
