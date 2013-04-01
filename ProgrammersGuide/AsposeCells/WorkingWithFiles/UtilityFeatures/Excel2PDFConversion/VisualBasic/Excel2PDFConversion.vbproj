@@ -40,7 +40,7 @@
   <ItemGroup>
     <Reference Include="Aspose.Cells">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\Bin\net2.0\Aspose.Cells.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Bin\net2.0\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
