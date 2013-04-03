@@ -19,6 +19,11 @@ namespace ChartToImage
             // The path to the documents directory.
             string dataDir = Path.GetFullPath("../../../Data/");
 
+            // Create directory if it is not already present.
+            bool IsExists = System.IO.Directory.Exists(dataDir);
+            if (!IsExists)
+                System.IO.Directory.CreateDirectory(dataDir);
+				
             //Instantiating a Workbook object
             Workbook workbook = new Workbook();
             
