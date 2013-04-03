@@ -19,7 +19,7 @@ namespace ChartToImage
             // The path to the documents directory.
             string dataDir = Path.GetFullPath("../../../Data/");
 
-            //Instantiating a Workbook object.
+            //Instantiating a Workbook object
             Workbook workbook = new Workbook();
             
             //Adding a new worksheet to the Excel object

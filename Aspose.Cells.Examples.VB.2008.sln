@@ -14,6 +14,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartToImage", "Programmers
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorksheetToImage", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\WorksheetToImage\VisualBasic\WorksheetToImage.vbproj", "{EC04101C-8030-48A9-BDFA-00BEE56EAE11}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertingToXPS", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\ConvertingToXPS\VisualBasic\ConvertingToXPS.vbproj", "{2368C5E6-F486-48B5-8614-62372CB35E2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagingDocumentProperties", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\ManagingDocumentProperties\VisualBasic\ManagingDocumentProperties.vbproj", "{B162C01E-2C94-431F-B1A8-5EBCEBBA4933}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptingFiles", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\EncryptingFiles\VisualBasic\EncryptingFiles.vbproj", "{2892A82E-603B-4D3E-B37D-823858BCD459}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertingWorksheetToSVG", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\ConvertingWorksheetToSVG\VisualBasic\ConvertingWorksheetToSVG.vbproj", "{1B135A21-9EE1-46AC-82F9-EF4A5C1A5E15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertingToMHTMLFiles", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\ConvertingToMHTMLFiles\VisualBasic\ConvertingToMHTMLFiles.vbproj", "{9254419D-FF06-4197-AB57-6B46A7EE97AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FileHandlingFeatures", "FileHandlingFeatures", "{A2D9D5DB-4CBC-431C-9AFD-AE654B7349C8}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithWorksheets", "WorkingWithWorksheets", "{26558868-19A9-415F-AE95-91A9101DB851}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DisplayFeatures", "DisplayFeatures", "{A140B3AC-E5BE-42B0-A7DE-070AD443BFD7}"
@@ -27,6 +39,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayHideGridlines", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\DisplayHideGridlines\VisualBasic\DisplayHideGridlines.vbproj", "{42E66C9C-C62F-4809-9A7D-D0612AC041DF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageBreakPreview", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\PageBreakPreview\VisualBasic\PageBreakPreview.vbproj", "{512D0817-F5FA-4285-A422-66E204801C90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoomFactor", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\ZoomFactor\VisualBasic\ZoomFactor.vbproj", "{64DD5034-1DE5-4C14-A708-EE02555B6740}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +57,24 @@ Global
 		{EC04101C-8030-48A9-BDFA-00BEE56EAE11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EC04101C-8030-48A9-BDFA-00BEE56EAE11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC04101C-8030-48A9-BDFA-00BEE56EAE11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2368C5E6-F486-48B5-8614-62372CB35E2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2368C5E6-F486-48B5-8614-62372CB35E2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2368C5E6-F486-48B5-8614-62372CB35E2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B162C01E-2C94-431F-B1A8-5EBCEBBA4933}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B162C01E-2C94-431F-B1A8-5EBCEBBA4933}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B162C01E-2C94-431F-B1A8-5EBCEBBA4933}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2892A82E-603B-4D3E-B37D-823858BCD459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2892A82E-603B-4D3E-B37D-823858BCD459}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2892A82E-603B-4D3E-B37D-823858BCD459}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B135A21-9EE1-46AC-82F9-EF4A5C1A5E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B135A21-9EE1-46AC-82F9-EF4A5C1A5E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B135A21-9EE1-46AC-82F9-EF4A5C1A5E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9254419D-FF06-4197-AB57-6B46A7EE97AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9254419D-FF06-4197-AB57-6B46A7EE97AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9254419D-FF06-4197-AB57-6B46A7EE97AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC214421-067D-4BA4-A60B-A96BE7D272C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC214421-067D-4BA4-A60B-A96BE7D272C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC214421-067D-4BA4-A60B-A96BE7D272C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61BAA8BA-ECB7-4682-B53C-51D5634F3060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{61BAA8BA-ECB7-4682-B53C-51D5634F3060}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61BAA8BA-ECB7-4682-B53C-51D5634F3060}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -72,6 +104,13 @@ Global
 		{373BBCDF-FAAA-4533-BD3B-C69292B23C3E} = {BA711239-F9A3-4F93-94E3-D3B2F20A8633}
 		{08FECC17-944E-4C4E-B5C3-D140EF1AE76F} = {BA711239-F9A3-4F93-94E3-D3B2F20A8633}
 		{EC04101C-8030-48A9-BDFA-00BEE56EAE11} = {BA711239-F9A3-4F93-94E3-D3B2F20A8633}
+		{2368C5E6-F486-48B5-8614-62372CB35E2D} = {BA711239-F9A3-4F93-94E3-D3B2F20A8633}
+		{B162C01E-2C94-431F-B1A8-5EBCEBBA4933} = {BA711239-F9A3-4F93-94E3-D3B2F20A8633}
+		{2892A82E-603B-4D3E-B37D-823858BCD459} = {BA711239-F9A3-4F93-94E3-D3B2F20A8633}
+		{1B135A21-9EE1-46AC-82F9-EF4A5C1A5E15} = {BA711239-F9A3-4F93-94E3-D3B2F20A8633}
+		{9254419D-FF06-4197-AB57-6B46A7EE97AE} = {BA711239-F9A3-4F93-94E3-D3B2F20A8633}
+		{A2D9D5DB-4CBC-431C-9AFD-AE654B7349C8} = {F3A27E22-D6AA-488A-BF0D-27AA6B43D114}
+		{EC214421-067D-4BA4-A60B-A96BE7D272C1} = {A2D9D5DB-4CBC-431C-9AFD-AE654B7349C8}
 		{26558868-19A9-415F-AE95-91A9101DB851} = {08BE30B5-0442-4C58-A8CD-665126E93A16}
 		{A140B3AC-E5BE-42B0-A7DE-070AD443BFD7} = {26558868-19A9-415F-AE95-91A9101DB851}
 		{61BAA8BA-ECB7-4682-B53C-51D5634F3060} = {A140B3AC-E5BE-42B0-A7DE-070AD443BFD7}

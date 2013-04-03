@@ -98,6 +98,190 @@
                       </OutputFiles>
                       <Type>Console</Type>
                     </Example>
+                    <Example>
+                      <Title>Converting to XPS</Title>
+                      <Description>The XPS document format consists of structured XML markup that defines the layout of a document and the visual appearance of each page, along with rendering rules for distributing, archiving, rendering, processing and printing the documents. Notably, the markup language for XPS is a subset of XAML, allowing it to incorporate vector-graphic elements in documents, using XAML to mark up the Windows Presentation Foundation (WPF) primitives. The elements used are described in terms of paths and other geometrical primitives.
+An XPS file is in fact a Unicoded ZIP archive using the Open Packaging Conventions, containing the files which make up the document. These include an XML markup file for each page, text, embedded fonts, raster images, 2D vector graphics, as well as the digital rights management information. The contents of an XPS file can be examined simply by opening it in an application which supports ZIP files.
+
+You might require to convert Excel files to XPS files. Since the release of v6.0.0, Aspose.Cells supports Excel-to-XPS feature.</Description>
+                      <FolderName>ConvertingToXPS</FolderName>
+                      <Order>4</Order>
+                      <DocLink>
+                        <DisplayName>Converting to XPS</DisplayName>
+                        <Url>Converting+to+XPS</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\Book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\out_printingxps.xps</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\out_whole_printingxps.xps</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Managing Document Properties</Title>
+                      <Description>Microsoft Excel provides a feature to add some properties to the Excel files. These document properties allow some useful information to be stored along with the documents (Excel files). There are two kinds of document properties as follows:
+
+- System Defined (Built-in) Properties
+- User Defined (Custom) Properties
+
+Built-in properties contain general information about the document like document title, author's name, document statistics and so on. Custom properties are those ones, which are defined by the users as Name/Value pairs, where both name and value are defined by the user. The most important point to know about the built-in and custom properties is that built-in properties can be accessed and modified only but not created or removed because these properties are system defined. However, custom properties can be created and managed freely by the developers because these properties are defined by the users.</Description>
+                      <FolderName>ManagingDocumentProperties</FolderName>
+                      <Order>5</Order>
+                      <DocLink>
+                        <DisplayName>Managing Document Properties</DisplayName>
+                        <Url>Managing+Document+Properties</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\Book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\Test_Workbook.xls</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\Test_Workbook_RemovedProperty.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Encrypting Files</Title>
+                      <Description>Microsoft Excel (97 - 2007) enables you to encrypt / password protect your spreadsheets. It utilizes algorithms provided by Crypto Service Provider. A Crypto Service Provider or CSP is a set of cryptographic algorithms with different properties. The default CSP is "Office 97/2000 Compatible" or "Week Encryption (XOR)". It's also important to choose a proper encryption key length. Some of the Crypto Service Providers don't support more than 40 or 56 bits. That's considered to be a weak encryption type. But, for strong encryption type, a minimum key length of 128 bits is required. Microsoft Windows contains Crypto Service Providers that offer strong encryption types as well, for example the 'Microsoft Strong Cryptographic Provider'. To give an idea, 128 bits encryption is what banks use to encrypt the connection with their Internet Banking systems. Aspose.Cells allows you to encrypt / password protect your excel files with your desired encryption type.
+
+This example shows how you can encrypt / password protect an excel file using the Aspose.Cells API.</Description>
+                      <FolderName>EncryptingFiles</FolderName>
+                      <Order>6</Order>
+                      <DocLink>
+                        <DisplayName>Encrypting Files</DisplayName>
+                        <Url>Encrypting+Files</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\Book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\encryptedBook1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Converting Worksheet to SVG</Title>
+                      <Description>SVG stands for Scalable Vector Graphics. SVG is a specification based on XML standards for two-dimensional vector graphics. It is an open standard that has been under development by the World Wide Web Consortium (W3C) since 1999.
+Since the release of v7.1.0, Aspose.Cells can convert worksheets into SVG images.
+
+To use this feature, you need to import the Aspose.Cells.Rendering namespace to your program or project. It has several valuable classes for rendering and printing, for example SheetRender, ImageOrPrintOptions, WorkbookRender and others. 
+
+The Aspose.Cells.Rendering.ImageOrPrintOptions class specifies that the worksheet will be saved in SVG format.
+
+The Aspose.Cells.Rendering.SheetRender class takes the object of ImageOrPrintOptions as a parameter. It has an overloaded method, ToImage, that converts a worksheet to SVG format.</Description>
+                      <FolderName>ConvertingWorksheetToSVG</FolderName>
+                      <Order>7</Order>
+                      <DocLink>
+                        <DisplayName>Converting Worksheet to SVG</DisplayName>
+                        <Url>Converting+Worksheet+to+SVG</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\Template.xlsx</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\Template.xlsxSheet10.out.svg</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\Template.xlsxSheet20.out.svg</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Converting to MHTML Files</Title>
+                      <Description>MHTML combines normal HTML with external resources (that is, content that is usually linked in like images, animations, audio and so on) into one file. They are used for emails with the .mht file extension.
+Aspose.Cells supports reading and writing MHTML files.</Description>
+                      <FolderName>ConvertingToMHTMLFiles</FolderName>
+                      <Order>8</Order>
+                      <DocLink>
+                        <DisplayName>Converting to MHTML Files</DisplayName>
+                        <Url>http://www.aspose.com/docs/display/cellsjava/Converting+to+MHTML+Files</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\Book1.xlsx</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\Book1.xlsx.out.mht</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+                <Folder>
+                  <Title>File Handling Features</Title>
+                  <Description>This section includes examples related to following topics: 
+
+- Opening Files
+- Saving Files
+- Save Entire Workbook into Text or CSV Format</Description>
+                  <FolderName>FileHandlingFeatures</FolderName>
+                  <Order>2</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Opening Files</Title>
+                      <Description>Developers can make use of Aspose.Cells to open existing files for different purposes. For example, you can open an existing file to retrieve data from it or you can use a pre-defined Designer Spreadsheet file to speed up your development process etc. Aspose.Cells allows developers to open different kinds of source files. These source files can be Excel reports (XLS, XLSX, XLSM, XLSB etc.), SpreadsheetML, CSV or Tab Delimited files. In this example, we will show how opening of these different kinds of source files is performed using Aspose.Cells.</Description>
+                      <FolderName>OpeningFiles</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Opening Files</DisplayName>
+                        <Url>Opening+Files</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\Book1.xlsx</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\Book_Excel2007.xlsx</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\Book1.xls</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\Book2.xls</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\Book_Excel97_2003.xls</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\Book3.xml</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\Book_CSV.csv</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\Book1TabDelimited.txt</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\encryptedBook.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <Type>Console</Type>
+                    </Example>
                   </Examples>
                 </Folder>
               </Folders>
