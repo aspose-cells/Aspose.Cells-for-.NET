@@ -282,6 +282,27 @@ Aspose.Cells supports reading and writing MHTML files.</Description>
                       </InputFiles>
                       <Type>Console</Type>
                     </Example>
+                    <Example>
+                      <Title>Save Entire Workbook into Text or CSV Format</Title>
+                      <Description>Sometimes, you want to convert/save the entire workbook with multiple worksheets into text format. For text formats (e.g Txt, Tab Delimited, CSV etc), by default both Ms-Excel and Aspose.Cells save the contents of active worksheet only.</Description>
+                      <FolderName>SaveWorkbookToTextCSVFormat</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Save Entire Workbook into Text or CSV Format</DisplayName>
+                        <Url>Save+Entire+Workbook+into+Text+or+CSV+Format</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\Book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\out.txt</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
                   </Examples>
                 </Folder>
               </Folders>
