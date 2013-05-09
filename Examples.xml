@@ -303,6 +303,40 @@ Aspose.Cells supports reading and writing MHTML files.</Description>
                       </OutputFiles>
                       <Type>Console</Type>
                     </Example>
+                    <Example>
+                      <Title>Saving Files</Title>
+                      <Description>Aspose.Cells allows developers to create Excel files from scratch using its flexible API, you may also manipulate existing files. Once you create Excel files, you would also need to save your work (file). Aspose.Cells provides a variety of ways to save these files. In this topic, we will discuss all those possible ways that can be adopted by developers to save their files.</Description>
+                      <FolderName>SavingFiles</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>Saving Files</DisplayName>
+                        <Url>Saving+Files</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.html</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\book1.ods</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\book1.pdf</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\book1.xlsb</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\book1.xlsx</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\book1.xml</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
                   </Examples>
                 </Folder>
               </Folders>
@@ -475,7 +509,172 @@ A worksheet is represented by the Worksheet class. Worksheet class provides a wi
                       </OutputFiles>
                       <Type>Console</Type>
                     </Example>
+                    <Example>
+                      <Title>Display or Hide Row Column Headers</Title>
+                      <Description>All worksheets in an Excel file are composed of cells that are arranged in the form of rows and columns. All rows and columns have unique values that are used to identify a particular row, column or cell. For example, rows are numbered as 1, 2, 3, 4 etc. and columns are ordered alphabetically as A, B, C, D etc. These values of the rows and columns are displayed as their headers. Rows and columns, both have their own row and column headers respectively. Using, Aspose.Cells , developers can control the visibility of these row/column headers in their worksheets.</Description>
+                      <FolderName>DisplayHideRowColumnHeaders</FolderName>
+                      <Order>7</Order>
+                      <DocLink>
+                        <DisplayName>Display or Hide Row Column Headers</DisplayName>
+                        <Url>Display+or+Hide+Row+Column+Headers</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Freeze Panes</Title>
+                      <Description>Freeze Panes is also another good feature provided by Microsoft Excel. Freezing panes allows you to select data that remains visible when scrolling in a worksheet. Aspose.Cells also allows developers to apply this freeze panes feature (offered by Microsoft Excel) in their worksheets at runtime using its robust API.</Description>
+                      <FolderName>FreezePanes</FolderName>
+                      <Order>8</Order>
+                      <DocLink>
+                        <DisplayName>Freeze Panes</DisplayName>
+                        <Url>Freeze+Panes</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Split Panes</Title>
+                      <Description>If you need to split the screen to give you two different views into the same worksheet, you split panes. Excel offers a very handy feature to allow you view more than one copy of your worksheet, and for you to be able to scroll through each pane of your worksheet independently. You can do this by using a feature called Split Panes. When you split panes. The panes of your worksheet work simultaneously. If you make a change in one, it will simultaneously appear in the other. Aspose.Cells provides Split Panes feature for the users.</Description>
+                      <FolderName>SplitPanes</FolderName>
+                      <Order>9</Order>
+                      <DocLink>
+                        <DisplayName>Split Panes</DisplayName>
+                        <Url>Split+Panes</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\Splitted_out1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
                   </Examples>
+                </Folder>
+                <Folder>
+                  <Title>Management Features</Title>
+                  <Description>This Section includes following topics:
+
+1: Managing Worksheets</Description>
+                  <FolderName>ManagementFeatures</FolderName>
+                  <Order>2</Order>
+                  <Folders>
+                    <Folder>
+                      <Title>Managing Worksheets</Title>
+                      <Description>Managing worksheets using Aspose.Cells is as easy as ABC. In this section, we have included the following features:
+
+1: Add worksheets to a new Excel file
+2: Add worksheets to an existing Excel file
+3: Remove a worksheet from an Excel file using its sheet name
+4: Remove a worksheet from an Excel file using its sheet index</Description>
+                      <FolderName>ManagingWorksheets</FolderName>
+                      <Order>1</Order>
+                      <Examples>
+                        <Example>
+                          <Title>Adding Worksheets to a New Excel File</Title>
+                          <Description>To create a new Excel file programmatically, developers would need to create an object of Workbook class that represents an Excel file. Then developers can call Add method of the Worksheets collection. When we call Add method, an empty worksheet is added to the Excel file automatically, which can be referenced by passing the sheet index of the newly added worksheet to the Worksheets collection. After the worksheet reference is obtained, developers can work on their worksheets according to their requirements. After the work is done on the worksheets, developers can save their newly created Excel file with new worksheets by calling the Save method of the Workbook class.</Description>
+                          <FolderName>AddingWorksheetsToNewExcelFile</FolderName>
+                          <Order>1</Order>
+                          <DocLink>
+                            <DisplayName>Adding Worksheets to a New Excel File</DisplayName>
+                            <Url>Managing+Worksheets</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\output.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Adding Worksheets to an Existing PDF file</Title>
+                          <Description>The process of adding worksheets to a designer spreadsheet is entirely same as that of the above approach except that the Excel file is already created and we need to open that Excel file first before adding worksheet to it. A designer spreadsheet can be opened by the Workbook class.</Description>
+                          <FolderName>AddWorksheetsToExistingExcelFile</FolderName>
+                          <Order>2</Order>
+                          <DocLink>
+                            <DisplayName>Managing Worksheets</DisplayName>
+                            <Url>Managing+Worksheets</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\output.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Removing Worksheets using Sheet Name</Title>
+                          <Description>Sometimes, developers may need to remove worksheets from existing Excel files and that task can be performed by calling the RemoveAt method of the Worksheets collection. We can pass sheet name to the RemoveAt method to remove a specific worksheet.</Description>
+                          <FolderName>RemovingWorksheetsUsingSheetName</FolderName>
+                          <Order>3</Order>
+                          <DocLink>
+                            <DisplayName>Managing Worksheets</DisplayName>
+                            <Url>Managing+Worksheets</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\output.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Removing Worksheets using Sheet Index</Title>
+                          <Description>This examples showns how to remove a worksheet from a workbook using the index of the worksheet.</Description>
+                          <FolderName>RemovingWorksheetsUsingSheetIndex</FolderName>
+                          <Order>4</Order>
+                          <DocLink>
+                            <DisplayName>Managing Worksheets</DisplayName>
+                            <Url>Managing+Worksheets</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\output.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                      </Examples>
+                    </Folder>
+                  </Folders>
                 </Folder>
               </Folders>
             </Folder>

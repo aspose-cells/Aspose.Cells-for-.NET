@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?><?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:x2="urn:schemas-microsoft-com:office:excel2" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+  <x:ExcelWorkbook>
+    <x:ActiveSheet>7</x:ActiveSheet>
+  </x:ExcelWorkbook>
+  <o:DocumentProperties />
+  <Styles>
+    <Style ss:ID="Default" ss:Name="Normal">
+      <ss:Font ss:FontName="Arial" ss:Size="10" />
+    </Style>
+    <Style ss:ID="S21">
+      <ss:Alignment />
+      <ss:Font ss:Bold="1" ss:Color="#0000FF" ss:FontName="Arial" ss:Size="18" ss:Italic="1" />
+      <ss:NumberFormat />
+      <ss:Protection ss:Protected="1" x:HideFormula="0" />
+    </Style>
+  </Styles>
+  <Worksheet ss:Name="Sheet1">
+    <ss:Names />
+    <ss:Table ss:DefaultRowHeight="12.75" ss:DefaultColumnWidth="48" />
+    <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+      <PageSetup />
+      <Print>
+        <ValidPrinterInfo />
+        <PaperSizeIndex>9</PaperSizeIndex>
+      </Print>
+    </WorksheetOptions>
+  </Worksheet>
+  <Worksheet ss:Name="Evaluation Warning">
+    <ss:Names />
+    <ss:Table ss:DefaultRowHeight="12.75" ss:DefaultColumnWidth="48" ss:ExpandedRowCount="5" ss:ExpandedColumnCount="17">
+      <Column ss:Index="1" ss:Span="16" ss:AutoFitWidth="0" ss:Width="48" />
+      <Row ss:Index="5" ss:Height="23.25">
+        <Cell ss:StyleID="S21"><Data ss:Type="String">Evaluation Only. Created with Aspose.Cells for .NET.Copyright 2003 - 2013 Aspose Pty Ltd.</Data>
+        </Cell>
+      </Row>
+    </ss:Table>
+    <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+      <PageSetup />
+      <Print>
+        <ValidPrinterInfo />
+        <PaperSizeIndex>9</PaperSizeIndex>
+      </Print>
+    </WorksheetOptions>
+  </Worksheet>
+  <Worksheet ss:Name="Evaluation Warning (0)">
+    <ss:Names />
+    <ss:Table ss:DefaultRowHeight="12.75" ss:DefaultColumnWidth="48" ss:ExpandedRowCount="5" ss:ExpandedColumnCount="17">
+      <Column ss:Index="1" ss:Span="16" ss:AutoFitWidth="0" ss:Width="48" />
+      <Row ss:Index="5" ss:Height="23.25">
+        <Cell ss:StyleID="S21"><Data ss:Type="String">Evaluation Only. Created with Aspose.Cells for .NET.Copyright 2003 - 2013 Aspose Pty Ltd.</Data>
+        </Cell>
+      </Row>
+    </ss:Table>
+    <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+      <PageSetup />
+      <Print>
+        <ValidPrinterInfo />
+        <PaperSizeIndex>9</PaperSizeIndex>
+      </Print>
+    </WorksheetOptions>
+  </Worksheet>
+  <Worksheet ss:Name="Evaluation Warning (1)">
+    <ss:Names />
+    <ss:Table ss:DefaultRowHeight="12.75" ss:DefaultColumnWidth="48" ss:ExpandedRowCount="5" ss:ExpandedColumnCount="17">
+      <Column ss:Index="1" ss:Span="16" ss:AutoFitWidth="0" ss:Width="48" />
+      <Row ss:Index="5" ss:Height="23.25">
+        <Cell ss:StyleID="S21"><Data ss:Type="String">Evaluation Only. Created with Aspose.Cells for .NET.Copyright 2003 - 2013 Aspose Pty Ltd.</Data>
+        </Cell>
+      </Row>
+    </ss:Table>
+    <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+      <PageSetup />
+      <Print>
+        <ValidPrinterInfo />
+        <PaperSizeIndex>9</PaperSizeIndex>
+      </Print>
+    </WorksheetOptions>
+  </Worksheet>
+  <Worksheet ss:Name="Evaluation Warning (2)">
+    <ss:Names />
+    <ss:Table ss:DefaultRowHeight="12.75" ss:DefaultColumnWidth="48" ss:ExpandedRowCount="5" ss:ExpandedColumnCount="17">
+      <Column ss:Index="1" ss:Span="16" ss:AutoFitWidth="0" ss:Width="48" />
+      <Row ss:Index="5" ss:Height="23.25">
+        <Cell ss:StyleID="S21"><Data ss:Type="String">Evaluation Only. Created with Aspose.Cells for .NET.Copyright 2003 - 2013 Aspose Pty Ltd.</Data>
+        </Cell>
+      </Row>
+    </ss:Table>
+    <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+      <PageSetup />
+      <Print>
+        <ValidPrinterInfo />
+        <PaperSizeIndex>9</PaperSizeIndex>
+      </Print>
+    </WorksheetOptions>
+  </Worksheet>
+  <Worksheet ss:Name="Evaluation Warning (3)">
+    <ss:Names />
+    <ss:Table ss:DefaultRowHeight="12.75" ss:DefaultColumnWidth="48" ss:ExpandedRowCount="5" ss:ExpandedColumnCount="17">
+      <Column ss:Index="1" ss:Span="16" ss:AutoFitWidth="0" ss:Width="48" />
+      <Row ss:Index="5" ss:Height="23.25">
+        <Cell ss:StyleID="S21"><Data ss:Type="String">Evaluation Only. Created with Aspose.Cells for .NET.Copyright 2003 - 2013 Aspose Pty Ltd.</Data>
+        </Cell>
+      </Row>
+    </ss:Table>
+    <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+      <PageSetup />
+      <Print>
+        <ValidPrinterInfo />
+        <PaperSizeIndex>9</PaperSizeIndex>
+      </Print>
+    </WorksheetOptions>
+  </Worksheet>
+  <Worksheet ss:Name="Evaluation Warning (4)">
+    <ss:Names />
+    <ss:Table ss:DefaultRowHeight="12.75" ss:DefaultColumnWidth="48" ss:ExpandedRowCount="5" ss:ExpandedColumnCount="1">
+      <Column ss:Index="1" ss:AutoFitWidth="0" ss:Width="885" />
+      <Row ss:Index="5" ss:Height="23.25">
+        <Cell ss:StyleID="S21"><Data ss:Type="String">Evaluation Only. Created with Aspose.Cells for .NET.Copyright 2003 - 2013 Aspose Pty Ltd.</Data>
+        </Cell>
+      </Row>
+    </ss:Table>
+    <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+      <PageSetup />
+      <Print>
+        <ValidPrinterInfo />
+        <PaperSizeIndex>9</PaperSizeIndex>
+      </Print>
+    </WorksheetOptions>
+  </Worksheet>
+  <Worksheet ss:Name="Evaluation Warning (5)">
+    <ss:Names />
+    <ss:Table ss:DefaultRowHeight="12.75" ss:DefaultColumnWidth="48" ss:ExpandedRowCount="5" ss:ExpandedColumnCount="1">
+      <Row ss:Index="5" ss:Height="23.25">
+        <Cell ss:StyleID="S21"><Data ss:Type="String">Evaluation Only. Created with Aspose.Cells for .NET.Copyright 2003 - 2013 Aspose Pty Ltd.</Data>
+        </Cell>
+      </Row>
+    </ss:Table>
+    <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+      <PageSetup />
+      <Print>
+        <ValidPrinterInfo />
+        <PaperSizeIndex>9</PaperSizeIndex>
+      </Print>
+    </WorksheetOptions>
+  </Worksheet>
+</Workbook>
