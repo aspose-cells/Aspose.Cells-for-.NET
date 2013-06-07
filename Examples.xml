@@ -676,6 +676,199 @@ A worksheet is represented by the Worksheet class. Worksheet class provides a wi
                     </Folder>
                   </Folders>
                 </Folder>
+                <Folder>
+                  <Title>Security Features</Title>
+                  <Description>This section includes following topics: 
+
+1: Protecting Worksheets
+2: Advanced Protection Settings since Excel XP
+3: Unprotect a Worksheet</Description>
+                  <FolderName>SecurityFeatures</FolderName>
+                  <Order>3</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Advanced Protection Settings Using Aspose.Cells</Title>
+                      <Description>All of these advanced protection settings in Excel XP are supported in Aspose.Cells. Aspose.Cells provides a class, Workbook that represents an Excel file. Workbook class contains a Worksheets collection that allows to access each worksheet in the Excel file. A worksheet is represented by the Worksheet class.
+
+Worksheet class provides Protection property that is used to apply these advanced protection settings of Excel XP on the worksheets. Protection property is in fact an object of Protection class that encapsulates several boolean properties to disable or enable the restrictions on the worksheets.</Description>
+                      <FolderName>AdvancedProtectionSettingsUsingAspose.Cells</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Advanced Protection Settings since Excel XP</DisplayName>
+                        <Url>Advanced+Protection+Settings+since+Excel+XP</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                  <Folders>
+                    <Folder>
+                      <Title>Protecting Worksheets</Title>
+                      <Description>This section includes following topics: 
+
+1: Protecting a Worksheet.
+2: Protecting Specific Cells in a Worksheet.
+3: Protecting Specific Row in a Worksheet.
+4: Protecting Specific Column in a Worksheet.
+5: Allow user to edit Ranges in a Worksheet.</Description>
+                      <FolderName>ProtectingWorksheets</FolderName>
+                      <Order>1</Order>
+                      <Examples>
+                        <Example>
+                          <Title>Protecting a Worksheet</Title>
+                          <Description>Worksheet class provides Protect method that is used to apply appropriate protection on the worksheet. Protect method accepts the following parameters:
+
+1: Protection Type, represents the type of protection to apply on the worksheet. Protection type is applied with the help of ProtectionType enumeration
+2: New Password, represents the new password that is used to protect the worksheet
+3: Old Password, represents the old password, if the worksheet is already protected by a password. If the worksheet is not already protected then just pass a null.</Description>
+                          <FolderName>ProtectingWorksheet</FolderName>
+                          <Order>1</Order>
+                          <DocLink>
+                            <DisplayName>Protecting Worksheets</DisplayName>
+                            <Url>Protecting+Worksheets</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\output.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Protecting Specific Cells in a Worksheet</Title>
+                          <Description>There might be certain scenarios where you need to lock a few cells only in the worksheet. If you want to lock some specific cells in the worksheet, you have to unlock all the other cells in the worksheet. All the cells in a worksheet are already initialized for locking, you may check this opening any excel file into MS Excel and click the Format | Cells...*to show *Format Cells dialog box and then click the Protection tab and see a check box labeled "Locked" is checked by default.</Description>
+                          <FolderName>ProtectingSpecificCellsinaWorksheet</FolderName>
+                          <Order>2</Order>
+                          <DocLink>
+                            <DisplayName>Protecting Worksheets</DisplayName>
+                            <Url>Protecting+Worksheets</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\output.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Protecting Specific Row in a Worksheet</Title>
+                          <Description>Aspose.Cells allows you to easily lock any row in the worksheet. Here, we can make use of ApplyStyle() method of Aspose.Cells.Row class to apply Style to a particular row in the worksheet. This method takes two arguments: a Style object and StyleFlag object which has all the members related to applied formatting.</Description>
+                          <FolderName>ProtectingSpecificRowInWorksheet</FolderName>
+                          <Order>3</Order>
+                          <DocLink>
+                            <DisplayName>Protecting Worksheets</DisplayName>
+                            <Url>Protecting+Worksheets</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\output.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Protecting Specific Column in a Worksheet</Title>
+                          <Description>Aspose.Cells allows you to easily lock any column in the worksheet. Here, we can make use of ApplyStyle() method of Aspose.Cells.Column class to apply Style to a particular column in the worksheet. This method takes two arguments: a Style object and StyleFlag object which has all the members related to applied formatting.</Description>
+                          <FolderName>ProtectingSpecificColumnInWorksheet</FolderName>
+                          <Order>4</Order>
+                          <DocLink>
+                            <DisplayName>Protecting Worksheets</DisplayName>
+                            <Url>Protecting+Worksheets</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\output.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Allow User to Edit Ranges in a Worksheet</Title>
+                          <Description>The following example shows how to allow users to edit a range in a protected worksheet.</Description>
+                          <FolderName>AllowUserToEditRangesInWorksheet</FolderName>
+                          <Order>5</Order>
+                          <DocLink>
+                            <DisplayName>Protecting Worksheets</DisplayName>
+                            <Url>Protecting+Worksheets</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\protectedrange.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                      </Examples>
+                    </Folder>
+                    <Folder>
+                      <Title>Unprotect a Worksheet</Title>
+                      <Description>If a developer needs to unprotect a protected worksheet at runtime, it is very easy with the help of the API of Aspose.Cells. This section includes the following examples:
+
+1: Unprotecting a Simply Protected Worksheet
+2: Unprotecting a Password Protected Worksheet</Description>
+                      <FolderName>UnprotectWorksheet</FolderName>
+                      <Order>3</Order>
+                      <Examples>
+                        <Example>
+                          <Title>Unprotecting a Simply Protected Worksheet</Title>
+                          <Description>A simply protected worksheet is the one, which is not protected with a password. Such worksheets can be unprotected by calling the Unprotect method without passing a parameter.</Description>
+                          <FolderName>UnprotectingSimplyProtectedWorksheet</FolderName>
+                          <Order>1</Order>
+                          <DocLink>
+                            <DisplayName>Unprotect a Worksheet</DisplayName>
+                            <Url>Unprotect+a+Worksheet</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\output.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Unprotecting a Password Protected Worksheet</Title>
+                          <Description>A password protected worksheet can be unprotected by calling an overloaded version of Unprotect method that takes the password (required to unprotect the worksheet) as a parameter.</Description>
+                          <FolderName>UnprotectingPasswordProtectedWorksheet</FolderName>
+                          <Order>2</Order>
+                          <DocLink>
+                            <DisplayName>Unprotect a Worksheet</DisplayName>
+                            <Url>Unprotect+a+Worksheet</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\output.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                      </Examples>
+                    </Folder>
+                  </Folders>
+                </Folder>
               </Folders>
             </Folder>
           </Folders>
