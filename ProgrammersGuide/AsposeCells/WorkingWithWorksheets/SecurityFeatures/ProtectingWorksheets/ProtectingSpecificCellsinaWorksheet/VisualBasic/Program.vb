@@ -17,6 +17,12 @@ Namespace ProtectingSpecificCellsinaWorksheet
 			' The path to the documents directory.
 			Dim dataDir As String = Path.GetFullPath("../../../Data/")
 
+			' Create directory if it is not already present.
+			Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)
+			If (Not IsExists) Then
+				System.IO.Directory.CreateDirectory(dataDir)
+			End If
+
 			' Create a new workbook.
 			Dim wb As New Workbook()
 

@@ -17,6 +17,11 @@ namespace SettingWidthOfAllColumnsInWorksheet
         {
             // The path to the documents directory.
             string dataDir = Path.GetFullPath("../../../Data/");
+            
+           // Create directory if it is not already present.
+            bool IsExists = System.IO.Directory.Exists(dataDir);
+            if (!IsExists)
+                System.IO.Directory.CreateDirectory(dataDir);
 
             //Creating a file stream containing the Excel file to be opened
             FileStream fstream = new FileStream(dataDir + "book1.xls", FileMode.Open);
@@ -35,7 +40,7 @@ namespace SettingWidthOfAllColumnsInWorksheet
             workbook.Save(dataDir + "output.xls");
 
             //Closing the file stream to free all resources
-            fstream.Close();
+            fstream.Close(); 
         }
     }
 }

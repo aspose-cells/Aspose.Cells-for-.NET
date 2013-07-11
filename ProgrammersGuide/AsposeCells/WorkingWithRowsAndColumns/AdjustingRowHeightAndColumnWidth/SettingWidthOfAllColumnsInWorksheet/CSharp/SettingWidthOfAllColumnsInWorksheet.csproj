@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{10A079A6-DE9F-498E-9D70-C96D13C0F633}</ProjectGuid>
+    <ProjectGuid>{8F83D6B6-92D7-4572-A80C-8E50A3F2F9E7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>SettingWidthOfAllColumnsInWorksheet</RootNamespace>
     <AssemblyName>SettingWidthOfAllColumnsInWorksheet</AssemblyName>

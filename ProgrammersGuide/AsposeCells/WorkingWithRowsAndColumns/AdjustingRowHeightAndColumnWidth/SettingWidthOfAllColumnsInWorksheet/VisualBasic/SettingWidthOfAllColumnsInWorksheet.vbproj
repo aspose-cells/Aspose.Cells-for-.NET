@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{10A079A6-DE9F-498E-9D70-C96D13C0F633}</ProjectGuid>
+    <ProjectGuid>{8F83D6B6-92D7-4572-A80C-8E50A3F2F9E7}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace></RootNamespace>
     <AssemblyName>SettingWidthOfAllColumnsInWorksheet</AssemblyName>
