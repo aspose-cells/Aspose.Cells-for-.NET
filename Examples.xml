@@ -1521,9 +1521,9 @@ The Sort method accepts the following parameters:
                           <Type>Console</Type>
                         </Example>
                         <Example>
-                          <Title>Finding Cells Containing Specified String Value or Number</Title>
+                          <Title>Finding Cells Containing String Value or Number</Title>
                           <Description>Developers can also find specified string values in the worksheet by calling the same Find method of Cells collection with various FindOptions.You will have to specify the FindOptions.LookInType and FindOptions.LookAtType properties.</Description>
-                          <FolderName>FindingCellsContainingStringValueOrNumber</FolderName>
+                          <FolderName>FindingCellsWithStringOrNumber</FolderName>
                           <Order>3</Order>
                           <DocLink>
                             <DisplayName>Find or Search Data</DisplayName>

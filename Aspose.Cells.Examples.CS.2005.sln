@@ -158,7 +158,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingCellsContainingFormu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingDataOrFormulasUsingFindOptions", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindingDataOrFormulasUsingFindOptions\CSharp\FindingDataOrFormulasUsingFindOptions.csproj", "{B6D2661A-AF4E-4F92-B60B-8416B041F8C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingCellsContainingStringValueOrNumber", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindingCellsContainingStringValueOrNumber\CSharp\FindingCellsContainingStringValueOrNumber.csproj", "{7A0481E6-9614-446D-B18C-0C25667A379D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingCellsWithStringOrNumber", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindingCellsWithStringOrNumber\CSharp\FindingCellsContainingStringValueOrNumber.csproj", "{7A0481E6-9614-446D-B18C-0C25667A379D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
