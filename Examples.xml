@@ -1325,6 +1325,223 @@ This section includes the following examples:
                 </Folder>
               </Folders>
             </Folder>
+            <Folder>
+              <Title>Working with Data</Title>
+              <Description>This section includes the following:
+
+1: Data Handling Features
+2: Data Processing Features
+3: Add on Features</Description>
+              <FolderName>WorkingWithData</FolderName>
+              <Order>4</Order>
+              <Folders>
+                <Folder>
+                  <Title>Data Handling Features</Title>
+                  <Description>This Section includes following examples: 
+
+1: Accessing Cells of a Worksheet
+2: Adding Data to Cells
+3: Retrieving Data from Cells
+4: Find or Search Data
+5: Data Sorting
+6: Importing Data to Worksheets
+7: Exporting Data from Worksheets
+8: Tracing Precedents and Dependents
+9: Accessing Maximum Display Range of Worksheet</Description>
+                  <FolderName>DataHandlingFeatures</FolderName>
+                  <Order>1</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Adding Data to Cells</Title>
+                      <Description>Aspose.Cells allows developers to add data to the cells of their worksheets by calling the PutValue method of the Cell class. Aspose.Cells provides different overloaded versions of the PutValue method that facilitate users to add different kinds of data to the cells. Using these overloaded versions of PutValue method, developers can add a boolean, string, double, integer or date/time etc. value to the cell.</Description>
+                      <FolderName>AddingDataToCells</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Adding Data to Cells</DisplayName>
+                        <Url>Adding+Data+to+Cells</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Retrieving Data from Cells</Title>
+                      <Description>While working on worksheets, users may add different types of data in the cells. These data types may include Boolean, integer, floating point, text or date/time values. With Aspose.Cells, you can get the appropriate values from the cells according to their data types.</Description>
+                      <FolderName>RetrievingDataFromCells</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>Retrieving Data from Cells</DisplayName>
+                        <Url>Retrieving+Data+from+Cells</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Data Sorting</Title>
+                      <Description>Aspose.Cells provides DataSorter class used to sort data in Ascending or Descending order. The class has some important members i.e. Properties like Key1 .... Key3 and Order1 .... Order3 for .NET version of the component. These members are used to define sorted keys and specify the sort orders for the keys. You will have to define your desired keys and set orders before you implement data sorting. The class provides Sort method that is used to perform data sorting operation based on a worksheet's cells data. 
+
+The Sort method accepts the following parameters:
+
+1: Aspose.Cells.Cells denotes the cells for underlying worksheet.
+2: Aspose.Cells.CellArea represents the cellarea range. you have to define your desired cellarea first before applying data sorting.</Description>
+                      <FolderName>DataSorting</FolderName>
+                      <Order>5</Order>
+                      <DocLink>
+                        <DisplayName>Data Sorting</DisplayName>
+                        <Url>Data+Sorting</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                  <Folders>
+                    <Folder>
+                      <Title>Accessing Cells of a Worksheet</Title>
+                      <Description>A cell is a basic part of a worksheet that is used to construct the whole worksheet as a sequence of rows and columns. Before we try to access data from a worksheet, we would need to get access to its cells. So, in this section, we will see some basic approaches to access worksheet cells at runtime using Aspose.Cells.
+
+1: Using Cell Name
+2: Using Row &amp; Column Index of the Cell
+3: Using Cell Index in Cells Collection</Description>
+                      <FolderName>AccessingCellsofWorksheet</FolderName>
+                      <Order>1</Order>
+                      <Examples>
+                        <Example>
+                          <Title>Using Cell Name</Title>
+                          <Description>Developers can access any specific cell by passing its cell name to the Cells collection of the Worksheet class as an index.</Description>
+                          <FolderName>UsingCellName</FolderName>
+                          <Order>1</Order>
+                          <DocLink>
+                            <DisplayName>Accessing Cells of a Worksheet</DisplayName>
+                            <Url>Accessing+Cells+of+a+Worksheet</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Using Row and Column Index of the Cell</Title>
+                          <Description>Developers can access any specific cell by passing the indices of its row and column to the Cells collection of the Worksheet class.</Description>
+                          <FolderName>UsingRowAndColumnIndexOfCell</FolderName>
+                          <Order>2</Order>
+                          <DocLink>
+                            <DisplayName>Accessing Cells of a Worksheet</DisplayName>
+                            <Url>Accessing+Cells+of+a+Worksheet</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Using Cell Index in Cells Collection</Title>
+                          <Description>A cell can also be accessed by passing the cell's numeric index to the Cells collection using Aspose.Cells.</Description>
+                          <FolderName>UsingCellIndexInCellsCollection</FolderName>
+                          <Order>3</Order>
+                          <DocLink>
+                            <DisplayName>Accessing Cells of a Worksheet</DisplayName>
+                            <Url>Accessing+Cells+of+a+Worksheet</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                      </Examples>
+                    </Folder>
+                    <Folder>
+                      <Title>Find or Search Data</Title>
+                      <Description>Cells collection provides several methods to find cells in a worksheet containing user specified data. This section includes the following:
+
+1: Finding Cells Containing a Formula
+2: Finding Data / Formulas using FindOptions
+3: Finding Cells Containing Specified String Value or Number</Description>
+                      <FolderName>FindOrSearchData</FolderName>
+                      <Order>4</Order>
+                      <Examples>
+                        <Example>
+                          <Title>Finding Cells Containing a Formula</Title>
+                          <Description>Developers can find a specified formula in the worksheet by calling FindFormula method of Cells collection. Typically, FindFormula method accepts two parameters:
+
+1: Formula to Search, represents a formula that is needed to find in the worksheet
+2: Previous Cell, represents the previous cell with the same formula. This parameter can be set to null if you are searching from the start</Description>
+                          <FolderName>FindingCellsContainingFormula</FolderName>
+                          <Order>1</Order>
+                          <DocLink>
+                            <DisplayName>Find or Search Data</DisplayName>
+                            <Url>Find+or+Search+Data</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Finding Data or Formulas using FindOptions</Title>
+                          <Description>Developers can also find specified data values in the worksheet by calling Find method of Cells collection with various FindOptions. Typically, Find method accepts two parameters:
+
+1: Value to be Searched, represents the data/value to be searched that is needed to find in the worksheet cells.
+2: Previous Cell, represents the previous cell with the same value. This parameter can be set to null/nothing if you are searching from the start.
+3: Find Options, represents the find options.</Description>
+                          <FolderName>FindingDataOrFormulasUsingFindOptions</FolderName>
+                          <Order>2</Order>
+                          <DocLink>
+                            <DisplayName>Find or Search Data</DisplayName>
+                            <Url>Find+or+Search+Data</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Finding Cells Containing Specified String Value or Number</Title>
+                          <Description>Developers can also find specified string values in the worksheet by calling the same Find method of Cells collection with various FindOptions.You will have to specify the FindOptions.LookInType and FindOptions.LookAtType properties.</Description>
+                          <FolderName>FindingCellsContainingStringValueOrNumber</FolderName>
+                          <Order>3</Order>
+                          <DocLink>
+                            <DisplayName>Find or Search Data</DisplayName>
+                            <Url>Find+or+Search+Data</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                      </Examples>
+                    </Folder>
+                  </Folders>
+                </Folder>
+              </Folders>
+            </Folder>
           </Folders>
         </Folder>
       </Folders>

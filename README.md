@@ -1,34 +1,22 @@
 #Aspose.Cells for .NET Examples Repository
 
-This repository contains C# and VB.NET Example Projects for [Aspose.Cells for .NET](http://www.aspose.com/categories/.net-components/aspose.cells-for-.net/default.aspx).
+This package contains C# and VB.NET Example Projects for [Aspose.Cells for .NET](http://www.aspose.com/categories/.net-components/aspose.cells-for-.net/default.aspx).
 
-##How to use the Examples?
+Aspose.Cells for .NET is a class library that enables your applications to perform a great range of document processing tasks. Aspose.Cells supports the popular spreadsheet (XLS, XLSX, XLSM, XLTX, CSV, SpreadsheetML) and image file formats. With Aspose.Cells you can generate, modify, convert, render and print documents without utilizing Microsoft Excel.
 
-###With the Examples Dashboard
+Using Aspose.Cells for .NET in your project gives you the following benefits:
 
-Download the [Aspose Examples Dashboard for .NET](http://www.aspose.com/community/files/51/.net-components/aspose-examples-for-.net/default.aspx) to view and run all these examples on your PC. It updates itself with the latest dependency libraries and examples.
++ Rich Set of Features
 
-![Aspose Examples Dashboard](http://www.aspose.com/blogs/wp-content/uploads/2013/04/Dotnet-Dashboard.png "Aspose Examples Dashboard")
++ No Microsoft Excel Automation
 
-###With IDE
++ Platform Independence
 
-Clone or Download the ZIP and extract the contents to your local hard drive. It has Solution (SLN) files for Microsoft Visual Studio 2005, 2008 and 2010.
++ Performance and Scalability
 
-Also download the [latest version](http://www.aspose.com/community/files/51/.net-components/aspose.cells-for-.net/default.aspx) of Aspose.Cells for .NET and set/fix dll references.
++ Minimal Learning Curve
 
-##Open Source Feel of Aspose.Cells
-
-Aspose.Cells for .NET and Aspose.Cells for Java are successful commercial products, but our philosophy is to develop them using our unique "*open-source feel*" approach. In other words, we at Aspose are extremely customer driven and this shows in:
-
-+ Frequent releases (at least once a month).
-+ Features are prioritized according to your requests.
-+ Unlimited free technical support for anyone.
-+ Helpful support in the forums and answers within 12-24 hours.
-+ Live chat with experienced technical advisers.
-
-We think that customers who use our products feel that they use an open source product because of the extent they can influence the project, but with the security of a fully committed talented team working on the project.
-
-The Aspose.Cells for .NET examples published here at GitHub is a part of the above effort.
+These example projects provide helpful demonstrations and code when using Aspose.Cells for .NET.
 
 ##What's included in this examples repository?
 
@@ -46,6 +34,45 @@ Each example is provided in both C# and Visual Basic in their respective folders
   <tr><td>Smart Marker</td><td>These examples illustrate how to create data reports with just a few lines of code based on Smart Marker technique.</td></tr>
 </table>
 
+###Data
++ Input Documents - Main directory has a File directory which contains all the input Excel Documents used in these examples.
++ Northwind.mdb - Many examples use this Microsoft Access Database found under the "Database" directory for demonstrating merging data into documents.
+
+
+###Output
+
++ All examples will perform operations on documents and prompt the user to download the output document.
+
+
+###Help Material
+
+For further details on setting up the examples and any requirements refer to the readme.txt found in the root of the repository.
+
+
+
+##Download the examples
+
+Please [Download the Aspose.Cells for .NET Examples](https://github.com/asposecells/Aspose_Cells_NET/downloads) to try them at your end.
+
+
+##How to use the examples?
+
+Download the examples from the above link. The solution files for Microsoft Visual Studio 2005, 2008 and 2010 are provided with the examples. 
+
+Once downloaded you can open the examples by opening the appropriate solution file (.sln) according to the version of Visual Studio installed on your system.
+
+- Aspose.Cells.Demos.2005.sln - Open with Microsoft Visual Studio 2005
+- Aspose.Cells.Demos.2008.sln - Open with Microsoft Visual Studio 2008
+- Aspose.Cells.Demos.2010.sln - Open with Microsoft Visual Studio 2010
+
+The example should be ready to compile. Click on "Debug" menu and choose one of the following menu items to start the example:
+
+- Start Debugging
+- Start Without Debugging
+
+
+
+
 ##Contact Us
 
 + **Website:** [www.aspose.com](http://www.aspose.com)
@@ -54,7 +81,6 @@ Each example is provided in both C# and Visual Basic in their respective folders
 + **Documentation:** [Aspose.Cells for .NET Documentation](http://www.aspose.com/documentation/.net-components/aspose.cells-for-.net/index.html)
 + **Forum:** [Aspose.Cells for .NET Forum](http://www.aspose.com/community/forums/aspose.cells-product-family/19/showforum.aspx)
 + **Blog:** [Aspose.Cells for .NET Blog](http://www.aspose.com/blogs/aspose-products/aspose-cells-product-family.html)
-
  
 
 

@@ -126,11 +126,37 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingHeightOfAllRowsInWor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingWidthOfColumn", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\AdjustingRowHeightAndColumnWidth\SettingWidthOfColumn\VisualBasic\SettingWidthOfColumn.vbproj", "{EAF0EFBD-3FE2-4473-9264-082D78EBD5B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingWidthOfAllColumnsInWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\AdjustingRowHeightAndColumnWidth\SettingWidthOfAllColumnsInWorksheet\VisualBasic\SettingWidthOfAllColumnsInWorksheet.vbproj", "{8F83D6B6-92D7-4572-A80C-8E50A3F2F9E7}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CopyingRowsAndColumns", "CopyingRowsAndColumns", "{D0D330F6-10B0-4B61-9CE8-456AE943EB03}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyingRows", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\CopyingRowsAndColumns\CopyingRows\VisualBasic\CopyingRows.vbproj", "{1BCB5C7D-B6FD-4367-B148-725879A9A953}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyingColumns", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\CopyingRowsAndColumns\CopyingColumns\VisualBasic\CopyingColumns.vbproj", "{16F9D8B2-703D-41D4-95C1-48FC324E583F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithData", "WorkingWithData", "{61C49969-80F3-447B-A7C9-AA10A827F701}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataHandlingFeatures", "DataHandlingFeatures", "{D16140CA-B441-4AB3-B65B-FD683E2FC9F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingDataToCells", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\AddingDataToCells\VisualBasic\AddingDataToCells.vbproj", "{C6701FA7-1B43-422A-83C2-6BF504F289E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetrievingDataFromCells", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\RetrievingDataFromCells\VisualBasic\RetrievingDataFromCells.vbproj", "{43F20E67-6A14-4435-A60B-D3BA2A3E8192}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccessingCellsofWorksheet", "AccessingCellsofWorksheet", "{8960B4D8-6995-44DB-9CCC-75F05B62B5C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingCellName", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\AccessingCellsofWorksheet\UsingCellName\VisualBasic\UsingCellName.vbproj", "{C559CBEA-FCA8-4496-AF25-A2264471D6F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingRowAndColumnIndexOfCell", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\AccessingCellsofWorksheet\UsingRowAndColumnIndexOfCell\VisualBasic\UsingRowAndColumnIndexOfCell.vbproj", "{F302E264-6C12-4B8C-BE51-CC9CAA89DEA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingCellIndexInCellsCollection", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\AccessingCellsofWorksheet\UsingCellIndexInCellsCollection\VisualBasic\UsingCellIndexInCellsCollection.vbproj", "{DE9B9131-9940-4223-9210-631C6F853DB1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FindOrSearchData", "FindOrSearchData", "{4B8F068F-0EC6-4638-81F3-F670C1301786}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingCellsContainingFormula", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindingCellsContainingFormula\VisualBasic\FindingCellsContainingFormula.vbproj", "{886D21F6-EB2C-423A-B0A8-B368E4BCA82E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingDataOrFormulasUsingFindOptions", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindingDataOrFormulasUsingFindOptions\VisualBasic\FindingDataOrFormulasUsingFindOptions.vbproj", "{B6D2661A-AF4E-4F92-B60B-8416B041F8C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingCellsContainingStringValueOrNumber", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindingCellsContainingStringValueOrNumber\VisualBasic\FindingCellsContainingStringValueOrNumber.vbproj", "{7A0481E6-9614-446D-B18C-0C25667A379D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -285,6 +311,33 @@ Global
 		{16F9D8B2-703D-41D4-95C1-48FC324E583F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{16F9D8B2-703D-41D4-95C1-48FC324E583F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16F9D8B2-703D-41D4-95C1-48FC324E583F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6701FA7-1B43-422A-83C2-6BF504F289E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6701FA7-1B43-422A-83C2-6BF504F289E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6701FA7-1B43-422A-83C2-6BF504F289E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43F20E67-6A14-4435-A60B-D3BA2A3E8192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43F20E67-6A14-4435-A60B-D3BA2A3E8192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43F20E67-6A14-4435-A60B-D3BA2A3E8192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8878A974-8E2C-4092-8E61-A86B755C7DD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8878A974-8E2C-4092-8E61-A86B755C7DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8878A974-8E2C-4092-8E61-A86B755C7DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C559CBEA-FCA8-4496-AF25-A2264471D6F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C559CBEA-FCA8-4496-AF25-A2264471D6F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C559CBEA-FCA8-4496-AF25-A2264471D6F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F302E264-6C12-4B8C-BE51-CC9CAA89DEA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F302E264-6C12-4B8C-BE51-CC9CAA89DEA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F302E264-6C12-4B8C-BE51-CC9CAA89DEA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE9B9131-9940-4223-9210-631C6F853DB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE9B9131-9940-4223-9210-631C6F853DB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE9B9131-9940-4223-9210-631C6F853DB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886D21F6-EB2C-423A-B0A8-B368E4BCA82E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886D21F6-EB2C-423A-B0A8-B368E4BCA82E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886D21F6-EB2C-423A-B0A8-B368E4BCA82E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6D2661A-AF4E-4F92-B60B-8416B041F8C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6D2661A-AF4E-4F92-B60B-8416B041F8C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6D2661A-AF4E-4F92-B60B-8416B041F8C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A0481E6-9614-446D-B18C-0C25667A379D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A0481E6-9614-446D-B18C-0C25667A379D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A0481E6-9614-446D-B18C-0C25667A379D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -356,5 +409,18 @@ Global
 		{D0D330F6-10B0-4B61-9CE8-456AE943EB03} = {0DA8FE81-5CF7-4BFB-9EC4-DB6D07A53188}
 		{1BCB5C7D-B6FD-4367-B148-725879A9A953} = {D0D330F6-10B0-4B61-9CE8-456AE943EB03}
 		{16F9D8B2-703D-41D4-95C1-48FC324E583F} = {D0D330F6-10B0-4B61-9CE8-456AE943EB03}
+		{61C49969-80F3-447B-A7C9-AA10A827F701} = {08BE30B5-0442-4C58-A8CD-665126E93A16}
+		{D16140CA-B441-4AB3-B65B-FD683E2FC9F0} = {61C49969-80F3-447B-A7C9-AA10A827F701}
+		{C6701FA7-1B43-422A-83C2-6BF504F289E7} = {D16140CA-B441-4AB3-B65B-FD683E2FC9F0}
+		{43F20E67-6A14-4435-A60B-D3BA2A3E8192} = {D16140CA-B441-4AB3-B65B-FD683E2FC9F0}
+		{8878A974-8E2C-4092-8E61-A86B755C7DD9} = {D16140CA-B441-4AB3-B65B-FD683E2FC9F0}
+		{8960B4D8-6995-44DB-9CCC-75F05B62B5C2} = {D16140CA-B441-4AB3-B65B-FD683E2FC9F0}
+		{C559CBEA-FCA8-4496-AF25-A2264471D6F7} = {8960B4D8-6995-44DB-9CCC-75F05B62B5C2}
+		{F302E264-6C12-4B8C-BE51-CC9CAA89DEA2} = {8960B4D8-6995-44DB-9CCC-75F05B62B5C2}
+		{DE9B9131-9940-4223-9210-631C6F853DB1} = {8960B4D8-6995-44DB-9CCC-75F05B62B5C2}
+		{4B8F068F-0EC6-4638-81F3-F670C1301786} = {D16140CA-B441-4AB3-B65B-FD683E2FC9F0}
+		{886D21F6-EB2C-423A-B0A8-B368E4BCA82E} = {4B8F068F-0EC6-4638-81F3-F670C1301786}
+		{B6D2661A-AF4E-4F92-B60B-8416B041F8C0} = {4B8F068F-0EC6-4638-81F3-F670C1301786}
+		{7A0481E6-9614-446D-B18C-0C25667A379D} = {4B8F068F-0EC6-4638-81F3-F670C1301786}
 	EndGlobalSection
 EndGlobal
