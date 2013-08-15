@@ -68,7 +68,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemovingWorksheetsUsingShee
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SecurityFeatures", "SecurityFeatures", "{2CCABD1D-ECEA-49DD-8E16-0FF6C6963C51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedProtectionSettingsUsingAspose.Cells", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\AdvancedProtectionSettingsUsingAspose.Cells\CSharp\AdvancedProtectionSettingsUsingAspose.Cells.csproj", "{032B37D0-A99C-4385-A9CE-F6CDC79D3A14}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedProtectionSettings", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\AdvancedProtectionSettings\CSharp\AdvancedProtectionSettings.csproj", "{032B37D0-A99C-4385-A9CE-F6CDC79D3A14}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProtectingWorksheets", "ProtectingWorksheets", "{32C80154-B1EA-416F-B354-D70112FAD2CC}"
 EndProject
@@ -82,7 +82,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectingSpecificColumnInW
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllowUserToEditRangesInWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\ProtectingWorksheets\AllowUserToEditRangesInWorksheet\CSharp\AllowUserToEditRangesInWorksheet.csproj", "{C8C6AFFB-01DB-453B-9192-203A17352DB9}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnprotectWorksheet", "UnprotectWorksheet", "{DD4796D2-A88B-4226-A89A-A88D074F9376}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnprotectWorksheet", "UnprotectWorksheet", "{D2BA019B-521E-4049-9C64-C2F39186A753}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnprotectingSimplyProtectedWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\UnprotectWorksheet\UnprotectingSimplyProtectedWorksheet\CSharp\UnprotectingSimplyProtectedWorksheet.csproj", "{DB79FA61-2F00-478A-98E8-35EFD20FF425}"
 EndProject
@@ -144,6 +144,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetrievingDataFromCells", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSorting", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\DataSorting\CSharp\DataSorting.csproj", "{8878A974-8E2C-4092-8E61-A86B755C7DD9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportingDataFromWorksheets", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ExportingDataFromWorksheets\CSharp\ExportingDataFromWorksheets.csproj", "{3C0AE695-CBD7-49E4-9D47-BC4E53567108}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccessingCellsofWorksheet", "AccessingCellsofWorksheet", "{8960B4D8-6995-44DB-9CCC-75F05B62B5C2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingCellName", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\AccessingCellsofWorksheet\UsingCellName\CSharp\UsingCellName.csproj", "{C559CBEA-FCA8-4496-AF25-A2264471D6F7}"
@@ -158,7 +160,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingCellsContainingFormu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingDataOrFormulasUsingFindOptions", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindingDataOrFormulasUsingFindOptions\CSharp\FindingDataOrFormulasUsingFindOptions.csproj", "{B6D2661A-AF4E-4F92-B60B-8416B041F8C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingCellsWithStringOrNumber", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindingCellsWithStringOrNumber\CSharp\FindingCellsContainingStringValueOrNumber.csproj", "{7A0481E6-9614-446D-B18C-0C25667A379D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingCellsWithStringOrNumber", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindingCellsWithStringOrNumber\CSharp\FindingCellsWithStringOrNumber.csproj", "{7A0481E6-9614-446D-B18C-0C25667A379D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ImportingDataToWorksheets", "ImportingDataToWorksheets", "{3C00224D-7546-41A4-B436-4456D6D39284}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportingFromArray", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ImportingDataToWorksheets\ImportingFromArray\CSharp\ImportingFromArray.csproj", "{FD5CB8C9-2ABE-4838-88B1-A70C06728117}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportingFromArrayList", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ImportingDataToWorksheets\ImportingFromArrayList\CSharp\ImportingFromArrayList.csproj", "{CA5457F8-2CC5-4B0F-99D9-22DE4CB6ADDD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportingFromDataTable", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ImportingDataToWorksheets\ImportingFromDataTable\CSharp\ImportingFromDataTable.csproj", "{BDE9362F-2078-4E2C-B48A-AD41E4420C02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportingFromCustomObject", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ImportingDataToWorksheets\ImportingFromCustomObject\CSharp\ImportingFromCustomObject.csproj", "{1AD095EE-5128-4BDB-B566-3A20D8C2950D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportingFromDataColumn", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ImportingDataToWorksheets\ImportingFromDataColumn\CSharp\ImportingFromDataColumn.csproj", "{71027E54-45C7-4120-B5FB-2F88001F0EFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportingFromDataView", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ImportingDataToWorksheets\ImportingFromDataView\CSharp\ImportingFromDataView.csproj", "{B2C57144-BAB1-4DC9-BF22-77119050CFC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -322,6 +338,9 @@ Global
 		{8878A974-8E2C-4092-8E61-A86B755C7DD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8878A974-8E2C-4092-8E61-A86B755C7DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8878A974-8E2C-4092-8E61-A86B755C7DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C0AE695-CBD7-49E4-9D47-BC4E53567108}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C0AE695-CBD7-49E4-9D47-BC4E53567108}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C0AE695-CBD7-49E4-9D47-BC4E53567108}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C559CBEA-FCA8-4496-AF25-A2264471D6F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C559CBEA-FCA8-4496-AF25-A2264471D6F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C559CBEA-FCA8-4496-AF25-A2264471D6F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -340,6 +359,24 @@ Global
 		{7A0481E6-9614-446D-B18C-0C25667A379D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7A0481E6-9614-446D-B18C-0C25667A379D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A0481E6-9614-446D-B18C-0C25667A379D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD5CB8C9-2ABE-4838-88B1-A70C06728117}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD5CB8C9-2ABE-4838-88B1-A70C06728117}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD5CB8C9-2ABE-4838-88B1-A70C06728117}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA5457F8-2CC5-4B0F-99D9-22DE4CB6ADDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA5457F8-2CC5-4B0F-99D9-22DE4CB6ADDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA5457F8-2CC5-4B0F-99D9-22DE4CB6ADDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDE9362F-2078-4E2C-B48A-AD41E4420C02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDE9362F-2078-4E2C-B48A-AD41E4420C02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDE9362F-2078-4E2C-B48A-AD41E4420C02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AD095EE-5128-4BDB-B566-3A20D8C2950D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AD095EE-5128-4BDB-B566-3A20D8C2950D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AD095EE-5128-4BDB-B566-3A20D8C2950D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71027E54-45C7-4120-B5FB-2F88001F0EFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71027E54-45C7-4120-B5FB-2F88001F0EFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71027E54-45C7-4120-B5FB-2F88001F0EFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2C57144-BAB1-4DC9-BF22-77119050CFC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2C57144-BAB1-4DC9-BF22-77119050CFC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2C57144-BAB1-4DC9-BF22-77119050CFC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -385,9 +422,9 @@ Global
 		{A4797608-A895-4D34-BB3F-4CBCF49894D9} = {32C80154-B1EA-416F-B354-D70112FAD2CC}
 		{427488F0-A065-4C88-B03A-A98C230CADA1} = {32C80154-B1EA-416F-B354-D70112FAD2CC}
 		{C8C6AFFB-01DB-453B-9192-203A17352DB9} = {32C80154-B1EA-416F-B354-D70112FAD2CC}
-		{DD4796D2-A88B-4226-A89A-A88D074F9376} = {2CCABD1D-ECEA-49DD-8E16-0FF6C6963C51}
-		{DB79FA61-2F00-478A-98E8-35EFD20FF425} = {DD4796D2-A88B-4226-A89A-A88D074F9376}
-		{41758072-CEA1-430E-8113-C49BA61BF674} = {DD4796D2-A88B-4226-A89A-A88D074F9376}
+		{D2BA019B-521E-4049-9C64-C2F39186A753} = {2CCABD1D-ECEA-49DD-8E16-0FF6C6963C51}
+		{DB79FA61-2F00-478A-98E8-35EFD20FF425} = {D2BA019B-521E-4049-9C64-C2F39186A753}
+		{41758072-CEA1-430E-8113-C49BA61BF674} = {D2BA019B-521E-4049-9C64-C2F39186A753}
 		{0DA8FE81-5CF7-4BFB-9EC4-DB6D07A53188} = {08BE30B5-0442-4C58-A8CD-665126E93A16}
 		{658C2687-C6A5-409D-8FB3-ED411A64C740} = {0DA8FE81-5CF7-4BFB-9EC4-DB6D07A53188}
 		{B44D8B4E-40EF-4EC2-897B-A44C0B270714} = {658C2687-C6A5-409D-8FB3-ED411A64C740}
@@ -416,6 +453,7 @@ Global
 		{C6701FA7-1B43-422A-83C2-6BF504F289E7} = {D16140CA-B441-4AB3-B65B-FD683E2FC9F0}
 		{43F20E67-6A14-4435-A60B-D3BA2A3E8192} = {D16140CA-B441-4AB3-B65B-FD683E2FC9F0}
 		{8878A974-8E2C-4092-8E61-A86B755C7DD9} = {D16140CA-B441-4AB3-B65B-FD683E2FC9F0}
+		{3C0AE695-CBD7-49E4-9D47-BC4E53567108} = {D16140CA-B441-4AB3-B65B-FD683E2FC9F0}
 		{8960B4D8-6995-44DB-9CCC-75F05B62B5C2} = {D16140CA-B441-4AB3-B65B-FD683E2FC9F0}
 		{C559CBEA-FCA8-4496-AF25-A2264471D6F7} = {8960B4D8-6995-44DB-9CCC-75F05B62B5C2}
 		{F302E264-6C12-4B8C-BE51-CC9CAA89DEA2} = {8960B4D8-6995-44DB-9CCC-75F05B62B5C2}
@@ -424,5 +462,12 @@ Global
 		{886D21F6-EB2C-423A-B0A8-B368E4BCA82E} = {4B8F068F-0EC6-4638-81F3-F670C1301786}
 		{B6D2661A-AF4E-4F92-B60B-8416B041F8C0} = {4B8F068F-0EC6-4638-81F3-F670C1301786}
 		{7A0481E6-9614-446D-B18C-0C25667A379D} = {4B8F068F-0EC6-4638-81F3-F670C1301786}
+		{3C00224D-7546-41A4-B436-4456D6D39284} = {D16140CA-B441-4AB3-B65B-FD683E2FC9F0}
+		{FD5CB8C9-2ABE-4838-88B1-A70C06728117} = {3C00224D-7546-41A4-B436-4456D6D39284}
+		{CA5457F8-2CC5-4B0F-99D9-22DE4CB6ADDD} = {3C00224D-7546-41A4-B436-4456D6D39284}
+		{BDE9362F-2078-4E2C-B48A-AD41E4420C02} = {3C00224D-7546-41A4-B436-4456D6D39284}
+		{1AD095EE-5128-4BDB-B566-3A20D8C2950D} = {3C00224D-7546-41A4-B436-4456D6D39284}
+		{71027E54-45C7-4120-B5FB-2F88001F0EFF} = {3C00224D-7546-41A4-B436-4456D6D39284}
+		{B2C57144-BAB1-4DC9-BF22-77119050CFC2} = {3C00224D-7546-41A4-B436-4456D6D39284}
 	EndGlobalSection
 EndGlobal

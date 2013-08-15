@@ -9,7 +9,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace AddingWorksheetsToNewExcelFile
+namespace ImportingFromArray
 {
     public class Program
     {
@@ -26,17 +26,18 @@ namespace AddingWorksheetsToNewExcelFile
             //Instantiating a Workbook object
             Workbook workbook = new Workbook();
 
-            //Adding a new worksheet to the Workbook object
-            int i = workbook.Worksheets.Add();
+            //Obtaining the reference of the worksheet
+            Worksheet worksheet = workbook.Worksheets[0];
 
-            //Obtaining the reference of the newly added worksheet by passing its sheet index
-            Worksheet worksheet = workbook.Worksheets[i];
+            //Creating an array containing names as string values
+            string[] names = new string[] { "laurence chen", "roman korchagin", "kyle huang" };
 
-            //Setting the name of the newly added worksheet
-            worksheet.Name = "My Worksheet";
+            //Importing the array of names to 1st row and first column vertically
+            worksheet.Cells.ImportArray(names, 0, 0, true);
 
             //Saving the Excel file
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(dataDir + "DataImport.xls");
+
         }
     }
 }

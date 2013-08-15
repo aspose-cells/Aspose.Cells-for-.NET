@@ -691,7 +691,7 @@ A worksheet is represented by the Worksheet class. Worksheet class provides a wi
                       <Description>All of these advanced protection settings in Excel XP are supported in Aspose.Cells. Aspose.Cells provides a class, Workbook that represents an Excel file. Workbook class contains a Worksheets collection that allows to access each worksheet in the Excel file. A worksheet is represented by the Worksheet class.
 
 Worksheet class provides Protection property that is used to apply these advanced protection settings of Excel XP on the worksheets. Protection property is in fact an object of Protection class that encapsulates several boolean properties to disable or enable the restrictions on the worksheets.</Description>
-                      <FolderName>AdvancedProtectionSettingsUsingAspose.Cells</FolderName>
+                      <FolderName>AdvancedProtectionSettings</FolderName>
                       <Order>2</Order>
                       <DocLink>
                         <DisplayName>Advanced Protection Settings since Excel XP</DisplayName>
@@ -750,7 +750,7 @@ Worksheet class provides Protection property that is used to apply these advance
                         </Example>
                         <Example>
                           <Title>Protecting Specific Cells in a Worksheet</Title>
-                          <Description>There might be certain scenarios where you need to lock a few cells only in the worksheet. If you want to lock some specific cells in the worksheet, you have to unlock all the other cells in the worksheet. All the cells in a worksheet are already initialized for locking, you may check this opening any excel file into MS Excel and click the Format | Cells...*to show *Format Cells dialog box and then click the Protection tab and see a check box labeled "Locked" is checked by default.</Description>
+                          <Description>There might be certain scenarios where you need to lock a few cells only in the worksheet. If you want to lock some specific cells in the worksheet, you have to unlock all the other cells in the worksheet. All the cells in a worksheet are already initialized for locking, you may check this opening any excel file into MS Excel and click the Format | Cells..*to show *Format Cells dialog box and then click the Protection tab and see a check box labeled "Locked" is checked by default.</Description>
                           <FolderName>ProtectingSpecificCellsinaWorksheet</FolderName>
                           <Order>2</Order>
                           <DocLink>
@@ -1409,6 +1409,22 @@ The Sort method accepts the following parameters:
                       </OutputFiles>
                       <Type>Console</Type>
                     </Example>
+                    <Example>
+                      <Title>Exporting Data from Worksheets</Title>
+                      <Description>Aspose.Cells not only facilitates its users to import data to worksheets from external data sources but also allow them to export their worksheet data to a DataTable.</Description>
+                      <FolderName>ExportingDataFromWorksheets</FolderName>
+                      <Order>6</Order>
+                      <DocLink>
+                        <DisplayName>Exporting Data from Worksheets</DisplayName>
+                        <Url>Exporting+Data+from+Worksheets</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <Type>Console</Type>
+                    </Example>
                   </Examples>
                   <Folders>
                     <Folder>
@@ -1534,6 +1550,131 @@ The Sort method accepts the following parameters:
                               <Path>..\Data\book1.xls</Path>
                             </DataFile>
                           </InputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                      </Examples>
+                    </Folder>
+                    <Folder>
+                      <Title>Importing Data to Worksheets</Title>
+                      <Description>Aspose.Cells also supports to import data from different data sources. A few of these data sources are listed below:
+
+1: Array
+2: ArrayList
+3: Custom Object
+4: DataTable
+5: DataColumn
+6: DataView</Description>
+                      <FolderName>ImportingDataToWorksheets</FolderName>
+                      <Order>7</Order>
+                      <Examples>
+                        <Example>
+                          <Title>Importing from Array</Title>
+                          <Description>Developers can import data from an array to their worksheets by calling the ImportArray method of the Cells collection. There are many overloaded versions of the ImportArray method but a typical overload takes the following parameters:
+ 
+1: Array, represents the array object whose contents need to import
+2: Row Number, represents the row number of the first cell where the data will be imported
+3: Column Number, represents the column number of the first cell where the data will be imported
+4: Is Vertical, a boolean value that specifies to import data vertically or horizontally</Description>
+                          <FolderName>ImportingFromArray</FolderName>
+                          <Order>1</Order>
+                          <DocLink>
+                            <DisplayName>Importing Data to Worksheets</DisplayName>
+                            <Url>Importing+Data+to+Worksheets</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\DataImport.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Importing from ArrayList</Title>
+                          <Description>Developers can import data from an ArrayList to their worksheets by calling the ImportArrayList method of the Cells collection. ImportArray method takes the following parameters:
+
+1: ArrayList , represents the ArrayList object whose contents need to import
+2: Row Number , represents the row number of the first cell where the data will be imported
+3: Column Number , represents the column number of the first cell where the data will be imported
+4: Is Vertical , a boolean value that specifies to import data vertically or horizontally</Description>
+                          <FolderName>ImportingFromArrayList</FolderName>
+                          <Order>2</Order>
+                          <DocLink>
+                            <DisplayName>Importing Data to Worksheets</DisplayName>
+                            <Url>Importing+Data+to+Worksheets</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\DataImport.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Importing from DataTable</Title>
+                          <Description>Developers can import data from a DataTable to their worksheets by calling the ImportDataTable method of the Cells collection. There are many overloaded versions of the ImportDataTable method but a typical overload takes the following parameters:
+
+1: DataTable , represents the DataTable object whose contents need to import
+2: Is Field Name Shown , specifies that whether the names of the columns of DataTable should be imported to worksheet as a first row or not
+3: Start Cell , represents the name of the start cell (i.e. "A1") from where to import the contents of the DataTable</Description>
+                          <FolderName>ImportingFromDataTable</FolderName>
+                          <Order>3</Order>
+                          <DocLink>
+                            <DisplayName>Importing Data to Worksheets</DisplayName>
+                            <Url>Importing+Data+to+Worksheets</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\DataImport.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Importing from Custom Object</Title>
+                          <Description>Developers can import data from collection of objects to a worksheet using ImportCustomObjects . You can provide a list of columns/properties to the method to display your desired list of objects.</Description>
+                          <FolderName>ImportingFromCustomObject</FolderName>
+                          <Order>4</Order>
+                          <DocLink>
+                            <DisplayName>Importing Data to Worksheets</DisplayName>
+                            <Url>Importing+Data+to+Worksheets</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\ImportedCustomObjects.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Importing from DataColumn</Title>
+                          <Description>We know that a DataTable or DataView object is composed of one or more than one columns, which are represented as objects of DataColumn class. Developers can also import data from any DataColumn of the DataTable or DataView by calling the ImportDataColumn method of the Cells collection.</Description>
+                          <FolderName>ImportingFromDataColumn</FolderName>
+                          <Order>5</Order>
+                          <DocLink>
+                            <DisplayName>Importing Data to Worksheets</DisplayName>
+                            <Url>Importing+Data+to+Worksheets</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\DataImport.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Importing from DataView</Title>
+                          <Description>Developers can import data from a DataView to their worksheets by calling the ImportDataView method of the Cells collection.</Description>
+                          <FolderName>ImportingFromDataView</FolderName>
+                          <Order>6</Order>
+                          <DocLink>
+                            <DisplayName>Importing Data to Worksheets</DisplayName>
+                            <Url>Importing+Data+to+Worksheets</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\DataImport.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
                           <Type>Console</Type>
                         </Example>
                       </Examples>
