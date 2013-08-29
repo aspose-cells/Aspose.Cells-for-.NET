@@ -1248,7 +1248,7 @@ This section includes the following examples:
                     <Example>
                       <Title>Setting the Width of All Columns in a Worksheet</Title>
                       <Description>If developers need to set the same column width for all columns in the worksheet, they can do it by using the StandardWidth property of the Cells collection.</Description>
-                      <FolderName>SettingWidthOfAllColumnsInWorksheet</FolderName>
+                      <FolderName>SettingWidthOfAllColumns</FolderName>
                       <Order>4</Order>
                       <DocLink>
                         <DisplayName>Adjusting Row Height and Column Width</DisplayName>
@@ -1673,6 +1673,250 @@ The Sort method accepts the following parameters:
                           <OutputFiles>
                             <DataFile>
                               <Path>..\Data\DataImport.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                      </Examples>
+                    </Folder>
+                  </Folders>
+                </Folder>
+                <Folder>
+                  <Title>Data Processing Features</Title>
+                  <Description>This Section includes following examples: 
+
+1: Data Filtering and Validation
+2: Creating Subtotals</Description>
+                  <FolderName>DataProcessingFeatures</FolderName>
+                  <Order>2</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Creating Subtotals</Title>
+                      <Description>You can automatically create subtotals for any repeating values in a spreadsheet. Aspose.Cells provides API features that helps you add subtotals to spreadsheets programmatically.</Description>
+                      <FolderName>CreatingSubtotals</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Creating Subtotals</DisplayName>
+                        <Url>Creating+Subtotals</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                  <Folders>
+                    <Folder>
+                      <Title>Data Filtering and Validation</Title>
+                      <Description>Aspose.Cells supports data validation and autofilter features. This section contains examples regarding how to implement these feature using  Aspose.Cells.
+
+1: Autofilter Data
+2: Whole Number Data Validation
+3: Decimal Data Validation
+4: List Data Validation
+5: Date Data Validation
+6: Time Data Validation
+7: Text Length Data Validation</Description>
+                      <FolderName>DataFilteringAndValidation</FolderName>
+                      <Order>1</Order>
+                      <Examples>
+                        <Example>
+                          <Title>Autofilter Data</Title>
+                          <Description>To create an autofilter, use the AutoFilter property of the Worksheet class. The AutoFilter property is an object of the AutoFilter class, which provides the Range property for specifying the range of cells that make up a heading row. An autofilter is applied to the range of cells that is the heading row.</Description>
+                          <FolderName>AutofilterData</FolderName>
+                          <Order>1</Order>
+                          <DocLink>
+                            <DisplayName>Data Filtering and Validation</DisplayName>
+                            <Url>Data+Filtering+and+Validation</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\output.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Whole Number Data Validation</Title>
+                          <Description>With this type of validation, users can enter only whole numbers within a specified range of cells into the validated cells. Following example shows how to implement this validation using Aspose.Cells.</Description>
+                          <FolderName>WholeNumberDataValidation</FolderName>
+                          <Order>2</Order>
+                          <DocLink>
+                            <DisplayName>Data Filtering and Validation</DisplayName>
+                            <Url>Data+Filtering+and+Validation</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\output.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Decimal Data Validation</Title>
+                          <Description>With this type of validation, the user can enter decimal numbers into the validated cells. Following example shows how to implement this validation using Aspose.Cells.</Description>
+                          <FolderName>DecimalDataValidation</FolderName>
+                          <Order>3</Order>
+                          <DocLink>
+                            <DisplayName>Data Filtering and Validation</DisplayName>
+                            <Url>Data+Filtering+and+Validation</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\output.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>List Data Validation</Title>
+                          <Description>The type of validation allows the user enter values from a drop down list. It provides a list, a series of rows that contains related data. Following is the example, which shows how to implment List ValidationType using Aspose.Cells.</Description>
+                          <FolderName>ListDataValidation</FolderName>
+                          <Order>4</Order>
+                          <DocLink>
+                            <DisplayName>Data Filtering and Validation</DisplayName>
+                            <Url>http://www.aspose.com/docs/display/cellsjava/Data+Filtering+and+Validation</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\output.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Date Data Validation</Title>
+                          <Description>With this type of validation, users enter date values within a specified range, or meeting specific criteria, into the validated cells. In this example, we restricted users to enter dates between 1970 to 1999 using Aspose.Cells.</Description>
+                          <FolderName>DateDataValidation</FolderName>
+                          <Order>5</Order>
+                          <DocLink>
+                            <DisplayName>Data Filtering and Validation</DisplayName>
+                            <Url>Data+Filtering+and+Validation</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\output.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Time Data Validation</Title>
+                          <Description>With this type of validation, you can allow the user enter Time values into the related cells within a specified range or criteria. In this example, the user is restricted to enter Time values between 09:00 to 11:30 AM only using Aspose.Cells.</Description>
+                          <FolderName>TimeDataValidation</FolderName>
+                          <Order>6</Order>
+                          <DocLink>
+                            <DisplayName>Data Filtering and Validation</DisplayName>
+                            <Url>Data+Filtering+and+Validation</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\output.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Text Length Data Validation</Title>
+                          <Description>With this type of validation, users can enter text values of a specified length into the validated cells. In this example, the user is restricted to enter string values with no more than 5 characters. The validation area is the B1 cell.</Description>
+                          <FolderName>TextLengthDataValidation</FolderName>
+                          <Order>7</Order>
+                          <DocLink>
+                            <DisplayName>Data Filtering and Validation</DisplayName>
+                            <Url>Data+Filtering+and+Validation</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\output.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                      </Examples>
+                    </Folder>
+                  </Folders>
+                </Folder>
+                <Folder>
+                  <Title>Add on Features</Title>
+                  <Description>This Section contains following examples:
+
+1: Adding Hyperlinks to Link Data
+2: Merging UnMerging Cells in the Worksheet
+3: Named Ranges</Description>
+                  <FolderName>AddOnFeatures</FolderName>
+                  <Order>3</Order>
+                  <Folders>
+                    <Folder>
+                      <Title>Adding Hyperlinks to Link Data</Title>
+                      <Description>There are 3 kinds of hyperlinks which can be added into a cell using Aspose.Cells:
+ 
+1: Adding link to a URL
+2: Adding a link to another cell in the same file
+3: Adding a link to an external file</Description>
+                      <FolderName>AddingHyperlinksToLinkData</FolderName>
+                      <Order>1</Order>
+                      <Examples>
+                        <Example>
+                          <Title>Adding link to a URL</Title>
+                          <Description>A Worksheet class contains a Hyperlinks collection. Each item in the Hyperlinks collection represents a Hyperlink. Developers can add hyperlinks to URLs by calling the Add method of Hyperlinks collection.</Description>
+                          <FolderName>AddingLinkToURL</FolderName>
+                          <Order>1</Order>
+                          <DocLink>
+                            <DisplayName>Adding Hyperlinks to Link Data</DisplayName>
+                            <Url>Adding+Hyperlinks+to+Link+Data</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\output.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Adding a link to another cell in the same file</Title>
+                          <Description>Developers can add hyperlinks to other cells of the same Excel file by calling the same Add method of Hyperlinks collection. Add method works for both internal and external hyperlinks.</Description>
+                          <FolderName>AddingLinkToAnotherCell</FolderName>
+                          <Order>2</Order>
+                          <DocLink>
+                            <DisplayName>Adding Hyperlinks to Link Data</DisplayName>
+                            <Url>Adding+Hyperlinks+to+Link+Data</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\output.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Adding a link to an external file</Title>
+                          <Description>Developers can add hyperlinks to external Excel files by calling the Add method of Hyperlinks collection.</Description>
+                          <FolderName>AddingLinkToExternalFile</FolderName>
+                          <Order>3</Order>
+                          <DocLink>
+                            <DisplayName>Adding Hyperlinks to Link Data</DisplayName>
+                            <Url>Adding+Hyperlinks+to+Link+Data</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\output.xls</Path>
                             </DataFile>
                           </OutputFiles>
                           <Type>Console</Type>

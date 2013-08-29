@@ -64,9 +64,30 @@ namespace ImportingFromCustomObject
 
     class Person
     {
-        // Auto-implemented properties. 
-        public int Age { get; set; }
-        public string Name { get; set; }
+        int _age;
+        string _name;
+        public int Age
+        {          
+            get
+            {
+                return _age;
+            }
+            set
+            {
+                _age = value;
+            }
+        }
+        public string Name 
+        { 
+            get
+            {
+                return _name;  
+            }
+            set 
+            {
+                _name = value;
+            }
+        }
 
         public Person(string name, int age)
         {

@@ -126,7 +126,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingHeightOfAllRowsInWor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingWidthOfColumn", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\AdjustingRowHeightAndColumnWidth\SettingWidthOfColumn\VisualBasic\SettingWidthOfColumn.vbproj", "{EAF0EFBD-3FE2-4473-9264-082D78EBD5B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingWidthOfAllColumnsInWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\AdjustingRowHeightAndColumnWidth\SettingWidthOfAllColumnsInWorksheet\VisualBasic\SettingWidthOfAllColumnsInWorksheet.vbproj", "{8F83D6B6-92D7-4572-A80C-8E50A3F2F9E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingWidthOfAllColumns", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\AdjustingRowHeightAndColumnWidth\SettingWidthOfAllColumns\VisualBasic\SettingWidthOfAllColumnsInWorksheet.vbproj", "{8F83D6B6-92D7-4572-A80C-8E50A3F2F9E7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CopyingRowsAndColumns", "CopyingRowsAndColumns", "{D0D330F6-10B0-4B61-9CE8-456AE943EB03}"
 EndProject
@@ -143,6 +143,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetrievingDataFromCells", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\RetrievingDataFromCells\VisualBasic\RetrievingDataFromCells.vbproj", "{43F20E67-6A14-4435-A60B-D3BA2A3E8192}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSorting", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\DataSorting\VisualBasic\DataSorting.vbproj", "{8878A974-8E2C-4092-8E61-A86B755C7DD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportingDataFromWorksheets", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ExportingDataFromWorksheets\VisualBasic\ExportingDataFromWorksheets.vbproj", "{3C0AE695-CBD7-49E4-9D47-BC4E53567108}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccessingCellsofWorksheet", "AccessingCellsofWorksheet", "{8960B4D8-6995-44DB-9CCC-75F05B62B5C2}"
 EndProject
@@ -173,6 +175,36 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportingFromCustomObject", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ImportingDataToWorksheets\ImportingFromCustomObject\VisualBasic\ImportingFromCustomObject.vbproj", "{1AD095EE-5128-4BDB-B566-3A20D8C2950D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportingFromDataColumn", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ImportingDataToWorksheets\ImportingFromDataColumn\VisualBasic\ImportingFromDataColumn.vbproj", "{71027E54-45C7-4120-B5FB-2F88001F0EFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportingFromDataView", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ImportingDataToWorksheets\ImportingFromDataView\VisualBasic\ImportingFromDataView.vbproj", "{B2C57144-BAB1-4DC9-BF22-77119050CFC2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataProcessingFeatures", "DataProcessingFeatures", "{2F5D519A-EEA2-47DB-BAAA-667E4EAC5018}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingSubtotals", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\CreatingSubtotals\VisualBasic\CreatingSubtotals.vbproj", "{BF64BCCC-E070-4FE8-A51B-672A203DD42D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataFilteringAndValidation", "DataFilteringAndValidation", "{FBBFF7BD-557E-4A5A-A4D7-7F967582B47A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutofilterData", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\DataFilteringAndValidation\AutofilterData\VisualBasic\AutofilterData.vbproj", "{93FE26B4-119C-4EB6-815D-649C5EE49111}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WholeNumberDataValidation", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\DataFilteringAndValidation\WholeNumberDataValidation\VisualBasic\WholeNumberDataValidation.vbproj", "{8487AC16-1DDA-4B0C-B6F7-9B8C751A96A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecimalDataValidation", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\DataFilteringAndValidation\DecimalDataValidation\VisualBasic\DecimalDataValidation.vbproj", "{739A4D58-C23D-49BF-8CF9-30DC5F85F9E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListDataValidation", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\DataFilteringAndValidation\ListDataValidation\VisualBasic\ListDataValidation.vbproj", "{90496B18-CA11-4879-959D-7A8896D236EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateDataValidation", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\DataFilteringAndValidation\DateDataValidation\VisualBasic\DateDataValidation.vbproj", "{6B2F6A60-B959-46E0-BD9A-CBAF675CC1F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeDataValidation", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\DataFilteringAndValidation\TimeDataValidation\VisualBasic\TimeDataValidation.vbproj", "{4F16A4A5-8E19-4469-9FB2-F54BD233C7AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextLengthDataValidation", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\DataFilteringAndValidation\TextLengthDataValidation\VisualBasic\TextLengthDataValidation.vbproj", "{33BF14E3-0C65-4627-BCA7-62551D43D864}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AddOnFeatures", "AddOnFeatures", "{3D8066B0-ADA7-4C83-8DBD-3E048E7A4515}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AddingHyperlinksToLinkData", "AddingHyperlinksToLinkData", "{9703CCBC-F7A7-45F0-AA7A-26C4ABEA6B3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingLinkToURL", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\AddingHyperlinksToLinkData\AddingLinkToURL\VisualBasic\AddingLinkToURL.vbproj", "{09C38A0B-F211-400E-BB21-92DECC96CD5C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingLinkToAnotherCell", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\AddingHyperlinksToLinkData\AddingLinkToAnotherCell\VisualBasic\AddingLinkToAnotherCell.vbproj", "{B83BDB66-8BD8-478B-BA5C-C11ED40C1C1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -375,6 +407,39 @@ Global
 		{B2C57144-BAB1-4DC9-BF22-77119050CFC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B2C57144-BAB1-4DC9-BF22-77119050CFC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B2C57144-BAB1-4DC9-BF22-77119050CFC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF64BCCC-E070-4FE8-A51B-672A203DD42D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF64BCCC-E070-4FE8-A51B-672A203DD42D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF64BCCC-E070-4FE8-A51B-672A203DD42D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93FE26B4-119C-4EB6-815D-649C5EE49111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93FE26B4-119C-4EB6-815D-649C5EE49111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93FE26B4-119C-4EB6-815D-649C5EE49111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8487AC16-1DDA-4B0C-B6F7-9B8C751A96A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8487AC16-1DDA-4B0C-B6F7-9B8C751A96A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8487AC16-1DDA-4B0C-B6F7-9B8C751A96A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{739A4D58-C23D-49BF-8CF9-30DC5F85F9E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{739A4D58-C23D-49BF-8CF9-30DC5F85F9E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{739A4D58-C23D-49BF-8CF9-30DC5F85F9E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90496B18-CA11-4879-959D-7A8896D236EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90496B18-CA11-4879-959D-7A8896D236EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90496B18-CA11-4879-959D-7A8896D236EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B2F6A60-B959-46E0-BD9A-CBAF675CC1F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B2F6A60-B959-46E0-BD9A-CBAF675CC1F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B2F6A60-B959-46E0-BD9A-CBAF675CC1F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F16A4A5-8E19-4469-9FB2-F54BD233C7AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F16A4A5-8E19-4469-9FB2-F54BD233C7AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F16A4A5-8E19-4469-9FB2-F54BD233C7AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33BF14E3-0C65-4627-BCA7-62551D43D864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33BF14E3-0C65-4627-BCA7-62551D43D864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33BF14E3-0C65-4627-BCA7-62551D43D864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C38A0B-F211-400E-BB21-92DECC96CD5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C38A0B-F211-400E-BB21-92DECC96CD5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C38A0B-F211-400E-BB21-92DECC96CD5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B83BDB66-8BD8-478B-BA5C-C11ED40C1C1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B83BDB66-8BD8-478B-BA5C-C11ED40C1C1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B83BDB66-8BD8-478B-BA5C-C11ED40C1C1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D1EBC4E-3562-40A8-8E21-04B3818456CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D1EBC4E-3562-40A8-8E21-04B3818456CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D1EBC4E-3562-40A8-8E21-04B3818456CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -467,5 +532,20 @@ Global
 		{1AD095EE-5128-4BDB-B566-3A20D8C2950D} = {3C00224D-7546-41A4-B436-4456D6D39284}
 		{71027E54-45C7-4120-B5FB-2F88001F0EFF} = {3C00224D-7546-41A4-B436-4456D6D39284}
 		{B2C57144-BAB1-4DC9-BF22-77119050CFC2} = {3C00224D-7546-41A4-B436-4456D6D39284}
+		{2F5D519A-EEA2-47DB-BAAA-667E4EAC5018} = {61C49969-80F3-447B-A7C9-AA10A827F701}
+		{BF64BCCC-E070-4FE8-A51B-672A203DD42D} = {2F5D519A-EEA2-47DB-BAAA-667E4EAC5018}
+		{FBBFF7BD-557E-4A5A-A4D7-7F967582B47A} = {2F5D519A-EEA2-47DB-BAAA-667E4EAC5018}
+		{93FE26B4-119C-4EB6-815D-649C5EE49111} = {FBBFF7BD-557E-4A5A-A4D7-7F967582B47A}
+		{8487AC16-1DDA-4B0C-B6F7-9B8C751A96A7} = {FBBFF7BD-557E-4A5A-A4D7-7F967582B47A}
+		{739A4D58-C23D-49BF-8CF9-30DC5F85F9E3} = {FBBFF7BD-557E-4A5A-A4D7-7F967582B47A}
+		{90496B18-CA11-4879-959D-7A8896D236EA} = {FBBFF7BD-557E-4A5A-A4D7-7F967582B47A}
+		{6B2F6A60-B959-46E0-BD9A-CBAF675CC1F7} = {FBBFF7BD-557E-4A5A-A4D7-7F967582B47A}
+		{4F16A4A5-8E19-4469-9FB2-F54BD233C7AB} = {FBBFF7BD-557E-4A5A-A4D7-7F967582B47A}
+		{33BF14E3-0C65-4627-BCA7-62551D43D864} = {FBBFF7BD-557E-4A5A-A4D7-7F967582B47A}
+		{3D8066B0-ADA7-4C83-8DBD-3E048E7A4515} = {61C49969-80F3-447B-A7C9-AA10A827F701}
+		{9703CCBC-F7A7-45F0-AA7A-26C4ABEA6B3E} = {3D8066B0-ADA7-4C83-8DBD-3E048E7A4515}
+		{09C38A0B-F211-400E-BB21-92DECC96CD5C} = {9703CCBC-F7A7-45F0-AA7A-26C4ABEA6B3E}
+		{B83BDB66-8BD8-478B-BA5C-C11ED40C1C1A} = {9703CCBC-F7A7-45F0-AA7A-26C4ABEA6B3E}
+		{2D1EBC4E-3562-40A8-8E21-04B3818456CF} = {9703CCBC-F7A7-45F0-AA7A-26C4ABEA6B3E}
 	EndGlobalSection
 EndGlobal
