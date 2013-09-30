@@ -1923,6 +1923,51 @@ The Sort method accepts the following parameters:
                         </Example>
                       </Examples>
                     </Folder>
+                    <Folder>
+                      <Title>Merging UnMerging Cells in the Worksheet</Title>
+                      <Description>Sometimes, while working with worksheets, you don't always want the same number of cells in every row or column. You might want to put a title in a single cell that spans the top of your worksheet. You might be creating an invoice, and want a fewer columns for the total. When you want to make one cell from two or more cells, you merge the cells. Aspose.Cells has the ability to merge the cells in the worksheet. You may unmerge the merged cells too. A Merged Cell is basically a single cell that is created by combining two or more selected cells. The cell reference for a merged cell is the upper-left cell in the original selected range. Mind you, if there is data in other cells, the data will be deleted.</Description>
+                      <FolderName>MergingUnMergingCells</FolderName>
+                      <Order>2</Order>
+                      <Examples>
+                        <Example>
+                          <Title>Merging Cells in the Worksheet</Title>
+                          <Description>Aspose.Cells exposes some functional API in this regard. Aspose.Cells.Cells Class has some useful methods for the task. For example, the method Merge() merges the cells into a single cell within a specified range of the cells.</Description>
+                          <FolderName>MergingCellsInWorksheet.</FolderName>
+                          <Order>1</Order>
+                          <DocLink>
+                            <DisplayName>Merging UnMerging Cells in the Worksheet</DisplayName>
+                            <Url>Merging+++UnMerging+Cells+in+the+Worksheet</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\..\MergingCellsInWorksheet\Data\mergingcells.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Un-Merging the Merged Cells</Title>
+                          <Description>The class Aspose.Cells.Cells has another method named UnMerge() that splits the cells into their original state in the worksheet. The method unmerges the cells using the cells ref. in the merged cells range.</Description>
+                          <FolderName>UnMergingtheMergedCells</FolderName>
+                          <Order>2</Order>
+                          <DocLink>
+                            <DisplayName>Merging UnMerging Cells in the Worksheet</DisplayName>
+                            <Url>Merging+++UnMerging+Cells+in+the+Worksheet</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\mergingcells.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\unmergingcells.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                      </Examples>
+                    </Folder>
                   </Folders>
                 </Folder>
               </Folders>

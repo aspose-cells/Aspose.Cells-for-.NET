@@ -206,6 +206,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingLinkToURL", "Programm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingLinkToAnotherCell", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\AddingHyperlinksToLinkData\AddingLinkToAnotherCell\VisualBasic\AddingLinkToAnotherCell.vbproj", "{B83BDB66-8BD8-478B-BA5C-C11ED40C1C1A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingLinkToExternalFile", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\AddingHyperlinksToLinkData\AddingLinkToExternalFile\VisualBasic\AddingLinkToExternalFile.vbproj", "{2D1EBC4E-3562-40A8-8E21-04B3818456CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MergingUnMergingCells", "MergingUnMergingCells", "{FCFB4667-1C03-417F-B79D-A5829F92FFA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergingCellsInWorksheet.", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\MergingUnMergingCells\MergingCellsInWorksheet\VisualBasic\MergingCellsInWorksheet..vbproj", "{95934E17-B339-4E87-A5DE-1E73B4843C0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnMergingtheMergedCells", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\MergingUnMergingCells\UnMergingtheMergedCells\VisualBasic\Un-MergingtheMergedCells.vbproj", "{A4DA96E5-31CA-488E-9194-287F70F9CA6D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -440,6 +448,12 @@ Global
 		{2D1EBC4E-3562-40A8-8E21-04B3818456CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2D1EBC4E-3562-40A8-8E21-04B3818456CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D1EBC4E-3562-40A8-8E21-04B3818456CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95934E17-B339-4E87-A5DE-1E73B4843C0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95934E17-B339-4E87-A5DE-1E73B4843C0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95934E17-B339-4E87-A5DE-1E73B4843C0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4DA96E5-31CA-488E-9194-287F70F9CA6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4DA96E5-31CA-488E-9194-287F70F9CA6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4DA96E5-31CA-488E-9194-287F70F9CA6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -547,5 +561,8 @@ Global
 		{09C38A0B-F211-400E-BB21-92DECC96CD5C} = {9703CCBC-F7A7-45F0-AA7A-26C4ABEA6B3E}
 		{B83BDB66-8BD8-478B-BA5C-C11ED40C1C1A} = {9703CCBC-F7A7-45F0-AA7A-26C4ABEA6B3E}
 		{2D1EBC4E-3562-40A8-8E21-04B3818456CF} = {9703CCBC-F7A7-45F0-AA7A-26C4ABEA6B3E}
+		{FCFB4667-1C03-417F-B79D-A5829F92FFA8} = {3D8066B0-ADA7-4C83-8DBD-3E048E7A4515}
+		{95934E17-B339-4E87-A5DE-1E73B4843C0B} = {FCFB4667-1C03-417F-B79D-A5829F92FFA8}
+		{A4DA96E5-31CA-488E-9194-287F70F9CA6D} = {FCFB4667-1C03-417F-B79D-A5829F92FFA8}
 	EndGlobalSection
 EndGlobal
