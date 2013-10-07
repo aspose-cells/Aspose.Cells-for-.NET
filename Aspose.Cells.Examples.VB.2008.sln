@@ -214,6 +214,34 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergingCellsInWorksheet.", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnMergingtheMergedCells", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\MergingUnMergingCells\UnMergingtheMergedCells\VisualBasic\Un-MergingtheMergedCells.vbproj", "{A4DA96E5-31CA-488E-9194-287F70F9CA6D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnMergingtheMergedCells", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\MergingUnMergingCells\UnMergingtheMergedCells\VisualBasic\UnMergingtheMergedCells.vbproj", "{A4DA96E5-31CA-488E-9194-287F70F9CA6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NamedRanges", "NamedRanges", "{EFA1D880-3579-4620-BA80-CE6AD19BD250}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateNamedRangeofCells", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\CreateNamedRangeofCells\VisualBasic\CreateNamedRangeofCells.vbproj", "{7463307E-9026-4B56-8328-C03827F3EA9B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessAllNamedRanges", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\AccessAllNamedRanges\VisualBasic\AccessAllNamedRanges.vbproj", "{56329088-9303-4919-8FD8-02B78B500C4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessSpecificNamedRange", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\AccessSpecificNamedRange\VisualBasic\AccessSpecificNamedRange.vbproj", "{3527F628-8E95-42EB-8938-99B96286DBAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentifyCellsinNamedRange", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\IdentifyCellsinNamedRange\VisualBasic\IdentifyCellsinNamedRange.vbproj", "{A7501DF5-7417-48BD-8BCC-8DEA60529B7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputDataInCellsInRange", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\InputDataInCellsInRange\VisualBasic\InputDataInCellsInRange.vbproj", "{2A397F5B-B3E5-44D8-BC6C-766DDA54023F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormatRanges1", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\FormatRanges1\VisualBasic\FormatRanges1.vbproj", "{1B64D3EC-EA9D-4967-A793-17CEA9D17A9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormatRanges2", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\FormatRanges2\VisualBasic\FormatRanges2.vbproj", "{F01C927E-4CF0-4DF1-AEAA-85E9CBDECD45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyNamedRanges", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\CopyNamedRanges\VisualBasic\CopyNamedRanges.vbproj", "{628BEC51-E5EA-4B7C-959C-02CCD862DE59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeCellsInNamedRange", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\MergeCellsInNamedRange\VisualBasic\MergeCellsInNamedRange.vbproj", "{802D087F-F229-4A28-AC8C-225CF0A3AD46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveANamedRange", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\RemoveANamedRange\VisualBasic\RemoveANamedRange.vbproj", "{789F6FF9-6A43-4E9C-9BB0-89E14343AE91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenameNamedRange", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\RenameNamedRange\VisualBasic\RenameNamedRange.vbproj", "{09DAA9F8-F845-4A06-AE6A-70B7AC202419}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntersectionofRanges", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\IntersectionofRanges\VisualBasic\IntersectionofRanges.vbproj", "{79FC02A2-1270-4646-B0A2-9ABB60AB1532}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -454,6 +482,45 @@ Global
 		{A4DA96E5-31CA-488E-9194-287F70F9CA6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A4DA96E5-31CA-488E-9194-287F70F9CA6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4DA96E5-31CA-488E-9194-287F70F9CA6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7463307E-9026-4B56-8328-C03827F3EA9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7463307E-9026-4B56-8328-C03827F3EA9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7463307E-9026-4B56-8328-C03827F3EA9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56329088-9303-4919-8FD8-02B78B500C4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56329088-9303-4919-8FD8-02B78B500C4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56329088-9303-4919-8FD8-02B78B500C4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3527F628-8E95-42EB-8938-99B96286DBAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3527F628-8E95-42EB-8938-99B96286DBAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3527F628-8E95-42EB-8938-99B96286DBAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7501DF5-7417-48BD-8BCC-8DEA60529B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7501DF5-7417-48BD-8BCC-8DEA60529B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7501DF5-7417-48BD-8BCC-8DEA60529B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A397F5B-B3E5-44D8-BC6C-766DDA54023F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A397F5B-B3E5-44D8-BC6C-766DDA54023F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A397F5B-B3E5-44D8-BC6C-766DDA54023F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B64D3EC-EA9D-4967-A793-17CEA9D17A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B64D3EC-EA9D-4967-A793-17CEA9D17A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B64D3EC-EA9D-4967-A793-17CEA9D17A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F01C927E-4CF0-4DF1-AEAA-85E9CBDECD45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F01C927E-4CF0-4DF1-AEAA-85E9CBDECD45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F01C927E-4CF0-4DF1-AEAA-85E9CBDECD45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{628BEC51-E5EA-4B7C-959C-02CCD862DE59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{628BEC51-E5EA-4B7C-959C-02CCD862DE59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{628BEC51-E5EA-4B7C-959C-02CCD862DE59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{802D087F-F229-4A28-AC8C-225CF0A3AD46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{802D087F-F229-4A28-AC8C-225CF0A3AD46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{802D087F-F229-4A28-AC8C-225CF0A3AD46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{789F6FF9-6A43-4E9C-9BB0-89E14343AE91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{789F6FF9-6A43-4E9C-9BB0-89E14343AE91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{789F6FF9-6A43-4E9C-9BB0-89E14343AE91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09DAA9F8-F845-4A06-AE6A-70B7AC202419}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09DAA9F8-F845-4A06-AE6A-70B7AC202419}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09DAA9F8-F845-4A06-AE6A-70B7AC202419}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79FC02A2-1270-4646-B0A2-9ABB60AB1532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79FC02A2-1270-4646-B0A2-9ABB60AB1532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79FC02A2-1270-4646-B0A2-9ABB60AB1532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3265E481-275D-4CFB-8679-71394601A42E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3265E481-275D-4CFB-8679-71394601A42E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3265E481-275D-4CFB-8679-71394601A42E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -564,5 +631,19 @@ Global
 		{FCFB4667-1C03-417F-B79D-A5829F92FFA8} = {3D8066B0-ADA7-4C83-8DBD-3E048E7A4515}
 		{95934E17-B339-4E87-A5DE-1E73B4843C0B} = {FCFB4667-1C03-417F-B79D-A5829F92FFA8}
 		{A4DA96E5-31CA-488E-9194-287F70F9CA6D} = {FCFB4667-1C03-417F-B79D-A5829F92FFA8}
+		{EFA1D880-3579-4620-BA80-CE6AD19BD250} = {3D8066B0-ADA7-4C83-8DBD-3E048E7A4515}
+		{7463307E-9026-4B56-8328-C03827F3EA9B} = {EFA1D880-3579-4620-BA80-CE6AD19BD250}
+		{56329088-9303-4919-8FD8-02B78B500C4C} = {EFA1D880-3579-4620-BA80-CE6AD19BD250}
+		{3527F628-8E95-42EB-8938-99B96286DBAE} = {EFA1D880-3579-4620-BA80-CE6AD19BD250}
+		{A7501DF5-7417-48BD-8BCC-8DEA60529B7F} = {EFA1D880-3579-4620-BA80-CE6AD19BD250}
+		{2A397F5B-B3E5-44D8-BC6C-766DDA54023F} = {EFA1D880-3579-4620-BA80-CE6AD19BD250}
+		{1B64D3EC-EA9D-4967-A793-17CEA9D17A9C} = {EFA1D880-3579-4620-BA80-CE6AD19BD250}
+		{F01C927E-4CF0-4DF1-AEAA-85E9CBDECD45} = {EFA1D880-3579-4620-BA80-CE6AD19BD250}
+		{628BEC51-E5EA-4B7C-959C-02CCD862DE59} = {EFA1D880-3579-4620-BA80-CE6AD19BD250}
+		{802D087F-F229-4A28-AC8C-225CF0A3AD46} = {EFA1D880-3579-4620-BA80-CE6AD19BD250}
+		{789F6FF9-6A43-4E9C-9BB0-89E14343AE91} = {EFA1D880-3579-4620-BA80-CE6AD19BD250}
+		{09DAA9F8-F845-4A06-AE6A-70B7AC202419} = {EFA1D880-3579-4620-BA80-CE6AD19BD250}
+		{79FC02A2-1270-4646-B0A2-9ABB60AB1532} = {EFA1D880-3579-4620-BA80-CE6AD19BD250}
+		{3265E481-275D-4CFB-8679-71394601A42E} = {EFA1D880-3579-4620-BA80-CE6AD19BD250}
 	EndGlobalSection
 EndGlobal

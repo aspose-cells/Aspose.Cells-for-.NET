@@ -1968,6 +1968,251 @@ The Sort method accepts the following parameters:
                         </Example>
                       </Examples>
                     </Folder>
+                    <Folder>
+                      <Title>Named Ranges</Title>
+                      <Description>Normally, you use the labels of columns and rows on a worksheet to refer to the cells within those columns and rows. But you can create descriptive names to represent cells, ranges of cells, formulas, or constant values. The word Name may refer to a string of characters that represents a cell, range of cells, formula, or constant value. For example, Use easy-to-understand names, such as Products, to refer to hard to understand ranges, such as Sales!C20:C30 to represent a cell, range of cells, formula, or constant value. Labels can be used in formulas that refer to data on the same worksheet; if you want to represent a range on another worksheet, you may use a name. Named Ranges are among the most powerful features of Microsoft Excel, especially when used as the source range for List Controls, Pivot Tables or Charts etc. Users may assign a name to a named range so that this range of cells can be referred with its name.</Description>
+                      <FolderName>NamedRanges</FolderName>
+                      <Order>3</Order>
+                      <Examples>
+                        <Example>
+                          <Title>Create Named Range of Cells</Title>
+                          <Description>Aspose.Cells provides a class Workbook that represents an Excel file. Workbook class contains a Worksheets collection that allows to access each worksheet in the Excel file. A worksheet is represented by the Worksheet class. Worksheet class provides a Cells collection. Developers can create a named range by calling the overloaded CreateRange method of the Cell collection.</Description>
+                          <FolderName>CreateNamedRangeofCells</FolderName>
+                          <Order>1</Order>
+                          <DocLink>
+                            <DisplayName>Named Ranges</DisplayName>
+                            <Url>Named+Ranges</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\Book1.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\output.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Access All the Named Ranges in the Worksheets</Title>
+                          <Description>Developers can call GetNamedRanges method of the Worksheets collection to get all named ranges in a spreadsheet. GetNamedRanges method returns an array of all names ranges in the Worksheets collection.</Description>
+                          <FolderName>AccessAllNamedRanges</FolderName>
+                          <Order>2</Order>
+                          <DocLink>
+                            <DisplayName>Named Ranges</DisplayName>
+                            <Url>Named+Ranges</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Access a Specific Named Range</Title>
+                          <Description>Developers can call GetRangeByName method of the Worksheets collection to get a range by the specified name. A typical GetRangeByName method takes the name of the named range and returns the specified named range as an instance of Range class.</Description>
+                          <FolderName>AccessSpecificNamedRange</FolderName>
+                          <Order>3</Order>
+                          <DocLink>
+                            <DisplayName>Named Ranges</DisplayName>
+                            <Url>Named+Ranges</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Identify Cells in the Named Range</Title>
+                          <Description>Aspose.Cells provides you some useful Properties of Range class to access the individual cells in the range. You may use the following properties to identify the cells in the range:
+
+1: FirstRow returns the index of the first row in the named range.
+2: FirstColumn returns the index of the first column in the named range.
+3: RowCount returns the total number of rows in the named range.
+4: ColumnCount returns the total number of columns in the named range.</Description>
+                          <FolderName>IdentifyCellsinNamedRange</FolderName>
+                          <Order>4</Order>
+                          <DocLink>
+                            <DisplayName>Named Ranges</DisplayName>
+                            <Url>Named+Ranges</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Input Data into the Cells in the Named Range</Title>
+                          <Description>You can insert data into the individual cells of a range following the pattern. i.e. Range[row,column]</Description>
+                          <FolderName>InputDataInCellsInRange</FolderName>
+                          <Order>5</Order>
+                          <DocLink>
+                            <DisplayName>Named Ranges</DisplayName>
+                            <Url>Named+Ranges</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\rangecells.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Format Ranges - Background Color and Font</Title>
+                          <Description>If you want to apply some formattings, you'd better define a Style object to specify the style settings and apply it to the Range object. The following example shows how to set solid fill color (shading color) with font settings to a range.</Description>
+                          <FolderName>FormatRanges1</FolderName>
+                          <Order>6</Order>
+                          <DocLink>
+                            <DisplayName>Named Ranges</DisplayName>
+                            <Url>Named+Ranges</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\rangestyles.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Format Ranges - Adding Borders</Title>
+                          <Description>Ometimes, you may need to add borders to a range of cells rather than just a single cell. Range object provides a SetOutlineBorder method that takes the following parameters to add a border to the range of cells:
+
+- Border Type, represents the type of border, which can be selected using BorderType enumeration
+- Line Style, represents the line style of border, which can be selected using CellBorderType enumeration
+- Color, represents the line color of border, which can be selected using Color enumeration</Description>
+                          <FolderName>FormatRanges2</FolderName>
+                          <Order>7</Order>
+                          <DocLink>
+                            <DisplayName>Named Ranges</DisplayName>
+                            <Url>Named+Ranges</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Copy Named Ranges</Title>
+                          <Description>Aspose.Cells provides Range.Copy() method to copy a range of cells with formattings into another range.The following example shows how to copy a source range of cells to another named range.</Description>
+                          <FolderName>CopyNamedRanges</FolderName>
+                          <Order>8</Order>
+                          <DocLink>
+                            <DisplayName>Named Ranges</DisplayName>
+                            <Url>Named+Ranges</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\copyranges.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Merge Cells in the Named Range</Title>
+                          <Description>Aspose.Cells provides Range.Merge() method to merge the cells in the range.The following example shows how to merge the individual cells of a named range.</Description>
+                          <FolderName>MergeCellsInNamedRange</FolderName>
+                          <Order>9</Order>
+                          <DocLink>
+                            <DisplayName>Named Ranges</DisplayName>
+                            <Url>Named+Ranges</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\mergingrange.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Remove a Named Range</Title>
+                          <Description>Aspose.Cells provides NameCollection.RemoveAt() method to erase the name of the range. To clear the contents of the range you may utilize Cells.ClearRange() method.The following example shows how to remove a named range with its contents.</Description>
+                          <FolderName>RemoveANamedRange</FolderName>
+                          <Order>10</Order>
+                          <DocLink>
+                            <DisplayName>Named Ranges</DisplayName>
+                            <Url>Named+Ranges</Url>
+                          </DocLink>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\copyranges.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Rename a Named Range</Title>
+                          <Description>Aspose.Cells allows you to rename a named range for your need. You may get the named range and rename it by using Name.Text attribute.The following example shows how to rename a named range.</Description>
+                          <FolderName>RenameNamedRange</FolderName>
+                          <Order>11</Order>
+                          <DocLink>
+                            <DisplayName>Named Ranges</DisplayName>
+                            <Url>Named+Ranges</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\RenamingRange.xlsx</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Intersection of Ranges</Title>
+                          <Description>Aspose.Cells provides Range.Intersect method to intersect two ranges, the method returns a Range object. To check whether a range intersects other range, you may use Range.IsIntersect method that returns a Boolean value.The following example shows how to intersect the ranges.</Description>
+                          <FolderName>IntersectionofRanges</FolderName>
+                          <Order>12</Order>
+                          <DocLink>
+                            <DisplayName>Named Ranges</DisplayName>
+                            <Url>Named+Ranges</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\rngIntersection.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Union of Ranges</Title>
+                          <Description>Aspose.Cells provides Range.Union method to take the union for ranges, the method returns an ArrayList object.The following example shows how to take union for ranges.</Description>
+                          <FolderName>UnionOfRanges</FolderName>
+                          <Order>13</Order>
+                          <DocLink>
+                            <DisplayName>Named Ranges</DisplayName>
+                            <Url>Named+Ranges</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\rngUnion.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                      </Examples>
+                    </Folder>
                   </Folders>
                 </Folder>
               </Folders>
