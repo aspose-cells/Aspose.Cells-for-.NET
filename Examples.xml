@@ -2217,6 +2217,259 @@ The Sort method accepts the following parameters:
                 </Folder>
               </Folders>
             </Folder>
+            <Folder>
+              <Title>Working with Data Formatting</Title>
+              <Description>This section includes the following examples: 
+
+-Approaches to Format Data in Cells
+-Setting Display Formats of Numbers and Dates
+-Configuring Alignment Settings
+-Dealing with Font Settings
+-Colors and Palette
+-Formatting Selected Characters in a Cell
+-Adding Borders to Cells
+-Colors and Background Patterns
+-Activating Sheets and Making an Active Cell in the Worksheet
+-Formatting Rows and Columns
+-Conditional Formatting
+-Excel 2007 Themes and Colors</Description>
+              <FolderName>WorkingWithDataFormatting</FolderName>
+              <Order>5</Order>
+              <Folders>
+                <Folder>
+                  <Title>Configuring Alignment Settings</Title>
+                  <Description>Aspose.Cells provides a class, Workbook that represents an Excel file. Workbook class contains a Worksheets collection that allows to access each worksheet in the Excel file. A worksheet is represented by the Worksheet class. Worksheet class provides a Cells collection. Each item in the Cells collection represents an object of Cell class. Aspose.Cells provides GetStyle __ and __ SetStyle methods for the Cell class that are used to get/set the formatting style of a cell. The Style class provides some useful properties to configure alignment settings.</Description>
+                  <FolderName>ConfiguringAlignmentSettings</FolderName>
+                  <Order>1</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Text Alignment - Horizontal</Title>
+                      <Description>Developers can use HorizontalAlignment property of the Style object to align the text horizontally. We can select any text alignment type using the TextAlignmentType enumeration.</Description>
+                      <FolderName>TextAlignmentHorizontal</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Configuring Alignment Settings</DisplayName>
+                        <Url>Configuring+Alignment+Settings</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Text Alignment - Vertical</Title>
+                      <Description>Using Aspose.Cells, developers can also use VerticalAlignment property of the Style object to align the text vertically.</Description>
+                      <FolderName>TextAlignmentVertical</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Configuring Alignment Settings</DisplayName>
+                        <Url>Configuring+Alignment+Settings</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Indentation</Title>
+                      <Description>Using Aspose.Cells, developers can also set the indentation level of the text contained in a cell by using the IndentLevel property of the Style object.</Description>
+                      <FolderName>Indentation</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>Configuring Alignment Settings</DisplayName>
+                        <Url>Configuring+Alignment+Settings</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Orientation</Title>
+                      <Description>Using Aspose.Cells, developers can also set the orientation (rotation) of the text inside the cell by using the Rotation property of the Style object.</Description>
+                      <FolderName>Orientation</FolderName>
+                      <Order>4</Order>
+                      <DocLink>
+                        <DisplayName>Configuring Alignment Settings</DisplayName>
+                        <Url>Configuring+Alignment+Settings</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Wrapping Text</Title>
+                      <Description>Using Aspose.Cells, developers can set the text to be wrapped within the cell by using the IsTextWrapped property of the Style object.</Description>
+                      <FolderName>WrappingText</FolderName>
+                      <Order>5</Order>
+                      <DocLink>
+                        <DisplayName>Configuring Alignment Settings</DisplayName>
+                        <Url>Configuring+Alignment+Settings</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Shrinking to Fit</Title>
+                      <Description>Using Aspose.Cells, developers can also shrink the size of the text according to the cell's dimensions by setting the IsTextWrapped property of the Style object to true .</Description>
+                      <FolderName>ShrinkingToFit</FolderName>
+                      <Order>6</Order>
+                      <DocLink>
+                        <DisplayName>Configuring Alignment Settings</DisplayName>
+                        <Url>Configuring+Alignment+Settings</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Merging Cells</Title>
+                      <Description>Developers can also merge multiple cells into a single one using Aspose.Cells. Developers can use the Merge method of the Cells collection to merge the cells.</Description>
+                      <FolderName>MergingCells</FolderName>
+                      <Order>7</Order>
+                      <DocLink>
+                        <DisplayName>Configuring Alignment Settings</DisplayName>
+                        <Url>Configuring+Alignment+Settings</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Text Direction</Title>
+                      <Description>Developers can set the reading order (that is the visual order in which the characters, words etc. are displayed. For example, English is a left to right language while Arabic is a right to left language) of the text inside the cells by using the TextDirection property of the Style object.</Description>
+                      <FolderName>TextDirection</FolderName>
+                      <Order>8</Order>
+                      <DocLink>
+                        <DisplayName>Configuring Alignment Settings</DisplayName>
+                        <Url>Configuring+Alignment+Settings</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+                <Folder>
+                  <Title>Approaches to Format Data in Cells</Title>
+                  <Description>It's a common fact that if the worksheet cells are formatted properly then it becomes easier for the users to read the contents (data) of the cell. There are many ways to fomat cells and their contents. The simplest way is to format cells using Microsoft Excel in a WYSIWYG environment while creating a Designer Spreadsheet. After the designer spreadsheet is created, you can open the spreadsheet using Aspose.Cells keeping all format settings saved with the spreadsheet. Another way to format cells and their contents is to use Aspose.Cells API.</Description>
+                  <FolderName>ApproachesToFormatData</FolderName>
+                  <Order>2</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Using GetStyle-SetStyle Methods</Title>
+                      <Description>If developers need to apply different formatting styles to different cells then it's better to get the Style of the cell using Cell.GetStyle method, specify the style attributes and then apply the formatting using Cell.SetStyle method.</Description>
+                      <FolderName>UsingGetStyleSetStyle</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Approaches to Format Data in Cells</DisplayName>
+                        <Url>Approaches+to+Format+Data+in+Cells</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Using Style Object to Format Different Cells</Title>
+                      <Description>If developers need to apply the Same formatting style to different cells then they can use Style object. This example demonstrates how to use Style object for formatting cells.</Description>
+                      <FolderName>UsingStyleObject</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Approaches to Format Data in Cells</DisplayName>
+                        <Url>Approaches+to+Format+Data+in+Cells</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Using MS Excel 2007 Predefined Styles</Title>
+                      <Description>If developers need to apply different formatting styles of MS Excel 2007, they can apply the styles using Aspose.Cells API. This  example demonstrates applying a predefined style on a cell.</Description>
+                      <FolderName>UsingExcelPredefinedStyles</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>Approaches to Format Data in Cells</DisplayName>
+                        <Url>Approaches+to+Format+Data+in+Cells</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xlsx</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+                <Folder>
+                  <Title>Setting Display Formats of Numbers and Dates</Title>
+                  <Description>A very strong feature of Microsoft Excel is that is allows users to set the display formats of numeric values and dates. We know that numeric data can be used to represent different values including decimal, currency, percentage, fraction or accounting values etc. All these numerical values are displayed in different formats depending on the type of information it represents. Similarly, there are many formats in which a date or time can be displayed. Aspose.Cells supports this functionallity and allows developers to set any display format for a number or date.</Description>
+                  <FolderName>SettingDisplayFormats</FolderName>
+                  <Order>3</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Using Built-in Number Formats</Title>
+                      <Description>Aspose.Cells offers some built-in number formats to configure the display formats of the numbers and dates. These built-in number formats can be applied by using the Number property of the Style object. All built-in number formats are given unique numeric values. Developers can assign any desired numeric value to the Number property of the Style object to apply the display format.</Description>
+                      <FolderName>UsingBuiltInNumberFormats</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Setting Display Formats of Numbers and Dates</DisplayName>
+                        <Url>Setting+Display+Formats+of+Numbers+and+Dates</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Using Custom Number Formats</Title>
+                      <Description>To define your own customized format string for setting the display format, use the Style object's Custom property.</Description>
+                      <FolderName>UsingCustomNumber</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Setting Display Formats of Numbers and Dates</DisplayName>
+                        <Url>Setting+Display+Formats+of+Numbers+and+Dates</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
+            </Folder>
           </Folders>
         </Folder>
       </Folders>
