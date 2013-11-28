@@ -242,6 +242,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnionOfRanges", "Programmer
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithDataFormatting", "WorkingWithDataFormatting", "{84808ED0-8B41-4D26-9909-A663634602B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorsAndPalette", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ColorsAndPalette\CSharp\ColorsAndPalette.csproj", "{2855E95E-D0D7-4964-972C-6FEADDBF8A66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormattingSelectedCharacters", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\FormattingSelectedCharacters\CSharp\FormattingSelectedCharacters.csproj", "{A0306595-C19D-4C69-9248-1EC8EC689C80}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorsAndBackground", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ColorsAndBackground\CSharp\ColorsAndBackground.csproj", "{4C5DFE5B-AF7C-4EAE-90AE-F3BA27ADB61B}"
+EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConfiguringAlignmentSettings", "ConfiguringAlignmentSettings", "{EBCFD811-8412-4726-938C-FFBC119269D6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextAlignmentHorizontal", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ConfiguringAlignmentSettings\TextAlignmentHorizontal\CSharp\TextAlignmentHorizontal.csproj", "{0111C841-29B7-496A-BEE2-1C159A274306}"
@@ -273,6 +279,36 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingBuiltInNumberFormats", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\SettingDisplayFormats\UsingBuiltInNumberFormats\CSharp\UsingBuiltInNumberFormats.csproj", "{B53DF8F9-2404-4946-81DC-38BA7DE297C7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingCustomNumber", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\SettingDisplayFormats\UsingCustomNumber\CSharp\UsingCustomNumber.csproj", "{755C3A3E-27C8-43B7-8EF2-A63E23B5EA72}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DealingWithFontSettings", "DealingWithFontSettings", "{32FC9650-D8DC-41CE-9544-7F340FCB665D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingFontName", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingFontName\CSharp\SettingFontName.csproj", "{512569F0-C273-43F7-8244-0BEE186A55F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingFontStyle", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingFontStyle\CSharp\SettingFontStyle.csproj", "{E1C21179-FAEF-4C76-AEB9-125996E4E2B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingFontSize", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingFontSize\CSharp\SettingFontSize.csproj", "{93321E17-3950-4FBB-A4A5-97501E0EF3DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingFontUnderlineType", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingFontUnderlineType\CSharp\SettingFontUnderlineType.csproj", "{5C287601-6AEA-4D63-820A-C1B644153D39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingFontColor", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingFontColor\CSharp\SettingFontColor.csproj", "{67FC8E9D-4337-4149-A717-502D320E19B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingStrikeOutEffect", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingStrikeOutEffect\CSharp\SettingStrikeOutEffect.csproj", "{FB0B75D5-03E7-4BDD-999E-1C9299D83952}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingSubScriptEffect", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingSubScriptEffect\CSharp\SettingSubScriptEffect.csproj", "{B1C5A78C-0B8F-4FF8-B1F8-70ACC99A8E8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingSuperScriptEffect", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingSuperScriptEffect\CSharp\SettingSuperScriptEffect.csproj", "{A9CCEDEB-C01D-4541-BE3A-BA068E587B99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AddingBordersToCells", "AddingBordersToCells", "{E66C7368-5F94-4F6B-893A-06349A3609EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingBordersToCells", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\AddingBordersToCells\AddingBordersToCells\CSharp\AddingBordersToCells.csproj", "{1BA07298-9634-4DCD-94AA-04D80A8A413D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingBorderstoRange", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\AddingBordersToCells\AddingBorderstoRange\CSharp\AddingBorderstoRange.csproj", "{F21FCB4E-8D8D-4B6B-8E03-905536113BED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FormatRowsColumns", "FormatRowsColumns", "{D923EF5C-0F11-45C3-B73B-B55888FA582A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormattingARow", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\FormatRowsColumns\FormattingARow\CSharp\FormattingARow.csproj", "{1B6C4645-B083-4265-A505-E7A7AB294CD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormattingAColumn", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\FormatRowsColumns\FormattingAColumn\CSharp\FormattingAColumn.csproj", "{FCEC9314-E655-4022-801E-F06D623F5941}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -553,6 +589,15 @@ Global
 		{3265E481-275D-4CFB-8679-71394601A42E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3265E481-275D-4CFB-8679-71394601A42E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3265E481-275D-4CFB-8679-71394601A42E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2855E95E-D0D7-4964-972C-6FEADDBF8A66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2855E95E-D0D7-4964-972C-6FEADDBF8A66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2855E95E-D0D7-4964-972C-6FEADDBF8A66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0306595-C19D-4C69-9248-1EC8EC689C80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0306595-C19D-4C69-9248-1EC8EC689C80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0306595-C19D-4C69-9248-1EC8EC689C80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C5DFE5B-AF7C-4EAE-90AE-F3BA27ADB61B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C5DFE5B-AF7C-4EAE-90AE-F3BA27ADB61B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C5DFE5B-AF7C-4EAE-90AE-F3BA27ADB61B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0111C841-29B7-496A-BEE2-1C159A274306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0111C841-29B7-496A-BEE2-1C159A274306}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0111C841-29B7-496A-BEE2-1C159A274306}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -592,6 +637,42 @@ Global
 		{755C3A3E-27C8-43B7-8EF2-A63E23B5EA72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{755C3A3E-27C8-43B7-8EF2-A63E23B5EA72}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{755C3A3E-27C8-43B7-8EF2-A63E23B5EA72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{512569F0-C273-43F7-8244-0BEE186A55F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{512569F0-C273-43F7-8244-0BEE186A55F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{512569F0-C273-43F7-8244-0BEE186A55F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1C21179-FAEF-4C76-AEB9-125996E4E2B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1C21179-FAEF-4C76-AEB9-125996E4E2B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1C21179-FAEF-4C76-AEB9-125996E4E2B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93321E17-3950-4FBB-A4A5-97501E0EF3DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93321E17-3950-4FBB-A4A5-97501E0EF3DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93321E17-3950-4FBB-A4A5-97501E0EF3DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C287601-6AEA-4D63-820A-C1B644153D39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C287601-6AEA-4D63-820A-C1B644153D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C287601-6AEA-4D63-820A-C1B644153D39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67FC8E9D-4337-4149-A717-502D320E19B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67FC8E9D-4337-4149-A717-502D320E19B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67FC8E9D-4337-4149-A717-502D320E19B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB0B75D5-03E7-4BDD-999E-1C9299D83952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB0B75D5-03E7-4BDD-999E-1C9299D83952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB0B75D5-03E7-4BDD-999E-1C9299D83952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1C5A78C-0B8F-4FF8-B1F8-70ACC99A8E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1C5A78C-0B8F-4FF8-B1F8-70ACC99A8E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1C5A78C-0B8F-4FF8-B1F8-70ACC99A8E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9CCEDEB-C01D-4541-BE3A-BA068E587B99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9CCEDEB-C01D-4541-BE3A-BA068E587B99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9CCEDEB-C01D-4541-BE3A-BA068E587B99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BA07298-9634-4DCD-94AA-04D80A8A413D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BA07298-9634-4DCD-94AA-04D80A8A413D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BA07298-9634-4DCD-94AA-04D80A8A413D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F21FCB4E-8D8D-4B6B-8E03-905536113BED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F21FCB4E-8D8D-4B6B-8E03-905536113BED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F21FCB4E-8D8D-4B6B-8E03-905536113BED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B6C4645-B083-4265-A505-E7A7AB294CD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B6C4645-B083-4265-A505-E7A7AB294CD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B6C4645-B083-4265-A505-E7A7AB294CD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCEC9314-E655-4022-801E-F06D623F5941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCEC9314-E655-4022-801E-F06D623F5941}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCEC9314-E655-4022-801E-F06D623F5941}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -717,6 +798,9 @@ Global
 		{79FC02A2-1270-4646-B0A2-9ABB60AB1532} = {EFA1D880-3579-4620-BA80-CE6AD19BD250}
 		{3265E481-275D-4CFB-8679-71394601A42E} = {EFA1D880-3579-4620-BA80-CE6AD19BD250}
 		{84808ED0-8B41-4D26-9909-A663634602B4} = {08BE30B5-0442-4C58-A8CD-665126E93A16}
+		{2855E95E-D0D7-4964-972C-6FEADDBF8A66} = {84808ED0-8B41-4D26-9909-A663634602B4}
+		{A0306595-C19D-4C69-9248-1EC8EC689C80} = {84808ED0-8B41-4D26-9909-A663634602B4}
+		{4C5DFE5B-AF7C-4EAE-90AE-F3BA27ADB61B} = {84808ED0-8B41-4D26-9909-A663634602B4}
 		{EBCFD811-8412-4726-938C-FFBC119269D6} = {84808ED0-8B41-4D26-9909-A663634602B4}
 		{0111C841-29B7-496A-BEE2-1C159A274306} = {EBCFD811-8412-4726-938C-FFBC119269D6}
 		{3DAACB99-B17A-4618-8F9F-C7D79F5B2154} = {EBCFD811-8412-4726-938C-FFBC119269D6}
@@ -733,5 +817,20 @@ Global
 		{D3B3EA6F-2C0D-410E-B1F6-E17FD9BDE91A} = {84808ED0-8B41-4D26-9909-A663634602B4}
 		{B53DF8F9-2404-4946-81DC-38BA7DE297C7} = {D3B3EA6F-2C0D-410E-B1F6-E17FD9BDE91A}
 		{755C3A3E-27C8-43B7-8EF2-A63E23B5EA72} = {D3B3EA6F-2C0D-410E-B1F6-E17FD9BDE91A}
+		{32FC9650-D8DC-41CE-9544-7F340FCB665D} = {84808ED0-8B41-4D26-9909-A663634602B4}
+		{512569F0-C273-43F7-8244-0BEE186A55F4} = {32FC9650-D8DC-41CE-9544-7F340FCB665D}
+		{E1C21179-FAEF-4C76-AEB9-125996E4E2B4} = {32FC9650-D8DC-41CE-9544-7F340FCB665D}
+		{93321E17-3950-4FBB-A4A5-97501E0EF3DB} = {32FC9650-D8DC-41CE-9544-7F340FCB665D}
+		{5C287601-6AEA-4D63-820A-C1B644153D39} = {32FC9650-D8DC-41CE-9544-7F340FCB665D}
+		{67FC8E9D-4337-4149-A717-502D320E19B8} = {32FC9650-D8DC-41CE-9544-7F340FCB665D}
+		{FB0B75D5-03E7-4BDD-999E-1C9299D83952} = {32FC9650-D8DC-41CE-9544-7F340FCB665D}
+		{B1C5A78C-0B8F-4FF8-B1F8-70ACC99A8E8F} = {32FC9650-D8DC-41CE-9544-7F340FCB665D}
+		{A9CCEDEB-C01D-4541-BE3A-BA068E587B99} = {32FC9650-D8DC-41CE-9544-7F340FCB665D}
+		{E66C7368-5F94-4F6B-893A-06349A3609EA} = {84808ED0-8B41-4D26-9909-A663634602B4}
+		{1BA07298-9634-4DCD-94AA-04D80A8A413D} = {E66C7368-5F94-4F6B-893A-06349A3609EA}
+		{F21FCB4E-8D8D-4B6B-8E03-905536113BED} = {E66C7368-5F94-4F6B-893A-06349A3609EA}
+		{D923EF5C-0F11-45C3-B73B-B55888FA582A} = {84808ED0-8B41-4D26-9909-A663634602B4}
+		{1B6C4645-B083-4265-A505-E7A7AB294CD5} = {D923EF5C-0F11-45C3-B73B-B55888FA582A}
+		{FCEC9314-E655-4022-801E-F06D623F5941} = {D923EF5C-0F11-45C3-B73B-B55888FA582A}
 	EndGlobalSection
 EndGlobal

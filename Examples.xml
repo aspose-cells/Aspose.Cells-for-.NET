@@ -2235,6 +2235,63 @@ The Sort method accepts the following parameters:
 -Excel 2007 Themes and Colors</Description>
               <FolderName>WorkingWithDataFormatting</FolderName>
               <Order>5</Order>
+              <Examples>
+                <Example>
+                  <Title>Colors and Palette</Title>
+                  <Description>Aspose.Cells also supports a palette of 56 colors. A standard color palette is listed here. If you want to use a custom color that is not defined in the palette then you will need to add that color to the palette before usage.</Description>
+                  <FolderName>ColorsAndPalette</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Colors and Palette</DisplayName>
+                    <Url>Colors+and+Palette</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\book1.xls</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Formatting Selected Characters in a Cell</Title>
+                  <Description>Aspose.Cells provides a class, Workbook that represents an Excel file. Workbook class contains a Worksheets collection that allows to access each worksheet in the Excel file. A worksheet is represented by the Worksheet class. Worksheet class provides a Cells collection. Each item in the Cells collection represents an object of Cell class.
+
+Cell class provides Characters method that takes the following parameters to select a range of characters inside a cell:
+ 
+	- Start Index, represents the index of the character from where to start selection
+	- Number of Characters, represents the number of characters to select
+ 
+Characters method returns an instance of FontSetting class that allows developers to format the characters in the same way as that of a cell.</Description>
+                  <FolderName>FormattingSelectedCharacters</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Formatting Selected Characters in a Cell</DisplayName>
+                    <Url>Formatting+Selected+Characters+in+a+Cell</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\book1.xls</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Colors and Background Patterns</Title>
+                  <Description>To set the foreground or background color of a cell, developers may use ForegroundColor or BackgroundColor property of the Style object. Both properties are only effected if the Pattern property of the Style object is configured.</Description>
+                  <FolderName>ColorsAndBackground</FolderName>
+                  <Order>8</Order>
+                  <DocLink>
+                    <DisplayName>Colors and Background Patterns</DisplayName>
+                    <Url>Colors++and++Background+Patterns</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\book1.xls</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
               <Folders>
                 <Folder>
                   <Title>Configuring Alignment Settings</Title>
@@ -2458,6 +2515,228 @@ The Sort method accepts the following parameters:
                       <DocLink>
                         <DisplayName>Setting Display Formats of Numbers and Dates</DisplayName>
                         <Url>Setting+Display+Formats+of+Numbers+and+Dates</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+                <Folder>
+                  <Title>Dealing with Font Settings</Title>
+                  <Description>Aspose.Cells provides GetStyle and SetStyle methods for the Cell class that are used to get/set the formatting style of a cell. The Style class provides some useful properties to configure font settings.</Description>
+                  <FolderName>DealingWithFontSettings</FolderName>
+                  <Order>4</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Setting Font Name</Title>
+                      <Description>Developers can set any font name to the text inside the cell by using the Name property of the Style.Font object.</Description>
+                      <FolderName>SettingFontName</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Dealing with Font Settings</DisplayName>
+                        <Url>Dealing+with+Font+Settings</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Setting Font Style to Bold</Title>
+                      <Description>Developers can set the font style to bold by setting the IsBold property of the Style.Font object to true.</Description>
+                      <FolderName>SettingFontStyle</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Dealing with Font Settings</DisplayName>
+                        <Url>Dealing+with+Font+Settings</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Setting Font Size</Title>
+                      <Description>Developers can set the size of the font by using the Size property of the Style.Font object.</Description>
+                      <FolderName>SettingFontSize</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>Dealing with Font Settings</DisplayName>
+                        <Url>Dealing+with+Font+Settings</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Setting Font Underline Type</Title>
+                      <Description>Developers can set the font to be underlined by using the Underline property of the Style.Font object. Aspose.Cells offers various pre-defined font underline types in the form of FontUnderlineType enumeration.</Description>
+                      <FolderName>SettingFontUnderlineType</FolderName>
+                      <Order>4</Order>
+                      <DocLink>
+                        <DisplayName>Dealing with Font Settings</DisplayName>
+                        <Url>Dealing+with+Font+Settings</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Setting Font Color</Title>
+                      <Description>Developers can set the color of the font by using the Color property of the Style.Font object. Developers can select any color from the Color enumeration (part of the .NET Framework) and then assign that selected color to the Color property of the Style.Font object.</Description>
+                      <FolderName>SettingFontColor</FolderName>
+                      <Order>5</Order>
+                      <DocLink>
+                        <DisplayName>Dealing with Font Settings</DisplayName>
+                        <Url>Dealing+with+Font+Settings</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Setting Strike Out Effect on Font</Title>
+                      <Description>Developers can apply the strike out effect on the font by setting the FontIsStrikeOut property of the Style.Font object to true.</Description>
+                      <FolderName>SettingStrikeOutEffect</FolderName>
+                      <Order>6</Order>
+                      <DocLink>
+                        <DisplayName>Dealing with Font Settings</DisplayName>
+                        <Url>Dealing+with+Font+Settings</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Setting SubScript Effect on Font</Title>
+                      <Description>Developers can apply the subscript effect on the font by setting the IsSubscript property of the Style.Font object to true.</Description>
+                      <FolderName>SettingSubScriptEffect</FolderName>
+                      <Order>7</Order>
+                      <DocLink>
+                        <DisplayName>Dealing with Font Settings</DisplayName>
+                        <Url>Dealing+with+Font+Settings</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Setting SuperScript Effect on Font</Title>
+                      <Description>Developers can apply the superscript effect on the font by setting the IsSuperscript property of the Style.Font object to true.</Description>
+                      <FolderName>SettingSuperScriptEffect</FolderName>
+                      <Order>8</Order>
+                      <DocLink>
+                        <DisplayName>Dealing with Font Settings</DisplayName>
+                        <Url>Dealing+with+Font+Settings</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+                <Folder>
+                  <Title>Adding Borders to Cells</Title>
+                  <Description>Developers can add borders to a cell by using the Borders collection of the Style object. The type of the border is passed as an index to the Borders collection. All types of borders are pre-defined in BorderType enumeration.</Description>
+                  <FolderName>AddingBordersToCells</FolderName>
+                  <Order>7</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Adding Borders to Cells</Title>
+                      <Description>Developers can select a line style and then assign that selected line style to the LineStyle property of the Border object.</Description>
+                      <FolderName>AddingBordersToCells</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Adding Borders to Cells</DisplayName>
+                        <Url>Adding+Borders+to+Cells</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding Borders to a Range of Cells</Title>
+                      <Description>Sometimes, developers may need to add borders to a range of cells rather than just a single cell. To do so, developers would first need to create a range of cells by calling the CreateRange method of the Cells collection, which takes the following parameters:
+ 
+	- First Row , represents the first row from where to start creating the range
+ 	- First Column , represents the first column from where to start creating the range
+	- Number of Rows , represents the number of rows in the range
+	- Number of Columns , represents the number of columns in the range
+	- Color , represents the line color of border, which can be selected using Color enumeration</Description>
+                      <FolderName>AddingBorderstoRange</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Adding Borders to Cells</DisplayName>
+                        <Url>Adding+Borders+to+Cells</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+                <Folder>
+                  <Title>Formatting Rows and Columns</Title>
+                  <Description>Sometimes, developers may need to apply same formatting settings on rows or columns of the worksheets. If developers apply formatting settings on the cells one by one then it may take longer time and would not be a good solution too. To address this issue, Aspose.Cells provides a simplest yet faster way to achieve this.</Description>
+                  <FolderName>FormatRowsColumns</FolderName>
+                  <Order>9</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Formatting a Row</Title>
+                      <Description>Cells collection provides a Rows collection. Each item in the Rows collection represents a Row object. Row object offers an Apply Style method that is used to set the formatting style of a row. If developers need to apply the Same formatting style to a row then they should use Style object</Description>
+                      <FolderName>FormattingARow</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Formatting Rows and Columns</DisplayName>
+                        <Url>Formatting+Rows++and++Columns</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Formatting a Column</Title>
+                      <Description>Cells collection also provides a Columns collection. Each item in the Columns collection represents a Column object. Similar to Row object, Column object also offers Apply Style method that is used to set the formatting style of a column.</Description>
+                      <FolderName>FormattingAColumn</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Formatting Rows and Columns</DisplayName>
+                        <Url>Formatting+Rows++and++Columns</Url>
                       </DocLink>
                       <OutputFiles>
                         <DataFile>
