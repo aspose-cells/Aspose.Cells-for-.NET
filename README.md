@@ -1,6 +1,16 @@
-#Aspose.Cells for .NET Examples Repository
+##Aspose.Cells for .NET Examples Repository
 
 This package contains C# and VB.NET Example Projects for [Aspose.Cells for .NET](http://www.aspose.com/categories/.net-components/aspose.cells-for-.net/default.aspx).
+<br/><br/>
+<p align="center">
+  <a title="Download Examples Dashboard" href="http://www.aspose.com/community/files/72/java-components/aspose-examples-for-java/default.aspx">
+	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadDasboard-Button-Large.png" />
+  </a>
+  &nbsp;
+  <a title="Download Examples ZIP" href="https://github.com/asposecells/Aspose_Cells_NET/archive/master.zip">
+	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
+  </a>
+</p>
 
 Aspose.Cells for .NET is a class library that enables your applications to perform a great range of document processing tasks. Aspose.Cells supports the popular spreadsheet (XLS, XLSX, XLSM, XLTX, CSV, SpreadsheetML) and image file formats. With Aspose.Cells you can generate, modify, convert, render and print documents without utilizing Microsoft Excel.
 
