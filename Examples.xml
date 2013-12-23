@@ -2747,7 +2747,199 @@ Characters method returns an instance of FontSetting class that allows developer
                     </Example>
                   </Examples>
                 </Folder>
+                <Folder>
+                  <Title>Excel 2007 Themes and Colors</Title>
+                  <Description>Themes provide a unified look amongst all the named styles, graphical effects and other objects used in a workbook. For example, the Accent1 style, for example, looks different in the Office theme and the Apex theme. Often, you apply a document theme and then amend it to precisely how you want it. Aspose.Cells provides some useful API to customize themes and colors.</Description>
+                  <FolderName>Excel2007Themes</FolderName>
+                  <Order>10</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Get and Set Theme Colors</Title>
+                      <Description>The following example uses a template Xlsx file, gets the colors for different theme color types, changes the colors and re-saves the excel file.</Description>
+                      <FolderName>GetSetThemeColors</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Excel 2007 Themes and Colors</DisplayName>
+                        <Url>Excel+2007+Themes+and+Colors</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xlsx</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.xlsx</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Customize Themes</Title>
+                      <Description>The following example shows how to apply custom themes with your desired colors.</Description>
+                      <FolderName>CustomizeThemes</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Excel 2007 Themes and Colors</DisplayName>
+                        <Url>Excel+2007+Themes+and+Colors</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xlsx</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.xlsx</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Utilize Theme Colors</Title>
+                      <Description>The following example applies a cell’s foreground and font colors based on the default theme (of the workbook) color types. It also saves the excel file to disk.</Description>
+                      <FolderName>UtilizeThemeColors</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>Excel 2007 Themes and Colors</DisplayName>
+                        <Url>Excel+2007+Themes+and+Colors</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.xlsx</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
               </Folders>
+            </Folder>
+            <Folder>
+              <Title>Working with Tables</Title>
+              <Description>This section includes the following examples: 
+
+- Creating a List Object
+- Format a List Object (Table)
+- Convert an Excel table to a range of data</Description>
+              <FolderName>WorkingwithTables</FolderName>
+              <Order>6</Order>
+              <Examples>
+                <Example>
+                  <Title>Creating a List Object</Title>
+                  <Description>One of the many advantages of using Spreadsheets is creating different types of lists e.g., phone lists, client lists, task lists, transaction lists, lists of assets and liabilities etc. Several users do utilize, create and maintain lists of various sorts accordingly for their need. Aspose.Cells provides API for creating / managing Lists.</Description>
+                  <FolderName>CreatingListObject</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Creating a List Object</DisplayName>
+                    <Url>Creating+a+List+Object</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\book1.xls</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\ouput.xls</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Format a List Object</Title>
+                  <Description>A table is a series of rows and columns that contains related data that is managed independently from the data in other rows and columns on the worksheet. By default, every column in the table has filtering enabled in the header row so that you can filter or sort your List Object data quickly. You can add a total row (total row: A special row in a list that provides a selection of aggregate functions useful for working with numerical data.) to your list object that provides a drop-down list of aggregate functions for each total row cell. Aspose.Cells provides API for creating / managing Lists/Tables.</Description>
+                  <FolderName>FormataListObject</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Format a List Object (Table)</DisplayName>
+                    <Url>Format+a+List+Object+(Table)</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\List_Object.xlsx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Convert an Excel table to a range of data</Title>
+                  <Description>You may want a table style without the table functionality. You want to have your data in a table without losing any table style formatting that you applied, you can convert the table to a regular range of data on the worksheet. Aspose.Cells does support this feature of MS Excel for Tables/List Objects.</Description>
+                  <FolderName>ConvertTableToRange</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Convert an Excel table to a range of data</DisplayName>
+                    <Url>Convert+an+Excel+table+to+a+range+of+data</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\book1.xlsx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.xlsx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+            </Folder>
+            <Folder>
+              <Title>Working with Formulas</Title>
+              <Description>This section includes the following examples:
+
+- Using Formulas or Functions to Process Data
+- Calculating Formulas
+- Calculating Formulas Once Only
+- Direct Calculation of Formula</Description>
+              <FolderName>WorkingwithFormulas</FolderName>
+              <Order>7</Order>
+              <Examples>
+                <Example>
+                  <Title>Calculating Formulas</Title>
+                  <Description>Formula calculation engine is embedded in Aspose.Cells. It can not only re-calculate the formula imported from the designer file but also supports to calculate the results of formulas added at runtime.</Description>
+                  <FolderName>CalculatingFormulas</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>Culating Formulas</DisplayName>
+                    <Url>Calculating+Formulas</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\output.xls</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Calculating Formulas Once Only</Title>
+                  <Description>When the user calls Workbook.CalculateFormula() to calculate the values of the formulas inside the workbook template, Aspose.Cells creates a calculating chain. It increases performance when formulas are calculated for the second or third time etc. However, if the user template contains lots of diverse formulas, then first time of formula calculation can consume lot of CPU processing time and memory. Aspose.Cells allows you to turn off creating calculating chain which is useful in scenarios when you want to calculate formulas of your file only once.</Description>
+                  <FolderName>CalculatingFormulasOnce</FolderName>
+                  <Order>2</Order>
+                  <DocLink>
+                    <DisplayName>Calculating Formulas Once Only</DisplayName>
+                    <Url>Calculating+Formulas+Once+Only</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\book1.xls</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Direct Calculation of Formula</Title>
+                  <Description>Formula calculation engine is embedded in Aspose.Cells. Besides, re-calculating the formula imported from the designer file, Aspose.Cells also supports to calculate the results of formulas directly.</Description>
+                  <FolderName>DirectCalculationFormula</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Direct Calculation of Formula</DisplayName>
+                    <Url>Direct+Calculation+of+Formula</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
             </Folder>
           </Folders>
         </Folder>

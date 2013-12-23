@@ -312,6 +312,30 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FormatRowsColumns", "Format
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormattingARow", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\FormatRowsColumns\FormattingARow\VisualBasic\FormattingARow.vbproj", "{1B6C4645-B083-4265-A505-E7A7AB294CD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormattingAColumn", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\FormatRowsColumns\FormattingAColumn\VisualBasic\FormattingAColumn.vbproj", "{FCEC9314-E655-4022-801E-F06D623F5941}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Excel2007Themes", "Excel2007Themes", "{41CDC4B0-615F-42D3-A515-7FFF1AAFAC41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetSetThemeColors", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\Excel2007Themes\GetSetThemeColors\VisualBasic\GetSetThemeColors.vbproj", "{2F192F60-E2DE-4A3D-9362-F0350FFB91B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomizeThemes", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\Excel2007Themes\CustomizeThemes\VisualBasic\CustomizeThemes.vbproj", "{BE4F9FE7-958F-4573-920C-CDD26942F799}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilizeThemeColors", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\Excel2007Themes\UtilizeThemeColors\VisualBasic\UtilizeThemeColors.vbproj", "{414AD417-D22C-43D1-8A71-A60E2723A1AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingwithTables", "WorkingwithTables", "{9272D4D4-D39B-4127-8438-F0DB4AFA9448}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingListObject", "ProgrammersGuide\AsposeCells\WorkingwithTables\CreatingListObject\VisualBasic\CreatingListObject.vbproj", "{8B986548-772B-401A-8A29-7960D28EAAD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormataListObject", "ProgrammersGuide\AsposeCells\WorkingwithTables\FormataListObject\VisualBasic\FormataListObject.vbproj", "{CBF03962-3599-47B5-BF86-4504CDF42DCC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertTableToRange", "ProgrammersGuide\AsposeCells\WorkingwithTables\ConvertTableToRange\VisualBasic\ConvertTableToRange.vbproj", "{2F609BCF-ABBF-469E-A1DC-9E34B70F6880}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingwithFormulas", "WorkingwithFormulas", "{5631ED0F-90D1-421B-BA9F-EDA703DE25CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatingFormulas", "ProgrammersGuide\AsposeCells\WorkingwithFormulas\CalculatingFormulas\VisualBasic\CalculatingFormulas.vbproj", "{BB652847-6B3E-428D-BAD9-164FCDE9E88D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatingFormulasOnce", "ProgrammersGuide\AsposeCells\WorkingwithFormulas\CalculatingFormulasOnce\VisualBasic\CalculatingFormulasOnce.vbproj", "{7E217985-3B15-4B49-A981-DD99E5FA98F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -675,6 +699,33 @@ Global
 		{FCEC9314-E655-4022-801E-F06D623F5941}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FCEC9314-E655-4022-801E-F06D623F5941}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCEC9314-E655-4022-801E-F06D623F5941}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F192F60-E2DE-4A3D-9362-F0350FFB91B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F192F60-E2DE-4A3D-9362-F0350FFB91B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F192F60-E2DE-4A3D-9362-F0350FFB91B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE4F9FE7-958F-4573-920C-CDD26942F799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE4F9FE7-958F-4573-920C-CDD26942F799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE4F9FE7-958F-4573-920C-CDD26942F799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{414AD417-D22C-43D1-8A71-A60E2723A1AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{414AD417-D22C-43D1-8A71-A60E2723A1AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{414AD417-D22C-43D1-8A71-A60E2723A1AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B986548-772B-401A-8A29-7960D28EAAD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B986548-772B-401A-8A29-7960D28EAAD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B986548-772B-401A-8A29-7960D28EAAD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBF03962-3599-47B5-BF86-4504CDF42DCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBF03962-3599-47B5-BF86-4504CDF42DCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF03962-3599-47B5-BF86-4504CDF42DCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F609BCF-ABBF-469E-A1DC-9E34B70F6880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F609BCF-ABBF-469E-A1DC-9E34B70F6880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F609BCF-ABBF-469E-A1DC-9E34B70F6880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB652847-6B3E-428D-BAD9-164FCDE9E88D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB652847-6B3E-428D-BAD9-164FCDE9E88D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB652847-6B3E-428D-BAD9-164FCDE9E88D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E217985-3B15-4B49-A981-DD99E5FA98F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E217985-3B15-4B49-A981-DD99E5FA98F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E217985-3B15-4B49-A981-DD99E5FA98F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3226BE16-38D7-4B48-8934-A842F04D3749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3226BE16-38D7-4B48-8934-A842F04D3749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3226BE16-38D7-4B48-8934-A842F04D3749}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -834,5 +885,17 @@ Global
 		{D923EF5C-0F11-45C3-B73B-B55888FA582A} = {84808ED0-8B41-4D26-9909-A663634602B4}
 		{1B6C4645-B083-4265-A505-E7A7AB294CD5} = {D923EF5C-0F11-45C3-B73B-B55888FA582A}
 		{FCEC9314-E655-4022-801E-F06D623F5941} = {D923EF5C-0F11-45C3-B73B-B55888FA582A}
+		{41CDC4B0-615F-42D3-A515-7FFF1AAFAC41} = {84808ED0-8B41-4D26-9909-A663634602B4}
+		{2F192F60-E2DE-4A3D-9362-F0350FFB91B5} = {41CDC4B0-615F-42D3-A515-7FFF1AAFAC41}
+		{BE4F9FE7-958F-4573-920C-CDD26942F799} = {41CDC4B0-615F-42D3-A515-7FFF1AAFAC41}
+		{414AD417-D22C-43D1-8A71-A60E2723A1AD} = {41CDC4B0-615F-42D3-A515-7FFF1AAFAC41}
+		{9272D4D4-D39B-4127-8438-F0DB4AFA9448} = {08BE30B5-0442-4C58-A8CD-665126E93A16}
+		{8B986548-772B-401A-8A29-7960D28EAAD6} = {9272D4D4-D39B-4127-8438-F0DB4AFA9448}
+		{CBF03962-3599-47B5-BF86-4504CDF42DCC} = {9272D4D4-D39B-4127-8438-F0DB4AFA9448}
+		{2F609BCF-ABBF-469E-A1DC-9E34B70F6880} = {9272D4D4-D39B-4127-8438-F0DB4AFA9448}
+		{5631ED0F-90D1-421B-BA9F-EDA703DE25CA} = {08BE30B5-0442-4C58-A8CD-665126E93A16}
+		{BB652847-6B3E-428D-BAD9-164FCDE9E88D} = {5631ED0F-90D1-421B-BA9F-EDA703DE25CA}
+		{7E217985-3B15-4B49-A981-DD99E5FA98F7} = {5631ED0F-90D1-421B-BA9F-EDA703DE25CA}
+		{3226BE16-38D7-4B48-8934-A842F04D3749} = {5631ED0F-90D1-421B-BA9F-EDA703DE25CA}
 	EndGlobalSection
 EndGlobal
