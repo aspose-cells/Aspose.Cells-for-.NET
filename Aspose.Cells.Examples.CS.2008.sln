@@ -68,25 +68,25 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemovingWorksheetsUsingShee
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SecurityFeatures", "SecurityFeatures", "{2CCABD1D-ECEA-49DD-8E16-0FF6C6963C51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedProtectionSettings", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\AdvancedProtectionSettings\CSharp\AdvancedProtectionSettings.csproj", "{032B37D0-A99C-4385-A9CE-F6CDC79D3A14}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvanceProtectSettings", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\AdvanceProtectSettings\CSharp\AdvanceProtectSettings.csproj", "{032B37D0-A99C-4385-A9CE-F6CDC79D3A14}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProtectingWorksheets", "ProtectingWorksheets", "{32C80154-B1EA-416F-B354-D70112FAD2CC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectingWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\ProtectingWorksheets\ProtectingWorksheet\CSharp\ProtectingWorksheet.csproj", "{B424D612-6CAA-4416-8DF7-D9025C940996}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectingSpecificCellsinaWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\ProtectingWorksheets\ProtectingSpecificCellsinaWorksheet\CSharp\ProtectingSpecificCellsinaWorksheet.csproj", "{BFB6C1C9-5F35-447A-91A7-EBB8D5BF5CCA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectCellsWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\ProtectingWorksheets\ProtectCellsWorksheet\CSharp\ProtectCellsWorksheet.csproj", "{BFB6C1C9-5F35-447A-91A7-EBB8D5BF5CCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectingSpecificRowInWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\ProtectingWorksheets\ProtectingSpecificRowInWorksheet\CSharp\ProtectingSpecificRowInWorksheet.csproj", "{A4797608-A895-4D34-BB3F-4CBCF49894D9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectRowWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\ProtectingWorksheets\ProtectRowWorksheet\CSharp\ProtectRowWorksheet.csproj", "{A4797608-A895-4D34-BB3F-4CBCF49894D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectingSpecificColumnInWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\ProtectingWorksheets\ProtectingSpecificColumnInWorksheet\CSharp\ProtectingSpecificColumnInWorksheet.csproj", "{427488F0-A065-4C88-B03A-A98C230CADA1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectColumnWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\ProtectingWorksheets\ProtectColumnWorksheet\CSharp\ProtectColumnWorksheet.csproj", "{427488F0-A065-4C88-B03A-A98C230CADA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllowUserToEditRangesInWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\ProtectingWorksheets\AllowUserToEditRangesInWorksheet\CSharp\AllowUserToEditRangesInWorksheet.csproj", "{C8C6AFFB-01DB-453B-9192-203A17352DB9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EditRangesWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\ProtectingWorksheets\EditRangesWorksheet\CSharp\EditRangesWorksheet.csproj", "{C8C6AFFB-01DB-453B-9192-203A17352DB9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnprotectWorksheet", "UnprotectWorksheet", "{D2BA019B-521E-4049-9C64-C2F39186A753}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnprotectingSimplyProtectedWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\UnprotectWorksheet\UnprotectingSimplyProtectedWorksheet\CSharp\UnprotectingSimplyProtectedWorksheet.csproj", "{DB79FA61-2F00-478A-98E8-35EFD20FF425}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnprotectSimpleSheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\UnprotectWorksheet\UnprotectSimpleSheet\CSharp\UnprotectSimpleSheet.csproj", "{DB79FA61-2F00-478A-98E8-35EFD20FF425}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnprotectingPasswordProtectedWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\UnprotectWorksheet\UnprotectingPasswordProtectedWorksheet\CSharp\UnprotectingPasswordProtectedWorksheet.csproj", "{41758072-CEA1-430E-8113-C49BA61BF674}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnprotectProtectSheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\UnprotectWorksheet\UnprotectProtectSheet\CSharp\UnprotectProtectSheet.csproj", "{EF4EBFA2-0C4E-43D3-B36C-ADAF61204304}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithRowsAndColumns", "WorkingWithRowsAndColumns", "{0DA8FE81-5CF7-4BFB-9EC4-DB6D07A53188}"
 EndProject
@@ -122,11 +122,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdjustingRowHeightAndColumn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingHeightOfRow", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\AdjustingRowHeightAndColumnWidth\SettingHeightOfRow\CSharp\SettingHeightOfRow.csproj", "{4F34B43A-EB58-4E1C-890C-A450BE0AE396}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingHeightOfAllRowsInWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\AdjustingRowHeightAndColumnWidth\SettingHeightOfAllRowsInWorksheet\CSharp\SettingHeightOfAllRowsInWorksheet.csproj", "{3B45A911-F5B7-424E-A9DA-AF4EF86AE379}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingHeightAllRows", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\AdjustingRowHeightAndColumnWidth\SettingHeightAllRows\CSharp\SettingHeightAllRows.csproj", "{3B45A911-F5B7-424E-A9DA-AF4EF86AE379}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingWidthOfColumn", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\AdjustingRowHeightAndColumnWidth\SettingWidthOfColumn\CSharp\SettingWidthOfColumn.csproj", "{EAF0EFBD-3FE2-4473-9264-082D78EBD5B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingWidthOfAllColumns", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\AdjustingRowHeightAndColumnWidth\SettingWidthOfAllColumns\CSharp\SettingWidthOfAllColumns.csproj", "{8F83D6B6-92D7-4572-A80C-8E50A3F2F9E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetWidthAllColumns", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\AdjustingRowHeightAndColumnWidth\SetWidthAllColumns\CSharp\SetWidthAllColumns.csproj", "{8F83D6B6-92D7-4572-A80C-8E50A3F2F9E7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CopyingRowsAndColumns", "CopyingRowsAndColumns", "{D0D330F6-10B0-4B61-9CE8-456AE943EB03}"
 EndProject
@@ -150,17 +150,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccessingCellsofWorksheet",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingCellName", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\AccessingCellsofWorksheet\UsingCellName\CSharp\UsingCellName.csproj", "{C559CBEA-FCA8-4496-AF25-A2264471D6F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingRowAndColumnIndexOfCell", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\AccessingCellsofWorksheet\UsingRowAndColumnIndexOfCell\CSharp\UsingRowAndColumnIndexOfCell.csproj", "{F302E264-6C12-4B8C-BE51-CC9CAA89DEA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RowAndColumnIndex", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\AccessingCellsofWorksheet\RowAndColumnIndex\CSharp\RowAndColumnIndex.csproj", "{F302E264-6C12-4B8C-BE51-CC9CAA89DEA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingCellIndexInCellsCollection", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\AccessingCellsofWorksheet\UsingCellIndexInCellsCollection\CSharp\UsingCellIndexInCellsCollection.csproj", "{DE9B9131-9940-4223-9210-631C6F853DB1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingCellIndex", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\AccessingCellsofWorksheet\UsingCellIndex\CSharp\UsingCellIndex.csproj", "{DE9B9131-9940-4223-9210-631C6F853DB1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FindOrSearchData", "FindOrSearchData", "{4B8F068F-0EC6-4638-81F3-F670C1301786}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingCellsContainingFormula", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindingCellsContainingFormula\CSharp\FindingCellsContainingFormula.csproj", "{886D21F6-EB2C-423A-B0A8-B368E4BCA82E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindCellsContainingFormula", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindCellsContainingFormula\CSharp\FindCellsContainingFormula.csproj", "{886D21F6-EB2C-423A-B0A8-B368E4BCA82E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingDataOrFormulasUsingFindOptions", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindingDataOrFormulasUsingFindOptions\CSharp\FindingDataOrFormulasUsingFindOptions.csproj", "{B6D2661A-AF4E-4F92-B60B-8416B041F8C0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindDataOrFormulas", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindDataOrFormulas\CSharp\FindDataOrFormulas.csproj", "{B6D2661A-AF4E-4F92-B60B-8416B041F8C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingCellsWithStringOrNumber", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindingCellsWithStringOrNumber\CSharp\FindingCellsWithStringOrNumber.csproj", "{7A0481E6-9614-446D-B18C-0C25667A379D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindCellsStringNumber", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindCellsStringNumber\CSharp\FindCellsStringNumber.csproj", "{7A0481E6-9614-446D-B18C-0C25667A379D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ImportingDataToWorksheets", "ImportingDataToWorksheets", "{3C00224D-7546-41A4-B436-4456D6D39284}"
 EndProject
@@ -334,6 +334,104 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatingFormulasOnce", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectCalculationFormula", "ProgrammersGuide\AsposeCells\WorkingwithFormulas\DirectCalculationFormula\CSharp\DirectCalculationFormula.csproj", "{3226BE16-38D7-4B48-8934-A842F04D3749}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreatingCharts", "CreatingCharts", "{20FF1BF6-63D7-4ACD-8CB9-262ECA9736A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HowToCreateChart", "ProgrammersGuide\AsposeCells\CreatingCharts\HowToCreateChart\CSharp\HowToCreateChart.csproj", "{034803DA-FDBC-4253-87F2-6BB0BA988BD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingChartsData", "ProgrammersGuide\AsposeCells\CreatingCharts\SettingChartsData\CSharp\SettingChartsData.csproj", "{B8AE6A82-C980-4F57-8AAE-0ADF5E124B09}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Applying3DFormat", "ProgrammersGuide\AsposeCells\CreatingCharts\Applying3DFormat\CSharp\Applying3DFormat.csproj", "{E920F351-DD46-425D-99D2-BDAD4CA14FB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingSparklines", "ProgrammersGuide\AsposeCells\CreatingCharts\UsingSparklines\CSharp\UsingSparklines.csproj", "{782E0BE6-3F88-4F9D-8800-A66BC372223C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangeChartPosition", "ProgrammersGuide\AsposeCells\CreatingCharts\ChangeChartPosition\CSharp\ChangeChartPosition.csproj", "{E8EE14E2-7AD3-4496-A038-36E0C7639C3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SettingChartsAppearance", "SettingChartsAppearance", "{77330ABF-A72E-4F3B-AFBB-204DDA95BEE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingChartArea", "ProgrammersGuide\AsposeCells\CreatingCharts\SettingChartsAppearance\SettingChartArea\CSharp\SettingChartArea.csproj", "{CF97ED0E-5353-4F84-98E0-C4A05B94E58C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingChartLines", "ProgrammersGuide\AsposeCells\CreatingCharts\SettingChartsAppearance\SettingChartLines\CSharp\SettingChartLines.csproj", "{D1DA4A24-BA7F-4AAD-A464-EC0B6755B781}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplyingThemes", "ProgrammersGuide\AsposeCells\CreatingCharts\SettingChartsAppearance\ApplyingThemes\CSharp\ApplyingThemes.csproj", "{E39BCCBE-0F81-4930-89E8-9F58AA5547C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingTitlesAxes", "ProgrammersGuide\AsposeCells\CreatingCharts\SettingChartsAppearance\SettingTitlesAxes\CSharp\SettingTitlesAxes.csproj", "{CBF26ADE-508E-48D4-9015-F0BD2662F696}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MajorGridlines", "ProgrammersGuide\AsposeCells\CreatingCharts\SettingChartsAppearance\MajorGridlines\CSharp\MajorGridlines.csproj", "{31BEFC92-C0E7-41A1-B7D7-92C6DCDD1AC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChangingMajorGridlines", "ProgrammersGuide\AsposeCells\CreatingCharts\SettingChartsAppearance\ChangingMajorGridlines\CSharp\ChangingMajorGridlines.csproj", "{DEEAFB85-9F69-4372-A769-D9BE30A84555}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InsertingControlsintoCharts", "InsertingControlsintoCharts", "{7171DA54-FCC6-4693-BE87-0E88FD320201}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingLabelControl", "ProgrammersGuide\AsposeCells\CreatingCharts\InsertingControlsintoCharts\AddingLabelControl\CSharp\AddingLabelControl.csproj", "{AD7D1985-8B8A-4511-9249-A4B91E79897F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingTextBoxControl", "ProgrammersGuide\AsposeCells\CreatingCharts\InsertingControlsintoCharts\AddingTextBoxControl\CSharp\AddingTextBoxControl.csproj", "{78D48571-14F7-408F-B660-BB81816109A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingPictureToChart", "ProgrammersGuide\AsposeCells\CreatingCharts\InsertingControlsintoCharts\AddingPictureToChart\CSharp\AddingPictureToChart.csproj", "{9DF350E7-2C33-476E-98B9-54CBB5DE1262}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OtherDrawingObjects", "OtherDrawingObjects", "{71BA6D13-EFB2-481D-9A19-1BE1681A0CF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessNonPrimitiveShape", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\AccessNonPrimitiveShape\CSharp\AccessNonPrimitiveShape.csproj", "{74BEE41A-AC5F-416A-B81F-D1263A5DA8E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AddingPictures", "AddingPictures", "{79F7C8AA-2670-46D8-AE75-664F8075E2C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingPictures", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\AddingPictures\AddingPictures\CSharp\AddingPictures.csproj", "{363EA57D-49E9-422E-89DB-956FC770CC79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PictureCellReference", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\AddingPictures\PictureCellReference\CSharp\PictureCellReference.csproj", "{EF97FC78-D608-465C-93CE-8115DB36D6E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PositioningPictures", "PositioningPictures", "{897C506F-7802-4DA9-AA99-ADF164434374}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProportionalPositioning", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\AddingPictures\PositioningPictures\ProportionalPositioning\CSharp\ProportionalPositioning.csproj", "{0C3D9090-E0E9-4CE4-8723-3E1412DCB851}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbsolutePositioning", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\AddingPictures\PositioningPictures\AbsolutePositioning\CSharp\AbsolutePositioning.csproj", "{2CB97FE5-6A80-466E-8208-5C6497B3A840}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AddingComments", "AddingComments", "{14DA3754-698C-4AE5-AB18-4A735F78D2C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingComment", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\AddingComments\AddingComment\CSharp\AddingComment.csproj", "{94FB600A-32FB-4C80-8B34-AD37E0A0E028}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommentFormatting", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\AddingComments\CommentFormatting\CSharp\CommentFormatting.csproj", "{6A89319C-7860-49E2-8C4B-7C73BF745EE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddImageToComment", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\AddingComments\AddImageToComment\CSharp\AddImageToComment.csproj", "{7E48181A-BE82-4B12-8972-91AE6681BF19}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithControls", "WorkingWithControls", "{A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingTextBoxControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingTextBoxControl\CSharp\AddingTextBoxControl.csproj", "{18D8DC46-D02E-4174-AEB5-372D09EDB5A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManipulatingTextBoxControls", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\ManipulatingTextBoxControls\CSharp\ManipulatingTextBoxControls.csproj", "{749BD701-403A-45E6-9BBD-7F648590420B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingCheckBoxControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingCheckBoxControl\CSharp\AddingCheckBoxControl.csproj", "{462A286F-D68D-4E38-A06B-8ACDD0010E20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingRadioButtonControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingRadioButtonControl\CSharp\AddingRadioButtonControl.csproj", "{5E37ABFD-4D71-47A9-99CB-09F89EE8170A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingComboBoxControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingComboBoxControl\CSharp\AddingComboBoxControl.csproj", "{8F183B42-6558-424B-9D44-D2B6C76806F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingLabelControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingLabelControl\CSharp\AddingLabelControl.csproj", "{6DCD6CF3-5182-46C9-8921-6A1003A8C971}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingListBoxControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingListBoxControl\CSharp\AddingListBoxControl.csproj", "{2CB40685-D82E-44E4-AB75-6BAECD206396}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingButtonControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingButtonControl\CSharp\AddingButtonControl.csproj", "{EAC55BAD-0626-4EAE-A241-11632E29ACF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingLineControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingLineControl\CSharp\AddingLineControl.csproj", "{4C77326D-08D3-4CEE-B090-062BC15887F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddinganArrowHead", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddinganArrowHead\CSharp\AddinganArrowHead.csproj", "{485237F0-A9E8-4B5F-AE74-F0442287327B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingRectangleControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingRectangleControl\CSharp\AddingRectangleControl.csproj", "{B1DD0A15-D761-42DE-B505-8DB4C13CD145}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingArcControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingArcControl\CSharp\AddingArcControl.csproj", "{1156A3E0-13D7-435E-9D2C-13BEC7621BE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingOvalControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingOvalControl\CSharp\AddingOvalControl.csproj", "{8F832195-89F4-46CF-B00F-E21797B9E92F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingSpinnerControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingSpinnerControl\CSharp\AddingSpinnerControl.csproj", "{76E1733B-837C-4CA3-BD7B-924C513F6664}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingScrollBarControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingScrollBarControl\CSharp\AddingScrollBarControl.csproj", "{00E33603-8262-485D-86C9-31EEB2668C82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingGroupBoxControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingGroupBoxControl\CSharp\AddingGroupBoxControl.csproj", "{FF162A57-8F91-4C06-88E3-1DEB6FD6ACF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ManagingOLEObjects", "ManagingOLEObjects", "{7BC7F54E-D833-42F0-A226-E6822C33B316}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertingOLEObjects", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\ManagingOLEObjects\InsertingOLEObjects\CSharp\InsertingOLEObjects.csproj", "{7A24AB1A-4329-4623-A4D7-44B3F32B280E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtractingOLEObjects", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\ManagingOLEObjects\ExtractingOLEObjects\CSharp\ExtractingOLEObjects.csproj", "{21C7A55A-10C4-4405-AA39-732AC8234087}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -433,9 +531,9 @@ Global
 		{DB79FA61-2F00-478A-98E8-35EFD20FF425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DB79FA61-2F00-478A-98E8-35EFD20FF425}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB79FA61-2F00-478A-98E8-35EFD20FF425}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{41758072-CEA1-430E-8113-C49BA61BF674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{41758072-CEA1-430E-8113-C49BA61BF674}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{41758072-CEA1-430E-8113-C49BA61BF674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF4EBFA2-0C4E-43D3-B36C-ADAF61204304}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF4EBFA2-0C4E-43D3-B36C-ADAF61204304}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF4EBFA2-0C4E-43D3-B36C-ADAF61204304}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B44D8B4E-40EF-4EC2-897B-A44C0B270714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B44D8B4E-40EF-4EC2-897B-A44C0B270714}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B44D8B4E-40EF-4EC2-897B-A44C0B270714}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -724,6 +822,126 @@ Global
 		{3226BE16-38D7-4B48-8934-A842F04D3749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3226BE16-38D7-4B48-8934-A842F04D3749}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3226BE16-38D7-4B48-8934-A842F04D3749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{034803DA-FDBC-4253-87F2-6BB0BA988BD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{034803DA-FDBC-4253-87F2-6BB0BA988BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{034803DA-FDBC-4253-87F2-6BB0BA988BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8AE6A82-C980-4F57-8AAE-0ADF5E124B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8AE6A82-C980-4F57-8AAE-0ADF5E124B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8AE6A82-C980-4F57-8AAE-0ADF5E124B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E920F351-DD46-425D-99D2-BDAD4CA14FB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E920F351-DD46-425D-99D2-BDAD4CA14FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E920F351-DD46-425D-99D2-BDAD4CA14FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{782E0BE6-3F88-4F9D-8800-A66BC372223C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{782E0BE6-3F88-4F9D-8800-A66BC372223C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{782E0BE6-3F88-4F9D-8800-A66BC372223C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8EE14E2-7AD3-4496-A038-36E0C7639C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8EE14E2-7AD3-4496-A038-36E0C7639C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8EE14E2-7AD3-4496-A038-36E0C7639C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF97ED0E-5353-4F84-98E0-C4A05B94E58C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF97ED0E-5353-4F84-98E0-C4A05B94E58C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF97ED0E-5353-4F84-98E0-C4A05B94E58C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1DA4A24-BA7F-4AAD-A464-EC0B6755B781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1DA4A24-BA7F-4AAD-A464-EC0B6755B781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1DA4A24-BA7F-4AAD-A464-EC0B6755B781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E39BCCBE-0F81-4930-89E8-9F58AA5547C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E39BCCBE-0F81-4930-89E8-9F58AA5547C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E39BCCBE-0F81-4930-89E8-9F58AA5547C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBF26ADE-508E-48D4-9015-F0BD2662F696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBF26ADE-508E-48D4-9015-F0BD2662F696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF26ADE-508E-48D4-9015-F0BD2662F696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31BEFC92-C0E7-41A1-B7D7-92C6DCDD1AC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31BEFC92-C0E7-41A1-B7D7-92C6DCDD1AC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31BEFC92-C0E7-41A1-B7D7-92C6DCDD1AC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEEAFB85-9F69-4372-A769-D9BE30A84555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEEAFB85-9F69-4372-A769-D9BE30A84555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEEAFB85-9F69-4372-A769-D9BE30A84555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD7D1985-8B8A-4511-9249-A4B91E79897F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD7D1985-8B8A-4511-9249-A4B91E79897F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD7D1985-8B8A-4511-9249-A4B91E79897F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78D48571-14F7-408F-B660-BB81816109A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78D48571-14F7-408F-B660-BB81816109A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78D48571-14F7-408F-B660-BB81816109A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DF350E7-2C33-476E-98B9-54CBB5DE1262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DF350E7-2C33-476E-98B9-54CBB5DE1262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DF350E7-2C33-476E-98B9-54CBB5DE1262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74BEE41A-AC5F-416A-B81F-D1263A5DA8E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74BEE41A-AC5F-416A-B81F-D1263A5DA8E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74BEE41A-AC5F-416A-B81F-D1263A5DA8E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{363EA57D-49E9-422E-89DB-956FC770CC79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{363EA57D-49E9-422E-89DB-956FC770CC79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{363EA57D-49E9-422E-89DB-956FC770CC79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF97FC78-D608-465C-93CE-8115DB36D6E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF97FC78-D608-465C-93CE-8115DB36D6E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF97FC78-D608-465C-93CE-8115DB36D6E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C3D9090-E0E9-4CE4-8723-3E1412DCB851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C3D9090-E0E9-4CE4-8723-3E1412DCB851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C3D9090-E0E9-4CE4-8723-3E1412DCB851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CB97FE5-6A80-466E-8208-5C6497B3A840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CB97FE5-6A80-466E-8208-5C6497B3A840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CB97FE5-6A80-466E-8208-5C6497B3A840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94FB600A-32FB-4C80-8B34-AD37E0A0E028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94FB600A-32FB-4C80-8B34-AD37E0A0E028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94FB600A-32FB-4C80-8B34-AD37E0A0E028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A89319C-7860-49E2-8C4B-7C73BF745EE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A89319C-7860-49E2-8C4B-7C73BF745EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A89319C-7860-49E2-8C4B-7C73BF745EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E48181A-BE82-4B12-8972-91AE6681BF19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E48181A-BE82-4B12-8972-91AE6681BF19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E48181A-BE82-4B12-8972-91AE6681BF19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18D8DC46-D02E-4174-AEB5-372D09EDB5A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18D8DC46-D02E-4174-AEB5-372D09EDB5A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18D8DC46-D02E-4174-AEB5-372D09EDB5A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{749BD701-403A-45E6-9BBD-7F648590420B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{749BD701-403A-45E6-9BBD-7F648590420B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{749BD701-403A-45E6-9BBD-7F648590420B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{462A286F-D68D-4E38-A06B-8ACDD0010E20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{462A286F-D68D-4E38-A06B-8ACDD0010E20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{462A286F-D68D-4E38-A06B-8ACDD0010E20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E37ABFD-4D71-47A9-99CB-09F89EE8170A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E37ABFD-4D71-47A9-99CB-09F89EE8170A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E37ABFD-4D71-47A9-99CB-09F89EE8170A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F183B42-6558-424B-9D44-D2B6C76806F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F183B42-6558-424B-9D44-D2B6C76806F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F183B42-6558-424B-9D44-D2B6C76806F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DCD6CF3-5182-46C9-8921-6A1003A8C971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DCD6CF3-5182-46C9-8921-6A1003A8C971}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DCD6CF3-5182-46C9-8921-6A1003A8C971}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CB40685-D82E-44E4-AB75-6BAECD206396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CB40685-D82E-44E4-AB75-6BAECD206396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CB40685-D82E-44E4-AB75-6BAECD206396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC55BAD-0626-4EAE-A241-11632E29ACF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC55BAD-0626-4EAE-A241-11632E29ACF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC55BAD-0626-4EAE-A241-11632E29ACF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C77326D-08D3-4CEE-B090-062BC15887F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C77326D-08D3-4CEE-B090-062BC15887F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C77326D-08D3-4CEE-B090-062BC15887F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{485237F0-A9E8-4B5F-AE74-F0442287327B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{485237F0-A9E8-4B5F-AE74-F0442287327B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{485237F0-A9E8-4B5F-AE74-F0442287327B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1DD0A15-D761-42DE-B505-8DB4C13CD145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1DD0A15-D761-42DE-B505-8DB4C13CD145}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1DD0A15-D761-42DE-B505-8DB4C13CD145}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1156A3E0-13D7-435E-9D2C-13BEC7621BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1156A3E0-13D7-435E-9D2C-13BEC7621BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1156A3E0-13D7-435E-9D2C-13BEC7621BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F832195-89F4-46CF-B00F-E21797B9E92F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F832195-89F4-46CF-B00F-E21797B9E92F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F832195-89F4-46CF-B00F-E21797B9E92F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76E1733B-837C-4CA3-BD7B-924C513F6664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76E1733B-837C-4CA3-BD7B-924C513F6664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76E1733B-837C-4CA3-BD7B-924C513F6664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00E33603-8262-485D-86C9-31EEB2668C82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00E33603-8262-485D-86C9-31EEB2668C82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00E33603-8262-485D-86C9-31EEB2668C82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF162A57-8F91-4C06-88E3-1DEB6FD6ACF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF162A57-8F91-4C06-88E3-1DEB6FD6ACF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF162A57-8F91-4C06-88E3-1DEB6FD6ACF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A24AB1A-4329-4623-A4D7-44B3F32B280E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A24AB1A-4329-4623-A4D7-44B3F32B280E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A24AB1A-4329-4623-A4D7-44B3F32B280E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21C7A55A-10C4-4405-AA39-732AC8234087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21C7A55A-10C4-4405-AA39-732AC8234087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21C7A55A-10C4-4405-AA39-732AC8234087}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -771,7 +989,7 @@ Global
 		{C8C6AFFB-01DB-453B-9192-203A17352DB9} = {32C80154-B1EA-416F-B354-D70112FAD2CC}
 		{D2BA019B-521E-4049-9C64-C2F39186A753} = {2CCABD1D-ECEA-49DD-8E16-0FF6C6963C51}
 		{DB79FA61-2F00-478A-98E8-35EFD20FF425} = {D2BA019B-521E-4049-9C64-C2F39186A753}
-		{41758072-CEA1-430E-8113-C49BA61BF674} = {D2BA019B-521E-4049-9C64-C2F39186A753}
+		{EF4EBFA2-0C4E-43D3-B36C-ADAF61204304} = {D2BA019B-521E-4049-9C64-C2F39186A753}
 		{0DA8FE81-5CF7-4BFB-9EC4-DB6D07A53188} = {08BE30B5-0442-4C58-A8CD-665126E93A16}
 		{658C2687-C6A5-409D-8FB3-ED411A64C740} = {0DA8FE81-5CF7-4BFB-9EC4-DB6D07A53188}
 		{B44D8B4E-40EF-4EC2-897B-A44C0B270714} = {658C2687-C6A5-409D-8FB3-ED411A64C740}
@@ -895,5 +1113,54 @@ Global
 		{BB652847-6B3E-428D-BAD9-164FCDE9E88D} = {5631ED0F-90D1-421B-BA9F-EDA703DE25CA}
 		{7E217985-3B15-4B49-A981-DD99E5FA98F7} = {5631ED0F-90D1-421B-BA9F-EDA703DE25CA}
 		{3226BE16-38D7-4B48-8934-A842F04D3749} = {5631ED0F-90D1-421B-BA9F-EDA703DE25CA}
+		{20FF1BF6-63D7-4ACD-8CB9-262ECA9736A8} = {08BE30B5-0442-4C58-A8CD-665126E93A16}
+		{034803DA-FDBC-4253-87F2-6BB0BA988BD7} = {20FF1BF6-63D7-4ACD-8CB9-262ECA9736A8}
+		{B8AE6A82-C980-4F57-8AAE-0ADF5E124B09} = {20FF1BF6-63D7-4ACD-8CB9-262ECA9736A8}
+		{E920F351-DD46-425D-99D2-BDAD4CA14FB9} = {20FF1BF6-63D7-4ACD-8CB9-262ECA9736A8}
+		{782E0BE6-3F88-4F9D-8800-A66BC372223C} = {20FF1BF6-63D7-4ACD-8CB9-262ECA9736A8}
+		{E8EE14E2-7AD3-4496-A038-36E0C7639C3B} = {20FF1BF6-63D7-4ACD-8CB9-262ECA9736A8}
+		{77330ABF-A72E-4F3B-AFBB-204DDA95BEE6} = {20FF1BF6-63D7-4ACD-8CB9-262ECA9736A8}
+		{CF97ED0E-5353-4F84-98E0-C4A05B94E58C} = {77330ABF-A72E-4F3B-AFBB-204DDA95BEE6}
+		{D1DA4A24-BA7F-4AAD-A464-EC0B6755B781} = {77330ABF-A72E-4F3B-AFBB-204DDA95BEE6}
+		{E39BCCBE-0F81-4930-89E8-9F58AA5547C5} = {77330ABF-A72E-4F3B-AFBB-204DDA95BEE6}
+		{CBF26ADE-508E-48D4-9015-F0BD2662F696} = {77330ABF-A72E-4F3B-AFBB-204DDA95BEE6}
+		{31BEFC92-C0E7-41A1-B7D7-92C6DCDD1AC3} = {77330ABF-A72E-4F3B-AFBB-204DDA95BEE6}
+		{DEEAFB85-9F69-4372-A769-D9BE30A84555} = {77330ABF-A72E-4F3B-AFBB-204DDA95BEE6}
+		{7171DA54-FCC6-4693-BE87-0E88FD320201} = {20FF1BF6-63D7-4ACD-8CB9-262ECA9736A8}
+		{AD7D1985-8B8A-4511-9249-A4B91E79897F} = {7171DA54-FCC6-4693-BE87-0E88FD320201}
+		{78D48571-14F7-408F-B660-BB81816109A5} = {7171DA54-FCC6-4693-BE87-0E88FD320201}
+		{9DF350E7-2C33-476E-98B9-54CBB5DE1262} = {7171DA54-FCC6-4693-BE87-0E88FD320201}
+		{71BA6D13-EFB2-481D-9A19-1BE1681A0CF8} = {08BE30B5-0442-4C58-A8CD-665126E93A16}
+		{74BEE41A-AC5F-416A-B81F-D1263A5DA8E7} = {71BA6D13-EFB2-481D-9A19-1BE1681A0CF8}
+		{79F7C8AA-2670-46D8-AE75-664F8075E2C2} = {71BA6D13-EFB2-481D-9A19-1BE1681A0CF8}
+		{363EA57D-49E9-422E-89DB-956FC770CC79} = {79F7C8AA-2670-46D8-AE75-664F8075E2C2}
+		{EF97FC78-D608-465C-93CE-8115DB36D6E7} = {79F7C8AA-2670-46D8-AE75-664F8075E2C2}
+		{897C506F-7802-4DA9-AA99-ADF164434374} = {79F7C8AA-2670-46D8-AE75-664F8075E2C2}
+		{0C3D9090-E0E9-4CE4-8723-3E1412DCB851} = {897C506F-7802-4DA9-AA99-ADF164434374}
+		{2CB97FE5-6A80-466E-8208-5C6497B3A840} = {897C506F-7802-4DA9-AA99-ADF164434374}
+		{14DA3754-698C-4AE5-AB18-4A735F78D2C3} = {71BA6D13-EFB2-481D-9A19-1BE1681A0CF8}
+		{94FB600A-32FB-4C80-8B34-AD37E0A0E028} = {14DA3754-698C-4AE5-AB18-4A735F78D2C3}
+		{6A89319C-7860-49E2-8C4B-7C73BF745EE6} = {14DA3754-698C-4AE5-AB18-4A735F78D2C3}
+		{7E48181A-BE82-4B12-8972-91AE6681BF19} = {14DA3754-698C-4AE5-AB18-4A735F78D2C3}
+		{A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF} = {71BA6D13-EFB2-481D-9A19-1BE1681A0CF8}
+		{18D8DC46-D02E-4174-AEB5-372D09EDB5A8} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{749BD701-403A-45E6-9BBD-7F648590420B} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{462A286F-D68D-4E38-A06B-8ACDD0010E20} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{5E37ABFD-4D71-47A9-99CB-09F89EE8170A} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{8F183B42-6558-424B-9D44-D2B6C76806F5} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{6DCD6CF3-5182-46C9-8921-6A1003A8C971} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{2CB40685-D82E-44E4-AB75-6BAECD206396} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{EAC55BAD-0626-4EAE-A241-11632E29ACF8} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{4C77326D-08D3-4CEE-B090-062BC15887F1} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{485237F0-A9E8-4B5F-AE74-F0442287327B} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{B1DD0A15-D761-42DE-B505-8DB4C13CD145} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{1156A3E0-13D7-435E-9D2C-13BEC7621BE2} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{8F832195-89F4-46CF-B00F-E21797B9E92F} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{76E1733B-837C-4CA3-BD7B-924C513F6664} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{00E33603-8262-485D-86C9-31EEB2668C82} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{FF162A57-8F91-4C06-88E3-1DEB6FD6ACF8} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{7BC7F54E-D833-42F0-A226-E6822C33B316} = {71BA6D13-EFB2-481D-9A19-1BE1681A0CF8}
+		{7A24AB1A-4329-4623-A4D7-44B3F32B280E} = {7BC7F54E-D833-42F0-A226-E6822C33B316}
+		{21C7A55A-10C4-4405-AA39-732AC8234087} = {7BC7F54E-D833-42F0-A226-E6822C33B316}
 	EndGlobalSection
 EndGlobal

@@ -691,7 +691,7 @@ A worksheet is represented by the Worksheet class. Worksheet class provides a wi
                       <Description>All of these advanced protection settings in Excel XP are supported in Aspose.Cells. Aspose.Cells provides a class, Workbook that represents an Excel file. Workbook class contains a Worksheets collection that allows to access each worksheet in the Excel file. A worksheet is represented by the Worksheet class.
 
 Worksheet class provides Protection property that is used to apply these advanced protection settings of Excel XP on the worksheets. Protection property is in fact an object of Protection class that encapsulates several boolean properties to disable or enable the restrictions on the worksheets.</Description>
-                      <FolderName>AdvancedProtectionSettings</FolderName>
+                      <FolderName>AdvanceProtectSettings</FolderName>
                       <Order>2</Order>
                       <DocLink>
                         <DisplayName>Advanced Protection Settings since Excel XP</DisplayName>
@@ -751,7 +751,7 @@ Worksheet class provides Protection property that is used to apply these advance
                         <Example>
                           <Title>Protecting Specific Cells in a Worksheet</Title>
                           <Description>There might be certain scenarios where you need to lock a few cells only in the worksheet. If you want to lock some specific cells in the worksheet, you have to unlock all the other cells in the worksheet. All the cells in a worksheet are already initialized for locking, you may check this opening any excel file into MS Excel and click the Format | Cells..*to show *Format Cells dialog box and then click the Protection tab and see a check box labeled "Locked" is checked by default.</Description>
-                          <FolderName>ProtectingSpecificCellsinaWorksheet</FolderName>
+                          <FolderName>ProtectCellsWorksheet</FolderName>
                           <Order>2</Order>
                           <DocLink>
                             <DisplayName>Protecting Worksheets</DisplayName>
@@ -767,7 +767,7 @@ Worksheet class provides Protection property that is used to apply these advance
                         <Example>
                           <Title>Protecting Specific Row in a Worksheet</Title>
                           <Description>Aspose.Cells allows you to easily lock any row in the worksheet. Here, we can make use of ApplyStyle() method of Aspose.Cells.Row class to apply Style to a particular row in the worksheet. This method takes two arguments: a Style object and StyleFlag object which has all the members related to applied formatting.</Description>
-                          <FolderName>ProtectingSpecificRowInWorksheet</FolderName>
+                          <FolderName>ProtectRowWorksheet</FolderName>
                           <Order>3</Order>
                           <DocLink>
                             <DisplayName>Protecting Worksheets</DisplayName>
@@ -783,7 +783,7 @@ Worksheet class provides Protection property that is used to apply these advance
                         <Example>
                           <Title>Protecting Specific Column in a Worksheet</Title>
                           <Description>Aspose.Cells allows you to easily lock any column in the worksheet. Here, we can make use of ApplyStyle() method of Aspose.Cells.Column class to apply Style to a particular column in the worksheet. This method takes two arguments: a Style object and StyleFlag object which has all the members related to applied formatting.</Description>
-                          <FolderName>ProtectingSpecificColumnInWorksheet</FolderName>
+                          <FolderName>ProtectColumnWorksheet</FolderName>
                           <Order>4</Order>
                           <DocLink>
                             <DisplayName>Protecting Worksheets</DisplayName>
@@ -799,7 +799,7 @@ Worksheet class provides Protection property that is used to apply these advance
                         <Example>
                           <Title>Allow User to Edit Ranges in a Worksheet</Title>
                           <Description>The following example shows how to allow users to edit a range in a protected worksheet.</Description>
-                          <FolderName>AllowUserToEditRangesInWorksheet</FolderName>
+                          <FolderName>EditRangesWorksheet</FolderName>
                           <Order>5</Order>
                           <DocLink>
                             <DisplayName>Protecting Worksheets</DisplayName>
@@ -826,7 +826,7 @@ Worksheet class provides Protection property that is used to apply these advance
                         <Example>
                           <Title>Unprotecting a Simply Protected Worksheet</Title>
                           <Description>A simply protected worksheet is the one, which is not protected with a password. Such worksheets can be unprotected by calling the Unprotect method without passing a parameter.</Description>
-                          <FolderName>UnprotectingSimplyProtectedWorksheet</FolderName>
+                          <FolderName>UnprotectSimpleSheet</FolderName>
                           <Order>1</Order>
                           <DocLink>
                             <DisplayName>Unprotect a Worksheet</DisplayName>
@@ -847,7 +847,7 @@ Worksheet class provides Protection property that is used to apply these advance
                         <Example>
                           <Title>Unprotecting a Password Protected Worksheet</Title>
                           <Description>A password protected worksheet can be unprotected by calling an overloaded version of Unprotect method that takes the password (required to unprotect the worksheet) as a parameter.</Description>
-                          <FolderName>UnprotectingPasswordProtectedWorksheet</FolderName>
+                          <FolderName>UnprotectProtectSheet</FolderName>
                           <Order>2</Order>
                           <DocLink>
                             <DisplayName>Unprotect a Worksheet</DisplayName>
@@ -1206,7 +1206,7 @@ This section includes the following examples:
                     <Example>
                       <Title>Setting the Height of All Rows in a Worksheet</Title>
                       <Description>If developers need to set the same row height for all rows in the worksheet, they can do it by using the StandardHeight property of the Cells collection.</Description>
-                      <FolderName>SettingHeightOfAllRowsInWorksheet</FolderName>
+                      <FolderName>SettingHeightAllRows</FolderName>
                       <Order>2</Order>
                       <DocLink>
                         <DisplayName>Adjusting Row Height and Column Width</DisplayName>
@@ -1248,7 +1248,7 @@ This section includes the following examples:
                     <Example>
                       <Title>Setting the Width of All Columns in a Worksheet</Title>
                       <Description>If developers need to set the same column width for all columns in the worksheet, they can do it by using the StandardWidth property of the Cells collection.</Description>
-                      <FolderName>SettingWidthOfAllColumns</FolderName>
+                      <FolderName>SetWidthAllColumns</FolderName>
                       <Order>4</Order>
                       <DocLink>
                         <DisplayName>Adjusting Row Height and Column Width</DisplayName>
@@ -1456,7 +1456,7 @@ The Sort method accepts the following parameters:
                         <Example>
                           <Title>Using Row and Column Index of the Cell</Title>
                           <Description>Developers can access any specific cell by passing the indices of its row and column to the Cells collection of the Worksheet class.</Description>
-                          <FolderName>UsingRowAndColumnIndexOfCell</FolderName>
+                          <FolderName>RowAndColumnIndex</FolderName>
                           <Order>2</Order>
                           <DocLink>
                             <DisplayName>Accessing Cells of a Worksheet</DisplayName>
@@ -1472,7 +1472,7 @@ The Sort method accepts the following parameters:
                         <Example>
                           <Title>Using Cell Index in Cells Collection</Title>
                           <Description>A cell can also be accessed by passing the cell's numeric index to the Cells collection using Aspose.Cells.</Description>
-                          <FolderName>UsingCellIndexInCellsCollection</FolderName>
+                          <FolderName>UsingCellIndex</FolderName>
                           <Order>3</Order>
                           <DocLink>
                             <DisplayName>Accessing Cells of a Worksheet</DisplayName>
@@ -1503,7 +1503,7 @@ The Sort method accepts the following parameters:
 
 1: Formula to Search, represents a formula that is needed to find in the worksheet
 2: Previous Cell, represents the previous cell with the same formula. This parameter can be set to null if you are searching from the start</Description>
-                          <FolderName>FindingCellsContainingFormula</FolderName>
+                          <FolderName>FindCellsContainingFormula</FolderName>
                           <Order>1</Order>
                           <DocLink>
                             <DisplayName>Find or Search Data</DisplayName>
@@ -1523,7 +1523,7 @@ The Sort method accepts the following parameters:
 1: Value to be Searched, represents the data/value to be searched that is needed to find in the worksheet cells.
 2: Previous Cell, represents the previous cell with the same value. This parameter can be set to null/nothing if you are searching from the start.
 3: Find Options, represents the find options.</Description>
-                          <FolderName>FindingDataOrFormulasUsingFindOptions</FolderName>
+                          <FolderName>FindDataOrFormulas</FolderName>
                           <Order>2</Order>
                           <DocLink>
                             <DisplayName>Find or Search Data</DisplayName>
@@ -1539,7 +1539,7 @@ The Sort method accepts the following parameters:
                         <Example>
                           <Title>Finding Cells Containing String Value or Number</Title>
                           <Description>Developers can also find specified string values in the worksheet by calling the same Find method of Cells collection with various FindOptions.You will have to specify the FindOptions.LookInType and FindOptions.LookAtType properties.</Description>
-                          <FolderName>FindingCellsWithStringOrNumber</FolderName>
+                          <FolderName>FindCellsStringNumber</FolderName>
                           <Order>3</Order>
                           <DocLink>
                             <DisplayName>Find or Search Data</DisplayName>
@@ -2940,6 +2940,843 @@ Characters method returns an instance of FontSetting class that allows developer
                   <Type>Console</Type>
                 </Example>
               </Examples>
+            </Folder>
+            <Folder>
+              <Title>Creating Charts</Title>
+              <Description>This section includes the following examples:
+
+- How to Create a Chart
+- Setting Charts Appearance
+- Setting Charts Data
+- Applying 3 D Format
+- Manipulating Designer Charts
+- Creating Custom Charts
+- Inserting Controls into Charts
+- Using Sparklines
+- Change the Chart's Position and Size</Description>
+              <FolderName>CreatingCharts</FolderName>
+              <Order>8</Order>
+              <Examples>
+                <Example>
+                  <Title>How to Create a Chart</Title>
+                  <Description>Developers can add a variety of charts to their spreadsheets using Aspose.Cells. Aspose.Cells provides many charting objects that can be used to create charts in a flexible manner. The primary aim of this topic is to make developers familiar with the charting objects of Aspose.Cells so that they may create any kind of chart easily.</Description>
+                  <FolderName>HowToCreateChart</FolderName>
+                  <Order>1</Order>
+                  <DocLink>
+                    <DisplayName>How to Create a Chart</DisplayName>
+                    <Url>How+to+Create+a+Chart</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\book1.xls</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Setting Charts Data</Title>
+                  <Description>There are two types of data to deal with while working on charts using Aspose.Cells as follows:
+ 
+- Chart Data
+- Category Data</Description>
+                  <FolderName>SettingChartsData</FolderName>
+                  <Order>3</Order>
+                  <DocLink>
+                    <DisplayName>Setting Charts Data</DisplayName>
+                    <Url>Setting+Charts+Data</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\book1.xls</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Applying 3D Format</Title>
+                  <Description>Aspose.Cells does provide the relevant API to apply Excel 2007 3-D formatting. You might need 3D charting styles so you can get just the results for your scenario.</Description>
+                  <FolderName>Applying3DFormat</FolderName>
+                  <Order>4</Order>
+                  <DocLink>
+                    <DisplayName>Applying 3D Format</DisplayName>
+                    <Url>Applying+3+D+Format</Url>
+                  </DocLink>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\3d_format.xlsx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Using Sparklines</Title>
+                  <Description>Microsoft Excel 2010 can analyze information in more ways than ever before. It allows users to track and highlight important data trends with new data analysis and visualization tools. Sparklines are mini-charts that you can place inside cells so that you can view data and chart on the same table. When sparklines are used properly, data analysis is quicker and more to the point. They also provide a simple view of information, avoiding over-crowded worksheets with a lot of busy charts. Aspose.Cells provides an API for manipulating sparklines in spreadsheets.</Description>
+                  <FolderName>UsingSparklines</FolderName>
+                  <Order>6</Order>
+                  <DocLink>
+                    <DisplayName>Using Sparklines</DisplayName>
+                    <Url>Using+Sparklines</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\Book1.xlsx</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\Book1_out.xlsx</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+                <Example>
+                  <Title>Change the Chart Position and Size</Title>
+                  <Description>Sometimes, you want to change the position or size of the new or existing chart inside the worksheet. Aspose.Cells provides the Chart.ChartObject property to achieve this. You can use its sub-properties to re-size the chart with new height and width or re-position it with new X and Y coordinates.</Description>
+                  <FolderName>ChangeChartPosition</FolderName>
+                  <Order>7</Order>
+                  <DocLink>
+                    <DisplayName>Change the Chart Position and Size</DisplayName>
+                    <Url>Change+the+Chart%27s+Position+and+Size</Url>
+                  </DocLink>
+                  <InputFiles>
+                    <DataFile>
+                      <Path>..\Data\chart.xls</Path>
+                    </DataFile>
+                  </InputFiles>
+                  <OutputFiles>
+                    <DataFile>
+                      <Path>..\Data\chart_out.xls</Path>
+                    </DataFile>
+                  </OutputFiles>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+              <Folders>
+                <Folder>
+                  <Title>Setting Charts Appearance</Title>
+                  <Description>This section includes following examples:
+
+- Setting Chart Area
+- Setting Chart Lines
+- Applying MS Excel 2007/2010 Themes to Charts
+- Setting the Titles of Charts or Axes
+- Working with Major Gridlines
+- Changing Major Gridlines Settings</Description>
+                  <FolderName>SettingChartsAppearance</FolderName>
+                  <Order>2</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Setting Chart Area</Title>
+                      <Description>There are different kinds of areas in a chart and Aspose.Cells provides the flexibility of modifying the appearance of each area. Developers can apply different formatting settings on an area by changing its foreground color, background color and fill format etc.</Description>
+                      <FolderName>SettingChartArea</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Setting Charts Appearance</DisplayName>
+                        <Url>Setting+Charts+Appearance</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Setting Chart Lines</Title>
+                      <Description>Developers can also apply different kinds of styles on the lines or data markers of the SeriesCollection using Aspose.Cells.</Description>
+                      <FolderName>SettingChartLines</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Setting Charts Appearance</DisplayName>
+                        <Url>Setting+Charts+Appearance</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Applying MS Excel 2007/2010 Themes to Charts</Title>
+                      <Description>Developers can apply different Microsoft Excel themes/colors to SeriesCollection or other chart objects using Aspose.Cells.</Description>
+                      <FolderName>ApplyingThemes</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>Setting Charts Appearance</DisplayName>
+                        <Url>Setting+Charts+Appearance</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xlsx</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.xlsx</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Setting the Titles of Charts or Axes</Title>
+                      <Description>Aspose.Cells also allows developers to set the titles of a chart and its axes at runtime. All charts and their axes contain a Title property that can be used to set their titles.</Description>
+                      <FolderName>SettingTitlesAxes</FolderName>
+                      <Order>4</Order>
+                      <DocLink>
+                        <DisplayName>Setting Charts Appearance</DisplayName>
+                        <Url>Setting+Charts+Appearance</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Working with Major Gridlines</Title>
+                      <Description>Using Aspose.Cells, developers can control the visibility of major gridlines by setting the IsVisible property of the MajorGridlines object to true or false.</Description>
+                      <FolderName>MajorGridlines</FolderName>
+                      <Order>5</Order>
+                      <DocLink>
+                        <DisplayName>Setting Charts Appearance</DisplayName>
+                        <Url>Setting+Charts+Appearance</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Changing Major Gridlines Settings</Title>
+                      <Description>Using Aspose.Cells, developers cannot only control the visibility of major gridlines but also other properties including its color etc.</Description>
+                      <FolderName>ChangingMajorGridlines</FolderName>
+                      <Order>6</Order>
+                      <DocLink>
+                        <DisplayName>Setting Charts Appearance</DisplayName>
+                        <Url>Setting+Charts+Appearance</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+                <Folder>
+                  <Title>Inserting Controls into Charts</Title>
+                  <Description>This section contains the following examples:
+
+- Adding Label Control to the Chart
+- Adding TextBox Control to the Chart
+- Adding Picture to the Chart</Description>
+                  <FolderName>InsertingControlsintoCharts</FolderName>
+                  <Order>5</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Adding Label Control to the Chart</Title>
+                      <Description>Labels provide means to give some information for the user related to your speadsheet contents. Aspose.Cells allows you to add and  manipulate Labels even in the charts.Aspose.Cells.Drawing.ShapeCollection class provides a method named AddLabelInChart , which is used to add a label control to the chart.</Description>
+                      <FolderName>AddingLabelControl</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Inserting Controls into Charts</DisplayName>
+                        <Url>Inserting+Controls+into+Charts</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\chart.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\chart_out.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding TextBox Control to the Chart</Title>
+                      <Description>One way to stress important information on your report is to use a text box. For example, you can enter text to highlight your company's name or to indicate the geographic region with the highest sales etc. Aspose.Cells.Drawing.ShapeCollection class provides a method named AddTextBoxInChart , which is used to add a text box control to the chart.</Description>
+                      <FolderName>AddingTextBoxControl</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Inserting Controls into Charts</DisplayName>
+                        <Url>Inserting+Controls+into+Charts</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\chart.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\chart_out.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding Picture to the Chart</Title>
+                      <Description>Aspose.Cells allows you to insert images in the chart. For example, you can add a picture to emphasise or give more meaning to the chart or its contents or you may insert a brand / mark image file for your company. Aspose.Cells.Drawing.ShapeCollection class provides a method named AddPictureInChart , which is used to add a picture object to the chart.</Description>
+                      <FolderName>AddingPictureToChart</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>Inserting Controls into Charts</DisplayName>
+                        <Url>Inserting+Controls+into+Charts</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\chart.xls</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\logo.jpg</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\chart_out.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
+            </Folder>
+            <Folder>
+              <Title>Working with Other Drawing Objects</Title>
+              <Description>This section includes the following topics: 
+
+- Adding Pictures
+- Adding Comments
+- Working with Controls
+- Managing OLE Objects
+- Accessing Data of Non-Primitive Shape</Description>
+              <FolderName>OtherDrawingObjects</FolderName>
+              <Order>9</Order>
+              <Examples>
+                <Example>
+                  <Title>Accessing Data of Non-Primitive Shape</Title>
+                  <Description>Sometimes, you need to access a Shape data which is not a Primitive (Built-in) Shape. Such shapes are called Non-Primitive Shape. For example, you can define your own shapes using different curve connected lines. Such shapes are of types AutoShapeType.NotPrimitive. You can check their type using the Shape.AutoShapeType property.</Description>
+                  <FolderName>AccessNonPrimitiveShape</FolderName>
+                  <Order>5</Order>
+                  <DocLink>
+                    <DisplayName>Accessing Data of Non-Primitive Shape</DisplayName>
+                    <Url>Accessing+Data+of+Non-Primitive+Shape</Url>
+                  </DocLink>
+                  <Type>Console</Type>
+                </Example>
+              </Examples>
+              <Folders>
+                <Folder>
+                  <Title>Adding Pictures</Title>
+                  <Description>This section includes the following examples
+
+- Adding Pictures 
+- Positioning Pictures
+- Inserting a Picture based on Cell Reference</Description>
+                  <FolderName>AddingPictures</FolderName>
+                  <Order>1</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Adding Pictures</Title>
+                      <Description>Adding pictures to a spreadsheet is very easy. It only takes a few lines of code. Add a picture to the worksheet by calling the Add method of the Pictures collection (encapsulated in the Worksheet object).</Description>
+                      <FolderName>AddingPictures</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Adding Pictures</DisplayName>
+                        <Url>Adding+Pictures</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\logo.jpg</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Inserting a Picture based on Cell Reference</Title>
+                      <Description>Aspose.Cells supports to display the contents of a worksheet cell in an image shape. You can link the picture to the cell that contains the data that you want to display. Since the cell or cell range is linked to the graphic object, changes that you make to the data in that cell or cell range automatically appear in the graphic object. Add a picture to the worksheet by calling the AddPicture method of the ShapeCollection collection (encapsulated in the Worksheet object). Specify the cell range by using the Formula attribute of the Picture object.</Description>
+                      <FolderName>PictureCellReference</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>Adding Pictures</DisplayName>
+                        <Url>Adding+Pictures</Url>
+                      </DocLink>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                  <Folders>
+                    <Folder>
+                      <Title>Positioning Pictures</Title>
+                      <Description>There are two possible ways to control the positioning of pictures using Aspose.Cells:
+ 
+- Proportional positioning: define a position proportional to the row height and width.
+- Absolute positioning: define the exact position on the page where the image will be inserted, for example, 40 pixels to the left and 20 pixels below the edge of the cell.</Description>
+                      <FolderName>PositioningPictures</FolderName>
+                      <Order>2</Order>
+                      <Examples>
+                        <Example>
+                          <Title>Proportional Positioning</Title>
+                          <Description>Developers can position the pictures proportional to row height and column width using the UpperDeltaX and UpperDeltaY properties of the Aspose.Cells.Drawing.Picture object. A Picture object can be obtained from the Pictures collection by passing its picture index.</Description>
+                          <FolderName>ProportionalPositioning</FolderName>
+                          <Order>1</Order>
+                          <DocLink>
+                            <DisplayName>Adding Pictures</DisplayName>
+                            <Url>Adding+Pictures</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\logo.jpg</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                        <Example>
+                          <Title>Absolute Positioning</Title>
+                          <Description>Developers can also position the pictures absolutely by using the Left and Top properties of the Picture object. This example place an image in cell F6, 60 pixels from the left and 10 pixels from the top of the cell.</Description>
+                          <FolderName>AbsolutePositioning</FolderName>
+                          <Order>2</Order>
+                          <DocLink>
+                            <DisplayName>Adding Pictures</DisplayName>
+                            <Url>Adding+Pictures</Url>
+                          </DocLink>
+                          <InputFiles>
+                            <DataFile>
+                              <Path>..\Data\logo.jpg</Path>
+                            </DataFile>
+                          </InputFiles>
+                          <OutputFiles>
+                            <DataFile>
+                              <Path>..\Data\book1.xls</Path>
+                            </DataFile>
+                          </OutputFiles>
+                          <Type>Console</Type>
+                        </Example>
+                      </Examples>
+                    </Folder>
+                  </Folders>
+                </Folder>
+                <Folder>
+                  <Title>Adding Comments</Title>
+                  <Description>This section includes the following examples:
+
+- Adding a Comment
+- Comment Formatting
+- Add an Image to Comment</Description>
+                  <FolderName>AddingComments</FolderName>
+                  <Order>2</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Adding a Comment</Title>
+                      <Description>Developers can add comment to a cell by calling the Add method of the Comments collection (encapsulated in the Worksheet object). The newly added Comment object can be accessed from the Comments collection by passing the comment index. After accessing the Comment object, developers can customize the comment note by using the Note property of the Comment object.</Description>
+                      <FolderName>AddingComment</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Adding Comments</DisplayName>
+                        <Url>Adding+Comments</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Comment Formatting</Title>
+                      <Description>Developers can also format the appearance of the comments by configuring their height, width and font settings etc.</Description>
+                      <FolderName>CommentFormatting</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Adding Comments</DisplayName>
+                        <Url>Adding+Comments</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Add an Image to Comment</Title>
+                      <Description>Aspose.Cells provides this valuable feature to add image to comments. In this example, we add a comment to cell "A1" with a picture set as its background in the first worksheet.</Description>
+                      <FolderName>AddImageToComment</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>Adding Comments</DisplayName>
+                        <Url>Adding+Comments</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\logo.jpg</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xlsx</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+                <Folder>
+                  <Title>Working with Controls</Title>
+                  <Description>This section includes the following examples:
+
+- Adding TextBox Control to the Worksheet
+- Manipulating TextBox Controls in the Designer Spreadsheets
+- Adding CheckBox Control to the Worksheet
+- Adding RadioButton Control to the Worksheet
+- Adding ComboBox Control to the Worksheet
+- Adding Label Control to the Worksheet
+- Adding ListBox Control to the Worksheet
+- Adding Button Control to the Worksheet
+- Adding Line Control to the Worksheet
+- Adding an ArrowHead to the Line
+- Adding Rectangle Control to the Worksheet
+- Adding Arc Control to the Worksheet
+- Adding Oval Control to the Worksheet
+- Adding Spinner Control to the Worksheet
+- Adding ScrollBar Control to the Worksheet
+- Adding GroupBox Control to Group Controls in the Worksheet</Description>
+                  <FolderName>WorkingWithControls</FolderName>
+                  <Order>3</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Adding TextBox Control to the Worksheet</Title>
+                      <Description>One way to stress important information on your report is to use a text box. For example, you can enter text to highlight your company's name or to indicate the geographic region with the highest sales etc. Aspose.Cells provides TextBoxCollection class, which is used to add a new text box to the collection. There is another class TextBox, which represents a text box used to define all types of settings.</Description>
+                      <FolderName>AddingTextBoxControl</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Working with Controls</DisplayName>
+                        <Url>Working+with+Controls</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Manipulating TextBox Controls in the Designer Spreadsheets</Title>
+                      <Description>Aspose.Cells also facilitates you to access the textboxes in the desinger worksheets and manipulate them. You may utilize Worksheet.TextBoxes property to get the textboxes collection in the sheet.</Description>
+                      <FolderName>ManipulatingTextBoxControls</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Working with Controls</DisplayName>
+                        <Url>Working+with+Controls</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding CheckBox Control to the Worksheet</Title>
+                      <Description>CheckBoxes are handy if you want to provide a way for a user to choose between two options, such as true or false; yes or no. Aspose.Cells allows you to use check boxes in your worksheets.</Description>
+                      <FolderName>AddingCheckBoxControl</FolderName>
+                      <Order>3</Order>
+                      <DocLink>
+                        <DisplayName>Working with Controls</DisplayName>
+                        <Url>Working+with+Controls</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding RadioButton Control to the Worksheet</Title>
+                      <Description>A RadioButton or an option button is a control made of a round box O. The user makes his or her decision by selecting or clicking the round box.</Description>
+                      <FolderName>AddingRadioButtonControl</FolderName>
+                      <Order>4</Order>
+                      <DocLink>
+                        <DisplayName>Working with Controls</DisplayName>
+                        <Url>Working+with+Controls</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding ComboBox Control to the Worksheet</Title>
+                      <Description>To make data entry easier, or to limit entries to certain items that you define, you can create a ComboBox or drop-down list of valid entries that is compiled from cells elsewhere on the worksheet.</Description>
+                      <FolderName>AddingComboBoxControl</FolderName>
+                      <Order>5</Order>
+                      <DocLink>
+                        <DisplayName>Working with Controls</DisplayName>
+                        <Url>Working+with+Controls</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding Label Control to the Worksheet</Title>
+                      <Description>Labels provide means to give some information for the user related to your speadsheet report contents. Aspose.Cells allows you to add / manipulate Labels in the worksheet.</Description>
+                      <FolderName>AddingLabelControl</FolderName>
+                      <Order>6</Order>
+                      <DocLink>
+                        <DisplayName>Working with Controls</DisplayName>
+                        <Url>Working+with+Controls</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding ListBox Control to the Worksheet</Title>
+                      <Description>A ListBox control lets you create a list control that allows single or multiple item selection. Aspose.Cells allows you to create list boxes in your worksheets.</Description>
+                      <FolderName>AddingListBoxControl</FolderName>
+                      <Order>7</Order>
+                      <DocLink>
+                        <DisplayName>Working with Controls</DisplayName>
+                        <Url>Working+with+Controls</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding Button Control to the Worksheet</Title>
+                      <Description>Buttons are useful if you want to perform some actions. Sometimes, you want to assign a VBA Macro to the button or you need to assign a hyperlink to open a web page.</Description>
+                      <FolderName>AddingButtonControl</FolderName>
+                      <Order>8</Order>
+                      <DocLink>
+                        <DisplayName>Working with Controls</DisplayName>
+                        <Url>Working+with+Controls</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding Line Control to the Worksheet</Title>
+                      <Description>Aspose.Cells allows you to draw autoshapes in your worksheets. You may create a line with ease. You are also allowed to format the line.</Description>
+                      <FolderName>AddingLineControl</FolderName>
+                      <Order>9</Order>
+                      <DocLink>
+                        <DisplayName>Working with Controls</DisplayName>
+                        <Url>Working+with+Controls</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding an ArrowHead to the Line</Title>
+                      <Description>Aspose.Cells also allows you to draw arrow lines. You may create a line with an arrowhead for your requirements. You are also allowed to format the line.</Description>
+                      <FolderName>AddinganArrowHead</FolderName>
+                      <Order>10</Order>
+                      <DocLink>
+                        <DisplayName>Working with Controls</DisplayName>
+                        <Url>Working+with+Controls</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding Rectangle Control to the Worksheet</Title>
+                      <Description>Aspose.Cells allows you to draw rectangle shapes in your worksheets. You may create a rectangle, square etc. You are also allowed to format the filling color and border line color of the control.</Description>
+                      <FolderName>AddingRectangleControl</FolderName>
+                      <Order>11</Order>
+                      <DocLink>
+                        <DisplayName>Working with Controls</DisplayName>
+                        <Url>Working+with+Controls</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding Arc Control to the Worksheet</Title>
+                      <Description>Aspose.Cells allows you to draw arc shapes in your worksheets. You may create simple and filled arcs. You are allowed to format the filling color and border line color of the control.</Description>
+                      <FolderName>AddingArcControl</FolderName>
+                      <Order>12</Order>
+                      <DocLink>
+                        <DisplayName>Working with Controls</DisplayName>
+                        <Url>Working+with+Controls</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding Oval Control to the Worksheet</Title>
+                      <Description>Aspose.Cells allows you to draw oval shapes in your worksheets. You may create simple and filled oval shapes. You are allowed to format the filling color and border line color of the control.</Description>
+                      <FolderName>AddingOvalControl</FolderName>
+                      <Order>13</Order>
+                      <DocLink>
+                        <DisplayName>Working with Controls</DisplayName>
+                        <Url>Working+with+Controls</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding Spinner Control to the Worksheet</Title>
+                      <Description>A spin box is a text box attached to a button (called a spin button) consisting of an up arrow and down arrow that you click to incrementally change the value in the text box.</Description>
+                      <FolderName>AddingSpinnerControl</FolderName>
+                      <Order>14</Order>
+                      <DocLink>
+                        <DisplayName>Working with Controls</DisplayName>
+                        <Url>Working+with+Controls</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding ScrollBar Control to the Worksheet</Title>
+                      <Description>A ScrollBar control is used to help select data on the worksheet similar to spin box control. By adding the control to a worksheet and linking it to a cell, you can return a numeric value for the current position of the control. Aspose.Cells allows you to create scroll bar in your worksheets.</Description>
+                      <FolderName>AddingScrollBarControl</FolderName>
+                      <Order>15</Order>
+                      <DocLink>
+                        <DisplayName>Working with Controls</DisplayName>
+                        <Url>Working+with+Controls</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Adding GroupBox Control to Group Controls in the Worksheet</Title>
+                      <Description>Sometimes you do need to implement radio buttons or other controls which belong to a certain group, you can implement by including either a Group Box or rectangle control.</Description>
+                      <FolderName>AddingGroupBoxControl</FolderName>
+                      <Order>16</Order>
+                      <DocLink>
+                        <DisplayName>Working with Controls</DisplayName>
+                        <Url>Working+with+Controls</Url>
+                      </DocLink>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+                <Folder>
+                  <Title>Managing OLE Objects</Title>
+                  <Description>Aspose.Cells supports to add, extract and manipulate OLE Objects in your worksheets and can give more value to your workbooks. Aspose.Cells.Drawing namespace provides some important API related the task. It has OleObjectCollection class, which is used to add a new OLE Object to the collection list. There is another class OleObject, which represents an OLE Object.</Description>
+                  <FolderName>ManagingOLEObjects</FolderName>
+                  <Order>4</Order>
+                  <Examples>
+                    <Example>
+                      <Title>Inserting OLE Objects into the Worksheet</Title>
+                      <Description>The following example shows how to add an OLE Object(s) into a worksheet.</Description>
+                      <FolderName>InsertingOLEObjects</FolderName>
+                      <Order>1</Order>
+                      <DocLink>
+                        <DisplayName>Managing OLE Objects</DisplayName>
+                        <Url>Managing+OLE+Objects</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                        <DataFile>
+                          <Path>..\Data\logo.jpg</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\output.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                    <Example>
+                      <Title>Extracting OLE Objects</Title>
+                      <Description>The following example shows how to extract OLE Objects in a Workbook. The example gets different OLE Objects from an existing XLS file and saves different files (doc, xls, ppt, pdf etc.) based on the OLE Object’s file format type.</Description>
+                      <FolderName>ExtractingOLEObjects</FolderName>
+                      <Order>2</Order>
+                      <DocLink>
+                        <DisplayName>Managing OLE Objects</DisplayName>
+                        <Url>Managing+OLE+Objects</Url>
+                      </DocLink>
+                      <InputFiles>
+                        <DataFile>
+                          <Path>..\Data\book1.xls</Path>
+                        </DataFile>
+                      </InputFiles>
+                      <OutputFiles>
+                        <DataFile>
+                          <Path>..\Data\Excel_File0.xls</Path>
+                        </DataFile>
+                      </OutputFiles>
+                      <Type>Console</Type>
+                    </Example>
+                  </Examples>
+                </Folder>
+              </Folders>
             </Folder>
           </Folders>
         </Folder>

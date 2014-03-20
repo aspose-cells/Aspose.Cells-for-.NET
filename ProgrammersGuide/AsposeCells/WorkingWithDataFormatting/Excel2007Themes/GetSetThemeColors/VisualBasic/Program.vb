@@ -27,13 +27,13 @@ Namespace GetSetThemeColors
 			Dim c As Color = workbook.GetThemeColor(ThemeColorType.Background1)
 
 			'Print the color.
-			Console.WriteLine("theme color Background1: " & c)
+            Console.WriteLine("theme color Background1: " & c.ToString())
 
 			'Get the Accent2 theme color.
 			c = workbook.GetThemeColor(ThemeColorType.Accent2)
 
 			'Print the color.
-			Console.WriteLine("theme color Accent2: " & c)
+            Console.WriteLine("theme color Accent2: " & c.ToString())
 
 			'Change the Background1 theme color.
 			workbook.SetThemeColor(ThemeColorType.Background1, Color.Red)
@@ -42,7 +42,7 @@ Namespace GetSetThemeColors
 			c = workbook.GetThemeColor(ThemeColorType.Background1)
 
 			'Print the updated color for confirmation.
-			Console.WriteLine("theme color Background1 changed to: " & c)
+            Console.WriteLine("theme color Background1 changed to: " & c.ToString())
 
 			'Change the Accent2 theme color.
 			workbook.SetThemeColor(ThemeColorType.Accent2, Color.Blue)
@@ -51,7 +51,7 @@ Namespace GetSetThemeColors
 			c = workbook.GetThemeColor(ThemeColorType.Accent2)
 
 			'Print the updated color for confirmation.
-			Console.WriteLine("theme color Accent2 changed to: " & c)
+            Console.WriteLine("theme color Accent2 changed to: " & c.ToString())
 
 			'Save the updated file.
 			workbook.Save(dataDir & "output.xlsx")

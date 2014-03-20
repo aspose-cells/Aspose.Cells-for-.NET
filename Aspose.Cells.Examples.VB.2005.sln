@@ -8,333 +8,429 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithFiles", "Working
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UtilityFeatures", "UtilityFeatures", "{BA711239-F9A3-4F93-94E3-D3B2F20A8633}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel2PDFConversion", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\Excel2PDFConversion\VisualBasic\Excel2PDFConversion.vbproj", "{373BBCDF-FAAA-4533-BD3B-C69292B23C3E}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Excel2PDFConversion", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\Excel2PDFConversion\VisualBasic\Excel2PDFConversion.vbproj", "{373BBCDF-FAAA-4533-BD3B-C69292B23C3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChartToImage", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\ChartToImage\VisualBasic\ChartToImage.vbproj", "{08FECC17-944E-4C4E-B5C3-D140EF1AE76F}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ChartToImage", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\ChartToImage\VisualBasic\ChartToImage.vbproj", "{08FECC17-944E-4C4E-B5C3-D140EF1AE76F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorksheetToImage", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\WorksheetToImage\VisualBasic\WorksheetToImage.vbproj", "{EC04101C-8030-48A9-BDFA-00BEE56EAE11}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WorksheetToImage", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\WorksheetToImage\VisualBasic\WorksheetToImage.vbproj", "{EC04101C-8030-48A9-BDFA-00BEE56EAE11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertingToXPS", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\ConvertingToXPS\VisualBasic\ConvertingToXPS.vbproj", "{2368C5E6-F486-48B5-8614-62372CB35E2D}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ConvertingToXPS", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\ConvertingToXPS\VisualBasic\ConvertingToXPS.vbproj", "{2368C5E6-F486-48B5-8614-62372CB35E2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagingDocumentProperties", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\ManagingDocumentProperties\VisualBasic\ManagingDocumentProperties.vbproj", "{B162C01E-2C94-431F-B1A8-5EBCEBBA4933}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ManagingDocumentProperties", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\ManagingDocumentProperties\VisualBasic\ManagingDocumentProperties.vbproj", "{B162C01E-2C94-431F-B1A8-5EBCEBBA4933}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncryptingFiles", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\EncryptingFiles\VisualBasic\EncryptingFiles.vbproj", "{2892A82E-603B-4D3E-B37D-823858BCD459}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EncryptingFiles", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\EncryptingFiles\VisualBasic\EncryptingFiles.vbproj", "{2892A82E-603B-4D3E-B37D-823858BCD459}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertingWorksheetToSVG", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\ConvertingWorksheetToSVG\VisualBasic\ConvertingWorksheetToSVG.vbproj", "{1B135A21-9EE1-46AC-82F9-EF4A5C1A5E15}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ConvertingWorksheetToSVG", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\ConvertingWorksheetToSVG\VisualBasic\ConvertingWorksheetToSVG.vbproj", "{1B135A21-9EE1-46AC-82F9-EF4A5C1A5E15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertingToMHTMLFiles", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\ConvertingToMHTMLFiles\VisualBasic\ConvertingToMHTMLFiles.vbproj", "{9254419D-FF06-4197-AB57-6B46A7EE97AE}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ConvertingToMHTMLFiles", "ProgrammersGuide\AsposeCells\WorkingWithFiles\UtilityFeatures\ConvertingToMHTMLFiles\VisualBasic\ConvertingToMHTMLFiles.vbproj", "{9254419D-FF06-4197-AB57-6B46A7EE97AE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FileHandlingFeatures", "FileHandlingFeatures", "{A2D9D5DB-4CBC-431C-9AFD-AE654B7349C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpeningFiles", "ProgrammersGuide\AsposeCells\WorkingWithFiles\FileHandlingFeatures\OpeningFiles\VisualBasic\OpeningFiles.vbproj", "{EC214421-067D-4BA4-A60B-A96BE7D272C1}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "OpeningFiles", "ProgrammersGuide\AsposeCells\WorkingWithFiles\FileHandlingFeatures\OpeningFiles\VisualBasic\OpeningFiles.vbproj", "{EC214421-067D-4BA4-A60B-A96BE7D272C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveWorkbookToTextCSVFormat", "ProgrammersGuide\AsposeCells\WorkingWithFiles\FileHandlingFeatures\SaveWorkbookToTextCSVFormat\VisualBasic\SaveWorkbookToTextCSVFormat.vbproj", "{C345D272-29D6-4DD8-A16B-DEEB624F1CB2}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SaveWorkbookToTextCSVFormat", "ProgrammersGuide\AsposeCells\WorkingWithFiles\FileHandlingFeatures\SaveWorkbookToTextCSVFormat\VisualBasic\SaveWorkbookToTextCSVFormat.vbproj", "{C345D272-29D6-4DD8-A16B-DEEB624F1CB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SavingFiles", "ProgrammersGuide\AsposeCells\WorkingWithFiles\FileHandlingFeatures\SavingFiles\VisualBasic\SavingFiles.vbproj", "{769157E1-C93E-42FB-8DB5-5E17AF3AB623}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SavingFiles", "ProgrammersGuide\AsposeCells\WorkingWithFiles\FileHandlingFeatures\SavingFiles\VisualBasic\SavingFiles.vbproj", "{769157E1-C93E-42FB-8DB5-5E17AF3AB623}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithWorksheets", "WorkingWithWorksheets", "{26558868-19A9-415F-AE95-91A9101DB851}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DisplayFeatures", "DisplayFeatures", "{A140B3AC-E5BE-42B0-A7DE-070AD443BFD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HideUnhideWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\HideUnhideWorksheet\VisualBasic\HideUnhideWorksheet.vbproj", "{61BAA8BA-ECB7-4682-B53C-51D5634F3060}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HideUnhideWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\HideUnhideWorksheet\VisualBasic\HideUnhideWorksheet.vbproj", "{61BAA8BA-ECB7-4682-B53C-51D5634F3060}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayHideTabs", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\DisplayHideTabs\VisualBasic\DisplayHideTabs.vbproj", "{9FD95A59-BF4A-42F9-BDAE-7F103F791E9B}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DisplayHideTabs", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\DisplayHideTabs\VisualBasic\DisplayHideTabs.vbproj", "{9FD95A59-BF4A-42F9-BDAE-7F103F791E9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayHideScrollBars", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\DisplayHideScrollBars\VisualBasic\DisplayHideScrollBars.vbproj", "{35CB6E11-51D5-4ED1-AF6E-3F14C0ECB3C2}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DisplayHideScrollBars", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\DisplayHideScrollBars\VisualBasic\DisplayHideScrollBars.vbproj", "{35CB6E11-51D5-4ED1-AF6E-3F14C0ECB3C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayHideGridlines", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\DisplayHideGridlines\VisualBasic\DisplayHideGridlines.vbproj", "{42E66C9C-C62F-4809-9A7D-D0612AC041DF}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DisplayHideGridlines", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\DisplayHideGridlines\VisualBasic\DisplayHideGridlines.vbproj", "{42E66C9C-C62F-4809-9A7D-D0612AC041DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageBreakPreview", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\PageBreakPreview\VisualBasic\PageBreakPreview.vbproj", "{512D0817-F5FA-4285-A422-66E204801C90}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PageBreakPreview", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\PageBreakPreview\VisualBasic\PageBreakPreview.vbproj", "{512D0817-F5FA-4285-A422-66E204801C90}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZoomFactor", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\ZoomFactor\VisualBasic\ZoomFactor.vbproj", "{64DD5034-1DE5-4C14-A708-EE02555B6740}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ZoomFactor", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\ZoomFactor\VisualBasic\ZoomFactor.vbproj", "{64DD5034-1DE5-4C14-A708-EE02555B6740}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisplayHideRowColumnHeaders", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\DisplayHideRowColumnHeaders\VisualBasic\DisplayHideRowColumnHeaders.vbproj", "{DCBBB3BC-AA5E-4230-A32A-81F4412D79D3}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DisplayHideRowColumnHeaders", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\DisplayHideRowColumnHeaders\VisualBasic\DisplayHideRowColumnHeaders.vbproj", "{DCBBB3BC-AA5E-4230-A32A-81F4412D79D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreezePanes", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\FreezePanes\VisualBasic\FreezePanes.vbproj", "{DF11F389-F097-4931-BB07-66EDD3E7555D}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FreezePanes", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\FreezePanes\VisualBasic\FreezePanes.vbproj", "{DF11F389-F097-4931-BB07-66EDD3E7555D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplitPanes", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\SplitPanes\VisualBasic\SplitPanes.vbproj", "{62671CF2-E8C2-47BB-834C-FEF2F66B02C8}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SplitPanes", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\DisplayFeatures\SplitPanes\VisualBasic\SplitPanes.vbproj", "{62671CF2-E8C2-47BB-834C-FEF2F66B02C8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ManagementFeatures", "ManagementFeatures", "{DF1CEE95-6603-4A8A-9EEE-8B6F30ED9019}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ManagingWorksheets", "ManagingWorksheets", "{7C369E13-B0A3-449C-A6D0-4CFABCE409F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingWorksheetsToNewExcelFile", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\ManagementFeatures\ManagingWorksheets\AddingWorksheetsToNewExcelFile\VisualBasic\AddingWorksheetsToNewExcelFile.vbproj", "{9D02B7EC-3E66-4748-A236-74BD65C03DFB}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingWorksheetsToNewExcelFile", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\ManagementFeatures\ManagingWorksheets\AddingWorksheetsToNewExcelFile\VisualBasic\AddingWorksheetsToNewExcelFile.vbproj", "{9D02B7EC-3E66-4748-A236-74BD65C03DFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddWorksheetsToExistingExcelFile", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\ManagementFeatures\ManagingWorksheets\AddWorksheetsToExistingExcelFile\VisualBasic\AddWorksheetsToExistingExcelFile.vbproj", "{01969317-FC26-434D-B117-B789D1D848B7}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddWorksheetsToExistingExcelFile", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\ManagementFeatures\ManagingWorksheets\AddWorksheetsToExistingExcelFile\VisualBasic\AddWorksheetsToExistingExcelFile.vbproj", "{01969317-FC26-434D-B117-B789D1D848B7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemovingWorksheetsUsingSheetName", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\ManagementFeatures\ManagingWorksheets\RemovingWorksheetsUsingSheetName\VisualBasic\RemovingWorksheetsUsingSheetName.vbproj", "{7789A173-AA1E-46BD-A81F-601CFC6A3E19}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RemovingWorksheetsUsingSheetName", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\ManagementFeatures\ManagingWorksheets\RemovingWorksheetsUsingSheetName\VisualBasic\RemovingWorksheetsUsingSheetName.vbproj", "{7789A173-AA1E-46BD-A81F-601CFC6A3E19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemovingWorksheetsUsingSheetIndex", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\ManagementFeatures\ManagingWorksheets\RemovingWorksheetsUsingSheetIndex\VisualBasic\RemovingWorksheetsUsingSheetIndex.vbproj", "{83ED9696-C137-483C-9711-95C59E5AC816}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RemovingWorksheetsUsingSheetIndex", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\ManagementFeatures\ManagingWorksheets\RemovingWorksheetsUsingSheetIndex\VisualBasic\RemovingWorksheetsUsingSheetIndex.vbproj", "{83ED9696-C137-483C-9711-95C59E5AC816}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SecurityFeatures", "SecurityFeatures", "{2CCABD1D-ECEA-49DD-8E16-0FF6C6963C51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedProtectionSettings", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\AdvancedProtectionSettings\VisualBasic\AdvancedProtectionSettingsUsingAspose.Cells.vbproj", "{032B37D0-A99C-4385-A9CE-F6CDC79D3A14}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AdvanceProtectSettings", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\AdvanceProtectSettings\VisualBasic\AdvanceProtectSettings.vbproj", "{032B37D0-A99C-4385-A9CE-F6CDC79D3A14}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProtectingWorksheets", "ProtectingWorksheets", "{32C80154-B1EA-416F-B354-D70112FAD2CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectingWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\ProtectingWorksheets\ProtectingWorksheet\VisualBasic\ProtectingWorksheet.vbproj", "{B424D612-6CAA-4416-8DF7-D9025C940996}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ProtectingWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\ProtectingWorksheets\ProtectingWorksheet\VisualBasic\ProtectingWorksheet.vbproj", "{B424D612-6CAA-4416-8DF7-D9025C940996}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectingSpecificCellsinaWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\ProtectingWorksheets\ProtectingSpecificCellsinaWorksheet\VisualBasic\ProtectingSpecificCellsinaWorksheet.vbproj", "{BFB6C1C9-5F35-447A-91A7-EBB8D5BF5CCA}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ProtectCellsWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\ProtectingWorksheets\ProtectCellsWorksheet\VisualBasic\ProtectCellsWorksheet.vbproj", "{BFB6C1C9-5F35-447A-91A7-EBB8D5BF5CCA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectingSpecificRowInWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\ProtectingWorksheets\ProtectingSpecificRowInWorksheet\VisualBasic\ProtectingSpecificRowInWorksheet.vbproj", "{A4797608-A895-4D34-BB3F-4CBCF49894D9}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ProtectRowWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\ProtectingWorksheets\ProtectRowWorksheet\VisualBasic\ProtectRowWorksheet.vbproj", "{A4797608-A895-4D34-BB3F-4CBCF49894D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectingSpecificColumnInWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\ProtectingWorksheets\ProtectingSpecificColumnInWorksheet\VisualBasic\ProtectingSpecificColumnInWorksheet.vbproj", "{427488F0-A065-4C88-B03A-A98C230CADA1}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ProtectColumnWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\ProtectingWorksheets\ProtectColumnWorksheet\VisualBasic\ProtectColumnWorksheet.vbproj", "{427488F0-A065-4C88-B03A-A98C230CADA1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllowUserToEditRangesInWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\ProtectingWorksheets\AllowUserToEditRangesInWorksheet\VisualBasic\AllowUserToEditRangesInWorksheet.vbproj", "{C8C6AFFB-01DB-453B-9192-203A17352DB9}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "EditRangesWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\ProtectingWorksheets\EditRangesWorksheet\VisualBasic\EditRangesWorksheet.vbproj", "{C8C6AFFB-01DB-453B-9192-203A17352DB9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnprotectWorksheet", "UnprotectWorksheet", "{D2BA019B-521E-4049-9C64-C2F39186A753}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnprotectingSimplyProtectedWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\UnprotectWorksheet\UnprotectingSimplyProtectedWorksheet\VisualBasic\UnprotectingSimplyProtectedWorksheet.vbproj", "{DB79FA61-2F00-478A-98E8-35EFD20FF425}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UnprotectSimpleSheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\UnprotectWorksheet\UnprotectSimpleSheet\VisualBasic\UnprotectSimpleSheet.vbproj", "{DB79FA61-2F00-478A-98E8-35EFD20FF425}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnprotectingPasswordProtectedWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\UnprotectWorksheet\UnprotectingPasswordProtectedWorksheet\VisualBasic\UnprotectingPasswordProtectedWorksheet.vbproj", "{41758072-CEA1-430E-8113-C49BA61BF674}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UnprotectProtectSheet", "ProgrammersGuide\AsposeCells\WorkingWithWorksheets\SecurityFeatures\UnprotectWorksheet\UnprotectProtectSheet\VisualBasic\UnprotectProtectSheet.vbproj", "{EF4EBFA2-0C4E-43D3-B36C-ADAF61204304}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithRowsAndColumns", "WorkingWithRowsAndColumns", "{0DA8FE81-5CF7-4BFB-9EC4-DB6D07A53188}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InsertingDeletingRowsAndColumns", "InsertingDeletingRowsAndColumns", "{658C2687-C6A5-409D-8FB3-ED411A64C740}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertingARow", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\InsertingDeletingRowsAndColumns\InsertingARow\VisualBasic\InsertingARow.vbproj", "{B44D8B4E-40EF-4EC2-897B-A44C0B270714}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InsertingARow", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\InsertingDeletingRowsAndColumns\InsertingARow\VisualBasic\InsertingARow.vbproj", "{B44D8B4E-40EF-4EC2-897B-A44C0B270714}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertingMultipleRows", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\InsertingDeletingRowsAndColumns\InsertingMultipleRows\VisualBasic\InsertingMultipleRows.vbproj", "{D4E5AB3B-680A-447B-9C58-B54422A647A0}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InsertingMultipleRows", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\InsertingDeletingRowsAndColumns\InsertingMultipleRows\VisualBasic\InsertingMultipleRows.vbproj", "{D4E5AB3B-680A-447B-9C58-B54422A647A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeletingARow", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\InsertingDeletingRowsAndColumns\DeletingARow\VisualBasic\DeletingARow.vbproj", "{5D12176F-AB88-4B72-A635-8BFB67CB0556}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DeletingARow", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\InsertingDeletingRowsAndColumns\DeletingARow\VisualBasic\DeletingARow.vbproj", "{5D12176F-AB88-4B72-A635-8BFB67CB0556}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeletingMultipleRows", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\InsertingDeletingRowsAndColumns\DeletingMultipleRows\VisualBasic\DeletingMultipleRows.vbproj", "{2EA66F30-5CD7-4A0E-B062-0D88D4E4D6DC}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DeletingMultipleRows", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\InsertingDeletingRowsAndColumns\DeletingMultipleRows\VisualBasic\DeletingMultipleRows.vbproj", "{2EA66F30-5CD7-4A0E-B062-0D88D4E4D6DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsertingAColumn", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\InsertingDeletingRowsAndColumns\InsertingAColumn\VisualBasic\InsertingAColumn.vbproj", "{63FC25F1-CF28-4E19-8598-75019917AF0D}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InsertingAColumn", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\InsertingDeletingRowsAndColumns\InsertingAColumn\VisualBasic\InsertingAColumn.vbproj", "{63FC25F1-CF28-4E19-8598-75019917AF0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeletingAColumn", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\InsertingDeletingRowsAndColumns\DeletingAColumn\VisualBasic\DeletingAColumn.vbproj", "{1A1FEEB4-CB87-411B-B304-D0CFBFB84A62}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DeletingAColumn", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\InsertingDeletingRowsAndColumns\DeletingAColumn\VisualBasic\DeletingAColumn.vbproj", "{1A1FEEB4-CB87-411B-B304-D0CFBFB84A62}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HidingUnhidingRowsAndColumns", "HidingUnhidingRowsAndColumns", "{A0D45CFC-488D-41DC-B90D-84C75E955420}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HidingRowsAndColumns", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\HidingUnhidingRowsAndColumns\HidingRowsAndColumns\VisualBasic\HidingRowsAndColumns.vbproj", "{87F796E0-AE44-4468-812E-D6498F680759}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HidingRowsAndColumns", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\HidingUnhidingRowsAndColumns\HidingRowsAndColumns\VisualBasic\HidingRowsAndColumns.vbproj", "{87F796E0-AE44-4468-812E-D6498F680759}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnhidingRowsAndColumns", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\HidingUnhidingRowsAndColumns\UnhidingRowsAndColumns\VisualBasic\UnhidingRowsAndColumns.vbproj", "{5C90908E-3216-4AC4-8BE3-C7964FB8E843}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UnhidingRowsAndColumns", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\HidingUnhidingRowsAndColumns\UnhidingRowsAndColumns\VisualBasic\UnhidingRowsAndColumns.vbproj", "{5C90908E-3216-4AC4-8BE3-C7964FB8E843}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HidingMultipleRowsAndColumns", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\HidingUnhidingRowsAndColumns\HidingMultipleRowsAndColumns\VisualBasic\HidingMultipleRowsAndColumns.vbproj", "{7B9BFB3A-710C-44FA-9E4A-AD29D0A397A1}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HidingMultipleRowsAndColumns", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\HidingUnhidingRowsAndColumns\HidingMultipleRowsAndColumns\VisualBasic\HidingMultipleRowsAndColumns.vbproj", "{7B9BFB3A-710C-44FA-9E4A-AD29D0A397A1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GroupingUngroupingRowsAndColumns", "GroupingUngroupingRowsAndColumns", "{0D8DAF1D-1B79-4B5E-90AF-A403B7DD041C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroupingRowsAndColumns", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\GroupingUngroupingRowsAndColumns\GroupingRowsAndColumns\VisualBasic\GroupingRowsAndColumns.vbproj", "{3CCAF98E-2CB7-48DF-B3E4-08088916823A}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GroupingRowsAndColumns", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\GroupingUngroupingRowsAndColumns\GroupingRowsAndColumns\VisualBasic\GroupingRowsAndColumns.vbproj", "{3CCAF98E-2CB7-48DF-B3E4-08088916823A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UngroupingRowsAndColumns", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\GroupingUngroupingRowsAndColumns\UngroupingRowsAndColumns\VisualBasic\UngroupingRowsAndColumns.vbproj", "{FF4FA6A4-FB9E-4FA9-A5E4-D80CA2EEE655}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UngroupingRowsAndColumns", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\GroupingUngroupingRowsAndColumns\UngroupingRowsAndColumns\VisualBasic\UngroupingRowsAndColumns.vbproj", "{FF4FA6A4-FB9E-4FA9-A5E4-D80CA2EEE655}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AdjustingRowHeightAndColumnWidth", "AdjustingRowHeightAndColumnWidth", "{F05F4A84-553F-4C66-8A15-30C085576152}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingHeightOfRow", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\AdjustingRowHeightAndColumnWidth\SettingHeightOfRow\VisualBasic\SettingHeightOfRow.vbproj", "{4F34B43A-EB58-4E1C-890C-A450BE0AE396}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SettingHeightOfRow", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\AdjustingRowHeightAndColumnWidth\SettingHeightOfRow\VisualBasic\SettingHeightOfRow.vbproj", "{4F34B43A-EB58-4E1C-890C-A450BE0AE396}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingHeightOfAllRowsInWorksheet", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\AdjustingRowHeightAndColumnWidth\SettingHeightOfAllRowsInWorksheet\VisualBasic\SettingHeightOfAllRowsInWorksheet.vbproj", "{3B45A911-F5B7-424E-A9DA-AF4EF86AE379}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SettingHeightAllRows", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\AdjustingRowHeightAndColumnWidth\SettingHeightAllRows\VisualBasic\SettingHeightAllRows.vbproj", "{3B45A911-F5B7-424E-A9DA-AF4EF86AE379}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingWidthOfColumn", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\AdjustingRowHeightAndColumnWidth\SettingWidthOfColumn\VisualBasic\SettingWidthOfColumn.vbproj", "{EAF0EFBD-3FE2-4473-9264-082D78EBD5B0}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SettingWidthOfColumn", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\AdjustingRowHeightAndColumnWidth\SettingWidthOfColumn\VisualBasic\SettingWidthOfColumn.vbproj", "{EAF0EFBD-3FE2-4473-9264-082D78EBD5B0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingWidthOfAllColumns", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\AdjustingRowHeightAndColumnWidth\SettingWidthOfAllColumns\VisualBasic\SettingWidthOfAllColumnsInWorksheet.vbproj", "{8F83D6B6-92D7-4572-A80C-8E50A3F2F9E7}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SetWidthAllColumns", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\AdjustingRowHeightAndColumnWidth\SetWidthAllColumns\VisualBasic\SetWidthAllColumns.vbproj", "{8F83D6B6-92D7-4572-A80C-8E50A3F2F9E7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CopyingRowsAndColumns", "CopyingRowsAndColumns", "{D0D330F6-10B0-4B61-9CE8-456AE943EB03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyingRows", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\CopyingRowsAndColumns\CopyingRows\VisualBasic\CopyingRows.vbproj", "{1BCB5C7D-B6FD-4367-B148-725879A9A953}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CopyingRows", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\CopyingRowsAndColumns\CopyingRows\VisualBasic\CopyingRows.vbproj", "{1BCB5C7D-B6FD-4367-B148-725879A9A953}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyingColumns", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\CopyingRowsAndColumns\CopyingColumns\VisualBasic\CopyingColumns.vbproj", "{16F9D8B2-703D-41D4-95C1-48FC324E583F}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CopyingColumns", "ProgrammersGuide\AsposeCells\WorkingWithRowsAndColumns\CopyingRowsAndColumns\CopyingColumns\VisualBasic\CopyingColumns.vbproj", "{16F9D8B2-703D-41D4-95C1-48FC324E583F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithData", "WorkingWithData", "{61C49969-80F3-447B-A7C9-AA10A827F701}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataHandlingFeatures", "DataHandlingFeatures", "{D16140CA-B441-4AB3-B65B-FD683E2FC9F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingDataToCells", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\AddingDataToCells\VisualBasic\AddingDataToCells.vbproj", "{C6701FA7-1B43-422A-83C2-6BF504F289E7}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingDataToCells", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\AddingDataToCells\VisualBasic\AddingDataToCells.vbproj", "{C6701FA7-1B43-422A-83C2-6BF504F289E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RetrievingDataFromCells", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\RetrievingDataFromCells\VisualBasic\RetrievingDataFromCells.vbproj", "{43F20E67-6A14-4435-A60B-D3BA2A3E8192}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RetrievingDataFromCells", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\RetrievingDataFromCells\VisualBasic\RetrievingDataFromCells.vbproj", "{43F20E67-6A14-4435-A60B-D3BA2A3E8192}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataSorting", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\DataSorting\VisualBasic\DataSorting.vbproj", "{8878A974-8E2C-4092-8E61-A86B755C7DD9}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DataSorting", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\DataSorting\VisualBasic\DataSorting.vbproj", "{8878A974-8E2C-4092-8E61-A86B755C7DD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportingDataFromWorksheets", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ExportingDataFromWorksheets\VisualBasic\ExportingDataFromWorksheets.vbproj", "{3C0AE695-CBD7-49E4-9D47-BC4E53567108}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ExportingDataFromWorksheets", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ExportingDataFromWorksheets\VisualBasic\ExportingDataFromWorksheets.vbproj", "{3C0AE695-CBD7-49E4-9D47-BC4E53567108}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccessingCellsofWorksheet", "AccessingCellsofWorksheet", "{8960B4D8-6995-44DB-9CCC-75F05B62B5C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingCellName", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\AccessingCellsofWorksheet\UsingCellName\VisualBasic\UsingCellName.vbproj", "{C559CBEA-FCA8-4496-AF25-A2264471D6F7}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UsingCellName", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\AccessingCellsofWorksheet\UsingCellName\VisualBasic\UsingCellName.vbproj", "{C559CBEA-FCA8-4496-AF25-A2264471D6F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingRowAndColumnIndexOfCell", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\AccessingCellsofWorksheet\UsingRowAndColumnIndexOfCell\VisualBasic\UsingRowAndColumnIndexOfCell.vbproj", "{F302E264-6C12-4B8C-BE51-CC9CAA89DEA2}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RowAndColumnIndex", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\AccessingCellsofWorksheet\RowAndColumnIndex\VisualBasic\RowAndColumnIndex.vbproj", "{F302E264-6C12-4B8C-BE51-CC9CAA89DEA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingCellIndexInCellsCollection", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\AccessingCellsofWorksheet\UsingCellIndexInCellsCollection\VisualBasic\UsingCellIndexInCellsCollection.vbproj", "{DE9B9131-9940-4223-9210-631C6F853DB1}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UsingCellIndex", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\AccessingCellsofWorksheet\UsingCellIndex\VisualBasic\UsingCellIndex.vbproj", "{DE9B9131-9940-4223-9210-631C6F853DB1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FindOrSearchData", "FindOrSearchData", "{4B8F068F-0EC6-4638-81F3-F670C1301786}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingCellsContainingFormula", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindingCellsContainingFormula\VisualBasic\FindingCellsContainingFormula.vbproj", "{886D21F6-EB2C-423A-B0A8-B368E4BCA82E}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FindCellsContainingFormula", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindCellsContainingFormula\VisualBasic\FindCellsContainingFormula.vbproj", "{886D21F6-EB2C-423A-B0A8-B368E4BCA82E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingDataOrFormulasUsingFindOptions", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindingDataOrFormulasUsingFindOptions\VisualBasic\FindingDataOrFormulasUsingFindOptions.vbproj", "{B6D2661A-AF4E-4F92-B60B-8416B041F8C0}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FindDataOrFormulas", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindDataOrFormulas\VisualBasic\FindDataOrFormulas.vbproj", "{B6D2661A-AF4E-4F92-B60B-8416B041F8C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingCellsWithStringOrNumber", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindingCellsWithStringOrNumber\VisualBasic\FindingCellsContainingStringValueOrNumber.vbproj", "{7A0481E6-9614-446D-B18C-0C25667A379D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingCellsWithStringOrNumber", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindingCellsWithStringOrNumber\VisualBasic\FindingCellsWithStringOrNumber.vbproj", "{7A0481E6-9614-446D-B18C-0C25667A379D}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FindCellsStringNumber", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\FindOrSearchData\FindCellsStringNumber\VisualBasic\FindCellsStringNumber.vbproj", "{7A0481E6-9614-446D-B18C-0C25667A379D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ImportingDataToWorksheets", "ImportingDataToWorksheets", "{3C00224D-7546-41A4-B436-4456D6D39284}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportingFromArray", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ImportingDataToWorksheets\ImportingFromArray\VisualBasic\ImportingFromArray.vbproj", "{FD5CB8C9-2ABE-4838-88B1-A70C06728117}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ImportingFromArray", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ImportingDataToWorksheets\ImportingFromArray\VisualBasic\ImportingFromArray.vbproj", "{FD5CB8C9-2ABE-4838-88B1-A70C06728117}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportingFromArrayList", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ImportingDataToWorksheets\ImportingFromArrayList\VisualBasic\ImportingFromArrayList.vbproj", "{CA5457F8-2CC5-4B0F-99D9-22DE4CB6ADDD}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ImportingFromArrayList", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ImportingDataToWorksheets\ImportingFromArrayList\VisualBasic\ImportingFromArrayList.vbproj", "{CA5457F8-2CC5-4B0F-99D9-22DE4CB6ADDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportingFromDataTable", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ImportingDataToWorksheets\ImportingFromDataTable\VisualBasic\ImportingFromDataTable.vbproj", "{BDE9362F-2078-4E2C-B48A-AD41E4420C02}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ImportingFromDataTable", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ImportingDataToWorksheets\ImportingFromDataTable\VisualBasic\ImportingFromDataTable.vbproj", "{BDE9362F-2078-4E2C-B48A-AD41E4420C02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportingFromCustomObject", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ImportingDataToWorksheets\ImportingFromCustomObject\VisualBasic\ImportingFromCustomObject.vbproj", "{1AD095EE-5128-4BDB-B566-3A20D8C2950D}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ImportingFromCustomObject", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ImportingDataToWorksheets\ImportingFromCustomObject\VisualBasic\ImportingFromCustomObject.vbproj", "{1AD095EE-5128-4BDB-B566-3A20D8C2950D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportingFromDataColumn", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ImportingDataToWorksheets\ImportingFromDataColumn\VisualBasic\ImportingFromDataColumn.vbproj", "{71027E54-45C7-4120-B5FB-2F88001F0EFF}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ImportingFromDataColumn", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ImportingDataToWorksheets\ImportingFromDataColumn\VisualBasic\ImportingFromDataColumn.vbproj", "{71027E54-45C7-4120-B5FB-2F88001F0EFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImportingFromDataView", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ImportingDataToWorksheets\ImportingFromDataView\VisualBasic\ImportingFromDataView.vbproj", "{B2C57144-BAB1-4DC9-BF22-77119050CFC2}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ImportingFromDataView", "ProgrammersGuide\AsposeCells\WorkingWithData\DataHandlingFeatures\ImportingDataToWorksheets\ImportingFromDataView\VisualBasic\ImportingFromDataView.vbproj", "{B2C57144-BAB1-4DC9-BF22-77119050CFC2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataProcessingFeatures", "DataProcessingFeatures", "{2F5D519A-EEA2-47DB-BAAA-667E4EAC5018}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingSubtotals", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\CreatingSubtotals\VisualBasic\CreatingSubtotals.vbproj", "{BF64BCCC-E070-4FE8-A51B-672A203DD42D}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CreatingSubtotals", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\CreatingSubtotals\VisualBasic\CreatingSubtotals.vbproj", "{BF64BCCC-E070-4FE8-A51B-672A203DD42D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataFilteringAndValidation", "DataFilteringAndValidation", "{FBBFF7BD-557E-4A5A-A4D7-7F967582B47A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutofilterData", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\DataFilteringAndValidation\AutofilterData\VisualBasic\AutofilterData.vbproj", "{93FE26B4-119C-4EB6-815D-649C5EE49111}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AutofilterData", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\DataFilteringAndValidation\AutofilterData\VisualBasic\AutofilterData.vbproj", "{93FE26B4-119C-4EB6-815D-649C5EE49111}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WholeNumberDataValidation", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\DataFilteringAndValidation\WholeNumberDataValidation\VisualBasic\WholeNumberDataValidation.vbproj", "{8487AC16-1DDA-4B0C-B6F7-9B8C751A96A7}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WholeNumberDataValidation", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\DataFilteringAndValidation\WholeNumberDataValidation\VisualBasic\WholeNumberDataValidation.vbproj", "{8487AC16-1DDA-4B0C-B6F7-9B8C751A96A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecimalDataValidation", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\DataFilteringAndValidation\DecimalDataValidation\VisualBasic\DecimalDataValidation.vbproj", "{739A4D58-C23D-49BF-8CF9-30DC5F85F9E3}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DecimalDataValidation", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\DataFilteringAndValidation\DecimalDataValidation\VisualBasic\DecimalDataValidation.vbproj", "{739A4D58-C23D-49BF-8CF9-30DC5F85F9E3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListDataValidation", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\DataFilteringAndValidation\ListDataValidation\VisualBasic\ListDataValidation.vbproj", "{90496B18-CA11-4879-959D-7A8896D236EA}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ListDataValidation", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\DataFilteringAndValidation\ListDataValidation\VisualBasic\ListDataValidation.vbproj", "{90496B18-CA11-4879-959D-7A8896D236EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateDataValidation", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\DataFilteringAndValidation\DateDataValidation\VisualBasic\DateDataValidation.vbproj", "{6B2F6A60-B959-46E0-BD9A-CBAF675CC1F7}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DateDataValidation", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\DataFilteringAndValidation\DateDataValidation\VisualBasic\DateDataValidation.vbproj", "{6B2F6A60-B959-46E0-BD9A-CBAF675CC1F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeDataValidation", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\DataFilteringAndValidation\TimeDataValidation\VisualBasic\TimeDataValidation.vbproj", "{4F16A4A5-8E19-4469-9FB2-F54BD233C7AB}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TimeDataValidation", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\DataFilteringAndValidation\TimeDataValidation\VisualBasic\TimeDataValidation.vbproj", "{4F16A4A5-8E19-4469-9FB2-F54BD233C7AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextLengthDataValidation", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\DataFilteringAndValidation\TextLengthDataValidation\VisualBasic\TextLengthDataValidation.vbproj", "{33BF14E3-0C65-4627-BCA7-62551D43D864}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TextLengthDataValidation", "ProgrammersGuide\AsposeCells\WorkingWithData\DataProcessingFeatures\DataFilteringAndValidation\TextLengthDataValidation\VisualBasic\TextLengthDataValidation.vbproj", "{33BF14E3-0C65-4627-BCA7-62551D43D864}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AddOnFeatures", "AddOnFeatures", "{3D8066B0-ADA7-4C83-8DBD-3E048E7A4515}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AddingHyperlinksToLinkData", "AddingHyperlinksToLinkData", "{9703CCBC-F7A7-45F0-AA7A-26C4ABEA6B3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingLinkToURL", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\AddingHyperlinksToLinkData\AddingLinkToURL\VisualBasic\AddingLinkToURL.vbproj", "{09C38A0B-F211-400E-BB21-92DECC96CD5C}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingLinkToURL", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\AddingHyperlinksToLinkData\AddingLinkToURL\VisualBasic\AddingLinkToURL.vbproj", "{09C38A0B-F211-400E-BB21-92DECC96CD5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingLinkToAnotherCell", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\AddingHyperlinksToLinkData\AddingLinkToAnotherCell\VisualBasic\AddingLinkToAnotherCell.vbproj", "{B83BDB66-8BD8-478B-BA5C-C11ED40C1C1A}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingLinkToAnotherCell", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\AddingHyperlinksToLinkData\AddingLinkToAnotherCell\VisualBasic\AddingLinkToAnotherCell.vbproj", "{B83BDB66-8BD8-478B-BA5C-C11ED40C1C1A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingLinkToExternalFile", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\AddingHyperlinksToLinkData\AddingLinkToExternalFile\VisualBasic\AddingLinkToExternalFile.vbproj", "{2D1EBC4E-3562-40A8-8E21-04B3818456CF}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingLinkToExternalFile", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\AddingHyperlinksToLinkData\AddingLinkToExternalFile\VisualBasic\AddingLinkToExternalFile.vbproj", "{2D1EBC4E-3562-40A8-8E21-04B3818456CF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MergingUnMergingCells", "MergingUnMergingCells", "{FCFB4667-1C03-417F-B79D-A5829F92FFA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergingCellsInWorksheet.", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\MergingUnMergingCells\MergingCellsInWorksheet\VisualBasic\MergingCellsInWorksheet..vbproj", "{95934E17-B339-4E87-A5DE-1E73B4843C0B}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MergingCellsInWorksheet.", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\MergingUnMergingCells\MergingCellsInWorksheet\VisualBasic\MergingCellsInWorksheet..vbproj", "{95934E17-B339-4E87-A5DE-1E73B4843C0B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnMergingtheMergedCells", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\MergingUnMergingCells\UnMergingtheMergedCells\VisualBasic\Un-MergingtheMergedCells.vbproj", "{A4DA96E5-31CA-488E-9194-287F70F9CA6D}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnMergingtheMergedCells", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\MergingUnMergingCells\UnMergingtheMergedCells\VisualBasic\UnMergingtheMergedCells.vbproj", "{A4DA96E5-31CA-488E-9194-287F70F9CA6D}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UnMergingtheMergedCells", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\MergingUnMergingCells\UnMergingtheMergedCells\VisualBasic\UnMergingtheMergedCells.vbproj", "{A4DA96E5-31CA-488E-9194-287F70F9CA6D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NamedRanges", "NamedRanges", "{EFA1D880-3579-4620-BA80-CE6AD19BD250}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateNamedRangeofCells", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\CreateNamedRangeofCells\VisualBasic\CreateNamedRangeofCells.vbproj", "{7463307E-9026-4B56-8328-C03827F3EA9B}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CreateNamedRangeofCells", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\CreateNamedRangeofCells\VisualBasic\CreateNamedRangeofCells.vbproj", "{7463307E-9026-4B56-8328-C03827F3EA9B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessAllNamedRanges", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\AccessAllNamedRanges\VisualBasic\AccessAllNamedRanges.vbproj", "{56329088-9303-4919-8FD8-02B78B500C4C}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AccessAllNamedRanges", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\AccessAllNamedRanges\VisualBasic\AccessAllNamedRanges.vbproj", "{56329088-9303-4919-8FD8-02B78B500C4C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccessSpecificNamedRange", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\AccessSpecificNamedRange\VisualBasic\AccessSpecificNamedRange.vbproj", "{3527F628-8E95-42EB-8938-99B96286DBAE}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AccessSpecificNamedRange", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\AccessSpecificNamedRange\VisualBasic\AccessSpecificNamedRange.vbproj", "{3527F628-8E95-42EB-8938-99B96286DBAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentifyCellsinNamedRange", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\IdentifyCellsinNamedRange\VisualBasic\IdentifyCellsinNamedRange.vbproj", "{A7501DF5-7417-48BD-8BCC-8DEA60529B7F}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "IdentifyCellsinNamedRange", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\IdentifyCellsinNamedRange\VisualBasic\IdentifyCellsinNamedRange.vbproj", "{A7501DF5-7417-48BD-8BCC-8DEA60529B7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputDataInCellsInRange", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\InputDataInCellsInRange\VisualBasic\InputDataInCellsInRange.vbproj", "{2A397F5B-B3E5-44D8-BC6C-766DDA54023F}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InputDataInCellsInRange", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\InputDataInCellsInRange\VisualBasic\InputDataInCellsInRange.vbproj", "{2A397F5B-B3E5-44D8-BC6C-766DDA54023F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormatRanges1", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\FormatRanges1\VisualBasic\FormatRanges1.vbproj", "{1B64D3EC-EA9D-4967-A793-17CEA9D17A9C}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FormatRanges1", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\FormatRanges1\VisualBasic\FormatRanges1.vbproj", "{1B64D3EC-EA9D-4967-A793-17CEA9D17A9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormatRanges2", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\FormatRanges2\VisualBasic\FormatRanges2.vbproj", "{F01C927E-4CF0-4DF1-AEAA-85E9CBDECD45}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FormatRanges2", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\FormatRanges2\VisualBasic\FormatRanges2.vbproj", "{F01C927E-4CF0-4DF1-AEAA-85E9CBDECD45}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyNamedRanges", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\CopyNamedRanges\VisualBasic\CopyNamedRanges.vbproj", "{628BEC51-E5EA-4B7C-959C-02CCD862DE59}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CopyNamedRanges", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\CopyNamedRanges\VisualBasic\CopyNamedRanges.vbproj", "{628BEC51-E5EA-4B7C-959C-02CCD862DE59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergeCellsInNamedRange", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\MergeCellsInNamedRange\VisualBasic\MergeCellsInNamedRange.vbproj", "{802D087F-F229-4A28-AC8C-225CF0A3AD46}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MergeCellsInNamedRange", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\MergeCellsInNamedRange\VisualBasic\MergeCellsInNamedRange.vbproj", "{802D087F-F229-4A28-AC8C-225CF0A3AD46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveANamedRange", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\RemoveANamedRange\VisualBasic\RemoveANamedRange.vbproj", "{789F6FF9-6A43-4E9C-9BB0-89E14343AE91}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RemoveANamedRange", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\RemoveANamedRange\VisualBasic\RemoveANamedRange.vbproj", "{789F6FF9-6A43-4E9C-9BB0-89E14343AE91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RenameNamedRange", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\RenameNamedRange\VisualBasic\RenameNamedRange.vbproj", "{09DAA9F8-F845-4A06-AE6A-70B7AC202419}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "RenameNamedRange", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\RenameNamedRange\VisualBasic\RenameNamedRange.vbproj", "{09DAA9F8-F845-4A06-AE6A-70B7AC202419}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntersectionofRanges", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\IntersectionofRanges\VisualBasic\IntersectionofRanges.vbproj", "{79FC02A2-1270-4646-B0A2-9ABB60AB1532}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "IntersectionofRanges", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\IntersectionofRanges\VisualBasic\IntersectionofRanges.vbproj", "{79FC02A2-1270-4646-B0A2-9ABB60AB1532}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnionOfRanges", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\UnionOfRanges\VisualBasic\UnionOfRanges.vbproj", "{3265E481-275D-4CFB-8679-71394601A42E}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UnionOfRanges", "ProgrammersGuide\AsposeCells\WorkingWithData\AddOnFeatures\NamedRanges\UnionOfRanges\VisualBasic\UnionOfRanges.vbproj", "{3265E481-275D-4CFB-8679-71394601A42E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithDataFormatting", "WorkingWithDataFormatting", "{84808ED0-8B41-4D26-9909-A663634602B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorsAndPalette", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ColorsAndPalette\VisualBasic\ColorsAndPalette.vbproj", "{2855E95E-D0D7-4964-972C-6FEADDBF8A66}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ColorsAndPalette", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ColorsAndPalette\VisualBasic\ColorsAndPalette.vbproj", "{2855E95E-D0D7-4964-972C-6FEADDBF8A66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormattingSelectedCharacters", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\FormattingSelectedCharacters\VisualBasic\FormattingSelectedCharacters.vbproj", "{A0306595-C19D-4C69-9248-1EC8EC689C80}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FormattingSelectedCharacters", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\FormattingSelectedCharacters\VisualBasic\FormattingSelectedCharacters.vbproj", "{A0306595-C19D-4C69-9248-1EC8EC689C80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColorsAndBackground", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ColorsAndBackground\VisualBasic\ColorsAndBackground.vbproj", "{4C5DFE5B-AF7C-4EAE-90AE-F3BA27ADB61B}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ColorsAndBackground", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ColorsAndBackground\VisualBasic\ColorsAndBackground.vbproj", "{4C5DFE5B-AF7C-4EAE-90AE-F3BA27ADB61B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConfiguringAlignmentSettings", "ConfiguringAlignmentSettings", "{EBCFD811-8412-4726-938C-FFBC119269D6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextAlignmentHorizontal", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ConfiguringAlignmentSettings\TextAlignmentHorizontal\VisualBasic\TextAlignmentHorizontal.vbproj", "{0111C841-29B7-496A-BEE2-1C159A274306}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TextAlignmentHorizontal", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ConfiguringAlignmentSettings\TextAlignmentHorizontal\VisualBasic\TextAlignmentHorizontal.vbproj", "{0111C841-29B7-496A-BEE2-1C159A274306}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextAlignmentVertical", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ConfiguringAlignmentSettings\TextAlignmentVertical\VisualBasic\TextAlignmentVertical.vbproj", "{3DAACB99-B17A-4618-8F9F-C7D79F5B2154}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TextAlignmentVertical", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ConfiguringAlignmentSettings\TextAlignmentVertical\VisualBasic\TextAlignmentVertical.vbproj", "{3DAACB99-B17A-4618-8F9F-C7D79F5B2154}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indentation", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ConfiguringAlignmentSettings\Indentation\VisualBasic\Indentation.vbproj", "{CBCD5D8A-428D-4482-91FD-C35131AD5512}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Indentation", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ConfiguringAlignmentSettings\Indentation\VisualBasic\Indentation.vbproj", "{CBCD5D8A-428D-4482-91FD-C35131AD5512}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orientation", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ConfiguringAlignmentSettings\Orientation\VisualBasic\Orientation.vbproj", "{CA95878B-76AA-4C7E-A59D-DF73C78C243A}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Orientation", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ConfiguringAlignmentSettings\Orientation\VisualBasic\Orientation.vbproj", "{CA95878B-76AA-4C7E-A59D-DF73C78C243A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WrappingText", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ConfiguringAlignmentSettings\WrappingText\VisualBasic\WrappingText.vbproj", "{0B8895A8-6AB1-450E-B1F7-5111AC4F5231}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "WrappingText", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ConfiguringAlignmentSettings\WrappingText\VisualBasic\WrappingText.vbproj", "{0B8895A8-6AB1-450E-B1F7-5111AC4F5231}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShrinkingToFit", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ConfiguringAlignmentSettings\ShrinkingToFit\VisualBasic\ShrinkingToFit.vbproj", "{5758A5A4-EB17-4DF1-8020-8026818C3CD2}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ShrinkingToFit", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ConfiguringAlignmentSettings\ShrinkingToFit\VisualBasic\ShrinkingToFit.vbproj", "{5758A5A4-EB17-4DF1-8020-8026818C3CD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MergingCells", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ConfiguringAlignmentSettings\MergingCells\VisualBasic\MergingCells.vbproj", "{0921ACA1-6798-492C-870F-ED0EA4C6B48D}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MergingCells", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ConfiguringAlignmentSettings\MergingCells\VisualBasic\MergingCells.vbproj", "{0921ACA1-6798-492C-870F-ED0EA4C6B48D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextDirection", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ConfiguringAlignmentSettings\TextDirection\VisualBasic\TextDirection.vbproj", "{A038121C-70E2-46AC-B75D-8243EF715D43}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "TextDirection", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ConfiguringAlignmentSettings\TextDirection\VisualBasic\TextDirection.vbproj", "{A038121C-70E2-46AC-B75D-8243EF715D43}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApproachesToFormatData", "ApproachesToFormatData", "{4E312E5A-4410-4514-A4A2-436E9F129590}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingGetStyleSetStyle", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ApproachesToFormatData\UsingGetStyleSetStyle\VisualBasic\UsingGetStyleSetStyle.vbproj", "{06AB4989-B58F-456D-99E9-12D3084D291F}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UsingGetStyleSetStyle", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ApproachesToFormatData\UsingGetStyleSetStyle\VisualBasic\UsingGetStyleSetStyle.vbproj", "{06AB4989-B58F-456D-99E9-12D3084D291F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingStyleObject", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ApproachesToFormatData\UsingStyleObject\VisualBasic\UsingStyleObject.vbproj", "{D75E31AA-E213-46FE-9A63-63298458B171}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UsingStyleObject", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ApproachesToFormatData\UsingStyleObject\VisualBasic\UsingStyleObject.vbproj", "{D75E31AA-E213-46FE-9A63-63298458B171}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingExcelPredefinedStyles", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ApproachesToFormatData\UsingExcelPredefinedStyles\VisualBasic\UsingExcelPredefinedStyles.vbproj", "{E7FBF15C-7EAB-46A5-A7D0-E9880330DD44}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UsingExcelPredefinedStyles", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\ApproachesToFormatData\UsingExcelPredefinedStyles\VisualBasic\UsingExcelPredefinedStyles.vbproj", "{E7FBF15C-7EAB-46A5-A7D0-E9880330DD44}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SettingDisplayFormats", "SettingDisplayFormats", "{D3B3EA6F-2C0D-410E-B1F6-E17FD9BDE91A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingBuiltInNumberFormats", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\SettingDisplayFormats\UsingBuiltInNumberFormats\VisualBasic\UsingBuiltInNumberFormats.vbproj", "{B53DF8F9-2404-4946-81DC-38BA7DE297C7}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UsingBuiltInNumberFormats", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\SettingDisplayFormats\UsingBuiltInNumberFormats\VisualBasic\UsingBuiltInNumberFormats.vbproj", "{B53DF8F9-2404-4946-81DC-38BA7DE297C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsingCustomNumber", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\SettingDisplayFormats\UsingCustomNumber\VisualBasic\UsingCustomNumber.vbproj", "{755C3A3E-27C8-43B7-8EF2-A63E23B5EA72}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UsingCustomNumber", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\SettingDisplayFormats\UsingCustomNumber\VisualBasic\UsingCustomNumber.vbproj", "{755C3A3E-27C8-43B7-8EF2-A63E23B5EA72}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DealingWithFontSettings", "DealingWithFontSettings", "{32FC9650-D8DC-41CE-9544-7F340FCB665D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingFontName", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingFontName\VisualBasic\SettingFontName.vbproj", "{512569F0-C273-43F7-8244-0BEE186A55F4}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SettingFontName", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingFontName\VisualBasic\SettingFontName.vbproj", "{512569F0-C273-43F7-8244-0BEE186A55F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingFontStyle", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingFontStyle\VisualBasic\SettingFontStyle.vbproj", "{E1C21179-FAEF-4C76-AEB9-125996E4E2B4}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SettingFontStyle", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingFontStyle\VisualBasic\SettingFontStyle.vbproj", "{E1C21179-FAEF-4C76-AEB9-125996E4E2B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingFontSize", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingFontSize\VisualBasic\SettingFontSize.vbproj", "{93321E17-3950-4FBB-A4A5-97501E0EF3DB}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SettingFontSize", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingFontSize\VisualBasic\SettingFontSize.vbproj", "{93321E17-3950-4FBB-A4A5-97501E0EF3DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingFontUnderlineType", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingFontUnderlineType\VisualBasic\SettingFontUnderlineType.vbproj", "{5C287601-6AEA-4D63-820A-C1B644153D39}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SettingFontUnderlineType", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingFontUnderlineType\VisualBasic\SettingFontUnderlineType.vbproj", "{5C287601-6AEA-4D63-820A-C1B644153D39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingFontColor", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingFontColor\VisualBasic\SettingFontColor.vbproj", "{67FC8E9D-4337-4149-A717-502D320E19B8}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SettingFontColor", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingFontColor\VisualBasic\SettingFontColor.vbproj", "{67FC8E9D-4337-4149-A717-502D320E19B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingStrikeOutEffect", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingStrikeOutEffect\VisualBasic\SettingStrikeOutEffect.vbproj", "{FB0B75D5-03E7-4BDD-999E-1C9299D83952}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SettingStrikeOutEffect", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingStrikeOutEffect\VisualBasic\SettingStrikeOutEffect.vbproj", "{FB0B75D5-03E7-4BDD-999E-1C9299D83952}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingSubScriptEffect", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingSubScriptEffect\VisualBasic\SettingSubScriptEffect.vbproj", "{B1C5A78C-0B8F-4FF8-B1F8-70ACC99A8E8F}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SettingSubScriptEffect", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingSubScriptEffect\VisualBasic\SettingSubScriptEffect.vbproj", "{B1C5A78C-0B8F-4FF8-B1F8-70ACC99A8E8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SettingSuperScriptEffect", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingSuperScriptEffect\VisualBasic\SettingSuperScriptEffect.vbproj", "{A9CCEDEB-C01D-4541-BE3A-BA068E587B99}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SettingSuperScriptEffect", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\DealingWithFontSettings\SettingSuperScriptEffect\VisualBasic\SettingSuperScriptEffect.vbproj", "{A9CCEDEB-C01D-4541-BE3A-BA068E587B99}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AddingBordersToCells", "AddingBordersToCells", "{E66C7368-5F94-4F6B-893A-06349A3609EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingBordersToCells", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\AddingBordersToCells\AddingBordersToCells\VisualBasic\AddingBordersToCells.vbproj", "{1BA07298-9634-4DCD-94AA-04D80A8A413D}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingBordersToCells", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\AddingBordersToCells\AddingBordersToCells\VisualBasic\AddingBordersToCells.vbproj", "{1BA07298-9634-4DCD-94AA-04D80A8A413D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AddingBorderstoRange", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\AddingBordersToCells\AddingBorderstoRange\VisualBasic\AddingBorderstoRange.vbproj", "{F21FCB4E-8D8D-4B6B-8E03-905536113BED}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingBorderstoRange", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\AddingBordersToCells\AddingBorderstoRange\VisualBasic\AddingBorderstoRange.vbproj", "{F21FCB4E-8D8D-4B6B-8E03-905536113BED}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FormatRowsColumns", "FormatRowsColumns", "{D923EF5C-0F11-45C3-B73B-B55888FA582A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormattingARow", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\FormatRowsColumns\FormattingARow\VisualBasic\FormattingARow.vbproj", "{1B6C4645-B083-4265-A505-E7A7AB294CD5}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FormattingARow", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\FormatRowsColumns\FormattingARow\VisualBasic\FormattingARow.vbproj", "{1B6C4645-B083-4265-A505-E7A7AB294CD5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormattingAColumn", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\FormatRowsColumns\FormattingAColumn\VisualBasic\FormattingAColumn.vbproj", "{FCEC9314-E655-4022-801E-F06D623F5941}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FormattingAColumn", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\FormatRowsColumns\FormattingAColumn\VisualBasic\FormattingAColumn.vbproj", "{FCEC9314-E655-4022-801E-F06D623F5941}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Excel2007Themes", "Excel2007Themes", "{41CDC4B0-615F-42D3-A515-7FFF1AAFAC41}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetSetThemeColors", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\Excel2007Themes\GetSetThemeColors\VisualBasic\GetSetThemeColors.vbproj", "{2F192F60-E2DE-4A3D-9362-F0350FFB91B5}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GetSetThemeColors", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\Excel2007Themes\GetSetThemeColors\VisualBasic\GetSetThemeColors.vbproj", "{2F192F60-E2DE-4A3D-9362-F0350FFB91B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomizeThemes", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\Excel2007Themes\CustomizeThemes\VisualBasic\CustomizeThemes.vbproj", "{BE4F9FE7-958F-4573-920C-CDD26942F799}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CustomizeThemes", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\Excel2007Themes\CustomizeThemes\VisualBasic\CustomizeThemes.vbproj", "{BE4F9FE7-958F-4573-920C-CDD26942F799}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilizeThemeColors", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\Excel2007Themes\UtilizeThemeColors\VisualBasic\UtilizeThemeColors.vbproj", "{414AD417-D22C-43D1-8A71-A60E2723A1AD}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UtilizeThemeColors", "ProgrammersGuide\AsposeCells\WorkingWithDataFormatting\Excel2007Themes\UtilizeThemeColors\VisualBasic\UtilizeThemeColors.vbproj", "{414AD417-D22C-43D1-8A71-A60E2723A1AD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingwithTables", "WorkingwithTables", "{9272D4D4-D39B-4127-8438-F0DB4AFA9448}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingListObject", "ProgrammersGuide\AsposeCells\WorkingwithTables\CreatingListObject\VisualBasic\CreatingListObject.vbproj", "{8B986548-772B-401A-8A29-7960D28EAAD6}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CreatingListObject", "ProgrammersGuide\AsposeCells\WorkingwithTables\CreatingListObject\VisualBasic\CreatingListObject.vbproj", "{8B986548-772B-401A-8A29-7960D28EAAD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormataListObject", "ProgrammersGuide\AsposeCells\WorkingwithTables\FormataListObject\VisualBasic\FormataListObject.vbproj", "{CBF03962-3599-47B5-BF86-4504CDF42DCC}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FormataListObject", "ProgrammersGuide\AsposeCells\WorkingwithTables\FormataListObject\VisualBasic\FormataListObject.vbproj", "{CBF03962-3599-47B5-BF86-4504CDF42DCC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertTableToRange", "ProgrammersGuide\AsposeCells\WorkingwithTables\ConvertTableToRange\VisualBasic\ConvertTableToRange.vbproj", "{2F609BCF-ABBF-469E-A1DC-9E34B70F6880}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ConvertTableToRange", "ProgrammersGuide\AsposeCells\WorkingwithTables\ConvertTableToRange\VisualBasic\ConvertTableToRange.vbproj", "{2F609BCF-ABBF-469E-A1DC-9E34B70F6880}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingwithFormulas", "WorkingwithFormulas", "{5631ED0F-90D1-421B-BA9F-EDA703DE25CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatingFormulas", "ProgrammersGuide\AsposeCells\WorkingwithFormulas\CalculatingFormulas\VisualBasic\CalculatingFormulas.vbproj", "{BB652847-6B3E-428D-BAD9-164FCDE9E88D}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CalculatingFormulas", "ProgrammersGuide\AsposeCells\WorkingwithFormulas\CalculatingFormulas\VisualBasic\CalculatingFormulas.vbproj", "{BB652847-6B3E-428D-BAD9-164FCDE9E88D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculatingFormulasOnce", "ProgrammersGuide\AsposeCells\WorkingwithFormulas\CalculatingFormulasOnce\VisualBasic\CalculatingFormulasOnce.vbproj", "{7E217985-3B15-4B49-A981-DD99E5FA98F7}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CalculatingFormulasOnce", "ProgrammersGuide\AsposeCells\WorkingwithFormulas\CalculatingFormulasOnce\VisualBasic\CalculatingFormulasOnce.vbproj", "{7E217985-3B15-4B49-A981-DD99E5FA98F7}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DirectCalculationFormula", "ProgrammersGuide\AsposeCells\WorkingwithFormulas\DirectCalculationFormula\VisualBasic\DirectCalculationFormula.vbproj", "{3226BE16-38D7-4B48-8934-A842F04D3749}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CreatingCharts", "CreatingCharts", "{20FF1BF6-63D7-4ACD-8CB9-262ECA9736A8}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "HowToCreateChart", "ProgrammersGuide\AsposeCells\CreatingCharts\HowToCreateChart\VisualBasic\HowToCreateChart.vbproj", "{034803DA-FDBC-4253-87F2-6BB0BA988BD7}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SettingChartsData", "ProgrammersGuide\AsposeCells\CreatingCharts\SettingChartsData\VisualBasic\SettingChartsData.vbproj", "{B8AE6A82-C980-4F57-8AAE-0ADF5E124B09}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Applying3DFormat", "ProgrammersGuide\AsposeCells\CreatingCharts\Applying3DFormat\VisualBasic\Applying3DFormat.vbproj", "{E920F351-DD46-425D-99D2-BDAD4CA14FB9}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UsingSparklines", "ProgrammersGuide\AsposeCells\CreatingCharts\UsingSparklines\VisualBasic\UsingSparklines.vbproj", "{782E0BE6-3F88-4F9D-8800-A66BC372223C}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ChangeChartPosition", "ProgrammersGuide\AsposeCells\CreatingCharts\ChangeChartPosition\VisualBasic\ChangeChartPosition.vbproj", "{E8EE14E2-7AD3-4496-A038-36E0C7639C3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SettingChartsAppearance", "SettingChartsAppearance", "{77330ABF-A72E-4F3B-AFBB-204DDA95BEE6}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SettingChartArea", "ProgrammersGuide\AsposeCells\CreatingCharts\SettingChartsAppearance\SettingChartArea\VisualBasic\SettingChartArea.vbproj", "{CF97ED0E-5353-4F84-98E0-C4A05B94E58C}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SettingChartLines", "ProgrammersGuide\AsposeCells\CreatingCharts\SettingChartsAppearance\SettingChartLines\VisualBasic\SettingChartLines.vbproj", "{D1DA4A24-BA7F-4AAD-A464-EC0B6755B781}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ApplyingThemes", "ProgrammersGuide\AsposeCells\CreatingCharts\SettingChartsAppearance\ApplyingThemes\VisualBasic\ApplyingThemes.vbproj", "{E39BCCBE-0F81-4930-89E8-9F58AA5547C5}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "SettingTitlesAxes", "ProgrammersGuide\AsposeCells\CreatingCharts\SettingChartsAppearance\SettingTitlesAxes\VisualBasic\SettingTitlesAxes.vbproj", "{CBF26ADE-508E-48D4-9015-F0BD2662F696}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "MajorGridlines", "ProgrammersGuide\AsposeCells\CreatingCharts\SettingChartsAppearance\MajorGridlines\VisualBasic\MajorGridlines.vbproj", "{31BEFC92-C0E7-41A1-B7D7-92C6DCDD1AC3}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ChangingMajorGridlines", "ProgrammersGuide\AsposeCells\CreatingCharts\SettingChartsAppearance\ChangingMajorGridlines\VisualBasic\ChangingMajorGridlines.vbproj", "{DEEAFB85-9F69-4372-A769-D9BE30A84555}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InsertingControlsintoCharts", "InsertingControlsintoCharts", "{7171DA54-FCC6-4693-BE87-0E88FD320201}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingLabelControl", "ProgrammersGuide\AsposeCells\CreatingCharts\InsertingControlsintoCharts\AddingLabelControl\VisualBasic\AddingLabelControl.vbproj", "{AD7D1985-8B8A-4511-9249-A4B91E79897F}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingTextBoxControl", "ProgrammersGuide\AsposeCells\CreatingCharts\InsertingControlsintoCharts\AddingTextBoxControl\VisualBasic\AddingTextBoxControl.vbproj", "{78D48571-14F7-408F-B660-BB81816109A5}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingPictureToChart", "ProgrammersGuide\AsposeCells\CreatingCharts\InsertingControlsintoCharts\AddingPictureToChart\VisualBasic\AddingPictureToChart.vbproj", "{9DF350E7-2C33-476E-98B9-54CBB5DE1262}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OtherDrawingObjects", "OtherDrawingObjects", "{71BA6D13-EFB2-481D-9A19-1BE1681A0CF8}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AccessNonPrimitiveShape", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\AccessNonPrimitiveShape\VisualBasic\AccessNonPrimitiveShape.vbproj", "{74BEE41A-AC5F-416A-B81F-D1263A5DA8E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AddingPictures", "AddingPictures", "{79F7C8AA-2670-46D8-AE75-664F8075E2C2}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingPictures", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\AddingPictures\AddingPictures\VisualBasic\AddingPictures.vbproj", "{363EA57D-49E9-422E-89DB-956FC770CC79}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "PictureCellReference", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\AddingPictures\PictureCellReference\VisualBasic\PictureCellReference.vbproj", "{EF97FC78-D608-465C-93CE-8115DB36D6E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PositioningPictures", "PositioningPictures", "{897C506F-7802-4DA9-AA99-ADF164434374}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ProportionalPositioning", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\AddingPictures\PositioningPictures\ProportionalPositioning\VisualBasic\ProportionalPositioning.vbproj", "{0C3D9090-E0E9-4CE4-8723-3E1412DCB851}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AbsolutePositioning", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\AddingPictures\PositioningPictures\AbsolutePositioning\VisualBasic\AbsolutePositioning.vbproj", "{2CB97FE5-6A80-466E-8208-5C6497B3A840}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AddingComments", "AddingComments", "{14DA3754-698C-4AE5-AB18-4A735F78D2C3}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingComment", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\AddingComments\AddingComment\VisualBasic\AddingComment.vbproj", "{94FB600A-32FB-4C80-8B34-AD37E0A0E028}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CommentFormatting", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\AddingComments\CommentFormatting\VisualBasic\CommentFormatting.vbproj", "{6A89319C-7860-49E2-8C4B-7C73BF745EE6}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddImageToComment", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\AddingComments\AddImageToComment\VisualBasic\AddImageToComment.vbproj", "{7E48181A-BE82-4B12-8972-91AE6681BF19}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WorkingWithControls", "WorkingWithControls", "{A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingTextBoxControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingTextBoxControl\VisualBasic\AddingTextBoxControl.vbproj", "{18D8DC46-D02E-4174-AEB5-372D09EDB5A8}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ManipulatingTextBoxControls", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\ManipulatingTextBoxControls\VisualBasic\ManipulatingTextBoxControls.vbproj", "{749BD701-403A-45E6-9BBD-7F648590420B}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingCheckBoxControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingCheckBoxControl\VisualBasic\AddingCheckBoxControl.vbproj", "{462A286F-D68D-4E38-A06B-8ACDD0010E20}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingRadioButtonControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingRadioButtonControl\VisualBasic\AddingRadioButtonControl.vbproj", "{5E37ABFD-4D71-47A9-99CB-09F89EE8170A}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingComboBoxControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingComboBoxControl\VisualBasic\AddingComboBoxControl.vbproj", "{8F183B42-6558-424B-9D44-D2B6C76806F5}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingLabelControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingLabelControl\VisualBasic\AddingLabelControl.vbproj", "{6DCD6CF3-5182-46C9-8921-6A1003A8C971}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingListBoxControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingListBoxControl\VisualBasic\AddingListBoxControl.vbproj", "{2CB40685-D82E-44E4-AB75-6BAECD206396}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingButtonControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingButtonControl\VisualBasic\AddingButtonControl.vbproj", "{EAC55BAD-0626-4EAE-A241-11632E29ACF8}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingLineControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingLineControl\VisualBasic\AddingLineControl.vbproj", "{4C77326D-08D3-4CEE-B090-062BC15887F1}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddinganArrowHead", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddinganArrowHead\VisualBasic\AddinganArrowHead.vbproj", "{485237F0-A9E8-4B5F-AE74-F0442287327B}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingRectangleControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingRectangleControl\VisualBasic\AddingRectangleControl.vbproj", "{B1DD0A15-D761-42DE-B505-8DB4C13CD145}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingArcControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingArcControl\VisualBasic\AddingArcControl.vbproj", "{1156A3E0-13D7-435E-9D2C-13BEC7621BE2}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingOvalControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingOvalControl\VisualBasic\AddingOvalControl.vbproj", "{8F832195-89F4-46CF-B00F-E21797B9E92F}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingSpinnerControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingSpinnerControl\VisualBasic\AddingSpinnerControl.vbproj", "{76E1733B-837C-4CA3-BD7B-924C513F6664}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingScrollBarControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingScrollBarControl\VisualBasic\AddingScrollBarControl.vbproj", "{00E33603-8262-485D-86C9-31EEB2668C82}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "AddingGroupBoxControl", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\WorkingWithControls\AddingGroupBoxControl\VisualBasic\AddingGroupBoxControl.vbproj", "{FF162A57-8F91-4C06-88E3-1DEB6FD6ACF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ManagingOLEObjects", "ManagingOLEObjects", "{7BC7F54E-D833-42F0-A226-E6822C33B316}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "InsertingOLEObjects", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\ManagingOLEObjects\InsertingOLEObjects\VisualBasic\InsertingOLEObjects.vbproj", "{7A24AB1A-4329-4623-A4D7-44B3F32B280E}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ExtractingOLEObjects", "ProgrammersGuide\AsposeCells\OtherDrawingObjects\ManagingOLEObjects\ExtractingOLEObjects\VisualBasic\ExtractingOLEObjects.vbproj", "{21C7A55A-10C4-4405-AA39-732AC8234087}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -435,9 +531,9 @@ Global
 		{DB79FA61-2F00-478A-98E8-35EFD20FF425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DB79FA61-2F00-478A-98E8-35EFD20FF425}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB79FA61-2F00-478A-98E8-35EFD20FF425}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{41758072-CEA1-430E-8113-C49BA61BF674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{41758072-CEA1-430E-8113-C49BA61BF674}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{41758072-CEA1-430E-8113-C49BA61BF674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF4EBFA2-0C4E-43D3-B36C-ADAF61204304}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF4EBFA2-0C4E-43D3-B36C-ADAF61204304}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF4EBFA2-0C4E-43D3-B36C-ADAF61204304}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B44D8B4E-40EF-4EC2-897B-A44C0B270714}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B44D8B4E-40EF-4EC2-897B-A44C0B270714}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B44D8B4E-40EF-4EC2-897B-A44C0B270714}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -726,6 +822,126 @@ Global
 		{3226BE16-38D7-4B48-8934-A842F04D3749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3226BE16-38D7-4B48-8934-A842F04D3749}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3226BE16-38D7-4B48-8934-A842F04D3749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{034803DA-FDBC-4253-87F2-6BB0BA988BD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{034803DA-FDBC-4253-87F2-6BB0BA988BD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{034803DA-FDBC-4253-87F2-6BB0BA988BD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8AE6A82-C980-4F57-8AAE-0ADF5E124B09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8AE6A82-C980-4F57-8AAE-0ADF5E124B09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8AE6A82-C980-4F57-8AAE-0ADF5E124B09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E920F351-DD46-425D-99D2-BDAD4CA14FB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E920F351-DD46-425D-99D2-BDAD4CA14FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E920F351-DD46-425D-99D2-BDAD4CA14FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{782E0BE6-3F88-4F9D-8800-A66BC372223C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{782E0BE6-3F88-4F9D-8800-A66BC372223C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{782E0BE6-3F88-4F9D-8800-A66BC372223C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8EE14E2-7AD3-4496-A038-36E0C7639C3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8EE14E2-7AD3-4496-A038-36E0C7639C3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8EE14E2-7AD3-4496-A038-36E0C7639C3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF97ED0E-5353-4F84-98E0-C4A05B94E58C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF97ED0E-5353-4F84-98E0-C4A05B94E58C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF97ED0E-5353-4F84-98E0-C4A05B94E58C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1DA4A24-BA7F-4AAD-A464-EC0B6755B781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1DA4A24-BA7F-4AAD-A464-EC0B6755B781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1DA4A24-BA7F-4AAD-A464-EC0B6755B781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E39BCCBE-0F81-4930-89E8-9F58AA5547C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E39BCCBE-0F81-4930-89E8-9F58AA5547C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E39BCCBE-0F81-4930-89E8-9F58AA5547C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBF26ADE-508E-48D4-9015-F0BD2662F696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBF26ADE-508E-48D4-9015-F0BD2662F696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF26ADE-508E-48D4-9015-F0BD2662F696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31BEFC92-C0E7-41A1-B7D7-92C6DCDD1AC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31BEFC92-C0E7-41A1-B7D7-92C6DCDD1AC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31BEFC92-C0E7-41A1-B7D7-92C6DCDD1AC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEEAFB85-9F69-4372-A769-D9BE30A84555}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEEAFB85-9F69-4372-A769-D9BE30A84555}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEEAFB85-9F69-4372-A769-D9BE30A84555}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD7D1985-8B8A-4511-9249-A4B91E79897F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD7D1985-8B8A-4511-9249-A4B91E79897F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD7D1985-8B8A-4511-9249-A4B91E79897F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78D48571-14F7-408F-B660-BB81816109A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78D48571-14F7-408F-B660-BB81816109A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78D48571-14F7-408F-B660-BB81816109A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DF350E7-2C33-476E-98B9-54CBB5DE1262}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DF350E7-2C33-476E-98B9-54CBB5DE1262}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DF350E7-2C33-476E-98B9-54CBB5DE1262}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74BEE41A-AC5F-416A-B81F-D1263A5DA8E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74BEE41A-AC5F-416A-B81F-D1263A5DA8E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74BEE41A-AC5F-416A-B81F-D1263A5DA8E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{363EA57D-49E9-422E-89DB-956FC770CC79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{363EA57D-49E9-422E-89DB-956FC770CC79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{363EA57D-49E9-422E-89DB-956FC770CC79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF97FC78-D608-465C-93CE-8115DB36D6E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF97FC78-D608-465C-93CE-8115DB36D6E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF97FC78-D608-465C-93CE-8115DB36D6E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C3D9090-E0E9-4CE4-8723-3E1412DCB851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C3D9090-E0E9-4CE4-8723-3E1412DCB851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C3D9090-E0E9-4CE4-8723-3E1412DCB851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CB97FE5-6A80-466E-8208-5C6497B3A840}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CB97FE5-6A80-466E-8208-5C6497B3A840}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CB97FE5-6A80-466E-8208-5C6497B3A840}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94FB600A-32FB-4C80-8B34-AD37E0A0E028}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94FB600A-32FB-4C80-8B34-AD37E0A0E028}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94FB600A-32FB-4C80-8B34-AD37E0A0E028}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A89319C-7860-49E2-8C4B-7C73BF745EE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A89319C-7860-49E2-8C4B-7C73BF745EE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A89319C-7860-49E2-8C4B-7C73BF745EE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E48181A-BE82-4B12-8972-91AE6681BF19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E48181A-BE82-4B12-8972-91AE6681BF19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E48181A-BE82-4B12-8972-91AE6681BF19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18D8DC46-D02E-4174-AEB5-372D09EDB5A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18D8DC46-D02E-4174-AEB5-372D09EDB5A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18D8DC46-D02E-4174-AEB5-372D09EDB5A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{749BD701-403A-45E6-9BBD-7F648590420B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{749BD701-403A-45E6-9BBD-7F648590420B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{749BD701-403A-45E6-9BBD-7F648590420B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{462A286F-D68D-4E38-A06B-8ACDD0010E20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{462A286F-D68D-4E38-A06B-8ACDD0010E20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{462A286F-D68D-4E38-A06B-8ACDD0010E20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E37ABFD-4D71-47A9-99CB-09F89EE8170A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E37ABFD-4D71-47A9-99CB-09F89EE8170A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E37ABFD-4D71-47A9-99CB-09F89EE8170A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F183B42-6558-424B-9D44-D2B6C76806F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F183B42-6558-424B-9D44-D2B6C76806F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F183B42-6558-424B-9D44-D2B6C76806F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DCD6CF3-5182-46C9-8921-6A1003A8C971}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DCD6CF3-5182-46C9-8921-6A1003A8C971}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DCD6CF3-5182-46C9-8921-6A1003A8C971}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CB40685-D82E-44E4-AB75-6BAECD206396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CB40685-D82E-44E4-AB75-6BAECD206396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CB40685-D82E-44E4-AB75-6BAECD206396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC55BAD-0626-4EAE-A241-11632E29ACF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC55BAD-0626-4EAE-A241-11632E29ACF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC55BAD-0626-4EAE-A241-11632E29ACF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C77326D-08D3-4CEE-B090-062BC15887F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C77326D-08D3-4CEE-B090-062BC15887F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C77326D-08D3-4CEE-B090-062BC15887F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{485237F0-A9E8-4B5F-AE74-F0442287327B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{485237F0-A9E8-4B5F-AE74-F0442287327B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{485237F0-A9E8-4B5F-AE74-F0442287327B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1DD0A15-D761-42DE-B505-8DB4C13CD145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1DD0A15-D761-42DE-B505-8DB4C13CD145}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1DD0A15-D761-42DE-B505-8DB4C13CD145}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1156A3E0-13D7-435E-9D2C-13BEC7621BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1156A3E0-13D7-435E-9D2C-13BEC7621BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1156A3E0-13D7-435E-9D2C-13BEC7621BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F832195-89F4-46CF-B00F-E21797B9E92F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F832195-89F4-46CF-B00F-E21797B9E92F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F832195-89F4-46CF-B00F-E21797B9E92F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76E1733B-837C-4CA3-BD7B-924C513F6664}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76E1733B-837C-4CA3-BD7B-924C513F6664}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76E1733B-837C-4CA3-BD7B-924C513F6664}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00E33603-8262-485D-86C9-31EEB2668C82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00E33603-8262-485D-86C9-31EEB2668C82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00E33603-8262-485D-86C9-31EEB2668C82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF162A57-8F91-4C06-88E3-1DEB6FD6ACF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF162A57-8F91-4C06-88E3-1DEB6FD6ACF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF162A57-8F91-4C06-88E3-1DEB6FD6ACF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A24AB1A-4329-4623-A4D7-44B3F32B280E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A24AB1A-4329-4623-A4D7-44B3F32B280E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A24AB1A-4329-4623-A4D7-44B3F32B280E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21C7A55A-10C4-4405-AA39-732AC8234087}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21C7A55A-10C4-4405-AA39-732AC8234087}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21C7A55A-10C4-4405-AA39-732AC8234087}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -773,7 +989,7 @@ Global
 		{C8C6AFFB-01DB-453B-9192-203A17352DB9} = {32C80154-B1EA-416F-B354-D70112FAD2CC}
 		{D2BA019B-521E-4049-9C64-C2F39186A753} = {2CCABD1D-ECEA-49DD-8E16-0FF6C6963C51}
 		{DB79FA61-2F00-478A-98E8-35EFD20FF425} = {D2BA019B-521E-4049-9C64-C2F39186A753}
-		{41758072-CEA1-430E-8113-C49BA61BF674} = {D2BA019B-521E-4049-9C64-C2F39186A753}
+		{EF4EBFA2-0C4E-43D3-B36C-ADAF61204304} = {D2BA019B-521E-4049-9C64-C2F39186A753}
 		{0DA8FE81-5CF7-4BFB-9EC4-DB6D07A53188} = {08BE30B5-0442-4C58-A8CD-665126E93A16}
 		{658C2687-C6A5-409D-8FB3-ED411A64C740} = {0DA8FE81-5CF7-4BFB-9EC4-DB6D07A53188}
 		{B44D8B4E-40EF-4EC2-897B-A44C0B270714} = {658C2687-C6A5-409D-8FB3-ED411A64C740}
@@ -897,5 +1113,54 @@ Global
 		{BB652847-6B3E-428D-BAD9-164FCDE9E88D} = {5631ED0F-90D1-421B-BA9F-EDA703DE25CA}
 		{7E217985-3B15-4B49-A981-DD99E5FA98F7} = {5631ED0F-90D1-421B-BA9F-EDA703DE25CA}
 		{3226BE16-38D7-4B48-8934-A842F04D3749} = {5631ED0F-90D1-421B-BA9F-EDA703DE25CA}
+		{20FF1BF6-63D7-4ACD-8CB9-262ECA9736A8} = {08BE30B5-0442-4C58-A8CD-665126E93A16}
+		{034803DA-FDBC-4253-87F2-6BB0BA988BD7} = {20FF1BF6-63D7-4ACD-8CB9-262ECA9736A8}
+		{B8AE6A82-C980-4F57-8AAE-0ADF5E124B09} = {20FF1BF6-63D7-4ACD-8CB9-262ECA9736A8}
+		{E920F351-DD46-425D-99D2-BDAD4CA14FB9} = {20FF1BF6-63D7-4ACD-8CB9-262ECA9736A8}
+		{782E0BE6-3F88-4F9D-8800-A66BC372223C} = {20FF1BF6-63D7-4ACD-8CB9-262ECA9736A8}
+		{E8EE14E2-7AD3-4496-A038-36E0C7639C3B} = {20FF1BF6-63D7-4ACD-8CB9-262ECA9736A8}
+		{77330ABF-A72E-4F3B-AFBB-204DDA95BEE6} = {20FF1BF6-63D7-4ACD-8CB9-262ECA9736A8}
+		{CF97ED0E-5353-4F84-98E0-C4A05B94E58C} = {77330ABF-A72E-4F3B-AFBB-204DDA95BEE6}
+		{D1DA4A24-BA7F-4AAD-A464-EC0B6755B781} = {77330ABF-A72E-4F3B-AFBB-204DDA95BEE6}
+		{E39BCCBE-0F81-4930-89E8-9F58AA5547C5} = {77330ABF-A72E-4F3B-AFBB-204DDA95BEE6}
+		{CBF26ADE-508E-48D4-9015-F0BD2662F696} = {77330ABF-A72E-4F3B-AFBB-204DDA95BEE6}
+		{31BEFC92-C0E7-41A1-B7D7-92C6DCDD1AC3} = {77330ABF-A72E-4F3B-AFBB-204DDA95BEE6}
+		{DEEAFB85-9F69-4372-A769-D9BE30A84555} = {77330ABF-A72E-4F3B-AFBB-204DDA95BEE6}
+		{7171DA54-FCC6-4693-BE87-0E88FD320201} = {20FF1BF6-63D7-4ACD-8CB9-262ECA9736A8}
+		{AD7D1985-8B8A-4511-9249-A4B91E79897F} = {7171DA54-FCC6-4693-BE87-0E88FD320201}
+		{78D48571-14F7-408F-B660-BB81816109A5} = {7171DA54-FCC6-4693-BE87-0E88FD320201}
+		{9DF350E7-2C33-476E-98B9-54CBB5DE1262} = {7171DA54-FCC6-4693-BE87-0E88FD320201}
+		{71BA6D13-EFB2-481D-9A19-1BE1681A0CF8} = {08BE30B5-0442-4C58-A8CD-665126E93A16}
+		{74BEE41A-AC5F-416A-B81F-D1263A5DA8E7} = {71BA6D13-EFB2-481D-9A19-1BE1681A0CF8}
+		{79F7C8AA-2670-46D8-AE75-664F8075E2C2} = {71BA6D13-EFB2-481D-9A19-1BE1681A0CF8}
+		{363EA57D-49E9-422E-89DB-956FC770CC79} = {79F7C8AA-2670-46D8-AE75-664F8075E2C2}
+		{EF97FC78-D608-465C-93CE-8115DB36D6E7} = {79F7C8AA-2670-46D8-AE75-664F8075E2C2}
+		{897C506F-7802-4DA9-AA99-ADF164434374} = {79F7C8AA-2670-46D8-AE75-664F8075E2C2}
+		{0C3D9090-E0E9-4CE4-8723-3E1412DCB851} = {897C506F-7802-4DA9-AA99-ADF164434374}
+		{2CB97FE5-6A80-466E-8208-5C6497B3A840} = {897C506F-7802-4DA9-AA99-ADF164434374}
+		{14DA3754-698C-4AE5-AB18-4A735F78D2C3} = {71BA6D13-EFB2-481D-9A19-1BE1681A0CF8}
+		{94FB600A-32FB-4C80-8B34-AD37E0A0E028} = {14DA3754-698C-4AE5-AB18-4A735F78D2C3}
+		{6A89319C-7860-49E2-8C4B-7C73BF745EE6} = {14DA3754-698C-4AE5-AB18-4A735F78D2C3}
+		{7E48181A-BE82-4B12-8972-91AE6681BF19} = {14DA3754-698C-4AE5-AB18-4A735F78D2C3}
+		{A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF} = {71BA6D13-EFB2-481D-9A19-1BE1681A0CF8}
+		{18D8DC46-D02E-4174-AEB5-372D09EDB5A8} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{749BD701-403A-45E6-9BBD-7F648590420B} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{462A286F-D68D-4E38-A06B-8ACDD0010E20} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{5E37ABFD-4D71-47A9-99CB-09F89EE8170A} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{8F183B42-6558-424B-9D44-D2B6C76806F5} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{6DCD6CF3-5182-46C9-8921-6A1003A8C971} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{2CB40685-D82E-44E4-AB75-6BAECD206396} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{EAC55BAD-0626-4EAE-A241-11632E29ACF8} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{4C77326D-08D3-4CEE-B090-062BC15887F1} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{485237F0-A9E8-4B5F-AE74-F0442287327B} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{B1DD0A15-D761-42DE-B505-8DB4C13CD145} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{1156A3E0-13D7-435E-9D2C-13BEC7621BE2} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{8F832195-89F4-46CF-B00F-E21797B9E92F} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{76E1733B-837C-4CA3-BD7B-924C513F6664} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{00E33603-8262-485D-86C9-31EEB2668C82} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{FF162A57-8F91-4C06-88E3-1DEB6FD6ACF8} = {A8E90BF4-05BC-48DB-8DD0-6737DD6EE0AF}
+		{7BC7F54E-D833-42F0-A226-E6822C33B316} = {71BA6D13-EFB2-481D-9A19-1BE1681A0CF8}
+		{7A24AB1A-4329-4623-A4D7-44B3F32B280E} = {7BC7F54E-D833-42F0-A226-E6822C33B316}
+		{21C7A55A-10C4-4405-AA39-732AC8234087} = {7BC7F54E-D833-42F0-A226-E6822C33B316}
 	EndGlobalSection
 EndGlobal
