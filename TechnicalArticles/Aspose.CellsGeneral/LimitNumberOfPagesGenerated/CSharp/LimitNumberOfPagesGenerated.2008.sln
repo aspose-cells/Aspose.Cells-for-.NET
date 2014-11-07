@@ -1,0 +1,18 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LimitNumberOfPagesGenerated", "LimitNumberOfPagesGenerated.csproj", "{17E60125-2322-41F6-A90A-F4C26A0C32D6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17E60125-2322-41F6-A90A-F4C26A0C32D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17E60125-2322-41F6-A90A-F4C26A0C32D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17E60125-2322-41F6-A90A-F4C26A0C32D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,18 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModifyThroughSampleExcelFile", "ModifyThroughSampleExcelFile.csproj", "{D76E81C9-B4DF-4DF8-9263-917DED66393D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D76E81C9-B4DF-4DF8-9263-917DED66393D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D76E81C9-B4DF-4DF8-9263-917DED66393D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D76E81C9-B4DF-4DF8-9263-917DED66393D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
