@@ -16,7 +16,7 @@ Namespace InsertingOLEObjects
 	Public Class Program
 		Public Shared Sub Main(ByVal args() As String)
 			' The path to the documents directory.
-			Dim dataDir As String = System.IO.Path.GetFullPath("../../../Data/")
+			Dim dataDir As String = Path.GetFullPath("../../../Data/")
 
 			' Create directory if it is not already present.
 			Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)

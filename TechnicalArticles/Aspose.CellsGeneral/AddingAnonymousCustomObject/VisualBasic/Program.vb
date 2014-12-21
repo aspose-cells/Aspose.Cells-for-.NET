@@ -1,0 +1,70 @@
+'////////////////////////////////////////////////////////////////////////
+' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
+'
+' This file is part of Aspose.Cells. The source code in this file
+' is only intended as a supplement to the documentation, and is provided
+' "as is", without warranty of any kind, either expressed or implied.
+'////////////////////////////////////////////////////////////////////////
+
+Imports Microsoft.VisualBasic
+Imports System.IO
+
+Imports Aspose.Cells
+Imports System
+Imports System.Collections
+
+Namespace AddingAnonymousCustomObject
+	Public Class Program
+		Public Shared Sub Main(ByVal args() As String)
+			' The path to the documents directory.
+			Dim dataDir As String = Path.GetFullPath("../../../Data/")
+
+		   ' Create directory if it is not already present.
+			Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)
+			If (Not IsExists) Then
+				System.IO.Directory.CreateDirectory(dataDir)
+			End If
+
+		'Open a designer workbook
+Dim designer As New WorkbookDesigner()
+
+'get worksheet Cells collection
+Dim cells As Cells = designer.Workbook.Worksheets(0).Cells
+
+'Set Cell Values
+cells("A1").PutValue("Name")
+cells("B1").PutValue("Age")
+
+'Set markers
+cells("A2").PutValue("&=Person.Name")
+cells("B2").PutValue("&=Person.Age")
+
+'Create Array list
+Dim list As New ArrayList()
+
+'add custom objects to the list
+list.Add(New Person("Simon", 30))
+list.Add(New Person("Johnson", 33))
+
+'add designer's datasource
+designer.SetDataSource("Person", list)
+
+'process designer
+designer.Process(False)
+
+'save the resultant file
+designer.Workbook.Save(dataDir & "result.xls")
+		End Sub
+
+
+	End Class
+End Namespace
+
+Public Class Person
+	Public Name As String
+	Public Age As Integer
+	Friend Sub New(ByVal name As String, ByVal age As Integer)
+		Me.Name = name
+		Me.Age = age
+	End Sub
+End Class

@@ -15,7 +15,7 @@ Namespace ExtractingOLEObjects
 	Public Class Program
 		Public Shared Sub Main(ByVal args() As String)
 			' The path to the documents directory.
-			Dim dataDir As String = System.IO.Path.GetFullPath("../../../Data/")
+			Dim dataDir As String = Path.GetFullPath("../../../Data/")
 
 			'Instantiating a Workbook object
 			'Open the template file.
