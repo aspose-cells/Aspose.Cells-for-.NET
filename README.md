@@ -88,7 +88,7 @@ The example should be ready to compile. Click on "Debug" menu and choose one of 
 + **Website:** [www.aspose.com](http://www.aspose.com)
 + **Product Home:** [Aspose.Cells for .NET](http://www.aspose.com/categories/.net-components/aspose.cells-for-.net/default.aspx)
 + **Download:** [Download Aspose.Cells for .NET](http://www.aspose.com/community/files/51/.net-components/aspose.cells-for-.net/default.aspx)
-+ **Documentation:** [Aspose.Cells for .NET Documentation](http://www.aspose.com/documentation/.net-components/aspose.cells-for-.net/index.html)
++ **Documentation:** [Aspose.Cells for .NET Documentation](http://www.aspose.com/docs/display/cellsnet/Home)
 + **Forum:** [Aspose.Cells for .NET Forum](http://www.aspose.com/community/forums/aspose.cells-product-family/19/showforum.aspx)
 + **Blog:** [Aspose.Cells for .NET Blog](http://www.aspose.com/blogs/aspose-products/aspose-cells-product-family.html)
  
