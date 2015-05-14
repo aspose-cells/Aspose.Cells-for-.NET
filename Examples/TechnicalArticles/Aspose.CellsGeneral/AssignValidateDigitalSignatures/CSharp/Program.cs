@@ -28,9 +28,9 @@ namespace AssignValidateDigitalSignatures
             // The path to the documents directory.
             string dataDir = Path.GetFullPath("../../../Data/");
 
-            Program test = new MyTest();
-            test.testSign();
-            test.testvalidateSign();
+            //Program test = new MyTest();
+            //test.testSign();
+            //test.testvalidateSign();
             Console.ReadLine();
             
             
