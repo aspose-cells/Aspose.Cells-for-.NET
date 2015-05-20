@@ -19,10 +19,6 @@ Using Aspose.Cells for .NET in your project gives you the following benefits:
 These example projects provide helpful demonstrations and code when using Aspose.Cells for .NET.
 <br/><br/>
 <p align="center">
-  <a title="Download Examples Dashboard" href="http://www.aspose.com/community/files/51/.net-components/aspose-examples-for-.net/default.aspx">
-	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadDasboard-Button-Large.png" />
-  </a>
-  &nbsp;
   <a title="Download Examples ZIP" href="https://github.com/asposecells/Aspose_Cells_NET/archive/master.zip">
 	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
   </a>
