@@ -13,3 +13,13 @@ Following is short description of contents of the repository:
 Directory | Description
 --------- | -----------
 [Examples](Examples)  | A collection of .NET examples that help you learn how to use product features
+
+
+## Resources
+
+* **Website:** [www.aspose.com](http://www.aspose.com)
+* **Product Home:** [Aspose.Cells for .NET](http://www.aspose.com/.net/excel-component.aspx)
+* **Download:** [Download Aspose.Cells for .NET](http://www.aspose.com/community/files/51/.net-components/aspose.cells-for-.net/default.aspx)
+* **Documentation:** [Aspose.Cells for .NET Documentation](http://www.aspose.com/docs/display/cellsnet/Home)
+* **Forum:** [Aspose.Cells for .NET Forum](http://www.aspose.com/community/forums/aspose.cells-product-family/19/showforum.aspx)
+* **Blog:** [Aspose.Cells for .NET Blog](http://www.aspose.com/blogs/aspose-products/aspose-cells-product-family.html)
