@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenXML Excel", "OpenXML Excel\OpenXML Excel.csproj", "{7CF6B6E3-5F50-43E5-A3DD-C7869C379900}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose Cells", "Aspose Cells\Aspose Cells.csproj", "{91B7039B-6D86-4DC5-9FF5-4BE66B902003}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7CF6B6E3-5F50-43E5-A3DD-C7869C379900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CF6B6E3-5F50-43E5-A3DD-C7869C379900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CF6B6E3-5F50-43E5-A3DD-C7869C379900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CF6B6E3-5F50-43E5-A3DD-C7869C379900}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91B7039B-6D86-4DC5-9FF5-4BE66B902003}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91B7039B-6D86-4DC5-9FF5-4BE66B902003}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91B7039B-6D86-4DC5-9FF5-4BE66B902003}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91B7039B-6D86-4DC5-9FF5-4BE66B902003}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
