@@ -2,14 +2,14 @@
 /**
  * Created by PhpStorm.
  * User: assadmahmood
- * Date: 21/07/15
- * Time: 4:14 PM
+ * Date: 29/07/15
+ * Time: 4:16 PM
  */
 
-namespace Aspose\Cells\WorkingWithFiles\FileHandlingFeatures;
+namespace Aspose\Cells\WorkingWithWorksheets\ManagementFeatures\ManagingWorksheets;
 
 
-class OpeningFiles {
+class RemovingWorksheetsUsingSheetIndex {
 
     public static function run($dataDir=null)
     {
@@ -21,8 +21,12 @@ class OpeningFiles {
         // Opening through Path
         // Creating a Workbook object and opening an Excel file using its file path
 
-        $workbook = $ptr->New("Aspose.Cells.Workbook",array($dataDir . '/Book1.xls'));
+        $workbook = $ptr->New("Aspose.Cells.Workbook",array($dataDir . '/book1.xls'));
         $worksheets = $ptr->Get($workbook,"Worksheets",array());
-        print "Workbook opened using path successfully!" . PHP_EOL;
+        $ptr->Call($worksheets,"RemoveAt",array(0));
+        $ptr->Call($workbook,"Save",array($dataDir."/output.xls"));
+
+        print "Completed." . PHP_EOL;
     }
+
 } 
