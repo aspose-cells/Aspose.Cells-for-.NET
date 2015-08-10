@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D3A228AD-BF9F-42AE-BC8A-C79A4A2D9E8D}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <StartupObject>VisualBasic.Aspose.Cells.Examples.Utils</StartupObject>
+    <RootNamespace>VisualBasic</RootNamespace>
+    <AssemblyName>VisualBasic</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Console</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>VisualBasic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>VisualBasic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=8.5.1.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.8.5.1\lib\net40\Aspose.Cells.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvancedTopics\SmartMarkers\GroupingData.vb" />
+    <Compile Include="AdvancedTopics\SmartMarkers\ImageMarkers.vb" />
+    <Compile Include="AdvancedTopics\SmartMarkers\UsingAnonymousTypes.vb" />
+    <Compile Include="AdvancedTopics\SmartMarkers\UsingNestedObjects.vb" />
+    <Compile Include="AdvancedTopics\UsingCopyStyleAttribute.vb" />
+    <Compile Include="Articles\AddConditionalIconsSet.vb" />
+    <Compile Include="Articles\AddImageHyperlinks.vb" />
+    <Compile Include="Articles\AddingAnonymousCustomObject.vb" />
+    <Compile Include="Articles\AddPDFBookmarks.vb" />
+    <Compile Include="Articles\AddPictureToExcelComment.vb" />
+    <Compile Include="Articles\AddWordArtWatermarkToWorksheet.vb" />
+    <Compile Include="Articles\ApplyConditionalFormatting\ApplyConditionalFormattingCellValue.vb" />
+    <Compile Include="Articles\ApplyConditionalFormatting\ApplyConditionalFormattingFormula.vb" />
+    <Compile Include="Articles\ApplySuperscriptAndSubscript\SettingSubscriptEffect.vb" />
+    <Compile Include="Articles\ApplySuperscriptAndSubscript\SettingSuperscripteffect.vb" />
+    <Compile Include="Articles\AssignValidateDigitalSignatures.vb" />
+    <Compile Include="Articles\AutoFitRowsMergedCells.vb" />
+    <Compile Include="Articles\ChangeTextDirection.vb" />
+    <Compile Include="Articles\CombineMultipleWorkbooksSingleWorkbook.vb" />
+    <Compile Include="Articles\CombineMultipleWorksheetsSingleWorksheet.vb" />
+    <Compile Include="Articles\ConvertExcelChartToImage\ConvertingColumnChartToImage.vb" />
+    <Compile Include="Articles\ConvertExcelChartToImage\ConvertingPieChartToImageFile.vb" />
+    <Compile Include="Articles\ConvertingWorksheetToImage\ConvertWorksheetToImageByPage.vb" />
+    <Compile Include="Articles\ConvertingWorksheetToImage\ConvertWorksheettoImageFile.vb" />
+    <Compile Include="Articles\ConvertXLSFileToPDF.vb" />
+    <Compile Include="Articles\CopyRangeDataOnly.vb" />
+    <Compile Include="Articles\CopyRangeDataWithStyle.vb" />
+    <Compile Include="Articles\CopyRangeStyleOnly.vb" />
+    <Compile Include="Articles\CopyRowsColumns\CopyingColumns.vb" />
+    <Compile Include="Articles\CopyRowsColumns\CopyingRows.vb" />
+    <Compile Include="Articles\CopyShapesBetweenWorksheets\CopyChart.vb" />
+    <Compile Include="Articles\CopyShapesBetweenWorksheets\CopyControls.vb" />
+    <Compile Include="Articles\CopyShapesBetweenWorksheets\CopyingPicture.vb" />
+    <Compile Include="Articles\CreateManipulateRemoveScenarios.vb" />
+    <Compile Include="Articles\CreatePivotTablesPivotCharts\CreatePivotChart.vb" />
+    <Compile Include="Articles\CreatePivotTablesPivotCharts\CreatePivotTable.vb" />
+    <Compile Include="Articles\CreateTransparentImage.vb" />
+    <Compile Include="Articles\CustomizingRibbonXML.vb" />
+    <Compile Include="Articles\CustomSliceSectorColorsPieChart.vb" />
+    <Compile Include="Articles\DataValidationRules.vb" />
+    <Compile Include="Articles\DeleteBlankRowsColumns\DeletingBlankColumns.vb" />
+    <Compile Include="Articles\DeleteBlankRowsColumns\DeletingBlankRows.vb" />
+    <Compile Include="Articles\DetectMergedCells.vb" />
+    <Compile Include="Articles\DisableCompatibilityChecker.vb" />
+    <Compile Include="Articles\ErrorCheckingOptions.vb" />
+    <Compile Include="Articles\ExceltoHTMLPresentationPreferenceOption.vb" />
+    <Compile Include="Articles\ExportRangeofCells.vb" />
+    <Compile Include="Articles\ExportVisibleRowsData.vb" />
+    <Compile Include="Articles\ExtractImagesFromWorksheets.vb" />
+    <Compile Include="Articles\ExtractOLEObjects.vb" />
+    <Compile Include="Articles\FindCellsWithSpecificStyle.vb" />
+    <Compile Include="Articles\FitAllWorksheetColumns.vb" />
+    <Compile Include="Articles\FormatPivotTableCells.vb" />
+    <Compile Include="Articles\FormatWorksheetCells.vb" />
+    <Compile Include="Articles\GenerateThumbnailOfWorksheet.vb" />
+    <Compile Include="Articles\GetIconSetsDataBars.vb" />
+    <Compile Include="Articles\HidingDisplayOfZeroValues.vb" />
+    <Compile Include="Articles\Implement1904DateSystem.vb" />
+    <Compile Include="Articles\ImplementingNonSequencedRanges.vb" />
+    <Compile Include="Articles\InsertDeleteRows.vb" />
+    <Compile Include="Articles\InsertingWAVFile.vb" />
+    <Compile Include="Articles\InsertLinkedPicture.vb" />
+    <Compile Include="Articles\InsertPictureCellReference.vb" />
+    <Compile Include="Articles\LimitNumberOfPagesGenerated.vb" />
+    <Compile Include="Articles\LineBreakTextWrapping\UseExplicitLineBreaks.vb" />
+    <Compile Include="Articles\LineBreakTextWrapping\WrapText.vb" />
+    <Compile Include="Articles\LoadSpecificSheets.vb" />
+    <Compile Include="Articles\LoadWebImage.vb" />
+    <Compile Include="Articles\MergeUnmergeRangeOfCells.vb" />
+    <Compile Include="Articles\ModifyExistingStyle\ModifyThroughSampleExcelFile.vb" />
+    <Compile Include="Articles\ModifyExistingStyle\ModifyThroughStyleObject.vb" />
+    <Compile Include="Articles\MoveRangeOfCells.vb" />
+    <Compile Include="Articles\OptimizingMemoryUsage\ReadingLargeExcelFiles.vb" />
+    <Compile Include="Articles\OptimizingMemoryUsage\WritingLargeExcelFiles.vb" />
+    <Compile Include="Articles\PopulateData.vb" />
+    <Compile Include="Articles\ReadingCellValuesInMultipleThreadsSimultaneously.vb" />
+    <Compile Include="Articles\ReadingCSVMultipleEncodings.vb" />
+    <Compile Include="Articles\RemoveWhitespaceAroundData.vb" />
+    <Compile Include="Articles\RenderOnePdfPagePerExcelWorksheet.vb" />
+    <Compile Include="Articles\ResamplingAddedImages.vb" />
+    <Compile Include="Articles\RetrievingSQLConnectionData.vb" />
+    <Compile Include="Articles\SaveEachWorksheetToDifferentPDF.vb" />
+    <Compile Include="Articles\SearchReplaceDataInRange.vb" />
+    <Compile Include="Articles\SecurePDFDocuments.vb" />
+    <Compile Include="Articles\SetBackgroundPicture.vb" />
+    <Compile Include="Articles\SetExternalLinksInFormulas.vb" />
+    <Compile Include="Articles\SetPictureBackGroundFillChart.vb" />
+    <Compile Include="Articles\SetPixelFormatRenderedImage.vb" />
+    <Compile Include="Articles\SettingFormulaCalculationModeWorkbook.vb" />
+    <Compile Include="Articles\SettingPivotTableOption.vb" />
+    <Compile Include="Articles\SettingSharedFormula.vb" />
+    <Compile Include="Articles\SettingStrongEncryptionType.vb" />
+    <Compile Include="Articles\SetWorksheetTabColor.vb" />
+    <Compile Include="Articles\ShowFormulasInsteadOfValues.vb" />
+    <Compile Include="Articles\SortData.vb" />
+    <Compile Include="Articles\UsePresentationPreferenceOption.vb" />
+    <Compile Include="Articles\UsingICustomFunctionfeature.vb" />
+    <Compile Include="Articles\UsingLightCellsAPI.vb" />
+    <Compile Include="Articles\WorkbookScopedNamedRanges\AddWorkbookScopedNamedRange.vb" />
+    <Compile Include="Articles\WorkbookScopedNamedRanges\WorksheetNamedRange.vb" />
+    <Compile Include="Charts\Applying3DFormat.vb" />
+    <Compile Include="Charts\ChangeChartPosition.vb" />
+    <Compile Include="Charts\HowToCreateChart.vb" />
+    <Compile Include="Charts\InsertingControlsintoCharts\AddingLabelControl.vb" />
+    <Compile Include="Charts\InsertingControlsintoCharts\AddingPictureToChart.vb" />
+    <Compile Include="Charts\InsertingControlsintoCharts\AddingTextBoxControl.vb" />
+    <Compile Include="Charts\SettingChartsAppearance\ApplyingThemes.vb" />
+    <Compile Include="Charts\SettingChartsAppearance\ChangingMajorGridlines.vb" />
+    <Compile Include="Charts\SettingChartsAppearance\MajorGridlines.vb" />
+    <Compile Include="Charts\SettingChartsAppearance\SettingChartArea.vb" />
+    <Compile Include="Charts\SettingChartsAppearance\SettingChartLines.vb" />
+    <Compile Include="Charts\SettingChartsAppearance\SettingTitlesAxes.vb" />
+    <Compile Include="Charts\SettingChartsData.vb" />
+    <Compile Include="Charts\UsingSparklines.vb" />
+    <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToAnotherCell.vb" />
+    <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToExternalFile.vb" />
+    <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToURL.vb" />
+    <Compile Include="Data\AddOn\Merging\MergingCellsInWorksheet..vb" />
+    <Compile Include="Data\AddOn\Merging\UnMergingtheMergedCells.vb" />
+    <Compile Include="Data\AddOn\NamedRanges\AccessAllNamedRanges.vb" />
+    <Compile Include="Data\AddOn\NamedRanges\AccessSpecificNamedRange.vb" />
+    <Compile Include="Data\AddOn\NamedRanges\CopyNamedRanges.vb" />
+    <Compile Include="Data\AddOn\NamedRanges\CreateNamedRangeofCells.vb" />
+    <Compile Include="Data\AddOn\NamedRanges\FormatRanges1.vb" />
+    <Compile Include="Data\AddOn\NamedRanges\FormatRanges2.vb" />
+    <Compile Include="Data\AddOn\NamedRanges\IdentifyCellsinNamedRange.vb" />
+    <Compile Include="Data\AddOn\NamedRanges\InputDataInCellsInRange.vb" />
+    <Compile Include="Data\AddOn\NamedRanges\IntersectionofRanges.vb" />
+    <Compile Include="Data\AddOn\NamedRanges\MergeCellsInNamedRange.vb" />
+    <Compile Include="Data\AddOn\NamedRanges\RemoveANamedRange.vb" />
+    <Compile Include="Data\AddOn\NamedRanges\RenameNamedRange.vb" />
+    <Compile Include="Data\AddOn\NamedRanges\UnionOfRanges.vb" />
+    <Compile Include="Data\Handling\AccessingCells\RowAndColumnIndex.vb" />
+    <Compile Include="Data\Handling\AccessingCells\UsingCellIndex.vb" />
+    <Compile Include="Data\Handling\AccessingCells\UsingCellIndexInCellsCollection.vb" />
+    <Compile Include="Data\Handling\AccessingCells\UsingCellName.vb" />
+    <Compile Include="Data\Handling\AccessingCells\UsingRowAndColumnIndexOfCell.vb" />
+    <Compile Include="Data\Handling\AddingDataToCells.vb" />
+    <Compile Include="Data\Handling\DataSorting.vb" />
+    <Compile Include="Data\Handling\ExportingDataFromWorksheets.vb" />
+    <Compile Include="Data\Handling\Find\FindCellsContainingFormula.vb" />
+    <Compile Include="Data\Handling\Find\FindCellsStringNumber.vb" />
+    <Compile Include="Data\Handling\Find\FindDataOrFormulas.vb" />
+    <Compile Include="Data\Handling\Find\FindingCellsContainingFormula.vb" />
+    <Compile Include="Data\Handling\Find\FindingCellsContainingStringValueOrNumber.vb" />
+    <Compile Include="Data\Handling\Find\FindingCellsWithStringOrNumber.vb" />
+    <Compile Include="Data\Handling\Find\FindingDataOrFormulasUsingFindOptions.vb" />
+    <Compile Include="Data\Handling\Importing\ImportingFromArray.vb" />
+    <Compile Include="Data\Handling\Importing\ImportingFromArrayList.vb" />
+    <Compile Include="Data\Handling\Importing\ImportingFromCustomObject.vb" />
+    <Compile Include="Data\Handling\Importing\ImportingFromDataColumn.vb" />
+    <Compile Include="Data\Handling\Importing\ImportingFromDataTable.vb" />
+    <Compile Include="Data\Handling\Importing\ImportingFromDataView.vb" />
+    <Compile Include="Data\Handling\RetrievingDataFromCells.vb" />
+    <Compile Include="Data\Processing\CreatingSubtotals.vb" />
+    <Compile Include="Data\Processing\FilteringAndValidation\AutofilterData.vb" />
+    <Compile Include="Data\Processing\FilteringAndValidation\DateDataValidation.vb" />
+    <Compile Include="Data\Processing\FilteringAndValidation\DecimalDataValidation.vb" />
+    <Compile Include="Data\Processing\FilteringAndValidation\ListDataValidation.vb" />
+    <Compile Include="Data\Processing\FilteringAndValidation\TextLengthDataValidation.vb" />
+    <Compile Include="Data\Processing\FilteringAndValidation\TimeDataValidation.vb" />
+    <Compile Include="Data\Processing\FilteringAndValidation\WholeNumberDataValidation.vb" />
+    <Compile Include="DrawingObjects\AccessNonPrimitiveShape.vb" />
+    <Compile Include="DrawingObjects\Comments\AddImageToComment.vb" />
+    <Compile Include="DrawingObjects\Comments\AddingComment.vb" />
+    <Compile Include="DrawingObjects\Comments\CommentFormatting.vb" />
+    <Compile Include="DrawingObjects\Controls\AddinganArrowHead.vb" />
+    <Compile Include="DrawingObjects\Controls\AddingArcControl.vb" />
+    <Compile Include="DrawingObjects\Controls\AddingButtonControl.vb" />
+    <Compile Include="DrawingObjects\Controls\AddingCheckBoxControl.vb" />
+    <Compile Include="DrawingObjects\Controls\AddingComboBoxControl.vb" />
+    <Compile Include="DrawingObjects\Controls\AddingGroupBoxControl.vb" />
+    <Compile Include="DrawingObjects\Controls\AddingLabelControl.vb" />
+    <Compile Include="DrawingObjects\Controls\AddingLineControl.vb" />
+    <Compile Include="DrawingObjects\Controls\AddingListBoxControl.vb" />
+    <Compile Include="DrawingObjects\Controls\AddingOvalControl.vb" />
+    <Compile Include="DrawingObjects\Controls\AddingRadioButtonControl.vb" />
+    <Compile Include="DrawingObjects\Controls\AddingRectangleControl.vb" />
+    <Compile Include="DrawingObjects\Controls\AddingScrollBarControl.vb" />
+    <Compile Include="DrawingObjects\Controls\AddingSpinnerControl.vb" />
+    <Compile Include="DrawingObjects\Controls\AddingTextBoxControl.vb" />
+    <Compile Include="DrawingObjects\Controls\ManipulatingTextBoxControls.vb" />
+    <Compile Include="DrawingObjects\OLE\ExtractingOLEObjects.vb" />
+    <Compile Include="DrawingObjects\OLE\InsertingOLEObjects.vb" />
+    <Compile Include="DrawingObjects\Pictures\AddingPictures.vb" />
+    <Compile Include="DrawingObjects\Pictures\PictureCellReference.vb" />
+    <Compile Include="DrawingObjects\Pictures\PositioningPictures\AbsolutePositioning.vb" />
+    <Compile Include="DrawingObjects\Pictures\PositioningPictures\ProportionalPositioning.vb" />
+    <Compile Include="Files\Handling\OpeningFiles.vb" />
+    <Compile Include="Files\Handling\SaveWorkbookToTextCSVFormat.vb" />
+    <Compile Include="Files\Handling\SavingFiles.vb" />
+    <Compile Include="Files\Utility\ChartToImage.vb" />
+    <Compile Include="Files\Utility\ConvertingToMHTMLFiles.vb" />
+    <Compile Include="Files\Utility\ConvertingToXPS.vb" />
+    <Compile Include="Files\Utility\ConvertingWorksheetToSVG.vb" />
+    <Compile Include="Files\Utility\EncryptingFiles.vb" />
+    <Compile Include="Files\Utility\Excel2PDFConversion.vb" />
+    <Compile Include="Files\Utility\ManagingDocumentProperties.vb" />
+    <Compile Include="Files\Utility\WorksheetToImage.vb" />
+    <Compile Include="Formatting\ApproachesToFormatData\UsingExcelPredefinedStyles.vb" />
+    <Compile Include="Formatting\ApproachesToFormatData\UsingGetStyleSetStyle.vb" />
+    <Compile Include="Formatting\ApproachesToFormatData\UsingStyleObject.vb" />
+    <Compile Include="Formatting\Borders\AddingBordersToCells.vb" />
+    <Compile Include="Formatting\Borders\AddingBorderstoRange.vb" />
+    <Compile Include="Formatting\ColorsAndBackground.vb" />
+    <Compile Include="Formatting\ColorsAndPalette.vb" />
+    <Compile Include="Formatting\ConditionalFormatting.vb" />
+    <Compile Include="Formatting\ConfiguringAlignmentSettings\Indentation.vb" />
+    <Compile Include="Formatting\ConfiguringAlignmentSettings\MergingCells.vb" />
+    <Compile Include="Formatting\ConfiguringAlignmentSettings\Orientation.vb" />
+    <Compile Include="Formatting\ConfiguringAlignmentSettings\ShrinkingToFit.vb" />
+    <Compile Include="Formatting\ConfiguringAlignmentSettings\TextAlignmentHorizontal.vb" />
+    <Compile Include="Formatting\ConfiguringAlignmentSettings\TextAlignmentVertical.vb" />
+    <Compile Include="Formatting\ConfiguringAlignmentSettings\TextDirection.vb" />
+    <Compile Include="Formatting\ConfiguringAlignmentSettings\WrappingText.vb" />
+    <Compile Include="Formatting\DealingWithFontSettings\SettingFontColor.vb" />
+    <Compile Include="Formatting\DealingWithFontSettings\SettingFontName.vb" />
+    <Compile Include="Formatting\DealingWithFontSettings\SettingFontSize.vb" />
+    <Compile Include="Formatting\DealingWithFontSettings\SettingFontStyle.vb" />
+    <Compile Include="Formatting\DealingWithFontSettings\SettingFontUnderlineType.vb" />
+    <Compile Include="Formatting\DealingWithFontSettings\SettingStrikeOutEffect.vb" />
+    <Compile Include="Formatting\DealingWithFontSettings\SettingSubScriptEffect.vb" />
+    <Compile Include="Formatting\DealingWithFontSettings\SettingSuperScriptEffect.vb" />
+    <Compile Include="Formatting\Excel2007Themes\CustomizeThemes.vb" />
+    <Compile Include="Formatting\Excel2007Themes\GetSetThemeColors.vb" />
+    <Compile Include="Formatting\Excel2007Themes\UtilizeThemeColors.vb" />
+    <Compile Include="Formatting\FormatRowsColumns\FormattingAColumn.vb" />
+    <Compile Include="Formatting\FormatRowsColumns\FormattingARow.vb" />
+    <Compile Include="Formatting\FormattingSelectedCharacters.vb" />
+    <Compile Include="Formatting\SettingDisplayFormats\UsingBuiltInNumberFormats.vb" />
+    <Compile Include="Formatting\SettingDisplayFormats\UsingCustomNumber.vb" />
+    <Compile Include="Formulas\CalculatingFormulas.vb" />
+    <Compile Include="Formulas\CalculatingFormulasOnce.vb" />
+    <Compile Include="Formulas\DirectCalculationFormula.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RowsColumns\Copying\CopyingColumns.vb" />
+    <Compile Include="RowsColumns\Copying\CopyingRows.vb" />
+    <Compile Include="RowsColumns\Grouping\GroupingRowsAndColumns.vb" />
+    <Compile Include="RowsColumns\Grouping\UngroupingRowsAndColumns.vb" />
+    <Compile Include="RowsColumns\HeightAndWidth\SettingHeightAllRows.vb" />
+    <Compile Include="RowsColumns\HeightAndWidth\SettingHeightOfAllRowsInWorksheet.vb" />
+    <Compile Include="RowsColumns\HeightAndWidth\SettingHeightOfRow.vb" />
+    <Compile Include="RowsColumns\HeightAndWidth\SettingWidthOfAllColumns.vb" />
+    <Compile Include="RowsColumns\HeightAndWidth\SettingWidthOfAllColumnsInWorksheet.vb" />
+    <Compile Include="RowsColumns\HeightAndWidth\SettingWidthOfColumn.vb" />
+    <Compile Include="RowsColumns\HeightAndWidth\SetWidthAllColumns.vb" />
+    <Compile Include="RowsColumns\Hiding\HidingMultipleRowsAndColumns.vb" />
+    <Compile Include="RowsColumns\Hiding\HidingRowsAndColumns.vb" />
+    <Compile Include="RowsColumns\Hiding\UnhidingRowsAndColumns.vb" />
+    <Compile Include="RowsColumns\InsertingAndDeleting\DeletingAColumn.vb" />
+    <Compile Include="RowsColumns\InsertingAndDeleting\DeletingARow.vb" />
+    <Compile Include="RowsColumns\InsertingAndDeleting\DeletingMultipleRows.vb" />
+    <Compile Include="RowsColumns\InsertingAndDeleting\InsertingAColumn.vb" />
+    <Compile Include="RowsColumns\InsertingAndDeleting\InsertingARow.vb" />
+    <Compile Include="RowsColumns\InsertingAndDeleting\InsertingMultipleRows.vb" />
+    <Compile Include="Tables\ConvertTableToRange.vb" />
+    <Compile Include="Tables\CreatingListObject.vb" />
+    <Compile Include="Tables\FormataListObject.vb" />
+    <Compile Include="Utils.vb" />
+    <Compile Include="Worksheets\Display\DisplayHideGridlines.vb" />
+    <Compile Include="Worksheets\Display\DisplayHideRowColumnHeaders.vb" />
+    <Compile Include="Worksheets\Display\DisplayHideScrollBars.vb" />
+    <Compile Include="Worksheets\Display\DisplayHideTabs.vb" />
+    <Compile Include="Worksheets\Display\FreezePanes.vb" />
+    <Compile Include="Worksheets\Display\HideUnhideWorksheet.vb" />
+    <Compile Include="Worksheets\Display\PageBreakPreview.vb" />
+    <Compile Include="Worksheets\Display\SplitPanes.vb" />
+    <Compile Include="Worksheets\Display\ZoomFactor.vb" />
+    <Compile Include="Worksheets\Management\AddingWorksheetsToNewExcelFile.vb" />
+    <Compile Include="Worksheets\Management\AddWorksheetsToExistingExcelFile.vb" />
+    <Compile Include="Worksheets\Management\RemovingWorksheetsUsingSheetIndex.vb" />
+    <Compile Include="Worksheets\Management\RemovingWorksheetsUsingSheetName.vb" />
+    <Compile Include="Worksheets\Security\AdvancedProtectionSettings.vb" />
+    <Compile Include="Worksheets\Security\AdvancedProtectionSettingsUsingAsposeCells.vb" />
+    <Compile Include="Worksheets\Security\AdvanceProtectSettings.vb" />
+    <Compile Include="Worksheets\Security\Protecting\AllowUserToEditRangesInWorksheet.vb" />
+    <Compile Include="Worksheets\Security\Protecting\EditRangesWorksheet.vb" />
+    <Compile Include="Worksheets\Security\Protecting\ProtectCellsWorksheet.vb" />
+    <Compile Include="Worksheets\Security\Protecting\ProtectColumnWorksheet.vb" />
+    <Compile Include="Worksheets\Security\Protecting\ProtectingSpecificCellsinaWorksheet.vb" />
+    <Compile Include="Worksheets\Security\Protecting\ProtectingSpecificColumnInWorksheet.vb" />
+    <Compile Include="Worksheets\Security\Protecting\ProtectingSpecificRowInWorksheet.vb" />
+    <Compile Include="Worksheets\Security\Protecting\ProtectingWorksheet.vb" />
+    <Compile Include="Worksheets\Security\Protecting\ProtectRowWorksheet.vb" />
+    <Compile Include="Worksheets\Security\Unprotect\UnprotectingPasswordProtectedWorksheet.vb" />
+    <Compile Include="Worksheets\Security\Unprotect\UnprotectingSimplyProtectedWorksheet.vb" />
+    <Compile Include="Worksheets\Security\Unprotect\UnprotectProtectSheet.vb" />
+    <Compile Include="Worksheets\Security\Unprotect\UnprotectSimpleSheet.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
