@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.01-CreateNewWorkbook", "Aspose.Cells\01-WorkingWithWorkbook\01.01-CreateNewWorkbook\01.01-CreateNewWorkbook.csproj", "{4E0EA667-FE48-47E7-B39F-3EDE41DEC265}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.02-AddDataInCells", "Aspose.Cells\01-WorkingWithWorkbook\01.02-AddDataInCells\01.02-AddDataInCells.csproj", "{16227E08-A3C7-4B34-B748-286BD101F395}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.03-SetPrintArea", "Aspose.Cells\01-WorkingWithWorkbook\01.03-SetPrintArea\01.03-SetPrintArea.csproj", "{70C99E18-30C1-4149-B9DB-253835EFEADB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.01-GettingCellContents", "Aspose.Cells\02-WorkingWithData\02.01-GettingCellContents\02.01-GettingCellContents.csproj", "{1883D209-20E9-4087-BBE1-0588AD59573C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.02-InsertHyperlinksInWorksheet", "Aspose.Cells\02-WorkingWithData\02.02-InsertHyperlinksInWorksheet\02.02-InsertHyperlinksInWorksheet.csproj", "{A42CF6F7-7B1F-4CBC-A4F5-BB756D05C5CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.03-NewLineInCells", "Aspose.Cells\02-WorkingWithData\02.03-NewLineInCells\02.03-NewLineInCells.csproj", "{7E845235-74AF-4F75-8C5B-AD317E73A6E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E0EA667-FE48-47E7-B39F-3EDE41DEC265}.Debug|x86.ActiveCfg = Debug|x86
+		{4E0EA667-FE48-47E7-B39F-3EDE41DEC265}.Debug|x86.Build.0 = Debug|x86
+		{4E0EA667-FE48-47E7-B39F-3EDE41DEC265}.Release|x86.ActiveCfg = Release|x86
+		{4E0EA667-FE48-47E7-B39F-3EDE41DEC265}.Release|x86.Build.0 = Release|x86
+		{16227E08-A3C7-4B34-B748-286BD101F395}.Debug|x86.ActiveCfg = Debug|x86
+		{16227E08-A3C7-4B34-B748-286BD101F395}.Debug|x86.Build.0 = Debug|x86
+		{16227E08-A3C7-4B34-B748-286BD101F395}.Release|x86.ActiveCfg = Release|x86
+		{16227E08-A3C7-4B34-B748-286BD101F395}.Release|x86.Build.0 = Release|x86
+		{70C99E18-30C1-4149-B9DB-253835EFEADB}.Debug|x86.ActiveCfg = Debug|x86
+		{70C99E18-30C1-4149-B9DB-253835EFEADB}.Debug|x86.Build.0 = Debug|x86
+		{70C99E18-30C1-4149-B9DB-253835EFEADB}.Release|x86.ActiveCfg = Release|x86
+		{70C99E18-30C1-4149-B9DB-253835EFEADB}.Release|x86.Build.0 = Release|x86
+		{1883D209-20E9-4087-BBE1-0588AD59573C}.Debug|x86.ActiveCfg = Debug|x86
+		{1883D209-20E9-4087-BBE1-0588AD59573C}.Debug|x86.Build.0 = Debug|x86
+		{1883D209-20E9-4087-BBE1-0588AD59573C}.Release|x86.ActiveCfg = Release|x86
+		{1883D209-20E9-4087-BBE1-0588AD59573C}.Release|x86.Build.0 = Release|x86
+		{A42CF6F7-7B1F-4CBC-A4F5-BB756D05C5CD}.Debug|x86.ActiveCfg = Debug|x86
+		{A42CF6F7-7B1F-4CBC-A4F5-BB756D05C5CD}.Debug|x86.Build.0 = Debug|x86
+		{A42CF6F7-7B1F-4CBC-A4F5-BB756D05C5CD}.Release|x86.ActiveCfg = Release|x86
+		{A42CF6F7-7B1F-4CBC-A4F5-BB756D05C5CD}.Release|x86.Build.0 = Release|x86
+		{7E845235-74AF-4F75-8C5B-AD317E73A6E3}.Debug|x86.ActiveCfg = Debug|x86
+		{7E845235-74AF-4F75-8C5B-AD317E73A6E3}.Debug|x86.Build.0 = Debug|x86
+		{7E845235-74AF-4F75-8C5B-AD317E73A6E3}.Release|x86.ActiveCfg = Release|x86
+		{7E845235-74AF-4F75-8C5B-AD317E73A6E3}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
