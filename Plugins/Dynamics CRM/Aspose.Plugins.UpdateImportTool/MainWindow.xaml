@@ -1,0 +1,23 @@
+﻿<Window x:Class="Aspose.Plugins.UpdateImportTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Aspose Update/Import Tool" Height="500" Width="600" Icon="logoSpin.png" >
+    <Grid>
+        <Button Content="Login to CRM" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="103" Click="LoginButton_Click"/>
+        <Label Content="Status:" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LBL_Status" Content="" HorizontalAlignment="Left" Margin="60,35,0,0" VerticalAlignment="Top"/>
+        <Label Content="Entity:" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="CB_Entities" HorizontalAlignment="Left" Margin="60,60,0,0" VerticalAlignment="Top" Width="200" SelectionChanged="CB_Entities_Selected" />
+        <Label Content="Data Delimiter:" HorizontalAlignment="Left" Margin="349,60,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="443,60,0,0" VerticalAlignment="Top" Width="140" />
+        <Label Content="Field Delimiter:" HorizontalAlignment="Left" Margin="349,91,0,0" VerticalAlignment="Top"/>
+        <ComboBox HorizontalAlignment="Left" Margin="443,94,0,0" VerticalAlignment="Top" Width="140" />
+        <DataGrid AutoGenerateColumns="True" x:Name="GV_Data" HorizontalAlignment="Left" Margin="10,122,0,0" VerticalAlignment="Top" Height="312" Width="572" CanUserAddRows="False" ItemsSource="{Binding}"/>
+        <Button Content="Get From CRM" HorizontalAlignment="Left" Margin="10,439,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click_1"/>
+        <Button Content="Export To Excel" HorizontalAlignment="Left" Margin="121,439,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click_2"/>
+        <Button Content="Get From Excel" HorizontalAlignment="Left" Margin="229,439,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click_3"/>
+        <Button Content="Export To CRM" HorizontalAlignment="Left" Margin="336,439,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click_4"/>
+        <Button Content="Choose Fields" HorizontalAlignment="Left" Margin="60,94,0,0" VerticalAlignment="Top" Width="97" Click="Button_Click"/>
+
+    </Grid>
+</Window>

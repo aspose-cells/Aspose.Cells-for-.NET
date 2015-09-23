@@ -1,0 +1,74 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.01-FindValueInCells", "Aspose.Cells\01-DataHandlingFeatures\01.01-FindValueInCells\01.01-FindValueInCells.csproj", "{78EA7326-480D-452C-8579-2C35C5B6DC57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.02-CalculateSubTotals", "Aspose.Cells\01-DataHandlingFeatures\01.02-CalculateSubTotals\01.02-CalculateSubTotals.csproj", "{FF84E424-A72E-4FEE-87F9-07D7C17BCAC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.03-FormulaCalculationEngine", "Aspose.Cells\01-DataHandlingFeatures\01.03-FormulaCalculationEngine\01.03-FormulaCalculationEngine.csproj", "{A51A3965-8991-4421-AB5F-8039EACDAA64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.01-SetWorksheetTabColor", "Aspose.Cells\02-WorkingWithWorksheets\02.01-SetWorksheetTabColor\02.01-SetWorksheetTabColor.csproj", "{6B11A28D-4784-4BFF-8EB9-15106905D1BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.02-SaveEachWorksheettoDifferentPDF", "Aspose.Cells\02-WorkingWithWorksheets\02.02-SaveEachWorksheettoDifferentPDF\02.02-SaveEachWorksheettoDifferentPDF.csproj", "{E6D1079A-0513-413A-A201-28B92065C25B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.01-CreateCharts", "Aspose.Cells\03-WorkingWithCharts\03.01-CreateCharts\03.01-CreateCharts.csproj", "{916775D0-F62B-4FA4-A81A-388162832D26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.02-ConvertChartToImages", "Aspose.Cells\03-WorkingWithCharts\03.02-ConvertChartToImages\03.02-ConvertChartToImages.csproj", "{C4B21584-ED6A-4E0F-98B8-11E69E099C35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.01-SetPrintTitles", "Aspose.Cells\04-MiscellaneousExamples\04.01-SetPrintTitles\04.01-SetPrintTitles.csproj", "{01368062-0A69-4E68-A6EA-A1632F8B2807}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.02-PrintingWorkbooks", "Aspose.Cells\04-MiscellaneousExamples\04.02-PrintingWorkbooks\04.02-PrintingWorkbooks.csproj", "{F420363D-43A8-4580-9350-511F1080F883}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.03-ConvertSpreadsheetToPDF", "Aspose.Cells\04-MiscellaneousExamples\04.03-ConvertSpreadsheetToPDF\04.03-ConvertSpreadsheetToPDF.csproj", "{6B174152-6A1D-483B-8401-1121F475A3A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78EA7326-480D-452C-8579-2C35C5B6DC57}.Debug|x86.ActiveCfg = Debug|x86
+		{78EA7326-480D-452C-8579-2C35C5B6DC57}.Debug|x86.Build.0 = Debug|x86
+		{78EA7326-480D-452C-8579-2C35C5B6DC57}.Release|x86.ActiveCfg = Release|x86
+		{78EA7326-480D-452C-8579-2C35C5B6DC57}.Release|x86.Build.0 = Release|x86
+		{FF84E424-A72E-4FEE-87F9-07D7C17BCAC8}.Debug|x86.ActiveCfg = Debug|x86
+		{FF84E424-A72E-4FEE-87F9-07D7C17BCAC8}.Debug|x86.Build.0 = Debug|x86
+		{FF84E424-A72E-4FEE-87F9-07D7C17BCAC8}.Release|x86.ActiveCfg = Release|x86
+		{FF84E424-A72E-4FEE-87F9-07D7C17BCAC8}.Release|x86.Build.0 = Release|x86
+		{A51A3965-8991-4421-AB5F-8039EACDAA64}.Debug|x86.ActiveCfg = Debug|x86
+		{A51A3965-8991-4421-AB5F-8039EACDAA64}.Debug|x86.Build.0 = Debug|x86
+		{A51A3965-8991-4421-AB5F-8039EACDAA64}.Release|x86.ActiveCfg = Release|x86
+		{A51A3965-8991-4421-AB5F-8039EACDAA64}.Release|x86.Build.0 = Release|x86
+		{6B11A28D-4784-4BFF-8EB9-15106905D1BF}.Debug|x86.ActiveCfg = Debug|x86
+		{6B11A28D-4784-4BFF-8EB9-15106905D1BF}.Debug|x86.Build.0 = Debug|x86
+		{6B11A28D-4784-4BFF-8EB9-15106905D1BF}.Release|x86.ActiveCfg = Release|x86
+		{6B11A28D-4784-4BFF-8EB9-15106905D1BF}.Release|x86.Build.0 = Release|x86
+		{E6D1079A-0513-413A-A201-28B92065C25B}.Debug|x86.ActiveCfg = Debug|x86
+		{E6D1079A-0513-413A-A201-28B92065C25B}.Debug|x86.Build.0 = Debug|x86
+		{E6D1079A-0513-413A-A201-28B92065C25B}.Release|x86.ActiveCfg = Release|x86
+		{E6D1079A-0513-413A-A201-28B92065C25B}.Release|x86.Build.0 = Release|x86
+		{916775D0-F62B-4FA4-A81A-388162832D26}.Debug|x86.ActiveCfg = Debug|x86
+		{916775D0-F62B-4FA4-A81A-388162832D26}.Debug|x86.Build.0 = Debug|x86
+		{916775D0-F62B-4FA4-A81A-388162832D26}.Release|x86.ActiveCfg = Release|x86
+		{916775D0-F62B-4FA4-A81A-388162832D26}.Release|x86.Build.0 = Release|x86
+		{C4B21584-ED6A-4E0F-98B8-11E69E099C35}.Debug|x86.ActiveCfg = Debug|x86
+		{C4B21584-ED6A-4E0F-98B8-11E69E099C35}.Debug|x86.Build.0 = Debug|x86
+		{C4B21584-ED6A-4E0F-98B8-11E69E099C35}.Release|x86.ActiveCfg = Release|x86
+		{C4B21584-ED6A-4E0F-98B8-11E69E099C35}.Release|x86.Build.0 = Release|x86
+		{01368062-0A69-4E68-A6EA-A1632F8B2807}.Debug|x86.ActiveCfg = Debug|x86
+		{01368062-0A69-4E68-A6EA-A1632F8B2807}.Debug|x86.Build.0 = Debug|x86
+		{01368062-0A69-4E68-A6EA-A1632F8B2807}.Release|x86.ActiveCfg = Release|x86
+		{01368062-0A69-4E68-A6EA-A1632F8B2807}.Release|x86.Build.0 = Release|x86
+		{F420363D-43A8-4580-9350-511F1080F883}.Debug|x86.ActiveCfg = Debug|x86
+		{F420363D-43A8-4580-9350-511F1080F883}.Debug|x86.Build.0 = Debug|x86
+		{F420363D-43A8-4580-9350-511F1080F883}.Release|x86.ActiveCfg = Release|x86
+		{F420363D-43A8-4580-9350-511F1080F883}.Release|x86.Build.0 = Release|x86
+		{6B174152-6A1D-483B-8401-1121F475A3A7}.Debug|x86.ActiveCfg = Debug|x86
+		{6B174152-6A1D-483B-8401-1121F475A3A7}.Debug|x86.Build.0 = Debug|x86
+		{6B174152-6A1D-483B-8401-1121F475A3A7}.Release|x86.ActiveCfg = Release|x86
+		{6B174152-6A1D-483B-8401-1121F475A3A7}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

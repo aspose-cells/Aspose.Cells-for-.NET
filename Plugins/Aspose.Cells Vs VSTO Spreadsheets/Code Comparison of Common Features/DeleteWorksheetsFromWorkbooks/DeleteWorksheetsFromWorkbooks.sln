@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSTO DeleteWorksheetsFromWorkbooks", "VSTO DeleteWorksheetsFromWorkbooks\VSTO DeleteWorksheetsFromWorkbooks.csproj", "{6DA7C036-F0F0-4953-9A1B-2882B4708A05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose DeleteWorksheetsFromWorkbooks", "Aspose DeleteWorksheetsFromWorkbooks\Aspose DeleteWorksheetsFromWorkbooks.csproj", "{D9E06CE2-C9B7-4F6D-B46A-D0781FD79FC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6DA7C036-F0F0-4953-9A1B-2882B4708A05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DA7C036-F0F0-4953-9A1B-2882B4708A05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DA7C036-F0F0-4953-9A1B-2882B4708A05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DA7C036-F0F0-4953-9A1B-2882B4708A05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9E06CE2-C9B7-4F6D-B46A-D0781FD79FC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9E06CE2-C9B7-4F6D-B46A-D0781FD79FC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9E06CE2-C9B7-4F6D-B46A-D0781FD79FC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9E06CE2-C9B7-4F6D-B46A-D0781FD79FC4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

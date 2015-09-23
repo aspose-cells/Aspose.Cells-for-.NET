@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose Cells", "Aspose Cells\Aspose Cells.csproj", "{99E2C274-6634-4981-B6CB-E30CC03BE7D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSTO Cells", "VSTO Cells\VSTO Cells.csproj", "{B1DEB269-080F-49DD-A825-0DF5B509ACC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99E2C274-6634-4981-B6CB-E30CC03BE7D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99E2C274-6634-4981-B6CB-E30CC03BE7D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99E2C274-6634-4981-B6CB-E30CC03BE7D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99E2C274-6634-4981-B6CB-E30CC03BE7D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1DEB269-080F-49DD-A825-0DF5B509ACC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1DEB269-080F-49DD-A825-0DF5B509ACC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1DEB269-080F-49DD-A825-0DF5B509ACC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1DEB269-080F-49DD-A825-0DF5B509ACC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -13,6 +13,7 @@ Following is short description of contents of the repository:
 Directory | Description
 --------- | -----------
 [Examples](Examples)  | A collection of .NET examples that help you learn how to use product features
+[Plugins](Plugins)  | Standalone Plugins that will demonstrate one or multiple features of Aspose.Cells for .NET
 
 
 ## Resources
