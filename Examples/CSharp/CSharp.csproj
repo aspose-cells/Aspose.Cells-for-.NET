@@ -35,8 +35,8 @@
     <StartupObject>Aspose.Cells.Examples.Utils</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=8.5.1.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.8.5.1\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=8.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.8.6.0\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -65,6 +65,7 @@
     <Compile Include="Articles\ApplyConditionalFormatting\ApplyConditionalFormattingFormula.cs" />
     <Compile Include="Articles\ApplySuperscriptAndSubscript\SettingSubscriptEffect.cs" />
     <Compile Include="Articles\ApplySuperscriptAndSubscript\SettingSuperscripteffect.cs" />
+    <Compile Include="Articles\AssignMacroToFormControl.cs" />
     <Compile Include="Articles\AssignValidateDigitalSignatures.cs" />
     <Compile Include="Articles\AutoFitRowsMergedCells.cs" />
     <Compile Include="Articles\ChangeTextDirection.cs" />
@@ -107,6 +108,7 @@
     <Compile Include="Articles\GetIconSetsDataBars.cs" />
     <Compile Include="Articles\GetWarningsForFontSubstitution.cs" />
     <Compile Include="Articles\HidingDisplayOfZeroValues.cs" />
+    <Compile Include="Articles\HtmlExportFrameScripts.cs" />
     <Compile Include="Articles\Implement1904DateSystem.cs" />
     <Compile Include="Articles\ImplementingNonSequencedRanges.cs" />
     <Compile Include="Articles\InsertDeleteRows.cs" />
@@ -148,6 +150,7 @@
     <Compile Include="Articles\UsePresentationPreferenceOption.cs" />
     <Compile Include="Articles\UsingICustomFunctionfeature.cs" />
     <Compile Include="Articles\UsingLightCellsAPI.cs" />
+    <Compile Include="Articles\UsingWorkbookMetadata.cs" />
     <Compile Include="Articles\WorkbookScopedNamedRanges\AddWorkbookScopedNamedRange.cs" />
     <Compile Include="Articles\WorkbookScopedNamedRanges\WorksheetNamedRange.cs" />
     <Compile Include="Charts\Applying3DFormat.cs" />

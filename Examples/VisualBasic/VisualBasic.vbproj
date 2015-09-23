@@ -46,8 +46,8 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=8.5.1.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.8.5.1\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=8.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.8.6.0\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -86,6 +86,7 @@
     <Compile Include="Articles\ApplyConditionalFormatting\ApplyConditionalFormattingFormula.vb" />
     <Compile Include="Articles\ApplySuperscriptAndSubscript\SettingSubscriptEffect.vb" />
     <Compile Include="Articles\ApplySuperscriptAndSubscript\SettingSuperscripteffect.vb" />
+    <Compile Include="Articles\AssignMacroToFormControl.vb" />
     <Compile Include="Articles\AssignValidateDigitalSignatures.vb" />
     <Compile Include="Articles\AutoFitRowsMergedCells.vb" />
     <Compile Include="Articles\ChangeTextDirection.vb" />
@@ -128,6 +129,7 @@
     <Compile Include="Articles\GenerateThumbnailOfWorksheet.vb" />
     <Compile Include="Articles\GetIconSetsDataBars.vb" />
     <Compile Include="Articles\HidingDisplayOfZeroValues.vb" />
+    <Compile Include="Articles\HtmlExportFrameScripts.vb" />
     <Compile Include="Articles\Implement1904DateSystem.vb" />
     <Compile Include="Articles\ImplementingNonSequencedRanges.vb" />
     <Compile Include="Articles\InsertDeleteRows.vb" />
@@ -169,6 +171,7 @@
     <Compile Include="Articles\UsePresentationPreferenceOption.vb" />
     <Compile Include="Articles\UsingICustomFunctionfeature.vb" />
     <Compile Include="Articles\UsingLightCellsAPI.vb" />
+    <Compile Include="Articles\UsingWorkbookMetadata.vb" />
     <Compile Include="Articles\WorkbookScopedNamedRanges\AddWorkbookScopedNamedRange.vb" />
     <Compile Include="Articles\WorkbookScopedNamedRanges\WorksheetNamedRange.vb" />
     <Compile Include="Charts\Applying3DFormat.vb" />
