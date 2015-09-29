@@ -34,6 +34,8 @@ namespace Aspose.Cells.Examples.Articles
             button.Font.Color = System.Drawing.Color.Blue;
             button.Text = "Aspose";
 
+            button.MacroName = sheet.Name + ".ShowMessage";
+
             workbook.Save(dataDir + "Output.xlsm");
 
             Console.WriteLine("File saved");
