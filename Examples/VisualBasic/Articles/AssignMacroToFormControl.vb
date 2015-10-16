@@ -17,8 +17,8 @@ Namespace Aspose.Cells.Examples.Articles
 
             Dim moduleIdx As Integer = workbook.VbaProject.Modules.Add(sheet)
             Dim module1 As VbaModule = workbook.VbaProject.Modules(moduleIdx)
-            module1.Codes = "Sub ShowMessage()" & "\r\n" _
-                & "    MsgBox ""Welcome to Aspose!""" & "\r\n" _
+            module1.Codes = "Sub ShowMessage()" & Environment.NewLine _
+                & "    MsgBox ""Welcome to Aspose!""" & Environment.NewLine _
                 & "End Sub"
 
             Dim button As Button = sheet.Shapes.AddButton(2, 0, 2, 0, 28, 80)
@@ -27,6 +27,8 @@ Namespace Aspose.Cells.Examples.Articles
             button.Font.IsBold = True
             button.Font.Color = System.Drawing.Color.Blue
             button.Text = "Aspose"
+
+            button.MacroName = sheet.Name + ".ShowMessage"
 
             workbook.Save(dataDir + "Output1.xlsm")
 
