@@ -20,3 +20,10 @@ TestResults/
 *.vsmdi
 test-results/
 *.userprefs
+*/vendor/*
+Plugins/Aspose_Cells_NET_for_PHP/.idea/*
+Plugins/Aspose_Cells_NET_for_PHP/vendor/*
+
+Plugins/Aspose_Cells_NET_for_PHP/composer.lock
+
+Plugins/Aspose_Cells_NET_for_PHP.zip
