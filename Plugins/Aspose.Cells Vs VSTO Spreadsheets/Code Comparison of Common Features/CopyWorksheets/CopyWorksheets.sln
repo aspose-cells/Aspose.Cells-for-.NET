@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSTO CopyWorksheets", "VSTO CopyWorksheets\VSTO CopyWorksheets.csproj", "{45D8E056-E8DC-4164-BD0F-5ED89E141B82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose CopyWorksheets", "Aspose CopyWorksheets\Aspose CopyWorksheets.csproj", "{98843C8F-C88D-4D91-BD25-021955C01F83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45D8E056-E8DC-4164-BD0F-5ED89E141B82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45D8E056-E8DC-4164-BD0F-5ED89E141B82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45D8E056-E8DC-4164-BD0F-5ED89E141B82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45D8E056-E8DC-4164-BD0F-5ED89E141B82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98843C8F-C88D-4D91-BD25-021955C01F83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98843C8F-C88D-4D91-BD25-021955C01F83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98843C8F-C88D-4D91-BD25-021955C01F83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98843C8F-C88D-4D91-BD25-021955C01F83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

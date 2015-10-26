@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B30E8542-08BA-45AB-8C96-A438C17E26C8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CSharp</RootNamespace>
+    <AssemblyName>CSharp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Aspose.Cells.Examples.Utils</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=8.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.8.6.0\lib\net40\Aspose.Cells.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdvancedTopics\SmartMarkers\DynamicFormulas.cs" />
+    <Compile Include="AdvancedTopics\SmartMarkers\GroupingData.cs" />
+    <Compile Include="AdvancedTopics\SmartMarkers\ImageMarkers.cs" />
+    <Compile Include="AdvancedTopics\SmartMarkers\UsingAnonymousTypes.cs" />
+    <Compile Include="AdvancedTopics\SmartMarkers\UsingNestedObjects.cs" />
+    <Compile Include="AdvancedTopics\UsingCopyStyleAttribute.cs" />
+    <Compile Include="Articles\AddConditionalIconsSet.cs" />
+    <Compile Include="Articles\AddImageHyperlinks.cs" />
+    <Compile Include="Articles\AddingAnonymousCustomObject.cs" />
+    <Compile Include="Articles\AddPDFBookmarks.cs" />
+    <Compile Include="Articles\AddPictureToExcelComment.cs" />
+    <Compile Include="Articles\AddWordArtWatermarkToWorksheet.cs" />
+    <Compile Include="Articles\ApplyConditionalFormatting\ApplyConditionalFormattingCellValue.cs" />
+    <Compile Include="Articles\ApplyConditionalFormatting\ApplyConditionalFormattingFormula.cs" />
+    <Compile Include="Articles\ApplySuperscriptAndSubscript\SettingSubscriptEffect.cs" />
+    <Compile Include="Articles\ApplySuperscriptAndSubscript\SettingSuperscripteffect.cs" />
+    <Compile Include="Articles\AssignMacroToFormControl.cs" />
+    <Compile Include="Articles\AssignValidateDigitalSignatures.cs" />
+    <Compile Include="Articles\AutoFitRowsMergedCells.cs" />
+    <Compile Include="Articles\ChangeTextDirection.cs" />
+    <Compile Include="Articles\CombineMultipleWorkbooksSingleWorkbook.cs" />
+    <Compile Include="Articles\CombineMultipleWorksheetsSingleWorksheet.cs" />
+    <Compile Include="Articles\ConvertExcelChartToImage\ConvertingColumnChartToImage.cs" />
+    <Compile Include="Articles\ConvertExcelChartToImage\ConvertingPieChartToImageFile.cs" />
+    <Compile Include="Articles\ConvertingWorksheetToImage\ConvertWorksheetToImageByPage.cs" />
+    <Compile Include="Articles\ConvertingWorksheetToImage\ConvertWorksheettoImageFile.cs" />
+    <Compile Include="Articles\ConvertXLSFileToPDF.cs" />
+    <Compile Include="Articles\CopyRangeDataOnly.cs" />
+    <Compile Include="Articles\CopyRangeDataWithStyle.cs" />
+    <Compile Include="Articles\CopyRangeStyleOnly.cs" />
+    <Compile Include="Articles\CopyRowsColumns\CopyingColumns.cs" />
+    <Compile Include="Articles\CopyRowsColumns\CopyingRows.cs" />
+    <Compile Include="Articles\CopyShapesBetweenWorksheets\CopyChart.cs" />
+    <Compile Include="Articles\CopyShapesBetweenWorksheets\CopyControls.cs" />
+    <Compile Include="Articles\CopyShapesBetweenWorksheets\CopyingPicture.cs" />
+    <Compile Include="Articles\CreateManipulateRemoveScenarios.cs" />
+    <Compile Include="Articles\CreatePivotTablesPivotCharts\CreatePivotChart.cs" />
+    <Compile Include="Articles\CreatePivotTablesPivotCharts\CreatePivotTable.cs" />
+    <Compile Include="Articles\CreateTransparentImage.cs" />
+    <Compile Include="Articles\CustomizingRibbonXML.cs" />
+    <Compile Include="Articles\CustomSliceSectorColorsPieChart.cs" />
+    <Compile Include="Articles\DataValidationRules.cs" />
+    <Compile Include="Articles\DeleteBlankRowsColumns\DeletingBlankColumns.cs" />
+    <Compile Include="Articles\DeleteBlankRowsColumns\DeletingBlankRows.cs" />
+    <Compile Include="Articles\DetectMergedCells.cs" />
+    <Compile Include="Articles\DisableCompatibilityChecker.cs" />
+    <Compile Include="Articles\ErrorCheckingOptions.cs" />
+    <Compile Include="Articles\ExportRangeofCells.cs" />
+    <Compile Include="Articles\ExportVisibleRowsData.cs" />
+    <Compile Include="Articles\ExtractImagesFromWorksheets.cs" />
+    <Compile Include="Articles\ExtractOLEObjects.cs" />
+    <Compile Include="Articles\FindCellsWithSpecificStyle.cs" />
+    <Compile Include="Articles\FitAllWorksheetColumns.cs" />
+    <Compile Include="Articles\FormatPivotTableCells.cs" />
+    <Compile Include="Articles\FormatWorksheetCells.cs" />
+    <Compile Include="Articles\GenerateThumbnailOfWorksheet.cs" />
+    <Compile Include="Articles\GetIconSetsDataBars.cs" />
+    <Compile Include="Articles\GetWarningsForFontSubstitution.cs" />
+    <Compile Include="Articles\HidingDisplayOfZeroValues.cs" />
+    <Compile Include="Articles\HtmlExportFrameScripts.cs" />
+    <Compile Include="Articles\Implement1904DateSystem.cs" />
+    <Compile Include="Articles\ImplementingNonSequencedRanges.cs" />
+    <Compile Include="Articles\InsertDeleteRows.cs" />
+    <Compile Include="Articles\InsertingWAVFile.cs" />
+    <Compile Include="Articles\InsertLinkedPicture.cs" />
+    <Compile Include="Articles\InsertPictureCellReference.cs" />
+    <Compile Include="Articles\LimitNumberOfPagesGenerated.cs" />
+    <Compile Include="Articles\LineBreakTextWrapping\UseExplicitLineBreaks.cs" />
+    <Compile Include="Articles\LineBreakTextWrapping\WrapText.cs" />
+    <Compile Include="Articles\LoadSpecificSheets.cs" />
+    <Compile Include="Articles\LoadWebImage.cs" />
+    <Compile Include="Articles\MergeUnmergeRangeOfCells.cs" />
+    <Compile Include="Articles\ModifyExistingStyle\ModifyThroughSampleExcelFile.cs" />
+    <Compile Include="Articles\ModifyExistingStyle\ModifyThroughStyleObject.cs" />
+    <Compile Include="Articles\MoveRangeOfCells.cs" />
+    <Compile Include="Articles\OptimizingMemoryUsage\ReadingLargeExcelFiles.cs" />
+    <Compile Include="Articles\OptimizingMemoryUsage\WritingLargeExcelFiles.cs" />
+    <Compile Include="Articles\PopulateData.cs" />
+    <Compile Include="Articles\ReadingCellValuesInMultipleThreadsSimultaneously.cs" />
+    <Compile Include="Articles\ReadingCSVMultipleEncodings.cs" />
+    <Compile Include="Articles\RemoveWhitespaceAroundData.cs" />
+    <Compile Include="Articles\RenderOnePdfPagePerExcelWorksheet.cs" />
+    <Compile Include="Articles\ResamplingAddedImages.cs" />
+    <Compile Include="Articles\RetrievingSQLConnectionData.cs" />
+    <Compile Include="Articles\SaveEachWorksheetToDifferentPDF.cs" />
+    <Compile Include="Articles\SearchReplaceDataInRange.cs" />
+    <Compile Include="Articles\SecurePDFDocuments.cs" />
+    <Compile Include="Articles\SetBackgroundPicture.cs" />
+    <Compile Include="Articles\SetExternalLinksInFormulas.cs" />
+    <Compile Include="Articles\SetPictureBackGroundFillChart.cs" />
+    <Compile Include="Articles\SetPixelFormatRenderedImage.cs" />
+    <Compile Include="Articles\SettingFormulaCalculationModeWorkbook.cs" />
+    <Compile Include="Articles\SettingPivotTableOption.cs" />
+    <Compile Include="Articles\SettingSharedFormula.cs" />
+    <Compile Include="Articles\SettingStrongEncryptionType.cs" />
+    <Compile Include="Articles\SetWorksheetTabColor.cs" />
+    <Compile Include="Articles\ShowFormulasInsteadOfValues.cs" />
+    <Compile Include="Articles\SortData.cs" />
+    <Compile Include="Articles\UsePresentationPreferenceOption.cs" />
+    <Compile Include="Articles\UsingICustomFunctionfeature.cs" />
+    <Compile Include="Articles\UsingLightCellsAPI.cs" />
+    <Compile Include="Articles\UsingWorkbookMetadata.cs" />
+    <Compile Include="Articles\WorkbookScopedNamedRanges\AddWorkbookScopedNamedRange.cs" />
+    <Compile Include="Articles\WorkbookScopedNamedRanges\WorksheetNamedRange.cs" />
+    <Compile Include="Charts\Applying3DFormat.cs" />
+    <Compile Include="Charts\ChangeChartPosition.cs" />
+    <Compile Include="Charts\HowToCreateChart.cs" />
+    <Compile Include="Charts\InsertingControlsintoCharts\AddingLabelControl.cs" />
+    <Compile Include="Charts\InsertingControlsintoCharts\AddingPictureToChart.cs" />
+    <Compile Include="Charts\InsertingControlsintoCharts\AddingTextBoxControl.cs" />
+    <Compile Include="Charts\SettingChartsAppearance\ApplyingThemes.cs" />
+    <Compile Include="Charts\SettingChartsAppearance\ChangingMajorGridlines.cs" />
+    <Compile Include="Charts\SettingChartsAppearance\MajorGridlines.cs" />
+    <Compile Include="Charts\SettingChartsAppearance\SettingChartArea.cs" />
+    <Compile Include="Charts\SettingChartsAppearance\SettingChartLines.cs" />
+    <Compile Include="Charts\SettingChartsAppearance\SettingTitlesAxes.cs" />
+    <Compile Include="Charts\SettingChartsData.cs" />
+    <Compile Include="Charts\UsingSparklines.cs" />
+    <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToAnotherCell.cs" />
+    <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToExternalFile.cs" />
+    <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToURL.cs" />
+    <Compile Include="Data\AddOn\Merging\MergingCellsInWorksheet..cs" />
+    <Compile Include="Data\AddOn\Merging\UnMergingtheMergedCells.cs" />
+    <Compile Include="Data\AddOn\NamedRanges\AccessAllNamedRanges.cs" />
+    <Compile Include="Data\AddOn\NamedRanges\AccessSpecificNamedRange.cs" />
+    <Compile Include="Data\AddOn\NamedRanges\CopyNamedRanges.cs" />
+    <Compile Include="Data\AddOn\NamedRanges\CreateNamedRangeofCells.cs" />
+    <Compile Include="Data\AddOn\NamedRanges\FormatRanges1.cs" />
+    <Compile Include="Data\AddOn\NamedRanges\FormatRanges2.cs" />
+    <Compile Include="Data\AddOn\NamedRanges\IdentifyCellsinNamedRange.cs" />
+    <Compile Include="Data\AddOn\NamedRanges\InputDataInCellsInRange.cs" />
+    <Compile Include="Data\AddOn\NamedRanges\IntersectionofRanges.cs" />
+    <Compile Include="Data\AddOn\NamedRanges\MergeCellsInNamedRange.cs" />
+    <Compile Include="Data\AddOn\NamedRanges\RemoveANamedRange.cs" />
+    <Compile Include="Data\AddOn\NamedRanges\RenameNamedRange.cs" />
+    <Compile Include="Data\AddOn\NamedRanges\UnionOfRanges.cs" />
+    <Compile Include="Data\Handling\AccessingCells\RowAndColumnIndex.cs" />
+    <Compile Include="Data\Handling\AccessingCells\UsingCellIndex.cs" />
+    <Compile Include="Data\Handling\AccessingCells\UsingCellIndexInCellsCollection.cs" />
+    <Compile Include="Data\Handling\AccessingCells\UsingCellName.cs" />
+    <Compile Include="Data\Handling\AccessingCells\UsingRowAndColumnIndexOfCell.cs" />
+    <Compile Include="Data\Handling\AddingDataToCells.cs" />
+    <Compile Include="Data\Handling\DataSorting.cs" />
+    <Compile Include="Data\Handling\ExportingDataFromWorksheets.cs" />
+    <Compile Include="Data\Handling\Find\FindCellsContainingFormula.cs" />
+    <Compile Include="Data\Handling\Find\FindCellsStringNumber.cs" />
+    <Compile Include="Data\Handling\Find\FindDataOrFormulas.cs" />
+    <Compile Include="Data\Handling\Find\FindingCellsContainingFormula.cs" />
+    <Compile Include="Data\Handling\Find\FindingCellsContainingStringValueOrNumber.cs" />
+    <Compile Include="Data\Handling\Find\FindingCellsWithStringOrNumber.cs" />
+    <Compile Include="Data\Handling\Find\FindingDataOrFormulasUsingFindOptions.cs" />
+    <Compile Include="Data\Handling\Importing\ImportingFromArray.cs" />
+    <Compile Include="Data\Handling\Importing\ImportingFromArrayList.cs" />
+    <Compile Include="Data\Handling\Importing\ImportingFromCustomObject.cs" />
+    <Compile Include="Data\Handling\Importing\ImportingFromDataColumn.cs" />
+    <Compile Include="Data\Handling\Importing\ImportingFromDataTable.cs" />
+    <Compile Include="Data\Handling\Importing\ImportingFromDataView.cs" />
+    <Compile Include="Data\Handling\RetrievingDataFromCells.cs" />
+    <Compile Include="Data\Processing\CreatingSubtotals.cs" />
+    <Compile Include="Data\Processing\FilteringAndValidation\AutofilterData.cs" />
+    <Compile Include="Data\Processing\FilteringAndValidation\DateDataValidation.cs" />
+    <Compile Include="Data\Processing\FilteringAndValidation\DecimalDataValidation.cs" />
+    <Compile Include="Data\Processing\FilteringAndValidation\ListDataValidation.cs" />
+    <Compile Include="Data\Processing\FilteringAndValidation\TextLengthDataValidation.cs" />
+    <Compile Include="Data\Processing\FilteringAndValidation\TimeDataValidation.cs" />
+    <Compile Include="Data\Processing\FilteringAndValidation\WholeNumberDataValidation.cs" />
+    <Compile Include="DrawingObjects\AccessNonPrimitiveShape.cs" />
+    <Compile Include="DrawingObjects\Comments\AddImageToComment.cs" />
+    <Compile Include="DrawingObjects\Comments\AddingComment.cs" />
+    <Compile Include="DrawingObjects\Comments\CommentFormatting.cs" />
+    <Compile Include="DrawingObjects\Controls\AddinganArrowHead.cs" />
+    <Compile Include="DrawingObjects\Controls\AddingArcControl.cs" />
+    <Compile Include="DrawingObjects\Controls\AddingButtonControl.cs" />
+    <Compile Include="DrawingObjects\Controls\AddingCheckBoxControl.cs" />
+    <Compile Include="DrawingObjects\Controls\AddingComboBoxControl.cs" />
+    <Compile Include="DrawingObjects\Controls\AddingGroupBoxControl.cs" />
+    <Compile Include="DrawingObjects\Controls\AddingLabelControl.cs" />
+    <Compile Include="DrawingObjects\Controls\AddingLineControl.cs" />
+    <Compile Include="DrawingObjects\Controls\AddingListBoxControl.cs" />
+    <Compile Include="DrawingObjects\Controls\AddingOvalControl.cs" />
+    <Compile Include="DrawingObjects\Controls\AddingRadioButtonControl.cs" />
+    <Compile Include="DrawingObjects\Controls\AddingRectangleControl.cs" />
+    <Compile Include="DrawingObjects\Controls\AddingScrollBarControl.cs" />
+    <Compile Include="DrawingObjects\Controls\AddingSpinnerControl.cs" />
+    <Compile Include="DrawingObjects\Controls\AddingTextBoxControl.cs" />
+    <Compile Include="DrawingObjects\Controls\ManipulatingTextBoxControls.cs" />
+    <Compile Include="DrawingObjects\OLE\ExtractingOLEObjects.cs" />
+    <Compile Include="DrawingObjects\OLE\InsertingOLEObjects.cs" />
+    <Compile Include="DrawingObjects\Pictures\AddingPictures.cs" />
+    <Compile Include="DrawingObjects\Pictures\PictureCellReference.cs" />
+    <Compile Include="DrawingObjects\Pictures\PositioningPictures\AbsolutePositioning.cs" />
+    <Compile Include="DrawingObjects\Pictures\PositioningPictures\ProportionalPositioning.cs" />
+    <Compile Include="Files\Handling\OpeningFiles.cs" />
+    <Compile Include="Files\Handling\SaveWorkbookToTextCSVFormat.cs" />
+    <Compile Include="Files\Handling\SavingFiles.cs" />
+    <Compile Include="Files\Utility\ChartToImage.cs" />
+    <Compile Include="Files\Utility\ConvertingToMHTMLFiles.cs" />
+    <Compile Include="Files\Utility\ConvertingToXPS.cs" />
+    <Compile Include="Files\Utility\ConvertingWorksheetToSVG.cs" />
+    <Compile Include="Files\Utility\EncryptingFiles.cs" />
+    <Compile Include="Files\Utility\Excel2PDFConversion.cs" />
+    <Compile Include="Files\Utility\ManagingDocumentProperties.cs" />
+    <Compile Include="Files\Utility\WorksheetToImage.cs" />
+    <Compile Include="Formatting\ApproachesToFormatData\UsingExcelPredefinedStyles.cs" />
+    <Compile Include="Formatting\ApproachesToFormatData\UsingGetStyleSetStyle.cs" />
+    <Compile Include="Formatting\ApproachesToFormatData\UsingStyleObject.cs" />
+    <Compile Include="Formatting\Borders\AddingBordersToCells.cs" />
+    <Compile Include="Formatting\Borders\AddingBorderstoRange.cs" />
+    <Compile Include="Formatting\ColorsAndBackground.cs" />
+    <Compile Include="Formatting\ColorsAndPalette.cs" />
+    <Compile Include="Formatting\ConditionalFormatting.cs" />
+    <Compile Include="Formatting\ConfiguringAlignmentSettings\Indentation.cs" />
+    <Compile Include="Formatting\ConfiguringAlignmentSettings\MergingCells.cs" />
+    <Compile Include="Formatting\ConfiguringAlignmentSettings\Orientation.cs" />
+    <Compile Include="Formatting\ConfiguringAlignmentSettings\ShrinkingToFit.cs" />
+    <Compile Include="Formatting\ConfiguringAlignmentSettings\TextAlignmentHorizontal.cs" />
+    <Compile Include="Formatting\ConfiguringAlignmentSettings\TextAlignmentVertical.cs" />
+    <Compile Include="Formatting\ConfiguringAlignmentSettings\TextDirection.cs" />
+    <Compile Include="Formatting\ConfiguringAlignmentSettings\WrappingText.cs" />
+    <Compile Include="Formatting\DealingWithFontSettings\SettingFontColor.cs" />
+    <Compile Include="Formatting\DealingWithFontSettings\SettingFontName.cs" />
+    <Compile Include="Formatting\DealingWithFontSettings\SettingFontSize.cs" />
+    <Compile Include="Formatting\DealingWithFontSettings\SettingFontStyle.cs" />
+    <Compile Include="Formatting\DealingWithFontSettings\SettingFontUnderlineType.cs" />
+    <Compile Include="Formatting\DealingWithFontSettings\SettingStrikeOutEffect.cs" />
+    <Compile Include="Formatting\DealingWithFontSettings\SettingSubScriptEffect.cs" />
+    <Compile Include="Formatting\DealingWithFontSettings\SettingSuperScriptEffect.cs" />
+    <Compile Include="Formatting\Excel2007Themes\CustomizeThemes.cs" />
+    <Compile Include="Formatting\Excel2007Themes\GetSetThemeColors.cs" />
+    <Compile Include="Formatting\Excel2007Themes\UtilizeThemeColors.cs" />
+    <Compile Include="Formatting\FormatRowsColumns\FormattingAColumn.cs" />
+    <Compile Include="Formatting\FormatRowsColumns\FormattingARow.cs" />
+    <Compile Include="Formatting\FormattingSelectedCharacters.cs" />
+    <Compile Include="Formatting\SettingDisplayFormats\UsingBuiltInNumberFormats.cs" />
+    <Compile Include="Formatting\SettingDisplayFormats\UsingCustomNumber.cs" />
+    <Compile Include="Formulas\CalculatingFormulas.cs" />
+    <Compile Include="Formulas\CalculatingFormulasOnce.cs" />
+    <Compile Include="Formulas\DirectCalculationFormula.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RowsColumns\Copying\CopyingColumns.cs" />
+    <Compile Include="RowsColumns\Copying\CopyingRows.cs" />
+    <Compile Include="RowsColumns\Grouping\GroupingRowsAndColumns.cs" />
+    <Compile Include="RowsColumns\Grouping\UngroupingRowsAndColumns.cs" />
+    <Compile Include="RowsColumns\HeightAndWidth\SettingHeightAllRows.cs" />
+    <Compile Include="RowsColumns\HeightAndWidth\SettingHeightOfAllRowsInWorksheet.cs" />
+    <Compile Include="RowsColumns\HeightAndWidth\SettingHeightOfRow.cs" />
+    <Compile Include="RowsColumns\HeightAndWidth\SettingWidthOfAllColumns.cs" />
+    <Compile Include="RowsColumns\HeightAndWidth\SettingWidthOfAllColumnsInWorksheet.cs" />
+    <Compile Include="RowsColumns\HeightAndWidth\SettingWidthOfColumn.cs" />
+    <Compile Include="RowsColumns\HeightAndWidth\SetWidthAllColumns.cs" />
+    <Compile Include="RowsColumns\Hiding\HidingMultipleRowsAndColumns.cs" />
+    <Compile Include="RowsColumns\Hiding\HidingRowsAndColumns.cs" />
+    <Compile Include="RowsColumns\Hiding\UnhidingRowsAndColumns.cs" />
+    <Compile Include="RowsColumns\InsertingAndDeleting\DeletingAColumn.cs" />
+    <Compile Include="RowsColumns\InsertingAndDeleting\DeletingARow.cs" />
+    <Compile Include="RowsColumns\InsertingAndDeleting\DeletingMultipleRows.cs" />
+    <Compile Include="RowsColumns\InsertingAndDeleting\InsertingAColumn.cs" />
+    <Compile Include="RowsColumns\InsertingAndDeleting\InsertingARow.cs" />
+    <Compile Include="RowsColumns\InsertingAndDeleting\InsertingMultipleRows.cs" />
+    <Compile Include="Tables\ConvertTableToRange.cs" />
+    <Compile Include="Tables\CreatingListObject.cs" />
+    <Compile Include="Tables\FormataListObject.cs" />
+    <Compile Include="Worksheets\Display\DisplayHideGridlines.cs" />
+    <Compile Include="Worksheets\Display\DisplayHideRowColumnHeaders.cs" />
+    <Compile Include="Worksheets\Display\DisplayHideScrollBars.cs" />
+    <Compile Include="Worksheets\Display\DisplayHideTabs.cs" />
+    <Compile Include="Worksheets\Display\FreezePanes.cs" />
+    <Compile Include="Worksheets\Display\HideUnhideWorksheet.cs" />
+    <Compile Include="Worksheets\Display\PageBreakPreview.cs" />
+    <Compile Include="Worksheets\Display\SplitPanes.cs" />
+    <Compile Include="Worksheets\Display\ZoomFactor.cs" />
+    <Compile Include="Worksheets\Management\AddingWorksheetsToNewExcelFile.cs" />
+    <Compile Include="Worksheets\Management\AddWorksheetsToExistingExcelFile.cs" />
+    <Compile Include="Worksheets\Management\RemovingWorksheetsUsingSheetIndex.cs" />
+    <Compile Include="Worksheets\Management\RemovingWorksheetsUsingSheetName.cs" />
+    <Compile Include="Worksheets\Security\AdvancedProtectionSettings.cs" />
+    <Compile Include="Worksheets\Security\AdvancedProtectionSettingsUsingAsposeCells.cs" />
+    <Compile Include="Worksheets\Security\AdvanceProtectSettings.cs" />
+    <Compile Include="Worksheets\Security\AllowUserToEditRangesInWorksheet.cs" />
+    <Compile Include="Worksheets\Security\EditRangesWorksheet.cs" />
+    <Compile Include="Worksheets\Security\ProtectCellsWorksheet.cs" />
+    <Compile Include="Worksheets\Security\ProtectColumnWorksheet.cs" />
+    <Compile Include="Worksheets\Security\ProtectingSpecificCellsinaWorksheet.cs" />
+    <Compile Include="Worksheets\Security\ProtectingSpecificColumnInWorksheet.cs" />
+    <Compile Include="Worksheets\Security\Protecting\ProtectingSpecificRowInWorksheet.cs" />
+    <Compile Include="Worksheets\Security\Protecting\ProtectingWorksheet.cs" />
+    <Compile Include="Worksheets\Security\Protecting\ProtectRowWorksheet.cs" />
+    <Compile Include="Worksheets\Security\Unprotect\UnprotectingPasswordProtectedWorksheet.cs" />
+    <Compile Include="Worksheets\Security\Unprotect\UnprotectingSimplyProtectedWorksheet.cs" />
+    <Compile Include="Worksheets\Security\Unprotect\UnprotectProtectSheet.cs" />
+    <Compile Include="Worksheets\Security\Unprotect\UnprotectSimpleSheet.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

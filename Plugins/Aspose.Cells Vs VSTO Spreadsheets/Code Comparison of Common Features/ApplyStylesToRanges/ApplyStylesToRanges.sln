@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSTO ApplyStylesToRanges", "VSTO ApplyStylesToRanges\VSTO ApplyStylesToRanges.csproj", "{11D8F798-D6D3-4399-A896-D6F033E7686A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose ApplyStylesToRanges", "Aspose ApplyStylesToRanges\Aspose ApplyStylesToRanges.csproj", "{D386408B-2111-4B5C-A39B-9FD3BBA64E70}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11D8F798-D6D3-4399-A896-D6F033E7686A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11D8F798-D6D3-4399-A896-D6F033E7686A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11D8F798-D6D3-4399-A896-D6F033E7686A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11D8F798-D6D3-4399-A896-D6F033E7686A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D386408B-2111-4B5C-A39B-9FD3BBA64E70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D386408B-2111-4B5C-A39B-9FD3BBA64E70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D386408B-2111-4B5C-A39B-9FD3BBA64E70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D386408B-2111-4B5C-A39B-9FD3BBA64E70}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
