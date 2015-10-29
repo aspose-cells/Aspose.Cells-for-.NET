@@ -1,0 +1,19 @@
+﻿<h3>Aspose Export Users and Roles to Excel</h3>
+	Aspose .NET Export Users and Roles to Excel Module allows developers to export DNN Users along with their roles into Microsoft Excel or OpenOffice Spreadsheet. This module demonstrates the powerful spreadsheet building feature provided by Aspose.Cells. This initial version of the module is enriched with the following cool features to make the Export process simple and easy to use
+	<ul>
+		<li>Export users&nbsp;to Microsoft Excel Documents (.xls, .xlsx and .xlsb)</li>
+		<li>Export users&nbsp;to Tab delimited text document (*.txt)</li>
+		<li>Export users&nbsp;to CSV (Comma delimited) (*.csv)</li>
+		<li>Export users&nbsp;to OpenDocument Spreadsheet (*.ods)</li>
+		<li>Option to select desired output format before exporting.</li>
+		<li>Option to export all or selected users&nbsp;to selected output document format.</li>
+		<li>Exported document is automatically sent to browser for downloading.</li>
+	</ul>
+	Please check <a href="http://www.aspose.com/blogs/index.php">our blogs</a> for further updates.	
+	If you have any questions please feel free to contact us via <a href="mailto:marketplace@aspose.com">marketplace@aspose.com</a><br />
+	<a href=http://www.aspose.com>Aspose</a> - Your File Format APIs<br />
+<hr/>
+<div class="License">
+	<h3>About Aspose Export Users and Roles to Excel</h3>
+	<p>Aspose Export Users and Roles to Excel is an open source module from Aspose that allows you to export DNN Users along with their roles into Microsoft Excel or OpenOffice Spreadsheet.</p>	
+</div>
