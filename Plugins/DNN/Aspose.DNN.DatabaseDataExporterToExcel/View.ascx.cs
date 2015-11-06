@@ -105,7 +105,7 @@ namespace Aspose.DotNetNuke.Modules.AsposeDNNDataExporterExcel
 
                 String connString = txtConString.Text;
                 //**STRING UPDATED**
-                String Query = "SELECT * FROM " + ddlTables.SelectedValue;
+                String Query = "SELECT * FROM " + ddlTables.SelectedValue + " ORDER BY 1";
                 switch (ddlSource.SelectedValue)
                 {
                     case "0":
@@ -116,7 +116,7 @@ namespace Aspose.DotNetNuke.Modules.AsposeDNNDataExporterExcel
                             error_msg.InnerHtml = "There are no tables to select data.";
                             return;
                         }
-                        Query = "SELECT * FROM " + ddlTables.SelectedValue;
+                        Query = "SELECT * FROM " + ddlTables.SelectedValue + " ORDER BY 1";
                         break;
                     case "1":
                         if (ddlViews.Items.Count <= 0)
@@ -144,14 +144,21 @@ namespace Aspose.DotNetNuke.Modules.AsposeDNNDataExporterExcel
 
                 using (var cn = new SqlConnection(connString))
                 {
+                    //opening database connection
                     cn.Open();
+
+                    //creating datatable, sqlCommand and sqlReader objects
                     DataTable dt = new DataTable();
                     SqlCommand cmd = new SqlCommand(Query, cn);
                     SqlDataReader myReader = cmd.ExecuteReader();
                     dt.Load(myReader);
 
-                    //Instantiate a new Workbook
-                    Workbook book = new Workbook();
+                    //creating leadoptions for excel file
+                    LoadOptions loadOptions = new LoadOptions(LoadFormat.Xlsx);
+                    loadOptions.CheckExcelRestriction = false;
+
+                    //Instantiate a new Workbook with Load options to prevent max cell string length of 32k error
+                    Workbook book = new Workbook(Server.MapPath("~/App_Data/Sample.xlsx"), loadOptions);
 
                     //Clear all the worksheets
                     book.Worksheets.Clear();
@@ -161,6 +168,15 @@ namespace Aspose.DotNetNuke.Modules.AsposeDNNDataExporterExcel
 
                     //Data Table import to the worksheet, inserting from A1 cell of sheet
                     sheet.Cells.ImportDataTable(dt, true, "A1");
+
+                    // Apply Hearder Row/First Row text to Bold
+                    Cells.Style objStyle = new Cells.Style();
+                    objStyle.Font.IsBold = true;
+
+                    StyleFlag objStyleFlag = new StyleFlag();
+                    objStyleFlag.FontBold = true;
+
+                    sheet.Cells.ApplyRowStyle(0, objStyle, objStyleFlag);
 
                     // Fit columns width to contents
                     sheet.AutoFitColumns();
@@ -225,7 +241,7 @@ namespace Aspose.DotNetNuke.Modules.AsposeDNNDataExporterExcel
                 DataTable dt = new DataTable();
                 try
                 {
-                    SqlCommand cmd = new SqlCommand("SELECT * FROM information_schema.tables", cn);
+                    SqlCommand cmd = new SqlCommand("SELECT * FROM information_schema.tables ORDER BY TABLE_NAME", cn);
                     SqlDataReader myReader = cmd.ExecuteReader();
                     dt.Load(myReader);
                     ddlTables.DataSource = dt;
@@ -243,7 +259,7 @@ namespace Aspose.DotNetNuke.Modules.AsposeDNNDataExporterExcel
 
                 try
                 {
-                    SqlCommand cmd = new SqlCommand("SELECT * FROM information_schema.views", cn);
+                    SqlCommand cmd = new SqlCommand("SELECT * FROM information_schema.views ORDER BY TABLE_NAME", cn);
                     SqlDataReader myReader = cmd.ExecuteReader();
                     dt.Load(myReader);
 
@@ -277,6 +293,13 @@ namespace Aspose.DotNetNuke.Modules.AsposeDNNDataExporterExcel
                     txtCustomQuery.Style["display"] = "block";
                     break;
             }
+
+            // Create sample Excel file to use while generating exported file
+            if (!File.Exists(Server.MapPath("~/App_Data/Sample.xlsx")))
+            {
+                File.Create(Server.MapPath("~/App_Data/Sample.xlsx"));
+            }
+
         }
 
         //Get Save File Formats

@@ -1,8 +1,8 @@
 <dotnetnuke type="Package" version="5.0">
   <packages>
-    <package name="Aspose.NET DNN Data Exporter to Excel" type="Module" version="00.00.01">
-      <friendlyName>Aspose .NET DNN Data Exporter to Excel using Apose.Cells</friendlyName>
-      <description>Aspose .NET DNN Data Exporter to Excel Module allows users to export ddata directly from local or remote database tables, views and by custom query into Microsoft Excel or OpenOffice Spreadsheet. This module demonstrates the powerful spreadsheet building feature provided by Aspose.Cells</description>
+    <package name="Aspose .NET Database Data Exporter for DNN to Excel" type="Module" version="00.00.01">
+      <friendlyName>Aspose .NET Database Data Exporter for DNN to Excel using Apose.Cells</friendlyName>
+      <description>Aspose .NET Database Data Exporter for DNN to Excel Module allows users to export data directly from local or remote database tables, views and by custom query into Microsoft Excel or OpenOffice Spreadsheet. This module demonstrates the powerful spreadsheet building feature provided by Aspose.Cells</description>
       <iconFile>Images/aspose_logo.gif</iconFile>
       <owner>
         <name>Aspose.com</name>
