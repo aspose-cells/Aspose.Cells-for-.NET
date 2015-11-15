@@ -79,6 +79,7 @@
     <Compile Include="Articles\AddConditionalIconsSet.vb" />
     <Compile Include="Articles\AddImageHyperlinks.vb" />
     <Compile Include="Articles\AddingAnonymousCustomObject.vb" />
+    <Compile Include="Articles\AddLibraryReferenceToVbaProject.vb" />
     <Compile Include="Articles\AddPDFBookmarks.vb" />
     <Compile Include="Articles\AddPictureToExcelComment.vb" />
     <Compile Include="Articles\AddWordArtWatermarkToWorksheet.vb" />
@@ -89,7 +90,9 @@
     <Compile Include="Articles\AssignMacroToFormControl.vb" />
     <Compile Include="Articles\AssignValidateDigitalSignatures.vb" />
     <Compile Include="Articles\AutoFitRowsMergedCells.vb" />
+    <Compile Include="Articles\ChangeHtmlLinkTarget.vb" />
     <Compile Include="Articles\ChangeTextDirection.vb" />
+    <Compile Include="Articles\CheckVbaProjectSigned.vb" />
     <Compile Include="Articles\CombineMultipleWorkbooksSingleWorkbook.vb" />
     <Compile Include="Articles\CombineMultipleWorksheetsSingleWorksheet.vb" />
     <Compile Include="Articles\ConvertExcelChartToImage\ConvertingColumnChartToImage.vb" />
@@ -127,9 +130,11 @@
     <Compile Include="Articles\FormatPivotTableCells.vb" />
     <Compile Include="Articles\FormatWorksheetCells.vb" />
     <Compile Include="Articles\GenerateThumbnailOfWorksheet.vb" />
+    <Compile Include="Articles\GetDataConnection.vb" />
     <Compile Include="Articles\GetIconSetsDataBars.vb" />
     <Compile Include="Articles\HidingDisplayOfZeroValues.vb" />
     <Compile Include="Articles\HtmlExportFrameScripts.vb" />
+    <Compile Include="Articles\IgnoreHiddenColumnsDataTable.vb" />
     <Compile Include="Articles\Implement1904DateSystem.vb" />
     <Compile Include="Articles\ImplementingNonSequencedRanges.vb" />
     <Compile Include="Articles\InsertDeleteRows.vb" />
@@ -168,6 +173,7 @@
     <Compile Include="Articles\SetWorksheetTabColor.vb" />
     <Compile Include="Articles\ShowFormulasInsteadOfValues.vb" />
     <Compile Include="Articles\SortData.vb" />
+    <Compile Include="Articles\UpdateRichTextCells.vb" />
     <Compile Include="Articles\UsePresentationPreferenceOption.vb" />
     <Compile Include="Articles\UsingICustomFunctionfeature.vb" />
     <Compile Include="Articles\UsingLightCellsAPI.vb" />
