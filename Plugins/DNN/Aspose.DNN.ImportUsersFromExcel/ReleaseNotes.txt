@@ -1,0 +1,17 @@
+﻿<h3>Aspose Import Users From Excel</h3>
+	Aspose .NET Import Users from Excel Module allows developers to import bulk users from Excel file. This module demonstrates the powerful spreadsheet feature by Aspose.Cells. This initial version of the module is enriched with the following cool features to make the Import process simple and easy to use:
+	<ul>
+	<li>Allows you to upload Excel file and automatically filters out existing users.</li>
+	<li>Automatically skips the existing users to avoid any confusion.</li>
+	<li>Generate dynamic passwords for the newly created users.</li>
+	<li>Assigns "Registered Users" and "Subscribers" Security roles to newly created users.</li>
+	</ul>
+	Please check <a href="http://www.aspose.com/blogs/index.php">our blogs</a> for further updates.
+	
+	If you have any questions please feel free to contact us via <a href="mailto:marketplace@aspose.com">marketplace@aspose.com</a><br />
+	<a href=http://www.aspose.com>Aspose</a> - Your File Format APIs<br />
+<hr/>
+<div class="License">
+	<h3>About Aspose Import Users from Excel</h3>
+	<p>Aspose .NET Import Users from Excel Module allows developers to import bulk users from Excel file. This module demonstrates the powerful spreadsheet feature by Aspose.Cells.</p>	
+</div>

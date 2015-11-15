@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Working With Fonts", "Working With Fonts", "{DAA7D115-061A-42E7-85D8-20671C235C51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPOI HWPF and XWPF", "Working with Fonts\NPOI HWPF and XWPF\NPOI HWPF and XWPF.csproj", "{1079B3D6-726A-45D7-956F-030786FA68D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose.Cells", "Working with Fonts\Aspose.Cells\Aspose.Cells.csproj", "{841637CF-7805-4ED0-AF40-8E5985CA3615}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Working With Colors", "Working With Colors", "{849F99B9-FCD4-4907-ACC4-28501CE83F93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose.Cells", "Working With Colors\Aspose.Cells\Aspose.Cells.csproj", "{3D5DBFE6-976B-4AC3-B355-0925AD3E4806}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPOI HWPF and XWPF", "Working With Colors\NPOI HWPF and XWPF\NPOI HWPF and XWPF.csproj", "{99F877F9-7AF5-499B-97C1-82B980AEE1A6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Working With Borders", "Working With Borders", "{E511C920-6BD4-43AD-A4F3-AA307522EFC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspose.Cells", "Working With Borders\Aspose.Cells\Aspose.Cells.csproj", "{F8DB8DFB-7042-4AED-B477-A3F870EF8674}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NPOI HWPF and XWPF", "Working With Borders\NPOI HWPF and XWPF\NPOI HWPF and XWPF.csproj", "{16998A99-082E-41C0-9DFE-D4B67535E377}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1079B3D6-726A-45D7-956F-030786FA68D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1079B3D6-726A-45D7-956F-030786FA68D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1079B3D6-726A-45D7-956F-030786FA68D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1079B3D6-726A-45D7-956F-030786FA68D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{841637CF-7805-4ED0-AF40-8E5985CA3615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{841637CF-7805-4ED0-AF40-8E5985CA3615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{841637CF-7805-4ED0-AF40-8E5985CA3615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{841637CF-7805-4ED0-AF40-8E5985CA3615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D5DBFE6-976B-4AC3-B355-0925AD3E4806}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D5DBFE6-976B-4AC3-B355-0925AD3E4806}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D5DBFE6-976B-4AC3-B355-0925AD3E4806}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D5DBFE6-976B-4AC3-B355-0925AD3E4806}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99F877F9-7AF5-499B-97C1-82B980AEE1A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99F877F9-7AF5-499B-97C1-82B980AEE1A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99F877F9-7AF5-499B-97C1-82B980AEE1A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99F877F9-7AF5-499B-97C1-82B980AEE1A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8DB8DFB-7042-4AED-B477-A3F870EF8674}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8DB8DFB-7042-4AED-B477-A3F870EF8674}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8DB8DFB-7042-4AED-B477-A3F870EF8674}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8DB8DFB-7042-4AED-B477-A3F870EF8674}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16998A99-082E-41C0-9DFE-D4B67535E377}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16998A99-082E-41C0-9DFE-D4B67535E377}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16998A99-082E-41C0-9DFE-D4B67535E377}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16998A99-082E-41C0-9DFE-D4B67535E377}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1079B3D6-726A-45D7-956F-030786FA68D7} = {DAA7D115-061A-42E7-85D8-20671C235C51}
+		{841637CF-7805-4ED0-AF40-8E5985CA3615} = {DAA7D115-061A-42E7-85D8-20671C235C51}
+		{3D5DBFE6-976B-4AC3-B355-0925AD3E4806} = {849F99B9-FCD4-4907-ACC4-28501CE83F93}
+		{99F877F9-7AF5-499B-97C1-82B980AEE1A6} = {849F99B9-FCD4-4907-ACC4-28501CE83F93}
+		{F8DB8DFB-7042-4AED-B477-A3F870EF8674} = {E511C920-6BD4-43AD-A4F3-AA307522EFC8}
+		{16998A99-082E-41C0-9DFE-D4B67535E377} = {E511C920-6BD4-43AD-A4F3-AA307522EFC8}
+	EndGlobalSection
+EndGlobal
