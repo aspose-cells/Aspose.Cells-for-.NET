@@ -1,11 +1,14 @@
-﻿<h3>Aspose.NET DNN Data Exporter to Excel Using Aspose.Cells</h3>
-    Aspose .NET DNN Data Exporter to Excel Module allows users to export data directly from local or remote database tables, views and by custom query into Microsoft Excel or OpenOffice Spreadsheet. This module demonstrates the powerful spreadsheet building feature provided by Aspose.Cells. This initial version of the module is enriched with the following cool features to make the Export process simple and easy to use
+﻿<h3>Aspose .NET Database Data Exporter for DNN to Excel Using Aspose.Cells</h3>
+    Aspose .NET DNN Database Data Exporter to Excel Module allows users to export data directly from local or remote database tables, views and by custom query into Microsoft Excel or OpenOffice Spreadsheet. This module demonstrates the powerful spreadsheet building feature provided by Aspose.Cells. This initial version of the module is enriched with the following cool features to make the Export process simple and easy to use
     <ul>
         <li>Allow to connect Local MS SQL Server Database</li>
         <li>Allow to connect Remote MS SQL Server Database</li>
         <li>Populate all Tables from connected database</li>
         <li>Populate all Views from connected database</li>
         <li>Allow to write Custom Query</li>
+		<li>Auto Fit Columns to contents length.</li>
+		<li>Allow to skip string more than 32k in excel cells (LoadOptions)</li>
+		<li>Apply Header Column formating as Bold Text</li>
         <li>Allow to use as Data Source (Table, Views, Custom Query)</li>
         <li>Export Data to Microsoft Excel Documents (.xls, .xlsx and .xlsb)</li>
         <li>Export Data to Tab delimited text document (*.txt)</li>
@@ -19,6 +22,6 @@
     <a href=http://www.aspose.com>Aspose</a> - Your File Format APIs<br />
 <hr/>
 <div class="License">
-    <h3>About Aspose .NET DNN Data Exporter to Excel using Aspose.Cells</h3>
-    <p>Aspose .NET DNN Data Exporter to Excel Module allows users to export ddata directly from local or remote database tables, views and by custom query into Microsoft Excel or OpenOffice Spreadsheet.</p>    
+    <h3>About Aspose .NET Database Data Exporter for DNN to Excel using Aspose.Cells</h3>
+    <p>Aspose .NET Database Data Exporter for DNN to Excel Module allows users to export ddata directly from local or remote database tables, views and by custom query into Microsoft Excel or OpenOffice Spreadsheet.</p>    
 </div>

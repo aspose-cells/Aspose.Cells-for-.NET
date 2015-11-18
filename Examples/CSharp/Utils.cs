@@ -16,7 +16,17 @@ namespace Aspose.Cells.Examples
             c = c.Replace('.', Path.DirectorySeparatorChar);
             string p = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..", "Data", c));
             p += Path.DirectorySeparatorChar;
-            Console.WriteLine("Using Data Dir {0}", p);
+
+            if (Directory.Exists(p))
+            {
+                Console.WriteLine("Using Data Dir {0}", p);
+            }
+            else
+            {
+                Directory.CreateDirectory(p);
+                Console.WriteLine("Created Data Dir {0}", p);
+            }
+
             return p;
         }
 

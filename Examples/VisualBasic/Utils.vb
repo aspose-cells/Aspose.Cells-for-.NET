@@ -11,7 +11,12 @@ Namespace Aspose
                     c = c.Replace(".", Path.DirectorySeparatorChar)
                     Dim p As String = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..", "Data", c))
                     p += Path.DirectorySeparatorChar
-                    Console.WriteLine("Using Data Dir {0}", p)
+                    If Directory.Exists(p) Then
+                        Console.WriteLine("Using Data Dir {0}", p)
+                    Else
+                        Directory.CreateDirectory(p)
+                        Console.WriteLine("Created Data Dir {0}", p)
+                    End If
                     Return p
                 End Function
                 Shared Sub Main()

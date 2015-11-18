@@ -35,8 +35,8 @@
     <StartupObject>Aspose.Cells.Examples.Utils</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=8.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.8.6.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=8.6.1.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.8.6.1\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -58,6 +58,7 @@
     <Compile Include="Articles\AddConditionalIconsSet.cs" />
     <Compile Include="Articles\AddImageHyperlinks.cs" />
     <Compile Include="Articles\AddingAnonymousCustomObject.cs" />
+    <Compile Include="Articles\AddLibraryReferenceToVbaProject.cs" />
     <Compile Include="Articles\AddPDFBookmarks.cs" />
     <Compile Include="Articles\AddPictureToExcelComment.cs" />
     <Compile Include="Articles\AddWordArtWatermarkToWorksheet.cs" />
@@ -68,7 +69,11 @@
     <Compile Include="Articles\AssignMacroToFormControl.cs" />
     <Compile Include="Articles\AssignValidateDigitalSignatures.cs" />
     <Compile Include="Articles\AutoFitRowsMergedCells.cs" />
+    <Compile Include="Articles\ChangeHtmlLinkTarget.cs" />
     <Compile Include="Articles\ChangeTextDirection.cs" />
+    <Compile Include="Articles\CheckVbaProjectSigned.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Articles\CombineMultipleWorkbooksSingleWorkbook.cs" />
     <Compile Include="Articles\CombineMultipleWorksheetsSingleWorksheet.cs" />
     <Compile Include="Articles\ConvertExcelChartToImage\ConvertingColumnChartToImage.cs" />
@@ -105,10 +110,12 @@
     <Compile Include="Articles\FormatPivotTableCells.cs" />
     <Compile Include="Articles\FormatWorksheetCells.cs" />
     <Compile Include="Articles\GenerateThumbnailOfWorksheet.cs" />
+    <Compile Include="Articles\GetDataConnection.cs" />
     <Compile Include="Articles\GetIconSetsDataBars.cs" />
     <Compile Include="Articles\GetWarningsForFontSubstitution.cs" />
     <Compile Include="Articles\HidingDisplayOfZeroValues.cs" />
     <Compile Include="Articles\HtmlExportFrameScripts.cs" />
+    <Compile Include="Articles\IgnoreHiddenColumnsDataTable.cs" />
     <Compile Include="Articles\Implement1904DateSystem.cs" />
     <Compile Include="Articles\ImplementingNonSequencedRanges.cs" />
     <Compile Include="Articles\InsertDeleteRows.cs" />
@@ -147,6 +154,7 @@
     <Compile Include="Articles\SetWorksheetTabColor.cs" />
     <Compile Include="Articles\ShowFormulasInsteadOfValues.cs" />
     <Compile Include="Articles\SortData.cs" />
+    <Compile Include="Articles\UpdateRichTextCells.cs" />
     <Compile Include="Articles\UsePresentationPreferenceOption.cs" />
     <Compile Include="Articles\UsingICustomFunctionfeature.cs" />
     <Compile Include="Articles\UsingLightCellsAPI.cs" />

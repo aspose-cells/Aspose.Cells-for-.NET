@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grouping Data OLE DB", "Grouping Data OLE DB\Grouping Data OLE DB.csproj", "{5C2D57D4-5D1F-4F70-BAB1-E1D69E9B4B64}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Image Markers", "Image Markers\Image Markers.csproj", "{DE58B13C-2A65-4723-89D2-83A23D9C3C38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Using Custom Objects", "Using Custom Objects\Using Custom Objects.csproj", "{2F5259D4-B1BA-471B-A029-AB6BB82DAF1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Using Nested Object", "Using Nested Object\Using Nested Object.csproj", "{684F1993-F008-4B6F-AD59-B2237A2E015D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C2D57D4-5D1F-4F70-BAB1-E1D69E9B4B64}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C2D57D4-5D1F-4F70-BAB1-E1D69E9B4B64}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C2D57D4-5D1F-4F70-BAB1-E1D69E9B4B64}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C2D57D4-5D1F-4F70-BAB1-E1D69E9B4B64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE58B13C-2A65-4723-89D2-83A23D9C3C38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE58B13C-2A65-4723-89D2-83A23D9C3C38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE58B13C-2A65-4723-89D2-83A23D9C3C38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE58B13C-2A65-4723-89D2-83A23D9C3C38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F5259D4-B1BA-471B-A029-AB6BB82DAF1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F5259D4-B1BA-471B-A029-AB6BB82DAF1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F5259D4-B1BA-471B-A029-AB6BB82DAF1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F5259D4-B1BA-471B-A029-AB6BB82DAF1D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{684F1993-F008-4B6F-AD59-B2237A2E015D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{684F1993-F008-4B6F-AD59-B2237A2E015D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{684F1993-F008-4B6F-AD59-B2237A2E015D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{684F1993-F008-4B6F-AD59-B2237A2E015D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
