@@ -1,0 +1,81 @@
+<%@ Master Language="C#" AutoEventWireup="true" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8"/>
+    <asp:contentplaceholder id="HeaderContent" runat="server" />
+   <!--   <link rel="stylesheet" href="http://www.aspose.com/App_Themes/Aspose/Aspose.css"
+        type="text/css" media="screen">
+     
+      
+    <link rel="stylesheet" href="http://www.aspose.com/style/sitestyle.css" type="text/css"
+        media="screen">
+    <link rel="stylesheet" href="http://www.aspose.com/community/themes/default/style/Common.css"
+        type="text/css" media="screen">
+        -->
+    <style type="text/css">
+    	<!-- TO BE MOVED TO COMMON CSS -->
+		.componentDescriptionTxt { color: #333333; font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+		.componentDescriptionCaption { font-weight: bolder; font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+		
+		.productTitle { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; color: #06065b; }
+		.productTitleBox { float: left; }
+		.productBoxEnd { clear: both; }
+
+		.component_menus { font-size: 11px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #000066; }
+		.component_menus a:Hover { text-decoration: none; color: #4c83f6; }
+
+		.componentList UL { text-align: left; list-style-image: none; list-style: round outside; }
+		.componentList LI { text-align: left; list-style-image: none; list-style: round outside; float:left; width: 150px; }
+
+		.genericList { text-align: left; }
+		.genericList UL { list-style-type:none; list-style: round outside;}
+		.genericList LI { list-style-image: none; }
+		
+		.demoDivPanel{border: thin groove; text-align: left; width: 544px;}
+		.demoDivPanelCollapsed { display: none; }
+    </style>
+    <!-- JS for Cells Demo -->
+    <script language="javascript" src="../../js/oo.js"></script>
+    <script language="javascript" src="../../Grid/acw_client/jquery-1.7.2.min.js"></script>
+</head>
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"
+    style="left: 0px; top: 0px;">
+    <form id="Form1" method="post" runat="server">
+       <!--  <iframe src="http://www.aspose.com/Header/Header.aspx" id="Iframe1" frameborder="0"
+            width="100%" scrolling="no" height="90"></iframe> -->
+        <table width="90%" style="left: 0px; top: 140px" cellspacing="0" cellpadding="0"
+            align="center">
+            <tr height="100%" valign="top">
+                <td>
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                </td>
+            </tr>
+        </table>
+    </form>
+    <div id="Div1" class="Footer">
+        <table cellspacing="0" cellpadding="0" width="100%" border="0">
+            <tbody>
+                <tr>
+                    <td class="TxtMediumGray" valign="top" align="center">
+                        Should you have any questions, problems or comments, feel free to make a note <a
+                            href="http://www.aspose.com/community/forums/aspose.total-for-.net-java-reporting-services-and-jasperreports/442/showforum.aspx">
+                            here</a>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="TxtMediumGray" valign="top" align="center">
+                        <a href="http://www.aspose.com/corporate/contact-us.aspx">Contact Us</a> . <a href="http://www.aspose.com/corporate/privacy-policy.aspx">
+                            Privacy Policy</a> . <a href="/corporate/terms-of-use.aspx">Terms of Use</a>
+                        . <a href="/community/forums/aspose.portal/13/showforum.aspx">Site Feedback</a><br />
+                        <span class="TxtDate">&#169; Aspose 2002-2008. All Rights Reserved.</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
