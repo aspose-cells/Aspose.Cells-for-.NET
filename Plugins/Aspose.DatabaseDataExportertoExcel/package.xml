@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<umbPackage>
+  <files>
+    <file>
+      <guid>UmbracoDatabaseDataExporterToExcel.ascx</guid>
+      <orgPath>/usercontrols/Aspose.UmbracoDatabaseDataExporterToExcel</orgPath>
+      <orgName>UmbracoDatabaseDataExporterToExcel.ascx</orgName>
+    </file>
+    <file>
+      <guid>Aspose.UmbracoDatabaseDataExporterToExcel.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>Aspose.UmbracoDatabaseDataExporterToExcel.dll</orgName>
+    </file>
+    <file>
+      <guid>Aspose.Cells.dll</guid>
+      <orgPath>/bin</orgPath>
+      <orgName>Aspose.Cells.dll</orgName>
+    </file>
+    <file>
+      <guid>UmbracoDatabaseDataExporterToExcel.css</guid>
+      <orgPath>/usercontrols/Aspose.UmbracoDatabaseDataExporterToExcel/Css</orgPath>
+      <orgName>UmbracoDatabaseDataExporterToExcel.css</orgName>
+    </file>
+    <file>
+      <guid>aspose.ico</guid>
+      <orgPath>/usercontrols/Aspose.UmbracoDatabaseDataExporterToExcel/Images</orgPath>
+      <orgName>aspose.ico</orgName>
+    </file>
+  </files>
+  <info>
+    <package>
+      <name>Aspose .NET Database Data Exporter to Excel for Umbraco</name>
+      <version>1.0</version>
+      <license url="http://www.gnu.org/licenses/gpl-2.0.html">GNU General Public License version 2 (GPLv2)</license>
+      <url>https://asposecellsumbraco.codeplex.com/</url>
+      <requirements>
+        <major>3</major>
+        <minor>0</minor>
+        <patch>0</patch>
+      </requirements>
+    </package>
+    <author>
+      <name>Aamir Waseem</name>
+      <website>http://www.aspose.com/</website>
+    </author>
+    <readme>
+      <![CDATA[Aspose .NET Database Data Exporter to Excel for Umbraco is an open source module from Aspose that enable users to export databse tables, views or by custom query to Excel in your Umbraco site without requiring any other software. It uses the powerful features of Aspose.Cells for .NET to allow you to easily data exporting features.
+		  
+			<p style="padding-left:30px">Please check our <a href="https://goo.gl/M6CTxO">blog post</a> for more details <a href="https://goo.gl/M6CTxO"> https://goo.gl/M6CTxO</a></p>
+		]]>
+    </readme>
+  </info>
+  <DocumentTypes />
+  <Templates />
+  <Stylesheets />
+  <Macros>
+    <macro>
+      <name>Aspose .NET Database Data Exporter to Excel for Umbraco</name>
+      <alias>Aspose.UmbracoDatabaseDataExporterToExcel</alias>
+      <scriptType>/usercontrols/Aspose.UmbracoDatabaseDataExporterToExcel/UmbracoDatabaseDataExporterToExcel.ascx</scriptType>
+      <scriptAssembly>
+      </scriptAssembly>
+      <xslt>
+      </xslt>
+      <useInEditor>True</useInEditor>
+      <refreshRate>0</refreshRate>
+    </macro>
+  </Macros>
+  <DictionaryItems />
+  <Languages />
+  <DataTypes />
+  <Actions>
+  </Actions>
+</umbPackage>
