@@ -1,0 +1,49 @@
+﻿.errors
+{
+    color: red !important;
+}
+div.aspsoeExporter
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.tblBack
+{
+    border: 1px solid #ddd;
+    background-color: #f3f3f9;
+    padding: 10px;
+    margin: 5px;
+}
+.input
+{
+    width: 90%;
+    margin: 6px;
+    padding: 5px;
+    border: solid 1px #ccc;
+    -webkit-transition: box-shadow 0.3s, border 0.3s;
+    -moz-transition: box-shadow 0.3s, border 0.3s;
+    -o-transition: box-shadow 0.3s, border 0.3s;
+    transition: box-shadow 0.3s, border 0.3s;
+}
+.input:focus, input.focus
+{
+    border: solid 1px #707070;
+    -webkit-box-shadow: 0 0 5px 1px #969696;
+    -moz-box-shadow: 0 0 5px 1px #969696;
+    box-shadow: 0 0 5px 1px #969696;
+}
+.buttonClass
+{
+    border: 0.1em #333336 solid;
+    border-radius: 0.2em;
+    text-decoration: none;
+    color: black;
+    padding: 0.5em 1em;
+    background-color: #f3f3f3;
+    font-weight:bold;
+}
+.buttonClass:hover
+{
+    background-color: green;
+    color:#fff;
+}
