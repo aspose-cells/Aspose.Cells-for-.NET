@@ -8,3 +8,4 @@ This section contains the following Platforms
 * [NPOI - .NET version of POI Java project](NPOI)
 * [Visual Studio](VisualStudio)
 * [DNN](DNN)
+* [Umbraco Database Data Exportor to Excel](Aspose.DatabaseDataExportertoExcel)
