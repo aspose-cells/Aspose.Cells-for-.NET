@@ -32,11 +32,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Aspose.Cells.Examples.Utils</StartupObject>
+    <StartupObject>Aspose.Cells.Examples.Files.Utility.Excel2PDFConversion</StartupObject>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=8.6.1.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.8.6.1\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=8.6.3.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.8.6.3\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -112,6 +112,7 @@
     <Compile Include="Articles\GenerateThumbnailOfWorksheet.cs" />
     <Compile Include="Articles\GetDataConnection.cs" />
     <Compile Include="Articles\GetIconSetsDataBars.cs" />
+    <Compile Include="Articles\GetSmartMarkerNotifications.cs" />
     <Compile Include="Articles\GetWarningsForFontSubstitution.cs" />
     <Compile Include="Articles\HidingDisplayOfZeroValues.cs" />
     <Compile Include="Articles\HtmlExportFrameScripts.cs" />
@@ -136,6 +137,7 @@
     <Compile Include="Articles\PopulateData.cs" />
     <Compile Include="Articles\ReadingCellValuesInMultipleThreadsSimultaneously.cs" />
     <Compile Include="Articles\ReadingCSVMultipleEncodings.cs" />
+    <Compile Include="Articles\RemoveUnusedStyles.cs" />
     <Compile Include="Articles\RemoveWhitespaceAroundData.cs" />
     <Compile Include="Articles\RenderOnePdfPagePerExcelWorksheet.cs" />
     <Compile Include="Articles\ResamplingAddedImages.cs" />
@@ -158,6 +160,7 @@
     <Compile Include="Articles\UsePresentationPreferenceOption.cs" />
     <Compile Include="Articles\UsingICustomFunctionfeature.cs" />
     <Compile Include="Articles\UsingLightCellsAPI.cs" />
+    <Compile Include="Articles\UsingBuiltinStyles.cs" />
     <Compile Include="Articles\UsingWorkbookMetadata.cs" />
     <Compile Include="Articles\WorkbookScopedNamedRanges\AddWorkbookScopedNamedRange.cs" />
     <Compile Include="Articles\WorkbookScopedNamedRanges\WorksheetNamedRange.cs" />
@@ -212,6 +215,7 @@
     <Compile Include="Data\Handling\Importing\ImportingFromArrayList.cs" />
     <Compile Include="Data\Handling\Importing\ImportingFromCustomObject.cs" />
     <Compile Include="Data\Handling\Importing\ImportingFromDataColumn.cs" />
+    <Compile Include="Data\Handling\Importing\ImportHtmlFormattedData.cs" />
     <Compile Include="Data\Handling\Importing\ImportingFromDataTable.cs" />
     <Compile Include="Data\Handling\Importing\ImportingFromDataView.cs" />
     <Compile Include="Data\Handling\RetrievingDataFromCells.cs" />
@@ -249,10 +253,12 @@
     <Compile Include="DrawingObjects\Pictures\PictureCellReference.cs" />
     <Compile Include="DrawingObjects\Pictures\PositioningPictures\AbsolutePositioning.cs" />
     <Compile Include="DrawingObjects\Pictures\PositioningPictures\ProportionalPositioning.cs" />
+    <Compile Include="Files\Handling\LoadVisibleSheetsOnly.cs" />
     <Compile Include="Files\Handling\OpeningFiles.cs" />
     <Compile Include="Files\Handling\SaveWorkbookToTextCSVFormat.cs" />
     <Compile Include="Files\Handling\SavingFiles.cs" />
     <Compile Include="Files\Utility\ChartToImage.cs" />
+    <Compile Include="Files\Utility\ConvertChartToPdf.cs" />
     <Compile Include="Files\Utility\ConvertingToMHTMLFiles.cs" />
     <Compile Include="Files\Utility\ConvertingToXPS.cs" />
     <Compile Include="Files\Utility\ConvertingWorksheetToSVG.cs" />

@@ -66,7 +66,6 @@ namespace Aspose.Cells.Examples.Data.Handling.Importing
             //the worksheet as a header row
             worksheet.Cells.ImportDataTable(dataTable, true, "A1");
 
-
             //Saving the Excel file
             workbook.Save(dataDir + "DataImport.xls");
  
