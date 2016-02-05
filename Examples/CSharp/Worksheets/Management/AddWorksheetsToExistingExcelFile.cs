@@ -28,7 +28,7 @@ namespace Aspose.Cells.Examples.Worksheets.Management
             worksheet.Name = "My Worksheet";
 
             //Saving the Excel file
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(dataDir + "output.out.xls");
 
             //Closing the file stream to free all resources
             fstream.Close();

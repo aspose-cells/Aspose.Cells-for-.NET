@@ -22,7 +22,7 @@ namespace Aspose.Cells.Examples.Worksheets.Management
             workbook.Worksheets.RemoveAt("Sheet1");
 
             //Save workbook
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(dataDir + "output.out.xls");
         }
     }
 }

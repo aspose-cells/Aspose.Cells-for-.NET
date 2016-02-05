@@ -1,11 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
 Imports Microsoft.VisualBasic
 Imports System.IO
 
@@ -23,7 +15,7 @@ Namespace Aspose.Cells.Examples.Articles.OptimizingMemoryUsage
 
             'Instantiate the Workbook
             'Load the Big Excel file having large Data set in it
-            Dim wb As New Workbook(dataDir & "Book1.xlsx", opt)
+            Dim wb As New Workbook(dataDir & "Book1.out.xlsx", opt)
 
         End Sub
     End Class

@@ -1,11 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
 Imports Microsoft.VisualBasic
 Imports System.IO
 Imports System.Drawing
@@ -32,7 +24,7 @@ Namespace Aspose.Cells.Examples.Articles.CopyShapesBetweenWorksheets
             workbook.Worksheets("Sheet2").Pictures.Add(source.UpperLeftRow, source.UpperLeftColumn, ms, source.WidthScale, source.HeightScale)
 
             'Save the Worksheet
-            workbook.Save(dataDir & "Shapes.xlsx")
+            workbook.Save(dataDir & "Shapes.out.xlsx")
 
 
         End Sub

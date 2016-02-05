@@ -58,7 +58,7 @@ namespace Aspose.Cells.Examples.Data.AddOn.NamedRanges
             worksheets.Names.RemoveAt(0);
 
             //Save the excel file.
-            workbook.Save(dataDir + "copyranges.xls");
+            workbook.Save(dataDir + "copyranges.out.xls");
         }
     }
 }

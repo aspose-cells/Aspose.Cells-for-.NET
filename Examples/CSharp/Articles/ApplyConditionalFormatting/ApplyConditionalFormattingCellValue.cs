@@ -46,7 +46,7 @@ namespace Aspose.Cells.Examples.Articles.ApplyConditionalFormatting
             fc.Style.BackgroundColor = Color.Red;
 
             //Saving the Excel file
-            workbook.Save(dataDir+ "output.xls", SaveFormat.Auto);
+            workbook.Save(dataDir+ "output.out.xls", SaveFormat.Auto);
             
             
         }

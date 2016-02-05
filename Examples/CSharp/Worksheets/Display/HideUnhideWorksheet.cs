@@ -25,7 +25,7 @@ namespace Aspose.Cells.Examples.Worksheets.Display
             worksheet.IsVisible = false;
 
             //Saving the modified Excel file in default (that is Excel 2003) format
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(dataDir + "output.out.xls");
 
             //Closing the file stream to free all resources
             fstream.Close();

@@ -47,7 +47,7 @@ namespace Aspose.Cells.Examples.Formatting.Excel2007Themes
             c.PutValue("Testing1");
 
             //Save the excel file.
-            workbook.Save(dataDir + "output.xlsx");
+            workbook.Save(dataDir + "output.out.xlsx");
 
         }
     }

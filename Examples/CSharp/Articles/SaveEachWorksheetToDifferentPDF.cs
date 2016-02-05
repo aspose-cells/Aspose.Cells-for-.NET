@@ -32,7 +32,7 @@ namespace Aspose.Cells.Examples.Articles
             for (int j = 0; j < workbook.Worksheets.Count; j++)
         {
              Worksheet ws = workbook.Worksheets[j];
-            workbook.Save(dataDir+ "worksheet-" + ws.Name + ".pdf");
+            workbook.Save(dataDir+ "worksheet-" + ws.Name + ".out.pdf");
 
                 if (j < workbook.Worksheets.Count - 1)
          {

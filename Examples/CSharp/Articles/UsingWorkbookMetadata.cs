@@ -19,7 +19,7 @@ namespace Aspose.Cells.Examples.Articles
             meta.CustomDocumentProperties.Add("test", "test");
 
             // Save the metadata info
-            meta.Save(dataDir + "Sample2.xlsx");
+            meta.Save(dataDir + "Sample2.out.xlsx");
 
             // Open the workbook
             Workbook w = new Workbook(dataDir+ "Sample2.xlsx");

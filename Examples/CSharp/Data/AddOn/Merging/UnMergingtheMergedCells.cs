@@ -25,7 +25,7 @@ namespace Aspose.Cells.Examples.Data.AddOn.Merging
             cells.UnMerge(5, 2, 2, 3);
 
             //Save the file.
-            wbk.Save(dataDir + "unmergingcells.xls");
+            wbk.Save(dataDir + "unmergingcells.out.xls");
 
 
         }

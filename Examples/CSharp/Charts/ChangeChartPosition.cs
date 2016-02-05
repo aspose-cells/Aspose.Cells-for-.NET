@@ -28,7 +28,7 @@ namespace Aspose.Cells.Examples.Charts
             chart.ChartObject.Y = 150;
 
             //Output the file
-            workbook.Save(dataDir + "chart_out.xls");
+            workbook.Save(dataDir + "chart.out.xls");
 
         }
     }

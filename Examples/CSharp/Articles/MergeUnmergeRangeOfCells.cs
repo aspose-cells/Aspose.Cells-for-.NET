@@ -23,7 +23,7 @@ namespace Aspose.Cells.Examples.Articles
             range.Merge();
 
             //Save the workbook
-            workbook.Save(dataDir+ "output.xlsx");
+            workbook.Save(dataDir+ "output.out.xlsx");
             
             
         }

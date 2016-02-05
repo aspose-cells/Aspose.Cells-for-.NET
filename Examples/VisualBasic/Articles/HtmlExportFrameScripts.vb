@@ -15,7 +15,7 @@ Namespace Aspose.Cells.Examples.Articles
             options.ExportFrameScriptsAndProperties = False
 
             ' Save workbook as HTML
-            w.Save(dataDir + "output.html", options)
+            w.Save(dataDir + "output.out.html", options)
 
             Console.WriteLine("Press any key to continue...")
             Console.ReadKey()

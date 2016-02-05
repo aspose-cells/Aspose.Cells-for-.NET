@@ -60,7 +60,7 @@ namespace Aspose.Cells.Examples.Data.AddOn.Merging
             cells[5, 2].SetStyle(style);
 
             //Save the Workbook.
-            wbk.Save(dataDir + "mergingcells.xls");
+            wbk.Save(dataDir + "mergingcells.out.xls");
 
         }
     }

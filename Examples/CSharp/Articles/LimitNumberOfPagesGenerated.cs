@@ -22,7 +22,7 @@ namespace Aspose.Cells.Examples.Articles
             options.PageCount = 2;
 
             //Save the PDF file
-            wb.Save(dataDir+ "outPDF1.pdf", options);
+            wb.Save(dataDir+ "outPDF1.out.pdf", options);
             
             
         }

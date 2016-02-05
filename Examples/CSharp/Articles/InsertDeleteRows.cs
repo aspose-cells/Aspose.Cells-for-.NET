@@ -24,7 +24,7 @@ namespace Aspose.Cells.Examples.Articles
             sheet.Cells.DeleteRows(7, 5);
 
             //Save the excel file.
-            workbook.Save(dataDir+ "out_book1.xlsx");
+            workbook.Save(dataDir+ "out_book1.out.xlsx");
  
             
             

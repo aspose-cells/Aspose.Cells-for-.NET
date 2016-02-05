@@ -34,7 +34,7 @@ namespace Aspose.Cells.Examples.Articles.LineBreakTextWrapping
             cell[0, 0].SetStyle(style);
 
             // Save Excel File
-            wb.Save(dataDir+ "WrappingText.xlsx");
+            wb.Save(dataDir+ "WrappingText.out.xlsx");
             
             
         }

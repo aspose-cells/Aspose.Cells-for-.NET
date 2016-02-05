@@ -27,7 +27,7 @@ namespace Aspose.Cells.Examples.Articles.WorkbookScopedNamedRanges
             workbookScope.Name = "workbookScope";
 
             //save the workbook
-            workbook.Save(dataDir+ "WorkbookScope.xlsx");
+            workbook.Save(dataDir+ "WorkbookScope.out.xlsx");
             
             
         }

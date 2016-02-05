@@ -38,7 +38,7 @@ namespace Aspose.Cells.Examples.DrawingObjects.Comments
             comment.CommentShape.FillFormat.ImageData = ms.ToArray();
 
             //Save the workbook
-            workbook.Save(dataDir + "book1.xlsx", Aspose.Cells.SaveFormat.Xlsx);
+            workbook.Save(dataDir + "book1.out.xlsx", Aspose.Cells.SaveFormat.Xlsx);
 
             
         }

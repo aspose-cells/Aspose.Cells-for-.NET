@@ -28,7 +28,7 @@ namespace Aspose.Cells.Examples.RowsColumns.Grouping
             worksheet.Cells.UngroupColumns(0, 2);
 
             //Saving the modified Excel file
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(dataDir + "output.out.xls");
 
             //Closing the file stream to free all resources
             fstream.Close();

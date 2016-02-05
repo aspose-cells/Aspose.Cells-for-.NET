@@ -85,7 +85,7 @@ namespace Aspose.Cells.Examples.Formatting
             //AutoFit M Column in the worksheet
             _sheet.AutoFitColumn(12);
             //Specify the output file path
-            string outfn = dataDir+ "Testoutput.xlsx";
+            string outfn = dataDir+ "Testoutput.out.xlsx";
             //Save the excel file
             book.Save(outfn, SaveFormat.Xlsx);
         }

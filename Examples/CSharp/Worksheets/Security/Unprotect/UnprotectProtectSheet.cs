@@ -21,7 +21,7 @@ namespace Aspose.Cells.Examples.Worksheets.Security.Unprotect
             worksheet.Unprotect("aspose");
             
             //Save Workbook
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(dataDir + "output.out.xls");
 
         }
     }

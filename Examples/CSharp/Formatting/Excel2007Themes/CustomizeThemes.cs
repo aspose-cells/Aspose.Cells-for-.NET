@@ -35,7 +35,7 @@ namespace Aspose.Cells.Examples.Formatting.Excel2007Themes
             workbook.CustomTheme("CustomeTheme1", carr);
             
             //Save as the excel file.
-            workbook.Save(dataDir + "output.xlsx");
+            workbook.Save(dataDir + "output.out.xlsx");
 
             
         }

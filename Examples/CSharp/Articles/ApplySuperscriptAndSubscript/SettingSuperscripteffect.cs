@@ -37,7 +37,7 @@ namespace Aspose.Cells.Examples.Articles.ApplySuperscriptAndSubscript
             cell.SetStyle(style);
 
             //Saving the Excel file
-            workbook.Save(dataDir+ "Superscript.xls", SaveFormat.Auto);
+            workbook.Save(dataDir+ "Superscript.out.xls", SaveFormat.Auto);
             
             
         }

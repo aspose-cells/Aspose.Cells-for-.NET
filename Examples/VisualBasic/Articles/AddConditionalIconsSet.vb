@@ -1,11 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
 Imports Microsoft.VisualBasic
 Imports System.IO
 
@@ -91,7 +83,7 @@ Namespace Aspose.Cells.Examples.Articles
             worksheet.Pictures.Add(3, 2, stream5)
 
             'Save the Excel file
-            workbook.Save(dataDir & "outfile_cond_icons1.xlsx")
+            workbook.Save(dataDir & "outfile_cond_icons1.out.xlsx")
         End Sub
     End Class
 End Namespace

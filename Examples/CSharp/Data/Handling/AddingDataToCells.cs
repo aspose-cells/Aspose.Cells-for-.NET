@@ -44,7 +44,7 @@ namespace Aspose.Cells.Examples.Data.Handling
             worksheet.Cells["A5"].SetStyle(style);
 
             //Saving the Excel file
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(dataDir + "output.out.xls");
 
         }
     }

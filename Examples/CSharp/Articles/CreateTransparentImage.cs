@@ -28,7 +28,7 @@ namespace Aspose.Cells.Examples.Articles
 
             //Create image after apply image or print options
             var sr = new SheetRender(wb.Worksheets[0], imgOption);
-            sr.ToImage(0, dataDir+ "output.png");
+            sr.ToImage(0, dataDir+ "output.out.png");
 
         }
     }

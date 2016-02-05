@@ -17,7 +17,7 @@ namespace Aspose.Cells.Examples.Articles
             //Set AllColumnsInOnePagePerSheet to true
             saveOptions.AllColumnsInOnePagePerSheet = true;
             //Save Workbook to PDF fromart by passing the object of PdfSaveOptions
-            book.Save(dataDir+ "output.pdf", saveOptions);
+            book.Save(dataDir+ "output.out.pdf", saveOptions);
             
             
         }

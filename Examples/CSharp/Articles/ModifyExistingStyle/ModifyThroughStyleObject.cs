@@ -51,7 +51,7 @@ namespace Aspose.Cells.Examples.Articles.ModifyExistingStyle
             style.Update();
 
             //Save the excel file. 
-            workbook.Save(dataDir+ "book_styles.xls");
+            workbook.Save(dataDir+ "book_styles.out.xls");
             
             
         }

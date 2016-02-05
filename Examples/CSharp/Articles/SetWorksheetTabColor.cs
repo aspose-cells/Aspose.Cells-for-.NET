@@ -23,7 +23,7 @@ namespace Aspose.Cells.Examples.Articles
             worksheet.TabColor = Color.Red;
 
             //Save the Excel file
-            workbook.Save(dataDir+ "worksheettabcolor.xls");
+            workbook.Save(dataDir+ "worksheettabcolor.out.xls");
             
         }
     }

@@ -28,7 +28,7 @@ namespace Aspose.Cells.Examples.Articles
             //Perform your desired task.
 
             //Save the workbook.
-            workbook.Save(dataDir+ "outputFile.xlsx");
+            workbook.Save(dataDir+ "outputFile.out.xlsx");
             
             
         }

@@ -60,7 +60,7 @@ namespace Aspose.Cells.Examples.DrawingObjects.Controls
             listBox.Shadow = true;
 
             //Saves the file.
-            workbook.Save(dataDir + "book1.xls");
+            workbook.Save(dataDir + "book1.out.xls");
 
         }
     }

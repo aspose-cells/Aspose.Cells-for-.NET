@@ -44,7 +44,7 @@ namespace Aspose.Cells.Examples.Formulas
             string value = worksheet.Cells["A4"].Value.ToString();
 
             //Saving the Excel file
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(dataDir + "output.out.xls");
 
         }
     }

@@ -87,7 +87,7 @@ namespace Aspose.Cells.Examples.Charts
             ser.Border.Color = Color.Maroon;
 
             //Save the Excel file
-            book.Save(dataDir + "3d_format.xlsx");
+            book.Save(dataDir + "3d_format.out.xlsx");
 
         }
     }

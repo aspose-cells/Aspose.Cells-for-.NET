@@ -27,7 +27,7 @@ namespace Aspose.Cells.Examples.Articles
             opt.AddRange(CellArea.CreateCellArea(0, 0, 1000, 50));
 
             //Save the Excel file
-            workbook.Save(dataDir+ "out_test.xlsx");
+            workbook.Save(dataDir+ "out_test.out.xlsx");
             
         }
     }

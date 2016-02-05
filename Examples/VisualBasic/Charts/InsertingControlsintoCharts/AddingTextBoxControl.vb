@@ -1,11 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
 Imports Microsoft.VisualBasic
 Imports System.IO
 
@@ -69,7 +61,7 @@ Namespace Aspose.Cells.Examples.Charts.InsertingControlsintoCharts
             lineformat.DashStyle = Global.Aspose.Cells.Drawing.MsoLineDashStyle.Solid
 
             'Save the excel file.
-            workbook.Save(dataDir & "chart_out.xls")
+            workbook.Save(dataDir & "chart.out.xls")
 
         End Sub
     End Class

@@ -167,7 +167,7 @@
     <Compile Include="Articles\SetPictureBackGroundFillChart.vb" />
     <Compile Include="Articles\SetPixelFormatRenderedImage.vb" />
     <Compile Include="Articles\SettingFormulaCalculationModeWorkbook.vb" />
-    <Compile Include="Articles\SettingPivotTableOption.vb" />
+    <Compile Include="Charts\SettingPivotTableOption.vb" />
     <Compile Include="Articles\SettingSharedFormula.vb" />
     <Compile Include="Articles\SettingStrongEncryptionType.vb" />
     <Compile Include="Articles\SetWorksheetTabColor.vb" />

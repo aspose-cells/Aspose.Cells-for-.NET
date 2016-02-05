@@ -41,7 +41,7 @@ Namespace Aspose.Cells.Examples.AdvancedTopics.SmartMarkers
             'Process the markers
             designer.Process(False)
             'Save the Excel file.
-            designer.Workbook.Save(dataDir & "out_SM_NestedObjects.xlsx")
+            designer.Workbook.Save(dataDir & "out_SM_NestedObjects.out.xlsx")
 
         End Sub
 

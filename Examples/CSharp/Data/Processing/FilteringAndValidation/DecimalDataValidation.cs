@@ -53,7 +53,7 @@ namespace Aspose.Cells.Examples.Data.Processing.Processing.FilteringAndValidatio
             validation.AreaList.Add(area);
 
             // Save the workbook.
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(dataDir + "output.out.xls");
 
         }
     }

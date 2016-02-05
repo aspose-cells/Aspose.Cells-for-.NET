@@ -18,7 +18,7 @@ namespace Aspose.Cells.Examples.Tables
             wb.Worksheets[0].ListObjects[0].ConvertToRange();
 
             //Save the file
-            wb.Save(dataDir + "output.xlsx");
+            wb.Save(dataDir + "output.out.xlsx");
 
         }
     }

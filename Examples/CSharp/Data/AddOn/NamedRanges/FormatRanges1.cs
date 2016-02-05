@@ -57,7 +57,7 @@ namespace Aspose.Cells.Examples.Data.AddOn.NamedRanges
             range.ApplyStyle(stl, flg);
 
             //Save the excel file.
-            workbook.Save(dataDir + "rangestyles.xls"); 
+            workbook.Save(dataDir + "rangestyles.out.xls"); 
         }
     }
 }

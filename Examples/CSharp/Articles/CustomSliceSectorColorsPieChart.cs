@@ -72,7 +72,7 @@ namespace Aspose.Cells.Examples.Articles
             worksheet.AutoFitColumns();
 
             //Save the workbook
-            workbook.Save(dataDir+ "output.xlsx", SaveFormat.Xlsx);
+            workbook.Save(dataDir+ "output.out.xlsx", SaveFormat.Xlsx);
 
             
             

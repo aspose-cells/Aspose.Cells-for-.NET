@@ -26,7 +26,7 @@ namespace Aspose.Cells.Examples.RowsColumns.Copying
             ws1.AutoFitColumn(2);
 
             //Save the excel file.
-            excelWorkbook1.Save(dataDir + "output.xls");
+            excelWorkbook1.Save(dataDir + "output.out.xls");
 
         }
     }

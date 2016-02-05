@@ -38,7 +38,7 @@ namespace Aspose.Cells.Examples.DrawingObjects.Controls
             label.FillFormat.ForeColor = Color.Yellow;
 
             //Saves the file.
-            workbook.Save(dataDir + "book1.xls");
+            workbook.Save(dataDir + "book1.out.xls");
 
         }
     }

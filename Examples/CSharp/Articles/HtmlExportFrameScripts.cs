@@ -17,7 +17,7 @@ namespace Aspose.Cells.Examples.Articles
             options.ExportFrameScriptsAndProperties = false;
 
             // Save workbook as HTML
-            w.Save(dataDir + "output.html", options);
+            w.Save(dataDir + "output.out.html", options);
         }
     }
 }

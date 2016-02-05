@@ -25,7 +25,7 @@ namespace Aspose.Cells.Examples.Articles.CopyRowsColumns
             //Copy the first row to next 10 rows
             cells.CopyRows(cells, 0, 1, 10);
             //Save the excel file
-            workbook.Save(dataDir + "outaspose-sample.xlsx");
+            workbook.Save(dataDir + "outaspose-sample.out.xlsx");
  
         }
     }

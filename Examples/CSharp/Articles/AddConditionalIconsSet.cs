@@ -84,7 +84,7 @@ namespace Aspose.Cells.Examples.Articles
             worksheet.Pictures.Add(3, 2, stream5);
 
             //Save the Excel file
-            workbook.Save(dataDir+ "outfile_cond_icons1.xlsx");
+            workbook.Save(dataDir+ "outfile_cond_icons1.out.xlsx");
         }
     }
 }

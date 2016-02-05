@@ -24,7 +24,7 @@ namespace Aspose.Cells.Examples.Articles.CreatePivotTablesPivotCharts
             sheet3.Charts[index].PivotSource = "PivotTable!PivotTable1";
             sheet3.Charts[index].HidePivotFieldButtons = false;
             //Saving the Excel file
-            workbook.Save(dataDir+ "pivotChart_test.xlsx");
+            workbook.Save(dataDir+ "pivotChart_test.out.xlsx");
             
             
         }

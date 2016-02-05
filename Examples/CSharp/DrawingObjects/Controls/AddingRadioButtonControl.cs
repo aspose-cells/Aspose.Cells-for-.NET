@@ -127,7 +127,7 @@ namespace Aspose.Cells.Examples.DrawingObjects.DrawingObjects.Controls
             radio3.FillFormat.IsVisible = true;
 
             //Save the excel file.
-            excelbook.Save(dataDir + "book1.xls");
+            excelbook.Save(dataDir + "book1.out.xls");
 
         }
     }

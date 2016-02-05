@@ -37,10 +37,10 @@ namespace Aspose.Cells.Examples.Articles
             sheet.SetBackground(imageData);
 
             //Save the Excel file
-            workbook.Save(dataDir+ "BackImageSheet.xlsx");
+            workbook.Save(dataDir+ "BackImageSheet.out.xlsx");
 
             //Save the HTML file
-            workbook.Save(dataDir+ "BackImageSheet1.html", SaveFormat.Html);
+            workbook.Save(dataDir+ "BackImageSheet1.out.html", SaveFormat.Html);
  
         }
     }

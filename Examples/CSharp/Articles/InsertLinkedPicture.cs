@@ -18,7 +18,7 @@ namespace Aspose.Cells.Examples.Articles
             pic.HeightInch = 1.04;
             pic.WidthInch = 2.6;
             //Save the Excel file.
-            workbook.Save(dataDir+ "outLinkedPicture.xlsx");
+            workbook.Save(dataDir+ "outLinkedPicture.out.xlsx");
             
             
         }

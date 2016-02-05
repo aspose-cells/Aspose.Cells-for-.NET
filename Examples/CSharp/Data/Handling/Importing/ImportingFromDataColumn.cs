@@ -57,7 +57,7 @@ namespace Aspose.Cells.Examples.Data.Handling.Importing
             sheet.Cells.ImportDataColumn(dataTable, true, 0, 0, 1, false);
 
             //Save workbook
-            book.Save(dataDir + "DataImport.xls");
+            book.Save(dataDir + "DataImport.out.xls");
 
 
         }

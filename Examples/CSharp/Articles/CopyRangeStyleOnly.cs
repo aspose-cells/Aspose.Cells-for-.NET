@@ -66,7 +66,7 @@ namespace Aspose.Cells.Examples.Articles
             range2.CopyStyle(range);
 
             //Save the excel file.
-            workbook.Save(dataDir+ "copyrangestyle.xls");
+            workbook.Save(dataDir+ "copyrangestyle.out.xls");
         }
     }
 }

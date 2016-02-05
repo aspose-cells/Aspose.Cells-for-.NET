@@ -29,7 +29,7 @@ namespace Aspose.Cells.Examples.Articles
             cells["A2"].Formula = "='[" + dataDir + "book1.xlsx]Sheet1'!A8";
 
             //Save the workbook
-            workbook.Save(dataDir+ "output.xlsx");
+            workbook.Save(dataDir+ "output.out.xlsx");
 
 
             

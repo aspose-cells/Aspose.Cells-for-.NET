@@ -7,7 +7,7 @@ namespace Aspose.Cells.Examples.Articles
     {
         static void Main() {
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            string outputPath = dataDir + "Output.xlsm";
+            string outputPath = dataDir + "Output.out.xlsm";
 
             Workbook workbook = new Workbook();
 

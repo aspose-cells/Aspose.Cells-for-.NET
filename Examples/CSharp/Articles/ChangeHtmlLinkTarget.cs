@@ -10,7 +10,7 @@ namespace CSharp.Articles
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             string inputPath = dataDir + "Sample1.xlsx";
-            string outputPath = dataDir + "Output.html";
+            string outputPath = dataDir + "Output.out.html";
 
             Workbook workbook = new Workbook(dataDir + "Sample1.xlsx");
 

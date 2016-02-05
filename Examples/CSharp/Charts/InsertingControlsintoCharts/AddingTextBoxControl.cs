@@ -63,7 +63,7 @@ namespace Aspose.Cells.Examples.Charts.InsertingControlsintoCharts
             lineformat.DashStyle = Aspose.Cells.Drawing.MsoLineDashStyle.Solid;
 
             //Save the excel file.
-            workbook.Save(dataDir + "chart_out.xls");
+            workbook.Save(dataDir + "chart.out.xls");
 
         }
     }

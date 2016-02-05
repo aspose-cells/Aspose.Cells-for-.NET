@@ -55,7 +55,7 @@ namespace Aspose.Cells.Examples.Data.AddOn.NamedRanges
             range1[0, 0].PutValue("Aspose");
 
             //Save the excel file.
-            wb1.Save(dataDir + "mergingrange.xls");
+            wb1.Save(dataDir + "mergingrange.out.xls");
         }
     }
 }

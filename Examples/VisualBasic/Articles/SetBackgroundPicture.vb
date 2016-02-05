@@ -1,11 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
 Imports Microsoft.VisualBasic
 Imports System.IO
 
@@ -43,10 +35,10 @@ Namespace Aspose.Cells.Examples.Articles
             sheet.SetBackground(imageData)
 
             'Save the Excel file
-            workbook.Save(dataDir & "BackImageSheet.xlsx")
+            workbook.Save(dataDir & "BackImageSheet.out.xlsx")
 
             'Save the HTML file
-            workbook.Save(dataDir & "BackImageSheet1.html", SaveFormat.Html)
+            workbook.Save(dataDir & "BackImageSheet1.out.html", SaveFormat.Html)
 
         End Sub
     End Class

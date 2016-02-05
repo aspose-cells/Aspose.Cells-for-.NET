@@ -67,7 +67,7 @@ namespace Aspose.Cells.Examples.Worksheets.Security
             worksheet.Protection.AllowUsingPivotTable = true;
 
             //Saving the modified Excel file
-            excel.Save(dataDir + "output.xls", SaveFormat.Excel97To2003);
+            excel.Save(dataDir + "output.out.xls", SaveFormat.Excel97To2003);
 
             //Closing the file stream to free all resources
             fstream.Close();

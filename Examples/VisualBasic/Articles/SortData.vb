@@ -1,11 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
 Imports Microsoft.VisualBasic
 Imports System.IO
 
@@ -54,7 +46,7 @@ Namespace Aspose.Cells.Examples.Articles
             sorter.Sort(workbook.Worksheets(0).Cells, ca)
 
             'Saving the excel file in the default (that is Excel 2003) format
-            workbook.Save(dataDir & "outBook_SortedData.xlsx")
+            workbook.Save(dataDir & "outBook_SortedData.out.xlsx")
 
         End Sub
     End Class

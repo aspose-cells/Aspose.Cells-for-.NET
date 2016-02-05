@@ -1,11 +1,4 @@
 '////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
 Imports Microsoft.VisualBasic
 Imports System.IO
 
@@ -29,7 +22,7 @@ Namespace Aspose.Cells.Examples.Articles.ConvertingWorksheetToImage
             Dim sr As New SheetRender(sheet, options)
             For j As Integer = 0 To sr.PageCount - 1
 
-                sr.ToImage(j, dataDir & "test" & sheet.Name & " Page" & (j + 1) & ".tif")
+                sr.ToImage(j, dataDir & "test" & sheet.Name & " Page" & (j + 1) & ".out.tif")
             Next j
 
 

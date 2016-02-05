@@ -26,7 +26,7 @@ namespace Aspose.Cells.Examples.Articles.DeleteBlankRowsColumns
             sheet.Cells.DeleteBlankRows();
 
             //Save the excel file.
-            wb.Save(dataDir+ "mybook.xlsx");
+            wb.Save(dataDir+ "mybook.out.xlsx");
             
         }
     }

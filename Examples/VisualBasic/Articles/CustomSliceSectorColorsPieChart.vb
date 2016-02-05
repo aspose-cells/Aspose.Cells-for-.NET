@@ -1,11 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
 Imports Microsoft.VisualBasic
 Imports System.IO
 
@@ -78,7 +70,7 @@ Namespace Aspose.Cells.Examples.Articles
             worksheet.AutoFitColumns()
 
             'Save the workbook
-            workbook.Save(dataDir & "output.xlsx", SaveFormat.Xlsx)
+            workbook.Save(dataDir & "output.out.xlsx", SaveFormat.Xlsx)
 
 
 

@@ -26,7 +26,7 @@ namespace Aspose.Cells.Examples.Data.AddOn.Hyperlinks
             worksheet.Hyperlinks.Add("A1", 1, 1, "http://www.aspose.com");
 
             //Saving the Excel file
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(dataDir + "output.out.xls");
 
         }
     }

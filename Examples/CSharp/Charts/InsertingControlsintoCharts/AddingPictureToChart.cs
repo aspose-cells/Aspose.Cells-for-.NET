@@ -42,8 +42,8 @@ namespace Aspose.Cells.Examples.Charts.InsertingControlsintoCharts
             lineformat.Style = Aspose.Cells.Drawing.MsoLineStyle.ThickThin;
 
             //Save the excel file.
-            workbook.Save(dataDir + "chart_out.xls");
-
+            workbook.Save(dataDir + "chart.out.xls");
+        
         }
     }
 }

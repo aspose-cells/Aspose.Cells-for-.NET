@@ -1,11 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
 Imports Microsoft.VisualBasic
 Imports System.IO
 
@@ -36,7 +28,7 @@ Namespace Aspose.Cells.Examples.Articles
             'Take Pdfs of each sheet
             For j As Integer = 0 To workbook.Worksheets.Count - 1
                 Dim ws As Worksheet = workbook.Worksheets(j)
-                workbook.Save(dataDir & "worksheet-" & ws.Name & ".pdf")
+                workbook.Save(dataDir & "worksheet-" & ws.Name & ".out.pdf")
 
                 If j < workbook.Worksheets.Count - 1 Then
                     workbook.Worksheets(j + 1).IsVisible = True

@@ -49,7 +49,7 @@ namespace Aspose.Cells.Examples.Data.Handling
             sorter.Sort(workbook.Worksheets[0].Cells, ca);
 
             //Save the excel file.
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(dataDir + "output.out.xls");
 
             
         }

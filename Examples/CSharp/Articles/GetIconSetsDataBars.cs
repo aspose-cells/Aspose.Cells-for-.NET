@@ -26,7 +26,7 @@ namespace Aspose.Cells.Examples.Articles
             ConditionalFormattingIcon icon = cfr.ConditionalFormattingIcon;
 
             //Create the image file based on the icon's image data
-            File.WriteAllBytes(dataDir+ "imgIcon.jpg", icon.ImageData);
+            File.WriteAllBytes(dataDir+ "imgIcon.out.jpg", icon.ImageData);
             
         }
     }

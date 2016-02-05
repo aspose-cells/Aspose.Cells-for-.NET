@@ -35,7 +35,7 @@ namespace Aspose.Cells.Examples.Articles
                 TotalRowCount = sourceRange.RowCount + TotalRowCount;
             }
 
-            destWorkbook.Save(dataDir+ "Output.xlsx");
+            destWorkbook.Save(dataDir+ "Output.out.xlsx");
             
             
         }

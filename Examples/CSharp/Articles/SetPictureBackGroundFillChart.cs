@@ -78,7 +78,7 @@ namespace Aspose.Cells.Examples.Articles
             legend.Position = Aspose.Cells.Charts.LegendPositionType.Top;
 
             //Save the excel file
-            workbook.Save(dataDir+ "column_chart.xls");
+            workbook.Save(dataDir+ "column_chart.out.xls");
         }
     }
 }

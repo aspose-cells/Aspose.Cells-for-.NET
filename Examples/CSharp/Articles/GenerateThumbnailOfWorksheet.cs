@@ -40,7 +40,7 @@ namespace Aspose.Cells.Examples.Articles
             gr.DrawImage(bmp, 0, 0, 100, 100);
 
             //Save the thumbnail
-            thumb.Save(dataDir+ "mythumbnail.bmp");
+            thumb.Save(dataDir+ "mythumbnail.out.bmp");
             
             
         }

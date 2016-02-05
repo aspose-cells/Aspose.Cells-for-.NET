@@ -23,7 +23,7 @@ namespace Aspose.Cells.Examples.Articles
             name.RefersTo = "=Sheet1!$A$1:$B$3,Sheet1!$E$5:$D$6";
 
             //Save the workbook
-            workbook.Save(dataDir+ "Output.xlsx");
+            workbook.Save(dataDir+ "Output.out.xlsx");
             
         }
     }

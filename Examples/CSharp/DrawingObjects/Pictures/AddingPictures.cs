@@ -30,7 +30,7 @@ namespace Aspose.Cells.Examples.DrawingObjects.Pictures
             worksheet.Pictures.Add(5, 5, dataDir + "logo.jpg");
 
             //Saving the Excel file
-            workbook.Save(dataDir + "book1.xls");
+            workbook.Save(dataDir + "book1.out.xls");
         }
     }
 }

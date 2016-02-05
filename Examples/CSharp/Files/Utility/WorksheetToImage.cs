@@ -32,7 +32,7 @@ namespace Aspose.Cells.Examples.Files.Utility
             Bitmap bitmap = sr.ToImage(0);
 
             //Save the image file specifying its image format.
-            bitmap.Save(dataDir + "SheetImage.jpg");
+            bitmap.Save(dataDir + "SheetImage.out.jpg");
 
             // Display result, so that user knows the processing has finished.
             System.Console.WriteLine("Conversion to Image(s) completed.");

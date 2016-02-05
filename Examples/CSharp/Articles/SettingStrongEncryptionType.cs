@@ -22,7 +22,7 @@ namespace Aspose.Cells.Examples.Articles
             workbook.Settings.Password = "1234";
 
             //Save the Excel file.
-            workbook.Save(dataDir+ "encryptedBook1.xls");
+            workbook.Save(dataDir+ "encryptedBook1.out.xls");
         }
     }
 }

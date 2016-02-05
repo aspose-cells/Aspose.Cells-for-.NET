@@ -42,7 +42,7 @@ namespace Aspose.Cells.Examples.Articles
             lineFormat.IsVisible = false;
 
             //Save the file
-            workbook.Save(dataDir+ "Watermark_Test.xls");
+            workbook.Save(dataDir+ "Watermark_Test.out.xls");
             
             
         }

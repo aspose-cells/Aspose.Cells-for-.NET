@@ -22,7 +22,7 @@ namespace Aspose.Cells.Examples.Data.Processing.Processing.FilteringAndValidatio
             worksheet.AutoFilter.Range = "A1:B1";
 
             //Saving the modified Excel file
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(dataDir + "output.out.xls");
 
         }
     }

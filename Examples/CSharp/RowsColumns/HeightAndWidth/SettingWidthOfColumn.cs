@@ -32,7 +32,7 @@ namespace Aspose.Cells.Examples.RowsColumns.HeightAndWidth
             worksheet.Cells.SetColumnWidth(1, 17.5);
 
             //Saving the modified Excel file
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(dataDir + "output.out.xls");
 
             //Closing the file stream to free all resources
             fstream.Close();

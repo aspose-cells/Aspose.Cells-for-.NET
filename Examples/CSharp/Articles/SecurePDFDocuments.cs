@@ -30,7 +30,7 @@ namespace Aspose.Cells.Examples.Articles
             saveOption.SecurityOptions.PrintPermission = false;
 
             //Save the PDF document with encrypted settings
-            workbook.Save(dataDir+ "securepdf_test.pdf", saveOption);
+            workbook.Save(dataDir+ "securepdf_test.out.pdf", saveOption);
             
         }
     }

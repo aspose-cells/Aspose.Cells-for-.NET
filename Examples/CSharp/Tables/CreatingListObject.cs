@@ -29,7 +29,7 @@ namespace Aspose.Cells.Examples.Tables
             listObjects[0].ListColumns[4].TotalsCalculation = Aspose.Cells.Tables.TotalsCalculation.Sum;
 
             //Save the excel file.
-            workbook.Save(dataDir + "ouput.xls");
+            workbook.Save(dataDir + "ouput.out.xls");
 
         }
     }

@@ -1,11 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
 Imports Microsoft.VisualBasic
 Imports System.IO
 
@@ -35,7 +27,7 @@ Namespace Aspose.Cells.Examples.Articles
             cells("A2").Formula = "='[" & dataDir & "book1.xlsx]Sheet1'!A8"
 
             'Save the workbook
-            workbook.Save(dataDir & "output.xlsx")
+            workbook.Save(dataDir & "output.out.xlsx")
 
 
 

@@ -20,7 +20,7 @@ namespace Aspose.Cells.Examples.Articles
             pdfSaveOptions.SetImageResample(300, 70);
 
             //Save the PDF file
-            workbook.Save(dataDir+ "OutputFile.pdf", pdfSaveOptions);
+            workbook.Save(dataDir+ "OutputFile.out.pdf", pdfSaveOptions);
             
         }
     }

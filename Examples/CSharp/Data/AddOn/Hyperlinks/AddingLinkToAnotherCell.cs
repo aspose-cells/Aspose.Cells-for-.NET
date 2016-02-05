@@ -30,7 +30,7 @@ namespace Aspose.Cells.Examples.Data.AddOn.Hyperlinks
             worksheet.Hyperlinks.Add("B3", 1, 1, "Sheet2!B9");
 
             //Saving the Excel file
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(dataDir + "output.out.xls");
 
         }
     }

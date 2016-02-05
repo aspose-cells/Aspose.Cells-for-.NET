@@ -71,7 +71,7 @@ namespace Aspose.Cells.Examples.Articles
             range2.CopyData(range);
 
             //Save the excel file.
-            workbook.Save(dataDir+ "CopyRangeData.xlsx");
+            workbook.Save(dataDir+ "CopyRangeData.out.xlsx");
             
             
         }

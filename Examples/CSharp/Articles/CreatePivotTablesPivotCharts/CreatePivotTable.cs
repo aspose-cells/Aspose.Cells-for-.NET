@@ -417,7 +417,7 @@ namespace Aspose.Cells.Examples.Articles.CreatePivotTablesPivotCharts
             //Setting the number format of the first data field
             pivotTable.DataFields[0].NumberFormat = "$#,##0.00";
             //Saving the Excel file
-            workbook.Save(dataDir+ "pivotTable_test.xlsx");
+            workbook.Save(dataDir+ "pivotTable_test.out.xlsx");
             
             
         }

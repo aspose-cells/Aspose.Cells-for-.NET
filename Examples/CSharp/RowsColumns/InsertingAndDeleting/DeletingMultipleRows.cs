@@ -32,7 +32,7 @@ namespace Aspose.Cells.Examples.RowsColumns.InsertingAndDeleting
             worksheet.Cells.DeleteRows(2, 10);
 
             //Saving the modified Excel file
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(dataDir + "output.out.xls");
 
             //Closing the file stream to free all resources
             fstream.Close();

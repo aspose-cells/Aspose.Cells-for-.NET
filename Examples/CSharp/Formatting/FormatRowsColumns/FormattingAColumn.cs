@@ -62,7 +62,7 @@ namespace Aspose.Cells.Examples.Formatting.FormatRowsColumns
             column.ApplyStyle(style, styleFlag);
 
             //Saving the Excel file
-            workbook.Save(dataDir + "book1.xls");
+            workbook.Save(dataDir + "book1.out.xls");
         }
     }
 }

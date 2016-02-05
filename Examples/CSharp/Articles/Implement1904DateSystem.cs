@@ -18,7 +18,7 @@ namespace Aspose.Cells.Examples.Articles
             workbook.Settings.Date1904 = true;
 
             //Save the excel file
-            workbook.Save(dataDir+ "Mybook.xlsx");
+            workbook.Save(dataDir+ "Mybook.out.xlsx");
  
             
             

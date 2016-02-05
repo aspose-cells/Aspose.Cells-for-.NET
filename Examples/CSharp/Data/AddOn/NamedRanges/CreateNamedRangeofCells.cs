@@ -25,7 +25,7 @@ namespace Aspose.Cells.Examples.Data.AddOn.NamedRanges
             range.Name = "TestRange";
 
             //Saving the modified Excel file
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(dataDir + "output.out.xls");
 
         }
     }

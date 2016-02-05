@@ -23,7 +23,7 @@ namespace Aspose.Cells.Examples.Articles
 
             ooxmlSaveOptions.LightCellsDataProvider = new TestDataProvider(workbook, rowsCount, colsCount);
 
-            workbook.Save(dataDir+ "output.xlsx", ooxmlSaveOptions);
+            workbook.Save(dataDir+ "output.out.xlsx", ooxmlSaveOptions);
         }
     }
 

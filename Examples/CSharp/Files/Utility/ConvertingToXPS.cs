@@ -27,11 +27,11 @@ namespace Aspose.Cells.Examples.Files.Utility
             Aspose.Cells.Rendering.SheetRender sr = new Aspose.Cells.Rendering.SheetRender(sheet, options);
             
             // Save
-            sr.ToImage(0, dataDir + "out_printingxps.xps");
+            sr.ToImage(0, dataDir + "out_printingxps.out.xps");
 
             //Export the whole workbook to XPS
             Aspose.Cells.Rendering.WorkbookRender wr = new Aspose.Cells.Rendering.WorkbookRender(workbook, options);
-            wr.ToImage(dataDir + "out_whole_printingxps.xps");
+            wr.ToImage(dataDir + "out_whole_printingxps.out.xps");
         }
     }
 }

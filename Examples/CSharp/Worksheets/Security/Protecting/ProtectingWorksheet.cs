@@ -25,7 +25,7 @@ namespace Aspose.Cells.Examples.Worksheets.Security.Protecting
             worksheet.Protect(ProtectionType.All, "aspose", null);
 
             //Saving the modified Excel file in default format
-            excel.Save(dataDir + "output.xls", SaveFormat.Excel97To2003);
+            excel.Save(dataDir + "output.out.xls", SaveFormat.Excel97To2003);
 
             //Closing the file stream to free all resources
             fstream.Close();

@@ -36,7 +36,7 @@ namespace Aspose.Cells.Examples.Articles
 
             button.MacroName = sheet.Name + ".ShowMessage";
 
-            workbook.Save(dataDir + "Output.xlsm");
+            workbook.Save(dataDir + "Output.out.xlsm");
 
             Console.WriteLine("File saved");
         }

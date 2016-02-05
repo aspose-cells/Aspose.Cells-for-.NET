@@ -55,7 +55,7 @@ Namespace Aspose.Cells.Examples.AdvancedTopics.SmartMarkers
             wd.Process(True)
 
             'Save the excel file.
-            wd.Workbook.Save(dataDir & "outSmartMarker_Designer.xlsx")
+            wd.Workbook.Save(dataDir & "outSmartMarker_Designer.out.xlsx")
 
 
         End Sub

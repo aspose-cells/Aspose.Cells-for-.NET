@@ -33,7 +33,7 @@ namespace Aspose.Cells.Examples.Articles
             comment.Note = "This is my Comment Text. This is test";
 
             //Save the Excel file
-            wb.Save(dataDir+ "OutCommentShape.xlsx");
+            wb.Save(dataDir+ "OutCommentShape.out.xlsx");
 
             
             

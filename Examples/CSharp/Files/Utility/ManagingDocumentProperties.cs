@@ -43,7 +43,7 @@ namespace Aspose.Cells.Examples.Files.Utility
             string source = customProperty3.Source;
 
             //Save the file with added properties
-            workbook.Save(dataDir + "Test_Workbook.xls");
+            workbook.Save(dataDir + "Test_Workbook.out.xls");
 
             //Removing a custom document property
             customProperties.Remove("Publisher");

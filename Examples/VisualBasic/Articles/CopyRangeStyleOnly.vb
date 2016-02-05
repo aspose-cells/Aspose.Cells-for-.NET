@@ -1,11 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
 Imports Microsoft.VisualBasic
 Imports System.IO
 Imports System.Drawing
@@ -70,7 +62,7 @@ Namespace Aspose.Cells.Examples.Articles
             range2.CopyStyle(range)
 
             'Save the excel file.
-            workbook.Save(dataDir & "copyrangestyle.xls")
+            workbook.Save(dataDir & "copyrangestyle.out.xls")
         End Sub
     End Class
 End Namespace

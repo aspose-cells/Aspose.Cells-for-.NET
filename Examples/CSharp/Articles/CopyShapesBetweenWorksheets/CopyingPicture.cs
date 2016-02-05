@@ -26,7 +26,7 @@ namespace Aspose.Cells.Examples.Articles.CopyShapesBetweenWorksheets
             workbook.Worksheets["Sheet2"].Pictures.Add(source.UpperLeftRow, source.UpperLeftColumn, ms, source.WidthScale, source.HeightScale);
 
             //Save the Worksheet
-            workbook.Save(dataDir+ "Shapes.xlsx");
+            workbook.Save(dataDir+ "Shapes.out.xlsx");
             
             
         }

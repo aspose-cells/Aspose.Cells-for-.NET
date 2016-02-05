@@ -30,7 +30,7 @@ Namespace Aspose.Cells.Examples.Articles
 
             button.MacroName = sheet.Name + ".ShowMessage"
 
-            workbook.Save(dataDir + "Output1.xlsm")
+            workbook.Save(dataDir + "Output1.out.xlsm")
 
             Console.WriteLine("File saved")
 

@@ -36,7 +36,7 @@ namespace Aspose.Cells.Examples.Articles
 
             //Take the image of your worksheet
             SheetRender sr = new SheetRender(worksheet, options);
-            sr.ToImage(0, dataDir+ "output.jpg");
+            sr.ToImage(0, dataDir+ "output.out.jpg");
             
             
         }

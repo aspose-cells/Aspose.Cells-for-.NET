@@ -34,7 +34,7 @@ namespace Aspose.Cells.Examples.DrawingObjects.Controls
             textbox1.Text = "This is an alternative text";
 
             //Save the excel file.
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(dataDir + "output.out.xls");
 
         }
     }

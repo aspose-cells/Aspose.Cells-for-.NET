@@ -137,7 +137,7 @@ namespace Aspose.Cells.Examples.DrawingObjects.Controls
             Aspose.Cells.Drawing.GroupShape group = excelbook.Worksheets[0].Shapes.Group(shapeobjects);
 
             //Save the excel file.
-            excelbook.Save(dataDir + "book1.xls");
+            excelbook.Save(dataDir + "book1.out.xls");
 
         }
     }

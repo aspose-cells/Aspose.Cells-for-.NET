@@ -20,7 +20,7 @@ namespace Aspose.Cells.Examples.Articles.ConvertExcelChartToImage
             Aspose.Cells.Charts.Chart chart = workbook.Worksheets[0].Charts[0];
 
             //Convert the chart to an image file.
-            chart.ToImage(dataDir+ "PieChart.emf", System.Drawing.Imaging.ImageFormat.Emf);
+            chart.ToImage(dataDir+ "PieChart.out.emf", System.Drawing.Imaging.ImageFormat.Emf);
  
             
             

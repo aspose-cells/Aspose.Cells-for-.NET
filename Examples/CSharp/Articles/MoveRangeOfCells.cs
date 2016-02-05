@@ -27,7 +27,7 @@ namespace Aspose.Cells.Examples.Articles
             cells.MoveRange(ca, 0, 2);
 
             //Save the resultant file
-            workbook.Save(dataDir+ "book2.xls");
+            workbook.Save(dataDir+ "book2.out.xls");
             
             
         }

@@ -1,11 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
 Imports Microsoft.VisualBasic
 Imports System.IO
 
@@ -47,7 +39,7 @@ Namespace Aspose.Cells.Examples.Articles
             lineFormat.IsVisible = False
 
             'Save the file
-            workbook.Save(dataDir & "Watermark_Test.xls")
+            workbook.Save(dataDir & "Watermark_Test.out.xls")
 
 
         End Sub

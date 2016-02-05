@@ -34,7 +34,7 @@ namespace Aspose.Cells.Examples.Charts.InsertingControlsintoCharts
             label.FillFormat.ForeColor = Color.Azure;
 
             //Save the excel file.
-            workbook.Save(dataDir + "chart_out.xls");
+            workbook.Save(dataDir + "chart.out.xls");
  
             
         }

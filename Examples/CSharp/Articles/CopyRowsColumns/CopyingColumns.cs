@@ -22,7 +22,7 @@ namespace Aspose.Cells.Examples.Articles.CopyRowsColumns
             //Copy the first column to the third column
             cells.CopyColumn(cells, 0, 2);
             //Save the excel file
-            workbook.Save(dataDir+ "outaspose-sample.xlsx");
+            workbook.Save(dataDir+ "outaspose-sample.out.xlsx");
             
             
         }

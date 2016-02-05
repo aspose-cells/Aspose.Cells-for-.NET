@@ -55,7 +55,7 @@ namespace Aspose.Cells.Examples.Articles
             workbook.Worksheets[0].OleObjects[intIndex].ObjectSourceFullName = path;
 
             //Save the excel file
-            workbook.Save(dataDir+ "testWAV.xlsx"); 
+            workbook.Save(dataDir+ "testWAV.out.xlsx"); 
             
             
         }

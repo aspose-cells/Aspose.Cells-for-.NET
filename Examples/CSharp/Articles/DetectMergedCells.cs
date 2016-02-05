@@ -46,7 +46,7 @@ namespace Aspose.Cells.Examples.Articles
             }
 
             //Save the excel file
-            wkBook.Save(dataDir+ "MergeTrial.xlsx");
+            wkBook.Save(dataDir+ "MergeTrial.out.xlsx");
  
             
         }

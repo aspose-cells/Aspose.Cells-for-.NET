@@ -30,7 +30,7 @@ namespace Aspose.Cells.Examples.Data.Processing
             cells.Subtotal(ca, 0, ConsolidationFunction.Sum, new int[] { 1 });
 
             //Save the excel file
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(dataDir + "output.out.xls");
 
         }
     }

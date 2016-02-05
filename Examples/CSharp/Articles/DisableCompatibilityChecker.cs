@@ -17,7 +17,7 @@ namespace Aspose.Cells.Examples.Articles
             workbook.Settings.CheckComptiliblity = false;
 
             //Saving the Excel file
-            workbook.Save(dataDir+ "Output_BK_CompCheck.xlsx");
+            workbook.Save(dataDir+ "Output_BK_CompCheck.out.xlsx");
             
             
         }

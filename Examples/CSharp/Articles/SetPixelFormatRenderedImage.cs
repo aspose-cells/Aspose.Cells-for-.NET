@@ -20,7 +20,7 @@ namespace Aspose.Cells.Examples.Articles
             //Set the ImageOrPrintOptions with desired pixel format (24 bits per pixel) and image format type
             SheetRender sr = new SheetRender(wb.Worksheets[0], new ImageOrPrintOptions { PixelFormat = PixelFormat.Format24bppRgb, ImageFormat = ImageFormat.Tiff });
             //Save the image (first page of the sheet) with the specified options
-            sr.ToImage(0, dataDir+ "outImage1.tiff");
+            sr.ToImage(0, dataDir+ "outImage1.out.tiff");
  
         }
     }

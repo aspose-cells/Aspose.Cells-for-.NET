@@ -26,7 +26,7 @@ namespace Aspose.Cells.Examples.Articles.WorkbookScopedNamedRanges
             localRange.Name = "Sheet1!local";
 
             //save the workbook
-            workbook.Save(dataDir+ "ouput.xls");
+            workbook.Save(dataDir+ "ouput.out.xls");
             
             
         }

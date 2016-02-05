@@ -19,7 +19,7 @@ namespace Aspose.Cells.Examples.Articles
             //Get the first Picture in the first worksheet
             Aspose.Cells.Drawing.Picture pic = worksheet.Pictures[0];
             //Set the output image file path
-            string fileName = dataDir+ "aspose-logo.Jpg";
+            string fileName = dataDir+ "aspose-logo.out.Jpg";
             string picformat = pic.ImageFormat.ToString();
             //Note: you may evaluate the image format before specifying the image path
 

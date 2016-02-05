@@ -31,7 +31,7 @@ namespace Aspose.Cells.Examples.Articles.ModifyExistingStyle
             style.Update();
 
             //Save the excel file.	
-            workbook.Save(dataDir+ "book2.xlsx");
+            workbook.Save(dataDir+ "book2.out.xlsx");
             
         }
     }

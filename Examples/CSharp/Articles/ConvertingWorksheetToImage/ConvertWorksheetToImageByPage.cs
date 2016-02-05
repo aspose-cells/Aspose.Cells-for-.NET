@@ -24,7 +24,7 @@ namespace Aspose.Cells.Examples.Articles.ConvertingWorksheetToImage
             for (int j = 0; j < sr.PageCount; j++)
             {
 
-                sr.ToImage(j, dataDir+ "test" + sheet.Name + " Page" + (j + 1) + ".tif");
+                sr.ToImage(j, dataDir+ "test" + sheet.Name + " Page" + (j + 1) + ".out.tif");
             }
  
             

@@ -39,7 +39,7 @@ namespace Aspose.Cells.Examples.Worksheets.Security
             sheet.Protect(ProtectionType.All);
 
             //Save the Excel file
-            book.Save(dataDir + "protectedrange.xls");
+            book.Save(dataDir + "protectedrange.out.xls");
 
         }
     }

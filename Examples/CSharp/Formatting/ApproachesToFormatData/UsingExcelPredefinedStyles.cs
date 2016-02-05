@@ -29,7 +29,7 @@ namespace Aspose.Cells.Examples.Formatting.ApproachesToFormatData
             workbook.Worksheets[0].Cells["A1"].SetStyle(style);
 
             //Save the Excel 2007 file.
-            workbook.Save(dataDir + "book1.xlsx");
+            workbook.Save(dataDir + "book1.out.xlsx");
  
         }
     }

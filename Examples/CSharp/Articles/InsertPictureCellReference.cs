@@ -28,7 +28,7 @@ namespace Aspose.Cells.Examples.Articles
             workbook.Worksheets[0].Shapes.UpdateSelectedValue();
 
             //Save the Excel file.
-            workbook.Save(dataDir+ "referencedpicture.xlsx");
+            workbook.Save(dataDir+ "referencedpicture.out.xlsx");
             
             
         }

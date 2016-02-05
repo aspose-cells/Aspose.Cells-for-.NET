@@ -25,7 +25,7 @@ namespace Aspose.Cells.Examples.Articles.CopyShapesBetweenWorksheets
             workbook.Worksheets["Sheet1"].Shapes.AddCopy(shape[1], 10, 0, 2, 0);
 
             //Save the Worksheet
-            workbook.Save(dataDir+ "Controls.xlsx");
+            workbook.Save(dataDir+ "Controls.out.xlsx");
             
         }
     }

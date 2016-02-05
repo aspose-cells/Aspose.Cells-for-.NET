@@ -21,7 +21,7 @@ namespace Aspose.Cells.Examples.Worksheets.Display
             book.Worksheets[0].Split();
 
             //Save the excel file
-            book.Save(dataDir + "Splitted_out1.xls");
+            book.Save(dataDir + "Splitted_out1.out.xls");
         }
     }
 }

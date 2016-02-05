@@ -26,7 +26,7 @@ namespace Aspose.Cells.Examples.Articles
 
             pt.RefreshDataOnOpeningFile = false;
 
-            wb.Save(dataDir+ "output.xlsx");
+            wb.Save(dataDir+ "output.out.xlsx");
             
         }
     }

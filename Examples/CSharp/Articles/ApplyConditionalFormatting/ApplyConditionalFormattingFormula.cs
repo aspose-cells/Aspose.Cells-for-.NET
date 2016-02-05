@@ -55,7 +55,7 @@ namespace Aspose.Cells.Examples.Articles.ApplyConditionalFormatting
             sheet.Cells["C4"].PutValue("If Sum of B1:B2 is greater than 100, B3 will have RED background");
 
             //Saving the Excel file
-            workbook.Save(dataDir+ "output.xls", SaveFormat.Auto);
+            workbook.Save(dataDir+ "output.out.xls", SaveFormat.Auto);
             
             
         }

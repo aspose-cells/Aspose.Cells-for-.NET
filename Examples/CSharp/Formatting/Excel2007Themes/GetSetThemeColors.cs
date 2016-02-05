@@ -48,7 +48,7 @@ namespace Aspose.Cells.Examples.Formatting.Excel2007Themes
             Console.WriteLine("theme color Accent2 changed to: " + c);
 
             //Save the updated file.
-            workbook.Save(dataDir + "output.xlsx");
+            workbook.Save(dataDir + "output.out.xlsx");
 
         }
     }

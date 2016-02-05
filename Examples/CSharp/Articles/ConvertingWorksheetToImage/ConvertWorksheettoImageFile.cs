@@ -29,7 +29,7 @@ namespace Aspose.Cells.Examples.Articles.ConvertingWorksheetToImage
             Bitmap bitmap = sr.ToImage(0);
 
             //Save the image file
-            bitmap.Save(dataDir+ "SheetImage.jpg");
+            bitmap.Save(dataDir+ "SheetImage.out.jpg");
             
             
         }

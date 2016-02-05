@@ -48,7 +48,7 @@ namespace Aspose.Cells.Examples.Articles
             hlink.ScreenTip = "Click to go to Aspose site";
 
             //Save the Excel file
-            workbook.Save(dataDir+ "ImageHyperlink.xls");
+            workbook.Save(dataDir+ "ImageHyperlink.out.xls");
             
             
         }

@@ -24,7 +24,7 @@ namespace Aspose.Cells.Examples.Articles
             SourceBook1.Combine(SourceBook2);
 
             //Save the target book file.
-            SourceBook1.Save(dataDir+ "Combined.xlsx");
+            SourceBook1.Save(dataDir+ "Combined.out.xlsx");
             
         }
     }

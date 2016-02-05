@@ -17,7 +17,7 @@ namespace Aspose.Cells.Examples.Articles
             workbook.Settings.CalcMode = CalcModeType.Manual;
 
             //Save the workbook
-            workbook.Save(dataDir+ "output.xlsx", SaveFormat.Xlsx);
+            workbook.Save(dataDir+ "output.out.xlsx", SaveFormat.Xlsx);
             
         }
     }

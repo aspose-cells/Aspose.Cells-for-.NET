@@ -19,7 +19,7 @@ namespace Aspose.Cells.Examples.Articles
             pdfSaveOptions.OnePagePerSheet = true;
 
             //Save the PDF file
-            workbook.Save(dataDir+ "OutputFile.pdf", pdfSaveOptions);
+            workbook.Save(dataDir+ "OutputFile.out.pdf", pdfSaveOptions);
             
         }
     }

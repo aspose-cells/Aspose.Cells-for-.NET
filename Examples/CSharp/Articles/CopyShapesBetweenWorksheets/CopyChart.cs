@@ -23,7 +23,7 @@ namespace Aspose.Cells.Examples.Articles.CopyShapesBetweenWorksheets
             workbook.Worksheets["Sheet3"].Shapes.AddCopy(cshape, 20, 0, 2, 0);
 
             //Save the Worksheet
-            workbook.Save(dataDir+ "Shapes.xlsx");
+            workbook.Save(dataDir+ "Shapes.out.xlsx");
             
         }
     }

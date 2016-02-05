@@ -12,9 +12,9 @@ Namespace Aspose.Cells.Examples.Articles
         ''' <summary>
         ''' The main entry point for the application.
         ''' </summary>
-        <STAThread> _
+        <STAThread> _`                                                                                                                          `                                                                                       
         Shared Sub Main(ByVal args() As String)
-            Dim filename As String = "F:\AllExamples\Aspose.Cells\net\TechnicalArticles\Aspose.CellsGeneral\FormatWorksheetCells\Data\FormatWorksheet.xls"
+            Dim filename As String = "F:\AllExamples\Aspose.Cells\net\TechnicalArticles\Aspose.CellsGeneral\FormatWorksheetCells\Data\FormatWorksheet.out.xls"
             CreateSalesReport(filename)
 
         End Sub

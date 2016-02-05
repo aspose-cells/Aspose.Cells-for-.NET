@@ -38,7 +38,7 @@ namespace Aspose.Cells.Examples.Articles
             //ImageOrPrintOptions attributes
             SheetRender sr = new SheetRender(sheet, imgOptions);
             //Convert the image
-            sr.ToImage(0, dataDir+ "img_MyTestBook1.emf");
+            sr.ToImage(0, dataDir+ "img_MyTestBook1.out.emf");
             
         }
     }

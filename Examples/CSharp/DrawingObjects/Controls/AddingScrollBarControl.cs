@@ -67,7 +67,7 @@ namespace Aspose.Cells.Examples.DrawingObjects.Controls
             scrollbar.Shadow = true;
 
             //Save the excel file.
-            excelbook.Save(dataDir + "book1.xls");
+            excelbook.Save(dataDir + "book1.out.xls");
 
         }
     }

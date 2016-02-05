@@ -50,7 +50,7 @@ namespace Aspose.Cells.Examples.Data.AddOn.NamedRanges
             }
 
             //Save the excel file.
-            workbook.Save(dataDir + "rngIntersection.xls");
+            workbook.Save(dataDir + "rngIntersection.out.xls");
         }
     }
 }

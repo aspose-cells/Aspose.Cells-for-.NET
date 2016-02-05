@@ -23,7 +23,7 @@ namespace Aspose.Cells.Examples.RowsColumns.Copying
             wsTemplate.Cells.CopyRow(wsTemplate.Cells, 1, 15);
 
             //Save the excel file.
-            excelWorkbook1.Save(dataDir + "output.xls");
+            excelWorkbook1.Save(dataDir + "output.out.xls");
 
         }
     }

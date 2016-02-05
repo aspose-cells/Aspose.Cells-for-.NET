@@ -47,7 +47,7 @@ namespace Aspose.Cells.Examples.DrawingObjects.Controls
             button.AddHyperlink("http://www.aspose.com/");
 
             //Saves the file.
-            workbook.Save(dataDir + "book1.xls");
+            workbook.Save(dataDir + "book1.out.xls");
 
         }
     }

@@ -50,7 +50,7 @@ namespace Aspose.Cells.Examples.Articles
             _worksheet.AutoFitRows(options);
 
             //Save the Excel file
-            wb.Save(dataDir+ "AutoFitMergedCells.xlsx");
+            wb.Save(dataDir+ "AutoFitMergedCells.out.xlsx");
             
             
         }

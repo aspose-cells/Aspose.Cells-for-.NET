@@ -41,7 +41,7 @@ namespace Aspose.Cells.Examples.AdvancedTopics.SmartMarkers
             //Process the markers.
             designer.Process();
             //Save the Excel file.
-            designer.Workbook.Save(dataDir+ @"out_SmartBook.xls");
+            designer.Workbook.Save(dataDir+ @"out_SmartBook.out.xls");
             
             
         }

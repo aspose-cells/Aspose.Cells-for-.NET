@@ -19,7 +19,7 @@ namespace Aspose.Cells.Examples.Worksheets.Display
             workbook.Settings.ShowTabs = false;
 
             //Saving the modified Excel file
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(dataDir + "output.out.xls");
         }
     }
 }

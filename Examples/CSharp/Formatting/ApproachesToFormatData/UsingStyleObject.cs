@@ -67,7 +67,7 @@ namespace Aspose.Cells.Examples.Formatting.ApproachesToFormatData
 
 
             //Saving the Excel file
-            workbook.Save(dataDir + "book1.xls");
+            workbook.Save(dataDir + "book1.out.xls");
 
         }
     }

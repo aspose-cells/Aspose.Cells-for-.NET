@@ -20,7 +20,7 @@ namespace Aspose.Cells.Examples.Articles
             options.PresentationPreference = true;
 
             //Save the Excel file to HTML with specified option
-            workbook.Save(dataDir+ "outPresentationlayout1.html", options);
+            workbook.Save(dataDir+ "outPresentationlayout1.out.html", options);
             
             
         }

@@ -50,7 +50,7 @@ namespace Aspose.Cells.Examples.Charts
             group.SeriesColor = clr;
 
             //Save the excel file
-            book.Save(dataDir + "Book1_out.xlsx");
+            book.Save(dataDir + "Book1.out.xlsx");
 
         }
     }

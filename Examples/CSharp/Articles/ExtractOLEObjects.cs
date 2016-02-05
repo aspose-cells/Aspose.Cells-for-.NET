@@ -54,7 +54,7 @@ namespace Aspose.Cells.Examples.Articles
                     ms.Write(ole.ObjectData, 0, ole.ObjectData.Length);
                     Workbook oleBook = new Workbook(ms);
                     oleBook.Settings.IsHidden = false;
-                    oleBook.Save(dataDir+ "outOle" + i + ".xlsx");
+                    oleBook.Save(dataDir+ "outOle" + i + ".out.xlsx");
                 }
 
                 //Create the files based on the oleobject format types.

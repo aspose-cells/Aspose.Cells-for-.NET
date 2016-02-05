@@ -20,7 +20,7 @@ namespace Aspose.Cells.Examples.Articles
             sheet.DisplayZeros = false;
 
             //Save the workbook
-            workbook.Save(dataDir+ "outputfile.xlsx");
+            workbook.Save(dataDir+ "outputfile.out.xlsx");
             
             
         }

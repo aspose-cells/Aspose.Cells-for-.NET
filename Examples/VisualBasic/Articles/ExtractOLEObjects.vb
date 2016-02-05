@@ -1,11 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
 Imports Microsoft.VisualBasic
 Imports System.IO
 
@@ -52,7 +44,7 @@ Namespace Aspose.Cells.Examples.Articles
                     ms.Write(ole.ObjectData, 0, ole.ObjectData.Length)
                     Dim oleBook As Workbook = New Workbook(ms)
                     oleBook.Settings.IsHidden = False
-                    oleBook.Save(dataDir & "outOle" & i & ".xlsx")
+                    oleBook.Save(dataDir & "outOle" & i & ".out.xlsx")
 
                     'Create the files based on the oleobject format types.
                 Else

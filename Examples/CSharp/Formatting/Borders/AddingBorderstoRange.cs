@@ -45,7 +45,7 @@ namespace Aspose.Cells.Examples.Formatting.Borders
             range.SetOutlineBorder(BorderType.RightBorder, CellBorderType.Thick, Color.Blue);
 
             //Saving the Excel file
-            workbook.Save(dataDir + "book1.xls");
+            workbook.Save(dataDir + "book1.out.xls");
 
         }
     }

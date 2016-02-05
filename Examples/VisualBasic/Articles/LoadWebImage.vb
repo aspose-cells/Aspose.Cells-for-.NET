@@ -1,11 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
 Imports Microsoft.VisualBasic
 Imports System.IO
 
@@ -46,7 +38,7 @@ Namespace Aspose.Cells.Examples.Articles
                 pictures.Add(1, 1, objImage)
 
                 'Save the excel file
-                wb.Save(dataDir & "webimagebook.xlsx")
+                wb.Save(dataDir & "webimagebook.out.xlsx")
             Catch ex As Exception
                 'Write the error message on the console
                 Console.WriteLine(ex.Message)

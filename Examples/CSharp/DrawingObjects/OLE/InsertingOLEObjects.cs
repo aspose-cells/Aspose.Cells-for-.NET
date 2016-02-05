@@ -61,7 +61,7 @@ namespace Aspose.Cells.Examples.DrawingObjects.OLE
             sheet.OleObjects[0].ObjectData = objectData;
 
             //Save the excel file
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(dataDir + "output.out.xls");
 
         }
     }

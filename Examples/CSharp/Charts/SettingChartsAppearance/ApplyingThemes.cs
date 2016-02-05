@@ -34,7 +34,7 @@ namespace Aspose.Cells.Examples.Charts.SettingChartsAppearance
             chart.NSeries[0].Area.FillFormat.SolidFill.CellsColor = cc;
 
             //Save the Excel file
-            workbook.Save(dataDir + "output.xlsx");
+            workbook.Save(dataDir + "output.out.xlsx");
 
         }
     }

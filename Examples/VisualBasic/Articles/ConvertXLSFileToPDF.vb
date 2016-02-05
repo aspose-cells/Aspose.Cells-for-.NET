@@ -1,11 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
 Imports Microsoft.VisualBasic
 Imports System
 Imports System.IO
@@ -23,7 +15,7 @@ Namespace Aspose.Cells.Examples.Articles
                 'Get the template excel file path.
                 Dim designerFile As String = dataDir & "SampleInput.xlsx"
                 'Specify the pdf file path.
-                Dim pdfFile As String = dataDir & "Output.pdf"
+                Dim pdfFile As String = dataDir & "Output.out.pdf"
                 'Create a new Workbook.
                 'Open the template excel file which you have to
                 Dim wb As New Global.Aspose.Cells.Workbook(designerFile)

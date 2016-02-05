@@ -9,7 +9,7 @@ namespace Aspose.Cells.Examples.Files.Utility
         static void Main() {
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             string inputPath = dataDir + "Sample.xlsx";
-            string outputPath = dataDir + "Output-Chart.pdf";
+            string outputPath = dataDir + "Output-Chart.out.pdf";
 
 
             //Load excel file containing charts

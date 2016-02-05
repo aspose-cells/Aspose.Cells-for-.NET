@@ -89,7 +89,7 @@ namespace Aspose.Cells.Examples.DrawingObjects.Controls
             textbox1.Placement = PlacementType.MoveAndSize;
 
             //Save the excel file.
-            workbook.Save(dataDir + "book1.xls");
+            workbook.Save(dataDir + "book1.out.xls");
 
         }
     }

@@ -43,7 +43,7 @@ namespace Aspose.Cells.Examples.Formatting.ConfiguringAlignmentSettings
             cell.SetStyle(style);
 
             //Saving the Excel file
-            workbook.Save(dataDir + "book1.xls", SaveFormat.Excel97To2003);
+            workbook.Save(dataDir + "book1.out.xls", SaveFormat.Excel97To2003);
  
         }
     }

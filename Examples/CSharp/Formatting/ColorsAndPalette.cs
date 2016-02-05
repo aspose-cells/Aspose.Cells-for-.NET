@@ -44,7 +44,7 @@ namespace Aspose.Cells.Examples.Formatting
             cell.SetStyle(styleObject);
 
             //Saving the Excel file
-            workbook.Save(dataDir + "book1.xls", SaveFormat.Auto);
+            workbook.Save(dataDir + "book1.out.xls", SaveFormat.Auto);
 
         }
     }

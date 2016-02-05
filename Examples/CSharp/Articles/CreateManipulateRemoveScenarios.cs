@@ -33,7 +33,7 @@ namespace Aspose.Cells.Examples.Articles
 
 
             //Save the Excel file.
-            workbook.Save(dataDir+ "outBk_scenarios1.xlsx");
+            workbook.Save(dataDir+ "outBk_scenarios1.out.xlsx");
             
         }
     }

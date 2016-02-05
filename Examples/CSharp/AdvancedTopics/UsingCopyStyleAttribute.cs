@@ -53,7 +53,7 @@ namespace Aspose.Cells.Examples.AdvancedTopics
             designer.Process();
 
             //Save the Excel file
-            workbook.Save(filePath + dataDir+ "_out1.xlsx", SaveFormat.Xlsx);
+            workbook.Save(filePath + dataDir+ "_out1.out.xlsx", SaveFormat.Xlsx);
             
             
         }

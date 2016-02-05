@@ -21,7 +21,7 @@ namespace Aspose.Cells.Examples.Articles.ConvertExcelChartToImage
             Aspose.Cells.Charts.Chart chart = workbook.Worksheets[0].Charts[0];
 
             //Convert the chart to an image file.
-            chart.ToImage(dataDir+ "ColumnChart.jpeg", System.Drawing.Imaging.ImageFormat.Jpeg);
+            chart.ToImage(dataDir+ "ColumnChart.out.jpeg", System.Drawing.Imaging.ImageFormat.Jpeg);
             
             
         }

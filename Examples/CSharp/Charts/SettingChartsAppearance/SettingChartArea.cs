@@ -69,7 +69,7 @@ namespace Aspose.Cells.Examples.Charts.SettingChartsAppearance
             chart.NSeries[1].Area.FillFormat.SetOneColorGradient(Color.Lime, 1, Aspose.Cells.Drawing.GradientStyleType.Horizontal, 1);
 
             //Saving the Excel file
-            workbook.Save(dataDir + "book1.xls");
+            workbook.Save(dataDir + "book1.out.xls");
  
         }
     }

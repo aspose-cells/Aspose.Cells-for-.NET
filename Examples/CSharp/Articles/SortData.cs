@@ -48,7 +48,7 @@ namespace Aspose.Cells.Examples.Articles
             sorter.Sort(workbook.Worksheets[0].Cells, ca);
 
             //Saving the excel file in the default (that is Excel 2003) format
-            workbook.Save(dataDir+ "outBook_SortedData.xlsx");
+            workbook.Save(dataDir+ "outBook_SortedData.out.xlsx");
             
         }
     }

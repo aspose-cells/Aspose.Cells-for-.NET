@@ -41,7 +41,7 @@ namespace Aspose.Cells.Examples.Articles
                 pictures.Add(1, 1, objImage);
 
                 //Save the excel file
-                wb.Save(dataDir+ "webimagebook.xlsx");
+                wb.Save(dataDir+ "webimagebook.out.xlsx");
             }
             catch (Exception ex)
             {

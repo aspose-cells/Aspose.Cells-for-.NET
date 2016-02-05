@@ -46,7 +46,7 @@ designer.SetDataSource("Person", list);
 designer.Process(false);
 
 //save the resultant file
-designer.Workbook.Save(dataDir+ "result.xls");
+designer.Workbook.Save(dataDir+ "result.out.xls");
     }
             
             

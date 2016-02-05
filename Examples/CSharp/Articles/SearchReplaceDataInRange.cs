@@ -43,7 +43,7 @@ namespace Aspose.Cells.Examples.Articles
             } while (true);
 
             //Save the workbook
-            workbook.Save(dataDir+ "output.xlsx");
+            workbook.Save(dataDir+ "output.out.xlsx");
 
             
         }

@@ -1,11 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
 Imports Microsoft.VisualBasic
 Imports System.IO
 
@@ -24,7 +16,7 @@ Namespace Aspose.Cells.Examples.Articles
             pic.HeightInch = 1.04
             pic.WidthInch = 2.6
             'Save the Excel file.
-            workbook.Save(dataDir & "outLinkedPicture.xlsx")
+            workbook.Save(dataDir & "outLinkedPicture.out.xlsx")
 
 
         End Sub

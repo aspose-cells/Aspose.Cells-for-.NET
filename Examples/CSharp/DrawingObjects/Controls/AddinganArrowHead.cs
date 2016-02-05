@@ -51,7 +51,7 @@ namespace Aspose.Cells.Examples.DrawingObjects.Controls
             workbook.Worksheets[0].IsGridlinesVisible = false;
 
             //Save the excel file.
-            workbook.Save(dataDir+ "book1.xls");
+            workbook.Save(dataDir+ "book1.out.xls");
 
         }
     }

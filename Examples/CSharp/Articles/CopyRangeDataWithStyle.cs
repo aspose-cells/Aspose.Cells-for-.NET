@@ -67,7 +67,7 @@ namespace Aspose.Cells.Examples.Articles
             range2.Copy(range);
 
             //Save the excel file.
-            workbook.Save(dataDir+ "CopyRange.xlsx");
+            workbook.Save(dataDir+ "CopyRange.out.xlsx");
 
             
         }

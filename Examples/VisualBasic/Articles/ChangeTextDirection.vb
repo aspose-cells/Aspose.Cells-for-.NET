@@ -1,11 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
 Imports Microsoft.VisualBasic
 Imports System.IO
 
@@ -40,7 +32,7 @@ Namespace Aspose.Cells.Examples.Articles
             comment.Note = "This is my Comment Text. This is test"
 
             'Save the Excel file
-            wb.Save(dataDir & "OutCommentShape.xlsx")
+            wb.Save(dataDir & "OutCommentShape.out.xlsx")
 
 
 

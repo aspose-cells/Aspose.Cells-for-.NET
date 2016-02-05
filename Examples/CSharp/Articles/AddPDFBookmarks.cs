@@ -104,7 +104,7 @@ namespace Aspose.Cells.Examples.Articles
             pdfSaveOptions.Bookmark = pbeRoot;
 
             //Save the pdf file
-            workbook.Save(dataDir+ "PDFBookmarks_test.pdf", pdfSaveOptions);
+            workbook.Save(dataDir+ "PDFBookmarks_test.out.pdf", pdfSaveOptions);
             
             
         }

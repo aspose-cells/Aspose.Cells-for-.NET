@@ -44,7 +44,7 @@ namespace Aspose.Cells.Examples.Data.AddOn.NamedRanges
 
 
             //Save the excel file.
-            workbook.Save(dataDir + "rangecells.xls");
+            workbook.Save(dataDir + "rangecells.out.xls");
         }
     }
 }

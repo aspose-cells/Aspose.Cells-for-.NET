@@ -60,7 +60,7 @@ namespace Aspose.Cells.Examples.Data.Handling.Importing
             worksheet.Cells.ImportDataTable(dataTable, true, "A1");
 
             //Saving the Excel file
-            workbook.Save(dataDir + "DataImport.xls");
+            workbook.Save(dataDir + "DataImport.out.xls");
  
         }
     }

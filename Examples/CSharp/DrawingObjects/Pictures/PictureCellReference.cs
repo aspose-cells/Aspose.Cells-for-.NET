@@ -36,7 +36,7 @@ namespace Aspose.Cells.Examples.DrawingObjects.Pictures
             workbook.Worksheets[0].Shapes.UpdateSelectedValue();
 
             //Save the Excel file.
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(dataDir + "output.out.xls");
 
         }
     }
