@@ -1,0 +1,90 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="Aspose .NET Dynamic Forms Builder for DNN using Apose.Cells" type="Module" version="00.00.01">
+      <friendlyName>Aspose .NET Dynamic Forms Builder</friendlyName>
+      <description>Aspose .NET Dynamic Forms Builder Module allows users to create forms fields dynamicaly and save all data in to excel sheet along with form configurations and export to Microsoft Excel or OpenOffice Spreadsheet. This module demonstrates the powerful spreadsheet building feature provided by Aspose.Cells</description>
+      <iconFile>Images/aspose_logo.gif</iconFile>
+      <owner>
+        <name>Aspose.com</name>
+        <organization>Aspose.com</organization>
+        <url>http://www.aspose.com</url>
+        <email>marketplace@aspose.com</email>
+      </owner>
+      <license src="License.txt"></license>
+      <releaseNotes src="ReleaseNotes.txt"></releaseNotes>
+      <dependencies>
+        <dependency type="CoreVersion">07.00.02</dependency>
+      </dependencies>
+
+      <components>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>DesktopModules/Aspose.DNN.DynamicFormGenerator.Excel</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+
+        <component type="Module">
+          <desktopModule>
+            <moduleName>Aspose.DNN.DynamicFormGenerator.Excel</moduleName>
+            <foldername>AsposeD.NN.DynamicFormGenerator</foldername>
+            <supportedFeatures />
+            <moduleDefinitions>
+              <moduleDefinition>
+                <friendlyName>Aspose.DNN.DynamicFormGenerator.Excel</friendlyName>
+                <defaultCacheTime>0</defaultCacheTime>
+                <moduleControls>
+                  <moduleControl>
+                    <controlKey />
+                    <controlSrc>DesktopModules/Aspose.DNN.DynamicFormGenerator.Excel/View.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle />
+                    <controlType>View</controlType>
+                    <iconFile>Images/aspose_logo.gif</iconFile>
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                  <moduleControl>
+                    <controlKey>Edit</controlKey>
+                    <controlSrc>DesktopModules/Aspose.DNN.DynamicFormGenerator.Excel/Edit.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle>Aspose Dynamic Forms Generator - Export to Excel</controlTitle>
+                    <controlType>Edit</controlType>
+                    <iconFile>Images/aspose_logo.gif</iconFile>
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                    <supportsPopUps>True</supportsPopUps>
+                  </moduleControl>
+                  <moduleControl>
+                    <controlKey>Settings</controlKey>
+                    <controlSrc>DesktopModules/Aspose.DNN.DynamicFormGenerator.Excel/Settings.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle>Aspose Dynamic Forms Generator - Settings</controlTitle>
+                    <controlType>Edit</controlType>
+                    <iconFile>Images/aspose_logo.gif</iconFile>
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                </moduleControls>
+              </moduleDefinition>
+            </moduleDefinitions>
+          </desktopModule>
+        </component>
+        <component type="Assembly">
+          <assemblies>
+            <assembly>
+              <name>Aspose.DNN.DynamicFormGenerator.Excel.dll</name>
+              <path>bin</path>
+            </assembly>
+            <assembly>
+              <name>Aspose.Cells.dll</name>
+              <path>bin</path>
+            </assembly>
+          </assemblies>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
