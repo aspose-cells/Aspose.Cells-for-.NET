@@ -17,7 +17,7 @@ namespace Aspose.Cells.Examples.Articles.OptimizingMemoryUsage
 
             //Instantiate the Workbook
             //Load the Big Excel file having large Data set in it
-            Workbook wb = new Workbook(dataDir+ "Book1.xlsx", opt);
+            Workbook wb = new Workbook(dataDir+ "Book1.out.xlsx", opt);
             
         }
     }

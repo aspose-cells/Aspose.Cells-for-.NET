@@ -25,7 +25,7 @@ Namespace Aspose.Cells.Examples.Data.AddOn.NamedRanges
             name.Text = "NewRange"
 
             'Save the Excel file
-            workbook.Save(dataDir & "RenamingRange.xlsx")
+            workbook.Save(dataDir & "RenamingRange.out.xlsx")
         End Sub
     End Class
 End Namespace

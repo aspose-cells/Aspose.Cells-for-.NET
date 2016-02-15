@@ -60,7 +60,7 @@ Namespace Aspose.Cells.Examples.Data.Handling.Importing
 
 
             'Saving the Excel file
-            workbook.Save(dataDir & "DataImport.xls")
+            workbook.Save(dataDir & "DataImport.out.xls")
 
         End Sub
     End Class

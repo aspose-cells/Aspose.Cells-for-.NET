@@ -47,7 +47,7 @@ Namespace Aspose.Cells.Examples.Data.AddOn.NamedRanges
             End If
 
             'Save the excel file.
-            workbook.Save(dataDir & "rngIntersection.xls")
+            workbook.Save(dataDir & "rngIntersection.out.xls")
         End Sub
     End Class
 End Namespace

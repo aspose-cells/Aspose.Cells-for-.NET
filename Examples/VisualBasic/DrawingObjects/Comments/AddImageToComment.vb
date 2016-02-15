@@ -37,7 +37,7 @@ Namespace Aspose.Cells.Examples.DrawingObjects.Comments
             comment.CommentShape.FillFormat.ImageData = ms.ToArray()
 
             'Save the workbook
-            workbook.Save(dataDir & "book1.xlsx", Global.Aspose.Cells.SaveFormat.Xlsx)
+            workbook.Save(dataDir & "book1.out.xlsx", Global.Aspose.Cells.SaveFormat.Xlsx)
 
 
         End Sub

@@ -55,7 +55,7 @@ Namespace Aspose.Cells.Examples.Data.AddOn.NamedRanges
             Next i
 
             'Save the excel file.
-            workbook.Save(dataDir & "rngUnion.xls")
+            workbook.Save(dataDir & "rngUnion.out.xls")
         End Sub
     End Class
 End Namespace

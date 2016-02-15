@@ -35,7 +35,7 @@ Namespace Aspose.Cells.Examples.Data.Handling.Importing
             worksheet.Cells.ImportArrayList(list, 0, 0, True)
 
             'Saving the Excel file
-            workbook.Save(dataDir & "DataImport.xls")
+            workbook.Save(dataDir & "DataImport.out.xls")
 
         End Sub
     End Class

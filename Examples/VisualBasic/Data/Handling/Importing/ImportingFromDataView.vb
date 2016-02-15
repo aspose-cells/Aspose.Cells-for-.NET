@@ -57,7 +57,7 @@ Namespace Aspose.Cells.Examples.Data.Handling.Importing
             worksheet.Cells.ImportDataView(dataTable.DefaultView, True, 0, 0, False)
 
             'Saving the Excel file
-            workbook.Save(dataDir & "DataImport.xls")
+            workbook.Save(dataDir & "DataImport.out.xls")
         End Sub
     End Class
 End Namespace

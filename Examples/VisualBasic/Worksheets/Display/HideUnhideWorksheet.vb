@@ -1,10 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
 Imports System.IO
 
 Imports Aspose.Cells
@@ -29,7 +22,7 @@ Namespace Aspose.Cells.Examples.Worksheets.Display
             worksheet.IsVisible = False
 
             'Saving the modified Excel file in default (that is Excel 2003) format
-            workbook.Save(dataDir & "output.xls")
+            workbook.Save(dataDir & "output.out.xls")
 
             'Closing the file stream to free all resources
             fstream.Close()

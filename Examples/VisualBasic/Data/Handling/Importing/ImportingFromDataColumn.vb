@@ -56,7 +56,7 @@ Namespace Aspose.Cells.Examples.Data.Handling.Importing
             sheet.Cells.ImportDataColumn(dataTable, True, 0, 0, 1, False)
 
             'Save workbook
-            book.Save(dataDir & "DataImport.xls")
+            book.Save(dataDir & "DataImport.out.xls")
 
 
         End Sub

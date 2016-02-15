@@ -1,10 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
 Imports System.IO
 
 Imports Aspose.Cells
@@ -48,7 +41,7 @@ Namespace Aspose.Cells.Examples.Files.Utility
             chart.NSeries.Add("A1:B3", True)
 
             'Converting chart to image.
-            chart.ToImage(dataDir & "Chart.emf", System.Drawing.Imaging.ImageFormat.Emf)
+            chart.ToImage(dataDir & "Chart.out.emf", System.Drawing.Imaging.ImageFormat.Emf)
 
             ' Display result, so that user knows the processing has finished.
             System.Console.WriteLine("Image generated successfully.")

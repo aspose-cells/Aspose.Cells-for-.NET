@@ -16,7 +16,7 @@ Namespace Aspose.Cells.Examples.Articles
             meta.CustomDocumentProperties.Add("test", "test")
 
             ' Save the metadata info
-            meta.Save(dataDir + "Sample2.xlsx")
+            meta.Save(dataDir + "Sample2.out.xlsx")
 
             ' Open the workbook
             Dim w As Workbook = New Workbook(dataDir + "Sample2.xlsx")

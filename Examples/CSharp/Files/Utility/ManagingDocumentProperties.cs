@@ -49,7 +49,7 @@ namespace Aspose.Cells.Examples.Files.Utility
             customProperties.Remove("Publisher");
 
             //Save the file with added properties
-            workbook.Save(dataDir + "Test_Workbook_RemovedProperty.xls");
+            workbook.Save(dataDir + "Test_Workbook_RemovedProperty.out.xls");
 
         }
     }

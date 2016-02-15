@@ -14,7 +14,7 @@ Namespace Aspose.Cells.Examples.Articles
             cells("B1").PutValue("data2")
             cells("A2").PutValue("data3")
             cells("B2").PutValue("data4")
-            workbook.Save(dataDir & "book1.xlsx")
+            workbook.Save(dataDir & "book1.out.xlsx")
 
 
         End Sub

@@ -1,11 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2014 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
 Imports Microsoft.VisualBasic
 Imports System.IO
 
@@ -90,7 +82,7 @@ Namespace Aspose.Cells.Examples.Formatting
             'AutoFit M Column in the worksheet
             _sheet.AutoFitColumn(12)
             'Specify the output file path
-            Dim outfn As String = dataDir & "Testoutput.xlsx"
+            Dim outfn As String = dataDir & "Testoutput.out.xlsx"
             'Save the excel file
             book.Save(outfn, SaveFormat.Xlsx)
         End Sub

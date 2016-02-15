@@ -1,10 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
 Imports System.IO
 
 Imports Aspose.Cells
@@ -47,13 +40,13 @@ Namespace Aspose.Cells.Examples.Files.Utility
             Dim source As String = customProperty3.Source
 
             'Save the file with added properties
-            workbook.Save(dataDir & "Test_Workbook.xls")
+            workbook.Save(dataDir & "Test_Workbook.out.xls")
 
             'Removing a custom document property
             customProperties.Remove("Publisher")
 
             'Save the file with added properties
-            workbook.Save(dataDir & "Test_Workbook_RemovedProperty.xls")
+            workbook.Save(dataDir & "Test_Workbook_RemovedProperty.out.xls")
 
         End Sub
     End Class

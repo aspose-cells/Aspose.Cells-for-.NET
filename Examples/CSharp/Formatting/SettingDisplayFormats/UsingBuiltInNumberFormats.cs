@@ -60,7 +60,7 @@ namespace Aspose.Cells.Examples.Formatting.SettingDisplayFormats
             worksheet.Cells["A3"].SetStyle(style);
 
             //Saving the Excel file
-            workbook.Save(dataDir + "book1.xls", SaveFormat.Excel97To2003);
+            workbook.Save(dataDir + "book1.out.xls", SaveFormat.Excel97To2003);
  
         }
     }

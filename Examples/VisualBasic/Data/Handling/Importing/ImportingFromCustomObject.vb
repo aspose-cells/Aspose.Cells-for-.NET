@@ -41,7 +41,7 @@ Namespace Aspose.Cells.Examples.Data.Handling.Importing
             book.Worksheets(0).AutoFitColumns()
 
             'Save the Excel file
-            book.Save(dataDir & "ImportedCustomObjects.xls")
+            book.Save(dataDir & "ImportedCustomObjects.out.xls")
 
         End Sub
     End Class

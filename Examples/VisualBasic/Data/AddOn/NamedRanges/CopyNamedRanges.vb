@@ -52,7 +52,7 @@ Namespace Aspose.Cells.Examples.Data.AddOn.NamedRanges
             range2.Copy(range1)
 
             'Save the excel file.
-            workbook.Save(dataDir & "copyranges.xls")
+            workbook.Save(dataDir & "copyranges.out.xls")
         End Sub
     End Class
 End Namespace

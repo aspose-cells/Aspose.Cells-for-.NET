@@ -1,10 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
 Imports System.IO
 
 Imports Aspose.Cells
@@ -20,7 +13,7 @@ Namespace Aspose.Cells.Examples.Files.Utility
             Dim workbook As New Workbook(dataDir & "Book1.xls")
 
             'Save the document in PDF format
-            workbook.Save(dataDir & "outBook1.pdf", SaveFormat.Pdf)
+            workbook.Save(dataDir & "Book1.out.pdf", SaveFormat.Pdf)
 
             ' Display result, so that use know the processing has finished.
             System.Console.WriteLine("Conversion completed.")

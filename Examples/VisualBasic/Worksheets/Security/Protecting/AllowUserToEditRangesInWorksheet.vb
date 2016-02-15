@@ -1,11 +1,3 @@
-'////////////////////////////////////////////////////////////////////////
-' Copyright 2001-2013 Aspose Pty Ltd. All Rights Reserved.
-'
-' This file is part of Aspose.Cells. The source code in this file
-' is only intended as a supplement to the documentation, and is provided
-' "as is", without warranty of any kind, either expressed or implied.
-'////////////////////////////////////////////////////////////////////////
-
 Imports Microsoft.VisualBasic
 Imports System.IO
 
@@ -40,7 +32,7 @@ Namespace Aspose.Cells.Examples.Worksheets.Security.Protecting
             sheet.Protect(ProtectionType.All)
 
             'Save the Excel file
-            book.Save(dataDir & "protectedrange.xls")
+            book.Save(dataDir & "protectedrange.out.xls")
 
         End Sub
     End Class
