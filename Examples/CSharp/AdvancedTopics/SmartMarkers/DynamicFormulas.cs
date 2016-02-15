@@ -4,7 +4,7 @@ using Aspose.Cells;
 
 namespace Aspose.Cells.Examples.AdvancedTopics.SmartMarkers
 {
-    public class DynamicFormulass
+    public class DynamicFormulas
     {
         public static void Main(string[] args)
         {

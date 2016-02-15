@@ -20,7 +20,7 @@ Namespace Aspose.Cells.Examples.Articles
             options.PageCount = 2
 
             'Save the PDF file
-            wb.Save(dataDir & "outPDF1out..pdf", options)
+            wb.Save(dataDir & "output.pdf", options)
 
 
         End Sub
