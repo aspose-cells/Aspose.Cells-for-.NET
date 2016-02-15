@@ -1,5 +1,5 @@
-﻿<h3>Aspose .NET Dynamic Forms Builder for DNN Using Aspose.Cells</h3>
-    Aspose .NET Dynamic Forms Builder Module allows users to create forms fields dynamicaly and save all data in to excel sheet along with form configurations and export to Microsoft Excel or OpenOffice Spreadsheet. This module demonstrates the powerful spreadsheet building feature provided by Aspose.Cells.
+﻿<h3>Aspose.Cells Forms for DNN</h3>
+    Aspose.Cells Dynamic Forms DNN Module allows users to Generate Dynamic Questionnaire and Surveys, save user input into Excel Spreahsheet and Export the results into Excel Text CSV and OpenDocument Spreadsheet using Aspose.Cells. This module demonstrates the powerful spreadsheet building feature provided by Aspose.Cells.
 	<br />
 	This initial version of the module is enriched with the following cool features to make the Export process simple and easy to use
     <ul>
@@ -29,6 +29,6 @@
     <a href=http://www.aspose.com>Aspose</a> - Your File Format APIs<br />
 <hr/>
 <div class="License">
-    <h3>About Aspose .NET Dynamic Forms Builder for DNN using Aspose.Cells</h3>
-    <p>Aspose .NET Dynamic Forms Builder Module allows users to create forms fields dynamicaly and save all data in to excel sheet along with form configurations and export to Microsoft Excel or OpenOffice Spreadsheet.</p>    
+    <h3>About Aspose.Cells Forms for DNN</h3>
+    <p>Aspose.Cells Dynamic Forms DNN Module allows users to Generate Dynamic Questionnaire and Surveys, save user input into Excel Spreahsheet and Export the results into Excel Text CSV and OpenDocument Spreadsheet using Aspose.Cells.</p>    
 </div>
