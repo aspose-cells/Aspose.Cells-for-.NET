@@ -124,9 +124,9 @@
     <value>Allows you to provide a custom template for displaying the items. Use parameters for dynamic substitution ( ie. [CONTENT] [CREATEDDATE] [CREATEDBYUSER] [CREATEDBYUSERNAME] )</value>
   </data>
   <data name="ControlTitle_settings.Text" xml:space="preserve">
-    <value>Aspose Dynamic Form Generator - Settings</value>
+    <value>Aspose.Cells Forms for DNN - Settings</value>
   </data>
   <data name="ModuleHelp.Text" xml:space="preserve">
-    <value>About Aspose Dynamic Form Generator Settings</value>
+    <value>Aspose.Cells Forms for DNN Settings</value>
   </data>
 </root>
