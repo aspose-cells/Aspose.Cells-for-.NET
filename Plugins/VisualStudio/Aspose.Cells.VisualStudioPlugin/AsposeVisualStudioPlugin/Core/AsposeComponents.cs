@@ -20,7 +20,7 @@ namespace AsposeVisualStudioPluginCells.Core
             asposeCells.set_downloadUrl("");
             asposeCells.set_downloadFileName("aspose.Cells.zip");
             asposeCells.set_name(Constants.ASPOSE_COMPONENT);
-            asposeCells.set_remoteExamplesRepository("https://github.com/AamirWaseem/Aspose_Cells_NET.git");
+            asposeCells.set_remoteExamplesRepository("https://github.com/asposeCells/Aspose_Cells_NET.git");
             list.Add(Constants.ASPOSE_COMPONENT, asposeCells);
         }
     }
