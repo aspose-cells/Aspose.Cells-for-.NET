@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.Worksheets.Security
     {
         public static void Main(string[] args)
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -40,6 +41,7 @@ namespace Aspose.Cells.Examples.Worksheets.Security
 
             //Save the Excel file
             book.Save(dataDir + "protectedrange.out.xls");
+            //ExEnd:1
 
         }
     }
