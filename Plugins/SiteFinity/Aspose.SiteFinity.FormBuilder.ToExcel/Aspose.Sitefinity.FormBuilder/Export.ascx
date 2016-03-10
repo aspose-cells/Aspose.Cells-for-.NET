@@ -1,4 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Export.ascx.cs" Inherits="Aspose.Sitefinity.FormBuilder.Export" %>
+
  
 <style type="text/css">
         .Success {
@@ -156,8 +157,6 @@
         <fieldset class="fieldset" align="center">
             <legend align="center" class="legend">
                 <img src="Addons/Aspose.SiteFinity.FormBuilder.ToExcel/Uploads/Images/aspose_logo.gif" class="clsImage" /><label class="clslabel">Manage Form Fields</label></legend>
-
-
             <div>
                  
                   <label class="clslabel">Select Export Type </label>
@@ -173,10 +172,12 @@
                 </asp:dropdownlist>
                 <br />
 
+
 				<div class="bottomPadding">
                 <asp:button id="btnExport" cssclass="btn3" runat="server" visible="true" onclick="btnExport_OnClick" text="Export Data"></asp:button>
                 <asp:button id="btnback" cssclass="btn3" runat="server" visible="true" onclick="btnback_OnClick" text="Back"></asp:button>
                 </div>
+                
             </div>
 
         </fieldset>

@@ -190,14 +190,13 @@
             <legend align="center" class="legend">
                 <img src="Addons/Aspose.SiteFinity.FormBuilder.ToExcel/Uploads/Images/aspose_logo.gif" style="vertical-align: bottom;" /><label class="clslabel">Manage Form Fields</label></legend>
 
-
             <div class="form-groupMessage">
                 <div>
                     <asp:label id="lbl_Msg" runat="server" text=""></asp:label>
                 </div>
             </div>
 
-            <table class="table table-bordered">
+            <table class="table">
                 <thead>
                     <tr>
                         <th>Field Name</th>
