@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.Files.Utility
     {
         public static void Main(string[] args)
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -32,6 +33,7 @@ namespace Aspose.Cells.Examples.Files.Utility
             //Export the whole workbook to XPS
             Aspose.Cells.Rendering.WorkbookRender wr = new Aspose.Cells.Rendering.WorkbookRender(workbook, options);
             wr.ToImage(dataDir + "out_whole_printingxps.out.xps");
+            //ExEnd:1
         }
     }
 }
