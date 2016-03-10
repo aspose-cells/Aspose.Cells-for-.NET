@@ -9,6 +9,7 @@ namespace Aspose.Cells.Examples.Files.Handling
     {
         public static void Main(string[] args)
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             string sampleFile = "Sample.out.xlsx";
@@ -34,6 +35,7 @@ namespace Aspose.Cells.Examples.Files.Handling
             Console.WriteLine("Sheet1: A1: {0}", loadWorkbook.Worksheets["Sheet1"].Cells["A1"].Value);
             Console.WriteLine("Sheet1: A2: {0}", loadWorkbook.Worksheets["Sheet2"].Cells["A1"].Value);
             Console.WriteLine("Sheet1: A3: {0}", loadWorkbook.Worksheets["Sheet3"].Cells["A1"].Value);
+            //ExEnd:1
         }
     }
 }
