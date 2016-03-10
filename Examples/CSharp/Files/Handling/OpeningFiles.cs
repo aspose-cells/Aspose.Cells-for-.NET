@@ -9,6 +9,7 @@ namespace Aspose.Cells.Examples.Files.Handling
     {
         public static void Main(string[] args)
         {
+            //Exstart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             
@@ -120,6 +121,7 @@ namespace Aspose.Cells.Examples.Files.Handling
             //Create a Workbook object and opening the file from its path
             Workbook wb = new Workbook(dataDir + "Book1.xlsx", loadOptions7);
             Console.WriteLine("File data imported successfully!");
+            //ExEnd:1
         }
     }
 }
