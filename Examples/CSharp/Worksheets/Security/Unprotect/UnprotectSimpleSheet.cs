@@ -6,8 +6,10 @@ namespace Aspose.Cells.Examples.Worksheets.Security.Unprotect
 {
     public class UnprotectSimpleSheet
     {
+    
         public static void Main(string[] args)
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -22,7 +24,7 @@ namespace Aspose.Cells.Examples.Worksheets.Security.Unprotect
 
             //Saving the Workbook
             workbook.Save(dataDir + "output.out.xls", SaveFormat.Excel97To2003);
-
+            //ExEnd:1
 
         }
     }
