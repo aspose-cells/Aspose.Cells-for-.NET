@@ -193,7 +193,7 @@
 <div class="ajust" role="form" align="center">
     <fieldset class="fieldset">
         <legend align="center" class="legend">
-            <img src="Addons/Aspose.SiteFinity.FormBuilder.ToExcel/Uploads/Images/aspose_logo.gif" />
+            <img src="Addons/Aspose.SiteFinity.FormBuilder.ToExcel/Uploads/Images/aspose_logo.gif"/>
             <asp:Label ID="lblTitle" runat="server"></asp:Label>
         </legend>
         <div class="form-group">

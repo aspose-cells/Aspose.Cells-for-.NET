@@ -401,8 +401,9 @@ namespace Aspose.Sitefinity.FormBuilder
                         license.SetLicense(licenseFile);
                     }
 
+
                     //Creating a file stream containing the Excel file to be opened
-                    FileStream fstream = new FileStream(Server.MapPath("~/uploads/AsposeDynamicFormsDataFile.xlsx"), FileMode.Open, FileAccess.Read);
+                    FileStream fstream = new FileStream(Server.MapPath("~/Addons/Aspose.SiteFinity.FormBuilder.ToExcel/uploads/AsposeDynamicFormsDataFile.xlsx"), FileMode.Open, FileAccess.Read);
 
                     //Instantiating a Workbook object
                     //Opening the Excel file through the file stream
@@ -510,7 +511,8 @@ namespace Aspose.Sitefinity.FormBuilder
                                         selectedRow = Convert.ToInt16(SetupSeletectedItemID);
 
                                     //Creating a file stream containing the Excel file to be opened
-                                    FileStream fstream = new FileStream(Server.MapPath("~/Uploads/AsposeDynamicFormsDataFile.xlsx"), FileMode.Open, FileAccess.Read);
+
+                                    FileStream fstream = new FileStream(Server.MapPath("~/Addons/Aspose.SiteFinity.FormBuilder.ToExcel/uploads/AsposeDynamicFormsDataFile.xlsx"), FileMode.Open, FileAccess.Read);
 
                                     //Instantiating a Workbook object
                                     //Opening the Excel file through the file stream
@@ -523,7 +525,7 @@ namespace Aspose.Sitefinity.FormBuilder
                                     fstream.Close();
                                     selectedRow = selectedRow + 1;
                                     worksheet.Cells.DeleteRow(selectedRow);
-                                    workbook.Save(Server.MapPath("~/uploads/AsposeDynamicFormsDataFile.xlsx"), SaveFormat.Xlsx);
+                                    workbook.Save(Server.MapPath("~/Addons/Aspose.SiteFinity.FormBuilder.ToExcel/uploads/AsposeDynamicFormsDataFile.xlsx"), SaveFormat.Xlsx);
                                     dataTable = worksheet.Cells.ExportDataTableAsString(0, 0, worksheet.Cells.Rows.Count, 10, true);
                                     Session["AsposeDynamicFormsdataTable"] = dataTable;
                                     lbl_Msg.Visible = true;
