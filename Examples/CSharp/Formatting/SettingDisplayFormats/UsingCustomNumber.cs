@@ -9,6 +9,7 @@ namespace Aspose.Cells.Examples.Formatting.SettingDisplayFormats
     {
         public static void Main(string[] args)
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -57,13 +58,14 @@ namespace Aspose.Cells.Examples.Formatting.SettingDisplayFormats
             style = worksheet.Cells["A3"].GetStyle();
 
             //Setting the custom display format to show value as currency
-            style.Custom = "£#,##0;[Red]$-#,##0";
+            style.Custom = "Â£#,##0;[Red]$-#,##0";
 
             //Applying the style to A3 cell
             worksheet.Cells["A3"].SetStyle(style);
 
             //Saving the Excel file
             workbook.Save(dataDir + "book1.out.xls", SaveFormat.Excel97To2003);
+            //ExEnd:1
  
         }
     }
