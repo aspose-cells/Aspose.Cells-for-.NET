@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.Data.AddOn.Hyperlinks
     {
         public static void Main(string[] args)
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -26,6 +27,7 @@ namespace Aspose.Cells.Examples.Data.AddOn.Hyperlinks
 
             //Saving the Excel file
             workbook.Save(dataDir + "output.out.xls");
+            //ExEnd:1
 
         }
     }
