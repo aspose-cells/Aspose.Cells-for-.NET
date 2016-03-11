@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.Data.AddOn.NamedRanges
     {
         public static void Main(string[] args)
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             
@@ -45,6 +46,7 @@ namespace Aspose.Cells.Examples.Data.AddOn.NamedRanges
 
             //Save the excel file.
             workbook.Save(dataDir + "rangecells.out.xls");
+            //ExEnd:1
         }
     }
 }
