@@ -12,7 +12,6 @@ namespace Aspose.Cells.Examples.Files.Handling
             //Exstart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            // 2.
             // Opening through Stream
             //Create a Stream object
             FileStream fstream = new FileStream(dataDir + "Book2.xls", FileMode.Open);
