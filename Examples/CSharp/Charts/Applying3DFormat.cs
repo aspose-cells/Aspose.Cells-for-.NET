@@ -11,6 +11,7 @@ namespace Aspose.Cells.Examples.Charts
     {
         public static void Main(string[] args)
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -88,6 +89,7 @@ namespace Aspose.Cells.Examples.Charts
 
             //Save the Excel file
             book.Save(dataDir + "3d_format.out.xlsx");
+            //ExEnd:1
 
         }
     }
