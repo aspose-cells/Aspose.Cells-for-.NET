@@ -4,7 +4,7 @@ using Aspose.Cells;
 
 namespace Aspose.Cells.Examples.Files.Handling
 {
-    public class SavingFiles
+    public class SaveFileInExcel97-2003format
     {
         public static void Main(string[] args)
         {
