@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.Articles.ModifyExistingStyle
     {
         public static void Main()
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             //Create a workbook.
@@ -52,6 +53,7 @@ namespace Aspose.Cells.Examples.Articles.ModifyExistingStyle
 
             //Save the excel file. 
             workbook.Save(dataDir+ "book_styles.out.xls");
+            //ExEnd:1
             
             
         }
