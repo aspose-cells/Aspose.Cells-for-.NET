@@ -20,7 +20,8 @@ namespace Aspose.Cells.Examples.Files.Handling
             //Creating a Workbook object and opening an Excel file using its file path
             Workbook workbook1 = new Workbook(dataDir + "Book1.xls");
             Console.WriteLine("Workbook opened using path successfully!");
-            }
-            }
-            }
+            
+        }
+    }
+}
             
