@@ -13,9 +13,6 @@ namespace Aspose.Cells.Examples.Files.Handling
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             
-            
-
-            // 1.
             // Opening through Path
             //Creating a Workbook object and opening an Excel file using its file path
             Workbook workbook1 = new Workbook(dataDir + "Book1.xls");
