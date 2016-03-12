@@ -9,6 +9,7 @@ namespace Aspose.Cells.Examples.Data.Handling
     {
         public static void Main(string[] args)
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -62,6 +63,7 @@ namespace Aspose.Cells.Examples.Data.Handling
                     //Terminating the type checking of type of the cell data is null
                     case CellValueType.IsNull:
                         break;
+                        //ExEnd:1
                 }
 
             }
