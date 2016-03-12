@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.Articles.LineBreakTextWrapping
     {
         public static void Main()
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             //Create Workbook Object
@@ -35,6 +36,7 @@ namespace Aspose.Cells.Examples.Articles.LineBreakTextWrapping
 
             // Save Excel File
             wb.Save(dataDir+ "WrappingText.out.xlsx");
+            //ExEnd:1
             
             
         }
