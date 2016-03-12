@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.Articles.CopyRowsColumns
     {
         public static void Main()
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -26,6 +27,7 @@ namespace Aspose.Cells.Examples.Articles.CopyRowsColumns
             cells.CopyRows(cells, 0, 1, 10);
             //Save the excel file
             workbook.Save(dataDir + "outaspose-sample.out.xlsx");
+            //ExEnd:1
  
         }
     }
