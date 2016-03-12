@@ -8,7 +8,7 @@ namespace Aspose.Cells.Examples.Articles.OptimizingMemoryUsage
     {
         public static void Main()
         {
-            //ExEnd:1
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             //Specify the LoadOptions
