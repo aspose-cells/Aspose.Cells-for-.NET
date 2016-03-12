@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.Articles.CopyShapesBetweenWorksheets
     {
         public static void Main()
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -26,6 +27,7 @@ namespace Aspose.Cells.Examples.Articles.CopyShapesBetweenWorksheets
 
             //Save the Worksheet
             workbook.Save(dataDir+ "Controls.out.xlsx");
+            //ExEnd:1
             
         }
     }
