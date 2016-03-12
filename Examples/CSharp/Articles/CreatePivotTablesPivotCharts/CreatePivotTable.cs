@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.Articles.CreatePivotTablesPivotCharts
     {
         public static void Main()
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -418,6 +419,7 @@ namespace Aspose.Cells.Examples.Articles.CreatePivotTablesPivotCharts
             pivotTable.DataFields[0].NumberFormat = "$#,##0.00";
             //Saving the Excel file
             workbook.Save(dataDir+ "pivotTable_test.out.xlsx");
+            //ExEnd:1
             
             
         }
