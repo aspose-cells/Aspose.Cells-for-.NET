@@ -22,6 +22,7 @@ namespace Aspose.Cells.Examples.Files.Handling
             Workbook workbook2 = new Workbook(fstream);
             Console.WriteLine("Workbook opened using stream successfully!");
             fstream.Close();
+            //ExEnd:1
             }
           }
       }    
