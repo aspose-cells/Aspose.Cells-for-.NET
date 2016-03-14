@@ -9,6 +9,7 @@ namespace Aspose.Cells.Examples.Articles
     {
         public static void Main()
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -29,6 +30,7 @@ namespace Aspose.Cells.Examples.Articles
             printoption.ImageFormat = System.Drawing.Imaging.ImageFormat.Jpeg;
             //Save the image
             pic.ToImage(fileName, printoption);
+            //ExEnd:1
  
             
         }
