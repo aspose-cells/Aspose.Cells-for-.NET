@@ -7,6 +7,7 @@ namespace CSharp.Articles
     {
         public static void Main(string[] args)
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             string inputPath = dataDir + "Sample1.xlsx";
@@ -19,6 +20,7 @@ namespace CSharp.Articles
 
             workbook.Save(outputPath, opts);
             Console.WriteLine("File saved: {0}", outputPath);
+            //ExEnd:1
         }
     }
 }
