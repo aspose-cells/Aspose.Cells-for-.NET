@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.Articles
     {
         public static void Main()
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             //Open an Excel file
@@ -23,6 +24,7 @@ namespace Aspose.Cells.Examples.Articles
 
             //Save the PDF file
             wb.Save(dataDir+ "outPDF1.out.pdf", options);
+            //ExEnd:1
             
             
         }
