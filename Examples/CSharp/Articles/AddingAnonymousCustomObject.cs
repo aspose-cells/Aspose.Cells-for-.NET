@@ -6,6 +6,7 @@ using System.Collections;
 
 namespace Aspose.Cells.Examples.Articles
 {
+    //ExStart:1
     public class AddingAnonymousCustomObject
     {
         public static void Main(string[] args)
@@ -63,3 +64,4 @@ public class Person
         this.Age = age;
     }
 }
+//ExEnd:1
