@@ -10,6 +10,7 @@ namespace Aspose.Cells.Examples.Articles
     {
         public static void Main(string[] args)
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             if (!System.IO.Directory.Exists(dataDir))
@@ -39,6 +40,7 @@ namespace Aspose.Cells.Examples.Articles
             workbook.Save(dataDir + "Output.out.xlsm");
 
             Console.WriteLine("File saved");
+            //ExEnd:1
         }
     }
 }
