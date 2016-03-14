@@ -9,6 +9,7 @@ namespace Aspose.Cells.Examples.Articles
     {
         public static void Main()
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             //Instantiate the workbook from sample Excel file
@@ -42,6 +43,7 @@ namespace Aspose.Cells.Examples.Articles
 
             //Check if number 30 satisfies the Data Validation rule applied on this cell
             Console.WriteLine("Is 30 a Valid Value for this Cell: " + cell.GetValidationValue());
+            //ExEnd:1
 
             
         }
