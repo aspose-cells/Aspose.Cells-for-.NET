@@ -6,6 +6,7 @@ namespace Aspose.Cells.Examples.Articles
     class GetSmartMarkerNotifications
     {
         static void Main() {
+            //ExStart:1
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             string outputPath = dataDir + "Output.out.xlsx";
 
@@ -47,5 +48,6 @@ namespace Aspose.Cells.Examples.Articles
             Console.WriteLine("Processing Cell: " + workbook.Worksheets[sheetIndex].Name + "!" + CellsHelper.CellIndexToName(rowIndex, colIndex));
             Console.WriteLine("Processing Marker: " + tableName + "." + columnName);
         }
+        //ExEnd:1
     }
 }
