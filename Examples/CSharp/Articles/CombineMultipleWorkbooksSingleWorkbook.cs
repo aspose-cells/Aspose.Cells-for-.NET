@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.Articles
     {
         public static void Main(string[] args)
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -25,6 +26,7 @@ namespace Aspose.Cells.Examples.Articles
 
             //Save the target book file.
             SourceBook1.Save(dataDir+ "Combined.out.xlsx");
+            //ExEnd:1
             
         }
     }
