@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.Articles
     {
         public static void Main()
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             //Open a template Excel file
@@ -27,6 +28,7 @@ namespace Aspose.Cells.Examples.Articles
 
             //Create the image file based on the icon's image data
             File.WriteAllBytes(dataDir+ "imgIcon.out.jpg", icon.ImageData);
+            //ExEnd:1
             
         }
     }
