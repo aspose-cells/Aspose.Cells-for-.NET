@@ -16,6 +16,7 @@ namespace Aspose.Cells.Examples.Articles
         [STAThread]
         static void Main(string[] args)
         {
+            //ExStart:1
             string filename = "F:\\AllExamples\\Aspose.Cells\\net\\TechnicalArticles\\Aspose.CellsGeneral\\FormatWorksheetCells\\Data\\FormatWorksheet.xls";
             CreateSalesReport(filename);
 
@@ -709,6 +710,7 @@ namespace Aspose.Cells.Examples.Articles
             }
             //Set N column's width to fit the contents.
             workbook.Worksheets[0].Cells.SetColumnWidth(13, 9.33);
+            //ExEnd:1
 
         }
 
