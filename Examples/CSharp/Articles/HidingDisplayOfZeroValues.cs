@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.Articles
     {
         public static void Main()
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             //Create a new Workbook object
@@ -21,6 +22,7 @@ namespace Aspose.Cells.Examples.Articles
 
             //Save the workbook
             workbook.Save(dataDir+ "outputfile.out.xlsx");
+                //ExEnd:1
             
             
         }
