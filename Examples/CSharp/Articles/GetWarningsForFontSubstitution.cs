@@ -28,10 +28,11 @@ namespace Aspose.Cells.Examples.Articles
             options.WarningCallback = new GetWarningsForFontSubstitution();
 
             workbook.Save("F:\\AllExamples\\Aspose.Cells\\net\\TechnicalArticles\\Aspose.CellsGeneral\\GetWarningsForFontSubstitution\\Data\\output.pdf", options);
-       //ExEnd:1
+   
         }
 
     }
+        //ExEnd:1
 }
 
 
