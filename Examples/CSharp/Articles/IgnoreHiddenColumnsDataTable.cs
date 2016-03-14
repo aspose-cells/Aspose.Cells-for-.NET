@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.Articles
     {
         static void Main()
         {
+            //ExStart:1
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             string inputPath = dataDir + "Sample.xlsx";
 
@@ -22,6 +23,7 @@ namespace Aspose.Cells.Examples.Articles
             int totalColumns = worksheet.Cells.MaxColumn + 1;
 
             DataTable dt = worksheet.Cells.ExportDataTable(0, 0, totalRows, totalColumns, opts);
+            //ExEnd:1
         }
     }
 }
