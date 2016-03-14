@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.Articles
     {
         public static void Main()
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             //Create and initialize an instance of Workbook
@@ -18,6 +19,7 @@ namespace Aspose.Cells.Examples.Articles
             saveOptions.AllColumnsInOnePagePerSheet = true;
             //Save Workbook to PDF fromart by passing the object of PdfSaveOptions
             book.Save(dataDir+ "output.out.pdf", saveOptions);
+            //ExEnd:1
             
             
         }
