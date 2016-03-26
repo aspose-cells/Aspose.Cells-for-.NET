@@ -9,7 +9,7 @@ namespace Aspose.Cells.Examples.Files.Handling
     {
         public static void Main(string[] args)
         {
-            //Exstart:1
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             // Opening through Stream
