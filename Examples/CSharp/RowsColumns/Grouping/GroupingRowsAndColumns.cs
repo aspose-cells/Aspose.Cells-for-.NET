@@ -29,7 +29,7 @@ namespace Aspose.Cells.Examples.RowsColumns.Grouping
             worksheet.Cells.GroupColumns(0, 2, true);
 
             //Saving the modified Excel file
-            workbook.Save(dataDir + "output.out.xls");
+            workbook.Save(dataDir + "output.xls");
 
             //Closing the file stream to free all resources
             fstream.Close();

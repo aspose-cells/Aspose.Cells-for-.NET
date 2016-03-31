@@ -13,7 +13,7 @@ namespace Aspose.Cells.Examples.RowsColumns.InsertingAndDeleting
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             //Creating a file stream containing the Excel file to be opened
-            FileStream fstream = new FileStream(dataDir + "book1.xls", FileMode.Open);
+            FileStream fstream = new FileStream(dataDir + "Book1.xlsx", FileMode.Open);
 
             //Instantiating a Workbook object
             //Opening the Excel file through the file stream
@@ -23,10 +23,10 @@ namespace Aspose.Cells.Examples.RowsColumns.InsertingAndDeleting
             Worksheet worksheet = workbook.Worksheets[0];
 
             //Deleting a column from the worksheet at 2nd position
-            worksheet.Cells.DeleteColumn(1);
+            worksheet.Cells.DeleteColumn(4);
 
             //Saving the modified Excel file
-            workbook.Save(dataDir + "output.out.xls");
+            workbook.Save(dataDir + "output.xlsx");
 
             //Closing the file stream to free all resources
             fstream.Close();

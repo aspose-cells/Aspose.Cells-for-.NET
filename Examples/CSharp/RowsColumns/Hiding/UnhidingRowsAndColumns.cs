@@ -29,7 +29,7 @@ namespace Aspose.Cells.Examples.RowsColumns.Hiding
             worksheet.Cells.UnhideColumn(1, 8.5);
 
             //Saving the modified Excel file
-            workbook.Save(dataDir + "output.out.xls");
+            workbook.Save(dataDir + "output.xls");
 
             //Closing the file stream to free all resources
             fstream.Close();
