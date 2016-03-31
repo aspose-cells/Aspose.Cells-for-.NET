@@ -5,7 +5,7 @@ using System;
 
 namespace Aspose.Cells.Examples.Files.Handling
 {
-    public class OpeningFiles
+    public class OpeningTabDelimitedFiles
     {
         public static void Main(string[] args)
         {
