@@ -230,11 +230,4 @@ _Pvt_Extensions
 .fake/
 
 # Output files
-output.*
-output-*
-output_*
-Output.*
-Output-*
-Output_*
-out_*.*
-Out_*.*
+*[Oo]ut*
