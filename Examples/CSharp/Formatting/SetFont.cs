@@ -9,9 +9,9 @@ namespace Aspose.Cells.Examples.Formatting
     {
         public static void Main(string[] args)
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
 
             //Instantiating a Workbook object
             Workbook workbook = new Workbook();
@@ -29,9 +29,6 @@ namespace Aspose.Cells.Examples.Formatting
             ca.EndColumn = 3;
             fcs.AddArea(ca);
 
-          
-          
-
             //Adds condition.
             int conditionIndex = fcs.AddCondition(FormatConditionType.CellValue, OperatorType.Between, "50", "100");
 
@@ -39,17 +36,13 @@ namespace Aspose.Cells.Examples.Formatting
             FormatCondition fc = fcs[conditionIndex];
            // fc.Style.BackgroundColor = Color.Red;
 
-
-
-
             fc.Style.Font.IsItalic = true;
             fc.Style.Font.IsBold = true;
             fc.Style.Font.IsStrikeout = true;
             fc.Style.Font.Underline = FontUnderlineType.Double;
             fc.Style.Font.Color = Color.Black;
-
             workbook.Save(dataDir + "output.xlsx");
-
+            //ExEnd:1
         }
     }
 }

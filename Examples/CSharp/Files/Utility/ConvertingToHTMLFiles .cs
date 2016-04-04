@@ -22,7 +22,7 @@ namespace Aspose.Cells.Examples.Files.Utility
             Workbook wb = new Workbook(filePath);
 
             //Save the MHT file
-            wb.Save(filePath + ".out.html", save);
+            wb.Save(dataDir + "output.html", save);
             //ExEnd:1
         }
     }

@@ -15,7 +15,7 @@ namespace Aspose.Cells.Examples.Files.Handling
             //Creating a Workbook object
             Workbook workbook = new Workbook();
           //Save in Html format
-            workbook.Save(dataDir + "book1.out.html", SaveFormat.Html);
+            workbook.Save(dataDir + "output.html", SaveFormat.Html);
             
           //ExEnd:1
           }

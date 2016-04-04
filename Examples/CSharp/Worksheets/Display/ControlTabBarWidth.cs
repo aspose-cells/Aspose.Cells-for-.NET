@@ -4,7 +4,7 @@ using Aspose.Cells;
 
 namespace Aspose.Cells.Examples.Worksheets.Display
 {
-    public class DisplayHideTabs
+    public class ControlTabBarWidth
     {
         public static void Main(string[] args)
         {
@@ -17,10 +17,13 @@ namespace Aspose.Cells.Examples.Worksheets.Display
             Workbook workbook = new Workbook(dataDir + "book1.xls");
 
             //Hiding the tabs of the Excel file
-            workbook.Settings.ShowTabs = false;
+            workbook.Settings.ShowTabs = true;
+
+            //Adjusting the sheet tab bar width
+            workbook.Settings.SheetTabBarWidth = 800;
 
             //Saving the modified Excel file
-            workbook.Save(dataDir + "output.out.xls");
+            workbook.Save(dataDir + "output.xls");
             //ExEnd:1
         }
     }

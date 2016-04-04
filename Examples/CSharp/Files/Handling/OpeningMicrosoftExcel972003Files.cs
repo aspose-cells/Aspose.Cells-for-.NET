@@ -5,7 +5,7 @@ using System;
 
 namespace Aspose.Cells.Examples.Files.Handling
 {
-    public class OpeningMicrosoftExcel97-2003Files
+    public class OpeningMicrosoftExcel972003Files
     {
         public static void Main(string[] args)
         {
@@ -13,7 +13,7 @@ namespace Aspose.Cells.Examples.Files.Handling
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
               //Get the Excel file into stream
-            FileStream stream = new FileStream(dataDir + "Book_Excel97_2003.xls", FileMode.Open);
+            FileStream stream = new FileStream(dataDir + "output.xls", FileMode.Open);
 
             //Instantiate LoadOptions specified by the LoadFormat.
             LoadOptions loadOptions1 = new LoadOptions(LoadFormat.Excel97To2003);

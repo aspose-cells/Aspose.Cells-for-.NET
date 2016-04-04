@@ -15,7 +15,7 @@ namespace Aspose.Cells.Examples.Files.Handling
             //Creating a Workbook object
             Workbook workbook = new Workbook();
               //Save in Pdf format
-            workbook.Save(dataDir + "book1.out.pdf", SaveFormat.Pdf);
+            workbook.Save(dataDir + "output.pdf", SaveFormat.Pdf);
 
             //ExEnd:1
         }

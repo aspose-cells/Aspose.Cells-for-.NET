@@ -13,37 +13,33 @@ namespace Aspose.Cells.Examples.Files.Handling
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-
-
             string filePath = dataDir + "Book1.xls";
 
             //Load your source workbook
             Workbook workbook = new Workbook(filePath);
 
-
             //Save in Excel 97 – 2003 format
-            workbook.Save(filePath + ".output.xls");
-
+            workbook.Save(dataDir + ".output.xls");
             //OR
-            workbook.Save(filePath + ".output..xls", new XlsSaveOptions(SaveFormat.Excel97To2003));
+            workbook.Save(dataDir + ".output..xls", new XlsSaveOptions(SaveFormat.Excel97To2003));
 
             //Save in Excel2007 xlsx format
-            workbook.Save(filePath + ".output.xlsx", SaveFormat.Xlsx);
+            workbook.Save(dataDir + ".output.xlsx", SaveFormat.Xlsx);
 
             //Save in Excel2007 xlsb format
-            workbook.Save(filePath + ".output.xlsb", SaveFormat.Xlsb);
+            workbook.Save(dataDir + ".output.xlsb", SaveFormat.Xlsb);
 
             //Save in ODS format
-            workbook.Save(filePath + ".output.ods", SaveFormat.ODS);
+            workbook.Save(dataDir + ".output.ods", SaveFormat.ODS);
 
             //Save in Pdf format
-            workbook.Save(filePath + ".output.pdf", SaveFormat.Pdf);
+            workbook.Save(dataDir + ".output.pdf", SaveFormat.Pdf);
 
             //Save in Html format
-            workbook.Save(filePath + ".output.html", SaveFormat.Html);
+            workbook.Save(dataDir + ".output.html", SaveFormat.Html);
 
             //Save in SpreadsheetML format
-            workbook.Save(filePath + ".output.xml", SaveFormat.SpreadsheetML);
+            workbook.Save(dataDir + ".output.xml", SaveFormat.SpreadsheetML);
 
             //ExEnd:1
 

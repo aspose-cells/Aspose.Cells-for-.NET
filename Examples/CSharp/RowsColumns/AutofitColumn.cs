@@ -1,36 +1,36 @@
 using System.IO;
 
 using Aspose.Cells;
+using System.Drawing;
 
-namespace Aspose.Cells.Examples.Worksheets.Display
+namespace Aspose.Cells.Examples.RowsColumns
 {
-    public class ZoomFactor
+    public class AutofitColumn
     {
         public static void Main(string[] args)
         {
-            //ExStart:1
+            //ExSatrt:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            //Creating a file stream containing the Excel file to be opened
-            FileStream fstream = new FileStream(dataDir + "book1.xls", FileMode.Open);
+            string InputPath = dataDir + "Book1.xlsx";
 
-            //Instantiating a Workbook object
+            //Creating a file stream containing the Excel file to be opened
+            FileStream fstream = new FileStream(InputPath, FileMode.Open);
+
             //Opening the Excel file through the file stream
             Workbook workbook = new Workbook(fstream);
 
             //Accessing the first worksheet in the Excel file
             Worksheet worksheet = workbook.Worksheets[0];
 
-            //Setting the zoom factor of the worksheet to 75
-            worksheet.Zoom = 75;
+        //Auto-fitting the Column of the worksheet
+        worksheet.AutoFitColumn(4);
 
             //Saving the modified Excel file
-            workbook.Save(dataDir + "output.xls");
-
-            //Closing the file stream to free all resources
-            fstream.Close();
+            workbook.Save(dataDir  + "output.xlsx");
             //ExEnd:1
+
         }
     }
 }

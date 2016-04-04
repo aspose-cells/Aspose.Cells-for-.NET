@@ -17,7 +17,7 @@ namespace Aspose.Cells.Examples.Files.Handling
             LoadOptions loadOptions3 = new LoadOptions(LoadFormat.SpreadsheetML);
 
             //Create a Workbook object and opening the file from its path
-            Workbook wbSpreadSheetML = new Workbook(dataDir + "Book3.xml", loadOptions3);
+            Workbook wbSpreadSheetML = new Workbook(dataDir + "output.xml", loadOptions3);
             Console.WriteLine("SpreadSheetML file opened successfully!");
             //ExEnd:1
             }

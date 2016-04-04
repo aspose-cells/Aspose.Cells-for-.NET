@@ -26,7 +26,7 @@ namespace Aspose.Cells.Examples.Worksheets.Display
             worksheet.FreezePanes(3, 2, 3, 2);
 
             //Saving the modified Excel file
-            workbook.Save(dataDir + "output.out.xls");
+            workbook.Save(dataDir + "output.xls");
 
             //Closing the file stream to free all resources
             fstream.Close();

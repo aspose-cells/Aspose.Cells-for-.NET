@@ -4,7 +4,7 @@ using Aspose.Cells;
 
 namespace Aspose.Cells.Examples.Worksheets.Display
 {
-    public class SplitPanes
+    public class RemovePanes
     {
         public static void Main(string[] args)
         {
@@ -19,7 +19,7 @@ namespace Aspose.Cells.Examples.Worksheets.Display
             book.Worksheets[0].ActiveCell = "A20";
 
             //Split the worksheet window
-            book.Worksheets[0].Split();
+            book.Worksheets[0].RemoveSplit();
 
             //Save the excel file
             book.Save(dataDir + "output.xls");

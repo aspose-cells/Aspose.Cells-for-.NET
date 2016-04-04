@@ -39,8 +39,7 @@ namespace Aspose.Cells.Examples.Formatting
 
             //Save the excel file.
             workbook.Save(dataDir + "output.xls");
-
-         
+                     
             //ExEnd:1
 
         }

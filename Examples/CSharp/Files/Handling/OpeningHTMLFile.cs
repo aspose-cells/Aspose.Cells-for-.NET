@@ -22,7 +22,7 @@ namespace Aspose.Cells.Examples.Files.Handling
             //Create a Workbook object and opening the file from its path
             Workbook wb = new Workbook(filePath, loadOptions);
             //Save the MHT file
-            wb.Save(filePath + ".out.xlsx");
+            wb.Save(filePath + "output.xlsx");
             //ExEnd:1
 
 

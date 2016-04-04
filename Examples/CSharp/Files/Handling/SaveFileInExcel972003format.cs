@@ -4,7 +4,7 @@ using Aspose.Cells;
 
 namespace Aspose.Cells.Examples.Files.Handling
 {
-    public class SaveFileInExcel97-2003format
+    public class SaveFileInExcel972003format
     {
         public static void Main(string[] args)
         {
@@ -18,10 +18,10 @@ namespace Aspose.Cells.Examples.Files.Handling
             //Your Code goes here for any workbook related operations
 
             //Save in Excel 97 – 2003 format
-            workbook.Save(dataDir + "book1.out.xls");
+            workbook.Save(dataDir + "output.xls");
 
             //OR
-            workbook.Save(dataDir + "book1.out.xls", new XlsSaveOptions(SaveFormat.Excel97To2003));
+            workbook.Save(dataDir + "output.xls", new XlsSaveOptions(SaveFormat.Excel97To2003));
             //ExEnd:1
            }
          }

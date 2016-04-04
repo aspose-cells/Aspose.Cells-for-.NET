@@ -17,7 +17,7 @@ namespace Aspose.Cells.Examples.Files.Handling
             LoadOptions loadOptions2 = new LoadOptions(LoadFormat.Xlsx);
 
             //Create a Workbook object and opening the file from its path
-            Workbook wbExcel2007 = new Workbook(dataDir + "Book_Excel2007.xlsx", loadOptions2);
+            Workbook wbExcel2007 = new Workbook(dataDir + "output.xlsx", loadOptions2);
             Console.WriteLine("Microsoft Excel 2007 workbook opened successfully!");
             //ExEnd:1
             }

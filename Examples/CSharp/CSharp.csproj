@@ -32,11 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Aspose.Cells.Examples.Files.Utility.Excel2PDFConversion</StartupObject>
+    <StartupObject>Aspose.Cells.Examples.Worksheets.Display.RemovePanes</StartupObject>
   </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=8.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.8.7.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=8.7.2.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.8.7.2\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -196,6 +197,8 @@
     <Compile Include="Data\AddOn\NamedRanges\RemoveANamedRange.cs" />
     <Compile Include="Data\AddOn\NamedRanges\RenameNamedRange.cs" />
     <Compile Include="Data\AddOn\NamedRanges\UnionOfRanges.cs" />
+    <Compile Include="Data\Processing\TracingDependents.cs" />
+    <Compile Include="Data\Processing\TracingPrecedents.cs" />
     <Compile Include="Data\Handling\AccessingCells\RowAndColumnIndex.cs" />
     <Compile Include="Data\Handling\AccessingCells\UsingCellIndex.cs" />
     <Compile Include="Data\Handling\AccessingCells\UsingCellIndexInCellsCollection.cs" />
@@ -203,6 +206,7 @@
     <Compile Include="Data\Handling\AccessingCells\UsingRowAndColumnIndexOfCell.cs" />
     <Compile Include="Data\Handling\AddingDataToCells.cs" />
     <Compile Include="Data\Handling\DataSorting.cs" />
+    <Compile Include="Data\Handling\ExportColumnContainingStronglyTypedData.cs" />
     <Compile Include="Data\Handling\ExportingDataFromWorksheets.cs" />
     <Compile Include="Data\Handling\Find\FindCellsContainingFormula.cs" />
     <Compile Include="Data\Handling\Find\FindCellsStringNumber.cs" />
@@ -216,6 +220,7 @@
     <Compile Include="Data\Handling\Importing\ImportingFromCustomObject.cs" />
     <Compile Include="Data\Handling\Importing\ImportingFromDataColumn.cs" />
     <Compile Include="Data\Handling\Importing\ImportHtmlFormattedData.cs" />
+    <Compile Include="Data\Handling\Importing\ImportingFromDataGrid.cs" />
     <Compile Include="Data\Handling\Importing\ImportingFromDataTable.cs" />
     <Compile Include="Data\Handling\Importing\ImportingFromDataView.cs" />
     <Compile Include="Data\Handling\RetrievingDataFromCells.cs" />
@@ -254,11 +259,37 @@
     <Compile Include="DrawingObjects\Pictures\PositioningPictures\AbsolutePositioning.cs" />
     <Compile Include="DrawingObjects\Pictures\PositioningPictures\ProportionalPositioning.cs" />
     <Compile Include="Files\Handling\LoadVisibleSheetsOnly.cs" />
+    <Compile Include="Files\Handling\OpeningCSVFiles.cs" />
+    <Compile Include="Files\Handling\OpeningEncryptedExcelFiles.cs" />
     <Compile Include="Files\Handling\OpeningFiles.cs" />
+    <Compile Include="Files\Handling\OpeningFilesThroughPath.cs" />
+    <Compile Include="Files\Handling\OpeningFilesThroughStream.cs" />
+    <Compile Include="Files\Handling\OpeningFilewithDataOnly.cs" />
+    <Compile Include="Files\Handling\OpeningHTMLFile.cs" />
+    <Compile Include="Files\Handling\OpeningMicrosoftExcel2007XlsxFiles.cs" />
+    <Compile Include="Files\Handling\OpeningMicrosoftExcel972003Files.cs" />
+    <Compile Include="Files\Handling\OpeningSpreadsheetMLFiles.cs" />
+    <Compile Include="Files\Handling\OpeningTabDelimitedFiles.cs" />
+    <Compile Include="Files\Handling\OpeningTextFilewithCustomSeparator.cs" />
+    <Compile Include="Files\Handling\SaveFileInExcel972003format.cs" />
+    <Compile Include="Files\Handling\SaveInExcel2007xlsbFormat.cs" />
+    <Compile Include="Files\Handling\SaveInExcel2007xlsxFormat.cs" />
+    <Compile Include="Files\Handling\SaveInHtmlFormat.cs" />
+    <Compile Include="Files\Handling\SaveInODSFormat.cs" />
+    <Compile Include="Files\Handling\SaveInPdfFormat.cs" />
+    <Compile Include="Files\Handling\SaveInSpreadsheetMLFormat.cs" />
+    <Compile Include="Files\Handling\SaveXLSFile .cs" />
+    <Compile Include="Files\Handling\SaveXLSXFile.cs" />
     <Compile Include="Files\Handling\SaveWorkbookToTextCSVFormat.cs" />
     <Compile Include="Files\Handling\SavingFiles.cs" />
+    <Compile Include="Files\Handling\SavingFiletoSomeLocation.cs" />
+    <Compile Include="Files\Handling\SavingFiletoStream.cs" />
+    <Compile Include="Files\Handling\SavingTextFilewithCustomSeparator.cs" />
     <Compile Include="Files\Utility\ChartToImage.cs" />
     <Compile Include="Files\Utility\ConvertChartToPdf.cs" />
+    <Compile Include="Files\Utility\ConvertingToHTMLFiles .cs" />
+    <Compile Include="Files\Utility\SetPDFCreationTime.cs" />
+    <Compile Include="Files\Utility\SettingImagePrefrencesforHTML.cs" />
     <Compile Include="Files\Utility\ConvertingToMHTMLFiles.cs" />
     <Compile Include="Files\Utility\ConvertingToXPS.cs" />
     <Compile Include="Files\Utility\ConvertingWorksheetToSVG.cs" />
@@ -266,6 +297,7 @@
     <Compile Include="Files\Utility\Excel2PDFConversion.cs" />
     <Compile Include="Files\Utility\ManagingDocumentProperties.cs" />
     <Compile Include="Files\Utility\WorksheetToImage.cs" />
+    <Compile Include="Formatting\ApproachesToFormatData\ApplyingGradientFillEffects.cs" />
     <Compile Include="Formatting\ApproachesToFormatData\UsingExcelPredefinedStyles.cs" />
     <Compile Include="Formatting\ApproachesToFormatData\UsingGetStyleSetStyle.cs" />
     <Compile Include="Formatting\ApproachesToFormatData\UsingStyleObject.cs" />
@@ -274,6 +306,8 @@
     <Compile Include="Formatting\ColorsAndBackground.cs" />
     <Compile Include="Formatting\ColorsAndPalette.cs" />
     <Compile Include="Formatting\ConditionalFormatting.cs" />
+    <Compile Include="Formatting\ComputeColorChoosenByMSExcel.cs" />
+    <Compile Include="Formatting\ConditionalFormattingatRuntime.cs" />
     <Compile Include="Formatting\ConfiguringAlignmentSettings\Indentation.cs" />
     <Compile Include="Formatting\ConfiguringAlignmentSettings\MergingCells.cs" />
     <Compile Include="Formatting\ConfiguringAlignmentSettings\Orientation.cs" />
@@ -296,11 +330,22 @@
     <Compile Include="Formatting\FormatRowsColumns\FormattingAColumn.cs" />
     <Compile Include="Formatting\FormatRowsColumns\FormattingARow.cs" />
     <Compile Include="Formatting\FormattingSelectedCharacters.cs" />
+    <Compile Include="Formatting\MakeCellActive.cs" />
+    <Compile Include="Formatting\SetBorder.cs" />
+    <Compile Include="Formatting\SetFont.cs" />
+    <Compile Include="Formatting\SetPattern.cs" />
     <Compile Include="Formatting\SettingDisplayFormats\UsingBuiltInNumberFormats.cs" />
     <Compile Include="Formatting\SettingDisplayFormats\UsingCustomNumber.cs" />
     <Compile Include="Formulas\CalculatingFormulas.cs" />
     <Compile Include="Formulas\CalculatingFormulasOnce.cs" />
     <Compile Include="Formulas\DirectCalculationFormula.cs" />
+    <Compile Include="RowsColumns\AutofitRowsforMergedCells.cs" />
+    <Compile Include="RowsColumns\AutofitColumninSpecificRange.cs" />
+    <Compile Include="RowsColumns\AutofitRowinSpecificRange.cs" />
+    <Compile Include="RowsColumns\AutofitColumn.cs" />
+    <Compile Include="RowsColumns\AutofitRowsandColumns.cs" />
+    <Compile Include="RowsColumns\Grouping\SummaryRowRight.cs" />
+    <Compile Include="RowsColumns\Grouping\SummaryRowBelow.cs" />
     <Compile Include="Utils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RowsColumns\Copying\CopyingColumns.cs" />
@@ -329,16 +374,21 @@
     <Compile Include="Worksheets\Display\DisplayHideGridlines.cs" />
     <Compile Include="Worksheets\Display\DisplayHideRowColumnHeaders.cs" />
     <Compile Include="Worksheets\Display\DisplayHideScrollBars.cs" />
-    <Compile Include="Worksheets\Display\DisplayHideTabs.cs" />
+    <Compile Include="Worksheets\Display\DisplayTab.cs" />
+    <Compile Include="Worksheets\Display\ControlTabBarWidth.cs" />
+    <Compile Include="Worksheets\Display\HideTabs.cs" />
     <Compile Include="Worksheets\Display\FreezePanes.cs" />
     <Compile Include="Worksheets\Display\HideUnhideWorksheet.cs" />
     <Compile Include="Worksheets\Display\PageBreakPreview.cs" />
+    <Compile Include="Worksheets\Display\RemovePanes.cs" />
     <Compile Include="Worksheets\Display\SplitPanes.cs" />
     <Compile Include="Worksheets\Display\ZoomFactor.cs" />
-    <Compile Include="Worksheets\Management\AddingWorksheetsToNewExcelFile.cs" />
-    <Compile Include="Worksheets\Management\AddWorksheetsToExistingExcelFile.cs" />
-    <Compile Include="Worksheets\Management\RemovingWorksheetsUsingSheetIndex.cs" />
-    <Compile Include="Worksheets\Management\RemovingWorksheetsUsingSheetName.cs" />
+    <Compile Include="Worksheets\Display\Management\AccessingWorksheetsusingSheetName.cs" />
+    <Compile Include="Worksheets\Display\Management\AddingWorksheetsToDesignerSpreadSheet.cs" />
+    <Compile Include="Worksheets\Display\Management\AddingWorksheetsToNewExcelFile.cs" />
+    <Compile Include="Worksheets\Display\Management\AddWorksheetsToExistingExcelFile.cs" />
+    <Compile Include="Worksheets\Display\Management\RemovingWorksheetsUsingSheetIndex.cs" />
+    <Compile Include="Worksheets\Display\Management\RemovingWorksheetsUsingSheetName.cs" />
     <Compile Include="Worksheets\Security\AdvancedProtectionSettings.cs" />
     <Compile Include="Worksheets\Security\AdvancedProtectionSettingsUsingAsposeCells.cs" />
     <Compile Include="Worksheets\Security\AdvanceProtectSettings.cs" />

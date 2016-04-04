@@ -13,7 +13,6 @@ namespace Aspose.Cells.Examples.Formatting
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-
             //Instantiating a Workbook object
             Workbook workbook = new Workbook();
             Worksheet sheet = workbook.Worksheets[0];
@@ -29,13 +28,8 @@ namespace Aspose.Cells.Examples.Formatting
             ca.StartColumn = 0;
             ca.EndColumn = 3;
             fcs.AddArea(ca);
-
-          
-          
-
             //Adds condition.
             int conditionIndex = fcs.AddCondition(FormatConditionType.CellValue, OperatorType.Between, "50", "100");
-
             //Sets the background color.
             FormatCondition fc = fcs[conditionIndex];
             fc.Style.Borders[BorderType.LeftBorder].LineStyle = CellBorderType.Dashed;
@@ -47,7 +41,6 @@ namespace Aspose.Cells.Examples.Formatting
             fc.Style.Borders[BorderType.RightBorder].Color = Color.FromArgb(0, 255, 255);
             fc.Style.Borders[BorderType.TopBorder].Color = Color.FromArgb(0, 255, 255);
             fc.Style.Borders[BorderType.BottomBorder].Color = Color.FromArgb(255, 255, 0);
-
             workbook.Save(dataDir + "output.xlsx");
             //ExEnd:1
 
