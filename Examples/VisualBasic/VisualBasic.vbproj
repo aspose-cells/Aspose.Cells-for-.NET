@@ -22,6 +22,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DocumentationFile>VisualBasic.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -268,10 +269,37 @@
     <Compile Include="DrawingObjects\Pictures\PictureCellReference.vb" />
     <Compile Include="DrawingObjects\Pictures\PositioningPictures\AbsolutePositioning.vb" />
     <Compile Include="DrawingObjects\Pictures\PositioningPictures\ProportionalPositioning.vb" />
+    <Compile Include="Files\Handling\SavingTextFilewithCustomSeparator.vb" />
+    <Compile Include="Files\Handling\SavingFiletoStream.vb" />
+    <Compile Include="Files\Handling\SavingFiletoSomeLocation.vb" />
+    <Compile Include="Files\Handling\SaveXLSXFile.vb" />
+    <Compile Include="Files\Handling\SaveXLSFile .vb" />
+    <Compile Include="Files\Handling\SaveInSpreadsheetMLFormat.vb" />
+    <Compile Include="Files\Handling\SaveInPdfFormat.vb" />
+    <Compile Include="Files\Handling\SaveInODSFormat.vb" />
+    <Compile Include="Files\Handling\SaveInHtmlFormat.vb" />
+    <Compile Include="Files\Handling\SaveInExcel2007xlsxFormat.vb" />
+    <Compile Include="Files\Handling\SaveInExcel2007xlsbFormat.vb" />
+    <Compile Include="Files\Handling\SaveFileInExcel972003format.vb" />
+    <Compile Include="Files\Handling\OpeningTextFilewithCustomSeparator.vb" />
+    <Compile Include="Files\Handling\OpeningTabDelimitedFiles.vb" />
+    <Compile Include="Files\Handling\OpeningSpreadsheetMLFiles.vb" />
+    <Compile Include="Files\Handling\OpeningMicrosoftExcel972003Files.vb" />
+    <Compile Include="Files\Handling\OpeningMicrosoftExcel2007XlsxFiles.vb" />
+    <Compile Include="Files\Handling\OpeningHTMLFile.vb" />
+    <Compile Include="Files\Handling\OpeningFilewithDataOnly.vb" />
+    <Compile Include="Files\Handling\OpeningFilesThroughStream.vb" />
+    <Compile Include="Files\Handling\OpeningFilesThroughPath.vb" />
+    <Compile Include="Files\Handling\OpeningEncryptedExcelFiles.vb" />
+    <Compile Include="Files\Handling\LoadVisibleSheetsOnly.vb" />
+    <Compile Include="Files\Handling\OpeningCSVFiles.vb" />
     <Compile Include="Files\Handling\OpeningFiles.vb" />
     <Compile Include="Files\Handling\SaveWorkbookToTextCSVFormat.vb" />
     <Compile Include="Files\Handling\SavingFiles.vb" />
     <Compile Include="Files\Utility\ChartToImage.vb" />
+    <Compile Include="Files\Utility\SettingImagePrefrencesforHTML.vb" />
+    <Compile Include="Files\Utility\SetPDFCreationTime.vb" />
+    <Compile Include="Files\Utility\ConvertingToHTMLFiles .vb" />
     <Compile Include="Files\Utility\ConvertingToMHTMLFiles.vb" />
     <Compile Include="Files\Utility\ConvertingToXPS.vb" />
     <Compile Include="Files\Utility\ConvertingWorksheetToSVG.vb" />
@@ -279,13 +307,19 @@
     <Compile Include="Files\Utility\Excel2PDFConversion.vb" />
     <Compile Include="Files\Utility\ManagingDocumentProperties.vb" />
     <Compile Include="Files\Utility\WorksheetToImage.vb" />
+    <Compile Include="Formatting\ApproachesToFormatData\ApplyingGradientFillEffects.vb" />
     <Compile Include="Formatting\ApproachesToFormatData\UsingExcelPredefinedStyles.vb" />
     <Compile Include="Formatting\ApproachesToFormatData\UsingGetStyleSetStyle.vb" />
     <Compile Include="Formatting\ApproachesToFormatData\UsingStyleObject.vb" />
     <Compile Include="Formatting\Borders\AddingBordersToCells.vb" />
     <Compile Include="Formatting\Borders\AddingBorderstoRange.vb" />
     <Compile Include="Formatting\ColorsAndBackground.vb" />
+    <Compile Include="Formatting\SetPattern.vb" />
+    <Compile Include="Formatting\SetFont.vb" />
+    <Compile Include="Formatting\SetBorder.vb" />
+    <Compile Include="Formatting\MakeCellActive.vb" />
     <Compile Include="Formatting\ColorsAndPalette.vb" />
+    <Compile Include="Formatting\ConditionalFormattingatRuntime.vb" />
     <Compile Include="Formatting\ConditionalFormatting.vb" />
     <Compile Include="Formatting\ConfiguringAlignmentSettings\Indentation.vb" />
     <Compile Include="Formatting\ConfiguringAlignmentSettings\MergingCells.vb" />
@@ -329,8 +363,14 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="RowsColumns\AutofitRowinSpecificRange.vb" />
+    <Compile Include="RowsColumns\AutofitRowsandColumns.vb" />
+    <Compile Include="RowsColumns\AutofitRowsforMergedCells.vb" />
+    <Compile Include="RowsColumns\AutofitColumninSpecificRange.vb" />
     <Compile Include="RowsColumns\Copying\CopyingColumns.vb" />
     <Compile Include="RowsColumns\Copying\CopyingRows.vb" />
+    <Compile Include="RowsColumns\Grouping\SummaryRowRight.vb" />
+    <Compile Include="RowsColumns\Grouping\SummaryRowBelow.vb" />
     <Compile Include="RowsColumns\Grouping\GroupingRowsAndColumns.vb" />
     <Compile Include="RowsColumns\Grouping\UngroupingRowsAndColumns.vb" />
     <Compile Include="RowsColumns\HeightAndWidth\SettingHeightAllRows.vb" />
@@ -349,6 +389,7 @@
     <Compile Include="RowsColumns\InsertingAndDeleting\InsertingAColumn.vb" />
     <Compile Include="RowsColumns\InsertingAndDeleting\InsertingARow.vb" />
     <Compile Include="RowsColumns\InsertingAndDeleting\InsertingMultipleRows.vb" />
+    <Compile Include="RowsColumns\AutofitColumn.vb" />
     <Compile Include="Tables\ConvertTableToRange.vb" />
     <Compile Include="Tables\CreatingListObject.vb" />
     <Compile Include="Tables\FormataListObject.vb" />
@@ -360,8 +401,13 @@
     <Compile Include="Worksheets\Display\FreezePanes.vb" />
     <Compile Include="Worksheets\Display\HideUnhideWorksheet.vb" />
     <Compile Include="Worksheets\Display\PageBreakPreview.vb" />
+    <Compile Include="Worksheets\Display\HideTabs.vb" />
+    <Compile Include="Worksheets\Display\RemovePanes.vb" />
+    <Compile Include="Worksheets\Display\ControlTabBarWidth.vb" />
     <Compile Include="Worksheets\Display\SplitPanes.vb" />
     <Compile Include="Worksheets\Display\ZoomFactor.vb" />
+    <Compile Include="Worksheets\Management\AddingWorksheetsToDesignerSpreadSheet.vb" />
+    <Compile Include="Worksheets\Management\AccessingWorksheetsusingSheetName.vb" />
     <Compile Include="Worksheets\Management\AddingWorksheetsToNewExcelFile.vb" />
     <Compile Include="Worksheets\Management\AddWorksheetsToExistingExcelFile.vb" />
     <Compile Include="Worksheets\Management\RemovingWorksheetsUsingSheetIndex.vb" />
