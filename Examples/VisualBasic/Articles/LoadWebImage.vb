@@ -7,6 +7,7 @@ Imports System
 Namespace Aspose.Cells.Examples.Articles
     Public Class LoadWebImage
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             'Define memory stream object
@@ -38,11 +39,12 @@ Namespace Aspose.Cells.Examples.Articles
                 pictures.Add(1, 1, objImage)
 
                 'Save the excel file
-                wb.Save(dataDir & "webimagebook.out.xlsx")
+                wb.Save(dataDir & "output.xlsx")
             Catch ex As Exception
                 'Write the error message on the console
                 Console.WriteLine(ex.Message)
             End Try
+            'ExEnd:1
 
 
         End Sub

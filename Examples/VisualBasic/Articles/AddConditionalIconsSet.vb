@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Articles
     Public Class AddConditionalIconsSet
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -83,7 +84,8 @@ Namespace Aspose.Cells.Examples.Articles
             worksheet.Pictures.Add(3, 2, stream5)
 
             'Save the Excel file
-            workbook.Save(dataDir & "outfile_cond_icons1.out.xlsx")
+            workbook.Save(dataDir & "output.xlsx")
+            'ExEnd:1
         End Sub
     End Class
 End Namespace

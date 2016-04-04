@@ -8,6 +8,7 @@ Imports System
 Namespace Aspose.Cells.Examples.Data.Handling.Importing
     Public Class ImportingFromDataColumn
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -56,7 +57,8 @@ Namespace Aspose.Cells.Examples.Data.Handling.Importing
             sheet.Cells.ImportDataColumn(dataTable, True, 0, 0, 1, False)
 
             'Save workbook
-            book.Save(dataDir & "DataImport.out.xls")
+            book.Save(dataDir & "output.xls")
+            'ExEnd:1
 
 
         End Sub

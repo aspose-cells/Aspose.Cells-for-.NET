@@ -5,6 +5,7 @@ Imports Aspose.Cells.ExternalConnections
 Namespace Aspose.Cells.Examples.Articles
     Public Class GetDataConnection
         Shared Sub Main()
+            'ExStart:1
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             Dim inputPath As String = dataDir & "WebQuerySample.xlsx"
 
@@ -15,6 +16,7 @@ Namespace Aspose.Cells.Examples.Articles
             If TypeOf connection Is WebQueryConnection Then
                 Dim webQuery As WebQueryConnection = DirectCast(connection, WebQueryConnection)
                 Console.WriteLine("Web Query URL: " + webQuery.Url)
+                'ExEnd:1
             End If
 
         End Sub

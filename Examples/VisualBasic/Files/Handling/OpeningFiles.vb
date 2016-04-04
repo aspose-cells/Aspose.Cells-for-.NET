@@ -5,17 +5,14 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Files.Handling
     Public Class OpeningFiles
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
-
-
-
             ' 1.
             ' Opening through Path
             'Creating a Workbook object and opening an Excel file using its file path
             Dim workbook1 As New Workbook(dataDir & "Book1.xls")
             Console.WriteLine("Workbook opened using path successfully!")
-
 
             ' 2.
             ' Opening through Stream
@@ -27,7 +24,6 @@ Namespace Aspose.Cells.Examples.Files.Handling
             Dim workbook2 As New Workbook(fstream)
             Console.WriteLine("Workbook opened using stream successfully!")
             fstream.Close()
-
 
             ' 3.
             ' Opening Microsoft Excel 97 - 2003 Files
@@ -41,7 +37,6 @@ Namespace Aspose.Cells.Examples.Files.Handling
             Dim wbExcel97 As New Workbook(stream, loadOptions1)
             Console.WriteLine("Microsoft Excel 97 - 2003 workbook opened successfully!")
 
-
             ' 4.
             ' Opening Microsoft Excel 2007 Xlsx Files
             'Instantiate LoadOptions specified by the LoadFormat.
@@ -50,7 +45,6 @@ Namespace Aspose.Cells.Examples.Files.Handling
             'Create a Workbook object and opening the file from its path
             Dim wbExcel2007 As New Workbook(dataDir & "Book_Excel2007.xlsx", loadOptions2)
             Console.WriteLine("Microsoft Excel 2007 workbook opened successfully!")
-
 
             ' 5.
             ' Opening SpreadsheetML Files
@@ -61,7 +55,6 @@ Namespace Aspose.Cells.Examples.Files.Handling
             Dim wbSpreadSheetML As New Workbook(dataDir & "Book3.xml", loadOptions3)
             Console.WriteLine("SpreadSheetML file opened successfully!")
 
-
             ' 6.
             ' Opening CSV Files
             'Instantiate LoadOptions specified by the LoadFormat.
@@ -71,7 +64,6 @@ Namespace Aspose.Cells.Examples.Files.Handling
             Dim wbCSV As New Workbook(dataDir & "Book_CSV.csv", loadOptions4)
             Console.WriteLine("CSV file opened successfully!")
 
-
             ' 7.
             ' Opening Tab Delimited Files
             'Instantiate LoadOptions specified by the LoadFormat.
@@ -80,7 +72,6 @@ Namespace Aspose.Cells.Examples.Files.Handling
             'Create a Workbook object and opening the file from its path
             Dim wbTabDelimited As New Workbook(dataDir & "Book1TabDelimited.txt", loadOptions5)
             Console.WriteLine("Tab delimited file opened successfully!")
-
 
             ' 8.
             ' Opening Encrypted Excel Files
@@ -93,7 +84,6 @@ Namespace Aspose.Cells.Examples.Files.Handling
             'Create a Workbook object and opening the file from its path
             Dim wbEncrypted As New Workbook(dataDir & "encryptedBook.xls", loadOptions6)
             Console.WriteLine("Encrypted excel file opened successfully!")
-
 
             ' 9.
             ' Opening File with Data only
@@ -114,8 +104,9 @@ Namespace Aspose.Cells.Examples.Files.Handling
             loadOptions7.LoadDataOptions = dataOption
 
             'Create a Workbook object and opening the file from its path
-            Dim wb As New Workbook(dataDir & "Book1.xlsx", loadOptions7)
+            Dim wb As New Workbook(dataDir & "output.xlsx", loadOptions7)
             Console.WriteLine("File data imported successfully!")
+            'ExEnd:1
         End Sub
     End Class
 End Namespace

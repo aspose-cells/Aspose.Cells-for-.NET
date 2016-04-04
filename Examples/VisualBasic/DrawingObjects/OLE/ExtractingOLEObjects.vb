@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.DrawingObjects.OLE
     Public Class ExtractingOLEObjects
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -46,7 +47,7 @@ Namespace Aspose.Cells.Examples.DrawingObjects.OLE
                     ms.Write(ole.ObjectData, 0, ole.ObjectData.Length)
                     Dim oleBook As New Workbook(ms)
                     oleBook.Settings.IsHidden = False
-                    oleBook.Save(dataDir & "Excel_File" & i & ".out.xls")
+                    oleBook.Save(dataDir & "Excel_File" & i & ".output.xls")
 
                     'Create the files based on the oleobject format types.
                 Else
@@ -54,9 +55,8 @@ Namespace Aspose.Cells.Examples.DrawingObjects.OLE
                     fs.Write(ole.ObjectData, 0, ole.ObjectData.Length)
                     fs.Close()
                 End If
-
             Next i
-
+            'ExEnd:1
         End Sub
     End Class
 End Namespace

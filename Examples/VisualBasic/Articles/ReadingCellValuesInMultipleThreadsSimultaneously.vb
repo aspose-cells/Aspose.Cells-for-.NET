@@ -8,6 +8,7 @@ Imports System.Threading
 Namespace Aspose.Cells.Examples.Articles
     Public Class ReadingCellValuesInMultipleThreadsSimultaneously
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
         End Sub
@@ -51,6 +52,7 @@ Namespace Aspose.Cells.Examples.Articles
             System.Threading.Thread.Sleep(5 * 1000)
             myThread1.Abort()
             myThread2.Abort()
+            'ExEnd:1
         End Sub
 
 

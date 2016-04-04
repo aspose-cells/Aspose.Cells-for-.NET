@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Formulas
     Public Class DirectCalculationFormula
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -36,7 +37,7 @@ Namespace Aspose.Cells.Examples.Formulas
             System.Console.WriteLine("Value of A1: " & cellA1.StringValue)
             System.Console.WriteLine("Value of A2: " & cellA2.StringValue)
             System.Console.WriteLine("Result of Sum(A1:A2): " & results.ToString())
-
+            'ExEnd:1
         End Sub
     End Class
 End Namespace

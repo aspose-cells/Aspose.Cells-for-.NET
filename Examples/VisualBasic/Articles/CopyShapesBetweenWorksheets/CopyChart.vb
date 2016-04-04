@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Articles.CopyShapesBetweenWorksheets
     Public Class CopyChart
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             'Create a workbook object
@@ -21,7 +22,8 @@ Namespace Aspose.Cells.Examples.Articles.CopyShapesBetweenWorksheets
             workbook.Worksheets("Sheet3").Shapes.AddCopy(cshape, 20, 0, 2, 0)
 
             'Save the Worksheet
-            workbook.Save(dataDir & "Shapes.out.xlsx")
+            workbook.Save(dataDir & "output.xlsx")
+            'ExEnd:1
 
         End Sub
     End Class

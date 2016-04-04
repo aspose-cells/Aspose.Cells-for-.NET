@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Articles
     Public Class MoveRangeOfCells
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             'Instantiate the workbook object
@@ -25,7 +26,8 @@ Namespace Aspose.Cells.Examples.Articles
             cells.MoveRange(ca, 0, 2)
 
             'Save the resultant file
-            workbook.Save(dataDir & "book2.out.xls")
+            workbook.Save(dataDir & "output.xls")
+            'ExEnd:1
 
 
         End Sub

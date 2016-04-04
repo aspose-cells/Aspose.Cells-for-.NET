@@ -7,6 +7,7 @@ Imports System.Collections
 Namespace Aspose.Cells.Examples.Articles
     Public Class DetectMergedCells
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -43,7 +44,8 @@ Namespace Aspose.Cells.Examples.Articles
             Next i
 
             'Save the excel file
-            wkBook.Save(dataDir & "MergeTrial.out.xlsx")
+            wkBook.Save(dataDir & "output.xlsx")
+            'ExEnd:1
 
 
         End Sub

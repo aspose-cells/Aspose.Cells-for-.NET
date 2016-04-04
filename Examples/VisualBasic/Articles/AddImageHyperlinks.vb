@@ -7,6 +7,7 @@ Imports Aspose.Cells.Drawing
 Namespace Aspose.Cells.Examples.Articles
     Public Class AddImageHyperlinks
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -47,7 +48,8 @@ Namespace Aspose.Cells.Examples.Articles
             hlink.ScreenTip = "Click to go to Aspose site"
 
             'Save the Excel file
-            workbook.Save(dataDir & "ImageHyperlink.out.xls")
+            workbook.Save(dataDir & "output.xls")
+            'ExEnd:1
 
 
         End Sub

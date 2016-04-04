@@ -37,6 +37,7 @@ Namespace Aspose.Cells.Examples.Articles
 
     Public Class UsingICustomFunctionfeature
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -74,7 +75,8 @@ Namespace Aspose.Cells.Examples.Articles
             workbook.Worksheets(0).Cells("A1").PutValue(workbook.Worksheets(0).Cells("A1").Value)
 
             'Save the file
-            workbook.Save(dataDir & "UsingICustomFunction.out.xls")
+            workbook.Save(dataDir & "output.xls")
+            'ExEnd:1
         End Sub
     End Class
 End Namespace

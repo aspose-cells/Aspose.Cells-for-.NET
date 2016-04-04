@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Worksheets.Security
     Public Class AdvanceProtectSettings
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -62,8 +63,8 @@ Namespace Aspose.Cells.Examples.Worksheets.Security
             worksheet.Protection.AllowUsingPivotTable = True
 
             'Saving the modified Excel file
-            excel.Save(dataDir & "output.out.xls", SaveFormat.Excel97To2003)
-
+            excel.Save(dataDir & "output.xls", SaveFormat.Excel97To2003)
+            'ExEnd:1
         End Sub
     End Class
 End Namespace

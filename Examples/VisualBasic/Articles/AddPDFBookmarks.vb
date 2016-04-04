@@ -7,6 +7,7 @@ Imports System.Collections
 Namespace Aspose.Cells.Examples.Articles
     Public Class AddPDFBookmarks
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -103,7 +104,8 @@ Namespace Aspose.Cells.Examples.Articles
             pdfSaveOptions.Bookmark = pbeRoot
 
             'Save the pdf file
-            workbook.Save(dataDir & "PDFBookmarks_test.out.pdf", pdfSaveOptions)
+            workbook.Save(dataDir & "output.pdf", pdfSaveOptions)
+            'ExEnd:1
 
 
         End Sub

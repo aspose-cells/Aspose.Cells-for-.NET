@@ -8,6 +8,7 @@ Imports System.Drawing.Imaging
 Namespace Aspose.Cells.Examples.Articles
     Public Class ExportRangeofCellsExample
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             Dim filePath As String = dataDir & "aspose-sample.xlsx"
@@ -34,7 +35,8 @@ Namespace Aspose.Cells.Examples.Articles
 
             'Take the image of your worksheet
             Dim sr As New SheetRender(worksheet, options)
-            sr.ToImage(0, dataDir & "output.out.jpg")
+            sr.ToImage(0, dataDir & "output.jpg")
+            'ExEnd:1
 
 
         End Sub

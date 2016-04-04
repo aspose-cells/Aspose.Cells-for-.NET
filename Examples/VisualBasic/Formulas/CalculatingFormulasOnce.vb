@@ -7,6 +7,7 @@ Imports System
 Namespace Aspose.Cells.Examples.Formulas
     Public Class CalculatingFormulasOnce
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -26,6 +27,7 @@ Namespace Aspose.Cells.Examples.Formulas
 
             'Print the time after formula calculation
             Console.WriteLine(DateTime.Now)
+            'ExEnd:1
 
         End Sub
     End Class

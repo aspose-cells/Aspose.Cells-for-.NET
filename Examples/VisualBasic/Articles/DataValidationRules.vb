@@ -7,6 +7,7 @@ Imports System
 Namespace Aspose.Cells.Examples.Articles
     Public Class DataValidationRules
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             'Instantiate the workbook from sample Excel file
@@ -40,6 +41,7 @@ Namespace Aspose.Cells.Examples.Articles
 
             'Check if number 30 satisfies the Data Validation rule applied on this cell
             Console.WriteLine("Is 30 a Valid Value for this Cell: " & cell.GetValidationValue())
+            'ExEnd:1
 
 
         End Sub

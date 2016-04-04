@@ -29,7 +29,8 @@ Namespace Aspose.Cells.Examples.DrawingObjects.Pictures
             worksheet.Pictures.Add(5, 5, dataDir & "logo.jpg")
 
             'Saving the Excel file
-            workbook.Save(dataDir & "book1.out.xls")
+            workbook.Save(dataDir & "output.xls")
+            'ExEnd:1
         End Sub
     End Class
 End Namespace

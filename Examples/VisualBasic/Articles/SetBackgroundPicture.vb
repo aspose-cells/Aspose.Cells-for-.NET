@@ -7,6 +7,7 @@ Imports System
 Namespace Aspose.Cells.Examples.Articles
     Public Class SetBackgroundPicture
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -38,8 +39,8 @@ Namespace Aspose.Cells.Examples.Articles
             workbook.Save(dataDir & "BackImageSheet.out.xlsx")
 
             'Save the HTML file
-            workbook.Save(dataDir & "BackImageSheet1.out.html", SaveFormat.Html)
-
+            workbook.Save(dataDir & "output.html", SaveFormat.Html)
+            'ExEnd:1
         End Sub
     End Class
 End Namespace

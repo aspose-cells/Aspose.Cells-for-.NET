@@ -7,6 +7,7 @@ Imports System
 Namespace Aspose.Cells.Examples.AdvancedTopics.SmartMarkers
     Public Class UsingNestedObjects
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             ' ****** Program ******
@@ -33,7 +34,8 @@ Namespace Aspose.Cells.Examples.AdvancedTopics.SmartMarkers
             'Process the markers
             designer.Process(False)
             'Save the Excel file.
-            designer.Workbook.Save(dataDir & "out_SM_NestedObjects.out.xlsx")
+            designer.Workbook.Save(dataDir & "NestedObjects.output.xlsx")
+            'ExEnd:1
 
         End Sub
 

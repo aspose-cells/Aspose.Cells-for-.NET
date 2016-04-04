@@ -7,6 +7,7 @@ Imports Aspose.Cells.Charts
 Namespace Aspose.Cells.Examples.Articles
     Public Class CustomSliceSectorColorsPieChart
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -70,7 +71,8 @@ Namespace Aspose.Cells.Examples.Articles
             worksheet.AutoFitColumns()
 
             'Save the workbook
-            workbook.Save(dataDir & "output.out.xlsx", SaveFormat.Xlsx)
+            workbook.Save(dataDir & "output.xlsx", SaveFormat.Xlsx)
+            'ExEnd:1
 
 
 

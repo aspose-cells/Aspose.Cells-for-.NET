@@ -7,6 +7,7 @@ Imports System.Drawing
 Namespace Aspose.Cells.Examples.Articles
     Public Class SetWorksheetTabColor
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -21,7 +22,8 @@ Namespace Aspose.Cells.Examples.Articles
             worksheet.TabColor = Color.Red
 
             'Save the Excel file
-            workbook.Save(dataDir & "worksheettabcolor.out.xls")
+            workbook.Save(dataDir & "output.xls")
+            'ExEnd:1
 
         End Sub
     End Class

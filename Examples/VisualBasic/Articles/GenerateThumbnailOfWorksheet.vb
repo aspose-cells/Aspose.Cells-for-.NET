@@ -8,6 +8,7 @@ Imports System.Drawing
 Namespace Aspose.Cells.Examples.Articles
     Public Class GenerateThumbnailOfWorksheet
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             'Instantiate and open an Excel file
@@ -38,8 +39,8 @@ Namespace Aspose.Cells.Examples.Articles
             gr.DrawImage(bmp, 0, 0, 100, 100)
 
             'Save the thumbnail
-            thumb.Save(dataDir & "mythumbnail.out.bmp")
-
+            thumb.Save(dataDir & "output.bmp")
+            'ExEnd:1
 
         End Sub
     End Class

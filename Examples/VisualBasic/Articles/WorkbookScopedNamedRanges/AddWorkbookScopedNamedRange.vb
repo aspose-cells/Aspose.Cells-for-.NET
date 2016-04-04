@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Articles.OptimizingMemoryUsage
     Public Class AddWorkbookScopedNamedRange
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -25,8 +26,8 @@ Namespace Aspose.Cells.Examples.Articles.OptimizingMemoryUsage
             workbookScope.Name = "workbookScope"
 
             'save the workbook
-            workbook.Save(dataDir & "WorkbookScope.out.xlsx")
-
+            workbook.Save(dataDir & "output.xlsx")
+            'ExEnd:1
 
         End Sub
     End Class

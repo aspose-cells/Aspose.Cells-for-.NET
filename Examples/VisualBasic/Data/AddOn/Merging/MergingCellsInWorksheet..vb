@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Data.AddOn.Merging
     Public Class MergingCellsInWorksheet
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -59,7 +60,8 @@ Namespace Aspose.Cells.Examples.Data.AddOn.Merging
             cells(5, 2).SetStyle(style)
 
             'Save the Workbook.
-            wbk.Save(dataDir & "mergingcells.out.xls")
+            wbk.Save(dataDir & "output.xls")
+            'ExEnd:1
 
         End Sub
     End Class

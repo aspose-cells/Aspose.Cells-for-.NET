@@ -6,6 +6,7 @@ Imports Aspose.Cells.Rendering
 Namespace Aspose.Cells.Examples.Files.Utility
     Public Class ConvertingWorksheetToSVG
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -25,9 +26,10 @@ Namespace Aspose.Cells.Examples.Files.Utility
 
                 For i As Integer = 0 To sr.PageCount - 1
                     'Output the worksheet into Svg image format
-                    sr.ToImage(i, filePath & sheet.Name & i & ".out.svg")
+                    sr.ToImage(i, filePath & sheet.Name & i & ".output.svg")
                 Next i
             Next sheet
+            'ExEnd:1
         End Sub
     End Class
 End Namespace

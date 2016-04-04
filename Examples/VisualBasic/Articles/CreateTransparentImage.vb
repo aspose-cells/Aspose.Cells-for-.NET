@@ -8,6 +8,7 @@ Imports System.Drawing.Imaging
 Namespace Aspose.Cells.Examples.Articles
     Public Class CreateTransparentImage
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -26,7 +27,8 @@ Namespace Aspose.Cells.Examples.Articles
 
             'Create image after apply image or print options
             Dim sr As SheetRender = New SheetRender(wb.Worksheets(0), imgOption)
-            sr.ToImage(0, dataDir & "output.out.png")
+            sr.ToImage(0, dataDir & "output.png")
+            'ExEnd:1
 
         End Sub
     End Class

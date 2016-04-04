@@ -16,10 +16,12 @@ Imports System.Security.Cryptography.X509Certificates
 Namespace Aspose.Cells.Examples.Articles
     Public Class AssignValidateDigitalSignatures
         Public Shared Sub Main(ByVal args As String())
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
             Console.ReadLine()
+            'ExEnd:1
 
 
         End Sub

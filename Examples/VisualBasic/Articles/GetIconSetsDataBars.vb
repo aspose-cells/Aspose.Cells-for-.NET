@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Articles
     Public Class GetIconSetsDataBars
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             'Open a template Excel file
@@ -24,7 +25,8 @@ Namespace Aspose.Cells.Examples.Articles
             Dim icon As ConditionalFormattingIcon = cfr.ConditionalFormattingIcon
 
             'Create the image file based on the icon's image data
-            File.WriteAllBytes(dataDir & "imgIcon.out.jpg", icon.ImageData)
+            File.WriteAllBytes(dataDir & "output.jpg", icon.ImageData)
+            'ExEnd:1
 
         End Sub
     End Class

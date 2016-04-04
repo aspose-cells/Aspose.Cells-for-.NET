@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Articles.CopyShapesBetweenWorksheets
     Public Class CopyControls
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -23,7 +24,8 @@ Namespace Aspose.Cells.Examples.Articles.CopyShapesBetweenWorksheets
             workbook.Worksheets("Sheet1").Shapes.AddCopy(shape(1), 10, 0, 2, 0)
 
             'Save the Worksheet
-            workbook.Save(dataDir & "Controls.out.xlsx")
+            workbook.Save(dataDir & "output.xlsx")
+            'ExEnd:1
 
         End Sub
     End Class

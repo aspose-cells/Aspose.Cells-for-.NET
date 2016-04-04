@@ -4,6 +4,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Articles
     Public Class UpdateRichTextCells
         Shared Sub Main()
+            'ExStart:1
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             Dim inputPath As String = dataDir & "Sample.xlsx"
             Dim outputPath As String = dataDir & "Output.out.xlsx"
@@ -38,6 +39,7 @@ Namespace Aspose.Cells.Examples.Articles
 
             'Save workbook
             workbook.Save(outputPath)
+            'ExEnd:1
         End Sub
     End Class
 End Namespace

@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Articles
     Public Class LimitNumberOfPagesGenerated
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             'Open an Excel file
@@ -21,6 +22,7 @@ Namespace Aspose.Cells.Examples.Articles
 
             'Save the PDF file
             wb.Save(dataDir & "output.pdf", options)
+            'ExEnd:1
 
 
         End Sub

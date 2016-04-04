@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Tables
     Public Class FormataListObject
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -229,8 +230,8 @@ Namespace Aspose.Cells.Examples.Tables
 
 
             'Saving the Excel file
-            workbook.Save(dataDir & "List_Object.out.xlsx")
-
+            workbook.Save(dataDir & "output.xlsx")
+            'ExEnd:1
         End Sub
     End Class
 End Namespace

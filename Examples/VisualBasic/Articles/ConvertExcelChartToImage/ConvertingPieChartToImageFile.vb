@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Articles.ConvertExcelChartToImage
     Public Class ConvertingPieChartToImageFile
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -18,7 +19,8 @@ Namespace Aspose.Cells.Examples.Articles.ConvertExcelChartToImage
             Dim chart As Global.Aspose.Cells.Charts.Chart = workbook.Worksheets(0).Charts(0)
 
             'Convert the chart to an image file.
-            chart.ToImage(dataDir & "PieChart.out.emf", System.Drawing.Imaging.ImageFormat.Emf)
+            chart.ToImage(dataDir & "PieChart.output.emf", System.Drawing.Imaging.ImageFormat.Emf)
+            'ExEnd:1
 
 
 

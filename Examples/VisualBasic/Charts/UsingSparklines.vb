@@ -9,6 +9,7 @@ Imports System.Drawing
 Namespace Aspose.Cells.Examples.Charts
     Public Class UsingSparklines
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -46,7 +47,8 @@ Namespace Aspose.Cells.Examples.Charts
             group.SeriesColor = clr
 
             'Save the excel file
-            book.Save(dataDir & "Book1.out.xlsx")
+            book.Save(dataDir & "output.xlsx")
+            'ExEnd:1
 
         End Sub
     End Class

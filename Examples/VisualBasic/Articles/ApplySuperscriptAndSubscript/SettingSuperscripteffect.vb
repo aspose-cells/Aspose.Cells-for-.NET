@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Articles.ApplySuperscriptAndSubscript
     Public Class SettingSuperscripteffect
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -36,8 +37,8 @@ Namespace Aspose.Cells.Examples.Articles.ApplySuperscriptAndSubscript
             cell.SetStyle(style)
 
             'Saving the Excel file
-            workbook.Save(dataDir & "Superscript.out.xls", SaveFormat.Auto)
-
+            workbook.Save(dataDir & "Superscript.output.xls", SaveFormat.Auto)
+            'ExEnd:1
 
         End Sub
     End Class

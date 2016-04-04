@@ -7,6 +7,7 @@ Imports System.Data
 Namespace Aspose.Cells.Examples.Articles
     Public Class ExportVisibleRowsData
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             Dim filePath As String = dataDir & "aspose-sample.xlsx"
@@ -24,6 +25,7 @@ Namespace Aspose.Cells.Examples.Articles
 
             'Export the data from worksheet with export options
             Dim dataTable As DataTable = worksheet.Cells.ExportDataTable(0, 0, 10, 4, exportOptions)
+            'ExEnd:1
 
 
         End Sub

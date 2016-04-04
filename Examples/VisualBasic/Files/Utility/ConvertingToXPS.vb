@@ -5,6 +5,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Files.Utility
     Public Class ConvertingToXPS
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -29,6 +30,7 @@ Namespace Aspose.Cells.Examples.Files.Utility
             'Export the whole workbook to XPS
             Dim wr As New Global.Aspose.Cells.Rendering.WorkbookRender(workbook, options)
             wr.ToImage(dataDir & "out_whole_printingxps.xps")
+            'ExEnd:1
         End Sub
     End Class
 End Namespace

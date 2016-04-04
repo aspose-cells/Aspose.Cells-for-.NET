@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Tables
     Public Class CreatingListObject
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -27,7 +28,8 @@ Namespace Aspose.Cells.Examples.Tables
             listObjects(0).ListColumns(4).TotalsCalculation = Global.Aspose.Cells.Tables.TotalsCalculation.Sum
 
             'Save the excel file.
-            workbook.Save(dataDir & "ouput.out.xls")
+            workbook.Save(dataDir & "ouput.xls")
+            'ExEnd:1
 
         End Sub
     End Class

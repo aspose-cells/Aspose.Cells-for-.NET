@@ -8,6 +8,7 @@ Imports Aspose.Cells.Drawing
 Namespace Aspose.Cells.Examples.Articles
     Public Class InsertingWAVFile
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             'Define a string variable to store the image path.
@@ -53,8 +54,8 @@ Namespace Aspose.Cells.Examples.Articles
             workbook.Worksheets(0).OleObjects(intIndex).ObjectSourceFullName = filepath
 
             'Save the excel file
-            workbook.Save(dataDir & "testWAV.out.xlsx")
-
+            workbook.Save(dataDir & "output.xlsx")
+            'ExEnd:1
 
         End Sub
     End Class

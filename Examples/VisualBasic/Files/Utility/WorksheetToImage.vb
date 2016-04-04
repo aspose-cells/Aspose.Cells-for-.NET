@@ -6,6 +6,7 @@ Imports Aspose.Cells.Rendering
 Namespace Aspose.Cells.Examples.Files.Utility
     Public Class WorksheetToImage
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -28,10 +29,11 @@ Namespace Aspose.Cells.Examples.Files.Utility
             Dim bitmap As System.Drawing.Bitmap = sr.ToImage(0)
 
             'Save the image file specifying its image format.
-            bitmap.Save(dataDir & "SheetImage.out.jpg")
+            bitmap.Save(dataDir & "output.jpg")
 
             ' Display result, so that user knows the processing has finished.
             System.Console.WriteLine("Conversion to Image(s) completed.")
+            'ExEnd:1
         End Sub
     End Class
 End Namespace

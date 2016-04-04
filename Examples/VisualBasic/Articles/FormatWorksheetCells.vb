@@ -20,17 +20,8 @@ Namespace Aspose.Cells.Examples.Articles
         End Sub
 
         Private Shared Sub CreateSalesReport(ByVal filename As String)
-            ' Uncomment the code below when you have purchased license
-            ' for Aspose.Cells. You need to deploy the license in the
-            ' same folder as your executable, alternatively you can add
-            ' the license file as an embedded resource to your project.
-            '
-            ' // Set license for Aspose.Cells
-            ' Aspose.Cells.License cellsLicense = new
-            ' Aspose.Cells.License();
-            ' cellsLicense.SetLicense("Aspose.Cells.lic");
 
-
+            'ExStart:1
             'Create a new Workbook.
             Dim workbook As New Workbook()
             'Note: Since Excel color palette has 56 colors on it.
@@ -700,6 +691,7 @@ Namespace Aspose.Cells.Examples.Articles
             Next i
             'Set N column's width to fit the contents.
             workbook.Worksheets(0).Cells.SetColumnWidth(13, 9.33)
+            'ExEnd:1
 
         End Sub
 

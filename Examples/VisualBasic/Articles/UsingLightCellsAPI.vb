@@ -9,6 +9,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Articles
     Public Class UsingLightCellsAPI
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -38,6 +39,7 @@ Namespace Aspose.Cells.Examples.Articles
             Me._workbook = workbook
             Me.maxRows = maxRows
             Me.maxColumns = maxColumns
+            'ExEnd:1
         End Sub
 
 #Region "LightCellsDataProvider Members"

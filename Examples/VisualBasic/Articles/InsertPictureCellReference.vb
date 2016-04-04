@@ -7,6 +7,7 @@ Imports Aspose.Cells.Drawing
 Namespace Aspose.Cells.Examples.Articles
     Public Class InsertPictureCellReference
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             'Instantiate a new Workbook
@@ -26,7 +27,8 @@ Namespace Aspose.Cells.Examples.Articles
             workbook.Worksheets(0).Shapes.UpdateSelectedValue()
 
             'Save the Excel file.
-            workbook.Save(dataDir & "referencedpicture.out.xlsx")
+            workbook.Save(dataDir & "output.xlsx")
+            'ExEnd:1
 
 
         End Sub

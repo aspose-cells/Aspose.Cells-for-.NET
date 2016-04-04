@@ -5,7 +5,7 @@ Imports Aspose.Cells.Drawing
 Namespace Aspose.Cells.Examples.Articles
     Public Class AssignMacroToFormControl
         Public Shared Sub Main(ByVal args() As String)
-
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             If (Not System.IO.Directory.Exists(dataDir)) Then
@@ -30,9 +30,10 @@ Namespace Aspose.Cells.Examples.Articles
 
             button.MacroName = sheet.Name + ".ShowMessage"
 
-            workbook.Save(dataDir + "Output1.out.xlsm")
+            workbook.Save(dataDir + "outpu1.xlsm")
 
             Console.WriteLine("File saved")
+            'ExEnd:1
 
         End Sub
     End Class

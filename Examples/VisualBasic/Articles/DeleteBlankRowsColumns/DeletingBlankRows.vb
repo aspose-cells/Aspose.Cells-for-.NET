@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Articles.DeleteBlankRowsColumns
     Public Class DeletingBlankRows
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -24,7 +25,8 @@ Namespace Aspose.Cells.Examples.Articles.DeleteBlankRowsColumns
             sheet.Cells.DeleteBlankRows()
 
             'Save the excel file.
-            wb.Save(dataDir & "mybook.out.xlsx")
+            wb.Save(dataDir & "output.xlsx")
+            'ExEnd:1
 
 
         End Sub

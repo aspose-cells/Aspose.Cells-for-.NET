@@ -7,6 +7,7 @@ Imports Aspose.Cells.Pivot
 Namespace Aspose.Cells.Examples.Articles
     Public Class SettingPivotTableOption
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -25,6 +26,7 @@ Namespace Aspose.Cells.Examples.Articles
             pt.RefreshDataOnOpeningFile = False
 
             wb.Save(dataDir & "output.xlsx")
+            'ExEnd:1
 
         End Sub
     End Class

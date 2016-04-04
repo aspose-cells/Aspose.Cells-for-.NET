@@ -7,6 +7,7 @@ Imports Aspose.Cells.Rendering
 Namespace Aspose.Cells.Examples.Articles
     Public Class RemoveWhitespaceAroundData
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             'Instantiate a workbook
@@ -36,7 +37,8 @@ Namespace Aspose.Cells.Examples.Articles
             'ImageOrPrintOptions attributes
             Dim sr As New SheetRender(sheet, imgOptions)
             'Convert the image
-            sr.ToImage(0, dataDir & "img_MyTestBook1.out.emf")
+            sr.ToImage(0, dataDir & "output.emf")
+            'ExEnd:1
 
         End Sub
     End Class

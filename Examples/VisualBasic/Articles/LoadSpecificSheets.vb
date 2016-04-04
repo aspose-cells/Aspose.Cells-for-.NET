@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Articles
     Public Class LoadSpecificSheetsExample
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             'Define a new Workbook.
@@ -26,8 +27,8 @@ Namespace Aspose.Cells.Examples.Articles
             'Perform your desired task.
 
             'Save the workbook.
-            workbook.Save(dataDir & "outputFile.out.xlsx")
-
+            workbook.Save(dataDir & "output.xlsx")
+            'EnEnd:1
 
         End Sub
     End Class

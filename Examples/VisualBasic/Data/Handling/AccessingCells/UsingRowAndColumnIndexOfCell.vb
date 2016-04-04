@@ -7,6 +7,7 @@ Imports System
 Namespace Aspose.Cells.Examples.Data.Data.Handling.AccessingCells
     Public Class UsingRowAndColumnIndexOfCell
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -22,6 +23,7 @@ Namespace Aspose.Cells.Examples.Data.Data.Handling.AccessingCells
             Dim value As String = cell.Value.ToString()
 
             Console.WriteLine(value)
+            'ExEnd:1
 
         End Sub
     End Class

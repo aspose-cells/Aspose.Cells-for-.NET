@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Files.Handling
     Public Class SavingFiles
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -15,28 +16,29 @@ Namespace Aspose.Cells.Examples.Files.Handling
             'Your Code goes here for any workbook related operations
 
             'Save in Excel 97 ? 2003 format
-            workbook.Save(dataDir & "book1.out.xls")
+            workbook.Save(dataDir & "output.xls")
 
             'OR
-            workbook.Save(dataDir & "book2.out.xls", New XlsSaveOptions(SaveFormat.Excel97To2003))
+            workbook.Save(dataDir & "output.xls", New XlsSaveOptions(SaveFormat.Excel97To2003))
 
             'Save in Excel2007 xlsx format
-            workbook.Save(dataDir & "book1.out.xlsx", SaveFormat.Xlsx)
+            workbook.Save(dataDir & "output.xlsx", SaveFormat.Xlsx)
 
             'Save in Excel2007 xlsb format
-            workbook.Save(dataDir & "book1.out.xlsb", SaveFormat.Xlsb)
+            workbook.Save(dataDir & "output.xlsb", SaveFormat.Xlsb)
 
             'Save in ODS format
-            workbook.Save(dataDir & "book1.out.ods", SaveFormat.ODS)
+            workbook.Save(dataDir & "output.ods", SaveFormat.ODS)
 
             'Save in Pdf format
-            workbook.Save(dataDir & "book1.out.pdf", SaveFormat.Pdf)
+            workbook.Save(dataDir & "output.pdf", SaveFormat.Pdf)
 
             'Save in Html format
-            workbook.Save(dataDir & "book1.out.html", SaveFormat.Html)
+            workbook.Save(dataDir & "output.html", SaveFormat.Html)
 
             'Save in SpreadsheetML format
-            workbook.Save(dataDir & "book1.out.xml", SaveFormat.SpreadsheetML)
+            workbook.Save(dataDir & "output.xml", SaveFormat.SpreadsheetML)
+            'ExEnd:1
         End Sub
     End Class
 End Namespace

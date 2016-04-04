@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Articles
     Public Class ImplementingNonSequencedRanges
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -21,7 +22,8 @@ Namespace Aspose.Cells.Examples.Articles
             name.RefersTo = "=Sheet1!$A$1:$B$3,Sheet1!$E$5:$D$6"
 
             'Save the workbook
-            workbook.Save(dataDir & "Output.out.xlsx")
+            workbook.Save(dataDir & "output.xlsx")
+            'ExEnd:1
 
         End Sub
     End Class

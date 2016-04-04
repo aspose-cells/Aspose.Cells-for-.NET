@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Articles.CreatePivotTablesPivotCharts
     Public Class CreatePivotTable
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -415,7 +416,8 @@ Namespace Aspose.Cells.Examples.Articles.CreatePivotTablesPivotCharts
             'Setting the number format of the first data field
             pivotTable.DataFields(0).NumberFormat = "$#,##0.00"
             'Saving the Excel file
-            workbook.Save(dataDir & "pivotTable_test.out.xlsx")
+            workbook.Save(dataDir & "output.xlsx")
+            'ExEnd:1
 
 
         End Sub

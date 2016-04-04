@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Articles
     Public Class SaveEachWorksheetToDifferentPDF
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -28,14 +29,14 @@ Namespace Aspose.Cells.Examples.Articles
             'Take Pdfs of each sheet
             For j As Integer = 0 To workbook.Worksheets.Count - 1
                 Dim ws As Worksheet = workbook.Worksheets(j)
-                workbook.Save(dataDir & "worksheet-" & ws.Name & ".out.pdf")
+                workbook.Save(dataDir & "worksheet-" & ws.Name & ".output.pdf")
 
                 If j < workbook.Worksheets.Count - 1 Then
                     workbook.Worksheets(j + 1).IsVisible = True
                     workbook.Worksheets(j).IsVisible = False
                 End If
             Next j
-
+            'ExEnd:1
 
 
 

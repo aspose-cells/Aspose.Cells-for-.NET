@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Data.AddOn.NamedRanges
     Public Class MergeCellsInNamedRange
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -54,7 +55,8 @@ Namespace Aspose.Cells.Examples.Data.AddOn.NamedRanges
             range1(0, 0).PutValue("Aspose")
 
             'Save the excel file.
-            wb1.Save(dataDir & "mergingrange.out.xls")
+            wb1.Save(dataDir & "output.xls")
+            'ExEnd:1
         End Sub
     End Class
 End Namespace

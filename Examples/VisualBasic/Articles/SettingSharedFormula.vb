@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Articles
     Public Class SettingSharedFormula
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -21,7 +22,8 @@ Namespace Aspose.Cells.Examples.Articles
             cells("B2").SetSharedFormula("=A2*0.09", 13, 1)
 
             'Save the excel file
-            workbook.Save(dataDir & ".out.xlsx", SaveFormat.Xlsx)
+            workbook.Save(dataDir & "output.xlsx", SaveFormat.Xlsx)
+            'ExEnd:1
 
         End Sub
     End Class

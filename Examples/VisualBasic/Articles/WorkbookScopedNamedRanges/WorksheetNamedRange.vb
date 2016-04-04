@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Articles.OptimizingMemoryUsage
     Public Class WorksheetNamedRange
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -24,8 +25,8 @@ Namespace Aspose.Cells.Examples.Articles.OptimizingMemoryUsage
             localRange.Name = "Sheet1!local"
 
             'save the workbook
-            workbook.Save(dataDir & "ouput.out.xls")
-
+            workbook.Save(dataDir & "ouput.xls")
+            'ExEnd:1
 
         End Sub
     End Class

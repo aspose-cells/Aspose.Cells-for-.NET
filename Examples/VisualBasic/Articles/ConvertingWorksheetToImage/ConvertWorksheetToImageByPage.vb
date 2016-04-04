@@ -7,6 +7,7 @@ Imports Aspose.Cells.Rendering
 Namespace Aspose.Cells.Examples.Articles.ConvertingWorksheetToImage
     Public Class ConvertWorksheetToImageByPage
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -21,9 +22,9 @@ Namespace Aspose.Cells.Examples.Articles.ConvertingWorksheetToImage
             Dim sr As New SheetRender(sheet, options)
             For j As Integer = 0 To sr.PageCount - 1
 
-                sr.ToImage(j, dataDir & "test" & sheet.Name & " Page" & (j + 1) & ".out.tif")
+                sr.ToImage(j, dataDir & "test" & sheet.Name & " Page" & (j + 1) & ".output.tif")
             Next j
-
+            'ExEnd:1
 
 
         End Sub

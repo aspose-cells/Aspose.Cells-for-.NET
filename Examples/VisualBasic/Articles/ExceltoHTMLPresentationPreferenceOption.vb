@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Articles
     Public Class ExceltoHTMLPresentationPreferenceOption
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             'Instantiate the Workbook
@@ -20,6 +21,7 @@ Namespace Aspose.Cells.Examples.Articles
 
             'Save the Excel file to HTML with specified option
             workbook.Save(dataDir & "outPresentationlayout1.out.html", options)
+            'ExEnd:1
 
         End Sub
     End Class

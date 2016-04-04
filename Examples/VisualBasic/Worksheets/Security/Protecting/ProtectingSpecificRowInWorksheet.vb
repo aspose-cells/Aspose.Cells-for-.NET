@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Worksheets.Security.Protecting
     Public Class ProtectingSpecificRowInWorksheet
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -56,8 +57,8 @@ Namespace Aspose.Cells.Examples.Worksheets.Security.Protecting
             sheet.Protect(ProtectionType.All)
 
             ' Save the excel file.
-            wb.Save(dataDir & "output.out.xls", SaveFormat.Excel97To2003)
-
+            wb.Save(dataDir & "output.xls", SaveFormat.Excel97To2003)
+            'ExEnd:1
 
         End Sub
     End Class

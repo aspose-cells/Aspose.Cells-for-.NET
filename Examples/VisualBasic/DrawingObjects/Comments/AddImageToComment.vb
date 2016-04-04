@@ -7,6 +7,7 @@ Imports System.Drawing
 Namespace Aspose.Cells.Examples.DrawingObjects.Comments
     Public Class AddImageToComment
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -37,8 +38,8 @@ Namespace Aspose.Cells.Examples.DrawingObjects.Comments
             comment.CommentShape.FillFormat.ImageData = ms.ToArray()
 
             'Save the workbook
-            workbook.Save(dataDir & "book1.out.xlsx", Global.Aspose.Cells.SaveFormat.Xlsx)
-
+            workbook.Save(dataDir & "output.xlsx", Global.Aspose.Cells.SaveFormat.Xlsx)
+            'ExEnd:1
 
         End Sub
     End Class

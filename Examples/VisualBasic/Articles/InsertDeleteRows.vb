@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Articles
     Public Class InsertDeleteRows
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             'Instantiate a Workbook object.
@@ -22,7 +23,8 @@ Namespace Aspose.Cells.Examples.Articles
             sheet.Cells.DeleteRows(7, 5)
 
             'Save the excel file.
-            workbook.Save(dataDir & "out_book1.out.xlsx")
+            workbook.Save(dataDir & "output.xlsx")
+            'ExEnd:1
 
 
 

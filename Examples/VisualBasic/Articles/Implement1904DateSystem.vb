@@ -6,6 +6,7 @@ Imports Aspose.Cells
 Namespace Aspose.Cells.Examples.Articles
     Public Class Implement1904DateSystem
         Public Shared Sub Main()
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             'Initialize a new Workbook
@@ -16,7 +17,8 @@ Namespace Aspose.Cells.Examples.Articles
             workbook.Settings.Date1904 = True
 
             'Save the excel file
-            workbook.Save(dataDir & "Mybook.out.xlsx")
+            workbook.Save(dataDir & "output.xlsx")
+            'ExEnd:1
 
 
 
