@@ -8,6 +8,7 @@ Imports System
 Namespace Aspose.Cells.Examples.Formatting.Excel2007Themes
     Public Class GetSetThemeColors
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -47,6 +48,7 @@ Namespace Aspose.Cells.Examples.Formatting.Excel2007Themes
 
             'Save the updated file.
             workbook.Save(dataDir & "output.xlsx")
+            'ExEnd:1
 
         End Sub
     End Class

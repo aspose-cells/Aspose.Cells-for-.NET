@@ -7,6 +7,7 @@ Imports System.Drawing
 Namespace Aspose.Cells.Examples.Formatting.ApproachesToFormatData
     Public Class UsingGetStyleSetStyle
         Public Shared Sub Main(ByVal args() As String)
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -56,7 +57,8 @@ Namespace Aspose.Cells.Examples.Formatting.ApproachesToFormatData
             cell.SetStyle(style)
 
             'Saving the Excel file
-            workbook.Save(dataDir & "book1.xls")
+            workbook.Save(dataDir & "output.xls")
+            'ExEnd:1
 
         End Sub
     End Class
