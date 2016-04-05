@@ -25,6 +25,10 @@ namespace Aspose.Cells.Examples.Worksheets.Display
             //Hiding the first worksheet of the Excel file
             worksheet.IsVisible = false;
 
+            //Shows first worksheet of the Excel file
+            //worksheet.IsVisible = true;
+
+
             //Saving the modified Excel file in default (that is Excel 2003) format
             workbook.Save(dataDir + "output.out.xls");
 

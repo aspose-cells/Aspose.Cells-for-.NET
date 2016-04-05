@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Aspose.Cells.Examples.Worksheets.Display.RemovePanes</StartupObject>
+    <StartupObject>Aspose.Cells.Examples.Files.Utility.AdvancedConversiontoPdf</StartupObject>
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
@@ -197,6 +197,7 @@
     <Compile Include="Data\AddOn\NamedRanges\RemoveANamedRange.cs" />
     <Compile Include="Data\AddOn\NamedRanges\RenameNamedRange.cs" />
     <Compile Include="Data\AddOn\NamedRanges\UnionOfRanges.cs" />
+    <Compile Include="Data\Handling\AccessingCells\AccessingMaximumDisplayRangeofWorksheet.cs" />
     <Compile Include="Data\Processing\TracingDependents.cs" />
     <Compile Include="Data\Processing\TracingPrecedents.cs" />
     <Compile Include="Data\Handling\AccessingCells\RowAndColumnIndex.cs" />
@@ -278,7 +279,7 @@
     <Compile Include="Files\Handling\SaveInODSFormat.cs" />
     <Compile Include="Files\Handling\SaveInPdfFormat.cs" />
     <Compile Include="Files\Handling\SaveInSpreadsheetMLFormat.cs" />
-    <Compile Include="Files\Handling\SaveXLSFile .cs" />
+    <Compile Include="Files\Handling\SaveXLSFile.cs" />
     <Compile Include="Files\Handling\SaveXLSXFile.cs" />
     <Compile Include="Files\Handling\SaveWorkbookToTextCSVFormat.cs" />
     <Compile Include="Files\Handling\SavingFiles.cs" />
@@ -288,6 +289,8 @@
     <Compile Include="Files\Utility\ChartToImage.cs" />
     <Compile Include="Files\Utility\ConvertChartToPdf.cs" />
     <Compile Include="Files\Utility\ConvertingToHTMLFiles .cs" />
+    <Compile Include="Files\Utility\AdvancedConversiontoPdf.cs" />
+    <Compile Include="Files\Utility\XlstoPDFDirectConversation.cs" />
     <Compile Include="Files\Utility\SetPDFCreationTime.cs" />
     <Compile Include="Files\Utility\SettingImagePrefrencesforHTML.cs" />
     <Compile Include="Files\Utility\ConvertingToMHTMLFiles.cs" />
@@ -371,24 +374,24 @@
     <Compile Include="Tables\ConvertTableToRange.cs" />
     <Compile Include="Tables\CreatingListObject.cs" />
     <Compile Include="Tables\FormataListObject.cs" />
+    <Compile Include="Worksheets\Display\ControlTabBarWidth.cs" />
     <Compile Include="Worksheets\Display\DisplayHideGridlines.cs" />
     <Compile Include="Worksheets\Display\DisplayHideRowColumnHeaders.cs" />
     <Compile Include="Worksheets\Display\DisplayHideScrollBars.cs" />
     <Compile Include="Worksheets\Display\DisplayTab.cs" />
-    <Compile Include="Worksheets\Display\ControlTabBarWidth.cs" />
-    <Compile Include="Worksheets\Display\HideTabs.cs" />
     <Compile Include="Worksheets\Display\FreezePanes.cs" />
+    <Compile Include="Worksheets\Display\HideTabs.cs" />
     <Compile Include="Worksheets\Display\HideUnhideWorksheet.cs" />
     <Compile Include="Worksheets\Display\PageBreakPreview.cs" />
     <Compile Include="Worksheets\Display\RemovePanes.cs" />
     <Compile Include="Worksheets\Display\SplitPanes.cs" />
     <Compile Include="Worksheets\Display\ZoomFactor.cs" />
-    <Compile Include="Worksheets\Display\Management\AccessingWorksheetsusingSheetName.cs" />
-    <Compile Include="Worksheets\Display\Management\AddingWorksheetsToDesignerSpreadSheet.cs" />
-    <Compile Include="Worksheets\Display\Management\AddingWorksheetsToNewExcelFile.cs" />
-    <Compile Include="Worksheets\Display\Management\AddWorksheetsToExistingExcelFile.cs" />
-    <Compile Include="Worksheets\Display\Management\RemovingWorksheetsUsingSheetIndex.cs" />
-    <Compile Include="Worksheets\Display\Management\RemovingWorksheetsUsingSheetName.cs" />
+    <Compile Include="Worksheets\Management\AccessingWorksheetsusingSheetName.cs" />
+    <Compile Include="Worksheets\Management\AddingWorksheetsToDesignerSpreadSheet.cs" />
+    <Compile Include="Worksheets\Management\AddingWorksheetsToNewExcelFile.cs" />
+    <Compile Include="Worksheets\Management\AddWorksheetsToExistingExcelFile.cs" />
+    <Compile Include="Worksheets\Management\RemovingWorksheetsUsingSheetIndex.cs" />
+    <Compile Include="Worksheets\Management\RemovingWorksheetsUsingSheetName.cs" />
     <Compile Include="Worksheets\Security\AdvancedProtectionSettings.cs" />
     <Compile Include="Worksheets\Security\AdvancedProtectionSettingsUsingAsposeCells.cs" />
     <Compile Include="Worksheets\Security\AdvanceProtectSettings.cs" />

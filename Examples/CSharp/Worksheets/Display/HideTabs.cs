@@ -19,6 +19,10 @@ namespace Aspose.Cells.Examples.Worksheets.Display
             //Hiding the tabs of the Excel file
             workbook.Settings.ShowTabs = false;
 
+
+            //Shows the tabs of the Excel file
+           // workbook.Settings.ShowTabs = true;
+
             //Saving the modified Excel file
             workbook.Save(dataDir + "output.xls");
             //ExEnd:1
