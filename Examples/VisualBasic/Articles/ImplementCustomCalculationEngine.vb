@@ -60,6 +60,6 @@ Namespace Aspose.Cells.Examples.Articles
             Console.WriteLine("Press any key to continue...")
             Console.ReadKey()
         End Sub
-        'ExEnd:ImplementCustomCalculationEngine
     End Class
+    'ExEnd:ImplementCustomCalculationEngine
 End Namespace
