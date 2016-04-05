@@ -16,6 +16,9 @@ Namespace Aspose.Cells.Examples.Worksheets.Display
             'Hiding the tabs of the Excel file
             workbook.Settings.ShowTabs = False
 
+            'shows the tabs of the Excel file
+            'workbook.Settings.ShowTabs = True
+
             'Saving the modified Excel file
             workbook.Save(dataDir & "output.xls")
             'ExEnd:1

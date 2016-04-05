@@ -213,6 +213,7 @@
     <Compile Include="Data\AddOn\NamedRanges\RemoveANamedRange.vb" />
     <Compile Include="Data\AddOn\NamedRanges\RenameNamedRange.vb" />
     <Compile Include="Data\AddOn\NamedRanges\UnionOfRanges.vb" />
+    <Compile Include="Data\Handling\AccessingCells\AccessingMaximumDisplayRangeofWorksheet.vb" />
     <Compile Include="Data\Handling\AccessingCells\RowAndColumnIndex.vb" />
     <Compile Include="Data\Handling\AccessingCells\UsingCellIndex.vb" />
     <Compile Include="Data\Handling\AccessingCells\UsingCellIndexInCellsCollection.vb" />
@@ -235,6 +236,8 @@
     <Compile Include="Data\Handling\Importing\ImportingFromDataTable.vb" />
     <Compile Include="Data\Handling\Importing\ImportingFromDataView.vb" />
     <Compile Include="Data\Handling\RetrievingDataFromCells.vb" />
+    <Compile Include="Data\Processing\TracingDependents.vb" />
+    <Compile Include="Data\Processing\TracingPrecedents.vb" />
     <Compile Include="Data\Processing\CreatingSubtotals.vb" />
     <Compile Include="Data\Processing\FilteringAndValidation\AutofilterData.vb" />
     <Compile Include="Data\Processing\FilteringAndValidation\DateDataValidation.vb" />
@@ -296,6 +299,8 @@
     <Compile Include="Files\Handling\OpeningFiles.vb" />
     <Compile Include="Files\Handling\SaveWorkbookToTextCSVFormat.vb" />
     <Compile Include="Files\Handling\SavingFiles.vb" />
+    <Compile Include="Files\Utility\AdvancedConversiontoPdf.vb" />
+    <Compile Include="Files\Utility\XlstoPDFDirectConversation.vb" />
     <Compile Include="Files\Utility\ChartToImage.vb" />
     <Compile Include="Files\Utility\SettingImagePrefrencesforHTML.vb" />
     <Compile Include="Files\Utility\SetPDFCreationTime.vb" />
