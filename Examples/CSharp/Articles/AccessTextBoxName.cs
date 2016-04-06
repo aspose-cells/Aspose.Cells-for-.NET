@@ -11,10 +11,13 @@ namespace Aspose.Cells.Examples.Articles
         public static void Main(string[] args)
         {
             //ExStart:1
+            //Create a workbook object
             Workbook workbook = new Workbook();
 
+            //Access first worksheet
             Worksheet sheet = workbook.Worksheets[0];
 
+            //Add the textbox
             int idx = sheet.TextBoxes.Add(10, 10, 10, 10);
 
             //Create a texbox with some text and assign it some name

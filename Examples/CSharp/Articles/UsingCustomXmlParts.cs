@@ -14,6 +14,7 @@ namespace Aspose.Cells.Examples.Articles
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
+            //The sample XML
             string booksXML = @"
 <catalog>
    <book>
@@ -38,9 +39,13 @@ namespace Aspose.Cells.Examples.Articles
    </book>
 </catalog>
 ";
-
+            //Create a workbook object
             Workbook workbook = new Workbook();
+
+            //Add Custom XML Part
             workbook.ContentTypeProperties.Add("BookStore", booksXML);
+
+            //Save the output xlsx file
             workbook.Save(dataDir + "UsingCustomXmlParts.xlsx");
             //ExEnd:1
 
