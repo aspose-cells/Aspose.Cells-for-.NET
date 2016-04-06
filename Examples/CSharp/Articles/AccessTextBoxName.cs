@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Aspose.Cells;
+using Aspose.Cells.Drawing;
 
 namespace Aspose.Cells.Examples.Articles
 {
@@ -10,27 +8,32 @@ namespace Aspose.Cells.Examples.Articles
     {
         public static void Main(string[] args)
         {
-            //ExStart:1
-            //Create a workbook object
+            //ExStart:AccessTextBoxName
+            // Create an object of the Workbook class
             Workbook workbook = new Workbook();
 
-            //Access first worksheet
+            // Access first worksheet from the collection
             Worksheet sheet = workbook.Worksheets[0];
 
-            //Add the textbox
+            // Add the TextBox to the worksheet
             int idx = sheet.TextBoxes.Add(10, 10, 10, 10);
 
-            //Create a texbox with some text and assign it some name
-            Aspose.Cells.Drawing.TextBox tb1 = sheet.TextBoxes[idx];
+            // Access newly created TextBox using its index & name it
+            TextBox tb1 = sheet.TextBoxes[idx];
             tb1.Name = "MyTextBox";
+
+            // Set text for the TextBox
             tb1.Text = "This is MyTextBox";
 
-            //Access the same textbox via its name
-            Aspose.Cells.Drawing.TextBox tb2 = sheet.TextBoxes["MyTextBox"];
+            // Access the same TextBox via its name
+            TextBox tb2 = sheet.TextBoxes["MyTextBox"];
 
-            //Displaying the text of the textbox accessed by its name
+            //Display the text of the TextBox accessed via name
             Console.WriteLine(tb2.Text);
-            //ExEnd:1
+
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
+            //ExEnd:AccessTextBoxName
         }
     }
 }

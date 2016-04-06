@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Aspose.Cells.Examples.Articles.ImplementCustomCalculationEngine</StartupObject>
+    <StartupObject>Aspose.Cells.Examples.Articles.UsingCustomXmlParts</StartupObject>
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
@@ -56,6 +56,7 @@
     <Compile Include="AdvancedTopics\SmartMarkers\UsingAnonymousTypes.cs" />
     <Compile Include="AdvancedTopics\SmartMarkers\UsingNestedObjects.cs" />
     <Compile Include="AdvancedTopics\UsingCopyStyleAttribute.cs" />
+    <Compile Include="Articles\AccessTextBoxName.cs" />
     <Compile Include="Articles\AddConditionalIconsSet.cs" />
     <Compile Include="Articles\AddImageHyperlinks.cs" />
     <Compile Include="Articles\AddingAnonymousCustomObject.cs" />
@@ -160,6 +161,7 @@
     <Compile Include="Articles\SortData.cs" />
     <Compile Include="Articles\UpdateRichTextCells.cs" />
     <Compile Include="Articles\UsePresentationPreferenceOption.cs" />
+    <Compile Include="Articles\UsingCustomXmlParts.cs" />
     <Compile Include="Articles\UsingICustomFunctionfeature.cs" />
     <Compile Include="Articles\UsingLightCellsAPI.cs" />
     <Compile Include="Articles\UsingBuiltinStyles.cs" />
