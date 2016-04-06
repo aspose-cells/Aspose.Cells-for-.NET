@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D3A228AD-BF9F-42AE-BC8A-C79A4A2D9E8D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>VisualBasic.Aspose.Cells.Examples.Utils</StartupObject>
+    <StartupObject>VisualBasic.Aspose.Cells.Examples.Articles.ImplementCustomCalculationEngine</StartupObject>
     <RootNamespace>VisualBasic</RootNamespace>
     <AssemblyName>VisualBasic</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -47,9 +47,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=8.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.8.7.0\lib\net40\Aspose.Cells.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Aspose.Cells, Version=8.7.2.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Aspose\Aspose.Cells for .NET\Bin\net2.0\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -137,6 +137,7 @@
     <Compile Include="Articles\HtmlExportFrameScripts.vb" />
     <Compile Include="Articles\IgnoreHiddenColumnsDataTable.vb" />
     <Compile Include="Articles\Implement1904DateSystem.vb" />
+    <Compile Include="Articles\ImplementCustomCalculationEngine.vb" />
     <Compile Include="Articles\ImplementingNonSequencedRanges.vb" />
     <Compile Include="Articles\InsertDeleteRows.vb" />
     <Compile Include="Articles\InsertingWAVFile.vb" />

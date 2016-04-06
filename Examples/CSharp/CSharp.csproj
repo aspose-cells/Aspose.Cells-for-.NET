@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Aspose.Cells.Examples.Files.Utility.AdvancedConversiontoPdf</StartupObject>
+    <StartupObject>Aspose.Cells.Examples.Articles.ImplementCustomCalculationEngine</StartupObject>
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
@@ -119,6 +119,7 @@
     <Compile Include="Articles\HtmlExportFrameScripts.cs" />
     <Compile Include="Articles\IgnoreHiddenColumnsDataTable.cs" />
     <Compile Include="Articles\Implement1904DateSystem.cs" />
+    <Compile Include="Articles\ImplementCustomCalculationEngine.cs" />
     <Compile Include="Articles\ImplementingNonSequencedRanges.cs" />
     <Compile Include="Articles\InsertDeleteRows.cs" />
     <Compile Include="Articles\InsertingWAVFile.cs" />
