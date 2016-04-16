@@ -48,8 +48,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Aspose.Cells, Version=8.7.2.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Aspose\Aspose.Cells for .NET\Bin\net2.0\Aspose.Cells.dll</HintPath>
+      <Private>True</Private>
+      <HintPath>..\packages\Aspose.Cells.8.7.2.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -170,7 +170,6 @@
     <Compile Include="Articles\SetPictureBackGroundFillChart.vb" />
     <Compile Include="Articles\SetPixelFormatRenderedImage.vb" />
     <Compile Include="Articles\SettingFormulaCalculationModeWorkbook.vb" />
-<<<<<<< HEAD
     <Compile Include="CellsHelperClass\NameToIndex.vb" />
     <Compile Include="CellsHelperClass\IndexToName.vb" />
     <Compile Include="Charts\ManipulateChart\HowToCreateCustomChart.vb" />
@@ -182,9 +181,7 @@
     <Compile Include="Charts\ManipulateChart\ModifyPieChart.vb" />
     <Compile Include="Charts\ManipulateChart\HowToCreateBubbleChart .vb" />
     <Compile Include="Charts\SettingCategoryData.vb" />
-=======
     <Compile Include="Articles\UsingCustomXmlParts.vb" />
->>>>>>> 275cdb3f8ad52b29a24156ddfd9f78307fd1353f
     <Compile Include="Charts\SettingPivotTableOption.vb" />
     <Compile Include="Articles\SettingSharedFormula.vb" />
     <Compile Include="Articles\SettingStrongEncryptionType.vb" />
