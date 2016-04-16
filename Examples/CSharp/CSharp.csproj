@@ -232,9 +232,7 @@
     <Compile Include="Data\Handling\Importing\ImportingFromCustomObject.cs" />
     <Compile Include="Data\Handling\Importing\ImportingFromDataColumn.cs" />
     <Compile Include="Data\Handling\Importing\ImportHtmlFormattedData.cs" />
-    <Compile Include="Data\Handling\Importing\ImportingFromDataGrid.cs" />
     <Compile Include="Data\Handling\Importing\ImportingFromDataTable.cs" />
-    <Compile Include="Data\Handling\Importing\ImportingFromDataView.cs" />
     <Compile Include="Data\Handling\RetrievingDataFromCells.cs" />
     <Compile Include="Data\Processing\CreatingSubtotals.cs" />
     <Compile Include="Data\Processing\FilteringAndValidation\AutofilterData.cs" />
@@ -351,9 +349,6 @@
     <Compile Include="Formatting\SetPattern.cs" />
     <Compile Include="Formatting\SettingDisplayFormats\UsingBuiltInNumberFormats.cs" />
     <Compile Include="Formatting\SettingDisplayFormats\UsingCustomNumber.cs" />
-    <Compile Include="Formulas\ProcessDataUsingArrayFunction.cs" />
-    <Compile Include="Formulas\ProcessDataUsingAddinfunction.cs" />
-    <Compile Include="Formulas\ProcessDataUsingBuiltinfunction.cs" />
     <Compile Include="Formulas\CalculatingFormulas.cs" />
     <Compile Include="Formulas\CalculatingFormulasOnce.cs" />
     <Compile Include="Formulas\DirectCalculationFormula.cs" />
