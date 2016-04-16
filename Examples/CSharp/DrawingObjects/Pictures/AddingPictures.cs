@@ -8,7 +8,7 @@ namespace Aspose.Cells.Examples.DrawingObjects.Pictures
     {
         public static void Main(string[] args)
         {
-            //Exstart:1
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -31,7 +31,7 @@ namespace Aspose.Cells.Examples.DrawingObjects.Pictures
             worksheet.Pictures.Add(5, 5, dataDir + "logo.jpg");
 
             //Saving the Excel file
-            workbook.Save(dataDir + "book1.out.xls");
+            workbook.Save(dataDir + "output.xls");
             //ExEnd:1
         }
     }

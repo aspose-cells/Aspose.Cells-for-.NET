@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Aspose.Cells.Examples.Files.Utility.AdvancedConversiontoPdf</StartupObject>
+    <StartupObject>Aspose.Cells.Examples.SmartMarkers.CopyStyleWithSmartMarker</StartupObject>
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
@@ -165,18 +165,29 @@
     <Compile Include="Articles\UsingWorkbookMetadata.cs" />
     <Compile Include="Articles\WorkbookScopedNamedRanges\AddWorkbookScopedNamedRange.cs" />
     <Compile Include="Articles\WorkbookScopedNamedRanges\WorksheetNamedRange.cs" />
+    <Compile Include="CellsHelperClass\NameToIndex.cs" />
+    <Compile Include="CellsHelperClass\IndexToName.cs" />
     <Compile Include="Charts\Applying3DFormat.cs" />
     <Compile Include="Charts\ChangeChartPosition.cs" />
     <Compile Include="Charts\HowToCreateChart.cs" />
     <Compile Include="Charts\InsertingControlsintoCharts\AddingLabelControl.cs" />
     <Compile Include="Charts\InsertingControlsintoCharts\AddingPictureToChart.cs" />
     <Compile Include="Charts\InsertingControlsintoCharts\AddingTextBoxControl.cs" />
+    <Compile Include="Charts\ManipulateChart\HowToCreateCustomChart.cs" />
+    <Compile Include="Charts\ManipulateChart\HowToCreatePyramidChart.cs" />
+    <Compile Include="Charts\ManipulateChart\HowToCreateLineChart.cs" />
+    <Compile Include="Charts\ManipulateChart\HowToCreateBubbleChart .cs" />
+    <Compile Include="Charts\ManipulateChart\MicrosoftTheme.cs" />
+    <Compile Include="Charts\ManipulateChart\ModifyLineChart.cs" />
+    <Compile Include="Charts\ManipulateChart\ModifyPieChart.cs" />
+    <Compile Include="Charts\ManipulateChart\HowToCreatePieChart.cs" />
     <Compile Include="Charts\SettingChartsAppearance\ApplyingThemes.cs" />
     <Compile Include="Charts\SettingChartsAppearance\ChangingMajorGridlines.cs" />
     <Compile Include="Charts\SettingChartsAppearance\MajorGridlines.cs" />
     <Compile Include="Charts\SettingChartsAppearance\SettingChartArea.cs" />
     <Compile Include="Charts\SettingChartsAppearance\SettingChartLines.cs" />
     <Compile Include="Charts\SettingChartsAppearance\SettingTitlesAxes.cs" />
+    <Compile Include="Charts\SettingCategoryData.cs" />
     <Compile Include="Charts\SettingChartsData.cs" />
     <Compile Include="Charts\UsingSparklines.cs" />
     <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToAnotherCell.cs" />
@@ -335,10 +346,14 @@
     <Compile Include="Formatting\FormattingSelectedCharacters.cs" />
     <Compile Include="Formatting\MakeCellActive.cs" />
     <Compile Include="Formatting\SetBorder.cs" />
+    <Compile Include="Formatting\UsingCopyMethod.cs" />
     <Compile Include="Formatting\SetFont.cs" />
     <Compile Include="Formatting\SetPattern.cs" />
     <Compile Include="Formatting\SettingDisplayFormats\UsingBuiltInNumberFormats.cs" />
     <Compile Include="Formatting\SettingDisplayFormats\UsingCustomNumber.cs" />
+    <Compile Include="Formulas\ProcessDataUsingArrayFunction.cs" />
+    <Compile Include="Formulas\ProcessDataUsingAddinfunction.cs" />
+    <Compile Include="Formulas\ProcessDataUsingBuiltinfunction.cs" />
     <Compile Include="Formulas\CalculatingFormulas.cs" />
     <Compile Include="Formulas\CalculatingFormulasOnce.cs" />
     <Compile Include="Formulas\DirectCalculationFormula.cs" />
@@ -349,6 +364,12 @@
     <Compile Include="RowsColumns\AutofitRowsandColumns.cs" />
     <Compile Include="RowsColumns\Grouping\SummaryRowRight.cs" />
     <Compile Include="RowsColumns\Grouping\SummaryRowBelow.cs" />
+    <Compile Include="SmartMarkers\CopyStyleWithSmartMarker.cs" />
+    <Compile Include="SmartMarkers\DynamicFormulas.cs" />
+    <Compile Include="SmartMarkers\GroupingData.cs" />
+    <Compile Include="SmartMarkers\ImageMarkers.cs" />
+    <Compile Include="SmartMarkers\UsingAnonymousTypes.cs" />
+    <Compile Include="SmartMarkers\UsingNestedObjects.cs" />
     <Compile Include="Utils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RowsColumns\Copying\CopyingColumns.cs" />
@@ -392,15 +413,16 @@
     <Compile Include="Worksheets\Management\AddWorksheetsToExistingExcelFile.cs" />
     <Compile Include="Worksheets\Management\RemovingWorksheetsUsingSheetIndex.cs" />
     <Compile Include="Worksheets\Management\RemovingWorksheetsUsingSheetName.cs" />
+    <Compile Include="Worksheets\Security\LockCell.cs" />
     <Compile Include="Worksheets\Security\AdvancedProtectionSettings.cs" />
     <Compile Include="Worksheets\Security\AdvancedProtectionSettingsUsingAsposeCells.cs" />
     <Compile Include="Worksheets\Security\AdvanceProtectSettings.cs" />
-    <Compile Include="Worksheets\Security\AllowUserToEditRangesInWorksheet.cs" />
-    <Compile Include="Worksheets\Security\EditRangesWorksheet.cs" />
-    <Compile Include="Worksheets\Security\ProtectCellsWorksheet.cs" />
-    <Compile Include="Worksheets\Security\ProtectColumnWorksheet.cs" />
-    <Compile Include="Worksheets\Security\ProtectingSpecificCellsinaWorksheet.cs" />
-    <Compile Include="Worksheets\Security\ProtectingSpecificColumnInWorksheet.cs" />
+    <Compile Include="Worksheets\Security\Protecting\AllowUserToEditRangesInWorksheet.cs" />
+    <Compile Include="Worksheets\Security\Protecting\EditRangesWorksheet.cs" />
+    <Compile Include="Worksheets\Security\Protecting\ProtectCellsWorksheet.cs" />
+    <Compile Include="Worksheets\Security\Protecting\ProtectColumnWorksheet.cs" />
+    <Compile Include="Worksheets\Security\Protecting\ProtectingSpecificCellsinaWorksheet.cs" />
+    <Compile Include="Worksheets\Security\Protecting\ProtectingSpecificColumnInWorksheet.cs" />
     <Compile Include="Worksheets\Security\Protecting\ProtectingSpecificRowInWorksheet.cs" />
     <Compile Include="Worksheets\Security\Protecting\ProtectingWorksheet.cs" />
     <Compile Include="Worksheets\Security\Protecting\ProtectRowWorksheet.cs" />
@@ -413,6 +435,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

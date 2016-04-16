@@ -11,8 +11,6 @@ Namespace Aspose.Cells.Examples.Data.Handling.AccessingCells
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-
-
             'Path to source file
             Dim filePath As String = dataDir & "Book1.xlsx"
             'Instantiating a Workbook object

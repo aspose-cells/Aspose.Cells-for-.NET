@@ -56,7 +56,7 @@ namespace Aspose.Cells.Examples.Worksheets.Security
             sheet.Protect(ProtectionType.All);
 
             // Save the excel file.
-            wb.Save(dataDir + "output.out.xls", SaveFormat.Excel97To2003);
+            wb.Save(dataDir + "output.xls", SaveFormat.Excel97To2003);
             //ExEnd:1
 
         }

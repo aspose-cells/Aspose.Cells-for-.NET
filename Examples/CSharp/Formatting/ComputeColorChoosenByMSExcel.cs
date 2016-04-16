@@ -26,6 +26,8 @@ namespace Aspose.Cells.Examples.Formatting
             ConditionalFormattingResult cfr1 = a1.GetConditionalFormattingResult();
             //Get the ColorScale resultant color object
             Color c = cfr1.ColorScaleResult;
+
+
             //Read the color
             Console.WriteLine(c.ToArgb().ToString());
             Console.WriteLine(c.Name);

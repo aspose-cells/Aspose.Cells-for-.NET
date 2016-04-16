@@ -22,7 +22,7 @@ namespace Aspose.Cells.Examples.Worksheets.Security.Unprotect
             worksheet.Unprotect();
 
             //Saving the Workbook
-            workbook.Save(dataDir + "output.out.xls", SaveFormat.Excel97To2003);
+            workbook.Save(dataDir + "output.xls", SaveFormat.Excel97To2003);
             //ExEnd:1
 
 

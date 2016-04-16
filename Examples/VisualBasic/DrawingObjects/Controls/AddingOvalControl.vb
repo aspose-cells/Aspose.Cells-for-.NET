@@ -62,6 +62,7 @@ Namespace Aspose.Cells.Examples.DrawingObjects.Controls
 
             'Save the excel file.
             excelbook.Save(dataDir & "output.xls")
+            'ExEnd:1
 
         End Sub
     End Class

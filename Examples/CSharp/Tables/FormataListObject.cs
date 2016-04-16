@@ -231,7 +231,7 @@ namespace Aspose.Cells.Examples.Tables
 
 
             //Saving the Excel file
-            workbook.Save(dataDir + "List_Object.out.xlsx");
+            workbook.Save(dataDir + "output.xlsx");
             //ExEnd:1
 
         }

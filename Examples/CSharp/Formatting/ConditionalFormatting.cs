@@ -11,6 +11,7 @@ namespace Aspose.Cells.Examples.Formatting
         Worksheet _sheet = null;
         public static void Main()
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             ConditionalFormatting obj = new ConditionalFormatting();
@@ -808,6 +809,7 @@ namespace Aspose.Cells.Examples.Formatting
 
             cond.Top10.Rank = 3;
         }
+        //ExEnd:1
 
     }
 }

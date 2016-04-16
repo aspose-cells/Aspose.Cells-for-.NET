@@ -33,13 +33,13 @@ namespace Aspose.Cells.Examples.Charts
             worksheet.Cells["A2"].PutValue(100);
 
             //Adding a sample value to "A3" cell
-            worksheet.Cells["A3"].PutValue(150);
+            worksheet.Cells["A3"].PutValue(170);
 
             //Adding a sample value to "A4" cell
-            worksheet.Cells["A4"].PutValue(200);
+            worksheet.Cells["A4"].PutValue(300);
 
             //Adding a sample value to "B1" cell
-            worksheet.Cells["B1"].PutValue(60);
+            worksheet.Cells["B1"].PutValue(160);
 
             //Adding a sample value to "B2" cell
             worksheet.Cells["B2"].PutValue(32);
@@ -71,11 +71,9 @@ namespace Aspose.Cells.Examples.Charts
             //Adding SeriesCollection (chart data source) to the chart ranging from "A1" cell to "B4"
             chart.NSeries.Add("A1:B4", true);
 
-            //Setting the data source for the category data of SeriesCollection
-            chart.NSeries.CategoryData = "C1:C4";
-
+            
             //Saving the Excel file
-            workbook.Save(dataDir + "book1.out.xls");
+            workbook.Save(dataDir + "output.xls");
             //ExEnd:1
 
         }

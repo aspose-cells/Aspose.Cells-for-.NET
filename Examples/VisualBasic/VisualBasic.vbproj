@@ -168,6 +168,17 @@
     <Compile Include="Articles\SetPictureBackGroundFillChart.vb" />
     <Compile Include="Articles\SetPixelFormatRenderedImage.vb" />
     <Compile Include="Articles\SettingFormulaCalculationModeWorkbook.vb" />
+    <Compile Include="CellsHelperClass\NameToIndex.vb" />
+    <Compile Include="CellsHelperClass\IndexToName.vb" />
+    <Compile Include="Charts\ManipulateChart\HowToCreateCustomChart.vb" />
+    <Compile Include="Charts\ManipulateChart\HowToCreateLineChart.vb" />
+    <Compile Include="Charts\ManipulateChart\HowToCreatePieChart.vb" />
+    <Compile Include="Charts\ManipulateChart\HowToCreatePyramidChart.vb" />
+    <Compile Include="Charts\ManipulateChart\MicrosoftTheme.vb" />
+    <Compile Include="Charts\ManipulateChart\ModifyLineChart.vb" />
+    <Compile Include="Charts\ManipulateChart\ModifyPieChart.vb" />
+    <Compile Include="Charts\ManipulateChart\HowToCreateBubbleChart .vb" />
+    <Compile Include="Charts\SettingCategoryData.vb" />
     <Compile Include="Charts\SettingPivotTableOption.vb" />
     <Compile Include="Articles\SettingSharedFormula.vb" />
     <Compile Include="Articles\SettingStrongEncryptionType.vb" />
@@ -319,6 +330,8 @@
     <Compile Include="Formatting\Borders\AddingBordersToCells.vb" />
     <Compile Include="Formatting\Borders\AddingBorderstoRange.vb" />
     <Compile Include="Formatting\ColorsAndBackground.vb" />
+    <Compile Include="Formatting\ComputeColorChoosenByMSExcel.vb" />
+    <Compile Include="Formatting\UsingCopyMethod.vb" />
     <Compile Include="Formatting\SetPattern.vb" />
     <Compile Include="Formatting\SetFont.vb" />
     <Compile Include="Formatting\SetBorder.vb" />
@@ -395,6 +408,10 @@
     <Compile Include="RowsColumns\InsertingAndDeleting\InsertingARow.vb" />
     <Compile Include="RowsColumns\InsertingAndDeleting\InsertingMultipleRows.vb" />
     <Compile Include="RowsColumns\AutofitColumn.vb" />
+    <Compile Include="SmartMarkers\GroupingData.vb" />
+    <Compile Include="SmartMarkers\ImageMarkers.vb" />
+    <Compile Include="SmartMarkers\UsingAnonymousTypes.vb" />
+    <Compile Include="SmartMarkers\UsingNestedObjects.vb" />
     <Compile Include="Tables\ConvertTableToRange.vb" />
     <Compile Include="Tables\CreatingListObject.vb" />
     <Compile Include="Tables\FormataListObject.vb" />

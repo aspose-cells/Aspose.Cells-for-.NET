@@ -9,6 +9,7 @@ namespace Aspose.Cells.Examples.AdvancedTopics
     {
         public static void Main(string[] args)
         {
+            //ExStart:1
             // The path to the documents directory.
             string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -53,8 +54,8 @@ namespace Aspose.Cells.Examples.AdvancedTopics
             designer.Process();
 
             //Save the Excel file
-            workbook.Save(filePath + dataDir+ "_out1.out.xlsx", SaveFormat.Xlsx);
-            
+            workbook.Save(filePath + dataDir+ "output.xlsx", SaveFormat.Xlsx);
+           //ExEnd:1 
             
         }
     }

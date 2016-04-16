@@ -6,7 +6,7 @@ Imports System.Drawing
 Namespace Aspose.Cells.Examples.RowsColumns
     Public Class AutofitColumninSpecificRange
         Public Shared Sub Main(ByVal args() As String)
-            'ExSatrt:1
+            'ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
