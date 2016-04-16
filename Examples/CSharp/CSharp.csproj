@@ -193,6 +193,7 @@
     <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToAnotherCell.cs" />
     <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToExternalFile.cs" />
     <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToURL.cs" />
+    <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToURL2.cs" />
     <Compile Include="Data\AddOn\Merging\MergingCellsInWorksheet..cs" />
     <Compile Include="Data\AddOn\Merging\UnMergingtheMergedCells.cs" />
     <Compile Include="Data\AddOn\NamedRanges\AccessAllNamedRanges.cs" />
@@ -207,6 +208,7 @@
     <Compile Include="Data\AddOn\NamedRanges\MergeCellsInNamedRange.cs" />
     <Compile Include="Data\AddOn\NamedRanges\RemoveANamedRange.cs" />
     <Compile Include="Data\AddOn\NamedRanges\RenameNamedRange.cs" />
+    <Compile Include="Data\AddOn\NamedRanges\SetBorderAroundEachCell.cs" />
     <Compile Include="Data\AddOn\NamedRanges\UnionOfRanges.cs" />
     <Compile Include="Data\Handling\AccessingCells\AccessingMaximumDisplayRangeofWorksheet.cs" />
     <Compile Include="Data\Processing\TracingDependents.cs" />
