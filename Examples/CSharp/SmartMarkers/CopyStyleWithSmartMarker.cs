@@ -36,9 +36,7 @@ namespace Aspose.Cells.Examples.SmartMarkers
             dtStudent.Rows.Add(drName1);
             dtStudent.Rows.Add(drName2);
             dtStudent.Rows.Add(drName3);
-
-
-
+            
             string filePath = dataDir + "Template.xlsx";
 
             //Create a workbook from Smart Markers template file
