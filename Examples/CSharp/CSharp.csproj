@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Aspose.Cells.Examples.SmartMarkers.CopyStyleWithSmartMarker</StartupObject>
+    <StartupObject>Aspose.Cells.Examples.Utils</StartupObject>
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
@@ -165,6 +165,7 @@
     <Compile Include="Articles\UsingWorkbookMetadata.cs" />
     <Compile Include="Articles\WorkbookScopedNamedRanges\AddWorkbookScopedNamedRange.cs" />
     <Compile Include="Articles\WorkbookScopedNamedRanges\WorksheetNamedRange.cs" />
+    <Compile Include="CellsHelperClass\MergeFiles.cs" />
     <Compile Include="CellsHelperClass\NameToIndex.cs" />
     <Compile Include="CellsHelperClass\IndexToName.cs" />
     <Compile Include="Charts\Applying3DFormat.cs" />
@@ -354,6 +355,18 @@
     <Compile Include="Formulas\CalculatingFormulas.cs" />
     <Compile Include="Formulas\CalculatingFormulasOnce.cs" />
     <Compile Include="Formulas\DirectCalculationFormula.cs" />
+    <Compile Include="Formulas\ProcessDataUsingR1C1.cs" />
+    <Compile Include="Formulas\ProcessDataUsingAddinfunction.cs" />
+    <Compile Include="Formulas\ProcessDataUsingBuiltinfunction.cs" />
+    <Compile Include="PivotTableExamples\ConsolidationFunctions.cs" />
+    <Compile Include="PivotTableExamples\FormattingLook.cs" />
+    <Compile Include="PivotTableExamples\SettingDataFieldFormat.cs" />
+    <Compile Include="PivotTableExamples\SettingPageFieldFormat.cs" />
+    <Compile Include="PivotTableExamples\SettingFormatOptions.cs" />
+    <Compile Include="PivotTableExamples\SettingAutoFormat.cs" />
+    <Compile Include="PivotTableExamples\ClearPivotFields.cs" />
+    <Compile Include="PivotTableExamples\CreatePivotTable.cs" />
+    <Compile Include="PivotTableExamples\ChangeSourceData.cs" />
     <Compile Include="RowsColumns\AutofitRowsforMergedCells.cs" />
     <Compile Include="RowsColumns\AutofitColumninSpecificRange.cs" />
     <Compile Include="RowsColumns\AutofitRowinSpecificRange.cs" />
@@ -361,9 +374,14 @@
     <Compile Include="RowsColumns\AutofitRowsandColumns.cs" />
     <Compile Include="RowsColumns\Grouping\SummaryRowRight.cs" />
     <Compile Include="RowsColumns\Grouping\SummaryRowBelow.cs" />
+    <Compile Include="SmartMarkers\AddCustomLabels.cs" />
     <Compile Include="SmartMarkers\CopyStyleWithSmartMarker.cs" />
     <Compile Include="SmartMarkers\DynamicFormulas.cs" />
     <Compile Include="SmartMarkers\GroupingData.cs" />
+    <Compile Include="SmartMarkers\UsingCopyStyleAttribute.cs" />
+    <Compile Include="SmartMarkers\UsingGenericList.cs" />
+    <Compile Include="SmartMarkers\UsingHTMLProperty.cs" />
+    <Compile Include="SmartMarkers\UsingVariableArray.cs" />
     <Compile Include="SmartMarkers\ImageMarkers.cs" />
     <Compile Include="SmartMarkers\UsingAnonymousTypes.cs" />
     <Compile Include="SmartMarkers\UsingNestedObjects.cs" />

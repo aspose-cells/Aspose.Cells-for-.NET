@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D3A228AD-BF9F-42AE-BC8A-C79A4A2D9E8D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>VisualBasic.Aspose.Cells.Examples.Articles.UsingCustomXmlParts</StartupObject>
+    <StartupObject>VisualBasic.Aspose.Cells.Examples.Utils</StartupObject>
     <RootNamespace>VisualBasic</RootNamespace>
     <AssemblyName>VisualBasic</AssemblyName>
     <FileAlignment>512</FileAlignment>
@@ -170,6 +170,7 @@
     <Compile Include="Articles\SetPictureBackGroundFillChart.vb" />
     <Compile Include="Articles\SetPixelFormatRenderedImage.vb" />
     <Compile Include="Articles\SettingFormulaCalculationModeWorkbook.vb" />
+    <Compile Include="CellsHelperClass\MergeFiles.vb" />
     <Compile Include="CellsHelperClass\NameToIndex.vb" />
     <Compile Include="CellsHelperClass\IndexToName.vb" />
     <Compile Include="Charts\ManipulateChart\HowToCreateCustomChart.vb" />
@@ -384,6 +385,15 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="PivotTableExamples\ConsolidationFunctions.vb" />
+    <Compile Include="PivotTableExamples\ClearPivotFields.vb" />
+    <Compile Include="PivotTableExamples\FormattingLook.vb" />
+    <Compile Include="PivotTableExamples\SettingAutoFormat.vb" />
+    <Compile Include="PivotTableExamples\SettingDataFieldFormat.vb" />
+    <Compile Include="PivotTableExamples\SettingPageFieldFormat.vb" />
+    <Compile Include="PivotTableExamples\SettingFormatOptions.vb" />
+    <Compile Include="PivotTableExamples\CreatePivotTable.vb" />
+    <Compile Include="PivotTableExamples\ChangeSourceData.vb" />
     <Compile Include="RowsColumns\AutofitRowinSpecificRange.vb" />
     <Compile Include="RowsColumns\AutofitRowsandColumns.vb" />
     <Compile Include="RowsColumns\AutofitRowsforMergedCells.vb" />
@@ -411,9 +421,16 @@
     <Compile Include="RowsColumns\InsertingAndDeleting\InsertingARow.vb" />
     <Compile Include="RowsColumns\InsertingAndDeleting\InsertingMultipleRows.vb" />
     <Compile Include="RowsColumns\AutofitColumn.vb" />
+    <Compile Include="SmartMarkers\CopyStyleWithSmartMarker.vb" />
+    <Compile Include="SmartMarkers\DynamicFormulas.vb" />
     <Compile Include="SmartMarkers\GroupingData.vb" />
+    <Compile Include="SmartMarkers\AddCustomLabels.vb" />
+    <Compile Include="SmartMarkers\UsingVariableArray.vb" />
+    <Compile Include="SmartMarkers\UsingHTMLProperty.vb" />
+    <Compile Include="SmartMarkers\UsingGenericList.vb" />
     <Compile Include="SmartMarkers\ImageMarkers.vb" />
     <Compile Include="SmartMarkers\UsingAnonymousTypes.vb" />
+    <Compile Include="SmartMarkers\UsingCopyStyleAttribute.vb" />
     <Compile Include="SmartMarkers\UsingNestedObjects.vb" />
     <Compile Include="Tables\ConvertTableToRange.vb" />
     <Compile Include="Tables\CreatingListObject.vb" />
