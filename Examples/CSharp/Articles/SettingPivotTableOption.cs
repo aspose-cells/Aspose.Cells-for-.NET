@@ -14,19 +14,19 @@ namespace Aspose.Cells.Examples.Articles
 
             Workbook wb = new Workbook(dataDir + "input.xlsx");
 
-            PivotTable pt = wb.Worksheets[0].PivotTables[0];
+            //PivotTable pt = wb.Worksheets[0].PivotTables[0];
 
             //Indicating if or not display the empty cell value
-            pt.DisplayNullString = true;
+            //pt.DisplayNullString = true;
 
             //Indicating the null string
-            pt.NullString = "null";
+            //pt.NullString = "null";
 
-            pt.CalculateData();
+           // pt.CalculateData();
 
-            pt.RefreshDataOnOpeningFile = false;
+           // pt.RefreshDataOnOpeningFile = false;
 
-            wb.Save(dataDir+ "output.out.xlsx");
+           // wb.Save(dataDir+ "output.out.xlsx");
             
         }
     }

@@ -59,7 +59,7 @@ namespace Aspose.Cells.Examples.Data.Handling.Importing
             worksheet.Cells.ImportDataView(dataTable.DefaultView, true, 0, 0, false);
 
             //Saving the Excel file
-            workbook.Save(dataDir + "DataImport.out.xls");
+            workbook.Save(dataDir + "output.xls");
             //ExEnd:1
         }
     }

@@ -58,7 +58,7 @@ namespace Aspose.Cells.Examples.Data.Handling.Importing
             //worksheet.Cells.ImportDataGrid(dataGrid, 0, 0, false);
 
             //Saving the Excel file
-            workbook.Save(dataDir + "DataImport.out.xls");
+            workbook.Save(dataDir + "output.xls");
         }
     }
 }

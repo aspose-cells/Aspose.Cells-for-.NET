@@ -22,7 +22,7 @@ namespace Aspose.Cells.Examples.Articles
             Worksheet worksheet = workbook.Worksheets["PivotTable"];
 
             //Access the pivot table
-            PivotTable pivotTable = worksheet.PivotTables[0];
+            //PivotTable pivotTable = worksheet.PivotTables[0];
 
             //Create a style object with background color light blue
             Style style = workbook.CreateStyle();
@@ -30,7 +30,7 @@ namespace Aspose.Cells.Examples.Articles
             style.BackgroundColor = Color.LightBlue;
 
             //Format entire pivot table with light blue color
-            pivotTable.FormatAll(style);
+           // worksheet.FormatAll(style);
 
             //Create another style object with yellow color
             style = workbook.CreateStyle();
@@ -40,11 +40,11 @@ namespace Aspose.Cells.Examples.Articles
             //Format the cells of the first row of the pivot table with yellow color
             for (int col = 0; col < 5; col++)
             {
-                pivotTable.Format(1, col, style);
+               // worksheet.Format(1, col, style);
             }
 
             //Save the workbook object
-            workbook.Save(dataDir+ "output.out.xlsx");
+            workbook.Save(dataDir+ "output.xlsx");
             //ExEnd:1
         }
     }
