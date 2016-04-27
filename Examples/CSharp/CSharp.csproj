@@ -71,7 +71,7 @@
     <Compile Include="Articles\AssignMacroToFormControl.cs" />
     <Compile Include="Articles\AssignValidateDigitalSignatures.cs" />
     <Compile Include="Articles\AutoFitRowsMergedCells.cs" />
-    <Compile Include="Articles\AvoidExponentialNotationOfHTML.cs" />
+    <Compile Include="Articles\AvoidExponentialNotationWhileImportingFromHtml.cs" />
     <Compile Include="Articles\ChangeHtmlLinkTarget.cs" />
     <Compile Include="Articles\ChangeTextDirection.cs" />
     <Compile Include="Articles\CheckVbaProjectSigned.cs">
