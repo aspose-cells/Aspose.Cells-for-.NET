@@ -56,6 +56,7 @@
     <Compile Include="AdvancedTopics\SmartMarkers\UsingAnonymousTypes.cs" />
     <Compile Include="AdvancedTopics\SmartMarkers\UsingNestedObjects.cs" />
     <Compile Include="AdvancedTopics\UsingCopyStyleAttribute.cs" />
+    <Compile Include="Articles\AccessTextBoxName.cs" />
     <Compile Include="Articles\AddConditionalIconsSet.cs" />
     <Compile Include="Articles\AddImageHyperlinks.cs" />
     <Compile Include="Articles\AddingAnonymousCustomObject.cs" />
@@ -70,6 +71,7 @@
     <Compile Include="Articles\AssignMacroToFormControl.cs" />
     <Compile Include="Articles\AssignValidateDigitalSignatures.cs" />
     <Compile Include="Articles\AutoFitRowsMergedCells.cs" />
+    <Compile Include="Articles\AvoidExponentialNotationOfHTML.cs" />
     <Compile Include="Articles\ChangeHtmlLinkTarget.cs" />
     <Compile Include="Articles\ChangeTextDirection.cs" />
     <Compile Include="Articles\CheckVbaProjectSigned.cs">
@@ -99,6 +101,7 @@
     <Compile Include="Articles\DataValidationRules.cs" />
     <Compile Include="Articles\DeleteBlankRowsColumns\DeletingBlankColumns.cs" />
     <Compile Include="Articles\DeleteBlankRowsColumns\DeletingBlankRows.cs" />
+    <Compile Include="Articles\DeleteRedundantSpacesWhileImportingFromHtml.cs" />
     <Compile Include="Articles\DetectMergedCells.cs" />
     <Compile Include="Articles\DisableCompatibilityChecker.cs" />
     <Compile Include="Articles\ErrorCheckingOptions.cs" />
@@ -107,6 +110,8 @@
     <Compile Include="Articles\ExtractImagesFromWorksheets.cs" />
     <Compile Include="Articles\ExtractOLEObjects.cs" />
     <Compile Include="Articles\FindCellsWithSpecificStyle.cs" />
+    <Compile Include="Articles\FindIfCellValueStartsWithSingleQuote.cs" />
+    <Compile Include="Articles\FindQueryTablesAndListObjectsOfExternalDataConnections.cs" />
     <Compile Include="Articles\FitAllWorksheetColumns.cs" />
     <Compile Include="Articles\FormatPivotTableCells.cs" />
     <Compile Include="Articles\FormatWorksheetCells.cs" />
@@ -119,6 +124,7 @@
     <Compile Include="Articles\HtmlExportFrameScripts.cs" />
     <Compile Include="Articles\IgnoreHiddenColumnsDataTable.cs" />
     <Compile Include="Articles\Implement1904DateSystem.cs" />
+    <Compile Include="Articles\ImplementCustomCalculationEngine.cs" />
     <Compile Include="Articles\ImplementingNonSequencedRanges.cs" />
     <Compile Include="Articles\InsertDeleteRows.cs" />
     <Compile Include="Articles\InsertingWAVFile.cs" />
@@ -159,7 +165,9 @@
     <Compile Include="Articles\SortData.cs" />
     <Compile Include="Articles\UpdateRichTextCells.cs" />
     <Compile Include="Articles\UsePresentationPreferenceOption.cs" />
+    <Compile Include="Articles\UsingCustomXmlParts.cs" />
     <Compile Include="Articles\UsingICustomFunctionfeature.cs" />
+    <Compile Include="Articles\UsingImageMarkersWhileGroupingDataInSmartMarkers.cs" />
     <Compile Include="Articles\UsingLightCellsAPI.cs" />
     <Compile Include="Articles\UsingBuiltinStyles.cs" />
     <Compile Include="Articles\UsingWorkbookMetadata.cs" />
