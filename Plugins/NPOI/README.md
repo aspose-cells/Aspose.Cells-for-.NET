@@ -5,4 +5,5 @@ We have developed the following examples for NPOI .NET version of POI Java proje
 * [Aspose.Cells vs NPOI.HSSF and XSSF](Aspose.Cells vs NPOI.HSSF and XSSF)
 * [Aspose.Cells vs NPOI.HSSF and XSSF v1.1](Aspose.Cells vs NPOI.HSSF and XSSF v1.1)
 * [Aspose.Cells vs NPOI.HSSF and XSSF v1.2](Aspose.Cells vs NPOI.HSSF and XSSF v1.2)
+* [Aspose.Cells Vs NPOI HWPF and XWPF v1.3](Aspose.Cells Vs NPOI HWPF and XWPF v1.3)
 * [Missing Features of NPOI HSSF and XSSF](Missing Features of NPOI HSSF and XSSF)
