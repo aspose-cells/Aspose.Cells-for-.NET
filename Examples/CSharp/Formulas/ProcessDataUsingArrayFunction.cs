@@ -34,15 +34,33 @@ namespace Aspose.Cells.Examples.Formulas
 
             //Adding a value to "A3" cell
             worksheet.Cells["A3"].PutValue(3);
+            
+            //Adding a value to B1
+            worksheet.Cells["B1"].PutValue(4);
+
+            //Adding a value to "B2" cell
+            worksheet.Cells["B2"].PutValue(5);
+
+            //Adding a value to "B3" cell
+            worksheet.Cells["B3"].PutValue(6);
+
+            //Adding a value to C1
+            worksheet.Cells["C1"].PutValue(7);
+
+            //Adding a value to "C2" cell
+            worksheet.Cells["C2"].PutValue(8);
+
+            //Adding a value to "C3" cell
+            worksheet.Cells["C3"].PutValue(9);
 
             //Adding a SUM formula to "A4" cell
-            worksheet.Cells["A4"].Formula = "=SUM(A1:A3)";
+            worksheet.Cells["A6"].SetArrayFormula("=LINEST(A1:A3,B1:C3,TRUE,TRUE)", 5, 3);
 
             //Calculating the results of formulas
             workbook.CalculateFormula();
 
             //Get the calculated value of the cell
-            string value = worksheet.Cells["A4"].Value.ToString();
+            string value = worksheet.Cells["A6"].Value.ToString();
 
             //Saving the Excel file
             workbook.Save(dataDir + "output.xls");

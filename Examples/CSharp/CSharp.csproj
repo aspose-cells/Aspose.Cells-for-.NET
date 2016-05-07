@@ -32,7 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Aspose.Cells.Examples.Utils</StartupObject>
+    <StartupObject>Aspose.Cells.Examples.Data.Handling.ExportColumnContainingNonStronglyTypedData</StartupObject>
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
@@ -43,6 +43,7 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -212,6 +213,10 @@
     <Compile Include="Data\AddOn\NamedRanges\SetBorderAroundEachCell.cs" />
     <Compile Include="Data\AddOn\NamedRanges\UnionOfRanges.cs" />
     <Compile Include="Data\Handling\AccessingCells\AccessingMaximumDisplayRangeofWorksheet.cs" />
+    <Compile Include="Data\Handling\ExportColumnContainingNonStronglyTypedData.cs" />
+    <Compile Include="Data\Handling\Importing\ImportingFromOleDbDataReader.cs" />
+    <Compile Include="Data\Handling\Importing\ImportingFromDataGrid.cs" />
+    <Compile Include="Data\Handling\Importing\ImportingFromDataView.cs" />
     <Compile Include="Data\Processing\TracingDependents.cs" />
     <Compile Include="Data\Processing\TracingPrecedents.cs" />
     <Compile Include="Data\Handling\AccessingCells\RowAndColumnIndex.cs" />
@@ -355,6 +360,7 @@
     <Compile Include="Formulas\CalculatingFormulas.cs" />
     <Compile Include="Formulas\CalculatingFormulasOnce.cs" />
     <Compile Include="Formulas\DirectCalculationFormula.cs" />
+    <Compile Include="Formulas\ProcessDataUsingArrayFunction.cs" />
     <Compile Include="Formulas\ProcessDataUsingR1C1.cs" />
     <Compile Include="Formulas\ProcessDataUsingAddinfunction.cs" />
     <Compile Include="Formulas\ProcessDataUsingBuiltinfunction.cs" />

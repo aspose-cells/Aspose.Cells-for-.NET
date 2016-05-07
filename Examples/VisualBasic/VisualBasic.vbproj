@@ -236,6 +236,8 @@
     <Compile Include="Data\Handling\AccessingCells\UsingRowAndColumnIndexOfCell.vb" />
     <Compile Include="Data\Handling\AddingDataToCells.vb" />
     <Compile Include="Data\Handling\DataSorting.vb" />
+    <Compile Include="Data\Handling\ExportColumnContainingStronglyTypedData.vb" />
+    <Compile Include="Data\Handling\ExportColumnContainingNonStronglyTypedData.vb" />
     <Compile Include="Data\Handling\ExportingDataFromWorksheets.vb" />
     <Compile Include="Data\Handling\Find\FindCellsContainingFormula.vb" />
     <Compile Include="Data\Handling\Find\FindCellsStringNumber.vb" />
@@ -247,6 +249,9 @@
     <Compile Include="Data\Handling\Importing\ImportingFromArray.vb" />
     <Compile Include="Data\Handling\Importing\ImportingFromArrayList.vb" />
     <Compile Include="Data\Handling\Importing\ImportingFromCustomObject.vb" />
+    <Compile Include="Data\Handling\Importing\ImportHtmlFormattedData.vb" />
+    <Compile Include="Data\Handling\Importing\ImportingFromDataGrid.vb" />
+    <Compile Include="Data\Handling\Importing\ImportingFromOleDbDataReader.vb" />
     <Compile Include="Data\Handling\Importing\ImportingFromDataColumn.vb" />
     <Compile Include="Data\Handling\Importing\ImportingFromDataTable.vb" />
     <Compile Include="Data\Handling\Importing\ImportingFromDataView.vb" />
@@ -367,6 +372,10 @@
     <Compile Include="Formatting\FormattingSelectedCharacters.vb" />
     <Compile Include="Formatting\SettingDisplayFormats\UsingBuiltInNumberFormats.vb" />
     <Compile Include="Formatting\SettingDisplayFormats\UsingCustomNumber.vb" />
+    <Compile Include="Formulas\ProcessDataUsingR1C1.vb" />
+    <Compile Include="Formulas\ProcessDataUsingBuiltinfunction.vb" />
+    <Compile Include="Formulas\ProcessDataUsingArrayFunction.vb" />
+    <Compile Include="Formulas\ProcessDataUsingAddinfunction.vb" />
     <Compile Include="Formulas\CalculatingFormulas.vb" />
     <Compile Include="Formulas\CalculatingFormulasOnce.vb" />
     <Compile Include="Formulas\DirectCalculationFormula.vb" />
@@ -456,6 +465,7 @@
     <Compile Include="Worksheets\Management\RemovingWorksheetsUsingSheetName.vb" />
     <Compile Include="Worksheets\Security\AdvancedProtectionSettings.vb" />
     <Compile Include="Worksheets\Security\AdvancedProtectionSettingsUsingAsposeCells.vb" />
+    <Compile Include="Worksheets\Security\LockCell.vb" />
     <Compile Include="Worksheets\Security\AdvanceProtectSettings.vb" />
     <Compile Include="Worksheets\Security\Protecting\AllowUserToEditRangesInWorksheet.vb" />
     <Compile Include="Worksheets\Security\Protecting\EditRangesWorksheet.vb" />

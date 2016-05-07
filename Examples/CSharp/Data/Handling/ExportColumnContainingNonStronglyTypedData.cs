@@ -7,7 +7,7 @@ using System.Data;
 
 namespace Aspose.Cells.Examples.Data.Handling
 {
-    public class ExportColumnContainingStronglyTypedData
+    public class ExportColumnContainingNonStronglyTypedData
     {
         public static void Main(string[] args)
         {
@@ -24,20 +24,20 @@ namespace Aspose.Cells.Examples.Data.Handling
             Worksheet worksheet = workbook.Worksheets[0];
 
             //Exporting the contents of 7 rows and 2 columns starting from 1st cell to DataTable
-            DataTable dataTable = worksheet.Cells.ExportDataTable(0, 0, 11, 2, true);
+            DataTable dataTable = worksheet.Cells.ExportDataTableAsString(0, 0, 11, 2, true);
 
             foreach (DataRow r in dataTable.Rows)
             {
                 foreach (DataColumn c in dataTable.Columns)
                 {
-                    Double value = r.Field<Double>(c);
-                    Console.Write(value + "    ");
+                    string value = r.Field<string>(c);
+                    Console.Write(value + "            ");
                 }
                 Console.WriteLine();
             }
-
             //ExEnd:1
 
+            
         }
     }
 }

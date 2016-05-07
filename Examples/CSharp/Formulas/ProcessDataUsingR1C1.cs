@@ -17,8 +17,9 @@ namespace Aspose.Cells.Examples.Formulas
 
             Worksheet worksheet = workbook.Worksheets[0];
 
-            //Setting an R1C1 formula on the "A1" cell
-            worksheet.Cells["A11"].R1C1Formula = "=SUM(R[1]C[1]:R[3]C[1])";
+            //Setting an R1C1 formula on the "A11" cell, 
+            //Row and Column indeces are relative to destination index
+            worksheet.Cells["A11"].R1C1Formula = "=SUM(R[-10]C[0]:R[-7]C[0])";
 
             //Saving the Excel file
             workbook.Save(dataDir + "output.xls");
