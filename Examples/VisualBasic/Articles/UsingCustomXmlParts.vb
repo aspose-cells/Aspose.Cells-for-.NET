@@ -9,28 +9,7 @@ Namespace Aspose.Cells.Examples.Articles
             Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
             ' The sample XML that will be injected to Workbook
-            Dim booksXML As String = "<catalog>
-               <book>
-                  <title>Complete C#</title>
-                  <price>44</price>
-               </book>
-               <book>
-                  <title>Complete Java</title>
-                  <price>76</price>
-               </book>
-               <book>
-                  <title>Complete SharePoint</title>
-                  <price>55</price>
-               </book>
-               <book>
-                  <title>Complete PHP</title>
-                  <price>63</price>
-               </book>
-               <book>
-                  <title>Complete VB.NET</title>
-                  <price>72</price>
-               </book>
-            </catalog>"
+            Dim booksXML As String = "<catalog> <book> <title>Complete C#</title> <price>44</price> </book> <book> <title>Complete Java</title> <price>76</price> </book> <book> <title>Complete SharePoint</title> <price>55</price> </book> <book> <title>Complete PHP</title> <price>63</price> </book> <book> <title>Complete VB.NET</title> <price>72</price> </book> </catalog>"
 
             ' Create an instance of Workbook class
             Dim workbook As New Workbook()

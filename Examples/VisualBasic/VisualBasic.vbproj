@@ -6,8 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D3A228AD-BF9F-42AE-BC8A-C79A4A2D9E8D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>VisualBasic.Aspose.Cells.Examples.Utils</StartupObject>
-    <RootNamespace>VisualBasic</RootNamespace>
+    <StartupObject>Aspose.Cells.Examples.Utils</StartupObject>
+    <RootNamespace>
+    </RootNamespace>
     <AssemblyName>VisualBasic</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Console</MyType>
@@ -47,9 +48,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=8.7.2.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+    <Reference Include="Aspose.Cells, Version=8.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <Private>True</Private>
-      <HintPath>..\packages\Aspose.Cells.8.7.2\lib\net40\Aspose.Cells.dll</HintPath>
+      <HintPath>..\packages\Aspose.Cells.8.8.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -92,6 +93,7 @@
     <Compile Include="Articles\AssignMacroToFormControl.vb" />
     <Compile Include="Articles\AssignValidateDigitalSignatures.vb" />
     <Compile Include="Articles\AutoFitRowsMergedCells.vb" />
+    <Compile Include="Articles\AvoidExponentialNotationWhileImportingFromHtml.vb" />
     <Compile Include="Articles\ChangeHtmlLinkTarget.vb" />
     <Compile Include="Articles\ChangeTextDirection.vb" />
     <Compile Include="Articles\CheckVbaProjectSigned.vb" />
@@ -119,6 +121,7 @@
     <Compile Include="Articles\DataValidationRules.vb" />
     <Compile Include="Articles\DeleteBlankRowsColumns\DeletingBlankColumns.vb" />
     <Compile Include="Articles\DeleteBlankRowsColumns\DeletingBlankRows.vb" />
+    <Compile Include="Articles\DeleteRedundantSpacesWhileImportingFromHtml.vb" />
     <Compile Include="Articles\DetectMergedCells.vb" />
     <Compile Include="Articles\DisableCompatibilityChecker.vb" />
     <Compile Include="Articles\ErrorCheckingOptions.vb" />
@@ -128,6 +131,8 @@
     <Compile Include="Articles\ExtractImagesFromWorksheets.vb" />
     <Compile Include="Articles\ExtractOLEObjects.vb" />
     <Compile Include="Articles\FindCellsWithSpecificStyle.vb" />
+    <Compile Include="Articles\FindIfCellValueStartsWithSingleQuote.vb" />
+    <Compile Include="Articles\FindQueryTablesAndListObjectsOfExternalDataConnections.vb" />
     <Compile Include="Articles\FitAllWorksheetColumns.vb" />
     <Compile Include="Articles\FormatPivotTableCells.vb" />
     <Compile Include="Articles\FormatWorksheetCells.vb" />
@@ -170,6 +175,7 @@
     <Compile Include="Articles\SetPictureBackGroundFillChart.vb" />
     <Compile Include="Articles\SetPixelFormatRenderedImage.vb" />
     <Compile Include="Articles\SettingFormulaCalculationModeWorkbook.vb" />
+    <Compile Include="Articles\UsingImageMarkersWhileGroupingDataInSmartMarkers.vb" />
     <Compile Include="CellsHelperClass\MergeFiles.vb" />
     <Compile Include="CellsHelperClass\NameToIndex.vb" />
     <Compile Include="CellsHelperClass\IndexToName.vb" />
