@@ -1,17 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Aspose.Cells;
+﻿using Aspose.Cells;
 
-namespace Set_External_Links_in_Formula_Aspose.Cells_
+/*
+This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Cells for .NET API reference when the project is build. Please check https://docs.nuget.org/consume/nuget-faq for more information. If you do not wish to use NuGet, you can manually download Aspose.Cells for .NET API from http://www.aspose.com/downloads, install it and then add its reference to this project. For any issues, questions or suggestions please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+*/
+
+namespace Aspose.Plugins.AsposeVSOpenXML
 {
     class Program
     {
         static void Main(string[] args)
         {
-
+            string FilePath = @"..\..\..\Sample Files\";
+            string FileName = FilePath + "Set External Links in Formula.xlsx";
+            
             //Instantiate a new Workbook.
             Workbook workbook = new Workbook();
 
@@ -19,7 +20,7 @@ namespace Set_External_Links_in_Formula_Aspose.Cells_
             Worksheet sheet = workbook.Worksheets[0];
 
             //Get Cells collection
-            Cells cells = sheet.Cells;
+           Aspose.Cells.Cells cells = sheet.Cells;
 
             //Set formula with external links
             cells["A1"].Formula = "=SUM('[book1.xls]Sheet1'!A2, '[book1.xls]Sheet1'!A4)";
@@ -28,7 +29,7 @@ namespace Set_External_Links_in_Formula_Aspose.Cells_
             cells["A2"].Formula = "='[book1.xls]Sheet1'!A8";
 
             //Save the workbook
-            workbook.Save("output.xls");
+            workbook.Save(FileName);
         }
     }
 }

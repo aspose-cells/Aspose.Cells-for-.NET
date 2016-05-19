@@ -1,19 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Aspose.Cells;
+﻿using Aspose.Cells;
 
-namespace Encrypting_Excel_Files
+/*
+This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Cells for .NET API reference when the project is build. Please check https://docs.nuget.org/consume/nuget-faq for more information. If you do not wish to use NuGet, you can manually download Aspose.Cells for .NET API from http://www.aspose.com/downloads, install it and then add its reference to this project. For any issues, questions or suggestions please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+*/
+
+namespace Aspose.Plugins.AsposeVSOpenXML
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //Instantiate a Workbook object.
+            string FilePath = @"..\..\..\Sample Files\";
+            string srcFileName = FilePath + "Encrypting Excel Files.xlsx";
+            string destFileName = FilePath + "Result Encrypting Excel Files.xlsx";
+            
             //Open an excel file.
-            Workbook workbook = new Workbook("Book1.xls");
+            Workbook workbook = new Workbook(srcFileName);
 
             //Specify XOR encryption type.
             workbook.SetEncryptionOptions(EncryptionType.XOR, 40);
@@ -25,7 +27,7 @@ namespace Encrypting_Excel_Files
             workbook.Settings.Password = "1234";
 
             //Save the excel file.
-            workbook.Save("encryptedBook1.xls");
+            workbook.Save(destFileName);
         }
     }
 }

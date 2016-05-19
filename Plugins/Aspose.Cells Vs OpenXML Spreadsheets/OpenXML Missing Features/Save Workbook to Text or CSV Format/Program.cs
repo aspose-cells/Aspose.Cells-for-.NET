@@ -1,21 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Aspose.Cells;
+using System;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Aspose.Cells;
 
-namespace Save_Workbook_to_Text_or_CSV_Format
+/*
+This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Cells for .NET API reference when the project is build. Please check https://docs.nuget.org/consume/nuget-faq for more information. If you do not wish to use NuGet, you can manually download Aspose.Cells for .NET API from http://www.aspose.com/downloads, install it and then add its reference to this project. For any issues, questions or suggestions please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+*/
+
+namespace Aspose.Plugins.AsposeVSOpenXML
 {
     class Program
     {
         static void Main(string[] args)
         {
-            string filePath = "source.xlsx";
-
+            string FilePath = @"..\..\..\Sample Files\";
+            string FileName = FilePath + "Save Workbook to Text or CSV Format.xlsx";
+            string destFileName = FilePath + "Save Workbook to Text or CSV Format.txt";
+           
             //Load your source workbook
-            Workbook workbook = new Workbook(filePath);
+            Workbook workbook = new Workbook(FileName);
 
             //0-byte array
             byte[] workbookData = new byte[0];
@@ -45,7 +47,7 @@ namespace Save_Workbook_to_Text_or_CSV_Format
             }
 
             //Save entire workbook data into file
-            File.WriteAllBytes(filePath + ".out.txt", workbookData);
+            File.WriteAllBytes(destFileName, workbookData);
         }
     }
 }
