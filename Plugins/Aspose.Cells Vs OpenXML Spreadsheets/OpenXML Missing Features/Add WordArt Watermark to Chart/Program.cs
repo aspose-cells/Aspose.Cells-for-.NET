@@ -1,20 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Aspose.Cells;
+﻿using Aspose.Cells;
 using Aspose.Cells.Drawing;
 
-namespace Add_WordArt_Watermark_to_Chart
+/*
+This project uses Automatic Package Restore feature of NuGet to resolve Aspose.Cells for .NET API reference when the project is build. Please check https://docs.nuget.org/consume/nuget-faq for more information. If you do not wish to use NuGet, you can manually download Aspose.Cells for .NET API from http://www.aspose.com/downloads, install it and then add its reference to this project. For any issues, questions or suggestions please feel free to contact us using http://www.aspose.com/community/forums/default.aspx
+*/
+namespace Aspose.Plugins.AsposeVSOpenXML
 {
     class Program
     {
         static void Main(string[] args)
         {
-            //Instantiate a new workbook.
+
+            string FilePath = @"..\..\..\Sample Files\";
+            string FileName = FilePath + "Add WordArt Watermark to Chart.xlsx";
+            
             //Open the existing excel file.
-            Workbook workbook = new Workbook("Watermark_Test1.xls");
+            Workbook workbook = new Workbook(FileName);
 
             //Get the chart in the first worksheet.
             Aspose.Cells.Charts.Chart chart = workbook.Worksheets[0].Charts[0];
@@ -34,7 +35,7 @@ namespace Add_WordArt_Watermark_to_Chart
             lineFormat.IsVisible = false;
 
             //Save the excel file.
-            workbook.Save("outWatermark_Test1.xls");
+            workbook.Save(FileName);
         }
     }
 }
