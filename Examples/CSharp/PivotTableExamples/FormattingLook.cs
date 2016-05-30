@@ -4,20 +4,20 @@ using Aspose.Cells;
 using System.Drawing;
 using Aspose.Cells.Pivot;
 
-namespace Aspose.Cells.Examples.PivotTableExamples
+namespace CSharp.PivotTableExamples
 {
     public class FormattingLook
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            //Load a template file
+            // Load a template file
             Workbook workbook = new Workbook(dataDir + "Book1.xls");
 
-            //Get the first worksheet
+            // Get the first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
             var pivot = workbook.Worksheets[0].PivotTables[0];
 
@@ -30,10 +30,10 @@ namespace Aspose.Cells.Examples.PivotTableExamples
 
             pivot.FormatAll(style);
 
-            //Saving the Excel file
+            // Saving the Excel file
             workbook.Save(dataDir + "output.xls");
 
-            //ExEnd:1
+            // ExEnd:1
 
         }
     }

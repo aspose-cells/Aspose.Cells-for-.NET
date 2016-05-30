@@ -3,28 +3,28 @@ Imports System.IO
 
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.Articles.CreatePivotTablesPivotCharts
+Namespace Articles.CreatePivotTablesPivotCharts
     Public Class CreatePivotChart
-        Public Shared Sub Main()
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-            'Instantiating an Workbook object
-            'Opening the excel file
+            ' Instantiating an Workbook object
+            ' Opening the excel file
             Dim workbook As New Workbook(dataDir & "pivotTable_test.xlsx")
-            'Adding a new sheet
+            ' Adding a new sheet
             Dim sheet3 As Worksheet = workbook.Worksheets(workbook.Worksheets.Add(SheetType.Chart))
-            'Naming the sheet
+            ' Naming the sheet
             sheet3.Name = "PivotChart"
-            'Adding a column chart
+            ' Adding a column chart
             Dim index As Integer = sheet3.Charts.Add(Global.Aspose.Cells.Charts.ChartType.Column, 0, 5, 28, 16)
-            'Setting the pivot chart data source
+            ' Setting the pivot chart data source
             sheet3.Charts(index).PivotSource = "PivotTable!PivotTable1"
             sheet3.Charts(index).HidePivotFieldButtons = False
-            'Saving the Excel file
+            ' Saving the Excel file
             workbook.Save(dataDir & "output.xlsx")
-            'ExEnd:1
+            ' ExEnd:1
 
 
 

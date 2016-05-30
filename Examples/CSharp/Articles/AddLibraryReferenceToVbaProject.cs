@@ -1,13 +1,15 @@
 ﻿using System;
 using Aspose.Cells.Vba;
+using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     class AddLibraryReferenceToVbaProject
     {
-        static void Main() {
-            //ExStart:1
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+        public static void Run()
+        {
+            // ExStart:1
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             string outputPath = dataDir + "Output.out.xlsm";
 
             Workbook workbook = new Workbook();
@@ -18,7 +20,8 @@ namespace Aspose.Cells.Examples.Articles
             vbaProj.References.AddRegisteredReference("Office", "*\\G{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}#2.0#0#C:\\Program Files\\Common Files\\Microsoft Shared\\OFFICE14\\MSO.DLL#Microsoft Office 14.0 Object Library");
 
             workbook.Save(outputPath);
-            //ExEnd:1
+            // ExEnd:1
+            Console.WriteLine("\nProcess completed successfully.\nFile saved at " + outputPath);
         }
     }
 }

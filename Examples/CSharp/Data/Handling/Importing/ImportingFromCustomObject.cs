@@ -3,27 +3,27 @@ using System.IO;
 using Aspose.Cells;
 using System.Collections.Generic;
 
-namespace Aspose.Cells.Examples.Data.Handling.Importing
+namespace CSharp.Data.Handling.Importing
 {
     public class ImportingFromCustomObject
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             // Create directory if it is not already present.
             bool IsExists = System.IO.Directory.Exists(dataDir);
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate a new Workbook
+            // Instantiate a new Workbook
             Workbook book = new Workbook();
 
             Worksheet sheet= book.Worksheets[0];
 
-            //Define List
+            // Define List
             List<Person> list = new List<Person>();
 
             list.Add(new Person("Mike", 25));
@@ -35,8 +35,8 @@ namespace Aspose.Cells.Examples.Data.Handling.Importing
             ImportTableOptions imp = new ImportTableOptions();
             imp.InsertRows = true;
 
-            //We pick a few columns not all to import to the worksheet
-            //We pick a few columns not all to import to the worksheet
+            // We pick a few columns not all to import to the worksheet
+            // We pick a few columns not all to import to the worksheet
             sheet.Cells.ImportCustomObjects((System.Collections.ICollection)list,
             new string[] { "Name","Age" },
             true,
@@ -47,10 +47,10 @@ namespace Aspose.Cells.Examples.Data.Handling.Importing
             "dd/mm/yyyy",
             false);
 
-            //Auto-fit all the columns
+            // Auto-fit all the columns
             book.Worksheets[0].AutoFitColumns();
 
-            //Save the Excel file
+            // Save the Excel file
             book.Save(dataDir + "ImportedCustomObjects.out.xls");
 
         }
@@ -88,7 +88,7 @@ namespace Aspose.Cells.Examples.Data.Handling.Importing
             Age = age;
             Name = name;
         }
-        //ExEnd:1
+        // ExEnd:1
     }
 
 }

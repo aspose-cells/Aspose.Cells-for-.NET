@@ -2,21 +2,21 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     public class SettingFormulaCalculationModeWorkbook
     {
-        public static void Main()
+        public static void Run()
         {
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            //Create a workbook
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            // Create a workbook
             Workbook workbook = new Workbook();
 
-            //Set the Formula Calculation Mode to Manual
+            // Set the Formula Calculation Mode to Manual
             workbook.Settings.CalcMode = CalcModeType.Manual;
 
-            //Save the workbook
+            // Save the workbook
             workbook.Save(dataDir+ "output.out.xlsx", SaveFormat.Xlsx);
             
         }

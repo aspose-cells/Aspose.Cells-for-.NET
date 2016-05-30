@@ -5,12 +5,12 @@ Imports Aspose.Cells
 Imports Aspose.Cells.Drawing
 Imports System.Drawing
 
-Namespace Aspose.Cells.Examples.DrawingObjects.Controls
+Namespace DrawingObjects.Controls
     Public Class AddingButtonControl
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
             ' Create directory if it is not already present.
             Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)
@@ -18,37 +18,37 @@ Namespace Aspose.Cells.Examples.DrawingObjects.Controls
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Create a new Workbook.
+            ' Create a new Workbook.
             Dim workbook As New Workbook()
 
-            'Get the first worksheet in the workbook.
+            ' Get the first worksheet in the workbook.
             Dim sheet As Worksheet = workbook.Worksheets(0)
 
-            'Add a new button to the worksheet.
+            ' Add a new button to the worksheet.
             Dim button As Global.Aspose.Cells.Drawing.Button = sheet.Shapes.AddButton(2, 0, 2, 0, 28, 80)
 
-            'Set the caption of the button.
+            ' Set the caption of the button.
             button.Text = "Aspose"
 
-            'Set the Placement Type, the way the
-            'button is attached to the cells.
+            ' Set the Placement Type, the way the
+            ' Button is attached to the cells.
             button.Placement = PlacementType.FreeFloating
 
-            'Set the font name.
+            ' Set the font name.
             button.Font.Name = "Tahoma"
 
-            'Set the caption string bold.
+            ' Set the caption string bold.
             button.Font.IsBold = True
 
-            'Set the color to blue.
+            ' Set the color to blue.
             button.Font.Color = Color.Blue
 
-            'Set the hyperlink for the button.
+            ' Set the hyperlink for the button.
             button.AddHyperlink("http://www.aspose.com/")
 
-            'Saves the file.
+            ' Saves the file.
             workbook.Save(dataDir & "output.xls")
-            'ExEnd:1
+            ' ExEnd:1
 
         End Sub
     End Class

@@ -2,31 +2,31 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Tables
+namespace CSharp.Tables
 {
     public class FormataListObject
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             // Create directory if it is not already present.
             bool IsExists = System.IO.Directory.Exists(dataDir);
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Create a workbook.
+            // Create a workbook.
             Workbook workbook = new Workbook();
 
-            //Obtaining the reference of the default(first) worksheet
+            // Obtaining the reference of the default(first) worksheet
             Worksheet sheet = workbook.Worksheets[0];
 
-            //Obtaining Worksheet's cells collection
+            // Obtaining Worksheet's cells collection
             Cells cells = sheet.Cells;
 
-            //Setting the value to the cells
+            // Setting the value to the cells
             Aspose.Cells.Cell cell = cells["A1"];
             cell.PutValue("Employee");
             cell = cells["B1"];
@@ -217,22 +217,22 @@ namespace Aspose.Cells.Examples.Tables
             cell = cells["F15"];
             cell.PutValue(900);
 
-            //Adding a new List Object to the worksheet
+            // Adding a new List Object to the worksheet
             Aspose.Cells.Tables.ListObject listObject = sheet.ListObjects[sheet.ListObjects.Add("A1", "F15", true)];
 
-            //Adding Default Style to the table
+            // Adding Default Style to the table
             listObject.TableStyleType = Aspose.Cells.Tables.TableStyleType.TableStyleMedium10;
 
-            //Show Total
+            // Show Total
             listObject.ShowTotals = true;
 
-            //Set the Quarter field's calculation type
+            // Set the Quarter field's calculation type
             listObject.ListColumns[1].TotalsCalculation = Aspose.Cells.Tables.TotalsCalculation.Count;
 
 
-            //Saving the Excel file
+            // Saving the Excel file
             workbook.Save(dataDir + "output.xlsx");
-            //ExEnd:1
+            // ExEnd:1
 
         }
     }

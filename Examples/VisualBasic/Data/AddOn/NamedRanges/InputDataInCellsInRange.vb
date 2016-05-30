@@ -3,12 +3,12 @@ Imports System.IO
 
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.Data.AddOn.NamedRanges
+Namespace Data.AddOn.NamedRanges
     Public Class InputDataInCellsInRange
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
             ' Create directory if it is not already present.
             Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)
@@ -16,19 +16,19 @@ Namespace Aspose.Cells.Examples.Data.AddOn.NamedRanges
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Instantiate a new Workbook.
+            ' Instantiate a new Workbook.
             Dim workbook As New Workbook()
 
-            'Get the first worksheet in the workbook.
+            ' Get the first worksheet in the workbook.
             Dim worksheet1 As Worksheet = workbook.Worksheets(0)
 
-            'Create a range of cells based on H1:J4.
+            ' Create a range of cells based on H1:J4.
             Dim range As Range = worksheet1.Cells.CreateRange("H1", "J4")
 
-            'Name the range.
+            ' Name the range.
             range.Name = "MyRange"
 
-            'Input some data into cells in the range.
+            ' Input some data into cells in the range.
             range(0, 0).PutValue("USA")
             range(0, 1).PutValue("SA")
             range(0, 2).PutValue("Israel")
@@ -43,9 +43,9 @@ Namespace Aspose.Cells.Examples.Data.AddOn.NamedRanges
             range(3, 2).PutValue("Brazil")
 
 
-            'Save the excel file.
+            ' Save the excel file.
             workbook.Save(dataDir & "output.xls")
-            'ExEnd:1
+            ' ExEnd:1
         End Sub
     End Class
 End Namespace

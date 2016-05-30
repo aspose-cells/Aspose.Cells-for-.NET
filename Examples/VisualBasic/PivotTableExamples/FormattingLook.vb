@@ -6,17 +6,17 @@ Imports Aspose.Cells
 Imports System.Drawing
 Imports Aspose.Cells.Pivot
 
-Namespace Aspose.Cells.Examples.PivotTableExamples
+Namespace PivotTableExamples
     Public Class FormattingLook
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-            'Load a template file
+            ' Load a template file
             Dim workbook As New Workbook(dataDir & "Book1.xls")
 
-            'Get the first worksheet
+            ' Get the first worksheet
             Dim worksheet As Worksheet = workbook.Worksheets(0)
             Dim pivot = workbook.Worksheets(0).PivotTables(0)
 
@@ -29,10 +29,10 @@ Namespace Aspose.Cells.Examples.PivotTableExamples
 
             pivot.FormatAll(style)
 
-            'Saving the Excel file
+            ' Saving the Excel file
             workbook.Save(dataDir & "output.xls")
 
-            'ExEnd:1
+            ' ExEnd:1
 
         End Sub
     End Class

@@ -2,33 +2,33 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.DrawingObjects.OLE
+namespace CSharp.DrawingObjects.OLE
 {
     public class ExtractingOLEObjects
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            //Instantiating a Workbook object
-            //Open the template file.
+            // Instantiating a Workbook object
+            // Open the template file.
             Workbook workbook = new Workbook(dataDir + "book1.xls");
 
-            //Get the OleObject Collection in the first worksheet.
+            // Get the OleObject Collection in the first worksheet.
             Aspose.Cells.Drawing.OleObjectCollection oles = workbook.Worksheets[0].OleObjects;
 
-            //Loop through all the oleobjects and extract each object.
-            //in the worksheet.
+            // Loop through all the oleobjects and extract each object.
+            // In the worksheet.
             for (int i = 0; i < oles.Count; i++)
             {
                 Aspose.Cells.Drawing.OleObject ole = oles[i];
 
-                //Specify the output filename.
+                // Specify the output filename.
                 string fileName = dataDir + "ole_" + i + ".";
 
-                //Specify each file format based on the oleobject format type.
+                // Specify each file format based on the oleobject format type.
                 switch (ole.FileType)
                 {
                     case Aspose.Cells.Drawing.OleFileType.Doc:
@@ -51,7 +51,7 @@ namespace Aspose.Cells.Examples.DrawingObjects.OLE
                         break;
                 }
 
-                //Save the oleobject as a new excel file if the object type is xls.
+                // Save the oleobject as a new excel file if the object type is xls.
                 if (ole.FileType == Aspose.Cells.Drawing.OleFileType.Xls)
                 {
                     MemoryStream ms = new MemoryStream();
@@ -61,13 +61,13 @@ namespace Aspose.Cells.Examples.DrawingObjects.OLE
                     oleBook.Save(dataDir + "Excel_File" + i + ".out.xls");
                 }
 
-                //Create the files based on the oleobject format types.
+                // Create the files based on the oleobject format types.
                 else
                 {
                     FileStream fs = File.Create(fileName);
                     fs.Write(ole.ObjectData, 0, ole.ObjectData.Length);
                     fs.Close();
-                    //ExEnd:1
+                    // ExEnd:1
                 }
 
             }

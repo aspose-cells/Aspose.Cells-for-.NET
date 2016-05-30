@@ -3,12 +3,12 @@ Imports System.IO
 
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.Articles
+Namespace Articles
     Public Class FindCellsWithSpecificStyle
-        Public Shared Sub Main()
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
             Dim filePath As String = dataDir & "TestBook.xlsx"
 
@@ -16,30 +16,30 @@ Namespace Aspose.Cells.Examples.Articles
 
             Dim worksheet As Worksheet = workbook.Worksheets(0)
 
-            'Access the style of cell A1
+            ' Access the style of cell A1
             Dim style As Style = worksheet.Cells("A1").GetStyle()
 
-            'Specify the style for searching
+            ' Specify the style for searching
             Dim options As New FindOptions()
             options.Style = style
 
             Dim nextCell As Cell = Nothing
 
             Do
-                'Find the cell that has a style of cell A1
+                ' Find the cell that has a style of cell A1
                 nextCell = worksheet.Cells.Find(Nothing, nextCell, options)
 
                 If nextCell Is Nothing Then
                     Exit Do
                 End If
 
-                'Change the text of the cell
+                ' Change the text of the cell
                 nextCell.PutValue("Found")
 
             Loop While True
 
             workbook.Save(dataDir & "output.xlsx")
-            'ExEnd:1
+            ' ExEnd:1
 
 
         End Sub

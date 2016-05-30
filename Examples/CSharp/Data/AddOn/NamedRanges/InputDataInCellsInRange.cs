@@ -2,34 +2,34 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Data.AddOn.NamedRanges
+namespace CSharp.Data.AddOn.NamedRanges
 {
     public class InputDataInCellsInRange
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             
             // Create directory if it is not already present.
             bool IsExists = System.IO.Directory.Exists(dataDir);
             if (!IsExists)
                 System.IO.Directory.CreateDirectory(dataDir);
 
-            //Instantiate a new Workbook.
+            // Instantiate a new Workbook.
             Workbook workbook = new Workbook();
 
-            //Get the first worksheet in the workbook.
+            // Get the first worksheet in the workbook.
             Worksheet worksheet1 = workbook.Worksheets[0];
 
-            //Create a range of cells based on H1:J4.
+            // Create a range of cells based on H1:J4.
             Range range = worksheet1.Cells.CreateRange("H1", "J4");
 
-            //Name the range.
+            // Name the range.
             range.Name = "MyRange";
 
-            //Input some data into cells in the range.
+            // Input some data into cells in the range.
             range[0, 0].PutValue("USA");
             range[0, 1].PutValue("SA");
             range[0, 2].PutValue("Israel");
@@ -44,9 +44,9 @@ namespace Aspose.Cells.Examples.Data.AddOn.NamedRanges
             range[3, 2].PutValue("Brazil");
 
 
-            //Save the excel file.
+            // Save the excel file.
             workbook.Save(dataDir + "rangecells.out.xls");
-            //ExEnd:1
+            // ExEnd:1
         }
     }
 }

@@ -1,16 +1,16 @@
 ﻿using System;
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
-    //ExStart:ImplementCustomCalculationEngine
+    // ExStart:ImplementCustomCalculationEngine
     // Create a new class derived from AbstractCalculationEngine
     class CustomEngine : AbstractCalculationEngine
     {
         // Override the Calculate method with custom logic
         public override void Calculate(CalculationData data)
         {
-            //Check the forumla name and change the implementation
+            // Check the forumla name and change the implementation
             if (data.FunctionName.ToUpper() == "SUM")
             {
                 double val = (double)data.CalculatedValue;
@@ -24,7 +24,7 @@ namespace Aspose.Cells.Examples.Articles
 
     class ImplementCustomCalculationEngine
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
             // Create an instance of Workbook
             Workbook workbook = new Workbook();
@@ -65,5 +65,5 @@ namespace Aspose.Cells.Examples.Articles
             Console.ReadKey();
         }
     }
-    //ExEnd:ImplementCustomCalculationEngine
+    // ExEnd:ImplementCustomCalculationEngine
 }

@@ -3,23 +3,23 @@ using System.IO;
 using Aspose.Cells;
 using System;
 
-namespace Aspose.Cells.Examples.Files.Handling
+namespace CSharp.Files.Handling
 {
     public class OpeningMicrosoftExcel2007XlsxFiles
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
              // Opening Microsoft Excel 2007 Xlsx Files
-            //Instantiate LoadOptions specified by the LoadFormat.
+            // Instantiate LoadOptions specified by the LoadFormat.
             LoadOptions loadOptions2 = new LoadOptions(LoadFormat.Xlsx);
 
-            //Create a Workbook object and opening the file from its path
-            Workbook wbExcel2007 = new Workbook(dataDir + "output.xlsx", loadOptions2);
+            // Create a Workbook object and opening the file from its path
+            Workbook wbExcel2007 = new Workbook(dataDir + "Book_Excel2007.xlsx", loadOptions2);
             Console.WriteLine("Microsoft Excel 2007 workbook opened successfully!");
-            //ExEnd:1
+            // ExEnd:1
             }
           }
         }

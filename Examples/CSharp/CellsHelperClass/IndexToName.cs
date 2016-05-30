@@ -1,17 +1,17 @@
 using System;
 
-namespace Aspose.Cells.Examples.CellsHelperClass
+namespace CSharp.CellsHelperClass
 {
     public class IndexToName
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             int row = 3;
             int column = 5;
             string name = Aspose.Cells.CellsHelper.CellIndexToName(row, column);
             Console.WriteLine("Cell name: {0}", name);
-            //ExEnd:1
+            // ExEnd:1
         }
     }
 }

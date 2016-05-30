@@ -4,7 +4,7 @@ Imports System
 Imports System.Drawing
 Imports System.Collections.Generic
 
-Namespace Aspose.Cells.Examples.SmartMarkers
+Namespace SmartMarkers
     Public Class UsingGenericList
 
         Public Class Husband
@@ -35,7 +35,7 @@ Namespace Aspose.Cells.Examples.SmartMarkers
                 Me.Age = age
             End Sub
 
-            'Accepting a generic List as a Nested Object
+            ' Accepting a generic List as a Nested Object
             Private m_Wives As List(Of Wife)
 
             Public Property Wives() As List(Of Wife)
@@ -77,15 +77,15 @@ Namespace Aspose.Cells.Examples.SmartMarkers
             End Property
         End Class
 
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             Dim workbook As New Workbook()
 
-            'Create a designer workbook
+            ' Create a designer workbook
 
-            'Workbook workbook = new Workbook();
+            ' Workbook workbook = new Workbook();
             Dim worksheet As Worksheet = workbook.Worksheets(0)
 
             worksheet.Cells("A1").PutValue("Husband Name")
@@ -94,13 +94,13 @@ Namespace Aspose.Cells.Examples.SmartMarkers
             worksheet.Cells("B1").PutValue("Husband Age")
             worksheet.Cells("B2").PutValue("&=Husband.Age")
 
-            worksheet.Cells("C1").PutValue("Wife's Name")
+            worksheet.Cells("C1").PutValue("Wife' S Name")
             worksheet.Cells("C2").PutValue("&=Husband.Wives.Name")
 
-            worksheet.Cells("D1").PutValue("Wife's Age")
+            worksheet.Cells("D1").PutValue("Wife' S Age")
             worksheet.Cells("D2").PutValue("&=Husband.Wives.Age")
 
-            'Apply Style to A1:D1
+            ' Apply Style to A1:D1
             Dim range As Range = worksheet.Cells.CreateRange("A1:D1")
             Dim style As Style = workbook.CreateStyle()
             style.Font.IsBold = True
@@ -110,49 +110,49 @@ Namespace Aspose.Cells.Examples.SmartMarkers
             flag.All = True
             range.ApplyStyle(style, flag)
 
-            'Initialize WorkbookDesigner object
+            ' Initialize WorkbookDesigner object
             Dim designer As New WorkbookDesigner()
 
-            'Load the template file
+            ' Load the template file
             designer.Workbook = workbook
 
             Dim list As New System.Collections.Generic.List(Of Husband)()
 
-            'Create an object for the Husband class
+            ' Create an object for the Husband class
             Dim h1 As New Husband("Mark John", 30)
 
-            'Create the relevant Wife objects for the Husband object
+            ' Create the relevant Wife objects for the Husband object
             h1.Wives = New List(Of Wife)()
             h1.Wives.Add(New Wife("Chen Zhao", 34))
             h1.Wives.Add(New Wife("Jamima Winfrey", 28))
             h1.Wives.Add(New Wife("Reham Smith", 35))
 
-            'Create another object for the Husband class
+            ' Create another object for the Husband class
             Dim h2 As New Husband("Masood Shankar", 40)
 
-            'Create the relevant Wife objects for the Husband object
+            ' Create the relevant Wife objects for the Husband object
             h2.Wives = New List(Of Wife)()
             h2.Wives.Add(New Wife("Karishma Jathool", 36))
             h2.Wives.Add(New Wife("Angela Rose", 33))
             h2.Wives.Add(New Wife("Hina Khanna", 45))
 
-            'Add the objects to the list
+            ' Add the objects to the list
             list.Add(h1)
             list.Add(h2)
 
-            'Specify the DataSource
+            ' Specify the DataSource
             designer.SetDataSource("Husband", list)
 
-            'Process the markers
+            ' Process the markers
             designer.Process()
 
-            'Autofit columns
+            ' Autofit columns
             worksheet.AutoFitColumns()
 
-            'Save the Excel file.
+            ' Save the Excel file.
             designer.Workbook.Save(dataDir & "output.xlsx")
 
-            'ExEnd:1
+            ' ExEnd:1
         End Sub
     End Class
 End Namespace

@@ -5,16 +5,16 @@ using System.Collections.Generic;
 using System.Text;
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     public class UsingLightCellsAPI
     {
-        public static void Main()
+        public static void Run()
         {
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             
-            //Specify your desired matrix
+            // Specify your desired matrix
             int rowsCount = 10000;
             int colsCount = 30;
 

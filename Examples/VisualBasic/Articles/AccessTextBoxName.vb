@@ -2,10 +2,10 @@
 Imports Aspose.Cells
 Imports Aspose.Cells.Drawing
 
-Namespace Aspose.Cells.Examples.Articles
+Namespace Articles
     Friend Class AccessTextBoxName
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:AccessTextBoxName
+        Public Shared Sub Run()
+            ' ExStart:AccessTextBoxName
             ' Create an object of the Workbook class
             Dim workbook As New Workbook()
 
@@ -25,12 +25,12 @@ Namespace Aspose.Cells.Examples.Articles
             ' Access the same TextBox via its name
             Dim tb2 As TextBox = sheet.TextBoxes("MyTextBox")
 
-            'Display the text of the TextBox accessed via name
+            ' Display the text of the TextBox accessed via name
             Console.WriteLine(tb2.Text)
 
             Console.WriteLine("Press any key to continue...")
             Console.ReadKey()
-            'ExEnd:AccessTextBoxName
+            ' ExEnd:AccessTextBoxName
         End Sub
     End Class
 End Namespace

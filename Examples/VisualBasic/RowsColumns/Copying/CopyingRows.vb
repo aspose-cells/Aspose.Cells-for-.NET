@@ -3,27 +3,27 @@ Imports System.IO
 
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.RowsColumns.Copying
+Namespace RowsColumns.Copying
     Public Class CopyingRows
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-            'Create a new Workbook.
-            'Open the existing excel file.
+            ' Create a new Workbook.
+            ' Open the existing excel file.
             Dim excelWorkbook1 As New Workbook(dataDir & "book1.xls")
 
-            'Get the first worksheet in the workbook.
+            ' Get the first worksheet in the workbook.
             Dim wsTemplate As Worksheet = excelWorkbook1.Worksheets(0)
 
-            'Copy the second row with data, formattings, images and drawing objects
-            'to the 16th row in the worksheet.
+            ' Copy the second row with data, formattings, images and drawing objects
+            ' To the 16th row in the worksheet.
             wsTemplate.Cells.CopyRow(wsTemplate.Cells, 1, 15)
 
-            'Save the excel file.
+            ' Save the excel file.
             excelWorkbook1.Save(dataDir & "output.xls")
-            'ExEnd:1
+            ' ExEnd:1
 
         End Sub
     End Class

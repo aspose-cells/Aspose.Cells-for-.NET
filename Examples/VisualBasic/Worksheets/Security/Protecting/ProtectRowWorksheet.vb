@@ -3,12 +3,12 @@ Imports System.IO
 
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.Worksheets.Security.Protecting
+Namespace Worksheets.Security.Protecting
     Public Class ProtectRowWorksheet
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
             ' Create directory if it is not already present.
             Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)
@@ -58,7 +58,7 @@ Namespace Aspose.Cells.Examples.Worksheets.Security.Protecting
 
             ' Save the excel file.
             wb.Save(dataDir & "output.xls", SaveFormat.Excel97To2003)
-            'ExEnd:1
+            ' ExEnd:1
 
 
         End Sub

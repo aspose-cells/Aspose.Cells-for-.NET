@@ -2,25 +2,25 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     public class SearchReplaceDataInRange
     {
-        public static void Main()
+        public static void Run()
         {
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             string filePath = dataDir+ "input.xlsx";
 
             Workbook workbook = new Workbook(filePath);
 
             Worksheet worksheet = workbook.Worksheets[0];
 
-            //Specify the range where you want to search
-            //Here the range is E3:H6
+            // Specify the range where you want to search
+            // Here the range is E3:H6
             CellArea area = CellArea.CreateCellArea("E9", "H15");
 
-            //Specify Find options
+            // Specify Find options
             FindOptions opts = new FindOptions();
             opts.LookInType = LookInType.Values;
             opts.LookAtType = LookAtType.EntireContent;
@@ -30,19 +30,19 @@ namespace Aspose.Cells.Examples.Articles
 
             do
             {
-                //Search the cell with value search within range
+                // Search the cell with value search within range
                 cell = worksheet.Cells.Find("search", cell, opts);
 
-                //If no such cell found, then break the loop
+                // If no such cell found, then break the loop
                 if (cell == null)
                     break;
 
-                //Replace the cell with value replace
+                // Replace the cell with value replace
                 cell.PutValue("replace");
 
             } while (true);
 
-            //Save the workbook
+            // Save the workbook
             workbook.Save(dataDir+ "output.out.xlsx");
 
             

@@ -4,14 +4,14 @@ using Aspose.Cells;
 using System;
 using System.Threading;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     public class ReadingCellValuesInMultipleThreadsSimultaneously
     {
         public static void Main()
         {
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
             
             public static Workbook testWorkbook;
@@ -41,7 +41,7 @@ public static void TestMultiThreadingRead()
         for (var col = 0; col < 100; col++)
             testWorkbook.Worksheets[0].Cells[row, col].Value = "R" + row + "C" + col;
 
-    //Commenting this line will show a pop-up message
+    // Commenting this line will show a pop-up message
    // testWorkbook.Worksheets[0].Cells.MultiThreadReading = true;
 
     Thread myThread1;

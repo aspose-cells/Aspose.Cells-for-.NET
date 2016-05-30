@@ -1,41 +1,40 @@
 Imports Microsoft.VisualBasic
 Imports System.IO
-
 Imports Aspose.Cells
 Imports System
 
-Namespace Aspose.Cells.Examples.AdvancedTopics.SmartMarkers
+Namespace AdvancedTopics.SmartMarkers
     Public Class UsingNestedObjects
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             ' ****** Program ******
 
-            'Initialize WorkbookDesigner object
+            ' Initialize WorkbookDesigner object
             Dim designer As New WorkbookDesigner()
-            'Load the template file
+            ' Load the template file
             designer.Workbook = New Workbook(dataDir & "SM_NestedObjects.xlsx")
-            'Instantiate the List based on the class
+            ' Instantiate the List based on the class
             Dim list As System.Collections.Generic.ICollection(Of Individual) = New System.Collections.Generic.List(Of Individual)()
-            'Create an object for the Individual class
+            ' Create an object for the Individual class
             Dim p1 As New Individual("Damian", 30)
-            'Create the relevant Wife class for the Individual
+            ' Create the relevant Wife class for the Individual
             p1.Wife = New Wife("Dalya", 28)
-            'Create another object for the Individual class
+            ' Create another object for the Individual class
             Dim p2 As New Individual("Mack", 31)
-            'Create the relevant Wife class for the Individual
+            ' Create the relevant Wife class for the Individual
             p2.Wife = New Wife("Maaria", 29)
-            'Add the objects to the list
+            ' Add the objects to the list
             list.Add(p1)
             list.Add(p2)
-            'Specify the DataSource
+            ' Specify the DataSource
             designer.SetDataSource("Individual", list)
-            'Process the markers
+            ' Process the markers
             designer.Process(False)
-            'Save the Excel file.
+            ' Save the Excel file.
             designer.Workbook.Save(dataDir & "NestedObjects.output.xlsx")
-            'ExEnd:1
+            ' ExEnd:1
 
         End Sub
 

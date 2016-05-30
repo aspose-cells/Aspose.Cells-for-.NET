@@ -3,19 +3,19 @@ Imports Aspose.Cells
 Imports Aspose.Cells.Tables
 Imports Aspose.Cells.Drawing
 
-Namespace Aspose.Cells.Examples.Articles
+Namespace Articles
 
-    'ExStart:FindQueryTablesAndListObjectsOfExternalDataConnections
+    ' ExStart:FindQueryTablesAndListObjectsOfExternalDataConnections
     Public Class FindQueryTablesAndListObjectsOfExternalDataConnections
-        Public Shared Sub Main(ByVal args() As String)
+        Public Shared Sub Run()
 
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-            'Load workbook object
+            ' Load workbook object
             Dim workbook As New Workbook(dataDir & "sample.xlsm")
 
-            'Check all the connections inside the workbook
+            ' Check all the connections inside the workbook
             For i As Integer = 0 To workbook.DataConnections.Count - 1
                 Dim externalConnection As Aspose.Cells.ExternalConnections.ExternalConnection = workbook.DataConnections(i)
                 Console.WriteLine("connection: " + externalConnection.Name)
@@ -30,17 +30,17 @@ Namespace Aspose.Cells.Examples.Articles
 
 
         Public Shared Sub PrintTables(workbook As Workbook, ec As Aspose.Cells.ExternalConnections.ExternalConnection)
-            'Iterate all the worksheets
+            ' Iterate all the worksheets
             For j As Integer = 0 To workbook.Worksheets.Count - 1
                 Dim worksheet As Worksheet = workbook.Worksheets(j)
 
-                'Check all the query tables in a worksheet
+                ' Check all the query tables in a worksheet
                 For k As Integer = 0 To worksheet.QueryTables.Count - 1
                     Dim qt As Aspose.Cells.QueryTable = worksheet.QueryTables(k)
 
-                    'Check if query table is related to this external connection
+                    ' Check if query table is related to this external connection
                     If ec.Id = qt.ConnectionId AndAlso qt.ConnectionId >= 0 Then
-                        'Print the query table name and print its refersto range
+                        ' Print the query table name and print its refersto range
                         Console.WriteLine("querytable " + qt.Name)
                         Dim n As String = qt.Name.Replace("+"c, "_"c).Replace("="c, "_"c)
                         Dim name As Name = workbook.Worksheets.Names("'" + worksheet.Name & "'!" & n)
@@ -53,18 +53,18 @@ Namespace Aspose.Cells.Examples.Articles
                     End If
                 Next
 
-                'Iterate all the list objects in this worksheet
+                ' Iterate all the list objects in this worksheet
                 For k As Integer = 0 To worksheet.ListObjects.Count - 1
                     Dim table As ListObject = worksheet.ListObjects(k)
 
-                    'Check the data source type if it is query table
+                    ' Check the data source type if it is query table
                     If table.DataSourceType = Aspose.Cells.Tables.TableDataSourceType.QueryTable Then
-                        'Access the query table related to list object
+                        ' Access the query table related to list object
                         Dim qt As QueryTable = table.QueryTable
 
-                        'Check if query table is related to this external connection
+                        ' Check if query table is related to this external connection
                         If ec.Id = qt.ConnectionId AndAlso qt.ConnectionId >= 0 Then
-                            'Print the query table name and print its refersto range
+                            ' Print the query table name and print its refersto range
                             Console.WriteLine("querytable " + qt.Name)
                             Console.WriteLine("Table " + table.DisplayName)
                             Console.WriteLine("refersto: " + worksheet.Name & "!" & CellsHelper.CellIndexToName(table.StartRow, table.StartColumn) & ":" & CellsHelper.CellIndexToName(table.EndRow, table.EndColumn))
@@ -74,5 +74,5 @@ Namespace Aspose.Cells.Examples.Articles
             Next
         End Sub
     End Class
-    'ExEnd:FindQueryTablesAndListObjectsOfExternalDataConnections
+    ' ExEnd:FindQueryTablesAndListObjectsOfExternalDataConnections
 End Namespace

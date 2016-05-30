@@ -3,40 +3,40 @@ using System.IO;
 using Aspose.Cells;
 using System;
 
-namespace Aspose.Cells.Examples.SmartMarkers
+namespace CSharp.SmartMarkers
 {
     public class UsingNestedObjects
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             // ****** Program ******
 
-            //Initialize WorkbookDesigner object
+            // Initialize WorkbookDesigner object
             WorkbookDesigner designer = new WorkbookDesigner();
-            //Load the template file
+            // Load the template file
             designer.Workbook = new Workbook(dataDir + "SM_NestedObjects.xlsx");
-            //Instantiate the List based on the class
+            // Instantiate the List based on the class
             System.Collections.Generic.ICollection<Individual> list = new System.Collections.Generic.List<Individual>();
-            //Create an object for the Individual class
+            // Create an object for the Individual class
             Individual p1 = new Individual("Damian", 30);
-            //Create the relevant Wife class for the Individual
+            // Create the relevant Wife class for the Individual
             p1.Wife = new Wife("Dalya", 28);
-            //Create another object for the Individual class
+            // Create another object for the Individual class
             Individual p2 = new Individual("Mack", 31);
-            //Create the relevant Wife class for the Individual
+            // Create the relevant Wife class for the Individual
             p2.Wife = new Wife("Maaria", 29);
-            //Add the objects to the list
+            // Add the objects to the list
             list.Add(p1);
             list.Add(p2);
-            //Specify the DataSource
+            // Specify the DataSource
             designer.SetDataSource("Individual", list);
-            //Process the markers
+            // Process the markers
             designer.Process(false);
-            //Save the Excel file.
+            // Save the Excel file.
             designer.Workbook.Save(dataDir+ "output.xlsx");
 
         }
@@ -96,6 +96,6 @@ namespace Aspose.Cells.Examples.SmartMarkers
             }
         }
 
-        //ExEnd:1
+        // ExEnd:1
     }
 }

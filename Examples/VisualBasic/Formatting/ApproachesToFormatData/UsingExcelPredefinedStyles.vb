@@ -3,12 +3,12 @@ Imports System.IO
 
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.Formatting.ApproachesToFormatData
+Namespace Formatting.ApproachesToFormatData
     Public Class UsingExcelPredefinedStyles
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
             ' Create directory if it is not already present.
             Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)
@@ -16,21 +16,21 @@ Namespace Aspose.Cells.Examples.Formatting.ApproachesToFormatData
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Instantiate a new Workbook.
+            ' Instantiate a new Workbook.
             Dim workbook As New Workbook()
 
-            'Create a style object based on a predefined Excel 2007 style.
+            ' Create a style object based on a predefined Excel 2007 style.
             Dim style As Style = workbook.Styles.CreateBuiltinStyle(BuiltinStyleType.Accent1)
 
-            'Input a value to A1 cell.
+            ' Input a value to A1 cell.
             workbook.Worksheets(0).Cells("A1").PutValue("Test")
 
-            'Apply the style to the cell.
+            ' Apply the style to the cell.
             workbook.Worksheets(0).Cells("A1").SetStyle(style)
 
-            'Save the Excel 2007 file.
+            ' Save the Excel 2007 file.
             workbook.Save(dataDir & "output.xlsx")
-            'ExEnd:1
+            ' ExEnd:1
         End Sub
     End Class
 End Namespace

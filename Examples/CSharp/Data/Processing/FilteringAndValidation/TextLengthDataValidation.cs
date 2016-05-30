@@ -2,15 +2,15 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Data.Processing.FilteringAndValidation
+namespace CSharp.Data.Processing.FilteringAndValidation
 {
     public class TextLengthDataValidation
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
               // Create directory if it is not already present.
             bool IsExists = System.IO.Directory.Exists(dataDir);
@@ -23,7 +23,7 @@ namespace Aspose.Cells.Examples.Data.Processing.FilteringAndValidation
             // Obtain the cells of the first worksheet.
             Cells cells = workbook.Worksheets[0].Cells;
 
-            //Put a string value into A1 cell.
+            // Put a string value into A1 cell.
             cells["A1"].PutValue("Please enter a string not more than 5 chars");
 
 
@@ -75,7 +75,7 @@ namespace Aspose.Cells.Examples.Data.Processing.FilteringAndValidation
 
             // Save the Excel file.
             workbook.Save(dataDir + "output.out.xls");
-            //ExEnd:1
+            // ExEnd:1
         }
     }
 }

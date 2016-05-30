@@ -3,22 +3,22 @@ Imports System.IO
 
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.Articles.CreatePivotTablesPivotCharts
+Namespace Articles.CreatePivotTablesPivotCharts
     Public Class CreatePivotTable
-        Public Shared Sub Main()
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-            'Instantiating an Workbook object
+            ' Instantiating an Workbook object
             Dim workbook As New Workbook()
-            'Obtaining the reference of the first worksheet
+            ' Obtaining the reference of the first worksheet
             Dim sheet As Worksheet = workbook.Worksheets(0)
-            'Name the sheet
+            ' Name the sheet
             sheet.Name = "Data"
             Dim cells As Global.Aspose.Cells.Cells = sheet.Cells
 
-            'Setting the values to the cells
+            ' Setting the values to the cells
             Dim cell As Cell = cells("A1")
             cell.PutValue("Employee")
             cell = cells("B1")
@@ -386,38 +386,38 @@ Namespace Aspose.Cells.Examples.Articles.CreatePivotTablesPivotCharts
             cell = cells("F30")
             cell.PutValue(1000)
 
-            'Adding a new sheet
+            ' Adding a new sheet
             Dim sheet2 As Worksheet = workbook.Worksheets(workbook.Worksheets.Add())
-            'Naming the sheet
+            ' Naming the sheet
             sheet2.Name = "PivotTable"
-            'Getting the pivottables collection in the sheet
+            ' Getting the pivottables collection in the sheet
             Dim pivotTables As Global.Aspose.Cells.Pivot.PivotTableCollection = sheet2.PivotTables
-            'Adding a PivotTable to the worksheet
+            ' Adding a PivotTable to the worksheet
             Dim index As Integer = pivotTables.Add("=Data!A1:F30", "B3", "PivotTable1")
-            'Accessing the instance of the newly added PivotTable
+            ' Accessing the instance of the newly added PivotTable
             Dim pivotTable As Global.Aspose.Cells.Pivot.PivotTable = pivotTables(index)
-            'Showing the grand totals
+            ' Showing the grand totals
             pivotTable.RowGrand = True
             pivotTable.ColumnGrand = True
-            'Setting the PivotTable report is automatically formatted
+            ' Setting the PivotTable report is automatically formatted
             pivotTable.IsAutoFormat = True
-            'Setting the PivotTable autoformat type.
+            ' Setting the PivotTable autoformat type.
             pivotTable.AutoFormatType = Global.Aspose.Cells.Pivot.PivotTableAutoFormatType.Report6
-            'Draging the first field to the row area.
+            ' Draging the first field to the row area.
             pivotTable.AddFieldToArea(Global.Aspose.Cells.Pivot.PivotFieldType.Row, 0)
-            'Draging the third field to the row area.
+            ' Draging the third field to the row area.
             pivotTable.AddFieldToArea(Global.Aspose.Cells.Pivot.PivotFieldType.Row, 2)
-            'Draging the second field to the row area.
+            ' Draging the second field to the row area.
             pivotTable.AddFieldToArea(Global.Aspose.Cells.Pivot.PivotFieldType.Row, 1)
-            'Draging the fourth field to the column area.
+            ' Draging the fourth field to the column area.
             pivotTable.AddFieldToArea(Global.Aspose.Cells.Pivot.PivotFieldType.Column, 3)
-            'Draging the fifth field to the data area.
+            ' Draging the fifth field to the data area.
             pivotTable.AddFieldToArea(Global.Aspose.Cells.Pivot.PivotFieldType.Data, 5)
-            'Setting the number format of the first data field
+            ' Setting the number format of the first data field
             pivotTable.DataFields(0).NumberFormat = "$#,##0.00"
-            'Saving the Excel file
+            ' Saving the Excel file
             workbook.Save(dataDir & "output.xlsx")
-            'ExEnd:1
+            ' ExEnd:1
 
 
         End Sub

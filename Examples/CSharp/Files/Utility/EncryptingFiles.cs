@@ -2,32 +2,32 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Files.Utility
+namespace CSharp.Files.Utility
 {
     public class EncryptingFiles
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            //Instantiate a Workbook object.
-            //Open an excel file.
+            // Instantiate a Workbook object.
+            // Open an excel file.
             Workbook workbook = new Workbook(dataDir + "Book1.xls");
 
-            //Specify XOR encryption type.
+            // Specify XOR encryption type.
             workbook.SetEncryptionOptions(EncryptionType.XOR, 40);
 
-            //Specify Strong Encryption type (RC4,Microsoft Strong Cryptographic Provider).
+            // Specify Strong Encryption type (RC4,Microsoft Strong Cryptographic Provider).
             workbook.SetEncryptionOptions(EncryptionType.StrongCryptographicProvider, 128);
 
-            //Password protect the file.
+            // Password protect the file.
             workbook.Settings.Password = "1234";
 
-            //Save the excel file.
+            // Save the excel file.
             workbook.Save(dataDir + "encryptedBook1.out.xls");
-            //ExEnd:1
+            // ExEnd:1
         }
     }
 }

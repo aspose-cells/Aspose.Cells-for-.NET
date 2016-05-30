@@ -3,28 +3,28 @@ Imports System.IO
 
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.Worksheets.Management
+Namespace Worksheets.Management
     Public Class AddingWorksheetsToNewExcelFile
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-            'Instantiating a Workbook object
+            ' Instantiating a Workbook object
             Dim workbook As New Workbook()
 
-            'Adding a new worksheet to the Workbook object
+            ' Adding a new worksheet to the Workbook object
             Dim i As Integer = workbook.Worksheets.Add()
 
-            'Obtaining the reference of the newly added worksheet by passing its sheet index
+            ' Obtaining the reference of the newly added worksheet by passing its sheet index
             Dim worksheet As Worksheet = workbook.Worksheets(i)
 
-            'Setting the name of the newly added worksheet
+            ' Setting the name of the newly added worksheet
             worksheet.Name = "My Worksheet"
 
-            'Saving the Excel file
+            ' Saving the Excel file
             workbook.Save(dataDir & "output.xls")
-            'ExEnd:1
+            ' ExEnd:1
         End Sub
     End Class
 End Namespace

@@ -3,12 +3,12 @@ Imports System.IO
 
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.Tables
+Namespace Tables
     Public Class FormataListObject
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
             ' Create directory if it is not already present.
             Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)
@@ -16,16 +16,16 @@ Namespace Aspose.Cells.Examples.Tables
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Create a workbook.
+            ' Create a workbook.
             Dim workbook As New Workbook()
 
-            'Obtaining the reference of the default(first) worksheet
+            ' Obtaining the reference of the default(first) worksheet
             Dim sheet As Worksheet = workbook.Worksheets(0)
 
-            'Obtaining Worksheet's cells collection
+            ' Obtaining Worksheet' S cells collection
             Dim cells As Global.Aspose.Cells.Cells = sheet.Cells
 
-            'Setting the value to the cells
+            ' Setting the value to the cells
             Dim cell As Global.Aspose.Cells.Cell = cells("A1")
             cell.PutValue("Employee")
             cell = cells("B1")
@@ -216,22 +216,22 @@ Namespace Aspose.Cells.Examples.Tables
             cell = cells("F15")
             cell.PutValue(900)
 
-            'Adding a new List Object to the worksheet
+            ' Adding a new List Object to the worksheet
             Dim listObject As Global.Aspose.Cells.Tables.ListObject = sheet.ListObjects(sheet.ListObjects.Add("A1", "F15", True))
 
-            'Adding Default Style to the table
+            ' Adding Default Style to the table
             listObject.TableStyleType = Global.Aspose.Cells.Tables.TableStyleType.TableStyleMedium10
 
-            'Show Total
+            ' Show Total
             listObject.ShowTotals = True
 
-            'Set the Quarter field's calculation type
+            ' Set the Quarter field' S calculation type
             listObject.ListColumns(1).TotalsCalculation = Global.Aspose.Cells.Tables.TotalsCalculation.Count
 
 
-            'Saving the Excel file
+            ' Saving the Excel file
             workbook.Save(dataDir & "output.xlsx")
-            'ExEnd:1
+            ' ExEnd:1
         End Sub
     End Class
 End Namespace

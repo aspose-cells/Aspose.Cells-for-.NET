@@ -4,15 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     class AssignMacroToFormControl
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             if (!System.IO.Directory.Exists(dataDir))
             {
                 System.IO.Directory.CreateDirectory(dataDir); 
@@ -37,10 +37,10 @@ namespace Aspose.Cells.Examples.Articles
 
             button.MacroName = sheet.Name + ".ShowMessage";
 
-            workbook.Save(dataDir + "Output.out.xlsm");
-
-            Console.WriteLine("File saved");
-            //ExEnd:1
+            dataDir = dataDir + "Output.out.xlsm";
+            workbook.Save(dataDir);            
+            // ExEnd:1
+            Console.WriteLine("\nProcess completed successfully.\nFile saved at " + dataDir);
         }
     }
 }

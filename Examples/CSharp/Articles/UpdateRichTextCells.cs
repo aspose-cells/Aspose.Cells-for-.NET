@@ -1,13 +1,13 @@
 ﻿using System;
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     class UpdateRichTextCells
     {
-        static void Main()
+        public static void Run()
         {
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             string inputPath = dataDir + "Sample.xlsx";
             string outputPath = dataDir + "Output.out.xlsx";
 
@@ -26,10 +26,10 @@ namespace Aspose.Cells.Examples.Articles
                 Console.WriteLine(fnts[i].Font.Name);
             }
 
-            //Modify the first FontSetting Font Name
+            // Modify the first FontSetting Font Name
             fnts[0].Font.Name = "Arial";
 
-            //And update it using SetCharacters() method
+            // And update it using SetCharacters() method
             cell.SetCharacters(fnts);
 
             Console.WriteLine();
@@ -43,7 +43,7 @@ namespace Aspose.Cells.Examples.Articles
                 Console.WriteLine(fnts[i].Font.Name);
             }
 
-            //Save workbook
+            // Save workbook
             workbook.Save(outputPath);
         }
     }

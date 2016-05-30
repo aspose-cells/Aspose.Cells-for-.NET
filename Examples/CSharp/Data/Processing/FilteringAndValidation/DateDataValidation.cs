@@ -2,15 +2,15 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Data.Processing.Processing.FilteringAndValidation
+namespace CSharp.Data.Processing.FilteringAndValidation
 {
     public class DateDataValidation
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             // Create directory if it is not already present.
             bool IsExists = System.IO.Directory.Exists(dataDir);
@@ -77,7 +77,7 @@ namespace Aspose.Cells.Examples.Data.Processing.Processing.FilteringAndValidatio
 
             // Save the Excel file.
             workbook.Save(dataDir + "output.out.xls");
-            //ExEnd:1
+            // ExEnd:1
 
         }
     }

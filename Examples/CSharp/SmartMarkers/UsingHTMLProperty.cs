@@ -3,15 +3,15 @@ using System.IO;
 using Aspose.Cells;
 using System;
 
-namespace Aspose.Cells.Examples.SmartMarkers
+namespace CSharp.SmartMarkers
 {
     public class UsingHTMLProperty
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             Workbook workbook = new Workbook();
             WorkbookDesigner designer = new WorkbookDesigner();
             designer.Workbook = workbook;
@@ -20,7 +20,7 @@ namespace Aspose.Cells.Examples.SmartMarkers
             designer.Process();
             workbook.Save(dataDir + "output.xls");
 
-            //ExEnd:1
+            // ExEnd:1
         }
     }
 }

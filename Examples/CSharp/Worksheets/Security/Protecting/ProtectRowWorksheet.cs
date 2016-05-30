@@ -2,15 +2,15 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Worksheets.Security.Protecting
+namespace CSharp.Worksheets.Security.Protecting
 {
     public class ProtectRowWorksheet
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             // Create directory if it is not already present.
             bool IsExists = System.IO.Directory.Exists(dataDir);
@@ -60,7 +60,7 @@ namespace Aspose.Cells.Examples.Worksheets.Security.Protecting
 
             // Save the excel file.
             wb.Save(dataDir + "output.out.xls", SaveFormat.Excel97To2003);
-            //ExEnd:1
+            // ExEnd:1
 
             
         }

@@ -3,12 +3,12 @@ Imports System.IO
 
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.DrawingObjects.Controls
+Namespace DrawingObjects.Controls
     Public Class AddingComboBoxControl
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
             ' Create directory if it is not already present.
             Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)
@@ -16,23 +16,23 @@ Namespace Aspose.Cells.Examples.DrawingObjects.Controls
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Create a new Workbook.
+            ' Create a new Workbook.
             Dim workbook As New Workbook()
 
-            'Get the first worksheet.
+            ' Get the first worksheet.
             Dim sheet As Worksheet = workbook.Worksheets(0)
 
-            'Get the worksheet cells collection.
+            ' Get the worksheet cells collection.
             Dim cells As Global.Aspose.Cells.Cells = sheet.Cells
 
-            'Input a value.
+            ' Input a value.
             cells("B3").PutValue("Employee:")
 
-            'Set it bold.
+            ' Set it bold.
             cells("B3").GetStyle().Font.IsBold = True
 
-            'Input some values that denote the input range
-            'for the combo box.
+            ' Input some values that denote the input range
+            ' For the combo box.
             cells("A2").PutValue("Emp001")
             cells("A3").PutValue("Emp002")
             cells("A4").PutValue("Emp003")
@@ -40,28 +40,28 @@ Namespace Aspose.Cells.Examples.DrawingObjects.Controls
             cells("A6").PutValue("Emp005")
             cells("A7").PutValue("Emp006")
 
-            'Add a new combo box.
+            ' Add a new combo box.
             Dim comboBox As Global.Aspose.Cells.Drawing.ComboBox = sheet.Shapes.AddComboBox(2, 0, 2, 0, 22, 100)
 
-            'Set the linked cell;
+            ' Set the linked cell;
             comboBox.LinkedCell = "A1"
 
-            'Set the input range.
+            ' Set the input range.
             comboBox.InputRange = "A2:A7"
 
-            'Set no. of list lines displayed in the combo
-            'box's list portion.
+            ' Set no. of list lines displayed in the combo
+            ' Box' S list portion.
             comboBox.DropDownLines = 5
 
-            'Set the combo box with 3-D shading.
+            ' Set the combo box with 3-D shading.
             comboBox.Shadow = True
 
-            'AutoFit Columns
+            ' AutoFit Columns
             sheet.AutoFitColumns()
 
-            'Saves the file.
+            ' Saves the file.
             workbook.Save(dataDir & "output.xls")
-            'ExEnd:1
+            ' ExEnd:1
         End Sub
     End Class
 End Namespace

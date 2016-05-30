@@ -4,29 +4,29 @@ Imports System.Drawing
 
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.Articles.CopyShapesBetweenWorksheets
+Namespace Articles.CopyShapesBetweenWorksheets
     Public Class CopyingPicture
-        Public Shared Sub Main()
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-            'Create a workbook object
-            'Open the template file
+            ' Create a workbook object
+            ' Open the template file
             Dim workbook As New Workbook(dataDir & "aspose-sample.xlsx")
 
-            'Get the Picture from the "Picture" worksheet.
+            ' Get the Picture from the "Picture" worksheet.
             Dim source As Global.Aspose.Cells.Drawing.Picture = workbook.Worksheets("Sheet1").Pictures(0)
 
-            'Save Picture to Memory Stream
+            ' Save Picture to Memory Stream
             Dim ms As New MemoryStream(source.Data)
 
-            'Copy the picture to the Result Worksheet
+            ' Copy the picture to the Result Worksheet
             workbook.Worksheets("Sheet2").Pictures.Add(source.UpperLeftRow, source.UpperLeftColumn, ms, source.WidthScale, source.HeightScale)
 
-            'Save the Worksheet
+            ' Save the Worksheet
             workbook.Save(dataDir & "output.xlsx")
-            'ExEnd:1
+            ' ExEnd:1
 
 
         End Sub

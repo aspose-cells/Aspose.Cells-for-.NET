@@ -4,12 +4,12 @@ Imports System.IO
 Imports Aspose.Cells
 Imports System.Collections.Generic
 
-Namespace Aspose.Cells.Examples.Data.Handling.Importing
+Namespace Data.Handling.Importing
     Public Class ImportingFromCustomObject
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
             ' Create directory if it is not already present.
             Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)
@@ -17,12 +17,12 @@ Namespace Aspose.Cells.Examples.Data.Handling.Importing
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Instantiate a new Workbook
+            ' Instantiate a new Workbook
             Dim book As New Workbook()
 
             Dim sheet As Worksheet = book.Worksheets(0)
 
-            'Define List
+            ' Define List
             Dim list As List(Of Person) = New List(Of Person)()
 
             list.Add(New Person("Mike", 25))
@@ -34,16 +34,16 @@ Namespace Aspose.Cells.Examples.Data.Handling.Importing
             Dim imp As New ImportTableOptions()
             imp.InsertRows = True
 
-            'We pick a few columns not all to import to the worksheet
-            'We pick a few columns not all to import to the worksheet
+            ' We pick a few columns not all to import to the worksheet
+            ' We pick a few columns not all to import to the worksheet
             sheet.Cells.ImportCustomObjects(CType(list, System.Collections.ICollection), New String() {"Name", "Age"}, True, 0, 0, list.Count, True, "dd/mm/yyyy", False)
 
-            'Auto-fit all the columns
+            ' Auto-fit all the columns
             book.Worksheets(0).AutoFitColumns()
 
-            'Save the Excel file
+            ' Save the Excel file
             book.Save(dataDir & "output.xls")
-            'ExEnd:1
+            ' ExEnd:1
         End Sub
     End Class
 

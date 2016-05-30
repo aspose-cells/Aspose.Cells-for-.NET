@@ -2,14 +2,14 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     public class PopulateData
     {
-        public static void Main()
+        public static void Run()
         {
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             Workbook workbook = new Workbook();
             Cells cells = workbook.Worksheets[0].Cells;
             cells["A1"].PutValue("data1");

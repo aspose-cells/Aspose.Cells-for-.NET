@@ -3,25 +3,25 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace Aspose.Cells.Examples.Formatting
+namespace CSharp.Formatting
 {
     public class SetFont
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            //Instantiating a Workbook object
+            // Instantiating a Workbook object
             Workbook workbook = new Workbook();
             Worksheet sheet = workbook.Worksheets[0];
 
-            //Adds an empty conditional formatting
+            // Adds an empty conditional formatting
             int index = sheet.ConditionalFormattings.Add();
             FormatConditionCollection fcs = sheet.ConditionalFormattings[index];
 
-            //Sets the conditional format range.
+            // Sets the conditional format range.
             CellArea ca = new CellArea();
             ca.StartRow = 0;
             ca.EndRow = 5;
@@ -29,10 +29,10 @@ namespace Aspose.Cells.Examples.Formatting
             ca.EndColumn = 3;
             fcs.AddArea(ca);
 
-            //Adds condition.
+            // Adds condition.
             int conditionIndex = fcs.AddCondition(FormatConditionType.CellValue, OperatorType.Between, "50", "100");
 
-            //Sets the background color.
+            // Sets the background color.
             FormatCondition fc = fcs[conditionIndex];
            // fc.Style.BackgroundColor = Color.Red;
 
@@ -42,7 +42,7 @@ namespace Aspose.Cells.Examples.Formatting
             fc.Style.Font.Underline = FontUnderlineType.Double;
             fc.Style.Font.Color = Color.Black;
             workbook.Save(dataDir + "output.xlsx");
-            //ExEnd:1
+            // ExEnd:1
         }
     }
 }

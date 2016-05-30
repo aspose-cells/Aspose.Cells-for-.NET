@@ -1,15 +1,15 @@
 ﻿using System;
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     class UsingCustomXmlParts
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:UsingCustomXmlParts
+            // ExStart:UsingCustomXmlParts
             // The path to the documents directory
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             // The sample XML that will be injected to Workbook
             string booksXML = @"<catalog>
@@ -43,7 +43,7 @@ namespace Aspose.Cells.Examples.Articles
 
             // Save the resultant spreadsheet
             workbook.Save(dataDir + "UsingCustomXmlParts.xlsx");
-            //ExEnd:UsingCustomXmlParts
+            // ExEnd:UsingCustomXmlParts
         }
     }
 }

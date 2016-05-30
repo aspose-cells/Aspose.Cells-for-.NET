@@ -3,12 +3,12 @@ Imports System.IO
 
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.Articles
+Namespace Articles
     Public Class AutoFitRowsMergedCells
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
             ' Create directory if it is not already present.
             Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)
@@ -16,42 +16,42 @@ Namespace Aspose.Cells.Examples.Articles
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Instantiate a new Workbook
+            ' Instantiate a new Workbook
             Dim wb As New Workbook()
 
-            'Get the first (default) worksheet
+            ' Get the first (default) worksheet
             Dim _worksheet As Worksheet = wb.Worksheets(0)
 
-            'Create a range A1:B1
+            ' Create a range A1:B1
             Dim range As Range = _worksheet.Cells.CreateRange(0, 0, 1, 2)
 
-            'Merge the cells
+            ' Merge the cells
             range.Merge()
 
-            'Insert value to the merged cell A1
+            ' Insert value to the merged cell A1
             _worksheet.Cells(0, 0).Value = "A quick brown fox jumps over the lazy dog. A quick brown fox jumps over the lazy dog....end"
 
-            'Create a style object
+            ' Create a style object
             Dim style As Global.Aspose.Cells.Style = _worksheet.Cells(0, 0).GetStyle()
 
-            'Set wrapping text on
+            ' Set wrapping text on
             style.IsTextWrapped = True
 
-            'Apply the style to the cell
+            ' Apply the style to the cell
             _worksheet.Cells(0, 0).SetStyle(style)
 
-            'Create an object for AutoFitterOptions
+            ' Create an object for AutoFitterOptions
             Dim options As New AutoFitterOptions()
 
-            'Set auto-fit for merged cells
+            ' Set auto-fit for merged cells
             options.AutoFitMergedCells = True
 
-            'Autofit rows in the sheet(including the merged cells)
+            ' Autofit rows in the sheet(including the merged cells)
             _worksheet.AutoFitRows(options)
 
-            'Save the Excel file
+            ' Save the Excel file
             wb.Save(dataDir & "output.xlsx")
-            'ExEnd:1
+            ' ExEnd:1
 
 
         End Sub

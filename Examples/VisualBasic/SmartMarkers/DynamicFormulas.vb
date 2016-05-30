@@ -2,12 +2,12 @@ Imports System.IO
 
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.SmartMarkers
+Namespace SmartMarkers
     Public Class DynamicFormulas
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
             ' Create directory if it is not already present.
             Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)
@@ -15,20 +15,20 @@ Namespace Aspose.Cells.Examples.SmartMarkers
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
+            If designerFile IsNot Nothing Then
+                ' Instantiating a WorkbookDesigner object
+                Dim designer As New WorkbookDesigner()
 
-            'Instantiating a WorkbookDesigner object
-            Dim designer As New WorkbookDesigner()
+                ' Open a designer spreadsheet containing smart markers
+                designer.Workbook = New Workbook(designerFile)
 
-            'Open a designer spreadsheet containing smart markers
-            designer.Workbook = New Workbook(designerFile)
+                ' Set the data source for the designer spreadsheet
+                designer.SetDataSource(dataset)
 
-            'Set the data source for the designer spreadsheet
-            designer.SetDataSource(dataset)
-
-            'Process the smart markers
-            designer.Process()
-            'ExEnd:1
-
+                ' Process the smart markers
+                designer.Process()
+            End If
+            ' ExEnd:1
 
         End Sub
 

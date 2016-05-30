@@ -1,33 +1,34 @@
 using System.IO;
-
+using System;
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     public class CombineMultipleWorkbooksSingleWorkbook
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
 
-            //Define the first source
-            //Open the first excel file.
+            // Define the first source
+            // Open the first excel file.
             Workbook SourceBook1 = new Workbook(dataDir+ "SampleChart.xlsx");
 
-            //Define the second source book.
-            //Open the second excel file.
+            // Define the second source book.
+            // Open the second excel file.
             Workbook SourceBook2 = new Workbook(dataDir+ "SampleImage.xlsx");
 
-            //Combining the two workbooks
+            // Combining the two workbooks
             SourceBook1.Combine(SourceBook2);
 
-            //Save the target book file.
-            SourceBook1.Save(dataDir+ "Combined.out.xlsx");
-            //ExEnd:1
-            
+            dataDir = dataDir + "Combined.out.xlsx";
+            // Save the target book file.
+            SourceBook1.Save(dataDir);
+            // ExEnd:1
+            Console.WriteLine("\nProcess completed successfully.\nFile saved at " + dataDir);
         }
     }
 }

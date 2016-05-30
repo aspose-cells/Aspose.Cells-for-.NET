@@ -1,14 +1,14 @@
 ﻿using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     class HtmlExportFrameScripts
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             // Open the required workbook to convert
             Workbook w = new Workbook(dataDir + "Sample1.xlsx");
@@ -19,7 +19,7 @@ namespace Aspose.Cells.Examples.Articles
 
             // Save workbook as HTML
             w.Save(dataDir + "output.out.html", options);
-            //ExEnd:1
+            // ExEnd:1
         }
     }
 }

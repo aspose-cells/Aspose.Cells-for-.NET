@@ -2,31 +2,30 @@ using System;
 using System.IO;
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     public class ConvertXLSFileToPDF
     {
 
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             try
             {
 
-                //Get the template excel file path.
+                // Get the template excel file path.
                 string designerFile = dataDir + "SampleInput.xlsx";
-                //Specify the pdf file path.
+                // Specify the pdf file path.
                 string pdfFile = dataDir + "Output.out.pdf";
-                //Create a new Workbook.
-                //Open the template excel file which you have to
+                // Create a new Workbook.
+                // Open the template excel file which you have to
                 Aspose.Cells.Workbook wb = new Aspose.Cells.Workbook(designerFile);
-                //Save the pdf file.
+                // Save the pdf file.
                 wb.Save(pdfFile, SaveFormat.Pdf);
-
+                
             }
             catch (Exception e)
             {
@@ -34,7 +33,7 @@ namespace Aspose.Cells.Examples.Articles
                 Console.ReadLine();
 
             }
-            //ExEnd:1
+            // ExEnd:1
         }
 
     }

@@ -1,18 +1,17 @@
 using System.IO;
-
 using Aspose.Cells;
 using System.Data;
 using System;
 
-namespace Aspose.Cells.Examples.Data.Handling.Importing
+namespace CSharp.Data.Handling.Importing
 {
     public class ImportHtmlFormattedData
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             string output1Path = dataDir + "Output.out.xlsx";
             string output2Path = dataDir + "Output.out.ods";
 
@@ -46,7 +45,7 @@ namespace Aspose.Cells.Examples.Data.Handling.Importing
 
             workbook.Save(output1Path);
             workbook.Save(output2Path);
-            //ExEnd:1
+            // ExEnd:1
         }
     }
 }

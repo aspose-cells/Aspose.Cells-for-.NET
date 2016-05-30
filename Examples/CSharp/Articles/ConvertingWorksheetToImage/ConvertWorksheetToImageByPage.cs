@@ -3,15 +3,15 @@ using System.IO;
 using Aspose.Cells;
 using Aspose.Cells.Rendering;
 
-namespace Aspose.Cells.Examples.Articles.ConvertingWorksheetToImage
+namespace CSharp.Articles.ConvertingWorksheetToImage
 {
     public class ConvertWorksheetToImageByPage
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             Workbook book = new Workbook(dataDir+ "TestData.xlsx");
             Worksheet sheet = book.Worksheets[0];
@@ -20,7 +20,7 @@ namespace Aspose.Cells.Examples.Articles.ConvertingWorksheetToImage
             options.VerticalResolution = 200;
             options.ImageFormat = System.Drawing.Imaging.ImageFormat.Tiff;
 
-            //Sheet2Image By Page conversion
+            // Sheet2Image By Page conversion
             SheetRender sr = new SheetRender(sheet, options);
             for (int j = 0; j < sr.PageCount; j++)
             {
@@ -28,7 +28,7 @@ namespace Aspose.Cells.Examples.Articles.ConvertingWorksheetToImage
                 sr.ToImage(j, dataDir+ "test" + sheet.Name + " Page" + (j + 1) + ".out.tif");
             }
  
-            //ExEnd:1
+            // ExEnd:1
                        
         }
     }

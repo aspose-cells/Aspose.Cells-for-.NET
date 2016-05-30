@@ -1,11 +1,11 @@
 ﻿Imports System.IO
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.Articles
+Namespace Articles
     Public Class ChangeHtmlLinkTarget
-        Shared Sub Main()
-            'ExStart:1
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+        Public Shared Sub Run()
+            ' ExStart:1
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             Dim inputPath As String = dataDir & "Sample1.xlsx"
             Dim outputPath As String = dataDir & "Output.out.html"
 
@@ -15,7 +15,7 @@ Namespace Aspose.Cells.Examples.Articles
 
             workbook.Save(outputPath, opts)
             Console.WriteLine("File saved: {0}", outputPath)
-            'ExEnd:1
+            ' ExEnd:1
 
         End Sub
     End Class

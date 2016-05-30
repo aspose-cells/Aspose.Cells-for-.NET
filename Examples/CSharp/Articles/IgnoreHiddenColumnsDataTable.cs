@@ -2,14 +2,15 @@
 using System.Data;
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     class IgnoreHiddenColumnsDataTable
     {
-        static void Main()
+        public static void Run
+            ()
         {
-            //ExStart:1
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            // ExStart:1
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             string inputPath = dataDir + "Sample.xlsx";
 
             Workbook workbook = new Workbook(inputPath);
@@ -23,7 +24,7 @@ namespace Aspose.Cells.Examples.Articles
             int totalColumns = worksheet.Cells.MaxColumn + 1;
 
             DataTable dt = worksheet.Cells.ExportDataTable(0, 0, totalRows, totalColumns, opts);
-            //ExEnd:1
+            // ExEnd:1
         }
     }
 }

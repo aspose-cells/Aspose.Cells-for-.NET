@@ -2,13 +2,13 @@
 using Aspose.Cells;
 using Aspose.Cells.Drawing;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     class AccessTextBoxName
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:AccessTextBoxName
+            // ExStart:AccessTextBoxName
             // Create an object of the Workbook class
             Workbook workbook = new Workbook();
 
@@ -28,12 +28,12 @@ namespace Aspose.Cells.Examples.Articles
             // Access the same TextBox via its name
             TextBox tb2 = sheet.TextBoxes["MyTextBox"];
 
-            //Display the text of the TextBox accessed via name
+            // Display the text of the TextBox accessed via name
             Console.WriteLine(tb2.Text);
 
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
-            //ExEnd:AccessTextBoxName
+            // ExEnd:AccessTextBoxName
         }
     }
 }

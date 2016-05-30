@@ -2,29 +2,29 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     public class LimitNumberOfPagesGenerated
     {
-        public static void Main()
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            //Open an Excel file
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            // Open an Excel file
             Workbook wb = new Workbook(dataDir+ "TestBook.xlsx");
-            //Instantiate the PdfSaveOption
+            // Instantiate the PdfSaveOption
             PdfSaveOptions options = new PdfSaveOptions();
 
-            //Print only Page 3 and Page 4 in the output PDF
-            //Starting page index (0-based index)
+            // Print only Page 3 and Page 4 in the output PDF
+            // Starting page index (0-based index)
             options.PageIndex = 3;
-            //Number of pages to be printed
+            // Number of pages to be printed
             options.PageCount = 2;
 
-            //Save the PDF file
+            // Save the PDF file
             wb.Save(dataDir+ "outPDF1.out.pdf", options);
-            //ExEnd:1
+            // ExEnd:1
             
             
         }

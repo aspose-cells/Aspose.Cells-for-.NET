@@ -2,32 +2,32 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Articles.CopyRowsColumns
+namespace CSharp.Articles.CopyRowsColumns
 {
     public class CopyingRows
     {
-        public static void Main()
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            //Instantiate a new workbook
-            //Open an existing excel file
+            // Instantiate a new workbook
+            // Open an existing excel file
             Workbook workbook = new Workbook(dataDir+ "aspose-sample.xlsx");
 
-            //Get the first worksheet cells
+            // Get the first worksheet cells
             Cells cells = workbook.Worksheets[0].Cells;
-            //Apply formulas to the cells
+            // Apply formulas to the cells
             for (int i = 0; i < 5; i++)
             {
                 cells[0, i].Formula = "=Input!" + cells[0, i].Name;
             }
-            //Copy the first row to next 10 rows
+            // Copy the first row to next 10 rows
             cells.CopyRows(cells, 0, 1, 10);
-            //Save the excel file
+            // Save the excel file
             workbook.Save(dataDir + "outaspose-sample.out.xlsx");
-            //ExEnd:1
+            // ExEnd:1
  
         }
     }

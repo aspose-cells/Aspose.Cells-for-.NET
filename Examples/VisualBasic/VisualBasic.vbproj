@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D3A228AD-BF9F-42AE-BC8A-C79A4A2D9E8D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>Aspose.Cells.Examples.Utils</StartupObject>
+    <StartupObject>RunExamples</StartupObject>
     <RootNamespace>
     </RootNamespace>
     <AssemblyName>VisualBasic</AssemblyName>
@@ -48,14 +48,14 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=8.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Aspose.Cells.8.8.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\packages\Aspose.Cells.8.8.1\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -257,7 +257,6 @@
     <Compile Include="Data\Handling\Importing\ImportingFromCustomObject.vb" />
     <Compile Include="Data\Handling\Importing\ImportHtmlFormattedData.vb" />
     <Compile Include="Data\Handling\Importing\ImportingFromDataGrid.vb" />
-    <Compile Include="Data\Handling\Importing\ImportingFromOleDbDataReader.vb" />
     <Compile Include="Data\Handling\Importing\ImportingFromDataColumn.vb" />
     <Compile Include="Data\Handling\Importing\ImportingFromDataTable.vb" />
     <Compile Include="Data\Handling\Importing\ImportingFromDataView.vb" />
@@ -450,11 +449,11 @@
     <Compile Include="Tables\ConvertTableToRange.vb" />
     <Compile Include="Tables\CreatingListObject.vb" />
     <Compile Include="Tables\FormataListObject.vb" />
-    <Compile Include="Utils.vb" />
+    <Compile Include="RunExamples.vb" />
     <Compile Include="Worksheets\Display\DisplayHideGridlines.vb" />
     <Compile Include="Worksheets\Display\DisplayHideRowColumnHeaders.vb" />
     <Compile Include="Worksheets\Display\DisplayHideScrollBars.vb" />
-    <Compile Include="Worksheets\Display\DisplayHideTabs.vb" />
+    <Compile Include="Worksheets\Display\DisplayTabs.vb" />
     <Compile Include="Worksheets\Display\FreezePanes.vb" />
     <Compile Include="Worksheets\Display\HideUnhideWorksheet.vb" />
     <Compile Include="Worksheets\Display\PageBreakPreview.vb" />

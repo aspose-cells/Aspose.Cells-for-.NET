@@ -3,53 +3,53 @@ using System.IO;
 using Aspose.Cells;
 using System.Data;
 
-namespace Aspose.Cells.Examples.SmartMarkers
+namespace CSharp.SmartMarkers
 {
     public class GroupingData
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            //Create a connection object, specify the provider info and set the data source.
-            OleDbConnection con = new OleDbConnection("provider=microsoft.jet.oledb.4.0;data source=d:\\test\\Northwind.mdb");
+            // Create a connection object, specify the provider info and set the data source.
+            OleDbConnection con = new OleDbConnection("provider=microsoft.jet.oledb.4.0;data source=" + dataDir + "Northwind.mdb");
 
-            //Open the connection object.
+            // Open the connection object.
             con.Open();
 
-            //Create a command object and specify the SQL query.
+            // Create a command object and specify the SQL query.
             OleDbCommand cmd = new OleDbCommand("Select * from [Order Details]", con);
 
-            //Create a data adapter object.
+            // Create a data adapter object.
             OleDbDataAdapter da = new OleDbDataAdapter();
 
-            //Specify the command.
+            // Specify the command.
             da.SelectCommand = cmd;
 
-            //Create a dataset object.
+            // Create a dataset object.
             DataSet ds = new DataSet();
 
-            //Fill the dataset with the table records.
+            // Fill the dataset with the table records.
             da.Fill(ds, "Order Details");
 
-            //Create a datatable with respect to dataset table.
+            // Create a datatable with respect to dataset table.
             DataTable dt = ds.Tables["Order Details"];
 
-            //Create WorkbookDesigner object.
+            // Create WorkbookDesigner object.
             WorkbookDesigner wd = new WorkbookDesigner();
 
-            //Open the template file (which contains smart markers).
-            wd.Workbook = new Workbook(dataDir+ "TestSmartMarkers.xlsx");
+            // Open the template file (which contains smart markers).
+            wd.Workbook = new Workbook(dataDir + "Designer.xlsx");
 
-            //Set the datatable as the data source.
+            // Set the datatable as the data source.
             wd.SetDataSource(dt);
 
-            //Process the smart markers to fill the data into the worksheets.
+            // Process the smart markers to fill the data into the worksheets.
             wd.Process(true);
 
-            //Save the excel file.
+            // Save the excel file.
             wd.Workbook.Save(dataDir+ "output.xlsx");
            
             
@@ -94,5 +94,5 @@ namespace Aspose.Cells.Examples.SmartMarkers
            
         }
     }
-    //ExEnd:1
+    // ExEnd:1
 }

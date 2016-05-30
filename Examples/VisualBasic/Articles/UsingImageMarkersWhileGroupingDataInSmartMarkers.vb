@@ -3,12 +3,12 @@ Imports System.IO
 Imports Aspose.Cells
 Imports Aspose.Cells.Drawing
 
-Namespace Aspose.Cells.Examples.Articles
+Namespace Articles
 
-    'ExStart:UsingImageMarkersWhileGroupingDataInSmartMarkers
+    ' ExStart:UsingImageMarkersWhileGroupingDataInSmartMarkers
     Public Class UsingImageMarkersWhileGroupingDataInSmartMarkers
         Private Class Person
-            'Create Name, City and Photo properties
+            ' Create Name, City and Photo properties
             Private m_Name As String
             Private m_City As String
             Private m_Photo As Byte()
@@ -48,28 +48,28 @@ Namespace Aspose.Cells.Examples.Articles
 
         End Class
 
-        Public Shared Sub Main(ByVal args() As String)
+        Public Shared Sub Run()
 
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-            'Get the images
+            ' Get the images
             Dim photo1 As Byte() = File.ReadAllBytes(dataDir + "moon.png")
             Dim photo2 As Byte() = File.ReadAllBytes(dataDir + "moon2.png")
 
-            'Create a new workbook and access its worksheet
+            ' Create a new workbook and access its worksheet
             Dim workbook As New Workbook()
             Dim worksheet As Worksheet = workbook.Worksheets(0)
 
-            'Set the standard row height to 35
+            ' Set the standard row height to 35
             worksheet.Cells.StandardHeight = 35
 
-            'Set column widhts of D, E and F
+            ' Set column widhts of D, E and F
             worksheet.Cells.SetColumnWidth(3, 20)
             worksheet.Cells.SetColumnWidth(4, 20)
             worksheet.Cells.SetColumnWidth(5, 40)
 
-            'Add the headings in columns D, E and F
+            ' Add the headings in columns D, E and F
             worksheet.Cells("D1").PutValue("Name")
             Dim st As Style = worksheet.Cells("D1").GetStyle()
             st.Font.IsBold = True
@@ -81,12 +81,12 @@ Namespace Aspose.Cells.Examples.Articles
             worksheet.Cells("F1").PutValue("Photo")
             worksheet.Cells("F1").SetStyle(st)
 
-            'Add smart marker tags in columns D, E, F
+            ' Add smart marker tags in columns D, E, F
             worksheet.Cells("D2").PutValue("&=Person.Name(group:normal,skip:1)")
             worksheet.Cells("E2").PutValue("&=Person.City")
             worksheet.Cells("F2").PutValue("&=Person.Photo(Picture:FitToCell)")
 
-            'Create Persons objects with photos
+            ' Create Persons objects with photos
             Dim persons As New List(Of Person)()
             persons.Add(New Person("George", "New York", photo1))
             persons.Add(New Person("George", "New York", photo2))
@@ -102,14 +102,14 @@ Namespace Aspose.Cells.Examples.Articles
             persons.Add(New Person("Henry", "Sydney", photo1))
             persons.Add(New Person("Henry", "Sydney", photo2))
 
-            'Create a workbook designer
+            ' Create a workbook designer
             Dim designer As New WorkbookDesigner(workbook)
 
-            'Set the data source and process smart marker tags
+            ' Set the data source and process smart marker tags
             designer.SetDataSource("Person", persons)
             designer.Process()
 
-            'Save the workbook
+            ' Save the workbook
             workbook.Save(dataDir & "UsingImageMarkersWhileGroupingDataInSmartMarkers.xlsx", SaveFormat.Xlsx)
 
             Console.WriteLine("Press any key to continue...")
@@ -117,5 +117,5 @@ Namespace Aspose.Cells.Examples.Articles
 
         End Sub
     End Class
-    'ExEnd:UsingImageMarkersWhileGroupingDataInSmartMarkers
+    ' ExEnd:UsingImageMarkersWhileGroupingDataInSmartMarkers
 End Namespace

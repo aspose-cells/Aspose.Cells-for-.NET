@@ -3,12 +3,12 @@ Imports System.IO
 Imports Aspose.Cells
 Imports System
 
-Namespace Aspose.Cells.Examples.Files.Handling
+Namespace Files.Handling
     Public Class LoadVisibleSheetsOnly
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             Dim sampleFile As String = "output.xlsx"
             Dim samplePath As String = dataDir & sampleFile
 
@@ -32,7 +32,7 @@ Namespace Aspose.Cells.Examples.Files.Handling
             Console.WriteLine("Sheet1: A1: {0}", loadWorkbook.Worksheets("Sheet1").Cells("A1").Value)
             Console.WriteLine("Sheet1: A2: {0}", loadWorkbook.Worksheets("Sheet2").Cells("A1").Value)
             Console.WriteLine("Sheet1: A3: {0}", loadWorkbook.Worksheets("Sheet3").Cells("A1").Value)
-            'ExEnd:1
+            ' ExEnd:1
         End Sub
     End Class
 End Namespace

@@ -1,15 +1,15 @@
 ﻿Imports System
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.Articles
-    'ExStart:ImplementCustomCalculationEngine
+Namespace Articles
+    ' ExStart:ImplementCustomCalculationEngine
     ' Create a new class derived from AbstractCalculationEngine
     Friend Class CustomEngine
         Inherits AbstractCalculationEngine
 
         ' Override the Calculate method with custom logic
         Public Overrides Sub Calculate(ByVal data As CalculationData)
-            'Check the forumla name and change the implementation
+            ' Check the forumla name and change the implementation
             If data.FunctionName.ToUpper() = "SUM" Then
                 Dim val As Double = CDbl(data.CalculatedValue)
                 val = val + 30
@@ -21,7 +21,7 @@ Namespace Aspose.Cells.Examples.Articles
     End Class
 
     Friend Class ImplementCustomCalculationEngine
-        Public Shared Sub Main(ByVal args() As String)
+        Public Shared Sub Run()
             ' Create an instance of Workbook
             Dim workbook As New Workbook()
 
@@ -61,5 +61,5 @@ Namespace Aspose.Cells.Examples.Articles
             Console.ReadKey()
         End Sub
     End Class
-    'ExEnd:ImplementCustomCalculationEngine
+    ' ExEnd:ImplementCustomCalculationEngine
 End Namespace

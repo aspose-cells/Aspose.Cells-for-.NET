@@ -1,28 +1,27 @@
 using System.IO;
-
+using System;
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     public class FitAllWorksheetColumns
     {
-        public static void Main()
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            //Create and initialize an instance of Workbook
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            // Create and initialize an instance of Workbook
             Workbook book = new Workbook(dataDir + "TestBook.xlsx");
-            //Create and initialize an instance of PdfSaveOptions
+            // Create and initialize an instance of PdfSaveOptions
             PdfSaveOptions saveOptions = new PdfSaveOptions(SaveFormat.Pdf);
-            //Set AllColumnsInOnePagePerSheet to true
+            // Set AllColumnsInOnePagePerSheet to true
             saveOptions.AllColumnsInOnePagePerSheet = true;
-            //Save Workbook to PDF fromart by passing the object of PdfSaveOptions
-            book.Save(dataDir+ "output.out.pdf", saveOptions);
-            
-            //ExEnd:1
-            
-            
+            // Save Workbook to PDF fromart by passing the object of PdfSaveOptions
+            dataDir = dataDir+ "output.out.pdf";
+            book.Save(dataDir, saveOptions);            
+            // ExEnd:1
+            Console.WriteLine("\nProcess completed successfully.\nFile saved at " + dataDir);
         }
     }
 }

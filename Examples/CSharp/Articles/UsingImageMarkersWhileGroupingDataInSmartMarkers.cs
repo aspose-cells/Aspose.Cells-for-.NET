@@ -5,15 +5,15 @@ using System.Collections.Generic;
 using Aspose.Cells;
 using System.Collections;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
-    //ExStart:UsingImageMarkersWhileGroupingDataInSmartMarkers
+    // ExStart:UsingImageMarkersWhileGroupingDataInSmartMarkers
     public class UsingImageMarkersWhileGroupingDataInSmartMarkers
     {
 
         class Person
         {
-            //Create Name, City and Photo properties
+            // Create Name, City and Photo properties
             private string m_Name;
             private string m_City;
             private byte[] m_Photo;
@@ -45,28 +45,28 @@ namespace Aspose.Cells.Examples.Articles
 
         }
 
-        public static void Main(string[] args)
+        public static void Run()
         {
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            //Get the images
+            // Get the images
             byte[] photo1 = File.ReadAllBytes(dataDir + "moon.png");
             byte[] photo2 = File.ReadAllBytes(dataDir + "moon2.png");
 
-            //Create a new workbook and access its worksheet
+            // Create a new workbook and access its worksheet
             Workbook workbook = new Workbook();
             Worksheet worksheet = workbook.Worksheets[0];
 
-            //Set the standard row height to 35
+            // Set the standard row height to 35
             worksheet.Cells.StandardHeight = 35;
 
-            //Set column widhts of D, E and F
+            // Set column widhts of D, E and F
             worksheet.Cells.SetColumnWidth(3, 20);
             worksheet.Cells.SetColumnWidth(4, 20);
             worksheet.Cells.SetColumnWidth(5, 40);
 
-            //Add the headings in columns D, E and F
+            // Add the headings in columns D, E and F
             worksheet.Cells["D1"].PutValue("Name");
             Style st = worksheet.Cells["D1"].GetStyle();
             st.Font.IsBold = true;
@@ -78,12 +78,12 @@ namespace Aspose.Cells.Examples.Articles
             worksheet.Cells["F1"].PutValue("Photo");
             worksheet.Cells["F1"].SetStyle(st);
 
-            //Add smart marker tags in columns D, E, F
+            // Add smart marker tags in columns D, E, F
             worksheet.Cells["D2"].PutValue("&=Person.Name(group:normal,skip:1)");
             worksheet.Cells["E2"].PutValue("&=Person.City");
             worksheet.Cells["F2"].PutValue("&=Person.Photo(Picture:FitToCell)");
 
-            //Create Persons objects with photos
+            // Create Persons objects with photos
             List<Person> persons = new List<Person>();
             persons.Add(new Person("George", "New York", photo1));
             persons.Add(new Person("George", "New York", photo2));
@@ -99,18 +99,18 @@ namespace Aspose.Cells.Examples.Articles
             persons.Add(new Person("Henry", "Sydney", photo1));
             persons.Add(new Person("Henry", "Sydney", photo2));
 
-            //Create a workbook designer
+            // Create a workbook designer
             WorkbookDesigner designer = new WorkbookDesigner(workbook);
 
-            //Set the data source and process smart marker tags
+            // Set the data source and process smart marker tags
             designer.SetDataSource("Person", persons);
             designer.Process();
 
-            //Save the workbook
+            // Save the workbook
             workbook.Save(dataDir + "UsingImageMarkersWhileGroupingDataInSmartMarkers.xlsx", SaveFormat.Xlsx);
                    
         }
 
     }
-    //ExEnd:UsingImageMarkersWhileGroupingDataInSmartMarkers    
+    // ExEnd:UsingImageMarkersWhileGroupingDataInSmartMarkers    
 }

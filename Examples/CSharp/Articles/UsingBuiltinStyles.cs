@@ -2,13 +2,13 @@
 using Aspose.Cells;
 using Aspose.Cells.Metadata;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     class UsingBuiltinStyles
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             string output1Path = dataDir + "Output.xlsx";
             string output2Path = dataDir + "Output.out.ods";
 

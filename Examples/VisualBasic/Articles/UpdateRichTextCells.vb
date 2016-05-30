@@ -1,11 +1,11 @@
 ﻿Imports System.IO
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.Articles
+Namespace Articles
     Public Class UpdateRichTextCells
-        Shared Sub Main()
-            'ExStart:1
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+        Public Shared Sub Run()
+            ' ExStart:1
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             Dim inputPath As String = dataDir & "Sample.xlsx"
             Dim outputPath As String = dataDir & "Output.out.xlsx"
 
@@ -22,10 +22,10 @@ Namespace Aspose.Cells.Examples.Articles
                 Console.WriteLine(fnts(i).Font.Name)
             Next
 
-            'Modify the first FontSetting Font Name
+            ' Modify the first FontSetting Font Name
             fnts(0).Font.Name = "Arial"
 
-            'And update it using SetCharacters() method
+            ' And update it using SetCharacters() method
             cell.SetCharacters(fnts)
 
             Console.WriteLine()
@@ -37,9 +37,9 @@ Namespace Aspose.Cells.Examples.Articles
                 Console.WriteLine(fnts(i).Font.Name)
             Next
 
-            'Save workbook
+            ' Save workbook
             workbook.Save(outputPath)
-            'ExEnd:1
+            ' ExEnd:1
         End Sub
     End Class
 End Namespace

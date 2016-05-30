@@ -4,12 +4,12 @@ Imports Aspose.Cells
 Imports System.Data
 Imports System
 
-Namespace Aspose.Cells.Examples.Data.Handling.Importing
+Namespace Data.Handling.Importing
     Public Class ImportHtmlFormattedData
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             Dim output1Path As String = dataDir & "Output.out.xlsx"
             Dim output2Path As String = dataDir & "Output.out.ods"
 
@@ -43,7 +43,7 @@ Namespace Aspose.Cells.Examples.Data.Handling.Importing
 
             workbook.Save(output1Path)
             workbook.Save(output2Path)
-            'ExEnd:1
+            ' ExEnd:1
         End Sub
     End Class
 End Namespace

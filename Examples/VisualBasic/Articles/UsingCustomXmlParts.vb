@@ -1,12 +1,12 @@
 ﻿Imports System
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.Articles
+Namespace Articles
     Friend Class UsingCustomXmlParts
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:UsingCustomXmlParts
+        Public Shared Sub Run()
+            ' ExStart:UsingCustomXmlParts
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
             ' The sample XML that will be injected to Workbook
             Dim booksXML As String = "<catalog> <book> <title>Complete C#</title> <price>44</price> </book> <book> <title>Complete Java</title> <price>76</price> </book> <book> <title>Complete SharePoint</title> <price>55</price> </book> <book> <title>Complete PHP</title> <price>63</price> </book> <book> <title>Complete VB.NET</title> <price>72</price> </book> </catalog>"
@@ -19,7 +19,7 @@ Namespace Aspose.Cells.Examples.Articles
 
             ' Save the resultant spreadsheet
             workbook.Save(dataDir & "UsingCustomXmlParts.xlsx")
-            'ExEnd:UsingCustomXmlParts
+            ' ExEnd:UsingCustomXmlParts
         End Sub
     End Class
 End Namespace

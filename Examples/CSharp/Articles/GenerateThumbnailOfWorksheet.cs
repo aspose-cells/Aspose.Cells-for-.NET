@@ -4,46 +4,46 @@ using Aspose.Cells;
 using Aspose.Cells.Rendering;
 using System.Drawing;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     public class GenerateThumbnailOfWorksheet
     {
-        public static void Main()
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            //Instantiate and open an Excel file
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            // Instantiate and open an Excel file
             Workbook book = new Workbook(dataDir+ "book1.xlsx");
 
-            //Define ImageOrPrintOptions
+            // Define ImageOrPrintOptions
             ImageOrPrintOptions imgOptions = new ImageOrPrintOptions();
-            //Specify the image format
+            // Specify the image format
             imgOptions.ImageFormat = System.Drawing.Imaging.ImageFormat.Jpeg;
-            //Set the vertical and horizontal resolution
+            // Set the vertical and horizontal resolution
             imgOptions.VerticalResolution = 200;
             imgOptions.HorizontalResolution = 200;
-            //One page per sheet is enabled
+            // One page per sheet is enabled
             imgOptions.OnePagePerSheet = true;
 
-            //Get the first worksheet
-            Worksheet sheet = book.Worksheets[0];
-            //Render the sheet with respect to specified image/print options
+            // Get the first worksheet
+            Worksheet sheet = book.Worksheets[1];
+            // Render the sheet with respect to specified image/print options
             SheetRender sr = new SheetRender(sheet, imgOptions);
-            //Render the image for the sheet
+            // Render the image for the sheet
             Bitmap bmp = sr.ToImage(0);
-            //Create a bitmap
+            // Create a bitmap
             Bitmap thumb = new Bitmap(100, 100);
-            //Get the graphics for the bitmap
+            // Get the graphics for the bitmap
             System.Drawing.Graphics gr = System.Drawing.Graphics.FromImage(thumb);
-
-            //Draw the image
-            gr.DrawImage(bmp, 0, 0, 100, 100);
-
-            //Save the thumbnail
+            if (bmp != null)
+            {
+                // Draw the image
+                gr.DrawImage(bmp, 0, 0, 100, 100);
+            }
+            // Save the thumbnail
             thumb.Save(dataDir+ "mythumbnail.out.bmp");
-            //ExEnd:1
-            
+            // ExEnd:1           
             
         }
     }

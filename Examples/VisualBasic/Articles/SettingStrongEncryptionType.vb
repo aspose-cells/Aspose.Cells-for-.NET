@@ -3,26 +3,26 @@ Imports System.IO
 
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.Articles
+Namespace Articles
     Public Class SettingStrongEncryptionType
-        Public Shared Sub Main()
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-            'Instantiate a Workbook object.
-            'Open an excel file.
+            ' Instantiate a Workbook object.
+            ' Open an excel file.
             Dim workbook As New Workbook(dataDir & "Book1.xlsx")
 
-            'Specify Strong Encryption type (RC4,Microsoft Strong Cryptographic Provider).
+            ' Specify Strong Encryption type (RC4,Microsoft Strong Cryptographic Provider).
             workbook.SetEncryptionOptions(EncryptionType.StrongCryptographicProvider, 128)
 
-            'Password protect the file.
+            ' Password protect the file.
             workbook.Settings.Password = "1234"
 
-            'Save the Excel file.
+            ' Save the Excel file.
             workbook.Save(dataDir & "output.xls")
-            'ExEnd:1
+            ' ExEnd:1
         End Sub
     End Class
 End Namespace

@@ -6,14 +6,14 @@ Imports System.Collections.Generic
 Imports System.Text
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.Articles
+Namespace Articles
     Public Class UsingLightCellsAPI
-        Public Shared Sub Main()
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-            'Specify your desired matrix
+            ' Specify your desired matrix
             Dim rowsCount As Integer = 10000
             Dim colsCount As Integer = 30
 
@@ -39,7 +39,7 @@ Namespace Aspose.Cells.Examples.Articles
             Me._workbook = workbook
             Me.maxRows = maxRows
             Me.maxColumns = maxColumns
-            'ExEnd:1
+            ' ExEnd:1
         End Sub
 
 #Region "LightCellsDataProvider Members"

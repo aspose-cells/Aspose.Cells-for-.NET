@@ -4,14 +4,14 @@ Imports System.IO
 Imports Aspose.Cells
 Imports System.Drawing
 
-Namespace Aspose.Cells.Examples.Formatting.Excel2007Themes
+Namespace Formatting.Excel2007Themes
     Public Class CustomizeThemes
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:1  
+        Public Shared Sub Run()
+            ' ExStart:1  
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-            'Define Color array (of 12 colors) for Theme.
+            ' Define Color array (of 12 colors) for Theme.
             Dim carr(11) As Color
             carr(0) = Color.AntiqueWhite ' Background1
             carr(1) = Color.Brown ' Text1
@@ -26,16 +26,16 @@ Namespace Aspose.Cells.Examples.Formatting.Excel2007Themes
             carr(10) = Color.Green ' Hyperlink
             carr(11) = Color.Gray ' Followed Hyperlink
 
-            'Instantiate a Workbook.
-            'Open the template file.
+            ' Instantiate a Workbook.
+            ' Open the template file.
             Dim workbook As New Workbook(dataDir & "book1.xlsx")
 
-            'Set the custom theme with specified colors.
+            ' Set the custom theme with specified colors.
             workbook.CustomTheme("CustomeTheme1", carr)
 
-            'Save as the excel file.
+            ' Save as the excel file.
             workbook.Save(dataDir & "output.xlsx")
-            'ExEnd:1
+            ' ExEnd:1
 
 
         End Sub

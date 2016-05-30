@@ -32,13 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Aspose.Cells.Examples.Data.Handling.ExportColumnContainingNonStronglyTypedData</StartupObject>
+    <StartupObject>CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=8.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.8.8.0\lib\net40\Aspose.Cells.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\packages\Aspose.Cells.8.8.1\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -222,7 +221,6 @@
     <Compile Include="Data\AddOn\NamedRanges\UnionOfRanges.cs" />
     <Compile Include="Data\Handling\AccessingCells\AccessingMaximumDisplayRangeofWorksheet.cs" />
     <Compile Include="Data\Handling\ExportColumnContainingNonStronglyTypedData.cs" />
-    <Compile Include="Data\Handling\Importing\ImportingFromOleDbDataReader.cs" />
     <Compile Include="Data\Handling\Importing\ImportingFromDataGrid.cs" />
     <Compile Include="Data\Handling\Importing\ImportingFromDataView.cs" />
     <Compile Include="Data\Processing\TracingDependents.cs" />
@@ -388,6 +386,7 @@
     <Compile Include="RowsColumns\AutofitRowsandColumns.cs" />
     <Compile Include="RowsColumns\Grouping\SummaryRowRight.cs" />
     <Compile Include="RowsColumns\Grouping\SummaryRowBelow.cs" />
+    <Compile Include="RunExamples.cs" />
     <Compile Include="SmartMarkers\AddCustomLabels.cs" />
     <Compile Include="SmartMarkers\CopyStyleWithSmartMarker.cs" />
     <Compile Include="SmartMarkers\DynamicFormulas.cs" />
@@ -399,7 +398,6 @@
     <Compile Include="SmartMarkers\ImageMarkers.cs" />
     <Compile Include="SmartMarkers\UsingAnonymousTypes.cs" />
     <Compile Include="SmartMarkers\UsingNestedObjects.cs" />
-    <Compile Include="Utils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RowsColumns\Copying\CopyingColumns.cs" />
     <Compile Include="RowsColumns\Copying\CopyingRows.cs" />
@@ -445,7 +443,6 @@
     <Compile Include="Worksheets\Security\LockCell.cs" />
     <Compile Include="Worksheets\Security\AdvancedProtectionSettings.cs" />
     <Compile Include="Worksheets\Security\AdvancedProtectionSettingsUsingAsposeCells.cs" />
-    <Compile Include="Worksheets\Security\AdvanceProtectSettings.cs" />
     <Compile Include="Worksheets\Security\Protecting\AllowUserToEditRangesInWorksheet.cs" />
     <Compile Include="Worksheets\Security\Protecting\EditRangesWorksheet.cs" />
     <Compile Include="Worksheets\Security\Protecting\ProtectCellsWorksheet.cs" />

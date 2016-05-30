@@ -3,12 +3,12 @@ Imports System.IO
 
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.Data.AddOn.Hyperlinks
+Namespace Data.AddOn.Hyperlinks
     Public Class AddingLinkToURL
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
             ' Create directory if it is not already present.
             Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)
@@ -16,18 +16,18 @@ Namespace Aspose.Cells.Examples.Data.AddOn.Hyperlinks
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Instantiating a Workbook object
+            ' Instantiating a Workbook object
             Dim workbook As New Workbook()
 
-            'Obtaining the reference of the first worksheet
+            ' Obtaining the reference of the first worksheet
             Dim worksheet As Worksheet = workbook.Worksheets(0)
 
-            'Adding a hyperlink to a URL at "A1" cell
+            ' Adding a hyperlink to a URL at "A1" cell
             worksheet.Hyperlinks.Add("A1", 1, 1, "http://www.aspose.com")
 
-            'Saving the Excel file
+            ' Saving the Excel file
             workbook.Save(dataDir & "output.xls")
-            'ExEnd:1
+            ' ExEnd:1
 
         End Sub
     End Class

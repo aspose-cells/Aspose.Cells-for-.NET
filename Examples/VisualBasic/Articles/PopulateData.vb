@@ -1,14 +1,14 @@
-Imports Microsoft.VisualBasic
+﻿Imports Microsoft.VisualBasic
 Imports System.IO
 
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.Articles
+Namespace Articles
     Public Class PopulateData
-        Public Shared Sub Main()
+        Public Shared Sub Run()
             'ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             Dim workbook As New Workbook()
             Dim cells As Global.Aspose.Cells.Cells = workbook.Worksheets(0).Cells
             cells("A1").PutValue("data1")
@@ -17,7 +17,6 @@ Namespace Aspose.Cells.Examples.Articles
             cells("B2").PutValue("data4")
             workbook.Save(dataDir & "output.xlsx")
             'ExEnd:1
-
 
         End Sub
     End Class

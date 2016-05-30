@@ -3,30 +3,30 @@ Imports System.IO
 
 Imports Aspose.Cells
 
-Namespace Aspose.Cells.Examples.Articles
+Namespace Articles
     Public Class SaveEachWorksheetToDifferentPDF
-        Public Shared Sub Main()
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
 
-            'Get the Excel file path
+            ' Get the Excel file path
             Dim filePath As String = dataDir & "input.xlsx"
 
-            'Instantiage a new workbook and open the Excel
-            'File from its location
+            ' Instantiage a new workbook and open the Excel
+            ' File from its location
             Dim workbook As New Workbook(filePath)
 
-            'Get the count of the worksheets in the workbook
+            ' Get the count of the worksheets in the workbook
             Dim sheetCount As Integer = workbook.Worksheets.Count
 
-            'Make all sheets invisible except first worksheet
+            ' Make all sheets invisible except first worksheet
             For i As Integer = 1 To workbook.Worksheets.Count - 1
                 workbook.Worksheets(i).IsVisible = False
             Next i
 
-            'Take Pdfs of each sheet
+            ' Take Pdfs of each sheet
             For j As Integer = 0 To workbook.Worksheets.Count - 1
                 Dim ws As Worksheet = workbook.Worksheets(j)
                 workbook.Save(dataDir & "worksheet-" & ws.Name & ".output.pdf")
@@ -36,7 +36,7 @@ Namespace Aspose.Cells.Examples.Articles
                     workbook.Worksheets(j).IsVisible = False
                 End If
             Next j
-            'ExEnd:1
+            ' ExEnd:1
 
 
 

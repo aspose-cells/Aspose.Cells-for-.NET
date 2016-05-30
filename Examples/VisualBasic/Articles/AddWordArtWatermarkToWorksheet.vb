@@ -4,12 +4,12 @@ Imports System.IO
 Imports Aspose.Cells
 Imports Aspose.Cells.Drawing
 
-Namespace Aspose.Cells.Examples.Articles
+Namespace Articles
     Public Class AddWordArtWatermarkToWorksheet
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
             ' Create directory if it is not already present.
             Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)
@@ -17,31 +17,31 @@ Namespace Aspose.Cells.Examples.Articles
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
-            'Instantiate a new Workbook
+            ' Instantiate a new Workbook
             Dim workbook As New Workbook()
 
-            'Get the first default sheet
+            ' Get the first default sheet
             Dim sheet As Worksheet = workbook.Worksheets(0)
 
-            'Add Watermark
+            ' Add Watermark
             Dim wordart As Global.Aspose.Cells.Drawing.Shape = sheet.Shapes.AddTextEffect(MsoPresetTextEffect.TextEffect1, "CONFIDENTIAL", "Arial Black", 50, False, True, 18, 8, 1, 1, 130, 800)
 
-            'Get the fill format of the word art
+            ' Get the fill format of the word art
             Dim wordArtFormat As MsoFillFormat = wordart.FillFormat
 
-            'Set the color
+            ' Set the color
             wordArtFormat.ForeColor = System.Drawing.Color.Red
 
-            'Set the transparency
+            ' Set the transparency
             wordArtFormat.Transparency = 0.9
 
-            'Make the line invisible
+            ' Make the line invisible
             Dim lineFormat As MsoLineFormat = wordart.LineFormat
             lineFormat.IsVisible = False
 
-            'Save the file
+            ' Save the file
             workbook.Save(dataDir & "output.xls")
-            'ExEnd:1
+            ' ExEnd:1
 
 
         End Sub

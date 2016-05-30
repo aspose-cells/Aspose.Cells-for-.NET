@@ -3,26 +3,26 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     public class SetWorksheetTabColor
     {
-        public static void Main()
+        public static void Run()
         {
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            //Instantiate a new Workbook
-            //Open an Excel file
+            // Instantiate a new Workbook
+            // Open an Excel file
             Workbook workbook = new Workbook(dataDir+ "Book1.xlsx");
 
-            //Get the first worksheet in the book
+            // Get the first worksheet in the book
             Worksheet worksheet = workbook.Worksheets[0];
 
-            //Set the tab color
+            // Set the tab color
             worksheet.TabColor = Color.Red;
 
-            //Save the Excel file
+            // Save the Excel file
             workbook.Save(dataDir+ "worksheettabcolor.out.xls");
             
         }

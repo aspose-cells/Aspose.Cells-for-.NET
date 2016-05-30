@@ -2,15 +2,15 @@
 using Aspose.Cells;
 using Aspose.Cells.ExternalConnections;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     class GetDataConnection
     {
-        public static void Main(string[] args)
+        public static void Run()
         {
-                //ExStart:1
+                // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             Workbook workbook = new Workbook(dataDir + "WebQuerySample.xlsx");
 
@@ -22,6 +22,6 @@ namespace Aspose.Cells.Examples.Articles
                 Console.WriteLine("Web Query URL: " + webQuery.Url);
             }
         }
-            //ExEnd:1
+            // ExEnd:1
     }
 }

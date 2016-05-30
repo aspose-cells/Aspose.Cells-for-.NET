@@ -2,7 +2,7 @@ using System;
 using System.Drawing;
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     /// <summary>
     /// AsposeFormatWorksheet
@@ -14,10 +14,11 @@ namespace Aspose.Cells.Examples.Articles
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main(string[] args)
+        public static void Run()
         {
-            //ExStart:1
-            string filename = "F:\\AllExamples\\Aspose.Cells\\net\\TechnicalArticles\\Aspose.CellsGeneral\\FormatWorksheetCells\\Data\\FormatWorksheet.xls";
+            // ExStart:1
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string filename = dataDir + "FormatWorksheet.xls";            
             CreateSalesReport(filename);
 
         }
@@ -35,14 +36,14 @@ namespace Aspose.Cells.Examples.Articles
             // cellsLicense.SetLicense("Aspose.Cells.lic");
 
 
-            //Create a new Workbook.
+            // Create a new Workbook.
             Workbook workbook = new Workbook();
-            //Note: Since Excel color palette has 56 colors on it.
-            //The colors are indexed 0-55.
-            //Please check: http://www.aspose.com/Products/Aspose.Cells/Api/Aspose.Cells.Workbook.ChangePalette.html
-            //If a color is not present on the palette, we have to add it
-            //to the palette, so that we may use.
-            //Add a few custom colors to the palette.
+            // Note: Since Excel color palette has 56 colors on it.
+            // The colors are indexed 0-55.
+            // Please check: http:// Www.aspose.com/Products/Aspose.Cells/Api/Aspose.Cells.Workbook.ChangePalette.html
+            // If a color is not present on the palette, we have to add it
+            // To the palette, so that we may use.
+            // Add a few custom colors to the palette.
             workbook.ChangePalette(Color.FromArgb(155, 204, 255), 55);
             workbook.ChangePalette(Color.FromArgb(0, 51, 105), 54);
             workbook.ChangePalette(Color.FromArgb(250, 250, 200), 53);
@@ -51,11 +52,11 @@ namespace Aspose.Cells.Examples.Articles
             CreateReportData(workbook);
             CreateCellsFormatting(workbook);
 
-            //Get the first worksheet in the book.
+            // Get the first worksheet in the book.
             Worksheet worksheet = workbook.Worksheets[0];
-            //Name the worksheet.
+            // Name the worksheet.
             worksheet.Name = "Sales Report";
-            //Save the excel file.
+            // Save the excel file.
             workbook.Save(filename);
 
 
@@ -63,13 +64,13 @@ namespace Aspose.Cells.Examples.Articles
 
         private static void CreateReportData(Workbook workbook)
         {
-            //Obtain the cells of the first worksheet.
+            // Obtain the cells of the first worksheet.
             Cells cells = workbook.Worksheets[0].Cells;
 
-            //Input the title on B1 cell.
+            // Input the title on B1 cell.
             cells["B1"].PutValue("Western Product Sales 2006");
 
-            //Insert some column headings in the second row.
+            // Insert some column headings in the second row.
             Cell cell = cells["B2"];
             cell.PutValue("January");
             cell = cells["C2"];
@@ -97,7 +98,7 @@ namespace Aspose.Cells.Examples.Articles
             cell = cells["N2"];
             cell.PutValue("Total");
 
-            //Insert product names.
+            // Insert product names.
             cells["A3"].PutValue("Biscuits");
             cells["A4"].PutValue("Coffee");
             cells["A5"].PutValue("Tofu");
@@ -123,7 +124,7 @@ namespace Aspose.Cells.Examples.Articles
             cells["A25"].PutValue("Pavlova");
             cells["A26"].PutValue("Total");
 
-            //Input porduct sales data (B3:M25).
+            // Input porduct sales data (B3:M25).
             cells["B3"].PutValue(5000);
             cells["C3"].PutValue(4500);
             cells["D3"].PutValue(6010);
@@ -424,7 +425,7 @@ namespace Aspose.Cells.Examples.Articles
             cells["L25"].PutValue(5000);
             cells["M25"].PutValue(5500);
 
-            //Add Monthwise Summary formulas.
+            // Add Monthwise Summary formulas.
             cells["B26"].Formula = "=SUM(B3:B25)";
             cells["C26"].Formula = "=SUM(C3:C25)";
             cells["D26"].Formula = "=SUM(D3:D25)";
@@ -438,7 +439,7 @@ namespace Aspose.Cells.Examples.Articles
             cells["L26"].Formula = "=SUM(L3:L25)";
             cells["M26"].Formula = "=SUM(M3:M25)";
 
-            //Add Productwise Summary formulas.
+            // Add Productwise Summary formulas.
             cells["N3"].Formula = "=SUM(B3:M3)";
             cells["N4"].Formula = "=SUM(B4:M4)";
             cells["N5"].Formula = "=SUM(B5:M5)";
@@ -462,7 +463,7 @@ namespace Aspose.Cells.Examples.Articles
             cells["N23"].Formula = "=SUM(B23:M23)";
             cells["N24"].Formula = "=SUM(B24:M24)";
             cells["N25"].Formula = "=SUM(B25:M25)";
-            //Add Grand Total.
+            // Add Grand Total.
             cells["N26"].Formula = "=SUM(N3:N25)";
 
         }
@@ -470,189 +471,189 @@ namespace Aspose.Cells.Examples.Articles
         private static void CreateCellsFormatting(Workbook workbook)
         {
 
-            //Define a style object adding a new style
-            //to the collection list.
+            // Define a style object adding a new style
+            // To the collection list.
             Style stl0 = workbook.Styles[workbook.Styles.Add()];
-            //Set a custom shading color of the cells.
+            // Set a custom shading color of the cells.
             stl0.ForegroundColor = Color.FromArgb(155, 204, 255);
-            //Set the solid background fillment.
+            // Set the solid background fillment.
             stl0.Pattern = BackgroundType.Solid;
-            //Set a font.
+            // Set a font.
             stl0.Font.Name = "Trebuchet MS";
-            //Set the size.
+            // Set the size.
             stl0.Font.Size = 18;
-            //Set the font text color.
+            // Set the font text color.
             stl0.Font.Color = Color.Maroon;
-            //Set it bold
+            // Set it bold
             stl0.Font.IsBold = true;
-            //Set it italic.
+            // Set it italic.
             stl0.Font.IsItalic = true;
-            //Define a style flag struct.
+            // Define a style flag struct.
             StyleFlag flag = new StyleFlag();
-            //Apply cell shading.
+            // Apply cell shading.
             flag.CellShading = true;
-            //Apply font.
+            // Apply font.
             flag.FontName = true;
-            //Apply font size.
+            // Apply font size.
             flag.FontSize = true;
-            //Apply font color.
+            // Apply font color.
             flag.FontColor = true;
-            //Apply bold font.
+            // Apply bold font.
             flag.FontBold = true;
-            //Apply italic attribute.
+            // Apply italic attribute.
             flag.FontItalic = true;
-            //Get the first row in the first worksheet.
+            // Get the first row in the first worksheet.
             Row row = workbook.Worksheets[0].Cells.Rows[0];
-            //Apply the style to it.
+            // Apply the style to it.
             row.ApplyStyle(stl0, flag);
 
-            //Obtain the cells of the first worksheet.
+            // Obtain the cells of the first worksheet.
             Cells cells = workbook.Worksheets[0].Cells;
-            //Set the height of the first row.
+            // Set the height of the first row.
             cells.SetRowHeight(0, 30);
 
-            //Define a style object adding a new style
-            //to the collection list.
+            // Define a style object adding a new style
+            // To the collection list.
             Style stl1 = workbook.Styles[workbook.Styles.Add()];
-            //Set the rotation angle of the text.
+            // Set the rotation angle of the text.
             stl1.RotationAngle = 45;
-            //Set the custom fill color of the cells.
+            // Set the custom fill color of the cells.
             stl1.ForegroundColor = Color.FromArgb(0, 51, 105);
-            //Set the solid background pattern for fillment.
+            // Set the solid background pattern for fillment.
             stl1.Pattern = BackgroundType.Solid;
-            //Set the left border line style.
+            // Set the left border line style.
             stl1.Borders[BorderType.LeftBorder].LineStyle = CellBorderType.Thin;
-            //Set the left border line color.
+            // Set the left border line color.
             stl1.Borders[BorderType.LeftBorder].Color = Color.White;
-            //Set the horizontal alignment to center aligned.
+            // Set the horizontal alignment to center aligned.
             stl1.HorizontalAlignment = TextAlignmentType.Center;
-            //Set the vertical alignment to center aligned.
+            // Set the vertical alignment to center aligned.
             stl1.VerticalAlignment = TextAlignmentType.Center;
-            //Set the font.
+            // Set the font.
             stl1.Font.Name = "Times New Roman";
-            //Set the font size.
+            // Set the font size.
             stl1.Font.Size = 10;
-            //Set the font color.
+            // Set the font color.
             stl1.Font.Color = Color.White;
-            //Set the bold attribute.
+            // Set the bold attribute.
             stl1.Font.IsBold = true;
-            //Set the style flag struct.
+            // Set the style flag struct.
             flag = new StyleFlag();
-            //Apply the left border.
+            // Apply the left border.
             flag.LeftBorder = true;
-            //Apply text rotation orientation.
+            // Apply text rotation orientation.
             flag.Rotation = true;
-            //Apply fill color of cells.
+            // Apply fill color of cells.
             flag.CellShading = true;
-            //Apply horizontal alignment.
+            // Apply horizontal alignment.
             flag.HorizontalAlignment = true;
-            //Apply vertical alignment.
+            // Apply vertical alignment.
             flag.VerticalAlignment = true;
-            //Apply the font.
+            // Apply the font.
             flag.FontName = true;
-            //Apply the font size.
+            // Apply the font size.
             flag.FontSize = true;
-            //Apply the font color.
+            // Apply the font color.
             flag.FontColor = true;
-            //Apply the bold attribute.
+            // Apply the bold attribute.
             flag.FontBold = true;
-            //Get the second row of the first worksheet.
+            // Get the second row of the first worksheet.
             row = workbook.Worksheets[0].Cells.Rows[1];
-            //Apply the style to it.
+            // Apply the style to it.
             row.ApplyStyle(stl1, flag);
 
-            //Set the height of the second row.
+            // Set the height of the second row.
             cells.SetRowHeight(1, 48);
 
-            //Define a style object adding a new style
-            //to the collection list.
+            // Define a style object adding a new style
+            // To the collection list.
             Style stl2 = workbook.Styles[workbook.Styles.Add()];
-            //Set the custom cell shading color.
+            // Set the custom cell shading color.
             stl2.ForegroundColor = Color.FromArgb(155, 204, 255);
-            //Set the solid background pattern for fillment color.
+            // Set the solid background pattern for fillment color.
             stl2.Pattern = BackgroundType.Solid;
-            //Set the font.
+            // Set the font.
             stl2.Font.Name = "Trebuchet MS";
-            //Set the font color.
+            // Set the font color.
             stl2.Font.Color = Color.Maroon;
-            //Set the font size.
+            // Set the font size.
             stl2.Font.Size = 10;
-            //Set the style flag struct.
+            // Set the style flag struct.
             flag = new StyleFlag();
-            //Apply cell shading.
+            // Apply cell shading.
             flag.CellShading = true;
-            //Apply the font.
+            // Apply the font.
             flag.FontName = true;
-            //Apply the font color.
+            // Apply the font color.
             flag.FontColor = true;
-            //Apply the font size.
+            // Apply the font size.
             flag.FontSize = true;
-            //Get the first column in the first worksheet.
+            // Get the first column in the first worksheet.
             Column col = workbook.Worksheets[0].Cells.Columns[0];
-            //Apply the style to it.
+            // Apply the style to it.
             col.ApplyStyle(stl2, flag);
 
-            //Define a style object adding a new style
-            //to the collection list.
+            // Define a style object adding a new style
+            // To the collection list.
             Style stl3 = workbook.Styles[workbook.Styles.Add()];
-            //Set the custom cell filling color.
+            // Set the custom cell filling color.
             stl3.ForegroundColor = Color.FromArgb(124, 199, 72);
-            //Set the solid background pattern for fillment color.
+            // Set the solid background pattern for fillment color.
             stl3.Pattern = BackgroundType.Solid;
-            //Apply the style to A2 cell.
+            // Apply the style to A2 cell.
             cells["A2"].SetStyle(stl3);
 
-            //Define a style object adding a new style
-            //to the collection list.
+            // Define a style object adding a new style
+            // To the collection list.
             Style stl4 = workbook.Styles[workbook.Styles.Add()];
-            //Set the custom font text color.
+            // Set the custom font text color.
             stl4.Font.Color = Color.FromArgb(0, 51, 105);
-            //Set the bottom border line style.
+            // Set the bottom border line style.
             stl4.Borders[BorderType.BottomBorder].LineStyle = CellBorderType.Thin;
-            //Set the bottom border line color to custom color.
+            // Set the bottom border line color to custom color.
             stl4.Borders[BorderType.BottomBorder].Color = Color.FromArgb(124, 199, 72);
-            //Set the background fill color of the cells.
+            // Set the background fill color of the cells.
             stl4.ForegroundColor = Color.White;
-            //Set the solid fillcolor pattern.
+            // Set the solid fillcolor pattern.
             stl4.Pattern = BackgroundType.Solid;
-            //Set custom number format.
+            // Set custom number format.
             stl4.Custom = "$#,##0.0";
-            //Set a style flag struct.
+            // Set a style flag struct.
             flag = new StyleFlag();
-            //Apply font color.
+            // Apply font color.
             flag.FontColor = true;
-            //Apply cell shading color.
+            // Apply cell shading color.
             flag.CellShading = true;
-            //Apply custom number format.
+            // Apply custom number format.
             flag.NumberFormat = true;
-            //Apply bottom border.
+            // Apply bottom border.
             flag.BottomBorder = true;
 
-            //Define a style object adding a new style
-            //to the collection list.
+            // Define a style object adding a new style
+            // To the collection list.
             Style stl5 = workbook.Styles[workbook.Styles.Add()];
-            //Set the bottom borde line style.
+            // Set the bottom borde line style.
             stl5.Borders[BorderType.BottomBorder].LineStyle = CellBorderType.Thin;
-            //Set the bottom border line color.
+            // Set the bottom border line color.
             stl5.Borders[BorderType.BottomBorder].Color = Color.FromArgb(124, 199, 72);
-            //Set the custom shading color of the cells.
+            // Set the custom shading color of the cells.
             stl5.ForegroundColor = Color.FromArgb(250, 250, 200);
-            //Set the solid background pattern for fillment color.
+            // Set the solid background pattern for fillment color.
             stl5.Pattern = BackgroundType.Solid;
-            //Set custom number format.
+            // Set custom number format.
             stl5.Custom = "$#,##0.0";
-            //Set font text color.
+            // Set font text color.
             stl5.Font.Color = Color.Maroon;
 
-            //Create a named range of cells (B3:M25)in the first worksheet.
+            // Create a named range of cells (B3:M25)in the first worksheet.
             Range range = workbook.Worksheets[0].Cells.CreateRange("B3", "M25");
-            //Name the range.
+            // Name the range.
             range.Name = "MyRange";
-            //Apply the style to cells in the named range.
+            // Apply the style to cells in the named range.
             range.ApplyStyle(stl4, flag);
 
-            //Apply different style to alternative rows
-            //in the range.
+            // Apply different style to alternative rows
+            // In the range.
             for (int i = 0; i <= 22; i++)
             {
                 for (int j = 0; j < 12; j++)
@@ -666,51 +667,51 @@ namespace Aspose.Cells.Examples.Articles
                 }
             }
 
-            //Define a style object adding a new style
-            //to the collection list.
+            // Define a style object adding a new style
+            // To the collection list.
             Style stl6 = workbook.Styles[workbook.Styles.Add()];
-            //Set the custom fill color of the cells.
+            // Set the custom fill color of the cells.
             stl6.ForegroundColor = Color.FromArgb(0, 51, 105);
-            //Set the background pattern for fillment color.
+            // Set the background pattern for fillment color.
             stl6.Pattern = BackgroundType.Solid;
-            //Set the font.
+            // Set the font.
             stl6.Font.Name = "Arial";
-            //Set the font size.
+            // Set the font size.
             stl6.Font.Size = 10;
-            //Set the font color
+            // Set the font color
             stl6.Font.Color = Color.White;
-            //Set the text bold.
+            // Set the text bold.
             stl6.Font.IsBold = true;
-            //Set the custom number format.
+            // Set the custom number format.
             stl6.Custom = "$#,##0.0";
-            //Set the style flag struct.
+            // Set the style flag struct.
             flag = new StyleFlag();
-            //Apply cell shading.
+            // Apply cell shading.
             flag.CellShading = true;
-            //Apply the arial font.
+            // Apply the arial font.
             flag.FontName = true;
-            //Apply the font size.
+            // Apply the font size.
             flag.FontSize = true;
-            //Apply the font color.
+            // Apply the font color.
             flag.FontColor = true;
-            //Apply the bold attribute.
+            // Apply the bold attribute.
             flag.FontBold = true;
-            //Apply the number format.
+            // Apply the number format.
             flag.NumberFormat = true;
-            //Get the 26th row in the first worksheet which produces totals.
+            // Get the 26th row in the first worksheet which produces totals.
             row = workbook.Worksheets[0].Cells.Rows[25];
-            //Apply the style to it.
+            // Apply the style to it.
             row.ApplyStyle(stl6, flag);
-            //Now apply this style to those cells (N3:N25) which
-            //has productwise sales totals.
+            // Now apply this style to those cells (N3:N25) which
+            // Has productwise sales totals.
             for (int i = 2; i < 25; i++)
             {
                 cells[i, 13].SetStyle(stl6);
 
             }
-            //Set N column's width to fit the contents.
+            // Set N column's width to fit the contents.
             workbook.Worksheets[0].Cells.SetColumnWidth(13, 9.33);
-            //ExEnd:1
+            // ExEnd:1
 
         }
 

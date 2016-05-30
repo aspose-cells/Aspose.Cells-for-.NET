@@ -2,26 +2,26 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     public class SettingStrongEncryptionType
     {
-        public static void Main()
+        public static void Run()
         {
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            //Instantiate a Workbook object.
-            //Open an excel file.
+            // Instantiate a Workbook object.
+            // Open an excel file.
             Workbook workbook = new Workbook(dataDir+ "Book1.xlsx");
 
-            //Specify Strong Encryption type (RC4,Microsoft Strong Cryptographic Provider).
+            // Specify Strong Encryption type (RC4,Microsoft Strong Cryptographic Provider).
             workbook.SetEncryptionOptions(EncryptionType.StrongCryptographicProvider, 128);
 
-            //Password protect the file.
+            // Password protect the file.
             workbook.Settings.Password = "1234";
 
-            //Save the Excel file.
+            // Save the Excel file.
             workbook.Save(dataDir+ "encryptedBook1.out.xls");
         }
     }

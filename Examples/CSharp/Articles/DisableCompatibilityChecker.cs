@@ -1,26 +1,27 @@
 using System.IO;
-
+using System;
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.Articles
+namespace CSharp.Articles
 {
     public class DisableCompatibilityChecker
     {
-        public static void Main()
+        public static void Run()
         {
-            //ExStart:1
+            // ExStart:1
             // The path to the documents directory.
-            string dataDir = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            //Open a template file
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            // Open a template file
             Workbook workbook = new Workbook(dataDir+ "sample.xlsx");
 
-            //Disable the compatibility checker
+            // Disable the compatibility checker
             workbook.Settings.CheckComptiliblity = false;
 
-            //Saving the Excel file
-            workbook.Save(dataDir+ "Output_BK_CompCheck.out.xlsx");
-            //ExEnd:1
-            
+            dataDir = dataDir+ "Output_BK_CompCheck.out.xlsx";
+            // Saving the Excel file
+            workbook.Save(dataDir);
+            // ExEnd:1
+            Console.WriteLine("\nProcess completed successfully.\nFile saved at " + dataDir); 
             
         }
     }

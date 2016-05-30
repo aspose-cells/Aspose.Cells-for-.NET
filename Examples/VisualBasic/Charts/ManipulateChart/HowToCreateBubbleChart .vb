@@ -5,20 +5,20 @@ Imports Aspose.Cells.Drawing
 Imports System.Drawing
 Imports Aspose.Cells.Charts
 
-Namespace Aspose.Cells.Examples.Charts.ManipulateChart
+Namespace Charts.ManipulateChart
     Public Class HowToCreateBubbleChart
-        Public Shared Sub Main(ByVal args() As String)
-            'ExStart:1
+        Public Shared Sub Run()
+            ' ExStart:1
             ' The path to the documents directory.
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-            'Instantiating a Workbook object
+            ' Instantiating a Workbook object
             Dim workbook As New Workbook()
 
-            'Obtaining the reference of the first worksheet by passing its index
+            ' Obtaining the reference of the first worksheet by passing its index
             Dim worksheet As Worksheet = workbook.Worksheets(0)
 
-            'Fill in data for chart's series
+            ' Fill in data for chart' S series
             worksheet.Cells(0, 0).PutValue("Y Values")
             worksheet.Cells(0, 1).PutValue(2)
             worksheet.Cells(0, 2).PutValue(4)
@@ -32,27 +32,27 @@ Namespace Aspose.Cells.Examples.Charts.ManipulateChart
             worksheet.Cells(2, 2).PutValue(2)
             worksheet.Cells(2, 3).PutValue(3)
 
-            'Adding a chart to the worksheet
+            ' Adding a chart to the worksheet
             Dim chartIndex As Integer = worksheet.Charts.Add(Aspose.Cells.Charts.ChartType.Bubble, 5, 0, 15, 5)
 
-            'Accessing the instance of the newly added chart
+            ' Accessing the instance of the newly added chart
             Dim chart As Aspose.Cells.Charts.Chart = worksheet.Charts(chartIndex)
 
-            'Adding SeriesCollection (chart data source) to the chart ranging
+            ' Adding SeriesCollection (chart data source) to the chart ranging
             chart.NSeries.Add("B1:D1", True)
 
-            'Set bubble sizes
+            ' Set bubble sizes
             chart.NSeries(0).BubbleSizes = "B2:D2"
 
-            'Set X axis values
+            ' Set X axis values
             chart.NSeries(0).XValues = "B3:D3"
 
-            'Set Y axis values
+            ' Set Y axis values
             chart.NSeries(0).Values = "B1:D1"
 
-            'Saving the Excel file
+            ' Saving the Excel file
             workbook.Save(dataDir & "output.xls")
-            'ExEnd:1
+            ' ExEnd:1
 
         End Sub
     End Class

@@ -2,11 +2,11 @@
 Imports Aspose.Cells
 Imports Aspose.Cells.Vba
 
-Namespace Aspose.Cells.Examples.Articles
+Namespace Articles
     Public Class AddLibraryReferenceToVbaProject
-        Shared Sub Main()
-            'ExStart:1
-            Dim dataDir As String = Aspose.Cells.Examples.Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+        Shared Sub Run()
+            ' ExStart:1
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             Dim outputPath As String = dataDir & "Output.out.xlsm"
 
             Dim workbook As Workbook = New Workbook()
@@ -17,7 +17,7 @@ Namespace Aspose.Cells.Examples.Articles
             vbaProj.References.AddRegisteredReference("Office", "*\\G{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}#2.0#0#C:\\Program Files\\Common Files\\Microsoft Shared\\OFFICE14\\MSO.DLL#Microsoft Office 14.0 Object Library")
 
             workbook.Save(outputPath)
-            'ExEnd:1
+            ' ExEnd:1
 
         End Sub
     End Class
