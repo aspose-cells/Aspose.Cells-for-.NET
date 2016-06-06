@@ -15,7 +15,7 @@ namespace CSharp.DrawingObjects
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-           /* string filePath = dataDir + "Book.xlsx";
+           string filePath = dataDir + "Book.xlsx";
 
             Workbook workbook = new Workbook(filePath);
 
@@ -48,7 +48,7 @@ namespace CSharp.DrawingObjects
                 System.Drawing.Point indvidualPoint = (System.Drawing.Point)segmentPoints[0];
             }
             // ExEnd:1
-            */
+           
 
         }
     }

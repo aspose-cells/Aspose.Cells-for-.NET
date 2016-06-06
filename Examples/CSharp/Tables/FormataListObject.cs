@@ -68,8 +68,6 @@ namespace CSharp.Tables
             cell.PutValue("Miya");
             cell = cells["A15"];
             cell.PutValue("Miya");
-
-
             cell = cells["B2"];
             cell.PutValue(1);
             cell = cells["B3"];
