@@ -14,7 +14,7 @@ This repository contains [Examples](Examples), [Plugins](Plugins) and Showcase p
 Directory | Description
 --------- | -----------
 [Examples](Examples)  | A collection of .NET examples that help you learn the product features
-[Examples.Gridweb](Examples.Gridweb)  | A collection of .NET examples that help you learn and use Aspose.GridWeb
+[Examples.Gridweb](Examples.GridWeb)  | A collection of .NET examples that help you learn and use Aspose.GridWeb
 [Plugins](Plugins)  | Standalone Plugins that will demonstrate one or more features of Aspose.Cells for .NET
 
 
