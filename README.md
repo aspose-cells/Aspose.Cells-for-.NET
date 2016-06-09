@@ -5,7 +5,7 @@
 This repository contains [Examples](Examples), [Plugins](Plugins) and Showcase projects for [Aspose.Cells for .NET](http://www.aspose.com/products/cells/net) to help you learn and write your own applications.
 
 <p align="center">
-  <a title="Download ZIP" href="https://github.com/asposecells/Aspose_Cells_NET/archive/master.zip">
+  <a title="Download ZIP" href="https://github.com/aspose-cells/Aspose.Cells-for-.NET/archive/master.zip">
     <img src="http://i.imgur.com/hwNhrGZ.png" />
   </a>
 </p>
@@ -14,7 +14,7 @@ This repository contains [Examples](Examples), [Plugins](Plugins) and Showcase p
 Directory | Description
 --------- | -----------
 [Examples](Examples)  | A collection of .NET examples that help you learn the product features
-[Examples.Gridweb](Examples.GridWeb)  | A collection of .NET examples that help you learn and use Aspose.GridWeb
+[Examples.Gridweb](Examples.GridWeb)  | A collection of .NET examples that help you learn and use Aspose.Cells.GridWeb
 [Plugins](Plugins)  | Standalone Plugins that will demonstrate one or more features of Aspose.Cells for .NET
 
 
