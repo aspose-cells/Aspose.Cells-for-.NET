@@ -1,9 +1,7 @@
 using System.IO;
-
 using Aspose.Cells;
 using Aspose.Cells.Drawing;
-using System.Collections;
- 
+using System.Collections; 
 
 namespace CSharp.DrawingObjects
 {
@@ -15,38 +13,40 @@ namespace CSharp.DrawingObjects
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-           string filePath = dataDir + "Book.xlsx";
+           //string filePath = dataDir + "Book.xlsx";
 
-            Workbook workbook = new Workbook(filePath);
+           // Workbook workbook = new Workbook(filePath);
 
-            Worksheet worksheet = workbook.Worksheets[0];
+           // Worksheet worksheet = workbook.Worksheets[0];
 
-            // Accessing the user defined shape
-            Shape shape = worksheet.Shapes[0];
+           // // Accessing the user defined shape
+           // Shape shape = worksheet.Shapes[0];
        
-            if (shape.AutoShapeType == AutoShapeType.NotPrimitive)
-            {
-                // Access shape's data
-                Aspose.Cells.Drawing.GeomPathsInfo geomPathsInfo = shape.PathsInfo;
+           // if (shape.AutoShapeType == AutoShapeType.NotPrimitive)
+           // {
+           //     // Access shape's data
+           //     Aspose.Cells.Drawing.GeomPathsInfo geomPathsInfo = shape.PathsInfo;
 
-                // Access path list
-                ArrayList pathList = geomPathsInfo.PathList;
 
-                // Access information of indvidual path info
-                Aspose.Cells.Drawing.GeomPathInfo pathInfo = pathList[0] as Aspose.Cells.Drawing.GeomPathInfo;
 
-                // Access path segment list
-                ArrayList pathSegments = pathInfo.PathSegementList;
+           //     // Access path list
+           //     ArrayList pathList = geomPathsInfo.PathList;
 
-                // Access individual path segment
-                MsoPathInfo pathSegment = pathSegments[0] as MsoPathInfo;
+           //     // Access information of indvidual path info
+           //     Aspose.Cells.Drawing.GeomPathInfo pathInfo = pathList[0] as Aspose.Cells.Drawing.GeomPathInfo;
 
-                // Access segment points
-                ArrayList segmentPoints = pathSegment.PointList;
+           //     // Access path segment list
+           //     ArrayList pathSegments = pathInfo.PathSegementList;
 
-                // Access indvidual point of the segment
-                System.Drawing.Point indvidualPoint = (System.Drawing.Point)segmentPoints[0];
-            }
+           //     // Access individual path segment
+           //     MsoPathInfo pathSegment = pathSegments[0] as MsoPathInfo;
+
+           //     // Access segment points
+           //     ArrayList segmentPoints = pathSegment.PointList;
+
+           //     // Access indvidual point of the segment
+           //     System.Drawing.Point indvidualPoint = (System.Drawing.Point)segmentPoints[0];
+           // }
             // ExEnd:1
            
 
