@@ -15,7 +15,7 @@ Directory | Description
 --------- | -----------
 [Examples](Examples)  | A collection of .NET examples that help you learn the product features
 [Examples.Gridweb](Examples.GridWeb)  | A collection of .NET examples that help you learn and use Aspose.Cells.GridWeb
-[Plugins](Plugins)  | Standalone Plugins that will demonstrate one or more features of Aspose.Cells for .NET
+[Plugins](Plugins)  | Plugins that will demonstrate one or more features of Aspose.Cells for .NET
 
 
 ## Resources
