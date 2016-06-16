@@ -1,7 +1,18 @@
 ## Aspose.Cells for .NET Examples
 
-This directory contains C# and VB.NET Example Projects for [Aspose.Cells for .NET](http://www.aspose.com/.net/excel-component.aspx).
+This repository contains C# and VB.NET Example Projects for [Aspose.Cells for .NET](http://www.aspose.com/.net/excel-component.aspx) which will help you learn Aspose.3D for .NET and write your own applications.
 
-## How to use the examples?
+<p align="center">
+  <a title="Download Examples ZIP" href="https://github.com/aspose-cells/Aspose.Cells-for-.NET/archive/master.zip">
+	<img src="https://raw.github.com/AsposeExamples/java-examples-dashboard/master/images/downloadZip-Button-Large.png" />
+  </a>
+</p>
 
-Examples are provided as Visual Studio solutions. Download the code and use your favourite version of Visual Studio to run the examples. See our [documentation](http://www.aspose.com/docs/display/cellsnet/How+to+Run+the+Examples) for more details.
+## How to Run the Examples?
+
+After you have downloaded the ZIP file from the [Download ZIP](https://github.com/aspose-cells/Aspose.Cells-for-.NET/archive/master.zip) link above, please check the following link with detailed instructions on how to run these Source Code Examples.
+
+[How to Run the Examples](http://www.aspose.com/docs/display/cellsnet/How+to+Run+the+Examples)
+
+Please feel free to contact us if you have any question, issue or suggestion.
+
