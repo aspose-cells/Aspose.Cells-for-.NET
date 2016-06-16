@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Data.Handling.Importing
+namespace Aspose.Cells.Examples.CSharp.Data.Handling.Importing
 {
     public class ImportingFromArray
     {

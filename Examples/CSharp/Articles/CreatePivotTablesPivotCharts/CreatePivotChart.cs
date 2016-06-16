@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Articles.CreatePivotTablesPivotCharts
+namespace Aspose.Cells.Examples.CSharp.Articles.CreatePivotTablesPivotCharts
 {
     public class CreatePivotChart
     {

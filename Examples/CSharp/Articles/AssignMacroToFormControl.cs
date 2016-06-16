@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     class AssignMacroToFormControl
     {

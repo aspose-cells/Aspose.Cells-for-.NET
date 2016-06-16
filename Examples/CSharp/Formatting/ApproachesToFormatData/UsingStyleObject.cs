@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace CSharp.Formatting.ApproachesToFormatData
+namespace Aspose.Cells.Examples.CSharp.Formatting.ApproachesToFormatData
 {
     public class UsingStyleObject
     {
@@ -32,12 +32,9 @@ namespace CSharp.Formatting.ApproachesToFormatData
 
             // Adding some value to the "A1" cell
             cell.PutValue("Hello Aspose!");
-
-            // Adding a new Style to the styles collection of the Excel object
-            int index = workbook.Styles.Add();
-
-            // Accessing the newly added Style to the Excel object
-            Style style = workbook.Styles[index];
+           
+            // Adding a new Style
+            Style style = workbook.CreateStyle();
 
             // Setting the vertical alignment of the text in the "A1" cell
             style.VerticalAlignment = TextAlignmentType.Center;

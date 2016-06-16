@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.RowsColumns.InsertingAndDeleting
+namespace Aspose.Cells.Examples.CSharp.RowsColumns.InsertingAndDeleting
 {
     public class DeletingARow
     {

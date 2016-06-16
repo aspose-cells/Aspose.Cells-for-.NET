@@ -23,11 +23,8 @@ Namespace Formatting.FormatRowsColumns
             ' Obtaining the reference of the first (default) worksheet by passing its sheet index
             Dim worksheet As Worksheet = workbook.Worksheets(0)
 
-            ' Adding a new Style to the styles collection of the Excel object
-            Dim i As Integer = workbook.Styles.Add()
-
             ' Accessing the newly added Style to the Excel object
-            Dim style As Style = workbook.Styles(i)
+            Dim style As Style = workbook.CreateStyle()
 
             ' Setting the vertical alignment of the text in the "A1" cell
             style.VerticalAlignment = TextAlignmentType.Center

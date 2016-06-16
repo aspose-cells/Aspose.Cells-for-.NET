@@ -26,8 +26,15 @@ Namespace Data.Processing.FilteringAndValidation
             ' Obtain the existing Validations collection.
             Dim validations As ValidationCollection = ExcelWorkSheet.Validations
 
+            ' Create Cell Area
+            Dim ca As CellArea = New CellArea()
+            ca.StartRow = 0
+            ca.EndRow = 0
+            ca.StartColumn = 0
+            ca.EndColumn = 0
+
             ' Create a validation object adding to the collection list.
-            Dim validation As Validation = validations(validations.Add())
+            Dim validation As Validation = validations(validations.Add(ca))
 
             ' Set the validation type.
             validation.Type = ValidationType.Decimal

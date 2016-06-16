@@ -3,7 +3,7 @@ using System;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     public class CopyRangeDataWithStyle
     {
@@ -35,7 +35,7 @@ namespace CSharp.Articles
 
             // Create a style object.
             Style style;
-            style = workbook.Styles[workbook.Styles.Add()];
+            style = workbook.CreateStyle();
             // Specify the font attribute.
             style.Font.Name = "Calibri";
             // Specify the shading color.

@@ -5,74 +5,74 @@ using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
 using System.IO;
-using CSharp.Articles;
-using CSharp.Articles.ApplyConditionalFormatting;
-using CSharp.Articles.ConvertExcelChartToImage;
-using CSharp.Articles.ConvertingWorksheetToImage;
-using CSharp.Articles.CopyRowsColumns;
-using CSharp.Articles.CopyShapesBetweenWorksheets;
-using CSharp.Articles.CreatePivotTablesPivotCharts;
-using CSharp.Articles.DeleteBlankRowsColumns;
-using CSharp.Articles.LineBreakTextWrapping;
-using CSharp.Articles.ModifyExistingStyle;
-using CSharp.Articles.OptimizingMemoryUsage;
-using CSharp.Articles.WorkbookScopedNamedRanges;
-using CSharp.CellsHelperClass;
-using CSharp.Charts;
-using CSharp.Charts.InsertingControlsintoCharts;
-using CSharp.Charts.ManipulateChart;
-using CSharp.Charts.SettingChartsAppearance;
-using CSharp.Data.AddOn.Hyperlinks;
-using CSharp.Data.AddOn.Merging;
-using CSharp.Data.AddOn.NamedRanges;
-using CSharp.Data.Handling;
-using CSharp.Data.Handling.AccessingCells;
-using CSharp.Data.Handling.Find;
-using CSharp.Data.Handling.Importing;
-using CSharp.Data.Processing;
-using CSharp.Data.Processing.FilteringAndValidation;
-using CSharp.DrawingObjects;
-using CSharp.DrawingObjects.Comments;
-using CSharp.DrawingObjects.Controls;
-using CSharp.DrawingObjects.OLE;
-using CSharp.DrawingObjects.Pictures;
-using CSharp.DrawingObjects.Pictures.PositioningPictures;
-using CSharp.Files.Handling;
-using CSharp.Files.Utility;
-using CSharp.Formatting;
-using CSharp.Formatting.ApproachesToFormatData;
-using CSharp.Formatting.Borders;
-using CSharp.Formatting.ConfiguringAlignmentSettings;
-using CSharp.Formatting.DealingWithFontSettings;
-using CSharp.Formatting.Excel2007Themes;
-using CSharp.Formatting.FormatRowsColumns;
-using CSharp.Formatting.SettingDisplayFormats;
-using CSharp.Formulas;
-using CSharp.PivotTableExamples;
-using CSharp.RowsColumns;
-using CSharp.RowsColumns.Grouping;
-using CSharp.RowsColumns.HeightAndWidth;
-using CSharp.RowsColumns.Hiding;
-using CSharp.RowsColumns.InsertingAndDeleting;
-using CSharp.SmartMarkers;
-using CSharp.Tables;
-using CSharp.Worksheets.Display;
-using CSharp.Worksheets.Management;
-using CSharp.Worksheets.Security;
-using CSharp.Worksheets.Security.Protecting;
-using CSharp.Worksheets.Security.Unprotect;
+using Aspose.Cells.Examples.CSharp.Articles;
+using Aspose.Cells.Examples.CSharp.Articles.ApplyConditionalFormatting;
+using Aspose.Cells.Examples.CSharp.Articles.ConvertExcelChartToImage;
+using Aspose.Cells.Examples.CSharp.Articles.ConvertingWorksheetToImage;
+using Aspose.Cells.Examples.CSharp.Articles.CopyRowsColumns;
+using Aspose.Cells.Examples.CSharp.Articles.CopyShapesBetweenWorksheets;
+using Aspose.Cells.Examples.CSharp.Articles.CreatePivotTablesPivotCharts;
+using Aspose.Cells.Examples.CSharp.Articles.DeleteBlankRowsColumns;
+using Aspose.Cells.Examples.CSharp.Articles.LineBreakTextWrapping;
+using Aspose.Cells.Examples.CSharp.Articles.ModifyExistingStyle;
+using Aspose.Cells.Examples.CSharp.Articles.OptimizingMemoryUsage;
+using Aspose.Cells.Examples.CSharp.Articles.WorkbookScopedNamedRanges;
+using Aspose.Cells.Examples.CSharp.CellsHelperClass;
+using Aspose.Cells.Examples.CSharp.Charts;
+using Aspose.Cells.Examples.CSharp.Charts.InsertingControlsintoCharts;
+using Aspose.Cells.Examples.CSharp.Charts.ManipulateChart;
+using Aspose.Cells.Examples.CSharp.Charts.SettingChartsAppearance;
+using Aspose.Cells.Examples.CSharp.Data.AddOn.Hyperlinks;
+using Aspose.Cells.Examples.CSharp.Data.AddOn.Merging;
+using Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges;
+using Aspose.Cells.Examples.CSharp.Data.Handling;
+using Aspose.Cells.Examples.CSharp.Data.Handling.AccessingCells;
+using Aspose.Cells.Examples.CSharp.Data.Handling.Find;
+using Aspose.Cells.Examples.CSharp.Data.Handling.Importing;
+using Aspose.Cells.Examples.CSharp.Data.Processing;
+using Aspose.Cells.Examples.CSharp.Data.Processing.FilteringAndValidation;
+using Aspose.Cells.Examples.CSharp.DrawingObjects;
+using Aspose.Cells.Examples.CSharp.DrawingObjects.Comments;
+using Aspose.Cells.Examples.CSharp.DrawingObjects.Controls;
+using Aspose.Cells.Examples.CSharp.DrawingObjects.OLE;
+using Aspose.Cells.Examples.CSharp.DrawingObjects.Pictures;
+using Aspose.Cells.Examples.CSharp.DrawingObjects.Pictures.PositioningPictures;
+using Aspose.Cells.Examples.CSharp.Files.Handling;
+using Aspose.Cells.Examples.CSharp.Files.Utility;
+using Aspose.Cells.Examples.CSharp.Formatting;
+using Aspose.Cells.Examples.CSharp.Formatting.ApproachesToFormatData;
+using Aspose.Cells.Examples.CSharp.Formatting.Borders;
+using Aspose.Cells.Examples.CSharp.Formatting.ConfiguringAlignmentSettings;
+using Aspose.Cells.Examples.CSharp.Formatting.DealingWithFontSettings;
+using Aspose.Cells.Examples.CSharp.Formatting.Excel2007Themes;
+using Aspose.Cells.Examples.CSharp.Formatting.FormatRowsColumns;
+using Aspose.Cells.Examples.CSharp.Formatting.SettingDisplayFormats;
+using Aspose.Cells.Examples.CSharp.Formulas;
+using Aspose.Cells.Examples.CSharp.PivotTableExamples;
+using Aspose.Cells.Examples.CSharp.RowsColumns;
+using Aspose.Cells.Examples.CSharp.RowsColumns.Grouping;
+using Aspose.Cells.Examples.CSharp.RowsColumns.HeightAndWidth;
+using Aspose.Cells.Examples.CSharp.RowsColumns.Hiding;
+using Aspose.Cells.Examples.CSharp.RowsColumns.InsertingAndDeleting;
+using Aspose.Cells.Examples.CSharp.SmartMarkers;
+using Aspose.Cells.Examples.CSharp.Tables;
+using Aspose.Cells.Examples.CSharp.Worksheets.Display;
+using Aspose.Cells.Examples.CSharp.Worksheets.Management;
+using Aspose.Cells.Examples.CSharp.Worksheets.Security;
+using Aspose.Cells.Examples.CSharp.Worksheets.Security.Protecting;
+using Aspose.Cells.Examples.CSharp.Worksheets.Security.Unprotect;
 
 
-namespace CSharp
+namespace Aspose.Cells.Examples.CSharp
 {
     internal class RunExamples
     {
         [STAThread()]
         public static void Main()
         {
-            Console.WriteLine("Open RunExamples.cs. In Main() method, Un-comment the example that you want to run");
+            Console.WriteLine("Open RunExamples.cs. \nIn Main() method uncomment the example that you want to run.");
             Console.WriteLine("=====================================================");
-            // Un-comment the one you want to try out        
+            // Uncomment the one you want to try out        
 
 
             // =====================================================
@@ -81,7 +81,7 @@ namespace CSharp
             // =====================================================
             // =====================================================
 
-            AccessTextBoxName.Run();;
+            //AccessTextBoxName.Run();;
             //AddConditionalIconsSet.Run();
             //AddImageHyperlinks.Run();
             //AddingAnonymousCustomObject.Run();
@@ -190,7 +190,7 @@ namespace CSharp
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================
-            //CopyChart.Run();
+            // CopyChart.Run();
             //CopyControls.Run();
             //CopyingPicture.Run();
 
@@ -240,7 +240,7 @@ namespace CSharp
             // =====================================================
 
             //Applying3DFormat.Run();
-            //ChangeChartPosition.Run();
+            // ChangeChartPosition.Run();
             //HowToCreateChart.Run();
             //SettingCategoryData.Run();
             //SettingChartsData.Run();
@@ -248,9 +248,9 @@ namespace CSharp
 
             //// InsertingControlsintoCharts
             //// =====================================================
-            //Charts.InsertingControlsintoCharts.AddingLabelControl.Run();
+            // Charts.InsertingControlsintoCharts.AddingLabelControl.Run();
             //AddingPictureToChart.Run();
-            //Charts.InsertingControlsintoCharts.AddingTextBoxControl.Run();
+            // Charts.InsertingControlsintoCharts.AddingTextBoxControl.Run();
 
             //// ManipulateChart
             //// =====================================================
@@ -266,7 +266,7 @@ namespace CSharp
             //// SettingChartsAppearance
             //// =====================================================
             //ApplyingThemes.Run();
-            //ChangingMajorGridlines.Run();
+            // ChangingMajorGridlines.Run();
             //MajorGridlines.Run();
             //SettingChartArea.Run();
             //SettingChartLines.Run();
@@ -296,8 +296,8 @@ namespace CSharp
             ////// =====================================================
             //AccessAllNamedRanges.Run();
             //AccessSpecificNamedRange.Run();
-            //CopyNamedRanges.Run();
-            //CreateNamedRangeofCells.Run();
+            // CopyNamedRanges.Run();
+            // CreateNamedRangeofCells.Run();
             //FormatRanges1.Run();
             //FormatRanges2.Run();
             //IdentifyCellsinNamedRange.Run();
@@ -349,7 +349,7 @@ namespace CSharp
 
             //// Processing
             //// =====================================================
-            //CreatingSubtotals.Run();
+            // CreatingSubtotals.Run();
             //TracingDependents.Run();
             //TracingPrecedents.Run();
 
@@ -373,7 +373,7 @@ namespace CSharp
             //// =====================================================
             //AddImageToComment.Run();
             //AddingComment.Run();
-            //CommentFormatting.Run();
+            // CommentFormatting.Run();
 
             //// Controls
             //// =====================================================
@@ -447,11 +447,11 @@ namespace CSharp
             //// Utility
             //// =====================================================
             //AdvancedConversiontoPdf.Run();
-            //ChartToImage.Run();
-            //ConvertingToHTMLFiles.Run();
-            //ConvertingToMHTMLFiles.Run();
-            //ConvertingToXPS.Run();
-            //ConvertingWorksheetToSVG.Run();
+            // ChartToImage.Run();
+            // ConvertingToHTMLFiles.Run();
+            // ConvertingToMHTMLFiles.Run();
+            // ConvertingToXPS.Run();
+            // ConvertingWorksheetToSVG.Run();
             //EncryptingFiles.Run();
             //Excel2PDFConversion.Run();
             //ManagingDocumentProperties.Run();
@@ -466,11 +466,11 @@ namespace CSharp
             // =====================================================
             // =====================================================
 
-            //ColorsAndBackground.Run();
-            //ColorsAndPalette.Run();
-            //ComputeColorChoosenByMSExcel.Run();
-            //ConditionalFormatting.Run();
-            //ConditionalFormattingatRuntime.Run();
+            // ColorsAndBackground.Run();
+            // ColorsAndPalette.Run();
+            // ComputeColorChoosenByMSExcel.Run();
+            // ConditionalFormatting.Run();
+            // ConditionalFormattingatRuntime.Run();
             //FormattingSelectedCharacters.Run();
             //MakeCellActive.Run();
             //SetBorder.Run();
@@ -513,7 +513,7 @@ namespace CSharp
 
             //// Excel2007Themes
             //// =====================================================
-            //CustomizeThemes.Run();
+            // CustomizeThemes.Run();
             //GetSetThemeColors.Run();
             //UtilizeThemeColors.Run();
 
@@ -533,8 +533,8 @@ namespace CSharp
             // =====================================================
             // =====================================================
 
-            //CalculatingFormulas.Run();
-            //CalculatingFormulasOnce.Run();
+            // CalculatingFormulas.Run();
+            // CalculatingFormulasOnce.Run();
             //DirectCalculationFormula.Run();
             //ProcessDataUsingAddinfunction.Run();
             //ProcessDataUsingArrayFunction.Run();
@@ -547,9 +547,9 @@ namespace CSharp
             // =====================================================
             // =====================================================
 
-            //ChangeSourceData.Run();
-            //ClearPivotFields.Run();
-            //ConsolidationFunctions.Run();
+            // ChangeSourceData.Run();
+            // ClearPivotFields.Run();
+            // ConsolidationFunctions.Run();
             //PivotTableExamples.CreatePivotTable.Run();
             //FormattingLook.Run();
             //SettingAutoFormat.Run();
@@ -613,7 +613,7 @@ namespace CSharp
             // =====================================================
 
             //AddCustomLabels.Run();
-            //CopyStyleWithSmartMarker.Run();
+            // CopyStyleWithSmartMarker.Run();
             //GroupingData.Run();
             //ImageMarkers.Run();
             //UsingCopyStyleAttribute.Run();
@@ -628,8 +628,8 @@ namespace CSharp
             // =====================================================
             // =====================================================
 
-            //ConvertTableToRange.Run();
-            //CreatingListObject.Run();
+            // ConvertTableToRange.Run();
+            // CreatingListObject.Run();
             //FormataListObject.Run();   
 
             // =====================================================
@@ -640,7 +640,7 @@ namespace CSharp
 
             //// Display
             //// =====================================================
-            //ControlTabBarWidth.Run();
+            // ControlTabBarWidth.Run();
             //DisplayHideGridlines.Run();
             //DisplayHideRowColumnHeaders.Run();
             //DisplayHideScrollBars.Run();
@@ -692,7 +692,7 @@ namespace CSharp
         public static string GetDataDir(Type t)
         {
             string c = t.FullName;
-            c = c.Replace("CSharp.", "");
+            c = c.Replace("Aspose.Cells.Examples.CSharp.", "");
             c = c.Replace('.', Path.DirectorySeparatorChar);
             string p = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..", "Data", c));
             p += Path.DirectorySeparatorChar;

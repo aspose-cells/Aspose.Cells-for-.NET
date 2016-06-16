@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System.Data;
 
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     public class ExportVisibleRowsData
     {

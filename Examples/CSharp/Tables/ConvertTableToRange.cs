@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Tables
+namespace Aspose.Cells.Examples.CSharp.Tables
 {
     public class ConvertTableToRange
     {

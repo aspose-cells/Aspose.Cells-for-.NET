@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Articles.OptimizingMemoryUsage
+namespace Aspose.Cells.Examples.CSharp.Articles.OptimizingMemoryUsage
 {
     public class WritingLargeExcelFiles
     {

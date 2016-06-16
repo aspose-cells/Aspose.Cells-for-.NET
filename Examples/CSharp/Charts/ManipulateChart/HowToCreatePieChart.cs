@@ -5,7 +5,7 @@ using Aspose.Cells.Drawing;
 using System.Drawing;
 using Aspose.Cells.Charts;
 
-namespace CSharp.Charts.ManipulateChart
+namespace Aspose.Cells.Examples.CSharp.Charts.ManipulateChart
 {
     public class HowToCreatePieChart
     {
@@ -79,10 +79,10 @@ namespace CSharp.Charts.ManipulateChart
             {
                 datalabels = chart.NSeries[i].DataLabels;
                 datalabels.Position = Aspose.Cells.Charts.LabelPositionType.InsideBase;
-                datalabels.IsCategoryNameShown = true;
-                datalabels.IsValueShown = true;
-                datalabels.IsPercentageShown = false;
-                datalabels.IsLegendKeyShown = false;
+                datalabels.ShowCategoryName = true;
+                datalabels.ShowValue = true;
+                datalabels.ShowPercentage = false;
+                datalabels.ShowLegendKey = false;
 
             }
 

@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System;
 
-namespace CSharp.Data.Handling.AccessingCells
+namespace Aspose.Cells.Examples.CSharp.Data.Handling.AccessingCells
 {
     public class RowAndColumnIndex
     {

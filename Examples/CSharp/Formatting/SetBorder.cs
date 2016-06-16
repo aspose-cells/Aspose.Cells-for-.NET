@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace CSharp.Formatting
+namespace Aspose.Cells.Examples.CSharp.Formatting
 {
     public class SetBorder
     {

@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.DrawingObjects.Comments
+namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Comments
 {
     public class CommentFormatting
     {

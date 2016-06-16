@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.RowsColumns.Hiding
+namespace Aspose.Cells.Examples.CSharp.RowsColumns.Hiding
 {
     public class UnhidingRowsAndColumns
     {

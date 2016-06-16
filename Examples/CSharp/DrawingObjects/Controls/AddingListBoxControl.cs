@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using Aspose.Cells.Drawing;
 
-namespace CSharp.DrawingObjects.Controls
+namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Controls
 {
     public class AddingListBoxControl
     {

@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Articles.ApplySuperscriptAndSubscript
+namespace Aspose.Cells.Examples.CSharp.Articles.ApplySuperscriptAndSubscript
 {
     public class SettingSubscriptEffect
     {

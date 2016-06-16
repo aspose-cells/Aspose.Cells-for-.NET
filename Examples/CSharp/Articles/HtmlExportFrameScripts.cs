@@ -1,6 +1,6 @@
 ﻿using Aspose.Cells;
 
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     class HtmlExportFrameScripts
     {

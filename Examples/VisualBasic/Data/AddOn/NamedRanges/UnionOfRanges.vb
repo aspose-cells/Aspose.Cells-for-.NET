@@ -20,7 +20,7 @@ Namespace Data.AddOn.NamedRanges
             Dim ranges() As Range = workbook.Worksheets.GetNamedRanges()
 
             ' Create a style object.
-            Dim style As Style = workbook.Styles(workbook.Styles.Add())
+            Dim style As Style = workbook.CreateStyle()
 
             ' Set the shading color with solid pattern type.
             style.ForegroundColor = Color.Yellow

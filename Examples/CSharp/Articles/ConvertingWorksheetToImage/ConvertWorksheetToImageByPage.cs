@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using Aspose.Cells.Rendering;
 
-namespace CSharp.Articles.ConvertingWorksheetToImage
+namespace Aspose.Cells.Examples.CSharp.Articles.ConvertingWorksheetToImage
 {
     public class ConvertWorksheetToImageByPage
     {

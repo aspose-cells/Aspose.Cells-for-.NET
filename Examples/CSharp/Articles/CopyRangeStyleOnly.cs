@@ -2,7 +2,7 @@ using System.IO;
 using System.Drawing;
 using Aspose.Cells;
 using System;
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     public class CopyRangeStyleOnly
     {
@@ -33,7 +33,7 @@ namespace CSharp.Articles
 
             // Create a style object.
             Style style;
-            style = workbook.Styles[workbook.Styles.Add()];
+            style = workbook.CreateStyle();
             // Specify the font attribute.
             style.Font.Name = "Calibri";
             // Specify the shading color.

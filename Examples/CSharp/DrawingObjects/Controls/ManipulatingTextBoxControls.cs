@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.DrawingObjects.Controls
+namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Controls
 {
     public class ManipulatingTextBoxControls
     {

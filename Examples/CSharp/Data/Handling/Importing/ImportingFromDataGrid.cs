@@ -5,7 +5,7 @@ using System;
 using System.Data;
 using System.Web.UI.WebControls;
 
-namespace CSharp.Data.Handling.Importing
+namespace Aspose.Cells.Examples.CSharp.Data.Handling.Importing
 {
     public class ImportingFromDataGrid
     {

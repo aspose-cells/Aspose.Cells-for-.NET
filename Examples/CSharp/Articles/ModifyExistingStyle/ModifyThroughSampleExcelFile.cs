@@ -3,7 +3,7 @@ using System.Drawing;
 
 using Aspose.Cells;
 
-namespace CSharp.Articles.ModifyExistingStyle
+namespace Aspose.Cells.Examples.CSharp.Articles.ModifyExistingStyle
 {
     public class ModifyThroughSampleExcelFile
     {
@@ -20,7 +20,7 @@ namespace CSharp.Articles.ModifyExistingStyle
             Workbook workbook = new Workbook(dataDir+ "book1.xlsx");
 
             // We get the Percent style and create a style object.
-            Style style = workbook.Styles["Percent"];
+            Style style = workbook.GetNamedStyle("Percent");
 
             // Change the number format to "0.00%".
             style.Number = 11;

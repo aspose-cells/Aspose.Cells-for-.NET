@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using Aspose.Cells.Rendering;
 
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     public class RemoveWhitespaceAroundData
     {

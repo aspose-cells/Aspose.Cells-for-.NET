@@ -33,7 +33,7 @@ Namespace Data.AddOn.NamedRanges
             Dim stl As Style
 
             ' Create/add the style object.
-            stl = workbook.Styles(workbook.Styles.Add() Or workbook.Styles.Add())
+            stl = workbook.CreateStyle()
 
             ' Specify some Font settings.
             stl.Font.Name = "Arial"

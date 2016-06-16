@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Data.Processing.FilteringAndValidation
+namespace Aspose.Cells.Examples.CSharp.Data.Processing.FilteringAndValidation
 {
     public class WholeNumberDataValidation
     {
@@ -26,8 +26,15 @@ namespace CSharp.Data.Processing.FilteringAndValidation
             // Accessing the Validations collection of the worksheet
             ValidationCollection validations = workbook.Worksheets[0].Validations;
 
+            // Create Cell Area
+            CellArea ca = new CellArea();
+            ca.StartRow = 0;
+            ca.EndRow = 0;
+            ca.StartColumn = 0;
+            ca.EndColumn = 0;
+
             // Creating a Validation object
-            Validation validation = validations[validations.Add()];
+            Validation validation = validations[validations.Add(ca)];
 
             // Setting the validation type to whole number
             validation.Type = ValidationType.WholeNumber;

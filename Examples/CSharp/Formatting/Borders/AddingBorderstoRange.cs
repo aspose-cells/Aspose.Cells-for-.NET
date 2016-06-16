@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace CSharp.Formatting.Borders
+namespace Aspose.Cells.Examples.CSharp.Formatting.Borders
 {
     public class AddingBorderstoRange
     {

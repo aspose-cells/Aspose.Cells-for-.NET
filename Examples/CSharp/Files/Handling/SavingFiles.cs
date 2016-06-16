@@ -2,7 +2,7 @@
 
 using Aspose.Cells;
 
-namespace CSharp.Files.Handling
+namespace Aspose.Cells.Examples.CSharp.Files.Handling
 {
     public class SavingFiles
     {

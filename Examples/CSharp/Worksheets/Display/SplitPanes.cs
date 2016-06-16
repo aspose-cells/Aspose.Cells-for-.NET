@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Worksheets.Display
+namespace Aspose.Cells.Examples.CSharp.Worksheets.Display
 {
     public class SplitPanes
     {

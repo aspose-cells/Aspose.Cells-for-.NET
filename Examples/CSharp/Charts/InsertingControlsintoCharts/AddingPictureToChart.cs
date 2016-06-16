@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace CSharp.Charts.InsertingControlsintoCharts
+namespace Aspose.Cells.Examples.CSharp.Charts.InsertingControlsintoCharts
 {
     public class AddingPictureToChart
     {

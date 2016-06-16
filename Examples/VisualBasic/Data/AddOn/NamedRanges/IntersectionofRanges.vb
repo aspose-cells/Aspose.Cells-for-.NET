@@ -22,7 +22,7 @@ Namespace Data.AddOn.NamedRanges
             Dim isintersect As Boolean = ranges(0).IsIntersect(ranges(1))
 
             ' Create a style object.
-            Dim style As Style = workbook.Styles(workbook.Styles.Add())
+            Dim style As Style = workbook.CreateStyle()
 
             ' Set the shading color with solid pattern type.
             style.ForegroundColor = Color.Yellow

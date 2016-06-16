@@ -3,7 +3,7 @@ using System.Drawing;
 
 using Aspose.Cells;
 
-namespace CSharp.Files.Utility
+namespace Aspose.Cells.Examples.CSharp.Files.Utility
 {
     public class ChartToImage
     {

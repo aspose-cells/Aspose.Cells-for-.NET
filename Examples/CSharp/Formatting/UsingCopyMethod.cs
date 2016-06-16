@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace CSharp.Formatting
+namespace Aspose.Cells.Examples.CSharp.Formatting
 {
     public class UsingCopyMethod
     {
@@ -24,7 +24,24 @@ namespace CSharp.Formatting
             Worksheet worksheet = workbook.Worksheets[0];
 
             // Copying conditional format settings from cell "A1" to cell "B1"
-            worksheet.CopyConditionalFormatting(0, 0, 0, 1);
+            //worksheet.CopyConditionalFormatting(0, 0, 0, 1);
+
+            int TotalRowCount = 0;
+
+            for (int i = 0; i < workbook.Worksheets.Count; i++)
+            {
+                Worksheet sourceSheet = workbook.Worksheets[i];
+
+                Range sourceRange = sourceSheet.Cells.MaxDisplayRange;
+
+                Range destRange = worksheet.Cells.CreateRange(sourceRange.FirstRow + TotalRowCount, sourceRange.FirstColumn,
+                      sourceRange.RowCount, sourceRange.ColumnCount);
+
+                destRange.Copy(sourceRange);
+
+                TotalRowCount = sourceRange.RowCount + TotalRowCount;
+            }
+            
 
             // Saving the modified Excel file
             workbook.Save(dataDir + "output.xls");

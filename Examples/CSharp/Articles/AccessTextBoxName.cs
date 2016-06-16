@@ -2,7 +2,7 @@
 using Aspose.Cells;
 using Aspose.Cells.Drawing;
 
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     class AccessTextBoxName
     {

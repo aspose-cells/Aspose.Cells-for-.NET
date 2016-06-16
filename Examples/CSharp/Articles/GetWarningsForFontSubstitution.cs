@@ -1,7 +1,7 @@
 using System.IO;
 using Aspose.Cells;
 using System.Diagnostics;
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     // ExStart:1
     public class GetWarningsForFontSubstitution : IWarningCallback

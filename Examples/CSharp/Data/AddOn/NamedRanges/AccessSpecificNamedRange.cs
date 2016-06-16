@@ -2,7 +2,7 @@ using System.IO;
 using System;
 using Aspose.Cells;
 
-namespace CSharp.Data.AddOn.NamedRanges
+namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
 {
     public class AccessSpecificNamedRange
     {

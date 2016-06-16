@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace CSharp.PivotTableExamples
+namespace Aspose.Cells.Examples.CSharp.PivotTableExamples
 {
     public class ChangeSourceData
     {

@@ -4,7 +4,7 @@ using Aspose.Cells;
 using System.Drawing;
 using System;
 
-namespace CSharp.Formatting.Excel2007Themes
+namespace Aspose.Cells.Examples.CSharp.Formatting.Excel2007Themes
 {
     public class GetSetThemeColors
     {

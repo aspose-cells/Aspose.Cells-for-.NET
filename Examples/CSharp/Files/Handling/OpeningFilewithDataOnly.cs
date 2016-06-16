@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System;
 
-namespace CSharp.Files.Handling
+namespace Aspose.Cells.Examples.CSharp.Files.Handling
 {
     public class OpeningFilewithDataOnly
     {
@@ -23,8 +23,8 @@ namespace CSharp.Files.Handling
             // Specify the sheet(s) in the template file to be loaded
             dataOption.SheetNames = new string[] { "Sheet2" };
             dataOption.ImportFormula = true;
-            // Only data should be loaded.
-            loadOptions7.LoadDataOnly = true;
+            // Only data and formatting should be loaded.
+            loadOptions7.LoadDataAndFormatting = true;
             // Specify the LoadDataOption
             loadOptions7.LoadDataOptions = dataOption;
 

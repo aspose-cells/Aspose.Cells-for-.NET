@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System;
 
-namespace CSharp.Formulas
+namespace Aspose.Cells.Examples.CSharp.Formulas
 {
     public class CalculatingFormulasOnce
     {

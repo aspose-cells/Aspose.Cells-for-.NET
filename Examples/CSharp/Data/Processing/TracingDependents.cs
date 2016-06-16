@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System;
 
-namespace CSharp.Data.Processing
+namespace Aspose.Cells.Examples.CSharp.Data.Processing
 {
     public class TracingDependents
     {

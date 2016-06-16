@@ -5,7 +5,7 @@ using Aspose.Cells.Drawing;
 using System.Drawing;
 using Aspose.Cells.Charts;
 
-namespace CSharp.Charts.ManipulateChart
+namespace Aspose.Cells.Examples.CSharp.Charts.ManipulateChart
 {
     public class ModifyLineChart
     {
@@ -31,11 +31,11 @@ namespace CSharp.Charts.ManipulateChart
             // Plot the fourth data series on the second axis.
             chart.NSeries[3].PlotOnSecondAxis = true;
 
-            // Change the line color of the second data series.
-            chart.NSeries[1].Line.Color = Color.Green;
+            // Change the Border color of the second data series.
+            chart.NSeries[1].Border.Color = Color.Green;
 
-            // Change the line color of the third data series.
-            chart.NSeries[2].Line.Color = Color.Red;
+            // Change the Border color of the third data series.
+            chart.NSeries[2].Border.Color = Color.Red;
 
             // Make the second value axis visible.
             chart.SecondValueAxis.IsVisible = true;

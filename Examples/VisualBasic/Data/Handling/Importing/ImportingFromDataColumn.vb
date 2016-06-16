@@ -53,8 +53,13 @@ Namespace Data.Handling.Importing
 
             Dim sheet As Worksheet = book.Worksheets(0)
 
+            ' Create import options
+            Dim importOptions As New ImportTableOptions()
+            importOptions.IsFieldNameShown = True
+            importOptions.IsHtmlString = True
+
             ' Importing the values of 2nd column of the data table
-            sheet.Cells.ImportDataColumn(dataTable, True, 0, 0, 1, False)
+            sheet.Cells.ImportData(dataTable, 1, 1, importOptions)
 
             ' Save workbook
             book.Save(dataDir & "output.xls")

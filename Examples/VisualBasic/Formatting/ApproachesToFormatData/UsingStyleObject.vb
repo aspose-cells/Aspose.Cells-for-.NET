@@ -32,11 +32,8 @@ Namespace Formatting.ApproachesToFormatData
             ' Adding some value to the "A1" cell
             cell.PutValue("Hello Aspose!")
 
-            ' Adding a new Style to the styles collection of the Excel object
-            Dim index As Integer = workbook.Styles.Add()
-
             ' Accessing the newly added Style to the Excel object
-            Dim style As Style = workbook.Styles(index)
+            Dim style As Style = workbook.CreateStyle()
 
             ' Setting the vertical alignment of the text in the "A1" cell
             style.VerticalAlignment = TextAlignmentType.Center

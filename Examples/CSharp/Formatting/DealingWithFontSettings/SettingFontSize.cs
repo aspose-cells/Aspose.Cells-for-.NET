@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Formatting.DealingWithFontSettings
+namespace Aspose.Cells.Examples.CSharp.Formatting.DealingWithFontSettings
 {
     public class SettingFontSize
     {

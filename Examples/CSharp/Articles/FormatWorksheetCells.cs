@@ -2,7 +2,7 @@ using System;
 using System.Drawing;
 using Aspose.Cells;
 
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     /// <summary>
     /// AsposeFormatWorksheet
@@ -473,7 +473,7 @@ namespace CSharp.Articles
 
             // Define a style object adding a new style
             // To the collection list.
-            Style stl0 = workbook.Styles[workbook.Styles.Add()];
+            Style stl0 = workbook.CreateStyle();
             // Set a custom shading color of the cells.
             stl0.ForegroundColor = Color.FromArgb(155, 204, 255);
             // Set the solid background fillment.
@@ -514,7 +514,7 @@ namespace CSharp.Articles
 
             // Define a style object adding a new style
             // To the collection list.
-            Style stl1 = workbook.Styles[workbook.Styles.Add()];
+            Style stl1 = workbook.CreateStyle();
             // Set the rotation angle of the text.
             stl1.RotationAngle = 45;
             // Set the custom fill color of the cells.
@@ -567,7 +567,7 @@ namespace CSharp.Articles
 
             // Define a style object adding a new style
             // To the collection list.
-            Style stl2 = workbook.Styles[workbook.Styles.Add()];
+            Style stl2 = workbook.CreateStyle();
             // Set the custom cell shading color.
             stl2.ForegroundColor = Color.FromArgb(155, 204, 255);
             // Set the solid background pattern for fillment color.
@@ -595,7 +595,7 @@ namespace CSharp.Articles
 
             // Define a style object adding a new style
             // To the collection list.
-            Style stl3 = workbook.Styles[workbook.Styles.Add()];
+            Style stl3 = workbook.CreateStyle();
             // Set the custom cell filling color.
             stl3.ForegroundColor = Color.FromArgb(124, 199, 72);
             // Set the solid background pattern for fillment color.
@@ -605,7 +605,7 @@ namespace CSharp.Articles
 
             // Define a style object adding a new style
             // To the collection list.
-            Style stl4 = workbook.Styles[workbook.Styles.Add()];
+            Style stl4 = workbook.CreateStyle();
             // Set the custom font text color.
             stl4.Font.Color = Color.FromArgb(0, 51, 105);
             // Set the bottom border line style.
@@ -631,7 +631,7 @@ namespace CSharp.Articles
 
             // Define a style object adding a new style
             // To the collection list.
-            Style stl5 = workbook.Styles[workbook.Styles.Add()];
+            Style stl5 = workbook.CreateStyle();
             // Set the bottom borde line style.
             stl5.Borders[BorderType.BottomBorder].LineStyle = CellBorderType.Thin;
             // Set the bottom border line color.
@@ -669,7 +669,7 @@ namespace CSharp.Articles
 
             // Define a style object adding a new style
             // To the collection list.
-            Style stl6 = workbook.Styles[workbook.Styles.Add()];
+            Style stl6 = workbook.CreateStyle();
             // Set the custom fill color of the cells.
             stl6.ForegroundColor = Color.FromArgb(0, 51, 105);
             // Set the background pattern for fillment color.

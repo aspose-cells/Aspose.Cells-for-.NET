@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Data.Processing.FilteringAndValidation
+namespace Aspose.Cells.Examples.CSharp.Data.Processing.FilteringAndValidation
 {
     public class TextLengthDataValidation
     {
@@ -34,8 +34,15 @@ namespace CSharp.Data.Processing.FilteringAndValidation
             // Get the validations collection.
             ValidationCollection validations = workbook.Worksheets[0].Validations;
 
+            // Create Cell Area
+            CellArea ca = new CellArea();
+            ca.StartRow = 0;
+            ca.EndRow = 0;
+            ca.StartColumn = 0;
+            ca.EndColumn = 0;
+
             // Add a new validation.
-            Validation validation = validations[validations.Add()];
+            Validation validation = validations[validations.Add(ca)];
 
             // Set the data validation type.
             validation.Type = ValidationType.TextLength;

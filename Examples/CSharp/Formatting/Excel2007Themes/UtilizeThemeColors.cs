@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Formatting.Excel2007Themes
+namespace Aspose.Cells.Examples.CSharp.Formatting.Excel2007Themes
 {
     public class UtilizeThemeColors
     {

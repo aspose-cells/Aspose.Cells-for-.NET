@@ -4,7 +4,7 @@ using Aspose.Cells;
 using Aspose.Cells.Drawing;
 using System.Drawing;
 
-namespace CSharp.DrawingObjects.Controls
+namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Controls
 {
     public class AddingTextBoxControl
     {
@@ -35,10 +35,10 @@ namespace CSharp.DrawingObjects.Controls
             textbox0.Text = "ASPOSE______The .NET & JAVA Component Publisher!";
 
             // Get the textbox text frame.
-            MsoTextFrame textframe0 = textbox0.TextFrame;
+            //MsoTextFrame textframe0 = textbox0.TextFrame;
 
             // Set the textbox to adjust it according to its contents.
-            textframe0.AutoSize = true;
+            //textframe0.AutoSize = true;
 
             // Set the placement.
             textbox0.Placement = PlacementType.FreeFloating;

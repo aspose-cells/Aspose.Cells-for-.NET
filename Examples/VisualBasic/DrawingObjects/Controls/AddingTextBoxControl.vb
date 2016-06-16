@@ -34,10 +34,10 @@ Namespace DrawingObjects.Controls
             textbox0.Text = "ASPOSE______The .NET & JAVA Component Publisher!"
 
             ' Get the textbox text frame.
-            Dim textframe0 As MsoTextFrame = textbox0.TextFrame
+            ' Dim textframe0 As MsoTextFrame = textbox0.TextFrame
 
             ' Set the textbox to adjust it according to its contents.
-            textframe0.AutoSize = True
+            ' textframe0.AutoSize = True
 
             ' Set the placement.
             textbox0.Placement = PlacementType.FreeFloating

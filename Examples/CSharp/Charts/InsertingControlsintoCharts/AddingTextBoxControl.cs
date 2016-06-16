@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace CSharp.Charts.InsertingControlsintoCharts
+namespace Aspose.Cells.Examples.CSharp.Charts.InsertingControlsintoCharts
 {
     public class AddingTextBoxControl
     {
@@ -28,10 +28,10 @@ namespace CSharp.Charts.InsertingControlsintoCharts
             textbox0.Text = "Sales By Region";
 
             // Get the textbox text frame.
-            Aspose.Cells.Drawing.MsoTextFrame textframe0 = textbox0.TextFrame;
+            // Aspose.Cells.Drawing.MsoTextFrame textframe0 = textbox0.TextFrame;
 
             // Set the textbox to adjust it according to its contents.
-            textframe0.AutoSize = true;
+            // textframe0.AutoSize = true;
 
             // Set the font color.
             textbox0.Font.Color = Color.Maroon;

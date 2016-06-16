@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace CSharp.Articles.ApplyConditionalFormatting
+namespace Aspose.Cells.Examples.CSharp.Articles.ApplyConditionalFormatting
 {
     public class ApplyConditionalFormattingCellValue
     {

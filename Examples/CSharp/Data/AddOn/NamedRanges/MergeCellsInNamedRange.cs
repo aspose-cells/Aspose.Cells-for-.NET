@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Data.AddOn.NamedRanges
+namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
 {
     public class MergeCellsInNamedRange
     {
@@ -33,13 +33,10 @@ namespace CSharp.Data.AddOn.NamedRanges
             mrange.Merge();
 
             // Get the range.
-            Range range1 = wb1.Worksheets.GetRangeByName("Details");
-
-            // Add a style object to the collection.
-            int i = wb1.Styles.Add();
+            Range range1 = wb1.Worksheets.GetRangeByName("Details");      
 
             // Define a style object.
-            Style style = wb1.Styles[i];
+            Style style = wb1.CreateStyle();
 
             // Set the alignment.
             style.HorizontalAlignment = TextAlignmentType.Center;

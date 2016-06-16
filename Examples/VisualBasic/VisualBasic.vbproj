@@ -6,10 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D3A228AD-BF9F-42AE-BC8A-C79A4A2D9E8D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>RunExamples</StartupObject>
-    <RootNamespace>
-    </RootNamespace>
-    <AssemblyName>VisualBasic</AssemblyName>
+    <StartupObject>Aspose.Cells.Examples.VisualBasic.RunExamples</StartupObject>
+    <RootNamespace>Aspose.Cells.Examples.VisualBasic</RootNamespace>
+    <AssemblyName>Aspose.Cells.Examples.VisualBasic</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Console</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -22,7 +21,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>VisualBasic.xml</DocumentationFile>
+    <DocumentationFile>Aspose.Cells.Examples.VisualBasic.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
     <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
@@ -33,7 +32,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>VisualBasic.xml</DocumentationFile>
+    <DocumentationFile>Aspose.Cells.Examples.VisualBasic.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -50,7 +49,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Aspose.Cells">
-      <HintPath>..\packages\Aspose.Cells.8.8.1\lib\net40\Aspose.Cells.dll</HintPath>
+      <HintPath>..\packages\Aspose.Cells.8.8.2\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />

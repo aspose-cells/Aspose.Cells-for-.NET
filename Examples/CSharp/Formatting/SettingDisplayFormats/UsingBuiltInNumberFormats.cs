@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System;
 
-namespace CSharp.Formatting.SettingDisplayFormats
+namespace Aspose.Cells.Examples.CSharp.Formatting.SettingDisplayFormats
 {
     public class UsingBuiltInNumberFormats
     {

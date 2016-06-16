@@ -75,10 +75,10 @@ Namespace Charts.ManipulateChart
             For i As Integer = 0 To chart.NSeries.Count - 1
                 datalabels = chart.NSeries(i).DataLabels
                 datalabels.Position = Aspose.Cells.Charts.LabelPositionType.InsideBase
-                datalabels.IsCategoryNameShown = True
-                datalabels.IsValueShown = True
-                datalabels.IsPercentageShown = False
-                datalabels.IsLegendKeyShown = False
+                datalabels.ShowCategoryName = True
+                datalabels.ShowValue = True
+                datalabels.ShowPercentage = False
+                datalabels.ShowLegendKey = False
 
             Next i
 

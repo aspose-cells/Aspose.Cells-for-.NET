@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.DrawingObjects.Pictures.PositioningPictures
+namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Pictures.PositioningPictures
 {
     public class ProportionalPositioning
     {

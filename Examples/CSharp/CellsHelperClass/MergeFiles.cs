@@ -2,7 +2,7 @@ using System.IO;
 using System;
 using Aspose.Cells;
 
-namespace CSharp.CellsHelperClass
+namespace Aspose.Cells.Examples.CSharp.CellsHelperClass
 {
     public class MergeFiles
     {

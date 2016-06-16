@@ -4,7 +4,7 @@ using Aspose.Cells;
 using System.Data;
 using System;
 
-namespace CSharp.Data.Handling.Importing
+namespace Aspose.Cells.Examples.CSharp.Data.Handling.Importing
 {
     public class ImportingFromDataColumn
     {
@@ -54,8 +54,13 @@ namespace CSharp.Data.Handling.Importing
 
             Worksheet sheet = book.Worksheets[0];
 
+            // Create import options
+            ImportTableOptions importOptions = new ImportTableOptions();
+            importOptions.IsFieldNameShown = true;
+            importOptions.IsHtmlString = true;
+
             // Importing the values of 2nd column of the data table
-            sheet.Cells.ImportDataColumn(dataTable, true, 0, 0, 1, false);
+            sheet.Cells.ImportData(dataTable, 1, 1, importOptions);
 
             // Save workbook
             book.Save(dataDir + "DataImport.out.xls");

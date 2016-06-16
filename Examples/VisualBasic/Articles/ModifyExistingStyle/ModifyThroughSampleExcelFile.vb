@@ -18,7 +18,7 @@ Namespace Articles.ModifyExistingStyle
             Dim workbook As New Workbook(dataDir & "book1.xlsx")
 
             ' We get the Percent style and create a style object.
-            Dim style As Style = workbook.Styles("Percent")
+            Dim style As Style = workbook.GetNamedStyle("Percent")
 
             ' Change the number format to "0.00%".
             style.Number = 11

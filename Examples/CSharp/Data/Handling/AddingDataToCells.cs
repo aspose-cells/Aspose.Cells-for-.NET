@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System;
 
-namespace CSharp.Data.Handling
+namespace Aspose.Cells.Examples.CSharp.Data.Handling
 {
     public class AddingDataToCells
     {

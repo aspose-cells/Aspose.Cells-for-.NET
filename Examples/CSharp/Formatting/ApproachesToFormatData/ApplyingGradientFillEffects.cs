@@ -4,7 +4,7 @@ using Aspose.Cells;
 using Aspose.Cells.Drawing;
 using System.Drawing;
 
-namespace CSharp.Formatting.ApproachesToFormatData
+namespace Aspose.Cells.Examples.CSharp.Formatting.ApproachesToFormatData
 {
     public class ApplyingGradientFillEffects
     {

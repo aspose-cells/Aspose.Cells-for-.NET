@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System;
 
-namespace CSharp.AdvancedTopics.SmartMarkers
+namespace Aspose.Cells.Examples.CSharp.AdvancedTopics.SmartMarkers
 {
     public class UsingNestedObjects
     {

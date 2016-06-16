@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Formatting.ConfiguringAlignmentSettings
+namespace Aspose.Cells.Examples.CSharp.Formatting.ConfiguringAlignmentSettings
 {
     public class ShrinkingToFit
     {

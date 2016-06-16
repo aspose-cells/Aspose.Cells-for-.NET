@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System;
 
-namespace CSharp.DrawingObjects.OLE
+namespace Aspose.Cells.Examples.CSharp.DrawingObjects.OLE
 {
     public class InsertingOLEObjects
     {

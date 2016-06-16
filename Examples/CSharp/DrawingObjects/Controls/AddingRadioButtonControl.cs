@@ -4,7 +4,7 @@ using Aspose.Cells;
 using System.Drawing;
 using Aspose.Cells.Drawing;
 
-namespace CSharp.DrawingObjects.Controls
+namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Controls
 {
     public class AddingRadioButtonControl
     {

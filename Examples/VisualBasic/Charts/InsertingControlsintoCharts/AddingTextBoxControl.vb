@@ -25,10 +25,10 @@ Namespace Charts.InsertingControlsintoCharts
             textbox0.Text = "Sales By Region"
 
             ' Get the textbox text frame.
-            Dim textframe0 As Global.Aspose.Cells.Drawing.MsoTextFrame = textbox0.TextFrame
+            ' Dim textframe0 As Global.Aspose.Cells.Drawing.MsoTextFrame = textbox0.TextFrame
 
             ' Set the textbox to adjust it according to its contents.
-            textframe0.AutoSize = True
+            ' textframe0.AutoSize = True
 
             ' Set the font color.
             textbox0.Font.Color = Color.Maroon

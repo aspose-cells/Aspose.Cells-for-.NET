@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace CSharp.Formatting.DealingWithFontSettings
+namespace Aspose.Cells.Examples.CSharp.Formatting.DealingWithFontSettings
 {
     public class SettingFontColor
     {

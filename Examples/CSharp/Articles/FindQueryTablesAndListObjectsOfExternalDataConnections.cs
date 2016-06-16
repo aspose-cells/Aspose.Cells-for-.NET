@@ -6,7 +6,7 @@ using Aspose.Cells.Tables;
 using Aspose.Cells.ExternalConnections;
 using System.Collections;
 
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     public class FindQueryTablesAndListObjectsOfExternalDataConnections
     {

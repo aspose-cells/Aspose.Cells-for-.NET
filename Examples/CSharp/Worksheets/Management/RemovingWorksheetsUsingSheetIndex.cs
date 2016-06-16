@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Worksheets.Management
+namespace Aspose.Cells.Examples.CSharp.Worksheets.Management
 {
     public class RemovingWorksheetsUsingSheetIndex
     {

@@ -4,7 +4,7 @@ using Aspose.Cells.Charts;
 using System;
 using System.Drawing;
 
-namespace CSharp.Charts
+namespace Aspose.Cells.Examples.CSharp.Charts
 {
     public class UsingSparklines
     {

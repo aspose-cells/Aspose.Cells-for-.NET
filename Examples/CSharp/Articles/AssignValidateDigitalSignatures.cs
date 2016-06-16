@@ -11,7 +11,7 @@ using System.Diagnostics;
 using Aspose.Cells.DigitalSignatures;
 using System.Security.Cryptography.X509Certificates;
 
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     public class AssignValidateDigitalSignatures
     {

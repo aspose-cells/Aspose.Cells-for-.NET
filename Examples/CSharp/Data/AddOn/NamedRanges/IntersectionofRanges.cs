@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace CSharp.Data.AddOn.NamedRanges
+namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
 {
     public class IntersectionofRanges
     {
@@ -24,7 +24,7 @@ namespace CSharp.Data.AddOn.NamedRanges
             bool isintersect = ranges[0].IsIntersect(ranges[1]);
 
             // Create a style object.
-            Style style = workbook.Styles[workbook.Styles.Add()];
+            Style style = workbook.CreateStyle();
 
             // Set the shading color with solid pattern type.
             style.ForegroundColor = Color.Yellow;

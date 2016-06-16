@@ -3,7 +3,7 @@ using System;
 using Aspose.Cells;
 using Aspose.Cells.Charts;
 
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     public class CustomSliceSectorColorsPieChart
     {

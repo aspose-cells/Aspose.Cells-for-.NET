@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace CSharp.Formatting.ApproachesToFormatData
+namespace Aspose.Cells.Examples.CSharp.Formatting.ApproachesToFormatData
 {
     public class UsingGetStyleSetStyle
     {

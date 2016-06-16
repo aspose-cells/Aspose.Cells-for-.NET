@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Articles.CopyShapesBetweenWorksheets
+namespace Aspose.Cells.Examples.CSharp.Articles.CopyShapesBetweenWorksheets
 {
     public class CopyControls
     {

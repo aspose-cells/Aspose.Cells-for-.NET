@@ -459,7 +459,7 @@ Namespace Articles
 
             ' Define a style object adding a new style
             ' To the collection list.
-            Dim stl0 As Style = workbook.Styles(workbook.Styles.Add())
+            Dim stl0 As Style = workbook.CreateStyle()
             ' Set a custom shading color of the cells.
             stl0.ForegroundColor = Color.FromArgb(155, 204, 255)
             ' Set the solid background fillment.
@@ -500,7 +500,7 @@ Namespace Articles
 
             ' Define a style object adding a new style
             ' To the collection list.
-            Dim stl1 As Style = workbook.Styles(workbook.Styles.Add())
+            Dim stl1 As Style = workbook.CreateStyle()
             ' Set the rotation angle of the text.
             stl1.RotationAngle = 45
             ' Set the custom fill color of the cells.
@@ -553,7 +553,7 @@ Namespace Articles
 
             ' Define a style object adding a new style
             ' To the collection list.
-            Dim stl2 As Style = workbook.Styles(workbook.Styles.Add())
+            Dim stl2 As Style = workbook.CreateStyle()
             ' Set the custom cell shading color.
             stl2.ForegroundColor = Color.FromArgb(155, 204, 255)
             ' Set the solid background pattern for fillment color.
@@ -581,7 +581,7 @@ Namespace Articles
 
             ' Define a style object adding a new style
             ' To the collection list.
-            Dim stl3 As Style = workbook.Styles(workbook.Styles.Add())
+            Dim stl3 As Style = workbook.CreateStyle()
             ' Set the custom cell filling color.
             stl3.ForegroundColor = Color.FromArgb(124, 199, 72)
             ' Set the solid background pattern for fillment color.
@@ -591,7 +591,7 @@ Namespace Articles
 
             ' Define a style object adding a new style
             ' To the collection list.
-            Dim stl4 As Style = workbook.Styles(workbook.Styles.Add())
+            Dim stl4 As Style = workbook.CreateStyle()
             ' Set the custom font text color.
             stl4.Font.Color = Color.FromArgb(0, 51, 105)
             ' Set the bottom border line style.
@@ -617,7 +617,7 @@ Namespace Articles
 
             ' Define a style object adding a new style
             ' To the collection list.
-            Dim stl5 As Style = workbook.Styles(workbook.Styles.Add())
+            Dim stl5 As Style = workbook.CreateStyle()
             ' Set the bottom borde line style.
             stl5.Borders(BorderType.BottomBorder).LineStyle = CellBorderType.Thin
             ' Set the bottom border line color.
@@ -652,7 +652,7 @@ Namespace Articles
 
             ' Define a style object adding a new style
             ' To the collection list.
-            Dim stl6 As Style = workbook.Styles(workbook.Styles.Add())
+            Dim stl6 As Style = workbook.CreateStyle()
             ' Set the custom fill color of the cells.
             stl6.ForegroundColor = Color.FromArgb(0, 51, 105)
             ' Set the background pattern for fillment color.

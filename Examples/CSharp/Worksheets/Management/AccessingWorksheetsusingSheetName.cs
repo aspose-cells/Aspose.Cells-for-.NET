@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System;
 
-namespace CSharp.Worksheets.Management
+namespace Aspose.Cells.Examples.CSharp.Worksheets.Management
 {
     public class AccessingWorksheetsusingSheetName
     {

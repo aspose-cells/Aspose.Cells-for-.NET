@@ -20,7 +20,7 @@ Namespace Formatting.ApproachesToFormatData
             Dim workbook As New Workbook()
 
             ' Create a style object based on a predefined Excel 2007 style.
-            Dim style As Style = workbook.Styles.CreateBuiltinStyle(BuiltinStyleType.Accent1)
+            Dim style As Style = workbook.CreateStyle()
 
             ' Input a value to A1 cell.
             workbook.Worksheets(0).Cells("A1").PutValue("Test")

@@ -3,7 +3,7 @@ using Aspose.Cells;
 using System;
 using System.Collections;
 
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     // ExStart:1
     public class AddingAnonymousCustomObject

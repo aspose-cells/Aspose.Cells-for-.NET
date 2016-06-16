@@ -1,7 +1,7 @@
 using System.IO;
 using Aspose.Cells;
 using System.Data;
-namespace CSharp.AdvancedTopics.SmartMarkers
+namespace Aspose.Cells.Examples.CSharp.AdvancedTopics.SmartMarkers
 {
     public class GroupingData
     {

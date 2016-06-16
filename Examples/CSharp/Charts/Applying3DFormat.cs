@@ -4,7 +4,7 @@ using Aspose.Cells.Drawing;
 using System.Drawing;
 using Aspose.Cells.Charts;
 
-namespace CSharp.Charts
+namespace Aspose.Cells.Examples.CSharp.Charts
 {
     public class Applying3DFormat
     {

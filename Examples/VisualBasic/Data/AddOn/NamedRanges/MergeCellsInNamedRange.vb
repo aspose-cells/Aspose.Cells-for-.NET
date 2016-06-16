@@ -34,11 +34,8 @@ Namespace Data.AddOn.NamedRanges
             ' Get the range.
             Dim range1 As Range = wb1.Worksheets.GetRangeByName("Details")
 
-            ' Add a style object to the collection.
-            Dim i As Integer = wb1.Styles.Add()
-
             ' Define a style object.
-            Dim style As Style = wb1.Styles(i)
+            Dim style As Style = wb1.CreateStyle
 
             ' Set the alignment.
             style.HorizontalAlignment = TextAlignmentType.Center

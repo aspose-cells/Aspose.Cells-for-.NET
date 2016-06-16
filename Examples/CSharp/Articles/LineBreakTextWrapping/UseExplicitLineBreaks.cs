@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Articles.LineBreakTextWrapping
+namespace Aspose.Cells.Examples.CSharp.Articles.LineBreakTextWrapping
 {
     public class UseExplicitLineBreaks
     {

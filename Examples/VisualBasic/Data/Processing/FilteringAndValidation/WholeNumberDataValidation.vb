@@ -25,8 +25,15 @@ Namespace Data.Processing.FilteringAndValidation
             ' Accessing the Validations collection of the worksheet
             Dim validations As ValidationCollection = workbook.Worksheets(0).Validations
 
+            ' Create Cell Area
+            Dim ca As CellArea = New CellArea()
+            ca.StartRow = 0
+            ca.EndRow = 0
+            ca.StartColumn = 0
+            ca.EndColumn = 0
+
             ' Creating a Validation object
-            Dim validation As Validation = validations(validations.Add())
+            Dim validation As Validation = validations(validations.Add(ca))
 
             ' Setting the validation type to whole number
             validation.Type = ValidationType.WholeNumber

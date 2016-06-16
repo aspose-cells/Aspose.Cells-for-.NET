@@ -4,7 +4,7 @@ using Aspose.Cells;
 using System;
 using System.Data;
 
-namespace CSharp.Data.Handling.Importing
+namespace Aspose.Cells.Examples.CSharp.Data.Handling.Importing
 {
     public class ImportingFromDataView
     {

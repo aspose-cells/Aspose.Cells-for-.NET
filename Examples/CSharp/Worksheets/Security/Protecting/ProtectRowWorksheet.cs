@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Worksheets.Security.Protecting
+namespace Aspose.Cells.Examples.CSharp.Worksheets.Security.Protecting
 {
     public class ProtectRowWorksheet
     {

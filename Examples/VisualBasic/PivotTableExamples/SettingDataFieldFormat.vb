@@ -30,7 +30,7 @@ Namespace PivotTableExamples
             pivotField.DataDisplayFormat = Aspose.Cells.Pivot.PivotFieldDataDisplayFormat.PercentageOf
 
             ' Setting the base field.
-            pivotField.BaseField = 1
+            pivotField.BaseFieldIndex = 1
 
             ' Setting the base item.
             pivotField.BaseItemPosition = Aspose.Cells.Pivot.PivotItemPosition.Next

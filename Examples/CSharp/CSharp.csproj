@@ -7,8 +7,8 @@
     <ProjectGuid>{B30E8542-08BA-45AB-8C96-A438C17E26C8}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CSharp</RootNamespace>
-    <AssemblyName>CSharp</AssemblyName>
+    <RootNamespace>Aspose.Cells.Examples.CSharp</RootNamespace>
+    <AssemblyName>Aspose.Cells.Examples.CSharp</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -33,12 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>CSharp.RunExamples</StartupObject>
+    <StartupObject>Aspose.Cells.Examples.CSharp.RunExamples</StartupObject>
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Aspose.Cells">
-      <HintPath>..\packages\Aspose.Cells.8.8.1\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=8.8.2.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Aspose.Cells.8.8.2\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

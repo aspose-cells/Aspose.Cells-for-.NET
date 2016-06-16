@@ -20,8 +20,8 @@ Namespace Files.Handling
             ' Specify the sheet(s) in the template file to be loaded
             dataOption.SheetNames = New String() {"Sheet2"}
             dataOption.ImportFormula = True
-            ' Only data should be loaded.
-            loadOptions7.LoadDataOnly = True
+            ' Only data and formatting should be loaded.
+            loadOptions7.LoadDataAndFormatting = True
             ' Specify the LoadDataOption
             loadOptions7.LoadDataOptions = dataOption
 

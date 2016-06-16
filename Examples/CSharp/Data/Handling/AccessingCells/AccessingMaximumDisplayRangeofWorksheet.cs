@@ -4,7 +4,7 @@ using Aspose.Cells;
 using System;
 using System.Diagnostics;
 
-namespace CSharp.Data.Handling.AccessingCells
+namespace Aspose.Cells.Examples.CSharp.Data.Handling.AccessingCells
 {
     public class AccessingMaximumDisplayRangeofWorksheet
     {

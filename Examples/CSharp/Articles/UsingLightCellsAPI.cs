@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Text;
 using Aspose.Cells;
 
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     public class UsingLightCellsAPI
     {

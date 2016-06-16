@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace CSharp.Formatting.FormatRowsColumns
+namespace Aspose.Cells.Examples.CSharp.Formatting.FormatRowsColumns
 {
     public class FormattingARow
     {
@@ -24,11 +24,8 @@ namespace CSharp.Formatting.FormatRowsColumns
             // Obtaining the reference of the first (default) worksheet by passing its sheet index
             Worksheet worksheet = workbook.Worksheets[0];
 
-            // Adding a new Style to the styles collection of the Excel object
-            int i = workbook.Styles.Add();
-
-            // Accessing the newly added Style to the Excel object
-            Style style = workbook.Styles[i];
+            // Adding a new Style to the styles
+            Style style = workbook.CreateStyle();
 
             // Setting the vertical alignment of the text in the "A1" cell
             style.VerticalAlignment = TextAlignmentType.Center;

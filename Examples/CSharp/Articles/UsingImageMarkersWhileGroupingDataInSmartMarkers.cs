@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using Aspose.Cells;
 using System.Collections;
 
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     // ExStart:UsingImageMarkersWhileGroupingDataInSmartMarkers
     public class UsingImageMarkersWhileGroupingDataInSmartMarkers

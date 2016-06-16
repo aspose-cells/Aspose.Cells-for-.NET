@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Articles.DeleteBlankRowsColumns
+namespace Aspose.Cells.Examples.CSharp.Articles.DeleteBlankRowsColumns
 {
     public class DeletingBlankRows
     {

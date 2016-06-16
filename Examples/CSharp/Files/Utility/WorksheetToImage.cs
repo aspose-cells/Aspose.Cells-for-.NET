@@ -4,7 +4,7 @@ using System.Drawing;
 using Aspose.Cells;
 using Aspose.Cells.Rendering;
 
-namespace CSharp.Files.Utility
+namespace Aspose.Cells.Examples.CSharp.Files.Utility
 {
     public class WorksheetToImage
     {

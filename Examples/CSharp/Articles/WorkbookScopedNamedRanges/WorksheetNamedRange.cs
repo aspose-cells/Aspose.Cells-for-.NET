@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Articles.WorkbookScopedNamedRanges
+namespace Aspose.Cells.Examples.CSharp.Articles.WorkbookScopedNamedRanges
 {
     public class WorksheetNamedRange
     {

@@ -2,7 +2,7 @@
 using Aspose.Cells.Vba;
 using Aspose.Cells;
 
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     class AddLibraryReferenceToVbaProject
     {

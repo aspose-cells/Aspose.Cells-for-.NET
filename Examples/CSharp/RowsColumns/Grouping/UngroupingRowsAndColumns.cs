@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.RowsColumns.Grouping
+namespace Aspose.Cells.Examples.CSharp.RowsColumns.Grouping
 {
     public class UngroupingRowsAndColumns
     {

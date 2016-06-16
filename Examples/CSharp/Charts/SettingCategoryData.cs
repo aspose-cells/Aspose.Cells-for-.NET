@@ -1,6 +1,6 @@
 using System.IO;
 using Aspose.Cells;
-namespace CSharp.Charts
+namespace Aspose.Cells.Examples.CSharp.Charts
 {
     public class SettingCategoryData
     {

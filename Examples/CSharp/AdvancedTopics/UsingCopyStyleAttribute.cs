@@ -2,7 +2,7 @@ using System.IO;
 using Aspose.Cells;
 using System.Data;
 using System;
-namespace CSharp.AdvancedTopics
+namespace Aspose.Cells.Examples.CSharp.AdvancedTopics
 {
     public class UsingCopyStyleAttribute
     {

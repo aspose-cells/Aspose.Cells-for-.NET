@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace CSharp.Data.AddOn.NamedRanges
+namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
 {
     public class FormatRanges1
     {
@@ -34,7 +34,7 @@ namespace CSharp.Data.AddOn.NamedRanges
             Style stl;
 
             // Create/add the style object.
-            stl = workbook.Styles[workbook.Styles.Add() | workbook.Styles.Add()];
+            stl = workbook.CreateStyle();
 
             // Specify some Font settings.
             stl.Font.Name = "Arial";

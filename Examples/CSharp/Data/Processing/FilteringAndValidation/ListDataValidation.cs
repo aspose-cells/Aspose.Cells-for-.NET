@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Data.Processing.FilteringAndValidation
+namespace Aspose.Cells.Examples.CSharp.Data.Processing.FilteringAndValidation
 {
     public class ListDataValidation
     {
@@ -42,8 +42,15 @@ namespace CSharp.Data.Processing.FilteringAndValidation
             // Get the validations collection.
             ValidationCollection validations = worksheet1.Validations;
 
+            // Create Cell Area
+            CellArea ca = new CellArea();
+            ca.StartRow = 0;
+            ca.EndRow = 0;
+            ca.StartColumn = 0;
+            ca.EndColumn = 0;
+
             // Create a new validation to the validations list.
-            Validation validation = validations[validations.Add()];
+            Validation validation = validations[validations.Add(ca)];
 
             // Set the validation type.
             validation.Type = Aspose.Cells.ValidationType.List;

@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System;
 
-namespace CSharp.Data.Handling.AccessingCells
+namespace Aspose.Cells.Examples.CSharp.Data.Handling.AccessingCells
 {
     public class UsingCellIndexInCellsCollection
     {
@@ -20,7 +20,7 @@ namespace CSharp.Data.Handling.AccessingCells
             Worksheet worksheet = workbook.Worksheets[0];
 
             // Accessing a cell using its name
-            Cell cell = worksheet.Cells[0];
+            Cell cell = worksheet.Cells.GetCell(1, 1);
 
             string value = cell.Value.ToString();
 

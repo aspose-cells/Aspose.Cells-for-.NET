@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Files.Utility
+namespace Aspose.Cells.Examples.CSharp.Files.Utility
 {
     public class Excel2PDFConversion
     {

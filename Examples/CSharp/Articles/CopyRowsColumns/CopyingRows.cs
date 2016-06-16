@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Articles.CopyRowsColumns
+namespace Aspose.Cells.Examples.CSharp.Articles.CopyRowsColumns
 {
     public class CopyingRows
     {

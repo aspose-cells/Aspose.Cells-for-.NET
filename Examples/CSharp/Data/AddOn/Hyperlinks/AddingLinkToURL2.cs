@@ -2,7 +2,7 @@ using System.IO;
 using System.Drawing;
 using Aspose.Cells;
 
-namespace CSharp.Data.AddOn.Hyperlinks
+namespace Aspose.Cells.Examples.CSharp.Data.AddOn.Hyperlinks
 {
     public class AddingLinkToURL2
     {

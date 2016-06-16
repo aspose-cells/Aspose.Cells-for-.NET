@@ -31,7 +31,7 @@ Namespace Articles
 
             ' Create a style object.
             Dim style As Style
-            style = workbook.Styles(workbook.Styles.Add())
+            style = workbook.CreateStyle()
             ' Specify the font attribute.
             style.Font.Name = "Calibri"
             ' Specify the shading color.

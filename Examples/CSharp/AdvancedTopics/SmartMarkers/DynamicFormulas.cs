@@ -1,7 +1,7 @@
 using System.IO;
 using System;
 using Aspose.Cells;
-namespace CSharp.AdvancedTopics.SmartMarkers
+namespace Aspose.Cells.Examples.CSharp.AdvancedTopics.SmartMarkers
 {
     public class DynamicFormulas
     {

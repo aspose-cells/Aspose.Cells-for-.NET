@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.DrawingObjects.Pictures
+namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Pictures
 {
     public class AddingPictures
     {

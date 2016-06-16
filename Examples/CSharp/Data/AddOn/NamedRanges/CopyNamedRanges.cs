@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace CSharp.Data.AddOn.NamedRanges
+namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
 {
     public class CopyNamedRanges
     {

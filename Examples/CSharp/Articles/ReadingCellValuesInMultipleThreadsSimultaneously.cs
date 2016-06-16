@@ -4,7 +4,7 @@ using Aspose.Cells;
 using System;
 using System.Threading;
 
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     public class ReadingCellValuesInMultipleThreadsSimultaneously
     {

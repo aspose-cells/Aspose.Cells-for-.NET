@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.RowsColumns.HeightAndWidth
+namespace Aspose.Cells.Examples.CSharp.RowsColumns.HeightAndWidth
 {
     public class SettingHeightAllRows
     {

@@ -33,8 +33,15 @@ Namespace Data.Processing.FilteringAndValidation
             ' Get the validations collection.
             Dim validations As ValidationCollection = workbook.Worksheets(0).Validations
 
+            ' Create Cell Area
+            Dim ca As CellArea = New CellArea()
+            ca.StartRow = 0
+            ca.EndRow = 0
+            ca.StartColumn = 0
+            ca.EndColumn = 0
+
             ' Add a new validation.
-            Dim validation As Validation = validations(validations.Add())
+            Dim validation As Validation = validations(validations.Add(ca))
 
             ' Set the data validation type.
             validation.Type = ValidationType.Time

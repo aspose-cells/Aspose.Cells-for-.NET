@@ -4,7 +4,7 @@ using Aspose.Cells;
 using System.Drawing;
 using System.Collections;
 
-namespace CSharp.Data.AddOn.NamedRanges
+namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
 {
     public class UnionOfRanges
     {
@@ -22,7 +22,7 @@ namespace CSharp.Data.AddOn.NamedRanges
             Range[] ranges = workbook.Worksheets.GetNamedRanges();
             
             // Create a style object.
-            Style style = workbook.Styles[workbook.Styles.Add()];
+            Style style = workbook.CreateStyle();
             
             // Set the shading color with solid pattern type.
             style.ForegroundColor = Color.Yellow;

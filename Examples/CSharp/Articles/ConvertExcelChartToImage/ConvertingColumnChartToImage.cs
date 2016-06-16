@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Articles.ConvertExcelChartToImage
+namespace Aspose.Cells.Examples.CSharp.Articles.ConvertExcelChartToImage
 {
     public class ConvertingColumnChartToImage
     {

@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.SmartMarkers
+namespace Aspose.Cells.Examples.CSharp.SmartMarkers
 {
     public class UsingAnonymousTypes
     {

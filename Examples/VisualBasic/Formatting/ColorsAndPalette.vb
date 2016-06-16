@@ -36,7 +36,7 @@ Namespace Formatting
             cell.PutValue("Hello Aspose!")
 
             ' Defining new Style object
-            Dim styleObject As Style = workbook.Styles(workbook.Styles.Add())
+            Dim styleObject As Style = workbook.CreateStyle()
             ' Setting the Orchid (custom) color to the font
             styleObject.Font.Color = Color.Orchid
 

@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace CSharp.RowsColumns
+namespace Aspose.Cells.Examples.CSharp.RowsColumns
 {
     public class AutofitColumn
     {

@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Data.Handling
+namespace Aspose.Cells.Examples.CSharp.Data.Handling
 {
     public class DataSorting
     {

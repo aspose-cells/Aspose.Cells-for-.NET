@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Formatting.ApproachesToFormatData
+namespace Aspose.Cells.Examples.CSharp.Formatting.ApproachesToFormatData
 {
     public class UsingExcelPredefinedStyles
     {
@@ -20,8 +20,8 @@ namespace CSharp.Formatting.ApproachesToFormatData
             // Instantiate a new Workbook.
             Workbook workbook = new Workbook();
 
-            // Create a style object based on a predefined Excel 2007 style.
-            Style style = workbook.Styles.CreateBuiltinStyle(BuiltinStyleType.Accent1);
+            // Create a style object .
+            Style style = workbook.CreateStyle();
 
             // Input a value to A1 cell.
             workbook.Worksheets[0].Cells["A1"].PutValue("Test");

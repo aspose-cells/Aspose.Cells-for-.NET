@@ -4,7 +4,7 @@ using System;
 using System.Drawing;
 using System.Collections.Generic;
 
-namespace CSharp.SmartMarkers
+namespace Aspose.Cells.Examples.CSharp.SmartMarkers
 {
     public class UsingGenericList
     {

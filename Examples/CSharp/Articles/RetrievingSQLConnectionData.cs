@@ -4,7 +4,7 @@ using Aspose.Cells;
 using Aspose.Cells.ExternalConnections;
 using System;
 
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     public class RetrievingSQLConnectionData
     {

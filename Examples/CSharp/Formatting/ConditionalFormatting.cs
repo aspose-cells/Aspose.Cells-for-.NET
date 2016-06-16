@@ -4,7 +4,7 @@ using Aspose.Cells;
 using System.Drawing;
 using System;
 
-namespace CSharp.Formatting
+namespace Aspose.Cells.Examples.CSharp.Formatting
 {
     public class ConditionalFormatting
     {

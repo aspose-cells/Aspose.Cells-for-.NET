@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using Aspose.Cells.Charts;
 
-namespace CSharp.Charts.SettingChartsAppearance
+namespace Aspose.Cells.Examples.CSharp.Charts.SettingChartsAppearance
 {
     public class ApplyingThemes
     {

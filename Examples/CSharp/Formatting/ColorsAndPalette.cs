@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace CSharp.Formatting
+namespace Aspose.Cells.Examples.CSharp.Formatting
 {
     public class ColorsAndPalette
     {
@@ -37,7 +37,7 @@ namespace CSharp.Formatting
             cell.PutValue("Hello Aspose!");
 
             // Defining new Style object
-            Style styleObject = workbook.Styles[workbook.Styles.Add()];
+            Style styleObject = workbook.CreateStyle();
             // Setting the Orchid (custom) color to the font
             styleObject.Font.Color = Color.Orchid;
 

@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Articles.ModifyExistingStyle
+namespace Aspose.Cells.Examples.CSharp.Articles.ModifyExistingStyle
 {
     public class ModifyThroughStyleObject
     {
@@ -15,7 +15,7 @@ namespace CSharp.Articles.ModifyExistingStyle
             Workbook workbook = new Workbook();
 
             // Create a new style object.
-            Style style = workbook.Styles[workbook.Styles.Add()];
+            Style style = workbook.CreateStyle();
 
             // Set the number format.
             style.Number = 14;

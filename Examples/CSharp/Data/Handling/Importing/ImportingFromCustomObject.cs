@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System.Collections.Generic;
 
-namespace CSharp.Data.Handling.Importing
+namespace Aspose.Cells.Examples.CSharp.Data.Handling.Importing
 {
     public class ImportingFromCustomObject
     {

@@ -4,7 +4,7 @@ using Aspose.Cells;
 using Aspose.Cells.Rendering;
 using System.Drawing.Imaging;
 
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     public class SetPixelFormatRenderedImage
     {

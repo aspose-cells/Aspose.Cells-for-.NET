@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Data.AddOn.Merging
+namespace Aspose.Cells.Examples.CSharp.Data.AddOn.Merging
 {
     public class MergingCellsInWorksheet
     {

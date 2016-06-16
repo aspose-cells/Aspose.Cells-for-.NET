@@ -1,6 +1,6 @@
 using System;
 
-namespace CSharp.CellsHelperClass
+namespace Aspose.Cells.Examples.CSharp.CellsHelperClass
 {
     public class IndexToName
     {

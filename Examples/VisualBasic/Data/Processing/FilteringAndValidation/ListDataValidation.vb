@@ -41,8 +41,15 @@ Namespace Data.Processing.FilteringAndValidation
             ' Get the validations collection.
             Dim validations As ValidationCollection = worksheet1.Validations
 
+            ' Create Cell Area
+            Dim ca As CellArea = New CellArea()
+            ca.StartRow = 0
+            ca.EndRow = 0
+            ca.StartColumn = 0
+            ca.EndColumn = 0
+
             ' Create a new validation to the validations list.
-            Dim validation As Validation = validations(validations.Add())
+            Dim validation As Validation = validations(validations.Add(ca))
 
             ' Set the validation type.
             validation.Type = Global.Aspose.Cells.ValidationType.List

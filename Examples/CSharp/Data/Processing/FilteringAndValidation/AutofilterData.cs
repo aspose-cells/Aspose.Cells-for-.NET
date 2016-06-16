@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Data.Processing.FilteringAndValidation
+namespace Aspose.Cells.Examples.CSharp.Data.Processing.FilteringAndValidation
 {
     public class AutofilterData
     {

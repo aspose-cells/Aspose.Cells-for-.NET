@@ -1,68 +1,69 @@
 ﻿Imports System.IO
-Imports Articles
-Imports Articles.ApplyConditionalFormatting
-Imports Articles.ConvertExcelChartToImage
-Imports Articles.ConvertingWorksheetToImage
-Imports Articles.CopyRowsColumns
-Imports Articles.CopyShapesBetweenWorksheets
-Imports Articles.CreatePivotTablesPivotCharts
-Imports Articles.DeleteBlankRowsColumns
-Imports Articles.LineBreakTextWrapping
-Imports Articles.ModifyExistingStyle
-Imports Articles.OptimizingMemoryUsage
-Imports Articles.WorkbookScopedNamedRanges
-Imports CellsHelperClass
-Imports Charts
-Imports Charts.InsertingControlsintoCharts
-Imports Charts.ManipulateChart
-Imports Charts.SettingChartsAppearance
-Imports Data.AddOn.Hyperlinks
-Imports Data.AddOn.Merging
-Imports Data.AddOn.NamedRanges
-Imports Data.Handling
-Imports Data.Handling.AccessingCells
-Imports Data.Handling.Find
-Imports Data.Handling.Importing
-Imports Data.Processing
-Imports Data.Processing.FilteringAndValidation
-Imports DrawingObjects
-Imports DrawingObjects.Comments
-Imports DrawingObjects.Controls
-Imports DrawingObjects.OLE
-Imports DrawingObjects.Pictures
-Imports DrawingObjects.Pictures.PositioningPictures
-Imports Files.Handling
-Imports Files.Utility
-Imports Formatting
-Imports Formatting.ApproachesToFormatData
-Imports Formatting.Borders
-Imports Formatting.ConfiguringAlignmentSettings
-Imports Formatting.DealingWithFontSettings
-Imports Formatting.Excel2007Themes
-Imports Formatting.FormatRowsColumns
-Imports Formatting.SettingDisplayFormats
-Imports Formulas
-Imports PivotTableExamples
-Imports RowsColumns
-Imports RowsColumns.Grouping
-Imports RowsColumns.HeightAndWidth
-Imports RowsColumns.Hiding
-Imports RowsColumns.InsertingAndDeleting
-Imports SmartMarkers
-Imports Tables
-Imports Worksheets.Display
-Imports Worksheets.Management
-Imports Worksheets.Security
-Imports Worksheets.Security.Protecting
-Imports Worksheets.Security.Unprotect
+Imports Aspose.Cells.Examples.VisualBasic.Articles
+Imports Aspose.Cells.Examples.VisualBasic.Articles.ApplyConditionalFormatting
+Imports Aspose.Cells.Examples.VisualBasic.Articles.ConvertExcelChartToImage
+Imports Aspose.Cells.Examples.VisualBasic.Articles.ConvertingWorksheetToImage
+Imports Aspose.Cells.Examples.VisualBasic.Articles.CopyRowsColumns
+Imports Aspose.Cells.Examples.VisualBasic.Articles.CopyShapesBetweenWorksheets
+Imports Aspose.Cells.Examples.VisualBasic.Articles.CreatePivotTablesPivotCharts
+Imports Aspose.Cells.Examples.VisualBasic.Articles.DeleteBlankRowsColumns
+Imports Aspose.Cells.Examples.VisualBasic.Articles.LineBreakTextWrapping
+Imports Aspose.Cells.Examples.VisualBasic.Articles.ModifyExistingStyle
+Imports Aspose.Cells.Examples.VisualBasic.Articles.OptimizingMemoryUsage
+Imports Aspose.Cells.Examples.VisualBasic.Articles.WorkbookScopedNamedRanges
+Imports Aspose.Cells.Examples.VisualBasic.CellsHelperClass
+Imports Aspose.Cells.Examples.VisualBasic.Charts
+Imports Aspose.Cells.Examples.VisualBasic.Charts.InsertingControlsintoCharts
+Imports Aspose.Cells.Examples.VisualBasic.Charts.ManipulateChart
+Imports Aspose.Cells.Examples.VisualBasic.Charts.SettingChartsAppearance
+Imports Aspose.Cells.Examples.VisualBasic.Data.AddOn.Hyperlinks
+Imports Aspose.Cells.Examples.VisualBasic.Data.AddOn.Merging
+Imports Aspose.Cells.Examples.VisualBasic.Data.AddOn.NamedRanges
+Imports Aspose.Cells.Examples.VisualBasic.Data.Handling
+Imports Aspose.Cells.Examples.VisualBasic.Data.Handling.AccessingCells
+Imports Aspose.Cells.Examples.VisualBasic.Data.Handling.Find
+Imports Aspose.Cells.Examples.VisualBasic.Data.Handling.Importing
+Imports Aspose.Cells.Examples.VisualBasic.Data.Processing
+Imports Aspose.Cells.Examples.VisualBasic.Data.Processing.FilteringAndValidation
+Imports Aspose.Cells.Examples.VisualBasic.DrawingObjects
+Imports Aspose.Cells.Examples.VisualBasic.DrawingObjects.Comments
+Imports Aspose.Cells.Examples.VisualBasic.DrawingObjects.Controls
+Imports Aspose.Cells.Examples.VisualBasic.DrawingObjects.OLE
+Imports Aspose.Cells.Examples.VisualBasic.DrawingObjects.Pictures
+Imports Aspose.Cells.Examples.VisualBasic.DrawingObjects.Pictures.PositioningPictures
+Imports Aspose.Cells.Examples.VisualBasic.Files.Handling
+Imports Aspose.Cells.Examples.VisualBasic.Files.Utility
+Imports Aspose.Cells.Examples.VisualBasic.Formatting
+Imports Aspose.Cells.Examples.VisualBasic.Formatting.ApproachesToFormatData
+Imports Aspose.Cells.Examples.VisualBasic.Formatting.Borders
+Imports Aspose.Cells.Examples.VisualBasic.Formatting.ConfiguringAlignmentSettings
+Imports Aspose.Cells.Examples.VisualBasic.Formatting.DealingWithFontSettings
+Imports Aspose.Cells.Examples.VisualBasic.Formatting.Excel2007Themes
+Imports Aspose.Cells.Examples.VisualBasic.Formatting.FormatRowsColumns
+Imports Aspose.Cells.Examples.VisualBasic.Formatting.SettingDisplayFormats
+Imports Aspose.Cells.Examples.VisualBasic.Formulas
+Imports Aspose.Cells.Examples.VisualBasic.PivotTableExamples
+Imports Aspose.Cells.Examples.VisualBasic.RowsColumns
+Imports Aspose.Cells.Examples.VisualBasic.RowsColumns.Grouping
+Imports Aspose.Cells.Examples.VisualBasic.RowsColumns.HeightAndWidth
+Imports Aspose.Cells.Examples.VisualBasic.RowsColumns.Hiding
+Imports Aspose.Cells.Examples.VisualBasic.RowsColumns.InsertingAndDeleting
+Imports Aspose.Cells.Examples.VisualBasic.SmartMarkers
+Imports Aspose.Cells.Examples.VisualBasic.Tables
+Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Display
+Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Management
+Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Security
+Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Security.Protecting
+Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Security.Unprotect
 
 
 Friend Class RunExamples
     <STAThread()> _
     Public Shared Sub Main()
-        Console.WriteLine("Open RunExamples.vb. In Main() method, Un-comment the example that you want to run")
+        Console.WriteLine("Open RunExamples.vb. " & vbLf & "In Main() method uncomment the example that you want to run.")
         Console.WriteLine("=====================================================")
-        ' Un-comment the one you want to try out        
+
+        ' Uncomment the one you want to try out     
 
 
         '' =====================================================

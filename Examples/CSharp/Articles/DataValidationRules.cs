@@ -1,9 +1,7 @@
 using System.IO;
 using System;
 using Aspose.Cells;
-using System;
-
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     public class DataValidationRules
     {

@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.DrawingObjects.OLE
+namespace Aspose.Cells.Examples.CSharp.DrawingObjects.OLE
 {
     public class ExtractingOLEObjects
     {
@@ -29,21 +29,21 @@ namespace CSharp.DrawingObjects.OLE
                 string fileName = dataDir + "ole_" + i + ".";
 
                 // Specify each file format based on the oleobject format type.
-                switch (ole.FileType)
+                switch (ole.FileFormatType)
                 {
-                    case Aspose.Cells.Drawing.OleFileType.Doc:
+                    case FileFormatType.Doc:
                         fileName += "doc";
                         break;
-                    case Aspose.Cells.Drawing.OleFileType.Xls:
-                        fileName += "Xls";
+                    case FileFormatType.Xlsx:
+                        fileName += "Xlsx";
                         break;
-                    case Aspose.Cells.Drawing.OleFileType.Ppt:
+                    case FileFormatType.Ppt:
                         fileName += "Ppt";
                         break;
-                    case Aspose.Cells.Drawing.OleFileType.Pdf:
+                    case FileFormatType.Pdf:
                         fileName += "Pdf";
                         break;
-                    case Aspose.Cells.Drawing.OleFileType.Unknown:
+                    case FileFormatType.Unknown:
                         fileName += "Jpg";
                         break;
                     default:
@@ -52,13 +52,13 @@ namespace CSharp.DrawingObjects.OLE
                 }
 
                 // Save the oleobject as a new excel file if the object type is xls.
-                if (ole.FileType == Aspose.Cells.Drawing.OleFileType.Xls)
+                if (ole.FileFormatType == FileFormatType.Xlsx)
                 {
                     MemoryStream ms = new MemoryStream();
                     ms.Write(ole.ObjectData, 0, ole.ObjectData.Length);
                     Workbook oleBook = new Workbook(ms);
                     oleBook.Settings.IsHidden = false;
-                    oleBook.Save(dataDir + "Excel_File" + i + ".out.xls");
+                    oleBook.Save(dataDir + "Excel_File" + i + ".out.xlsx");
                 }
 
                 // Create the files based on the oleobject format types.

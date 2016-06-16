@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System;
 
-namespace CSharp.SmartMarkers
+namespace Aspose.Cells.Examples.CSharp.SmartMarkers
 {
     public class UsingHTMLProperty
     {

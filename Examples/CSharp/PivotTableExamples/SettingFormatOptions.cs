@@ -4,7 +4,7 @@ using Aspose.Cells;
 using System.Drawing;
 using Aspose.Cells.Pivot;
 
-namespace CSharp.PivotTableExamples
+namespace Aspose.Cells.Examples.CSharp.PivotTableExamples
 {
     public class SettingFormatOptions
     {

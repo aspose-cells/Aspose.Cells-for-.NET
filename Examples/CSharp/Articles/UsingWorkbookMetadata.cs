@@ -2,7 +2,7 @@
 using Aspose.Cells;
 using Aspose.Cells.Metadata;
 
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     class UsingWorkbookMetadata
     {

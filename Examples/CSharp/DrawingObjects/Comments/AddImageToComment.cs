@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace CSharp.DrawingObjects.Comments
+namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Comments
 {
     public class AddImageToComment
     {

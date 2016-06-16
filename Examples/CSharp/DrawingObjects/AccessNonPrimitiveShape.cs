@@ -3,7 +3,7 @@ using Aspose.Cells;
 using Aspose.Cells.Drawing;
 using System.Collections; 
 
-namespace CSharp.DrawingObjects
+namespace Aspose.Cells.Examples.CSharp.DrawingObjects
 {
     public class AccessNonPrimitiveShape
     {

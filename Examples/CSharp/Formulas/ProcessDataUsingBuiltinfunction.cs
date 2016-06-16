@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Formulas
+namespace Aspose.Cells.Examples.CSharp.Formulas
 {
     public class ProcessDataUsingBuiltinfunction
     {

@@ -2,7 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace CSharp.Worksheets.Security.Unprotect
+namespace Aspose.Cells.Examples.CSharp.Worksheets.Security.Unprotect
 {
     public class UnprotectSimpleSheet
     {

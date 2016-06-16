@@ -26,28 +26,28 @@ Namespace DrawingObjects.OLE
                 Dim fileName As String = dataDir & "ole_" & i & "."
 
                 ' Specify each file format based on the oleobject format type.
-                Select Case ole.FileType
-                    Case Global.Aspose.Cells.Drawing.OleFileType.Doc
+                Select Case ole.FileFormatType
+                    Case FileFormatType.Doc
                         fileName &= "doc"
-                    Case Global.Aspose.Cells.Drawing.OleFileType.Xls
+                    Case FileFormatType.Xlsx
                         fileName &= "Xls"
-                    Case Global.Aspose.Cells.Drawing.OleFileType.Ppt
+                    Case FileFormatType.Ppt
                         fileName &= "Ppt"
-                    Case Global.Aspose.Cells.Drawing.OleFileType.Pdf
+                    Case FileFormatType.Pdf
                         fileName &= "Pdf"
-                    Case Global.Aspose.Cells.Drawing.OleFileType.Unknown
+                    Case FileFormatType.Unknown
                         fileName &= "Jpg"
                     Case Else
                         '........
                 End Select
 
                 ' Save the oleobject as a new excel file if the object type is xls.
-                If ole.FileType = Global.Aspose.Cells.Drawing.OleFileType.Xls Then
+                If ole.FileFormatType = FileFormatType.Xlsx Then
                     Dim ms As New MemoryStream()
                     ms.Write(ole.ObjectData, 0, ole.ObjectData.Length)
                     Dim oleBook As New Workbook(ms)
                     oleBook.Settings.IsHidden = False
-                    oleBook.Save(dataDir & "Excel_File" & i & ".output.xls")
+                    oleBook.Save(dataDir & "Excel_File" & i & ".output.xlsx")
 
                     ' Create the files based on the oleobject format types.
                 Else

@@ -3,7 +3,7 @@ using System;
 using Aspose.Cells;
 using Aspose.Cells.Drawing;
 
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     public class InsertPictureCellReference
     {

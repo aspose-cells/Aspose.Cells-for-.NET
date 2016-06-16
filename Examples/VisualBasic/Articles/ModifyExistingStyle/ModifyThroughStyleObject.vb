@@ -13,7 +13,7 @@ Namespace Articles.ModifyExistingStyle
             Dim workbook As New Workbook()
 
             ' Create a new style object.
-            Dim style As Style = workbook.Styles(workbook.Styles.Add())
+            Dim style As Style = workbook.CreateStyle()
 
             ' Set the number format.
             style.Number = 14

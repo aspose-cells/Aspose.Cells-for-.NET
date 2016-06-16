@@ -2,7 +2,7 @@
 using Aspose.Cells;
 using Aspose.Cells.Charts;
 
-namespace CSharp.Files.Utility
+namespace Aspose.Cells.Examples.CSharp.Files.Utility
 {
     class SetPDFCreationTime
     {

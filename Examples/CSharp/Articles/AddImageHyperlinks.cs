@@ -2,7 +2,7 @@ using System.IO;
 using Aspose.Cells;
 using Aspose.Cells.Drawing;
 using System;
-namespace CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     public class AddImageHyperlinks
     {

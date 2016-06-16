@@ -4,7 +4,7 @@ using Aspose.Cells;
 using Aspose.Cells.Drawing;
 using System.Drawing;
 
-namespace CSharp.DrawingObjects.Controls
+namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Controls
 {
     public class AddingRectangleControl
     {
