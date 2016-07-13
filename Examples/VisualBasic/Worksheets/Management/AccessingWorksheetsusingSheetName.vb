@@ -23,7 +23,6 @@ Namespace Worksheets.Management
             Dim worksheet As Worksheet = workbook.Worksheets("Sheet1")
             Dim cell As Cell = worksheet.Cells("A1")
             Console.WriteLine(cell.Value)
-
             ' ExEnd:1
         End Sub
     End Class

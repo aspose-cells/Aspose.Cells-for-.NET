@@ -26,9 +26,6 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets.Management
             Worksheet worksheet = workbook.Worksheets["Sheet1"];
             Cell cell = worksheet.Cells["A1"];
             Console.WriteLine(cell.Value);
-            // Saving the Excel file
-           // workbook.Save(dataDir + "output.xlsx");
-
             // ExEnd:1
         }
     }
