@@ -29,5 +29,22 @@ namespace Aspose.Cells.Examples.CSharp.Files.Utility
             workbook.Save(dataDir + "encryptedBook1.out.xls");
             // ExEnd:1
         }
+        public static void SpecifyPasswordToModifyOption()
+        {
+            // ExStart:SpecifyPasswordToModifyOption
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+            // Instantiate a Workbook object.
+            // Open an excel file.
+            Workbook workbook = new Workbook(dataDir + "Book1.xls");
+           
+            // Set the password for modification.
+            workbook.Settings.WriteProtection.Password = "1234";           
+
+            // Save the excel file.
+            workbook.Save(dataDir + "SpecifyPasswordToModifyOption.out.xls");
+            // ExEnd:SpecifyPasswordToModifyOption
+        }
     }
 }
