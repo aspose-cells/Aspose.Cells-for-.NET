@@ -19,8 +19,8 @@ namespace Aspose.Cells.Examples.CSharp.Data.Handling.AccessingCells
             // Using the Sheet 1 in Workbook
             Worksheet worksheet = workbook.Worksheets[0];
 
-            // Accessing a cell using its name
-            Cell cell = worksheet.Cells.GetCell(1, 1);
+            // Accessing a cell using its row and column.
+            Cell cell = worksheet.Cells.GetCell(0, 0);
 
             string value = cell.Value.ToString();
 

@@ -15,8 +15,8 @@ Namespace Data.Handling.AccessingCells
             ' Using the Sheet 1 in Workbook
             Dim worksheet As Worksheet = workbook.Worksheets(0)
 
-            ' Accessing a cell using its name
-            Dim cell As Cell = worksheet.Cells.GetCell(1, 1)
+            ' Accessing a cell using its row and column
+            Dim cell As Cell = worksheet.Cells.GetCell(0, 0)
 
             Dim value As String = cell.Value.ToString()
 
