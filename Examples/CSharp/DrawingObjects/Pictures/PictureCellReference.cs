@@ -15,11 +15,6 @@ namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Pictures
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-                // Create directory if it is not already present.
-                bool IsExists = System.IO.Directory.Exists(dataDir);
-                if (!IsExists)
-                    System.IO.Directory.CreateDirectory(dataDir);
-
                 // Instantiate a new Workbook
                 Workbook workbook = new Workbook();
                 // Get the first worksheet's cells collection
@@ -33,7 +28,7 @@ namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Pictures
                 Picture pic = workbook.Worksheets[0].Shapes.AddPicture(0, 3, 10, 6, null);
 
                 // Specify the formula that refers to the source range of cells
-                // Pic.Formula = "A1:C10";
+                pic.Formula = "A1:C10";
 
                 // Update the shapes selected value in the worksheet
                 workbook.Worksheets[0].Shapes.UpdateSelectedValue();

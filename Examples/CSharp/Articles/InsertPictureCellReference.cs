@@ -10,9 +10,10 @@ namespace Aspose.Cells.Examples.CSharp.Articles
         public static void Run()
         {
 
-            // ExStart:1
+            
             try
             {
+                // ExStart:1
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
                 // Instantiate a new Workbook

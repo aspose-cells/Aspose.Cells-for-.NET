@@ -12,12 +12,6 @@ Namespace DrawingObjects.Pictures
                 ' The path to the documents directory.
                 Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-                ' Create directory if it is not already present.
-                Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)
-                If (Not IsExists) Then
-                    System.IO.Directory.CreateDirectory(dataDir)
-                End If
-
                 ' Instantiate a new Workbook
                 Dim workbook As New Workbook()
                 ' Get the first worksheet' S cells collection
@@ -31,13 +25,13 @@ Namespace DrawingObjects.Pictures
                 Dim pic As Picture = workbook.Worksheets(0).Shapes.AddPicture(0, 3, 10, 6, Nothing)
 
                 ' Specify the formula that refers to the source range of cells
-                ' Pic.Formula = "A1:C10";
+                pic.Formula = "A1:C10"
 
                 ' Update the shapes selected value in the worksheet
                 workbook.Worksheets(0).Shapes.UpdateSelectedValue()
 
                 ' Save the Excel file.
-                workbook.Save(dataDir & "output.xls")
+                workbook.Save(dataDir & "output.out.xls")
                 ' ExEnd:1
             Catch e As Exception
                 Console.WriteLine(e.Message)

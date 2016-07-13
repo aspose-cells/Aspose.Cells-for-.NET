@@ -28,7 +28,7 @@ Namespace Articles
                 workbook.Worksheets(0).Shapes.UpdateSelectedValue()
 
                 ' Save the Excel file.
-                workbook.Save(dataDir & "output.xlsx")
+                workbook.Save(dataDir & "output.out.xlsx")
                 ' ExEnd:1
             Catch ex As Exception
                 Console.WriteLine(ex.Message)
