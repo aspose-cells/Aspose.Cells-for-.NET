@@ -663,10 +663,13 @@ Friend Class RunExamples
 
         '''' Value
         '''' =====================================================
-        CopyWithinWorkbook.Run()
+        'CopyWithinWorkbook.Run()
         'CopyWorksheetsBetweenWorkbooks.Run()
         'CopyWorksheetFromWorkbookToOther.Run()
         'MoveWorksheet.Run()
+        'AddingPageBreaks.Run()
+        'ClearAllPageBreaks.Run()
+        RemoveSpecificPageBreak.Run()
 
         '''''' Protecting
         '''''' =====================================================

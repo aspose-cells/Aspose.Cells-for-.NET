@@ -674,6 +674,9 @@ namespace Aspose.Cells.Examples.CSharp
             //CopyWorksheetsBetweenWorkbooks.Run();
             //CopyWorksheetFromWorkbookToOther.Run();
             //MoveWorksheet.Run();
+            //AddingPageBreaks.Run();
+            //ClearAllPageBreaks.Run();
+            RemoveSpecificPageBreak.Run();
 
             ////// Protecting
             ////// =====================================================

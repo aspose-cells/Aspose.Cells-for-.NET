@@ -485,10 +485,13 @@
     <Compile Include="Worksheets\Security\Unprotect\UnprotectingSimplyProtectedWorksheet.vb" />
     <Compile Include="Worksheets\Security\Unprotect\UnprotectProtectSheet.vb" />
     <Compile Include="Worksheets\Security\Unprotect\UnprotectSimpleSheet.vb" />
+    <Compile Include="Worksheets\Value\AddingPageBreaks.vb" />
+    <Compile Include="Worksheets\Value\ClearAllPageBreaks.vb" />
     <Compile Include="Worksheets\Value\CopyWithinWorkbook.vb" />
     <Compile Include="Worksheets\Value\CopyWorksheetFromWorkbookToOther.vb" />
     <Compile Include="Worksheets\Value\CopyWorksheetsBetweenWorkbooks.vb" />
     <Compile Include="Worksheets\Value\MoveWorksheet.vb" />
+    <Compile Include="Worksheets\Value\RemoveSpecificPageBreak.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
