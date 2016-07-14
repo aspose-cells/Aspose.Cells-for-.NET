@@ -458,6 +458,10 @@
     <Compile Include="Worksheets\Security\Unprotect\UnprotectingSimplyProtectedWorksheet.cs" />
     <Compile Include="Worksheets\Security\Unprotect\UnprotectProtectSheet.cs" />
     <Compile Include="Worksheets\Security\Unprotect\UnprotectSimpleSheet.cs" />
+    <Compile Include="Worksheets\Value\MoveWorksheet.cs" />
+    <Compile Include="Worksheets\Value\CopyWorksheetFromWorkbookToOther.cs" />
+    <Compile Include="Worksheets\Value\CopyWorksheetsBetweenWorkbooks.cs" />
+    <Compile Include="Worksheets\Value\CopyWithinWorkbook.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

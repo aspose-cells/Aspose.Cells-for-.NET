@@ -53,6 +53,7 @@ Imports Aspose.Cells.Examples.VisualBasic.Tables
 Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Display
 Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Management
 Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Security
+Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Value
 Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Security.Protecting
 Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Security.Unprotect
 
@@ -72,7 +73,7 @@ Friend Class RunExamples
         '' =====================================================
         '' =====================================================
 
-        AccessTextBoxName.Run()
+        'AccessTextBoxName.Run()
         'AddConditionalIconsSet.Run()
         'AddImageHyperlinks.Run()
         'AddingAnonymousCustomObject.Run()
@@ -660,6 +661,13 @@ Friend Class RunExamples
         'AdvancedProtectionSettingsUsingAsposeCells.Run()
         'LockCell.Run()
 
+        '''' Value
+        '''' =====================================================
+        CopyWithinWorkbook.Run()
+        'CopyWorksheetsBetweenWorkbooks.Run()
+        'CopyWorksheetFromWorkbookToOther.Run()
+        'MoveWorksheet.Run()
+
         '''''' Protecting
         '''''' =====================================================
         'AllowUserToEditRangesInWorksheet.Run()
@@ -684,6 +692,7 @@ Friend Class RunExamples
     End Sub
     Public Shared Function GetDataDir(t As Type) As String
         Dim c As String = t.FullName
+        c = c.Replace("Aspose.Cells.Examples.VisualBasic.", "")
         c = c.Replace("."c, Path.DirectorySeparatorChar)
         Dim p As String = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), "..", "..", "..", "Data", c))
         p += Path.DirectorySeparatorChar
@@ -694,7 +703,9 @@ Friend Class RunExamples
             Directory.CreateDirectory(p)
             Console.WriteLine("Created Data Dir {0}", p)
         End If
+
         Return p
     End Function
+
 End Class
 

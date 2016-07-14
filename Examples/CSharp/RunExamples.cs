@@ -59,6 +59,7 @@ using Aspose.Cells.Examples.CSharp.Tables;
 using Aspose.Cells.Examples.CSharp.Worksheets.Display;
 using Aspose.Cells.Examples.CSharp.Worksheets.Management;
 using Aspose.Cells.Examples.CSharp.Worksheets.Security;
+using Aspose.Cells.Examples.CSharp.Worksheets.Value;
 using Aspose.Cells.Examples.CSharp.Worksheets.Security.Protecting;
 using Aspose.Cells.Examples.CSharp.Worksheets.Security.Unprotect;
 
@@ -666,6 +667,13 @@ namespace Aspose.Cells.Examples.CSharp
             //AdvancedProtectionSettings.Run();
             //AdvancedProtectionSettingsUsingAsposeCells.Run();            
             //LockCell.Run();
+
+            //// Value
+            //// =====================================================
+            //CopyWithinWorkbook.Run();
+            //CopyWorksheetsBetweenWorkbooks.Run();
+            //CopyWorksheetFromWorkbookToOther.Run();
+            //MoveWorksheet.Run();
 
             ////// Protecting
             ////// =====================================================
