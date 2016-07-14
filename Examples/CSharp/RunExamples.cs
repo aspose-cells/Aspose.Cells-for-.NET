@@ -60,6 +60,7 @@ using Aspose.Cells.Examples.CSharp.Worksheets.Display;
 using Aspose.Cells.Examples.CSharp.Worksheets.Management;
 using Aspose.Cells.Examples.CSharp.Worksheets.Security;
 using Aspose.Cells.Examples.CSharp.Worksheets.Value;
+using Aspose.Cells.Examples.CSharp.Worksheets.PageSetupFeatures;
 using Aspose.Cells.Examples.CSharp.Worksheets.Security.Protecting;
 using Aspose.Cells.Examples.CSharp.Worksheets.Security.Unprotect;
 
@@ -676,7 +677,23 @@ namespace Aspose.Cells.Examples.CSharp
             //MoveWorksheet.Run();
             //AddingPageBreaks.Run();
             //ClearAllPageBreaks.Run();
-            RemoveSpecificPageBreak.Run();
+            //RemoveSpecificPageBreak.Run();
+
+            //// PageSetupFeatures
+            //// =====================================================
+            //PageOrientation.Run();
+            //ScalingFactor.Run();
+            //FitToPagesOptions.Run();
+            //ManagePaperSize.Run();
+            //SetPrintQuality.Run();
+            //SetMargins.Run();
+            //SetHeadersAndFooters.Run();
+            //SetHeadersAndFooters.Run();
+            //InsertImageInHeaderFooter.Run();
+            //SetPrintArea.Run();
+            //SetPrintTitle.Run();
+            //OtherPrintOptions.Run();
+            SetPageOrder.Run();
 
             ////// Protecting
             ////// =====================================================

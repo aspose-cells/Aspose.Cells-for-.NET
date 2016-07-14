@@ -54,6 +54,7 @@ Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Display
 Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Management
 Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Security
 Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Value
+Imports Aspose.Cells.Examples.VisualBasic.Worksheets.PageSetupFeatures
 Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Security.Protecting
 Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Security.Unprotect
 
@@ -669,7 +670,23 @@ Friend Class RunExamples
         'MoveWorksheet.Run()
         'AddingPageBreaks.Run()
         'ClearAllPageBreaks.Run()
-        RemoveSpecificPageBreak.Run()
+        'RemoveSpecificPageBreak.Run()
+
+        '''' PageSetupFeatures
+        '''' =====================================================
+        'PageOrientation.Run()
+        'ScalingFactor.Run()
+        'FitToPagesOptions.Run()
+        'ManagePaperSize.Run()
+        'SetPrintQuality.Run()
+        'SetMargins.Run()
+        'SetHeadersAndFooters.Run()
+        'SetHeadersAndFooters.Run()
+        'InsertImageInHeaderFooter.Run()
+        'SetPrintArea.Run()
+        'SetPrintTitle.Run()
+        'OtherPrintOptions.Run()
+        'SetPageOrder.Run()
 
         '''''' Protecting
         '''''' =====================================================
