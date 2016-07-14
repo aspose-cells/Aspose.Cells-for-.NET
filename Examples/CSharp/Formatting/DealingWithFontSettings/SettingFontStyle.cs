@@ -34,10 +34,10 @@ namespace Aspose.Cells.Examples.CSharp.Formatting.DealingWithFontSettings
 
             // Obtaining the style of the cell
             Style style = cell.GetStyle();
-
+            // ExStart:SetFontStyle
             // Setting the font weight to bold
             style.Font.IsBold = true;
-
+            // ExEnd:SetFontStyle
             // Applying the style to the cell
             cell.SetStyle(style);
 

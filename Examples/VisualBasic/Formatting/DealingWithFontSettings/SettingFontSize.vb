@@ -33,10 +33,10 @@ Namespace Formatting.DealingWithFontSettings
 
             ' Obtaining the style of the cell
             Dim style As Style = cell.GetStyle()
-
+            ' ExStart:SetFontSize
             ' Setting the font size to 14
             style.Font.Size = 14
-
+            ' ExEnd:SetFontSize
             ' Applying the style to the cell
             cell.SetStyle(style)
 

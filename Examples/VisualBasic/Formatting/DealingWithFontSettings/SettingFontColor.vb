@@ -34,9 +34,10 @@ Namespace Formatting.DealingWithFontSettings
 
             ' Obtaining the style of the cell
             Dim style As Style = cell.GetStyle()
-
+            ' ExStart:SetFontColor
             ' Setting the font color to blue
             style.Font.Color = Color.Blue
+            ' ExEnd:SetFontColor
 
             ' Applying the style to the cell
             cell.SetStyle(style)

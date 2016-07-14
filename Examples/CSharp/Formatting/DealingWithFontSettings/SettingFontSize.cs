@@ -34,10 +34,10 @@ namespace Aspose.Cells.Examples.CSharp.Formatting.DealingWithFontSettings
 
             // Obtaining the style of the cell
             Style style = cell.GetStyle();
-
+            // ExStart:SetFontSize
             // Setting the font size to 14
             style.Font.Size = 14;
-
+            // ExEnd:SetFontSize
             // Applying the style to the cell
             cell.SetStyle(style);
 

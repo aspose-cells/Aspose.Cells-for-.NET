@@ -33,9 +33,10 @@ Namespace Formatting.DealingWithFontSettings
 
             ' Obtaining the style of the cell
             Dim style As Style = cell.GetStyle()
-
+            ' ExStart:SetSuperscript
             ' Setting superscript effect
             style.Font.IsSuperscript = True
+            ' ExEnd:SetSuperscript
 
             ' Applying the style to the cell
             cell.SetStyle(style)

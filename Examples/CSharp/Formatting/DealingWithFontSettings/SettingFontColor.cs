@@ -35,10 +35,10 @@ namespace Aspose.Cells.Examples.CSharp.Formatting.DealingWithFontSettings
 
             // Obtaining the style of the cell
             Style style = cell.GetStyle();
-
+            // ExStart:SetFontColor
             // Setting the font color to blue
             style.Font.Color = Color.Blue;
-
+            // ExEnd:SetFontColor
             // Applying the style to the cell
             cell.SetStyle(style);
 

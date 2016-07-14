@@ -34,10 +34,10 @@ namespace Aspose.Cells.Examples.CSharp.Formatting.DealingWithFontSettings
 
             // Obtaining the style of the cell
             Style style = cell.GetStyle();
-
+            // ExStart:SetSuperscript
             // Setting superscript effect
             style.Font.IsSuperscript = true;
-
+            // ExEnd:SetSuperscript
             // Applying the style to the cell
             cell.SetStyle(style);
 

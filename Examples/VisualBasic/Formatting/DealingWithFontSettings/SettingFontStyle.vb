@@ -33,10 +33,10 @@ Namespace Formatting.DealingWithFontSettings
 
             ' Obtaining the style of the cell
             Dim style As Style = cell.GetStyle()
-
+            ' ExStart:SetFontStyle
             ' Setting the font weight to bold
             style.Font.IsBold = True
-
+            ' ExEnd:SetFontStyle
             ' Applying the style to the cell
             cell.SetStyle(style)
 

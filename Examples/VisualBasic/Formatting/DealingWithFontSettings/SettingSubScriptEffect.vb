@@ -33,10 +33,10 @@ Namespace Formatting.DealingWithFontSettings
 
             ' Obtaining the style of the cell
             Dim style As Style = cell.GetStyle()
-
+            ' ExStart:SetSubscript
             ' Setting subscript effect
             style.Font.IsSubscript = True
-
+            ' ExEnd:SetSubscript
             ' Applying the style to the cell
             cell.SetStyle(style)
 

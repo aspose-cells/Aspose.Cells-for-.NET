@@ -34,9 +34,10 @@ namespace Aspose.Cells.Examples.CSharp.Formatting.DealingWithFontSettings
 
             // Obtaining the style of the cell
             Style style = cell.GetStyle();
-
+            // ExStart:SetSubscript
             // Setting subscript effect
             style.Font.IsSubscript = true;
+            // ExEnd:SetSubscript
 
             // Applying the style to the cell
             cell.SetStyle(style);

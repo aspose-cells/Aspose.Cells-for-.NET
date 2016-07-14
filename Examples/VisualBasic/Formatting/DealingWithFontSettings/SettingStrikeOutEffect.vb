@@ -33,10 +33,10 @@ Namespace Formatting.DealingWithFontSettings
 
             ' Obtaining the style of the cell
             Dim style As Style = cell.GetStyle()
-
+            ' ExStart:SetStrikeout
             ' Setting the strike out effect on the font
             style.Font.IsStrikeout = True
-
+            ' ExEnd:SetStrikeout
             ' Applying the style to the cell
             cell.SetStyle(style)
 

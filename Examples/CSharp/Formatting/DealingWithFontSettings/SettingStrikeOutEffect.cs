@@ -34,10 +34,10 @@ namespace Aspose.Cells.Examples.CSharp.Formatting.DealingWithFontSettings
 
             // Obtaining the style of the cell
             Style style = cell.GetStyle();
-
+            // ExStart:SetStrikeout
             // Setting the strike out effect on the font
             style.Font.IsStrikeout = true;
-
+            // ExEnd:SetStrikeout
             // Applying the style to the cell
             cell.SetStyle(style);
 
