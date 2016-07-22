@@ -164,6 +164,8 @@ namespace Aspose.Cells.Examples.CSharp
             //UsingImageMarkersWhileGroupingDataInSmartMarkers.Run();
             //UsingLightCellsAPI.Run();
             //UsingWorkbookMetadata.Run();
+            //RenderUnicodeInOutput.Run();
+            UpdateReferenceInWorksheets.Run();
 
             //// Apply-Conditional-Formatting
             //// =====================================================

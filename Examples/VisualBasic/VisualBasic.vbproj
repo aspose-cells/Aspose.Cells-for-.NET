@@ -165,6 +165,7 @@
     <Compile Include="Articles\ReadingCSVMultipleEncodings.vb" />
     <Compile Include="Articles\RemoveWhitespaceAroundData.vb" />
     <Compile Include="Articles\RenderOnePdfPagePerExcelWorksheet.vb" />
+    <Compile Include="Articles\RenderUnicodeInOutput.vb" />
     <Compile Include="Articles\ResamplingAddedImages.vb" />
     <Compile Include="Articles\RetrievingSQLConnectionData.vb" />
     <Compile Include="Articles\SaveEachWorksheetToDifferentPDF.vb" />
@@ -175,6 +176,7 @@
     <Compile Include="Articles\SetPictureBackGroundFillChart.vb" />
     <Compile Include="Articles\SetPixelFormatRenderedImage.vb" />
     <Compile Include="Articles\SettingFormulaCalculationModeWorkbook.vb" />
+    <Compile Include="Articles\UpdateReferenceInWorksheets.vb" />
     <Compile Include="Articles\UsingImageMarkersWhileGroupingDataInSmartMarkers.vb" />
     <Compile Include="CellsHelperClass\MergeFiles.vb" />
     <Compile Include="CellsHelperClass\NameToIndex.vb" />

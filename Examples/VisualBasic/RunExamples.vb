@@ -156,6 +156,8 @@ Friend Class RunExamples
         'UsingImageMarkersWhileGroupingDataInSmartMarkers.Run()
         'UsingLightCellsAPI.Run()
         'UsingWorkbookMetadata.Run()
+        'UpdateReferenceInWorksheets.Run()
+        'RenderUnicodeInOutput.Run()
 
         '''' Apply-Conditional-Formatting
         '''' =====================================================

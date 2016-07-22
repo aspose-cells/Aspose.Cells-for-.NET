@@ -148,6 +148,7 @@
     <Compile Include="Articles\ReadingCSVMultipleEncodings.cs" />
     <Compile Include="Articles\RemoveUnusedStyles.cs" />
     <Compile Include="Articles\RemoveWhitespaceAroundData.cs" />
+    <Compile Include="Articles\RenderUnicodeInOutput.cs" />
     <Compile Include="Articles\RenderOnePdfPagePerExcelWorksheet.cs" />
     <Compile Include="Articles\ResamplingAddedImages.cs" />
     <Compile Include="Articles\RetrievingSQLConnectionData.cs" />
@@ -164,6 +165,7 @@
     <Compile Include="Articles\SettingStrongEncryptionType.cs" />
     <Compile Include="Articles\SetWorksheetTabColor.cs" />
     <Compile Include="Articles\ShowFormulasInsteadOfValues.cs" />
+    <Compile Include="Articles\UpdateReferenceInWorksheets.cs" />
     <Compile Include="Articles\SortData.cs" />
     <Compile Include="Articles\UpdateRichTextCells.cs" />
     <Compile Include="Articles\UsePresentationPreferenceOption.cs" />
