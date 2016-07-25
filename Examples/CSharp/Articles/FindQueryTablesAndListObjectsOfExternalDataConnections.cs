@@ -33,7 +33,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // ExEnd:FindQueryTablesAndListObjectsOfExternalDataConnections           
 
         }
-
+        // ExStart:PrintTables
         public static void PrintTables(Workbook workbook, Aspose.Cells.ExternalConnections.ExternalConnection ec)
         {
             // Iterate all the worksheets
@@ -89,6 +89,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles
                 }
             }
         }
-
+        // ExEnd:PrintTables
     }
 }

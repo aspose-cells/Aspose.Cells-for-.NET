@@ -5,10 +5,10 @@ Imports Aspose.Cells.Drawing
 
 Namespace Articles
 
-    ' ExStart:FindQueryTablesAndListObjectsOfExternalDataConnections
+
     Public Class FindQueryTablesAndListObjectsOfExternalDataConnections
         Public Shared Sub Run()
-
+            ' ExStart:FindQueryTablesAndListObjectsOfExternalDataConnections
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -25,10 +25,9 @@ Namespace Articles
 
             Console.WriteLine("Press any key to continue...")
             Console.ReadKey()
-
+            ' ExEnd:FindQueryTablesAndListObjectsOfExternalDataConnections
         End Sub
-
-
+        ' ExStart:PrintTables
         Public Shared Sub PrintTables(workbook As Workbook, ec As Aspose.Cells.ExternalConnections.ExternalConnection)
             ' Iterate all the worksheets
             For j As Integer = 0 To workbook.Worksheets.Count - 1
@@ -73,6 +72,7 @@ Namespace Articles
                 Next
             Next
         End Sub
+        ' ExEnd:PrintTables
     End Class
-    ' ExEnd:FindQueryTablesAndListObjectsOfExternalDataConnections
+
 End Namespace
