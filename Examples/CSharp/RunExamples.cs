@@ -165,7 +165,10 @@ namespace Aspose.Cells.Examples.CSharp
             //UsingLightCellsAPI.Run();
             //UsingWorkbookMetadata.Run();
             //RenderUnicodeInOutput.Run();
-            UpdateReferenceInWorksheets.Run();
+            //UpdateReferenceInWorksheets.Run();
+            //SettingTextEffectsShadowOfShapeOrTextbox.Run();
+            //ImplementDirectCalculationOfCustomFunction.Run();
+            FilterDataWhileLoadingWorkbook.Run();
 
             //// Apply-Conditional-Formatting
             //// =====================================================

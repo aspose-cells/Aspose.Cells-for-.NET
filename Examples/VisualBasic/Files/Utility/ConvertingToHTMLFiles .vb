@@ -1,5 +1,4 @@
 Imports System.IO
-
 Imports Aspose.Cells
 
 Namespace Files.Utility
@@ -10,16 +9,13 @@ Namespace Files.Utility
             Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
             ' Specify the file path
-            Dim filePath As String = dataDir & "Book1.xlsx"
+            Dim filePath As String = dataDir & Convert.ToString("sample.xlsx")
 
-            ' Specify the HTML Saving Options
-            Dim save As New HtmlSaveOptions(SaveFormat.Html)
-
-            ' Instantiate a workbook and open the template XLSX file
+            ' Load your sample excel file in a workbook object
             Dim wb As New Workbook(filePath)
 
-            ' Save the MHT file
-            wb.Save(dataDir & "output.html", save)
+            ' Save it in HTML format
+            wb.Save(dataDir & Convert.ToString("ConvertingToHTMLFiles_out_.html"), SaveFormat.Html)
             ' ExEnd:1
         End Sub
     End Class

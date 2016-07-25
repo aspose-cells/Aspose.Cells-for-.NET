@@ -158,6 +158,9 @@ Friend Class RunExamples
         'UsingWorkbookMetadata.Run()
         'UpdateReferenceInWorksheets.Run()
         'RenderUnicodeInOutput.Run()
+        'SettingTextEffectsShadowOfShapeOrTextbox.Run()
+        'ImplementDirectCalculationOfCustomFunction.Run()
+        FilterDataWhileLoadingWorkbook.Run()
 
         '''' Apply-Conditional-Formatting
         '''' =====================================================
@@ -456,6 +459,7 @@ Friend Class RunExamples
         'SettingImagePrefrencesforHTML.Run()
         'WorksheetToImage.Run()
         'XlstoPDFDirectConversation.Run()
+        'ConvertChartToPdf.Run()
 
         '' =====================================================
         '' =====================================================

@@ -1,21 +1,19 @@
 ﻿using System;
+using System.IO;
 using Aspose.Cells;
 using Aspose.Cells.Charts;
 
 namespace Aspose.Cells.Examples.CSharp.Files.Utility
 {
     class ConvertChartToPdf
-    {
-        // ExStart:1
+    {        
         public static void Run()
         {
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            string inputPath = dataDir + "Sample1.xls";
-            string outputPath = dataDir + "Output-Chart.out.pdf";
-
-
+            // ExStart:1
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);        
             // Load excel file containing charts
-            Workbook workbook = new Workbook(inputPath);
+            Workbook workbook = new Workbook( dataDir + "Sample1.xls");
 
             // Access first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -24,9 +22,11 @@ namespace Aspose.Cells.Examples.CSharp.Files.Utility
             Chart chart = worksheet.Charts[0];
 
             // Save the chart into pdf format
-            chart.ToPdf(outputPath);
+            chart.ToPdf( dataDir + "Output-Chart_out_.pdf");
 
-            Console.WriteLine("File saved {0}", outputPath);
+            // Save the chart into pdf format in stream
+            MemoryStream ms = new MemoryStream();
+            chart.ToPdf(ms);
             // ExEnd:1
         }
     }

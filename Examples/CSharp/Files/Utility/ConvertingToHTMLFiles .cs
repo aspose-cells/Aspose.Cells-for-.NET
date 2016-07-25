@@ -13,16 +13,13 @@ namespace Aspose.Cells.Examples.CSharp.Files.Utility
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             // Specify the file path
-            string filePath = dataDir + "Book1.xlsx";
+            string filePath = dataDir + "sample.xlsx";
 
-            // Specify the HTML Saving Options
-            HtmlSaveOptions save = new HtmlSaveOptions(SaveFormat.Html);
-
-            // Instantiate a workbook and open the template XLSX file
+            // Load your sample excel file in a workbook object
             Workbook wb = new Workbook(filePath);
 
-            // Save the MHT file
-            wb.Save(dataDir + "output.html", save);
+            // Save it in HTML format
+            wb.Save(dataDir + "ConvertingToHTMLFiles_out_.html", SaveFormat.Html);
             // ExEnd:1
         }
     }

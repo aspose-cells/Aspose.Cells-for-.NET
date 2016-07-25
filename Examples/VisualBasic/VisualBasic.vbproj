@@ -48,8 +48,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells">
-      <HintPath>..\packages\Aspose.Cells.8.8.2\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=8.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Aspose.Cells.8.9.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -130,6 +131,7 @@
     <Compile Include="Articles\ExportVisibleRowsData.vb" />
     <Compile Include="Articles\ExtractImagesFromWorksheets.vb" />
     <Compile Include="Articles\ExtractOLEObjects.vb" />
+    <Compile Include="Articles\FilterDataWhileLoadingWorkbook.vb" />
     <Compile Include="Articles\FindCellsWithSpecificStyle.vb" />
     <Compile Include="Articles\FindIfCellValueStartsWithSingleQuote.vb" />
     <Compile Include="Articles\FindQueryTablesAndListObjectsOfExternalDataConnections.vb" />
@@ -144,6 +146,7 @@
     <Compile Include="Articles\IgnoreHiddenColumnsDataTable.vb" />
     <Compile Include="Articles\Implement1904DateSystem.vb" />
     <Compile Include="Articles\ImplementCustomCalculationEngine.vb" />
+    <Compile Include="Articles\ImplementDirectCalculationOfCustomFunction.vb" />
     <Compile Include="Articles\ImplementingNonSequencedRanges.vb" />
     <Compile Include="Articles\InsertDeleteRows.vb" />
     <Compile Include="Articles\InsertingWAVFile.vb" />
@@ -176,6 +179,7 @@
     <Compile Include="Articles\SetPictureBackGroundFillChart.vb" />
     <Compile Include="Articles\SetPixelFormatRenderedImage.vb" />
     <Compile Include="Articles\SettingFormulaCalculationModeWorkbook.vb" />
+    <Compile Include="Articles\SettingTextEffectsShadowOfShapeOrTextbox.vb" />
     <Compile Include="Articles\UpdateReferenceInWorksheets.vb" />
     <Compile Include="Articles\UsingImageMarkersWhileGroupingDataInSmartMarkers.vb" />
     <Compile Include="CellsHelperClass\MergeFiles.vb" />
@@ -327,6 +331,7 @@
     <Compile Include="Files\Handling\SaveWorkbookToTextCSVFormat.vb" />
     <Compile Include="Files\Handling\SavingFiles.vb" />
     <Compile Include="Files\Utility\AdvancedConversiontoPdf.vb" />
+    <Compile Include="Files\Utility\ConvertChartToPdf.vb" />
     <Compile Include="Files\Utility\XlstoPDFDirectConversation.vb" />
     <Compile Include="Files\Utility\ChartToImage.vb" />
     <Compile Include="Files\Utility\SettingImagePrefrencesforHTML.vb" />
