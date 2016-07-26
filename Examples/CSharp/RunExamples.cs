@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
@@ -168,7 +167,16 @@ namespace Aspose.Cells.Examples.CSharp
             //UpdateReferenceInWorksheets.Run();
             //SettingTextEffectsShadowOfShapeOrTextbox.Run();
             //ImplementDirectCalculationOfCustomFunction.Run();
-            FilterDataWhileLoadingWorkbook.Run();
+            //FilterDataWhileLoadingWorkbook.Run(); 
+            //AddActiveXControls.Run();
+            //ChangeTextBoxOrShareCharacterSpacing.Run();
+            //LoadExcelFileWithoutChart.Run();
+            //ExportToHTMLWithGridLines.Run();
+            //DivTagsLayout.Run();
+            //ChartLegendEntry.Run();
+            //LoadWorkbookWithPrinterSize.Run();
+            //CreateTextBoxWithDifferentHorizontalAlignment.Run();
+            SetTextboxOrShapeParagraphLineSpacing.Run();
 
             //// Apply-Conditional-Formatting
             //// =====================================================
@@ -399,12 +407,13 @@ namespace Aspose.Cells.Examples.CSharp
             //AddingScrollBarControl.Run();
             //AddingSpinnerControl.Run();
             //DrawingObjects.Controls.AddingTextBoxControl.Run();
-            //ManipulatingTextBoxControls.Run();
+            //ManipulatingTextBoxControls.Run();            
 
             //// OLE
             //// =====================================================
             //ExtractingOLEObjects.Run();
             //InsertingOLEObjects.Run();
+            //RefreshOLEObjects.Run();
 
             //// Pictures
             //// =====================================================
@@ -454,11 +463,11 @@ namespace Aspose.Cells.Examples.CSharp
             //// Utility
             //// =====================================================
             //AdvancedConversiontoPdf.Run();
-            // ChartToImage.Run();
-            // ConvertingToHTMLFiles.Run();
-            // ConvertingToMHTMLFiles.Run();
-            // ConvertingToXPS.Run();
-            // ConvertingWorksheetToSVG.Run();
+            //ChartToImage.Run();
+            //ConvertingToHTMLFiles.Run();
+            //ConvertingToMHTMLFiles.Run();
+            //ConvertingToXPS.Run();
+            //ConvertingWorksheetToSVG.Run();
             //EncryptingFiles.Run();
             //Excel2PDFConversion.Run();
             //ManagingDocumentProperties.Run();
@@ -473,11 +482,11 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            // ColorsAndBackground.Run();
-            // ColorsAndPalette.Run();
-            // ComputeColorChoosenByMSExcel.Run();
-            // ConditionalFormatting.Run();
-            // ConditionalFormattingatRuntime.Run();
+            //ColorsAndBackground.Run();
+            //ColorsAndPalette.Run();
+            //ComputeColorChoosenByMSExcel.Run();
+            //ConditionalFormatting.Run();
+            //ConditionalFormattingatRuntime.Run();
             //FormattingSelectedCharacters.Run();
             //MakeCellActive.Run();
             //SetBorder.Run();
@@ -520,7 +529,7 @@ namespace Aspose.Cells.Examples.CSharp
 
             //// Excel2007Themes
             //// =====================================================
-            // CustomizeThemes.Run();
+            //CustomizeThemes.Run();
             //GetSetThemeColors.Run();
             //UtilizeThemeColors.Run();
 
@@ -540,8 +549,8 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            // CalculatingFormulas.Run();
-            // CalculatingFormulasOnce.Run();
+            //CalculatingFormulas.Run();
+            //CalculatingFormulasOnce.Run();
             //DirectCalculationFormula.Run();
             //ProcessDataUsingAddinfunction.Run();
             //ProcessDataUsingArrayFunction.Run();
@@ -554,15 +563,16 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            // ChangeSourceData.Run();
-            // ClearPivotFields.Run();
-            // ConsolidationFunctions.Run();
+            //ChangeSourceData.Run();
+            //ClearPivotFields.Run();
+            //ConsolidationFunctions.Run();
             //PivotTableExamples.CreatePivotTable.Run();
             //FormattingLook.Run();
             //SettingAutoFormat.Run();
             //SettingDataFieldFormat.Run();
             //SettingFormatOptions.Run();
             //SettingPageFieldFormat.Run();
+            //RefreshAndCalculateItems.Run();
 
             // =====================================================
             // =====================================================
@@ -635,9 +645,10 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            // ConvertTableToRange.Run();
-            // CreatingListObject.Run();
+            //ConvertTableToRange.Run();
+            //CreatingListObject.Run();
             //FormataListObject.Run();   
+            //SetCommentOfTableOrListObject.Run();
 
             // =====================================================
             // =====================================================
@@ -647,7 +658,7 @@ namespace Aspose.Cells.Examples.CSharp
 
             //// Display
             //// =====================================================
-            // ControlTabBarWidth.Run();
+            //ControlTabBarWidth.Run();
             //DisplayHideGridlines.Run();
             //DisplayHideRowColumnHeaders.Run();
             //DisplayHideScrollBars.Run();
@@ -698,7 +709,7 @@ namespace Aspose.Cells.Examples.CSharp
             //SetPrintArea.Run();
             //SetPrintTitle.Run();
             //OtherPrintOptions.Run();
-            SetPageOrder.Run();
+            //SetPageOrder.Run();
 
             ////// Protecting
             ////// =====================================================

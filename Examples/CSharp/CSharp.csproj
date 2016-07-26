@@ -59,6 +59,7 @@
     <Compile Include="AdvancedTopics\SmartMarkers\UsingNestedObjects.cs" />
     <Compile Include="AdvancedTopics\UsingCopyStyleAttribute.cs" />
     <Compile Include="Articles\AccessTextBoxName.cs" />
+    <Compile Include="Articles\AddActiveXControls.cs" />
     <Compile Include="Articles\AddConditionalIconsSet.cs" />
     <Compile Include="Articles\AddImageHyperlinks.cs" />
     <Compile Include="Articles\AddingAnonymousCustomObject.cs" />
@@ -74,7 +75,9 @@
     <Compile Include="Articles\AssignValidateDigitalSignatures.cs" />
     <Compile Include="Articles\AutoFitRowsMergedCells.cs" />
     <Compile Include="Articles\AvoidExponentialNotationWhileImportingFromHtml.cs" />
+    <Compile Include="Articles\ChartLegendEntry.cs" />
     <Compile Include="Articles\ChangeHtmlLinkTarget.cs" />
+    <Compile Include="Articles\ChangeTextBoxOrShareCharacterSpacing.cs" />
     <Compile Include="Articles\ChangeTextDirection.cs" />
     <Compile Include="Articles\CheckVbaProjectSigned.cs">
       <SubType>Code</SubType>
@@ -94,6 +97,7 @@
     <Compile Include="Articles\CopyShapesBetweenWorksheets\CopyChart.cs" />
     <Compile Include="Articles\CopyShapesBetweenWorksheets\CopyControls.cs" />
     <Compile Include="Articles\CopyShapesBetweenWorksheets\CopyingPicture.cs" />
+    <Compile Include="Articles\CreateTextBoxWithDifferentHorizontalAlignment.cs" />
     <Compile Include="Articles\CreateManipulateRemoveScenarios.cs" />
     <Compile Include="Articles\CreatePivotTablesPivotCharts\CreatePivotChart.cs" />
     <Compile Include="Articles\CreatePivotTablesPivotCharts\CreatePivotTable.cs" />
@@ -105,8 +109,10 @@
     <Compile Include="Articles\DeleteBlankRowsColumns\DeletingBlankRows.cs" />
     <Compile Include="Articles\DeleteRedundantSpacesWhileImportingFromHtml.cs" />
     <Compile Include="Articles\DetectMergedCells.cs" />
+    <Compile Include="Articles\DivTagsLayout.cs" />
     <Compile Include="Articles\DisableCompatibilityChecker.cs" />
     <Compile Include="Articles\ErrorCheckingOptions.cs" />
+    <Compile Include="Articles\ExportToHTMLWithGridLines.cs" />
     <Compile Include="Articles\ExportRangeofCells.cs" />
     <Compile Include="Articles\ExportVisibleRowsData.cs" />
     <Compile Include="Articles\ExtractImagesFromWorksheets.cs" />
@@ -138,6 +144,8 @@
     <Compile Include="Articles\LineBreakTextWrapping\UseExplicitLineBreaks.cs" />
     <Compile Include="Articles\LineBreakTextWrapping\WrapText.cs" />
     <Compile Include="Articles\LoadSpecificSheets.cs" />
+    <Compile Include="Articles\LoadExcelFileWithoutChart.cs" />
+    <Compile Include="Articles\LoadWorkbookWithPrinterSize.cs" />
     <Compile Include="Articles\LoadWebImage.cs" />
     <Compile Include="Articles\MergeUnmergeRangeOfCells.cs" />
     <Compile Include="Articles\ModifyExistingStyle\ModifyThroughSampleExcelFile.cs" />
@@ -166,6 +174,7 @@
     <Compile Include="Articles\SettingTextEffectsShadowOfShapeOrTextbox.cs" />
     <Compile Include="Articles\SettingSharedFormula.cs" />
     <Compile Include="Articles\SettingStrongEncryptionType.cs" />
+    <Compile Include="Articles\SetTextboxOrShapeParagraphLineSpacing.cs" />
     <Compile Include="Articles\SetWorksheetTabColor.cs" />
     <Compile Include="Articles\ShowFormulasInsteadOfValues.cs" />
     <Compile Include="Articles\UpdateReferenceInWorksheets.cs" />
@@ -284,6 +293,7 @@
     <Compile Include="DrawingObjects\Controls\AddingTextBoxControl.cs" />
     <Compile Include="DrawingObjects\Controls\ManipulatingTextBoxControls.cs" />
     <Compile Include="DrawingObjects\OLE\ExtractingOLEObjects.cs" />
+    <Compile Include="DrawingObjects\OLE\RefreshOLEObjects.cs" />
     <Compile Include="DrawingObjects\OLE\InsertingOLEObjects.cs" />
     <Compile Include="DrawingObjects\Pictures\AddingPictures.cs" />
     <Compile Include="DrawingObjects\Pictures\PictureCellReference.cs" />
@@ -378,6 +388,7 @@
     <Compile Include="Formulas\ProcessDataUsingAddinfunction.cs" />
     <Compile Include="Formulas\ProcessDataUsingBuiltinfunction.cs" />
     <Compile Include="PivotTableExamples\ConsolidationFunctions.cs" />
+    <Compile Include="PivotTableExamples\RefreshAndCalculateItems.cs" />
     <Compile Include="PivotTableExamples\FormattingLook.cs" />
     <Compile Include="PivotTableExamples\SettingDataFieldFormat.cs" />
     <Compile Include="PivotTableExamples\SettingPageFieldFormat.cs" />
@@ -427,6 +438,7 @@
     <Compile Include="RowsColumns\InsertingAndDeleting\InsertingARow.cs" />
     <Compile Include="RowsColumns\InsertingAndDeleting\InsertingMultipleRows.cs" />
     <Compile Include="Tables\ConvertTableToRange.cs" />
+    <Compile Include="Tables\SetCommentOfTableOrListObject.cs" />
     <Compile Include="Tables\CreatingListObject.cs" />
     <Compile Include="Tables\FormataListObject.cs" />
     <Compile Include="Worksheets\Display\ControlTabBarWidth.cs" />

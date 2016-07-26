@@ -80,6 +80,7 @@
     <Compile Include="AdvancedTopics\SmartMarkers\UsingNestedObjects.vb" />
     <Compile Include="AdvancedTopics\UsingCopyStyleAttribute.vb" />
     <Compile Include="Articles\AccessTextBoxName.vb" />
+    <Compile Include="Articles\AddActiveXControls.vb" />
     <Compile Include="Articles\AddConditionalIconsSet.vb" />
     <Compile Include="Articles\AddImageHyperlinks.vb" />
     <Compile Include="Articles\AddingAnonymousCustomObject.vb" />
@@ -96,7 +97,9 @@
     <Compile Include="Articles\AutoFitRowsMergedCells.vb" />
     <Compile Include="Articles\AvoidExponentialNotationWhileImportingFromHtml.vb" />
     <Compile Include="Articles\ChangeHtmlLinkTarget.vb" />
+    <Compile Include="Articles\ChangeTextBoxOrShareCharacterSpacing.vb" />
     <Compile Include="Articles\ChangeTextDirection.vb" />
+    <Compile Include="Articles\ChartLegendEntry.vb" />
     <Compile Include="Articles\CheckVbaProjectSigned.vb" />
     <Compile Include="Articles\CombineMultipleWorkbooksSingleWorkbook.vb" />
     <Compile Include="Articles\CombineMultipleWorksheetsSingleWorksheet.vb" />
@@ -116,6 +119,7 @@
     <Compile Include="Articles\CreateManipulateRemoveScenarios.vb" />
     <Compile Include="Articles\CreatePivotTablesPivotCharts\CreatePivotChart.vb" />
     <Compile Include="Articles\CreatePivotTablesPivotCharts\CreatePivotTable.vb" />
+    <Compile Include="Articles\CreateTextBoxWithDifferentHorizontalAlignment.vb" />
     <Compile Include="Articles\CreateTransparentImage.vb" />
     <Compile Include="Articles\CustomizingRibbonXML.vb" />
     <Compile Include="Articles\CustomSliceSectorColorsPieChart.vb" />
@@ -125,9 +129,11 @@
     <Compile Include="Articles\DeleteRedundantSpacesWhileImportingFromHtml.vb" />
     <Compile Include="Articles\DetectMergedCells.vb" />
     <Compile Include="Articles\DisableCompatibilityChecker.vb" />
+    <Compile Include="Articles\DivTagsLayout.vb" />
     <Compile Include="Articles\ErrorCheckingOptions.vb" />
     <Compile Include="Articles\ExceltoHTMLPresentationPreferenceOption.vb" />
     <Compile Include="Articles\ExportRangeofCells.vb" />
+    <Compile Include="Articles\ExportToHTMLWithGridLines.vb" />
     <Compile Include="Articles\ExportVisibleRowsData.vb" />
     <Compile Include="Articles\ExtractImagesFromWorksheets.vb" />
     <Compile Include="Articles\ExtractOLEObjects.vb" />
@@ -155,8 +161,10 @@
     <Compile Include="Articles\LimitNumberOfPagesGenerated.vb" />
     <Compile Include="Articles\LineBreakTextWrapping\UseExplicitLineBreaks.vb" />
     <Compile Include="Articles\LineBreakTextWrapping\WrapText.vb" />
+    <Compile Include="Articles\LoadExcelFileWithoutChart.vb" />
     <Compile Include="Articles\LoadSpecificSheets.vb" />
     <Compile Include="Articles\LoadWebImage.vb" />
+    <Compile Include="Articles\LoadWorkbookWithPrinterSize.vb" />
     <Compile Include="Articles\MergeUnmergeRangeOfCells.vb" />
     <Compile Include="Articles\ModifyExistingStyle\ModifyThroughSampleExcelFile.vb" />
     <Compile Include="Articles\ModifyExistingStyle\ModifyThroughStyleObject.vb" />
@@ -178,6 +186,7 @@
     <Compile Include="Articles\SetExternalLinksInFormulas.vb" />
     <Compile Include="Articles\SetPictureBackGroundFillChart.vb" />
     <Compile Include="Articles\SetPixelFormatRenderedImage.vb" />
+    <Compile Include="Articles\SetTextboxOrShapeParagraphLineSpacing.vb" />
     <Compile Include="Articles\SettingFormulaCalculationModeWorkbook.vb" />
     <Compile Include="Articles\SettingTextEffectsShadowOfShapeOrTextbox.vb" />
     <Compile Include="Articles\UpdateReferenceInWorksheets.vb" />
@@ -299,6 +308,7 @@
     <Compile Include="DrawingObjects\Controls\ManipulatingTextBoxControls.vb" />
     <Compile Include="DrawingObjects\OLE\ExtractingOLEObjects.vb" />
     <Compile Include="DrawingObjects\OLE\InsertingOLEObjects.vb" />
+    <Compile Include="DrawingObjects\OLE\RefreshOLEObjects.vb" />
     <Compile Include="DrawingObjects\Pictures\AddingPictures.vb" />
     <Compile Include="DrawingObjects\Pictures\PictureCellReference.vb" />
     <Compile Include="DrawingObjects\Pictures\PositioningPictures\AbsolutePositioning.vb" />
@@ -409,6 +419,7 @@
     <Compile Include="PivotTableExamples\ConsolidationFunctions.vb" />
     <Compile Include="PivotTableExamples\ClearPivotFields.vb" />
     <Compile Include="PivotTableExamples\FormattingLook.vb" />
+    <Compile Include="PivotTableExamples\RefreshAndCalculateItems.vb" />
     <Compile Include="PivotTableExamples\SettingAutoFormat.vb" />
     <Compile Include="PivotTableExamples\SettingDataFieldFormat.vb" />
     <Compile Include="PivotTableExamples\SettingPageFieldFormat.vb" />
@@ -457,6 +468,7 @@
     <Compile Include="Tables\CreatingListObject.vb" />
     <Compile Include="Tables\FormataListObject.vb" />
     <Compile Include="RunExamples.vb" />
+    <Compile Include="Tables\SetCommentOfTableOrListObject.vb" />
     <Compile Include="Worksheets\Display\DisplayHideGridlines.vb" />
     <Compile Include="Worksheets\Display\DisplayHideRowColumnHeaders.vb" />
     <Compile Include="Worksheets\Display\DisplayHideScrollBars.vb" />

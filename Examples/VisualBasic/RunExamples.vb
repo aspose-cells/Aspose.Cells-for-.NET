@@ -160,7 +160,16 @@ Friend Class RunExamples
         'RenderUnicodeInOutput.Run()
         'SettingTextEffectsShadowOfShapeOrTextbox.Run()
         'ImplementDirectCalculationOfCustomFunction.Run()
-        FilterDataWhileLoadingWorkbook.Run()
+        'FilterDataWhileLoadingWorkbook.Run()
+        'AddActiveXControls.Run()
+        'ChangeTextBoxOrShareCharacterSpacing.Run()
+        'LoadExcelFileWithoutChart.Run()
+        'ExportToHTMLWithGridLines.Run()
+        'DivTagsLayout.Run()
+        'ChartLegendEntry.Run()
+        'LoadWorkbookWithPrinterSize.Run()
+        'CreateTextBoxWithDifferentHorizontalAlignment.Run()
+        SetTextboxOrShapeParagraphLineSpacing.Run()
 
         '''' Apply-Conditional-Formatting
         '''' =====================================================
@@ -398,6 +407,7 @@ Friend Class RunExamples
         '''' =====================================================
         'ExtractingOLEObjects.Run()
         'InsertingOLEObjects.Run()
+        'RefreshOLEObjects.Run()
 
         '''' Pictures
         '''' =====================================================
@@ -557,6 +567,7 @@ Friend Class RunExamples
         'SettingDataFieldFormat.Run()
         'SettingFormatOptions.Run()
         'SettingPageFieldFormat.Run()
+        'RefreshAndCalculateItems.Run()
 
         '' =====================================================
         '' =====================================================
@@ -632,6 +643,7 @@ Friend Class RunExamples
         'ConvertTableToRange.Run()
         'CreatingListObject.Run()
         'FormataListObject.Run()   
+        'SetCommentOfTableOrListObject.Run()
 
         '' =====================================================
         '' =====================================================
