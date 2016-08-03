@@ -84,6 +84,7 @@
     <Compile Include="Articles\AddConditionalIconsSet.vb" />
     <Compile Include="Articles\AddImageHyperlinks.vb" />
     <Compile Include="Articles\AddingAnonymousCustomObject.vb" />
+    <Compile Include="Articles\AddingCustomPropertiesVisible.vb" />
     <Compile Include="Articles\AddLibraryReferenceToVbaProject.vb" />
     <Compile Include="Articles\AddPDFBookmarks.vb" />
     <Compile Include="Articles\AddPictureToExcelComment.vb" />

@@ -59,6 +59,7 @@
     <Compile Include="AdvancedTopics\SmartMarkers\UsingNestedObjects.cs" />
     <Compile Include="AdvancedTopics\UsingCopyStyleAttribute.cs" />
     <Compile Include="Articles\AccessTextBoxName.cs" />
+    <Compile Include="Articles\AddingCustomPropertiesVisible.cs" />
     <Compile Include="Articles\AddActiveXControls.cs" />
     <Compile Include="Articles\AddConditionalIconsSet.cs" />
     <Compile Include="Articles\AddImageHyperlinks.cs" />
