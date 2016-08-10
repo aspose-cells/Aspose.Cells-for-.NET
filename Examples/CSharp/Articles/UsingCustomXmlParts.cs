@@ -42,7 +42,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             workbook.ContentTypeProperties.Add("BookStore", booksXML);
 
             // Save the resultant spreadsheet
-            workbook.Save(dataDir + "UsingCustomXmlParts.xlsx");
+            workbook.Save(dataDir + "output.xlsx");
             // ExEnd:UsingCustomXmlParts
         }
     }

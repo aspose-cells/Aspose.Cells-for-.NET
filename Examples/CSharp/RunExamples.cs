@@ -159,7 +159,7 @@ namespace Aspose.Cells.Examples.CSharp
             //SortData.Run();
             //UpdateRichTextCells.Run();
             //UsePresentationPreferenceOption.Run();
-            //UsingCustomXmlParts.Run();
+            UsingCustomXmlParts.Run();
             //UsingImageMarkersWhileGroupingDataInSmartMarkers.Run();
             //UsingLightCellsAPI.Run();
             //UsingWorkbookMetadata.Run();
@@ -176,7 +176,7 @@ namespace Aspose.Cells.Examples.CSharp
             //ChartLegendEntry.Run();
             //LoadWorkbookWithPrinterSize.Run();
             //CreateTextBoxWithDifferentHorizontalAlignment.Run();
-            SetTextboxOrShapeParagraphLineSpacing.Run();
+            //SetTextboxOrShapeParagraphLineSpacing.Run();
 
             //// Apply-Conditional-Formatting
             //// =====================================================
