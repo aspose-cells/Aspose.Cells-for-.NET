@@ -16,6 +16,8 @@ using Aspose.Cells.Examples.CSharp.Articles.LineBreakTextWrapping;
 using Aspose.Cells.Examples.CSharp.Articles.ModifyExistingStyle;
 using Aspose.Cells.Examples.CSharp.Articles.OptimizingMemoryUsage;
 using Aspose.Cells.Examples.CSharp.Articles.WorkbookScopedNamedRanges;
+using Aspose.Cells.Examples.CSharp.Articles.WorkingWithHTMLFormat;
+using Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting;
 using Aspose.Cells.Examples.CSharp.CellsHelperClass;
 using Aspose.Cells.Examples.CSharp.Charts;
 using Aspose.Cells.Examples.CSharp.Charts.InsertingControlsintoCharts;
@@ -159,7 +161,7 @@ namespace Aspose.Cells.Examples.CSharp
             //SortData.Run();
             //UpdateRichTextCells.Run();
             //UsePresentationPreferenceOption.Run();
-            UsingCustomXmlParts.Run();
+            //UsingCustomXmlParts.Run();
             //UsingImageMarkersWhileGroupingDataInSmartMarkers.Run();
             //UsingLightCellsAPI.Run();
             //UsingWorkbookMetadata.Run();
@@ -237,6 +239,15 @@ namespace Aspose.Cells.Examples.CSharp
             //// =====================================================
             //AddWorkbookScopedNamedRange.Run();
             //WorksheetNamedRange.Run();
+
+            //// WorkingWithHTMLFormat
+            //// =====================================================
+            //ExpandTextFromRightToLeft.Run();
+
+            //// RenderingAndPrinting
+            //// =====================================================
+            //SetDefaultFontWhileRendering.Run();
+            //SetDefaultFontWhileRenderingSpreadsheet.Run();
 
             // =====================================================
             // =====================================================
@@ -573,6 +584,7 @@ namespace Aspose.Cells.Examples.CSharp
             //SettingFormatOptions.Run();
             //SettingPageFieldFormat.Run();
             //RefreshAndCalculateItems.Run();
+            SpecifyCompatibility.Run();
 
             // =====================================================
             // =====================================================

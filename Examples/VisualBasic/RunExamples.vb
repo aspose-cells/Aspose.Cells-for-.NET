@@ -11,6 +11,8 @@ Imports Aspose.Cells.Examples.VisualBasic.Articles.LineBreakTextWrapping
 Imports Aspose.Cells.Examples.VisualBasic.Articles.ModifyExistingStyle
 Imports Aspose.Cells.Examples.VisualBasic.Articles.OptimizingMemoryUsage
 Imports Aspose.Cells.Examples.VisualBasic.Articles.WorkbookScopedNamedRanges
+Imports Aspose.Cells.Examples.VisualBasic.Articles.WorkingWithHTMLFormat
+Imports Aspose.Cells.Examples.VisualBasic.Articles.RenderingAndPrinting
 Imports Aspose.Cells.Examples.VisualBasic.CellsHelperClass
 Imports Aspose.Cells.Examples.VisualBasic.Charts
 Imports Aspose.Cells.Examples.VisualBasic.Charts.InsertingControlsintoCharts
@@ -169,7 +171,7 @@ Friend Class RunExamples
         'ChartLegendEntry.Run()
         'LoadWorkbookWithPrinterSize.Run()
         'CreateTextBoxWithDifferentHorizontalAlignment.Run()
-        SetTextboxOrShapeParagraphLineSpacing.Run()
+        'SetTextboxOrShapeParagraphLineSpacing.Run()
 
         '''' Apply-Conditional-Formatting
         '''' =====================================================
@@ -230,6 +232,15 @@ Friend Class RunExamples
         '''' =====================================================
         'AddWorkbookScopedNamedRange.Run()
         'WorksheetNamedRange.Run()
+
+        '''' WorkingWithHTMLFormat
+        '''' =====================================================
+        'ExpandTextFromRightToLeft.Run()
+
+        '''' RenderingAndPrinting
+        '''' =====================================================
+        'SetDefaultFontWhileRendering.Run()
+        'SetDefaultFontWhileRenderingSpreadsheet.Run()
 
         '' =====================================================
         '' =====================================================
@@ -568,6 +579,7 @@ Friend Class RunExamples
         'SettingFormatOptions.Run()
         'SettingPageFieldFormat.Run()
         'RefreshAndCalculateItems.Run()
+        SpecifyCompatibility.Run()
 
         '' =====================================================
         '' =====================================================

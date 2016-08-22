@@ -159,6 +159,7 @@
     <Compile Include="Articles\ReadingCSVMultipleEncodings.cs" />
     <Compile Include="Articles\RemoveUnusedStyles.cs" />
     <Compile Include="Articles\RemoveWhitespaceAroundData.cs" />
+    <Compile Include="Articles\RenderingAndPrinting\SetDefaultFontWhileRenderingSpreadsheet.cs" />
     <Compile Include="Articles\RenderUnicodeInOutput.cs" />
     <Compile Include="Articles\RenderOnePdfPagePerExcelWorksheet.cs" />
     <Compile Include="Articles\ResamplingAddedImages.cs" />
@@ -190,6 +191,8 @@
     <Compile Include="Articles\UsingWorkbookMetadata.cs" />
     <Compile Include="Articles\WorkbookScopedNamedRanges\AddWorkbookScopedNamedRange.cs" />
     <Compile Include="Articles\WorkbookScopedNamedRanges\WorksheetNamedRange.cs" />
+    <Compile Include="Articles\RenderingAndPrinting\SetDefaultFontWhileRendering.cs" />
+    <Compile Include="Articles\WorkingWithHTMLFormat\ExpandTextFromRightToLeft.cs" />
     <Compile Include="CellsHelperClass\MergeFiles.cs" />
     <Compile Include="CellsHelperClass\NameToIndex.cs" />
     <Compile Include="CellsHelperClass\IndexToName.cs" />
@@ -389,6 +392,7 @@
     <Compile Include="Formulas\ProcessDataUsingAddinfunction.cs" />
     <Compile Include="Formulas\ProcessDataUsingBuiltinfunction.cs" />
     <Compile Include="PivotTableExamples\ConsolidationFunctions.cs" />
+    <Compile Include="PivotTableExamples\SpecifyCompatibility.cs" />
     <Compile Include="PivotTableExamples\RefreshAndCalculateItems.cs" />
     <Compile Include="PivotTableExamples\FormattingLook.cs" />
     <Compile Include="PivotTableExamples\SettingDataFieldFormat.cs" />

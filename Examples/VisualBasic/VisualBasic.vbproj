@@ -176,6 +176,8 @@
     <Compile Include="Articles\ReadingCellValuesInMultipleThreadsSimultaneously.vb" />
     <Compile Include="Articles\ReadingCSVMultipleEncodings.vb" />
     <Compile Include="Articles\RemoveWhitespaceAroundData.vb" />
+    <Compile Include="Articles\RenderingAndPrinting\SetDefaultFontWhileRendering.vb" />
+    <Compile Include="Articles\RenderingAndPrinting\SetDefaultFontWhileRenderingSpreadsheet.vb" />
     <Compile Include="Articles\RenderOnePdfPagePerExcelWorksheet.vb" />
     <Compile Include="Articles\RenderUnicodeInOutput.vb" />
     <Compile Include="Articles\ResamplingAddedImages.vb" />
@@ -192,6 +194,7 @@
     <Compile Include="Articles\SettingTextEffectsShadowOfShapeOrTextbox.vb" />
     <Compile Include="Articles\UpdateReferenceInWorksheets.vb" />
     <Compile Include="Articles\UsingImageMarkersWhileGroupingDataInSmartMarkers.vb" />
+    <Compile Include="Articles\WorkingWithHTMLFormat\ExpandTextFromRightToLeft.vb" />
     <Compile Include="CellsHelperClass\MergeFiles.vb" />
     <Compile Include="CellsHelperClass\NameToIndex.vb" />
     <Compile Include="CellsHelperClass\IndexToName.vb" />
@@ -427,6 +430,7 @@
     <Compile Include="PivotTableExamples\SettingFormatOptions.vb" />
     <Compile Include="PivotTableExamples\CreatePivotTable.vb" />
     <Compile Include="PivotTableExamples\ChangeSourceData.vb" />
+    <Compile Include="PivotTableExamples\SpecifyCompatibility.vb" />
     <Compile Include="RowsColumns\AutofitRowinSpecificRange.vb" />
     <Compile Include="RowsColumns\AutofitRowsandColumns.vb" />
     <Compile Include="RowsColumns\AutofitRowsforMergedCells.vb" />
