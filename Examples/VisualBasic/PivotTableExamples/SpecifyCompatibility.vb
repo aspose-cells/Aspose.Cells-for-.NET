@@ -73,7 +73,7 @@ Namespace PivotTableExamples
 
             ' Save workbook in xlsx format
             wb.Save(dataDir & Convert.ToString("SpecifyCompatibility_out_.xlsx"), SaveFormat.Xlsx)
-            ' ExEnd:
+            ' ExEnd:1
         End Sub
     End Class
 End Namespace
