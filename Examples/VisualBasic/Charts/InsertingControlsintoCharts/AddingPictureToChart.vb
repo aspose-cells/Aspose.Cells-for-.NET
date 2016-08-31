@@ -26,19 +26,13 @@ Namespace Charts.InsertingControlsintoCharts
             Dim pic0 As Global.Aspose.Cells.Drawing.Picture = chart.Shapes.AddPictureInChart(50, 50, stream, 40, 40)
 
             ' Get the lineformat type of the picture.
-            Dim lineformat As Global.Aspose.Cells.Drawing.MsoLineFormat = pic0.LineFormat
-
-            ' Set the line color.
-            lineformat.ForeColor = Color.Red
+            Dim lineformat As Global.Aspose.Cells.Drawing.LineFormat = pic0.Line
 
             ' Set the dash style.
             lineformat.DashStyle = Global.Aspose.Cells.Drawing.MsoLineDashStyle.Solid
 
             ' Set the line weight.
             lineformat.Weight = 4
-
-            ' Set the line style.
-            lineformat.Style = Global.Aspose.Cells.Drawing.MsoLineStyle.ThickThin
 
             ' Save the excel file.
             workbook.Save(dataDir & "output.xls")

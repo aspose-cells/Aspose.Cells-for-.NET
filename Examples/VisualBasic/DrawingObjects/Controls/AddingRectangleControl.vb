@@ -27,20 +27,11 @@ Namespace DrawingObjects.Controls
             ' Set the placement of the rectangle.
             rectangle.Placement = PlacementType.FreeFloating
 
-            ' Set the fill format.
-            rectangle.FillFormat.ForeColor = Color.Azure
-
-            ' Set the line style.
-            rectangle.LineFormat.Style = MsoLineStyle.ThickThin
-
             ' Set the line weight.
-            rectangle.LineFormat.Weight = 4
-
-            ' Set the color of the line.
-            rectangle.LineFormat.ForeColor = Color.Blue
+            rectangle.Line.Weight = 4
 
             ' Set the dash style of the rectangle.
-            rectangle.LineFormat.DashStyle = MsoLineDashStyle.Solid
+            rectangle.Line.DashStyle = MsoLineDashStyle.Solid
 
             ' Save the excel file.
             excelbook.Save(dataDir & "output.xls")

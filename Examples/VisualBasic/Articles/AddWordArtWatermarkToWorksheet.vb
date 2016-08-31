@@ -27,17 +27,13 @@ Namespace Articles
             Dim wordart As Global.Aspose.Cells.Drawing.Shape = sheet.Shapes.AddTextEffect(MsoPresetTextEffect.TextEffect1, "CONFIDENTIAL", "Arial Black", 50, False, True, 18, 8, 1, 1, 130, 800)
 
             ' Get the fill format of the word art
-            Dim wordArtFormat As MsoFillFormat = wordart.FillFormat
-
-            ' Set the color
-            wordArtFormat.ForeColor = System.Drawing.Color.Red
+            Dim wordArtFormat As FillFormat = wordart.Fill
 
             ' Set the transparency
             wordArtFormat.Transparency = 0.9
 
             ' Make the line invisible
-            Dim lineFormat As MsoLineFormat = wordart.LineFormat
-            lineFormat.IsVisible = False
+            Dim lineFormat As LineFormat = wordart.Line
 
             ' Save the file
             workbook.Save(dataDir & "output.xls")

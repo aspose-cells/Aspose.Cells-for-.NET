@@ -43,26 +43,11 @@ Namespace DrawingObjects.Controls
             ' Make the radio button 3-D.
             radio1.Shadow = True
 
-            ' Set the foreground color of the radio button.
-            radio1.FillFormat.ForeColor = Color.LightGreen
-
-            ' Set the line style of the radio button.
-            radio1.LineFormat.Style = MsoLineStyle.ThickThin
-
             ' Set the weight of the radio button.
-            radio1.LineFormat.Weight = 4
-
-            ' Set the line color of the radio button.
-            radio1.LineFormat.ForeColor = Color.Blue
+            radio1.Line.Weight = 4
 
             ' Set the dash style of the radio button.
-            radio1.LineFormat.DashStyle = MsoLineDashStyle.Solid
-
-            ' Make the line format visible.
-            radio1.LineFormat.IsVisible = True
-
-            ' Make the fill format visible.
-            radio1.FillFormat.IsVisible = True
+            radio1.Line.DashStyle = MsoLineDashStyle.Solid
 
             ' Add another radio button.
             Dim radio2 As Global.Aspose.Cells.Drawing.RadioButton = excelbook.Worksheets(0).Shapes.AddRadioButton(6, 0, 2, 0, 30, 110)
@@ -76,26 +61,11 @@ Namespace DrawingObjects.Controls
             ' Make the radio button 3-D.
             radio2.Shadow = True
 
-            ' Set the foreground color of the radio button.
-            radio2.FillFormat.ForeColor = Color.LightGreen
-
-            ' Set the line style of the radio button.
-            radio2.LineFormat.Style = MsoLineStyle.ThickThin
-
             ' Set the weight of the radio button.
-            radio2.LineFormat.Weight = 4
-
-            ' Set the line color of the radio button.
-            radio2.LineFormat.ForeColor = Color.Blue
+            radio2.Line.Weight = 4
 
             ' Set the dash style of the radio button.
-            radio2.LineFormat.DashStyle = MsoLineDashStyle.Solid
-
-            ' Make the line format visible.
-            radio2.LineFormat.IsVisible = True
-
-            ' Make the fill format visible.
-            radio2.FillFormat.IsVisible = True
+            radio2.Line.DashStyle = MsoLineDashStyle.Solid
 
             ' Add another radio button.
             Dim radio3 As Global.Aspose.Cells.Drawing.RadioButton = excelbook.Worksheets(0).Shapes.AddRadioButton(9, 0, 2, 0, 30, 110)
@@ -109,26 +79,11 @@ Namespace DrawingObjects.Controls
             ' Make the radio button 3-D.
             radio3.Shadow = True
 
-            ' Set the foreground color of the radio button.
-            radio3.FillFormat.ForeColor = Color.LightGreen
-
-            ' Set the line style of the radio button.
-            radio3.LineFormat.Style = MsoLineStyle.ThickThin
-
             ' Set the weight of the radio button.
-            radio3.LineFormat.Weight = 4
-
-            ' Set the line color of the radio button.
-            radio3.LineFormat.ForeColor = Color.Blue
+            radio3.Line.Weight = 4
 
             ' Set the dash style of the radio button.
-            radio3.LineFormat.DashStyle = MsoLineDashStyle.Solid
-
-            ' Make the line format visible.
-            radio3.LineFormat.IsVisible = True
-
-            ' Make the fill format visible.
-            radio3.FillFormat.IsVisible = True
+            radio3.Line.DashStyle = MsoLineDashStyle.Solid
 
             ' Get the shapes.
             Dim shapeobjects() As Global.Aspose.Cells.Drawing.Shape = {box, radio1, radio2, radio3}

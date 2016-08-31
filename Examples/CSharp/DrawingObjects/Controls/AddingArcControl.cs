@@ -26,40 +26,25 @@ namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Controls
             Aspose.Cells.Drawing.ArcShape arc1 = excelbook.Worksheets[0].Shapes.AddArc(2, 0, 2, 0, 130, 130);
 
             // Set the placement of the arc.
-            arc1.Placement = PlacementType.FreeFloating;
-
-            // Set the fill format.
-            arc1.FillFormat.ForeColor = Color.Blue;
-
-            // Set the line style.
-            arc1.LineFormat.Style = MsoLineStyle.Single;
+            arc1.Placement = PlacementType.FreeFloating;           
 
             // Set the line weight.
-            arc1.LineFormat.Weight = 1;
-
-            // Set the color of the arc line.
-            arc1.LineFormat.ForeColor = Color.Blue;
+            arc1.Line.Weight = 1;      
 
             // Set the dash style of the arc.
-            arc1.LineFormat.DashStyle = MsoLineDashStyle.Solid;
+            arc1.Line.DashStyle = MsoLineDashStyle.Solid;
 
             // Add another arc shape.
             Aspose.Cells.Drawing.ArcShape arc2 = excelbook.Worksheets[0].Shapes.AddArc(9, 0, 2, 0, 130, 130);
 
             // Set the placement of the arc.
-            arc2.Placement = PlacementType.FreeFloating;
-
-            // Set the line style.
-            arc2.LineFormat.Style = MsoLineStyle.Single;
+            arc2.Placement = PlacementType.FreeFloating;          
 
             // Set the line weight.
-            arc2.LineFormat.Weight = 1;
-
-            // Set the color of the arc line.
-            arc2.LineFormat.ForeColor = Color.Blue;
+            arc2.Line.Weight = 1;           
 
             // Set the dash style of the arc.
-            arc2.LineFormat.DashStyle = MsoLineDashStyle.Solid;
+            arc2.Line.DashStyle = MsoLineDashStyle.Solid;
 
             // Save the excel file.
             excelbook.Save(dataDir + "book1.out.xls");

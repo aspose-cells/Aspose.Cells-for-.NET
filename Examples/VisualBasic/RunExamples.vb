@@ -13,6 +13,8 @@ Imports Aspose.Cells.Examples.VisualBasic.Articles.OptimizingMemoryUsage
 Imports Aspose.Cells.Examples.VisualBasic.Articles.WorkbookScopedNamedRanges
 Imports Aspose.Cells.Examples.VisualBasic.Articles.WorkingWithHTMLFormat
 Imports Aspose.Cells.Examples.VisualBasic.Articles.RenderingAndPrinting
+Imports Aspose.Cells.Examples.VisualBasic.Articles.WorkingWithCalculationEngine
+Imports Aspose.Cells.Examples.VisualBasic.Articles.ManagingWorkbooksWorksheets
 Imports Aspose.Cells.Examples.VisualBasic.CellsHelperClass
 Imports Aspose.Cells.Examples.VisualBasic.Charts
 Imports Aspose.Cells.Examples.VisualBasic.Charts.InsertingControlsintoCharts
@@ -241,6 +243,15 @@ Friend Class RunExamples
         '''' =====================================================
         'SetDefaultFontWhileRendering.Run()
         'SetDefaultFontWhileRenderingSpreadsheet.Run()
+        'SetCustomFontFolders.Run()
+
+        '''' WorkingWithCalculationEngine
+        '''' =====================================================
+        'DecreaseCalculationTime.Run()
+
+        '''' ManagingWorkbooksWorksheets
+        '''' =====================================================
+        ChangeChartDataSource.Run()
 
         '' =====================================================
         '' =====================================================

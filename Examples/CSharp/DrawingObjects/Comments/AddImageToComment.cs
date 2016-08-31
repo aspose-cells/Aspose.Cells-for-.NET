@@ -36,7 +36,7 @@ namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Comments
             bmp.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
 
             // Set image data to the shape associated with the comment
-            comment.CommentShape.FillFormat.ImageData = ms.ToArray();
+            comment.CommentShape.Fill.ImageData = ms.ToArray();
 
             // Save the workbook
             workbook.Save(dataDir + "book1.out.xlsx", Aspose.Cells.SaveFormat.Xlsx);

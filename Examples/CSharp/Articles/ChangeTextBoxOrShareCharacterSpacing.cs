@@ -20,10 +20,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Access the first font setting object via GetCharacters() method
             FontSetting fs = (FontSetting)shape.GetCharacters()[0];
-
-            // Set the character spacing to point 4
-            fs.ShapeFont.Spacing = 4;
-
+       
             // Save the workbook in xlsx format
             wb.Save(dataDir + "ChangeTextBoxOrShareCharacterSpacing_out_.xlsx", SaveFormat.Xlsx);
             // ExEnd:1                                

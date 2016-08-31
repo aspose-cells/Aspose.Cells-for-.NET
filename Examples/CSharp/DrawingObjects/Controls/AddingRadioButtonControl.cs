@@ -38,28 +38,13 @@ namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Controls
             radio1.LinkedCell = "A1";
 
             // Make the radio button 3-D.
-            radio1.Shadow = true;
-
-            // Set the foreground color of the radio button.
-            radio1.FillFormat.ForeColor = Color.LightGreen;
-
-            // set the line style of the radio button.
-            radio1.LineFormat.Style = MsoLineStyle.ThickThin;
+            radio1.Shadow = true;             
 
             // Set the weight of the radio button.
-            radio1.LineFormat.Weight = 4;
-
-            // Set the line color of the radio button.
-            radio1.LineFormat.ForeColor = Color.Blue;
+            radio1.Line.Weight = 4;       
 
             // Set the dash style of the radio button.
-            radio1.LineFormat.DashStyle = MsoLineDashStyle.Solid;
-
-            // Make the line format visible.
-            radio1.LineFormat.IsVisible = true;
-
-            // Make the fill format visible.
-            radio1.FillFormat.IsVisible = true;
+            radio1.Line.DashStyle = MsoLineDashStyle.Solid;            
 
             // Add another radio button to the first sheet.
             Aspose.Cells.Drawing.RadioButton radio2 = excelbook.Worksheets[0].Shapes.AddRadioButton(6, 0, 2, 0, 30, 110);
@@ -71,28 +56,13 @@ namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Controls
             radio2.LinkedCell = "A1";
 
             // Make the radio button 3-D.
-            radio2.Shadow = true;
-
-            // Set the foreground color of the radio button.
-            radio2.FillFormat.ForeColor = Color.LightGreen;
-
-            // set the line style of the radio button.
-            radio2.LineFormat.Style = MsoLineStyle.ThickThin;
+            radio2.Shadow = true;                
 
             // Set the weight of the radio button.
-            radio2.LineFormat.Weight = 4;
-
-            // Set the line color of the radio button.
-            radio2.LineFormat.ForeColor = Color.Blue;
-
+            radio2.Line.Weight = 4;
+            
             // Set the dash style of the radio button.
-            radio2.LineFormat.DashStyle = MsoLineDashStyle.Solid;
-
-            // Make the line format visible.
-            radio2.LineFormat.IsVisible = true;
-
-            // Make the fill format visible.
-            radio2.FillFormat.IsVisible = true;
+            radio2.Line.DashStyle = MsoLineDashStyle.Solid;            
 
             // Add another radio button to the first sheet.
             Aspose.Cells.Drawing.RadioButton radio3 = excelbook.Worksheets[0].Shapes.AddRadioButton(9, 0, 2, 0, 30, 110);
@@ -104,28 +74,13 @@ namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Controls
             radio3.LinkedCell = "A1";
 
             // Make the radio button 3-D.
-            radio3.Shadow = true;
-
-            // Set the foreground color of the radio button.
-            radio3.FillFormat.ForeColor = Color.LightGreen;
-
-            // set the line style of the radio button.
-            radio3.LineFormat.Style = MsoLineStyle.ThickThin;
+            radio3.Shadow = true;            
 
             // Set the weight of the radio button.
-            radio3.LineFormat.Weight = 4;
-
-            // Set the line color of the radio button.
-            radio3.LineFormat.ForeColor = Color.Blue;
+            radio3.Line.Weight = 4;
 
             // Set the dash style of the radio button.
-            radio3.LineFormat.DashStyle = MsoLineDashStyle.Solid;
-
-            // Make the line format visible.
-            radio3.LineFormat.IsVisible = true;
-
-            // Make the fill format visible.
-            radio3.FillFormat.IsVisible = true;
+            radio3.Line.DashStyle = MsoLineDashStyle.Solid;
 
             // Save the excel file.
             excelbook.Save(dataDir + "book1.out.xls");

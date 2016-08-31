@@ -27,14 +27,11 @@ Namespace DrawingObjects.Controls
             ' Add a line to the worksheet
             Dim line2 As Global.Aspose.Cells.Drawing.LineShape = worksheet.Shapes.AddLine(7, 0, 1, 0, 85, 250)
 
-            ' Set the line color
-            line2.LineFormat.ForeColor = Color.Blue
-
             ' Set the line style.
-            line2.LineFormat.DashStyle = MsoLineDashStyle.Solid
+            line2.Line.DashStyle = MsoLineDashStyle.Solid
 
             ' Set the weight of the line.
-            line2.LineFormat.Weight = 3
+            line2.Line.Weight = 3
 
             ' Set the placement.
             line2.Placement = PlacementType.FreeFloating

@@ -26,16 +26,13 @@ namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Controls
             Worksheet worksheet = workbook.Worksheets[0];
 
             // Add a line to the worksheet
-            Aspose.Cells.Drawing.LineShape line2 = worksheet.Shapes.AddLine(7, 0, 1, 0, 85, 250);
-
-            // Set the line color
-            line2.LineFormat.ForeColor = Color.Blue;
+            Aspose.Cells.Drawing.LineShape line2 = worksheet.Shapes.AddLine(7, 0, 1, 0, 85, 250);          
 
             // Set the line style.
-            line2.LineFormat.DashStyle = MsoLineDashStyle.Solid;
+            line2.Line.DashStyle = MsoLineDashStyle.Solid;
 
             // Set the weight of the line.
-            line2.LineFormat.Weight = 3;
+            line2.Line.Weight = 3;
 
             // Set the placement.
             line2.Placement = PlacementType.FreeFloating;

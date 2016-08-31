@@ -59,16 +59,10 @@ namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Controls
             textbox0.AddHyperlink("http:// Www.aspose.com/");
 
             // Get the filformat of the textbox.
-            MsoFillFormat fillformat = textbox0.FillFormat;
-
-            // Set the fillcolor.
-            fillformat.ForeColor = Color.Silver;
+            Aspose.Cells.Drawing.FillFormat fillformat = textbox0.Fill;            
 
             // Get the lineformat type of the textbox.
-            MsoLineFormat lineformat = textbox0.LineFormat;
-
-            // Set the line style.
-            lineformat.Style = MsoLineStyle.ThinThick;
+            Aspose.Cells.Drawing.LineFormat lineformat = textbox0.Line;           
 
             // Set the line weight.
             lineformat.Weight = 6;

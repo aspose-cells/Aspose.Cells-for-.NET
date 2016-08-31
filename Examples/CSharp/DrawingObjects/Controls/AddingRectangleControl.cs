@@ -26,22 +26,13 @@ namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Controls
             Aspose.Cells.Drawing.RectangleShape rectangle = excelbook.Worksheets[0].Shapes.AddRectangle(3, 0, 2, 0, 70, 130);
 
             // Set the placement of the rectangle.
-            rectangle.Placement = PlacementType.FreeFloating;
-
-            // Set the fill format.
-            rectangle.FillFormat.ForeColor = Color.Azure;
-
-            // Set the line style.
-            rectangle.LineFormat.Style = MsoLineStyle.ThickThin;
-
+            rectangle.Placement = PlacementType.FreeFloating;   
+            
             // Set the line weight.
-            rectangle.LineFormat.Weight = 4;
-
-            // Set the color of the line.
-            rectangle.LineFormat.ForeColor = Color.Blue;
-
+            rectangle.Line.Weight = 4;
+       
             // Set the dash style of the rectangle.
-            rectangle.LineFormat.DashStyle = MsoLineDashStyle.Solid;
+            rectangle.Line.DashStyle = MsoLineDashStyle.Solid;
 
             // Save the excel file.
             excelbook.Save(dataDir + "book1.out.xls");

@@ -22,7 +22,7 @@ Namespace Charts.ManipulateChart
             Dim chart As Chart = worksheet.Charts(0)
 
             ' Specify the FilFormat' S type to Solid Fill of the first series
-            chart.NSeries(0).Area.FillFormat.Type = Aspose.Cells.Drawing.FillType.Solid
+            chart.NSeries(0).Area.FillFormat.FillType = Aspose.Cells.Drawing.FillType.Solid
 
             ' Get the CellsColor of SolidFill
             Dim cc As CellsColor = chart.NSeries(0).Area.FillFormat.SolidFill.CellsColor

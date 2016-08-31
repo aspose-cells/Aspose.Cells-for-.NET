@@ -27,7 +27,7 @@ Namespace DrawingObjects.Controls
             Dim line1 As Global.Aspose.Cells.Drawing.LineShape = worksheet.Shapes.AddLine(5, 0, 1, 0, 0, 250)
 
             ' Set the line dash style
-            line1.LineFormat.DashStyle = MsoLineDashStyle.Solid
+            line1.Line.DashStyle = MsoLineDashStyle.Solid
 
             ' Set the placement.
             line1.Placement = PlacementType.FreeFloating
@@ -36,10 +36,10 @@ Namespace DrawingObjects.Controls
             Dim line2 As Global.Aspose.Cells.Drawing.LineShape = worksheet.Shapes.AddLine(7, 0, 1, 0, 85, 250)
 
             ' Set the line dash style.
-            line2.LineFormat.DashStyle = MsoLineDashStyle.DashLongDash
+            line2.Line.DashStyle = MsoLineDashStyle.DashLongDash
 
             ' Set the weight of the line.
-            line2.LineFormat.Weight = 4
+            line2.Line.Weight = 4
 
             ' Set the placement.
             line2.Placement = PlacementType.FreeFloating
@@ -48,7 +48,7 @@ Namespace DrawingObjects.Controls
             Dim line3 As Global.Aspose.Cells.Drawing.LineShape = worksheet.Shapes.AddLine(13, 0, 1, 0, 0, 250)
 
             ' Set the line dash style
-            line3.LineFormat.DashStyle = MsoLineDashStyle.Solid
+            line3.Line.DashStyle = MsoLineDashStyle.Solid
 
             ' Set the placement.
             line3.Placement = PlacementType.FreeFloating

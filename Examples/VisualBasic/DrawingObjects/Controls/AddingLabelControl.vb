@@ -32,9 +32,6 @@ Namespace DrawingObjects.Controls
             ' Label is attached to the cells.
             label.Placement = PlacementType.FreeFloating
 
-            ' Set the fill color of the label.
-            label.FillFormat.ForeColor = Color.Yellow
-
             ' Saves the file.
             workbook.Save(dataDir & "output.xls")
             ' ExEnd:1

@@ -43,16 +43,10 @@ Namespace Charts.InsertingControlsintoCharts
             textbox0.Font.IsItalic = True
 
             ' Get the filformat of the textbox.
-            Dim fillformat As Global.Aspose.Cells.Drawing.MsoFillFormat = textbox0.FillFormat
-
-            ' Set the fillcolor.
-            fillformat.ForeColor = Color.Silver
+            Dim fillformat As Global.Aspose.Cells.Drawing.FillFormat = textbox0.Fill
 
             ' Get the lineformat type of the textbox.
-            Dim lineformat As Global.Aspose.Cells.Drawing.MsoLineFormat = textbox0.LineFormat
-
-            ' Set the line style.
-            lineformat.Style = Global.Aspose.Cells.Drawing.MsoLineStyle.ThinThick
+            Dim lineformat As Global.Aspose.Cells.Drawing.LineFormat = textbox0.Line
 
             ' Set the line weight.
             lineformat.Weight = 2

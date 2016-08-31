@@ -28,9 +28,6 @@ Namespace Charts.InsertingControlsintoCharts
             ' Label is attached to the cells.
             label.Placement = Global.Aspose.Cells.Drawing.PlacementType.FreeFloating
 
-            ' Set the fill color of the label.
-            label.FillFormat.ForeColor = Color.Azure
-
             ' Save the excel file.
             workbook.Save(dataDir & "output.xls")
             ' ExEnd:1

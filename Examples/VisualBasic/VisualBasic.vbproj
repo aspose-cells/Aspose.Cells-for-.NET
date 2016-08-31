@@ -48,9 +48,9 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=8.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+    <Reference Include="Aspose.Cells, Version=8.9.2.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Aspose.Cells.8.9.0\lib\net40\Aspose.Cells.dll</HintPath>
+      <HintPath>..\packages\Aspose.Cells.8.9.2\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -166,6 +166,7 @@
     <Compile Include="Articles\LoadSpecificSheets.vb" />
     <Compile Include="Articles\LoadWebImage.vb" />
     <Compile Include="Articles\LoadWorkbookWithPrinterSize.vb" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\ChangeChartDataSource.vb" />
     <Compile Include="Articles\MergeUnmergeRangeOfCells.vb" />
     <Compile Include="Articles\ModifyExistingStyle\ModifyThroughSampleExcelFile.vb" />
     <Compile Include="Articles\ModifyExistingStyle\ModifyThroughStyleObject.vb" />
@@ -176,6 +177,7 @@
     <Compile Include="Articles\ReadingCellValuesInMultipleThreadsSimultaneously.vb" />
     <Compile Include="Articles\ReadingCSVMultipleEncodings.vb" />
     <Compile Include="Articles\RemoveWhitespaceAroundData.vb" />
+    <Compile Include="Articles\RenderingAndPrinting\SetCustomFontFolders.vb" />
     <Compile Include="Articles\RenderingAndPrinting\SetDefaultFontWhileRendering.vb" />
     <Compile Include="Articles\RenderingAndPrinting\SetDefaultFontWhileRenderingSpreadsheet.vb" />
     <Compile Include="Articles\RenderOnePdfPagePerExcelWorksheet.vb" />
@@ -194,7 +196,9 @@
     <Compile Include="Articles\SettingTextEffectsShadowOfShapeOrTextbox.vb" />
     <Compile Include="Articles\UpdateReferenceInWorksheets.vb" />
     <Compile Include="Articles\UsingImageMarkersWhileGroupingDataInSmartMarkers.vb" />
+    <Compile Include="Articles\WorkingWithCalculationEngine\DecreaseCalculationTime.vb" />
     <Compile Include="Articles\WorkingWithHTMLFormat\ExpandTextFromRightToLeft.vb" />
+    <Compile Include="Articles\WorkingWithHTMLFormat\ExportedWorkSheetViaIFilePathProvider.vb" />
     <Compile Include="CellsHelperClass\MergeFiles.vb" />
     <Compile Include="CellsHelperClass\NameToIndex.vb" />
     <Compile Include="CellsHelperClass\IndexToName.vb" />

@@ -37,9 +37,9 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=8.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+    <Reference Include="Aspose.Cells, Version=8.9.2.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Aspose.Cells.8.9.0\lib\net40\Aspose.Cells.dll</HintPath>
+      <HintPath>..\packages\Aspose.Cells.8.9.2\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -148,6 +148,7 @@
     <Compile Include="Articles\LoadExcelFileWithoutChart.cs" />
     <Compile Include="Articles\LoadWorkbookWithPrinterSize.cs" />
     <Compile Include="Articles\LoadWebImage.cs" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\ChangeChartDataSource.cs" />
     <Compile Include="Articles\MergeUnmergeRangeOfCells.cs" />
     <Compile Include="Articles\ModifyExistingStyle\ModifyThroughSampleExcelFile.cs" />
     <Compile Include="Articles\ModifyExistingStyle\ModifyThroughStyleObject.cs" />
@@ -159,6 +160,7 @@
     <Compile Include="Articles\ReadingCSVMultipleEncodings.cs" />
     <Compile Include="Articles\RemoveUnusedStyles.cs" />
     <Compile Include="Articles\RemoveWhitespaceAroundData.cs" />
+    <Compile Include="Articles\RenderingAndPrinting\SetCustomFontFolders.cs" />
     <Compile Include="Articles\RenderingAndPrinting\SetDefaultFontWhileRenderingSpreadsheet.cs" />
     <Compile Include="Articles\RenderUnicodeInOutput.cs" />
     <Compile Include="Articles\RenderOnePdfPagePerExcelWorksheet.cs" />
@@ -192,6 +194,8 @@
     <Compile Include="Articles\WorkbookScopedNamedRanges\AddWorkbookScopedNamedRange.cs" />
     <Compile Include="Articles\WorkbookScopedNamedRanges\WorksheetNamedRange.cs" />
     <Compile Include="Articles\RenderingAndPrinting\SetDefaultFontWhileRendering.cs" />
+    <Compile Include="Articles\WorkingWithCalculationEngine\DecreaseCalculationTime.cs" />
+    <Compile Include="Articles\WorkingWithHTMLFormat\ExportedWorkSheetViaIFilePathProvider.cs" />
     <Compile Include="Articles\WorkingWithHTMLFormat\ExpandTextFromRightToLeft.cs" />
     <Compile Include="CellsHelperClass\MergeFiles.cs" />
     <Compile Include="CellsHelperClass\NameToIndex.cs" />

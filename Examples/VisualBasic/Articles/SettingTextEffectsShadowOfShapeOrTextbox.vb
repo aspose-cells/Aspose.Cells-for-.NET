@@ -22,11 +22,6 @@ Namespace Articles
             ' Set the text of the textbox
             tb.Text = "This text has the following settings." & vbLf & vbLf & "Text Effects > Shadow > Offset Bottom"
 
-            ' Set all the text runs shadow to preset offset bottom
-            For i As Integer = 0 To tb.TextBody.Count - 1
-                tb.TextBody(i).ShapeFont.FillFormat.ShadowEffect.PresetType = PresetShadowType.OffsetBottom
-            Next
-
             ' Set the font color and size of the textbox
             tb.Font.Color = Color.Red
             tb.Font.Size = 16

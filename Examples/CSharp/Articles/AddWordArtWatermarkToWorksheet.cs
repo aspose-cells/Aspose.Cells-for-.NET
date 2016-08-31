@@ -29,17 +29,13 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             , 18, 8, 1, 1, 130, 800);
 
             // Get the fill format of the word art
-            MsoFillFormat wordArtFormat = wordart.FillFormat;
-
-            // Set the color
-            wordArtFormat.ForeColor = System.Drawing.Color.Red;
+           FillFormat wordArtFormat = wordart.Fill;            
 
             // Set the transparency
             wordArtFormat.Transparency = 0.9;
 
             // Make the line invisible
-            MsoLineFormat lineFormat = wordart.LineFormat;
-            lineFormat.IsVisible = false;
+            LineFormat lineFormat = wordart.Line;          
 
             dataDir = dataDir + "Watermark_Test.out.xls";
             // Save the file

@@ -28,19 +28,13 @@ namespace Aspose.Cells.Examples.CSharp.Charts.InsertingControlsintoCharts
             Aspose.Cells.Drawing.Picture pic0 = chart.Shapes.AddPictureInChart(50, 50, stream, 40, 40);
 
             // Get the lineformat type of the picture.
-            Aspose.Cells.Drawing.MsoLineFormat lineformat = pic0.LineFormat;
-
-            // Set the line color.
-            lineformat.ForeColor = Color.Red;
+            Aspose.Cells.Drawing.LineFormat lineformat = pic0.Line;          
 
             // Set the dash style.
             lineformat.DashStyle = Aspose.Cells.Drawing.MsoLineDashStyle.Solid;
 
             // Set the line weight.
-            lineformat.Weight = 4;
-
-            // Set the line style.
-            lineformat.Style = Aspose.Cells.Drawing.MsoLineStyle.ThickThin;
+            lineformat.Weight = 4;    
 
             // Save the excel file.
             workbook.Save(dataDir + "chart.out.xls");

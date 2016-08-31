@@ -58,16 +58,10 @@ Namespace DrawingObjects.Controls
             textbox0.AddHyperlink("http://www.aspose.com/")
 
             ' Get the filformat of the textbox.
-            Dim fillformat As MsoFillFormat = textbox0.FillFormat
-
-            ' Set the fillcolor.
-            fillformat.ForeColor = Color.Silver
+            Dim fillformat As FillFormat = textbox0.Fill
 
             ' Get the lineformat type of the textbox.
-            Dim lineformat As MsoLineFormat = textbox0.LineFormat
-
-            ' Set the line style.
-            lineformat.Style = MsoLineStyle.ThinThick
+            Dim lineformat As LineFormat = textbox0.Line
 
             ' Set the line weight.
             lineformat.Weight = 6

@@ -17,9 +17,6 @@ Namespace Articles
             ' Access the first font setting object via GetCharacters() method
             Dim fs As FontSetting = DirectCast(shape.GetCharacters()(0), FontSetting)
 
-            ' Set the character spacing to point 4
-            fs.ShapeFont.Spacing = 4
-
             ' Save the workbook in xlsx format
             wb.Save(dataDir & Convert.ToString("ChangeTextBoxOrShareCharacterSpacing_out_.xlsx"), SaveFormat.Xlsx)
             ' ExEnd:1

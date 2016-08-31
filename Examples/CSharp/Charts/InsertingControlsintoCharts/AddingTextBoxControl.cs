@@ -46,17 +46,11 @@ namespace Aspose.Cells.Examples.CSharp.Charts.InsertingControlsintoCharts
             textbox0.Font.IsItalic = true;
 
             // Get the filformat of the textbox.
-            Aspose.Cells.Drawing.MsoFillFormat fillformat = textbox0.FillFormat;
-
-            // Set the fillcolor.
-            fillformat.ForeColor = Color.Silver;
+            Aspose.Cells.Drawing.FillFormat fillformat = textbox0.Fill;
 
             // Get the lineformat type of the textbox.
-            Aspose.Cells.Drawing.MsoLineFormat lineformat = textbox0.LineFormat;
-
-            // Set the line style.
-            lineformat.Style = Aspose.Cells.Drawing.MsoLineStyle.ThinThick;
-
+            Aspose.Cells.Drawing.LineFormat lineformat = textbox0.Line;
+     
             // Set the line weight.
             lineformat.Weight = 2;
 

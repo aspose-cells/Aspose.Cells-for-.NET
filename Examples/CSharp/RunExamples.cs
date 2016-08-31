@@ -18,6 +18,8 @@ using Aspose.Cells.Examples.CSharp.Articles.OptimizingMemoryUsage;
 using Aspose.Cells.Examples.CSharp.Articles.WorkbookScopedNamedRanges;
 using Aspose.Cells.Examples.CSharp.Articles.WorkingWithHTMLFormat;
 using Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting;
+using Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine;
+using Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets;
 using Aspose.Cells.Examples.CSharp.CellsHelperClass;
 using Aspose.Cells.Examples.CSharp.Charts;
 using Aspose.Cells.Examples.CSharp.Charts.InsertingControlsintoCharts;
@@ -248,6 +250,15 @@ namespace Aspose.Cells.Examples.CSharp
             //// =====================================================
             //SetDefaultFontWhileRendering.Run();
             //SetDefaultFontWhileRenderingSpreadsheet.Run();
+            //SetCustomFontFolders.Run();
+
+            //// WorkingWithCalculationEngine
+            //// =====================================================
+            //DecreaseCalculationTime.Run();
+
+            //// ManagingWorkbooksWorksheets
+            //// =====================================================
+            //ChangeChartDataSource.Run();
 
             // =====================================================
             // =====================================================

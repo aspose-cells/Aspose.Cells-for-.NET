@@ -31,9 +31,6 @@ namespace Aspose.Cells.Examples.CSharp.Charts.InsertingControlsintoCharts
             // Label is attached to the cells.
             label.Placement = Aspose.Cells.Drawing.PlacementType.FreeFloating;
 
-            // Set the fill color of the label.
-            label.FillFormat.ForeColor = Color.Azure;
-
             // Save the excel file.
             workbook.Save(dataDir + "chart.out.xls");
             // ExEnd:1
