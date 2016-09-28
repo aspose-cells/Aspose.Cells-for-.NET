@@ -20,8 +20,13 @@ Namespace Articles
                 cells("A1").PutValue("A1")
                 cells("C10").PutValue("C10")
 
+                ' Get the conditional icon's image data
+                Dim imagedata As Byte() = ConditionalFormattingIcon.GetIconImageData(IconSetType.TrafficLights31, 0)
+                ' Create a stream based on the image data
+                Dim stream As New MemoryStream(imagedata)
+
                 ' Add a blank picture to the D1 cell
-                Dim pic As Picture = CType(workbook.Worksheets(0).Shapes.AddPicture(0, 3, 10, 6, Nothing), Picture)
+                Dim pic As Picture = CType(workbook.Worksheets(0).Shapes.AddPicture(0, 3, 10, 6, stream), Picture)
                 ' Specify the formula that refers to the source range of cells
                 pic.Formula = "A1:C10"
                 ' Update the shapes selected value in the worksheet

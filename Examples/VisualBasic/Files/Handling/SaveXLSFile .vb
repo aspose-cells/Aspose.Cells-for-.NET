@@ -12,8 +12,10 @@ Namespace Files.Handling
             Dim Respose As HttpResponse = Nothing
             ' Load your source workbook
             Dim workbook As New Workbook()
-            ' Save in Excel2007 xlsx format
-            workbook.Save(Respose, dataDir & Convert.ToString("output.xls"), ContentDisposition.Inline, New XlsSaveOptions())
+            If Respose IsNot Nothing Then
+                ' Save in Excel2007 xlsx format
+                workbook.Save(Respose, dataDir + "output.xls", ContentDisposition.Inline, New XlsSaveOptions())
+            End If
             ' ExEnd:1
         End Sub
     End Class

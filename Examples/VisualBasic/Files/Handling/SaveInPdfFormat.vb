@@ -11,9 +11,11 @@ Namespace Files.Handling
             Dim Respose As HttpResponse = Nothing
             ' Creating a Workbook object
             Dim workbook As New Workbook()
-            ' Save in Pdf format
-            workbook.Save(Respose, dataDir & Convert.ToString("output.pdf"), ContentDisposition.Attachment, New PdfSaveOptions())
-            Respose.[End]()
+            If Respose IsNot Nothing Then
+                ' Save in Pdf format
+                workbook.Save(Respose, dataDir + "output.pdf", ContentDisposition.Attachment, New PdfSaveOptions())
+                Respose.[End]()
+            End If
             ' ExEnd:1
         End Sub
 

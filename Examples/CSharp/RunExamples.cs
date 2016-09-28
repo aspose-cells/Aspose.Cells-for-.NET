@@ -475,7 +475,7 @@ namespace Aspose.Cells.Examples.CSharp
             //SaveInPdfFormat.Run();
             //SaveInSpreadsheetMLFormat.Run();
             //SaveWorkbookToTextCSVFormat.Run();
-            //SaveXLSFile.Run();
+            SaveXLSFile.Run();
             //SaveXLSXFile.Run();
             //SavingFiles.Run();
             //SavingFiletoSomeLocation.Run();
@@ -595,7 +595,7 @@ namespace Aspose.Cells.Examples.CSharp
             //SettingFormatOptions.Run();
             //SettingPageFieldFormat.Run();
             //RefreshAndCalculateItems.Run();
-            SpecifyCompatibility.Run();
+            //SpecifyCompatibility.Run();
 
             // =====================================================
             // =====================================================

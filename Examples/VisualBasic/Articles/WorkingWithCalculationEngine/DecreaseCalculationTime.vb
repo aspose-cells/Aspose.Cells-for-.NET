@@ -45,7 +45,7 @@ Namespace Articles.WorkingWithCalculationEngine
             Dim estimatedTime As Long = sw.ElapsedMilliseconds / second
 
             ' Print the elapsed time in seconds
-            Console.WriteLine("Recursive " + rec + ": " + estimatedTime + " seconds")
+            Console.WriteLine("Recursive " + rec.ToString() + ": " + estimatedTime.ToString() + " seconds")
 
         End Sub
         ' ExEnd:TestCalcTimeRecursive

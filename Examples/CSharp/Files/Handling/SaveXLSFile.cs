@@ -15,8 +15,11 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             HttpResponse Respose = null;
             // Load your source workbook
             Workbook workbook = new Workbook();
-            // Save in Excel2007 xlsx format
-            workbook.Save(Respose, dataDir + "output.xls", ContentDisposition.Inline, new XlsSaveOptions());
+            if (Respose != null)
+            {
+                // Save in Excel2007 xlsx format
+                workbook.Save(Respose, dataDir + "output.xls", ContentDisposition.Inline, new XlsSaveOptions());
+            }
             // ExEnd:1
         }
     }

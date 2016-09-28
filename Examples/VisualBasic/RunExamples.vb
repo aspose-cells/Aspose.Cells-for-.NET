@@ -251,7 +251,7 @@ Friend Class RunExamples
 
         '''' ManagingWorkbooksWorksheets
         '''' =====================================================
-        ChangeChartDataSource.Run()
+        'ChangeChartDataSource.Run()
 
         '' =====================================================
         '' =====================================================
@@ -590,7 +590,7 @@ Friend Class RunExamples
         'SettingFormatOptions.Run()
         'SettingPageFieldFormat.Run()
         'RefreshAndCalculateItems.Run()
-        SpecifyCompatibility.Run()
+        'SpecifyCompatibility.Run()
 
         '' =====================================================
         '' =====================================================

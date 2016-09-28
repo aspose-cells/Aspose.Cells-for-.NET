@@ -17,7 +17,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
                 // The path to the documents directory.
                 string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
                 // Instantiate a new Workbook
-                Workbook workbook = new Workbook(dataDir + "book1.xlsx");
+                Workbook workbook = new Workbook();
                 // Get the first worksheet's cells collection
                 Cells cells = workbook.Worksheets[0].Cells;
 
@@ -25,8 +25,13 @@ namespace Aspose.Cells.Examples.CSharp.Articles
                 cells["A1"].PutValue("A1");
                 cells["C10"].PutValue("C10");
 
+                // Get the conditional icon's image data
+                byte[] imagedata = ConditionalFormattingIcon.GetIconImageData(IconSetType.TrafficLights31, 0);
+                // Create a stream based on the image data
+                MemoryStream stream = new MemoryStream(imagedata);
+
                 // Add a blank picture to the D1 cell
-                Picture pic = (Picture)workbook.Worksheets[0].Shapes.AddPicture(0, 3, 10, 6, null);
+                Picture pic = (Picture)workbook.Worksheets[0].Shapes.AddPicture(0, 3, stream, 10, 10);
                 // Specify the formula that refers to the source range of cells
                 pic.Formula = "A1:C10";
                 // Update the shapes selected value in the worksheet

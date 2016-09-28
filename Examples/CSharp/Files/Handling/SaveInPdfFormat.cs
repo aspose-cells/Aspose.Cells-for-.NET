@@ -14,9 +14,12 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             HttpResponse Respose = null;
             // Creating a Workbook object
             Workbook workbook = new Workbook();
-              // Save in Pdf format
-            workbook.Save(Respose, dataDir + "output.pdf", ContentDisposition.Attachment, new PdfSaveOptions());
-            Respose.End();
+            if (Respose != null)
+            {
+                // Save in Pdf format
+                workbook.Save(Respose, dataDir + "output.pdf", ContentDisposition.Attachment, new PdfSaveOptions());
+                Respose.End();
+            }            
             // ExEnd:1
         }
     }

@@ -424,17 +424,17 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="PivotTableExamples\ConsolidationFunctions.vb" />
-    <Compile Include="PivotTableExamples\ClearPivotFields.vb" />
-    <Compile Include="PivotTableExamples\FormattingLook.vb" />
-    <Compile Include="PivotTableExamples\RefreshAndCalculateItems.vb" />
-    <Compile Include="PivotTableExamples\SettingAutoFormat.vb" />
-    <Compile Include="PivotTableExamples\SettingDataFieldFormat.vb" />
-    <Compile Include="PivotTableExamples\SettingPageFieldFormat.vb" />
-    <Compile Include="PivotTableExamples\SettingFormatOptions.vb" />
-    <Compile Include="PivotTableExamples\CreatePivotTable.vb" />
-    <Compile Include="PivotTableExamples\ChangeSourceData.vb" />
-    <Compile Include="PivotTableExamples\SpecifyCompatibility.vb" />
+    <Compile Include="PivotTable\ConsolidationFunctions.vb" />
+    <Compile Include="PivotTable\ClearPivotFields.vb" />
+    <Compile Include="PivotTable\FormattingLook.vb" />
+    <Compile Include="PivotTable\RefreshAndCalculateItems.vb" />
+    <Compile Include="PivotTable\SettingAutoFormat.vb" />
+    <Compile Include="PivotTable\SettingDataFieldFormat.vb" />
+    <Compile Include="PivotTable\SettingPageFieldFormat.vb" />
+    <Compile Include="PivotTable\SettingFormatOptions.vb" />
+    <Compile Include="PivotTable\CreatePivotTable.vb" />
+    <Compile Include="PivotTable\ChangeSourceData.vb" />
+    <Compile Include="PivotTable\SpecifyCompatibility.vb" />
     <Compile Include="RowsColumns\AutofitRowinSpecificRange.vb" />
     <Compile Include="RowsColumns\AutofitRowsandColumns.vb" />
     <Compile Include="RowsColumns\AutofitRowsforMergedCells.vb" />
