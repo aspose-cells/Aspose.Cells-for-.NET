@@ -110,8 +110,8 @@
     <Compile Include="Articles\DeleteBlankRowsColumns\DeletingBlankRows.cs" />
     <Compile Include="Articles\DeleteRedundantSpacesWhileImportingFromHtml.cs" />
     <Compile Include="Articles\DetectMergedCells.cs" />
-    <Compile Include="Articles\DivTagsLayout.cs" />
     <Compile Include="Articles\DisableCompatibilityChecker.cs" />
+    <Compile Include="Articles\DivTagsLayout.cs" />
     <Compile Include="Articles\ErrorCheckingOptions.cs" />
     <Compile Include="Articles\ExportToHTMLWithGridLines.cs" />
     <Compile Include="Articles\ExportRangeofCells.cs" />
