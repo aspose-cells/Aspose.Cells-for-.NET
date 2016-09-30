@@ -14,7 +14,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             // Defining string variables to store paths to font folders & font file
             string fontFolder1 =  dataDir + "Arial";
             string fontFolder2 =  dataDir + "Calibri";
-            string fontFile = dataDir + "arial.ttf";
+            string fontFile = dataDir + "arial.ttf"; 
 
             // Setting first font folder with SetFontFolder method
             // Second parameter directs the API to search the subfolders for font files
