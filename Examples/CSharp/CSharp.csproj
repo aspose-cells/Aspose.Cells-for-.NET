@@ -160,6 +160,9 @@
     <Compile Include="Articles\ReadingCSVMultipleEncodings.cs" />
     <Compile Include="Articles\RemoveUnusedStyles.cs" />
     <Compile Include="Articles\RemoveWhitespaceAroundData.cs" />
+    <Compile Include="Articles\RenderingAndPrinting\PrintCommentWhileSavingToPdf.cs" />
+    <Compile Include="Articles\RenderingAndPrinting\PrintingUsingSheetRender.cs" />
+    <Compile Include="Articles\RenderingAndPrinting\PrintingUsingWorkbookRender.cs" />
     <Compile Include="Articles\RenderingAndPrinting\SetCustomFontFolders.cs" />
     <Compile Include="Articles\RenderingAndPrinting\SetDefaultFontWhileRenderingSpreadsheet.cs" />
     <Compile Include="Articles\RenderUnicodeInOutput.cs" />

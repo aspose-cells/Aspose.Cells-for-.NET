@@ -244,6 +244,10 @@ Friend Class RunExamples
         'SetDefaultFontWhileRendering.Run()
         'SetDefaultFontWhileRenderingSpreadsheet.Run()
         'SetCustomFontFolders.Run()
+        'PrintingUsingSheetRender.Run()
+        'PrintingUsingWorkbookRender.Run()
+        PrintCommentWhileSavingToPdf.Run()
+
 
         '''' WorkingWithCalculationEngine
         '''' =====================================================

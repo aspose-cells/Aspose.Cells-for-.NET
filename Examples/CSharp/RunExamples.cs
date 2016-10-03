@@ -251,6 +251,9 @@ namespace Aspose.Cells.Examples.CSharp
             //SetDefaultFontWhileRendering.Run();
             //SetDefaultFontWhileRenderingSpreadsheet.Run();
             //SetCustomFontFolders.Run();
+            //PrintCommentWhileSavingToPdf.Run();
+            //PrintingUsingSheetRender.Run();
+            PrintingUsingWorkbookRender.Run();
 
             //// WorkingWithCalculationEngine
             //// =====================================================
@@ -475,7 +478,7 @@ namespace Aspose.Cells.Examples.CSharp
             //SaveInPdfFormat.Run();
             //SaveInSpreadsheetMLFormat.Run();
             //SaveWorkbookToTextCSVFormat.Run();
-            SaveXLSFile.Run();
+            //SaveXLSFile.Run();
             //SaveXLSXFile.Run();
             //SavingFiles.Run();
             //SavingFiletoSomeLocation.Run();
