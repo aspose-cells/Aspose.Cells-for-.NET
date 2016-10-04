@@ -1,4 +1,4 @@
-//Copyright (c) 2001-2015 Aspose Pty Ltd. All Rights Reserved.
+//Copyright (c) 2001-2016 Aspose Pty Ltd. All Rights Reserved.
 
 ﻿/*****************************************************
  * Aspose.Cells.GridWeb Component Language File
@@ -78,7 +78,7 @@ var ACWLang =
 	TipExpandGroupButton	:"展开或折叠行组",
 	TipSortHeader			:"点击排序",
 	TipFilterButton			:"点击显示筛选值",
-	
+	 TipPasteTooMuchRows    : " 复制的行超过可以粘贴的行数.",
 	// dialogbox
 	DialogBoxLoading		:"正在加载，请稍候..."
 }

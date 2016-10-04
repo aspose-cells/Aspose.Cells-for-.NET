@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Aspose.Cells.Demos
+namespace Aspose.Cells.GridWeb.Examples.CSharp
 {
     public partial class WebFormtest : System.Web.UI.Page
     {

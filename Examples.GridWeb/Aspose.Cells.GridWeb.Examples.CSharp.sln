@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 13.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "New.Demos.2010", "New.Demos.2010.csproj", "{4E407FEA-434B-4678-8525-7649D85A1792}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp", "CSharp\CSharp.csproj", "{4E407FEA-434B-4678-8525-7649D85A1792}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

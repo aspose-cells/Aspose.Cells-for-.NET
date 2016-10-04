@@ -1,4 +1,4 @@
-//Copyright (c) 2001-2015 Aspose Pty Ltd. All Rights Reserved.
+//Copyright (c) 2001-2016 Aspose Pty Ltd. All Rights Reserved.
 
 /*****************************************************
  * Aspose.Cells.GridWeb Component Language File
@@ -78,7 +78,7 @@ var ACWLang =
 	TipExpandGroupButton	:"Expand or collapse the group rows.",
 	TipSortHeader			:"Click to sort.",
 	TipFilterButton			:"Click to show the filter values.",
-	
+	TipPasteTooMuchRows  : "The  rows of the copy content is more than the paste rows .",
 	// dialogbox
 	DialogBoxLoading		:"Loading, please wait..."
 }

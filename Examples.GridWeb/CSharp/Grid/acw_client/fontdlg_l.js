@@ -1,6 +1,6 @@
-//Copyright (c) 2001-2015 Aspose Pty Ltd. All Rights Reserved.
+//Copyright (c) 2001-2016 Aspose Pty Ltd. All Rights Reserved.
 
-//Copyright (c) 2001-2011 Aspose Pty Ltd. All Rights Reserved.
+//Copyright (c) 2001-2012 Aspose Pty Ltd. All Rights Reserved.
 
 /*****************************************************
  * Aspose.Cells.GridWeb Component Script File
@@ -10,33 +10,46 @@
 var acell;
 var olist = null;
 var setborder = null;
+var _element;
+
 function initDlg()
 {
-	acell = dialogArguments;
-	if (acell.list != null && (typeof acell.list.length) == "number" && acell.list.length > 0)
+	_element = window.opener.acwDialogElement;
+	if (_element._selections != null && _element._selections.list.length > 0)
 	{
-		olist = acell;
+		olist = _element._selections;
 		var range = olist.list[0];
-		acell = olist.g.getCell(range.startRow, range.startCol);
+		acell = _element.getCell(range.startRow, range.startCol);
 	}
+	else
+		acell = _element.ActiveCell;
 	
 	table2.style.height = table1.offsetHeight;
-	window.returnValue = false;
+	window.innerWidth = table1.offsetWidth;
+	window.innerHeight = document.body.offsetHeight;
+
 	getSystemFonts();
 	
-	preview.style.fontFamily = txtFont.value = acell.currentStyle.fontFamily;
-	preview.style.fontStyle = acell.currentStyle.fontStyle;
-	preview.style.fontWeight = acell.currentStyle.fontWeight;
+	if (!acell.tdstyle)
+	{
+		try {copyStyles();}
+		catch (ex) {}
+		acell.tdstyle = true;
+	}
+
+	preview.style.fontFamily = txtFont.value = acell.style.fontFamily;
+	preview.style.fontStyle = acell.style.fontStyle;
+	preview.style.fontWeight = acell.style.fontWeight;
 	preview.style.display = "table-cell";
-	preview_parent_td.style.verticalAlign = acell.currentStyle.verticalAlign;
-	preview.style.textAlign = acell.currentStyle.textAlign;
-	//alert(preview_parent_td.style.height + ";" + acell.id + "---" + acell.style.verticalAlign + "acell.currentStyle.verticalAlign----------init;" + acell.currentStyle.verticalAlign + " & " + acell.align);
+	preview.style.verticalAlign = acell.style.verticalAlign;
+	preview.parentNode.align = acell.align;
+
 	
 	var tmps = "";
-	if (acell.currentStyle.fontStyle != "normal")
+	if (acell.style.fontStyle != "" && acell.style.fontStyle != "normal")
 		tmps += "Italic";
 		
-	if (acell.currentStyle.fontWeight != "normal" && acell.currentStyle.fontWeight != "400")
+	if (acell.style.fontWeight != "" && acell.style.fontWeight != "normal")
 	{
 		if (tmps != "")
 			tmps += " Bold";
@@ -49,17 +62,13 @@ function initDlg()
 
 	txtStyle.value = tmps;
 	
-	preview.style.fontSize = txtSize.value = acell.currentStyle.fontSize;
+	preview.style.fontSize = txtSize.value = acell.style.fontSize;
 	preview.style.color = btnFC.style.backgroundColor = acell.orgColor;
 	preview.style.backgroundColor = btnBG.style.backgroundColor = acell.orgBgColor;
 	
-	//chkSub.checked = acell.parentElement.currentStyle.verticalAlign == "sub";
-	//chkSuper.checked = acell.parentElement.currentStyle.verticalAlign == "super";
-	//preview.style.verticalAlign = acell.parentElement.currentStyle.verticalAlign;
-	
 	for (var op1 = 0; op1 < selHalign.options.length; op1++)
 	{
-		if (selHalign.options[op1].value == acell.currentStyle.textAlign)
+	    if (selHalign.options[op1].value == acell.align)
 		{
 			selHalign.selectedIndex = op1;
 			break;
@@ -67,105 +76,96 @@ function initDlg()
 	}
 	for (var op1 = 0; op1 < selValign.options.length; op1++)
 	{
-		if (selValign.options[op1].value == acell.currentStyle.verticalAlign)
+		if (selValign.options[op1].value == acell.style.verticalAlign)
 		{
 			selValign.selectedIndex = op1;
 			break;
 		}
 	}
 
-	if (acell.tdstyle)
+	preview.style.textDecorationUnderline = chkUnderline.checked = acell.style.textDecoration.indexOf("underline") != -1;
+	preview.style.textDecorationLineThrough = chkStrike.checked = acell.style.textDecoration.indexOf("line-through") != -1;
+
+	var itext = acell.innerText;
+	if (itext != null && itext != "")
+		preview.innerText = itext;
+
+	selValign.onchange = function () {
+	    preview.style.verticalAlign = this.value;
+	   
+	};
+	selHalign.onchange = function () {
+	    preview.parentNode.align = this.value; 
+     };
+  
+}
+
+function copyStyles()
+{
+	acell.style.textDecoration = "none";
+	for (var s1 = 0; s1 < acell.ownerDocument.styleSheets.length; s1++)
 	{
-		preview.style.textDecorationUnderline = chkUnderline.checked = acell.style.textDecorationUnderline;
-		preview.style.textDecorationLineThrough = chkStrike.checked = acell.style.textDecorationLineThrough;
-	}
-	else
-	{
-		acell.tdstyle = true;
-		acell.style.textDecoration = "none";
-		for (var s1 = 0; s1 < acell.ownerDocument.styleSheets.length; s1++)
+		var styleSheet = acell.ownerDocument.styleSheets[s1];
+		for (var s2 = 0; s2 < styleSheet.cssRules.length; s2++)
 		{
-			var styleSheet = acell.ownerDocument.styleSheets[s1];
-			for (var s2 = 0; s2 < styleSheet.rules.length; s2++)
+			var rule = styleSheet.cssRules[s2];
+			if (rule.selectorText == "."+acell.className)
 			{
-				var rule = styleSheet.rules[s2];
-				if (rule.selectorText == "."+acell.className)
-				{
-					acell.style.textDecorationUnderline = preview.style.textDecorationUnderline = chkUnderline.checked = rule.style.textDecorationUnderline;
-					acell.style.textDecorationLineThrough = preview.style.textDecorationLineThrough = chkStrike.checked = rule.style.textDecorationLineThrough;
-					s1 = acell.ownerDocument.styleSheets.length;
-					break;
-				}
+				acell.style.fontFamily = rule.style.fontFamily;
+				acell.style.fontStyle = rule.style.fontStyle;
+				acell.style.fontWeight = rule.style.fontWeight;
+				acell.style.fontSize = rule.style.fontSize;
+				acell.orgColor = rule.style.color;
+				acell.orgBgColor = rule.style.backgroundColor;
+				acell.style.textAlign = rule.style.textAlign;
+				acell.style.verticalAlign = acell.vAlign;
+				acell.style.textDecoration = rule.style.textDecoration;
+				
+				s1 = acell.ownerDocument.styleSheets.length;
+				break;
 			}
 		}
 	}
-
-	var ss = acell.all.tags("SPAN");
-	if (ss.length > 0)
-	{
-		var txt = ss[0].innerText;
-		if (txt != "")
-			preview.innerText = txt;
-	}
-	else if (acell.innerText != "")
-		preview.innerText = acell.innerText;
-
-	selValign.onchange = function () {
-	    preview_parent_td.style.verticalAlign = this.value;
-	   // preview.style.verticalAlign = this.value;
-	    //alert("value updated1");
-
-	};
-	selHalign.onchange = function () {
-	    preview.style.textAlign = this.value;
-	   // alert("value updated2");
-	};
 }
 
 function getSystemFonts()
 {
-	var a=dlgHelper.fonts.count;
-	var fArray = new Array();
+	var fArray = new Array("System","Terminal","Fixedsys","Roman","Script","Modern","Small Fonts","MS Serif","WST_Czec","WST_Engl","WST_Fren","WST_Germ","WST_Ital","WST_Span","WST_Swed","Courier","MS ,ans Serif","Marlett","Arial","Courier New","Lucida Console","Lucida Sans Unicode","Times New ,oman","Wingdings","Symbol","Verdana","Arial Black","Comic Sans MS","Impact","Georgia","Franklin ,othic Medium","Palatino Linotype","Tahoma","Trebuchet MS","Webdings","Estrangelo Edessa","Gautami","Latha","Mangal","MV Boli","Raavi","Shruti","Tunga","Sylfaen","Microsoft Sans ,erif","MS Mincho","MS PMincho","MS Gothic","MS PGothic","MS UI Gothic","Gulim","GulimChe","Dotum","DotumChe","Batang","BatangChe","Gungsuh","GungsuhChe","MingLiU","PMingLiU","Agency FB","Algerian","Arial Narrow","Arial Rounded MT Bold","Arial Unicode MS","Baskerville Old Face","Bauhaus 93","Bell MT","Berlin Sans FB","Bernard MT Condensed","Blackadder ITC","Bodoni MT","Bodoni MT Black","Bodoni MT Condensed","Bodoni MT Poster ,ompressed","Book Antiqua","Bookman Old Style","Bradley Hand ITC","Britannic Bold","Broadway","Brush Script MT","Californian FB","Calisto MT","Castellar","Centaur","Century","Century Gothic","Century Schoolbook","Chiller","Colonna MT","Cooper Black","Copperplate Gothic Bold","Copperplate Gothic Light","Curlz MT","Edwardian ,cript ITC","Elephant","Engravers MT","Eras Bold ITC","Eras Demi ITC","Eras Light ITC","Eras Medium ,TC","Felix Titling","Footlight MT Light","Forte","Franklin Gothic Book","Franklin Gothic Demi","Franklin Gothic Demi Cond","Franklin Gothic Heavy","Franklin Gothic Medium Cond","Freestyle ,cript","French Script MT","Garamond","Gigi","Gill Sans MT Ext Condensed Bold","Gill Sans MT","Gill ,ans MT Condensed","Gill Sans Ultra Bold","Gill Sans Ultra Bold Condensed","Gloucester MT Extra ,ondensed","Goudy Old Style","Goudy Stout","Haettenschweiler","Harlow Solid Italic","Harrington","High Tower Text","Imprint MT Shadow","Jokerman","Juice ITC","Kristen ITC","Kunstler Script","Lucida Bright","Lucida Calligraphy","Lucida Fax","Lucida Handwriting","Lucida Sans","Lucida Sans Typewriter","MS Outlook","Magneto","Maiandra GD","Matura MT ,cript Capitals","Mistral","Modern No. 20","Monotype Corsiva","Niagara Engraved","Niagara Solid","OCR A Extended","Old English Text MT","Onyx","Palace Script MT","Papyrus","Parchment","Perpetua","Perpetua Titling MT","Playbill","Poor Richard","Pristina","Rage Italic","Ravie","Rockwell","Rockwell Condensed","Rockwell Extra Bold","Informal Roman","Script MT Bold","Showcard Gothic","Snap ITC","Stencil","Tw Cen MT","Tw Cen ,T Condensed","Tempus Sans ITC","Viner Hand ITC","Vivaldi","Vladimir Script","Wide Latin","Wingdings 2","Wingdings 3","Berlin Sans FB Demi","MS Reference Sans Serif","MS Reference ,pecialty","Tw Cen MT Condensed Extra Bold","MT Extra","Bookshelf Symbol 7","Kingsoft Phonetic ,lain","Basemic","Basemic Symbol","Basemic Times","Addled","Calligraphic","DicotMedium","Geotype ,T","Harvest","HarvestItal","Lissen","PalentItal","Palent","Unpact","Whimsy TT");
 	var oDropDown = selFont;
-	for (var i = 1;i < dlgHelper.fonts.count;i++){ 
-		fArray[i] = dlgHelper.fonts(i);
+	for (var i = 0;i < fArray.length;i++)
+	{ 
 		var oOption = document.createElement("OPTION");
-		oDropDown.add(oOption);	
+		oDropDown.appendChild(oOption);	
 		oOption.text = fArray[i];
 		oOption.Value = i;
 	} 
 }
-function convertRGBDecimalToHex(rgb)
-{
-    var regex = /rgb *\( *([0-9]{1,3}) *, *([0-9]{1,3}) *, *([0-9]{1,3}) *\)/;
-    var values = regex.exec(rgb);
-    if(values==null||values.length != 4)
-    {
-        return rgb; // fall back to what was given.              
-    }
-    var r = Math.round(parseFloat(values[1]));
-    var g = Math.round(parseFloat(values[2]));
-    var b = Math.round(parseFloat(values[3]));
-    return "#" 
-        + (r + 0x10000).toString(16).substring(3).toUpperCase() 
-        + (g + 0x10000).toString(16).substring(3).toUpperCase()
-        + (b + 0x10000).toString(16).substring(3).toUpperCase();
+
+function chooseColor() {
+    var url = window.location.pathname;
+    var lastIndex = url.lastIndexOf("/");
+    var colordlghtml = url.substr(0, lastIndex) + "/colordlg.htm";
+	window.colorElement = btnFC;
+	window.colorChanged = OnForeColorChange;
+	window.open(colordlghtml, "colordlg", "chrome,dependent,dialog,modal");
 }
-function chooseColor(rgbColor)
-{
-	var sColor = dlgHelper.ChooseColorDlg(rgbColor);
-		
-	//change decimal to hex
-	sColor = sColor.toString(16);
-	//add extra zeroes if hex number is less than 6 digits
-	if (sColor.length < 6) {
-  		var sTempString = "000000".substring(0,6-sColor.length);
-  		sColor = sTempString.concat(sColor);
-	}
-	//btnBorderColor.style.backgroundColor=sColor;
-	//btnBorderColor.style.backgroundColor="#"+sColor;
-    // alert("ie raise:"+(convertRGBDecimalToHex(btnBorderColor.style.backgroundColor))+";"+("#"+sColor));
-	return "#"+sColor;
+
+function chooseBgColor() {
+    var url = window.location.pathname;
+    var lastIndex = url.lastIndexOf("/");
+    var colordlghtml = url.substr(0, lastIndex) + "/colordlg.htm";
+	window.colorElement = btnBG;
+	window.colorChanged = OnBGColorChange;
+	window.open(colordlghtml, "colordlg", "chrome,dependent,dialog,modal");
+}
+
+function chooseBorderColor() {
+    var url = window.location.pathname;
+    var lastIndex = url.lastIndexOf("/");
+    var colordlghtml = url.substr(0, lastIndex) + "/colordlg.htm";
+	window.colorElement = btnBorderColor;
+	window.colorChanged = OnBorderColorChange;
+	window.open(colordlghtml, "colordlg", "chrome,dependent,dialog,modal");
 }
 
 function OnForeColorChange()
@@ -176,7 +176,10 @@ function OnForeColorChange()
 function OnBGColorChange()
 {
 	preview.style.backgroundColor = btnBG.style.backgroundColor;
-    preview_parent_td.style.backgroundColor = btnBG.style.backgroundColor;
+}
+
+function OnBorderColorChange()
+{
 }
 
 function OnFontChange()
@@ -239,7 +242,7 @@ function FontOk()
 {
 	if (setborder != null)
 		setBorders();
-
+		
 	if (getattr(acell, "protected") == "1")
 		acell = document.createElement("TD");
 	acell.styleStr = acell.style.fontFamily = txtFont.value;
@@ -269,20 +272,42 @@ function FontOk()
 			acell.style.fontWeight = "bold";
 			acell.styleStr += "ib|";
 			break;
+
+		default:
+			acell.style.fontStyle = "normal";
+			acell.style.fontWeight = "normal";
+			acell.styleStr += "r|";
+			break;
 	}
 	acell.style.fontSize = txtSize.value;
-	acell.style.textDecorationUnderline = chkUnderline.checked;
-	acell.style.textDecorationLineThrough = chkStrike.checked;
-
-	acell.orgColor = btnFC.style.backgroundColor;
-	acell.orgBgColor = btnBG.style.backgroundColor;
 	
-	acell.style.textAlign = selHalign.options[selHalign.selectedIndex].value;
-	acell.style.verticalAlign = selValign.options[selValign.selectedIndex].value;
-	acell.align = selHalign.options[selHalign.selectedIndex].value;
+	if (chkUnderline.checked)
+		acell.style.textDecoration = "underline";
+	else
+		acell.style.textDecoration = "";
+	if (chkStrike.checked)
+	{
+		if (chkUnderline.checked)
+			acell.style.textDecoration += " line-through";
+		else
+			acell.style.textDecoration = "line-through";
+	}
+	
+	if (!chkUnderline.checked && !chkStrike.checked)
+		acell.style.textDecoration = "none";
 
+	var color = acell.orgColor = btnFC.style.backgroundColor;
+	var bcolor = acell.orgBgColor = btnBG.style.backgroundColor;
+	if (color != null && color != "" && color.charAt(0) != "#")
+		color = transColor(color);
+	if (bcolor != null && bcolor != "" && bcolor.charAt(0) != "#")
+		bcolor = transColor(bcolor);
+	//acell.style.textAlign = selHalign.options[selHalign.selectedIndex].value;
+	acell.style.verticalAlign = selValign.options[selValign.selectedIndex].value;
+    //new added
+	acell.align =selHalign.options[selHalign.selectedIndex].value;
 	acell.styleStr += txtSize.value + "|" + chkUnderline.checked + "|"
-		+ chkStrike.checked + "|" + convertRGBDecimalToHex(btnFC.style.backgroundColor) + "|" + convertRGBDecimalToHex(btnBG.style.backgroundColor)
+		+ chkStrike.checked + "|" + color + "|" + bcolor
 		+ "|" + selHalign.options[selHalign.selectedIndex].value + "|" + selValign.options[selValign.selectedIndex].value;
 
 	if (olist != null)
@@ -296,27 +321,28 @@ function FontOk()
                 {
                     var cell = olist.g.getCell(r, c);
 					if (cell != null && cell != acell && getattr(cell, "protected") != "1")
-			        {
-				        cell.styleStr = acell.styleStr + "|" + (cell.tbstr!=null?cell.tbstr:"") + "|" + (cell.bbstr!=null?cell.bbstr:"") + "|" + (cell.lbstr!=null?cell.lbstr:"") + "|" + (cell.rbstr!=null?cell.rbstr:"");
-				        cell.style.fontFamily = acell.style.fontFamily;
-				        cell.style.fontStyle = acell.style.fontStyle;
-				        cell.style.fontWeight = acell.style.fontWeight;
-				        cell.style.fontSize = acell.style.fontSize;
-				        cell.style.textDecorationUnderline = acell.style.textDecorationUnderline;
-				        cell.style.textDecorationLineThrough = acell.style.textDecorationLineThrough;
-				        cell.orgColor = acell.orgColor;
-				        cell.orgBgColor = acell.orgBgColor;
-				        //cell.style.textAlign = acell.style.textAlign;
-				        cell.align = acell.align;
-				        cell.style.verticalAlign = acell.style.verticalAlign;
-			        }
-                }
-            }
+				    {
+					    cell.styleStr = acell.styleStr + "|" + (cell.tbstr!=null?cell.tbstr:"") + "|" + (cell.bbstr!=null?cell.bbstr:"") + "|" + (cell.lbstr!=null?cell.lbstr:"") + "|" + (cell.rbstr!=null?cell.rbstr:"");
+					    cell.style.fontFamily = acell.style.fontFamily;
+					    cell.style.fontStyle = acell.style.fontStyle;
+					    cell.style.fontWeight = acell.style.fontWeight;
+					    cell.style.fontSize = acell.style.fontSize;
+					    cell.style.textDecoration = acell.style.textDecoration;
+					    cell.orgColor = acell.orgColor;
+					    cell.orgBgColor = acell.orgBgColor;
+					    //cell.style.textAlign = acell.style.textAlign;
+					    cell.align = acell.align;
+					    cell.style.verticalAlign = acell.style.verticalAlign;
+				    }
+				}
+			}
 		}
 	}
 	acell.styleStr = acell.styleStr + "|" + (acell.tbstr!=null?acell.tbstr:"") + "|" + (acell.bbstr!=null?acell.bbstr:"") + "|" + (acell.lbstr!=null?acell.lbstr:"") + "|" + (acell.rbstr!=null?acell.rbstr:"");
+	_element.closeFontDialog();
 	window.returnValue = true;
 	window.close();
+	window.opener.fontdialogcallback();
 }
 
 function showFont()
@@ -335,9 +361,9 @@ function showBorders()
 	table2.style.display = "block";
 }
 
-function clickBorderBtn()
+function clickBorderBtn(ev)
 {
-	var o = event.srcElement;
+	var o = ev.target;
 	var id = o.id;
 	var i;
 	for (i = 1; i<=8; i++)
@@ -347,6 +373,22 @@ function clickBorderBtn()
 	o.style.border = "3px inset white";
 	setborder = id;
 }
+
+function transColor(color)
+{
+	var rx = /^rgb\(\s*(\d+),\s*(\d+),\s*(\d+)\s*\)$/;
+	var matches = rx.exec(color);
+	if (matches != null)
+	{
+		var sColor = Number(Number(matches[1])*65536+Number(matches[2])*256+Number(matches[3]));
+		sColor = sColor.toString(16);
+  		var sTempString = "#000000".substring(0,7-sColor.length);
+  		sColor = sTempString.concat(sColor);
+  		return sColor;
+	}
+	return "";
+}
+
 
 function setBorderWidthSelect (it) {
 	
@@ -372,7 +414,7 @@ function setBorderWidthSelect (it) {
 	  {//3px for double
 		  borderWidth.selectedIndex=2;
 	  }else{
-		  //2px for dotted in order to show it,if we set 1px,we can not see the effect in the browser,
+		 //2px for dotted in order to show it,if we set 1px,we can not see the effect in the browser,
 		  //however in the server code ,the dotted is only dotted type it does not care the border width
 	   borderWidth.selectedIndex=1;
 	  }
@@ -385,7 +427,10 @@ function setBorderWidthSelect (it) {
 
 function setBorders()
 {
-	var bstr = borderWidth.options[borderWidth.selectedIndex].value + " " + borderStyle.options[borderStyle.selectedIndex].text + " " + convertRGBDecimalToHex(btnBorderColor.style.backgroundColor);
+	var bcolor = btnBorderColor.style.backgroundColor;
+	if (bcolor != null && bcolor != "")
+		bcolor = transColor(bcolor);
+	var bstr = borderWidth.options[borderWidth.selectedIndex].value + " " + borderStyle.options[borderStyle.selectedIndex].text + " " + bcolor;
 	if (olist == null)
 	{
 		switch (setborder)
@@ -554,6 +599,40 @@ function setBorders()
 				break;
 		}
 	}
+}
+
+function disableEvent(ele)
+{
+	_omd = ele.onmousedown;
+	_omu = ele.onmouseup;
+	_oc = ele.onclick;
+	_omo = ele.onmouseover;
+	_odc = ele.ondblclick;
+	_omm = ele.onmousemove;
+	_ocm = ele.oncontextmenu;
+	ele.onmousedown = null;
+	ele.onmouseup = null;
+	ele.onclick = null;
+	ele.onmouseover = null;
+	ele.ondblclick = null;
+	ele.onmousemove = null;
+	ele.oncontextmenu = null;
+}
+
+function enableEvent(ele)
+{
+	ele.onmousedown = _omd;
+	ele.onmouseup = _omu;
+	ele.onclick = _oc;
+	ele.onmouseover = _omo;
+	ele.ondblclick = _odc;
+	ele.onmousemove = _omm;
+	ele.oncontextmenu = _ocm;
+}
+
+function closeDlg()
+{
+	window.opener.acwDialogWindow = null;
 }
 
 function getattr(o, name)

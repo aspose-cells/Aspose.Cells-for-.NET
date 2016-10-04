@@ -1,4 +1,4 @@
-//Copyright (c) 2001-2015 Aspose Pty Ltd. All Rights Reserved.
+//Copyright (c) 2001-2016 Aspose Pty Ltd. All Rights Reserved.
 
 /*****************************************************
  * Aspose.Cells.GridWeb Component Script File

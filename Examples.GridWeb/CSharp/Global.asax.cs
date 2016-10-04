@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Web;
 using System.Web.SessionState;
 
-namespace Aspose.Cells.Demos 
+namespace Aspose.Cells.GridWeb.Examples.CSharp 
 {
 	/// <summary>
 	/// Summary description for Global.
