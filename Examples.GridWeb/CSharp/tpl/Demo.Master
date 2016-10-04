@@ -22,6 +22,8 @@
 		.productTitleBox { float: left; }
 		.productBoxEnd { clear: both; }
 
+        .categoryTitle { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 16px; font-weight: bold; color: #06065b; margin:10px 20px; }
+
 		.component_menus { font-size: 11px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; color: #000066; }
 		.component_menus a:Hover { text-decoration: none; color: #4c83f6; }
 
@@ -34,16 +36,33 @@
 		
 		.demoDivPanel{border: thin groove; text-align: left; width: 544px;}
 		.demoDivPanelCollapsed { display: none; }
+
+        nav { position:absolute; right:50px; top:20px;}
+        nav ul { list-style-type:none }
+        nav ul li { display:inline; }
+
     </style>
     <!-- JS for Cells Demo -->
-    <script language="javascript" src="../../js/oo.js"></script>
-    <script language="javascript" src="../../Grid/acw_client/jquery-1.7.2.min.js"></script>
+    <script language="javascript" src='<%= ResolveUrl("~/js/oo.js")%>'></script>
+    <script language="javascript" src='<%= ResolveUrl("~/Grid/acw_client/jquery-1.7.2.min.js")%>'></script>
 </head>
 <body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"
     style="left: 0px; top: 0px;">
+    
     <form id="Form1" method="post" runat="server">
+              <nav>
+        <ul>
+            <li>
+                <asp:HyperLink ID="lnkHome" runat="server" Text="Home" NavigateUrl="~/Default.aspx"></asp:HyperLink>
+             </li>
+            <li>
+                <asp:HyperLink ID="lnkExamples" runat="server" Text="Examples" NavigateUrl="~/Examples.aspx"></asp:HyperLink>
+            </li>
+        </ul>
+    </nav>
        <!--  <iframe src="http://www.aspose.com/Header/Header.aspx" id="Iframe1" frameborder="0"
             width="100%" scrolling="no" height="90"></iframe> -->
+
         <table width="90%" style="left: 0px; top: 140px" cellspacing="0" cellpadding="0"
             align="center">
             <tr height="100%" valign="top">
@@ -54,6 +73,7 @@
         </table>
     </form>
     <div id="Div1" class="Footer">
+  
         <table cellspacing="0" cellpadding="0" width="100%" border="0">
             <tbody>
                 <tr>

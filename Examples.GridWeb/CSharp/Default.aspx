@@ -11,7 +11,7 @@
                 </td>
                 <td class="demos-heading-bg" style="width: 100%;">
                     <h2 class="demos-heading-bg">
-                        Welcome to the Aspose.Cells GridWeb Demos
+                        Welcome to the Aspose.Cells GridWeb Examples
                     </h2>
                 </td>
                 <td style="width: 19; vertical-align: top;">
@@ -38,7 +38,7 @@
         <ul class="genericList">
             <li class="genericList">
                 <p class="productTitle">
-                    <a href="aspose-cells-grid.aspx">Aspose.Cells Grid Suite Demos</a>
+                    <a href="Examples.aspx">Aspose.Cells Grid Suite Examples</a>
                 </p>
                 <p class="componentDescriptionCaption">
                     Description</p>

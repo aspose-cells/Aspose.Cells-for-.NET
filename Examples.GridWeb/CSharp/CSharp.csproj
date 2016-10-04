@@ -150,326 +150,368 @@
     <Compile Include="databind\DemoDatabase2.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Grid\Ajax\AjaxUpdating.aspx.cs">
+    <Compile Include="GridWebBasics\ApplyCustomPresetStyle.aspx.cs">
+      <DependentUpon>ApplyCustomPresetStyle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridWebBasics\ApplyCustomPresetStyle.aspx.designer.cs">
+      <DependentUpon>ApplyCustomPresetStyle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridWebBasics\ApplyHeaderBarStyle.aspx.cs">
+      <DependentUpon>ApplyHeaderBarStyle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridWebBasics\ApplyHeaderBarStyle.aspx.designer.cs">
+      <DependentUpon>ApplyHeaderBarStyle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridWebBasics\ApplyTabBarStyle.aspx.cs">
+      <DependentUpon>ApplyTabBarStyle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridWebBasics\ApplyTabBarStyle.aspx.designer.cs">
+      <DependentUpon>ApplyTabBarStyle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridWebBasics\ImportExportFileFromStream.aspx.cs">
+      <DependentUpon>ImportExportFileFromStream.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridWebBasics\ImportExportFileFromStream.aspx.designer.cs">
+      <DependentUpon>ImportExportFileFromStream.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridWebBasics\ResizeGridWeb.aspx.cs">
+      <DependentUpon>ResizeGridWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridWebBasics\ResizeGridWeb.aspx.designer.cs">
+      <DependentUpon>ResizeGridWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridWebBasics\ResizeHeaderBar.aspx.cs">
+      <DependentUpon>ResizeHeaderBar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridWebBasics\ResizeHeaderBar.aspx.designer.cs">
+      <DependentUpon>ResizeHeaderBar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Miscellaneous\Ajax\AjaxUpdating.aspx.cs">
       <DependentUpon>AjaxUpdating.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Ajax\AjaxUpdating.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Ajax\AjaxUpdating.aspx.designer.cs">
       <DependentUpon>AjaxUpdating.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\42099.aspx.cs">
+    <Compile Include="Miscellaneous\Common\42099.aspx.cs">
       <DependentUpon>42099.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\42099.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Common\42099.aspx.designer.cs">
       <DependentUpon>42099.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\cf.aspx.cs">
+    <Compile Include="Miscellaneous\Common\cf.aspx.cs">
       <DependentUpon>cf.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\cf.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Common\cf.aspx.designer.cs">
       <DependentUpon>cf.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\ChangeStyle.aspx.cs">
-      <DependentUpon>ChangeStyle.aspx</DependentUpon>
+    <Compile Include="GridWebBasics\ApplyPresetStyle.aspx.cs">
+      <DependentUpon>ApplyPresetStyle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\ChangeStyle.aspx.designer.cs">
-      <DependentUpon>ChangeStyle.aspx</DependentUpon>
+    <Compile Include="GridWebBasics\ApplyPresetStyle.aspx.designer.cs">
+      <DependentUpon>ApplyPresetStyle.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\chartrefresh.aspx.cs">
+    <Compile Include="Miscellaneous\Common\chartrefresh.aspx.cs">
       <DependentUpon>chartrefresh.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\chartrefresh.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Common\chartrefresh.aspx.designer.cs">
       <DependentUpon>chartrefresh.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\chartsubmit.aspx.cs">
+    <Compile Include="Miscellaneous\Common\chartsubmit.aspx.cs">
       <DependentUpon>chartsubmit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\chartsubmit.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Common\chartsubmit.aspx.designer.cs">
       <DependentUpon>chartsubmit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\CreateInvoice.aspx.cs">
+    <Compile Include="Miscellaneous\Common\CreateInvoice.aspx.cs">
       <DependentUpon>CreateInvoice.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\CreateInvoice.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Common\CreateInvoice.aspx.designer.cs">
       <DependentUpon>CreateInvoice.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\CustomContextMenu.aspx.cs">
+    <Compile Include="Miscellaneous\Common\CustomContextMenu.aspx.cs">
       <DependentUpon>CustomContextMenu.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\CustomContextMenu.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Common\CustomContextMenu.aspx.designer.cs">
       <DependentUpon>CustomContextMenu.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\CustomHeaders.aspx.cs">
+    <Compile Include="Miscellaneous\Common\CustomHeaders.aspx.cs">
       <DependentUpon>CustomHeaders.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\CustomHeaders.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Common\CustomHeaders.aspx.designer.cs">
       <DependentUpon>CustomHeaders.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\DataValidation.aspx.cs">
+    <Compile Include="Miscellaneous\Common\DataValidation.aspx.cs">
       <DependentUpon>DataValidation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\DataValidation.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Common\DataValidation.aspx.designer.cs">
       <DependentUpon>DataValidation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\Events.aspx.cs">
+    <Compile Include="Miscellaneous\Common\Events.aspx.cs">
       <DependentUpon>Events.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\Events.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Common\Events.aspx.designer.cs">
       <DependentUpon>Events.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\FreezePane.aspx.cs">
+    <Compile Include="Miscellaneous\Common\FreezePane.aspx.cs">
       <DependentUpon>FreezePane.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\FreezePane.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Common\FreezePane.aspx.designer.cs">
       <DependentUpon>FreezePane.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\FreezePaneCustom.aspx.cs">
+    <Compile Include="Miscellaneous\Common\FreezePaneCustom.aspx.cs">
       <DependentUpon>FreezePaneCustom.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\FreezePaneCustom.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Common\FreezePaneCustom.aspx.designer.cs">
       <DependentUpon>FreezePaneCustom.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\HeaderBarAndCommandButton.aspx.cs">
+    <Compile Include="Miscellaneous\Common\HeaderBarAndCommandButton.aspx.cs">
       <DependentUpon>HeaderBarAndCommandButton.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\HeaderBarAndCommandButton.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Common\HeaderBarAndCommandButton.aspx.designer.cs">
       <DependentUpon>HeaderBarAndCommandButton.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\HyperlinkDemo.aspx.cs">
+    <Compile Include="Miscellaneous\Common\HyperlinkDemo.aspx.cs">
       <DependentUpon>HyperlinkDemo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\HyperlinkDemo.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Common\HyperlinkDemo.aspx.designer.cs">
       <DependentUpon>HyperlinkDemo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\ImportDataview.aspx.cs">
+    <Compile Include="Miscellaneous\Common\ImportDataview.aspx.cs">
       <DependentUpon>ImportDataview.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\ImportDataview.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Common\ImportDataview.aspx.designer.cs">
       <DependentUpon>ImportDataview.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\ImportOrExportFile.aspx.cs">
-      <DependentUpon>ImportOrExportFile.aspx</DependentUpon>
+    <Compile Include="GridWebBasics\ImportExportFile.aspx.cs">
+      <DependentUpon>ImportExportFile.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\ImportOrExportFile.aspx.designer.cs">
-      <DependentUpon>ImportOrExportFile.aspx</DependentUpon>
+    <Compile Include="GridWebBasics\ImportExportFile.aspx.designer.cs">
+      <DependentUpon>ImportExportFile.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\modes.aspx.cs">
+    <Compile Include="Miscellaneous\Common\modes.aspx.cs">
       <DependentUpon>modes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\modes.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Common\modes.aspx.designer.cs">
       <DependentUpon>modes.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\Pagination.aspx.cs">
+    <Compile Include="Miscellaneous\Common\Pagination.aspx.cs">
       <DependentUpon>Pagination.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\Pagination.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Common\Pagination.aspx.designer.cs">
       <DependentUpon>Pagination.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\setborders.aspx.cs">
+    <Compile Include="Miscellaneous\Common\setborders.aspx.cs">
       <DependentUpon>setborders.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\setborders.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Common\setborders.aspx.designer.cs">
       <DependentUpon>setborders.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\Sheets.aspx.cs">
+    <Compile Include="Miscellaneous\Common\Sheets.aspx.cs">
       <DependentUpon>Sheets.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\Sheets.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Common\Sheets.aspx.designer.cs">
       <DependentUpon>Sheets.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\Sort.aspx.cs">
+    <Compile Include="Miscellaneous\Common\Sort.aspx.cs">
       <DependentUpon>Sort.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\Sort.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Common\Sort.aspx.designer.cs">
       <DependentUpon>Sort.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\WebCells.aspx.cs">
+    <Compile Include="Miscellaneous\Common\WebCells.aspx.cs">
       <DependentUpon>WebCells.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\WebCells.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Common\WebCells.aspx.designer.cs">
       <DependentUpon>WebCells.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Common\WebCells2.aspx.cs">
+    <Compile Include="Miscellaneous\Common\WebCells2.aspx.cs">
       <DependentUpon>WebCells2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Common\WebCells2.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Common\WebCells2.aspx.designer.cs">
       <DependentUpon>WebCells2.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\DataBind\DataBind1.aspx.cs">
+    <Compile Include="Miscellaneous\DataBind\DataBind1.aspx.cs">
       <DependentUpon>DataBind1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\DataBind\DataBind1.aspx.designer.cs">
+    <Compile Include="Miscellaneous\DataBind\DataBind1.aspx.designer.cs">
       <DependentUpon>DataBind1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\DataBind\DataBind2.aspx.cs">
+    <Compile Include="Miscellaneous\DataBind\DataBind2.aspx.cs">
       <DependentUpon>DataBind2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\DataBind\DataBind2.aspx.designer.cs">
+    <Compile Include="Miscellaneous\DataBind\DataBind2.aspx.designer.cs">
       <DependentUpon>DataBind2.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\DataBind\DataBind3.aspx.cs">
+    <Compile Include="Miscellaneous\DataBind\DataBind3.aspx.cs">
       <DependentUpon>DataBind3.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\DataBind\DataBind3.aspx.designer.cs">
+    <Compile Include="Miscellaneous\DataBind\DataBind3.aspx.designer.cs">
       <DependentUpon>DataBind3.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\DataBind\ExpandChildView.aspx.cs">
+    <Compile Include="Miscellaneous\DataBind\ExpandChildView.aspx.cs">
       <DependentUpon>ExpandChildView.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\DataBind\ExpandChildView.aspx.designer.cs">
+    <Compile Include="Miscellaneous\DataBind\ExpandChildView.aspx.designer.cs">
       <DependentUpon>ExpandChildView.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\DataSourceControl\BindWithDataSourceControl.aspx.cs">
+    <Compile Include="Miscellaneous\DataSourceControl\BindWithDataSourceControl.aspx.cs">
       <DependentUpon>BindWithDataSourceControl.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\DataSourceControl\BindWithDataSourceControl.aspx.designer.cs">
+    <Compile Include="Miscellaneous\DataSourceControl\BindWithDataSourceControl.aspx.designer.cs">
       <DependentUpon>BindWithDataSourceControl.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Filter\AutoFilter.aspx.cs">
+    <Compile Include="Miscellaneous\Filter\AutoFilter.aspx.cs">
       <DependentUpon>AutoFilter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Filter\AutoFilter.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Filter\AutoFilter.aspx.designer.cs">
       <DependentUpon>AutoFilter.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Filter\CustomFilter.aspx.cs">
+    <Compile Include="Miscellaneous\Filter\CustomFilter.aspx.cs">
       <DependentUpon>CustomFilter.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Filter\CustomFilter.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Filter\CustomFilter.aspx.designer.cs">
       <DependentUpon>CustomFilter.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Format\CustomFormat.aspx.cs">
+    <Compile Include="Miscellaneous\Format\CustomFormat.aspx.cs">
       <DependentUpon>CustomFormat.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Format\CustomFormat.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Format\CustomFormat.aspx.designer.cs">
       <DependentUpon>CustomFormat.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Format\DateAndTime.aspx.cs">
+    <Compile Include="Miscellaneous\Format\DateAndTime.aspx.cs">
       <DependentUpon>DateAndTime.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Format\DateAndTime.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Format\DateAndTime.aspx.designer.cs">
       <DependentUpon>DateAndTime.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Format\Number.aspx.cs">
+    <Compile Include="Miscellaneous\Format\Number.aspx.cs">
       <DependentUpon>Number.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Format\Number.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Format\Number.aspx.designer.cs">
       <DependentUpon>Number.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Formula\DateAndTime.aspx.cs">
+    <Compile Include="Miscellaneous\Formula\DateAndTime.aspx.cs">
       <DependentUpon>DateAndTime.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Formula\DateAndTime.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Formula\DateAndTime.aspx.designer.cs">
       <DependentUpon>DateAndTime.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Formula\Logical.aspx.cs">
+    <Compile Include="Miscellaneous\Formula\Logical.aspx.cs">
       <DependentUpon>Logical.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Formula\Logical.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Formula\Logical.aspx.designer.cs">
       <DependentUpon>Logical.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Formula\Math.aspx.cs">
+    <Compile Include="Miscellaneous\Formula\Math.aspx.cs">
       <DependentUpon>Math.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Formula\Math.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Formula\Math.aspx.designer.cs">
       <DependentUpon>Math.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Formula\Statistical.aspx.cs">
+    <Compile Include="Miscellaneous\Formula\Statistical.aspx.cs">
       <DependentUpon>Statistical.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Formula\Statistical.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Formula\Statistical.aspx.designer.cs">
       <DependentUpon>Statistical.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Formula\TextAndData.aspx.cs">
+    <Compile Include="Miscellaneous\Formula\TextAndData.aspx.cs">
       <DependentUpon>TextAndData.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Formula\TextAndData.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Formula\TextAndData.aspx.designer.cs">
       <DependentUpon>TextAndData.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Grouping\Grouping.aspx.cs">
+    <Compile Include="Miscellaneous\Grouping\Grouping.aspx.cs">
       <DependentUpon>Grouping.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Grouping\Grouping.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Grouping\Grouping.aspx.designer.cs">
       <DependentUpon>Grouping.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\Grouping\Subtotal.aspx.cs">
+    <Compile Include="Miscellaneous\Grouping\Subtotal.aspx.cs">
       <DependentUpon>Subtotal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\Grouping\Subtotal.aspx.designer.cs">
+    <Compile Include="Miscellaneous\Grouping\Subtotal.aspx.designer.cs">
       <DependentUpon>Subtotal.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\PivotTable\CreateReport.aspx.cs">
+    <Compile Include="Miscellaneous\PivotTable\CreateReport.aspx.cs">
       <DependentUpon>CreateReport.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\PivotTable\CreateReport.aspx.designer.cs">
+    <Compile Include="Miscellaneous\PivotTable\CreateReport.aspx.designer.cs">
       <DependentUpon>CreateReport.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\PivotTable\CustomReport.aspx.cs">
+    <Compile Include="Miscellaneous\PivotTable\CustomReport.aspx.cs">
       <DependentUpon>CustomReport.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\PivotTable\CustomReport.aspx.designer.cs">
+    <Compile Include="Miscellaneous\PivotTable\CustomReport.aspx.designer.cs">
       <DependentUpon>CustomReport.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\PivotTable\FromWebWorksheet.aspx.cs">
+    <Compile Include="Miscellaneous\PivotTable\FromWebWorksheet.aspx.cs">
       <DependentUpon>FromWebWorksheet.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\PivotTable\FromWebWorksheet.aspx.designer.cs">
+    <Compile Include="Miscellaneous\PivotTable\FromWebWorksheet.aspx.designer.cs">
       <DependentUpon>FromWebWorksheet.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\PivotTable\PivotFieldFunction.aspx.cs">
+    <Compile Include="Miscellaneous\PivotTable\PivotFieldFunction.aspx.cs">
       <DependentUpon>PivotFieldFunction.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\PivotTable\PivotFieldFunction.aspx.designer.cs">
+    <Compile Include="Miscellaneous\PivotTable\PivotFieldFunction.aspx.designer.cs">
       <DependentUpon>PivotFieldFunction.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Grid\XHTML\Xhtml.aspx.cs">
+    <Compile Include="Miscellaneous\XHTML\Xhtml.aspx.cs">
       <DependentUpon>Xhtml.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Grid\XHTML\Xhtml.aspx.designer.cs">
+    <Compile Include="Miscellaneous\XHTML\Xhtml.aspx.designer.cs">
       <DependentUpon>Xhtml.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebFormtest.aspx.cs">
@@ -479,7 +521,9 @@
     <Compile Include="WebFormtest.aspx.designer.cs">
       <DependentUpon>WebFormtest.aspx</DependentUpon>
     </Compile>
-    <Content Include="aspose-cells-grid.aspx" />
+    <Content Include="Data\GridWebBasics\CustomStyle1.xml" />
+    <Content Include="Data\GridWebBasics\CustomStyle2.xml" />
+    <Content Include="Examples.aspx" />
     <Content Include="browsers.aspx" />
     <Content Include="controldes.aspx" />
     <Content Include="custombtn.aspx" />
@@ -487,6 +531,12 @@
     </Content>
     <Content Include="Database\Northwind.mdb">
     </Content>
+    <Content Include="GridWebBasics\ApplyCustomPresetStyle.aspx" />
+    <Content Include="GridWebBasics\ApplyHeaderBarStyle.aspx" />
+    <Content Include="GridWebBasics\ApplyTabBarStyle.aspx" />
+    <Content Include="GridWebBasics\ImportExportFileFromStream.aspx" />
+    <Content Include="GridWebBasics\ResizeGridWeb.aspx" />
+    <Content Include="GridWebBasics\ResizeHeaderBar.aspx" />
     <Content Include="Grid\acw_client\acwmain.js" />
     <Content Include="Grid\acw_client\b1.gif" />
     <Content Include="Grid\acw_client\b2.gif" />
@@ -522,56 +572,56 @@
     <Content Include="Grid\acw_client\undo.gif" />
     <Content Include="Grid\acw_client\updating.gif" />
     <Content Include="Grid\acw_client\x.gif" />
-    <Content Include="Grid\Ajax\AjaxUpdating.aspx" />
-    <Content Include="Grid\Common\42099.aspx" />
-    <Content Include="Grid\Common\cf.aspx" />
-    <Content Include="Grid\Common\ChangeStyle.aspx" />
-    <Content Include="Grid\Common\chartrefresh.aspx" />
-    <Content Include="Grid\Common\chartsubmit.aspx" />
-    <Content Include="Grid\Common\CreateInvoice.aspx" />
-    <Content Include="Grid\Common\CustomContextMenu.aspx" />
-    <Content Include="Grid\Common\CustomHeaders.aspx" />
-    <Content Include="Grid\Common\CustomStyle1.xml" />
-    <Content Include="Grid\Common\CustomStyle2.xml" />
-    <Content Include="Grid\Common\DataValidation.aspx" />
-    <Content Include="Grid\Common\Events.aspx" />
-    <Content Include="Grid\Common\FreezePane.aspx" />
-    <Content Include="Grid\Common\FreezePaneCustom.aspx" />
-    <Content Include="Grid\Common\HeaderBarAndCommandButton.aspx" />
-    <Content Include="Grid\Common\HyperlinkDemo.aspx" />
-    <Content Include="Grid\Common\ImportDataview.aspx" />
-    <Content Include="Grid\Common\ImportOrExportFile.aspx" />
-    <Content Include="Grid\Common\modes.aspx" />
-    <Content Include="Grid\Common\Pagination.aspx" />
-    <Content Include="Grid\Common\setborders.aspx" />
-    <Content Include="Grid\Common\Sheets.aspx" />
-    <Content Include="Grid\Common\Sort.aspx" />
-    <Content Include="Grid\Common\WebCells.aspx" />
-    <Content Include="Grid\Common\WebCells2.aspx" />
-    <Content Include="Grid\DataBind\DataBind1.aspx" />
-    <Content Include="Grid\DataBind\DataBind2.aspx" />
-    <Content Include="Grid\DataBind\DataBind3.aspx" />
-    <Content Include="Grid\DataBind\ExpandChildView.aspx" />
-    <Content Include="Grid\DataSourceControl\BindWithDataSourceControl.aspx" />
-    <Content Include="Grid\Filter\AutoFilter.aspx" />
-    <Content Include="Grid\Filter\CustomFilter.aspx" />
-    <Content Include="Grid\Format\CustomFormat.aspx" />
-    <Content Include="Grid\Format\DateAndTime.aspx" />
-    <Content Include="Grid\Format\Number.aspx" />
-    <Content Include="Grid\Formula\DateAndTime.aspx" />
-    <Content Include="Grid\Formula\Logical.aspx" />
-    <Content Include="Grid\Formula\Math.aspx" />
-    <Content Include="Grid\Formula\Statistical.aspx" />
-    <Content Include="Grid\Formula\TextAndData.aspx" />
-    <Content Include="Grid\Grouping\group.GIF" />
-    <Content Include="Grid\Grouping\Grouping.aspx" />
-    <Content Include="Grid\Grouping\Subtotal.aspx" />
-    <Content Include="Grid\Grouping\ungroup.GIF" />
-    <Content Include="Grid\PivotTable\CreateReport.aspx" />
-    <Content Include="Grid\PivotTable\CustomReport.aspx" />
-    <Content Include="Grid\PivotTable\FromWebWorksheet.aspx" />
-    <Content Include="Grid\PivotTable\PivotFieldFunction.aspx" />
-    <Content Include="Grid\XHTML\Xhtml.aspx" />
+    <Content Include="Miscellaneous\Ajax\AjaxUpdating.aspx" />
+    <Content Include="Miscellaneous\Common\42099.aspx" />
+    <Content Include="Miscellaneous\Common\cf.aspx" />
+    <Content Include="GridWebBasics\ApplyPresetStyle.aspx" />
+    <Content Include="Miscellaneous\Common\chartrefresh.aspx" />
+    <Content Include="Miscellaneous\Common\chartsubmit.aspx" />
+    <Content Include="Miscellaneous\Common\CreateInvoice.aspx" />
+    <Content Include="Miscellaneous\Common\CustomContextMenu.aspx" />
+    <Content Include="Miscellaneous\Common\CustomHeaders.aspx" />
+    <Content Include="Miscellaneous\Common\CustomStyle1.xml" />
+    <Content Include="Miscellaneous\Common\CustomStyle2.xml" />
+    <Content Include="Miscellaneous\Common\DataValidation.aspx" />
+    <Content Include="Miscellaneous\Common\Events.aspx" />
+    <Content Include="Miscellaneous\Common\FreezePane.aspx" />
+    <Content Include="Miscellaneous\Common\FreezePaneCustom.aspx" />
+    <Content Include="Miscellaneous\Common\HeaderBarAndCommandButton.aspx" />
+    <Content Include="Miscellaneous\Common\HyperlinkDemo.aspx" />
+    <Content Include="Miscellaneous\Common\ImportDataview.aspx" />
+    <Content Include="GridWebBasics\ImportExportFile.aspx" />
+    <Content Include="Miscellaneous\Common\modes.aspx" />
+    <Content Include="Miscellaneous\Common\Pagination.aspx" />
+    <Content Include="Miscellaneous\Common\setborders.aspx" />
+    <Content Include="Miscellaneous\Common\Sheets.aspx" />
+    <Content Include="Miscellaneous\Common\Sort.aspx" />
+    <Content Include="Miscellaneous\Common\WebCells.aspx" />
+    <Content Include="Miscellaneous\Common\WebCells2.aspx" />
+    <Content Include="Miscellaneous\DataBind\DataBind1.aspx" />
+    <Content Include="Miscellaneous\DataBind\DataBind2.aspx" />
+    <Content Include="Miscellaneous\DataBind\DataBind3.aspx" />
+    <Content Include="Miscellaneous\DataBind\ExpandChildView.aspx" />
+    <Content Include="Miscellaneous\DataSourceControl\BindWithDataSourceControl.aspx" />
+    <Content Include="Miscellaneous\Filter\AutoFilter.aspx" />
+    <Content Include="Miscellaneous\Filter\CustomFilter.aspx" />
+    <Content Include="Miscellaneous\Format\CustomFormat.aspx" />
+    <Content Include="Miscellaneous\Format\DateAndTime.aspx" />
+    <Content Include="Miscellaneous\Format\Number.aspx" />
+    <Content Include="Miscellaneous\Formula\DateAndTime.aspx" />
+    <Content Include="Miscellaneous\Formula\Logical.aspx" />
+    <Content Include="Miscellaneous\Formula\Math.aspx" />
+    <Content Include="Miscellaneous\Formula\Statistical.aspx" />
+    <Content Include="Miscellaneous\Formula\TextAndData.aspx" />
+    <Content Include="Miscellaneous\Grouping\group.GIF" />
+    <Content Include="Miscellaneous\Grouping\Grouping.aspx" />
+    <Content Include="Miscellaneous\Grouping\Subtotal.aspx" />
+    <Content Include="Miscellaneous\Grouping\ungroup.GIF" />
+    <Content Include="Miscellaneous\PivotTable\CreateReport.aspx" />
+    <Content Include="Miscellaneous\PivotTable\CustomReport.aspx" />
+    <Content Include="Miscellaneous\PivotTable\FromWebWorksheet.aspx" />
+    <Content Include="Miscellaneous\PivotTable\PivotFieldFunction.aspx" />
+    <Content Include="Miscellaneous\XHTML\Xhtml.aspx" />
     <Content Include="images\addrec.gif" />
     <Content Include="images\album.gif" />
     <Content Include="images\arrow_forward.gif" />
@@ -745,7 +795,8 @@
     <None Include="file\Math.xls" />
     <None Include="file\PivotTable.xls" />
     <None Include="file\ShowHeaderBar.xls" />
-    <None Include="file\Skins.xls" />
+    <None Include="Data\GridWebBasics\Skins.xls" />
+    <Content Include="file\Skins.xls" />
     <None Include="file\Statistical.xls" />
     <None Include="file\TextAndData.xls" />
     <None Include="images\Thumbs.db" />
@@ -753,8 +804,11 @@
     <None Include="Image\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Grid\GridWebForm\" />
+    <Folder Include="Cells\" />
+    <Folder Include="Miscellaneous\GridWebForm\" />
     <Folder Include="Properties\" />
+    <Folder Include="RowsAndColumns\" />
+    <Folder Include="Worksheets\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,6 +1,6 @@
-<%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_Common_ChangeStyle"
-    MasterPageFile="~/tpl/Demo.Master" Title="Skin - Aspose.Cells Grid Suite Demos"
-    CodeBehind="ChangeStyle.aspx.cs" %>
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics.ApplyPresetStyle"
+    MasterPageFile="~/tpl/Demo.Master" Title="Apply Preset Styles - Aspose.Cells Grid Suite Examples"
+    CodeBehind="ApplyPresetStyle.aspx.cs" %>
 
 <%@ Register Assembly="Aspose.Cells.GridWeb" Namespace="Aspose.Cells.GridWeb" TagPrefix="acw" %>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
@@ -20,7 +20,7 @@
                 </td>
                 <td class="demos-heading-bg" style="width: 100%;">
                     <h2 class="demos-heading-bg">
-                        Skin - Aspose.Cells Grid Suite Demos
+                        Apply Preset Styles - Aspose.Cells Grid Suite Examples
                     </h2>
                 </td>
                 <td style="width: 19; vertical-align: top;">
@@ -31,7 +31,7 @@
     </table>
     <div style="text-align: left; font-family: Arial; font-size: small;" class="componentDescriptionTxt">
         <p>
-            Select a <b>style</b> from drop down to see how demo applies different styles to
+            Select a <b>style</b> from drop down to see how they are applied to
             the GridWeb Control.
         </p>
         <br />
@@ -50,9 +50,7 @@
                                 <asp:ListItem Value="Professional2">Professional2</asp:ListItem>
                                 <asp:ListItem Value="Traditional1">Traditional1</asp:ListItem>
                                 <asp:ListItem Value="Traditional2">Traditional2</asp:ListItem>
-                                <asp:ListItem Value="CustomStyle1">CustomStyle1</asp:ListItem>
-                                <asp:ListItem Value="CustomStyle2">CustomStyle2</asp:ListItem>
-                            </asp:DropDownList>
+                              </asp:DropDownList>
                         </p>
                     </td>
                 </tr>
