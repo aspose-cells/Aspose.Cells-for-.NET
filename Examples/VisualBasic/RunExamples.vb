@@ -246,7 +246,16 @@ Friend Class RunExamples
         'SetCustomFontFolders.Run()
         'PrintingUsingSheetRender.Run()
         'PrintingUsingWorkbookRender.Run()
-        PrintCommentWhileSavingToPdf.Run()
+        'PrintCommentWhileSavingToPdf.Run()
+        'WorksheetToImageUsingTiffCompression.Run()
+        'PreventExportingHiddenContent.Run()
+        'PrintingRangeOfPages.Run()
+        'ChangeFontUnicodeCharacterToPdf.Run()
+        'SpecifyJobWhilePrinting.Run()
+        'ExportChartToSvgWithViewBox.Run()
+        'WorksheetToImageDesiredSize.Run()
+        'RenderWorksheetToGraphicContext.Run()
+        SaveExcelIntoPdfWithOptimizedSize.Run()
 
 
         '''' WorkingWithCalculationEngine

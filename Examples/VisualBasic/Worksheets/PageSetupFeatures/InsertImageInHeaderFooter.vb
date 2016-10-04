@@ -42,7 +42,7 @@ Namespace Worksheets.PageSetupFeatures
             pageSetup.SetHeader(2, "&A")
 
             ' Saving the workbook
-            workbook.Save(dataDir & Convert.ToString("InsertImageInHeaderFooter_out.xls"))
+            workbook.Save(dataDir & Convert.ToString("InsertImageInHeaderFooter_out_.xls"))
 
             'Closing the FileStream object
             inFile.Close()

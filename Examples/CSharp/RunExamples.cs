@@ -253,7 +253,16 @@ namespace Aspose.Cells.Examples.CSharp
             //SetCustomFontFolders.Run();
             //PrintCommentWhileSavingToPdf.Run();
             //PrintingUsingSheetRender.Run();
-            PrintingUsingWorkbookRender.Run();
+            //PrintingUsingWorkbookRender.Run();
+            //WorksheetToImageUsingTiffCompression.Run();
+            //PreventExportingHiddenContent.Run();
+            //PrintingRangeOfPages.Run();
+            //ChangeFontUnicodeCharacterToPdf.Run();
+            //SpecifyJobWhilePrinting.Run();
+            //ExportChartToSvgWithViewBox.Run();
+            //WorksheetToImageDesiredSize.Run();
+            //RenderWorksheetToGraphicContext.Run();
+            SaveExcelIntoPdfWithOptimizedSize.Run();
 
             //// WorkingWithCalculationEngine
             //// =====================================================

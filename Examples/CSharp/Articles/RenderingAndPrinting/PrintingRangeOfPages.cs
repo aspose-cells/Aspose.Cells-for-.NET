@@ -6,17 +6,16 @@ using Aspose.Cells.Rendering;
 
 namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
 {
-    public class PrintingUsingSheetRender
+    public class PrintingRangeOfPages
     {
         public static void Run()
         {
-            // ExStart:1
+            //ExStart:1
 
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            //Instantiate a workbook.
-            //Open an Excel file.
+            //Create workbook from source Excel file
             Workbook workbook = new Workbook(dataDir + "SampleBook.xlsx");
 
             //Printer name
@@ -28,29 +27,34 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
                 printerName = Console.ReadLine();
             }
 
-            //Define a worksheet.
-            Worksheet worksheet;
-
-            //Get the second sheet.
-            worksheet = workbook.Worksheets[1];
-
-            //Apply different Image / Print options.
-            Aspose.Cells.Rendering.ImageOrPrintOptions options = new Aspose.Cells.Rendering.ImageOrPrintOptions();
-            options.PrintingPage = PrintingPageType.Default;
-            SheetRender sr = new SheetRender(worksheet, options);
-
-            Console.WriteLine("Printing SampleBook.xlsx");
-            //Print the sheet.
+            //Print the worbook specifying the range of pages
+            //Here we are printing pages 2-3
+            WorkbookRender wr = new WorkbookRender(workbook, new ImageOrPrintOptions());
             try
             {
-                sr.ToPrinter(printerName);
-                Console.WriteLine("Pinting finished.");
+                wr.ToPrinter(printerName, 1, 2);
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            // ExEnd:1
+
+            //Access first worksheet
+            Worksheet worksheet = workbook.Worksheets[0];
+
+            //Print the worksheet specifying the range of pages
+            //Here we are printing pages 2-3
+            SheetRender sr = new SheetRender(worksheet, new ImageOrPrintOptions());
+            try
+            {
+                sr.ToPrinter(printerName, 1, 2);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            //ExEnd:1
         }
     }
 }

@@ -19,6 +19,15 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             //Open an Excel file.
             Workbook workbook = new Workbook(dataDir + "SampleBook.xlsx");
 
+            //Printer name
+            string printerName = "";
+
+            while (string.IsNullOrEmpty(printerName) && string.IsNullOrWhiteSpace(printerName))
+            {
+                Console.WriteLine("Please Enter Your Printer Name:");
+                printerName = Console.ReadLine();
+            }
+
             //Apply different Image / Print options.
             Aspose.Cells.Rendering.ImageOrPrintOptions options = new Aspose.Cells.Rendering.ImageOrPrintOptions();
             options.ImageFormat = System.Drawing.Imaging.ImageFormat.Tiff;
@@ -29,8 +38,15 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
 
             Console.WriteLine("Printing SampleBook.xlsx");
             //Print the workbook.
-            wr.ToPrinter("{Replace_With_Printer_Name}");
-            Console.WriteLine("Pinting finished.");
+            try
+            {
+                wr.ToPrinter(printerName);
+                Console.WriteLine("Pinting finished.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             //ExEnd:1
         }
     }
