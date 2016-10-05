@@ -206,6 +206,11 @@
     <Compile Include="Articles\SetTextboxOrShapeParagraphLineSpacing.vb" />
     <Compile Include="Articles\SettingFormulaCalculationModeWorkbook.vb" />
     <Compile Include="Articles\SettingTextEffectsShadowOfShapeOrTextbox.vb" />
+    <Compile Include="Articles\StylingAndDataFormatting\ConvertStringToNumericValue.vb" />
+    <Compile Include="Articles\StylingAndDataFormatting\CustomDecimalAndGroupSeparator.vb" />
+    <Compile Include="Articles\StylingAndDataFormatting\DisplayBulletsInCellUsingHtml.vb" />
+    <Compile Include="Articles\StylingAndDataFormatting\RenderCustomDateFormat.vb" />
+    <Compile Include="Articles\StylingAndDataFormatting\ReusingStyleObjects.vb" />
     <Compile Include="Articles\UpdateReferenceInWorksheets.vb" />
     <Compile Include="Articles\UsingImageMarkersWhileGroupingDataInSmartMarkers.vb" />
     <Compile Include="Articles\WorkingWithCalculationEngine\DecreaseCalculationTime.vb" />
@@ -567,6 +572,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

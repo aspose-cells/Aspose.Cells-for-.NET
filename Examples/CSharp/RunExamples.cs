@@ -267,7 +267,11 @@ namespace Aspose.Cells.Examples.CSharp
 
             //// StylingAndDataFormatting
             //// =====================================================
-            ReusingStyleObjects.Run();
+            //ReusingStyleObjects.Run();
+            //ConvertStringToNumericValue.Run();
+            //CustomDecimalAndGroupSeparator.Run();
+            //DisplayBulletsInCellUsingHtml.Run();
+            RenderCustomDateFormat.Run();
 
             //// WorkingWithCalculationEngine
             //// =====================================================

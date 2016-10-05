@@ -193,6 +193,10 @@
     <Compile Include="Articles\SetTextboxOrShapeParagraphLineSpacing.cs" />
     <Compile Include="Articles\SetWorksheetTabColor.cs" />
     <Compile Include="Articles\ShowFormulasInsteadOfValues.cs" />
+    <Compile Include="Articles\StylingAndDataFormatting\ConvertStringToNumericValue.cs" />
+    <Compile Include="Articles\StylingAndDataFormatting\CustomDecimalAndGroupSeparator.cs" />
+    <Compile Include="Articles\StylingAndDataFormatting\DisplayBulletsInCellUsingHtml.cs" />
+    <Compile Include="Articles\StylingAndDataFormatting\RenderCustomDateFormat.cs" />
     <Compile Include="Articles\StylingAndDataFormatting\ReusingStyleObjects.cs" />
     <Compile Include="Articles\UpdateReferenceInWorksheets.cs" />
     <Compile Include="Articles\SortData.cs" />

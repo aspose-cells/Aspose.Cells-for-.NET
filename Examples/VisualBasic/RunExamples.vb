@@ -13,6 +13,7 @@ Imports Aspose.Cells.Examples.VisualBasic.Articles.OptimizingMemoryUsage
 Imports Aspose.Cells.Examples.VisualBasic.Articles.WorkbookScopedNamedRanges
 Imports Aspose.Cells.Examples.VisualBasic.Articles.WorkingWithHTMLFormat
 Imports Aspose.Cells.Examples.VisualBasic.Articles.RenderingAndPrinting
+Imports Aspose.Cells.Examples.VisualBasic.Articles.StylingAndDataFormatting
 Imports Aspose.Cells.Examples.VisualBasic.Articles.WorkingWithCalculationEngine
 Imports Aspose.Cells.Examples.VisualBasic.Articles.ManagingWorkbooksWorksheets
 Imports Aspose.Cells.Examples.VisualBasic.CellsHelperClass
@@ -255,8 +256,15 @@ Friend Class RunExamples
         'ExportChartToSvgWithViewBox.Run()
         'WorksheetToImageDesiredSize.Run()
         'RenderWorksheetToGraphicContext.Run()
-        SaveExcelIntoPdfWithOptimizedSize.Run()
+        'SaveExcelIntoPdfWithOptimizedSize.Run()
 
+        '''' StylingAndDataFormatting
+        '''' =====================================================
+        'ConvertStringToNumericValue.Run()
+        'CustomDecimalAndGroupSeparator.Run()
+        'DisplayBulletsInCellUsingHtml.Run()
+        'RenderCustomDateFormat.Run()
+        ReusingStyleObjects.Run()
 
         '''' WorkingWithCalculationEngine
         '''' =====================================================
