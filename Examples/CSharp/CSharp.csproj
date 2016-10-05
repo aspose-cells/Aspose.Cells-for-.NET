@@ -193,6 +193,7 @@
     <Compile Include="Articles\SetTextboxOrShapeParagraphLineSpacing.cs" />
     <Compile Include="Articles\SetWorksheetTabColor.cs" />
     <Compile Include="Articles\ShowFormulasInsteadOfValues.cs" />
+    <Compile Include="Articles\StylingAndDataFormatting\ReusingStyleObjects.cs" />
     <Compile Include="Articles\UpdateReferenceInWorksheets.cs" />
     <Compile Include="Articles\SortData.cs" />
     <Compile Include="Articles\UpdateRichTextCells.cs" />

@@ -10,15 +10,13 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
     {
         public static void Run()
         {
-            //ExStart:1
-
+            // ExStart:SpecifyJobNameWhilePrinting
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            //Create workbook object from source Excel file
+            // Create workbook object from source Excel file
             Workbook workbook = new Workbook(dataDir + "SampleBook.xlsx");
 
-            //Specify Printer and Job Name
             string printerName = "";
 
             while (string.IsNullOrEmpty(printerName) && string.IsNullOrWhiteSpace(printerName))
@@ -29,7 +27,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
 
             string jobName = "Job Name while Printing with Aspose.Cells";
 
-            //Print workbook using WorkbookRender
+            // Print workbook using WorkbookRender
             WorkbookRender wr = new WorkbookRender(workbook, new ImageOrPrintOptions());
             try
             {
@@ -40,10 +38,10 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
                 Console.WriteLine(ex.Message);
             }
 
-            //Access first worksheet
+            // Access first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
 
-            //Print worksheet using SheetRender
+            // Print worksheet using SheetRender
             SheetRender sr = new SheetRender(worksheet, new ImageOrPrintOptions());
             try
             {
@@ -53,8 +51,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             {
                 Console.WriteLine(ex.Message);
             }
-
-            //ExEnd:1
+            // ExEnd:SpecifyJobNameWhilePrinting
         }
     }
 }

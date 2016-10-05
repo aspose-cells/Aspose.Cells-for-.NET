@@ -9,21 +9,20 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
     {
         public static void Run()
         {
-            //ExStart:1
+            // ExStart:PreventExportingHiddenContentWhileSavingAsHTML
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            //Create workbook object
+            // Create workbook object
             Workbook workbook = new Workbook(dataDir + "WorkbookWithHiddenContent.xlsx");
 
-            //Do not export hidden worksheet contents
+            // Do not export hidden worksheet contents
             HtmlSaveOptions options = new HtmlSaveOptions();
             options.ExportHiddenWorksheet = false;
 
-            //Save the workbook
+            // Save the workbook
             workbook.Save(dataDir + "HtmlWithoutHiddenContent_out_.html", options);
-
-            //ExEnd:1
+            // ExEnd:PreventExportingHiddenContentWhileSavingAsHTML
         }
     }
 }

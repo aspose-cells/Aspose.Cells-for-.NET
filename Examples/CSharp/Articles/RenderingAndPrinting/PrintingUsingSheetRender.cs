@@ -10,16 +10,13 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
     {
         public static void Run()
         {
-            // ExStart:1
-
+            // ExStart:PrintingExcelWorkbookUsingSheetRender
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            //Instantiate a workbook.
-            //Open an Excel file.
+            // Instantiate a workbook with Excel file.
             Workbook workbook = new Workbook(dataDir + "SampleBook.xlsx");
 
-            //Printer name
             string printerName = "";
 
             while (string.IsNullOrEmpty(printerName) && string.IsNullOrWhiteSpace(printerName))
@@ -28,19 +25,19 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
                 printerName = Console.ReadLine();
             }
 
-            //Define a worksheet.
+            // Define a worksheet.
             Worksheet worksheet;
 
-            //Get the second sheet.
+            // Get the second sheet.
             worksheet = workbook.Worksheets[1];
 
-            //Apply different Image / Print options.
+            // Apply different Image/Print options.
             Aspose.Cells.Rendering.ImageOrPrintOptions options = new Aspose.Cells.Rendering.ImageOrPrintOptions();
             options.PrintingPage = PrintingPageType.Default;
             SheetRender sr = new SheetRender(worksheet, options);
 
             Console.WriteLine("Printing SampleBook.xlsx");
-            //Print the sheet.
+            // Print the sheet.
             try
             {
                 sr.ToPrinter(printerName);
@@ -50,7 +47,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             {
                 Console.WriteLine(ex.Message);
             }
-            // ExEnd:1
+            // ExEnd:PrintingExcelWorkbookUsingSheetRender
         }
     }
 }

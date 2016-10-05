@@ -18,6 +18,7 @@ using Aspose.Cells.Examples.CSharp.Articles.OptimizingMemoryUsage;
 using Aspose.Cells.Examples.CSharp.Articles.WorkbookScopedNamedRanges;
 using Aspose.Cells.Examples.CSharp.Articles.WorkingWithHTMLFormat;
 using Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting;
+using Aspose.Cells.Examples.CSharp.Articles.StylingAndDataFormatting;
 using Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine;
 using Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets;
 using Aspose.Cells.Examples.CSharp.CellsHelperClass;
@@ -262,7 +263,11 @@ namespace Aspose.Cells.Examples.CSharp
             //ExportChartToSvgWithViewBox.Run();
             //WorksheetToImageDesiredSize.Run();
             //RenderWorksheetToGraphicContext.Run();
-            SaveExcelIntoPdfWithOptimizedSize.Run();
+            //SaveExcelIntoPdfWithOptimizedSize.Run();
+
+            //// StylingAndDataFormatting
+            //// =====================================================
+            ReusingStyleObjects.Run();
 
             //// WorkingWithCalculationEngine
             //// =====================================================

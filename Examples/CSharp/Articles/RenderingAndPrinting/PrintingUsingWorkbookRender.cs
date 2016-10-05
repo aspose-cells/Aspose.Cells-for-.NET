@@ -10,16 +10,13 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
     {
         public static void Run()
         {
-            //ExStart:1
-
+            // ExStart:PrintingExcelWorkbookUsingWorkbookRender
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            //Instantiate a workbook.
-            //Open an Excel file.
+            // Instantiate a workbook with an Excel file.
             Workbook workbook = new Workbook(dataDir + "SampleBook.xlsx");
 
-            //Printer name
             string printerName = "";
 
             while (string.IsNullOrEmpty(printerName) && string.IsNullOrWhiteSpace(printerName))
@@ -28,16 +25,16 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
                 printerName = Console.ReadLine();
             }
 
-            //Apply different Image / Print options.
+            // Apply different Image/Print options.
             Aspose.Cells.Rendering.ImageOrPrintOptions options = new Aspose.Cells.Rendering.ImageOrPrintOptions();
             options.ImageFormat = System.Drawing.Imaging.ImageFormat.Tiff;
             options.PrintingPage = PrintingPageType.Default;
 
-            //To print a whole workbook, iterate through the sheets and print them, or use the WorkbookRender class.
+            // To print a whole workbook, iterate through the sheets and print them, or use the WorkbookRender class.
             WorkbookRender wr = new WorkbookRender(workbook, options);
 
             Console.WriteLine("Printing SampleBook.xlsx");
-            //Print the workbook.
+            // Print the workbook.
             try
             {
                 wr.ToPrinter(printerName);
@@ -47,7 +44,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             {
                 Console.WriteLine(ex.Message);
             }
-            //ExEnd:1
+            // ExEnd:PrintingUsingWorkbookRender
         }
     }
 }
