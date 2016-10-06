@@ -175,6 +175,11 @@ Friend Class RunExamples
         'LoadWorkbookWithPrinterSize.Run()
         'CreateTextBoxWithDifferentHorizontalAlignment.Run()
         'SetTextboxOrShapeParagraphLineSpacing.Run()
+        'UpdateActiveXComboBoxControl.Run()
+        'FindDataPointsInPieBar.Run()
+        'GetSetClassIdentifierEmbedOleObject.Run()
+        'LoadWorkbookWithSpecificCultureInfoNumberFormat.Run()
+        'LoadWorkbookWithSpecificCultureInfoDateFormat.Run()
 
         '''' Apply-Conditional-Formatting
         '''' =====================================================

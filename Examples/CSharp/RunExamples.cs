@@ -87,7 +87,7 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            //AccessTextBoxName.Run();;
+            //AccessTextBoxName.Run();
             //AddConditionalIconsSet.Run();
             //AddImageHyperlinks.Run();
             //AddingAnonymousCustomObject.Run();
@@ -182,6 +182,11 @@ namespace Aspose.Cells.Examples.CSharp
             //LoadWorkbookWithPrinterSize.Run();
             //CreateTextBoxWithDifferentHorizontalAlignment.Run();
             //SetTextboxOrShapeParagraphLineSpacing.Run();
+            //UpdateActiveXComboBoxControl.Run();
+            //FindDataPointsInPieBar.Run();
+            //GetSetClassIdentifierEmbedOleObject.Run();
+            //LoadWorkbookWithSpecificCultureInfoNumberFormat.Run();
+            LoadWorkbookWithSpecificCultureInfoDateFormat.Run();
 
             //// Apply-Conditional-Formatting
             //// =====================================================
@@ -271,7 +276,7 @@ namespace Aspose.Cells.Examples.CSharp
             //ConvertStringToNumericValue.Run();
             //CustomDecimalAndGroupSeparator.Run();
             //DisplayBulletsInCellUsingHtml.Run();
-            RenderCustomDateFormat.Run();
+            //RenderCustomDateFormat.Run();
 
             //// WorkingWithCalculationEngine
             //// =====================================================

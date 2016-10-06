@@ -48,10 +48,11 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=8.9.2.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Aspose.Cells.8.9.2\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=9.0.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.9.0.0\lib\net40\Aspose.Cells.dll</HintPath>
+      <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -140,6 +141,7 @@
     <Compile Include="Articles\ExtractOLEObjects.vb" />
     <Compile Include="Articles\FilterDataWhileLoadingWorkbook.vb" />
     <Compile Include="Articles\FindCellsWithSpecificStyle.vb" />
+    <Compile Include="Articles\FindDataPointsInPieBar.vb" />
     <Compile Include="Articles\FindIfCellValueStartsWithSingleQuote.vb" />
     <Compile Include="Articles\FindQueryTablesAndListObjectsOfExternalDataConnections.vb" />
     <Compile Include="Articles\FitAllWorksheetColumns.vb" />
@@ -148,6 +150,7 @@
     <Compile Include="Articles\GenerateThumbnailOfWorksheet.vb" />
     <Compile Include="Articles\GetDataConnection.vb" />
     <Compile Include="Articles\GetIconSetsDataBars.vb" />
+    <Compile Include="Articles\GetSetClassIdentifierEmbedOleObject.vb" />
     <Compile Include="Articles\HidingDisplayOfZeroValues.vb" />
     <Compile Include="Articles\HtmlExportFrameScripts.vb" />
     <Compile Include="Articles\IgnoreHiddenColumnsDataTable.vb" />
@@ -166,6 +169,8 @@
     <Compile Include="Articles\LoadSpecificSheets.vb" />
     <Compile Include="Articles\LoadWebImage.vb" />
     <Compile Include="Articles\LoadWorkbookWithPrinterSize.vb" />
+    <Compile Include="Articles\LoadWorkbookWithSpecificCultureInfoDateFormat.vb" />
+    <Compile Include="Articles\LoadWorkbookWithSpecificCultureInfoNumberFormat.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\ChangeChartDataSource.vb" />
     <Compile Include="Articles\MergeUnmergeRangeOfCells.vb" />
     <Compile Include="Articles\ModifyExistingStyle\ModifyThroughSampleExcelFile.vb" />
@@ -211,6 +216,7 @@
     <Compile Include="Articles\StylingAndDataFormatting\DisplayBulletsInCellUsingHtml.vb" />
     <Compile Include="Articles\StylingAndDataFormatting\RenderCustomDateFormat.vb" />
     <Compile Include="Articles\StylingAndDataFormatting\ReusingStyleObjects.vb" />
+    <Compile Include="Articles\UpdateActiveXComboBoxControl.vb" />
     <Compile Include="Articles\UpdateReferenceInWorksheets.vb" />
     <Compile Include="Articles\UsingImageMarkersWhileGroupingDataInSmartMarkers.vb" />
     <Compile Include="Articles\WorkingWithCalculationEngine\DecreaseCalculationTime.vb" />
