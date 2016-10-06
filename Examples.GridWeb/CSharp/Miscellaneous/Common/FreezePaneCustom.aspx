@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_Common_FreezePaneCustom"
-    MasterPageFile="~/tpl/Demo.Master" Title="Freeze/Unfreeze Panes - Aspose.Cells Grid Suite Demos"
+    MasterPageFile="~/Site.Master" Title="Freeze/Unfreeze Panes - Aspose.Cells Grid Suite Demos"
     CodeBehind="FreezePaneCustom.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

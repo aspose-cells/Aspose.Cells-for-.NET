@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_DataBind_ExpandChildView"
-    MasterPageFile="~/tpl/Demo.Master" Title="Hierarchical View - Aspose.Cells Grid Suite Demos"
+    MasterPageFile="~/Site.Master" Title="Hierarchical View - Aspose.Cells Grid Suite Demos"
     CodeBehind="ExpandChildView.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

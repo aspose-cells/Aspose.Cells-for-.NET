@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_Common_HeaderBarAndCommandButton"
-    MasterPageFile="~/tpl/Demo.Master" Title="HeaderBar & CommandButton - Aspose.Cells Grid Suite Demos"
+    MasterPageFile="~/Site.Master" Title="HeaderBar & CommandButton - Aspose.Cells Grid Suite Demos"
     CodeBehind="HeaderBarAndCommandButton.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

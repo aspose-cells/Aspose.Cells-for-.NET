@@ -150,6 +150,58 @@
     <Compile Include="databind\DemoDatabase2.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="GridWebBasics\AddRemoveContextMenuItem.aspx.cs">
+      <DependentUpon>AddRemoveContextMenuItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridWebBasics\AddRemoveContextMenuItem.aspx.designer.cs">
+      <DependentUpon>AddRemoveContextMenuItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridWebBasics\DisplayCellEditBox.aspx.cs">
+      <DependentUpon>DisplayCellEditBox.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridWebBasics\DisplayCellEditBox.aspx.designer.cs">
+      <DependentUpon>DisplayCellEditBox.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridWebBasics\GetGridWebVersion.aspx.cs">
+      <DependentUpon>GetGridWebVersion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridWebBasics\GetGridWebVersion.aspx.designer.cs">
+      <DependentUpon>GetGridWebVersion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridWebBasics\HandleCustomCommandEvent.aspx.cs">
+      <DependentUpon>HandleCustomCommandEvent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridWebBasics\HandleCustomCommandEvent.aspx.designer.cs">
+      <DependentUpon>HandleCustomCommandEvent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridWebBasics\InitContextMenuItem.aspx.cs">
+      <DependentUpon>InitContextMenuItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridWebBasics\InitContextMenuItem.aspx.designer.cs">
+      <DependentUpon>InitContextMenuItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridWebBasics\InitCustomCommandButton.aspx.cs">
+      <DependentUpon>InitCustomCommandButton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridWebBasics\InitCustomCommandButton.aspx.designer.cs">
+      <DependentUpon>InitCustomCommandButton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridWebBasics\PrintGridWeb.aspx.cs">
+      <DependentUpon>PrintGridWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridWebBasics\PrintGridWeb.aspx.designer.cs">
+      <DependentUpon>PrintGridWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="GridWebBasics\ApplyCustomPresetStyle.aspx.cs">
       <DependentUpon>ApplyCustomPresetStyle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -163,6 +215,13 @@
     </Compile>
     <Compile Include="GridWebBasics\ApplyHeaderBarStyle.aspx.designer.cs">
       <DependentUpon>ApplyHeaderBarStyle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridWebBasics\ApplySessionModes.aspx.cs">
+      <DependentUpon>ApplySessionModes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridWebBasics\ApplySessionModes.aspx.designer.cs">
+      <DependentUpon>ApplySessionModes.aspx</DependentUpon>
     </Compile>
     <Compile Include="GridWebBasics\ApplyTabBarStyle.aspx.cs">
       <DependentUpon>ApplyTabBarStyle.aspx</DependentUpon>
@@ -191,6 +250,13 @@
     </Compile>
     <Compile Include="GridWebBasics\ResizeHeaderBar.aspx.designer.cs">
       <DependentUpon>ResizeHeaderBar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridWebBasics\WriteClientSideScript.aspx.cs">
+      <DependentUpon>WriteClientSideScript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridWebBasics\WriteClientSideScript.aspx.designer.cs">
+      <DependentUpon>WriteClientSideScript.aspx</DependentUpon>
     </Compile>
     <Compile Include="Miscellaneous\Ajax\AjaxUpdating.aspx.cs">
       <DependentUpon>AjaxUpdating.aspx</DependentUpon>
@@ -262,12 +328,12 @@
     <Compile Include="Miscellaneous\Common\DataValidation.aspx.designer.cs">
       <DependentUpon>DataValidation.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Common\Events.aspx.cs">
-      <DependentUpon>Events.aspx</DependentUpon>
+    <Compile Include="GridWebBasics\HandleDoubleClickEvents.aspx.cs">
+      <DependentUpon>HandleDoubleClickEvents.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Common\Events.aspx.designer.cs">
-      <DependentUpon>Events.aspx</DependentUpon>
+    <Compile Include="GridWebBasics\HandleDoubleClickEvents.aspx.designer.cs">
+      <DependentUpon>HandleDoubleClickEvents.aspx</DependentUpon>
     </Compile>
     <Compile Include="Miscellaneous\Common\FreezePane.aspx.cs">
       <DependentUpon>FreezePane.aspx</DependentUpon>
@@ -290,19 +356,33 @@
     <Compile Include="Miscellaneous\Common\HeaderBarAndCommandButton.aspx.designer.cs">
       <DependentUpon>HeaderBarAndCommandButton.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Common\HyperlinkDemo.aspx.cs">
-      <DependentUpon>HyperlinkDemo.aspx</DependentUpon>
+    <Compile Include="Worksheets\AccessNamedRanges.aspx.cs">
+      <DependentUpon>AccessNamedRanges.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Common\HyperlinkDemo.aspx.designer.cs">
-      <DependentUpon>HyperlinkDemo.aspx</DependentUpon>
+    <Compile Include="Worksheets\AccessNamedRanges.aspx.designer.cs">
+      <DependentUpon>AccessNamedRanges.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Common\ImportDataview.aspx.cs">
-      <DependentUpon>ImportDataview.aspx</DependentUpon>
+    <Compile Include="Worksheets\AddHyperlinks.aspx.cs">
+      <DependentUpon>AddHyperlinks.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Common\ImportDataview.aspx.designer.cs">
-      <DependentUpon>ImportDataview.aspx</DependentUpon>
+    <Compile Include="Worksheets\AddHyperlinks.aspx.designer.cs">
+      <DependentUpon>AddHyperlinks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Worksheets\ExportDataTable.aspx.cs">
+      <DependentUpon>ExportDataTable.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Worksheets\ExportDataTable.aspx.designer.cs">
+      <DependentUpon>ExportDataTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Worksheets\ImportDataView.aspx.cs">
+      <DependentUpon>ImportDataView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Worksheets\ImportDataView.aspx.designer.cs">
+      <DependentUpon>ImportDataView.aspx</DependentUpon>
     </Compile>
     <Compile Include="GridWebBasics\ImportExportFile.aspx.cs">
       <DependentUpon>ImportExportFile.aspx</DependentUpon>
@@ -311,12 +391,12 @@
     <Compile Include="GridWebBasics\ImportExportFile.aspx.designer.cs">
       <DependentUpon>ImportExportFile.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Common\modes.aspx.cs">
-      <DependentUpon>modes.aspx</DependentUpon>
+    <Compile Include="GridWebBasics\ApplyEditModes.aspx.cs">
+      <DependentUpon>ApplyEditModes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Common\modes.aspx.designer.cs">
-      <DependentUpon>modes.aspx</DependentUpon>
+    <Compile Include="GridWebBasics\ApplyEditModes.aspx.designer.cs">
+      <DependentUpon>ApplyEditModes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Miscellaneous\Common\Pagination.aspx.cs">
       <DependentUpon>Pagination.aspx</DependentUpon>
@@ -332,19 +412,26 @@
     <Compile Include="Miscellaneous\Common\setborders.aspx.designer.cs">
       <DependentUpon>setborders.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Common\Sheets.aspx.cs">
-      <DependentUpon>Sheets.aspx</DependentUpon>
+    <Compile Include="Worksheets\ManageComments.aspx.cs">
+      <DependentUpon>ManageComments.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Common\Sheets.aspx.designer.cs">
-      <DependentUpon>Sheets.aspx</DependentUpon>
+    <Compile Include="Worksheets\ManageComments.aspx.designer.cs">
+      <DependentUpon>ManageComments.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Common\Sort.aspx.cs">
-      <DependentUpon>Sort.aspx</DependentUpon>
+    <Compile Include="Worksheets\ManageHyperlinks.aspx.cs">
+      <DependentUpon>ManageHyperlinks.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Common\Sort.aspx.designer.cs">
-      <DependentUpon>Sort.aspx</DependentUpon>
+    <Compile Include="Worksheets\ManageHyperlinks.aspx.designer.cs">
+      <DependentUpon>ManageHyperlinks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Worksheets\SortData.aspx.cs">
+      <DependentUpon>SortData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Worksheets\SortData.aspx.designer.cs">
+      <DependentUpon>SortData.aspx</DependentUpon>
     </Compile>
     <Compile Include="Miscellaneous\Common\WebCells.aspx.cs">
       <DependentUpon>WebCells.aspx</DependentUpon>
@@ -521,6 +608,41 @@
     <Compile Include="WebFormtest.aspx.designer.cs">
       <DependentUpon>WebFormtest.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Worksheets\AccessWorksheets.aspx.cs">
+      <DependentUpon>AccessWorksheets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Worksheets\AccessWorksheets.aspx.designer.cs">
+      <DependentUpon>AccessWorksheets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Worksheets\AddWorksheets.aspx.cs">
+      <DependentUpon>AddWorksheets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Worksheets\AddWorksheets.aspx.designer.cs">
+      <DependentUpon>AddWorksheets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Worksheets\CopyWorksheets.aspx.cs">
+      <DependentUpon>CopyWorksheets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Worksheets\CopyWorksheets.aspx.designer.cs">
+      <DependentUpon>CopyWorksheets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Worksheets\RemoveWorksheets.aspx.cs">
+      <DependentUpon>RemoveWorksheets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Worksheets\RemoveWorksheets.aspx.designer.cs">
+      <DependentUpon>RemoveWorksheets.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Worksheets\RenameWorksheets.aspx.cs">
+      <DependentUpon>RenameWorksheets.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Worksheets\RenameWorksheets.aspx.designer.cs">
+      <DependentUpon>RenameWorksheets.aspx</DependentUpon>
+    </Compile>
     <Content Include="Data\GridWebBasics\CustomStyle1.xml" />
     <Content Include="Data\GridWebBasics\CustomStyle2.xml" />
     <Content Include="Examples.aspx" />
@@ -531,12 +653,21 @@
     </Content>
     <Content Include="Database\Northwind.mdb">
     </Content>
+    <Content Include="GridWebBasics\AddRemoveContextMenuItem.aspx" />
     <Content Include="GridWebBasics\ApplyCustomPresetStyle.aspx" />
     <Content Include="GridWebBasics\ApplyHeaderBarStyle.aspx" />
+    <Content Include="GridWebBasics\ApplySessionModes.aspx" />
     <Content Include="GridWebBasics\ApplyTabBarStyle.aspx" />
+    <Content Include="GridWebBasics\DisplayCellEditBox.aspx" />
+    <Content Include="GridWebBasics\GetGridWebVersion.aspx" />
+    <Content Include="GridWebBasics\HandleCustomCommandEvent.aspx" />
     <Content Include="GridWebBasics\ImportExportFileFromStream.aspx" />
+    <Content Include="GridWebBasics\InitContextMenuItem.aspx" />
+    <Content Include="GridWebBasics\InitCustomCommandButton.aspx" />
+    <Content Include="GridWebBasics\PrintGridWeb.aspx" />
     <Content Include="GridWebBasics\ResizeGridWeb.aspx" />
     <Content Include="GridWebBasics\ResizeHeaderBar.aspx" />
+    <Content Include="GridWebBasics\WriteClientSideScript.aspx" />
     <Content Include="Grid\acw_client\acwmain.js" />
     <Content Include="Grid\acw_client\b1.gif" />
     <Content Include="Grid\acw_client\b2.gif" />
@@ -584,18 +715,21 @@
     <Content Include="Miscellaneous\Common\CustomStyle1.xml" />
     <Content Include="Miscellaneous\Common\CustomStyle2.xml" />
     <Content Include="Miscellaneous\Common\DataValidation.aspx" />
-    <Content Include="Miscellaneous\Common\Events.aspx" />
+    <Content Include="GridWebBasics\HandleDoubleClickEvents.aspx" />
     <Content Include="Miscellaneous\Common\FreezePane.aspx" />
     <Content Include="Miscellaneous\Common\FreezePaneCustom.aspx" />
     <Content Include="Miscellaneous\Common\HeaderBarAndCommandButton.aspx" />
-    <Content Include="Miscellaneous\Common\HyperlinkDemo.aspx" />
-    <Content Include="Miscellaneous\Common\ImportDataview.aspx" />
+    <Content Include="Worksheets\AccessNamedRanges.aspx" />
+    <Content Include="Worksheets\AddHyperlinks.aspx" />
+    <Content Include="Worksheets\ExportDataTable.aspx" />
+    <Content Include="Worksheets\ImportDataView.aspx" />
     <Content Include="GridWebBasics\ImportExportFile.aspx" />
-    <Content Include="Miscellaneous\Common\modes.aspx" />
+    <Content Include="GridWebBasics\ApplyEditModes.aspx" />
     <Content Include="Miscellaneous\Common\Pagination.aspx" />
     <Content Include="Miscellaneous\Common\setborders.aspx" />
-    <Content Include="Miscellaneous\Common\Sheets.aspx" />
-    <Content Include="Miscellaneous\Common\Sort.aspx" />
+    <Content Include="Worksheets\ManageComments.aspx" />
+    <Content Include="Worksheets\ManageHyperlinks.aspx" />
+    <Content Include="Worksheets\SortData.aspx" />
     <Content Include="Miscellaneous\Common\WebCells.aspx" />
     <Content Include="Miscellaneous\Common\WebCells2.aspx" />
     <Content Include="Miscellaneous\DataBind\DataBind1.aspx" />
@@ -713,7 +847,7 @@
     <Content Include="Image\wellcomeasposecells.gif" />
     <Content Include="js\dtree.js" />
     <Content Include="js\oo.js" />
-    <Content Include="tpl\Demo.Master" />
+    <Content Include="Site.Master" />
     <Compile Include="AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -733,6 +867,11 @@
     <Content Include="Web.config" />
     <Content Include="WebFormtest.aspx" />
     <Content Include="worksheets.aspx" />
+    <Content Include="Worksheets\AccessWorksheets.aspx" />
+    <Content Include="Worksheets\AddWorksheets.aspx" />
+    <Content Include="Worksheets\CopyWorksheets.aspx" />
+    <Content Include="Worksheets\RemoveWorksheets.aspx" />
+    <Content Include="Worksheets\RenameWorksheets.aspx" />
     <EmbeddedResource Include="Default.aspx.resx">
       <DependentUpon>Default.aspx.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -808,7 +947,7 @@
     <Folder Include="Miscellaneous\GridWebForm\" />
     <Folder Include="Properties\" />
     <Folder Include="RowsAndColumns\" />
-    <Folder Include="Worksheets\" />
+    <Folder Include="tpl\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

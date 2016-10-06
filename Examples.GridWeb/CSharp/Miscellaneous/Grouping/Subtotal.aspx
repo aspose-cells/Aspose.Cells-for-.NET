@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_Grouping_Subtotal"
-    MasterPageFile="~/tpl/Demo.Master" Title="Creating Subtotal - Aspose.Cells Grid Suite Demos"
+    MasterPageFile="~/Site.Master" Title="Creating Subtotal - Aspose.Cells Grid Suite Demos"
     CodeBehind="Subtotal.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

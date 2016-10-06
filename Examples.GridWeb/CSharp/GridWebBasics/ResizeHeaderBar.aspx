@@ -1,5 +1,6 @@
-﻿<%@ Page Title="Resize Header Bar - Aspose.Cells Grid Suite Examples" Language="C#" MasterPageFile="~/tpl/Demo.Master" AutoEventWireup="true" 
+﻿<%@ Page Title="Resize Header Bar - Aspose.Cells Grid Suite Examples" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" 
     CodeBehind="ResizeHeaderBar.aspx.cs" Inherits="Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics.ResizeHeaderBar" %>
+
 <%@ Register Assembly="Aspose.Cells.GridWeb" Namespace="Aspose.Cells.GridWeb" TagPrefix="acw" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeaderContent" runat="server">
@@ -28,8 +29,6 @@
         <p>
             Click the button to resize header bar of
             the GridWeb Control.
-
-            <asp:Label ID="lblMessage" runat="server"></asp:Label>
         </p>
         <br />
         <div>

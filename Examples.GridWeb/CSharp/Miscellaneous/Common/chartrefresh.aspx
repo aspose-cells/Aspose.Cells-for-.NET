@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="chartrefresh" MasterPageFile="~/tpl/Demo.Master"
+﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="chartrefresh" MasterPageFile="~/Site.Master"
     Title="Create Invoice - Aspose.Cells Grid Suite Demos" CodeBehind="chartrefresh.aspx.cs" %>
 
 <%@ Register Assembly="Aspose.Cells.GridWeb" Namespace="Aspose.Cells.GridWeb" TagPrefix="acw" %>

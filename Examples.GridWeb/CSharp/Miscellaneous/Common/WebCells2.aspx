@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_Common_WebCells2" MasterPageFile="~/tpl/Demo.Master"
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_Common_WebCells2" MasterPageFile="~/Site.Master"
     Title="WebCells - Aspose.Cells Grid Suite Demos" CodeBehind="WebCells2.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

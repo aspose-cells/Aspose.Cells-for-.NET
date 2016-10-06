@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_Common_Pagination"
-    MasterPageFile="~/tpl/Demo.Master" Title="Paginating Sheet - Aspose.Cells Grid Suite Demos"
+    MasterPageFile="~/Site.Master" Title="Paginating Sheet - Aspose.Cells Grid Suite Demos"
     CodeBehind="Pagination.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

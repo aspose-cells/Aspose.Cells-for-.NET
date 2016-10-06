@@ -1,5 +1,5 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_DataSourceControl_BindWithDataSourceControl"
-    MasterPageFile="~/tpl/Demo.Master" Title="Bind with DataSourceControl - Aspose.Cells Grid Suite Demos"
+    MasterPageFile="~/Site.Master" Title="Bind with DataSourceControl - Aspose.Cells Grid Suite Demos"
     CodeBehind="BindWithDataSourceControl.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

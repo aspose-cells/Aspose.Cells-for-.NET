@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_Format_DateAndTime"
-    MasterPageFile="~/tpl/Demo.Master" Title="Date & Time Format - Format - Aspose.Cells Grid Suite Demos"
+    MasterPageFile="~/Site.Master" Title="Date & Time Format - Format - Aspose.Cells Grid Suite Demos"
     CodeBehind="DateAndTime.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

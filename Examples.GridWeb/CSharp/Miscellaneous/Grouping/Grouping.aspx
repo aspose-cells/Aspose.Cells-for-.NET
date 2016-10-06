@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_Grouping_Grouping"
-    MasterPageFile="~/tpl/Demo.Master" Title="Grouping Rows - Aspose.Cells Grid Suite Demos"
+    MasterPageFile="~/Site.Master" Title="Grouping Rows - Aspose.Cells Grid Suite Demos"
     CodeBehind="Grouping.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

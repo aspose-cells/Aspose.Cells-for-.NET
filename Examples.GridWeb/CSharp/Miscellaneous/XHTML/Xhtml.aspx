@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_XHTML_Xhtml" MasterPageFile="~/tpl/Demo.Master"
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_XHTML_Xhtml" MasterPageFile="~/Site.Master"
     Title="XHTML 1.0 Support - Aspose.Cells Grid Suite Demos" CodeBehind="Xhtml.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

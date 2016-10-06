@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="chartsubmit" MasterPageFile="~/tpl/Demo.Master"
+﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="chartsubmit" MasterPageFile="~/Site.Master"
     Title="Create Invoice - Aspose.Cells Grid Suite Demos" CodeBehind="chartsubmit.aspx.cs" %>
 
 <%@ Register Assembly="Aspose.Cells.GridWeb" Namespace="Aspose.Cells.GridWeb" TagPrefix="acw" %>

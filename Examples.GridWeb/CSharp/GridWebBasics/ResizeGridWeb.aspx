@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Resize GridWeb - Aspose.Cells Grid Suite Examples" Language="C#" MasterPageFile="~/tpl/Demo.Master" AutoEventWireup="true"
+﻿<%@ Page Title="Resize GridWeb - Aspose.Cells Grid Suite Examples" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true"
      CodeBehind="ResizeGridWeb.aspx.cs" Inherits="Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics.ResizeGridWeb" %>
 <%@ Register Assembly="Aspose.Cells.GridWeb" Namespace="Aspose.Cells.GridWeb" TagPrefix="acw" %>
 

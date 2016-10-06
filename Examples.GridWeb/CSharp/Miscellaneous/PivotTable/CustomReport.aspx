@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_PivotTable_CustomReport"
-    MasterPageFile="~/tpl/Demo.Master" Title="Customizing PrivotTable Report - Aspose.Cells Grid Suite Demos"
+    MasterPageFile="~/Site.Master" Title="Customizing PrivotTable Report - Aspose.Cells Grid Suite Demos"
     CodeBehind="CustomReport.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

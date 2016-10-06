@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Apply Tab Bar Styles - Aspose.Cells Grid Suite Examples" Language="C#" MasterPageFile="~/tpl/Demo.Master" AutoEventWireup="true" 
+﻿<%@ Page Title="Apply Tab Bar Styles - Aspose.Cells Grid Suite Examples" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" 
     CodeBehind="ApplyTabBarStyle.aspx.cs" Inherits="Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics.ApplyTabBarStyle" %>
 
 <%@ Register Assembly="Aspose.Cells.GridWeb" Namespace="Aspose.Cells.GridWeb" TagPrefix="acw" %>
@@ -6,13 +6,6 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="HeaderContent" runat="server">
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
-
-    <script type="text/javascript">
-			function seeCustomStyleFile(file){
-				window.open(file, "", "","");
-			}
-    </script>
-
     <table class="componentDescriptionTxt" border="0" cellpadding="0" cellspacing="0"
         style="text-align: center; width: 100%; font-family: Arial; font-size: small;">
         <tbody>

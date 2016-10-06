@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics.ApplyPresetStyle"
-    MasterPageFile="~/tpl/Demo.Master" Title="Apply Preset Styles - Aspose.Cells Grid Suite Examples"
+    MasterPageFile="~/Site.Master" Title="Apply Preset Styles - Aspose.Cells Grid Suite Examples"
     CodeBehind="ApplyPresetStyle.aspx.cs" %>
 
 <%@ Register Assembly="Aspose.Cells.GridWeb" Namespace="Aspose.Cells.GridWeb" TagPrefix="acw" %>

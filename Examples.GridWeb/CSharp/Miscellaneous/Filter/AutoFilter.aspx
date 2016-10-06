@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_Filter_AutoFilter"
-    MasterPageFile="~/tpl/Demo.Master" Title="Using the AutoFilter Feature to Filter Rows - Aspose.Cells Grid Suite Demos"
+    MasterPageFile="~/Site.Master" Title="Using the AutoFilter Feature to Filter Rows - Aspose.Cells Grid Suite Demos"
     CodeBehind="AutoFilter.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

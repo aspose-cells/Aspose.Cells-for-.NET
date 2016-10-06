@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_Filter_CustomFilter"
-    MasterPageFile="~/tpl/Demo.Master" Title="Using Forumula to Filter Rows - Aspose.Cells Grid Suite Demos"
+    MasterPageFile="~/Site.Master" Title="Using Forumula to Filter Rows - Aspose.Cells Grid Suite Demos"
     CodeBehind="CustomFilter.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

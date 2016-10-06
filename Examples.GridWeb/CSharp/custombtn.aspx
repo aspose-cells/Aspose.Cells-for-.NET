@@ -1,6 +1,6 @@
 <%@ OutputCache Location="None" %>
 
-<%@ Page Language="c#" AutoEventWireup="false" MasterPageFile="~/tpl/Demo.Master"
+<%@ Page Language="c#" AutoEventWireup="false" MasterPageFile="~/Site.Master"
     Title="Custom Command Button Designer - Aspose.Cells.GridWeb Demos" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">

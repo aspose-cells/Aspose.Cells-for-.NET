@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/tpl/Demo.Master" AutoEventWireup="true" CodeBehind="ApplyCustomPresetStyle.aspx.cs" 
+﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ApplyCustomPresetStyle.aspx.cs" 
     Inherits="Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics.ApplyCustomPresetStyle" 
      Title="Apply Custom Preset Styles - Aspose.Cells Grid Suite Examples" %>
 <%@ Register Assembly="Aspose.Cells.GridWeb" Namespace="Aspose.Cells.GridWeb" TagPrefix="acw" %>
@@ -33,7 +33,7 @@
         <p>
             Click the buttons to load or save custom styles for  
             the GridWeb Control.
-
+            <br />
             <asp:Label ID="lblMessage" runat="server"></asp:Label>
         </p>
         <br />

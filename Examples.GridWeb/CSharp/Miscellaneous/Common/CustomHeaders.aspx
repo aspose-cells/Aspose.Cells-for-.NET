@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_Common_CustomHeaders"
-    MasterPageFile="~/tpl/Demo.Master" Title="Custom Headers - Aspose.Cells Grid Suite Demos"
+    MasterPageFile="~/Site.Master" Title="Custom Headers - Aspose.Cells Grid Suite Demos"
     CodeBehind="CustomHeaders.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

@@ -18,12 +18,12 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if first visit this page clear GridWeb1 
+            // If first visit this page clear GridWeb1 
             if (!IsPostBack && !GridWeb1.IsPostBack)
             {
                 LoadData();
 
-                //set sheets selectedIndex to 0
+                // Set sheets selectedIndex to 0
                 GridWeb1.WorkSheets.ActiveSheetIndex = 0;
 
             }
@@ -32,11 +32,11 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
         private void LoadData()
         {
             // Gets the web application's path.
-            string path = Server.MapPath("~");
-            path = path.Substring(0, path.LastIndexOf("\\"));
-            string fileName = path + "\\Data\\GridWebBasics\\Skins.xls";
+            string path = (this.Master as Site).GetDataDir();
 
-            // Imports from a excel file.
+            string fileName = path + "\\GridWebBasics\\Skins.xls";
+
+            // Imports from an excel file.
             GridWeb1.ImportExcelFile(fileName);
         }
 
@@ -52,28 +52,28 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
                     break;
                 case "Colorful1":
                     // ExStart:ApplyPresetStyle
-                    //Applying Colorful1 style on the GridWeb control
+                    // Applying Colorful1 style on the GridWeb control
                     GridWeb1.PresetStyle =PresetStyle.Colorful1;
                     // ExEnd:ApplyPresetStyle
                     break;
                 case "Colorful2":
-                    //Applying Colorful2 style on the GridWeb control
+                    // Applying Colorful2 style on the GridWeb control
                     GridWeb1.PresetStyle= PresetStyle.Colorful2;
                     break;
                 case "Professional1":
-                    //Applying Professional1 style on the GridWeb control
+                    // Applying Professional1 style on the GridWeb control
                     GridWeb1.PresetStyle = PresetStyle.Professional1;
                     break;
                 case "Professional2":
-                    //Applying Professional2 style on the GridWeb control
+                    // Applying Professional2 style on the GridWeb control
                     GridWeb1.PresetStyle = PresetStyle.Professional2;
                     break;
                 case "Traditional1":
-                    //Applying Traditional1 style on the GridWeb control
+                    // Applying Traditional1 style on the GridWeb control
                     GridWeb1.PresetStyle = PresetStyle.Traditional1;
                     break;
                 case "Traditional2":
-                    //Applying Traditional2 style on the GridWeb control
+                    // Applying Traditional2 style on the GridWeb control
                     GridWeb1.PresetStyle = PresetStyle.Traditional2;
                     break;
                 default:
@@ -88,22 +88,18 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
         protected void GridWeb1_SaveCommand(object sender, EventArgs e)
         {
             // Generates a temporary file name.
-            string filename = System.IO.Path.GetTempPath() + Session.SessionID + ".xls";
+            string filename = Session.SessionID + "_out_.xls";
+
+            string path = (this.Master as Site).GetDataDir() + "\\GridWebBasics\\";
 
             // Saves to the file.
-            this.GridWeb1.SaveToExcelFile(filename);
+            this.GridWeb1.SaveToExcelFile(path + filename);
 
             // Sents the file to browser.
             Response.ContentType = "application/vnd.ms-excel";
-
-            //Adds header.
-            Response.AddHeader("content-disposition", "attachment; filename=book1.xls");
-
-            // Writes file content to the response stream.
-            Response.WriteFile(filename);
-
-            // OK.
-            Response.End();
+            Response.AddHeader("content-disposition", "attachment; filename=" + filename);
+            Response.WriteFile(path + filename);
+            Response.End();      
         }
     }
 }

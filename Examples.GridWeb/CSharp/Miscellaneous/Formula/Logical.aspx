@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_Formula_Logical" MasterPageFile="~/tpl/Demo.Master"
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_Formula_Logical" MasterPageFile="~/Site.Master"
     Title="Logical - Formula - Aspose.Cells Grid Suite Demos" CodeBehind="Logical.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_DataBind_DataBind2"
-    MasterPageFile="~/tpl/Demo.Master" Title="Data Binding at Runtime - Aspose.Cells Grid Suite Demos"
+    MasterPageFile="~/Site.Master" Title="Data Binding at Runtime - Aspose.Cells Grid Suite Demos"
     CodeBehind="DataBind2.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

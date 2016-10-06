@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_Format_CreateReport"
-    MasterPageFile="~/tpl/Demo.Master" Title="Create a report - Aspose.Cells Grid Suite Demos"
+    MasterPageFile="~/Site.Master" Title="Create a report - Aspose.Cells Grid Suite Demos"
     CodeBehind="CreateReport.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

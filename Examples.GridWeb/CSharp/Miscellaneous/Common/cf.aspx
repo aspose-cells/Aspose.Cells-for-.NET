@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#"  MasterPageFile="~/tpl/Demo.Master" Title="Conditional Formatting Excel File - Aspose.Cells Grid Suite Demos"%>
+﻿<%@ Page Language="C#"  MasterPageFile="~/Site.Master" Title="Conditional Formatting Excel File - Aspose.Cells Grid Suite Demos"%>
 <%@ Import Namespace="System.Data" %>
 <%@ Import Namespace="System.IO" %>
 <%@ Import Namespace="Aspose.Cells.GridWeb" %>

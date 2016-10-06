@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_PivotTable_FromWebWorksheet"
-    MasterPageFile="~/tpl/Demo.Master" Title="Working with different data sources - Aspose.Cells Grid Suite Demos"
+    MasterPageFile="~/Site.Master" Title="Working with different data sources - Aspose.Cells Grid Suite Demos"
     CodeBehind="FromWebWorksheet.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

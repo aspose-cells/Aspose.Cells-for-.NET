@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_PivotTable_PivotFieldFunction"
-    MasterPageFile="~/tpl/Demo.Master" Title="Using PivotField Function - Aspose.Cells Grid Suite Demos"
+    MasterPageFile="~/Site.Master" Title="Using PivotField Function - Aspose.Cells Grid Suite Demos"
     CodeBehind="PivotFieldFunction.aspx.cs" %>
 
 <%@ Register TagPrefix="agw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

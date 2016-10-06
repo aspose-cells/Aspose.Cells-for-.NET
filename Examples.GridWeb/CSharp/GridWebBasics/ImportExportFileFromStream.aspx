@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Import/Export Excel File from Stream - Aspose.Cells Grid Suite Demos" Language="C#" MasterPageFile="~/tpl/Demo.Master" AutoEventWireup="true"
+﻿<%@ Page Title="Import/Export Excel File from Stream - Aspose.Cells Grid Suite Examples" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true"
      CodeBehind="ImportExportFileFromStream.aspx.cs" Inherits="Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics.ImportExportFileFromStream" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

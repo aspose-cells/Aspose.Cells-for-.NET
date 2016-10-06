@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_Common_CustomContextMenu"
-    MasterPageFile="~/tpl/Demo.Master" Title="Custom Context Menu - Aspose.Cells Grid Suite Demos"
+    MasterPageFile="~/Site.Master" Title="Custom Context Menu - Aspose.Cells Grid Suite Demos"
     CodeBehind="CustomContextMenu.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

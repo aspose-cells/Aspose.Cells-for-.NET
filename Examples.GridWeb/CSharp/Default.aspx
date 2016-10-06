@@ -1,5 +1,5 @@
 <%@ Page Language="c#" CodeBehind="Default.aspx.cs" AutoEventWireup="false" Inherits="Aspose.Cells.GridWeb.Examples.CSharp._Default"
-    MasterPageFile="~/tpl/Demo.Master" Title="Aspose.Cells" %>
+    MasterPageFile="Site.Master" Title="Aspose.Cells" %>
 
 <asp:Content ID="Content" ContentPlaceHolderID="MainContent" runat="server">
     <table class="componentDescriptionTxt" border="0" cellpadding="0" cellspacing="0"

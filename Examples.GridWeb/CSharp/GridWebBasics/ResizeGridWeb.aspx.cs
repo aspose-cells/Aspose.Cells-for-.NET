@@ -11,13 +11,12 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            //if first visit this page clear GridWeb1 
+            // If first visit this page clear GridWeb1 
             if (!IsPostBack && !GridWeb1.IsPostBack)
             {
                 LoadData();
 
-                //set sheets selectedIndex to 0
+                // Set sheets selectedIndex to 0
                 GridWeb1.WorkSheets.ActiveSheetIndex = 0;
 
             }
@@ -26,44 +25,40 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
         private void LoadData()
         {
             // Gets the web application's path.
-            string path = Server.MapPath("~");
-            path = path.Substring(0, path.LastIndexOf("\\"));
-            string fileName = path + "\\Data\\GridWebBasics\\SampleData.xls";
+            string path = (this.Master as Site).GetDataDir();
 
-            // Imports from a excel file.
+            string fileName = path + "\\GridWebBasics\\SampleData.xls";
+            
+            // Imports from an excel file.
             GridWeb1.ImportExcelFile(fileName);
         }
 
         protected void btnResizeGridWeb_Click(object sender, EventArgs e)
         {
-            //ExStart:ResizeGridWeb
-            //Setting the height of GridWeb control
+            // ExStart:ResizeGridWeb
+            // Setting the height of GridWeb control
             GridWeb1.Height = new Unit(200, UnitType.Point);
 
-            //Setting the width of GridWeb control
+            // Setting the width of GridWeb control
             GridWeb1.Width = new Unit(520, UnitType.Point);
-            //ExEnd:ResizeGridWeb
+            // ExEnd:ResizeGridWeb
         }
 
         protected void GridWeb1_SaveCommand(object sender, EventArgs e)
         {
             // Generates a temporary file name.
-            string filename = System.IO.Path.GetTempPath() + Session.SessionID + ".xls";
+            string filename = Session.SessionID + "_out_.xls";
+
+            string path = (this.Master as Site).GetDataDir() + "\\GridWebBasics\\";
 
             // Saves to the file.
-            this.GridWeb1.SaveToExcelFile(filename);
+            this.GridWeb1.SaveToExcelFile(path + filename);
 
             // Sents the file to browser.
             Response.ContentType = "application/vnd.ms-excel";
-
-            //Adds header.
-            Response.AddHeader("content-disposition", "attachment; filename=book1.xls");
-
-            // Writes file content to the response stream.
-            Response.WriteFile(filename);
-
-            // OK.
-            Response.End();
+            Response.AddHeader("content-disposition", "attachment; filename=" + filename);
+            Response.WriteFile(path + filename);
+            Response.End();      
         }
     }
 }

@@ -11,13 +11,12 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-            //if first visit this page clear GridWeb1 
+            // If first visit this page clear GridWeb1 
             if (!IsPostBack && !GridWeb1.IsPostBack)
             {
                 LoadData();
 
-                //set sheets selectedIndex to 0
+                // Set sheets selectedIndex to 0
                 GridWeb1.WorkSheets.ActiveSheetIndex = 0;
 
             }
@@ -26,50 +25,46 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
         private void LoadData()
         {
             // Gets the web application's path.
-            string path = Server.MapPath("~");
-            path = path.Substring(0, path.LastIndexOf("\\"));
-            string fileName = path + "\\Data\\GridWebBasics\\Skins.xls";
+            string path = (this.Master as Site).GetDataDir();
 
-            // Imports from a excel file.
+            string fileName = path + "\\GridWebBasics\\Skins.xls";
+
+            // Imports from an excel file.
             GridWeb1.ImportExcelFile(fileName);
         }
 
         protected void GridWeb1_SaveCommand(object sender, EventArgs e)
         {
             // Generates a temporary file name.
-            string filename = System.IO.Path.GetTempPath() + Session.SessionID + ".xls";
+            string filename = Session.SessionID + "_out_.xls";
+
+            string path = (this.Master as Site).GetDataDir() + "\\GridWebBasics\\";
 
             // Saves to the file.
-            this.GridWeb1.SaveToExcelFile(filename);
+            this.GridWeb1.SaveToExcelFile(path + filename);
 
             // Sents the file to browser.
             Response.ContentType = "application/vnd.ms-excel";
-
-            //Adds header.
-            Response.AddHeader("content-disposition", "attachment; filename=book1.xls");
-
-            // Writes file content to the response stream.
+            Response.AddHeader("content-disposition", "attachment; filename=" + filename);
             Response.WriteFile(filename);
-
-            // OK.
-            Response.End();
+            Response.End();      
         }
 
         protected void btnApplyTabBarStyle_Click(object sender, EventArgs e)
         {
-            //ExStart:ApplyTabBarStyle
-            //Setting the background color of tabs to Yellow
+            // ExStart:ApplyTabBarStyle
+            // Setting the background color of tabs to Yellow
             GridWeb1.TabStyle.BackColor = System.Drawing.Color.Yellow;
 
-            //Setting the foreground color of tabs to Blue
+            // Setting the foreground color of tabs to Blue
             GridWeb1.TabStyle.ForeColor = System.Drawing.Color.Blue;
 
-            //Setting the background color of active tab to Blue
+            // Setting the background color of active tab to Blue
             GridWeb1.ActiveTabStyle.BackColor = System.Drawing.Color.Blue;
 
-            //Setting the foreground color of active tab to Yellow
+            // Setting the foreground color of active tab to Yellow
             GridWeb1.ActiveTabStyle.ForeColor = System.Drawing.Color.Yellow;
-            //ExEnd:ApplyTabBarStyle
+            // ExEnd:ApplyTabBarStyle
         }
 
     }

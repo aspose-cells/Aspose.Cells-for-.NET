@@ -1,5 +1,5 @@
 ﻿<%@ Page Title="Apply Header Bar Styles - Aspose.Cells Grid Suite Examples" Language="C#" 
-    MasterPageFile="~/tpl/Demo.Master" AutoEventWireup="true" CodeBehind="ApplyHeaderBarStyle.aspx.cs" 
+    MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ApplyHeaderBarStyle.aspx.cs" 
     Inherits="Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics.ApplyHeaderBarStyle" %>
 
 <%@ Register Assembly="Aspose.Cells.GridWeb" Namespace="Aspose.Cells.GridWeb" TagPrefix="acw" %>

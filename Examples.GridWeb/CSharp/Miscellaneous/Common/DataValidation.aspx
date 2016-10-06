@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_Common_DataValidation"
-    MasterPageFile="~/tpl/Demo.Master" Title="Data Protection / Data Validation - Aspose.Cells Grid Suite Demos"
+    MasterPageFile="~/Site.Master" Title="Data Protection / Data Validation - Aspose.Cells Grid Suite Demos"
     CodeBehind="DataValidation.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics.ImportExportFile"
-    MasterPageFile="~/tpl/Demo.Master" Title="Import/Export Excel File - Aspose.Cells Grid Suite Demos"
+    MasterPageFile="~/Site.Master" Title="Import/Export Excel File - Aspose.Cells Grid Suite Examples"
     CodeBehind="ImportExportFile.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>

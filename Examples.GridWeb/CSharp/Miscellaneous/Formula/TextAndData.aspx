@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_Formula_TextAndData"
-    MasterPageFile="~/tpl/Demo.Master" Title="Text and Data - Formula - Aspose.Cells Grid Suite Demos"
+    MasterPageFile="~/Site.Master" Title="Text and Data - Formula - Aspose.Cells Grid Suite Demos"
     CodeBehind="TextAndData.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>
