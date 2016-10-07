@@ -28,7 +28,7 @@ public partial class demos_DataBind_DataBind1 : System.Web.UI.Page
       this.dataSet11 = new Aspose.Cells.GridWeb.DemosCS.DataBind.DataSet1();
 
       //Create demo database object
-      DemoDatabase db = new DemoDatabase();
+      ExampleDatabase db = new ExampleDatabase();
 
       //Create pathe to database file
       string path = Server.MapPath("~");
@@ -81,7 +81,7 @@ public partial class demos_DataBind_DataBind1 : System.Web.UI.Page
       this.dataSet11 = new Aspose.Cells.GridWeb.DemosCS.DataBind.DataSet1();
 
       //Create demo database object
-      DemoDatabase db = new DemoDatabase();
+      ExampleDatabase db = new ExampleDatabase();
 
       //Create path to database file
       string path = Server.MapPath("~");
@@ -129,7 +129,7 @@ public partial class demos_DataBind_DataBind1 : System.Web.UI.Page
           if (Request.UserHostAddress == "127.0.0.1")
           {
             //Create path to database file
-            DemoDatabase db = new DemoDatabase();
+            ExampleDatabase db = new ExampleDatabase();
             string path = Server.MapPath("~");
             path = path.Substring(0, path.LastIndexOf("\\"));
 

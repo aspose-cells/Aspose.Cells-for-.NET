@@ -128,6 +128,27 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cells\AccessCells.aspx.cs">
+      <DependentUpon>AccessCells.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cells\AccessCells.aspx.designer.cs">
+      <DependentUpon>AccessCells.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\AddFormulas.aspx.cs">
+      <DependentUpon>AddFormulas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cells\AddFormulas.aspx.designer.cs">
+      <DependentUpon>AddFormulas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\ModifyCells.aspx.cs">
+      <DependentUpon>ModifyCells.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cells\ModifyCells.aspx.designer.cs">
+      <DependentUpon>ModifyCells.aspx</DependentUpon>
+    </Compile>
     <Compile Include="databind\Aspose.Cells.GridWeb.DemosCS.DataBind.dataset1.cs">
       <DependentUpon>Aspose.Cells.GridWeb.DemosCS.DataBind.dataset1.xsd</DependentUpon>
     </Compile>
@@ -144,7 +165,7 @@
     <Compile Include="databind\Aspose.Cells.GridWeb.DemosCS.DataBind.dataset21.Designer.cs" />
     <Compile Include="databind\DataBind3_aspx_cs_MyCollection.cs" />
     <Compile Include="databind\DataBind3_aspx_cs_MyCustomRecord.cs" />
-    <Compile Include="databind\DemoDatabase.cs">
+    <Compile Include="databind\ExampleDatabase.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="databind\DemoDatabase2.cs">
@@ -198,6 +219,48 @@
     </Compile>
     <Compile Include="GridWebBasics\PrintGridWeb.aspx.designer.cs">
       <DependentUpon>PrintGridWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RowsAndColumns\CopyRowsColumns.aspx.cs">
+      <DependentUpon>CopyRowsColumns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RowsAndColumns\CopyRowsColumns.aspx.designer.cs">
+      <DependentUpon>CopyRowsColumns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RowsAndColumns\DeleteRowsColumns.aspx.cs">
+      <DependentUpon>DeleteRowsColumns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RowsAndColumns\DeleteRowsColumns.aspx.designer.cs">
+      <DependentUpon>DeleteRowsColumns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RowsAndColumns\HandleColumnFilterEvents.aspx.cs">
+      <DependentUpon>HandleColumnFilterEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RowsAndColumns\HandleColumnFilterEvents.aspx.designer.cs">
+      <DependentUpon>HandleColumnFilterEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RowsAndColumns\MakeRowsColumnsReadOnly.aspx.cs">
+      <DependentUpon>MakeRowsColumnsReadOnly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RowsAndColumns\MakeRowsColumnsReadOnly.aspx.designer.cs">
+      <DependentUpon>MakeRowsColumnsReadOnly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RowsAndColumns\ResizeRowsColumns.aspx.cs">
+      <DependentUpon>ResizeRowsColumns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RowsAndColumns\ResizeRowsColumns.aspx.designer.cs">
+      <DependentUpon>ResizeRowsColumns.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RowsAndColumns\RestrictContextMenu.aspx.cs">
+      <DependentUpon>RestrictContextMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RowsAndColumns\RestrictContextMenu.aspx.designer.cs">
+      <DependentUpon>RestrictContextMenu.aspx</DependentUpon>
     </Compile>
     <Compile Include="Site.Master.cs">
       <SubType>ASPXCodeBehind</SubType>
@@ -314,12 +377,12 @@
     <Compile Include="Miscellaneous\Common\CustomContextMenu.aspx.designer.cs">
       <DependentUpon>CustomContextMenu.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Common\CustomHeaders.aspx.cs">
-      <DependentUpon>CustomHeaders.aspx</DependentUpon>
+    <Compile Include="RowsAndColumns\CustomizeHeaders.aspx.cs">
+      <DependentUpon>CustomizeHeaders.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Common\CustomHeaders.aspx.designer.cs">
-      <DependentUpon>CustomHeaders.aspx</DependentUpon>
+    <Compile Include="RowsAndColumns\CustomizeHeaders.aspx.designer.cs">
+      <DependentUpon>CustomizeHeaders.aspx</DependentUpon>
     </Compile>
     <Compile Include="Miscellaneous\Common\DataValidation.aspx.cs">
       <DependentUpon>DataValidation.aspx</DependentUpon>
@@ -335,19 +398,12 @@
     <Compile Include="GridWebBasics\HandleDoubleClickEvents.aspx.designer.cs">
       <DependentUpon>HandleDoubleClickEvents.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Common\FreezePane.aspx.cs">
-      <DependentUpon>FreezePane.aspx</DependentUpon>
+    <Compile Include="RowsAndColumns\FreezePanes.aspx.cs">
+      <DependentUpon>FreezePanes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Common\FreezePane.aspx.designer.cs">
-      <DependentUpon>FreezePane.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Miscellaneous\Common\FreezePaneCustom.aspx.cs">
-      <DependentUpon>FreezePaneCustom.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Miscellaneous\Common\FreezePaneCustom.aspx.designer.cs">
-      <DependentUpon>FreezePaneCustom.aspx</DependentUpon>
+    <Compile Include="RowsAndColumns\FreezePanes.aspx.designer.cs">
+      <DependentUpon>FreezePanes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Miscellaneous\Common\HeaderBarAndCommandButton.aspx.cs">
       <DependentUpon>HeaderBarAndCommandButton.aspx</DependentUpon>
@@ -433,19 +489,12 @@
     <Compile Include="Worksheets\SortData.aspx.designer.cs">
       <DependentUpon>SortData.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Common\WebCells.aspx.cs">
-      <DependentUpon>WebCells.aspx</DependentUpon>
+    <Compile Include="RowsAndColumns\AddRowsColumns.aspx.cs">
+      <DependentUpon>AddRowsColumns.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Common\WebCells.aspx.designer.cs">
-      <DependentUpon>WebCells.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Miscellaneous\Common\WebCells2.aspx.cs">
-      <DependentUpon>WebCells2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Miscellaneous\Common\WebCells2.aspx.designer.cs">
-      <DependentUpon>WebCells2.aspx</DependentUpon>
+    <Compile Include="RowsAndColumns\AddRowsColumns.aspx.designer.cs">
+      <DependentUpon>AddRowsColumns.aspx</DependentUpon>
     </Compile>
     <Compile Include="Miscellaneous\DataBind\DataBind1.aspx.cs">
       <DependentUpon>DataBind1.aspx</DependentUpon>
@@ -552,19 +601,19 @@
     <Compile Include="Miscellaneous\Formula\TextAndData.aspx.designer.cs">
       <DependentUpon>TextAndData.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Grouping\Grouping.aspx.cs">
-      <DependentUpon>Grouping.aspx</DependentUpon>
+    <Compile Include="RowsAndColumns\GroupRows.aspx.cs">
+      <DependentUpon>GroupRows.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Grouping\Grouping.aspx.designer.cs">
-      <DependentUpon>Grouping.aspx</DependentUpon>
+    <Compile Include="RowsAndColumns\GroupRows.aspx.designer.cs">
+      <DependentUpon>GroupRows.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Grouping\Subtotal.aspx.cs">
-      <DependentUpon>Subtotal.aspx</DependentUpon>
+    <Compile Include="RowsAndColumns\CreateSubtotal.aspx.cs">
+      <DependentUpon>CreateSubtotal.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Grouping\Subtotal.aspx.designer.cs">
-      <DependentUpon>Subtotal.aspx</DependentUpon>
+    <Compile Include="RowsAndColumns\CreateSubtotal.aspx.designer.cs">
+      <DependentUpon>CreateSubtotal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Miscellaneous\PivotTable\CreateReport.aspx.cs">
       <DependentUpon>CreateReport.aspx</DependentUpon>
@@ -601,13 +650,6 @@
     <Compile Include="Miscellaneous\XHTML\Xhtml.aspx.designer.cs">
       <DependentUpon>Xhtml.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebFormtest.aspx.cs">
-      <DependentUpon>WebFormtest.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebFormtest.aspx.designer.cs">
-      <DependentUpon>WebFormtest.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Worksheets\AccessWorksheets.aspx.cs">
       <DependentUpon>AccessWorksheets.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -643,6 +685,9 @@
     <Compile Include="Worksheets\RenameWorksheets.aspx.designer.cs">
       <DependentUpon>RenameWorksheets.aspx</DependentUpon>
     </Compile>
+    <Content Include="Cells\AccessCells.aspx" />
+    <Content Include="Cells\AddFormulas.aspx" />
+    <Content Include="Cells\ModifyCells.aspx" />
     <Content Include="Data\GridWebBasics\CustomStyle1.xml" />
     <Content Include="Data\GridWebBasics\CustomStyle2.xml" />
     <Content Include="Examples.aspx" />
@@ -711,14 +756,19 @@
     <Content Include="Miscellaneous\Common\chartsubmit.aspx" />
     <Content Include="Miscellaneous\Common\CreateInvoice.aspx" />
     <Content Include="Miscellaneous\Common\CustomContextMenu.aspx" />
-    <Content Include="Miscellaneous\Common\CustomHeaders.aspx" />
+    <Content Include="RowsAndColumns\CopyRowsColumns.aspx" />
+    <Content Include="RowsAndColumns\CustomizeHeaders.aspx" />
     <Content Include="Miscellaneous\Common\CustomStyle1.xml" />
     <Content Include="Miscellaneous\Common\CustomStyle2.xml" />
     <Content Include="Miscellaneous\Common\DataValidation.aspx" />
     <Content Include="GridWebBasics\HandleDoubleClickEvents.aspx" />
-    <Content Include="Miscellaneous\Common\FreezePane.aspx" />
-    <Content Include="Miscellaneous\Common\FreezePaneCustom.aspx" />
+    <Content Include="RowsAndColumns\FreezePanes.aspx" />
     <Content Include="Miscellaneous\Common\HeaderBarAndCommandButton.aspx" />
+    <Content Include="RowsAndColumns\DeleteRowsColumns.aspx" />
+    <Content Include="RowsAndColumns\HandleColumnFilterEvents.aspx" />
+    <Content Include="RowsAndColumns\MakeRowsColumnsReadOnly.aspx" />
+    <Content Include="RowsAndColumns\ResizeRowsColumns.aspx" />
+    <Content Include="RowsAndColumns\RestrictContextMenu.aspx" />
     <Content Include="Worksheets\AccessNamedRanges.aspx" />
     <Content Include="Worksheets\AddHyperlinks.aspx" />
     <Content Include="Worksheets\ExportDataTable.aspx" />
@@ -730,8 +780,7 @@
     <Content Include="Worksheets\ManageComments.aspx" />
     <Content Include="Worksheets\ManageHyperlinks.aspx" />
     <Content Include="Worksheets\SortData.aspx" />
-    <Content Include="Miscellaneous\Common\WebCells.aspx" />
-    <Content Include="Miscellaneous\Common\WebCells2.aspx" />
+    <Content Include="RowsAndColumns\AddRowsColumns.aspx" />
     <Content Include="Miscellaneous\DataBind\DataBind1.aspx" />
     <Content Include="Miscellaneous\DataBind\DataBind2.aspx" />
     <Content Include="Miscellaneous\DataBind\DataBind3.aspx" />
@@ -747,10 +796,10 @@
     <Content Include="Miscellaneous\Formula\Math.aspx" />
     <Content Include="Miscellaneous\Formula\Statistical.aspx" />
     <Content Include="Miscellaneous\Formula\TextAndData.aspx" />
-    <Content Include="Miscellaneous\Grouping\group.GIF" />
-    <Content Include="Miscellaneous\Grouping\Grouping.aspx" />
-    <Content Include="Miscellaneous\Grouping\Subtotal.aspx" />
-    <Content Include="Miscellaneous\Grouping\ungroup.GIF" />
+    <Content Include="RowsAndColumns\group.GIF" />
+    <Content Include="RowsAndColumns\GroupRows.aspx" />
+    <Content Include="RowsAndColumns\CreateSubtotal.aspx" />
+    <Content Include="RowsAndColumns\ungroup.GIF" />
     <Content Include="Miscellaneous\PivotTable\CreateReport.aspx" />
     <Content Include="Miscellaneous\PivotTable\CustomReport.aspx" />
     <Content Include="Miscellaneous\PivotTable\FromWebWorksheet.aspx" />
@@ -865,7 +914,6 @@
       <SubType>Component</SubType>
     </Content>
     <Content Include="Web.config" />
-    <Content Include="WebFormtest.aspx" />
     <Content Include="worksheets.aspx" />
     <Content Include="Worksheets\AccessWorksheets.aspx" />
     <Content Include="Worksheets\AddWorksheets.aspx" />
@@ -943,10 +991,8 @@
     <None Include="Image\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Cells\" />
     <Folder Include="Miscellaneous\GridWebForm\" />
     <Folder Include="Properties\" />
-    <Folder Include="RowsAndColumns\" />
     <Folder Include="tpl\" />
   </ItemGroup>
   <PropertyGroup>

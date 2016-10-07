@@ -43,7 +43,7 @@
         nav ul li { display:inline; }
 
     </style>
-    <!-- JS for Cells Demo -->
+    <!-- JS for Cells Examples -->
     <script language="javascript" src='<%= ResolveUrl("~/js/oo.js")%>'></script>
     <script language="javascript" src='<%= ResolveUrl("~/Grid/acw_client/jquery-1.7.2.min.js")%>'></script>
 </head>
@@ -61,9 +61,6 @@
             </li>
         </ul>
     </nav>
-       <!--  <iframe src="http://www.aspose.com/Header/Header.aspx" id="Iframe1" frameborder="0"
-            width="100%" scrolling="no" height="90"></iframe> -->
-
         <table width="90%" style="left: 0px; top: 140px" cellspacing="0" cellpadding="0"
             align="center">
             <tr height="100%" valign="top">

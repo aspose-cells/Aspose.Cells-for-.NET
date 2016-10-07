@@ -19,7 +19,6 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
 
                 // Set sheets selectedIndex to 0
                 GridWeb1.WorkSheets.ActiveSheetIndex = 0;
-
             }
         }
 

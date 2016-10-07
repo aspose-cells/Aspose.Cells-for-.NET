@@ -57,7 +57,7 @@ public partial class demos_DataBind_DataBind2 : System.Web.UI.Page
         }
 
         //Create demo database object
-        DemoDatabase db = new DemoDatabase();
+        ExampleDatabase db = new ExampleDatabase();
 
         //Create path to database file
         string path = Server.MapPath("~");
@@ -90,7 +90,7 @@ public partial class demos_DataBind_DataBind2 : System.Web.UI.Page
           if (Request.UserHostAddress == "127.0.0.1")
           {
             //Create demo database object
-            DemoDatabase db = new DemoDatabase();
+            ExampleDatabase db = new ExampleDatabase();
 
             //Create path to database file
             string path = Server.MapPath("~");

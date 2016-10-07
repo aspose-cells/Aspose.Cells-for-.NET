@@ -25,7 +25,6 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
             // License li = new  License();
             // li.SetLicense(@"D:\grid_project\ZZZZZZ_release_version\Aspose.Total.20141214.lic");
 
-            // ExStart:LoadExcelFile
             // Gets the web application's path.
             string path = (this.Master as Site).GetDataDir();
 
@@ -33,7 +32,6 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
 
             // Imports from an excel file.
             GridWeb1.ImportExcelFile(fileName);
-            // ExEnd:LoadExcelFile
         }
 
         protected void GridWeb1_SaveCommand(object sender, EventArgs e)

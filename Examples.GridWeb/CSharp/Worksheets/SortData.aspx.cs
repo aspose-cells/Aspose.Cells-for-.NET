@@ -32,7 +32,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
 
             string fileName = path + "\\Worksheets\\Sort.xls";
 
-            // Imports from a excel file.
+            // Imports from an excel file.
             GridWeb1.ImportExcelFile(fileName);
 
             // Creates sorting header style.
@@ -44,9 +44,8 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
             itemStyle.HorizontalAlign = HorizontalAlign.Center;
             itemStyle.VerticalAlign = VerticalAlign.Middle;
 
-            // Creates Hyperlinks.
+            // Creates Hyperlinks Sheet1. Sorts from top to bottom orientation.
             GridHyperlink cellcmd;
-            // Sheet1. Sorts from top to bottom orientation.
             GridCells cells0 = GridWeb1.WorkSheets[0].Cells;
             cells0["A1"].CopyStyle(itemStyle);
             GridHyperlinkCollection ghc = GridWeb1.WorkSheets[0].Hyperlinks;
@@ -75,7 +74,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
             cellcmd.ScreenTip = "Sorts Ascending";
             cellcmd.TextToDisplay = "Percent of Country Total";
 
-            // Sheet2. Sorts from left to right orientation.
+            // Creates Hyperlinks Sheet2. Sorts from left to right orientation.
             GridCells cells1 = GridWeb1.WorkSheets[1].Cells;
             GridHyperlinkCollection ghcb = GridWeb1.WorkSheets[1].Hyperlinks;
             cells1["A1"].CopyStyle(itemStyle);

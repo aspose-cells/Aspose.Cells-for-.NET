@@ -34,6 +34,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
 
             // Clears datasheets first.
             GridWeb1.WorkSheets.Clear();
+
             // Imports from an excel file.
             GridWeb1.ImportExcelFile(fileName);
                         

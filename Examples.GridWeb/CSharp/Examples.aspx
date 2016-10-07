@@ -304,17 +304,143 @@
                 </ul>
             </td>           
         </tr>
-        <tr style="display:none">
+        <tr>
             <td>
                 <p class="categoryTitle">Rows and Columns</p>
-                <ul class="genericList">                    
+                <ul class="genericList">              
+                    <li class="genericList" title="Add Rows/Columns">
+			            <p class="productTitle"><a href="RowsAndColumns/AddRowsColumns.aspx">Add Rows/Columns</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                            <p class="componentDescriptionTxt">
+				                The example exhibits Insertion of rows/columns in GridWeb Control. 
+			                </p>
+			            </div>
+                    </li>
+                    <li class="genericList" title="Delete Rows/Columns">
+			            <p class="productTitle"><a href="RowsAndColumns/DeleteRowsColumns.aspx">Delete Rows/Columns</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                            <p class="componentDescriptionTxt">
+				                The example exhibits Deletion of rows/columns in GridWeb Control. 
+			                </p>
+			            </div>
+                    </li>
+                    <li class="genericList" title="Resize Rows/Columns">
+			            <p class="productTitle"><a href="RowsAndColumns/ResizeRowsColumns.aspx">Resize Rows/Columns</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                            <p class="componentDescriptionTxt">
+				                The example shows how rows/columns can be resized in GridWeb Control. 
+			                </p>
+			            </div>
+                    </li>
+                    <li class="genericList" title="Customize Row/Column Headers">
+			            <p class="productTitle"><a href="RowsAndColumns/CustomizeHeaders.aspx">Customize Row/Column Headers</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                            <p class="componentDescriptionTxt">
+				                The example shows how rows/columns headers can be customized in GridWeb Control. 
+			                </p>
+			            </div>
+                    </li>
+                    <li class="genericList" title="Freeze/Unfreeze Panes">
+			            <p class="productTitle"><a href="RowsAndColumns/FreezePanes.aspx">Freeze/Unfreeze Panes</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                            <p class="componentDescriptionTxt">
+				                This example demonstrates Freezing and Unfreezing Panes in GridWeb Control. 
+			                </p>
+			            </div>
+                    </li>
+                    <li class="genericList" title="Make Row/Column ReadOnly">
+			            <p class="productTitle"><a href="RowsAndColumns/MakeRowsColumnsReadOnly.aspx">Make Row/Column ReadOnly</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                            <p class="componentDescriptionTxt">
+				                The example shows how rows/columns can be made read only in GridWeb Control. 
+			                </p>
+			            </div>
+                    </li>
+                    <li class="genericList" title="Restrict Context Menu">
+			            <p class="productTitle"><a href="RowsAndColumns/RestrictContextMenu.aspx">Restrict Context Menu</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                            <p class="componentDescriptionTxt">
+				                The example shows how row/column operations in context menu can be restricted for GridWeb Control. 
+			                </p>
+			            </div>
+                    </li>
+                    <li class="genericList" title="Group/Ungroup Rows" style="display:none">
+			            <p class="productTitle"><a href="RowsAndColumns/GroupRows.aspx">Group/Ungroup Rows</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                            <p class="componentDescriptionTxt">
+				                This example demonstrates how to use the GridWeb group/ungroup rows feature.
+			                </p>
+			            </div>
+                    </li>
+                    <li class="genericList" title="Create/Remove Subtotal" style="display:none;">
+			            <p class="productTitle"><a href="RowsAndColumns/CreateSubtotal.aspx">Create/Remove Subtotal</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                            <p class="componentDescriptionTxt">
+				                This examples demonstrates how to use the GridWeb create/remove subtotal feature.
+			                </p>
+			            </div>
+                    </li>
+                    <li class="genericList" title="Copy Rows/Columns">
+			            <p class="productTitle"><a href="RowsAndColumns/CopyRowsColumns.aspx">Copy Rows/Columns</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                            <p class="componentDescriptionTxt">
+				                The example shows how single or multiple rows/columns can be copied in GridWeb Control. 
+			                </p>
+			            </div>
+                    </li>
+                    <li class="genericList" title="Handle Column Filter Events" style="display:none">
+			            <p class="productTitle"><a href="RowsAndColumns/HandleColumnFilterEvents.aspx">Handle Column Filter Events</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                            <p class="componentDescriptionTxt">
+				                The example shows how server side events can be handled before or after a filter is applied in GridWeb Control. 
+			                </p>
+			            </div>
+                    </li>
                 </ul>
             </td>
         </tr>
-        <tr style="display:none">
+        <tr>
            <td>
               <p class="categoryTitle">Cells</p>
-              <ul class="genericList">                       
+              <ul class="genericList">                      
+                  <li class="genericList" title="Access Cells">
+                      <p class="productTitle"><a href="Cells/AccessCells.aspx">Access Cells</a></p>
+			          <p class="componentDescriptionCaption">Description</p>
+			          <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				               This example exhibits how to access cells for GridWeb Control using name or row & column index. 
+                           </p>
+			           </div>
+                   </li>
+                   <li class="genericList" title="Modify Cells">
+                      <p class="productTitle"><a href="Cells/ModifyCells.aspx">Modify Cells</a></p>
+			          <p class="componentDescriptionCaption">Description</p>
+			          <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				               This example exhibits how to update GridWeb cells with different type of values. 
+                           </p>
+			           </div>
+                   </li>
+                   <li class="genericList" title="Add Formulas">
+                      <p class="productTitle"><a href="Cells/AddFormulas.aspx">Add Formulas</a></p>
+			          <p class="componentDescriptionCaption">Description</p>
+			          <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				               This example exhibits how to add formulas in GridWeb cells. 
+                           </p>
+			           </div>
+                   </li>
               </ul>
            </td>      
         </tr>
@@ -339,16 +465,7 @@
 				                This Demo introduces the Data Validation capabilities of GridWeb Control. 
 			                </p>
 			            </div>
-                    </li>                       
-                    <li class="genericList" title="Cells">
-			            <p class="productTitle"><a href="Miscellaneous/common/webcells.aspx">Cells</a></p>
-			            <p class="componentDescriptionCaption">Description</p>
-			            <div class="componentDescriptionTxt">
-                            <p class="componentDescriptionTxt">
-				                The Demo exhibits the manipulation (Insertion, Deletion) of rows/columns, merging cells and adding/removing comments. 
-			                </p>
-			            </div>
-                    </li>
+                    </li>                  
                     <li class="genericList" title="Conditional Formating">
 			            <p class="productTitle"><a href="Miscellaneous/common/cf.aspx">Conditional Formatting</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
@@ -366,25 +483,7 @@
 				                This Demo covers some useful properties of GridWeb Control. 
 			                </p>
 			            </div>
-                    </li>
-                    <li class="genericList" title="FreezePane Report">
-			            <p class="productTitle"><a href="Miscellaneous/common/freezepane.aspx">FreezePane Report</a></p>
-			            <p class="componentDescriptionCaption">Description</p>
-			            <div class="componentDescriptionTxt">
-                            <p class="componentDescriptionTxt">
-				                This Demo Imports an Excel File from a source and demonstrates Freezing Panes. 
-			                </p>
-			            </div>
-                    </li>
-                    <li class="genericList" title="Freeze/Unfreeze Panes">
-			            <p class="productTitle"><a href="Miscellaneous/common/freezepanecustom.aspx">Freeze/Unfreeze Panes</a></p>
-			            <p class="componentDescriptionCaption">Description</p>
-			            <div class="componentDescriptionTxt">
-                            <p class="componentDescriptionTxt">
-				                This Demo expresses customized Freezing Panes. 
-			                </p>
-			            </div>
-                    </li>
+                    </li>                                 
                     <li class="genericList" title="Paginating Sheet">
 			            <p class="productTitle"><a href="Miscellaneous/common/pagination.aspx">Paginating Sheet</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
@@ -393,16 +492,7 @@
 				                This Demo Imports an Excel File from a source and divides the contents of the sheet into different pages.
 			                </p>
 			            </div>
-                    </li>                     
-                    <li class="genericList" title="Custom Headers">
-			            <p class="productTitle"><a href="Miscellaneous/common/customheaders.aspx">Custom Headers</a></p>
-			            <p class="componentDescriptionCaption">Description</p>
-			            <div class="componentDescriptionTxt">
-                            <p class="componentDescriptionTxt">
-				                This Demo customizes the Labels of Column Headers.
-			                </p>
-			            </div>
-                    </li>
+                    </li>                                       
                     <li class="genericList" title="Custom Context Menu">
 			            <p class="productTitle"><a href="Miscellaneous/common/customcontextmenu.aspx">Custom Context Menu</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
@@ -618,25 +708,7 @@
 				                This demo shows how to use the GridWeb FormView feature.
                             </p>
 			            </div>
-                    </li>
-                    <li class="genericList" title="Grouping" style="display:none;">
-			            <p class="productTitle"><a href="Miscellaneous/grouping/grouping.aspx">Grouping</a></p>
-			            <p class="componentDescriptionCaption">Description</p>
-			            <div class="componentDescriptionTxt">
-                            <p class="componentDescriptionTxt">
-				                This demo shows how to use the GridWeb GroupRows feature.
-			                </p>
-			            </div>
-                    </li>
-                    <li class="genericList" title="Subtotal" style="display:none;">
-			            <p class="productTitle"><a href="Miscellaneous/grouping/subtotal.aspx">Subtotal</a></p>
-			            <p class="componentDescriptionCaption">Description</p>
-			            <div class="componentDescriptionTxt">
-                            <p class="componentDescriptionTxt">
-				                This demo shows how to use the GridWeb CreateSubtotal feature.
-			                </p>
-			            </div>
-                    </li>
+                    </li>                
                     <li class="genericList" title="Custom Language" style="display:none;">
 			            <p class="productTitle"><a href="Miscellaneous/language/customlanguage.aspx">Custom Language</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
