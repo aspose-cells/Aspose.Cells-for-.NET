@@ -225,6 +225,7 @@
     <Compile Include="CellsHelperClass\MergeFiles.vb" />
     <Compile Include="CellsHelperClass\NameToIndex.vb" />
     <Compile Include="CellsHelperClass\IndexToName.vb" />
+    <Compile Include="Charts\ChartRendering.vb" />
     <Compile Include="Charts\ManipulateChart\HowToCreateCustomChart.vb" />
     <Compile Include="Charts\ManipulateChart\HowToCreateLineChart.vb" />
     <Compile Include="Charts\ManipulateChart\HowToCreatePieChart.vb" />

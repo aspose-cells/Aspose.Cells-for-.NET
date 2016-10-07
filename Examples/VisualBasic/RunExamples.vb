@@ -269,7 +269,7 @@ Friend Class RunExamples
         'CustomDecimalAndGroupSeparator.Run()
         'DisplayBulletsInCellUsingHtml.Run()
         'RenderCustomDateFormat.Run()
-        ReusingStyleObjects.Run()
+        'ReusingStyleObjects.Run()
 
         '''' WorkingWithCalculationEngine
         '''' =====================================================
@@ -301,6 +301,7 @@ Friend Class RunExamples
         'SettingCategoryData.Run()
         'SettingChartsData.Run()
         'UsingSparklines.Run()
+        ChartRendering.Run()
 
         '''' InsertingControlsintoCharts
         '''' =====================================================

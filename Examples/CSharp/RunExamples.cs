@@ -186,7 +186,7 @@ namespace Aspose.Cells.Examples.CSharp
             //FindDataPointsInPieBar.Run();
             //GetSetClassIdentifierEmbedOleObject.Run();
             //LoadWorkbookWithSpecificCultureInfoNumberFormat.Run();
-            LoadWorkbookWithSpecificCultureInfoDateFormat.Run();
+            //LoadWorkbookWithSpecificCultureInfoDateFormat.Run();
 
             //// Apply-Conditional-Formatting
             //// =====================================================
@@ -303,11 +303,12 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
 
             //Applying3DFormat.Run();
-            // ChangeChartPosition.Run();
+            //ChangeChartPosition.Run();
             //HowToCreateChart.Run();
             //SettingCategoryData.Run();
             //SettingChartsData.Run();
             //UsingSparklines.Run();
+            ChartRendering.Run();
 
             //// InsertingControlsintoCharts
             //// =====================================================
