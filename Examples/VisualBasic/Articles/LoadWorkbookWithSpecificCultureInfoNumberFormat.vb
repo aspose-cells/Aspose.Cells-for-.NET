@@ -30,7 +30,7 @@ Namespace Articles
                     End Using
                 End Using
             End Using
-            ' ExEnd:LoadWorkbookWithSpecificCultureInfo
+            ' ExEnd:LoadWorkbookWithSpecificCultureInfoNumberFormat
         End Sub
     End Class
 End Namespace
