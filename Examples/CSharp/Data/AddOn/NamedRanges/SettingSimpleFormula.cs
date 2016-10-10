@@ -25,8 +25,7 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
             // Access the newly created Named Range
             Name name = worksheets.Names[index];
 
-            // Set RefersTo property of the Named Range to a formula
-            // Formula references another cell in the same worksheet
+            // Set RefersTo property of the Named Range to a formula. Formula references another cell in the same worksheet
             name.RefersTo = "=Sheet1!$A$3";
 
             // Set the formula in the cell A1 to the newly created Named Range
