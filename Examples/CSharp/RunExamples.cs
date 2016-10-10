@@ -371,6 +371,8 @@ namespace Aspose.Cells.Examples.CSharp
             //RemoveANamedRange.Run();
             //RenameNamedRange.Run();
             //UnionOfRanges.Run();
+            //SettingSimpleFormula.Run();
+            SettingComplexFormula.Run();
 
             //// Handling
             //// =====================================================
