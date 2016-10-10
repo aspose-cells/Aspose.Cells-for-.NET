@@ -301,7 +301,7 @@ Friend Class RunExamples
         'SettingCategoryData.Run()
         'SettingChartsData.Run()
         'UsingSparklines.Run()
-        ChartRendering.Run()
+        'ChartRendering.Run()
 
         '''' InsertingControlsintoCharts
         '''' =====================================================
@@ -364,6 +364,9 @@ Friend Class RunExamples
         'RemoveANamedRange.Run()
         'RenameNamedRange.Run()
         'UnionOfRanges.Run()
+        'SettingSimpleFormula.Run()
+        'SettingComplexFormula.Run()
+        CalculatingSumUsingNamedRange.Run()
 
         '''' Handling
         '''' =====================================================

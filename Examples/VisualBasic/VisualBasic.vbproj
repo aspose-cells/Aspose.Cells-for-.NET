@@ -270,6 +270,7 @@
     <Compile Include="Data\AddOn\Merging\UnMergingtheMergedCells.vb" />
     <Compile Include="Data\AddOn\NamedRanges\AccessAllNamedRanges.vb" />
     <Compile Include="Data\AddOn\NamedRanges\AccessSpecificNamedRange.vb" />
+    <Compile Include="Data\AddOn\NamedRanges\CalculatingSumUsingNamedRange.vb" />
     <Compile Include="Data\AddOn\NamedRanges\CopyNamedRanges.vb" />
     <Compile Include="Data\AddOn\NamedRanges\CreateNamedRangeofCells.vb" />
     <Compile Include="Data\AddOn\NamedRanges\FormatRanges1.vb" />
@@ -280,6 +281,8 @@
     <Compile Include="Data\AddOn\NamedRanges\MergeCellsInNamedRange.vb" />
     <Compile Include="Data\AddOn\NamedRanges\RemoveANamedRange.vb" />
     <Compile Include="Data\AddOn\NamedRanges\RenameNamedRange.vb" />
+    <Compile Include="Data\AddOn\NamedRanges\SettingComplexFormula.vb" />
+    <Compile Include="Data\AddOn\NamedRanges\SettingSimpleFormula.vb" />
     <Compile Include="Data\AddOn\NamedRanges\UnionOfRanges.vb" />
     <Compile Include="Data\Handling\AccessingCells\AccessingMaximumDisplayRangeofWorksheet.vb" />
     <Compile Include="Data\Handling\AccessingCells\RowAndColumnIndex.vb" />
