@@ -372,7 +372,8 @@ namespace Aspose.Cells.Examples.CSharp
             //RenameNamedRange.Run();
             //UnionOfRanges.Run();
             //SettingSimpleFormula.Run();
-            SettingComplexFormula.Run();
+            //SettingComplexFormula.Run();
+            CalculatingSumUsingNamedRange.Run();
 
             //// Handling
             //// =====================================================

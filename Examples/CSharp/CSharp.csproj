@@ -255,6 +255,7 @@
     <Compile Include="Data\AddOn\Merging\UnMergingtheMergedCells.cs" />
     <Compile Include="Data\AddOn\NamedRanges\AccessAllNamedRanges.cs" />
     <Compile Include="Data\AddOn\NamedRanges\AccessSpecificNamedRange.cs" />
+    <Compile Include="Data\AddOn\NamedRanges\CalculatingSumUsingNamedRange.cs" />
     <Compile Include="Data\AddOn\NamedRanges\CopyNamedRanges.cs" />
     <Compile Include="Data\AddOn\NamedRanges\CreateNamedRangeofCells.cs" />
     <Compile Include="Data\AddOn\NamedRanges\FormatRanges1.cs" />
