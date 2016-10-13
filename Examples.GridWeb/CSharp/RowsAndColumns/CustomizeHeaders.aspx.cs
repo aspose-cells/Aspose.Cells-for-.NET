@@ -22,7 +22,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
                 GridWeb1.WorkSheets.Clear();
                 GridWeb1.WorkSheets.Add();
 
-                //set sheets selectedIndex to 0
+                // Set sheets selectedIndex to 0
                 GridWeb1.WorkSheets.ActiveSheetIndex = 0;
 
                 LoadData();

@@ -22,7 +22,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
             GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
             sheet.Cells["A1"].PutValue("This cell has a comment added, hover to view.");
 
-            //Resize first column
+            // Resize first column
             sheet.Cells.SetColumnWidth(0, 140);
 
             // Adding comment to "A1" cell of the worksheet

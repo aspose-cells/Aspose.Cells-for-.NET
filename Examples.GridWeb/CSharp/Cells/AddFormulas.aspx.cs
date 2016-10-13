@@ -66,10 +66,10 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
 
             sheet2.Cells["A1"].PutValue("Value for reference : ");
             sheet2.Cells["B1"].PutValue(100);
+			sheet1.Cells["A6"].PutValue("Result");
 
             // ExStart:AddComplexFormulas
-            // Adding a bit complex formula to "A1" cell
-            sheet1.Cells["A6"].PutValue("Result");
+            // Adding a bit complex formula to "A1" cell            
             sheet1.Cells["B6"].Formula = "=(SUM(A1:A5)/AVERAGE(B1:B5))-Sheet2!B1";
             // ExEnd:AddComplexFormulas
 

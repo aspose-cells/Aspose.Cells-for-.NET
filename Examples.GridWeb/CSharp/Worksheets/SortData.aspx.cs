@@ -116,7 +116,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
             if (e.Argument.ToString() == "A1")
             {
                 // ExStart:SortTopToBottom
-                // Sorts Column A1 from top to bottom in descending order
+                // Sorts Column 1 from top to bottom in descending order
                 // Cells.Sort(int startRow, int startColumn, int rows, int columns, int index, bool isAsending, bool isCaseSensitive, bool islefttoright);
                 GridWeb1.WorkSheets[0].Cells.Sort(1, 0, 20, 4, 0, false, true, false);
                 // ExEnd:SortTopToBottom
@@ -136,7 +136,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
             else if (e.Argument.ToString() == "1A1")
             {
                 // ExStart:SortLeftToRight
-                // Sorts Column A1 from left to right in descending order
+                // Sorts Row 1 from left to right in ascending order
                 // Cells.Sort(int startRow, int startColumn, int rows, int columns, int index, bool isAsending, bool isCaseSensitive, bool islefttoright);
                 GridWeb1.WorkSheets[1].Cells.Sort(0, 1, 4, 7, 0, true, true, true);
                 // ExEnd:SortLeftToRight
@@ -158,22 +158,18 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
         protected void GridWeb1_SaveCommand(object sender, EventArgs e)
         {
             // Generates a temporary file name.
-            string filename = System.IO.Path.GetTempPath() + Session.SessionID + ".xls";
+            string filename = Session.SessionID + "_out_.xls";
+
+            string path = (this.Master as Site).GetDataDir() + "\\Worksheets\\";
 
             // Saves to the file.
-            this.GridWeb1.SaveToExcelFile(filename);
+            this.GridWeb1.SaveToExcelFile(path + filename);
 
             // Sents the file to browser.
             Response.ContentType = "application/vnd.ms-excel";
-
-            //Adds header.
-            Response.AddHeader("content-disposition", "attachment; filename=sort.xls");
-
-            // Writes file content to the response stream.
-            Response.WriteFile(filename);
-
-            // OK.
-            Response.End();
+            Response.AddHeader("content-disposition", "attachment; filename=" + filename);
+            Response.WriteFile(path + filename);
+            Response.End();  
         }
     }
 }

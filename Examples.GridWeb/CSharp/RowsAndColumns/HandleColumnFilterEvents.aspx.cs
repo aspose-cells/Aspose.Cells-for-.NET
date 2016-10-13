@@ -32,6 +32,19 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
             // Imports from an excel file.
             GridWeb1.ImportExcelFile(fileName);
             GridWeb1.ActiveCell = GridWeb1.WorkSheets[0].Cells["A1"];
+
+            // Enable GridWeb's auto-filter.
+            GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex].RowFilter.EnableAutoFilter = true;
+
+            // Set the header row.
+            GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex].RowFilter.HeaderRow = 0;
+
+
+            // Set the starting column.
+            GridWeb1.WebWorksheets[0].RowFilter.StartColumn = 0;
+
+            // Set the ending column.
+            GridWeb1.WebWorksheets[0].RowFilter.EndColumn = 9;
         }
 
         // ExStart:BeforeColumnFilter
@@ -68,6 +81,6 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
             string msg = "[Hidden Rows]: " + hidden + " [Visible Rows]: " + count;
             Label1.Text = msg;
         }
-        // ExStart:AfterColumnFilter
+        // ExEnd:AfterColumnFilter
     }
 }

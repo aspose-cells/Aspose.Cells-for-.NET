@@ -50,7 +50,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
                 sheet.Cells["A1"].PutValue("My Custom Command Button is Clicked.");
 
                 // Set first column width to make the text visible
-                sheet.Cells.SetColumnWidth(0, 40);
+                sheet.Cells.SetColumnWidth(0, new Unit(200, UnitType.Point));
             }
         }
         // ExEnd:HandleCustomCommandEvent

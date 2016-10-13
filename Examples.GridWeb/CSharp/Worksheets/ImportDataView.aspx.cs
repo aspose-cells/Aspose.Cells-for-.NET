@@ -112,22 +112,18 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
         protected void GridWeb1_SaveCommand(object sender, System.EventArgs e)
         {
             // Generates a temporary file name.
-            string filename = System.IO.Path.GetTempPath() + Session.SessionID + ".xls";
+            string filename = Session.SessionID + "_out_.xls";
+
+            string path = (this.Master as Site).GetDataDir() + "\\Worksheets\\";
 
             // Saves to the file.
-            this.GridWeb1.SaveToExcelFile(filename);
+            this.GridWeb1.SaveToExcelFile(path + filename);
 
             // Sents the file to browser.
             Response.ContentType = "application/vnd.ms-excel";
-
-            //Adds header.
-            Response.AddHeader("content-disposition", "attachment; filename=book1.xls");
-
-            // Writes file content to the response stream.
-            Response.WriteFile(filename);
-
-            // OK.
-            Response.End();
+            Response.AddHeader("content-disposition", "attachment; filename=" + filename);
+            Response.WriteFile(path + filename);
+            Response.End();  
         }
 
     }

@@ -24,7 +24,7 @@
     </table>
     <div style="text-align: left; font-family: Arial; font-size: small;" class="componentDescriptionTxt">
         <p class="componentDescriptionTxt">
-            Click <b>Enable Editing</b> to see how GridWeb toggles editable / read-only mode, also we can specify to row level and column level.
+            Click <b>Enable Editing</b> to see how GridWeb toggles editable / read-only mode.
         </p>
         <br />
         <div class="demoContentArea">

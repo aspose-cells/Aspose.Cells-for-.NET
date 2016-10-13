@@ -274,7 +274,7 @@
                             </p>
 			            </div>
                     </li>   
-                    <li class="genericList" title="Manage Hyperlinks">
+                    <li class="genericList" title="Manage Hyperlinks" style="display:none">
 			            <p class="productTitle"><a href="Worksheets/ManageHyperlinks.aspx">Manage Hyperlinks</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
@@ -441,6 +441,87 @@
                            </p>
 			           </div>
                    </li>
+                   <li class="genericList" title="Format Cells">
+                      <p class="productTitle"><a href="Cells/FormatCells.aspx">Format Cells</a></p>
+			          <p class="componentDescriptionCaption">Description</p>
+			          <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				               This example shows how to format GridWeb cells. 
+                           </p>
+			           </div>
+                   </li>
+                   <li class="genericList" title="Protect Cells">
+                      <p class="productTitle"><a href="Cells/ProtectCells.aspx">Protect Cells</a></p>
+			          <p class="componentDescriptionCaption">Description</p>
+			          <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				               This example shows how to make all or selected GridWeb cells as editable/readonly. 
+                           </p>
+			           </div>
+                   </li>
+                   <li class="genericList" title="Merge/Unmerge Cells">
+                      <p class="productTitle"><a href="Cells/MergeCells.aspx">Merge/Unmerge Cells</a></p>
+			          <p class="componentDescriptionCaption">Description</p>
+			          <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				               This example shows how to Merge/Unmerge GridWeb cells. 
+                           </p>
+			           </div>
+                   </li>
+                   <li class="genericList" title="Add List Validation" style="display:none">
+                      <p class="productTitle"><a href="Cells/AddListValidation.aspx">Add List Validation</a></p>
+			          <p class="componentDescriptionCaption">Description</p>
+			          <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				               This example illustrates how list validation can be added to GridWeb cells. 
+                           </p>
+			           </div>
+                   </li>
+                   <li class="genericList" title="Add Dropdown List Validation" style="display:none">
+                      <p class="productTitle"><a href="Cells/AddDropdownListValidation.aspx">Add Dropdown List Validation</a></p>
+			          <p class="componentDescriptionCaption">Description</p>
+			          <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				               This example illustrates how dropdown list validation can be added to GridWeb cells. 
+                           </p>
+			           </div>
+                   </li>
+                   <li class="genericList" title="Add Custom Validation" style="display:none">
+                      <p class="productTitle"><a href="Cells/AddCustomValidation.aspx">Add Custom Validation</a></p>
+			          <p class="componentDescriptionCaption">Description</p>
+			          <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				               This example illustrates how custom validation can be added to GridWeb cells. 
+                           </p>
+			           </div>
+                   </li>
+                   <li class="genericList" title="Auto-Filter" style="display:none">
+                      <p class="productTitle"><a href="Cells/SetAutoFilter.aspx">Auto-Filter</a></p>
+			          <p class="componentDescriptionCaption">Description</p>
+			          <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				               This example demonstrates how to enable auto-filter for GridWeb cells. 
+                           </p>
+			           </div>
+                   </li>
+                   <li class="genericList" title="Custom Filter" style="display:none">
+                      <p class="productTitle"><a href="Cells/SetCustomFilter.aspx">Custom Filter</a></p>
+			          <p class="componentDescriptionCaption">Description</p>
+			          <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				               This example demonstrates how to add a custom filter for GridWeb cells. 
+                           </p>
+			           </div>
+                   </li>
+                   <li class="genericList" title="Add Data Validation">
+                      <p class="productTitle"><a href="Cells/AddDataValidation.aspx">Add Data Validation</a></p>
+			          <p class="componentDescriptionCaption">Description</p>
+			          <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				               This example illustrates how data validation can be added to GridWeb cells. 
+                           </p>
+			           </div>
+                   </li>
               </ul>
            </td>      
         </tr>
@@ -449,11 +530,11 @@
                 <p class="categoryTitle">Miscellaneous</p>
                 <ul class="genericList">                      
                     <li class="genericList" title="Creating Contents">
-			            <p class="productTitle"><a href="Miscellaneous/common/createinvoice.aspx">Creating Contents</a></p>
+			            <p class="productTitle"><a href="Miscellaneous/Common/CreateInvoice.aspx">Creating Contents</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                This Demo creates a Worksheet from the scratch. 
+				                This example creates a Worksheet from scratch. 
                             </p>
 			            </div>
                     </li>      

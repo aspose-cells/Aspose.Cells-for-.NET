@@ -46,7 +46,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
             // Sents the file to browser.
             Response.ContentType = "application/vnd.ms-excel";
             Response.AddHeader("content-disposition", "attachment; filename=" + filename);
-            Response.WriteFile(filename);
+            Response.WriteFile(path + filename);
             Response.End();      
         }
 

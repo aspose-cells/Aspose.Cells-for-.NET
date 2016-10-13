@@ -43,12 +43,12 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
                 oleDbSelectCommand1.CommandText = "SELECT * FROM Products";
                 oleDbDataAdapter1.Fill(dataTable1);
                 
-                //Import data from database to grid web
+                // Import data from database to grid web
                 GridWeb1.WorkSheets.ImportDataView(dataTable1.DefaultView, null, null);
             }
             finally
             {
-                //Close connection
+                // Close connection
                 oleDbConnection1.Close();
             }
         }
@@ -63,10 +63,10 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
                     case "GROUP":
                         if (GridWeb1.SelectCells != null && GridWeb1.SelectCells.Count > 0)
                         {
-                            //get Cell Selected CellArea
+                            // Get Cell Selected CellArea
                             WebCellArea SelectedCells = (WebCellArea)GridWeb1.SelectCells[0];
 
-                            //Group rows from starting cell to ending cell
+                            // Group rows from starting cell to ending cell
                             GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex].GroupRows(SelectedCells.StartRow, SelectedCells.EndRow);
                         }
                         break;
@@ -74,10 +74,10 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
                     case "UNGROUP":
                         if (GridWeb1.SelectCells != null && GridWeb1.SelectCells.Count > 0)
                         {
-                            //get Cell Selected CellArea
+                            // Get Cell Selected CellArea
                             WebCellArea SelectedCells = (WebCellArea)GridWeb1.SelectCells[0];
 
-                            //Group rows from starting cell to ending cell
+                            // Group rows from starting cell to ending cell
                             GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex].UngroupRows(SelectedCells.StartRow, SelectedCells.EndRow); ;
                         }
                         break;

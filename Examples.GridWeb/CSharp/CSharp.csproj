@@ -135,6 +135,27 @@
     <Compile Include="Cells\AccessCells.aspx.designer.cs">
       <DependentUpon>AccessCells.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Cells\AddCustomValidation.aspx.cs">
+      <DependentUpon>AddCustomValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cells\AddCustomValidation.aspx.designer.cs">
+      <DependentUpon>AddCustomValidation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\AddDataValidation.aspx.cs">
+      <DependentUpon>AddDataValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cells\AddDataValidation.aspx.designer.cs">
+      <DependentUpon>AddDataValidation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\AddDropdownListValidation.aspx.cs">
+      <DependentUpon>AddDropdownListValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cells\AddDropdownListValidation.aspx.designer.cs">
+      <DependentUpon>AddDropdownListValidation.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Cells\AddFormulas.aspx.cs">
       <DependentUpon>AddFormulas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -142,12 +163,54 @@
     <Compile Include="Cells\AddFormulas.aspx.designer.cs">
       <DependentUpon>AddFormulas.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Cells\AddListValidation.aspx.cs">
+      <DependentUpon>AddListValidation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cells\AddListValidation.aspx.designer.cs">
+      <DependentUpon>AddListValidation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\FormatCells.aspx.cs">
+      <DependentUpon>FormatCells.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cells\FormatCells.aspx.designer.cs">
+      <DependentUpon>FormatCells.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\MergeCells.aspx.cs">
+      <DependentUpon>MergeCells.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cells\MergeCells.aspx.designer.cs">
+      <DependentUpon>MergeCells.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Cells\ModifyCells.aspx.cs">
       <DependentUpon>ModifyCells.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Cells\ModifyCells.aspx.designer.cs">
       <DependentUpon>ModifyCells.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\ProtectCells.aspx.cs">
+      <DependentUpon>ProtectCells.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cells\ProtectCells.aspx.designer.cs">
+      <DependentUpon>ProtectCells.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\SetAutoFilter.aspx.cs">
+      <DependentUpon>SetAutoFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cells\SetAutoFilter.aspx.designer.cs">
+      <DependentUpon>SetAutoFilter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\SetCustomFilter.aspx.cs">
+      <DependentUpon>SetCustomFilter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cells\SetCustomFilter.aspx.designer.cs">
+      <DependentUpon>SetCustomFilter.aspx</DependentUpon>
     </Compile>
     <Compile Include="databind\Aspose.Cells.GridWeb.DemosCS.DataBind.dataset1.cs">
       <DependentUpon>Aspose.Cells.GridWeb.DemosCS.DataBind.dataset1.xsd</DependentUpon>
@@ -686,8 +749,17 @@
       <DependentUpon>RenameWorksheets.aspx</DependentUpon>
     </Compile>
     <Content Include="Cells\AccessCells.aspx" />
+    <Content Include="Cells\AddCustomValidation.aspx" />
+    <Content Include="Cells\AddDataValidation.aspx" />
+    <Content Include="Cells\AddDropdownListValidation.aspx" />
     <Content Include="Cells\AddFormulas.aspx" />
+    <Content Include="Cells\AddListValidation.aspx" />
+    <Content Include="Cells\FormatCells.aspx" />
+    <Content Include="Cells\MergeCells.aspx" />
     <Content Include="Cells\ModifyCells.aspx" />
+    <Content Include="Cells\ProtectCells.aspx" />
+    <Content Include="Cells\SetAutoFilter.aspx" />
+    <Content Include="Cells\SetCustomFilter.aspx" />
     <Content Include="Data\GridWebBasics\CustomStyle1.xml" />
     <Content Include="Data\GridWebBasics\CustomStyle2.xml" />
     <Content Include="Examples.aspx" />

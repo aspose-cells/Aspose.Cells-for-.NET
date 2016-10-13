@@ -1,4 +1,4 @@
-﻿<%@ Page Title=" Handle Custom Command Event - Aspose.Cells Grid Suite Examples" Language="C#" 
+﻿<%@ Page Title="Handle Custom Command Event - Aspose.Cells Grid Suite Examples" Language="C#" 
     MasterPageFile="~/Site.Master" AutoEventWireup="true" 
     CodeBehind="HandleCustomCommandEvent.aspx.cs" Inherits="Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics.HandleCustomCommandEvent" %>
 

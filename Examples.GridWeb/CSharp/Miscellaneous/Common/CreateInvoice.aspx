@@ -1,5 +1,5 @@
-<%@ Page Language="C#" AutoEventWireup="true" Inherits="_Default" MasterPageFile="~/Site.Master"
-    Title="Create Invoice - Aspose.Cells Grid Suite Demos" CodeBehind="CreateInvoice.aspx.cs" %>
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.CreateInvoice" MasterPageFile="~/Site.Master"
+    Title="Create Invoice - Aspose.Cells Grid Suite Examples" CodeBehind="CreateInvoice.aspx.cs" %>
 
 <%@ Register Assembly="Aspose.Cells.GridWeb" Namespace="Aspose.Cells.GridWeb" TagPrefix="acw" %>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
@@ -12,7 +12,7 @@
                 </td>
                 <td class="demos-heading-bg" style="width: 100%;">
                     <h2 class="demos-heading-bg">
-                        Create Invoice - Aspose.Cells Grid Suite Demos
+                        Create Invoice - Aspose.Cells Grid Suite Examples
                     </h2>
                 </td>
                 <td style="width: 19; vertical-align: top;">
@@ -23,8 +23,8 @@
     </table>
     <div style="text-align: left; font-family: Arial; font-size: small;" class="componentDescriptionTxt">
         <p>
-            Click <b>Create</b> to see how demo creates invoice document from scratch and displays
-            data in the GridWeb Control.
+            Click <b>Create</b> to see how an invoice document is created from scratch and displayed
+            in the GridWeb Control.
         </p>
         <br />
         <div class="demoContentArea">
@@ -39,7 +39,7 @@
                 </tr>
                 <tr>
                     <td colspan="2" class="demo">
-                        <acw:GridWeb ID="GridWeb1" runat="server" Height="238px" Width="600px" PresetStyle="Colorful2"
+                        <acw:GridWeb ID="GridWeb1" runat="server" Height="238px" Width="600px"
                             ShowLoading="false" OnSaveCommand="GridWeb1_SaveCommand">
                         </acw:GridWeb>
                     </td>

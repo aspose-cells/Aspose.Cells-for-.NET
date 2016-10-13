@@ -46,7 +46,7 @@
             <table>
                 <tr>
                     <td>
-                        Insert Column:
+                        Delete Column:
                     </td>
                     <td>
                         Column Index:<asp:TextBox ID="txtColumnIndex" runat="server" Width="20px">2</asp:TextBox>
@@ -65,7 +65,7 @@
             <table>
                 <tr>
                     <td>
-                        Insert Row:
+                        Delete Row:
                     </td>
                     <td>
                         Row Index:<asp:TextBox ID="txtRowIndex" runat="server" Width="20px">2</asp:TextBox>

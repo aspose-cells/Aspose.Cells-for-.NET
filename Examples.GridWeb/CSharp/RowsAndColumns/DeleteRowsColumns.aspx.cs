@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Aspose.Cells.GridWeb.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -40,11 +41,14 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
             if (Page.IsValid)
             {
                 // ExStart:DeleteColumn
+                // Accessing the reference of the worksheet that is currently active
+                WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+
                 // Get column index entered by user
                 int columnIndex = Convert.ToInt16(txtColumnIndex.Text.Trim());
 
                 // Delete column at specified index
-                GridWeb1.WorkSheets[0].Cells.DeleteColumn(columnIndex);
+                sheet.Cells.DeleteColumn(columnIndex);
                 // ExEnd:DeleteColumn
             }            
         }
@@ -54,11 +58,14 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
             if (Page.IsValid)
             {
                 // ExStart:DeleteRow
+                // Accessing the reference of the worksheet that is currently active
+                WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+
                 // Get row index entered by user
                 int rowIndex = Convert.ToInt16(txtRowIndex.Text.Trim());
 
                 // Delete row at specified index
-                GridWeb1.WorkSheets[0].Cells.DeleteRow(rowIndex);
+                sheet.Cells.DeleteRow(rowIndex);
                 // ExEnd:DeleteRow
             }            
         }

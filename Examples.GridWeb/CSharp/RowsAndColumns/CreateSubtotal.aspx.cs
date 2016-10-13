@@ -21,7 +21,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
             // Put user code to initialize the page here
             if (!IsPostBack && !GridWeb1.IsPostBack)
             {
-                //Load data against selected drop down value
+                // Load data against selected drop down value
                 LoadData(ddlSort.SelectedItem.Value);
             }
         }
@@ -31,20 +31,19 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
             // Loads data from access database.
             DataSet ds = new DataSet();
 
-            //Create path to database file
-            string path = Server.MapPath("~");
-            path = path.Substring(0, path.LastIndexOf("\\"));
+            // Create path to database file
+            string path = (this.Master as Site).GetDataDir();
 
-            //Create database connection object
+            // Create database connection object
             OleDbConnection conn = new OleDbConnection();
 
-            //Create connection string to database
-            conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + path + "\\Database\\demos.mdb";
+            // Create connection string to database
+            conn.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" + path + "\\RowsAndColumns\\Database\\Northwind.mdb";
 
-            //Write select command
+            // Write select command
             string sql = "SELECT Products.ProductID, Categories.CategoryName, Suppliers.CompanyName, Products.ProductName, Products.QuantityPerUnit, Products.UnitPrice FROM Suppliers INNER JOIN (Categories INNER JOIN Products ON Categories.CategoryID = Products.CategoryID) ON Suppliers.SupplierID = Products.SupplierID";
 
-            //Create data adapter object
+            // Create data adapter object
             OleDbDataAdapter da = new OleDbDataAdapter(sql, conn);
             try
             {
@@ -53,10 +52,10 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
                 // Sorting
                 DataView productsView = new DataView(ds.Tables["Products"], "", sort, DataViewRowState.CurrentRows);
 
-                //Clear gridweb worksheet
+                // Clear gridweb worksheet
                 GridWeb1.WebWorksheets.Clear();
 
-                //Import data from dataview
+                // Import data from dataview
                 GridWeb1.WebWorksheets.ImportDataView(productsView, null, null);
 
                 // Sets column width.
@@ -69,7 +68,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
             }
             finally
             {
-                //Close database connection
+                // Close database connection
                 conn.Close();
             }
         }
@@ -82,11 +81,11 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
 
         protected void btnCreate_Click(object sender, System.EventArgs e)
         {
-            //Fill web worksheet object
+            // Fill web worksheet object
             WebWorksheet sheet = GridWeb1.WebWorksheets[0];
 
             // Removes the created subtotal first.
-            //sheet.RemoveSubtotal();
+            sheet.RemoveSubtotal();
 
             // Creates the subtotal.
             int groupByIndex;
@@ -103,28 +102,26 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
             subtotalStyle.BackColor = Color.SkyBlue;
             subtotalStyle.ForeColor = Color.Black;
 
+            // ExStart:CreateSubTotal
             sheet.CreateSubtotal(0, sheet.Cells.MaxRow, groupByIndex, (SubtotalFunction)System.Enum.Parse(typeof(SubtotalFunction), ddlFunction.SelectedItem.Value), new int[] { 1, 2, 3, 4, 5 }
                         , ddlFunction.SelectedItem.Text, grandStyle, subtotalStyle, NumberType.General, null);
+            // ExEnd:CreateSubTotal
         }
 
         protected void GridWeb1_SaveCommand(object sender, System.EventArgs e)
         {
-            // Generates a memory stream.
-            System.IO.MemoryStream ms = new System.IO.MemoryStream();
+            // Generates a temporary file name.
+            string filename = Session.SessionID + "_out_.xls";
 
-            // Saves to the stream.
-            this.GridWeb1.SaveToExcelFile(ms);
+            string path = (this.Master as Site).GetDataDir() + "\\RowsAndColumns\\";
+
+            // Saves to the file.
+            this.GridWeb1.SaveToExcelFile(path + filename);
 
             // Sents the file to browser.
             Response.ContentType = "application/vnd.ms-excel";
-
-            //Adds header.
-            Response.AddHeader("content-disposition", "attachment; filename=book1.xls");
-
-            // Writes file content to the response stream.
-            Response.OutputStream.Write(ms.GetBuffer(), 0, (int)ms.Length);
-
-            // OK.
+            Response.AddHeader("content-disposition", "attachment; filename=" + filename);
+            Response.WriteFile(path + filename);
             Response.End();
         }
 

@@ -15,7 +15,7 @@
                 </td>
                 <td class="demos-heading-bg" style="width: 100%;">
                     <h2 class="demos-heading-bg">
-                       Access Worksheets - Aspose.Cells Grid Suite Examples
+                       Access Cells - Aspose.Cells Grid Suite Examples
                     </h2>
                 </td>
                 <td style="width: 19; vertical-align: top;">

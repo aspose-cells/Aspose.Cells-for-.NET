@@ -95,7 +95,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
             activeSheet.Cells.CopyColumns(activeSheet.Cells, 0, 6, 3);
 
             Label1.Text = "Columns 1 to 3 copied to columns 7 to 9 in worksheet " + activeSheet.Name;
-            // ExStart:CopyMultipleColumns
+            // ExEnd:CopyMultipleColumns
         }
     }
 }

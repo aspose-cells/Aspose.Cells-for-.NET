@@ -48,10 +48,10 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
                 int columnWidth = Convert.ToInt16(txtColumnWidth.Text.Trim());
 
                 // Accessing the cells collection of the worksheet that is currently active
-                GridCells cells = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex].Cells;
+                WebCells cells = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex].Cells;
 
                 // Resize column at specified index to specified width
-                cells.SetColumnWidth(columnIndex, columnWidth);
+                cells.SetColumnWidth(columnIndex, new Unit(columnWidth, UnitType.Point));
                 // ExEnd:SetColumnWidth
             }            
         }
@@ -68,10 +68,10 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
                 int rowHeight = Convert.ToInt16(txtRowHeight.Text.Trim());
 
                 // Accessing the cells collection of the worksheet that is currently active
-                GridCells cells = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex].Cells;
+                WebCells cells = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex].Cells;
 
                 // Resize row at specified index to specified height
-                cells.SetColumnWidth(rowIndex, rowHeight);
+                cells.SetRowHeight(rowIndex, new Unit(rowHeight, UnitType.Point));
                 // ExEnd:SetRowHeight
             }            
         }
