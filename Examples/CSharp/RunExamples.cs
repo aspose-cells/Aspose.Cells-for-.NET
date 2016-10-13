@@ -19,6 +19,7 @@ using Aspose.Cells.Examples.CSharp.Articles.WorkbookScopedNamedRanges;
 using Aspose.Cells.Examples.CSharp.Articles.WorkingWithHTMLFormat;
 using Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting;
 using Aspose.Cells.Examples.CSharp.Articles.StylingAndDataFormatting;
+using Aspose.Cells.Examples.CSharp.Articles.PivotTablesAndPivotCharts;
 using Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine;
 using Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets;
 using Aspose.Cells.Examples.CSharp.CellsHelperClass;
@@ -278,6 +279,14 @@ namespace Aspose.Cells.Examples.CSharp
             //DisplayBulletsInCellUsingHtml.Run();
             //RenderCustomDateFormat.Run();
 
+            //// PivotTablesAndPivotCharts
+            //// =====================================================
+            //ChangingLayoutOfPivotTable.Run();
+            //SettingPivotTableOption.Run();
+            //SpecifyAbsolutePositionOfPivotItem.Run();
+            //RemovePivotTable.Run();
+            GetCellByDisplayName.Run();
+
             //// WorkingWithCalculationEngine
             //// =====================================================
             //DecreaseCalculationTime.Run();
@@ -373,7 +382,7 @@ namespace Aspose.Cells.Examples.CSharp
             //UnionOfRanges.Run();
             //SettingSimpleFormula.Run();
             //SettingComplexFormula.Run();
-            CalculatingSumUsingNamedRange.Run();
+            //CalculatingSumUsingNamedRange.Run();
 
             //// Handling
             //// =====================================================

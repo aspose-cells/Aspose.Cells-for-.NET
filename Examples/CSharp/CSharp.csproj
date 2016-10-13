@@ -160,6 +160,10 @@
     <Compile Include="Articles\MoveRangeOfCells.cs" />
     <Compile Include="Articles\OptimizingMemoryUsage\ReadingLargeExcelFiles.cs" />
     <Compile Include="Articles\OptimizingMemoryUsage\WritingLargeExcelFiles.cs" />
+    <Compile Include="Articles\PivotTablesAndPivotCharts\ChangingLayoutOfPivotTable.cs" />
+    <Compile Include="Articles\PivotTablesAndPivotCharts\GetCellByDisplayName.cs" />
+    <Compile Include="Articles\PivotTablesAndPivotCharts\RemovePivotTable.cs" />
+    <Compile Include="Articles\PivotTablesAndPivotCharts\SpecifyAbsolutePositionOfPivotItem.cs" />
     <Compile Include="Articles\PopulateData.cs" />
     <Compile Include="Articles\ReadingCellValuesInMultipleThreadsSimultaneously.cs" />
     <Compile Include="Articles\ReadingCSVMultipleEncodings.cs" />
@@ -191,7 +195,7 @@
     <Compile Include="Articles\SetPictureBackGroundFillChart.cs" />
     <Compile Include="Articles\SetPixelFormatRenderedImage.cs" />
     <Compile Include="Articles\SettingFormulaCalculationModeWorkbook.cs" />
-    <Compile Include="Articles\SettingPivotTableOption.cs" />
+    <Compile Include="Articles\PivotTablesAndPivotCharts\SettingPivotTableOption.cs" />
     <Compile Include="Articles\SettingTextEffectsShadowOfShapeOrTextbox.cs" />
     <Compile Include="Articles\SettingSharedFormula.cs" />
     <Compile Include="Articles\SettingStrongEncryptionType.cs" />

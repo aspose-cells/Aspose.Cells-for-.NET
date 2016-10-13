@@ -62,6 +62,7 @@ Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Value
 Imports Aspose.Cells.Examples.VisualBasic.Worksheets.PageSetupFeatures
 Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Security.Protecting
 Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Security.Unprotect
+Imports Aspose.Cells.Examples.VisualBasic.Articles.PivotTablesAndPivotCharts
 
 
 Friend Class RunExamples
@@ -271,6 +272,14 @@ Friend Class RunExamples
         'RenderCustomDateFormat.Run()
         'ReusingStyleObjects.Run()
 
+        '''' PivotTablesAndPivotCharts
+        '''' =====================================================
+        'ChangingLayoutOfPivotTable.Run()
+        'SettingPivotTableOption.Run()
+        'SpecifyAbsolutePositionOfPivotItem.Run()
+        'RemovePivotTable.Run()
+        GetCellByDisplayName.Run()
+
         '''' WorkingWithCalculationEngine
         '''' =====================================================
         'DecreaseCalculationTime.Run()
@@ -366,7 +375,7 @@ Friend Class RunExamples
         'UnionOfRanges.Run()
         'SettingSimpleFormula.Run()
         'SettingComplexFormula.Run()
-        CalculatingSumUsingNamedRange.Run()
+        'CalculatingSumUsingNamedRange.Run()
 
         '''' Handling
         '''' =====================================================

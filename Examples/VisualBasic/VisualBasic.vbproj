@@ -178,6 +178,11 @@
     <Compile Include="Articles\MoveRangeOfCells.vb" />
     <Compile Include="Articles\OptimizingMemoryUsage\ReadingLargeExcelFiles.vb" />
     <Compile Include="Articles\OptimizingMemoryUsage\WritingLargeExcelFiles.vb" />
+    <Compile Include="Articles\PivotTablesAndPivotCharts\ChangingLayoutOfPivotTable.vb" />
+    <Compile Include="Articles\PivotTablesAndPivotCharts\GetCellByDisplayName.vb" />
+    <Compile Include="Articles\PivotTablesAndPivotCharts\RemovePivotTable.vb" />
+    <Compile Include="Articles\PivotTablesAndPivotCharts\SettingPivotTableOption.vb" />
+    <Compile Include="Articles\PivotTablesAndPivotCharts\SpecifyAbsolutePositionOfPivotItem.vb" />
     <Compile Include="Articles\PopulateData.vb" />
     <Compile Include="Articles\ReadingCellValuesInMultipleThreadsSimultaneously.vb" />
     <Compile Include="Articles\ReadingCSVMultipleEncodings.vb" />
@@ -236,7 +241,6 @@
     <Compile Include="Charts\ManipulateChart\HowToCreateBubbleChart .vb" />
     <Compile Include="Charts\SettingCategoryData.vb" />
     <Compile Include="Articles\UsingCustomXmlParts.vb" />
-    <Compile Include="Charts\SettingPivotTableOption.vb" />
     <Compile Include="Articles\SettingSharedFormula.vb" />
     <Compile Include="Articles\SettingStrongEncryptionType.vb" />
     <Compile Include="Articles\SetWorksheetTabColor.vb" />
