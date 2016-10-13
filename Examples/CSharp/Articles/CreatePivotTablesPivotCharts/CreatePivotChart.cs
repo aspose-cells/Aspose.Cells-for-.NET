@@ -25,10 +25,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles.CreatePivotTablesPivotCharts
             sheet3.Charts[index].PivotSource = "PivotTable!PivotTable1";
             sheet3.Charts[index].HidePivotFieldButtons = false;
             // Saving the Excel file
-            workbook.Save(dataDir+ "pivotChart_test.out.xlsx");
+            workbook.Save(dataDir+ "pivotChart_test_out_.xlsx");
             // ExEnd:1
-            
-            
         }
     }
 }

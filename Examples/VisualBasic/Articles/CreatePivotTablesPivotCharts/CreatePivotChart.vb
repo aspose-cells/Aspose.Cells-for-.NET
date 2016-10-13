@@ -23,11 +23,8 @@ Namespace Articles.CreatePivotTablesPivotCharts
             sheet3.Charts(index).PivotSource = "PivotTable!PivotTable1"
             sheet3.Charts(index).HidePivotFieldButtons = False
             ' Saving the Excel file
-            workbook.Save(dataDir & "output.xlsx")
+            workbook.Save(dataDir & "pivotChart_test_out_.xlsx")
             ' ExEnd:1
-
-
-
         End Sub
     End Class
 End Namespace

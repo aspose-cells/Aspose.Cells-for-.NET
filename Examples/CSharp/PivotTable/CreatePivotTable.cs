@@ -95,10 +95,8 @@ namespace Aspose.Cells.Examples.CSharp.PivotTableExamples
             pivotTable.AddFieldToArea(Aspose.Cells.Pivot.PivotFieldType.Data, 2);
                      
             // Saving the Excel file
-            workbook.Save(dataDir + "output.xls");
-
+            workbook.Save(dataDir + "pivotTable_test_out_.xls");
             // ExEnd:1
-
         }
     }
 }
