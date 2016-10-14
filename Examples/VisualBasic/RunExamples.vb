@@ -278,7 +278,7 @@ Friend Class RunExamples
         'SettingPivotTableOption.Run()
         'SpecifyAbsolutePositionOfPivotItem.Run()
         'RemovePivotTable.Run()
-        GetCellByDisplayName.Run()
+        'GetCellByDisplayName.Run()
 
         '''' WorkingWithCalculationEngine
         '''' =====================================================
@@ -287,6 +287,14 @@ Friend Class RunExamples
         '''' ManagingWorkbooksWorksheets
         '''' =====================================================
         'ChangeChartDataSource.Run()
+        'AssignAndValidateDigitalSignatures.Run()
+        'SetAutoRecovery.Run()
+        'OdsFileSaveOptions.Run()
+        'CheckPasswordToModify.Run()
+        'DeterminingLicenseLoading.Run()
+        'DetectFileFormatAndEncryption.Run()
+        'ExportExcelDataToDataTableWithoutFormatting.Run()
+        'ConvertXLSBToXLSM.Run()
 
         '' =====================================================
         '' =====================================================

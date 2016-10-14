@@ -12,7 +12,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             // Create a new Workbook object
-            Workbook workbook = new Workbook(dataDir+ "book1.xlsx");
+            Workbook workbook = new Workbook(dataDir + "book1.xlsx");
 
             // Get First worksheet of the workbook
             Worksheet sheet = workbook.Worksheets[0];
@@ -21,10 +21,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             sheet.DisplayZeros = false;
 
             // Save the workbook
-            workbook.Save(dataDir+ "outputfile.out.xlsx");
-                // ExEnd:1
-            
-            
+            workbook.Save(dataDir + "outputfile.out.xlsx");
+            // ExEnd:1
         }
     }
 }

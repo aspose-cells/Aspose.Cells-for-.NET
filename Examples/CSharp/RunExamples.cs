@@ -285,7 +285,7 @@ namespace Aspose.Cells.Examples.CSharp
             //SettingPivotTableOption.Run();
             //SpecifyAbsolutePositionOfPivotItem.Run();
             //RemovePivotTable.Run();
-            GetCellByDisplayName.Run();
+            //GetCellByDisplayName.Run();
 
             //// WorkingWithCalculationEngine
             //// =====================================================
@@ -294,6 +294,14 @@ namespace Aspose.Cells.Examples.CSharp
             //// ManagingWorkbooksWorksheets
             //// =====================================================
             //ChangeChartDataSource.Run();
+            //AssignAndValidateDigitalSignatures.Run();
+            //SetAutoRecovery.Run();
+            //OdsFileSaveOptions.Run();
+            //CheckPasswordToModify.Run();
+            //DeterminingLicenseLoading.Run();
+            //DetectFileFormatAndEncryption.Run();
+            //ExportExcelDataToDataTableWithoutFormatting.Run();
+            //ConvertXLSBToXLSM.Run();
 
             // =====================================================
             // =====================================================
@@ -317,7 +325,7 @@ namespace Aspose.Cells.Examples.CSharp
             //SettingCategoryData.Run();
             //SettingChartsData.Run();
             //UsingSparklines.Run();
-            ChartRendering.Run();
+            //ChartRendering.Run();
 
             //// InsertingControlsintoCharts
             //// =====================================================

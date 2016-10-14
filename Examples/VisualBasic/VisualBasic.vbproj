@@ -171,7 +171,15 @@
     <Compile Include="Articles\LoadWorkbookWithPrinterSize.vb" />
     <Compile Include="Articles\LoadWorkbookWithSpecificCultureInfoDateFormat.vb" />
     <Compile Include="Articles\LoadWorkbookWithSpecificCultureInfoNumberFormat.vb" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\AssignAndValidateDigitalSignatures.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\ChangeChartDataSource.vb" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\CheckPasswordToModify.vb" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\ConvertXLSBToXLSM.vb" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\DetectFileFormatAndEncryption.vb" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\DeterminingLicenseLoading.vb" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\ExportExcelDataToDataTableWithoutFormatting.vb" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\OdsFileSaveOptions.vb" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\SetAutoRecovery.vb" />
     <Compile Include="Articles\MergeUnmergeRangeOfCells.vb" />
     <Compile Include="Articles\ModifyExistingStyle\ModifyThroughSampleExcelFile.vb" />
     <Compile Include="Articles\ModifyExistingStyle\ModifyThroughStyleObject.vb" />

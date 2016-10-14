@@ -30,7 +30,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkbookScopedNamedRanges
             // Save the workbook
             workbook.Save(dataDir+ "WorkbookScope.out.xlsx");
             // ExEnd:1
-            
         }
     }
 }

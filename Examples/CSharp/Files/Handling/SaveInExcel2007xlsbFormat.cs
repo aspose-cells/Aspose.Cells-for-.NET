@@ -14,8 +14,8 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
 
             // Creating a Workbook object
             Workbook workbook = new Workbook();
-        // Save in Excel2007 xlsb format
-            workbook.Save(dataDir + "output.xlsb", SaveFormat.Xlsb);   
+            // Save in Excel2007 xlsb format
+            workbook.Save(dataDir + "output.xlsb", SaveFormat.Xlsb);
             // ExEnd:1
         }
     }

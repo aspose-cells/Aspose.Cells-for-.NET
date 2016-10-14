@@ -12,7 +12,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles.OptimizingMemoryUsage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             // ExEnd:1
-            
         }
     }
 }

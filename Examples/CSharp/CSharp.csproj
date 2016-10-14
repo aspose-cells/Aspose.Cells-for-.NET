@@ -153,7 +153,23 @@
     <Compile Include="Articles\LoadWebImage.cs" />
     <Compile Include="Articles\LoadWorkbookWithSpecificCultureInfoDateFormat.cs" />
     <Compile Include="Articles\LoadWorkbookWithSpecificCultureInfoNumberFormat.cs" />
-    <Compile Include="Articles\ManagingWorkbooksWorksheets\ChangeChartDataSource.cs" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\AssignAndValidateDigitalSignatures.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\ChangeChartDataSource.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\CheckPasswordToModify.cs" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\ConvertXLSBToXLSM.cs" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\DetectFileFormatAndEncryption.cs" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\DeterminingLicenseLoading.cs" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\ExportExcelDataToDataTableWithoutFormatting.cs" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\OdsFileSaveOptions.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\SetAutoRecovery.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Articles\MergeUnmergeRangeOfCells.cs" />
     <Compile Include="Articles\ModifyExistingStyle\ModifyThroughSampleExcelFile.cs" />
     <Compile Include="Articles\ModifyExistingStyle\ModifyThroughStyleObject.cs" />
