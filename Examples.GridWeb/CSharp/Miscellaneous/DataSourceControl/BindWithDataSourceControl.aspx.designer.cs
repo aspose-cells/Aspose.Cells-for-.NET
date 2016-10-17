@@ -9,7 +9,7 @@
 
 
 
-public partial class demos_DataSourceControl_BindWithDataSourceControl {
+public partial class BindWithDataSourceControl {
     
     /// <summary>
     /// GridWeb1 control.

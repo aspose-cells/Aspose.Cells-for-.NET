@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_DataSourceControl_BindWithDataSourceControl"
+﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="BindWithDataSourceControl"
     MasterPageFile="~/Site.Master" Title="Bind with DataSourceControl - Aspose.Cells Grid Suite Demos"
     CodeBehind="BindWithDataSourceControl.aspx.cs" %>
 
