@@ -302,6 +302,15 @@ namespace Aspose.Cells.Examples.CSharp
             //DetectFileFormatAndEncryption.Run();
             //ExportExcelDataToDataTableWithoutFormatting.Run();
             //ConvertXLSBToXLSM.Run();
+            //CalculateScalingFactor.Run();
+            //ReleaseUnmanagedResources.Run();
+            //EditingHyperlinksOfWorksheet.Run();
+            //ImportXmlData.Run();
+            //ImportCSVWithFormulas.Run();
+            //CheckIfPasswordProtected.Run();
+            //VerifyPasswordUsedToProtectWorksheets.Run();
+            //SearchDataUsingOriginalValues.Run();
+            //DetectEmptyWorksheets.Run();
 
             // =====================================================
             // =====================================================

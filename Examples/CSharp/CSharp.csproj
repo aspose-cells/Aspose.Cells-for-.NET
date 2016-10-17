@@ -156,20 +156,29 @@
     <Compile Include="Articles\ManagingWorkbooksWorksheets\AssignAndValidateDigitalSignatures.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\CalculateScalingFactor.cs" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\ChangeChartDataSource.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\CheckIfPasswordProtected.cs" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\CheckPasswordToModify.cs" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\ConvertXLSBToXLSM.cs" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\DetectEmptyWorksheets.cs" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\DetectFileFormatAndEncryption.cs" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\DeterminingLicenseLoading.cs" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\EditingHyperlinksOfWorksheet.cs" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\ExportExcelDataToDataTableWithoutFormatting.cs" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\ImportCSVWithFormulas.cs" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\ImportXmlData.cs" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\OdsFileSaveOptions.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\ReleaseUnmanagedResources.cs" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\SearchDataUsingOriginalValues.cs" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\SetAutoRecovery.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\VerifyPasswordUsedToProtectWorksheets.cs" />
     <Compile Include="Articles\MergeUnmergeRangeOfCells.cs" />
     <Compile Include="Articles\ModifyExistingStyle\ModifyThroughSampleExcelFile.cs" />
     <Compile Include="Articles\ModifyExistingStyle\ModifyThroughStyleObject.cs" />
