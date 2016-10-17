@@ -7,16 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
-
-public partial class demos_DataBind_DataBind3 {
+namespace Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.DataBind {
     
-    /// <summary>
-    /// GridWeb1 control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::Aspose.Cells.GridWeb.GridWeb GridWeb1;
+    
+    public partial class DataBind3 {
+        
+        /// <summary>
+        /// GridWeb1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Aspose.Cells.GridWeb.GridWeb GridWeb1;
+    }
 }

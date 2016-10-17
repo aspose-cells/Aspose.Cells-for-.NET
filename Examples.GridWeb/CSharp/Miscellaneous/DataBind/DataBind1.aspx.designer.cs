@@ -7,43 +7,45 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
-
-public partial class demos_DataBind_DataBind1 {
+namespace Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.DataBind {
     
-    /// <summary>
-    /// BtnBind control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.Button BtnBind;
     
-    /// <summary>
-    /// chkCreateSheetHeader control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.CheckBox chkCreateSheetHeader;
-    
-    /// <summary>
-    /// chkControlHeaderBar control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.CheckBox chkControlHeaderBar;
-    
-    /// <summary>
-    /// GridWeb1 control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::Aspose.Cells.GridWeb.GridWeb GridWeb1;
+    public partial class DataBind1 {
+        
+        /// <summary>
+        /// BtnBind control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnBind;
+        
+        /// <summary>
+        /// chkCreateSheetHeader control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chkCreateSheetHeader;
+        
+        /// <summary>
+        /// chkControlHeaderBar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chkControlHeaderBar;
+        
+        /// <summary>
+        /// GridWeb1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Aspose.Cells.GridWeb.GridWeb GridWeb1;
+    }
 }

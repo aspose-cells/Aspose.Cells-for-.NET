@@ -1,5 +1,5 @@
-<%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_DataBind_DataBind1"
-    MasterPageFile="~/Site.Master" Title="Data Binding using Worksheets Designer - Aspose.Cells Grid Suite Demos"
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.DataBind.DataBind1"
+    MasterPageFile="~/Site.Master" Title="Data Binding using Worksheets Designer - Aspose.Cells Grid Suite Examples"
     CodeBehind="DataBind1.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>
@@ -13,7 +13,7 @@
                 </td>
                 <td class="demos-heading-bg" style="width: 100%;">
                     <h2 class="demos-heading-bg">
-                        Data Binding using Worksheets Designer - Aspose.Cells Grid Suite Demos
+                        Data Binding using Worksheets Designer - Aspose.Cells Grid Suite Examples
                     </h2>
                 </td>
                 <td style="width: 19; vertical-align: top;">
@@ -24,7 +24,7 @@
     </table>
     <div style="text-align: left; font-family: Arial; font-size: small;" class="componentDescriptionTxt">
         <p>
-            Click <b>Bind</b> to see this demo Binding data with the help of Worksheets Designer.
+            Click <b>Bind</b> to see this data is binded with the help of Worksheets Designer.
             Data is fetched into a <b>Dataset</b> from Database using <b>OleDbAdapter</b> and
             binded with empty <b>WebWorksheet</b>. There are two <b>CheckBoxes</b>, each Enable/Disable
             diffrent properties of GridWeb. CheckBox <b>Create in-sheet headers</b> Show/Hide

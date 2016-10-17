@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous {
+namespace Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.Common {
     
     
     public partial class CreateInvoice {

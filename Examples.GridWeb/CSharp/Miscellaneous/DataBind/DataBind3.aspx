@@ -1,5 +1,5 @@
-<%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_DataBind_DataBind3"
-    MasterPageFile="~/Site.Master" Title="Data Binding to a Custom Collection - Aspose.Cells Grid Suite Demos"
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.DataBind.DataBind3"
+    MasterPageFile="~/Site.Master" Title="Data Binding to a Custom Collection - Aspose.Cells Grid Suite Examples"
     CodeBehind="DataBind3.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>
@@ -13,7 +13,7 @@
                 </td>
                 <td class="demos-heading-bg" style="width: 100%;">
                     <h2 class="demos-heading-bg">
-                        Data Binding to a Custom Collection - Aspose.Cells Grid Suite Demos
+                        Data Binding to a Custom Collection - Aspose.Cells Grid Suite Examples
                     </h2>
                 </td>
                 <td style="width: 19; vertical-align: top;">
@@ -24,7 +24,7 @@
     </table>
     <div style="text-align: left; font-family: Arial; font-size: small;" class="componentDescriptionTxt">
         <p>
-            This demo demonstrate the <b>DataBind</b> functionality of the GridWeb control with
+            This example demonstrate the <b>DataBind</b> functionality of the GridWeb control with
             a user defined <b>List</b> Another functionality that GridWeb provides is of <b>Calender
                 Control</b> just by knowing that Column Type is of Date. Click on any cell from
             column "DateField1" and see how the Calender Control popup. Also, <b>Date Type Validation</b>

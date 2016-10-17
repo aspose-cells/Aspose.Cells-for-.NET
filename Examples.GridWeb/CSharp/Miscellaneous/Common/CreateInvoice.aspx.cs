@@ -11,7 +11,7 @@ using System.Drawing;
 using Aspose.Cells.GridWeb;
 using Aspose.Cells.GridWeb.Data;
 
-namespace Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous
+namespace Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.Common
 {
     public partial class CreateInvoice : System.Web.UI.Page
     {

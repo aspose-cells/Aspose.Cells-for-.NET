@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" Inherits="Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.CreateInvoice" MasterPageFile="~/Site.Master"
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.Common.CreateInvoice" MasterPageFile="~/Site.Master"
     Title="Create Invoice - Aspose.Cells Grid Suite Examples" CodeBehind="CreateInvoice.aspx.cs" %>
 
 <%@ Register Assembly="Aspose.Cells.GridWeb" Namespace="Aspose.Cells.GridWeb" TagPrefix="acw" %>

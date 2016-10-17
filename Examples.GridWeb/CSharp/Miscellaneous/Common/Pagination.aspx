@@ -1,5 +1,5 @@
-<%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_Common_Pagination"
-    MasterPageFile="~/Site.Master" Title="Paginating Sheet - Aspose.Cells Grid Suite Demos"
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.Common.Pagination"
+    MasterPageFile="~/Site.Master" Title="Paginating Sheet - Aspose.Cells Grid Suite Examples"
     CodeBehind="Pagination.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>
@@ -13,7 +13,7 @@
                 </td>
                 <td class="demos-heading-bg" style="width: 100%;">
                     <h2 class="demos-heading-bg">
-                        Paginating Sheet - Aspose.Cells Grid Suite Demos
+                        Paginating Sheet - Aspose.Cells Grid Suite Examples
                     </h2>
                 </td>
                 <td style="width: 19; vertical-align: top;">
@@ -24,7 +24,7 @@
     </table>
     <div style="text-align: left; font-family: Arial; font-size: small;" class="componentDescriptionTxt">
         <p>
-            Click <b>Reload</b> to see how demo loads data from data source and divides it into
+            Click <b>Reload</b> to see how data is loaded from data source and divided it into
             several pages to improve performance or support logical data division for subsequent
             data preview in the GridWeb Control.
         </p>

@@ -1,5 +1,5 @@
-<%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_DataBind_ExpandChildView"
-    MasterPageFile="~/Site.Master" Title="Hierarchical View - Aspose.Cells Grid Suite Demos"
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.DataBind.ExpandChildView"
+    MasterPageFile="~/Site.Master" Title="Hierarchical View - Aspose.Cells Grid Suite Examples"
     CodeBehind="ExpandChildView.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>
@@ -13,7 +13,7 @@
                 </td>
                 <td class="demos-heading-bg" style="width: 100%;">
                     <h2 class="demos-heading-bg">
-                        Hierarchical View - Aspose.Cells Grid Suite Demos
+                        Hierarchical View - Aspose.Cells Grid Suite Examples
                     </h2>
                 </td>
                 <td style="width: 19; vertical-align: top;">
@@ -24,7 +24,7 @@
     </table>
     <div style="text-align: left; font-family: Arial; font-size: small;" class="componentDescriptionTxt">
         <p>
-            This demo demonstrates the <b>DataBind</b> funcationality with database using Datasets.
+            This example demonstrates the <b>DataBind</b> funcationality with database using Datasets.
             Data is fetched into three <b>Datasets</b> using <b>OleDbAdapter</b> and primary
             Dataset [Customer] is binded with empty <b>WebWorksheet</b>.On selection [Expand
             Button] of any record from Customer, it's child record [Order] will be loaded, further
@@ -76,7 +76,7 @@
                                     <acw:BindColumn IsAutoCreated="True" Caption="CustomerID" DataField="CustomerID">
                                         <Style BackColor="#C0C0FF">
                                             </Style>
-                                        <ColumnHeaderStyle Rotation="0" NumberType="General"></ColumnHeaderStyle>
+                                        <ColumnHeaderStyle RotationAngle="0" NumberType="General"></ColumnHeaderStyle>
                                         <Validation IsRequired="True"></Validation>
                                         <AlternativeStyle ForeColor="White" BackColor="#8080FF"></AlternativeStyle>
                                     </acw:BindColumn>
@@ -84,61 +84,61 @@
                                         <Style BackColor="#C0C0FF">
                                             </Style>
                                         <AlternativeStyle ForeColor="White" BackColor="#8080FF"></AlternativeStyle>
-                                        <ColumnHeaderStyle Rotation="0" NumberType="General"></ColumnHeaderStyle>
+                                        <ColumnHeaderStyle RotationAngle="0" NumberType="General"></ColumnHeaderStyle>
                                     </acw:BindColumn>
                                     <acw:BindColumn IsAutoCreated="True" Caption="ContactName" DataField="ContactName">
                                         <Style BackColor="#C0C0FF">
                                             </Style>
                                         <AlternativeStyle ForeColor="White" BackColor="#8080FF"></AlternativeStyle>
-                                        <ColumnHeaderStyle Rotation="0" NumberType="General"></ColumnHeaderStyle>
+                                        <ColumnHeaderStyle RotationAngle="0" NumberType="General"></ColumnHeaderStyle>
                                     </acw:BindColumn>
                                     <acw:BindColumn IsAutoCreated="True" Caption="ContactTitle" DataField="ContactTitle">
                                         <Style BackColor="#C0C0FF">
                                             </Style>
                                         <AlternativeStyle ForeColor="White" BackColor="#8080FF"></AlternativeStyle>
-                                        <ColumnHeaderStyle Rotation="0" NumberType="General"></ColumnHeaderStyle>
+                                        <ColumnHeaderStyle RotationAngle="0" NumberType="General"></ColumnHeaderStyle>
                                     </acw:BindColumn>
                                     <acw:BindColumn Width="80pt" IsAutoCreated="True" Caption="Address" DataField="Address">
                                         <Style BackColor="#C0C0FF">
                                             </Style>
                                         <AlternativeStyle ForeColor="White" BackColor="#8080FF"></AlternativeStyle>
-                                        <ColumnHeaderStyle Rotation="0" NumberType="General"></ColumnHeaderStyle>
+                                        <ColumnHeaderStyle RotationAngle="0" NumberType="General"></ColumnHeaderStyle>
                                     </acw:BindColumn>
                                     <acw:BindColumn IsAutoCreated="True" Caption="City" DataField="City">
                                         <Style BackColor="#C0C0FF">
                                             </Style>
                                         <AlternativeStyle ForeColor="White" BackColor="#8080FF"></AlternativeStyle>
-                                        <ColumnHeaderStyle Rotation="0" NumberType="General"></ColumnHeaderStyle>
+                                        <ColumnHeaderStyle RotationAngle="0" NumberType="General"></ColumnHeaderStyle>
                                     </acw:BindColumn>
                                     <acw:BindColumn IsAutoCreated="True" Caption="Region" DataField="Region">
                                         <Style BackColor="#C0C0FF">
                                             </Style>
                                         <AlternativeStyle ForeColor="White" BackColor="#8080FF"></AlternativeStyle>
-                                        <ColumnHeaderStyle Rotation="0" NumberType="General"></ColumnHeaderStyle>
+                                        <ColumnHeaderStyle RotationAngle="0" NumberType="General"></ColumnHeaderStyle>
                                     </acw:BindColumn>
                                     <acw:BindColumn IsAutoCreated="True" Caption="PostalCode" DataField="PostalCode">
                                         <Style BackColor="#C0C0FF">
                                             </Style>
                                         <AlternativeStyle ForeColor="White" BackColor="#8080FF"></AlternativeStyle>
-                                        <ColumnHeaderStyle Rotation="0" NumberType="General"></ColumnHeaderStyle>
+                                        <ColumnHeaderStyle RotationAngle="0" NumberType="General"></ColumnHeaderStyle>
                                     </acw:BindColumn>
                                     <acw:BindColumn IsAutoCreated="True" Caption="Country" DataField="Country">
                                         <Style BackColor="#C0C0FF">
                                             </Style>
                                         <AlternativeStyle ForeColor="White" BackColor="#8080FF"></AlternativeStyle>
-                                        <ColumnHeaderStyle Rotation="0" NumberType="General"></ColumnHeaderStyle>
+                                        <ColumnHeaderStyle RotationAngle="0" NumberType="General"></ColumnHeaderStyle>
                                     </acw:BindColumn>
                                     <acw:BindColumn IsAutoCreated="True" Caption="Phone" DataField="Phone">
                                         <Style BackColor="#C0C0FF">
                                             </Style>
                                         <AlternativeStyle ForeColor="White" BackColor="#8080FF"></AlternativeStyle>
-                                        <ColumnHeaderStyle Rotation="0" NumberType="General"></ColumnHeaderStyle>
+                                        <ColumnHeaderStyle RotationAngle="0" NumberType="General"></ColumnHeaderStyle>
                                     </acw:BindColumn>
                                     <acw:BindColumn IsAutoCreated="True" Caption="Fax" DataField="Fax">
                                         <Style BackColor="#C0C0FF">
                                             </Style>
                                         <AlternativeStyle ForeColor="White" BackColor="#8080FF"></AlternativeStyle>
-                                        <ColumnHeaderStyle Rotation="0" NumberType="General"></ColumnHeaderStyle>
+                                        <ColumnHeaderStyle RotationAngle="0" NumberType="General"></ColumnHeaderStyle>
                                     </acw:BindColumn>
                                 </BindColumns>
                             </acw:WorksheetDesign>

@@ -1,8 +1,9 @@
-<%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_Ajax_AjaxUpdating"
-    MasterPageFile="~/Site.Master" Title="AJAX Updating - Aspose.Cells Grid Suite Demos"
+<%@ Page Language="C#" AutoEventWireup="true" Inherits="Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.Ajax.AjaxUpdating"
+    MasterPageFile="~/Site.Master" Title="AJAX Updating - Aspose.Cells Grid Suite Examples"
     CodeBehind="AjaxUpdating.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>
+
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
     <table class="componentDescriptionTxt" border="0" cellpadding="0" cellspacing="0"
         style="text-align: center; width: 100%; font-family: Arial; font-size: small;">
@@ -13,7 +14,7 @@
                 </td>
                 <td class="demos-heading-bg" style="width: 100%;">
                     <h2 class="demos-heading-bg">
-                        AJAX Updating - Aspose.Cells Grid Suite Demos
+                        AJAX Updating - Aspose.Cells Grid Suite Examples
                     </h2>
                 </td>
                 <td style="width: 19; vertical-align: top;">
@@ -24,8 +25,8 @@
     </table>
     <div style="text-align: left; font-family: Arial; font-size: small;" class="componentDescriptionTxt">
         <p>
-            This demo uses functionality from AJAX to minimize the <b>Postbacks</b> to the server
-            by setting the <b>GridWeb.EnableAJAX = true</b>. In order to get this demo work,
+            This examples uses functionality from AJAX to minimize the <b>Postbacks</b> to the server
+            by setting the <b>GridWeb.EnableAJAX = true</b>. In order for this example to work,
             you need to install Microsoft AJAX Toolkit for ASP.Net 2.0.
         </p>
         <p>
@@ -68,8 +69,7 @@
                         TabStyle-BorderStyle="Solid" TabStyle-BorderWidth="1px" TabStyle-Font-Names="Arial"
                         TabStyle-Font-Size="10pt" TabStyle-ForeColor="White" TabStyle-Height="15pt" TabStyle-NumberType="0"
                         TabStyle-Rotation="0" TabStyle-Wrap="False" ViewTableStyle-BorderCollapse="Collapse"
-                        ViewTableStyle-BorderWidth="0px" ViewTableStyle-LayoutFixed="Fixed">
-                        
+                        ViewTableStyle-BorderWidth="0px" ViewTableStyle-LayoutFixed="Fixed">                        
                     </acw:GridWeb>
                 </td>
             </tr>

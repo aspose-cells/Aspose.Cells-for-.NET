@@ -391,19 +391,12 @@
     <Compile Include="Miscellaneous\Ajax\AjaxUpdating.aspx.designer.cs">
       <DependentUpon>AjaxUpdating.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Common\42099.aspx.cs">
-      <DependentUpon>42099.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Common\ConditionalFormatting.aspx.cs">
+      <DependentUpon>ConditionalFormatting.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Common\42099.aspx.designer.cs">
-      <DependentUpon>42099.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Miscellaneous\Common\cf.aspx.cs">
-      <DependentUpon>cf.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Miscellaneous\Common\cf.aspx.designer.cs">
-      <DependentUpon>cf.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Common\ConditionalFormatting.aspx.designer.cs">
+      <DependentUpon>ConditionalFormatting.aspx</DependentUpon>
     </Compile>
     <Compile Include="GridWebBasics\ApplyPresetStyle.aspx.cs">
       <DependentUpon>ApplyPresetStyle.aspx</DependentUpon>
@@ -412,19 +405,19 @@
     <Compile Include="GridWebBasics\ApplyPresetStyle.aspx.designer.cs">
       <DependentUpon>ApplyPresetStyle.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Common\chartrefresh.aspx.cs">
-      <DependentUpon>chartrefresh.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Common\DisplayCharts.aspx.cs">
+      <DependentUpon>DisplayCharts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Common\chartrefresh.aspx.designer.cs">
-      <DependentUpon>chartrefresh.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Common\DisplayCharts.aspx.designer.cs">
+      <DependentUpon>DisplayCharts.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Common\chartsubmit.aspx.cs">
-      <DependentUpon>chartsubmit.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Common\RefreshCharts.aspx.cs">
+      <DependentUpon>RefreshCharts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Common\chartsubmit.aspx.designer.cs">
-      <DependentUpon>chartsubmit.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Common\RefreshCharts.aspx.designer.cs">
+      <DependentUpon>RefreshCharts.aspx</DependentUpon>
     </Compile>
     <Compile Include="Miscellaneous\Common\CreateInvoice.aspx.cs">
       <DependentUpon>CreateInvoice.aspx</DependentUpon>
@@ -432,13 +425,6 @@
     </Compile>
     <Compile Include="Miscellaneous\Common\CreateInvoice.aspx.designer.cs">
       <DependentUpon>CreateInvoice.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Miscellaneous\Common\CustomContextMenu.aspx.cs">
-      <DependentUpon>CustomContextMenu.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Miscellaneous\Common\CustomContextMenu.aspx.designer.cs">
-      <DependentUpon>CustomContextMenu.aspx</DependentUpon>
     </Compile>
     <Compile Include="RowsAndColumns\CustomizeHeaders.aspx.cs">
       <DependentUpon>CustomizeHeaders.aspx</DependentUpon>
@@ -468,12 +454,12 @@
     <Compile Include="RowsAndColumns\FreezePanes.aspx.designer.cs">
       <DependentUpon>FreezePanes.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Common\HeaderBarAndCommandButton.aspx.cs">
-      <DependentUpon>HeaderBarAndCommandButton.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Common\ShowHeaderBarAndCommandButton.aspx.cs">
+      <DependentUpon>ShowHeaderBarAndCommandButton.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Common\HeaderBarAndCommandButton.aspx.designer.cs">
-      <DependentUpon>HeaderBarAndCommandButton.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Common\ShowHeaderBarAndCommandButton.aspx.designer.cs">
+      <DependentUpon>ShowHeaderBarAndCommandButton.aspx</DependentUpon>
     </Compile>
     <Compile Include="Worksheets\AccessNamedRanges.aspx.cs">
       <DependentUpon>AccessNamedRanges.aspx</DependentUpon>
@@ -523,13 +509,6 @@
     </Compile>
     <Compile Include="Miscellaneous\Common\Pagination.aspx.designer.cs">
       <DependentUpon>Pagination.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Miscellaneous\Common\setborders.aspx.cs">
-      <DependentUpon>setborders.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Miscellaneous\Common\setborders.aspx.designer.cs">
-      <DependentUpon>setborders.aspx</DependentUpon>
     </Compile>
     <Compile Include="Worksheets\ManageComments.aspx.cs">
       <DependentUpon>ManageComments.aspx</DependentUpon>
@@ -821,21 +800,17 @@
     <Content Include="Grid\acw_client\updating.gif" />
     <Content Include="Grid\acw_client\x.gif" />
     <Content Include="Miscellaneous\Ajax\AjaxUpdating.aspx" />
-    <Content Include="Miscellaneous\Common\42099.aspx" />
-    <Content Include="Miscellaneous\Common\cf.aspx" />
+    <Content Include="Miscellaneous\Common\ConditionalFormatting.aspx" />
     <Content Include="GridWebBasics\ApplyPresetStyle.aspx" />
-    <Content Include="Miscellaneous\Common\chartrefresh.aspx" />
-    <Content Include="Miscellaneous\Common\chartsubmit.aspx" />
+    <Content Include="Miscellaneous\Common\DisplayCharts.aspx" />
+    <Content Include="Miscellaneous\Common\RefreshCharts.aspx" />
     <Content Include="Miscellaneous\Common\CreateInvoice.aspx" />
-    <Content Include="Miscellaneous\Common\CustomContextMenu.aspx" />
     <Content Include="RowsAndColumns\CopyRowsColumns.aspx" />
     <Content Include="RowsAndColumns\CustomizeHeaders.aspx" />
-    <Content Include="Miscellaneous\Common\CustomStyle1.xml" />
-    <Content Include="Miscellaneous\Common\CustomStyle2.xml" />
     <Content Include="Miscellaneous\Common\DataValidation.aspx" />
     <Content Include="GridWebBasics\HandleDoubleClickEvents.aspx" />
     <Content Include="RowsAndColumns\FreezePanes.aspx" />
-    <Content Include="Miscellaneous\Common\HeaderBarAndCommandButton.aspx" />
+    <Content Include="Miscellaneous\Common\ShowHeaderBarAndCommandButton.aspx" />
     <Content Include="RowsAndColumns\DeleteRowsColumns.aspx" />
     <Content Include="RowsAndColumns\HandleColumnFilterEvents.aspx" />
     <Content Include="RowsAndColumns\MakeRowsColumnsReadOnly.aspx" />
@@ -848,7 +823,6 @@
     <Content Include="GridWebBasics\ImportExportFile.aspx" />
     <Content Include="GridWebBasics\ApplyEditModes.aspx" />
     <Content Include="Miscellaneous\Common\Pagination.aspx" />
-    <Content Include="Miscellaneous\Common\setborders.aspx" />
     <Content Include="Worksheets\ManageComments.aspx" />
     <Content Include="Worksheets\ManageHyperlinks.aspx" />
     <Content Include="Worksheets\SortData.aspx" />

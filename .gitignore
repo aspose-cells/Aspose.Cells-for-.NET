@@ -5,6 +5,8 @@ classes/
 generated/
 *.suo
 bin/
+!/Examples.GridWeb/CSharp/bin
+!/Examples.GridWeb/VisualBasic/bin
 * Out*
 *_out_*
 * out*

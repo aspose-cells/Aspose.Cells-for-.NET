@@ -548,56 +548,38 @@
 			            </div>
                     </li>                  
                     <li class="genericList" title="Conditional Formating">
-			            <p class="productTitle"><a href="Miscellaneous/common/cf.aspx">Conditional Formatting</a></p>
+			            <p class="productTitle"><a href="Miscellaneous/Common/ConditionalFormatting.aspx">Conditional Formatting</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                This Demo Imports an Excel File with conditional formatting. 
+				                This example imports an Excel File with conditional formatting. 
 			                </p>
 			            </div>
                     </li>
                     <li class="genericList" title="HeaderBar &amp; CommandButton">
-			            <p class="productTitle"><a href="Miscellaneous/common/headerbarandcommandbutton.aspx">HeaderBar &amp; CommandButton</a></p>
+			            <p class="productTitle"><a href="Miscellaneous/Common/ShowHeaderBarandCommandButton.aspx">HeaderBar &amp; CommandButton</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                This Demo covers some useful properties of GridWeb Control. 
+				                This example covers how to toggle visibility for header bar and command buttons of GridWeb Control. 
 			                </p>
 			            </div>
                     </li>                                 
                     <li class="genericList" title="Paginating Sheet">
-			            <p class="productTitle"><a href="Miscellaneous/common/pagination.aspx">Paginating Sheet</a></p>
+			            <p class="productTitle"><a href="Miscellaneous/Common/Pagination.aspx">Paginating Sheet</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                This Demo Imports an Excel File from a source and divides the contents of the sheet into different pages.
+				                This example Imports an Excel File from a source and divides the contents of the sheet into different pages.
 			                </p>
 			            </div>
-                    </li>                                       
-                    <li class="genericList" title="Custom Context Menu">
-			            <p class="productTitle"><a href="Miscellaneous/common/customcontextmenu.aspx">Custom Context Menu</a></p>
-			            <p class="componentDescriptionCaption">Description</p>
-			            <div class="componentDescriptionTxt">
-                            <p class="componentDescriptionTxt">
-				                This Demo introduces how to add custom context menu items to the GridWeb Control. 
-                            </p>
-			            </div>
-                    </li>
+                    </li> 
                     <li class="genericList" title="Math">
 			            <p class="productTitle"><a href="Miscellaneous/formula/math.aspx">Math</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
 				                This Demo presents the exercise of Mathematical Functions.
-			                </p>
-			            </div>
-                    </li>
-                    <li class="genericList" title="Borders">
-			            <p class="productTitle"><a href="Miscellaneous/common/setborders.aspx">Borders</a></p>
-			            <p class="componentDescriptionCaption">Description</p>
-			            <div class="componentDescriptionTxt">
-                            <p class="componentDescriptionTxt">
-				                This Demo presents the setborders function.
 			                </p>
 			            </div>
                     </li>
@@ -637,12 +619,12 @@
 			                </p>
 			            </div>
                     </li>
-                    <li class="genericList" title="Display Chart" >
-			            <p class="productTitle"><a href="/Miscellaneous/Common/chartrefresh.aspx">Display Chart</a></p>
+                    <li class="genericList" title="Display Charts" >
+			            <p class="productTitle"><a href="/Miscellaneous/Common/DisplayCharts.aspx">Display Charts</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                This Demo Imports an Excel File with charts.
+				                This example Imports an Excel File with charts.
 			                </p>
 			            </div>
                     </li>
@@ -719,38 +701,38 @@
 			            </div>
                     </li>
                     <li class="genericList" title="Binding DataSet using Designer">
-			            <p class="productTitle"><a href="Miscellaneous/databind/databind1.aspx">Binding DataSet using Designer</a></p>
+			            <p class="productTitle"><a href="Miscellaneous/Databind/Databind1.aspx">Binding DataSet using Designer</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 		            	<div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                This Demo Demonstrates Data Binding Process utilizing Worksheets Designer, data stored in a database table is fetched to DataSet Object and linked to the GridWeb Control. 
+				                This example demonstrates Data Binding Process utilizing Worksheets Designer, data stored in a database table is fetched to DataSet Object and linked to the GridWeb Control. 
 			                </p>
 		            	</div>
                     </li>
                     <li class="genericList" title="Binding DataSet at Runtime">
-			            <p class="productTitle"><a href="Miscellaneous/databind/databind2.aspx">Binding DataSet at Runtime</a></p>
+			            <p class="productTitle"><a href="Miscellaneous/Databind/Databind2.aspx">Binding DataSet at Runtime</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                This Demo shows Data Binding Process at runtime without using Worksheets Designer, data stored in a database table is fetched to DataSet Object and linked to the GridWeb Control.
+				                This example shows Data Binding Process at runtime without using Worksheets Designer, data stored in a database table is fetched to DataSet Object and linked to the GridWeb Control.
 			                </p>
 			            </div>
                     </li>
                     <li class="genericList" title="Binding to a custom collection">
-			            <p class="productTitle"><a href="Miscellaneous/databind/databind3.aspx">Binding to a Custom Collection</a></p>
+			            <p class="productTitle"><a href="Miscellaneous/Databind/Databind3.aspx">Binding to a Custom Collection</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-			                	This Demo demonstrates Binding Expressions with a custom collection at runtime. 
+			                	This example demonstrates Binding Expressions with a custom collection at runtime. 
 			                </p>
 			            </div>
                     </li>
                     <li class="genericList" title="Hierarchical View" style="display:none;">
-			            <p class="productTitle"><a href="Miscellaneous/databind/expandchildview.aspx">Hierarchical View</a></p>
+			            <p class="productTitle"><a href="Miscellaneous/Databind/ExpandChildView.aspx">Hierarchical View</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                This demo shows how to create a Hierarchical View database application with the Aspose.Cells.GridWeb databinding features.
+				                This example shows how to create a Hierarchical View database application with the Aspose.Cells.GridWeb databinding features.
 			                </p>
 			            </div>
                     </li>
@@ -826,12 +808,12 @@
 			                </p>
 			            </div>
                     </li>
-                    <li class="genericList" title="AJAX Updating"  >
-			            <p class="productTitle"><a href="Miscellaneous/ajax/ajaxupdating.aspx">AJAX Updating</a></p>
+                    <li class="genericList" title="AJAX Updating" style="display:none">
+			            <p class="productTitle"><a href="Miscellaneous/Ajax/AjaxUpdating.aspx">AJAX Updating</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                This Demo introduces the AJAX capabilities of GridWeb Control.
+				                This example introduces the AJAX capabilities of GridWeb Control.
 			                </p>
 			            </div>
                     </li>
