@@ -22,6 +22,7 @@ using Aspose.Cells.Examples.CSharp.Articles.StylingAndDataFormatting;
 using Aspose.Cells.Examples.CSharp.Articles.PivotTablesAndPivotCharts;
 using Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine;
 using Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets;
+using Aspose.Cells.Examples.CSharp.Articles.ManagingRowsColumnsCells;
 using Aspose.Cells.Examples.CSharp.CellsHelperClass;
 using Aspose.Cells.Examples.CSharp.Charts;
 using Aspose.Cells.Examples.CSharp.Charts.InsertingControlsintoCharts;
@@ -144,7 +145,6 @@ namespace Aspose.Cells.Examples.CSharp
             //LoadWebImage.Run();
             //MergeUnmergeRangeOfCells.Run();
             //MoveRangeOfCells.Run();
-            //PopulateData.Run();
             //ReadingCSVMultipleEncodings.Run();
             //RemoveWhitespaceAroundData.Run();
             //RenderOnePdfPagePerExcelWorksheet.Run();
@@ -311,6 +311,17 @@ namespace Aspose.Cells.Examples.CSharp
             //VerifyPasswordUsedToProtectWorksheets.Run();
             //SearchDataUsingOriginalValues.Run();
             //DetectEmptyWorksheets.Run();
+
+            //// ManagingWorkbooksWorksheets
+            //// =====================================================
+            //PopulateDataEfficiently.Run();
+            //GetValidationAppliedOnCell.Run();
+            //AddingHTMLRichTextInCell.Run();
+            //AccessTableFromCellAndAddValue.Run();
+            //GetStringValue.Run();
+            //GetRowHeights.Run();
+            //CalculateWidthAndHeight.Run();
+            //HowAndWhereToUseEnumerators.Run();
 
             // =====================================================
             // =====================================================

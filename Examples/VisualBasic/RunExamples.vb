@@ -16,6 +16,7 @@ Imports Aspose.Cells.Examples.VisualBasic.Articles.RenderingAndPrinting
 Imports Aspose.Cells.Examples.VisualBasic.Articles.StylingAndDataFormatting
 Imports Aspose.Cells.Examples.VisualBasic.Articles.WorkingWithCalculationEngine
 Imports Aspose.Cells.Examples.VisualBasic.Articles.ManagingWorkbooksWorksheets
+Imports Aspose.Cells.Examples.VisualBasic.Articles.ManagingRowsColumnsCells
 Imports Aspose.Cells.Examples.VisualBasic.CellsHelperClass
 Imports Aspose.Cells.Examples.VisualBasic.Charts
 Imports Aspose.Cells.Examples.VisualBasic.Charts.InsertingControlsintoCharts
@@ -137,7 +138,6 @@ Friend Class RunExamples
         'LoadWebImage.Run()
         'MergeUnmergeRangeOfCells.Run()
         'MoveRangeOfCells.Run()
-        'PopulateData.Run()
         'ReadingCSVMultipleEncodings.Run()
         'RemoveWhitespaceAroundData.Run()
         'RenderOnePdfPagePerExcelWorksheet.Run()
@@ -304,6 +304,17 @@ Friend Class RunExamples
         'VerifyPasswordUsedToProtectWorksheets.Run()
         'SearchDataUsingOriginalValues.Run()
         'DetectEmptyWorksheets.Run()
+
+        '''' ManagingRowsColumnsCells
+        '''' =====================================================
+        'PopulateDataEfficiently.Run()
+        'GetValidationAppliedOnCell.Run()
+        'AddingHTMLRichTextInCell.Run()
+        'AccessTableFromCellAndAddValue.Run()
+        'GetStringValue.Run()
+        'GetRowHeights.Run()
+        'CalculateWidthAndHeight.Run()
+        'HowAndWhereToUseEnumerators.Run()
 
         '' =====================================================
         '' =====================================================

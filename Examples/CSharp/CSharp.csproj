@@ -153,6 +153,14 @@
     <Compile Include="Articles\LoadWebImage.cs" />
     <Compile Include="Articles\LoadWorkbookWithSpecificCultureInfoDateFormat.cs" />
     <Compile Include="Articles\LoadWorkbookWithSpecificCultureInfoNumberFormat.cs" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\AccessTableFromCellAndAddValue.cs" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\AddingHTMLRichTextInCell.cs" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\CalculateWidthAndHeight.cs" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\GetRowHeights.cs" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\GetStringValue.cs" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\GetValidationAppliedOnCell.cs" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\HowAndWhereToUseEnumerators.cs" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\PopulateDataEfficiently.cs" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\AssignAndValidateDigitalSignatures.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -189,7 +197,6 @@
     <Compile Include="Articles\PivotTablesAndPivotCharts\GetCellByDisplayName.cs" />
     <Compile Include="Articles\PivotTablesAndPivotCharts\RemovePivotTable.cs" />
     <Compile Include="Articles\PivotTablesAndPivotCharts\SpecifyAbsolutePositionOfPivotItem.cs" />
-    <Compile Include="Articles\PopulateData.cs" />
     <Compile Include="Articles\ReadingCellValuesInMultipleThreadsSimultaneously.cs" />
     <Compile Include="Articles\ReadingCSVMultipleEncodings.cs" />
     <Compile Include="Articles\RemoveUnusedStyles.cs" />

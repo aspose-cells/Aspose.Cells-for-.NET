@@ -171,6 +171,14 @@
     <Compile Include="Articles\LoadWorkbookWithPrinterSize.vb" />
     <Compile Include="Articles\LoadWorkbookWithSpecificCultureInfoDateFormat.vb" />
     <Compile Include="Articles\LoadWorkbookWithSpecificCultureInfoNumberFormat.vb" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\AccessTableFromCellAndAddValue.vb" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\AddingHTMLRichTextInCell.vb" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\CalculateWidthAndHeight.vb" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\GetRowHeights.vb" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\GetStringValue.vb" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\GetValidationAppliedOnCell.vb" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\HowAndWhereToUseEnumerators.vb" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\PopulateDataEfficiently.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\AssignAndValidateDigitalSignatures.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\CalculateScalingFactor.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\ChangeChartDataSource.vb" />
@@ -200,7 +208,6 @@
     <Compile Include="Articles\PivotTablesAndPivotCharts\RemovePivotTable.vb" />
     <Compile Include="Articles\PivotTablesAndPivotCharts\SettingPivotTableOption.vb" />
     <Compile Include="Articles\PivotTablesAndPivotCharts\SpecifyAbsolutePositionOfPivotItem.vb" />
-    <Compile Include="Articles\PopulateData.vb" />
     <Compile Include="Articles\ReadingCellValuesInMultipleThreadsSimultaneously.vb" />
     <Compile Include="Articles\ReadingCSVMultipleEncodings.vb" />
     <Compile Include="Articles\RemoveWhitespaceAroundData.vb" />

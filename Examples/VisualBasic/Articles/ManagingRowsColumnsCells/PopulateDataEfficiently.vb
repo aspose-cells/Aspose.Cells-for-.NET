@@ -1,23 +1,26 @@
-﻿Imports Microsoft.VisualBasic
-Imports System.IO
-
+﻿Imports System.IO
 Imports Aspose.Cells
 
-Namespace Articles
-    Public Class PopulateData
+Namespace Articles.ManagingRowsColumnsCells
+    Public Class PopulateDataEfficiently
         Public Shared Sub Run()
-            'ExStart:1
+            ' ExStart:PopulateDataFirstByRowThenColumns
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+
+            ' Create a workbook
             Dim workbook As New Workbook()
-            Dim cells As Global.Aspose.Cells.Cells = workbook.Worksheets(0).Cells
+
+            ' Populate Data into Cells
+            Dim cells As Cells = workbook.Worksheets(0).Cells
             cells("A1").PutValue("data1")
             cells("B1").PutValue("data2")
             cells("A2").PutValue("data3")
             cells("B2").PutValue("data4")
-            workbook.Save(dataDir & "output.xlsx")
-            'ExEnd:1
 
+            ' Save workbook
+            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            ' ExEnd:PopulateDataFirstByRowThenColumns
         End Sub
     End Class
 End Namespace
