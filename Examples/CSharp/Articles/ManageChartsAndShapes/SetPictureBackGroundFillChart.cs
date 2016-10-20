@@ -3,12 +3,13 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace Aspose.Cells.Examples.CSharp.Articles
+namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
 {
     public class SetPictureBackGroundFillChart
     {
         public static void Run()
         {
+            // ExStart:SetPictureBackGroundFillChart
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -56,7 +57,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Set some properties of chart plot area.
             // To set a picture as fill format and make the border invisible.
-            FileStream fs = File.OpenRead(dataDir+ "aspose-logo.jpg");
+            FileStream fs = File.OpenRead(dataDir+ "aspose.png");
             byte[] data = new byte[fs.Length];
             fs.Read(data, 0, data.Length);
             chart.PlotArea.Area.FillFormat.ImageData = data;
@@ -78,7 +79,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             legend.Position = Aspose.Cells.Charts.LegendPositionType.Top;
 
             // Save the excel file
-            workbook.Save(dataDir+ "column_chart.out.xls");
+            workbook.Save(dataDir + "column_chart_out_.xls");
+            // ExEnd:SetPictureBackGroundFillChart
         }
     }
 }

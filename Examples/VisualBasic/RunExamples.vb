@@ -16,6 +16,7 @@ Imports Aspose.Cells.Examples.VisualBasic.Articles.RenderingAndPrinting
 Imports Aspose.Cells.Examples.VisualBasic.Articles.StylingAndDataFormatting
 Imports Aspose.Cells.Examples.VisualBasic.Articles.WorkingWithCalculationEngine
 Imports Aspose.Cells.Examples.VisualBasic.Articles.ManagingWorkbooksWorksheets
+Imports Aspose.Cells.Examples.VisualBasic.Articles.ManageChartsAndShapes
 Imports Aspose.Cells.Examples.VisualBasic.Articles.ManagingRowsColumnsCells
 Imports Aspose.Cells.Examples.VisualBasic.CellsHelperClass
 Imports Aspose.Cells.Examples.VisualBasic.Charts
@@ -148,7 +149,6 @@ Friend Class RunExamples
         'SecurePDFDocuments.Run()
         'SetBackgroundPicture.Run()
         'SetExternalLinksInFormulas.Run()
-        'SetPictureBackGroundFillChart.Run()
         'SetPixelFormatRenderedImage.Run()
         'SettingFormulaCalculationModeWorkbook.Run()
         'SettingSharedFormula.Run()
@@ -315,6 +315,30 @@ Friend Class RunExamples
         'GetRowHeights.Run()
         'CalculateWidthAndHeight.Run()
         'HowAndWhereToUseEnumerators.Run()
+
+        '''' ManagingChartsAndShapes
+        '''' =====================================================
+        'RichTextCustomDataLabel.Run()
+        'CopyShapesBetweenWorksheets.Run()
+        'SetPictureBackGroundFillChart.Run()
+        'AddWordArtWatermarkToChart.Run()
+        'DisableTextWrappingForDataLabels.Run()
+        'AbsolutePositionOfShapeInsideWorksheet.Run()
+        'GetWorksheetOfTheChart.Run()
+        'AddCustomLabelsToDataPoints.Run()
+        'GetEquationTextOfChartTrendLine.Run()
+        'RefreshValueOfLinkedShapes.Run()
+        'ShowCellRangeAsDataLabels.Run()
+        'DetermineAxisInChart.Run()
+        'CreateSignatureLineInWorkbook.Run()
+        'CreateWaterfallChart.Run()
+        'LockingWordartWatermark.Run()
+        'CreatePieChartWithLeaderLines.Run()
+        'ChartSetupUsingSetChartDataRange.Run()
+        'ChangeShapesAdjustmentValues.Run()
+        'GenerateChartByProcessingSmartMarkers.Run()
+        'CreateDynamicCharts.Run()
+        'UsingDynamicFormula.Run()
 
         '' =====================================================
         '' =====================================================

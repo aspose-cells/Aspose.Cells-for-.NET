@@ -23,6 +23,7 @@ using Aspose.Cells.Examples.CSharp.Articles.PivotTablesAndPivotCharts;
 using Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine;
 using Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets;
 using Aspose.Cells.Examples.CSharp.Articles.ManagingRowsColumnsCells;
+using Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes;
 using Aspose.Cells.Examples.CSharp.CellsHelperClass;
 using Aspose.Cells.Examples.CSharp.Charts;
 using Aspose.Cells.Examples.CSharp.Charts.InsertingControlsintoCharts;
@@ -155,7 +156,6 @@ namespace Aspose.Cells.Examples.CSharp
             //SecurePDFDocuments.Run();
             //SetBackgroundPicture.Run();
             //SetExternalLinksInFormulas.Run();
-            //SetPictureBackGroundFillChart.Run();
             //SetPixelFormatRenderedImage.Run();
             //SettingFormulaCalculationModeWorkbook.Run();
             //SettingSharedFormula.Run();
@@ -312,7 +312,7 @@ namespace Aspose.Cells.Examples.CSharp
             //SearchDataUsingOriginalValues.Run();
             //DetectEmptyWorksheets.Run();
 
-            //// ManagingWorkbooksWorksheets
+            //// ManagingRowsColumnsCells
             //// =====================================================
             //PopulateDataEfficiently.Run();
             //GetValidationAppliedOnCell.Run();
@@ -322,6 +322,30 @@ namespace Aspose.Cells.Examples.CSharp
             //GetRowHeights.Run();
             //CalculateWidthAndHeight.Run();
             //HowAndWhereToUseEnumerators.Run();
+
+            //// ManageChartsAndShapes
+            //// =====================================================
+            //RichTextCustomDataLabel.Run();
+            //CopyShapesBetweenWorksheets.Run();
+            //SetPictureBackGroundFillChart.Run();
+            //AddWordArtWatermarkToChart.Run();
+            //DisableTextWrappingForDataLabels.Run();
+            //AbsolutePositionOfShapeInsideWorksheet.Run();
+            //GetWorksheetOfTheChart.Run();
+            //AddCustomLabelsToDataPoints.Run();
+            //GetEquationTextOfChartTrendLine.Run();
+            //RefreshValueOfLinkedShapes.Run();
+            //ShowCellRangeAsDataLabels.Run();
+            //DetermineAxisInChart.Run();
+            //CreateSignatureLineInWorkbook.Run();
+            //CreateWaterfallChart.Run();
+            //LockingWordartWatermark.Run();
+            //CreatePieChartWithLeaderLines.Run();
+            //ChartSetupUsingSetChartDataRange.Run();
+            //ChangeShapesAdjustmentValues.Run();
+            //GenerateChartByProcessingSmartMarkers.Run();
+            //CreateDynamicCharts.Run();
+            //UsingDynamicFormula.Run();
 
             // =====================================================
             // =====================================================
@@ -720,7 +744,7 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
 
             //AddCustomLabels.Run();
-            // CopyStyleWithSmartMarker.Run();
+            //CopyStyleWithSmartMarker.Run();
             //GroupingData.Run();
             //ImageMarkers.Run();
             //UsingCopyStyleAttribute.Run();

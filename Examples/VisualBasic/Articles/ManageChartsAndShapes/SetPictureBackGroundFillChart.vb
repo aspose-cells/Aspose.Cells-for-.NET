@@ -1,13 +1,11 @@
-Imports Microsoft.VisualBasic
-Imports System.IO
-
+﻿Imports System.IO
 Imports Aspose.Cells
 Imports System.Drawing
 
-Namespace Articles
+Namespace Articles.ManageChartsAndShapes
     Public Class SetPictureBackGroundFillChart
         Public Shared Sub Run()
-            ' ExStart:1
+            ' ExStart:SetPictureBackGroundFillChart
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -21,7 +19,7 @@ Namespace Articles
             sheet.Name = "Data"
 
             ' Get the cells collection in the sheet.
-            Dim cells As Global.Aspose.Cells.Cells = workbook.Worksheets(0).Cells
+            Dim cells As Cells = workbook.Worksheets(0).Cells
 
             ' Put some values into a cells of the Data sheet.
             cells("A1").PutValue("Region")
@@ -50,13 +48,13 @@ Namespace Articles
 
             ' Create chart
             Dim chartIndex As Integer = 0
-            chartIndex = sheet.Charts.Add(Global.Aspose.Cells.Charts.ChartType.Column, 1, 1, 25, 10)
-            Dim chart As Global.Aspose.Cells.Charts.Chart = sheet.Charts(chartIndex)
+            chartIndex = sheet.Charts.Add(Aspose.Cells.Charts.ChartType.Column, 1, 1, 25, 10)
+            Dim chart As Aspose.Cells.Charts.Chart = sheet.Charts(chartIndex)
 
             ' Set some properties of chart plot area.
             ' To set a picture as fill format and make the border invisible.
-            Dim fs As FileStream = File.OpenRead(dataDir & "aspose-logo.jpg")
-            Dim data(fs.Length - 1) As Byte
+            Dim fs As FileStream = File.OpenRead(dataDir & Convert.ToString("aspose.png"))
+            Dim data As Byte() = New Byte(fs.Length - 1) {}
             fs.Read(data, 0, data.Length)
             chart.PlotArea.Area.FillFormat.ImageData = data
             chart.PlotArea.Border.IsVisible = False
@@ -73,12 +71,12 @@ Namespace Articles
             chart.NSeries.IsColorVaried = True
 
             ' Set the Legend.
-            Dim legend As Global.Aspose.Cells.Charts.Legend = chart.Legend
-            legend.Position = Global.Aspose.Cells.Charts.LegendPositionType.Top
+            Dim legend As Aspose.Cells.Charts.Legend = chart.Legend
+            legend.Position = Aspose.Cells.Charts.LegendPositionType.Top
 
             ' Save the excel file
-            workbook.Save(dataDir & "output.xls")
-            ' ExEnd:1
+            workbook.Save(dataDir & Convert.ToString("column_chart_out_.xls"))
+            ' ExEnd:SetPictureBackGroundFillChart
         End Sub
     End Class
 End Namespace
