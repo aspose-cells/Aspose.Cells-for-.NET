@@ -65,7 +65,10 @@
     <Compile Include="Articles\AddConditionalIconsSet.cs" />
     <Compile Include="Articles\AddImageHyperlinks.cs" />
     <Compile Include="Articles\AddingAnonymousCustomObject.cs" />
-    <Compile Include="Articles\AddLibraryReferenceToVbaProject.cs" />
+    <Compile Include="Articles\ManageConditionalFormatting\AddColorScales.cs" />
+    <Compile Include="Articles\ManageConditionalFormatting\ApplyShadingToAlternateRowsColumns.cs" />
+    <Compile Include="Articles\ManageConditionalFormatting\GenerateDatabarImage.cs" />
+    <Compile Include="Articles\ManagingVBAModules\AddLibraryReferenceToVbaProject.cs" />
     <Compile Include="Articles\AddPDFBookmarks.cs" />
     <Compile Include="Articles\AddPictureToExcelComment.cs" />
     <Compile Include="Articles\AddWordArtWatermarkToWorksheet.cs" />
@@ -73,7 +76,7 @@
     <Compile Include="Articles\ApplyConditionalFormatting\ApplyConditionalFormattingFormula.cs" />
     <Compile Include="Articles\ApplySuperscriptAndSubscript\SettingSubscriptEffect.cs" />
     <Compile Include="Articles\ApplySuperscriptAndSubscript\SettingSuperscripteffect.cs" />
-    <Compile Include="Articles\AssignMacroToFormControl.cs" />
+    <Compile Include="Articles\ManagingVBAModules\AssignMacroToFormControl.cs" />
     <Compile Include="Articles\AssignValidateDigitalSignatures.cs" />
     <Compile Include="Articles\AutoFitRowsMergedCells.cs" />
     <Compile Include="Articles\AvoidExponentialNotationWhileImportingFromHtml.cs" />
@@ -81,7 +84,8 @@
     <Compile Include="Articles\ChangeHtmlLinkTarget.cs" />
     <Compile Include="Articles\ChangeTextBoxOrShareCharacterSpacing.cs" />
     <Compile Include="Articles\ChangeTextDirection.cs" />
-    <Compile Include="Articles\CheckVbaProjectSigned.cs">
+    <Compile Include="Articles\ManagingVBAModules\CheckVbaCodeIsSigned.cs" />
+    <Compile Include="Articles\ManagingVBAModules\CheckVbaProjectSigned.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Articles\CombineMultipleWorkbooksSingleWorkbook.cs" />
@@ -128,7 +132,7 @@
     <Compile Include="Articles\FormatPivotTableCells.cs" />
     <Compile Include="Articles\FormatWorksheetCells.cs" />
     <Compile Include="Articles\GenerateThumbnailOfWorksheet.cs" />
-    <Compile Include="Articles\GetDataConnection.cs" />
+    <Compile Include="Articles\ManageDatabaseConnection\GetDataConnection.cs" />
     <Compile Include="Articles\GetIconSetsDataBars.cs" />
     <Compile Include="Articles\GetSetClassIdentifierEmbedOleObject.cs" />
     <Compile Include="Articles\GetSmartMarkerNotifications.cs" />
@@ -173,6 +177,8 @@
     <Compile Include="Articles\ManageChartsAndShapes\RichTextCustomDataLabel.cs" />
     <Compile Include="Articles\ManageChartsAndShapes\ShowCellRangeAsDataLabels.cs" />
     <Compile Include="Articles\ManageChartsAndShapes\UsingDynamicFormula.cs" />
+    <Compile Include="Articles\ManageDatabaseConnection\ModifyingExistingDataConnection.cs" />
+    <Compile Include="Articles\ManageDatabaseConnection\ReadingAndWritingQueryTable.cs" />
     <Compile Include="Articles\ManagingRowsColumnsCells\AccessTableFromCellAndAddValue.cs" />
     <Compile Include="Articles\ManagingRowsColumnsCells\AddingHTMLRichTextInCell.cs" />
     <Compile Include="Articles\ManagingRowsColumnsCells\CalculateWidthAndHeight.cs" />
@@ -181,6 +187,11 @@
     <Compile Include="Articles\ManagingRowsColumnsCells\GetValidationAppliedOnCell.cs" />
     <Compile Include="Articles\ManagingRowsColumnsCells\HowAndWhereToUseEnumerators.cs" />
     <Compile Include="Articles\ManagingRowsColumnsCells\PopulateDataEfficiently.cs" />
+    <Compile Include="Articles\ManagingVBAModules\AddVBAModuleOrCode.cs" />
+    <Compile Include="Articles\ManagingVBAModules\CheckVbaSignatureIsValid.cs" />
+    <Compile Include="Articles\ManagingVBAModules\DigitallySignVbaProjectWithCertificate.cs" />
+    <Compile Include="Articles\ManagingVBAModules\ExportVBACertificateToFile.cs" />
+    <Compile Include="Articles\ManagingVBAModules\ModifyingVBAOrMacroCode.cs" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\AssignAndValidateDigitalSignatures.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -238,18 +249,20 @@
     <Compile Include="Articles\RenderUnicodeInOutput.cs" />
     <Compile Include="Articles\RenderOnePdfPagePerExcelWorksheet.cs" />
     <Compile Include="Articles\ResamplingAddedImages.cs" />
-    <Compile Include="Articles\RetrievingSQLConnectionData.cs" />
+    <Compile Include="Articles\ManageDatabaseConnection\RetrievingSQLConnectionData.cs" />
     <Compile Include="Articles\SaveEachWorksheetToDifferentPDF.cs" />
     <Compile Include="Articles\SearchReplaceDataInRange.cs" />
     <Compile Include="Articles\SecurePDFDocuments.cs" />
     <Compile Include="Articles\SetBackgroundPicture.cs" />
-    <Compile Include="Articles\SetExternalLinksInFormulas.cs" />
+    <Compile Include="Articles\WorkingWithCalculationEngine\CalculateIFNAFunction.cs" />
+    <Compile Include="Articles\WorkingWithCalculationEngine\CalculationOfArrayFormula.cs" />
+    <Compile Include="Articles\WorkingWithCalculationEngine\ReturnRangeOfValuesUsingICustomFunction.cs" />
+    <Compile Include="Articles\WorkingWithCalculationEngine\SetExternalLinksInFormulas.cs" />
     <Compile Include="Articles\ManageChartsAndShapes\SetPictureBackGroundFillChart.cs" />
     <Compile Include="Articles\SetPixelFormatRenderedImage.cs" />
-    <Compile Include="Articles\SettingFormulaCalculationModeWorkbook.cs" />
+    <Compile Include="Articles\WorkingWithCalculationEngine\SettingFormulaCalculationModeWorkbook.cs" />
     <Compile Include="Articles\PivotTablesAndPivotCharts\SettingPivotTableOption.cs" />
     <Compile Include="Articles\SettingTextEffectsShadowOfShapeOrTextbox.cs" />
-    <Compile Include="Articles\SettingSharedFormula.cs" />
     <Compile Include="Articles\SettingStrongEncryptionType.cs" />
     <Compile Include="Articles\SetTextboxOrShapeParagraphLineSpacing.cs" />
     <Compile Include="Articles\SetWorksheetTabColor.cs" />
@@ -265,7 +278,8 @@
     <Compile Include="Articles\UpdateRichTextCells.cs" />
     <Compile Include="Articles\UsePresentationPreferenceOption.cs" />
     <Compile Include="Articles\UsingCustomXmlParts.cs" />
-    <Compile Include="Articles\UsingICustomFunctionfeature.cs" />
+    <Compile Include="Articles\WorkingWithCalculationEngine\UsingFormulaTextFunction.cs" />
+    <Compile Include="Articles\WorkingWithCalculationEngine\UsingICustomFunctionfeature.cs" />
     <Compile Include="Articles\UsingImageMarkersWhileGroupingDataInSmartMarkers.cs" />
     <Compile Include="Articles\UsingLightCellsAPI.cs" />
     <Compile Include="Articles\UsingBuiltinStyles.cs" />
@@ -274,6 +288,7 @@
     <Compile Include="Articles\WorkbookScopedNamedRanges\WorksheetNamedRange.cs" />
     <Compile Include="Articles\RenderingAndPrinting\SetDefaultFontWhileRendering.cs" />
     <Compile Include="Articles\WorkingWithCalculationEngine\DecreaseCalculationTime.cs" />
+    <Compile Include="Articles\WorkingWithCalculationEngine\SettingSharedFormula.cs" />
     <Compile Include="Articles\WorkingWithHTMLFormat\ExportedWorkSheetViaIFilePathProvider.cs" />
     <Compile Include="Articles\WorkingWithHTMLFormat\ExpandTextFromRightToLeft.cs" />
     <Compile Include="CellsHelperClass\MergeFiles.cs" />

@@ -24,6 +24,9 @@ using Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine;
 using Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets;
 using Aspose.Cells.Examples.CSharp.Articles.ManagingRowsColumnsCells;
 using Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes;
+using Aspose.Cells.Examples.CSharp.Articles.ManageDatabaseConnection;
+using Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules;
+using Aspose.Cells.Examples.CSharp.Articles.ManageConditionalFormatting;
 using Aspose.Cells.Examples.CSharp.CellsHelperClass;
 using Aspose.Cells.Examples.CSharp.Charts;
 using Aspose.Cells.Examples.CSharp.Charts.InsertingControlsintoCharts;
@@ -94,16 +97,13 @@ namespace Aspose.Cells.Examples.CSharp
             //AddConditionalIconsSet.Run();
             //AddImageHyperlinks.Run();
             //AddingAnonymousCustomObject.Run();
-            //AddLibraryReferenceToVbaProject.Run();
             //AddPDFBookmarks.Run();
             //AddPictureToExcelComment.Run();
             //AddWordArtWatermarkToWorksheet.Run();
-            //AssignMacroToFormControl.Run();
             //AutoFitRowsMergedCells.Run();
             //AvoidExponentialNotationWhileImportingFromHtml.Run();
             //ChangeHtmlLinkTarget.Run();
             //ChangeTextDirection.Run();
-            //CheckVbaProjectSigned.Run();
             //CombineMultipleWorkbooksSingleWorkbook.Run();
             //CombineMultipleWorksheetsSingleWorksheet.Run();
             //ConvertXLSFileToPDF.Run();
@@ -129,7 +129,6 @@ namespace Aspose.Cells.Examples.CSharp
             //FormatPivotTableCells.Run();
             //FormatWorksheetCells.Run();
             //GenerateThumbnailOfWorksheet.Run();
-            //GetDataConnection.Run();
             //GetIconSetsDataBars.Run();
             //HidingDisplayOfZeroValues.Run();
             //HtmlExportFrameScripts.Run();
@@ -150,15 +149,11 @@ namespace Aspose.Cells.Examples.CSharp
             //RemoveWhitespaceAroundData.Run();
             //RenderOnePdfPagePerExcelWorksheet.Run();
             //ResamplingAddedImages.Run();
-            //RetrievingSQLConnectionData.Run();
             //SaveEachWorksheetToDifferentPDF.Run();
             //SearchReplaceDataInRange.Run();
             //SecurePDFDocuments.Run();
             //SetBackgroundPicture.Run();
-            //SetExternalLinksInFormulas.Run();
             //SetPixelFormatRenderedImage.Run();
-            //SettingFormulaCalculationModeWorkbook.Run();
-            //SettingSharedFormula.Run();
             //SettingStrongEncryptionType.Run();
             //SetWorksheetTabColor.Run();
             //ShowFormulasInsteadOfValues.Run();
@@ -290,6 +285,32 @@ namespace Aspose.Cells.Examples.CSharp
             //// WorkingWithCalculationEngine
             //// =====================================================
             //DecreaseCalculationTime.Run();
+            //SettingSharedFormula.Run();
+            //SetExternalLinksInFormulas.Run();
+            //UsingICustomFunctionfeature.Run();
+            //CalculateIFNAFunction.Run();
+            //ReturnRangeOfValuesUsingICustomFunction.Run();
+            //UsingFormulaTextFunction.Run();
+            //CalculationOfArrayFormula.Run();
+            //SettingFormulaCalculationModeWorkbook.Run();
+
+            //// ManagingVBAModules
+            //// =====================================================
+            //ModifyingVBAOrMacroCode.Run();
+            //AddVBAModuleOrCode.Run();
+            //AssignMacroToFormControl.Run();
+            //AddLibraryReferenceToVbaProject.Run();
+            //CheckVbaProjectSigned.Run();
+            //ExportVBACertificateToFile.Run();
+            //CheckVbaCodeIsSigned.Run();
+            //DigitallySignVbaProjectWithCertificate.Run();
+            //CheckVbaSignatureIsValid.Run();
+
+            //// ManageConditionalFormatting
+            //// =====================================================
+            //AddColorScales.Run();
+            //ApplyShadingToAlternateRowsColumns.Run();
+            //GenerateDatabarImage.Run();
 
             //// ManagingWorkbooksWorksheets
             //// =====================================================
@@ -346,6 +367,13 @@ namespace Aspose.Cells.Examples.CSharp
             //GenerateChartByProcessingSmartMarkers.Run();
             //CreateDynamicCharts.Run();
             //UsingDynamicFormula.Run();
+
+            //// ManageDatabaseConnection
+            //// =====================================================
+            //GetDataConnection.Run();
+            //RetrievingSQLConnectionData.Run();
+            //ModifyingExistingDataConnection.Run();
+            //ReadingAndWritingQueryTable.Run();
 
             // =====================================================
             // =====================================================

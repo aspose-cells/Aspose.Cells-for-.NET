@@ -18,6 +18,9 @@ Imports Aspose.Cells.Examples.VisualBasic.Articles.WorkingWithCalculationEngine
 Imports Aspose.Cells.Examples.VisualBasic.Articles.ManagingWorkbooksWorksheets
 Imports Aspose.Cells.Examples.VisualBasic.Articles.ManageChartsAndShapes
 Imports Aspose.Cells.Examples.VisualBasic.Articles.ManagingRowsColumnsCells
+Imports Aspose.Cells.Examples.VisualBasic.Articles.ManageDatabaseConnection
+Imports Aspose.Cells.Examples.VisualBasic.Articles.ManagingVBAModules
+Imports Aspose.Cells.Examples.VisualBasic.Articles.ManageConditionalFormatting
 Imports Aspose.Cells.Examples.VisualBasic.CellsHelperClass
 Imports Aspose.Cells.Examples.VisualBasic.Charts
 Imports Aspose.Cells.Examples.VisualBasic.Charts.InsertingControlsintoCharts
@@ -86,16 +89,13 @@ Friend Class RunExamples
         'AddConditionalIconsSet.Run()
         'AddImageHyperlinks.Run()
         'AddingAnonymousCustomObject.Run()
-        'AddLibraryReferenceToVbaProject.Run()
         'AddPDFBookmarks.Run()
         'AddPictureToExcelComment.Run()
         'AddWordArtWatermarkToWorksheet.Run()
-        'AssignMacroToFormControl.Run()
         'AutoFitRowsMergedCells.Run()
         'AvoidExponentialNotationWhileImportingFromHtml.Run()
         'ChangeHtmlLinkTarget.Run()
         'ChangeTextDirection.Run()
-        'CheckVbaProjectSigned.Run()
         'CombineMultipleWorkbooksSingleWorkbook.Run()
         'CombineMultipleWorksheetsSingleWorksheet.Run()
         'ConvertXLSFileToPDF.Run()
@@ -122,7 +122,6 @@ Friend Class RunExamples
         'FormatPivotTableCells.Run()
         'FormatWorksheetCells.Run()
         'GenerateThumbnailOfWorksheet.Run()
-        'GetDataConnection.Run()
         'GetIconSetsDataBars.Run()
         'HidingDisplayOfZeroValues.Run()
         'HtmlExportFrameScripts.Run()
@@ -143,15 +142,11 @@ Friend Class RunExamples
         'RemoveWhitespaceAroundData.Run()
         'RenderOnePdfPagePerExcelWorksheet.Run()
         'ResamplingAddedImages.Run()
-        'RetrievingSQLConnectionData.Run()
         'SaveEachWorksheetToDifferentPDF.Run()
         'SearchReplaceDataInRange.Run()
         'SecurePDFDocuments.Run()
         'SetBackgroundPicture.Run()
-        'SetExternalLinksInFormulas.Run()
         'SetPixelFormatRenderedImage.Run()
-        'SettingFormulaCalculationModeWorkbook.Run()
-        'SettingSharedFormula.Run()
         'SettingStrongEncryptionType.Run()
         'SetWorksheetTabColor.Run()
         'ShowFormulasInsteadOfValues.Run()
@@ -339,6 +334,43 @@ Friend Class RunExamples
         'GenerateChartByProcessingSmartMarkers.Run()
         'CreateDynamicCharts.Run()
         'UsingDynamicFormula.Run()
+
+        '''' WorkingWithCalculationEngine
+        '''' =====================================================
+        'DecreaseCalculationTime.Run()
+        'SettingSharedFormula.Run()
+        'SetExternalLinksInFormulas.Run()
+        'UsingICustomFunctionfeature.Run()
+        'CalculateIFNAFunction.Run()
+        'ReturnRangeOfValuesUsingICustomFunction.Run()
+        'UsingFormulaTextFunction.Run()
+        'CalculationOfArrayFormula.Run()
+        'SettingFormulaCalculationModeWorkbook.Run()
+
+        '''' ManagingVBAModules
+        '''' =====================================================
+        'ModifyingVBAOrMacroCode.Run()
+        'AddVBAModuleOrCode.Run()
+        'AssignMacroToFormControl.Run()
+        'AddLibraryReferenceToVbaProject.Run()
+        'CheckVbaProjectSigned.Run()
+        'ExportVBACertificateToFile.Run()
+        'CheckVbaCodeIsSigned.Run()
+        'DigitallySignVbaProjectWithCertificate.Run()
+        'CheckVbaSignatureIsValid.Run()
+
+        '''' ManageConditionalFormatting
+        '''' =====================================================
+        'AddColorScales.Run()
+        'ApplyShadingToAlternateRowsColumns.Run()
+        'GenerateDatabarImage.Run()
+
+        '''' ManageDatabaseConnection
+        '''' =====================================================
+        'GetDataConnection.Run()
+        'RetrievingSQLConnectionData.Run()
+        'ModifyingExistingDataConnection.Run()
+        'ReadingAndWritingQueryTable.Run()
 
         '' =====================================================
         '' =====================================================
