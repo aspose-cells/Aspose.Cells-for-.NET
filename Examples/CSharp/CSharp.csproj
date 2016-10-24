@@ -37,8 +37,8 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=9.0.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.9.0.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=16.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.16.10.0\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -65,6 +65,11 @@
     <Compile Include="Articles\AddConditionalIconsSet.cs" />
     <Compile Include="Articles\AddImageHyperlinks.cs" />
     <Compile Include="Articles\AddingAnonymousCustomObject.cs" />
+    <Compile Include="Articles\AddWordArtTextWithBuiltinStyle.cs" />
+    <Compile Include="Articles\AddXmlMapInsideWorkbook.cs" />
+    <Compile Include="Articles\CheckHiddenExternalLinks.cs" />
+    <Compile Include="Articles\GlowEffectOfShape.cs" />
+    <Compile Include="Articles\LinkCellsToXmlMapElements.cs" />
     <Compile Include="Articles\ManageConditionalFormatting\AddColorScales.cs" />
     <Compile Include="Articles\ManageConditionalFormatting\ApplyShadingToAlternateRowsColumns.cs" />
     <Compile Include="Articles\ManageConditionalFormatting\GenerateDatabarImage.cs" />
@@ -228,8 +233,10 @@
     <Compile Include="Articles\PivotTablesAndPivotCharts\GetCellByDisplayName.cs" />
     <Compile Include="Articles\PivotTablesAndPivotCharts\RemovePivotTable.cs" />
     <Compile Include="Articles\PivotTablesAndPivotCharts\SpecifyAbsolutePositionOfPivotItem.cs" />
+    <Compile Include="Articles\PropagateFormulaInTable.cs" />
     <Compile Include="Articles\ReadingCellValuesInMultipleThreadsSimultaneously.cs" />
     <Compile Include="Articles\ReadingCSVMultipleEncodings.cs" />
+    <Compile Include="Articles\ReflectionEffectOfShape.cs" />
     <Compile Include="Articles\RemoveUnusedStyles.cs" />
     <Compile Include="Articles\RemoveWhitespaceAroundData.cs" />
     <Compile Include="Articles\RenderingAndPrinting\ChangeFontUnicodeCharacterToPdf.cs" />
@@ -254,6 +261,9 @@
     <Compile Include="Articles\SearchReplaceDataInRange.cs" />
     <Compile Include="Articles\SecurePDFDocuments.cs" />
     <Compile Include="Articles\SetBackgroundPicture.cs" />
+    <Compile Include="Articles\SetPresetWordArtStyle.cs" />
+    <Compile Include="Articles\ShadowEffectOfShape.cs" />
+    <Compile Include="Articles\Shape3DEffect.cs" />
     <Compile Include="Articles\WorkingWithCalculationEngine\CalculateIFNAFunction.cs" />
     <Compile Include="Articles\WorkingWithCalculationEngine\CalculationOfArrayFormula.cs" />
     <Compile Include="Articles\WorkingWithCalculationEngine\ReturnRangeOfValuesUsingICustomFunction.cs" />
@@ -291,6 +301,7 @@
     <Compile Include="Articles\WorkingWithCalculationEngine\SettingSharedFormula.cs" />
     <Compile Include="Articles\WorkingWithHTMLFormat\ExportedWorkSheetViaIFilePathProvider.cs" />
     <Compile Include="Articles\WorkingWithHTMLFormat\ExpandTextFromRightToLeft.cs" />
+    <Compile Include="Articles\WorkingWithHTMLFormat\ImplementIStreamProvider.cs" />
     <Compile Include="CellsHelperClass\MergeFiles.cs" />
     <Compile Include="CellsHelperClass\NameToIndex.cs" />
     <Compile Include="CellsHelperClass\IndexToName.cs" />

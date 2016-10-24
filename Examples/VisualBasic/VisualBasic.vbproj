@@ -48,8 +48,8 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=9.0.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.9.0.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=16.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.16.10.0\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -86,6 +86,11 @@
     <Compile Include="Articles\AddImageHyperlinks.vb" />
     <Compile Include="Articles\AddingAnonymousCustomObject.vb" />
     <Compile Include="Articles\AddingCustomPropertiesVisible.vb" />
+    <Compile Include="Articles\AddWordArtTextWithBuiltinStyle.vb" />
+    <Compile Include="Articles\AddXmlMapInsideWorkbook.vb" />
+    <Compile Include="Articles\CheckHiddenExternalLinks.vb" />
+    <Compile Include="Articles\GlowEffectOfShape.vb" />
+    <Compile Include="Articles\LinkCellsToXmlMapElements.vb" />
     <Compile Include="Articles\ManagingVBAModules\AddLibraryReferenceToVbaProject.vb" />
     <Compile Include="Articles\AddPDFBookmarks.vb" />
     <Compile Include="Articles\AddPictureToExcelComment.vb" />
@@ -240,8 +245,10 @@
     <Compile Include="Articles\PivotTablesAndPivotCharts\RemovePivotTable.vb" />
     <Compile Include="Articles\PivotTablesAndPivotCharts\SettingPivotTableOption.vb" />
     <Compile Include="Articles\PivotTablesAndPivotCharts\SpecifyAbsolutePositionOfPivotItem.vb" />
+    <Compile Include="Articles\PropagateFormulaInTable.vb" />
     <Compile Include="Articles\ReadingCellValuesInMultipleThreadsSimultaneously.vb" />
     <Compile Include="Articles\ReadingCSVMultipleEncodings.vb" />
+    <Compile Include="Articles\ReflactionEffectOfShape.vb" />
     <Compile Include="Articles\RemoveWhitespaceAroundData.vb" />
     <Compile Include="Articles\RenderingAndPrinting\ChangeFontUnicodeCharacterToPdf.vb" />
     <Compile Include="Articles\RenderingAndPrinting\ExportChartToSvgWithViewBox.vb" />
@@ -266,6 +273,9 @@
     <Compile Include="Articles\SearchReplaceDataInRange.vb" />
     <Compile Include="Articles\SecurePDFDocuments.vb" />
     <Compile Include="Articles\SetBackgroundPicture.vb" />
+    <Compile Include="Articles\SetPresetWordArtStyle.vb" />
+    <Compile Include="Articles\ShadowEffectOfShape.vb" />
+    <Compile Include="Articles\Shape3DEffect.vb" />
     <Compile Include="Articles\WorkingWithCalculationEngine\SetExternalLinksInFormulas.vb" />
     <Compile Include="Articles\SetPixelFormatRenderedImage.vb" />
     <Compile Include="Articles\SetTextboxOrShapeParagraphLineSpacing.vb" />
@@ -286,6 +296,7 @@
     <Compile Include="Articles\WorkingWithCalculationEngine\UsingFormulaTextFunction.vb" />
     <Compile Include="Articles\WorkingWithHTMLFormat\ExpandTextFromRightToLeft.vb" />
     <Compile Include="Articles\WorkingWithHTMLFormat\ExportedWorkSheetViaIFilePathProvider.vb" />
+    <Compile Include="Articles\WorkingWithHTMLFormat\ImplementIStreamProvider.vb" />
     <Compile Include="CellsHelperClass\MergeFiles.vb" />
     <Compile Include="CellsHelperClass\NameToIndex.vb" />
     <Compile Include="CellsHelperClass\IndexToName.vb" />

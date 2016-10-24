@@ -176,6 +176,16 @@ Friend Class RunExamples
         'GetSetClassIdentifierEmbedOleObject.Run()
         'LoadWorkbookWithSpecificCultureInfoNumberFormat.Run()
         'LoadWorkbookWithSpecificCultureInfoDateFormat.Run()
+        'ReflactionEffectOfShape.Run()
+        'ShadowEffectOfShape.Run()
+        'CheckHiddenExternalLinks.Run()
+        'GlowEffectOfShape.Run()
+        'Shape3DEffect.Run()
+        'LinkCellsToXmlMapElements.Run()
+        'PropagateFormulaInTable.Run()
+        'AddWordArtTextWithBuiltinStyle.Run()
+        'SetPresetWordArtStyle.Run()
+        'AddXmlMapInsideWorkbook.Run()
 
         '''' Apply-Conditional-Formatting
         '''' =====================================================
@@ -240,6 +250,7 @@ Friend Class RunExamples
         '''' WorkingWithHTMLFormat
         '''' =====================================================
         'ExpandTextFromRightToLeft.Run()
+        'ImplementIStreamProvider.Run()
 
         '''' RenderingAndPrinting
         '''' =====================================================

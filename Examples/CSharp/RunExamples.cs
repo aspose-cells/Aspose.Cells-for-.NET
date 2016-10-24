@@ -183,6 +183,16 @@ namespace Aspose.Cells.Examples.CSharp
             //GetSetClassIdentifierEmbedOleObject.Run();
             //LoadWorkbookWithSpecificCultureInfoNumberFormat.Run();
             //LoadWorkbookWithSpecificCultureInfoDateFormat.Run();
+            //ReflactionEffectOfShape.Run();
+            //ShadowEffectOfShape.Run();
+            //CheckHiddenExternalLinks.Run();
+            //GlowEffectOfShape.Run();
+            //Shape3DEffect.Run();
+            //LinkCellsToXmlMapElements.Run();
+            //PropagateFormulaInTable.Run();
+            //AddWordArtTextWithBuiltinStyle.Run();
+            //SetPresetWordArtStyle.Run();
+            //AddXmlMapInsideWorkbook.Run();
 
             //// Apply-Conditional-Formatting
             //// =====================================================
@@ -247,6 +257,7 @@ namespace Aspose.Cells.Examples.CSharp
             //// WorkingWithHTMLFormat
             //// =====================================================
             //ExpandTextFromRightToLeft.Run();
+            //ImplementIStreamProvider.Run();
 
             //// RenderingAndPrinting
             //// =====================================================
