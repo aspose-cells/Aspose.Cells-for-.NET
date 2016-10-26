@@ -11,10 +11,10 @@ Namespace Cells
         Protected Sub btnAddDropDownListValidation_Click(sender As Object, e As EventArgs)
             ' ExStart:AddDropDownListValidation
             ' Accessing the cells collection of the worksheet that is currently active
-            Dim sheet As WebWorksheet = GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex)
+            Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
             ' Accessing "B1" cell
-            Dim cell As WebCell = sheet.Cells(0, 1)
+            Dim cell As GridCell = sheet.Cells(0, 1)
 
             ' Putting value to "B1" cell
             cell.PutValue("Select Degree:")
@@ -23,12 +23,14 @@ Namespace Cells
             cell = sheet.Cells(0, 2)
 
             ' Creating DropDownList validation for the "C1" cell
-            cell.CreateValidation(ValidationType.DropDownList, True)
+            Dim validation = cell.CreateValidation(GridValidationType.DropDownList, True)
 
             ' Adding values to DropDownList validation
-            cell.Validation.ValueList.Add("Bachelor")
-            cell.Validation.ValueList.Add("Master")
-            cell.Validation.ValueList.Add("Doctor")
+            Dim values = New System.Collections.Specialized.StringCollection()
+            values.Add("Bachelor")
+            values.Add("Master")
+            values.Add("Doctor")
+            validation.ValueList = values
             ' ExEnd:AddDropDownListValidation
         End Sub
     End Class

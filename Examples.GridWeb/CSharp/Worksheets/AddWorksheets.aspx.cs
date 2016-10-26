@@ -94,6 +94,8 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
             Label1.Text = sheet.Name + " worksheet is added at index " + sheetIndex + ". <br/>";
             // ExEnd:AddWorksheetWithoutName
 
+			sheet.Cells["A1"].PutValue("Worksheet with Default Name");
+			 
             // ExStart:AddWorksheetWithName
             //Adding a worksheet to GridWeb with a specified name
             if (GridWeb1.WorkSheets["Teachers"] == null)
@@ -102,6 +104,9 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
                 Label1.Text += sheet1.Name + " worksheet is added at index " + sheet1.Index + ". <br/>";
             }
             // ExEnd:AddWorksheetWithName
+			
+			sheet = GridWeb1.WorkSheets["Teachers"];
+            sheet.Cells["A1"].PutValue("Worksheet with Specified Name");
         }
     }
 }

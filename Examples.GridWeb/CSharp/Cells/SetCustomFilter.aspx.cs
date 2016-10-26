@@ -35,20 +35,12 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
         protected void btnApplyCustomFilter_Click(object sender, EventArgs e)
         {
             // ExStart:SetCustomFilter
-            // Set the starting column.
-            GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex].RowFilter.StartColumn = 0;
+            // Access active worksheet
+            var sheet = GridWeb1.WorkSheets[this.GridWeb1.ActiveSheetIndex];
 
-            // Set the ending column.
-            GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex].RowFilter.EndColumn = 9;
-
-            // Get the RowFilter object for the first worksheet.
-            Aspose.Cells.GridWeb.Data.RowFilterSettings rowFilter = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex].RowFilter;
-
-            // Set the criteria.
-            rowFilter.Criteria = "CELL1=\"Chai\"";
-
-            // Filter Rows.
-            rowFilter.FilterRows();
+            // Enable GridWeb's custom-filter.
+            sheet.AddCustomFilter(1, "CELL0=\"1\"");
+            sheet.RefreshFilter();           
             // ExEnd:SetCustomFilter
         }
     }

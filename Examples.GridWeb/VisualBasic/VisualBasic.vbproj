@@ -40,7 +40,7 @@
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells.GridWeb, Version=9.0.0.0, Culture=neutral, PublicKeyToken=699ccf88ff76f11a, processorArchitecture=MSIL">
+    <Reference Include="Aspose.Cells.GridWeb, Version=16.10.0.0, Culture=neutral, PublicKeyToken=699ccf88ff76f11a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files\Aspose\Aspose.Cells for .NET\Bin\net2.0\Aspose.Cells.GridWeb.dll</HintPath>
     </Reference>

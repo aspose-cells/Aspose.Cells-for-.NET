@@ -37,10 +37,10 @@ Namespace RowsAndColumns
                 Dim columnWidth As Integer = Convert.ToInt16(txtColumnWidth.Text.Trim())
 
                 ' Accessing the cells collection of the worksheet that is currently active
-                Dim cells As WebCells = GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex).Cells
+                Dim cells As GridCells = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex).Cells
 
                 ' Resize column at specified index to specified width
-                cells.SetColumnWidth(columnIndex, New Unit(columnWidth, UnitType.Point))
+                cells.SetColumnWidth(columnIndex, columnWidth)
                 ' ExEnd:SetColumnWidth
             End If
         End Sub
@@ -55,10 +55,10 @@ Namespace RowsAndColumns
                 Dim rowHeight As Integer = Convert.ToInt16(txtRowHeight.Text.Trim())
 
                 ' Accessing the cells collection of the worksheet that is currently active
-                Dim cells As WebCells = GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex).Cells
+                Dim cells As GridCells = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex).Cells
 
                 ' Resize row at specified index to specified height
-                cells.SetRowHeight(rowIndex, New Unit(rowHeight, UnitType.Point))
+                cells.SetRowHeight(rowIndex, rowHeight)
                 ' ExEnd:SetRowHeight
             End If
         End Sub

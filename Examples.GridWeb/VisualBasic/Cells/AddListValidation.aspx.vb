@@ -11,10 +11,10 @@ Namespace Cells
         Protected Sub btnAddListValidation_Click(sender As Object, e As EventArgs)
             ' ExStart:AddListValidation
             ' Accessing the cells collection of the worksheet that is currently active
-            Dim sheet As WebWorksheet = GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex)
+            Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
             ' Accessing "B1" cell
-            Dim cell As WebCell = sheet.Cells(0, 1)
+            Dim cell As GridCell = sheet.Cells(0, 1)
 
             ' Putting value to "B1" cell
             cell.PutValue("Select Course:")
@@ -23,15 +23,17 @@ Namespace Cells
             cell = sheet.Cells(0, 2)
 
             ' Creating List validation for the "C1" cell
-            cell.CreateValidation(ValidationType.List, True)
+            Dim validation = cell.CreateValidation(GridValidationType.List, True)
 
             ' Adding values to List validation
-            cell.Validation.ValueList.Add("Fortran")
-            cell.Validation.ValueList.Add("Pascal")
-            cell.Validation.ValueList.Add("C++")
-            cell.Validation.ValueList.Add("Visual Basic")
-            cell.Validation.ValueList.Add("Java")
-            cell.Validation.ValueList.Add("C#")
+            Dim values = New System.Collections.Specialized.StringCollection()
+            values.Add("Fortran")
+            values.Add("Pascal")
+            values.Add("C++")
+            values.Add("Visual Basic")
+            values.Add("Java")
+            values.Add("C#")
+            validation.ValueList = values
             ' ExEnd:AddListValidation 
         End Sub
     End Class

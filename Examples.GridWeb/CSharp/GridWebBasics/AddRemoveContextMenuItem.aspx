@@ -42,9 +42,11 @@
                 <tr>
                     <td>
                         <acw:GridWeb ID="GridWeb1" runat="server" XhtmlMode="True" EnableAJAX="true" OnCustomCommand="GridWeb1_CustomCommand" EnableClientColumnOperations="False" EnableClientFreeze="False" EnableClientMergeOperations="False" EnableClientRowOperations="False" EnableStyleDialogbox="False">
+						  <!-- ExStart:InitContextMenuItem -->
                              <CustomCommandButtons>
                                 <acw:CustomCommandButton Command="MyContextMenuItemCommand" Text="ContextMenuItemText" CommandType="ContextMenuItem"></acw:CustomCommandButton>
                              </CustomCommandButtons>
+						  <!-- ExEnd:InitContextMenuItem -->
                         </acw:GridWeb>
                     </td>
                 </tr>

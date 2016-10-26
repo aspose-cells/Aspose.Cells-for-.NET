@@ -89,7 +89,7 @@ Namespace Worksheets
             dataTable.Columns.Add("Class", System.Type.[GetType]("System.String"))
 
             ' Accessing the reference of the worksheet that is currently active
-            Dim sheet As WebWorksheet = GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex)
+            Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
             ' Getting the total number of rows and columns inside the worksheet
             Dim totalColumns As Integer = sheet.Cells.MaxColumn + 1
@@ -105,7 +105,7 @@ Namespace Worksheets
 
             ' ExStart:ExportNewDataTable
             ' Accessing the reference of the worksheet that is currently active
-            Dim sheet1 As WebWorksheet = GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex)
+            Dim sheet1 As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
             ' Getting the total number of rows and columns inside the worksheet
             Dim totalColumns1 As Integer = sheet.Cells.MaxColumn + 1

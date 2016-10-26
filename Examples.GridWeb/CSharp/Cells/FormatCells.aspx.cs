@@ -20,19 +20,18 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
         {         
             // ExStart:ApplyFontStyles
             // Accessing the reference of the worksheet that is currently active and resize first row and column
-            WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
-
+            GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
             sheet.Cells.Clear();
+            sheet.Cells.SetColumnWidth(0, 50);
+            sheet.Cells.SetRowHeight(0, 40);
 
-            sheet.Cells.SetColumnWidth(0, new Unit(200, UnitType.Point));
-            sheet.Cells.SetRowHeight(0, new Unit(50, UnitType.Point));
             // Accessing a specific cell of the worksheet
-            WebCell cell = sheet.Cells["A1"];
+            GridCell cell = sheet.Cells["A1"];
 
             // Inserting a value in cell A1
             cell.PutValue("Aspose.Cells.GridWeb");
            
-            Aspose.Cells.GridWeb.TableItemStyle style = cell.GetStyle();
+            var style = cell.Style;
 
             // Setting the font size to 12 points
             style.Font.Size = new FontUnit("12pt");
@@ -50,7 +49,8 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
             style.HorizontalAlign = HorizontalAlign.Center;                        
 
             // Set the cell style
-            cell.SetStyle(style);
+            cell.CopyStyle(style);
+            sheet.AutoFitColumn(0);
             // ExEnd:ApplyFontStyles           
         }             
 
@@ -58,17 +58,15 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
         {
             // ExStart:ApplyBorderStyles
             // Accessing the reference of the worksheet that is currently active and resize first row and column
-            WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
-
+            GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
             sheet.Cells.Clear();
-
-            sheet.Cells.SetColumnWidth(0, new Unit(200, UnitType.Point));
-            sheet.Cells.SetRowHeight(0, new Unit(50, UnitType.Point));
+            sheet.Cells.SetColumnWidth(0, 50);
+            sheet.Cells.SetRowHeight(0, 40);
 
             // Accessing a specific cell of the worksheet
-            WebCell cell = sheet.Cells["A1"];
+            GridCell cell = sheet.Cells["A1"];
 
-            Aspose.Cells.GridWeb.TableItemStyle style = cell.GetStyle();
+            var style = cell.Style;
 
             // Setting the border style to Solid
             style.BorderStyle = BorderStyle.Solid;
@@ -80,7 +78,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
             style.BorderColor = Color.Blue;
 
             // Set the cell style
-            cell.SetStyle(style);
+            cell.CopyStyle(style);
             // ExEnd:ApplyBorderStyles
         }
 
@@ -88,7 +86,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
         {
             // ExStart:ApplyRangeBorderStyles
             // Accessing the reference of the worksheet that is currently active
-            WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+            GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
             sheet.Cells.Clear();
 
@@ -113,12 +111,12 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
         {
             // ExStart:ApplyNumberFormats
             // Accessing the reference of the worksheet that is currently active
-            WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+            GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
             sheet.Cells.Clear();
             
-            sheet.Cells.SetColumnWidth(0, new Unit(200, UnitType.Point));
-            sheet.Cells.SetRowHeight(0, new Unit(50, UnitType.Point));
+            sheet.Cells.SetColumnWidth(0, 50);
+            sheet.Cells.SetRowHeight(0, 40);
 
             // Putting values to cells
             sheet.Cells["A1"].PutValue("Currency1 Number Format");
@@ -127,14 +125,10 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
             sheet.Cells["B2"].PutValue(2500);
 
             // Setting the number format of "B1" cell to Currency1
-            Aspose.Cells.GridWeb.TableItemStyle style = sheet.Cells["B1"].GetStyle();
-            style.NumberType = NumberType.Currency1;
-            sheet.Cells["B1"].SetStyle(style);
+            sheet.Cells["B1"].SetNumberType((int)NumberType.Currency1);
 
             // Setting the custom number format of "B2" cell
-            style = sheet.Cells["B2"].GetStyle();
-            style.Custom = "#,##0.0000";
-            sheet.Cells["B2"].SetStyle(style);
+            sheet.Cells["B2"].SetCustom("#,##0.0000");
             // ExEnd:ApplyNumberFormats
         }
     }

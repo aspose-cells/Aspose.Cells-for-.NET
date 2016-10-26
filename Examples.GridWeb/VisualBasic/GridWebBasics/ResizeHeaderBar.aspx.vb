@@ -31,7 +31,7 @@ Namespace GridWebBasics
 
             ' Setting the width of header bar
             GridWeb1.HeaderBarWidth = New Unit(50, UnitType.Point)
-            ' ExStart:ResizeHeaderBar
+            ' ExEnd:ResizeHeaderBar
         End Sub
 
         Protected Sub GridWeb1_SaveCommand(sender As Object, e As EventArgs)

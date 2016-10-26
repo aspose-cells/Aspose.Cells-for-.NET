@@ -44,7 +44,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
             // Accessing a worksheet using its name
             GridWorksheet sheet1 = GridWeb1.WorkSheets["Catalog"];
             Label1.Text += "Index of sheet  Catalog is : " + sheet1.Index + "<br/>";
-            // ExStart:AccessWorksheetUsingName
+            // ExEnd:AccessWorksheetUsingName
         }
     }
 }

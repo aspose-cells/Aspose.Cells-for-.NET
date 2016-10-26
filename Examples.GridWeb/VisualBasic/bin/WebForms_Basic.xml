@@ -6,103 +6,127 @@ Aspose.Cells.GridWeb.Examples.VisualBasic
 </name>
 </assembly>
 <members>
-<member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.SetCustomFilter.btnApplyCustomFilter">
+<member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.ValidationSummary1">
 	<summary>
-btnApplyCustomFilter control.
+ValidationSummary1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.SetCustomFilter.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.txtRow">
 	<summary>
-GridWeb1 control.
+txtRow control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.SetAutoFilter.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.RequiredFieldValidator1">
 	<summary>
-GridWeb1 control.
+RequiredFieldValidator1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.ProtectCells.Label1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.RegularExpressionValidator">
 	<summary>
-Label1 control.
+RegularExpressionValidator control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.ProtectCells.chkAllCells">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.txtColumn">
 	<summary>
-chkAllCells control.
+txtColumn control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.ProtectCells.chkSelectedCells">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.RequiredFieldValidator2">
 	<summary>
-chkSelectedCells control.
+RequiredFieldValidator2 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.ProtectCells.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.RegularExpressionValidator2">
 	<summary>
-GridWeb1 control.
+RegularExpressionValidator2 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.ModifyCells.Label1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.txtNoOfRows">
 	<summary>
-Label1 control.
+txtNoOfRows control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.ModifyCells.btnModifyCellValue">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.RequiredFieldValidator3">
 	<summary>
-btnModifyCellValue control.
+RequiredFieldValidator3 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.ModifyCells.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.RegularExpressionValidator3">
 	<summary>
-GridWeb1 control.
+RegularExpressionValidator3 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.MergeCells.Label1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.txtNoOfColumns">
 	<summary>
-Label1 control.
+txtNoOfColumns control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.MergeCells.chkMergeCells">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.RequiredFieldValidator4">
 	<summary>
-chkMergeCells control.
+RequiredFieldValidator4 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.MergeCells.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.RegularExpressionValidator4">
+	<summary>
+RegularExpressionValidator4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.btnFreeze">
+	<summary>
+btnFreeze control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.btnUnfreeze">
+	<summary>
+btnUnfreeze control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.GridWeb1">
 	<summary>
 GridWeb1 control.
 </summary>
@@ -158,7 +182,7 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddListValidation.Label1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.ProtectCells.Label1">
 	<summary>
 Label1 control.
 </summary>
@@ -166,47 +190,23 @@ Label1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddListValidation.btnAddListValidation">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.ProtectCells.chkAllCells">
 	<summary>
-btnAddListValidation control.
+chkAllCells control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddListValidation.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.ProtectCells.chkSelectedCells">
 	<summary>
-GridWeb1 control.
+chkSelectedCells control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddFormulas.Label1">
-	<summary>
-Label1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddFormulas.btnAddFormula">
-	<summary>
-btnAddFormula control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddFormulas.btnAddComplexFormula">
-	<summary>
-btnAddComplexFormula control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddFormulas.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.ProtectCells.GridWeb1">
 	<summary>
 GridWeb1 control.
 </summary>
@@ -214,23 +214,7 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddDropdownListValidation.Label1">
-	<summary>
-Label1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddDropdownListValidation.btnAddDropDownListValidation">
-	<summary>
-btnAddDropDownListValidation control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddDropdownListValidation.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.SetAutoFilter.GridWeb1">
 	<summary>
 GridWeb1 control.
 </summary>
@@ -238,23 +222,15 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddDataValidation.Label1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplyTabBarStyle.btnApplyTabBarStyle">
 	<summary>
-Label1 control.
+btnApplyTabBarStyle control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddDataValidation.btnAddDataValidation">
-	<summary>
-btnAddDataValidation control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddDataValidation.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplyTabBarStyle.GridWeb1">
 	<summary>
 GridWeb1 control.
 </summary>
@@ -262,63 +238,15 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddCustomValidation.Label1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplyPresetStyle.DropDownList1">
 	<summary>
-Label1 control.
+DropDownList1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddCustomValidation.btnAddCustomValidation">
-	<summary>
-btnAddCustomValidation control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddCustomValidation.GridWeb1">
-	<summary>
-GridWeb1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AccessCells.Label1">
-	<summary>
-Label1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AccessCells.btnAccessCellValue">
-	<summary>
-btnAccessCellValue control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AccessCells.GridWeb1">
-	<summary>
-GridWeb1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.RestrictContextMenu.btnRestrictContextMenu">
-	<summary>
-btnRestrictContextMenu control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.RestrictContextMenu.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplyPresetStyle.GridWeb1">
 	<summary>
 GridWeb1 control.
 </summary>
@@ -470,23 +398,55 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.MakeRowsColumnsReadOnly.btnMakeCellReadOnly">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Site.Head1">
 	<summary>
-btnMakeCellReadOnly control.
+Head1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.MakeRowsColumnsReadOnly.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Site.HeaderContent">
 	<summary>
-GridWeb1 control.
+HeaderContent control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.HandleColumnFilterEvents.Label1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Site.Form1">
+	<summary>
+Form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Site.lnkHome">
+	<summary>
+lnkHome control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Site.lnkExamples">
+	<summary>
+lnkExamples control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Site.MainContent">
+	<summary>
+MainContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.AddWorksheets.Label1">
 	<summary>
 Label1 control.
 </summary>
@@ -494,7 +454,71 @@ Label1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.HandleColumnFilterEvents.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.AddWorksheets.btnAddWorksheets">
+	<summary>
+btnAddWorksheets control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.AddWorksheets.GridWeb1">
+	<summary>
+GridWeb1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.AddRemoveContextMenuItem.btnAddContextMenuItem">
+	<summary>
+btnAddContextMenuItem control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.AddRemoveContextMenuItem.btnRemoveContextMenuItem">
+	<summary>
+btnRemoveContextMenuItem control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.AddRemoveContextMenuItem.GridWeb1">
+	<summary>
+GridWeb1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.CreateSubtotal.ddlSort">
+	<summary>
+ddlSort control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.CreateSubtotal.ddlFunction">
+	<summary>
+ddlFunction control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.CreateSubtotal.btnCreate">
+	<summary>
+btnCreate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.CreateSubtotal.GridWeb1">
 	<summary>
 GridWeb1 control.
 </summary>
@@ -518,127 +542,79 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.ValidationSummary1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.MakeRowsColumnsReadOnly.btnMakeCellReadOnly">
 	<summary>
-ValidationSummary1 control.
+btnMakeCellReadOnly control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.txtRow">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.MakeRowsColumnsReadOnly.GridWeb1">
 	<summary>
-txtRow control.
+GridWeb1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.RequiredFieldValidator1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AccessCells.Label1">
 	<summary>
-RequiredFieldValidator1 control.
+Label1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.RegularExpressionValidator">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AccessCells.btnAccessCellValue">
 	<summary>
-RegularExpressionValidator control.
+btnAccessCellValue control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.txtColumn">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AccessCells.GridWeb1">
 	<summary>
-txtColumn control.
+GridWeb1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.RequiredFieldValidator2">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ImportExportFileFromStream.btnLoadExcelFile">
 	<summary>
-RequiredFieldValidator2 control.
+btnLoadExcelFile control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.RegularExpressionValidator2">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ImportExportFileFromStream.btnSaveUsingStream">
 	<summary>
-RegularExpressionValidator2 control.
+btnSaveUsingStream control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.txtNoOfRows">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ImportExportFileFromStream.GridWeb1">
 	<summary>
-txtNoOfRows control.
+GridWeb1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.RequiredFieldValidator3">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.PrintGridWeb.btnPrint">
 	<summary>
-RequiredFieldValidator3 control.
+btnPrint control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.RegularExpressionValidator3">
-	<summary>
-RegularExpressionValidator3 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.txtNoOfColumns">
-	<summary>
-txtNoOfColumns control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.RequiredFieldValidator4">
-	<summary>
-RequiredFieldValidator4 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.RegularExpressionValidator4">
-	<summary>
-RegularExpressionValidator4 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.btnFreeze">
-	<summary>
-btnFreeze control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.btnUnfreeze">
-	<summary>
-btnUnfreeze control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.FreezePanes.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.PrintGridWeb.GridWeb1">
 	<summary>
 GridWeb1 control.
 </summary>
@@ -726,15 +702,23 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.CustomizeHeaders.btnCreateCaption">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddListValidation.Label1">
 	<summary>
-btnCreateCaption control.
+Label1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.CustomizeHeaders.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddListValidation.btnAddListValidation">
+	<summary>
+btnAddListValidation control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddListValidation.GridWeb1">
 	<summary>
 GridWeb1 control.
 </summary>
@@ -742,31 +726,31 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.CreateSubtotal.ddlSort">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.GetGridWebVersion.Label1">
 	<summary>
-ddlSort control.
+Label1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.CreateSubtotal.ddlFunction">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.GetGridWebVersion.btnGetGridWebVersion">
 	<summary>
-ddlFunction control.
+btnGetGridWebVersion control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.CreateSubtotal.btnCreate">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.GetGridWebVersion.btnGetClientSideVersion">
 	<summary>
-btnCreate control.
+btnGetClientSideVersion control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.CreateSubtotal.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.GetGridWebVersion.GridWeb1">
 	<summary>
 GridWeb1 control.
 </summary>
@@ -822,6 +806,179 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.AddHyperlinks.Button1">
+	<summary>
+Button1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.AddHyperlinks.GridWeb1">
+	<summary>
+GridWeb1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ResizeGridWeb.lblMessage">
+	<summary>
+lblMessage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ResizeGridWeb.btnResizeGridWeb">
+	<summary>
+btnResizeGridWeb control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ResizeGridWeb.GridWeb1">
+	<summary>
+GridWeb1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.CustomizeHeaders.btnCreateCaption">
+	<summary>
+btnCreateCaption control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.CustomizeHeaders.GridWeb1">
+	<summary>
+GridWeb1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.RestrictContextMenu.btnRestrictContextMenu">
+	<summary>
+btnRestrictContextMenu control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.RestrictContextMenu.GridWeb1">
+	<summary>
+GridWeb1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.ImportDataView.Button1">
+	<summary>
+Button1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.ImportDataView.GridWeb1">
+	<summary>
+GridWeb1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ImportExportFile.btnLoadExcelFile">
+	<summary>
+btnLoadExcelFile control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ImportExportFile.GridWeb1">
+	<summary>
+GridWeb1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.ExportDataTable.btnExportDataTable">
+	<summary>
+btnExportDataTable control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.ExportDataTable.trResult">
+	<summary>
+trResult control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.ExportDataTable.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.ExportDataTable.GridView2">
+	<summary>
+GridView2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.ExportDataTable.GridWeb1">
+	<summary>
+GridWeb1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.RenameWorksheets.btnRenameWorksheet">
+	<summary>
+btnRenameWorksheet control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.RenameWorksheets.GridWeb1">
+	<summary>
+GridWeb1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:Aspose.Cells.GridWeb.Examples.VisualBasic.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Aspose.Cells.GridWeb.Examples.VisualBasic.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Aspose.Cells.GridWeb.Examples.VisualBasic.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
 </member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.AddRowsColumns.btnReload">
 	<summary>
 btnReload control.
@@ -918,15 +1075,15 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.SortData.Button1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.AccessNamedRanges.btnAddNamedRange">
 	<summary>
-Button1 control.
+btnAddNamedRange control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.SortData.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.AccessNamedRanges.GridWeb1">
 	<summary>
 GridWeb1 control.
 </summary>
@@ -934,15 +1091,103 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.RenameWorksheets.btnRenameWorksheet">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.ManageHyperlinks.btnUpdateHyperlinks">
 	<summary>
-btnRenameWorksheet control.
+btnUpdateHyperlinks control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.RenameWorksheets.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.ManageHyperlinks.btnRemoveHyperlinks">
+	<summary>
+btnRemoveHyperlinks control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.ManageHyperlinks.GridWeb1">
+	<summary>
+GridWeb1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddDataValidation.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddDataValidation.btnAddDataValidation">
+	<summary>
+btnAddDataValidation control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddDataValidation.GridWeb1">
+	<summary>
+GridWeb1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.MergeCells.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.MergeCells.chkMergeCells">
+	<summary>
+chkMergeCells control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.MergeCells.GridWeb1">
+	<summary>
+GridWeb1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.SetCustomFilter.btnApplyCustomFilter">
+	<summary>
+btnApplyCustomFilter control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.SetCustomFilter.GridWeb1">
+	<summary>
+GridWeb1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplySessionModes.CheckBox1">
+	<summary>
+CheckBox1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplySessionModes.GridWeb1">
 	<summary>
 GridWeb1 control.
 </summary>
@@ -974,23 +1219,87 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.ManageHyperlinks.btnUpdateHyperlinks">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.ModifyCells.Label1">
 	<summary>
-btnUpdateHyperlinks control.
+Label1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.ManageHyperlinks.btnRemoveHyperlinks">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.ModifyCells.btnModifyCellValue">
 	<summary>
-btnRemoveHyperlinks control.
+btnModifyCellValue control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.ManageHyperlinks.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.ModifyCells.GridWeb1">
+	<summary>
+GridWeb1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.SortData.Button1">
+	<summary>
+Button1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.SortData.GridWeb1">
+	<summary>
+GridWeb1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplyHeaderBarStyle.btnApplyHeaderStyle">
+	<summary>
+btnApplyHeaderStyle control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplyHeaderBarStyle.GridWeb1">
+	<summary>
+GridWeb1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.DisplayCellEditBox.CheckBox1">
+	<summary>
+CheckBox1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.DisplayCellEditBox.GridWeb1">
+	<summary>
+GridWeb1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.HandleCustomCommandEvent.GridWeb1">
+	<summary>
+GridWeb1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.WriteClientSideScript.GridWeb1">
 	<summary>
 GridWeb1 control.
 </summary>
@@ -1030,79 +1339,7 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.ImportDataView.Button1">
-	<summary>
-Button1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.ImportDataView.GridWeb1">
-	<summary>
-GridWeb1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.ExportDataTable.btnExportDataTable">
-	<summary>
-btnExportDataTable control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.ExportDataTable.trResult">
-	<summary>
-trResult control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.ExportDataTable.GridView1">
-	<summary>
-GridView1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.ExportDataTable.GridView2">
-	<summary>
-GridView2 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.ExportDataTable.GridWeb1">
-	<summary>
-GridWeb1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.CopyWorksheets.btnCopyWorksheet">
-	<summary>
-btnCopyWorksheet control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.CopyWorksheets.GridWeb1">
-	<summary>
-GridWeb1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.AddWorksheets.Label1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddCustomValidation.Label1">
 	<summary>
 Label1 control.
 </summary>
@@ -1110,15 +1347,15 @@ Label1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.AddWorksheets.btnAddWorksheets">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddCustomValidation.btnAddCustomValidation">
 	<summary>
-btnAddWorksheets control.
+btnAddCustomValidation control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.AddWorksheets.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddCustomValidation.GridWeb1">
 	<summary>
 GridWeb1 control.
 </summary>
@@ -1126,15 +1363,15 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.AddHyperlinks.Button1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ResizeHeaderBar.btnResizeHeaderBar">
 	<summary>
-Button1 control.
+btnResizeHeaderBar control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.AddHyperlinks.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ResizeHeaderBar.GridWeb1">
 	<summary>
 GridWeb1 control.
 </summary>
@@ -1166,79 +1403,15 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.AccessNamedRanges.btnAddNamedRange">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.HandleDoubleClickEvents.CheckBox1">
 	<summary>
-btnAddNamedRange control.
+CheckBox1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.AccessNamedRanges.GridWeb1">
-	<summary>
-GridWeb1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.WriteClientSideScript.GridWeb1">
-	<summary>
-GridWeb1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ResizeHeaderBar.btnResizeHeaderBar">
-	<summary>
-btnResizeHeaderBar control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ResizeHeaderBar.GridWeb1">
-	<summary>
-GridWeb1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ResizeGridWeb.lblMessage">
-	<summary>
-lblMessage control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ResizeGridWeb.btnResizeGridWeb">
-	<summary>
-btnResizeGridWeb control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ResizeGridWeb.GridWeb1">
-	<summary>
-GridWeb1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.PrintGridWeb.btnPrint">
-	<summary>
-btnPrint control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.PrintGridWeb.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.HandleDoubleClickEvents.GridWeb1">
 	<summary>
 GridWeb1 control.
 </summary>
@@ -1262,79 +1435,32 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.InitContextMenuItem.GridWeb1">
+</member><member name="P:Aspose.Cells.GridWeb.Examples.VisualBasic.My.MyWebExtension.Computer">
 	<summary>
-GridWeb1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ImportExportFileFromStream.btnLoadExcelFile">
+ Returns information about the host computer.
+ </summary>
+</member><member name="P:Aspose.Cells.GridWeb.Examples.VisualBasic.My.MyWebExtension.User">
 	<summary>
-btnLoadExcelFile control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ImportExportFileFromStream.btnSaveUsingStream">
+ Returns information for the current Web user.
+ </summary>
+</member><member name="P:Aspose.Cells.GridWeb.Examples.VisualBasic.My.MyWebExtension.Request">
 	<summary>
-btnSaveUsingStream control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ImportExportFileFromStream.GridWeb1">
+ Returns Request object.
+ </summary>
+</member><member name="P:Aspose.Cells.GridWeb.Examples.VisualBasic.My.MyWebExtension.Response">
 	<summary>
-GridWeb1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ImportExportFile.btnLoadExcelFile">
+ Returns Response object.
+ </summary>
+</member><member name="P:Aspose.Cells.GridWeb.Examples.VisualBasic.My.MyWebExtension.Log">
 	<summary>
-btnLoadExcelFile control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ImportExportFile.GridWeb1">
+ Returns the Asp log object.
+ </summary>
+</member><member name="T:Aspose.Cells.GridWeb.Examples.VisualBasic.My.MyWebExtension">
 	<summary>
-GridWeb1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.HandleDoubleClickEvents.CheckBox1">
-	<summary>
-CheckBox1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.HandleDoubleClickEvents.GridWeb1">
-	<summary>
-GridWeb1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.HandleCustomCommandEvent.GridWeb1">
-	<summary>
-GridWeb1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.GetGridWebVersion.Label1">
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.HandleColumnFilterEvents.Label1">
 	<summary>
 Label1 control.
 </summary>
@@ -1342,23 +1468,7 @@ Label1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.GetGridWebVersion.btnGetGridWebVersion">
-	<summary>
-btnGetGridWebVersion control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.GetGridWebVersion.btnGetClientSideVersion">
-	<summary>
-btnGetClientSideVersion control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.GetGridWebVersion.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.RowsAndColumns.HandleColumnFilterEvents.GridWeb1">
 	<summary>
 GridWeb1 control.
 </summary>
@@ -1366,31 +1476,15 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.DisplayCellEditBox.CheckBox1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.CopyWorksheets.btnCopyWorksheet">
 	<summary>
-CheckBox1 control.
+btnCopyWorksheet control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.DisplayCellEditBox.GridWeb1">
-	<summary>
-GridWeb1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplyTabBarStyle.btnApplyTabBarStyle">
-	<summary>
-btnApplyTabBarStyle control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplyTabBarStyle.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Worksheets.CopyWorksheets.GridWeb1">
 	<summary>
 GridWeb1 control.
 </summary>
@@ -1398,15 +1492,31 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplySessionModes.CheckBox1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplyCustomPresetStyle.lblMessage">
 	<summary>
-CheckBox1 control.
+lblMessage control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplySessionModes.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplyCustomPresetStyle.btnApplyCustomStyle">
+	<summary>
+btnApplyCustomStyle control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplyCustomPresetStyle.btnSaveCustomStyle">
+	<summary>
+btnSaveCustomStyle control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplyCustomPresetStyle.GridWeb1">
 	<summary>
 GridWeb1 control.
 </summary>
@@ -1414,15 +1524,23 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplyPresetStyle.DropDownList1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddDropdownListValidation.Label1">
 	<summary>
-DropDownList1 control.
+Label1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplyPresetStyle.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddDropdownListValidation.btnAddDropDownListValidation">
+	<summary>
+btnAddDropDownListValidation control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddDropdownListValidation.GridWeb1">
 	<summary>
 GridWeb1 control.
 </summary>
@@ -1430,15 +1548,31 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplyHeaderBarStyle.btnApplyHeaderStyle">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddFormulas.Label1">
 	<summary>
-btnApplyHeaderStyle control.
+Label1 control.
 </summary>
 	<remarks>
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplyHeaderBarStyle.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddFormulas.btnAddFormula">
+	<summary>
+btnAddFormula control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddFormulas.btnAddComplexFormula">
+	<summary>
+btnAddComplexFormula control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Cells.AddFormulas.GridWeb1">
 	<summary>
 GridWeb1 control.
 </summary>
@@ -1526,23 +1660,7 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.AddRemoveContextMenuItem.btnAddContextMenuItem">
-	<summary>
-btnAddContextMenuItem control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.AddRemoveContextMenuItem.btnRemoveContextMenuItem">
-	<summary>
-btnRemoveContextMenuItem control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.AddRemoveContextMenuItem.GridWeb1">
+</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.InitContextMenuItem.GridWeb1">
 	<summary>
 GridWeb1 control.
 </summary>
@@ -1550,124 +1668,6 @@ GridWeb1 control.
 Auto-generated field.
 To modify move field declaration from designer file to code-behind file.
 </remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplyCustomPresetStyle.lblMessage">
-	<summary>
-lblMessage control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplyCustomPresetStyle.btnApplyCustomStyle">
-	<summary>
-btnApplyCustomStyle control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplyCustomPresetStyle.btnSaveCustomStyle">
-	<summary>
-btnSaveCustomStyle control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.GridWebBasics.ApplyCustomPresetStyle.GridWeb1">
-	<summary>
-GridWeb1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Site.Head1">
-	<summary>
-Head1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Site.HeaderContent">
-	<summary>
-HeaderContent control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Site.Form1">
-	<summary>
-Form1 control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Site.lnkHome">
-	<summary>
-lnkHome control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Site.lnkExamples">
-	<summary>
-lnkExamples control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="F:Aspose.Cells.GridWeb.Examples.VisualBasic.Site.MainContent">
-	<summary>
-MainContent control.
-</summary>
-	<remarks>
-Auto-generated field.
-To modify move field declaration from designer file to code-behind file.
-</remarks>
-</member><member name="P:Aspose.Cells.GridWeb.Examples.VisualBasic.My.MyWebExtension.Computer">
-	<summary>
- Returns information about the host computer.
- </summary>
-</member><member name="P:Aspose.Cells.GridWeb.Examples.VisualBasic.My.MyWebExtension.User">
-	<summary>
- Returns information for the current Web user.
- </summary>
-</member><member name="P:Aspose.Cells.GridWeb.Examples.VisualBasic.My.MyWebExtension.Request">
-	<summary>
- Returns Request object.
- </summary>
-</member><member name="P:Aspose.Cells.GridWeb.Examples.VisualBasic.My.MyWebExtension.Response">
-	<summary>
- Returns Response object.
- </summary>
-</member><member name="P:Aspose.Cells.GridWeb.Examples.VisualBasic.My.MyWebExtension.Log">
-	<summary>
- Returns the Asp log object.
- </summary>
-</member><member name="T:Aspose.Cells.GridWeb.Examples.VisualBasic.My.MyWebExtension">
-	<summary>
- Module used to define the properties that are available in the My Namespace for Web projects.
- </summary>
-	<remarks></remarks>
-</member><member name="P:Aspose.Cells.GridWeb.Examples.VisualBasic.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:Aspose.Cells.GridWeb.Examples.VisualBasic.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="T:Aspose.Cells.GridWeb.Examples.VisualBasic.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
 </member>
 </members>
 </doc>

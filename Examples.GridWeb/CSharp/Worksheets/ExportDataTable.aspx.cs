@@ -100,7 +100,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
             dataTable.Columns.Add("Class", System.Type.GetType("System.String"));
 
             // Accessing the reference of the worksheet that is currently active
-            WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+            GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
             // Getting the total number of rows and columns inside the worksheet
             int totalColumns = sheet.Cells.MaxColumn + 1;
@@ -116,7 +116,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
 
             // ExStart:ExportNewDataTable
             // Accessing the reference of the worksheet that is currently active
-            WebWorksheet sheet1 = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+            GridWorksheet sheet1 = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
             // Getting the total number of rows and columns inside the worksheet
             int totalColumns1 = sheet.Cells.MaxColumn + 1;

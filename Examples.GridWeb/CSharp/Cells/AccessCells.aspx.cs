@@ -45,10 +45,10 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
         {
             // ExStart:AccessCellByName
             // Accessing the worksheet of the Grid that is currently active
-            WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+            GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
             // Accessing "B1" cell of the worksheet
-            WebCell cell = sheet.Cells["A1"];
+            GridCell cell = sheet.Cells["A1"];
 
             // Display cell name and value
             Label1.Text += "Cell Value of " + cell.Name +" is " + cell.StringValue + "<br/>";
@@ -59,10 +59,10 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
         {
             // ExStart:AccessCellByRowColumnIndex
             // Accessing the worksheet of the Grid that is currently active
-            WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+            GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
             // Accessing "B1" cell of the worksheet using its row and column indices
-            WebCell cell = sheet.Cells[0, 1];
+            GridCell cell = sheet.Cells[0, 1];
 
             // Display cell name and value
             Label1.Text += "Cell Value of " + cell.Name +" is " + cell.StringValue + "<br/>";

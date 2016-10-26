@@ -46,34 +46,32 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
         private void AddTextHyperlinks()
         {
             // ExStart:AddTextHyperlinks
-            //Accessing the reference of the worksheet that is currently active
-            WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+            // Accessing the reference of the worksheet that is currently active
+            GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
             // Adds a text hyperlink that gos to Aspose site and opens in new window
-            Hyperlink link1 = sheet.Hyperlinks.AddHyperlink("B1");
+            int linkIndex = sheet.Hyperlinks.Add("B1", "http://www.aspose.com");
+            GridHyperlink link1 = sheet.Hyperlinks[linkIndex];
+
             link1.Target = "_blank";
 
             // Setting text of the hyperlink
-            link1.Text = "Aspose";
-
-            // Setting URL of the hyperlink
-            link1.Url = "http://www.aspose.com";
+            link1.TextToDisplay = "Aspose";
 
             // Setting tool tip of the hyperlink
-            link1.ToolTip = "Open Aspose Web Site in new window";
+            link1.ScreenTip = "Open Aspose Web Site in new window";
              
             // Adding hyperlink to the worksheet to open in parent window
-            Hyperlink link2 = sheet.Hyperlinks.AddHyperlink("B2");
+            linkIndex = sheet.Hyperlinks.Add("B2", "http://www.aspose.com/docs/display/cellsnet/Aspose.Cells.GridWeb");
+            GridHyperlink link2 = sheet.Hyperlinks[linkIndex];
+
             link2.Target = "_parent";
 
             // Setting text of the hyperlink
-            link2.Text = "Aspose.Grid Docs";
-
-            // Setting URL of the hyperlink
-            link2.Url = "http://www.aspose.com/docs/display/cellsnet/Aspose.Cells.GridWeb";
+            link2.TextToDisplay = "Aspose.Grid Docs";
 
             // Setting tool tip of the hyperlink
-            link2.ToolTip = "Open Aspose.Grid Docs in parent window";
+            link2.ScreenTip = "Open Aspose.Grid Docs in parent window";
             // ExEnd:AddTextHyperlinks
         }
 
@@ -81,39 +79,35 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
         {
             // ExStart:AddImageHyperlinks
             // Accessing the reference of the worksheet that is currently active
-            WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+            GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
             // Adding hyperlink to the worksheet
-            Hyperlink link1 = sheet.Hyperlinks.AddHyperlink("B5");
+            int linkIndex = sheet.Hyperlinks.Add("B5", "http://www.aspose.com");
+            GridHyperlink link1 = sheet.Hyperlinks[linkIndex];
             link1.Target = "_blank";
 
             // Setting URL of the image that will be displayed as hyperlink
-            link1.ImageUrl = "../Images/Aspose.Banner.gif";
-
-            // Setting URL of the hyperlink
-            link1.Url = "http://www.aspose.com";
-
+            link1.ImageURL = "../Images/Aspose.Banner.gif";
+            
             // Setting tool tip of the hyperlink
-            link1.ToolTip = "Open Aspose Web Site in new window";
+            link1.ScreenTip = "Open Aspose Web Site in new window";
 
             // Resize the row to display image nicely
             sheet.Cells.SetRowHeight(4, 40);
 
             // Adding hyperlink to the worksheet
-            Hyperlink link2 = sheet.Hyperlinks.AddHyperlink("B6");
+            linkIndex = sheet.Hyperlinks.Add("B6", "http://www.aspose.com/docs/display/cellsnet/Aspose.Cells.GridWeb");
+            GridHyperlink link2 = sheet.Hyperlinks[linkIndex];
             link2.Target = "_blank";
 
             // Setting URL of the image that will be displayed as hyperlink
-            link2.ImageUrl = "../Images/Aspose.Grid.gif";
-
-            // Setting URL of the hyperlink
-            link2.Url = "http://www.aspose.com/docs/display/cellsnet/Aspose.Cells.GridWeb";
+            link2.ImageURL = "../Images/Aspose.Grid.gif";
 
             // Setting tool tip of the hyperlink
-            link2.ToolTip = "Open Aspose.Grid Docs in new window";
+            link2.ScreenTip = "Open Aspose.Grid Docs in new window";
 
             // Setting text of the hyperlink. It will be displayed if image is not displayed due to some reason
-            link2.Text = "Open Aspose.Grid Docs Page in new window";
+//            link2.TextToDisplay = "Open Aspose.Grid Docs Page in new window";
             // ExEnd:AddImageHyperlinks
         }
 
@@ -121,22 +115,20 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
         {
             // ExStart:AddCellCommandHyperlinks
             // Accessing the reference of the worksheet that is currently active
-            WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+            GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
             // Adding hyperlink to the worksheet
-            Hyperlink link1 = sheet.Hyperlinks.AddHyperlink("B8");
-
-            // Setting the action type of the link to CellCommand
-            link1.ActionType = HyperlinkActionType.CellCommand;
+            int linkIndex = sheet.Hyperlinks.Add("B8", "");
+            GridHyperlink link1 = sheet.Hyperlinks[linkIndex];
 
             // Setting the cell command for the link
-            link1.CellCommand = "Click";
+            link1.Command = "Click";
 
             // Setting tool tip of the hyperlink
-            link1.ToolTip = "Click Here";
+            link1.ScreenTip = "Click Here";
 
             // Setting URL of the button image that will be displayed as hyperlink
-            link1.ImageUrl = "../Images/button.jpg";
+            link1.ImageURL = "../Images/button.jpg";
 
             // Resize the row to display image nicely
             sheet.Cells.SetRowHeight(7, 30);
@@ -173,7 +165,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
             if (e.Argument.Equals("Click"))
             {
                 // Accessing the reference of the worksheet that is currently active
-                WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+                GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
                 // Adding value to "C8" cell
                 sheet.Cells["C8"].PutValue("Cell Command Hyperlink Clicked");

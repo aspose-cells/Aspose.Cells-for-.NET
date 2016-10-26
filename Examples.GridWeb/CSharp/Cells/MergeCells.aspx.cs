@@ -21,7 +21,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
             {
                 // ExStart:MergeCells
                 // Accessing the reference of the worksheet that is currently active
-                WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+                GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
                 // Merging cells starting from the cell with 3rd row and 3rd column. 
                 // 2 rows and 2 columns will be merged from the starting cell
@@ -34,7 +34,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
             {
                 // ExStart:UnmergeCells
                 // Accessing the reference of the worksheet that is currently active
-                WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+                GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
                 // Unmerging cells starting from the cell with 3rd row and 3rd column. 
                 // 2 rows and 2 columns will be unmerged from the starting cell

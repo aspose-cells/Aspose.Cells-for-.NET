@@ -85,7 +85,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
             WebWorksheet sheet = GridWeb1.WebWorksheets[0];
 
             // Removes the created subtotal first.
-            sheet.RemoveSubtotal();
+            //sheet.RemoveSubtotal();
 
             // Creates the subtotal.
             int groupByIndex;

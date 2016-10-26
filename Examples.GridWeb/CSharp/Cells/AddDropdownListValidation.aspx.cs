@@ -19,10 +19,10 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
         {
             // ExStart:AddDropDownListValidation
             // Accessing the cells collection of the worksheet that is currently active
-            WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+            GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
             // Accessing "B1" cell
-            WebCell cell = sheet.Cells[0, 1];
+            GridCell cell = sheet.Cells[0, 1];
 
             // Putting value to "B1" cell
             cell.PutValue("Select Degree:");
@@ -31,12 +31,14 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
             cell = sheet.Cells[0, 2];
 
             // Creating DropDownList validation for the "C1" cell
-            cell.CreateValidation(ValidationType.DropDownList, true);
+            var validation = cell.CreateValidation(GridValidationType.DropDownList, true);
                         
             // Adding values to DropDownList validation
-            cell.Validation.ValueList.Add("Bachelor");
-            cell.Validation.ValueList.Add("Master");
-            cell.Validation.ValueList.Add("Doctor");
+            var values = new System.Collections.Specialized.StringCollection();
+            values.Add("Bachelor");
+            values.Add("Master");
+            values.Add("Doctor");
+            validation.ValueList = values;
             // ExEnd:AddDropDownListValidation
         }
     }

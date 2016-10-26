@@ -44,13 +44,13 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
             if (command.Equals("MyButton"))
             {
                 // Accessing the cells collection of the worksheet that is currently active
-                WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+                GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
                 // Putting value to "A1" cell
                 sheet.Cells["A1"].PutValue("My Custom Command Button is Clicked.");
 
                 // Set first column width to make the text visible
-                sheet.Cells.SetColumnWidth(0, new Unit(200, UnitType.Point));
+                sheet.Cells.SetColumnWidth(0, 30);
             }
         }
         // ExEnd:HandleCustomCommandEvent

@@ -31,95 +31,87 @@ Namespace Worksheets
 
         Private Sub AddTextHyperlinks()
             ' ExStart:AddTextHyperlinks
-            'Accessing the reference of the worksheet that is currently active
-            Dim sheet As WebWorksheet = GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex)
+            ' Accessing the reference of the worksheet that is currently active
+            Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
             ' Adds a text hyperlink that gos to Aspose site and opens in new window
-            Dim link1 As Hyperlink = sheet.Hyperlinks.AddHyperlink("B1")
+            Dim linkIndex As Integer = sheet.Hyperlinks.Add("B1", "http://www.aspose.com")
+            Dim link1 As GridHyperlink = sheet.Hyperlinks(linkIndex)
+
             link1.Target = "_blank"
 
             ' Setting text of the hyperlink
-            link1.Text = "Aspose"
-
-            ' Setting URL of the hyperlink
-            link1.Url = "http://www.aspose.com"
+            link1.TextToDisplay = "Aspose"
 
             ' Setting tool tip of the hyperlink
-            link1.ToolTip = "Open Aspose Web Site in new window"
+            link1.ScreenTip = "Open Aspose Web Site in new window"
 
             ' Adding hyperlink to the worksheet to open in parent window
-            Dim link2 As Hyperlink = sheet.Hyperlinks.AddHyperlink("B2")
+            linkIndex = sheet.Hyperlinks.Add("B2", "http://www.aspose.com/docs/display/cellsnet/Aspose.Cells.GridWeb")
+            Dim link2 As GridHyperlink = sheet.Hyperlinks(linkIndex)
+
             link2.Target = "_parent"
 
             ' Setting text of the hyperlink
-            link2.Text = "Aspose.Grid Docs"
-
-            ' Setting URL of the hyperlink
-            link2.Url = "http://www.aspose.com/docs/display/cellsnet/Aspose.Cells.GridWeb"
+            link2.TextToDisplay = "Aspose.Grid Docs"
 
             ' Setting tool tip of the hyperlink
-            link2.ToolTip = "Open Aspose.Grid Docs in parent window"
+            link2.ScreenTip = "Open Aspose.Grid Docs in parent window"
             ' ExEnd:AddTextHyperlinks
         End Sub
 
         Private Sub AddImageHyPerlinks()
             ' ExStart:AddImageHyperlinks
             ' Accessing the reference of the worksheet that is currently active
-            Dim sheet As WebWorksheet = GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex)
+            Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
             ' Adding hyperlink to the worksheet
-            Dim link1 As Hyperlink = sheet.Hyperlinks.AddHyperlink("B5")
+            Dim linkIndex As Integer = sheet.Hyperlinks.Add("B5", "http://www.aspose.com")
+            Dim link1 As GridHyperlink = sheet.Hyperlinks(linkIndex)
             link1.Target = "_blank"
 
             ' Setting URL of the image that will be displayed as hyperlink
-            link1.ImageUrl = "../Images/Aspose.Banner.gif"
-
-            ' Setting URL of the hyperlink
-            link1.Url = "http://www.aspose.com"
+            link1.ImageURL = "../Images/Aspose.Banner.gif"
 
             ' Setting tool tip of the hyperlink
-            link1.ToolTip = "Open Aspose Web Site in new window"
+            link1.ScreenTip = "Open Aspose Web Site in new window"
 
             ' Resize the row to display image nicely
             sheet.Cells.SetRowHeight(4, 40)
 
             ' Adding hyperlink to the worksheet
-            Dim link2 As Hyperlink = sheet.Hyperlinks.AddHyperlink("B6")
+            linkIndex = sheet.Hyperlinks.Add("B6", "http://www.aspose.com/docs/display/cellsnet/Aspose.Cells.GridWeb")
+            Dim link2 As GridHyperlink = sheet.Hyperlinks(linkIndex)
             link2.Target = "_blank"
 
             ' Setting URL of the image that will be displayed as hyperlink
-            link2.ImageUrl = "../Images/Aspose.Grid.gif"
-
-            ' Setting URL of the hyperlink
-            link2.Url = "http://www.aspose.com/docs/display/cellsnet/Aspose.Cells.GridWeb"
+            link2.ImageURL = "../Images/Aspose.Grid.gif"
 
             ' Setting tool tip of the hyperlink
-            link2.ToolTip = "Open Aspose.Grid Docs in new window"
+            link2.ScreenTip = "Open Aspose.Grid Docs in new window"
 
             ' Setting text of the hyperlink. It will be displayed if image is not displayed due to some reason
-            link2.Text = "Open Aspose.Grid Docs Page in new window"
+            '            link2.TextToDisplay = "Open Aspose.Grid Docs Page in new window";
             ' ExEnd:AddImageHyperlinks
         End Sub
 
         Private Sub AddCellCommandHyperlinks()
             ' ExStart:AddCellCommandHyperlinks
             ' Accessing the reference of the worksheet that is currently active
-            Dim sheet As WebWorksheet = GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex)
+            Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
             ' Adding hyperlink to the worksheet
-            Dim link1 As Hyperlink = sheet.Hyperlinks.AddHyperlink("B8")
-
-            ' Setting the action type of the link to CellCommand
-            link1.ActionType = HyperlinkActionType.CellCommand
+            Dim linkIndex As Integer = sheet.Hyperlinks.Add("B8", "")
+            Dim link1 As GridHyperlink = sheet.Hyperlinks(linkIndex)
 
             ' Setting the cell command for the link
-            link1.CellCommand = "Click"
+            link1.Command = "Click"
 
             ' Setting tool tip of the hyperlink
-            link1.ToolTip = "Click Here"
+            link1.ScreenTip = "Click Here"
 
             ' Setting URL of the button image that will be displayed as hyperlink
-            link1.ImageUrl = "../Images/button.jpg"
+            link1.ImageURL = "../Images/button.jpg"
 
             ' Resize the row to display image nicely
             sheet.Cells.SetRowHeight(7, 30)
@@ -152,7 +144,7 @@ Namespace Worksheets
             ' Checking the CellCommand of the hyperlink
             If e.Argument.Equals("Click") Then
                 ' Accessing the reference of the worksheet that is currently active
-                Dim sheet As WebWorksheet = GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex)
+                Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
                 ' Adding value to "C8" cell
                 sheet.Cells("C8").PutValue("Cell Command Hyperlink Clicked")
@@ -161,5 +153,6 @@ Namespace Worksheets
                 sheet.Cells.SetColumnWidth(2, 250)
             End If
         End Sub
+		' ExEnd:HandleCellCommandHyperlinkEvent
     End Class
 End Namespace

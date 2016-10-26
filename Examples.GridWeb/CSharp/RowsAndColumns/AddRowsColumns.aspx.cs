@@ -49,7 +49,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
             {
                 // ExStart:AddColumn
                 // Accessing the reference of the worksheet that is currently active
-                WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+                GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
                 // Get column index entered by user
                 int columnIndex = Convert.ToInt16(txtColumnIndex.Text.Trim());
@@ -66,7 +66,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
             {
                 // ExStart:AddRow
                 // Accessing the reference of the worksheet that is currently active
-                WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+                GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
                 // Get row index entered by user
                 int rowIndex = Convert.ToInt16(txtRowIndex.Text.Trim());

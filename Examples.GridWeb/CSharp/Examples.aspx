@@ -468,7 +468,7 @@
                            </p>
 			           </div>
                    </li>
-                   <li class="genericList" title="Add List Validation" style="display:none">
+                   <li class="genericList" title="Add List Validation">
                       <p class="productTitle"><a href="Cells/AddListValidation.aspx">Add List Validation</a></p>
 			          <p class="componentDescriptionCaption">Description</p>
 			          <div class="componentDescriptionTxt">
@@ -477,7 +477,7 @@
                            </p>
 			           </div>
                    </li>
-                   <li class="genericList" title="Add Dropdown List Validation" style="display:none">
+                   <li class="genericList" title="Add Dropdown List Validation">
                       <p class="productTitle"><a href="Cells/AddDropdownListValidation.aspx">Add Dropdown List Validation</a></p>
 			          <p class="componentDescriptionCaption">Description</p>
 			          <div class="componentDescriptionTxt">
@@ -486,7 +486,7 @@
                            </p>
 			           </div>
                    </li>
-                   <li class="genericList" title="Add Custom Validation" style="display:none">
+                   <li class="genericList" title="Add Custom Validation">
                       <p class="productTitle"><a href="Cells/AddCustomValidation.aspx">Add Custom Validation</a></p>
 			          <p class="componentDescriptionCaption">Description</p>
 			          <div class="componentDescriptionTxt">
@@ -495,7 +495,7 @@
                            </p>
 			           </div>
                    </li>
-                   <li class="genericList" title="Auto-Filter" style="display:none">
+                   <li class="genericList" title="Auto-Filter">
                       <p class="productTitle"><a href="Cells/SetAutoFilter.aspx">Auto-Filter</a></p>
 			          <p class="componentDescriptionCaption">Description</p>
 			          <div class="componentDescriptionTxt">
@@ -504,7 +504,7 @@
                            </p>
 			           </div>
                    </li>
-                   <li class="genericList" title="Custom Filter" style="display:none">
+                   <li class="genericList" title="Custom Filter">
                       <p class="productTitle"><a href="Cells/SetCustomFilter.aspx">Custom Filter</a></p>
 			          <p class="componentDescriptionCaption">Description</p>
 			          <div class="componentDescriptionTxt">

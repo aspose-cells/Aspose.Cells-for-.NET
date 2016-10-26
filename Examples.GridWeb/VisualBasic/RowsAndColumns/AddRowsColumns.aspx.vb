@@ -31,7 +31,7 @@ Namespace RowsAndColumns
             If Page.IsValid Then
                 ' ExStart:AddColumn
                 ' Accessing the reference of the worksheet that is currently active
-                Dim sheet As WebWorksheet = GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex)
+                Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
                 ' Get column index entered by user
                 Dim columnIndex As Integer = Convert.ToInt16(txtColumnIndex.Text.Trim())
@@ -46,7 +46,7 @@ Namespace RowsAndColumns
             If Page.IsValid Then
                 ' ExStart:AddRow
                 'Accessing the reference of the worksheet that is currently active
-                Dim sheet As WebWorksheet = GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex)
+                Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
                 ' Get row index entered by user
                 Dim rowIndex As Integer = Convert.ToInt16(txtRowIndex.Text.Trim())

@@ -23,17 +23,12 @@ Namespace Cells
             GridWeb1.ActiveCell = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex).Cells("A1")
 
             ' ExStart:SetAutoFilter
+            ' Access active worksheet
+            Dim sheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
+
             ' Enable GridWeb's auto-filter.
-            GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex).RowFilter.EnableAutoFilter = True
-
-            ' Set the header row.
-            GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex).RowFilter.HeaderRow = 0
-
-            ' Set the starting column.
-            GridWeb1.WebWorksheets(0).RowFilter.StartColumn = 0
-
-            ' Set the ending column.
-            GridWeb1.WebWorksheets(0).RowFilter.EndColumn = 9
+            sheet.AddAutoFilter(0, 0, sheet.Cells.MaxDataColumn)
+            sheet.RefreshFilter()
             ' ExEnd:SetAutoFilter
         End Sub
 

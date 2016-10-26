@@ -31,7 +31,7 @@
     <OldToolsVersion>4.0</OldToolsVersion>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetFrameworkProfile />
-    <UseIISExpress>false</UseIISExpress>
+    <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -102,8 +102,9 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells.GridWeb">
-      <HintPath>F:\Shak-Data-RW\Aspose\Libs\Cells\misc\Aspose.Cells_8.4.1.msi_extracted\SourceDir\Aspose\Aspose.Cells for .NET\Bin\net2.0\Aspose.Cells.GridWeb.dll</HintPath>
+    <Reference Include="Aspose.Cells.GridWeb, Version=16.10.0.0, Culture=neutral, PublicKeyToken=699ccf88ff76f11a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Aspose\Aspose.Cells for .NET\Bin\net2.0\Aspose.Cells.GridWeb.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
@@ -1039,7 +1040,6 @@
   <ItemGroup>
     <Folder Include="Miscellaneous\GridWebForm\" />
     <Folder Include="Properties\" />
-    <Folder Include="tpl\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

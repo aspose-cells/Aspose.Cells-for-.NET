@@ -37,23 +37,23 @@ Namespace Cells
         Private Sub AddStringValue()
             ' ExStart:AddCellStringValue
             ' Accessing the worksheet of the Grid that is currently active
-            Dim sheet As WebWorksheet = GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex)
+            Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
             ' Accessing "B1" cell of the worksheet
-            Dim cell As WebCell = sheet.Cells("B1")
+            Dim cell As GridCell = sheet.Cells("B1")
 
             ' Accessing & modifying the string value of "B1" cell
-            cell.StringValue = "Hello Aspose.Grid"
+            cell.PutValue("Hello Aspose.Grid")
             ' ExEnd:AddCellStringValue
         End Sub
 
         Private Sub AddIntValue()
             ' ExStart:AddCellIntValue
             ' Accessing the worksheet of the Grid that is currently active
-            Dim sheet As WebWorksheet = GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex)
+            Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
             ' Accessing "B3" cell of the worksheet
-            Dim cell As WebCell = sheet.Cells("B3")
+            Dim cell As GridCell = sheet.Cells("B3")
 
             ' Putting a value in "B3" cell
             cell.PutValue(30)
@@ -63,10 +63,10 @@ Namespace Cells
         Private Sub AddDoubleValue()
             ' ExStart:AddCellDoubleValue
             ' Accessing the worksheet of the Grid that is currently active
-            Dim sheet As WebWorksheet = GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex)
+            Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
             ' Accessing "B5" cell of the worksheet
-            Dim cell As WebCell = sheet.Cells("B5")
+            Dim cell As GridCell = sheet.Cells("B5")
 
             ' Putting a numeric value as string in "B5" cell that will be converted to a suitable data type automatically
             cell.PutValue("19.4", True)

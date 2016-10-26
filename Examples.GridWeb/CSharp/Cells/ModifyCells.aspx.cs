@@ -50,13 +50,14 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
         {
             // ExStart:AddCellStringValue
             // Accessing the worksheet of the Grid that is currently active
-            WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+            GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
             // Accessing "B1" cell of the worksheet
-            WebCell cell = sheet.Cells["B1"];
+            GridCell cell = sheet.Cells["B1"];
 
             // Accessing & modifying the string value of "B1" cell
-            cell.StringValue = "Hello Aspose.Grid";
+            //cell.StringValue = "Hello Aspose.Grid";
+            cell.PutValue("Hello Aspose.Grid");
             // ExEnd:AddCellStringValue
         }
 
@@ -64,10 +65,10 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
         {
             // ExStart:AddCellIntValue
             // Accessing the worksheet of the Grid that is currently active
-            WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+            GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
             // Accessing "B3" cell of the worksheet
-            WebCell cell = sheet.Cells["B3"];
+            GridCell cell = sheet.Cells["B3"];
 
             // Putting a value in "B3" cell
             cell.PutValue(30);
@@ -78,10 +79,10 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
         {
             // ExStart:AddCellDoubleValue
             // Accessing the worksheet of the Grid that is currently active
-            WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+            GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
             // Accessing "B5" cell of the worksheet
-            WebCell cell = sheet.Cells["B5"];
+            GridCell cell = sheet.Cells["B5"];
 
             // Putting a numeric value as string in "B5" cell that will be converted to a suitable data type automatically
             cell.PutValue("19.4", true);

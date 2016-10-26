@@ -4,7 +4,7 @@
 <%@ Register Assembly="Aspose.Cells.GridWeb" Namespace="Aspose.Cells.GridWeb" TagPrefix="acw" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeaderContent" runat="server">
-    <!-- ExStart:PrintGridWeb -->
+    <!-- ExStart:PrintGridWebJS -->
     <script>
         function Print(grid) {
             //Get Id of GridWeb
@@ -13,7 +13,7 @@
             grid.print();
         }
     </script>
-    <!-- ExEnd:PrintGridWeb -->
+    <!-- ExEnd:PrintGridWebJS -->
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
 

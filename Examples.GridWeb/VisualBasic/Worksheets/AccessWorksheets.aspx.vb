@@ -34,7 +34,7 @@ Namespace Worksheets
             ' Accessing a worksheet using its name
             Dim sheet1 As GridWorksheet = GridWeb1.WorkSheets("Catalog")
             Label1.Text += "Index of sheet  Catalog is : " & sheet1.Index & "<br/>"
-            ' ExStart:AccessWorksheetUsingName
+            ' ExEnd:AccessWorksheetUsingName
         End Sub
     End Class
 End Namespace

@@ -41,7 +41,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
 
             // Setting the width of header bar
             GridWeb1.HeaderBarWidth = new Unit(50, UnitType.Point);
-            // ExStart:ResizeHeaderBar
+            // ExEnd:ResizeHeaderBar
         }
 
         protected void GridWeb1_SaveCommand(object sender, EventArgs e)

@@ -33,13 +33,13 @@ Namespace GridWebBasics
             ' Identifying a specific button by checking its command
             If command.Equals("MyButton") Then
                 ' Accessing the cells collection of the worksheet that is currently active
-                Dim sheet As WebWorksheet = GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex)
+                Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
                 ' Putting value to "A1" cell
                 sheet.Cells("A1").PutValue("My Custom Command Button is Clicked.")
 
                 ' Set first column width to make the text visible
-                sheet.Cells.SetColumnWidth(0, New Unit(200, UnitType.Point))
+                sheet.Cells.SetColumnWidth(0, 30)
             End If
         End Sub
         ' ExEnd:HandleCustomCommandEvent

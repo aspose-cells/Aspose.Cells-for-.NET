@@ -19,10 +19,10 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
         {
             // ExStart:AddCustomValidation
             // Accessing the cells collection of the worksheet that is currently active
-            WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+            GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
             // Accessing "B1" cell
-            WebCell cell = sheet.Cells[0, 1];
+            GridCell cell = sheet.Cells[0, 1];
 
             // Putting value to "B1" cell
             cell.PutValue("Date (yyyy-mm-dd):");
@@ -31,13 +31,13 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
             cell = sheet.Cells[0, 2];
 
             // Creating a custom expression validation for the "C1" cell
-            cell.CreateValidation(ValidationType.CustomExpression, true);
+            var validation = cell.CreateValidation(GridValidationType.CustomExpression, true);
 
             // Setting regular expression for the validation to accept dates in yyyy-mm-dd format
-            cell.Validation.RegEx = @"\d{4}-\d{2}-\d{2}";
+            validation.RegEx = @"\d{4}-\d{2}-\d{2}";
             // ExEnd:AddCustomValidation
 
-            sheet.Cells.SetColumnWidth(1, new Unit(100, UnitType.Point));
+            sheet.Cells.SetColumnWidth(1, 30);
 
             // Assigning the name of JavaScript function to OnValidationErrorClientFunction property of GridWeb
             GridWeb1.OnValidationErrorClientFunction = "ValidationErrorFunction";

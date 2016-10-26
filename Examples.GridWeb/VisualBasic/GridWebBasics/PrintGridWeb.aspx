@@ -4,7 +4,7 @@
 <%@ Register Assembly="Aspose.Cells.GridWeb" Namespace="Aspose.Cells.GridWeb" TagPrefix="acw" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeaderContent" runat="server">
-    <!-- ExStart:PrintGridWeb -->
+    <!-- ExStart:PrintGridWebJS -->
     <script>
         function Print(grid) {
             //Get Id of GridWeb
@@ -13,7 +13,7 @@
             grid.print();
         }
     </script>
-    <!-- ExEnd:PrintGridWeb -->
+    <!-- ExEnd:PrintGridWebJS -->
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
 
@@ -21,7 +21,7 @@
         style="text-align: center; width: 100%; font-family: Arial; font-size: small;">
         <tbody>
             <tr>
-                <td style="width: 19; vertical-align: top;">
+                <td style="width: 19px; vertical-align: top;">
                     <img alt="" height="41" src="/Common/images/heading_lft.jpg" width="19" />
                 </td>
                 <td class="demos-heading-bg" style="width: 100%;">
@@ -29,7 +29,7 @@
                         Write Client Side Script - Aspose.Cells Grid Suite Examples
                     </h2>
                 </td>
-                <td style="width: 19; vertical-align: top;">
+                <td style="width:19px; vertical-align: top;">
                     <img alt="" height="41" src="/Common/images/heading_rt.jpg" width="19" />
                 </td>
             </tr>

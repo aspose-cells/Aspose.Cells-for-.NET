@@ -12,7 +12,7 @@ Namespace Cells
             If chkMergeCells.Checked Then
                 ' ExStart:MergeCells
                 ' Accessing the reference of the worksheet that is currently active
-                Dim sheet As WebWorksheet = GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex)
+                Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
                 ' Merging cells starting from the cell with 3rd row and 3rd column. 
                 ' 2 rows and 2 columns will be merged from the starting cell
@@ -23,7 +23,7 @@ Namespace Cells
             Else
                 ' ExStart:UnmergeCells
                 ' Accessing the reference of the worksheet that is currently active
-                Dim sheet As WebWorksheet = GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex)
+                Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
                 ' Unmerging cells starting from the cell with 3rd row and 3rd column. 
                 ' 2 rows and 2 columns will be unmerged from the starting cell

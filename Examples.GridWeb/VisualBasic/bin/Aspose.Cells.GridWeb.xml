@@ -7166,6 +7166,11 @@
       <param name="targetFile">The name of the target file to write to.</param>
       <param name="format">The file format(Excel2003, Excel2007, CSV, SpreadsheetML)</param>
     </member>
+    <member name="M:Aspose.Cells.GridWeb.MainWeb.CalculateFormula">
+      <summary>
+            Calculates the result of formulas.
+            </summary>
+    </member>
     <member name="P:Aspose.Cells.GridWeb.MainWeb.PageSize">
       <summary>
             Gets or sets the page size in paging mode.
@@ -7979,6 +7984,11 @@
       <summary>
             Gets a value indicating whether gridweb is being loaded in response to a client postback,
             or if it is being loaded and accessed for the first time.
+            </summary>
+    </member>
+    <member name="P:Aspose.Cells.GridWeb.MainWeb.CustomCalculationEngine">
+      <summary>
+            Represents user's custom calculation engine to extend the default calculation engine of Aspose.Cells.
             </summary>
     </member>
     <member name="M:Aspose.Cells.GridWeb.GridWeb.GetVersion">
@@ -9265,6 +9275,169 @@
       <summary>
             Gets or sets the width of the border.
             Please refer to System.Web.UI.WebControls.Unit struct.
+            </summary>
+    </member>
+    <member name="T:Aspose.Cells.GridWeb.Data.GridAbstractCalculationEngine">
+      <summary>
+            Represents user's custom calculation engine to extend the default calculation engine of Aspose.Cells.
+            </summary>
+      <example>
+        <code>
+            [C#]
+            public class MyEngine : GridAbstractCalculationEngine
+            {
+                public override void Calculate(GridCalculationData data)
+                {
+                    string funcName = data.FunctionName.ToUpper();
+                    if ("MYFUNC".Equals(funcName))
+                    {
+                        //do calculation for MYFUNC here
+                        int count = data.ParamCount;
+                        object res = null;
+                        for (int i = 0; i &lt; count; i++)
+                        {
+                            object pv = data.GetParamValue(i);
+                            if (pv is ReferredArea)
+                            {
+                                ReferredArea ra = (ReferredArea)pv;
+                                pv = ra.GetValue(0, 0);
+                            }
+                            //process the parameter here
+                            //res = ...;
+                        }
+                        data.CalculatedValue = res;
+                    }
+                }
+            }
+            </code>
+      </example>
+    </member>
+    <member name="M:Aspose.Cells.GridWeb.Data.GridAbstractCalculationEngine.Calculate(Aspose.Cells.GridWeb.Data.GridCalculationData)">
+      <summary>
+            Calculates one function with given data.
+            </summary>
+      <param name="data">the required data to calculate function such as function name, parameters, ...etc.</param>
+      <remarks>User should set the calculated value for given data for all functions(including excel native functions)
+            that he wants to calculate by himself in this implementation.
+            </remarks>
+    </member>
+    <member name="T:Aspose.Cells.GridWeb.Data.GridCalculationData">
+      <summary>
+            Represents the required data when calculating one function, such as function name, parameters, ...etc.
+            </summary>
+    </member>
+    <member name="M:Aspose.Cells.GridWeb.Data.GridCalculationData.GetParamValue(System.Int32)">
+      <summary>
+            Gets the represented value object of the parameter at given index.
+            </summary>
+      <param name="index">index of the parameter(0 based)</param>
+      <returns>If the parameter is plain value, then returns the plain value.
+            If the parameter is reference, then return ReferredArea object.</returns>
+    </member>
+    <member name="M:Aspose.Cells.GridWeb.Data.GridCalculationData.GetParamText(System.Int32)">
+      <summary>
+            Gets the literal text of the parameter at given index.
+            </summary>
+      <param name="index">index of the parameter(0 based)</param>
+      <returns>literal text of the parameter</returns>
+    </member>
+    <member name="P:Aspose.Cells.GridWeb.Data.GridCalculationData.CalculatedValue">
+      <summary>
+            Gets or sets the calculated value for this function.
+            </summary>
+      <remarks>User should set this property in his custom calculation engine for those functions the engine supports,
+            and the set value will be returned when getting this property.
+            Getting this property before setting will make the function be calculated by the default calculation engine of Aspose.Cells and the calculated value will be returned.</remarks>
+    </member>
+    <member name="P:Aspose.Cells.GridWeb.Data.GridCalculationData.Workbook">
+      <summary>
+            Gets the Workbook object where the function is in.
+            </summary>
+    </member>
+    <member name="P:Aspose.Cells.GridWeb.Data.GridCalculationData.Worksheet">
+      <summary>
+            Gets the Workbook object where the function is in.
+            </summary>
+    </member>
+    <member name="P:Aspose.Cells.GridWeb.Data.GridCalculationData.Cell">
+      <summary>
+            Gets the Cell object where the function is in.
+            </summary>
+    </member>
+    <member name="P:Aspose.Cells.GridWeb.Data.GridCalculationData.FunctionName">
+      <summary>
+            Gets the function name to be calculated.
+            </summary>
+    </member>
+    <member name="P:Aspose.Cells.GridWeb.Data.GridCalculationData.ParamCount">
+      <summary>
+            Gets the count of parameters 
+            </summary>
+    </member>
+    <member name="T:Aspose.Cells.GridWeb.Data.GridReferredArea">
+      <summary>
+            Represents a referred objcet by the formula.
+            </summary>
+    </member>
+    <member name="M:Aspose.Cells.GridWeb.Data.GridReferredArea.GetValues">
+      <summary>
+            Gets cell values in this area.
+            </summary>
+      <returns>If this area is invalid, "#REF!" will be returned;
+            If this area is one single cell, then return the cell value object;
+            Otherwise return one array for all values in this area.</returns>
+    </member>
+    <member name="M:Aspose.Cells.GridWeb.Data.GridReferredArea.GetValue(System.Int32,System.Int32)">
+      <summary>
+            Gets cell value with given offset from the top-left of this area.
+            </summary>
+      <param name="rowOffset">row offset from the start row of this area</param>
+      <param name="colOffset">column offset from the start row of this area</param>
+      <returns>"#REF!" if this area is invalid;
+            "#N/A" if given offset out of this area;
+            Otherwise return the cell value at given position.</returns>
+    </member>
+    <member name="P:Aspose.Cells.GridWeb.Data.GridReferredArea.IsExternalLink">
+      <summary>
+            Indicates whether this is an external link.
+            </summary>
+    </member>
+    <member name="P:Aspose.Cells.GridWeb.Data.GridReferredArea.ExternalFileName">
+      <summary>
+             this.KeepedRels = source.KeepedRels;
+            </summary>
+    </member>
+    <member name="P:Aspose.Cells.GridWeb.Data.GridReferredArea.SheetName">
+      <summary>
+            Indicates which sheet this is in
+            </summary>
+    </member>
+    <member name="P:Aspose.Cells.GridWeb.Data.GridReferredArea.IsArea">
+      <summary>
+            Indicates whether this is an area.
+            </summary>
+      <remarks>
+            If this is not an area, only StartRow and StartColumn effect.
+            </remarks>
+    </member>
+    <member name="P:Aspose.Cells.GridWeb.Data.GridReferredArea.EndColumn">
+      <summary>
+            The end column of the area.
+            </summary>
+    </member>
+    <member name="P:Aspose.Cells.GridWeb.Data.GridReferredArea.StartColumn">
+      <summary>
+            The start column of the area.
+            </summary>
+    </member>
+    <member name="P:Aspose.Cells.GridWeb.Data.GridReferredArea.EndRow">
+      <summary>
+            The end row of the area.
+            </summary>
+    </member>
+    <member name="P:Aspose.Cells.GridWeb.Data.GridReferredArea.StartRow">
+      <summary>
+            The start row of the area.
             </summary>
     </member>
     <member name="T:Aspose.Cells.GridWeb.NamespaceDoc">
