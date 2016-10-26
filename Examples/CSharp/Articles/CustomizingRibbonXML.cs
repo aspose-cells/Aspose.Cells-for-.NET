@@ -18,8 +18,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             wb.RibbonXml = sr.ReadToEnd();
             sr.Close();
             // ExEnd:1
-            
-            
         }
     }
 }

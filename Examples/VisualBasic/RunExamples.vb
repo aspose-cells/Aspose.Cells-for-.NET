@@ -16,6 +16,11 @@ Imports Aspose.Cells.Examples.VisualBasic.Articles.RenderingAndPrinting
 Imports Aspose.Cells.Examples.VisualBasic.Articles.StylingAndDataFormatting
 Imports Aspose.Cells.Examples.VisualBasic.Articles.WorkingWithCalculationEngine
 Imports Aspose.Cells.Examples.VisualBasic.Articles.ManagingWorkbooksWorksheets
+Imports Aspose.Cells.Examples.VisualBasic.Articles.ManageChartsAndShapes
+Imports Aspose.Cells.Examples.VisualBasic.Articles.ManagingRowsColumnsCells
+Imports Aspose.Cells.Examples.VisualBasic.Articles.ManageDatabaseConnection
+Imports Aspose.Cells.Examples.VisualBasic.Articles.ManagingVBAModules
+Imports Aspose.Cells.Examples.VisualBasic.Articles.ManageConditionalFormatting
 Imports Aspose.Cells.Examples.VisualBasic.CellsHelperClass
 Imports Aspose.Cells.Examples.VisualBasic.Charts
 Imports Aspose.Cells.Examples.VisualBasic.Charts.InsertingControlsintoCharts
@@ -84,16 +89,13 @@ Friend Class RunExamples
         'AddConditionalIconsSet.Run()
         'AddImageHyperlinks.Run()
         'AddingAnonymousCustomObject.Run()
-        'AddLibraryReferenceToVbaProject.Run()
         'AddPDFBookmarks.Run()
         'AddPictureToExcelComment.Run()
         'AddWordArtWatermarkToWorksheet.Run()
-        'AssignMacroToFormControl.Run()
         'AutoFitRowsMergedCells.Run()
         'AvoidExponentialNotationWhileImportingFromHtml.Run()
         'ChangeHtmlLinkTarget.Run()
         'ChangeTextDirection.Run()
-        'CheckVbaProjectSigned.Run()
         'CombineMultipleWorkbooksSingleWorkbook.Run()
         'CombineMultipleWorksheetsSingleWorksheet.Run()
         'ConvertXLSFileToPDF.Run()
@@ -120,7 +122,6 @@ Friend Class RunExamples
         'FormatPivotTableCells.Run()
         'FormatWorksheetCells.Run()
         'GenerateThumbnailOfWorksheet.Run()
-        'GetDataConnection.Run()
         'GetIconSetsDataBars.Run()
         'HidingDisplayOfZeroValues.Run()
         'HtmlExportFrameScripts.Run()
@@ -137,21 +138,15 @@ Friend Class RunExamples
         'LoadWebImage.Run()
         'MergeUnmergeRangeOfCells.Run()
         'MoveRangeOfCells.Run()
-        'PopulateData.Run()
         'ReadingCSVMultipleEncodings.Run()
         'RemoveWhitespaceAroundData.Run()
         'RenderOnePdfPagePerExcelWorksheet.Run()
         'ResamplingAddedImages.Run()
-        'RetrievingSQLConnectionData.Run()
         'SaveEachWorksheetToDifferentPDF.Run()
         'SearchReplaceDataInRange.Run()
         'SecurePDFDocuments.Run()
         'SetBackgroundPicture.Run()
-        'SetExternalLinksInFormulas.Run()
-        'SetPictureBackGroundFillChart.Run()
         'SetPixelFormatRenderedImage.Run()
-        'SettingFormulaCalculationModeWorkbook.Run()
-        'SettingSharedFormula.Run()
         'SettingStrongEncryptionType.Run()
         'SetWorksheetTabColor.Run()
         'ShowFormulasInsteadOfValues.Run()
@@ -181,6 +176,16 @@ Friend Class RunExamples
         'GetSetClassIdentifierEmbedOleObject.Run()
         'LoadWorkbookWithSpecificCultureInfoNumberFormat.Run()
         'LoadWorkbookWithSpecificCultureInfoDateFormat.Run()
+        'ReflactionEffectOfShape.Run()
+        'ShadowEffectOfShape.Run()
+        'CheckHiddenExternalLinks.Run()
+        'GlowEffectOfShape.Run()
+        'Shape3DEffect.Run()
+        'LinkCellsToXmlMapElements.Run()
+        'PropagateFormulaInTable.Run()
+        'AddWordArtTextWithBuiltinStyle.Run()
+        'SetPresetWordArtStyle.Run()
+        'AddXmlMapInsideWorkbook.Run()
 
         '''' Apply-Conditional-Formatting
         '''' =====================================================
@@ -245,6 +250,7 @@ Friend Class RunExamples
         '''' WorkingWithHTMLFormat
         '''' =====================================================
         'ExpandTextFromRightToLeft.Run()
+        'ImplementIStreamProvider.Run()
 
         '''' RenderingAndPrinting
         '''' =====================================================
@@ -295,6 +301,87 @@ Friend Class RunExamples
         'DetectFileFormatAndEncryption.Run()
         'ExportExcelDataToDataTableWithoutFormatting.Run()
         'ConvertXLSBToXLSM.Run()
+        'CalculateScalingFactor.Run()
+        'ReleaseUnmanagedResources.Run()
+        'EditingHyperlinksOfWorksheet.Run()
+        'ImportXmlData.Run()
+        'ImportCSVWithFormulas.Run()
+        'CheckIfPasswordProtected.Run()
+        'VerifyPasswordUsedToProtectWorksheets.Run()
+        'SearchDataUsingOriginalValues.Run()
+        'DetectEmptyWorksheets.Run()
+
+        '''' ManagingRowsColumnsCells
+        '''' =====================================================
+        'PopulateDataEfficiently.Run()
+        'GetValidationAppliedOnCell.Run()
+        'AddingHTMLRichTextInCell.Run()
+        'AccessTableFromCellAndAddValue.Run()
+        'GetStringValue.Run()
+        'GetRowHeights.Run()
+        'CalculateWidthAndHeight.Run()
+        'HowAndWhereToUseEnumerators.Run()
+
+        '''' ManagingChartsAndShapes
+        '''' =====================================================
+        'RichTextCustomDataLabel.Run()
+        'CopyShapesBetweenWorksheets.Run()
+        'SetPictureBackGroundFillChart.Run()
+        'AddWordArtWatermarkToChart.Run()
+        'DisableTextWrappingForDataLabels.Run()
+        'AbsolutePositionOfShapeInsideWorksheet.Run()
+        'GetWorksheetOfTheChart.Run()
+        'AddCustomLabelsToDataPoints.Run()
+        'GetEquationTextOfChartTrendLine.Run()
+        'RefreshValueOfLinkedShapes.Run()
+        'ShowCellRangeAsDataLabels.Run()
+        'DetermineAxisInChart.Run()
+        'CreateSignatureLineInWorkbook.Run()
+        'CreateWaterfallChart.Run()
+        'LockingWordartWatermark.Run()
+        'CreatePieChartWithLeaderLines.Run()
+        'ChartSetupUsingSetChartDataRange.Run()
+        'ChangeShapesAdjustmentValues.Run()
+        'GenerateChartByProcessingSmartMarkers.Run()
+        'CreateDynamicCharts.Run()
+        'UsingDynamicFormula.Run()
+
+        '''' WorkingWithCalculationEngine
+        '''' =====================================================
+        'DecreaseCalculationTime.Run()
+        'SettingSharedFormula.Run()
+        'SetExternalLinksInFormulas.Run()
+        'UsingICustomFunctionfeature.Run()
+        'CalculateIFNAFunction.Run()
+        'ReturnRangeOfValuesUsingICustomFunction.Run()
+        'UsingFormulaTextFunction.Run()
+        'CalculationOfArrayFormula.Run()
+        'SettingFormulaCalculationModeWorkbook.Run()
+
+        '''' ManagingVBAModules
+        '''' =====================================================
+        'ModifyingVBAOrMacroCode.Run()
+        'AddVBAModuleOrCode.Run()
+        'AssignMacroToFormControl.Run()
+        'AddLibraryReferenceToVbaProject.Run()
+        'CheckVbaProjectSigned.Run()
+        'ExportVBACertificateToFile.Run()
+        'CheckVbaCodeIsSigned.Run()
+        'DigitallySignVbaProjectWithCertificate.Run()
+        'CheckVbaSignatureIsValid.Run()
+
+        '''' ManageConditionalFormatting
+        '''' =====================================================
+        'AddColorScales.Run()
+        'ApplyShadingToAlternateRowsColumns.Run()
+        'GenerateDatabarImage.Run()
+
+        '''' ManageDatabaseConnection
+        '''' =====================================================
+        'GetDataConnection.Run()
+        'RetrievingSQLConnectionData.Run()
+        'ModifyingExistingDataConnection.Run()
+        'ReadingAndWritingQueryTable.Run()
 
         '' =====================================================
         '' =====================================================

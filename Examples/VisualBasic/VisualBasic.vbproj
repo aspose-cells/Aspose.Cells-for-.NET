@@ -48,8 +48,8 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=9.0.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.9.0.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=16.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.16.10.0\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -86,7 +86,12 @@
     <Compile Include="Articles\AddImageHyperlinks.vb" />
     <Compile Include="Articles\AddingAnonymousCustomObject.vb" />
     <Compile Include="Articles\AddingCustomPropertiesVisible.vb" />
-    <Compile Include="Articles\AddLibraryReferenceToVbaProject.vb" />
+    <Compile Include="Articles\AddWordArtTextWithBuiltinStyle.vb" />
+    <Compile Include="Articles\AddXmlMapInsideWorkbook.vb" />
+    <Compile Include="Articles\CheckHiddenExternalLinks.vb" />
+    <Compile Include="Articles\GlowEffectOfShape.vb" />
+    <Compile Include="Articles\LinkCellsToXmlMapElements.vb" />
+    <Compile Include="Articles\ManagingVBAModules\AddLibraryReferenceToVbaProject.vb" />
     <Compile Include="Articles\AddPDFBookmarks.vb" />
     <Compile Include="Articles\AddPictureToExcelComment.vb" />
     <Compile Include="Articles\AddWordArtWatermarkToWorksheet.vb" />
@@ -94,7 +99,8 @@
     <Compile Include="Articles\ApplyConditionalFormatting\ApplyConditionalFormattingFormula.vb" />
     <Compile Include="Articles\ApplySuperscriptAndSubscript\SettingSubscriptEffect.vb" />
     <Compile Include="Articles\ApplySuperscriptAndSubscript\SettingSuperscripteffect.vb" />
-    <Compile Include="Articles\AssignMacroToFormControl.vb" />
+    <Compile Include="Articles\ManagingVBAModules\AddVBAModuleOrCode.vb" />
+    <Compile Include="Articles\ManagingVBAModules\AssignMacroToFormControl.vb" />
     <Compile Include="Articles\AssignValidateDigitalSignatures.vb" />
     <Compile Include="Articles\AutoFitRowsMergedCells.vb" />
     <Compile Include="Articles\AvoidExponentialNotationWhileImportingFromHtml.vb" />
@@ -102,7 +108,6 @@
     <Compile Include="Articles\ChangeTextBoxOrShareCharacterSpacing.vb" />
     <Compile Include="Articles\ChangeTextDirection.vb" />
     <Compile Include="Articles\ChartLegendEntry.vb" />
-    <Compile Include="Articles\CheckVbaProjectSigned.vb" />
     <Compile Include="Articles\CombineMultipleWorkbooksSingleWorkbook.vb" />
     <Compile Include="Articles\CombineMultipleWorksheetsSingleWorksheet.vb" />
     <Compile Include="Articles\ConvertExcelChartToImage\ConvertingColumnChartToImage.vb" />
@@ -148,7 +153,7 @@
     <Compile Include="Articles\FormatPivotTableCells.vb" />
     <Compile Include="Articles\FormatWorksheetCells.vb" />
     <Compile Include="Articles\GenerateThumbnailOfWorksheet.vb" />
-    <Compile Include="Articles\GetDataConnection.vb" />
+    <Compile Include="Articles\ManageDatabaseConnection\GetDataConnection.vb" />
     <Compile Include="Articles\GetIconSetsDataBars.vb" />
     <Compile Include="Articles\GetSetClassIdentifierEmbedOleObject.vb" />
     <Compile Include="Articles\HidingDisplayOfZeroValues.vb" />
@@ -171,15 +176,64 @@
     <Compile Include="Articles\LoadWorkbookWithPrinterSize.vb" />
     <Compile Include="Articles\LoadWorkbookWithSpecificCultureInfoDateFormat.vb" />
     <Compile Include="Articles\LoadWorkbookWithSpecificCultureInfoNumberFormat.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\AbsolutePositionOfShapeInsideWorksheet.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\AddCustomLabelsToDataPoints.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\AddWordArtWatermarkToChart.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\ChangeShapesAdjustmentValues.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\ChartSetupUsingSetChartDataRange.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\CopyShapesBetweenWorksheets.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\CreateDynamicCharts.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\CreatePieChartWithLeaderLines.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\CreateSignatureLineInWorkbook.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\CreateWaterfallChart.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\DetermineAxisInChart.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\DisableTextWrappingForDataLabels.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\GenerateChartByProcessingSmartMarkers.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\GetEquationTextOfChartTrendLine.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\GetWorksheetOfTheChart.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\LockingWordartWatermark.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\RefreshValueOfLinkedShapes.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\RichTextCustomDataLabel.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\SetPictureBackGroundFillChart.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\ShowCellRangeAsDataLabels.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\UsingDynamicFormula.vb" />
+    <Compile Include="Articles\ManageConditionalFormatting\AddColorScales.vb" />
+    <Compile Include="Articles\ManageConditionalFormatting\ApplyShadingToAlternateRowsColumns.vb" />
+    <Compile Include="Articles\ManageConditionalFormatting\GenerateDatabarImage.vb" />
+    <Compile Include="Articles\ManageDatabaseConnection\ModifyingExistingDataConnection.vb" />
+    <Compile Include="Articles\ManageDatabaseConnection\ReadingAndWritingQueryTable.vb" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\AccessTableFromCellAndAddValue.vb" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\AddingHTMLRichTextInCell.vb" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\CalculateWidthAndHeight.vb" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\GetRowHeights.vb" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\GetStringValue.vb" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\GetValidationAppliedOnCell.vb" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\HowAndWhereToUseEnumerators.vb" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\PopulateDataEfficiently.vb" />
+    <Compile Include="Articles\ManagingVBAModules\CheckVbaCodeIsSigned.vb" />
+    <Compile Include="Articles\ManagingVBAModules\CheckVbaProjectSigned.vb" />
+    <Compile Include="Articles\ManagingVBAModules\CheckVbaSignatureIsValid.vb" />
+    <Compile Include="Articles\ManagingVBAModules\DigitallySignVbaProjectWithCertificate.vb" />
+    <Compile Include="Articles\ManagingVBAModules\ExportVBACertificateToFile.vb" />
+    <Compile Include="Articles\ManagingVBAModules\ModifyingVBAOrMacroCode.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\AssignAndValidateDigitalSignatures.vb" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\CalculateScalingFactor.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\ChangeChartDataSource.vb" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\CheckIfPasswordProtected.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\CheckPasswordToModify.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\ConvertXLSBToXLSM.vb" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\DetectEmptyWorksheets.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\DetectFileFormatAndEncryption.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\DeterminingLicenseLoading.vb" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\EditingHyperlinksOfWorksheet.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\ExportExcelDataToDataTableWithoutFormatting.vb" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\ImportCSVWithFormulas.vb" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\ImportXmlData.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\OdsFileSaveOptions.vb" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\ReleaseUnmanagedResources.vb" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\SearchDataUsingOriginalValues.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\SetAutoRecovery.vb" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\VerifyPasswordUsedToProtectWorksheets.vb" />
     <Compile Include="Articles\MergeUnmergeRangeOfCells.vb" />
     <Compile Include="Articles\ModifyExistingStyle\ModifyThroughSampleExcelFile.vb" />
     <Compile Include="Articles\ModifyExistingStyle\ModifyThroughStyleObject.vb" />
@@ -191,9 +245,10 @@
     <Compile Include="Articles\PivotTablesAndPivotCharts\RemovePivotTable.vb" />
     <Compile Include="Articles\PivotTablesAndPivotCharts\SettingPivotTableOption.vb" />
     <Compile Include="Articles\PivotTablesAndPivotCharts\SpecifyAbsolutePositionOfPivotItem.vb" />
-    <Compile Include="Articles\PopulateData.vb" />
+    <Compile Include="Articles\PropagateFormulaInTable.vb" />
     <Compile Include="Articles\ReadingCellValuesInMultipleThreadsSimultaneously.vb" />
     <Compile Include="Articles\ReadingCSVMultipleEncodings.vb" />
+    <Compile Include="Articles\ReflactionEffectOfShape.vb" />
     <Compile Include="Articles\RemoveWhitespaceAroundData.vb" />
     <Compile Include="Articles\RenderingAndPrinting\ChangeFontUnicodeCharacterToPdf.vb" />
     <Compile Include="Articles\RenderingAndPrinting\ExportChartToSvgWithViewBox.vb" />
@@ -213,16 +268,18 @@
     <Compile Include="Articles\RenderOnePdfPagePerExcelWorksheet.vb" />
     <Compile Include="Articles\RenderUnicodeInOutput.vb" />
     <Compile Include="Articles\ResamplingAddedImages.vb" />
-    <Compile Include="Articles\RetrievingSQLConnectionData.vb" />
+    <Compile Include="Articles\ManageDatabaseConnection\RetrievingSQLConnectionData.vb" />
     <Compile Include="Articles\SaveEachWorksheetToDifferentPDF.vb" />
     <Compile Include="Articles\SearchReplaceDataInRange.vb" />
     <Compile Include="Articles\SecurePDFDocuments.vb" />
     <Compile Include="Articles\SetBackgroundPicture.vb" />
-    <Compile Include="Articles\SetExternalLinksInFormulas.vb" />
-    <Compile Include="Articles\SetPictureBackGroundFillChart.vb" />
+    <Compile Include="Articles\SetPresetWordArtStyle.vb" />
+    <Compile Include="Articles\ShadowEffectOfShape.vb" />
+    <Compile Include="Articles\Shape3DEffect.vb" />
+    <Compile Include="Articles\WorkingWithCalculationEngine\SetExternalLinksInFormulas.vb" />
     <Compile Include="Articles\SetPixelFormatRenderedImage.vb" />
     <Compile Include="Articles\SetTextboxOrShapeParagraphLineSpacing.vb" />
-    <Compile Include="Articles\SettingFormulaCalculationModeWorkbook.vb" />
+    <Compile Include="Articles\WorkingWithCalculationEngine\SettingFormulaCalculationModeWorkbook.vb" />
     <Compile Include="Articles\SettingTextEffectsShadowOfShapeOrTextbox.vb" />
     <Compile Include="Articles\StylingAndDataFormatting\ConvertStringToNumericValue.vb" />
     <Compile Include="Articles\StylingAndDataFormatting\CustomDecimalAndGroupSeparator.vb" />
@@ -232,9 +289,14 @@
     <Compile Include="Articles\UpdateActiveXComboBoxControl.vb" />
     <Compile Include="Articles\UpdateReferenceInWorksheets.vb" />
     <Compile Include="Articles\UsingImageMarkersWhileGroupingDataInSmartMarkers.vb" />
+    <Compile Include="Articles\WorkingWithCalculationEngine\CalculateIFNAFunction.vb" />
+    <Compile Include="Articles\WorkingWithCalculationEngine\CalculationOfArrayFormula.vb" />
     <Compile Include="Articles\WorkingWithCalculationEngine\DecreaseCalculationTime.vb" />
+    <Compile Include="Articles\WorkingWithCalculationEngine\ReturnRangeOfValuesUsingICustomFunction.vb" />
+    <Compile Include="Articles\WorkingWithCalculationEngine\UsingFormulaTextFunction.vb" />
     <Compile Include="Articles\WorkingWithHTMLFormat\ExpandTextFromRightToLeft.vb" />
     <Compile Include="Articles\WorkingWithHTMLFormat\ExportedWorkSheetViaIFilePathProvider.vb" />
+    <Compile Include="Articles\WorkingWithHTMLFormat\ImplementIStreamProvider.vb" />
     <Compile Include="CellsHelperClass\MergeFiles.vb" />
     <Compile Include="CellsHelperClass\NameToIndex.vb" />
     <Compile Include="CellsHelperClass\IndexToName.vb" />
@@ -249,14 +311,14 @@
     <Compile Include="Charts\ManipulateChart\HowToCreateBubbleChart .vb" />
     <Compile Include="Charts\SettingCategoryData.vb" />
     <Compile Include="Articles\UsingCustomXmlParts.vb" />
-    <Compile Include="Articles\SettingSharedFormula.vb" />
+    <Compile Include="Articles\WorkingWithCalculationEngine\SettingSharedFormula.vb" />
     <Compile Include="Articles\SettingStrongEncryptionType.vb" />
     <Compile Include="Articles\SetWorksheetTabColor.vb" />
     <Compile Include="Articles\ShowFormulasInsteadOfValues.vb" />
     <Compile Include="Articles\SortData.vb" />
     <Compile Include="Articles\UpdateRichTextCells.vb" />
     <Compile Include="Articles\UsePresentationPreferenceOption.vb" />
-    <Compile Include="Articles\UsingICustomFunctionfeature.vb" />
+    <Compile Include="Articles\WorkingWithCalculationEngine\UsingICustomFunctionfeature.vb" />
     <Compile Include="Articles\UsingLightCellsAPI.vb" />
     <Compile Include="Articles\UsingWorkbookMetadata.vb" />
     <Compile Include="Articles\WorkbookScopedNamedRanges\AddWorkbookScopedNamedRange.vb" />
