@@ -574,75 +574,61 @@
     <Compile Include="Miscellaneous\DataSourceControl\BindWithDataSourceControl.aspx.designer.cs">
       <DependentUpon>BindWithDataSourceControl.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Filter\AutoFilter.aspx.cs">
-      <DependentUpon>AutoFilter.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Format\ApplyCustomFormats.aspx.cs">
+      <DependentUpon>ApplyCustomFormats.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Filter\AutoFilter.aspx.designer.cs">
-      <DependentUpon>AutoFilter.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Format\ApplyCustomFormats.aspx.designer.cs">
+      <DependentUpon>ApplyCustomFormats.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Filter\CustomFilter.aspx.cs">
-      <DependentUpon>CustomFilter.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Format\ApplyDateTimeFormats.aspx.cs">
+      <DependentUpon>ApplyDateTimeFormats.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Filter\CustomFilter.aspx.designer.cs">
-      <DependentUpon>CustomFilter.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Format\ApplyDateTimeFormats.aspx.designer.cs">
+      <DependentUpon>ApplyDateTimeFormats.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Format\CustomFormat.aspx.cs">
-      <DependentUpon>CustomFormat.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Format\ApplyNumberFormats.aspx.cs">
+      <DependentUpon>ApplyNumberFormats.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Format\CustomFormat.aspx.designer.cs">
-      <DependentUpon>CustomFormat.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Format\ApplyNumberFormats.aspx.designer.cs">
+      <DependentUpon>ApplyNumberFormats.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Format\DateAndTime.aspx.cs">
-      <DependentUpon>DateAndTime.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Formula\ApplyDateTimeFormulas.aspx.cs">
+      <DependentUpon>ApplyDateTimeFormulas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Format\DateAndTime.aspx.designer.cs">
-      <DependentUpon>DateAndTime.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Formula\ApplyDateTimeFormulas.aspx.designer.cs">
+      <DependentUpon>ApplyDateTimeFormulas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Format\Number.aspx.cs">
-      <DependentUpon>Number.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Formula\ApplyLogicalFormulas.aspx.cs">
+      <DependentUpon>ApplyLogicalFormulas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Format\Number.aspx.designer.cs">
-      <DependentUpon>Number.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Formula\ApplyLogicalFormulas.aspx.designer.cs">
+      <DependentUpon>ApplyLogicalFormulas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Formula\DateAndTime.aspx.cs">
-      <DependentUpon>DateAndTime.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Formula\ApplyMathematicalFormulas.aspx.cs">
+      <DependentUpon>ApplyMathematicalFormulas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Formula\DateAndTime.aspx.designer.cs">
-      <DependentUpon>DateAndTime.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Formula\ApplyMathematicalFormulas.aspx.designer.cs">
+      <DependentUpon>ApplyMathematicalFormulas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Formula\Logical.aspx.cs">
-      <DependentUpon>Logical.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Formula\ApplyStatisticalFormulas.aspx.cs">
+      <DependentUpon>ApplyStatisticalFormulas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Formula\Logical.aspx.designer.cs">
-      <DependentUpon>Logical.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Formula\ApplyStatisticalFormulas.aspx.designer.cs">
+      <DependentUpon>ApplyStatisticalFormulas.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\Formula\Math.aspx.cs">
-      <DependentUpon>Math.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Formula\ApplyTextAndDataFormulas.aspx.cs">
+      <DependentUpon>ApplyTextAndDataFormulas.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\Formula\Math.aspx.designer.cs">
-      <DependentUpon>Math.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Miscellaneous\Formula\Statistical.aspx.cs">
-      <DependentUpon>Statistical.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Miscellaneous\Formula\Statistical.aspx.designer.cs">
-      <DependentUpon>Statistical.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Miscellaneous\Formula\TextAndData.aspx.cs">
-      <DependentUpon>TextAndData.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Miscellaneous\Formula\TextAndData.aspx.designer.cs">
-      <DependentUpon>TextAndData.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\Formula\ApplyTextAndDataFormulas.aspx.designer.cs">
+      <DependentUpon>ApplyTextAndDataFormulas.aspx</DependentUpon>
     </Compile>
     <Compile Include="RowsAndColumns\GroupRows.aspx.cs">
       <DependentUpon>GroupRows.aspx</DependentUpon>
@@ -658,40 +644,40 @@
     <Compile Include="RowsAndColumns\CreateSubtotal.aspx.designer.cs">
       <DependentUpon>CreateSubtotal.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\PivotTable\CreateReport.aspx.cs">
-      <DependentUpon>CreateReport.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\PivotTable\CreatePivotTable.aspx.cs">
+      <DependentUpon>CreatePivotTable.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\PivotTable\CreateReport.aspx.designer.cs">
-      <DependentUpon>CreateReport.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\PivotTable\CreatePivotTable.aspx.designer.cs">
+      <DependentUpon>CreatePivotTable.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\PivotTable\CustomReport.aspx.cs">
-      <DependentUpon>CustomReport.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\PivotTable\CreateCustomPivotTable.aspx.cs">
+      <DependentUpon>CreateCustomPivotTable.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\PivotTable\CustomReport.aspx.designer.cs">
-      <DependentUpon>CustomReport.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\PivotTable\CreateCustomPivotTable.aspx.designer.cs">
+      <DependentUpon>CreateCustomPivotTable.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\PivotTable\FromWebWorksheet.aspx.cs">
-      <DependentUpon>FromWebWorksheet.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\PivotTable\CreatePivotTableFromWorksheet.aspx.cs">
+      <DependentUpon>CreatePivotTableFromWorksheet.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\PivotTable\FromWebWorksheet.aspx.designer.cs">
-      <DependentUpon>FromWebWorksheet.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\PivotTable\CreatePivotTableFromWorksheet.aspx.designer.cs">
+      <DependentUpon>CreatePivotTableFromWorksheet.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\PivotTable\PivotFieldFunction.aspx.cs">
-      <DependentUpon>PivotFieldFunction.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\PivotTable\ApplyPivotFieldFunction.aspx.cs">
+      <DependentUpon>ApplyPivotFieldFunction.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\PivotTable\PivotFieldFunction.aspx.designer.cs">
-      <DependentUpon>PivotFieldFunction.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\PivotTable\ApplyPivotFieldFunction.aspx.designer.cs">
+      <DependentUpon>ApplyPivotFieldFunction.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\XHTML\Xhtml.aspx.cs">
-      <DependentUpon>Xhtml.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\XHTML\EnableXHTMLMode.aspx.cs">
+      <DependentUpon>EnableXHTMLMode.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\XHTML\Xhtml.aspx.designer.cs">
-      <DependentUpon>Xhtml.aspx</DependentUpon>
+    <Compile Include="Miscellaneous\XHTML\EnableXHTMLMode.aspx.designer.cs">
+      <DependentUpon>EnableXHTMLMode.aspx</DependentUpon>
     </Compile>
     <Compile Include="Worksheets\AccessWorksheets.aspx.cs">
       <DependentUpon>AccessWorksheets.aspx</DependentUpon>
@@ -743,9 +729,9 @@
     <Content Include="Data\GridWebBasics\CustomStyle1.xml" />
     <Content Include="Data\GridWebBasics\CustomStyle2.xml" />
     <Content Include="Examples.aspx" />
-    <Content Include="browsers.aspx" />
-    <Content Include="controldes.aspx" />
-    <Content Include="custombtn.aspx" />
+    <Content Include="GridWebBasics\ViewBrowsersCapabilities.aspx" />
+    <Content Include="GridWebBasics\AboutGridWebDesigner.aspx" />
+    <Content Include="GridWebBasics\AboutCustomCommandButtonsDesigner.aspx" />
     <Content Include="Database\demos.mdb">
     </Content>
     <Content Include="Database\Northwind.mdb">
@@ -833,25 +819,23 @@
     <Content Include="Miscellaneous\DataBind\DataBind3.aspx" />
     <Content Include="Miscellaneous\DataBind\ExpandChildView.aspx" />
     <Content Include="Miscellaneous\DataSourceControl\BindWithDataSourceControl.aspx" />
-    <Content Include="Miscellaneous\Filter\AutoFilter.aspx" />
-    <Content Include="Miscellaneous\Filter\CustomFilter.aspx" />
-    <Content Include="Miscellaneous\Format\CustomFormat.aspx" />
-    <Content Include="Miscellaneous\Format\DateAndTime.aspx" />
-    <Content Include="Miscellaneous\Format\Number.aspx" />
-    <Content Include="Miscellaneous\Formula\DateAndTime.aspx" />
-    <Content Include="Miscellaneous\Formula\Logical.aspx" />
-    <Content Include="Miscellaneous\Formula\Math.aspx" />
-    <Content Include="Miscellaneous\Formula\Statistical.aspx" />
-    <Content Include="Miscellaneous\Formula\TextAndData.aspx" />
+    <Content Include="Miscellaneous\Format\ApplyCustomFormats.aspx" />
+    <Content Include="Miscellaneous\Format\ApplyDateTimeFormats.aspx" />
+    <Content Include="Miscellaneous\Format\ApplyNumberFormats.aspx" />
+    <Content Include="Miscellaneous\Formula\ApplyDateTimeFormulas.aspx" />
+    <Content Include="Miscellaneous\Formula\ApplyLogicalFormulas.aspx" />
+    <Content Include="Miscellaneous\Formula\ApplyMathematicalFormulas.aspx" />
+    <Content Include="Miscellaneous\Formula\ApplyStatisticalFormulas.aspx" />
+    <Content Include="Miscellaneous\Formula\ApplyTextAndDataFormulas.aspx" />
     <Content Include="RowsAndColumns\group.GIF" />
     <Content Include="RowsAndColumns\GroupRows.aspx" />
     <Content Include="RowsAndColumns\CreateSubtotal.aspx" />
     <Content Include="RowsAndColumns\ungroup.GIF" />
-    <Content Include="Miscellaneous\PivotTable\CreateReport.aspx" />
-    <Content Include="Miscellaneous\PivotTable\CustomReport.aspx" />
-    <Content Include="Miscellaneous\PivotTable\FromWebWorksheet.aspx" />
-    <Content Include="Miscellaneous\PivotTable\PivotFieldFunction.aspx" />
-    <Content Include="Miscellaneous\XHTML\Xhtml.aspx" />
+    <Content Include="Miscellaneous\PivotTable\CreatePivotTable.aspx" />
+    <Content Include="Miscellaneous\PivotTable\CreateCustomPivotTable.aspx" />
+    <Content Include="Miscellaneous\PivotTable\CreatePivotTableFromWorksheet.aspx" />
+    <Content Include="Miscellaneous\PivotTable\ApplyPivotFieldFunction.aspx" />
+    <Content Include="Miscellaneous\XHTML\EnableXHTMLMode.aspx" />
     <Content Include="images\addrec.gif" />
     <Content Include="images\album.gif" />
     <Content Include="images\arrow_forward.gif" />
@@ -961,7 +945,7 @@
       <SubType>Component</SubType>
     </Content>
     <Content Include="Web.config" />
-    <Content Include="worksheets.aspx" />
+    <Content Include="GridWebBasics\AboutWorksheetDesigner.aspx" />
     <Content Include="Worksheets\AccessWorksheets.aspx" />
     <Content Include="Worksheets\AddWorksheets.aspx" />
     <Content Include="Worksheets\CopyWorksheets.aspx" />
@@ -1038,7 +1022,6 @@
     <None Include="Image\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Miscellaneous\GridWebForm\" />
     <Folder Include="Properties\" />
   </ItemGroup>
   <PropertyGroup>
