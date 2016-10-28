@@ -21,7 +21,6 @@ Namespace Articles
             ' Save the image (first page of the sheet) with the specified options
             sr.ToImage(0, dataDir & "output.tiff")
             ' ExEnd:1
-
         End Sub
     End Class
 End Namespace

@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
+            // ExStart:1
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             // Instantiating a Workbook object
@@ -49,7 +50,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Saving the excel file in the default (that is Excel 2003) format
             workbook.Save(dataDir+ "outBook_SortedData.out.xlsx");
-            
+            // ExEnd:1
         }
     }
 }

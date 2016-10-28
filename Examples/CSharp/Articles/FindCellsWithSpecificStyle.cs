@@ -31,10 +31,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             {
                 // Find the cell that has a style of cell A1
                 nextCell = worksheet.Cells.Find(null, nextCell, options);
-
                 if (nextCell == null)
                     break;
-
                 // Change the text of the cell
                 nextCell.PutValue("Found");
 

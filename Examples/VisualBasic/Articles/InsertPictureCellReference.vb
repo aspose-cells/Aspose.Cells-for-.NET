@@ -39,7 +39,6 @@ Namespace Articles
                 Console.WriteLine(ex.Message)
                 Console.ReadLine()
             End Try
-
         End Sub
     End Class
 End Namespace

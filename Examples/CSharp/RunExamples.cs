@@ -162,7 +162,6 @@ namespace Aspose.Cells.Examples.CSharp
             //UsePresentationPreferenceOption.Run();
             //UsingCustomXmlParts.Run();
             //UsingImageMarkersWhileGroupingDataInSmartMarkers.Run();
-            //UsingLightCellsAPI.Run();
             //UsingWorkbookMetadata.Run();
             //RenderUnicodeInOutput.Run();
             //UpdateReferenceInWorksheets.Run();
@@ -193,6 +192,12 @@ namespace Aspose.Cells.Examples.CSharp
             //AddWordArtTextWithBuiltinStyle.Run();
             //SetPresetWordArtStyle.Run();
             //AddXmlMapInsideWorkbook.Run();
+            //GetWarningsForFontSubstitution.Run();
+            //RemoveUnusedStyles.Run();
+            //ReadingCellValuesInMultipleThreadsSimultaneously.TestMultiThreadingRead();
+            //GetSmartMarkerNotifications.Run();
+            //WriteUsingLightCellsAPI.Run();
+            //ReadUsingLightCellsApi.Run();
 
             //// Apply-Conditional-Formatting
             //// =====================================================
@@ -216,8 +221,10 @@ namespace Aspose.Cells.Examples.CSharp
 
             //// CopyRowsColumns
             //// =====================================================
-            //CopyingColumns.Run();
-            //CopyingRows.Run();
+            //CopyingSingleColumn.Run();
+            //CopyingSingleRow.Run();
+            //CopyingMultipleColumns.Run();
+            //CopyingMultipleRows.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================
@@ -284,6 +291,8 @@ namespace Aspose.Cells.Examples.CSharp
             //CustomDecimalAndGroupSeparator.Run();
             //DisplayBulletsInCellUsingHtml.Run();
             //RenderCustomDateFormat.Run();
+            //ApplyingSubtotalChangeSummaryDirection.Run();
+            //ExtractThemeData.Run();
 
             //// PivotTablesAndPivotCharts
             //// =====================================================
@@ -354,6 +363,7 @@ namespace Aspose.Cells.Examples.CSharp
             //GetRowHeights.Run();
             //CalculateWidthAndHeight.Run();
             //HowAndWhereToUseEnumerators.Run();
+            //VerifyCellValidation.Run();
 
             //// ManageChartsAndShapes
             //// =====================================================
@@ -544,7 +554,7 @@ namespace Aspose.Cells.Examples.CSharp
 
             //// Controls
             //// =====================================================
-            //AddinganArrowHead.Run();
+            AddinganArrowHead.Run();
             //AddingArcControl.Run();
             //AddingButtonControl.Run();
             //AddingCheckBoxControl.Run();

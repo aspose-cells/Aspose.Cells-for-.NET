@@ -12,7 +12,6 @@ Namespace Articles.WorkingWithCalculationEngine
         Implements ICustomFunction
 
         Public Function CalculateCustomFunction(ByVal functionName As String, ByVal paramsList As System.Collections.ArrayList, ByVal contextObjects As System.Collections.ArrayList) As Object Implements ICustomFunction.CalculateCustomFunction
-
             ' Get value of first parameter
             Dim firstParamB1 As Decimal = System.Convert.ToDecimal(paramsList(0))
 
@@ -23,19 +22,17 @@ Namespace Articles.WorkingWithCalculationEngine
 
             ' get every item value of second parameter
             For Each value As Object() In secondParamC1C5
-
                 total += System.Convert.ToDecimal(value(0))
-
             Next value
 
             total = total / firstParamB1
 
             ' Return result of the function
             Return total
-
         End Function
     End Class
     ' ExEnd:ICustomFunction
+
     Public Class UsingICustomFunctionfeature
         Public Shared Sub Run()
             ' ExStart:UsingICustomFunctionFeature

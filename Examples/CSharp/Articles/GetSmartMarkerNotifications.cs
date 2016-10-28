@@ -1,41 +1,49 @@
 ﻿using System;
 using Aspose.Cells;
+using System.Data;
 
 namespace Aspose.Cells.Examples.CSharp.Articles
 {
-    class GetSmartMarkerNotifications
+    public class GetSmartMarkerNotifications
     {
-        static void Run() {
+        public static void Run()
+        {
             // ExStart:1
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             string outputPath = dataDir + "Output.out.xlsx";
 
-            // Instantiate a new Workbook designer
-            WorkbookDesigner designer = new WorkbookDesigner();
-            /**********************************************************************
-            // Get the first worksheet of the workbook
-            Worksheet sheet = report.Workbook.Worksheets[0];
-            
-            // Set the Variable Array marker to a cell
-            // You may also place this Smart Marker into a template file manually using Excel and then open this file via WorkbookDesigner
-            sheet.Cells.Get("A1").PutValue("&=$VariableArray");
+            // Creating a DataTable that will serve as data source for designer spreadsheet
+            DataTable table = new DataTable("OppLineItems");
+            table.Columns.Add("PRODUCT_FAMILY");
+            table.Columns.Add("OPPORTUNITY_LINEITEM_PRODUCTNAME");
+            table.Rows.Add(new object[] { "MMM", "P1" });
+            table.Rows.Add(new object[] { "MMM", "P2" });
+            table.Rows.Add(new object[] { "DDD", "P1" });
+            table.Rows.Add(new object[] { "DDD", "P2" });
+            table.Rows.Add(new object[] { "AAA", "P1" });
 
-            // Set the data source for the marker(s)
-            report.DataSource("VariableArray", new String[] { "English", "Arabic", "Hindi", "Urdu", "French" });
+            // Loading the designer spreadsheet in an instance of Workbook
+            Workbook workbook = new Workbook(dataDir + "source.xlsx");
 
-            // Set the CallBack property
-            report.CallBack(new SmartMarkerCallBack(report.Workbook));
+            // Loading the instance of Workbook in an instance of WorkbookDesigner
+            WorkbookDesigner designer = new WorkbookDesigner(workbook);
 
-            // Process the markers
-            report.Process(false);
+            // Set the WorkbookDesigner.CallBack property to an instance of newly created class
+            designer.CallBack = new SmartMarkerCallBack(workbook);
+
+            // Set the data source 
+            designer.SetDataSource(table);
+
+            // Process the Smart Markers in the designer spreadsheet
+            designer.Process(false);
 
             // Save the result
-            report.Workbook.Save(outputPath);
-            *******************************************/
-            Console.WriteLine("File saved {0}", outputPath);
+            workbook.Save(outputPath);
+            // ExEnd:1
         }
     }
 
+    // ExStart:ISmartMarkerCallBack
     class SmartMarkerCallBack: ISmartMarkerCallBack
     {
         Workbook workbook;
@@ -48,6 +56,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             Console.WriteLine("Processing Cell: " + workbook.Worksheets[sheetIndex].Name + "!" + CellsHelper.CellIndexToName(rowIndex, colIndex));
             Console.WriteLine("Processing Marker: " + tableName + "." + columnName);
         }
-        // ExEnd:1
     }
+    // ExEnd:ISmartMarkerCallBack
 }

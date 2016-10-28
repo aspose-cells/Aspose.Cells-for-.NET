@@ -28,8 +28,7 @@ Namespace Articles
 
             ' Save the workbook.
             workbook.Save(dataDir & "output.xlsx")
-            ' EnEnd:1
-
+            ' ExEnd:1
         End Sub
     End Class
 End Namespace

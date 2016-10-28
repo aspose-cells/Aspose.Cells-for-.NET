@@ -27,7 +27,6 @@ Namespace Articles
             Console.WriteLine("Press any key to continue...")
             Console.ReadKey()
             ' ExEnd:1
-
         End Sub
     End Class
 End Namespace

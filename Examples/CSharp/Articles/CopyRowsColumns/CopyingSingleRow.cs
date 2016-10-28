@@ -4,29 +4,30 @@ using Aspose.Cells;
 
 namespace Aspose.Cells.Examples.CSharp.Articles.CopyRowsColumns
 {
-    public class CopyingColumns
+    public class CopyingSingleRow
     {
         public static void Run()
         {
-            // ExStart:1
+            // ExStart:CopyingSingleRow
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            // Instantiate a new Workbook
+            // Instantiate a new workbook
             // Open an existing excel file
             Workbook workbook = new Workbook(dataDir+ "aspose-sample.xlsx");
 
-            // Get the first worksheet
-            Worksheet worksheet = workbook.Worksheets[0];
-            // Get the Cells collection
-            Cells cells = worksheet.Cells;
-            // Copy the first column to the third column
-            cells.CopyColumn(cells, 0, 2);
+            // Get the first worksheet cells
+            Cells cells = workbook.Worksheets[0].Cells;
+
+            //Copy the first row to next 10 rows
+            for (int i = 1; i <= 10; i++)
+            {
+                cells.CopyRow(cells, 0, i);
+            }
+
             // Save the excel file
-            workbook.Save(dataDir+ "outaspose-sample.out.xlsx");
-            // ExEnd:1
-            
-            
+            workbook.Save(dataDir + "outaspose-sample.out.xlsx");
+            // ExEnd:CopyingSingleRow
         }
     }
 }

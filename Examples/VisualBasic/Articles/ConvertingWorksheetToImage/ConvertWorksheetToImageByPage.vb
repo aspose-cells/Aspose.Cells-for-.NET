@@ -21,7 +21,6 @@ Namespace Articles.ConvertingWorksheetToImage
             ' Sheet2Image By Page conversion
             Dim sr As New SheetRender(sheet, options)
             For j As Integer = 0 To sr.PageCount - 1
-
                 sr.ToImage(j, dataDir & "test" & sheet.Name & " Page" & (j + 1) & ".output.tif")
             Next j
             ' ExEnd:1

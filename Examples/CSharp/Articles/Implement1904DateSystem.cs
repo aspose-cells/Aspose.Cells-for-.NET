@@ -21,9 +21,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // Save the excel file
             workbook.Save(dataDir+ "Mybook.out.xlsx");
             // ExEnd:1
- 
-            
-            
         }
     }
 }

@@ -24,7 +24,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ConvertingWorksheetToImage
             SheetRender sr = new SheetRender(sheet, options);
             for (int j = 0; j < sr.PageCount; j++)
             {
-
                 sr.ToImage(j, dataDir+ "test" + sheet.Name + " Page" + (j + 1) + ".out.tif");
             }
  

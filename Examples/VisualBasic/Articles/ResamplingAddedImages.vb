@@ -21,7 +21,6 @@ Namespace Articles
             ' Save the PDF file
             workbook.Save(dataDir & "output.pdf", pdfSaveOptions)
             ' ExEnd:1
-
         End Sub
     End Class
 End Namespace

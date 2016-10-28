@@ -6,8 +6,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 {
     class IgnoreHiddenColumnsDataTable
     {
-        public static void Run
-            ()
+        public static void Run()
         {
             // ExStart:1
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);

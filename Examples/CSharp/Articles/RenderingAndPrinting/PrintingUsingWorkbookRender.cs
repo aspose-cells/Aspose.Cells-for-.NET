@@ -44,7 +44,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             {
                 Console.WriteLine(ex.Message);
             }
-            // ExEnd:PrintingUsingWorkbookRender
+            // ExEnd:PrintingExcelWorkbookUsingWorkbookRender
         }
     }
 }

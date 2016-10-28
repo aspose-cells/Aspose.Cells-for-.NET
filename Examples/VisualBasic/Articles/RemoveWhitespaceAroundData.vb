@@ -39,7 +39,6 @@ Namespace Articles
             ' Convert the image
             sr.ToImage(0, dataDir & "output.emf")
             ' ExEnd:1
-
         End Sub
     End Class
 End Namespace

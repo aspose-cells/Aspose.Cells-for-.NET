@@ -33,7 +33,7 @@ Namespace Articles
             fs.Close()
 
             ' Set the background image for the sheet.
-            sheet.SetBackground(imageData)
+            sheet.BackgroundImage = imageData
 
             ' Save the Excel file
             workbook.Save(dataDir & "BackImageSheet.out.xlsx")

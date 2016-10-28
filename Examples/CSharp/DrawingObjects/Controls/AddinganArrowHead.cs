@@ -26,10 +26,11 @@ namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Controls
             Worksheet worksheet = workbook.Worksheets[0];
 
             // Add a line to the worksheet
-            Aspose.Cells.Drawing.LineShape line2 = worksheet.Shapes.AddLine(7, 0, 1, 0, 85, 250);          
+            Aspose.Cells.Drawing.LineShape line2 = worksheet.Shapes.AddLine(7, 0, 1, 0, 85, 250);
 
-            // Set the line style.
-            line2.Line.DashStyle = MsoLineDashStyle.Solid;
+            // Set the line color
+            line2.Line.FillType = FillType.Solid;
+            line2.Line.SolidFill.Color = Color.Blue;
 
             // Set the weight of the line.
             line2.Line.Weight = 3;
@@ -38,20 +39,18 @@ namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Controls
             line2.Placement = PlacementType.FreeFloating;
 
             // Set the line arrows.
-            line2.EndArrowheadWidth = MsoArrowheadWidth.Medium;
-            line2.EndArrowheadStyle = MsoArrowheadStyle.Arrow;
-            line2.EndArrowheadLength = MsoArrowheadLength.Medium;
-
-            line2.BeginArrowheadStyle = MsoArrowheadStyle.ArrowDiamond;
-            line2.BeginArrowheadLength = MsoArrowheadLength.Medium;
+            line2.Line.EndArrowheadWidth = MsoArrowheadWidth.Medium;
+            line2.Line.EndArrowheadStyle = MsoArrowheadStyle.Arrow;
+            line2.Line.EndArrowheadLength = MsoArrowheadLength.Medium;
+            line2.Line.BeginArrowheadStyle = MsoArrowheadStyle.ArrowDiamond;
+            line2.Line.BeginArrowheadLength = MsoArrowheadLength.Medium;
 
             // Make the gridlines invisible in the first worksheet.
             workbook.Worksheets[0].IsGridlinesVisible = false;
 
             // Save the excel file.
-            workbook.Save(dataDir+ "book1.out.xls");
+            workbook.Save(dataDir+ "book1.out.xlsx");
             // ExEnd:1
-
         }
     }
 }

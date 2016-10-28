@@ -27,7 +27,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles
                 {
                     cells[i, j].PutValue(i.ToString() + "," + j.ToString());
                 }
-
             }
 
             // Create a range (A1:D3).

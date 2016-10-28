@@ -7,9 +7,9 @@ Imports System.Text
 Imports Aspose.Cells
 
 Namespace Articles
-    Public Class UsingLightCellsAPI
+    ' ExStart:WritingLargeExcelFile
+    Public Class WriteUsingLightCellsAPI
         Public Shared Sub Run()
-            ' ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -39,7 +39,6 @@ Namespace Articles
             Me._workbook = workbook
             Me.maxRows = maxRows
             Me.maxColumns = maxColumns
-            ' ExEnd:1
         End Sub
 
 #Region "LightCellsDataProvider Members"
@@ -88,6 +87,82 @@ Namespace Articles
 
 #End Region
     End Class
+    ' ExEnd:WritingLargeExcelFile
+
+    ' ExStart:ReadingLargeExcelFile
+    Public Class ReadUsingLightCellsApi
+        Public Shared Sub Run()
+            ' ExStart:ExampleTitle
+            ' The path to the documents directory.
+            Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
+
+            Dim opts As New LoadOptions()
+            Dim v As New LightCellsDataHandlerVisitCells()
+            opts.LightCellsDataHandler = v
+            Dim wb As New Workbook(dataDir & Convert.ToString("LargeBook1.xlsx"), opts)
+            Dim sheetCount As Integer = wb.Worksheets.Count
+            Console.WriteLine("Total sheets: " + sheetCount + ", cells: " + v.CellCount + ", strings: " + v.StringCount + ", formulas: " + v.FormulaCount)
+        End Sub
+    End Class
+
+    Class LightCellsDataHandlerVisitCells
+        Implements LightCellsDataHandler
+        Private m_cellCount As Integer
+        Private m_formulaCount As Integer
+        Private m_stringCount As Integer
+
+        Friend Sub New()
+            m_cellCount = 0
+            m_formulaCount = 0
+            m_stringCount = 0
+        End Sub
+
+        Public ReadOnly Property CellCount() As Integer
+            Get
+                Return m_cellCount
+            End Get
+        End Property
+
+        Public ReadOnly Property FormulaCount() As Integer
+            Get
+                Return m_formulaCount
+            End Get
+        End Property
+
+        Public ReadOnly Property StringCount() As Integer
+            Get
+                Return m_stringCount
+            End Get
+        End Property
+
+        Public Function StartSheet(sheet As Worksheet) As Boolean Implements LightCellsDataHandler.StartSheet
+            Console.WriteLine("Processing sheet[" + sheet.Name + "]")
+            Return True
+        End Function
+
+        Public Function StartRow(rowIndex As Integer) As Boolean Implements LightCellsDataHandler.StartRow
+            Return True
+        End Function
+
+        Public Function ProcessRow(row As Row) As Boolean Implements LightCellsDataHandler.ProcessRow
+            Return True
+        End Function
+
+        Public Function StartCell(column As Integer) As Boolean Implements LightCellsDataHandler.StartCell
+            Return True
+        End Function
+
+        Public Function ProcessCell(cell As Cell) As Boolean Implements LightCellsDataHandler.ProcessCell
+            m_cellCount += 1
+            If cell.IsFormula Then
+                m_formulaCount += 1
+            ElseIf cell.Type = CellValueType.IsString Then
+                m_stringCount += 1
+            End If
+            Return False
+        End Function
+    End Class
+    ' ExEnd:ReadingLargeExcelFile
 End Namespace
 
 

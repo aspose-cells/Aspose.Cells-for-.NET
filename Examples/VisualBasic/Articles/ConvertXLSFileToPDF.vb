@@ -10,9 +10,7 @@ Namespace Articles
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-
             Try
-
                 ' Get the template excel file path.
                 Dim designerFile As String = dataDir & "SampleInput.xlsx"
                 ' Specify the pdf file path.
@@ -22,14 +20,11 @@ Namespace Articles
                 Dim wb As New Global.Aspose.Cells.Workbook(designerFile)
                 ' Save the pdf file.
                 wb.Save(pdfFile, SaveFormat.Pdf)
-
             Catch e As Exception
                 Console.WriteLine(e.Message)
                 Console.ReadLine()
                 ' ExEnd:1
-
             End Try
         End Sub
-
     End Class
 End Namespace

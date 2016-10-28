@@ -7,8 +7,8 @@ Imports System.Threading
 
 Namespace Articles
     Public Class ReadingCellValuesInMultipleThreadsSimultaneously
+        ' ExStart:1
         Public Shared Sub Run()
-            ' ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
         End Sub
@@ -52,9 +52,7 @@ Namespace Articles
             System.Threading.Thread.Sleep(5 * 1000)
             myThread1.Abort()
             myThread2.Abort()
-            ' ExEnd:1
         End Sub
-
-
+        ' ExEnd:1
     End Class
 End Namespace

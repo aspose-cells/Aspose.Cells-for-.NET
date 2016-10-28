@@ -40,8 +40,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ApplySuperscriptAndSubscript
             // Saving the Excel file
             workbook.Save(dataDir+ "Superscript.out.xls", SaveFormat.Auto);
             // ExEnd:1
-            
-            
         }
     }
 }

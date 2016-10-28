@@ -68,11 +68,14 @@
     <Compile Include="Articles\AddWordArtTextWithBuiltinStyle.cs" />
     <Compile Include="Articles\AddXmlMapInsideWorkbook.cs" />
     <Compile Include="Articles\CheckHiddenExternalLinks.cs" />
+    <Compile Include="Articles\CopyRowsColumns\CopyingMultipleColumns.cs" />
+    <Compile Include="Articles\CopyRowsColumns\CopyingMultipleRows.cs" />
     <Compile Include="Articles\GlowEffectOfShape.cs" />
     <Compile Include="Articles\LinkCellsToXmlMapElements.cs" />
     <Compile Include="Articles\ManageConditionalFormatting\AddColorScales.cs" />
     <Compile Include="Articles\ManageConditionalFormatting\ApplyShadingToAlternateRowsColumns.cs" />
     <Compile Include="Articles\ManageConditionalFormatting\GenerateDatabarImage.cs" />
+    <Compile Include="Articles\ManagingRowsColumnsCells\VerifyCellValidation.cs" />
     <Compile Include="Articles\ManagingVBAModules\AddLibraryReferenceToVbaProject.cs" />
     <Compile Include="Articles\AddPDFBookmarks.cs" />
     <Compile Include="Articles\AddPictureToExcelComment.cs" />
@@ -103,8 +106,8 @@
     <Compile Include="Articles\CopyRangeDataOnly.cs" />
     <Compile Include="Articles\CopyRangeDataWithStyle.cs" />
     <Compile Include="Articles\CopyRangeStyleOnly.cs" />
-    <Compile Include="Articles\CopyRowsColumns\CopyingColumns.cs" />
-    <Compile Include="Articles\CopyRowsColumns\CopyingRows.cs" />
+    <Compile Include="Articles\CopyRowsColumns\CopyingSingleColumn.cs" />
+    <Compile Include="Articles\CopyRowsColumns\CopyingSingleRow.cs" />
     <Compile Include="Articles\CopyShapesBetweenWorksheets\CopyChart.cs" />
     <Compile Include="Articles\CopyShapesBetweenWorksheets\CopyControls.cs" />
     <Compile Include="Articles\CopyShapesBetweenWorksheets\CopyingPicture.cs" />
@@ -240,6 +243,7 @@
     <Compile Include="Articles\RemoveUnusedStyles.cs" />
     <Compile Include="Articles\RemoveWhitespaceAroundData.cs" />
     <Compile Include="Articles\RenderingAndPrinting\ChangeFontUnicodeCharacterToPdf.cs" />
+    <Compile Include="Articles\RenderingAndPrinting\ConvertChartToSvgImage.cs" />
     <Compile Include="Articles\RenderingAndPrinting\ExportChartToSvgWithViewBox.cs" />
     <Compile Include="Articles\RenderingAndPrinting\PreventExportingHiddenContent.cs" />
     <Compile Include="Articles\RenderingAndPrinting\PrintCommentWhileSavingToPdf.cs" />
@@ -264,6 +268,8 @@
     <Compile Include="Articles\SetPresetWordArtStyle.cs" />
     <Compile Include="Articles\ShadowEffectOfShape.cs" />
     <Compile Include="Articles\Shape3DEffect.cs" />
+    <Compile Include="Articles\StylingAndDataFormatting\ApplyingSubtotalChangeSummaryDirection.cs" />
+    <Compile Include="Articles\StylingAndDataFormatting\ExtractThemeData.cs" />
     <Compile Include="Articles\WorkingWithCalculationEngine\CalculateIFNAFunction.cs" />
     <Compile Include="Articles\WorkingWithCalculationEngine\CalculationOfArrayFormula.cs" />
     <Compile Include="Articles\WorkingWithCalculationEngine\ReturnRangeOfValuesUsingICustomFunction.cs" />

@@ -23,7 +23,6 @@ Namespace Articles
                 For j As Integer = 0 To 9
                     cells(i, j).PutValue(i.ToString() & "," & j.ToString())
                 Next j
-
             Next i
 
             ' Create a range (A1:D3).

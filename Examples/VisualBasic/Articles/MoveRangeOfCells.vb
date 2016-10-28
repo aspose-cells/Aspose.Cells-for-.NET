@@ -28,8 +28,6 @@ Namespace Articles
             ' Save the resultant file
             workbook.Save(dataDir & "output.xls")
             ' ExEnd:1
-
-
         End Sub
     End Class
 End Namespace

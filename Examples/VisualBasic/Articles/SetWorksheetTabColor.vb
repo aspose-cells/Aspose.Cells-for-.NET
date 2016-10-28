@@ -24,7 +24,6 @@ Namespace Articles
             ' Save the Excel file
             workbook.Save(dataDir & "output.xls")
             ' ExEnd:1
-
         End Sub
     End Class
 End Namespace

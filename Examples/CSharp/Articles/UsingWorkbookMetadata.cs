@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
+            // ExStart:1
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -29,6 +30,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
+            // ExEnd:1
         }
     }
 }

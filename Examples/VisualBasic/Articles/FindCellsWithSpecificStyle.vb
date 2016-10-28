@@ -28,14 +28,11 @@ Namespace Articles
             Do
                 ' Find the cell that has a style of cell A1
                 nextCell = worksheet.Cells.Find(Nothing, nextCell, options)
-
                 If nextCell Is Nothing Then
                     Exit Do
                 End If
-
                 ' Change the text of the cell
                 nextCell.PutValue("Found")
-
             Loop While True
 
             workbook.Save(dataDir & "output.xlsx")

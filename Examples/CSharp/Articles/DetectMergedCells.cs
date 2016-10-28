@@ -43,14 +43,12 @@ namespace Aspose.Cells.Examples.CSharp.Articles
                 trows = erow - frow + 1;
                 tcols = ecol - fcol + 1;
                 wkSheet.Cells.UnMerge(frow, fcol, trows, tcols);
-
             }
             dataDir = dataDir+ "MergeTrial.out.xlsx";
             // Save the excel file
             wkBook.Save(dataDir);
             // ExEnd:1
-            Console.WriteLine("\nProcess completed successfully.\nFile saved at " + dataDir); 
-            
+            Console.WriteLine("\nProcess completed successfully.\nFile saved at " + dataDir);
         }
     }
 }

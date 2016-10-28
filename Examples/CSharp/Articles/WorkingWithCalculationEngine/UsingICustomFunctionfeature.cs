@@ -12,7 +12,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine
     {
         public object CalculateCustomFunction(string functionName, System.Collections.ArrayList paramsList, System.Collections.ArrayList contextObjects)
         {
-
             decimal total = 0M;
             try
             {
@@ -22,13 +21,10 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine
                 // Get value of second parameter
                 Array secondParamC1C5 = (Array)(paramsList[1]);
 
-
                 // get every item value of second parameter
                 foreach (object[] value in secondParamC1C5)
                 {
-
                     total += System.Convert.ToDecimal(value[0]);
-
                 }
 
                 total = total / firstParamB1;
@@ -40,7 +36,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine
 
             // Return result of the function
             return total;
-
         }
     }
     // ExEnd:ICustomFunction

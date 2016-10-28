@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
+            // ExStart:1
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             // Instantiate the Workbook
@@ -21,8 +22,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Save the Excel file to HTML with specified option
             workbook.Save(dataDir+ "outPresentationlayout1.out.html", options);
-            
-            
+            // ExEnd:1
         }
     }
 }

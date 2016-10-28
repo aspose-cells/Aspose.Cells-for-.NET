@@ -9,8 +9,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-
-            
             try
             {
                 // ExStart:1
@@ -46,7 +44,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles
                 Console.WriteLine(ex.Message);
                 Console.ReadLine();
             }
-            
         }
     }
 }

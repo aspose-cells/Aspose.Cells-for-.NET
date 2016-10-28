@@ -13,10 +13,12 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ModifyExistingStyle
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            // Create a workbook.
-            // Open a template file. 
-            // In the book1.xls file, we have applied Ms Excel's 
-            // Named style i.e., "Percent" to the range "A1:C8". 
+            /*
+             * Create a workbook.
+             * Open a template file. 
+             * In the book1.xls file, we have applied Ms Excel's 
+             * Named style i.e., "Percent" to the range "A1:C8".
+            */
             Workbook workbook = new Workbook(dataDir+ "book1.xlsx");
 
             // We get the Percent style and create a style object.

@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
+            // ExStart:1
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             // Instantiate the workbook object
@@ -28,8 +29,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Save the resultant file
             workbook.Save(dataDir+ "book2.out.xls");
-            
-            
+            // ExEnd:1
         }
     }
 }

@@ -6,9 +6,9 @@ Imports System
 Imports System.Collections
 
 Namespace Articles
+    ' ExStart:1
     Public Class AddingAnonymousCustomObject
         Public Shared Sub Run()
-            ' ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
@@ -47,10 +47,7 @@ Namespace Articles
 
             ' Save the resultant file
             designer.Workbook.Save(dataDir & "output.xls")
-            ' ExEnd:1
         End Sub
-
-
     End Class
 End Namespace
 
@@ -62,3 +59,4 @@ Public Class Person
 		Me.Age = age
 	End Sub
 End Class
+' ExEnd:1

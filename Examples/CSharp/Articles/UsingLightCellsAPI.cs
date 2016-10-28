@@ -7,13 +7,14 @@ using Aspose.Cells;
 
 namespace Aspose.Cells.Examples.CSharp.Articles
 {
-    public class UsingLightCellsAPI
+    // ExStart:WritingLargeExcelFile
+    public class WriteUsingLightCellsAPI
     {
         public static void Run()
         {
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            
+
             // Specify your desired matrix
             int rowsCount = 10000;
             int colsCount = 30;
@@ -23,7 +24,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             ooxmlSaveOptions.LightCellsDataProvider = new TestDataProvider(workbook, rowsCount, colsCount);
 
-            workbook.Save(dataDir+ "output.out.xlsx", ooxmlSaveOptions);
+            workbook.Save(dataDir + "output.out.xlsx", ooxmlSaveOptions);
         }
     }
 
@@ -44,7 +45,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles
         }
 
         #region LightCellsDataProvider Members
-
         public bool IsGatherString()
         {
             return false;
@@ -98,9 +98,93 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             else
                 return false;
         }
-
         #endregion
     }
+    // ExEnd:WritingLargeExcelFile
+
+    // ExStart:ReadingLargeExcelFile
+    public class ReadUsingLightCellsApi
+    {
+        public static void Run()
+        {
+            // ExStart:ExampleTitle
+            // The path to the documents directory.
+            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+            LoadOptions opts = new LoadOptions();
+            LightCellsDataHandlerVisitCells v = new LightCellsDataHandlerVisitCells();
+            opts.LightCellsDataHandler = v;
+            Workbook wb = new Workbook(dataDir + "LargeBook1.xlsx", opts);
+            int sheetCount = wb.Worksheets.Count;
+            Console.WriteLine("Total sheets: " + sheetCount + ", cells: " + v.CellCount
+                + ", strings: " + v.StringCount + ", formulas: " + v.FormulaCount);
+        }
+    }
+
+    class LightCellsDataHandlerVisitCells : LightCellsDataHandler
+    {
+        private int cellCount;
+        private int formulaCount;
+        private int stringCount;
+
+        internal LightCellsDataHandlerVisitCells()
+        {
+            cellCount = 0;
+            formulaCount = 0;
+            stringCount = 0;
+        }
+
+        public int CellCount
+        {
+            get { return cellCount; }
+        }
+
+        public int FormulaCount
+        {
+            get { return formulaCount; }
+        }
+
+        public int StringCount
+        {
+            get { return stringCount; }
+        }
+
+        public bool StartSheet(Worksheet sheet)
+        {
+            Console.WriteLine("Processing sheet[" + sheet.Name + "]");
+            return true;
+        }
+
+        public bool StartRow(int rowIndex)
+        {
+            return true;
+        }
+
+        public bool ProcessRow(Row row)
+        {
+            return true;
+        }
+
+        public bool StartCell(int column)
+        {
+            return true;
+        }
+
+        public bool ProcessCell(Cell cell)
+        {
+            cellCount++;
+            if (cell.IsFormula)
+            {
+                formulaCount++;
+            }
+            else if (cell.Type == CellValueType.IsString)
+            {
+                stringCount++;
+            }
+            return false;
+        }
+    }
+    // ExEnd:ReadingLargeExcelFile
 }
             
 

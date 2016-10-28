@@ -4,6 +4,7 @@ using Aspose.Cells;
 
 namespace Aspose.Cells.Examples.CSharp.Articles
 {
+    // ExStart:1
     /// <summary>
     /// AsposeFormatWorksheet
     /// Use Aspose.Cells to perform the task
@@ -16,7 +17,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles
         [STAThread]
         public static void Run()
         {
-            // ExStart:1
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             string filename = dataDir + "FormatWorksheet.xls";            
             CreateSalesReport(filename);
@@ -711,9 +711,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             }
             // Set N column's width to fit the contents.
             workbook.Worksheets[0].Cells.SetColumnWidth(13, 9.33);
-            // ExEnd:1
-
         }
-
     }
 }
+// ExEnd:1

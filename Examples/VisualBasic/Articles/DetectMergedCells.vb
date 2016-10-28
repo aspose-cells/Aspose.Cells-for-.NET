@@ -40,7 +40,6 @@ Namespace Articles
                 trows = erow - frow + 1
                 tcols = ecol - fcol + 1
                 wkSheet.Cells.UnMerge(frow, fcol, trows, tcols)
-
             Next i
 
             ' Save the excel file

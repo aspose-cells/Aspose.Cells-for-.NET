@@ -9,6 +9,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
+            // ExStart:1
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             // Instantiate a workbook
@@ -39,7 +40,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             SheetRender sr = new SheetRender(sheet, imgOptions);
             // Convert the image
             sr.ToImage(0, dataDir+ "img_MyTestBook1.out.emf");
-            
+            // ExEnd:1
         }
     }
 }

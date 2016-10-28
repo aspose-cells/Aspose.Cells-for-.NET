@@ -10,12 +10,10 @@ Namespace Articles
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-
             ' Get the Excel file path
             Dim filePath As String = dataDir & "input.xlsx"
 
-            ' Instantiage a new workbook and open the Excel
-            ' File from its location
+            ' Instantiage a new workbook and open the Excel, File from its location
             Dim workbook As New Workbook(filePath)
 
             ' Get the count of the worksheets in the workbook
@@ -37,9 +35,6 @@ Namespace Articles
                 End If
             Next j
             ' ExEnd:1
-
-
-
         End Sub
     End Class
 End Namespace

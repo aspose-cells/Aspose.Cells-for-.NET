@@ -9,6 +9,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
+            // ExStart:1
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -34,14 +35,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             fs.Close();
 
             // Set the background image for the sheet.
-            sheet.SetBackground(imageData);
+            sheet.BackgroundImage = imageData;
 
             // Save the Excel file
-            workbook.Save(dataDir+ "BackImageSheet.out.xlsx");
+            workbook.Save(dataDir + "BackImageSheet.out.xlsx");
 
             // Save the HTML file
-            workbook.Save(dataDir+ "BackImageSheet1.out.html", SaveFormat.Html);
- 
+            workbook.Save(dataDir + "BackImageSheet1.out.html", SaveFormat.Html);
+            // ExEnd:1
         }
     }
 }

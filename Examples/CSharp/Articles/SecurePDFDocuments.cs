@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
+            // ExStart:1
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             // Open an Excel file
@@ -31,7 +32,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Save the PDF document with encrypted settings
             workbook.Save(dataDir+ "securepdf_test.out.pdf", saveOption);
-            
+            // ExEnd:1
         }
     }
 }

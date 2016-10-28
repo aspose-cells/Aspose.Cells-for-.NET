@@ -5,17 +5,21 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 {
     class RemoveUnusedStyles
     {
-       public static void Run() {
+        public static void Run()
+        {
+            // ExStart:1
+            // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            string inputPath = dataDir + "Sample.xlsx";
-            string outputPath = dataDir + "Output.out.xlsx";
 
-            Workbook workbook = new Workbook(inputPath);
+            // Load template excel file containing unused styles
+            Workbook workbook = new Workbook(dataDir + "Template-With-Unused-Custom-Style.xlsx");
 
+            // Remove all unused styles inside the template this will also remove AsposeStyle which is an unused style inside the template
             workbook.RemoveUnusedStyles();
 
-            workbook.Save(outputPath);
-            Console.WriteLine("File saved {0}", outputPath);
+            // Save the file
+            workbook.Save(dataDir + "output_out_.xlsx");
+            // ExEnd:1
         }
     }
 }

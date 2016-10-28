@@ -155,7 +155,6 @@ Friend Class RunExamples
         'UsePresentationPreferenceOption.Run()
         'UsingCustomXmlParts.Run()
         'UsingImageMarkersWhileGroupingDataInSmartMarkers.Run()
-        'UsingLightCellsAPI.Run()
         'UsingWorkbookMetadata.Run()
         'UpdateReferenceInWorksheets.Run()
         'RenderUnicodeInOutput.Run()
@@ -186,6 +185,12 @@ Friend Class RunExamples
         'AddWordArtTextWithBuiltinStyle.Run()
         'SetPresetWordArtStyle.Run()
         'AddXmlMapInsideWorkbook.Run()
+        'GetWarningsForFontSubstitution.Run()
+        'RemoveUnusedStyles.Run()
+        'ReadingCellValuesInMultipleThreadsSimultaneously.TestMultiThreadingRead()
+        'GetSmartMarkerNotifications.Run()
+        'WriteUsingLightCellsAPI.Run()
+        'ReadUsingLightCellsApi.Run()
 
         '''' Apply-Conditional-Formatting
         '''' =====================================================
@@ -209,8 +214,10 @@ Friend Class RunExamples
 
         '''' CopyRowsColumns
         '''' =====================================================
-        'CopyingColumns.Run()
-        'CopyingRows.Run()
+        'CopyingMultipleColumns.Run()
+        'CopyingMultipleRows.Run()
+        'CopyingSingleColumn.Run()
+        'CopyingSingleRow.Run()
 
         '''' CopyShapesBetweenWorksheets
         '''' =====================================================
@@ -277,6 +284,8 @@ Friend Class RunExamples
         'DisplayBulletsInCellUsingHtml.Run()
         'RenderCustomDateFormat.Run()
         'ReusingStyleObjects.Run()
+        'ApplyingSubtotalChangeSummaryDirection.Run()
+        'ExtractThemeData.Run();
 
         '''' PivotTablesAndPivotCharts
         '''' =====================================================
@@ -321,6 +330,7 @@ Friend Class RunExamples
         'GetRowHeights.Run()
         'CalculateWidthAndHeight.Run()
         'HowAndWhereToUseEnumerators.Run()
+        'VerifyCellValidation.Run()
 
         '''' ManagingChartsAndShapes
         '''' =====================================================

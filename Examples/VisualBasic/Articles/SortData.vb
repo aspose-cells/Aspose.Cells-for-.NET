@@ -49,7 +49,6 @@ Namespace Articles
             ' Saving the excel file in the default (that is Excel 2003) format
             workbook.Save(dataDir & "output.xlsx")
             ' ExEnd:1
-
         End Sub
     End Class
 End Namespace

@@ -21,8 +21,6 @@ Namespace Articles
             ' Save the Excel file to HTML with specified option
             workbook.Save(dataDir & "output.html", options)
             ' ExEnd:1
-
-
         End Sub
     End Class
 End Namespace

@@ -4,7 +4,7 @@ using Aspose.Cells;
 
 namespace Aspose.Cells.Examples.CSharp.Articles.CopyRowsColumns
 {
-    public class CopyingRows
+    public class CopyingSingleColumn
     {
         public static void Run()
         {
@@ -12,23 +12,24 @@ namespace Aspose.Cells.Examples.CSharp.Articles.CopyRowsColumns
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            // Instantiate a new workbook
+            // Instantiate a new Workbook
             // Open an existing excel file
             Workbook workbook = new Workbook(dataDir+ "aspose-sample.xlsx");
 
-            // Get the first worksheet cells
-            Cells cells = workbook.Worksheets[0].Cells;
-            // Apply formulas to the cells
-            for (int i = 0; i < 5; i++)
+            // Get the first worksheet
+            Worksheet worksheet = workbook.Worksheets[0];
+            // Get the Cells collection
+            Cells cells = worksheet.Cells;
+
+            //Copy the first column to next 10 columns
+            for (int i = 1; i <= 10; i++)
             {
-                cells[0, i].Formula = "=Input!" + cells[0, i].Name;
+                cells.CopyColumn(cells, 0, i);
             }
-            // Copy the first row to next 10 rows
-            cells.CopyRows(cells, 0, 1, 10);
+
             // Save the excel file
-            workbook.Save(dataDir + "outaspose-sample.out.xlsx");
+            workbook.Save(dataDir+ "outaspose-sample.out.xlsx");
             // ExEnd:1
- 
         }
     }
 }

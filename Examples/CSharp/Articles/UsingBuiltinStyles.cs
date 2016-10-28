@@ -8,6 +8,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
+            // ExStart:1
+            // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             string output1Path = dataDir + "Output.xlsx";
             string output2Path = dataDir + "Output.out.ods";
@@ -27,6 +29,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             Console.WriteLine("File saved {0}", output1Path);
             workbook.Save(output2Path);
             Console.WriteLine("File saved {0}", output1Path);
+            // ExEnd:1
         }
     }
 }
