@@ -105,9 +105,6 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
 
             // Setting tool tip of the hyperlink
             link2.ScreenTip = "Open Aspose.Grid Docs in new window";
-
-            // Setting text of the hyperlink. It will be displayed if image is not displayed due to some reason
-//            link2.TextToDisplay = "Open Aspose.Grid Docs Page in new window";
             // ExEnd:AddImageHyperlinks
         }
 

@@ -76,7 +76,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
 
             // Setting the border color to Blue
             style.BorderColor = Color.Blue;
-
+            
             // Set the cell style
             cell.CopyStyle(style);
             // ExEnd:ApplyBorderStyles
@@ -126,7 +126,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
 
             // Setting the number format of "B1" cell to Currency1
             sheet.Cells["B1"].SetNumberType((int)NumberType.Currency1);
-
+        
             // Setting the custom number format of "B2" cell
             sheet.Cells["B2"].SetCustom("#,##0.0000");
             // ExEnd:ApplyNumberFormats

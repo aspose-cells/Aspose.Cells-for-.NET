@@ -7,25 +7,27 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
-
-public partial class BindWithDataSourceControl {
+namespace Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.DataSourceControl {
     
-    /// <summary>
-    /// GridWeb1 control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::Aspose.Cells.GridWeb.GridWeb GridWeb1;
     
-    /// <summary>
-    /// AccessDataSource1 control.
-    /// </summary>
-    /// <remarks>
-    /// Auto-generated field.
-    /// To modify move field declaration from designer file to code-behind file.
-    /// </remarks>
-    protected global::System.Web.UI.WebControls.AccessDataSource AccessDataSource1;
+    public partial class BindWithDataSourceControl {
+        
+        /// <summary>
+        /// GridWeb1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Aspose.Cells.GridWeb.GridWeb GridWeb1;
+        
+        /// <summary>
+        /// AccessDataSource1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.AccessDataSource AccessDataSource1;
+    }
 }

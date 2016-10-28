@@ -1,5 +1,5 @@
 <%@ Page Language="C#" AutoEventWireup="true" Inherits="demos_GridWebForm_GridWebForm1"
-    MasterPageFile="~/tpl/Demo.Master" Title="GridWeb FormView - Aspose.Cells Grid Suite Demos"
+    MasterPageFile="~/Site.Master" Title="GridWeb FormView - Aspose.Cells Grid Suite Demos"
     CodeBehind="GridWebForm1.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>
@@ -70,7 +70,7 @@
                         TabStyle-BackColor="#E0E0E0" TabStyle-Wrap="False" ActiveHeaderBgColor="#F2F2F2"
                         OnCellCommand="GridWeb1_CellCommand">
                         <WebWorksheets>
-                            <acw:Worksheet DataMember="Products" Name="Sheet1">
+                            <acw:WorksheetDesign DataMember="Products" Name="Sheet1">
                                 <BindColumns>
                                     <acw:BindColumn CommandName="VIEWDETAIL" UseAlternativeStyle="False" EnableSort="False"
                                         Caption="View" CommandText="[VIEW]">
@@ -109,7 +109,7 @@
                                         <Validation ValidationType="Integer"></Validation>
                                     </acw:BindColumn>
                                 </BindColumns>
-                            </acw:Worksheet>
+                            </acw:WorksheetDesign>
                         </WebWorksheets>
                     </acw:GridWeb>
                     <acw:GridWebForm ID="GridWebForm2" runat="server" GridWebControl="GridWeb1">

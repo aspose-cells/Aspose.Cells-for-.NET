@@ -1,5 +1,5 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="BindWithDataSourceControl"
-    MasterPageFile="~/Site.Master" Title="Bind with DataSourceControl - Aspose.Cells Grid Suite Demos"
+﻿<%@ Page Language="C#" AutoEventWireup="true" Inherits="Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.DataSourceControl.BindWithDataSourceControl"
+    MasterPageFile="~/Site.Master" Title="Bind with DataSourceControl - Aspose.Cells Grid Suite Examples"
     CodeBehind="BindWithDataSourceControl.aspx.cs" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>
@@ -13,7 +13,7 @@
                 </td>
                 <td class="demos-heading-bg" style="width: 100%;">
                     <h2 class="demos-heading-bg">
-                        Bind with DataSourceControl - Aspose.Cells Grid Suite Demos
+                        Bind with DataSourceControl - Aspose.Cells Grid Suite Examples
                     </h2>
                 </td>
                 <td style="width: 19; vertical-align: top;">
@@ -24,7 +24,7 @@
     </table>
     <div style="text-align: left; font-family: Arial; font-size: small;" class="componentDescriptionTxt">
         <p>
-            This demo is to demonstrate the use of Access Data Source that further binded with
+            This example is to demonstrate the use of Access Data Source that further binded with
             empty <b>WebWorksheet</b>. Insert, Update, Delete queries and their coresponding
             parameters are defined in Access Data Source.
         </p>

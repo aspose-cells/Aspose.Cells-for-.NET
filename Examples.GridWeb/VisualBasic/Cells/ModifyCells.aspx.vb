@@ -42,7 +42,10 @@ Namespace Cells
             ' Accessing "B1" cell of the worksheet
             Dim cell As GridCell = sheet.Cells("B1")
 
-            ' Accessing & modifying the string value of "B1" cell
+            ' Accessing the string value of "B1" cell
+            Label1.Text = cell.StringValue
+
+            ' Modifying the string value of "B1" cell
             cell.PutValue("Hello Aspose.Grid")
             ' ExEnd:AddCellStringValue
         End Sub

@@ -539,11 +539,11 @@
 			            </div>
                     </li>      
                     <li class="genericList" title="Protection/Validation">
-			            <p class="productTitle"><a href="Miscellaneous/common/datavalidation.aspx">Protection/Validation</a></p>
+			            <p class="productTitle"><a href="Miscellaneous/common/DataValidation.aspx">Data Protection / Data Validation</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                This Demo introduces the Data Validation capabilities of GridWeb Control. 
+				                This example introduces the Data Validation capabilities of GridWeb Control. 
 			                </p>
 			            </div>
                     </li>                  
@@ -575,47 +575,47 @@
 			            </div>
                     </li> 
                     <li class="genericList" title="Math">
-			            <p class="productTitle"><a href="Miscellaneous/formula/math.aspx">Math</a></p>
+			            <p class="productTitle"><a href="Miscellaneous/Formula/ApplyMathematicalFormulas.aspx">Apply Mathematical Formulas</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                This Demo presents the exercise of Mathematical Functions.
+				                This examples presents the use of Mathematical Functions in GridWeb.
 			                </p>
 			            </div>
                     </li>
                     <li class="genericList" title="Text &amp; Data">
-			            <p class="productTitle"><a href="Miscellaneous/formula/textanddata.aspx">Text &amp; Data</a></p>
+			            <p class="productTitle"><a href="Miscellaneous/Formula/ApplyTextAndDataFormulas.aspx">Text &amp; Data</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                The Demo covers the practice session of String Functions. 
+				                This example covers the application of data and text functions in GridWeb. 
 			                </p>
 			            </div>
                     </li>
                     <li class="genericList" title="Statistical">
-			            <p class="productTitle"><a href="Miscellaneous/formula/statistical.aspx">Statistical</a></p>
+			            <p class="productTitle"><a href="Miscellaneous/Formula/ApplyStatisticalFormulas.aspx">Apply Statistical Formulas</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                The Demo presents the exercise of Statistical Functions. 
+				                This example covers the application of Statistical functions in GridWeb. 
 			                </p>
 			            </div>
                     </li>
                     <li class="genericList" title="Date &amp; Time">
-			            <p class="productTitle"><a href="Miscellaneous/formula/dateandtime.aspx">Date &amp; Time</a></p>
+			            <p class="productTitle"><a href="Miscellaneous/Formula/ApplyDateTimeFormulas.aspx"> Apply Date &amp; Time Formulas</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                The Demo presents the exercise of Date and Time Functions. 
+				                This example exhibits the application of Date &amp; Time functions in GridWeb. 
 			                </p>
 			            </div>
                     </li>
                     <li class="genericList" title="Logical">
-			            <p class="productTitle"><a href="Miscellaneous/formula/logical.aspx">Logical</a></p>
+			            <p class="productTitle"><a href="Miscellaneous/Formula/ApplyLogicalFormulas.aspx">Apply Logical Formulas</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                This Demo presents the Demonstration of Logical Functions. 
+				                This example presents the demonstration of Logical Functions. 
 			                </p>
 			            </div>
                     </li>
@@ -629,74 +629,56 @@
 			            </div>
                     </li>
                     <li class="genericList" title="Number Format" style="display:none;">
-			            <p class="productTitle"><a href="Miscellaneous/format/numberformat.aspx">Number Format</a></p>
+			            <p class="productTitle"><a href="Miscellaneous/Format/ApplyNumberFormats.aspx"> Apply Number Formats</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                This Demo covers the exercise of Number Formats. 
+				                This example covers the demonstration of applying built-in Number Formats in GridWeb. 
 			                </p>
 			            </div>
                     </li>
                     <li class="genericList" title="Date &amp; Time Format">
-			            <p class="productTitle"><a href="Miscellaneous/format/dateandtime.aspx">Date &amp; Time Format</a></p>
+			            <p class="productTitle"><a href="Miscellaneous/Format/ApplyDateTimeFormats.aspx">Apply Date &amp; Time Formats</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                This Demo covers the exercise of Date and Time Formats. 
+				                This example covers the demonstration of applying built-in Date &amp; Time Formats in GridWeb.
 			                </p>
 			            </div>
                     </li>
                     <li class="genericList" title="Custom Format">
-			            <p class="productTitle"><a href="Miscellaneous/format/customformat.aspx">Custom Format</a></p>
+			            <p class="productTitle"><a href="Miscellaneous/Format/ApplyCustomFormats.aspx">Apply Custom Formats</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                This Demo presents an exercise of Custom Formats. 
+				                This example shows the application of custom formats in GridWeb.
 			                </p>
 			            </div>
                     </li>
                     <li class="genericList" title="Create a Report">
-			            <p class="productTitle"><a href="Miscellaneous/pivottable/createreport.aspx">Create a Report</a></p>
+			            <p class="productTitle"><a href="Miscellaneous/PivotTable/CreatePivotTable.aspx">Create a Pivot Table</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                This Demo creates a PivotTable Report from Microsoft Excel list source. 
+				                This example creates a PivotTable from Microsoft Excel source. 
 			                </p>
 			            </div>
                     </li>
                     <li class="genericList" title="Data Sources">
-			            <p class="productTitle"><a href="Miscellaneous/pivottable/fromwebworksheet.aspx">Data Sources</a></p>
+			            <p class="productTitle"><a href="Miscellaneous/PivotTable/CreatePivotTableFromWorksheet.aspx">Create Pivot Table From Worksheet</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                The Demo generates PivotTable reports based on different data source objects. 
+				                The example generates PivotTable based on a Worksheet of GridWeb. 
 			                </p>
 			            </div>
                     </li>
                     <li class="genericList" title="Custom Report">
-			            <p class="productTitle"><a href="Miscellaneous/pivottable/customreport.aspx">Custom Report</a></p>
+			            <p class="productTitle"><a href="Miscellaneous/PivotTable/CreateCustomPivotTable.aspx">Create Custom Pivot Table</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                This Demo customizes a PivotTable report. 
-			                </p>
-			            </div>
-                    </li>
-                    <li class="genericList" title="Number Format Report" style="display:none">
-			            <p class="productTitle"><a href="Miscellaneous/pivottable/reportnumberformat.aspx">Number Format Report</a></p>
-			            <p class="componentDescriptionCaption">Description</p>
-			            <div class="componentDescriptionTxt">
-                            <p class="componentDescriptionTxt">
-				                This Demo covers the exercise of Number Formats in a PivotTable report. 
-			                </p>
-			            </div>
-                    </li>
-                    <li class="genericList" title="Summary Functions" style="display:none;">
-			            <p class="productTitle"><a href="Miscellaneous/pivottable/pivotfieldfunction.aspx">Summary Functions</a></p>
-			            <p class="componentDescriptionCaption">Description</p>
-			            <div class="componentDescriptionTxt">
-                            <p class="componentDescriptionTxt">
-				                The Demo demonstrates PivotFieldFunction enumeration used to summarize PivotTable data field(s). 
+				                This example customizes a PivotTable in GridWeb. 
 			                </p>
 			            </div>
                     </li>
@@ -736,71 +718,17 @@
 			                </p>
 			            </div>
                     </li>
-                    <li class="genericList" title="Client Side Scripting" style="display:none;">
-			            <p class="productTitle"><a href="Miscellaneous/scripting/clientsidescripting.aspx">Client Side Scripting</a></p>
-			            <p class="componentDescriptionCaption">Description</p>
-			            <div class="componentDescriptionTxt">
-                            <p class="componentDescriptionTxt">
-				                This Demo explains the usage of client-side scripting with GridWeb Control.
-			                </p>
-			            </div>
-                    </li>
-                    <li class="genericList" title="Client Side Events" style="display:none;">
-			            <p class="productTitle"><a href="Miscellaneous/scripting/clientsideevents.aspx">Client Side Events</a></p>
-			            <p class="componentDescriptionCaption">Description</p>
-			            <div class="componentDescriptionTxt">
-                            <p class="componentDescriptionTxt">
-				                This Demo explains the usage of client-side events with GridWeb Control.
-			                </p>
-			            </div>
-                    </li>
-                    <li class="genericList" title="Client Side Functions" style="display:none;">
-			            <p class="productTitle"><a href="Miscellaneous/scripting/clientsidefunctions.aspx">Client Side Functions</a></p>
-			            <p class="componentDescriptionCaption">Description</p>
-			            <div class="componentDescriptionTxt">
-                            <p class="componentDescriptionTxt">
-				                This Demo explains the usage of client-side functions with GridWeb Control.
-			                </p>
-			            </div>
-                    </li>
                     <li class="genericList" title="GridWeb Form View" style="display:none;">
 			            <p class="productTitle"><a href="Miscellaneous/gridwebform/gridwebform1.aspx">GridWeb Form View</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                This demo shows how to use the GridWeb FormView feature.
+				                This example shows how to use the GridWeb FormView feature.
                             </p>
 			            </div>
-                    </li>                
-                    <li class="genericList" title="Custom Language" style="display:none;">
-			            <p class="productTitle"><a href="Miscellaneous/language/customlanguage.aspx">Custom Language</a></p>
-			            <p class="componentDescriptionCaption">Description</p>
-			            <div class="componentDescriptionTxt">
-                            <p class="componentDescriptionTxt">
-				                This Demo explains how to custom the language of the GridWeb Control. 
-			                </p>
-			            </div>
                     </li>
-                    <li class="genericList" title="AutoFilter">
-			            <p class="productTitle"><a href="Miscellaneous/filter/autofilter.aspx">AutoFilter</a></p>
-			            <p class="componentDescriptionCaption">Description</p>
-			            <div class="componentDescriptionTxt">
-                            <p class="componentDescriptionTxt">
-				                This Demo Imports an Excel File from a source and Set the AutoFilter feature. 
-			                </p>
-			            </div>
-                    </li>
-                    <li class="genericList" title="Custom Filter">
-			            <p class="productTitle"><a href="Miscellaneous/filter/customfilter.aspx">Custom Filter</a></p>
-			            <p class="componentDescriptionCaption">Description</p>
-			            <div class="componentDescriptionTxt">
-                            <p class="componentDescriptionTxt">
-				                This Demo Imports an Excel File from a source and use a formula to filter rows. 
-			                </p>
-			            </div>
-                    </li>
-                    <li class="genericList" title="XHTML Support"  style="display:none;">
-			            <p class="productTitle"><a href="Miscellaneous/xhtml/xhtml.aspx">XHTML Support</a></p>
+                    <li class="genericList" title="XHTML Support">
+			            <p class="productTitle"><a href="Miscellaneous/XHTML/EnableXHTMLMode.aspx">XHTML Support</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
@@ -818,7 +746,7 @@
 			            </div>
                     </li>
                     <li class="genericList" title="DataSourceControl (.NET 2.0)" style="display:none;">
-			            <p class="productTitle"><a href="Miscellaneous/datasourcecontrol/bindwithdatasourcecontrol.aspx">DataSourceControl (.NET 2.0)</a></p>
+			            <p class="productTitle"><a href="Miscellaneous/DataSourceControl/BindWithDataSourceControl.aspx">DataSourceControl (.NET 2.0)</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
@@ -827,7 +755,7 @@
 			            </div>
                     </li>
                     <li class="genericList" title="Browsers Capabilities">
-			            <p class="productTitle"><a href="browsers.aspx">Browsers Capabilities</a></p>
+			            <p class="productTitle"><a href="GridWebBasics/ViewBrowsersCapabilities.aspx">Browsers Capabilities</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
@@ -835,30 +763,30 @@
 			                </p>
 			            </div>
                     </li>
-                    <li class="genericList" title="Worksheets Designer" style="display:none;">
-			            <p class="productTitle"><a href="worksheets.aspx">Worksheets Designer</a></p>
+                    <li class="genericList" title="Worksheets Designer">
+			            <p class="productTitle"><a href="GridWebBasics/AboutWorksheetDesigner.aspx">Worksheets Designer</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                The Aspose.Cells.GridWeb is shipped with a built-in Worksheets Designer. You may activate the designer from the Visual Studio.Net IDE. In VS.Net, right click the Grid Control in a webform, then select "Worksheets Designer..." from the popup menu...
+				                The Aspose.Cells.GridWeb is shipped with a built-in Worksheets Designer. You may activate the designer from the Visual Studio IDE.
 			                </p>
 			            </div>
                     </li>
-                    <li class="genericList" title="Custom Command Buttons Designer" style="display:none;">
-			            <p class="productTitle"><a href="custombtn.aspx">Custom Command Buttons Designer</a></p>
+                    <li class="genericList" title="Custom Command Buttons Designer">
+			            <p class="productTitle"><a href="GridWebBasics/AboutCustomCommandButtonsDesigner.aspx">Custom Command Buttons Designer</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                The Aspose.Cells.GridWeb is shipped with a built-in Custom Commad Buttons Designer. You may activate the designer from the Visual Studio.Net IDE. In VS.Net, right click the Grid Control in a webform, then select "Custom Command Buttons..." from the popup menu....
+				                The Aspose.Cells.GridWeb is shipped with a built-in Custom Commad Buttons Designer. You may activate the designer from the Visual Studio IDE.
 			                </p>
 			            </div>
                     </li>
-                    <li class="genericList" title="Control Designer" style="display:none;">
-			            <p class="productTitle"><a href="controldes.aspx">Control Designer</a></p>
+                    <li class="genericList" title="Control Designer">
+			            <p class="productTitle"><a href="GridWebBasics/AboutGridWebDesigner.aspx">Aspose.Cells.GridWeb Designer</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
-				                The Aspose.Cells.GridWeb is shipped with a built-in Control Designer. You may activate the designer in two ways, from System Start menu or from the Visual Studio.Net IDE. In VS.Net, right click the Grid Control in a webform, then select "Aspose.Cells.GridWeb Designer..." from the popup menu...
+				                The Aspose.Cells.GridWeb is shipped with a built-in designer. You may activate the designer in two ways, from System Start menu or from the Visual Studio IDE. 
 			                </p>
 			            </div>
                     </li>    

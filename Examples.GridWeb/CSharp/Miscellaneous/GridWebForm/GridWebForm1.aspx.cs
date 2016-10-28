@@ -31,7 +31,7 @@ public partial class demos_GridWebForm_GridWebForm1 : System.Web.UI.Page
     this.dataSet11 = new Aspose.Cells.GridWeb.DemosCS.DataBind.DataSet1();
 
     //Create demo database object
-    DemoDatabase db = new DemoDatabase();
+    ExampleDatabase db = new ExampleDatabase();
 
     //Create path to database file
     string path = Server.MapPath("~");
@@ -48,9 +48,9 @@ public partial class demos_GridWebForm_GridWebForm1 : System.Web.UI.Page
       //Create web worksheet object
       WebWorksheet sheet = GridWeb1.WebWorksheets[0];
 
-      // Create the "CategoryID" field dropdownlist value list.
-      sheet.BindColumns["CategoryID"].Validation.ValidationType = ValidationType.List;
-      sheet.BindColumns["CategoryID"].Validation.LoadValueList(dataSet11.Categories.DefaultView, "CategoryID", "CategoryName", true);
+      //// Create the "CategoryID" field dropdownlist value list.
+      //sheet.BindColumns["CategoryID"].Validation.ValidationType = ValidationType.List;
+      //sheet.BindColumns["CategoryID"].Validation.LoadValueList(dataSet11.Categories.DefaultView, "CategoryID", "CategoryName", true);
 
       // Bind the sheet to the dataset.
       sheet.DataSource = dataSet11;
