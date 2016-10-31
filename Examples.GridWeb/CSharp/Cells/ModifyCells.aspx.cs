@@ -55,8 +55,10 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
             // Accessing "B1" cell of the worksheet
             GridCell cell = sheet.Cells["B1"];
 
-            // Accessing & modifying the string value of "B1" cell
-            //cell.StringValue = "Hello Aspose.Grid";
+            // Accessing the string value of "B1" cell
+            Label1.Text = cell.StringValue;
+
+            // Modifying the string value of "B1" cell
             cell.PutValue("Hello Aspose.Grid");
             // ExEnd:AddCellStringValue
         }
