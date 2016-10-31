@@ -2274,6 +2274,11 @@
             Get or Set web link target type,please note this is an extension attribute and can not keep in excel file
             </summary>
     </member>
+    <member name="P:Aspose.Cells.GridWeb.Data.GridHyperlink.AltText">
+      <summary>
+            Get or Set Alternate text for the image link,please note this is an extension attribute and can not keep in excel file
+            </summary>
+    </member>
     <member name="P:Aspose.Cells.GridWeb.Data.GridHyperlink.DiscardInput">
       <summary>
             Indicates whether to discard user input at client browser when user click this CellCommand hyperlink. Could be used as an "undo" action.
@@ -2321,14 +2326,14 @@
     </member>
     <member name="M:Aspose.Cells.GridWeb.Data.GridHyperlinkCollection.Add(System.String,System.Int32,System.Int32,System.String)">
       <summary>
-            Adds a hyperlink to a specified cell or a range of cells.
-            </summary>
+             Adds a hyperlink to a specified cell or a range of cells.
+             </summary>
       <param name="cellName">Cell name.</param>
       <param name="totalRows">Number of rows in this hyperlink range.</param>
       <param name="totalColumns">Number of columns of this hyperlink range.</param>
       <param name="address">Address of the hyperlink.</param>
       <returns>
-        <see cref="T:Aspose.Cells.GridWeb.Data.Hyperlink" /> object index.</returns>
+        <see cref="T:Aspose.Cells.GridWeb.Data.GridHyperlink" /> object index.</returns>
     </member>
     <member name="M:Aspose.Cells.GridWeb.Data.GridHyperlinkCollection.Add(System.String,System.String)">
       <summary>
@@ -2337,7 +2342,7 @@
       <param name="cellName">Cell name.</param>
       <param name="address">Address of the hyperlink.</param>
       <returns>
-        <see cref="T:Aspose.Cells.GridWeb.Data.Hyperlink" /> object index.</returns>
+        <see cref="T:Aspose.Cells.GridWeb.Data.GridHyperlink" /> object index.</returns>
     </member>
     <member name="M:Aspose.Cells.GridWeb.Data.GridHyperlinkCollection.Add(System.String,System.String,System.String,System.String,System.String)">
       <summary>
@@ -2349,7 +2354,24 @@
       <param name="textToDisplay">The text to be displayed for the specified hyperlink.</param>
       <param name="screenTip">The screenTip text for the specified hyperlink.</param>
       <returns>
-        <see cref="T:Aspose.Cells.GridWeb.Data.Hyperlink" /> object index.</returns>
+        <see cref="T:Aspose.Cells.GridWeb.Data.GridHyperlink" /> object index.</returns>
+    </member>
+    <member name="M:Aspose.Cells.GridWeb.Data.GridHyperlinkCollection.GetHyperlink(Aspose.Cells.GridWeb.Data.GridCell)">
+      <summary>
+            Gets the cell's Hyperlink object. If there is no Hyperlink of the cell, returns null.
+            </summary>
+      <param name="cell">The GridCell object.</param>
+      <returns>
+        <see cref="T:Aspose.Cells.GridWeb.Data.GridHyperlink" /> the GridHyperlink object.</returns>
+    </member>
+    <member name="M:Aspose.Cells.GridWeb.Data.GridHyperlinkCollection.GetHyperlink(System.Int32,System.Int32)">
+      <summary>
+            Gets the cell's Hyperlink object. If there is no Hyperlink of the cell, returns null.
+            </summary>
+      <param name="row">The row of the cell.</param>
+      <param name="column">The column of the cell.</param>
+      <returns>
+        <see cref="T:Aspose.Cells.GridWeb.Data.GridHyperlink" /> the GridHyperlink object.</returns>
     </member>
     <member name="M:Aspose.Cells.GridWeb.Data.GridHyperlinkCollection.Clear">
       <summary>
@@ -2361,6 +2383,12 @@
             Remove the hyperlink  at the specified index.
             </summary>
       <param name="index">The zero based index of the element.</param>
+    </member>
+    <member name="M:Aspose.Cells.GridWeb.Data.GridHyperlinkCollection.Remove(Aspose.Cells.GridWeb.Data.GridCellArea)">
+      <summary>
+            Remove the hyperlink  at the specified area.
+            </summary>
+      <param name="area">The area which contains hyperlink.</param>
     </member>
     <member name="P:Aspose.Cells.GridWeb.Data.GridHyperlinkCollection.Item(System.Int32)">
       <summary>
@@ -3321,7 +3349,7 @@
         <see cref="T:Aspose.Cells.GridWeb.Data.GridValidation" /> the added GridValidation instance.</returns>
       <remarks>
             NOTE: This member is now obsolete. Instead, 
-            please use ValidationCollection.Add(CellArea) method.
+            please use GridValidationCollection.Add(row,col) method.
             This property will be removed 12 months later since JANUARY 2015. 
             Aspose apologizes for any inconvenience you may have experienced.</remarks>
     </member>
@@ -4394,7 +4422,7 @@
     <member name="T:Aspose.Cells.GridWeb.Data.PivotCaches">
       <remarks>
              NOTE: This class is now obsolete.
-             please use GridPivotTable Instead.
+             please use GridPivotTableCollection Instead.
              This class will be removed after 6 months since Aug. 2014.
              Aspose apologizes for any inconvenience you may have experienced.</remarks>
       <summary>
@@ -9440,6 +9468,7 @@
             The start row of the area.
             </summary>
     </member>
+    <!-- Badly formed XML comment ignored for member "P:Aspose.Cells.PageSetup.IsHFDiffFirst" -->
     <member name="T:Aspose.Cells.GridWeb.NamespaceDoc">
       <summary>
             The basic namespace of GridWeb.

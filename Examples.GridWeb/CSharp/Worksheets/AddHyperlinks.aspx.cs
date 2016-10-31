@@ -18,7 +18,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if first visit this page init GridWeb1 
+            // If first visit this page init GridWeb1 
             if (!IsPostBack && !GridWeb1.IsPostBack)
             {
                 InitData();

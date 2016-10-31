@@ -40,7 +40,7 @@ Namespace Cells
             If chkSelectedCells.Checked Then
                 ' ExStart:MakeSelectedCellsEditable
                 ' Accessing the reference of the worksheet that is currently active
-                Dim sheet As WebWorksheet = GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex)
+                Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
                 ' Setting all cells of the worksheet to Readonly first
                 sheet.SetAllCellsReadonly()
