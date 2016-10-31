@@ -53,7 +53,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
             {
                 // ExStart:MakeSelectedCellsEditable
                 // Accessing the reference of the worksheet that is currently active
-                WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+                GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
                 // Setting all cells of the worksheet to Readonly first
                 sheet.SetAllCellsReadonly();

@@ -95,9 +95,6 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
 
             // Setting tool tip of the hyperlink
             link2.ScreenTip = "Open Aspose.Grid Docs in new window";
-
-            // Setting text of the hyperlink. It will be displayed if image is not displayed due to some reason
-            //            link2.TextToDisplay = "Open Aspose.Grid Docs Page in new window";
         }
 
         protected void btnUpdateHyperlinks_Click(object sender, EventArgs e)
@@ -108,7 +105,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
 
             // Accessing a specific cell that contains hyperlink
             WebCell cell = sheet.Cells["B1"];
-                        
+
             // Accessing the hyperlink from the specific cell
             Hyperlink link = sheet.Hyperlinks.GetHyperlink(cell);
 
@@ -119,7 +116,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
 
                 // Modifying the URL of hyperlink
                 link.Url = "http://www.aspose.com/Community/Blogs";
-            }            
+            } 
             // ExEnd:AccessHyperlinks
         }
 
