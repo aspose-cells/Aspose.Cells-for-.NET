@@ -5,10 +5,12 @@ Namespace Worksheets
         Inherits System.Web.UI.Page
 
         Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
+
             'if first visit this page init GridWeb1 
             If Not IsPostBack AndAlso Not GridWeb1.IsPostBack Then
                 InitData()
             End If
+
         End Sub
 
         Private Sub InitData()

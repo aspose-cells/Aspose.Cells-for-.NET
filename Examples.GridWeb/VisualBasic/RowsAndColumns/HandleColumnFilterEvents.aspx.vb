@@ -62,5 +62,6 @@ Namespace RowsAndColumns
             Label1.Text = msg
         End Sub
         ' ExEnd:AfterColumnFilter
+
     End Class
 End Namespace
