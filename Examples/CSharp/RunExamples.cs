@@ -73,6 +73,7 @@ using Aspose.Cells.Examples.CSharp.Worksheets.Value;
 using Aspose.Cells.Examples.CSharp.Worksheets.PageSetupFeatures;
 using Aspose.Cells.Examples.CSharp.Worksheets.Security.Protecting;
 using Aspose.Cells.Examples.CSharp.Worksheets.Security.Unprotect;
+using Aspose.Cells.Examples.CSharp.Articles.UsingImageOrPrintOptions;
 
 
 namespace Aspose.Cells.Examples.CSharp
@@ -283,6 +284,13 @@ namespace Aspose.Cells.Examples.CSharp
             //WorksheetToImageDesiredSize.Run();
             //RenderWorksheetToGraphicContext.Run();
             //SaveExcelIntoPdfWithOptimizedSize.Run();
+            //PageSetupAndPrintingOptions.Run();
+
+            //// UsingImageOrPrintOptions
+            //// =====================================================
+            //WorksheetToAnImage.Run();
+            //SpecificPagesToImage.Run();
+            //UseWorkbookRenderForImageConversion.Run();
 
             //// StylingAndDataFormatting
             //// =====================================================
@@ -352,6 +360,8 @@ namespace Aspose.Cells.Examples.CSharp
             //VerifyPasswordUsedToProtectWorksheets.Run();
             //SearchDataUsingOriginalValues.Run();
             //DetectEmptyWorksheets.Run();
+            //CopyMoveWorksheets.Run();
+            //GetApplicationVersion.Run();
 
             //// ManagingRowsColumnsCells
             //// =====================================================
@@ -388,6 +398,8 @@ namespace Aspose.Cells.Examples.CSharp
             //GenerateChartByProcessingSmartMarkers.Run();
             //CreateDynamicCharts.Run();
             //UsingDynamicFormula.Run();
+            //ResizeChartDataLabelToFit.Run();
+            //CopySparkline.Run();
 
             //// ManageDatabaseConnection
             //// =====================================================
@@ -554,7 +566,7 @@ namespace Aspose.Cells.Examples.CSharp
 
             //// Controls
             //// =====================================================
-            AddinganArrowHead.Run();
+            //AddinganArrowHead.Run();
             //AddingArcControl.Run();
             //AddingButtonControl.Run();
             //AddingCheckBoxControl.Run();

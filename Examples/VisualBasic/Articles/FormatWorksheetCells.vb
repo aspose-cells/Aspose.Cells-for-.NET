@@ -4,6 +4,7 @@ Imports System.Drawing
 Imports Aspose.Cells
 
 Namespace Articles
+    ' ExStart:1
     ''' <summary>
     ''' AsposeFormatWorksheet
     ''' Use Aspose.Cells to perform the task
@@ -12,9 +13,8 @@ Namespace Articles
         ''' <summary>
         ''' The main entry point for the application.
         ''' </summary>
-        <STAThread>
+        <STAThread()>
         Public Shared Sub Run()
-            ' ExStart:1
             Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             Dim filename As String = dataDir & Convert.ToString("FormatWorksheet.xls")
             CreateSalesReport(filename)
@@ -693,9 +693,7 @@ Namespace Articles
             Next i
             ' Set N column' S width to fit the contents.
             workbook.Worksheets(0).Cells.SetColumnWidth(13, 9.33)
-            ' ExEnd:1
-
         End Sub
-
     End Class
+    ' ExEnd:1
 End Namespace

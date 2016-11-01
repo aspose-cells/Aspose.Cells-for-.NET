@@ -95,6 +95,8 @@
     <Compile Include="Articles\GetWarningsForFontSubstitution.vb" />
     <Compile Include="Articles\GlowEffectOfShape.vb" />
     <Compile Include="Articles\LinkCellsToXmlMapElements.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\CopySparkline.vb" />
+    <Compile Include="Articles\ManageChartsAndShapes\ResizeChartDataLabelToFit.vb" />
     <Compile Include="Articles\ManagingRowsColumnsCells\VerifyCellValidation.vb" />
     <Compile Include="Articles\ManagingVBAModules\AddLibraryReferenceToVbaProject.vb" />
     <Compile Include="Articles\AddPDFBookmarks.vb" />
@@ -227,11 +229,13 @@
     <Compile Include="Articles\ManagingWorkbooksWorksheets\CheckIfPasswordProtected.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\CheckPasswordToModify.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\ConvertXLSBToXLSM.vb" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\CopyMoveWorksheets.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\DetectEmptyWorksheets.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\DetectFileFormatAndEncryption.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\DeterminingLicenseLoading.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\EditingHyperlinksOfWorksheet.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\ExportExcelDataToDataTableWithoutFormatting.vb" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\GetApplicationVersion.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\ImportCSVWithFormulas.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\ImportXmlData.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\OdsFileSaveOptions.vb" />
@@ -259,6 +263,7 @@
     <Compile Include="Articles\RenderingAndPrinting\ChangeFontUnicodeCharacterToPdf.vb" />
     <Compile Include="Articles\RenderingAndPrinting\ConvertChartToSvgImage.vb" />
     <Compile Include="Articles\RenderingAndPrinting\ExportChartToSvgWithViewBox.vb" />
+    <Compile Include="Articles\RenderingAndPrinting\PageSetupAndPrintingOptions.vb" />
     <Compile Include="Articles\RenderingAndPrinting\PreventExportingHiddenContent.vb" />
     <Compile Include="Articles\RenderingAndPrinting\PrintCommentWhileSavingToPdf.vb" />
     <Compile Include="Articles\RenderingAndPrinting\PrintingRangeOfPages.vb" />
@@ -285,6 +290,10 @@
     <Compile Include="Articles\Shape3DEffect.vb" />
     <Compile Include="Articles\StylingAndDataFormatting\ApplyingSubtotalChangeSummaryDirection.vb" />
     <Compile Include="Articles\StylingAndDataFormatting\ExtractThemeData.vb" />
+    <Compile Include="Articles\UsingBuiltinStyles.vb" />
+    <Compile Include="Articles\UsingImageOrPrintOptions\SpecificPagesToImage.vb" />
+    <Compile Include="Articles\UsingImageOrPrintOptions\UseWorkbookRenderForImageConversion.vb" />
+    <Compile Include="Articles\UsingImageOrPrintOptions\WorksheetToAnImage.vb" />
     <Compile Include="Articles\WorkingWithCalculationEngine\SetExternalLinksInFormulas.vb" />
     <Compile Include="Articles\SetPixelFormatRenderedImage.vb" />
     <Compile Include="Articles\SetTextboxOrShapeParagraphLineSpacing.vb" />
