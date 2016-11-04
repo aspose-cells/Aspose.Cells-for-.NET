@@ -13,13 +13,15 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Aspose.Cells.GridWeb.Examples.VisualBasic</RootNamespace>
     <AssemblyName>Aspose.Cells.GridWeb.Examples.VisualBasic</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <MyType>Custom</MyType>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,12 +48,10 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
@@ -67,6 +67,7 @@
     <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml.Linq" />
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
@@ -110,6 +111,10 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Articles\CalculateCustomFunction.aspx" />
+    <Content Include="Articles\CellDataPercentageFormat.aspx" />
+    <Content Include="Articles\ShowFormulaFeature.aspx" />
+    <Content Include="Articles\UsingCommonSubmitButton.aspx" />
     <Content Include="Cells\AccessCells.aspx" />
     <Content Include="Cells\AddCustomValidation.aspx" />
     <Content Include="Cells\AddDataValidation.aspx" />
@@ -313,6 +318,34 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Articles\CalculateCustomFunction.aspx.designer.vb">
+      <DependentUpon>CalculateCustomFunction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\CalculateCustomFunction.aspx.vb">
+      <DependentUpon>CalculateCustomFunction.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Articles\CellDataPercentageFormat.aspx.designer.vb">
+      <DependentUpon>CellDataPercentageFormat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\CellDataPercentageFormat.aspx.vb">
+      <DependentUpon>CellDataPercentageFormat.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Articles\ShowFormulaFeature.aspx.designer.vb">
+      <DependentUpon>ShowFormulaFeature.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\ShowFormulaFeature.aspx.vb">
+      <DependentUpon>ShowFormulaFeature.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Articles\UsingCommonSubmitButton.aspx.designer.vb">
+      <DependentUpon>UsingCommonSubmitButton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\UsingCommonSubmitButton.aspx.vb">
+      <DependentUpon>UsingCommonSubmitButton.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="Cells\AccessCells.aspx.designer.vb">
       <DependentUpon>AccessCells.aspx</DependentUpon>
     </Compile>

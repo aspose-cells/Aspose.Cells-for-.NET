@@ -322,6 +322,7 @@
     <Compile Include="Charts\Applying3DFormat.cs" />
     <Compile Include="Charts\ChangeChartPosition.cs" />
     <Compile Include="Charts\ChartRendering.cs" />
+    <Compile Include="Charts\ChartToPdf.cs" />
     <Compile Include="Charts\HowToCreateChart.cs" />
     <Compile Include="Charts\InsertingControlsintoCharts\AddingLabelControl.cs" />
     <Compile Include="Charts\InsertingControlsintoCharts\AddingPictureToChart.cs" />

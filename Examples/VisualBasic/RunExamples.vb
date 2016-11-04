@@ -428,6 +428,7 @@ Friend Class RunExamples
         'SettingChartsData.Run()
         'UsingSparklines.Run()
         'ChartRendering.Run()
+        'ChartToPdf.Run()
 
         '''' InsertingControlsintoCharts
         '''' =====================================================

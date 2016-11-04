@@ -29,7 +29,7 @@
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <OldToolsVersion>4.0</OldToolsVersion>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile />
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
@@ -104,7 +104,7 @@
   <ItemGroup>
     <Reference Include="Aspose.Cells.GridWeb, Version=16.10.0.0, Culture=neutral, PublicKeyToken=699ccf88ff76f11a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\Aspose\Aspose.Cells for .NET\Bin\net2.0\Aspose.Cells.GridWeb.dll</HintPath>
+      <HintPath>bin\Aspose.Cells.GridWeb.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
@@ -129,6 +129,34 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Articles\CalculateCustomFunction.aspx.cs">
+      <DependentUpon>CalculateCustomFunction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articles\CalculateCustomFunction.aspx.designer.cs">
+      <DependentUpon>CalculateCustomFunction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\CellDataPercentageFormat.aspx.cs">
+      <DependentUpon>CellDataPercentageFormat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articles\CellDataPercentageFormat.aspx.designer.cs">
+      <DependentUpon>CellDataPercentageFormat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\ShowFormulaFeature.aspx.cs">
+      <DependentUpon>ShowFormulaFeature.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articles\ShowFormulaFeature.aspx.designer.cs">
+      <DependentUpon>ShowFormulaFeature.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\UsingCommonSubmitButton.aspx.cs">
+      <DependentUpon>UsingCommonSubmitButton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articles\UsingCommonSubmitButton.aspx.designer.cs">
+      <DependentUpon>UsingCommonSubmitButton.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Cells\AccessCells.aspx.cs">
       <DependentUpon>AccessCells.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -714,6 +742,11 @@
     <Compile Include="Worksheets\RenameWorksheets.aspx.designer.cs">
       <DependentUpon>RenameWorksheets.aspx</DependentUpon>
     </Compile>
+    <Content Include="App_Data\dbDatabase.mdb" />
+    <Content Include="Articles\CalculateCustomFunction.aspx" />
+    <Content Include="Articles\CellDataPercentageFormat.aspx" />
+    <Content Include="Articles\ShowFormulaFeature.aspx" />
+    <Content Include="Articles\UsingCommonSubmitButton.aspx" />
     <Content Include="Cells\AccessCells.aspx" />
     <Content Include="Cells\AddCustomValidation.aspx" />
     <Content Include="Cells\AddDataValidation.aspx" />

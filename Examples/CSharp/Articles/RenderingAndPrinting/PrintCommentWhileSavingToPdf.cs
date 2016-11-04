@@ -19,15 +19,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             // Access first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
 
-            // Comment the working line and Uncomment the line as per your requirement
-
-            // For "Print no comments" Uncomment below line
-            //worksheet.PageSetup.PrintComments = PrintCommentsType.PrintNoComments;
-
-            // For "Print the comments as displayed on sheet" Uncomment below line
-            //worksheet.PageSetup.PrintComments = PrintCommentsType.PrintInPlace;
-
-            // For "Print the comments at the end of sheet"
+            /*
+             * For print no comments use "PrintCommentsType.PrintNoComments"
+             * and for print the comments as displayed on sheet use "PrintCommentsType.PrintInPlace"
+             * For Print the comments at the end of sheet we use "PrintCommentsType.PrintSheetEnd"
+            */
             worksheet.PageSetup.PrintComments = PrintCommentsType.PrintSheetEnd;
 
             // Save workbook in pdf format

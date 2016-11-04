@@ -9,6 +9,49 @@
     <table border="1">
         <tr>
             <td>
+               <p class="categoryTitle">Articles</p>
+                 <ul class="genericList">  
+                     <li class="genericList" title="Apply Preset Styles">
+			            <p class="productTitle"><a href="Articles/UsingCommonSubmitButton.aspx">Using a Common Button to Submit Grid Data</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				            Aspose.Cells.GridWeb provides some built-in command buttons like Submit and Save. Use these buttons to perform related tasks.
+			              </p>
+			            </div>
+                    </li>  
+                     <li class="genericList" title="Apply Preset Styles">
+			            <p class="productTitle"><a href="Articles/ShowFormulaFeature.aspx">Using Show Formulas Feature of GridWeb</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				            Sometimes, you need to find an easy way for the cells containing formulas. You need to have an approach to quickly read through all formulas to check for errors. This can help you to trace the data being used in a formula.
+			              </p>
+			            </div>
+                    </li> 
+                     <li class="genericList" title="Apply Preset Styles">
+			            <p class="productTitle"><a href="Articles/CellDataPercentageFormat.aspx">Enter Cell Data of GridWeb Worksheet in Percentage Format</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				            This example shows how to display percentage format in grid cell.
+			              </p>
+			            </div>
+                    </li>  
+                     <li class="genericList" title="Apply Preset Styles">
+			            <p class="productTitle"><a href="Articles/CalculateCustomFunction.aspx">Calculate Custom Functions in GridWeb</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				            This example shows how to calculate custom function using GridWeb.CustomCalculationEngine property.
+			              </p>
+			            </div>
+                    </li>          
+                 </ul>
+            </td>         
+        </tr>
+        <tr>
+            <td>
                <p class="categoryTitle">GridWeb Basics</p>
                  <ul class="genericList">  
                      <li class="genericList" title="Apply Preset Styles">

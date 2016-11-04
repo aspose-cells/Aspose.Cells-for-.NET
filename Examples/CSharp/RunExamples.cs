@@ -107,7 +107,7 @@ namespace Aspose.Cells.Examples.CSharp
             //ChangeTextDirection.Run();
             //CombineMultipleWorkbooksSingleWorkbook.Run();
             //CombineMultipleWorksheetsSingleWorksheet.Run();
-            //ConvertXLSFileToPDF.Run();
+            ConvertXLSFileToPDF.Run();
             //CopyRangeDataOnly.Run();
             //CopyRangeDataWithStyle.Run();
             //CopyRangeStyleOnly.Run();
@@ -431,6 +431,7 @@ namespace Aspose.Cells.Examples.CSharp
             //SettingChartsData.Run();
             //UsingSparklines.Run();
             //ChartRendering.Run();
+            //ChartToPdf.Run();
 
             //// InsertingControlsintoCharts
             //// =====================================================

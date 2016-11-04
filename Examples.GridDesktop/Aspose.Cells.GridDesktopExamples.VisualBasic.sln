@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "UsingGridDesktopInWpf", "VisualBasic\UsingGridDesktopInWpf\UsingGridDesktopInWpf.vbproj", "{F2A49C6B-4E43-4D56-9EB9-62D61858132F}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CopyAndPasterRows", "VisualBasic\CopyAndPasterRows\CopyAndPasterRows.vbproj", "{3683975D-0925-49C2-B08B-119561157FF6}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DataBindingFeature", "VisualBasic\DataBindingFeature\DataBindingFeature.vbproj", "{4BCCC6BE-DF63-4B81-844A-08714ACE6BB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +17,14 @@ Global
 		{F2A49C6B-4E43-4D56-9EB9-62D61858132F}.Debug|x86.Build.0 = Debug|x86
 		{F2A49C6B-4E43-4D56-9EB9-62D61858132F}.Release|x86.ActiveCfg = Release|x86
 		{F2A49C6B-4E43-4D56-9EB9-62D61858132F}.Release|x86.Build.0 = Release|x86
+		{3683975D-0925-49C2-B08B-119561157FF6}.Debug|x86.ActiveCfg = Debug|x86
+		{3683975D-0925-49C2-B08B-119561157FF6}.Debug|x86.Build.0 = Debug|x86
+		{3683975D-0925-49C2-B08B-119561157FF6}.Release|x86.ActiveCfg = Release|x86
+		{3683975D-0925-49C2-B08B-119561157FF6}.Release|x86.Build.0 = Release|x86
+		{4BCCC6BE-DF63-4B81-844A-08714ACE6BB4}.Debug|x86.ActiveCfg = Debug|x86
+		{4BCCC6BE-DF63-4B81-844A-08714ACE6BB4}.Debug|x86.Build.0 = Debug|x86
+		{4BCCC6BE-DF63-4B81-844A-08714ACE6BB4}.Release|x86.ActiveCfg = Release|x86
+		{4BCCC6BE-DF63-4B81-844A-08714ACE6BB4}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
