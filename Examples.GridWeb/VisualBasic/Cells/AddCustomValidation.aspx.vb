@@ -13,19 +13,13 @@ Namespace Cells
             ' Accessing the cells collection of the worksheet that is currently active
             Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
-            ' Accessing "B1" cell
+            ' Access "B1" cell and add some text
             Dim cell As GridCell = sheet.Cells(0, 1)
-
-            ' Putting value to "B1" cell
             cell.PutValue("Date (yyyy-mm-dd):")
 
-            ' Accessing "C1" cell
+            ' Accessing "C1" cell and add to it custom expression validation to accept dates in yyyy-mm-dd format
             cell = sheet.Cells(0, 2)
-
-            ' Creating a custom expression validation for the "C1" cell
             Dim validation = cell.CreateValidation(ValidationType.CustomExpression, True)
-
-            ' Setting regular expression for the validation to accept dates in yyyy-mm-dd format
             validation.RegEx = "\d{4}-\d{2}-\d{2}"
             ' ExEnd:AddCustomValidation
 

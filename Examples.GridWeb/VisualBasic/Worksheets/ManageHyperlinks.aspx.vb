@@ -100,10 +100,8 @@ Namespace Worksheets
             Dim link As Hyperlink = sheet.Hyperlinks.GetHyperlink(cell)
 
             If link IsNot Nothing Then
-                ' Modifying the text of hyperlink
+                ' Modifying the text and URL of hyperlink
                 link.Text = "Aspose.Blogs"
-
-                ' Modifying the URL of hyperlink
                 link.Url = "http://www.aspose.com/Community/Blogs"
             End If
             ' ExEnd:AccessHyperlinks

@@ -497,13 +497,6 @@
     <Compile Include="Miscellaneous\Common\ShowHeaderBarAndCommandButton.aspx.designer.cs">
       <DependentUpon>ShowHeaderBarAndCommandButton.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Worksheets\AccessNamedRanges.aspx.cs">
       <DependentUpon>AccessNamedRanges.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -851,7 +844,6 @@
     <Content Include="RowsAndColumns\MakeRowsColumnsReadOnly.aspx" />
     <Content Include="RowsAndColumns\ResizeRowsColumns.aspx" />
     <Content Include="RowsAndColumns\RestrictContextMenu.aspx" />
-    <Content Include="WebForm1.aspx" />
     <Content Include="Worksheets\AccessNamedRanges.aspx" />
     <Content Include="Worksheets\AddHyperlinks.aspx" />
     <Content Include="Worksheets\ExportDataTable.aspx" />

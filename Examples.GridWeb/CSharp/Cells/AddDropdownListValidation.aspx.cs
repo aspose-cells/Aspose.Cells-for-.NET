@@ -21,10 +21,8 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
             // Accessing the cells collection of the worksheet that is currently active
             GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
-            // Accessing "B1" cell
+            // Access "B1" cell and add some text
             GridCell cell = sheet.Cells[0, 1];
-
-            // Putting value to "B1" cell
             cell.PutValue("Select Degree:");
 
             // Accessing "C1" cell

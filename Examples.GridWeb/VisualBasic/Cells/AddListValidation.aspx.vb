@@ -13,10 +13,8 @@ Namespace Cells
             ' Accessing the cells collection of the worksheet that is currently active
             Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
-            ' Accessing "B1" cell
+            ' Access "B1" cell and add some text
             Dim cell As GridCell = sheet.Cells(0, 1)
-
-            ' Putting value to "B1" cell
             cell.PutValue("Select Course:")
 
             ' Accessing "C1" cell
