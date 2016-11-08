@@ -15,7 +15,7 @@
             <td>
                <p class="categoryTitle">Articles</p>
                  <ul class="genericList">  
-                     <li class="genericList" title="Apply Preset Styles">
+                    <li class="genericList" title="Using a Common Button to Submit Grid Data">
 			            <p class="productTitle"><a href="Articles/UsingCommonSubmitButton.aspx">Using a Common Button to Submit Grid Data</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
@@ -24,7 +24,7 @@
 			              </p>
 			            </div>
                     </li>  
-                     <li class="genericList" title="Apply Preset Styles">
+                    <li class="genericList" title="Using Show Formulas Feature of GridWeb">
 			            <p class="productTitle"><a href="Articles/ShowFormulaFeature.aspx">Using Show Formulas Feature of GridWeb</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
@@ -33,7 +33,7 @@
 			              </p>
 			            </div>
                     </li> 
-                     <li class="genericList" title="Apply Preset Styles">
+                    <li class="genericList" title="Enter Cell Data of GridWeb Worksheet in Percentage Format">
 			            <p class="productTitle"><a href="Articles/CellDataPercentageFormat.aspx">Enter Cell Data of GridWeb Worksheet in Percentage Format</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
@@ -42,7 +42,7 @@
 			              </p>
 			            </div>
                     </li>  
-                     <li class="genericList" title="Apply Preset Styles">
+                    <li class="genericList" title="Calculate Custom Functions in GridWeb">
 			            <p class="productTitle"><a href="Articles/CalculateCustomFunction.aspx">Calculate Custom Functions in GridWeb</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
@@ -51,6 +51,15 @@
 			              </p>
 			            </div>
                     </li>          
+					<li class="genericList" title="Read GridWeb Cell Values from Client Side">
+			            <p class="productTitle"><a href="Articles/ReadCellsClientSide.aspx">Read GridWeb Cell Values from Client Side</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				            This example exhibits how to read GridWeb cell values from client side.
+			              </p>
+			            </div>
+                    </li>
                  </ul>
             </td>         
         </tr>

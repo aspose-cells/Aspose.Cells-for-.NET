@@ -33,7 +33,7 @@ Namespace GridWebBasics
         ' ExStart:RowDoubleClickEvent
         ' Event Handler for RowDoubleClick event
         Protected Sub GridWeb1_RowDoubleClick(ByVal sender As Object, ByVal e As Aspose.Cells.GridWeb.RowColumnEventArgs)
-            'Displaying the number of the row (whose header is double clicked) in GridWeb's Message Box
+            ' Displaying the number of the row (whose header is double clicked) in GridWeb's Message Box
             Dim msg As String = "You just clicked <"
             msg &= "Row header: " & (e.Num + 1) & ">"
             GridWeb1.Message = msg

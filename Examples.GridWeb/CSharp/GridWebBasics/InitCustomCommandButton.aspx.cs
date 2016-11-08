@@ -20,13 +20,9 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
             // Instantiating a CustomCommandButton object
             CustomCommandButton button = new CustomCommandButton();
 
-            // Setting the command for button
+            // Setting the command, text and image URL for button. Image should be relative to website root folder
             button.Command = "MyButton";
-
-            // Setting text of the button
             button.Text = "MyButton";
-
-            // Setting image URL of the button, should be relative to website root folder
             button.ImageUrl = "../Image/aspose.ico";
     
             // Adding button to CustomCommandButtons collection of GridWeb

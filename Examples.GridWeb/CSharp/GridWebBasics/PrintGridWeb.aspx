@@ -7,9 +7,9 @@
     <!-- ExStart:PrintGridWebJS -->
     <script>
         function Print(grid) {
-            //Get Id of GridWeb
+            // Get Id of GridWeb
             var grid = document.getElementById('<%= GridWeb1.ClientID %>');
-            //Call print
+            // Call print
             grid.print();
         }
     </script>

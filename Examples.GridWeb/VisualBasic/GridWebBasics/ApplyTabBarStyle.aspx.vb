@@ -41,16 +41,12 @@ Namespace GridWebBasics
 
         Protected Sub btnApplyTabBarStyle_Click(sender As Object, e As EventArgs)
             ' ExStart:ApplyTabBarStyle
-            ' Setting the background color of tabs to Yellow
+            ' Setting Tab properties, BackColor, ForeColor
             GridWeb1.TabStyle.BackColor = System.Drawing.Color.Yellow
-
-            ' Setting the foreground color of tabs to Blue
             GridWeb1.TabStyle.ForeColor = System.Drawing.Color.Blue
 
-            ' Setting the background color of active tab to Blue
+            ' Setting active tab properties, BackColor, ForeColor
             GridWeb1.ActiveTabStyle.BackColor = System.Drawing.Color.Blue
-
-            ' Setting the foreground color of active tab to Yellow
             GridWeb1.ActiveTabStyle.ForeColor = System.Drawing.Color.Yellow
             ' ExEnd:ApplyTabBarStyle
         End Sub

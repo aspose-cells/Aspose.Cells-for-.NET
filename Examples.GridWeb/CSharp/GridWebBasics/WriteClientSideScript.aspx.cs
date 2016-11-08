@@ -32,19 +32,13 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
             // Accessing the cells collection of the worksheet that is currently active
             GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
-            // Accessing "B1" cell
+            // Accessing "B1" cell and add some text
             GridCell cell = sheet.Cells[0, 1];
-
-            // Putting value to "B1" cell
             cell.PutValue("Date (yyyy-mm-dd):");
 
-            // Accessing "C1" cell
+            // Accessing "C1" cell and add to it custom expression validation to accept dates in yyyy-mm-dd format
             cell = sheet.Cells[0, 2];
-
-            // Creating a custom expression validation for the "C1" cell
-            var validation = cell.CreateValidation(GridValidationType.CustomExpression, true);
-
-            // Setting regular expression for the validation to accept dates in yyyy-mm-dd format
+            var validation = cell.CreateValidation(GridValidationType.CustomExpression, true);            
             validation.RegEx = @"\d{4}-\d{2}-\d{2}";
             // ExEnd:WriteClientSideScript
         }

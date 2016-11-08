@@ -25,19 +25,11 @@ Namespace GridWebBasics
 
         Protected Sub btnApplyHeaderStyle_Click(sender As Object, e As EventArgs)
             ' ExStart:ApplyHeaderBarStyle
-            ' Setting the background color of the header bars
+            ' Setting header bar properties, BackColor, ForeColor, Font & BorderWidth
             GridWeb1.HeaderBarStyle.BackColor = System.Drawing.Color.Brown
-
-            ' Setting the foreground color of the header bars
             GridWeb1.HeaderBarStyle.ForeColor = System.Drawing.Color.Yellow
-
-            ' Setting the font of the header bars to bold
             GridWeb1.HeaderBarStyle.Font.Bold = True
-
-            ' Setting the font name to "Century Gothic"
             GridWeb1.HeaderBarStyle.Font.Name = "Century Gothic"
-
-            ' Setting the border width to 2 points
             GridWeb1.HeaderBarStyle.BorderWidth = New Unit(2, UnitType.Point)
             ' ExEnd:ApplyHeaderBarStyle
         End Sub

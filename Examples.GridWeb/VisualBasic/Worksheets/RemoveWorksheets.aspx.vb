@@ -81,7 +81,7 @@ Namespace Worksheets
         Protected Sub btnRemoveWorksheets_Click(sender As Object, e As EventArgs)
             ' ExStart:RemoveWorksheetUsingIndex
             If GridWeb1.WorkSheets.Count > 2 Then
-                'Removing a worksheet using its index
+                ' Removing a worksheet using its index
                 GridWeb1.WorkSheets.RemoveAt(1)
             End If
             ' ExEnd:RemoveWorksheetUsingIndex

@@ -45,7 +45,6 @@
     </style>
     <!-- JS for Cells Examples -->
     <script language="javascript" src='<%= ResolveUrl("~/js/oo.js")%>'></script>
-    <script language="javascript" src='<%= ResolveUrl("~/Grid/acw_client/jquery-1.7.2.min.js")%>'></script>
 </head>
 <body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"
     style="left: 0px; top: 0px;">

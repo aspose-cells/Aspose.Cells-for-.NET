@@ -113,6 +113,7 @@
   <ItemGroup>
     <Content Include="Articles\CalculateCustomFunction.aspx" />
     <Content Include="Articles\CellDataPercentageFormat.aspx" />
+    <Content Include="Articles\ReadCellsClientSide.aspx" />
     <Content Include="Articles\ShowFormulaFeature.aspx" />
     <Content Include="Articles\UsingCommonSubmitButton.aspx" />
     <Content Include="Cells\AccessCells.aspx" />
@@ -323,7 +324,7 @@
     </Compile>
     <Compile Include="Articles\CalculateCustomFunction.aspx.vb">
       <DependentUpon>CalculateCustomFunction.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Articles\CellDataPercentageFormat.aspx.designer.vb">
       <DependentUpon>CellDataPercentageFormat.aspx</DependentUpon>
@@ -331,6 +332,13 @@
     <Compile Include="Articles\CellDataPercentageFormat.aspx.vb">
       <DependentUpon>CellDataPercentageFormat.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Articles\ReadCellsClientSide.aspx.designer.vb">
+      <DependentUpon>ReadCellsClientSide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\ReadCellsClientSide.aspx.vb">
+      <DependentUpon>ReadCellsClientSide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Articles\ShowFormulaFeature.aspx.designer.vb">
       <DependentUpon>ShowFormulaFeature.aspx</DependentUpon>

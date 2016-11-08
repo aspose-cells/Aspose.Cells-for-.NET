@@ -47,7 +47,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
             // Accessing the worksheet of the Grid that is currently active
             GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
-            // Accessing "B1" cell of the worksheet
+            // Accessing "A1" cell of the worksheet
             GridCell cell = sheet.Cells["A1"];
 
             // Display cell name and value

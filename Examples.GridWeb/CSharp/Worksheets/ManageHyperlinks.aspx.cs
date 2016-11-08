@@ -12,7 +12,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if first visit this page init GridWeb1 
+            // If first visit this page init GridWeb1 
             if (!IsPostBack && !GridWeb1.IsPostBack)
             {
                 InitData();
@@ -38,7 +38,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
 
         private void AddTextHyperlinks()
         {
-           //Accessing the reference of the worksheet that is currently active
+           // Accessing the reference of the worksheet that is currently active
             GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
             // Adds a text hyperlink that gos to Aspose site and opens in new window
