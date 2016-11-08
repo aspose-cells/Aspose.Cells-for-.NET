@@ -97,7 +97,7 @@ Namespace Worksheets
         End Sub
 
         Protected Sub GridWeb1_CellCommand(sender As Object, e As Aspose.Cells.GridWeb.CellEventArgs)
-            'Handles sorting of columns and rows
+            ' Handles sorting of columns and rows
             If e.Argument.ToString() = "A1" Then
                 ' ExStart:SortTopToBottom
                 ' Sorts Column 1 from top to bottom in descending order

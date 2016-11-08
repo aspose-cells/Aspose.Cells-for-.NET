@@ -111,10 +111,8 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
 
             if (link != null)
             {
-                // Modifying the text of hyperlink
+                // Modifying the text and URL of hyperlink
                 link.Text = "Aspose.Blogs";
-
-                // Modifying the URL of hyperlink
                 link.Url = "http://www.aspose.com/Community/Blogs";
             } 
             // ExEnd:AccessHyperlinks
