@@ -92,7 +92,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
             // ExStart:RemoveWorksheetUsingIndex
             if (GridWeb1.WorkSheets.Count > 2)
             {
-                //Removing a worksheet using its index
+                // Removing a worksheet using its index
                 GridWeb1.WorkSheets.RemoveAt(1);            
             }
             // ExEnd:RemoveWorksheetUsingIndex

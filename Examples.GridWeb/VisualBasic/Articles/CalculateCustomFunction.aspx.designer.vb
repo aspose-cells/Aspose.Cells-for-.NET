@@ -10,15 +10,17 @@
 Option Strict On
 Option Explicit On
 
+Namespace Articles
 
-Partial Public Class CalculateCustomFunction
+    Partial Public Class CalculateCustomFunction
 
-    '''<summary>
-    '''GridWeb1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents GridWeb1 As Global.Aspose.Cells.GridWeb.GridWeb
-End Class
+        '''<summary>
+        '''GridWeb1 control.
+        '''</summary>
+        '''<remarks>
+        '''Auto-generated field.
+        '''To modify move field declaration from designer file to code-behind file.
+        '''</remarks>
+        Protected WithEvents GridWeb1 As Global.Aspose.Cells.GridWeb.GridWeb
+    End Class
+End Namespace

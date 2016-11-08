@@ -33,19 +33,11 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
            
             var style = cell.Style;
 
-            // Setting the font size to 12 points
+            // Setting font, color and alignment of cell
             style.Font.Size = new FontUnit("12pt");
-
-            // Setting font style to Bold
             style.Font.Bold = true;
-
-            // Setting foreground color of font to Blue
             style.ForeColor = Color.Blue;
-
-            // Setting background color of font to Aqua
             style.BackColor = Color.Aqua;
-
-            // Setting the horizontal alignment of font to Center
             style.HorizontalAlign = HorizontalAlign.Center;                        
 
             // Set the cell style
@@ -68,13 +60,9 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
 
             var style = cell.Style;
 
-            // Setting the border style to Solid
+            // Setting the border style, width and color
             style.BorderStyle = BorderStyle.Solid;
-
-            // Setting the border width to 2 pixels
             style.BorderWidth = new Unit(2, UnitType.Pixel);
-
-            // Setting the border color to Blue
             style.BorderColor = Color.Blue;
             
             // Set the cell style
@@ -93,13 +81,9 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
             // Creating an instance of WebBorderStyle
             WebBorderStyle bstyle = new WebBorderStyle();
 
-            // Setting the border style to Double
+            // Setting the border style, width and color
             bstyle.BorderStyle = BorderStyle.Double;
-
-            // Setting the border width to 3 pixels
             bstyle.BorderWidth = new Unit(3, UnitType.Pixel);
-
-            // Setting the border color to Blue
             bstyle.BorderColor = Color.Blue;
 
             // Applying the instance of WebBorderStyle on a specified range of cells

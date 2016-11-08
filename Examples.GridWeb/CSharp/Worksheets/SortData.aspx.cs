@@ -110,6 +110,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
         {
             InitData();
         }
+
         protected void GridWeb1_CellCommand(object sender, Aspose.Cells.GridWeb.CellEventArgs e)
         {
             //Handles sorting of columns and rows

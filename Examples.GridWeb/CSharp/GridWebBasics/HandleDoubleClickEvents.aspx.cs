@@ -50,7 +50,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
         // Event Handler for RowDoubleClick event
         protected void GridWeb1_RowDoubleClick(object sender, Aspose.Cells.GridWeb.RowColumnEventArgs e)
         {
-            //Displaying the number of the row (whose header is double clicked) in GridWeb's Message Box
+            // Displaying the number of the row (whose header is double clicked) in GridWeb's Message Box
             string msg = "You just clicked <";
             msg += "Row header: " + (e.Num + 1) + ">";
             GridWeb1.Message = msg;

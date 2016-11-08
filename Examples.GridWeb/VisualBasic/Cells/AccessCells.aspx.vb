@@ -34,7 +34,7 @@ Namespace Cells
             ' Accessing the worksheet of the Grid that is currently active
             Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
-            ' Accessing "B1" cell of the worksheet
+            ' Accessing "A1" cell of the worksheet
             Dim cell As GridCell = sheet.Cells("A1")
 
             ' Display cell name and value

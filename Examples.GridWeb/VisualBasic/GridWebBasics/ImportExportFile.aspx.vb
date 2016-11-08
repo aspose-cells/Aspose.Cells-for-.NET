@@ -21,7 +21,7 @@ Namespace GridWebBasics
 
             Dim fileName As String = path + "\GridWebBasics\SampleData.xls"
 
-            '  Imports from an excel file.
+            ' Imports from an excel file.
             GridWeb1.ImportExcelFile(fileName)
             ' ExEnd:LoadExcelFile
         End Sub

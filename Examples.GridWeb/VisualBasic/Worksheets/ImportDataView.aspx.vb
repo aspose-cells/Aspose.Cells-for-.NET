@@ -46,7 +46,7 @@ Namespace Worksheets
             GridWeb1.WorkSheets.Clear()
             GridWeb1.WorkSheets.ImportDataView(dataTable1.DefaultView, Nothing, Nothing)
 
-            '  Imports data from dataview object with sheet name and position specified.
+            ' Imports data from dataview object with sheet name and position specified.
             GridWeb1.WorkSheets.ImportDataView(dataTable1.DefaultView, Nothing, Nothing, "SpecifiedName&Position", 2, 1)
             ' ExEnd:ImportDataView
 

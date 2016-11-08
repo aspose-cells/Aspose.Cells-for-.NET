@@ -37,31 +37,19 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
         protected void btnSaveCustomStyle_Click(object sender, EventArgs e)
         {
             // ExStart:SaveCustomStyle
-            // Setting the background color of the header bars
+            // Setting header bar properties, BackColor, ForeColor, Font & BorderWidth
             GridWeb1.HeaderBarStyle.BackColor = System.Drawing.Color.Brown;
-
-            // Setting the foreground color of the header bars
             GridWeb1.HeaderBarStyle.ForeColor = System.Drawing.Color.Yellow;
-
-            // Setting the font of the header bars to bold
             GridWeb1.HeaderBarStyle.Font.Bold = true;
-
-            // Setting the font name to "Century Gothic"
             GridWeb1.HeaderBarStyle.Font.Name = "Century Gothic";
-
-            // Setting the border width to 2 points
             GridWeb1.HeaderBarStyle.BorderWidth = new Unit(2, UnitType.Point);
 
-            // Setting the background color of tabs to Yellow
+            // Setting Tab properties, BackColor, ForeColor
             GridWeb1.TabStyle.BackColor = System.Drawing.Color.Yellow;
-
-            // Setting the foreground color of tabs to Blue
             GridWeb1.TabStyle.ForeColor = System.Drawing.Color.Blue;
 
-            // Setting the background color of active tab to Blue
+            // Setting Active Tab properties, BackColor, ForeColor
             GridWeb1.ActiveTabStyle.BackColor = System.Drawing.Color.Blue;
-
-            // Setting the foreground color of active tab to Yellow
             GridWeb1.ActiveTabStyle.ForeColor = System.Drawing.Color.Yellow;
 
             // Saving style information to an XML file

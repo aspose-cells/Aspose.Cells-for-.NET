@@ -34,28 +34,22 @@ Namespace Worksheets
             ' Accessing the reference of the worksheet that is currently active
             Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
-            ' Adds a text hyperlink that gos to Aspose site and opens in new window
+            ' Adds a text hyperlink that goes to Aspose site and opens in new window
             Dim linkIndex As Integer = sheet.Hyperlinks.Add("B1", "http://www.aspose.com")
             Dim link1 As GridHyperlink = sheet.Hyperlinks(linkIndex)
-
             link1.Target = "_blank"
 
-            ' Setting text of the hyperlink
+            ' Setting text and tool tip of the hyperlink
             link1.TextToDisplay = "Aspose"
-
-            ' Setting tool tip of the hyperlink
             link1.ScreenTip = "Open Aspose Web Site in new window"
 
             ' Adding hyperlink to the worksheet to open in parent window
             linkIndex = sheet.Hyperlinks.Add("B2", "http://www.aspose.com/docs/display/cellsnet/Aspose.Cells.GridWeb")
             Dim link2 As GridHyperlink = sheet.Hyperlinks(linkIndex)
-
             link2.Target = "_parent"
 
-            ' Setting text of the hyperlink
+            ' Setting text and tool tip of the hyperlink
             link2.TextToDisplay = "Aspose.Grid Docs"
-
-            ' Setting tool tip of the hyperlink
             link2.ScreenTip = "Open Aspose.Grid Docs in parent window"
             ' ExEnd:AddTextHyperlinks
         End Sub
@@ -76,9 +70,6 @@ Namespace Worksheets
             ' Setting tool tip of the hyperlink
             link1.ScreenTip = "Open Aspose Web Site in new window"
 
-            ' Resize the row to display image nicely
-            sheet.Cells.SetRowHeight(4, 40)
-
             ' Adding hyperlink to the worksheet
             linkIndex = sheet.Hyperlinks.Add("B6", "http://www.aspose.com/docs/display/cellsnet/Aspose.Cells.GridWeb")
             Dim link2 As GridHyperlink = sheet.Hyperlinks(linkIndex)
@@ -89,6 +80,10 @@ Namespace Worksheets
 
             ' Setting tool tip of the hyperlink
             link2.ScreenTip = "Open Aspose.Grid Docs in new window"
+
+            ' Resize the row to display image nicely
+            sheet.Cells.SetRowHeight(4, 40)
+            sheet.Cells.SetRowHeight(5, 40)
             ' ExEnd:AddImageHyperlinks
         End Sub
 
@@ -101,13 +96,9 @@ Namespace Worksheets
             Dim linkIndex As Integer = sheet.Hyperlinks.Add("B8", "")
             Dim link1 As GridHyperlink = sheet.Hyperlinks(linkIndex)
 
-            ' Setting the cell command for the link
+            ' Setting the cell command, tool tip and image URL for the hyperlink
             link1.Command = "Click"
-
-            ' Setting tool tip of the hyperlink
             link1.ScreenTip = "Click Here"
-
-            ' Setting URL of the button image that will be displayed as hyperlink
             link1.ImageURL = "../Images/button.jpg"
 
             ' Resize the row to display image nicely
