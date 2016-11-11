@@ -249,6 +249,8 @@
     <Compile Include="Articles\MoveRangeOfCells.vb" />
     <Compile Include="Articles\OptimizingMemoryUsage\ReadingLargeExcelFiles.vb" />
     <Compile Include="Articles\OptimizingMemoryUsage\WritingLargeExcelFiles.vb" />
+    <Compile Include="Articles\PageSetupAndPrintingOptions\SettingPageSetup.vb" />
+    <Compile Include="Articles\PageSetupAndPrintingOptions\SettingPrintingOptions.vb" />
     <Compile Include="Articles\PivotTablesAndPivotCharts\ChangingLayoutOfPivotTable.vb" />
     <Compile Include="Articles\PivotTablesAndPivotCharts\GetCellByDisplayName.vb" />
     <Compile Include="Articles\PivotTablesAndPivotCharts\RemovePivotTable.vb" />

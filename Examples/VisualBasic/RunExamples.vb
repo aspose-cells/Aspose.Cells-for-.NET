@@ -21,6 +21,7 @@ Imports Aspose.Cells.Examples.VisualBasic.Articles.ManagingRowsColumnsCells
 Imports Aspose.Cells.Examples.VisualBasic.Articles.ManageDatabaseConnection
 Imports Aspose.Cells.Examples.VisualBasic.Articles.ManagingVBAModules
 Imports Aspose.Cells.Examples.VisualBasic.Articles.ManageConditionalFormatting
+Imports Aspose.Cells.Examples.VisualBasic.Articles.PageSetupAndPrintingOptions
 Imports Aspose.Cells.Examples.VisualBasic.CellsHelperClass
 Imports Aspose.Cells.Examples.VisualBasic.Charts
 Imports Aspose.Cells.Examples.VisualBasic.Charts.InsertingControlsintoCharts
@@ -278,6 +279,11 @@ Friend Class RunExamples
         'RenderWorksheetToGraphicContext.Run()
         'SaveExcelIntoPdfWithOptimizedSize.Run()
         'PageSetupAndPrintingOptions.Run()
+
+        '''' PageSetupAndPrintingOptions
+        '''' =====================================================
+        'SettingPageSetup.Run()
+        'SettingPrintingOptions.Run()
 
         '''' UsingImageOrPrintOptions
         '''' =====================================================
