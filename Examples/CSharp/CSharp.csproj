@@ -53,12 +53,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdvancedTopics\SmartMarkers\DynamicFormulas.cs" />
-    <Compile Include="AdvancedTopics\SmartMarkers\GroupingData.cs" />
-    <Compile Include="AdvancedTopics\SmartMarkers\ImageMarkers.cs" />
-    <Compile Include="AdvancedTopics\SmartMarkers\UsingAnonymousTypes.cs" />
-    <Compile Include="AdvancedTopics\SmartMarkers\UsingNestedObjects.cs" />
-    <Compile Include="AdvancedTopics\UsingCopyStyleAttribute.cs" />
     <Compile Include="Articles\AccessTextBoxName.cs" />
     <Compile Include="Articles\AddingCustomPropertiesVisible.cs" />
     <Compile Include="Articles\AddActiveXControls.cs" />
@@ -67,6 +61,12 @@
     <Compile Include="Articles\AddingAnonymousCustomObject.cs" />
     <Compile Include="Articles\AddWordArtTextWithBuiltinStyle.cs" />
     <Compile Include="Articles\AddXmlMapInsideWorkbook.cs" />
+    <Compile Include="AdvancedTopics\SmartMarkers\DynamicFormulas.cs" />
+    <Compile Include="AdvancedTopics\SmartMarkers\GroupingData.cs" />
+    <Compile Include="AdvancedTopics\SmartMarkers\ImageMarkers.cs" />
+    <Compile Include="AdvancedTopics\SmartMarkers\UsingAnonymousTypes.cs" />
+    <Compile Include="AdvancedTopics\SmartMarkers\UsingNestedObjects.cs" />
+    <Compile Include="AdvancedTopics\UsingCopyStyleAttribute.cs" />
     <Compile Include="Articles\CheckHiddenExternalLinks.cs" />
     <Compile Include="Articles\CopyRowsColumns\CopyingMultipleColumns.cs" />
     <Compile Include="Articles\CopyRowsColumns\CopyingMultipleRows.cs" />

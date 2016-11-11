@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyAndPasteRows", "CSharp\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataBindingFeature", "CSharp\DataBindingFeature\DataBindingFeature.csproj", "{5C28CAB9-1351-4489-B33A-24E2CA8ADADF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpeningExcelFile", "CSharp\OpeningExcelFile\OpeningExcelFile.csproj", "{DCEA09BB-8360-4F1B-8501-2EF2EEB49C72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagingContextMenu", "CSharp\ManagingContextMenu\ManagingContextMenu.csproj", "{37491A64-10E6-4155-B828-A9930E1ACCDB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -25,6 +29,14 @@ Global
 		{5C28CAB9-1351-4489-B33A-24E2CA8ADADF}.Debug|x86.Build.0 = Debug|x86
 		{5C28CAB9-1351-4489-B33A-24E2CA8ADADF}.Release|x86.ActiveCfg = Release|x86
 		{5C28CAB9-1351-4489-B33A-24E2CA8ADADF}.Release|x86.Build.0 = Release|x86
+		{DCEA09BB-8360-4F1B-8501-2EF2EEB49C72}.Debug|x86.ActiveCfg = Debug|x86
+		{DCEA09BB-8360-4F1B-8501-2EF2EEB49C72}.Debug|x86.Build.0 = Debug|x86
+		{DCEA09BB-8360-4F1B-8501-2EF2EEB49C72}.Release|x86.ActiveCfg = Release|x86
+		{DCEA09BB-8360-4F1B-8501-2EF2EEB49C72}.Release|x86.Build.0 = Release|x86
+		{37491A64-10E6-4155-B828-A9930E1ACCDB}.Debug|x86.ActiveCfg = Debug|x86
+		{37491A64-10E6-4155-B828-A9930E1ACCDB}.Debug|x86.Build.0 = Debug|x86
+		{37491A64-10E6-4155-B828-A9930E1ACCDB}.Release|x86.ActiveCfg = Release|x86
+		{37491A64-10E6-4155-B828-A9930E1ACCDB}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
