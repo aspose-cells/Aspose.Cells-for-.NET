@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
+namespace Aspose.Cells.Examples.CSharp.Articles.PageSetupAndPrintingOptions
 {
-    public class PageSetupAndPrintingOptions
+    public class SettingPageSetup
     {
         public static void Run()
         {

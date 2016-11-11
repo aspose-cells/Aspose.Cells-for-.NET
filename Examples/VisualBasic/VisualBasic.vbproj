@@ -263,7 +263,6 @@
     <Compile Include="Articles\RenderingAndPrinting\ChangeFontUnicodeCharacterToPdf.vb" />
     <Compile Include="Articles\RenderingAndPrinting\ConvertChartToSvgImage.vb" />
     <Compile Include="Articles\RenderingAndPrinting\ExportChartToSvgWithViewBox.vb" />
-    <Compile Include="Articles\RenderingAndPrinting\PageSetupAndPrintingOptions.vb" />
     <Compile Include="Articles\RenderingAndPrinting\PreventExportingHiddenContent.vb" />
     <Compile Include="Articles\RenderingAndPrinting\PrintCommentWhileSavingToPdf.vb" />
     <Compile Include="Articles\RenderingAndPrinting\PrintingRangeOfPages.vb" />

@@ -18,6 +18,7 @@ using Aspose.Cells.Examples.CSharp.Articles.OptimizingMemoryUsage;
 using Aspose.Cells.Examples.CSharp.Articles.WorkbookScopedNamedRanges;
 using Aspose.Cells.Examples.CSharp.Articles.WorkingWithHTMLFormat;
 using Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting;
+using Aspose.Cells.Examples.CSharp.Articles.PageSetupAndPrintingOptions;
 using Aspose.Cells.Examples.CSharp.Articles.StylingAndDataFormatting;
 using Aspose.Cells.Examples.CSharp.Articles.PivotTablesAndPivotCharts;
 using Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine;
@@ -107,7 +108,7 @@ namespace Aspose.Cells.Examples.CSharp
             //ChangeTextDirection.Run();
             //CombineMultipleWorkbooksSingleWorkbook.Run();
             //CombineMultipleWorksheetsSingleWorksheet.Run();
-            ConvertXLSFileToPDF.Run();
+            //ConvertXLSFileToPDF.Run();
             //CopyRangeDataOnly.Run();
             //CopyRangeDataWithStyle.Run();
             //CopyRangeStyleOnly.Run();
@@ -284,7 +285,11 @@ namespace Aspose.Cells.Examples.CSharp
             //WorksheetToImageDesiredSize.Run();
             //RenderWorksheetToGraphicContext.Run();
             //SaveExcelIntoPdfWithOptimizedSize.Run();
-            //PageSetupAndPrintingOptions.Run();
+
+            //// PageSetupAndPrintingOptions
+            //// =====================================================
+            //SettingPageSetup.Run();
+            //SettingPrintingOptions.Run();
 
             //// UsingImageOrPrintOptions
             //// =====================================================

@@ -20,8 +20,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.UsingImageOrPrintOptions
             foreach (Worksheet ws in wb.Worksheets)
             {
                 SheetRender sr = new SheetRender(ws, new ImageOrPrintOptions() { OnePagePerSheet = true, ImageFormat = ImageFormat.Jpeg });
-                sr.ToImage(0, dataDir  + "Img_" + ws.Index + ".jpg");
-
+                sr.ToImage(0, dataDir  + "Img_" + ws.Index + "_out_.jpg");
             }
             // ExEnd:1
         }

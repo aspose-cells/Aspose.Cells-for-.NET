@@ -4,6 +4,7 @@ using Aspose.Cells;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Collections;
 
 namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine
 {
@@ -87,4 +88,3 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine
         }
     }
 }
-        

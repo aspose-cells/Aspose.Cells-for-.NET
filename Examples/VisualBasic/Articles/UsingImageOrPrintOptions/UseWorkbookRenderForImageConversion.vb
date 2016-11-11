@@ -18,8 +18,7 @@ Namespace Articles.UsingImageOrPrintOptions
                  .OnePagePerSheet = True, _
                  .ImageFormat = ImageFormat.Jpeg _
                 })
-
-                sr.ToImage(0, (dataDir & Convert.ToString("Img_")) + ws.Index + ".jpg")
+                sr.ToImage(0, (dataDir & Convert.ToString("Img_")) + ws.Index + "_out_.jpg")
             Next
             ' ExEnd:1
         End Sub

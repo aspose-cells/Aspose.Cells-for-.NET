@@ -19,7 +19,7 @@ Namespace Articles
             pdfSaveOptions.SetImageResample(300, 70)
 
             ' Save the PDF file
-            workbook.Save(dataDir & "output.pdf", pdfSaveOptions)
+            workbook.Save(dataDir & "output_out_.pdf", pdfSaveOptions)
             ' ExEnd:1
         End Sub
     End Class

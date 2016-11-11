@@ -75,6 +75,8 @@
     <Compile Include="Articles\ManageChartsAndShapes\ResizeChartDataLabelToFit.cs" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\CopyMoveWorksheets.cs" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\GetApplicationVersion.cs" />
+    <Compile Include="Articles\PageSetupAndPrintingOptions\SettingPageSetup.cs" />
+    <Compile Include="Articles\PageSetupAndPrintingOptions\SettingPrintingOptions.cs" />
     <Compile Include="Articles\UsingImageOrPrintOptions\SpecificPagesToImage.cs" />
     <Compile Include="Articles\LinkCellsToXmlMapElements.cs" />
     <Compile Include="Articles\ManageConditionalFormatting\AddColorScales.cs" />
@@ -250,7 +252,6 @@
     <Compile Include="Articles\RenderingAndPrinting\ChangeFontUnicodeCharacterToPdf.cs" />
     <Compile Include="Articles\RenderingAndPrinting\ConvertChartToSvgImage.cs" />
     <Compile Include="Articles\RenderingAndPrinting\ExportChartToSvgWithViewBox.cs" />
-    <Compile Include="Articles\RenderingAndPrinting\PageSetupAndPrintingOptions.cs" />
     <Compile Include="Articles\RenderingAndPrinting\PreventExportingHiddenContent.cs" />
     <Compile Include="Articles\RenderingAndPrinting\PrintCommentWhileSavingToPdf.cs" />
     <Compile Include="Articles\RenderingAndPrinting\PrintingRangeOfPages.cs" />

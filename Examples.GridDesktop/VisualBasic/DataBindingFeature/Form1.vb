@@ -1,8 +1,7 @@
-﻿' ExStart:AddingNamespaceToTheTop
+﻿Imports Aspose.Cells.GridDesktop
+' ExStart:AddingNamespaceToTheTop
 ' Adding namespace to the top of code
 Imports System.Data.OleDb
-Imports Aspose.Cells.GridDesktop
-
 ' ExEnd:AddingNamespaceToTheTop
 
 Public Class Form1
@@ -27,11 +26,9 @@ Public Class Form1
         ' Setting MissingSchemaAction to AddWithKey for getting necesssary primary key information of the tables
         adapter.MissingSchemaAction = MissingSchemaAction.AddWithKey
 
-        '
-        '             * Creating OleDbCommandBuilder object to create insert/delete SQL commmands
-        '             * automatically that are used by OleDbDatAdapter object for updating
-        '             * changes to the database
-        '            
+        ' Creating OleDbCommandBuilder object to create insert/delete SQL commmands
+        ' automatically that are used by OleDbDatAdapter object for updating
+        ' changes to the database        
 
         cb = New OleDbCommandBuilder(adapter)
 

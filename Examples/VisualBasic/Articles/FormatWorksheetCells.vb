@@ -18,14 +18,19 @@ Namespace Articles
             Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
             Dim filename As String = dataDir & Convert.ToString("FormatWorksheet.xls")
             CreateSalesReport(filename)
-
         End Sub
 
         Private Shared Sub CreateSalesReport(ByVal filename As String)
+            ' Uncomment the code below when you have purchased license
+            ' for Aspose.Cells. You need to deploy the license in the
+            ' same folder as your executable, alternatively you can add
+            ' the license file as an embedded resource to your project.
+            'Dim cellsLicense As New Aspose.Cells.License()
+            'cellsLicense.SetLicense("Aspose.Cells.lic")
 
-            ' ExStart:1
             ' Create a new Workbook.
             Dim workbook As New Workbook()
+
             ' Note: Since Excel color palette has 56 colors on it.
             ' The colors are indexed 0-55.
             ' Please check: http://www.aspose.com/Products/Aspose.Cells/Api/Aspose.Cells.Workbook.ChangePalette.html
@@ -46,13 +51,11 @@ Namespace Articles
             worksheet.Name = "Sales Report"
             ' Save the excel file.
             workbook.Save(filename)
-
-
         End Sub
 
-        Private Shared Sub CreateReportData(ByVal workbook As Workbook)
+        Private Shared Sub CreateReportData(workbook As Workbook)
             ' Obtain the cells of the first worksheet.
-            Dim cells As Global.Aspose.Cells.Cells = workbook.Worksheets(0).Cells
+            Dim cells As Cells = workbook.Worksheets(0).Cells
 
             ' Input the title on B1 cell.
             cells("B1").PutValue("Western Product Sales 2006")
@@ -452,246 +455,193 @@ Namespace Articles
             cells("N25").Formula = "=SUM(B25:M25)"
             ' Add Grand Total.
             cells("N26").Formula = "=SUM(N3:N25)"
-
         End Sub
 
-        Private Shared Sub CreateCellsFormatting(ByVal workbook As Workbook)
+        Private Shared Sub CreateCellsFormatting(workbook As Workbook)
 
-            ' Define a style object adding a new style
-            ' To the collection list.
+            ' Define a style object adding a new style to the collection list.
             Dim stl0 As Style = workbook.CreateStyle()
+
             ' Set a custom shading color of the cells.
             stl0.ForegroundColor = Color.FromArgb(155, 204, 255)
-            ' Set the solid background fillment.
             stl0.Pattern = BackgroundType.Solid
-            ' Set a font.
             stl0.Font.Name = "Trebuchet MS"
-            ' Set the size.
             stl0.Font.Size = 18
-            ' Set the font text color.
             stl0.Font.Color = Color.Maroon
-            ' Set it bold
             stl0.Font.IsBold = True
-            ' Set it italic.
             stl0.Font.IsItalic = True
+
             ' Define a style flag struct.
             Dim flag As New StyleFlag()
-            ' Apply cell shading.
             flag.CellShading = True
-            ' Apply font.
             flag.FontName = True
-            ' Apply font size.
             flag.FontSize = True
-            ' Apply font color.
             flag.FontColor = True
-            ' Apply bold font.
             flag.FontBold = True
-            ' Apply italic attribute.
             flag.FontItalic = True
+
             ' Get the first row in the first worksheet.
             Dim row As Row = workbook.Worksheets(0).Cells.Rows(0)
+
             ' Apply the style to it.
             row.ApplyStyle(stl0, flag)
 
             ' Obtain the cells of the first worksheet.
-            Dim cells As Global.Aspose.Cells.Cells = workbook.Worksheets(0).Cells
+            Dim cells As Cells = workbook.Worksheets(0).Cells
+
             ' Set the height of the first row.
             cells.SetRowHeight(0, 30)
 
-            ' Define a style object adding a new style
-            ' To the collection list.
+            ' Define a style object adding a new style to the collection list.
             Dim stl1 As Style = workbook.CreateStyle()
+
             ' Set the rotation angle of the text.
             stl1.RotationAngle = 45
+
             ' Set the custom fill color of the cells.
             stl1.ForegroundColor = Color.FromArgb(0, 51, 105)
-            ' Set the solid background pattern for fillment.
             stl1.Pattern = BackgroundType.Solid
-            ' Set the left border line style.
             stl1.Borders(BorderType.LeftBorder).LineStyle = CellBorderType.Thin
-            ' Set the left border line color.
             stl1.Borders(BorderType.LeftBorder).Color = Color.White
-            ' Set the horizontal alignment to center aligned.
             stl1.HorizontalAlignment = TextAlignmentType.Center
-            ' Set the vertical alignment to center aligned.
             stl1.VerticalAlignment = TextAlignmentType.Center
-            ' Set the font.
             stl1.Font.Name = "Times New Roman"
-            ' Set the font size.
             stl1.Font.Size = 10
-            ' Set the font color.
             stl1.Font.Color = Color.White
-            ' Set the bold attribute.
             stl1.Font.IsBold = True
-            ' Set the style flag struct.
+
+            ' Set a style flag struct.
             flag = New StyleFlag()
-            ' Apply the left border.
             flag.LeftBorder = True
-            ' Apply text rotation orientation.
             flag.Rotation = True
-            ' Apply fill color of cells.
             flag.CellShading = True
-            ' Apply horizontal alignment.
             flag.HorizontalAlignment = True
-            ' Apply vertical alignment.
             flag.VerticalAlignment = True
-            ' Apply the font.
             flag.FontName = True
-            ' Apply the font size.
             flag.FontSize = True
-            ' Apply the font color.
             flag.FontColor = True
-            ' Apply the bold attribute.
             flag.FontBold = True
-            ' Get the second row of the first worksheet.
             row = workbook.Worksheets(0).Cells.Rows(1)
+
             ' Apply the style to it.
             row.ApplyStyle(stl1, flag)
 
             ' Set the height of the second row.
             cells.SetRowHeight(1, 48)
 
-            ' Define a style object adding a new style
-            ' To the collection list.
+            ' Define a style object adding a new style to the collection list.
             Dim stl2 As Style = workbook.CreateStyle()
+
             ' Set the custom cell shading color.
             stl2.ForegroundColor = Color.FromArgb(155, 204, 255)
-            ' Set the solid background pattern for fillment color.
             stl2.Pattern = BackgroundType.Solid
-            ' Set the font.
             stl2.Font.Name = "Trebuchet MS"
-            ' Set the font color.
             stl2.Font.Color = Color.Maroon
-            ' Set the font size.
             stl2.Font.Size = 10
-            ' Set the style flag struct.
             flag = New StyleFlag()
-            ' Apply cell shading.
             flag.CellShading = True
-            ' Apply the font.
             flag.FontName = True
-            ' Apply the font color.
             flag.FontColor = True
-            ' Apply the font size.
             flag.FontSize = True
+
             ' Get the first column in the first worksheet.
             Dim col As Column = workbook.Worksheets(0).Cells.Columns(0)
+
             ' Apply the style to it.
             col.ApplyStyle(stl2, flag)
 
-            ' Define a style object adding a new style
-            ' To the collection list.
+            ' Define a style object adding a new style to the collection list.
             Dim stl3 As Style = workbook.CreateStyle()
+
             ' Set the custom cell filling color.
             stl3.ForegroundColor = Color.FromArgb(124, 199, 72)
-            ' Set the solid background pattern for fillment color.
             stl3.Pattern = BackgroundType.Solid
-            ' Apply the style to A2 cell.
             cells("A2").SetStyle(stl3)
 
-            ' Define a style object adding a new style
-            ' To the collection list.
+            ' Define a style object adding a new style to the collection list.
             Dim stl4 As Style = workbook.CreateStyle()
+
             ' Set the custom font text color.
             stl4.Font.Color = Color.FromArgb(0, 51, 105)
-            ' Set the bottom border line style.
             stl4.Borders(BorderType.BottomBorder).LineStyle = CellBorderType.Thin
-            ' Set the bottom border line color to custom color.
             stl4.Borders(BorderType.BottomBorder).Color = Color.FromArgb(124, 199, 72)
-            ' Set the background fill color of the cells.
             stl4.ForegroundColor = Color.White
-            ' Set the solid fillcolor pattern.
             stl4.Pattern = BackgroundType.Solid
+
             ' Set custom number format.
-            stl4.Custom = "$#,##0.0"
+            stl4.[Custom] = "$#,##0.0"
+
             ' Set a style flag struct.
             flag = New StyleFlag()
-            ' Apply font color.
             flag.FontColor = True
-            ' Apply cell shading color.
             flag.CellShading = True
-            ' Apply custom number format.
             flag.NumberFormat = True
-            ' Apply bottom border.
             flag.BottomBorder = True
 
-            ' Define a style object adding a new style
-            ' To the collection list.
+            ' Define a style object adding a new style to the collection list.
             Dim stl5 As Style = workbook.CreateStyle()
-            ' Set the bottom borde line style.
             stl5.Borders(BorderType.BottomBorder).LineStyle = CellBorderType.Thin
-            ' Set the bottom border line color.
             stl5.Borders(BorderType.BottomBorder).Color = Color.FromArgb(124, 199, 72)
-            ' Set the custom shading color of the cells.
             stl5.ForegroundColor = Color.FromArgb(250, 250, 200)
-            ' Set the solid background pattern for fillment color.
             stl5.Pattern = BackgroundType.Solid
+
             ' Set custom number format.
-            stl5.Custom = "$#,##0.0"
-            ' Set font text color.
+            stl5.[Custom] = "$#,##0.0"
             stl5.Font.Color = Color.Maroon
 
             ' Create a named range of cells (B3:M25)in the first worksheet.
             Dim range As Range = workbook.Worksheets(0).Cells.CreateRange("B3", "M25")
+
             ' Name the range.
             range.Name = "MyRange"
+
             ' Apply the style to cells in the named range.
             range.ApplyStyle(stl4, flag)
 
-            ' Apply different style to alternative rows
-            ' In the range.
+            ' Apply different style to alternative rows in the range.
             For i As Integer = 0 To 22
                 For j As Integer = 0 To 11
                     If i Mod 2 = 0 Then
                         range(i, j).SetStyle(stl5)
-
                     End If
+                Next
+            Next
 
-                Next j
-            Next i
-
-            ' Define a style object adding a new style
-            ' To the collection list.
+            ' Define a style object adding a new style to the collection list.
             Dim stl6 As Style = workbook.CreateStyle()
+
             ' Set the custom fill color of the cells.
             stl6.ForegroundColor = Color.FromArgb(0, 51, 105)
-            ' Set the background pattern for fillment color.
             stl6.Pattern = BackgroundType.Solid
-            ' Set the font.
             stl6.Font.Name = "Arial"
-            ' Set the font size.
             stl6.Font.Size = 10
-            ' Set the font color
             stl6.Font.Color = Color.White
-            ' Set the text bold.
             stl6.Font.IsBold = True
+
             ' Set the custom number format.
-            stl6.Custom = "$#,##0.0"
+            stl6.[Custom] = "$#,##0.0"
+
             ' Set the style flag struct.
             flag = New StyleFlag()
-            ' Apply cell shading.
             flag.CellShading = True
-            ' Apply the arial font.
             flag.FontName = True
-            ' Apply the font size.
             flag.FontSize = True
-            ' Apply the font color.
             flag.FontColor = True
-            ' Apply the bold attribute.
             flag.FontBold = True
-            ' Apply the number format.
             flag.NumberFormat = True
+
             ' Get the 26th row in the first worksheet which produces totals.
             row = workbook.Worksheets(0).Cells.Rows(25)
+
             ' Apply the style to it.
             row.ApplyStyle(stl6, flag)
-            ' Now apply this style to those cells (N3:N25) which
-            ' Has productwise sales totals.
+
+            ' Now apply this style to those cells (N3:N25) which has productwise sales totals.
             For i As Integer = 2 To 24
                 cells(i, 13).SetStyle(stl6)
+            Next
 
-            Next i
-            ' Set N column' S width to fit the contents.
+            ' Set N column's width to fit the contents.
             workbook.Worksheets(0).Cells.SetColumnWidth(13, 9.33)
         End Sub
     End Class

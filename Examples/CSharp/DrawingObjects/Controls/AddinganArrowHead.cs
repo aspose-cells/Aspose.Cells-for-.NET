@@ -49,7 +49,7 @@ namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Controls
             workbook.Worksheets[0].IsGridlinesVisible = false;
 
             // Save the excel file.
-            workbook.Save(dataDir+ "book1.out.xlsx");
+            workbook.Save(dataDir + "book1.out.xlsx");
             // ExEnd:1
         }
     }

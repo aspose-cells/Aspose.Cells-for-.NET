@@ -14,7 +14,7 @@ Namespace DrawingObjects.Controls
 
             ' Create directory if it is not already present.
             Dim IsExists As Boolean = System.IO.Directory.Exists(dataDir)
-            If (Not IsExists) Then
+            If Not IsExists Then
                 System.IO.Directory.CreateDirectory(dataDir)
             End If
 
@@ -22,7 +22,11 @@ Namespace DrawingObjects.Controls
             Dim excelbook As New Workbook()
 
             ' Add an arc shape.
-            Dim arc1 As Global.Aspose.Cells.Drawing.ArcShape = excelbook.Worksheets(0).Shapes.AddArc(2, 0, 2, 0, 130, 130)
+            Dim arc1 As Aspose.Cells.Drawing.ArcShape = excelbook.Worksheets(0).Shapes.AddArc(2, 0, 2, 0, 130, 130)
+
+            ' Set the fill shape color
+            arc1.Fill.FillType = FillType.Solid
+            arc1.Fill.SolidFill.Color = Color.Blue
 
             ' Set the placement of the arc.
             arc1.Placement = PlacementType.FreeFloating
@@ -34,7 +38,11 @@ Namespace DrawingObjects.Controls
             arc1.Line.DashStyle = MsoLineDashStyle.Solid
 
             ' Add another arc shape.
-            Dim arc2 As Global.Aspose.Cells.Drawing.ArcShape = excelbook.Worksheets(0).Shapes.AddArc(9, 0, 2, 0, 130, 130)
+            Dim arc2 As Aspose.Cells.Drawing.ArcShape = excelbook.Worksheets(0).Shapes.AddArc(9, 0, 2, 0, 130, 130)
+
+            ' Set the line color
+            arc2.Line.FillType = FillType.Solid
+            arc2.Line.SolidFill.Color = Color.Blue
 
             ' Set the placement of the arc.
             arc2.Placement = PlacementType.FreeFloating
@@ -46,9 +54,8 @@ Namespace DrawingObjects.Controls
             arc2.Line.DashStyle = MsoLineDashStyle.Solid
 
             ' Save the excel file.
-            excelbook.Save(dataDir & "output.xls")
+            excelbook.Save(dataDir & Convert.ToString("book1.out.xls"))
             ' ExEnd:1
-
         End Sub
     End Class
 End Namespace

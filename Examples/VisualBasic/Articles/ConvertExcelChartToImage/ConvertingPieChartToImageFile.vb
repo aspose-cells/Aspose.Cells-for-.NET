@@ -19,11 +19,8 @@ Namespace Articles.ConvertExcelChartToImage
             Dim chart As Global.Aspose.Cells.Charts.Chart = workbook.Worksheets(0).Charts(0)
 
             ' Convert the chart to an image file.
-            chart.ToImage(dataDir & "PieChart.output.emf", System.Drawing.Imaging.ImageFormat.Emf)
+            chart.ToImage(dataDir & "PieChart.out.emf", System.Drawing.Imaging.ImageFormat.Emf)
             ' ExEnd:1
-
-
-
         End Sub
     End Class
 End Namespace

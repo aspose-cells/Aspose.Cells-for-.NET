@@ -99,7 +99,6 @@ namespace DataBindingFeature
 
                 // Setting the style of column to the updated one
                 sheet.Columns[i].SetStyle(style);
-
             }
             // ExEnd:ApplyCustomStyle
         }

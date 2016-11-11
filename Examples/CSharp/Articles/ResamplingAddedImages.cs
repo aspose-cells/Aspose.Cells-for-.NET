@@ -21,8 +21,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             pdfSaveOptions.SetImageResample(300, 70);
 
             // Save the PDF file
-            workbook.Save(dataDir+ "OutputFile.out.pdf", pdfSaveOptions);
-            // ExStart:1
+            workbook.Save(dataDir+ "OutputFile_out_pdf", pdfSaveOptions);
+            // ExEnd:1
         }
     }
 }
