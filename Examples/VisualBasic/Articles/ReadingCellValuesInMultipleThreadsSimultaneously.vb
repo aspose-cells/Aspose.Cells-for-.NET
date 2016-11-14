@@ -18,12 +18,15 @@ Namespace Articles
         Public Shared Sub ThreadLoop()
             Dim random As New Random()
             Do While Thread.CurrentThread.IsAlive
+                Try
                 Dim row As Integer = random.Next(0, 10000)
                 Dim col As Integer = random.Next(0, 100)
                 Dim s = testWorkbook.Worksheets(0).Cells(row, col).StringValue
                 ' If s IsNot AscW("R") + row + AscW("C") + col Then
                 ' MessageBox.Show("This message box will show up when cells read values are incorrect.");
-                ' End If
+                    ' End If
+                Catch ex As Exception
+                End Try
             Loop
         End Sub
 

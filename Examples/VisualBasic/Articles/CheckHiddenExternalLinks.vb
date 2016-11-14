@@ -17,9 +17,9 @@ Namespace Articles
 
             ' Print all the external links and check there IsVisible property
             For i As Integer = 0 To links.Count - 1
-                Console.WriteLine("Data Source: " + links(i).DataSource)
-                Console.WriteLine("Is Referred: " + links(i).IsReferred)
-                Console.WriteLine("Is Visible: " + links(i).IsVisible)
+                Console.WriteLine("Data Source: " & links(i).DataSource)
+                Console.WriteLine("Is Referred: " & links(i).IsReferred)
+                Console.WriteLine("Is Visible: " & links(i).IsVisible)
                 Console.WriteLine()
             Next
             ' ExEnd:CheckHiddenExternalLinks

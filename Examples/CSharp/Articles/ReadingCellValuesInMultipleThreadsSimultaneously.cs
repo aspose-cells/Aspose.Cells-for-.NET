@@ -22,13 +22,17 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             Random random = new Random();
             while (Thread.CurrentThread.IsAlive)
             {
-                int row = random.Next(0, 10000);
-                int col = random.Next(0, 100);
-                var s = testWorkbook.Worksheets[0].Cells[row, col].StringValue;
-                if (s != "R" + row + "C" + col)
+                try
                 {
-                    // MessageBox.Show("This message box will show up when cells read values are incorrect.");
+                    int row = random.Next(0, 10000);
+                    int col = random.Next(0, 100);
+                    string s = testWorkbook.Worksheets[0].Cells[row, col].StringValue;
+                    if (s != "R" + row + "C" + col)
+                    {
+                        Console.WriteLine("This message will show up when cells read values are incorrect.");
+                    }
                 }
+                catch { }
             }
         }
 

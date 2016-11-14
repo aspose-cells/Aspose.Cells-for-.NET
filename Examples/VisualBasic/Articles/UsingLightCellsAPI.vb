@@ -101,7 +101,7 @@ Namespace Articles
             opts.LightCellsDataHandler = v
             Dim wb As New Workbook(dataDir & Convert.ToString("LargeBook1.xlsx"), opts)
             Dim sheetCount As Integer = wb.Worksheets.Count
-            Console.WriteLine("Total sheets: " + sheetCount + ", cells: " + v.CellCount + ", strings: " + v.StringCount + ", formulas: " + v.FormulaCount)
+            Console.WriteLine("Total sheets: " & sheetCount & ", cells: " & v.CellCount & ", strings: " & v.StringCount & ", formulas: " & v.FormulaCount)
         End Sub
     End Class
 

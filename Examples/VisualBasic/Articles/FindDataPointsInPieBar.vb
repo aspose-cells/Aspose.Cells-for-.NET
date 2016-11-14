@@ -41,8 +41,8 @@ Namespace Articles
                 ' If the IsInSecondaryPlot is true, then the data point is inside bar 
                 ' otherwise it is inside the pie.          
 
-                Console.WriteLine("Value: " + cp.YValue)
-                Console.WriteLine("IsInSecondaryPlot: " + cp.IsInSecondaryPlot)
+                Console.WriteLine("Value: " & cp.YValue)
+                Console.WriteLine("IsInSecondaryPlot: " & cp.IsInSecondaryPlot)
                 Console.WriteLine()
             Next
             ' ExEnd:FindDataPointsInPieBar
