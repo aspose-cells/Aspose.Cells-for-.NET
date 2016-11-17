@@ -107,6 +107,72 @@
     <Compile Include="WorkingWithGrid\SavingExcelFile.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="WorkingWithRowsandColumns\AddingCellControlsInColumns.Designer.vb">
+      <DependentUpon>AddingCellControlsInColumns.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithRowsandColumns\AddingCellControlsInColumns.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithRowsandColumns\AddInsertColumn.Designer.vb">
+      <DependentUpon>AddInsertColumn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithRowsandColumns\AddInsertColumn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithRowsandColumns\AddInsertRow.Designer.vb">
+      <DependentUpon>AddInsertRow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithRowsandColumns\AddInsertRow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithRowsandColumns\ApplyingStyleOnRowColumn.Designer.vb">
+      <DependentUpon>ApplyingStyleOnRowColumn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithRowsandColumns\ApplyingStyleOnRowColumn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithRowsandColumns\ChangeFontColorRowColumn.Designer.vb">
+      <DependentUpon>ChangeFontColorRowColumn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithRowsandColumns\ChangeFontColorRowColumn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithRowsandColumns\FreezeUnfreezeRowsColumns.Designer.vb">
+      <DependentUpon>FreezeUnfreezeRowsColumns.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithRowsandColumns\FreezeUnfreezeRowsColumns.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithRowsandColumns\ManagingControlsInColumns.Designer.vb">
+      <DependentUpon>ManagingControlsInColumns.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithRowsandColumns\ManagingControlsInColumns.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithRowsandColumns\RemovingColumn.Designer.vb">
+      <DependentUpon>RemovingColumn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithRowsandColumns\RemovingColumn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithRowsandColumns\RemovingRow.Designer.vb">
+      <DependentUpon>RemovingRow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithRowsandColumns\RemovingRow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithRowsandColumns\SettingColumnWidthAndRowHeight.Designer.vb">
+      <DependentUpon>SettingColumnWidthAndRowHeight.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithRowsandColumns\SettingColumnWidthAndRowHeight.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithRowsandColumns\WorkingWithColumnValidations.Designer.vb">
+      <DependentUpon>WorkingWithColumnValidations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithRowsandColumns\WorkingWithColumnValidations.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="WorkingWithWorksheet\AccessingWorksheets.Designer.vb">
       <DependentUpon>AccessingWorksheets.vb</DependentUpon>
     </Compile>
@@ -237,6 +303,39 @@
     <EmbeddedResource Include="WorkingWithGrid\SavingExcelFile.resx">
       <DependentUpon>SavingExcelFile.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithRowsandColumns\AddingCellControlsInColumns.resx">
+      <DependentUpon>AddingCellControlsInColumns.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithRowsandColumns\AddInsertColumn.resx">
+      <DependentUpon>AddInsertColumn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithRowsandColumns\AddInsertRow.resx">
+      <DependentUpon>AddInsertRow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithRowsandColumns\ApplyingStyleOnRowColumn.resx">
+      <DependentUpon>ApplyingStyleOnRowColumn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithRowsandColumns\ChangeFontColorRowColumn.resx">
+      <DependentUpon>ChangeFontColorRowColumn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithRowsandColumns\FreezeUnfreezeRowsColumns.resx">
+      <DependentUpon>FreezeUnfreezeRowsColumns.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithRowsandColumns\ManagingControlsInColumns.resx">
+      <DependentUpon>ManagingControlsInColumns.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithRowsandColumns\RemovingColumn.resx">
+      <DependentUpon>RemovingColumn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithRowsandColumns\RemovingRow.resx">
+      <DependentUpon>RemovingRow.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithRowsandColumns\SettingColumnWidthAndRowHeight.resx">
+      <DependentUpon>SettingColumnWidthAndRowHeight.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithRowsandColumns\WorkingWithColumnValidations.resx">
+      <DependentUpon>WorkingWithColumnValidations.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WorkingWithWorksheet\AccessingWorksheets.resx">
       <DependentUpon>AccessingWorksheets.vb</DependentUpon>
     </EmbeddedResource>
@@ -298,7 +397,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="WorkingWithCells\" />
-    <Folder Include="WorkingWithRowsandColumns\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

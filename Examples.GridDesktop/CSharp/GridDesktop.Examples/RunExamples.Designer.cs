@@ -43,10 +43,6 @@
             this.removeAWorksheetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.renameAWorksheetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importDataFromDataTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.workingWithRowsAndColumnsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.workingWithCellsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.closeAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exportDataToDataTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.workingWithValidationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sortDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,6 +55,21 @@
             this.movingWorksheetsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.readingDataValidationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.zoomingInOrOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.workingWithRowsAndColumnsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addInsertColumnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.removingAColmnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addInsertRowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.removingARowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.applyingStyleOnRowColumnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.settingColumnWidhtRowHeightToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.freezeUnfreezeRowsColumnsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addingCellControlsInColumnsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.workingWithColumnValidationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.managingControlsInColumnsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.workingWithCellsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.closeAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changeFontColorOfRowColumnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -199,34 +210,6 @@
             this.importDataFromDataTableToolStripMenuItem.Text = "Import Data From DataTable";
             this.importDataFromDataTableToolStripMenuItem.Click += new System.EventHandler(this.importDataFromDataTableToolStripMenuItem_Click);
             // 
-            // workingWithRowsAndColumnsToolStripMenuItem
-            // 
-            this.workingWithRowsAndColumnsToolStripMenuItem.Name = "workingWithRowsAndColumnsToolStripMenuItem";
-            this.workingWithRowsAndColumnsToolStripMenuItem.Size = new System.Drawing.Size(197, 20);
-            this.workingWithRowsAndColumnsToolStripMenuItem.Text = "Working With Rows and Columns";
-            // 
-            // workingWithCellsToolStripMenuItem
-            // 
-            this.workingWithCellsToolStripMenuItem.Name = "workingWithCellsToolStripMenuItem";
-            this.workingWithCellsToolStripMenuItem.Size = new System.Drawing.Size(120, 20);
-            this.workingWithCellsToolStripMenuItem.Text = "Working With Cells";
-            // 
-            // closeAllToolStripMenuItem
-            // 
-            this.closeAllToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
-            this.closeAllToolStripMenuItem.Name = "closeAllToolStripMenuItem";
-            this.closeAllToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.closeAllToolStripMenuItem.Text = "Close All";
-            this.closeAllToolStripMenuItem.Click += new System.EventHandler(this.closeAllToolStripMenuItem_Click);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.ForeColor = System.Drawing.Color.Red;
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
             // exportDataToDataTableToolStripMenuItem
             // 
             this.exportDataToDataTableToolStripMenuItem.Name = "exportDataToDataTableToolStripMenuItem";
@@ -311,6 +294,123 @@
             this.zoomingInOrOutToolStripMenuItem.Text = "Zooming In or Out";
             this.zoomingInOrOutToolStripMenuItem.Click += new System.EventHandler(this.zoomingInOrOutToolStripMenuItem_Click);
             // 
+            // workingWithRowsAndColumnsToolStripMenuItem
+            // 
+            this.workingWithRowsAndColumnsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addInsertColumnToolStripMenuItem,
+            this.removingAColmnToolStripMenuItem,
+            this.addInsertRowToolStripMenuItem,
+            this.removingARowToolStripMenuItem,
+            this.applyingStyleOnRowColumnToolStripMenuItem,
+            this.settingColumnWidhtRowHeightToolStripMenuItem,
+            this.freezeUnfreezeRowsColumnsToolStripMenuItem,
+            this.addingCellControlsInColumnsToolStripMenuItem,
+            this.workingWithColumnValidationsToolStripMenuItem,
+            this.managingControlsInColumnsToolStripMenuItem,
+            this.changeFontColorOfRowColumnToolStripMenuItem});
+            this.workingWithRowsAndColumnsToolStripMenuItem.Name = "workingWithRowsAndColumnsToolStripMenuItem";
+            this.workingWithRowsAndColumnsToolStripMenuItem.Size = new System.Drawing.Size(197, 20);
+            this.workingWithRowsAndColumnsToolStripMenuItem.Text = "Working With Rows and Columns";
+            // 
+            // addInsertColumnToolStripMenuItem
+            // 
+            this.addInsertColumnToolStripMenuItem.Name = "addInsertColumnToolStripMenuItem";
+            this.addInsertColumnToolStripMenuItem.Size = new System.Drawing.Size(260, 22);
+            this.addInsertColumnToolStripMenuItem.Text = "Add Insert Column";
+            this.addInsertColumnToolStripMenuItem.Click += new System.EventHandler(this.addInsertColumnToolStripMenuItem_Click);
+            // 
+            // removingAColmnToolStripMenuItem
+            // 
+            this.removingAColmnToolStripMenuItem.Name = "removingAColmnToolStripMenuItem";
+            this.removingAColmnToolStripMenuItem.Size = new System.Drawing.Size(260, 22);
+            this.removingAColmnToolStripMenuItem.Text = "Removing a Column";
+            this.removingAColmnToolStripMenuItem.Click += new System.EventHandler(this.removingAColmnToolStripMenuItem_Click);
+            // 
+            // addInsertRowToolStripMenuItem
+            // 
+            this.addInsertRowToolStripMenuItem.Name = "addInsertRowToolStripMenuItem";
+            this.addInsertRowToolStripMenuItem.Size = new System.Drawing.Size(260, 22);
+            this.addInsertRowToolStripMenuItem.Text = "Add Insert Row";
+            this.addInsertRowToolStripMenuItem.Click += new System.EventHandler(this.addInsertRowToolStripMenuItem_Click);
+            // 
+            // removingARowToolStripMenuItem
+            // 
+            this.removingARowToolStripMenuItem.Name = "removingARowToolStripMenuItem";
+            this.removingARowToolStripMenuItem.Size = new System.Drawing.Size(260, 22);
+            this.removingARowToolStripMenuItem.Text = "Removing a Row";
+            this.removingARowToolStripMenuItem.Click += new System.EventHandler(this.removingARowToolStripMenuItem_Click);
+            // 
+            // applyingStyleOnRowColumnToolStripMenuItem
+            // 
+            this.applyingStyleOnRowColumnToolStripMenuItem.Name = "applyingStyleOnRowColumnToolStripMenuItem";
+            this.applyingStyleOnRowColumnToolStripMenuItem.Size = new System.Drawing.Size(260, 22);
+            this.applyingStyleOnRowColumnToolStripMenuItem.Text = "Applying Style on Row/Column";
+            this.applyingStyleOnRowColumnToolStripMenuItem.Click += new System.EventHandler(this.applyingStyleOnRowColumnToolStripMenuItem_Click);
+            // 
+            // settingColumnWidhtRowHeightToolStripMenuItem
+            // 
+            this.settingColumnWidhtRowHeightToolStripMenuItem.Name = "settingColumnWidhtRowHeightToolStripMenuItem";
+            this.settingColumnWidhtRowHeightToolStripMenuItem.Size = new System.Drawing.Size(260, 22);
+            this.settingColumnWidhtRowHeightToolStripMenuItem.Text = "Setting Column Widht & Row Height";
+            this.settingColumnWidhtRowHeightToolStripMenuItem.Click += new System.EventHandler(this.settingColumnWidhtRowHeightToolStripMenuItem_Click);
+            // 
+            // freezeUnfreezeRowsColumnsToolStripMenuItem
+            // 
+            this.freezeUnfreezeRowsColumnsToolStripMenuItem.Name = "freezeUnfreezeRowsColumnsToolStripMenuItem";
+            this.freezeUnfreezeRowsColumnsToolStripMenuItem.Size = new System.Drawing.Size(260, 22);
+            this.freezeUnfreezeRowsColumnsToolStripMenuItem.Text = "Freeze Unfreeze Rows & Columns";
+            this.freezeUnfreezeRowsColumnsToolStripMenuItem.Click += new System.EventHandler(this.freezeUnfreezeRowsColumnsToolStripMenuItem_Click);
+            // 
+            // addingCellControlsInColumnsToolStripMenuItem
+            // 
+            this.addingCellControlsInColumnsToolStripMenuItem.Name = "addingCellControlsInColumnsToolStripMenuItem";
+            this.addingCellControlsInColumnsToolStripMenuItem.Size = new System.Drawing.Size(260, 22);
+            this.addingCellControlsInColumnsToolStripMenuItem.Text = "Adding Cell Controls In Columns";
+            this.addingCellControlsInColumnsToolStripMenuItem.Click += new System.EventHandler(this.addingCellControlsInColumnsToolStripMenuItem_Click);
+            // 
+            // workingWithColumnValidationsToolStripMenuItem
+            // 
+            this.workingWithColumnValidationsToolStripMenuItem.Name = "workingWithColumnValidationsToolStripMenuItem";
+            this.workingWithColumnValidationsToolStripMenuItem.Size = new System.Drawing.Size(260, 22);
+            this.workingWithColumnValidationsToolStripMenuItem.Text = "Working With Column Validations";
+            this.workingWithColumnValidationsToolStripMenuItem.Click += new System.EventHandler(this.workingWithColumnValidationsToolStripMenuItem_Click);
+            // 
+            // managingControlsInColumnsToolStripMenuItem
+            // 
+            this.managingControlsInColumnsToolStripMenuItem.Name = "managingControlsInColumnsToolStripMenuItem";
+            this.managingControlsInColumnsToolStripMenuItem.Size = new System.Drawing.Size(260, 22);
+            this.managingControlsInColumnsToolStripMenuItem.Text = "Managing Controls in Columns";
+            this.managingControlsInColumnsToolStripMenuItem.Click += new System.EventHandler(this.managingControlsInColumnsToolStripMenuItem_Click);
+            // 
+            // workingWithCellsToolStripMenuItem
+            // 
+            this.workingWithCellsToolStripMenuItem.Name = "workingWithCellsToolStripMenuItem";
+            this.workingWithCellsToolStripMenuItem.Size = new System.Drawing.Size(120, 20);
+            this.workingWithCellsToolStripMenuItem.Text = "Working With Cells";
+            // 
+            // closeAllToolStripMenuItem
+            // 
+            this.closeAllToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
+            this.closeAllToolStripMenuItem.Name = "closeAllToolStripMenuItem";
+            this.closeAllToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.closeAllToolStripMenuItem.Text = "Close All";
+            this.closeAllToolStripMenuItem.Click += new System.EventHandler(this.closeAllToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.ForeColor = System.Drawing.Color.Red;
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
+            // changeFontColorOfRowColumnToolStripMenuItem
+            // 
+            this.changeFontColorOfRowColumnToolStripMenuItem.Name = "changeFontColorOfRowColumnToolStripMenuItem";
+            this.changeFontColorOfRowColumnToolStripMenuItem.Size = new System.Drawing.Size(260, 22);
+            this.changeFontColorOfRowColumnToolStripMenuItem.Text = "Change Font Color of Row Column";
+            this.changeFontColorOfRowColumnToolStripMenuItem.Click += new System.EventHandler(this.changeFontColorOfRowColumnToolStripMenuItem_Click);
+            // 
             // RunExamples
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -363,6 +463,17 @@
         private System.Windows.Forms.ToolStripMenuItem movingWorksheetsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem readingDataValidationsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem zoomingInOrOutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addInsertColumnToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem removingAColmnToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addInsertRowToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem removingARowToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem applyingStyleOnRowColumnToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem settingColumnWidhtRowHeightToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem freezeUnfreezeRowsColumnsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addingCellControlsInColumnsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem workingWithColumnValidationsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem managingControlsInColumnsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem changeFontColorOfRowColumnToolStripMenuItem;
     }
 }
 

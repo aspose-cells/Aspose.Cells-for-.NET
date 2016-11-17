@@ -63,7 +63,7 @@ namespace GridDesktop.Examples.WorkingWithWorksheet
             // Accessing the location of the cell that is currently in focus
             CellLocation cl = sheet.GetFocusedCellLocation();
 
-            //Creating an array of items or values that will be added to combobox
+            // Creating an array of items or values that will be added to combobox
             string[] items = new string[3];
             items[0] = "Aspose";
             items[1] = "Aspose.Grid";

@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using GridDesktop.Examples.WorkingWithGrid;
 using GridDesktop.Examples.Articles;
 using GridDesktop.Examples.WorkingWithWorksheet;
+using GridDesktop.Examples.WorkingWithRowsandColumns;
 
 namespace GridDesktop.Examples
 {
@@ -194,6 +195,83 @@ namespace GridDesktop.Examples
             ZoomingInOut frmZoomingInOut = new ZoomingInOut();
             frmZoomingInOut.MdiParent = this;
             frmZoomingInOut.Show();
+        }
+
+        private void addInsertColumnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddInsertColumn frmAddInsertColumn = new AddInsertColumn();
+            frmAddInsertColumn.MdiParent = this;
+            frmAddInsertColumn.Show();
+        }
+
+        private void removingAColmnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RemovingColumn frmRemovingColumn = new RemovingColumn();
+            frmRemovingColumn.MdiParent = this;
+            frmRemovingColumn.Show();
+        }
+
+        private void addInsertRowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddInsertRow frmAddInsertRow = new AddInsertRow();
+            frmAddInsertRow.MdiParent = this;
+            frmAddInsertRow.Show();
+        }
+
+        private void removingARowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RemovingRow frmRemovingRow = new RemovingRow();
+            frmRemovingRow.MdiParent = this;
+            frmRemovingRow.Show();
+        }
+
+        private void applyingStyleOnRowColumnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ApplyingStyleOnRowColumn frmApplyStyle = new ApplyingStyleOnRowColumn();
+            frmApplyStyle.MdiParent = this;
+            frmApplyStyle.Show();
+        }
+
+        private void settingColumnWidhtRowHeightToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SettingColumnWidthAndRowHeight frmSettingHeightWidth = new SettingColumnWidthAndRowHeight();
+            frmSettingHeightWidth.MdiParent = this;
+            frmSettingHeightWidth.Show();
+        }
+
+        private void freezeUnfreezeRowsColumnsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FreezeUnfreezeRowsColumns frmFreezeUnfreeze = new FreezeUnfreezeRowsColumns();
+            frmFreezeUnfreeze.MdiParent = this;
+            frmFreezeUnfreeze.Show();
+        }
+
+        private void addingCellControlsInColumnsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddingCellControlsInColumns frmAddControl = new AddingCellControlsInColumns();
+            frmAddControl.MdiParent = this;
+            frmAddControl.Show();
+        }
+
+        private void workingWithColumnValidationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            WorkingWithColumnValidations frmColValidations = new WorkingWithColumnValidations();
+            frmColValidations.MdiParent = this;
+            frmColValidations.Show();
+        }
+
+        private void managingControlsInColumnsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ManagingControlsInColumns frmManageControls = new ManagingControlsInColumns();
+            frmManageControls.MdiParent = this;
+            frmManageControls.Show();
+        }
+
+        private void changeFontColorOfRowColumnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeFontColorRowColumn frmChangeFontColor = new ChangeFontColorRowColumn();
+            frmChangeFontColor.MdiParent = this;
+            frmChangeFontColor.Show();
         }
     }
 }

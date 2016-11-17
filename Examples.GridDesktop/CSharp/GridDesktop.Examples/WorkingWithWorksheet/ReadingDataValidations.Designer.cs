@@ -55,7 +55,7 @@
             this.ClientSize = new System.Drawing.Size(695, 426);
             this.Controls.Add(this.gridDesktop1);
             this.Name = "ReadingDataValidations";
-            this.Text = "ReadingDataValidations";
+            this.Text = "Reading Data Validations";
             this.Load += new System.EventHandler(this.ReadingDataValidations_Load);
             this.ResumeLayout(false);
 

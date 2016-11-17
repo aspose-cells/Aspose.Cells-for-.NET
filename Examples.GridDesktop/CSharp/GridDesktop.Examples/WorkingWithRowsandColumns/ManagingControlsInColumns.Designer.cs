@@ -1,6 +1,6 @@
-﻿namespace GridDesktop.Examples.WorkingWithWorksheet
+﻿namespace GridDesktop.Examples.WorkingWithRowsandColumns
 {
-    partial class ManagingCellControls
+    partial class ManagingControlsInColumns
     {
         /// <summary>
         /// Required designer variable.

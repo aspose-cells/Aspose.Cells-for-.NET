@@ -8,6 +8,7 @@ Imports System.Windows.Forms
 Imports GridDesktop.Examples.WorkingWithGrid
 Imports GridDesktop.Examples.Articles
 Imports GridDesktop.Examples.WorkingWithWorksheet
+Imports GridDesktop.Examples.WorkingWithRowsandColumns
 
 Public Partial Class RunExamples
 	Inherits Form
@@ -163,5 +164,71 @@ Public Partial Class RunExamples
 		Dim frmZoomingInOut As New ZoomingInOut()
 		frmZoomingInOut.MdiParent = Me
 		frmZoomingInOut.Show()
+	End Sub
+
+	Private Sub addInsertColumnToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmAddInsertColumn As New AddInsertColumn()
+		frmAddInsertColumn.MdiParent = Me
+		frmAddInsertColumn.Show()
+	End Sub
+
+	Private Sub removingAColmnToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmRemovingColumn As New RemovingColumn()
+		frmRemovingColumn.MdiParent = Me
+		frmRemovingColumn.Show()
+	End Sub
+
+	Private Sub addInsertRowToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmAddInsertRow As New AddInsertRow()
+		frmAddInsertRow.MdiParent = Me
+		frmAddInsertRow.Show()
+	End Sub
+
+	Private Sub removingARowToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmRemovingRow As New RemovingRow()
+		frmRemovingRow.MdiParent = Me
+		frmRemovingRow.Show()
+	End Sub
+
+	Private Sub applyingStyleOnRowColumnToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmApplyStyle As New ApplyingStyleOnRowColumn()
+		frmApplyStyle.MdiParent = Me
+		frmApplyStyle.Show()
+	End Sub
+
+	Private Sub settingColumnWidhtRowHeightToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmSettingHeightWidth As New SettingColumnWidthAndRowHeight()
+		frmSettingHeightWidth.MdiParent = Me
+		frmSettingHeightWidth.Show()
+	End Sub
+
+	Private Sub freezeUnfreezeRowsColumnsToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmFreezeUnfreeze As New FreezeUnfreezeRowsColumns()
+		frmFreezeUnfreeze.MdiParent = Me
+		frmFreezeUnfreeze.Show()
+	End Sub
+
+	Private Sub addingCellControlsInColumnsToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmAddControl As New AddingCellControlsInColumns()
+		frmAddControl.MdiParent = Me
+		frmAddControl.Show()
+	End Sub
+
+	Private Sub workingWithColumnValidationsToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmColValidations As New WorkingWithColumnValidations()
+		frmColValidations.MdiParent = Me
+		frmColValidations.Show()
+	End Sub
+
+	Private Sub managingControlsInColumnsToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmManageControls As New ManagingControlsInColumns()
+		frmManageControls.MdiParent = Me
+		frmManageControls.Show()
+	End Sub
+
+	Private Sub changeFontColorOfRowColumnToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmChangeFontColor As New ChangeFontColorRowColumn()
+		frmChangeFontColor.MdiParent = Me
+		frmChangeFontColor.Show()
 	End Sub
 End Class

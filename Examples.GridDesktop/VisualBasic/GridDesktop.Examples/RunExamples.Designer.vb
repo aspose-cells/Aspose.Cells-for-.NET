@@ -37,10 +37,6 @@ Partial Class RunExamples
 		Me.removeAWorksheetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.renameAWorksheetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.importDataFromDataTableToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-		Me.workingWithRowsAndColumnsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-		Me.workingWithCellsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-		Me.closeAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-		Me.exitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.exportDataToDataTableToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.workingWithValidationsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.sortDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -53,6 +49,21 @@ Partial Class RunExamples
 		Me.movingWorksheetsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.readingDataValidationsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.zoomingInOrOutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.workingWithRowsAndColumnsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.addInsertColumnToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.removingAColmnToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.addInsertRowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.removingARowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.applyingStyleOnRowColumnToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.settingColumnWidhtRowHeightToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.freezeUnfreezeRowsColumnsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.addingCellControlsInColumnsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.workingWithColumnValidationsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.managingControlsInColumnsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.workingWithCellsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.closeAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.exitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.changeFontColorOfRowColumnToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.menuStrip.SuspendLayout()
 		Me.SuspendLayout()
 		' 
@@ -166,34 +177,6 @@ Partial Class RunExamples
 		Me.importDataFromDataTableToolStripMenuItem.Text = "Import Data From DataTable"
 		AddHandler Me.importDataFromDataTableToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.importDataFromDataTableToolStripMenuItem_Click)
 		' 
-		' workingWithRowsAndColumnsToolStripMenuItem
-		' 
-		Me.workingWithRowsAndColumnsToolStripMenuItem.Name = "workingWithRowsAndColumnsToolStripMenuItem"
-		Me.workingWithRowsAndColumnsToolStripMenuItem.Size = New System.Drawing.Size(197, 20)
-		Me.workingWithRowsAndColumnsToolStripMenuItem.Text = "Working With Rows and Columns"
-		' 
-		' workingWithCellsToolStripMenuItem
-		' 
-		Me.workingWithCellsToolStripMenuItem.Name = "workingWithCellsToolStripMenuItem"
-		Me.workingWithCellsToolStripMenuItem.Size = New System.Drawing.Size(120, 20)
-		Me.workingWithCellsToolStripMenuItem.Text = "Working With Cells"
-		' 
-		' closeAllToolStripMenuItem
-		' 
-		Me.closeAllToolStripMenuItem.ForeColor = System.Drawing.Color.Navy
-		Me.closeAllToolStripMenuItem.Name = "closeAllToolStripMenuItem"
-		Me.closeAllToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
-		Me.closeAllToolStripMenuItem.Text = "Close All"
-		AddHandler Me.closeAllToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.closeAllToolStripMenuItem_Click)
-		' 
-		' exitToolStripMenuItem
-		' 
-		Me.exitToolStripMenuItem.ForeColor = System.Drawing.Color.Red
-		Me.exitToolStripMenuItem.Name = "exitToolStripMenuItem"
-		Me.exitToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
-		Me.exitToolStripMenuItem.Text = "Exit"
-		AddHandler Me.exitToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.exitToolStripMenuItem_Click)
-		' 
 		' exportDataToDataTableToolStripMenuItem
 		' 
 		Me.exportDataToDataTableToolStripMenuItem.Name = "exportDataToDataTableToolStripMenuItem"
@@ -278,6 +261,113 @@ Partial Class RunExamples
 		Me.zoomingInOrOutToolStripMenuItem.Text = "Zooming In or Out"
 		AddHandler Me.zoomingInOrOutToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.zoomingInOrOutToolStripMenuItem_Click)
 		' 
+		' workingWithRowsAndColumnsToolStripMenuItem
+		' 
+		Me.workingWithRowsAndColumnsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.addInsertColumnToolStripMenuItem, Me.removingAColmnToolStripMenuItem, Me.addInsertRowToolStripMenuItem, Me.removingARowToolStripMenuItem, Me.applyingStyleOnRowColumnToolStripMenuItem, Me.settingColumnWidhtRowHeightToolStripMenuItem, _
+			Me.freezeUnfreezeRowsColumnsToolStripMenuItem, Me.addingCellControlsInColumnsToolStripMenuItem, Me.workingWithColumnValidationsToolStripMenuItem, Me.managingControlsInColumnsToolStripMenuItem, Me.changeFontColorOfRowColumnToolStripMenuItem})
+		Me.workingWithRowsAndColumnsToolStripMenuItem.Name = "workingWithRowsAndColumnsToolStripMenuItem"
+		Me.workingWithRowsAndColumnsToolStripMenuItem.Size = New System.Drawing.Size(197, 20)
+		Me.workingWithRowsAndColumnsToolStripMenuItem.Text = "Working With Rows and Columns"
+		' 
+		' addInsertColumnToolStripMenuItem
+		' 
+		Me.addInsertColumnToolStripMenuItem.Name = "addInsertColumnToolStripMenuItem"
+		Me.addInsertColumnToolStripMenuItem.Size = New System.Drawing.Size(260, 22)
+		Me.addInsertColumnToolStripMenuItem.Text = "Add Insert Column"
+		AddHandler Me.addInsertColumnToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.addInsertColumnToolStripMenuItem_Click)
+		' 
+		' removingAColmnToolStripMenuItem
+		' 
+		Me.removingAColmnToolStripMenuItem.Name = "removingAColmnToolStripMenuItem"
+		Me.removingAColmnToolStripMenuItem.Size = New System.Drawing.Size(260, 22)
+		Me.removingAColmnToolStripMenuItem.Text = "Removing a Column"
+		AddHandler Me.removingAColmnToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.removingAColmnToolStripMenuItem_Click)
+		' 
+		' addInsertRowToolStripMenuItem
+		' 
+		Me.addInsertRowToolStripMenuItem.Name = "addInsertRowToolStripMenuItem"
+		Me.addInsertRowToolStripMenuItem.Size = New System.Drawing.Size(260, 22)
+		Me.addInsertRowToolStripMenuItem.Text = "Add Insert Row"
+		AddHandler Me.addInsertRowToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.addInsertRowToolStripMenuItem_Click)
+		' 
+		' removingARowToolStripMenuItem
+		' 
+		Me.removingARowToolStripMenuItem.Name = "removingARowToolStripMenuItem"
+		Me.removingARowToolStripMenuItem.Size = New System.Drawing.Size(260, 22)
+		Me.removingARowToolStripMenuItem.Text = "Removing a Row"
+		AddHandler Me.removingARowToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.removingARowToolStripMenuItem_Click)
+		' 
+		' applyingStyleOnRowColumnToolStripMenuItem
+		' 
+		Me.applyingStyleOnRowColumnToolStripMenuItem.Name = "applyingStyleOnRowColumnToolStripMenuItem"
+		Me.applyingStyleOnRowColumnToolStripMenuItem.Size = New System.Drawing.Size(260, 22)
+		Me.applyingStyleOnRowColumnToolStripMenuItem.Text = "Applying Style on Row/Column"
+		AddHandler Me.applyingStyleOnRowColumnToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.applyingStyleOnRowColumnToolStripMenuItem_Click)
+		' 
+		' settingColumnWidhtRowHeightToolStripMenuItem
+		' 
+		Me.settingColumnWidhtRowHeightToolStripMenuItem.Name = "settingColumnWidhtRowHeightToolStripMenuItem"
+		Me.settingColumnWidhtRowHeightToolStripMenuItem.Size = New System.Drawing.Size(260, 22)
+		Me.settingColumnWidhtRowHeightToolStripMenuItem.Text = "Setting Column Widht & Row Height"
+		AddHandler Me.settingColumnWidhtRowHeightToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.settingColumnWidhtRowHeightToolStripMenuItem_Click)
+		' 
+		' freezeUnfreezeRowsColumnsToolStripMenuItem
+		' 
+		Me.freezeUnfreezeRowsColumnsToolStripMenuItem.Name = "freezeUnfreezeRowsColumnsToolStripMenuItem"
+		Me.freezeUnfreezeRowsColumnsToolStripMenuItem.Size = New System.Drawing.Size(260, 22)
+		Me.freezeUnfreezeRowsColumnsToolStripMenuItem.Text = "Freeze Unfreeze Rows & Columns"
+		AddHandler Me.freezeUnfreezeRowsColumnsToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.freezeUnfreezeRowsColumnsToolStripMenuItem_Click)
+		' 
+		' addingCellControlsInColumnsToolStripMenuItem
+		' 
+		Me.addingCellControlsInColumnsToolStripMenuItem.Name = "addingCellControlsInColumnsToolStripMenuItem"
+		Me.addingCellControlsInColumnsToolStripMenuItem.Size = New System.Drawing.Size(260, 22)
+		Me.addingCellControlsInColumnsToolStripMenuItem.Text = "Adding Cell Controls In Columns"
+		AddHandler Me.addingCellControlsInColumnsToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.addingCellControlsInColumnsToolStripMenuItem_Click)
+		' 
+		' workingWithColumnValidationsToolStripMenuItem
+		' 
+		Me.workingWithColumnValidationsToolStripMenuItem.Name = "workingWithColumnValidationsToolStripMenuItem"
+		Me.workingWithColumnValidationsToolStripMenuItem.Size = New System.Drawing.Size(260, 22)
+		Me.workingWithColumnValidationsToolStripMenuItem.Text = "Working With Column Validations"
+		AddHandler Me.workingWithColumnValidationsToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.workingWithColumnValidationsToolStripMenuItem_Click)
+		' 
+		' managingControlsInColumnsToolStripMenuItem
+		' 
+		Me.managingControlsInColumnsToolStripMenuItem.Name = "managingControlsInColumnsToolStripMenuItem"
+		Me.managingControlsInColumnsToolStripMenuItem.Size = New System.Drawing.Size(260, 22)
+		Me.managingControlsInColumnsToolStripMenuItem.Text = "Managing Controls in Columns"
+		AddHandler Me.managingControlsInColumnsToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.managingControlsInColumnsToolStripMenuItem_Click)
+		' 
+		' workingWithCellsToolStripMenuItem
+		' 
+		Me.workingWithCellsToolStripMenuItem.Name = "workingWithCellsToolStripMenuItem"
+		Me.workingWithCellsToolStripMenuItem.Size = New System.Drawing.Size(120, 20)
+		Me.workingWithCellsToolStripMenuItem.Text = "Working With Cells"
+		' 
+		' closeAllToolStripMenuItem
+		' 
+		Me.closeAllToolStripMenuItem.ForeColor = System.Drawing.Color.Navy
+		Me.closeAllToolStripMenuItem.Name = "closeAllToolStripMenuItem"
+		Me.closeAllToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
+		Me.closeAllToolStripMenuItem.Text = "Close All"
+		AddHandler Me.closeAllToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.closeAllToolStripMenuItem_Click)
+		' 
+		' exitToolStripMenuItem
+		' 
+		Me.exitToolStripMenuItem.ForeColor = System.Drawing.Color.Red
+		Me.exitToolStripMenuItem.Name = "exitToolStripMenuItem"
+		Me.exitToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
+		Me.exitToolStripMenuItem.Text = "Exit"
+		AddHandler Me.exitToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.exitToolStripMenuItem_Click)
+		' 
+		' changeFontColorOfRowColumnToolStripMenuItem
+		' 
+		Me.changeFontColorOfRowColumnToolStripMenuItem.Name = "changeFontColorOfRowColumnToolStripMenuItem"
+		Me.changeFontColorOfRowColumnToolStripMenuItem.Size = New System.Drawing.Size(260, 22)
+		Me.changeFontColorOfRowColumnToolStripMenuItem.Text = "Change Font Color of Row Column"
+		AddHandler Me.changeFontColorOfRowColumnToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.changeFontColorOfRowColumnToolStripMenuItem_Click)
+		' 
 		' RunExamples
 		' 
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
@@ -330,5 +420,16 @@ Partial Class RunExamples
 	Private movingWorksheetsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 	Private readingDataValidationsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 	Private zoomingInOrOutToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private addInsertColumnToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private removingAColmnToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private addInsertRowToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private removingARowToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private applyingStyleOnRowColumnToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private settingColumnWidhtRowHeightToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private freezeUnfreezeRowsColumnsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private addingCellControlsInColumnsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private workingWithColumnValidationsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private managingControlsInColumnsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private changeFontColorOfRowColumnToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
 

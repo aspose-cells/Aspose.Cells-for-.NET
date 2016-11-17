@@ -68,7 +68,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.gridDesktop1);
             this.Name = "MovingWorksheets";
-            this.Text = "MovingWorksheets";
+            this.Text = "Moving Worksheets";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MovingWorksheets_Load);
             this.ResumeLayout(false);
