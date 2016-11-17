@@ -99,17 +99,71 @@
     <Compile Include="WorkingWithWorksheet\AccessingWorksheets.Designer.cs">
       <DependentUpon>AccessingWorksheets.cs</DependentUpon>
     </Compile>
+    <Compile Include="WorkingWithWorksheet\AddingCellControls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\AddingCellControls.Designer.cs">
+      <DependentUpon>AddingCellControls.cs</DependentUpon>
+    </Compile>
     <Compile Include="WorkingWithWorksheet\AddInsertWorksheet.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="WorkingWithWorksheet\AddInsertWorksheet.Designer.cs">
       <DependentUpon>AddInsertWorksheet.cs</DependentUpon>
     </Compile>
+    <Compile Include="WorkingWithWorksheet\DisplayHideScrolBars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\DisplayHideScrolBars.Designer.cs">
+      <DependentUpon>DisplayHideScrolBars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\ManagingCellControls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\ManagingCellControls.Designer.cs">
+      <DependentUpon>ManagingCellControls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\ExportDataToDataTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\ExportDataToDataTable.Designer.cs">
+      <DependentUpon>ExportDataToDataTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="WorkingWithWorksheet\ImportDataFromDataTable.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="WorkingWithWorksheet\ImportDataFromDataTable.Designer.cs">
       <DependentUpon>ImportDataFromDataTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\ManagingComments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\ManagingComments.Designer.cs">
+      <DependentUpon>ManagingComments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\ManagingHyperlinks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\ManagingHyperlinks.Designer.cs">
+      <DependentUpon>ManagingHyperlinks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\ManagingPictures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\ManagingPictures.Designer.cs">
+      <DependentUpon>ManagingPictures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\MovingWorksheets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\MovingWorksheets.Designer.cs">
+      <DependentUpon>MovingWorksheets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\ReadingDataValidations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\ReadingDataValidations.Designer.cs">
+      <DependentUpon>ReadingDataValidations.cs</DependentUpon>
     </Compile>
     <Compile Include="WorkingWithWorksheet\RemoveWorksheet.cs">
       <SubType>Form</SubType>
@@ -122,6 +176,24 @@
     </Compile>
     <Compile Include="WorkingWithWorksheet\RenameWorksheet.Designer.cs">
       <DependentUpon>RenameWorksheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\SortData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\SortData.Designer.cs">
+      <DependentUpon>SortData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\ValidationInWorksheets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\ValidationInWorksheets.Designer.cs">
+      <DependentUpon>ValidationInWorksheets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\ZoomingInOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithWorksheet\ZoomingInOut.Designer.cs">
+      <DependentUpon>ZoomingInOut.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Articles\CopyAndPasteRows.resx">
       <DependentUpon>CopyAndPasteRows.cs</DependentUpon>
@@ -157,17 +229,53 @@
     <EmbeddedResource Include="WorkingWithWorksheet\AccessingWorksheets.resx">
       <DependentUpon>AccessingWorksheets.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithWorksheet\AddingCellControls.resx">
+      <DependentUpon>AddingCellControls.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WorkingWithWorksheet\AddInsertWorksheet.resx">
       <DependentUpon>AddInsertWorksheet.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithWorksheet\DisplayHideScrolBars.resx">
+      <DependentUpon>DisplayHideScrolBars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithWorksheet\ManagingCellControls.resx">
+      <DependentUpon>ManagingCellControls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithWorksheet\ExportDataToDataTable.resx">
+      <DependentUpon>ExportDataToDataTable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WorkingWithWorksheet\ImportDataFromDataTable.resx">
       <DependentUpon>ImportDataFromDataTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithWorksheet\ManagingComments.resx">
+      <DependentUpon>ManagingComments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithWorksheet\ManagingHyperlinks.resx">
+      <DependentUpon>ManagingHyperlinks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithWorksheet\ManagingPictures.resx">
+      <DependentUpon>ManagingPictures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithWorksheet\MovingWorksheets.resx">
+      <DependentUpon>MovingWorksheets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithWorksheet\ReadingDataValidations.resx">
+      <DependentUpon>ReadingDataValidations.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkingWithWorksheet\RemoveWorksheet.resx">
       <DependentUpon>RemoveWorksheet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WorkingWithWorksheet\RenameWorksheet.resx">
       <DependentUpon>RenameWorksheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithWorksheet\SortData.resx">
+      <DependentUpon>SortData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithWorksheet\ValidationInWorksheets.resx">
+      <DependentUpon>ValidationInWorksheets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithWorksheet\ZoomingInOut.resx">
+      <DependentUpon>ZoomingInOut.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="Properties\Settings.settings">

@@ -28,17 +28,12 @@ namespace Aspose.Cells.Examples.CSharp.Files.Utility
             // Passing its sheet index
             Worksheet worksheet = workbook.Worksheets[sheetIndex];
             
-            // Adding a sample value to "A1" cell
+            // Adding sample values to cells
             worksheet.Cells["A1"].PutValue(50);
-            // Adding a sample value to "A2" cell
             worksheet.Cells["A2"].PutValue(100);
-            // Adding a sample value to "A3" cell
             worksheet.Cells["A3"].PutValue(150);
-            // Adding a sample value to "B1" cell
             worksheet.Cells["B1"].PutValue(4);
-            // Adding a sample value to "B2" cell
             worksheet.Cells["B2"].PutValue(20);
-            // Adding a sample value to "B3" cell
             worksheet.Cells["B3"].PutValue(50);
 
             // Adding a chart to the worksheet

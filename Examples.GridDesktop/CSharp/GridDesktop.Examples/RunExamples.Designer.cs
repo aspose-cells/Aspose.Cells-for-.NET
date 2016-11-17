@@ -39,14 +39,26 @@
             this.gridDesktopEventsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.workingWithWorksheetsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accessingWorksheetsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.workingWithRowsAndColumnsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.workingWithCellsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.closeAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addORInsertWorksheetsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.removeAWorksheetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.renameAWorksheetToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.importDataFromDataTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.workingWithRowsAndColumnsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.workingWithCellsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.closeAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exportDataToDataTableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.workingWithValidationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sortDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.managingHyperlinksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.managingPicturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.managingCommentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addingCellControlsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.managingCellControlsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showHideScrolBarsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.movingWorksheetsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.readingDataValidationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.zoomingInOrOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -135,7 +147,19 @@
             this.addORInsertWorksheetsToolStripMenuItem,
             this.removeAWorksheetToolStripMenuItem,
             this.renameAWorksheetToolStripMenuItem,
-            this.importDataFromDataTableToolStripMenuItem});
+            this.importDataFromDataTableToolStripMenuItem,
+            this.exportDataToDataTableToolStripMenuItem,
+            this.workingWithValidationsToolStripMenuItem,
+            this.sortDataToolStripMenuItem,
+            this.managingHyperlinksToolStripMenuItem,
+            this.managingPicturesToolStripMenuItem,
+            this.managingCommentsToolStripMenuItem,
+            this.addingCellControlsToolStripMenuItem,
+            this.managingCellControlsToolStripMenuItem,
+            this.showHideScrolBarsToolStripMenuItem,
+            this.movingWorksheetsToolStripMenuItem,
+            this.readingDataValidationsToolStripMenuItem,
+            this.zoomingInOrOutToolStripMenuItem});
             this.workingWithWorksheetsToolStripMenuItem.Name = "workingWithWorksheetsToolStripMenuItem";
             this.workingWithWorksheetsToolStripMenuItem.Size = new System.Drawing.Size(151, 20);
             this.workingWithWorksheetsToolStripMenuItem.Text = "Working With Worksheet";
@@ -143,9 +167,37 @@
             // accessingWorksheetsToolStripMenuItem
             // 
             this.accessingWorksheetsToolStripMenuItem.Name = "accessingWorksheetsToolStripMenuItem";
-            this.accessingWorksheetsToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
+            this.accessingWorksheetsToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
             this.accessingWorksheetsToolStripMenuItem.Text = "Accessing Worksheets";
             this.accessingWorksheetsToolStripMenuItem.Click += new System.EventHandler(this.accessingWorksheetsToolStripMenuItem_Click);
+            // 
+            // addORInsertWorksheetsToolStripMenuItem
+            // 
+            this.addORInsertWorksheetsToolStripMenuItem.Name = "addORInsertWorksheetsToolStripMenuItem";
+            this.addORInsertWorksheetsToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.addORInsertWorksheetsToolStripMenuItem.Text = "Add OR Insert Worksheets";
+            this.addORInsertWorksheetsToolStripMenuItem.Click += new System.EventHandler(this.addORInsertWorksheetsToolStripMenuItem_Click);
+            // 
+            // removeAWorksheetToolStripMenuItem
+            // 
+            this.removeAWorksheetToolStripMenuItem.Name = "removeAWorksheetToolStripMenuItem";
+            this.removeAWorksheetToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.removeAWorksheetToolStripMenuItem.Text = "Remove A Worksheet";
+            this.removeAWorksheetToolStripMenuItem.Click += new System.EventHandler(this.removeAWorksheetToolStripMenuItem_Click);
+            // 
+            // renameAWorksheetToolStripMenuItem
+            // 
+            this.renameAWorksheetToolStripMenuItem.Name = "renameAWorksheetToolStripMenuItem";
+            this.renameAWorksheetToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.renameAWorksheetToolStripMenuItem.Text = "Rename A Worksheet";
+            this.renameAWorksheetToolStripMenuItem.Click += new System.EventHandler(this.renameAWorksheetToolStripMenuItem_Click);
+            // 
+            // importDataFromDataTableToolStripMenuItem
+            // 
+            this.importDataFromDataTableToolStripMenuItem.Name = "importDataFromDataTableToolStripMenuItem";
+            this.importDataFromDataTableToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.importDataFromDataTableToolStripMenuItem.Text = "Import Data From DataTable";
+            this.importDataFromDataTableToolStripMenuItem.Click += new System.EventHandler(this.importDataFromDataTableToolStripMenuItem_Click);
             // 
             // workingWithRowsAndColumnsToolStripMenuItem
             // 
@@ -175,33 +227,89 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
-            // addORInsertWorksheetsToolStripMenuItem
+            // exportDataToDataTableToolStripMenuItem
             // 
-            this.addORInsertWorksheetsToolStripMenuItem.Name = "addORInsertWorksheetsToolStripMenuItem";
-            this.addORInsertWorksheetsToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.addORInsertWorksheetsToolStripMenuItem.Text = "Add OR Insert Worksheets";
-            this.addORInsertWorksheetsToolStripMenuItem.Click += new System.EventHandler(this.addORInsertWorksheetsToolStripMenuItem_Click);
+            this.exportDataToDataTableToolStripMenuItem.Name = "exportDataToDataTableToolStripMenuItem";
+            this.exportDataToDataTableToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.exportDataToDataTableToolStripMenuItem.Text = "Export Data To DataTable";
+            this.exportDataToDataTableToolStripMenuItem.Click += new System.EventHandler(this.exportDataToDataTableToolStripMenuItem_Click);
             // 
-            // removeAWorksheetToolStripMenuItem
+            // workingWithValidationsToolStripMenuItem
             // 
-            this.removeAWorksheetToolStripMenuItem.Name = "removeAWorksheetToolStripMenuItem";
-            this.removeAWorksheetToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.removeAWorksheetToolStripMenuItem.Text = "Remove A Worksheet";
-            this.removeAWorksheetToolStripMenuItem.Click += new System.EventHandler(this.removeAWorksheetToolStripMenuItem_Click);
+            this.workingWithValidationsToolStripMenuItem.Name = "workingWithValidationsToolStripMenuItem";
+            this.workingWithValidationsToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.workingWithValidationsToolStripMenuItem.Text = "Working With Validations";
+            this.workingWithValidationsToolStripMenuItem.Click += new System.EventHandler(this.workingWithValidationsToolStripMenuItem_Click);
             // 
-            // renameAWorksheetToolStripMenuItem
+            // sortDataToolStripMenuItem
             // 
-            this.renameAWorksheetToolStripMenuItem.Name = "renameAWorksheetToolStripMenuItem";
-            this.renameAWorksheetToolStripMenuItem.Size = new System.Drawing.Size(211, 22);
-            this.renameAWorksheetToolStripMenuItem.Text = "Rename A Worksheet";
-            this.renameAWorksheetToolStripMenuItem.Click += new System.EventHandler(this.renameAWorksheetToolStripMenuItem_Click);
+            this.sortDataToolStripMenuItem.Name = "sortDataToolStripMenuItem";
+            this.sortDataToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.sortDataToolStripMenuItem.Text = "Sort Data";
+            this.sortDataToolStripMenuItem.Click += new System.EventHandler(this.sortDataToolStripMenuItem_Click);
             // 
-            // importDataFromDataTableToolStripMenuItem
+            // managingHyperlinksToolStripMenuItem
             // 
-            this.importDataFromDataTableToolStripMenuItem.Name = "importDataFromDataTableToolStripMenuItem";
-            this.importDataFromDataTableToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
-            this.importDataFromDataTableToolStripMenuItem.Text = "Import Data From DataTable";
-            this.importDataFromDataTableToolStripMenuItem.Click += new System.EventHandler(this.importDataFromDataTableToolStripMenuItem_Click);
+            this.managingHyperlinksToolStripMenuItem.Name = "managingHyperlinksToolStripMenuItem";
+            this.managingHyperlinksToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.managingHyperlinksToolStripMenuItem.Text = "Managing Hyperlinks";
+            this.managingHyperlinksToolStripMenuItem.Click += new System.EventHandler(this.managingHyperlinksToolStripMenuItem_Click);
+            // 
+            // managingPicturesToolStripMenuItem
+            // 
+            this.managingPicturesToolStripMenuItem.Name = "managingPicturesToolStripMenuItem";
+            this.managingPicturesToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.managingPicturesToolStripMenuItem.Text = "Managing Pictures";
+            this.managingPicturesToolStripMenuItem.Click += new System.EventHandler(this.managingPicturesToolStripMenuItem_Click);
+            // 
+            // managingCommentsToolStripMenuItem
+            // 
+            this.managingCommentsToolStripMenuItem.Name = "managingCommentsToolStripMenuItem";
+            this.managingCommentsToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.managingCommentsToolStripMenuItem.Text = "Managing Comments";
+            this.managingCommentsToolStripMenuItem.Click += new System.EventHandler(this.managingCommentsToolStripMenuItem_Click);
+            // 
+            // addingCellControlsToolStripMenuItem
+            // 
+            this.addingCellControlsToolStripMenuItem.Name = "addingCellControlsToolStripMenuItem";
+            this.addingCellControlsToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.addingCellControlsToolStripMenuItem.Text = "Adding Cell Controls";
+            this.addingCellControlsToolStripMenuItem.Click += new System.EventHandler(this.addingCellControlsToolStripMenuItem_Click);
+            // 
+            // managingCellControlsToolStripMenuItem
+            // 
+            this.managingCellControlsToolStripMenuItem.Name = "managingCellControlsToolStripMenuItem";
+            this.managingCellControlsToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.managingCellControlsToolStripMenuItem.Text = "Managing Cell Controls";
+            this.managingCellControlsToolStripMenuItem.Click += new System.EventHandler(this.managingCellControlsToolStripMenuItem_Click);
+            // 
+            // showHideScrolBarsToolStripMenuItem
+            // 
+            this.showHideScrolBarsToolStripMenuItem.Name = "showHideScrolBarsToolStripMenuItem";
+            this.showHideScrolBarsToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.showHideScrolBarsToolStripMenuItem.Text = "Show Hide Scrol Bars";
+            this.showHideScrolBarsToolStripMenuItem.Click += new System.EventHandler(this.showHideScrolBarsToolStripMenuItem_Click);
+            // 
+            // movingWorksheetsToolStripMenuItem
+            // 
+            this.movingWorksheetsToolStripMenuItem.Name = "movingWorksheetsToolStripMenuItem";
+            this.movingWorksheetsToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.movingWorksheetsToolStripMenuItem.Text = "Moving Worksheets";
+            this.movingWorksheetsToolStripMenuItem.Click += new System.EventHandler(this.movingWorksheetsToolStripMenuItem_Click);
+            // 
+            // readingDataValidationsToolStripMenuItem
+            // 
+            this.readingDataValidationsToolStripMenuItem.Name = "readingDataValidationsToolStripMenuItem";
+            this.readingDataValidationsToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.readingDataValidationsToolStripMenuItem.Text = "Reading Data Validations";
+            this.readingDataValidationsToolStripMenuItem.Click += new System.EventHandler(this.readingDataValidationsToolStripMenuItem_Click);
+            // 
+            // zoomingInOrOutToolStripMenuItem
+            // 
+            this.zoomingInOrOutToolStripMenuItem.Name = "zoomingInOrOutToolStripMenuItem";
+            this.zoomingInOrOutToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
+            this.zoomingInOrOutToolStripMenuItem.Text = "Zooming In or Out";
+            this.zoomingInOrOutToolStripMenuItem.Click += new System.EventHandler(this.zoomingInOrOutToolStripMenuItem_Click);
             // 
             // RunExamples
             // 
@@ -243,6 +351,18 @@
         private System.Windows.Forms.ToolStripMenuItem removeAWorksheetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem renameAWorksheetToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem importDataFromDataTableToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exportDataToDataTableToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem workingWithValidationsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sortDataToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem managingHyperlinksToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem managingPicturesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem managingCommentsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addingCellControlsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem managingCellControlsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem showHideScrolBarsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem movingWorksheetsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem readingDataValidationsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem zoomingInOrOutToolStripMenuItem;
     }
 }
 

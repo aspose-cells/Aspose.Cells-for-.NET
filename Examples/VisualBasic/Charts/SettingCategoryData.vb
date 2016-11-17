@@ -24,40 +24,20 @@ Namespace Charts
             ' Obtaining the reference of the newly added worksheet by passing its sheet index
             Dim worksheet As Worksheet = workbook.Worksheets(sheetIndex)
 
-            ' Adding a sample value to "A1" cell
+            ' Adding sample values to cells
             worksheet.Cells("A1").PutValue(10)
-
-            ' Adding a sample value to "A2" cell
             worksheet.Cells("A2").PutValue(100)
-
-            ' Adding a sample value to "A3" cell
             worksheet.Cells("A3").PutValue(170)
-
-            ' Adding a sample value to "A4" cell
             worksheet.Cells("A4").PutValue(200)
-
-            ' Adding a sample value to "B1" cell
             worksheet.Cells("B1").PutValue(120)
-
-            ' Adding a sample value to "B2" cell
             worksheet.Cells("B2").PutValue(320)
-
-            ' Adding a sample value to "B3" cell
             worksheet.Cells("B3").PutValue(50)
-
-            ' Adding a sample value to "B4" cell
             worksheet.Cells("B4").PutValue(40)
 
-            ' Adding a sample value to "C1" cell as category data
+            ' Adding sample values to cells as category data
             worksheet.Cells("C1").PutValue("Q1")
-
-            ' Adding a sample value to "C2" cell as category data
             worksheet.Cells("C2").PutValue("Q2")
-
-            ' Adding a sample value to "C3" cell as category data
             worksheet.Cells("C3").PutValue("Y1")
-
-            ' Adding a sample value to "C4" cell as category data
             worksheet.Cells("C4").PutValue("Y2")
 
             ' Adding a chart to the worksheet

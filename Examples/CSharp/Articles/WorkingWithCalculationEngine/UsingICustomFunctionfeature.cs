@@ -55,22 +55,12 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine
             // Obtaining the reference of the first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
 
-            // Adding a sample value to "A1" cell
+            // Adding sample values to cells
             worksheet.Cells["B1"].PutValue(5);
-
-            // Adding a sample value to "A2" cell
             worksheet.Cells["C1"].PutValue(100);
-
-            // Adding a sample value to "A3" cell
             worksheet.Cells["C2"].PutValue(150);
-
-            // Adding a sample value to "B1" cell
             worksheet.Cells["C3"].PutValue(60);
-
-            // Adding a sample value to "B2" cell
             worksheet.Cells["C4"].PutValue(32);
-
-            // Adding a sample value to "B2" cell
             worksheet.Cells["C5"].PutValue(62);
 
             // Adding custom formula to Cell A1
