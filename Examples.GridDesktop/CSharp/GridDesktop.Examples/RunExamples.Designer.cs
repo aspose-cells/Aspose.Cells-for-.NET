@@ -66,10 +66,22 @@
             this.addingCellControlsInColumnsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.workingWithColumnValidationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.managingControlsInColumnsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changeFontColorOfRowColumnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.workingWithCellsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.closeAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.changeFontColorOfRowColumnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.accessAndModifyCellsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.accessingCellsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addCellProtectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addingCellFormulasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.applyingStyleOnCellsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.changeFontColorOfCellToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.filteringDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.formattingCellRangeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mergingAndUnmergingCellsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.undoAndRedoFeatureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usingFormatPainterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.usingNamedRangesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -382,8 +394,28 @@
             this.managingControlsInColumnsToolStripMenuItem.Text = "Managing Controls in Columns";
             this.managingControlsInColumnsToolStripMenuItem.Click += new System.EventHandler(this.managingControlsInColumnsToolStripMenuItem_Click);
             // 
+            // changeFontColorOfRowColumnToolStripMenuItem
+            // 
+            this.changeFontColorOfRowColumnToolStripMenuItem.Name = "changeFontColorOfRowColumnToolStripMenuItem";
+            this.changeFontColorOfRowColumnToolStripMenuItem.Size = new System.Drawing.Size(260, 22);
+            this.changeFontColorOfRowColumnToolStripMenuItem.Text = "Change Font Color of Row Column";
+            this.changeFontColorOfRowColumnToolStripMenuItem.Click += new System.EventHandler(this.changeFontColorOfRowColumnToolStripMenuItem_Click);
+            // 
             // workingWithCellsToolStripMenuItem
             // 
+            this.workingWithCellsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.accessAndModifyCellsToolStripMenuItem,
+            this.accessingCellsToolStripMenuItem,
+            this.addCellProtectionToolStripMenuItem,
+            this.addingCellFormulasToolStripMenuItem,
+            this.applyingStyleOnCellsToolStripMenuItem,
+            this.changeFontColorOfCellToolStripMenuItem,
+            this.filteringDataToolStripMenuItem,
+            this.formattingCellRangeToolStripMenuItem,
+            this.mergingAndUnmergingCellsToolStripMenuItem,
+            this.undoAndRedoFeatureToolStripMenuItem,
+            this.usingFormatPainterToolStripMenuItem,
+            this.usingNamedRangesToolStripMenuItem});
             this.workingWithCellsToolStripMenuItem.Name = "workingWithCellsToolStripMenuItem";
             this.workingWithCellsToolStripMenuItem.Size = new System.Drawing.Size(120, 20);
             this.workingWithCellsToolStripMenuItem.Text = "Working With Cells";
@@ -404,12 +436,89 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
-            // changeFontColorOfRowColumnToolStripMenuItem
+            // accessAndModifyCellsToolStripMenuItem
             // 
-            this.changeFontColorOfRowColumnToolStripMenuItem.Name = "changeFontColorOfRowColumnToolStripMenuItem";
-            this.changeFontColorOfRowColumnToolStripMenuItem.Size = new System.Drawing.Size(260, 22);
-            this.changeFontColorOfRowColumnToolStripMenuItem.Text = "Change Font Color of Row Column";
-            this.changeFontColorOfRowColumnToolStripMenuItem.Click += new System.EventHandler(this.changeFontColorOfRowColumnToolStripMenuItem_Click);
+            this.accessAndModifyCellsToolStripMenuItem.Name = "accessAndModifyCellsToolStripMenuItem";
+            this.accessAndModifyCellsToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.accessAndModifyCellsToolStripMenuItem.Text = "Access and Modify Cells";
+            this.accessAndModifyCellsToolStripMenuItem.Click += new System.EventHandler(this.accessAndModifyCellsToolStripMenuItem_Click);
+            // 
+            // accessingCellsToolStripMenuItem
+            // 
+            this.accessingCellsToolStripMenuItem.Name = "accessingCellsToolStripMenuItem";
+            this.accessingCellsToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.accessingCellsToolStripMenuItem.Text = "Accessing Cells";
+            this.accessingCellsToolStripMenuItem.Click += new System.EventHandler(this.accessingCellsToolStripMenuItem_Click);
+            // 
+            // addCellProtectionToolStripMenuItem
+            // 
+            this.addCellProtectionToolStripMenuItem.Name = "addCellProtectionToolStripMenuItem";
+            this.addCellProtectionToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.addCellProtectionToolStripMenuItem.Text = "Add Cell Protection";
+            this.addCellProtectionToolStripMenuItem.Click += new System.EventHandler(this.addCellProtectionToolStripMenuItem_Click);
+            // 
+            // addingCellFormulasToolStripMenuItem
+            // 
+            this.addingCellFormulasToolStripMenuItem.Name = "addingCellFormulasToolStripMenuItem";
+            this.addingCellFormulasToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.addingCellFormulasToolStripMenuItem.Text = "Adding Cell Formulas";
+            this.addingCellFormulasToolStripMenuItem.Click += new System.EventHandler(this.addingCellFormulasToolStripMenuItem_Click);
+            // 
+            // applyingStyleOnCellsToolStripMenuItem
+            // 
+            this.applyingStyleOnCellsToolStripMenuItem.Name = "applyingStyleOnCellsToolStripMenuItem";
+            this.applyingStyleOnCellsToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.applyingStyleOnCellsToolStripMenuItem.Text = "Applying Style on Cells";
+            this.applyingStyleOnCellsToolStripMenuItem.Click += new System.EventHandler(this.applyingStyleOnCellsToolStripMenuItem_Click);
+            // 
+            // changeFontColorOfCellToolStripMenuItem
+            // 
+            this.changeFontColorOfCellToolStripMenuItem.Name = "changeFontColorOfCellToolStripMenuItem";
+            this.changeFontColorOfCellToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.changeFontColorOfCellToolStripMenuItem.Text = "Change Font & Color of Cell";
+            this.changeFontColorOfCellToolStripMenuItem.Click += new System.EventHandler(this.changeFontColorOfCellToolStripMenuItem_Click);
+            // 
+            // filteringDataToolStripMenuItem
+            // 
+            this.filteringDataToolStripMenuItem.Name = "filteringDataToolStripMenuItem";
+            this.filteringDataToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.filteringDataToolStripMenuItem.Text = "Filtering Data";
+            this.filteringDataToolStripMenuItem.Click += new System.EventHandler(this.filteringDataToolStripMenuItem_Click);
+            // 
+            // formattingCellRangeToolStripMenuItem
+            // 
+            this.formattingCellRangeToolStripMenuItem.Name = "formattingCellRangeToolStripMenuItem";
+            this.formattingCellRangeToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.formattingCellRangeToolStripMenuItem.Text = "Formatting Cell Range";
+            this.formattingCellRangeToolStripMenuItem.Click += new System.EventHandler(this.formattingCellRangeToolStripMenuItem_Click);
+            // 
+            // mergingAndUnmergingCellsToolStripMenuItem
+            // 
+            this.mergingAndUnmergingCellsToolStripMenuItem.Name = "mergingAndUnmergingCellsToolStripMenuItem";
+            this.mergingAndUnmergingCellsToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.mergingAndUnmergingCellsToolStripMenuItem.Text = "Merging and Unmerging Cells";
+            this.mergingAndUnmergingCellsToolStripMenuItem.Click += new System.EventHandler(this.mergingAndUnmergingCellsToolStripMenuItem_Click);
+            // 
+            // undoAndRedoFeatureToolStripMenuItem
+            // 
+            this.undoAndRedoFeatureToolStripMenuItem.Name = "undoAndRedoFeatureToolStripMenuItem";
+            this.undoAndRedoFeatureToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.undoAndRedoFeatureToolStripMenuItem.Text = "Undo and Redo Feature";
+            this.undoAndRedoFeatureToolStripMenuItem.Click += new System.EventHandler(this.undoAndRedoFeatureToolStripMenuItem_Click);
+            // 
+            // usingFormatPainterToolStripMenuItem
+            // 
+            this.usingFormatPainterToolStripMenuItem.Name = "usingFormatPainterToolStripMenuItem";
+            this.usingFormatPainterToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.usingFormatPainterToolStripMenuItem.Text = "Using Format Painter";
+            this.usingFormatPainterToolStripMenuItem.Click += new System.EventHandler(this.usingFormatPainterToolStripMenuItem_Click);
+            // 
+            // usingNamedRangesToolStripMenuItem
+            // 
+            this.usingNamedRangesToolStripMenuItem.Name = "usingNamedRangesToolStripMenuItem";
+            this.usingNamedRangesToolStripMenuItem.Size = new System.Drawing.Size(233, 22);
+            this.usingNamedRangesToolStripMenuItem.Text = "Using Named Ranges";
+            this.usingNamedRangesToolStripMenuItem.Click += new System.EventHandler(this.usingNamedRangesToolStripMenuItem_Click);
             // 
             // RunExamples
             // 
@@ -474,6 +583,18 @@
         private System.Windows.Forms.ToolStripMenuItem workingWithColumnValidationsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem managingControlsInColumnsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem changeFontColorOfRowColumnToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem accessAndModifyCellsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem accessingCellsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addCellProtectionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addingCellFormulasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem applyingStyleOnCellsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem changeFontColorOfCellToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem filteringDataToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem formattingCellRangeToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mergingAndUnmergingCellsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem undoAndRedoFeatureToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usingFormatPainterToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usingNamedRangesToolStripMenuItem;
     }
 }
 

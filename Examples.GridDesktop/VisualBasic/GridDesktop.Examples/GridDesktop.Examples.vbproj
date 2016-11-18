@@ -83,6 +83,78 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Utils.vb" />
+    <Compile Include="WorkingWithCells\AccessAndModifyCells.Designer.vb">
+      <DependentUpon>AccessAndModifyCells.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\AccessAndModifyCells.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\AccessingCells.Designer.vb">
+      <DependentUpon>AccessingCells.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\AccessingCells.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\AddCellProtection.Designer.vb">
+      <DependentUpon>AddCellProtection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\AddCellProtection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\AddingCellFormulas.Designer.vb">
+      <DependentUpon>AddingCellFormulas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\AddingCellFormulas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\ApplyStyleOnCells.Designer.vb">
+      <DependentUpon>ApplyStyleOnCells.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\ApplyStyleOnCells.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\ChangeFontColorOfCell.Designer.vb">
+      <DependentUpon>ChangeFontColorOfCell.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\ChangeFontColorOfCell.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\FilteringData.Designer.vb">
+      <DependentUpon>FilteringData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\FilteringData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\FormattingCellRange.Designer.vb">
+      <DependentUpon>FormattingCellRange.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\FormattingCellRange.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\MergingAndUnMergingCells.Designer.vb">
+      <DependentUpon>MergingAndUnMergingCells.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\MergingAndUnMergingCells.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\UndoRedoFeature.Designer.vb">
+      <DependentUpon>UndoRedoFeature.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\UndoRedoFeature.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\UsingFormatPainter.Designer.vb">
+      <DependentUpon>UsingFormatPainter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\UsingFormatPainter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\UsingNamedRanges.Designer.vb">
+      <DependentUpon>UsingNamedRanges.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\UsingNamedRanges.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="WorkingWithGrid\GridDesktopEvents.Designer.vb">
       <DependentUpon>GridDesktopEvents.vb</DependentUpon>
     </Compile>
@@ -291,6 +363,42 @@
     <EmbeddedResource Include="RunExamples.resx">
       <DependentUpon>RunExamples.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\AccessAndModifyCells.resx">
+      <DependentUpon>AccessAndModifyCells.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\AccessingCells.resx">
+      <DependentUpon>AccessingCells.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\AddCellProtection.resx">
+      <DependentUpon>AddCellProtection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\AddingCellFormulas.resx">
+      <DependentUpon>AddingCellFormulas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\ApplyStyleOnCells.resx">
+      <DependentUpon>ApplyStyleOnCells.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\ChangeFontColorOfCell.resx">
+      <DependentUpon>ChangeFontColorOfCell.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\FilteringData.resx">
+      <DependentUpon>FilteringData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\FormattingCellRange.resx">
+      <DependentUpon>FormattingCellRange.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\MergingAndUnMergingCells.resx">
+      <DependentUpon>MergingAndUnMergingCells.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\UndoRedoFeature.resx">
+      <DependentUpon>UndoRedoFeature.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\UsingFormatPainter.resx">
+      <DependentUpon>UsingFormatPainter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\UsingNamedRanges.resx">
+      <DependentUpon>UsingNamedRanges.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WorkingWithGrid\GridDesktopEvents.resx">
       <DependentUpon>GridDesktopEvents.vb</DependentUpon>
     </EmbeddedResource>
@@ -395,8 +503,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="WorkingWithCells\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

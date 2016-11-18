@@ -60,10 +60,22 @@ Partial Class RunExamples
 		Me.addingCellControlsInColumnsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.workingWithColumnValidationsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.managingControlsInColumnsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.changeFontColorOfRowColumnToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.workingWithCellsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.closeAllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.exitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-		Me.changeFontColorOfRowColumnToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.accessAndModifyCellsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.accessingCellsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.addCellProtectionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.addingCellFormulasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.applyingStyleOnCellsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.changeFontColorOfCellToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.filteringDataToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.formattingCellRangeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.mergingAndUnmergingCellsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.undoAndRedoFeatureToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.usingFormatPainterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.usingNamedRangesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.menuStrip.SuspendLayout()
 		Me.SuspendLayout()
 		' 
@@ -339,8 +351,17 @@ Partial Class RunExamples
 		Me.managingControlsInColumnsToolStripMenuItem.Text = "Managing Controls in Columns"
 		AddHandler Me.managingControlsInColumnsToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.managingControlsInColumnsToolStripMenuItem_Click)
 		' 
+		' changeFontColorOfRowColumnToolStripMenuItem
+		' 
+		Me.changeFontColorOfRowColumnToolStripMenuItem.Name = "changeFontColorOfRowColumnToolStripMenuItem"
+		Me.changeFontColorOfRowColumnToolStripMenuItem.Size = New System.Drawing.Size(260, 22)
+		Me.changeFontColorOfRowColumnToolStripMenuItem.Text = "Change Font Color of Row Column"
+		AddHandler Me.changeFontColorOfRowColumnToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.changeFontColorOfRowColumnToolStripMenuItem_Click)
+		' 
 		' workingWithCellsToolStripMenuItem
 		' 
+		Me.workingWithCellsToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.accessAndModifyCellsToolStripMenuItem, Me.accessingCellsToolStripMenuItem, Me.addCellProtectionToolStripMenuItem, Me.addingCellFormulasToolStripMenuItem, Me.applyingStyleOnCellsToolStripMenuItem, Me.changeFontColorOfCellToolStripMenuItem, _
+			Me.filteringDataToolStripMenuItem, Me.formattingCellRangeToolStripMenuItem, Me.mergingAndUnmergingCellsToolStripMenuItem, Me.undoAndRedoFeatureToolStripMenuItem, Me.usingFormatPainterToolStripMenuItem, Me.usingNamedRangesToolStripMenuItem})
 		Me.workingWithCellsToolStripMenuItem.Name = "workingWithCellsToolStripMenuItem"
 		Me.workingWithCellsToolStripMenuItem.Size = New System.Drawing.Size(120, 20)
 		Me.workingWithCellsToolStripMenuItem.Text = "Working With Cells"
@@ -361,12 +382,89 @@ Partial Class RunExamples
 		Me.exitToolStripMenuItem.Text = "Exit"
 		AddHandler Me.exitToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.exitToolStripMenuItem_Click)
 		' 
-		' changeFontColorOfRowColumnToolStripMenuItem
+		' accessAndModifyCellsToolStripMenuItem
 		' 
-		Me.changeFontColorOfRowColumnToolStripMenuItem.Name = "changeFontColorOfRowColumnToolStripMenuItem"
-		Me.changeFontColorOfRowColumnToolStripMenuItem.Size = New System.Drawing.Size(260, 22)
-		Me.changeFontColorOfRowColumnToolStripMenuItem.Text = "Change Font Color of Row Column"
-		AddHandler Me.changeFontColorOfRowColumnToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.changeFontColorOfRowColumnToolStripMenuItem_Click)
+		Me.accessAndModifyCellsToolStripMenuItem.Name = "accessAndModifyCellsToolStripMenuItem"
+		Me.accessAndModifyCellsToolStripMenuItem.Size = New System.Drawing.Size(233, 22)
+		Me.accessAndModifyCellsToolStripMenuItem.Text = "Access and Modify Cells"
+		AddHandler Me.accessAndModifyCellsToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.accessAndModifyCellsToolStripMenuItem_Click)
+		' 
+		' accessingCellsToolStripMenuItem
+		' 
+		Me.accessingCellsToolStripMenuItem.Name = "accessingCellsToolStripMenuItem"
+		Me.accessingCellsToolStripMenuItem.Size = New System.Drawing.Size(233, 22)
+		Me.accessingCellsToolStripMenuItem.Text = "Accessing Cells"
+		AddHandler Me.accessingCellsToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.accessingCellsToolStripMenuItem_Click)
+		' 
+		' addCellProtectionToolStripMenuItem
+		' 
+		Me.addCellProtectionToolStripMenuItem.Name = "addCellProtectionToolStripMenuItem"
+		Me.addCellProtectionToolStripMenuItem.Size = New System.Drawing.Size(233, 22)
+		Me.addCellProtectionToolStripMenuItem.Text = "Add Cell Protection"
+		AddHandler Me.addCellProtectionToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.addCellProtectionToolStripMenuItem_Click)
+		' 
+		' addingCellFormulasToolStripMenuItem
+		' 
+		Me.addingCellFormulasToolStripMenuItem.Name = "addingCellFormulasToolStripMenuItem"
+		Me.addingCellFormulasToolStripMenuItem.Size = New System.Drawing.Size(233, 22)
+		Me.addingCellFormulasToolStripMenuItem.Text = "Adding Cell Formulas"
+		AddHandler Me.addingCellFormulasToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.addingCellFormulasToolStripMenuItem_Click)
+		' 
+		' applyingStyleOnCellsToolStripMenuItem
+		' 
+		Me.applyingStyleOnCellsToolStripMenuItem.Name = "applyingStyleOnCellsToolStripMenuItem"
+		Me.applyingStyleOnCellsToolStripMenuItem.Size = New System.Drawing.Size(233, 22)
+		Me.applyingStyleOnCellsToolStripMenuItem.Text = "Applying Style on Cells"
+		AddHandler Me.applyingStyleOnCellsToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.applyingStyleOnCellsToolStripMenuItem_Click)
+		' 
+		' changeFontColorOfCellToolStripMenuItem
+		' 
+		Me.changeFontColorOfCellToolStripMenuItem.Name = "changeFontColorOfCellToolStripMenuItem"
+		Me.changeFontColorOfCellToolStripMenuItem.Size = New System.Drawing.Size(233, 22)
+		Me.changeFontColorOfCellToolStripMenuItem.Text = "Change Font & Color of Cell"
+		AddHandler Me.changeFontColorOfCellToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.changeFontColorOfCellToolStripMenuItem_Click)
+		' 
+		' filteringDataToolStripMenuItem
+		' 
+		Me.filteringDataToolStripMenuItem.Name = "filteringDataToolStripMenuItem"
+		Me.filteringDataToolStripMenuItem.Size = New System.Drawing.Size(233, 22)
+		Me.filteringDataToolStripMenuItem.Text = "Filtering Data"
+		AddHandler Me.filteringDataToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.filteringDataToolStripMenuItem_Click)
+		' 
+		' formattingCellRangeToolStripMenuItem
+		' 
+		Me.formattingCellRangeToolStripMenuItem.Name = "formattingCellRangeToolStripMenuItem"
+		Me.formattingCellRangeToolStripMenuItem.Size = New System.Drawing.Size(233, 22)
+		Me.formattingCellRangeToolStripMenuItem.Text = "Formatting Cell Range"
+		AddHandler Me.formattingCellRangeToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.formattingCellRangeToolStripMenuItem_Click)
+		' 
+		' mergingAndUnmergingCellsToolStripMenuItem
+		' 
+		Me.mergingAndUnmergingCellsToolStripMenuItem.Name = "mergingAndUnmergingCellsToolStripMenuItem"
+		Me.mergingAndUnmergingCellsToolStripMenuItem.Size = New System.Drawing.Size(233, 22)
+		Me.mergingAndUnmergingCellsToolStripMenuItem.Text = "Merging and Unmerging Cells"
+		AddHandler Me.mergingAndUnmergingCellsToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.mergingAndUnmergingCellsToolStripMenuItem_Click)
+		' 
+		' undoAndRedoFeatureToolStripMenuItem
+		' 
+		Me.undoAndRedoFeatureToolStripMenuItem.Name = "undoAndRedoFeatureToolStripMenuItem"
+		Me.undoAndRedoFeatureToolStripMenuItem.Size = New System.Drawing.Size(233, 22)
+		Me.undoAndRedoFeatureToolStripMenuItem.Text = "Undo and Redo Feature"
+		AddHandler Me.undoAndRedoFeatureToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.undoAndRedoFeatureToolStripMenuItem_Click)
+		' 
+		' usingFormatPainterToolStripMenuItem
+		' 
+		Me.usingFormatPainterToolStripMenuItem.Name = "usingFormatPainterToolStripMenuItem"
+		Me.usingFormatPainterToolStripMenuItem.Size = New System.Drawing.Size(233, 22)
+		Me.usingFormatPainterToolStripMenuItem.Text = "Using Format Painter"
+		AddHandler Me.usingFormatPainterToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.usingFormatPainterToolStripMenuItem_Click)
+		' 
+		' usingNamedRangesToolStripMenuItem
+		' 
+		Me.usingNamedRangesToolStripMenuItem.Name = "usingNamedRangesToolStripMenuItem"
+		Me.usingNamedRangesToolStripMenuItem.Size = New System.Drawing.Size(233, 22)
+		Me.usingNamedRangesToolStripMenuItem.Text = "Using Named Ranges"
+		AddHandler Me.usingNamedRangesToolStripMenuItem.Click, New System.EventHandler(AddressOf Me.usingNamedRangesToolStripMenuItem_Click)
 		' 
 		' RunExamples
 		' 
@@ -431,5 +529,17 @@ Partial Class RunExamples
 	Private workingWithColumnValidationsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 	Private managingControlsInColumnsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 	Private changeFontColorOfRowColumnToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private accessAndModifyCellsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private accessingCellsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private addCellProtectionToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private addingCellFormulasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private applyingStyleOnCellsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private changeFontColorOfCellToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private filteringDataToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private formattingCellRangeToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private mergingAndUnmergingCellsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private undoAndRedoFeatureToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private usingFormatPainterToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+	Private usingNamedRangesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
 

@@ -69,6 +69,78 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils.cs" />
+    <Compile Include="WorkingWithCells\AccessAndModifyCells.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\AccessAndModifyCells.Designer.cs">
+      <DependentUpon>AccessAndModifyCells.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\AccessingCells.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\AccessingCells.Designer.cs">
+      <DependentUpon>AccessingCells.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\AddCellProtection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\AddCellProtection.Designer.cs">
+      <DependentUpon>AddCellProtection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\AddingCellFormulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\AddingCellFormulas.Designer.cs">
+      <DependentUpon>AddingCellFormulas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\ApplyStyleOnCells.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\ApplyStyleOnCells.Designer.cs">
+      <DependentUpon>ApplyStyleOnCells.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\ChangeFontColorOfCell.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\ChangeFontColorOfCell.Designer.cs">
+      <DependentUpon>ChangeFontColorOfCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\UndoRedoFeature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\UndoRedoFeature.Designer.cs">
+      <DependentUpon>UndoRedoFeature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\FilteringData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\FilteringData.Designer.cs">
+      <DependentUpon>FilteringData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\FormattingCellRange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\FormattingCellRange.Designer.cs">
+      <DependentUpon>FormattingCellRange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\MergingAndUnMergingCells.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\MergingAndUnMergingCells.Designer.cs">
+      <DependentUpon>MergingAndUnMergingCells.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\UsingFormatPainter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\UsingFormatPainter.Designer.cs">
+      <DependentUpon>UsingFormatPainter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingWithCells\UsingNamedRanges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WorkingWithCells\UsingNamedRanges.Designer.cs">
+      <DependentUpon>UsingNamedRanges.cs</DependentUpon>
+    </Compile>
     <Compile Include="WorkingWithGrid\GridDesktopEvents.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -280,6 +352,42 @@
     <EmbeddedResource Include="RunExamples.resx">
       <DependentUpon>RunExamples.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\AccessAndModifyCells.resx">
+      <DependentUpon>AccessAndModifyCells.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\AccessingCells.resx">
+      <DependentUpon>AccessingCells.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\AddCellProtection.resx">
+      <DependentUpon>AddCellProtection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\AddingCellFormulas.resx">
+      <DependentUpon>AddingCellFormulas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\ApplyStyleOnCells.resx">
+      <DependentUpon>ApplyStyleOnCells.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\ChangeFontColorOfCell.resx">
+      <DependentUpon>ChangeFontColorOfCell.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\UndoRedoFeature.resx">
+      <DependentUpon>UndoRedoFeature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\FilteringData.resx">
+      <DependentUpon>FilteringData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\FormattingCellRange.resx">
+      <DependentUpon>FormattingCellRange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\MergingAndUnMergingCells.resx">
+      <DependentUpon>MergingAndUnMergingCells.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\UsingFormatPainter.resx">
+      <DependentUpon>UsingFormatPainter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingWithCells\UsingNamedRanges.resx">
+      <DependentUpon>UsingNamedRanges.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WorkingWithGrid\GridDesktopEvents.resx">
       <DependentUpon>GridDesktopEvents.cs</DependentUpon>
     </EmbeddedResource>
@@ -387,9 +495,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="WorkingWithCells\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

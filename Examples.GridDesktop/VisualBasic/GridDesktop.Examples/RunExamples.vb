@@ -9,6 +9,7 @@ Imports GridDesktop.Examples.WorkingWithGrid
 Imports GridDesktop.Examples.Articles
 Imports GridDesktop.Examples.WorkingWithWorksheet
 Imports GridDesktop.Examples.WorkingWithRowsandColumns
+Imports GridDesktop.Examples.WorkingWithCells
 
 Public Partial Class RunExamples
 	Inherits Form
@@ -230,5 +231,77 @@ Public Partial Class RunExamples
 		Dim frmChangeFontColor As New ChangeFontColorRowColumn()
 		frmChangeFontColor.MdiParent = Me
 		frmChangeFontColor.Show()
+	End Sub
+
+	Private Sub accessAndModifyCellsToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmAccessAndModify As New AccessAndModifyCells()
+		frmAccessAndModify.MdiParent = Me
+		frmAccessAndModify.Show()
+	End Sub
+
+	Private Sub accessingCellsToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmAccessCells As New AccessingCells()
+		frmAccessCells.MdiParent = Me
+		frmAccessCells.Show()
+	End Sub
+
+	Private Sub addCellProtectionToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmAddCellProtection As New AddCellProtection()
+		frmAddCellProtection.MdiParent = Me
+		frmAddCellProtection.Show()
+	End Sub
+
+	Private Sub addingCellFormulasToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmAddFormula As New AddingCellFormulas()
+		frmAddFormula.MdiParent = Me
+		frmAddFormula.Show()
+	End Sub
+
+	Private Sub applyingStyleOnCellsToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmApplyStyle As New ApplyStyleOnCells()
+		frmApplyStyle.MdiParent = Me
+		frmApplyStyle.Show()
+	End Sub
+
+	Private Sub changeFontColorOfCellToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmChangeFontColor As New ChangeFontColorOfCell()
+		frmChangeFontColor.MdiParent = Me
+		frmChangeFontColor.Show()
+	End Sub
+
+	Private Sub filteringDataToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmFilterData As New FilteringData()
+		frmFilterData.MdiParent = Me
+		frmFilterData.Show()
+	End Sub
+
+	Private Sub formattingCellRangeToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmFormattinCellRange As New FormattingCellRange()
+		frmFormattinCellRange.MdiParent = Me
+		frmFormattinCellRange.Show()
+	End Sub
+
+	Private Sub mergingAndUnmergingCellsToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmMergeUnmerge As New MergingAndUnMergingCells()
+		frmMergeUnmerge.MdiParent = Me
+		frmMergeUnmerge.Show()
+	End Sub
+
+	Private Sub undoAndRedoFeatureToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmUndoRedo As New UndoRedoFeature()
+		frmUndoRedo.MdiParent = Me
+		frmUndoRedo.Show()
+	End Sub
+
+	Private Sub usingFormatPainterToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmFormatPainter As New UsingFormatPainter()
+		frmFormatPainter.MdiParent = Me
+		frmFormatPainter.Show()
+	End Sub
+
+	Private Sub usingNamedRangesToolStripMenuItem_Click(sender As Object, e As EventArgs)
+		Dim frmUsingNamedRanges As New UsingNamedRanges()
+		frmUsingNamedRanges.MdiParent = Me
+		frmUsingNamedRanges.Show()
 	End Sub
 End Class

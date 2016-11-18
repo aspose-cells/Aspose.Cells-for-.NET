@@ -10,6 +10,7 @@ using GridDesktop.Examples.WorkingWithGrid;
 using GridDesktop.Examples.Articles;
 using GridDesktop.Examples.WorkingWithWorksheet;
 using GridDesktop.Examples.WorkingWithRowsandColumns;
+using GridDesktop.Examples.WorkingWithCells;
 
 namespace GridDesktop.Examples
 {
@@ -272,6 +273,90 @@ namespace GridDesktop.Examples
             ChangeFontColorRowColumn frmChangeFontColor = new ChangeFontColorRowColumn();
             frmChangeFontColor.MdiParent = this;
             frmChangeFontColor.Show();
+        }
+
+        private void accessAndModifyCellsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AccessAndModifyCells frmAccessAndModify = new AccessAndModifyCells();
+            frmAccessAndModify.MdiParent = this;
+            frmAccessAndModify.Show();
+        }
+
+        private void accessingCellsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AccessingCells frmAccessCells = new AccessingCells();
+            frmAccessCells.MdiParent = this;
+            frmAccessCells.Show();
+        }
+
+        private void addCellProtectionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddCellProtection frmAddCellProtection = new AddCellProtection();
+            frmAddCellProtection.MdiParent = this;
+            frmAddCellProtection.Show();
+        }
+
+        private void addingCellFormulasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddingCellFormulas frmAddFormula = new AddingCellFormulas();
+            frmAddFormula.MdiParent = this;
+            frmAddFormula.Show();
+        }
+
+        private void applyingStyleOnCellsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ApplyStyleOnCells frmApplyStyle = new ApplyStyleOnCells();
+            frmApplyStyle.MdiParent = this;
+            frmApplyStyle.Show();
+        }
+
+        private void changeFontColorOfCellToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeFontColorOfCell frmChangeFontColor = new ChangeFontColorOfCell();
+            frmChangeFontColor.MdiParent = this;
+            frmChangeFontColor.Show();
+        }
+
+        private void filteringDataToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FilteringData frmFilterData = new FilteringData();
+            frmFilterData.MdiParent = this;
+            frmFilterData.Show();
+        }
+
+        private void formattingCellRangeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormattingCellRange frmFormattinCellRange = new FormattingCellRange();
+            frmFormattinCellRange.MdiParent = this;
+            frmFormattinCellRange.Show();
+        }
+
+        private void mergingAndUnmergingCellsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MergingAndUnMergingCells frmMergeUnmerge = new MergingAndUnMergingCells();
+            frmMergeUnmerge.MdiParent = this;
+            frmMergeUnmerge.Show();
+        }
+
+        private void undoAndRedoFeatureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UndoRedoFeature frmUndoRedo = new UndoRedoFeature();
+            frmUndoRedo.MdiParent = this;
+            frmUndoRedo.Show();
+        }
+
+        private void usingFormatPainterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UsingFormatPainter frmFormatPainter = new UsingFormatPainter();
+            frmFormatPainter.MdiParent = this;
+            frmFormatPainter.Show();
+        }
+
+        private void usingNamedRangesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UsingNamedRanges frmUsingNamedRanges = new UsingNamedRanges();
+            frmUsingNamedRanges.MdiParent = this;
+            frmUsingNamedRanges.Show();
         }
     }
 }
