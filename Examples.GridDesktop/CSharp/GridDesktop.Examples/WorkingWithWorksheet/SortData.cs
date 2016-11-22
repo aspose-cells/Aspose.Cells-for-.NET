@@ -17,8 +17,8 @@ namespace GridDesktop.Examples.WorkingWithWorksheet
             InitializeComponent();
         }
 
-        // ExStart:1
-        //Creating global variable of CellRange
+        // ExStart:CheckingCellRange
+        // Creating global variable of CellRange
         CellRange range;
 
         private void gridDesktop1_SelectedCellRangeChanged(object sender, Aspose.Cells.GridDesktop.CellRangeEventArgs e)
@@ -31,10 +31,12 @@ namespace GridDesktop.Examples.WorkingWithWorksheet
                 range = e.CellRange;
             }
         }
+        // ExEnd:CheckingCellRange
 
         // Module to sort data in Ascending order
         void Ascending_Sort()
         {
+            // ExStart:AscendingSort
             // Accessing a worksheet that is currently active
             Worksheet sheet = gridDesktop1.GetActiveWorksheet();
 
@@ -49,11 +51,13 @@ namespace GridDesktop.Examples.WorkingWithWorksheet
 
             // Redrawing cells of the Grid
             gridDesktop1.Invalidate();
+            // ExEnd:AscendingSort
         }
 
         // Module to sort data in Descending order
         void Descending_Sort()
         {
+            // ExStart:DescendingSort
             // Accessing a worksheet that is currently active
             Worksheet sheet = gridDesktop1.GetActiveWorksheet();
 
@@ -68,6 +72,7 @@ namespace GridDesktop.Examples.WorkingWithWorksheet
 
             // Redrawing cells of the Grid
             gridDesktop1.Invalidate();
+            // ExEnd:DescendingSort
         }
         // ExEnd:1
 

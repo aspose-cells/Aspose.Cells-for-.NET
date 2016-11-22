@@ -13,12 +13,10 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ConvertExcelChartToImage
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
 
-            // Create a new workbook.
             // Open the existing excel file which contains the column chart.
             Workbook workbook = new Workbook(dataDir+ "ColumnChart.xlsx");
 
-            // Get the designer chart (first chart) in the first worksheet.
-            // Of the workbook.
+            // Get the designer chart (first chart) in the first worksheet of the workbook.
             Aspose.Cells.Charts.Chart chart = workbook.Worksheets[0].Charts[0];
 
             // Convert the chart to an image file.

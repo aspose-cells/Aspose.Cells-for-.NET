@@ -14,8 +14,8 @@ Namespace WorkingWithWorksheet
 			InitializeComponent()
 		End Sub
 
-		' ExStart:1
-		'Creating global variable of CellRange
+        ' ExStart:CheckingCellRange
+        ' Creating global variable of CellRange
 		Private range As CellRange
 
 		Private Sub gridDesktop1_SelectedCellRangeChanged(sender As Object, e As Aspose.Cells.GridDesktop.CellRangeEventArgs)
@@ -24,40 +24,44 @@ Namespace WorkingWithWorksheet
 				' Assigning the updated CellRange to global variable
 				range = e.CellRange
 			End If
-		End Sub
+        End Sub
+        ' ExEnd:CheckingCellRange
 
-		' Module to sort data in Ascending order
-		Private Sub Ascending_Sort()
-			' Accessing a worksheet that is currently active
-			Dim sheet As Worksheet = gridDesktop1.GetActiveWorksheet()
+        ' Module to sort data in Ascending order
+        Private Sub Ascending_Sort()
+            ' ExStart:AscendingSort
+            ' Accessing a worksheet that is currently active
+            Dim sheet As Worksheet = gridDesktop1.GetActiveWorksheet()
 
-			' Creating SortRange object
-			Dim sr As New SortRange(sheet, range.StartRow, range.StartColumn, range.EndRow - range.StartRow + 1, range.EndColumn - range.StartColumn + 1, SortOrientation.SortTopToBottom, _
-				True)
+            ' Creating SortRange object
+            Dim sr As New SortRange(sheet, range.StartRow, range.StartColumn, range.EndRow - range.StartRow + 1, range.EndColumn - range.StartColumn + 1, SortOrientation.SortTopToBottom, _
+             True)
 
-			' Sorting data in the specified column in ascending order
-			sr.Sort(range.StartColumn, Aspose.Cells.GridDesktop.SortOrder.Ascending)
+            ' Sorting data in the specified column in ascending order
+            sr.Sort(range.StartColumn, Aspose.Cells.GridDesktop.SortOrder.Ascending)
 
-			' Redrawing cells of the Grid
-			gridDesktop1.Invalidate()
-		End Sub
+            ' Redrawing cells of the Grid
+            gridDesktop1.Invalidate()
+            ' ExEnd:AscendingSort
+        End Sub
 
-		' Module to sort data in Descending order
-		Private Sub Descending_Sort()
-			' Accessing a worksheet that is currently active
-			Dim sheet As Worksheet = gridDesktop1.GetActiveWorksheet()
+        ' Module to sort data in Descending order
+        Private Sub Descending_Sort()
+            ' ExStart:DescendingSort
+            ' Accessing a worksheet that is currently active
+            Dim sheet As Worksheet = gridDesktop1.GetActiveWorksheet()
 
-			' Creating SortRange object
-			Dim sr As New SortRange(sheet, range.StartRow, range.StartColumn, range.EndRow - range.StartRow + 1, range.EndColumn - range.StartColumn + 1, SortOrientation.SortTopToBottom, _
-				True)
+            ' Creating SortRange object
+            Dim sr As New SortRange(sheet, range.StartRow, range.StartColumn, range.EndRow - range.StartRow + 1, range.EndColumn - range.StartColumn + 1, SortOrientation.SortTopToBottom, _
+             True)
 
-			' Sorting data in the specified column in descending order
-			sr.Sort(range.StartColumn, Aspose.Cells.GridDesktop.SortOrder.Descending)
+            ' Sorting data in the specified column in descending order
+            sr.Sort(range.StartColumn, Aspose.Cells.GridDesktop.SortOrder.Descending)
 
-			' Redrawing cells of the Grid
-			gridDesktop1.Invalidate()
-		End Sub
-		' ExEnd:1
+            ' Redrawing cells of the Grid
+            gridDesktop1.Invalidate()
+            ' ExEnd:DescendingSort
+        End Sub
 
 		Private Sub button1_Click(sender As Object, e As EventArgs)
 			If Not (range Is Nothing) Then

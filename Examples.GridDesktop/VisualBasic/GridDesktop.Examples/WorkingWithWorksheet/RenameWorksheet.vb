@@ -20,9 +20,9 @@ Namespace WorkingWithWorksheet
 				' Accesing an active worksheet directly
 				Dim sheet As Worksheet = gridDesktop1.GetActiveWorksheet()
 
-				' Renaming a worksheet
-					' ExEnd:1
-				sheet.Name = "Renamed Sheet"
+                ' Renaming a worksheet
+                sheet.Name = "Renamed Sheet"
+                ' ExEnd:1
 			Catch ex As Exception
 				MessageBox.Show(ex.Message)
 			End Try

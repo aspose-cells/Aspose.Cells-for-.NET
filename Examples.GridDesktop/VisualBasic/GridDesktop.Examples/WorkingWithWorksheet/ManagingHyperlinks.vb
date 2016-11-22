@@ -39,7 +39,7 @@ Namespace WorkingWithWorksheet
 		End Sub
 
 		Private Sub button2_Click(sender As Object, e As EventArgs)
-			' ExStart:AcessHyperlink
+            ' ExStart:AccessHyperlink
 			' Accessing first worksheet of the Grid
 			Dim sheet As Worksheet = gridDesktop1.Worksheets(0)
 
@@ -55,7 +55,7 @@ Namespace WorkingWithWorksheet
 			Else
 				MessageBox.Show("No hyperlinks are found in sheet. Add hyperlinks first.")
 			End If
-			' ExEnd:AcessHyperlink
+            ' ExEnd:AccessHyperlink
 		End Sub
 
 		Private Sub button3_Click(sender As Object, e As EventArgs)

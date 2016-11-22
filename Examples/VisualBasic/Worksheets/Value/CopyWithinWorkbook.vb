@@ -10,7 +10,6 @@ Namespace Worksheets.Value
 
             Dim InputPath As String = dataDir & Convert.ToString("book1.xls")
 
-            ' Create a new Workbook.
             ' Open an existing Excel file.
             Dim wb As New Workbook(InputPath)
 

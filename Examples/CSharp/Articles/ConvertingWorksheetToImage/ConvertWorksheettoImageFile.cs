@@ -14,7 +14,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ConvertingWorksheetToImage
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            // Create a new Workbook object
             // Open a template excel file
             Workbook book = new Workbook(dataDir+ "Testbook.xlsx");
             // Get the first worksheet.

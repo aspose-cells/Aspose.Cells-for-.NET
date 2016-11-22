@@ -13,7 +13,6 @@ namespace Aspose.Cells.Examples.CSharp.Charts.InsertingControlsintoCharts
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            // Create a new Workbook.
             // Open the existing file.
             Workbook workbook = new Workbook(dataDir + "chart.xls");
              

@@ -10,7 +10,6 @@ Namespace RowsColumns.Copying
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-            ' Create a new Workbook.
             ' Open the existing excel file.
             Dim excelWorkbook1 As New Workbook(dataDir & "book1.xls")
 

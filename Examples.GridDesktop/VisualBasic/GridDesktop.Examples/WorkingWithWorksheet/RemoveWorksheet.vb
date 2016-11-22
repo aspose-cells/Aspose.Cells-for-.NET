@@ -22,10 +22,10 @@ Namespace WorkingWithWorksheet
 			If gridDesktop1.Worksheets.Count > 0 Then
 				' ExStart:RemoveUsingIndex
 				' Removing a worksheet using its index
-				gridDesktop1.Worksheets.Remove(0)
-			Else
-				' ExEnd:RemoveUsingIndex
-				MessageBox.Show("You have only 1 sheet left")
+                gridDesktop1.Worksheets.Remove(0)
+                ' ExEnd:RemoveUsingIndex
+            Else
+                MessageBox.Show("You have only 1 sheet left")
 			End If
 		End Sub
 
@@ -33,9 +33,9 @@ Namespace WorkingWithWorksheet
 			If gridDesktop1.Worksheets.Count > 0 Then
 				Try
 					' ExStart:RemoveUsingName
-					' Removing a worksheet using its index
-						' ExEnd:RemoveUsingName
-					gridDesktop1.Worksheets.RemoveAt("Sheet3")
+                    ' Removing a worksheet using its index
+                    gridDesktop1.Worksheets.RemoveAt("Sheet3")
+                    ' ExEnd:RemoveUsingName
 				Catch ex As Exception
 					MessageBox.Show(ex.Message)
 				End Try

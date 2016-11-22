@@ -24,7 +24,7 @@ namespace GridDesktop.Examples.WorkingWithWorksheet
 
             // Displaying the horizontal scroll bar
             gridDesktop1.IsHorizontalScrollBarVisible = true;
-            // ExStart:HideScrollbars
+            // ExEnd:ShowScrollbars
         }
 
         private void button2_Click(object sender, EventArgs e)

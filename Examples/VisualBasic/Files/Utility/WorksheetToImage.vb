@@ -10,7 +10,6 @@ Namespace Files.Utility
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-            ' Create a new Workbook object and
             ' Open a template Excel file.
             Dim book As New Workbook(dataDir & "MyTestBook1.xls")
             ' Get the first worksheet.

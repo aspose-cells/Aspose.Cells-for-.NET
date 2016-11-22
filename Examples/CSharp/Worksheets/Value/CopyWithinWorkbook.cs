@@ -14,7 +14,6 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets.Value
 
             string InputPath = dataDir + "book1.xls";
 
-            // Create a new Workbook.
             // Open an existing Excel file.
             Workbook wb = new Workbook(InputPath);
 

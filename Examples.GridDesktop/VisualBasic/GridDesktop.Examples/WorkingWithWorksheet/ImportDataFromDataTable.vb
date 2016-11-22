@@ -28,7 +28,6 @@ Namespace WorkingWithWorksheet
 
 			' Creating Select query to fetch data from database
 			Dim query As String = "SELECT * FROM Products ORDER BY ProductID"
-
 			adapter = New OleDbDataAdapter(query, conStr)
 
 			' Filling DataTable using an already created OleDbDataAdapter object

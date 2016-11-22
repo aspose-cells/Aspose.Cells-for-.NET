@@ -10,7 +10,6 @@ Namespace Charts.InsertingControlsintoCharts
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-            ' Create a new Workbook.
             ' Open the existing file.
             Dim workbook As New Workbook(dataDir & "chart.xls")
 

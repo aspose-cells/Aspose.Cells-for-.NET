@@ -32,7 +32,6 @@ namespace GridDesktop.Examples.WorkingWithWorksheet
 
             // Creating Select query to fetch data from database
             string query = "SELECT * FROM Products ORDER BY ProductID";
-
             adapter = new OleDbDataAdapter(query, conStr);
 
             // Filling DataTable using an already created OleDbDataAdapter object

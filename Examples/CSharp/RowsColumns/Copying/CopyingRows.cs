@@ -12,7 +12,6 @@ namespace Aspose.Cells.Examples.CSharp.RowsColumns.Copying
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            // Create a new Workbook.
             // Open the existing excel file.
             Workbook excelWorkbook1 = new Workbook(dataDir + "book1.xls");
 

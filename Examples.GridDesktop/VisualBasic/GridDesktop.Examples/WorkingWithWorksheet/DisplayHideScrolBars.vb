@@ -20,7 +20,7 @@ Namespace WorkingWithWorksheet
 
 			' Displaying the horizontal scroll bar
 			gridDesktop1.IsHorizontalScrollBarVisible = True
-			' ExStart:HideScrollbars
+            ' ExEnd:ShowScrollbars
 		End Sub
 
 		Private Sub button2_Click(sender As Object, e As EventArgs)

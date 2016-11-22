@@ -44,7 +44,7 @@ namespace GridDesktop.Examples.WorkingWithWorksheet
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // ExStart:AcessHyperlink
+            // ExStart:AccessHyperlink
             // Accessing first worksheet of the Grid
             Worksheet sheet = gridDesktop1.Worksheets[0];
 
@@ -63,7 +63,7 @@ namespace GridDesktop.Examples.WorkingWithWorksheet
             {
                 MessageBox.Show("No hyperlinks are found in sheet. Add hyperlinks first.");
             }
-            // ExEnd:AcessHyperlink
+            // ExEnd:AccessHyperlink
         }
 
         private void button3_Click(object sender, EventArgs e)

@@ -17,11 +17,13 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             {
                 // Get the template excel file path.
                 string designerFile = dataDir + "SampleInput.xlsx";
+
                 // Specify the pdf file path.
                 string pdfFile = dataDir + "Output.out.pdf";
-                // Create a new Workbook.
-                // Open the template excel file which you have to
+
+                // Open the template excel file
                 Aspose.Cells.Workbook wb = new Aspose.Cells.Workbook(designerFile);
+
                 // Save the pdf file.
                 wb.Save(pdfFile, SaveFormat.Pdf);
             }

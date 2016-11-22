@@ -21,7 +21,7 @@ namespace GridDesktop.Examples.WorkingWithWorksheet
             // ExStart:1
             // Move the 2nd worksheet to 4th position.
             gridDesktop1.Worksheets.MoveTo(1, 3);
-            // ExEnds:1
+            // ExEnd:1
             gridDesktop1.Refresh();
         }
 

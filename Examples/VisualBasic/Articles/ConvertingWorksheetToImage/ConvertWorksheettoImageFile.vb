@@ -12,7 +12,6 @@ Namespace Articles.ConvertingWorksheetToImage
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-            ' Create a new Workbook object
             ' Open a template excel file
             Dim book As New Workbook(dataDir & "Testbook.xlsx")
             ' Get the first worksheet.
