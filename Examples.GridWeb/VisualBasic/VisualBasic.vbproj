@@ -111,10 +111,15 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Northwind.mdb" />
     <Content Include="Articles\CalculateCustomFunction.aspx" />
     <Content Include="Articles\CellDataPercentageFormat.aspx" />
+    <Content Include="Articles\EnableAsyncMode.aspx" />
     <Content Include="Articles\ReadCellsClientSide.aspx" />
+    <Content Include="Articles\SetCellPercentageFormat.aspx" />
     <Content Include="Articles\ShowFormulaFeature.aspx" />
+    <Content Include="Articles\SpecifySessionStorePath.aspx" />
+    <Content Include="Articles\UsingClientSideRangeFunctions.aspx" />
     <Content Include="Articles\UsingCommonSubmitButton.aspx" />
     <Content Include="Cells\AccessCells.aspx" />
     <Content Include="Cells\AddCustomValidation.aspx" />
@@ -333,6 +338,13 @@
       <DependentUpon>CellDataPercentageFormat.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
+    <Compile Include="Articles\EnableAsyncMode.aspx.designer.vb">
+      <DependentUpon>EnableAsyncMode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\EnableAsyncMode.aspx.vb">
+      <DependentUpon>EnableAsyncMode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Articles\ReadCellsClientSide.aspx.designer.vb">
       <DependentUpon>ReadCellsClientSide.aspx</DependentUpon>
     </Compile>
@@ -340,19 +352,40 @@
       <DependentUpon>ReadCellsClientSide.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Articles\SetCellPercentageFormat.aspx.designer.vb">
+      <DependentUpon>SetCellPercentageFormat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\SetCellPercentageFormat.aspx.vb">
+      <DependentUpon>SetCellPercentageFormat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Articles\ShowFormulaFeature.aspx.designer.vb">
       <DependentUpon>ShowFormulaFeature.aspx</DependentUpon>
     </Compile>
     <Compile Include="Articles\ShowFormulaFeature.aspx.vb">
       <DependentUpon>ShowFormulaFeature.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articles\SpecifySessionStorePath.aspx.designer.vb">
+      <DependentUpon>SpecifySessionStorePath.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\SpecifySessionStorePath.aspx.vb">
+      <DependentUpon>SpecifySessionStorePath.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Articles\UsingClientSideRangeFunctions.aspx.designer.vb">
+      <DependentUpon>UsingClientSideRangeFunctions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\UsingClientSideRangeFunctions.aspx.vb">
+      <DependentUpon>UsingClientSideRangeFunctions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Articles\UsingCommonSubmitButton.aspx.designer.vb">
       <DependentUpon>UsingCommonSubmitButton.aspx</DependentUpon>
     </Compile>
     <Compile Include="Articles\UsingCommonSubmitButton.aspx.vb">
       <DependentUpon>UsingCommonSubmitButton.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Cells\AccessCells.aspx.designer.vb">
       <DependentUpon>AccessCells.aspx</DependentUpon>

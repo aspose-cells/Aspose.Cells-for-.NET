@@ -143,6 +143,13 @@
     <Compile Include="Articles\CellDataPercentageFormat.aspx.designer.cs">
       <DependentUpon>CellDataPercentageFormat.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Articles\EnableAsyncMode.aspx.cs">
+      <DependentUpon>EnableAsyncMode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articles\EnableAsyncMode.aspx.designer.cs">
+      <DependentUpon>EnableAsyncMode.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Articles\ReadCellsClientSide.aspx.cs">
       <DependentUpon>ReadCellsClientSide.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -150,12 +157,33 @@
     <Compile Include="Articles\ReadCellsClientSide.aspx.designer.cs">
       <DependentUpon>ReadCellsClientSide.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Articles\SetCellPercentageFormat.aspx.cs">
+      <DependentUpon>SetCellPercentageFormat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articles\SetCellPercentageFormat.aspx.designer.cs">
+      <DependentUpon>SetCellPercentageFormat.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Articles\ShowFormulaFeature.aspx.cs">
       <DependentUpon>ShowFormulaFeature.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Articles\ShowFormulaFeature.aspx.designer.cs">
       <DependentUpon>ShowFormulaFeature.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\SpecifySessionStorePath.aspx.cs">
+      <DependentUpon>SpecifySessionStorePath.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articles\SpecifySessionStorePath.aspx.designer.cs">
+      <DependentUpon>SpecifySessionStorePath.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Articles\UsingClientSideRangeFunctions.aspx.cs">
+      <DependentUpon>UsingClientSideRangeFunctions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articles\UsingClientSideRangeFunctions.aspx.designer.cs">
+      <DependentUpon>UsingClientSideRangeFunctions.aspx</DependentUpon>
     </Compile>
     <Compile Include="Articles\UsingCommonSubmitButton.aspx.cs">
       <DependentUpon>UsingCommonSubmitButton.aspx</DependentUpon>
@@ -248,11 +276,11 @@
     <Compile Include="Cells\SetCustomFilter.aspx.designer.cs">
       <DependentUpon>SetCustomFilter.aspx</DependentUpon>
     </Compile>
-    <Compile Include="databind\Aspose.Cells.GridWeb.DemosCS.DataBind.dataset1.cs">
-      <DependentUpon>Aspose.Cells.GridWeb.DemosCS.DataBind.dataset1.xsd</DependentUpon>
+    <Compile Include="Articles\dataset1.cs">
+      <DependentUpon>dataset1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="databind\Aspose.Cells.GridWeb.DemosCS.DataBind.dataset1.Designer.cs">
-      <DependentUpon>Aspose.Cells.GridWeb.DemosCS.DataBind.dataset1.cs</DependentUpon>
+    <Compile Include="Articles\dataset1.Designer.cs">
+      <DependentUpon>dataset1.cs</DependentUpon>
     </Compile>
     <Compile Include="databind\Aspose.Cells.GridWeb.DemosCS.DataBind.dataset11.Designer.cs" />
     <Compile Include="databind\Aspose.Cells.GridWeb.DemosCS.DataBind.dataset2.cs">
@@ -574,25 +602,25 @@
     <Compile Include="RowsAndColumns\AddRowsColumns.aspx.designer.cs">
       <DependentUpon>AddRowsColumns.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\DataBind\DataBind1.aspx.cs">
-      <DependentUpon>DataBind1.aspx</DependentUpon>
+    <Compile Include="Articles\BindDataUsingWorksheetDesigner.aspx.cs">
+      <DependentUpon>BindDataUsingWorksheetDesigner.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\DataBind\DataBind1.aspx.designer.cs">
-      <DependentUpon>DataBind1.aspx</DependentUpon>
+    <Compile Include="Articles\BindDataUsingWorksheetDesigner.aspx.designer.cs">
+      <DependentUpon>BindDataUsingWorksheetDesigner.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\DataBind\DataBind2.aspx.cs">
-      <DependentUpon>DataBind2.aspx</DependentUpon>
+    <Compile Include="Articles\BindDataAtRuntime.aspx.cs">
+      <DependentUpon>BindDataAtRuntime.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\DataBind\DataBind2.aspx.designer.cs">
-      <DependentUpon>DataBind2.aspx</DependentUpon>
+    <Compile Include="Articles\BindDataAtRuntime.aspx.designer.cs">
+      <DependentUpon>BindDataAtRuntime.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Miscellaneous\DataBind\DataBind3.aspx.cs">
+    <Compile Include="Articles\DataBind3.aspx.cs">
       <DependentUpon>DataBind3.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Miscellaneous\DataBind\DataBind3.aspx.designer.cs">
+    <Compile Include="Articles\DataBind3.aspx.designer.cs">
       <DependentUpon>DataBind3.aspx</DependentUpon>
     </Compile>
     <Compile Include="Miscellaneous\DataBind\ExpandChildView.aspx.cs">
@@ -752,8 +780,12 @@
     <Content Include="App_Data\dbDatabase.mdb" />
     <Content Include="Articles\CalculateCustomFunction.aspx" />
     <Content Include="Articles\CellDataPercentageFormat.aspx" />
+    <Content Include="Articles\EnableAsyncMode.aspx" />
     <Content Include="Articles\ReadCellsClientSide.aspx" />
+    <Content Include="Articles\SetCellPercentageFormat.aspx" />
     <Content Include="Articles\ShowFormulaFeature.aspx" />
+    <Content Include="Articles\SpecifySessionStorePath.aspx" />
+    <Content Include="Articles\UsingClientSideRangeFunctions.aspx" />
     <Content Include="Articles\UsingCommonSubmitButton.aspx" />
     <Content Include="Cells\AccessCells.aspx" />
     <Content Include="Cells\AddCustomValidation.aspx" />
@@ -855,9 +887,9 @@
     <Content Include="Worksheets\ManageHyperlinks.aspx" />
     <Content Include="Worksheets\SortData.aspx" />
     <Content Include="RowsAndColumns\AddRowsColumns.aspx" />
-    <Content Include="Miscellaneous\DataBind\DataBind1.aspx" />
-    <Content Include="Miscellaneous\DataBind\DataBind2.aspx" />
-    <Content Include="Miscellaneous\DataBind\DataBind3.aspx" />
+    <Content Include="Articles\BindDataUsingWorksheetDesigner.aspx" />
+    <Content Include="Articles\BindDataAtRuntime.aspx" />
+    <Content Include="Articles\DataBind3.aspx" />
     <Content Include="Miscellaneous\DataBind\ExpandChildView.aspx" />
     <Content Include="Miscellaneous\DataSourceControl\BindWithDataSourceControl.aspx" />
     <Content Include="Miscellaneous\Format\ApplyCustomFormats.aspx" />
@@ -1002,12 +1034,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <None Include="databind\Aspose.Cells.GridWeb.DemosCS.DataBind.dataset1.xsc">
-      <DependentUpon>Aspose.Cells.GridWeb.DemosCS.DataBind.dataset1.xsd</DependentUpon>
+    <Content Include="ClassDiagram1.cd" />
+    <None Include="Articles\dataset1.xsc">
+      <DependentUpon>dataset1.xsd</DependentUpon>
     </None>
-    <None Include="databind\Aspose.Cells.GridWeb.DemosCS.DataBind.dataset1.xsd" />
-    <None Include="databind\Aspose.Cells.GridWeb.DemosCS.DataBind.dataset1.xss">
-      <DependentUpon>Aspose.Cells.GridWeb.DemosCS.DataBind.dataset1.xsd</DependentUpon>
+    <None Include="Articles\dataset1.xsd" />
+    <None Include="Articles\dataset1.xss">
+      <DependentUpon>dataset1.xsd</DependentUpon>
     </None>
     <None Include="databind\Aspose.Cells.GridWeb.DemosCS.DataBind.dataset2.xsc">
       <DependentUpon>Aspose.Cells.GridWeb.DemosCS.DataBind.dataset2.xsd</DependentUpon>

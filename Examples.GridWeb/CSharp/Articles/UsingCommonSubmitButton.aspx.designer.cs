@@ -13,15 +13,6 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Articles {
     public partial class UsingCommonSubmitButton {
         
         /// <summary>
-        /// GridWeb1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::Aspose.Cells.GridWeb.GridWeb GridWeb1;
-        
-        /// <summary>
         /// SubmitButton control.
         /// </summary>
         /// <remarks>
@@ -29,5 +20,14 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Articles {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button SubmitButton;
+        
+        /// <summary>
+        /// GridWeb1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::Aspose.Cells.GridWeb.GridWeb GridWeb1;
     }
 }
