@@ -64,10 +64,8 @@ Namespace Worksheets
             Dim link1 As GridHyperlink = sheet.Hyperlinks(linkIndex)
             link1.Target = "_blank"
 
-            ' Setting URL of the image that will be displayed as hyperlink
+            ' Setting Image URL and tool tip of hyperlink
             link1.ImageURL = "../Images/Aspose.Banner.gif"
-
-            ' Setting tool tip of the hyperlink
             link1.ScreenTip = "Open Aspose Web Site in new window"
 
             ' Adding hyperlink to the worksheet
@@ -75,11 +73,10 @@ Namespace Worksheets
             Dim link2 As GridHyperlink = sheet.Hyperlinks(linkIndex)
             link2.Target = "_blank"
 
-            ' Setting URL of the image that will be displayed as hyperlink
+            ' Setting URL, tool tip and alt text of hyperlink
             link2.ImageURL = "../Images/Aspose.Grid.gif"
-
-            ' Setting tool tip of the hyperlink
             link2.ScreenTip = "Open Aspose.Grid Docs in new window"
+            link2.AltText = "Open Aspose.Grid Docs in new window"
 
             ' Resize the row to display image nicely
             sheet.Cells.SetRowHeight(4, 40)

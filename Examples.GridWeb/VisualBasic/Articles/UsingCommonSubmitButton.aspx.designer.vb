@@ -10,24 +10,26 @@
 Option Strict On
 Option Explicit On
 
+Namespace Articles
 
-Partial Public Class UsingCommonSubmitButton
+    Partial Public Class UsingCommonSubmitButton
 
-    '''<summary>
-    '''GridWeb1 control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents GridWeb1 As Global.Aspose.Cells.GridWeb.GridWeb
+        '''<summary>
+        '''SubmitButton control.
+        '''</summary>
+        '''<remarks>
+        '''Auto-generated field.
+        '''To modify move field declaration from designer file to code-behind file.
+        '''</remarks>
+        Protected WithEvents SubmitButton As Global.System.Web.UI.WebControls.Button
 
-    '''<summary>
-    '''SubmitButton control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents SubmitButton As Global.System.Web.UI.WebControls.Button
-End Class
+        '''<summary>
+        '''GridWeb1 control.
+        '''</summary>
+        '''<remarks>
+        '''Auto-generated field.
+        '''To modify move field declaration from designer file to code-behind file.
+        '''</remarks>
+        Protected WithEvents GridWeb1 As Global.Aspose.Cells.GridWeb.GridWeb
+    End Class
+End Namespace

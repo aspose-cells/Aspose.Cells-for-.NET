@@ -18,10 +18,10 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Articles
                 string path = (this.Master as Site).GetDataDir();
 
                 // Clear the sheets
-                GridWeb1.WebWorksheets.Clear();
+                GridWeb1.WorkSheets.Clear();
 
                 // Load the file
-                GridWeb1.WebWorksheets.ImportExcelFile(path + "\\Articles\\source.xlsx");
+                GridWeb1.ImportExcelFile(path + "\\Articles\\source.xlsx");
                 // ExEnd:ShowFormulaFeature
             }
         }
