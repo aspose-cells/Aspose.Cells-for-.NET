@@ -101,19 +101,19 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
         {
             // ExStart:AccessHyperlinks
             // Accessing the reference of the worksheet that is currently active
-            WebWorksheet sheet = GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex];
+            GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
 
             // Accessing a specific cell that contains hyperlink
-            WebCell cell = sheet.Cells["B1"];
+            GridCell cell = sheet.Cells["B1"];
 
             // Accessing the hyperlink from the specific cell
-            Hyperlink link = sheet.Hyperlinks.GetHyperlink(cell);
+            GridHyperlink link = sheet.Hyperlinks.GetHyperlink(cell);
 
             if (link != null)
             {
                 // Modifying the text and URL of hyperlink
-                link.Text = "Aspose.Blogs";
-                link.Url = "http://www.aspose.com/Community/Blogs";
+                link.TextToDisplay = "Aspose.Blogs";
+                link.Address = "http://www.aspose.com/Community/Blogs";
             } 
             // ExEnd:AccessHyperlinks
         }
@@ -123,12 +123,10 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets
             // ExStart:RemoveHyperlink
             // Accessing the reference of the worksheet that is currently active
             GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
-
-            // Accessing a specific cell that contains hyperlink
-            GridCell cell = sheet.Cells["B1"];
-
-            // Removing hyperlink from the specific cell
-            GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex].Hyperlinks.RemoveHyperlink(cell);
+            
+            // Removing hyperlink from the specific cell         
+            sheet.Hyperlinks.Remove(new Data.GridCellArea() {StartRow = 0, EndRow = 0, StartColumn = 1, EndColumn = 1});
+            
             // ExEnd:RemoveHyperlink
         }
     }

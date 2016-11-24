@@ -5,8 +5,7 @@ Namespace Worksheets
         Inherits System.Web.UI.Page
 
         Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
-
-            'if first visit this page init GridWeb1 
+            ' If first visit this page init GridWeb1 
             If Not IsPostBack AndAlso Not GridWeb1.IsPostBack Then
                 InitData()
             End If
@@ -91,18 +90,18 @@ Namespace Worksheets
         Protected Sub btnUpdateHyperlinks_Click(sender As Object, e As EventArgs)
             ' ExStart:AccessHyperlinks
             ' Accessing the reference of the worksheet that is currently active
-            Dim sheet As WebWorksheet = GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex)
+            Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
             ' Accessing a specific cell that contains hyperlink
-            Dim cell As WebCell = sheet.Cells("B1")
+            Dim cell As GridCell = sheet.Cells("B1")
 
             ' Accessing the hyperlink from the specific cell
-            Dim link As Hyperlink = sheet.Hyperlinks.GetHyperlink(cell)
+            Dim link As GridHyperlink = sheet.Hyperlinks.GetHyperlink(cell)
 
             If link IsNot Nothing Then
                 ' Modifying the text and URL of hyperlink
-                link.Text = "Aspose.Blogs"
-                link.Url = "http://www.aspose.com/Community/Blogs"
+                link.TextToDisplay = "Aspose.Blogs"
+                link.Address = "http://www.aspose.com/Community/Blogs"
             End If
             ' ExEnd:AccessHyperlinks
         End Sub
@@ -112,13 +111,9 @@ Namespace Worksheets
             ' Accessing the reference of the worksheet that is currently active
             Dim sheet As GridWorksheet = GridWeb1.WorkSheets(GridWeb1.ActiveSheetIndex)
 
-            ' Accessing a specific cell that contains hyperlink
-            Dim cell As GridCell = sheet.Cells("B1")
-
             ' Removing hyperlink from the specific cell
-            GridWeb1.WebWorksheets(GridWeb1.ActiveSheetIndex).Hyperlinks.RemoveHyperlink(cell)
+            sheet.Hyperlinks.Remove(New Data.GridCellArea() With {.StartRow = 0, .EndRow = 0, .StartColumn = 1, .EndColumn = 1})
             ' ExEnd:RemoveHyperlink
         End Sub
-
     End Class
 End Namespace
