@@ -47,7 +47,7 @@ Namespace WorkingWithCells
 			' Accessing first worksheet of the Grid
 			Dim sheet As Aspose.Cells.GridDesktop.Worksheet = gridDesktop1.Worksheets(0)
 
-			'Accessing "B2" cell and setting its value
+            ' Accessing "B2" cell and setting its value
 			Dim cell As Aspose.Cells.GridDesktop.GridCell = sheet.Cells("B2")
 			cell.Value = "None"
 
@@ -229,15 +229,15 @@ Namespace WorkingWithCells
 			style.[Custom] = "yyyy-MM-dd"
 			cell.SetStyle(style)
 
-			'Accessing the Style object of "D12" cell and setting its number format to
-			'Index No.15
+            ' Accessing the Style object of "D12" cell and setting its number format to Index No.15
 			cell = sheet.Cells("D12")
 			sheet.Columns(cell.Column).Width = 100
 			cell.Value = DateTime.Now
-			style = cell.GetStyle()
-			style.NumberFormat = 15
-			'"d-mmm-yy"
-			cell.SetStyle(style)
+            style = cell.GetStyle()
+
+            ' For "d-mmm-yy" format
+            style.NumberFormat = 15
+            cell.SetStyle(style)
 
 			' Accessing the Style object of "C13" cell and setting a custom number format for it
 			cell = sheet.Cells("C13")

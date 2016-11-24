@@ -52,7 +52,7 @@ namespace GridDesktop.Examples.WorkingWithCells
             // Accessing first worksheet of the Grid
             Aspose.Cells.GridDesktop.Worksheet sheet = gridDesktop1.Worksheets[0];
 
-            //Accessing "B2" cell and setting its value
+            // Accessing "B2" cell and setting its value
             Aspose.Cells.GridDesktop.GridCell cell = sheet.Cells["B2"];
             cell.Value = "None";
 
@@ -235,13 +235,14 @@ namespace GridDesktop.Examples.WorkingWithCells
             style.Custom = "yyyy-MM-dd";
             cell.SetStyle(style);
 
-            //Accessing the Style object of "D12" cell and setting its number format to
-            //Index No.15
+            // Accessing the Style object of "D12" cell and setting its number format to Index No.15
             cell = sheet.Cells["D12"];
             sheet.Columns[cell.Column].Width = 100;
             cell.Value = DateTime.Now;
             style = cell.GetStyle();
-            style.NumberFormat = 15;        //"d-mmm-yy"
+
+            // For "d-mmm-yy"
+            style.NumberFormat = 15;
             cell.SetStyle(style);
 
             // Accessing the Style object of "C13" cell and setting a custom number format for it

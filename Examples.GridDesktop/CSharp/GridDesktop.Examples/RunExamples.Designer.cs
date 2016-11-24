@@ -47,7 +47,6 @@
             this.workingWithValidationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sortDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.managingHyperlinksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.managingPicturesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.managingCommentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addingCellControlsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.managingCellControlsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,8 +67,6 @@
             this.managingControlsInColumnsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changeFontColorOfRowColumnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.workingWithCellsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.closeAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accessAndModifyCellsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accessingCellsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addCellProtectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -82,6 +79,8 @@
             this.undoAndRedoFeatureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usingFormatPainterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usingNamedRangesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.closeAllToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -175,7 +174,6 @@
             this.workingWithValidationsToolStripMenuItem,
             this.sortDataToolStripMenuItem,
             this.managingHyperlinksToolStripMenuItem,
-            this.managingPicturesToolStripMenuItem,
             this.managingCommentsToolStripMenuItem,
             this.addingCellControlsToolStripMenuItem,
             this.managingCellControlsToolStripMenuItem,
@@ -249,13 +247,6 @@
             this.managingHyperlinksToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
             this.managingHyperlinksToolStripMenuItem.Text = "Managing Hyperlinks";
             this.managingHyperlinksToolStripMenuItem.Click += new System.EventHandler(this.managingHyperlinksToolStripMenuItem_Click);
-            // 
-            // managingPicturesToolStripMenuItem
-            // 
-            this.managingPicturesToolStripMenuItem.Name = "managingPicturesToolStripMenuItem";
-            this.managingPicturesToolStripMenuItem.Size = new System.Drawing.Size(223, 22);
-            this.managingPicturesToolStripMenuItem.Text = "Managing Pictures";
-            this.managingPicturesToolStripMenuItem.Click += new System.EventHandler(this.managingPicturesToolStripMenuItem_Click);
             // 
             // managingCommentsToolStripMenuItem
             // 
@@ -420,22 +411,6 @@
             this.workingWithCellsToolStripMenuItem.Size = new System.Drawing.Size(120, 20);
             this.workingWithCellsToolStripMenuItem.Text = "Working With Cells";
             // 
-            // closeAllToolStripMenuItem
-            // 
-            this.closeAllToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
-            this.closeAllToolStripMenuItem.Name = "closeAllToolStripMenuItem";
-            this.closeAllToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.closeAllToolStripMenuItem.Text = "Close All";
-            this.closeAllToolStripMenuItem.Click += new System.EventHandler(this.closeAllToolStripMenuItem_Click);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.ForeColor = System.Drawing.Color.Red;
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
             // accessAndModifyCellsToolStripMenuItem
             // 
             this.accessAndModifyCellsToolStripMenuItem.Name = "accessAndModifyCellsToolStripMenuItem";
@@ -520,6 +495,22 @@
             this.usingNamedRangesToolStripMenuItem.Text = "Using Named Ranges";
             this.usingNamedRangesToolStripMenuItem.Click += new System.EventHandler(this.usingNamedRangesToolStripMenuItem_Click);
             // 
+            // closeAllToolStripMenuItem
+            // 
+            this.closeAllToolStripMenuItem.ForeColor = System.Drawing.Color.Navy;
+            this.closeAllToolStripMenuItem.Name = "closeAllToolStripMenuItem";
+            this.closeAllToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.closeAllToolStripMenuItem.Text = "Close All";
+            this.closeAllToolStripMenuItem.Click += new System.EventHandler(this.closeAllToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.ForeColor = System.Drawing.Color.Red;
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            // 
             // RunExamples
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -564,7 +555,6 @@
         private System.Windows.Forms.ToolStripMenuItem workingWithValidationsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sortDataToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem managingHyperlinksToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem managingPicturesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem managingCommentsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addingCellControlsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem managingCellControlsToolStripMenuItem;

@@ -49,16 +49,16 @@ Namespace WorkingWithRowsandColumns
 			Dim row As Aspose.Cells.GridDesktop.Data.GridRow = sheet.Rows(0)
 
 			' Getting the Style object for the row
-			'Style style = row.GetStyle();
+            'Dim style As Style = row.GetStyle()
 
 			' Setting Style properties i.e. border, color, alignment, background color etc.
-			'style.SetBorderLine(BorderType.Right, BorderLineType.Thick);
-			'style.SetBorderColor(BorderType.Right, Color.Blue);
-			'style.HAlignment = HorizontalAlignmentType.Centred;
-			'style.Color = Color.Yellow;
+            'style.SetBorderLine(BorderType.Right, BorderLineType.Thick)
+            'style.SetBorderColor(BorderType.Right, Color.Blue)
+            'style.HAlignment = HorizontalAlignmentType.Centred
+            'style.Color = Color.Yellow
 
 			' Setting the style of the row with the customized Style object
-			'row.SetStyle(style);
+            'row.SetStyle(style)
 			' ExEnd:AddingRowStyle
 		End Sub
 	End Class

@@ -20,35 +20,46 @@ namespace GridDesktop.Examples.WorkingWithWorksheet
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // ExStart:AddingPictures
-            // The path to the documents directory.
-            string dataDir = Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            // Accessing first worksheet of the Grid
-            Worksheet sheet = gridDesktop1.Worksheets[0];
-
-            // Adding picture to "b2" cell from file
-            sheet.Pictures.Add("b2", dataDir + "AsposeGrid.jpg");
-
-            // Creating a stream contain picture
-            FileStream fs = new FileStream(dataDir + "AsposeLogo.jpg", FileMode.Open);
-
             try
             {
-                // Adding picture to "b3" cell from stream
-                sheet.Pictures.Add(2, 1, fs);
+                // ExStart:AddingPictures
+                // The path to the documents directory.
+                string dataDir = Utils.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
+                // Accessing first worksheet of the Grid
+                Worksheet sheet = gridDesktop1.GetActiveWorksheet();
+
+                // Adding picture to "b2" cell from file
+                sheet.Pictures.Add("b2", dataDir + "AsposeGrid.jpg");
+
+                // Creating a stream contain picture
+                FileStream fs = new FileStream(dataDir + "AsposeLogo.jpg", FileMode.Open);
+
+                try
+                {
+                    // Adding picture to "b3" cell from stream
+                    sheet.Pictures.Add(2, 1, fs);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    // Closing stream
+                    fs.Close();
+                }
+                // ExEnd:AddingPictures
+                MessageBox.Show("Pictures have been added.");
             }
-            catch (Exception ex)
+            catch (ArgumentOutOfRangeException ex)
             {
                 MessageBox.Show(ex.Message);
             }
-            finally
+            catch (Exception ex2)
             {
-                // Closing stream
-                fs.Close();
+                MessageBox.Show(ex2.Message);
             }
-            // ExEnd:AddingPictures
-            MessageBox.Show("Pictures have been added.");
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -79,6 +90,11 @@ namespace GridDesktop.Examples.WorkingWithWorksheet
             sheet.Pictures.Remove(2, 2);
             // ExEnd:RemovePicture
             MessageBox.Show("Picture has been removed.");
+        }
+
+        private void gridDesktop1_Validating(object sender, CancelEventArgs e)
+        {
+
         }
     }
 }

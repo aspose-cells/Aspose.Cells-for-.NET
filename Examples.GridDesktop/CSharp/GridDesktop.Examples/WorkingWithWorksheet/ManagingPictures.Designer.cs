@@ -50,6 +50,7 @@
             this.gridDesktop1.SheetTabWidth = 400;
             this.gridDesktop1.Size = new System.Drawing.Size(657, 394);
             this.gridDesktop1.TabIndex = 9;
+            this.gridDesktop1.Validating += new System.ComponentModel.CancelEventHandler(this.gridDesktop1_Validating);
             // 
             // button1
             // 

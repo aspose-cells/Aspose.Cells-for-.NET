@@ -25,7 +25,7 @@ namespace GridDesktop.Examples.WorkingWithRowsandColumns
 
             // Removing the first column of the worksheet
             sheet.RemoveColumn(0);
-            // ExStart:1
+            // ExEnd:1
             MessageBox.Show("Column has been removed.");
         }
     }
