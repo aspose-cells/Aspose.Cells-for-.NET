@@ -28,7 +28,7 @@ Namespace Articles.PivotTablesAndPivotCharts
             pivotTable.CalculateData()
 
             ' Save the output
-            workbook.Save(dataDir & Convert.ToString("CompactForm_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("CompactForm_out.xlsx"))
 
             ' 2 - Show the pivot table in outline form
             pivotTable.ShowInOutlineForm()
@@ -38,7 +38,7 @@ Namespace Articles.PivotTablesAndPivotCharts
             pivotTable.CalculateData()
 
             ' Save the output
-            workbook.Save(dataDir & Convert.ToString("OutlineForm_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("OutlineForm_out.xlsx"))
 
             ' 3 - Show the pivot table in tabular form
             pivotTable.ShowInTabularForm()
@@ -48,7 +48,7 @@ Namespace Articles.PivotTablesAndPivotCharts
             pivotTable.CalculateData()
 
             ' Save the output
-            workbook.Save(dataDir & Convert.ToString("TabularForm_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("TabularForm_out.xlsx"))
             ' ExEnd:ChangingLayoutOfPivotTable
         End Sub
     End Class

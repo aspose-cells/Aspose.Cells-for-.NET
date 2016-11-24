@@ -75,7 +75,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithHTMLFormat
                 }
                 else
                 {
-                    filePath = dirPath + "OtherSheets\\Sheet" + sheetIndex + "_out_.html";
+                    filePath = dirPath + "OtherSheets\\Sheet" + sheetIndex + "_out.html";
                 }
 
                 // Save the worksheet to html file

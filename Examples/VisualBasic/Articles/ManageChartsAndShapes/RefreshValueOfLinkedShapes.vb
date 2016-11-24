@@ -22,7 +22,7 @@ Namespace Articles.ManageChartsAndShapes
             worksheet.Shapes.UpdateSelectedValue()
 
             ' Save the workbook in pdf format
-            workbook.Save(dataDir & Convert.ToString("output_out_.pdf"), SaveFormat.Pdf)
+            workbook.Save(dataDir & Convert.ToString("output_out.pdf"), SaveFormat.Pdf)
             ' ExEnd:1
         End Sub
     End Class

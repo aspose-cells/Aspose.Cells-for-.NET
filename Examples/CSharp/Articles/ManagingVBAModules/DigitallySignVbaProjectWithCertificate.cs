@@ -28,7 +28,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules
             wb.VbaProject.Sign(ds);
 
             // Save the workbook
-            wb.Save(dataDir + "DigitallySigned_out_.xlsm");
+            wb.Save(dataDir + "DigitallySigned_out.xlsm");
             // ExEnd:1
         }
     }

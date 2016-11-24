@@ -19,7 +19,7 @@
             opts.SaveFormat = SaveFormat.SVG
 
             ' Save the chart to svg format
-            chart.ToImage(dataDir & Convert.ToString("Image_out_.svg"), opts)
+            chart.ToImage(dataDir & Convert.ToString("Image_out.svg"), opts)
             ' ExEnd:1
         End Sub
     End Class

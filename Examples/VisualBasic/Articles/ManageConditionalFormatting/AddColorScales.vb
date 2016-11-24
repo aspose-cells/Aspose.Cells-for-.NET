@@ -52,7 +52,7 @@ Namespace Articles.ManageConditionalFormatting
             fc.ColorScale.MinColor = Color.LightGreen
 
             ' Save the workbook
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:AddColorScales
         End Sub
     End Class

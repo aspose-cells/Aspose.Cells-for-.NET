@@ -27,7 +27,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             opts.SaveFormat = SaveFormat.SVG;
 
             // Save the chart to svg format
-            chart.ToImage(dataDir + "Image_out_.svg", opts);
+            chart.ToImage(dataDir + "Image_out.svg", opts);
             // ExEnd:1
         }
     }

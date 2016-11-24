@@ -36,7 +36,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             }
 
             // Save the result
-            book.Save(dataDir + "output_out_.xlsx");
+            book.Save(dataDir + "output_out.xlsx");
             // ExEnd:1
         }
     }

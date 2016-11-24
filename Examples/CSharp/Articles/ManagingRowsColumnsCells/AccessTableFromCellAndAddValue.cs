@@ -33,7 +33,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingRowsColumnsCells
             table.PutCellValue(2, 2, "Offset [2,2]");
 
             // Save the workbook
-            workbook.Save(dataDir + "output_out_.xlsx");
+            workbook.Save(dataDir + "output_out.xlsx");
             // ExEnd:AccessTableFromCellAndAddValue
         }
     }

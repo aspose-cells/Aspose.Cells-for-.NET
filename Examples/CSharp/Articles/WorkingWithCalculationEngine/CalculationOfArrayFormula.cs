@@ -26,7 +26,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine
             workbook.CalculateFormula();
 
             // Save the workbook in pdf format
-            workbook.Save(dataDir + "output_out_.pdf");
+            workbook.Save(dataDir + "output_out.pdf");
             // ExEnd:CalculateArrayFormula
         }
     }

@@ -12,7 +12,7 @@ Namespace Articles
             Dim wb As New Workbook(dataDir & Convert.ToString("unicode-supplementary-characters.xlsx"))
 
             ' Save the workbook
-            wb.Save(dataDir & Convert.ToString("RenderUnicodeInOutput_out_.pdf"))
+            wb.Save(dataDir & Convert.ToString("RenderUnicodeInOutput_out.pdf"))
             ' ExEnd:RenderUnicodeInOutput
         End Sub
     End Class

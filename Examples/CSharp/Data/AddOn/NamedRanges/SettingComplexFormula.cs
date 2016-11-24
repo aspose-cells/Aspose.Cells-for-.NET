@@ -38,7 +38,7 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
             range.RefersTo = "=INDEX(data,Sheet1!$A$1,1):INDEX(data,Sheet1!$A$1,9)";
 
             // Save the workbook
-            book.Save(dataDir + "output_out_.xlsx");
+            book.Save(dataDir + "output_out.xlsx");
             // ExEnd:SettingComplexFormulaNamedRange
         }
     }

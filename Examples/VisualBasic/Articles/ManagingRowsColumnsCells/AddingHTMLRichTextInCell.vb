@@ -15,7 +15,7 @@ Namespace Articles.ManagingRowsColumnsCells
             Dim cell As Cell = worksheet.Cells("A1")
             cell.HtmlString = "<Font Style=""FONT-WEIGHT: bold;FONT-STYLE: italic;TEXT-DECORATION: underline;FONT-FAMILY: Arial;FONT-SIZE: 11pt;COLOR: #ff0000;"">This is simple HTML formatted text.</Font>"
 
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:AddingHTMLRichTextInCell
         End Sub
     End Class

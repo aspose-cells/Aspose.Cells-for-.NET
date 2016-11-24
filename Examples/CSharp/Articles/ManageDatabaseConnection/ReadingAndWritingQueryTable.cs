@@ -30,7 +30,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageDatabaseConnection
             qt.PreserveFormatting = true;
 
             // Save the workbook
-            workbook.Save(dataDir + "Output_out_.xlsx");
+            workbook.Save(dataDir + "Output_out.xlsx");
             // ExEnd:ReadingAndWritingQueryTable
         }
     }

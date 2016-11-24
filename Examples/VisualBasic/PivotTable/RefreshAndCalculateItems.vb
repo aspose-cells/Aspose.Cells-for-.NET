@@ -26,7 +26,7 @@ Namespace PivotTableExamples
             Next
 
             ' Save the workbook in output pdf
-            wb.Save(dataDir & Convert.ToString("RefreshAndCalculateItems_out_.pdf"), SaveFormat.Pdf)
+            wb.Save(dataDir & Convert.ToString("RefreshAndCalculateItems_out.pdf"), SaveFormat.Pdf)
             ' ExEnd:1
 
         End Sub

@@ -25,7 +25,7 @@ Namespace Articles
                 ws.AutoFitColumns()
 
                 ' Save the workbook in xlsx format
-                wb.Save(dataDir & Convert.ToString("DivTagsLayout_out_.xlsx"), Aspose.Cells.SaveFormat.Xlsx)
+                wb.Save(dataDir & Convert.ToString("DivTagsLayout_out.xlsx"), Aspose.Cells.SaveFormat.Xlsx)
             End Using
             ' ExEnd:1                        
         End Sub

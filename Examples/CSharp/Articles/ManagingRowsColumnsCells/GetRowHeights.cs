@@ -42,7 +42,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingRowsColumnsCells
             dstSheet.Cells["D4"].PutValue("Row heights of source range copied to destination range");
 
             // Save the workbook in xlsx format
-            workbook.Save(dataDir + "output_out_.xlsx", SaveFormat.Xlsx);
+            workbook.Save(dataDir + "output_out.xlsx", SaveFormat.Xlsx);
             // ExEnd:GetRowHeightsOfSourceRangeToDestinationRange
         }
     }

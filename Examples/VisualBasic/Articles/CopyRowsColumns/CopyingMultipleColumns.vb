@@ -20,7 +20,7 @@ Namespace Articles.CopyRowsColumns
             cells.CopyColumns(cells, 0, 6, 3)
 
             ' Save the result on disc
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:1
         End Sub
     End Class

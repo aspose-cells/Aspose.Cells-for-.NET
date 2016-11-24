@@ -16,7 +16,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             Workbook wb = new Workbook(dataDir + "unicode-supplementary-characters.xlsx");
 
             // Save the workbook
-            wb.Save(dataDir + "RenderUnicodeInOutput_out_.pdf");
+            wb.Save(dataDir + "RenderUnicodeInOutput_out.pdf");
             // ExEnd:RenderUnicodeInOutput
         }
     }

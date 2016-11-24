@@ -46,10 +46,10 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine
 
             // Save to xlsx by setting the calc mode to manual
             wb.Settings.CalcMode = CalcModeType.Manual;
-            wb.Save(dataDir + "output_out_.xlsx");
+            wb.Save(dataDir + "output_out.xlsx");
 
             // Save to pdf
-            wb.Save(dataDir + "output_out_.pdf");
+            wb.Save(dataDir + "output_out.pdf");
             // ExEnd:1
         }
     }

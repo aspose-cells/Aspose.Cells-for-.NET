@@ -31,7 +31,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             shape3.Geometry.ShapeAdjustValues[0].Value = 0.5d;
 
             // Save the workbook
-            workbook.Save(dataDir + "output_out_.xlsx");
+            workbook.Save(dataDir + "output_out.xlsx");
             // ExEnd:1
         }
     }

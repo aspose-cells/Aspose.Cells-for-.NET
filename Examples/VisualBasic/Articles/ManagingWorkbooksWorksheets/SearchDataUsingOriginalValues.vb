@@ -46,7 +46,7 @@ Namespace Articles.ManagingWorkbooksWorksheets
             Console.WriteLine(foundCell)
 
             ' Save the workbook
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:SearchDataUsingOriginalValues
         End Sub
     End Class

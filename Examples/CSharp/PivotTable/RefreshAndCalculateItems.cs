@@ -30,7 +30,7 @@ namespace Aspose.Cells.Examples.CSharp.PivotTableExamples
             }
 
             // Save the workbook in output pdf
-            wb.Save(dataDir + "RefreshAndCalculateItems_out_.pdf", SaveFormat.Pdf);
+            wb.Save(dataDir + "RefreshAndCalculateItems_out.pdf", SaveFormat.Pdf);
             // ExEnd:1
 
         }

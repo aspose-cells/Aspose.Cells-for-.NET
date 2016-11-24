@@ -22,7 +22,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             FontSetting fs = (FontSetting)shape.GetCharacters()[0];
        
             // Save the workbook in xlsx format
-            wb.Save(dataDir + "ChangeTextBoxOrShareCharacterSpacing_out_.xlsx", SaveFormat.Xlsx);
+            wb.Save(dataDir + "ChangeTextBoxOrShareCharacterSpacing_out.xlsx", SaveFormat.Xlsx);
             // ExEnd:1                                
             
         }

@@ -10,7 +10,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules
         {
             // ExStart:1
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            string outputPath = dataDir + "Output_out_.xlsm";
+            string outputPath = dataDir + "Output_out.xlsm";
 
             Workbook workbook = new Workbook();
 

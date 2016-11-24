@@ -21,7 +21,7 @@ Namespace Articles.ManagingWorkbooksWorksheets
             worksheet.Cells.ImportCSV(dataDir & Convert.ToString("sample.csv"), opts, 3, 3)
 
             ' Save your workbook in Xlsx format
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:ImportCSVWithFormulas
         End Sub
     End Class

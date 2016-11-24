@@ -30,7 +30,7 @@ Namespace Articles.StylingAndDataFormatting
             worksheet.AutoFitColumns()
 
             ' Save workbook as pdf
-            workbook.Save(dataDir & Convert.ToString("CustomSeparator_out_.pdf"))
+            workbook.Save(dataDir & Convert.ToString("CustomSeparator_out.pdf"))
             ' ExEnd:CustomDecimalAndGroupSeparator
         End Sub
     End Class

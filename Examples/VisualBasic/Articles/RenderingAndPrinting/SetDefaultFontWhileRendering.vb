@@ -25,15 +25,15 @@ Namespace Articles.RenderingAndPrinting
             ' Now save the workbook in html format and set the default font to Courier New.
             Dim opts As New HtmlSaveOptions()
             opts.DefaultFontName = "Courier New"
-            wb.Save(dataDir & "out_courier_new_out_.htm", opts)
+            wb.Save(dataDir & "out_courier_new_out.htm", opts)
 
             ' Now save the workbook in html format once again but set the default font to Arial.
             opts.DefaultFontName = "Arial"
-            wb.Save(dataDir & "out_arial_out_.htm", opts)
+            wb.Save(dataDir & "out_arial_out.htm", opts)
 
             ' Now save the workbook in html format once again but set the default font to Times New Roman.
             opts.DefaultFontName = "Times New Roman"
-            wb.Save(dataDir & "times_new_roman_out_.htm", opts)
+            wb.Save(dataDir & "times_new_roman_out.htm", opts)
             ' ExEnd:1          
 
         End Sub

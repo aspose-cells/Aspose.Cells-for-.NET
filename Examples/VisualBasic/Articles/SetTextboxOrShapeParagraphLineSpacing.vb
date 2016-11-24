@@ -40,7 +40,7 @@ Namespace Articles
             p.SpaceBefore = 10
 
             ' Save the workbook in xlsx format
-            wb.Save(dataDir & Convert.ToString("output_out_.xlsx"), SaveFormat.Xlsx)
+            wb.Save(dataDir & Convert.ToString("output_out.xlsx"), SaveFormat.Xlsx)
             ' ExEnd:1
         End Sub
     End Class

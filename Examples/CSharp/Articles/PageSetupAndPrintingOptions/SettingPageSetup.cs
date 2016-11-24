@@ -43,7 +43,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.PageSetupAndPrintingOptions
             worksheet.PageSetup.FirstPageNumber = 2;
 
             // Save the workbook
-            workbook.Save(dataDir + "PageSetup_out_.xlsx");
+            workbook.Save(dataDir + "PageSetup_out.xlsx");
             // ExEnd:1
         }
     }

@@ -51,7 +51,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
             Console.WriteLine(foundCell);
 
             // Save the workbook
-            workbook.Save(dataDir + "output_out_.xlsx");
+            workbook.Save(dataDir + "output_out.xlsx");
             // ExEnd:SearchDataUsingOriginalValues
         }
     }

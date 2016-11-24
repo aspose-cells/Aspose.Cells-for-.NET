@@ -35,7 +35,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             sr.ToImage(0, g, 0, 0);
 
             // Save the graphics context image in Png format
-            bmp.Save(dataDir + "OutputImage_out_.png", System.Drawing.Imaging.ImageFormat.Png);
+            bmp.Save(dataDir + "OutputImage_out.png", System.Drawing.Imaging.ImageFormat.Png);
             //ExEnd:RenderWorksheetToGraphicContext
         }
     }

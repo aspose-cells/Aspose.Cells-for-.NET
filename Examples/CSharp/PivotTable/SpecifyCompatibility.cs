@@ -76,7 +76,7 @@ namespace Aspose.Cells.Examples.CSharp.PivotTableExamples
             b5.SetStyle(st);
 
             // Save workbook in xlsx format
-            wb.Save(dataDir + "SpecifyCompatibility_out_.xlsx", SaveFormat.Xlsx);
+            wb.Save(dataDir + "SpecifyCompatibility_out.xlsx", SaveFormat.Xlsx);
             // ExEnd:1
         }
     }

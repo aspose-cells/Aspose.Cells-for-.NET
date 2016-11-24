@@ -75,7 +75,7 @@ Namespace Articles.ManageChartsAndShapes
             legend.Position = Aspose.Cells.Charts.LegendPositionType.Top
 
             ' Save the excel file
-            workbook.Save(dataDir & Convert.ToString("column_chart_out_.xls"))
+            workbook.Save(dataDir & Convert.ToString("column_chart_out.xls"))
             ' ExEnd:SetPictureBackGroundFillChart
         End Sub
     End Class

@@ -27,7 +27,7 @@ Namespace Articles.PivotTablesAndPivotCharts
             'worksheet.PivotTables.RemoveAt(0);
 
             ' Save the workbook
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:RemovePivotTableFromWorksheet
         End Sub
     End Class

@@ -14,7 +14,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.StylingAndDataFormatting
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             Workbook workbook = new Workbook(dataDir + "SourceFile.xlsx");
-            workbook.Save(dataDir + "CustomDateFormat_out_.pdf");
+            workbook.Save(dataDir + "CustomDateFormat_out.pdf");
             // ExEnd:RenderCustomDateFormatPatterngandgemmdd
         }
     }

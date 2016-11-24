@@ -18,10 +18,10 @@ Namespace Articles.ManagingWorkbooksWorksheets
             workbook.Settings.AutoRecover = False
 
             ' Save the workbook
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
 
             ' Read the saved workbook again
-            workbook = New Workbook(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook = New Workbook(dataDir & Convert.ToString("output_out.xlsx"))
 
             ' Read AutoRecover property
             Console.WriteLine("AutoRecover: " + workbook.Settings.AutoRecover)

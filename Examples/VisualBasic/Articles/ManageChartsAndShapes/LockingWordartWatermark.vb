@@ -41,7 +41,7 @@ Namespace Articles.ManageChartsAndShapes
             wordart.HasLine = False
 
             ' Save the file
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:LockingWordartWatermark
         End Sub
     End Class

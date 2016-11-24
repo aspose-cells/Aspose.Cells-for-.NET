@@ -24,7 +24,7 @@ Namespace Articles.PivotTablesAndPivotCharts
 
             pt.RefreshDataOnOpeningFile = False
 
-            wb.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            wb.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:SettingPivotTableOption
         End Sub
     End Class

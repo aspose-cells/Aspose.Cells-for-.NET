@@ -73,7 +73,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine
             workbook.Worksheets[0].Cells["A1"].PutValue(workbook.Worksheets[0].Cells["A1"].Value);
 
             // Save the file
-            workbook.Save(dataDir + "UsingICustomFunction_out_.xls");
+            workbook.Save(dataDir + "UsingICustomFunction_out.xls");
             // ExEnd:UsingICustomFunctionFeature
         }
     }

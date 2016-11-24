@@ -21,7 +21,7 @@ Namespace Worksheets.PageSetupFeatures
             worksheet.PageSetup.FitToPagesWide = 1
 
             ' Save the workbook.
-            workbook.Save(dataDir & Convert.ToString("FitToPagesOptions_out_.xls"))
+            workbook.Save(dataDir & Convert.ToString("FitToPagesOptions_out.xls"))
             ' ExEnd:1
         End Sub
     End Class

@@ -25,7 +25,7 @@ namespace Aspose.Cells.Examples.CSharp.Tables
             lstObj.Comment = "This is Aspose.Cells comment.";
 
             // Save the workbook in xlsx format
-            workbook.Save(dataDir + "SetCommentOfTableOrListObject_out_.xlsx", SaveFormat.Xlsx);
+            workbook.Save(dataDir + "SetCommentOfTableOrListObject_out.xlsx", SaveFormat.Xlsx);
             // ExEnd:1
 
         }

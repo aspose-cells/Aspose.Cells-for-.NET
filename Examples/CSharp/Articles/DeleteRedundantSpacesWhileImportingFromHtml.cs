@@ -35,7 +35,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // Auto fit the sheet columns
             sheet.AutoFitColumns();
 
-            dataDir = dataDir + "DeleteRedundantSpaces_out_.xlsx";
+            dataDir = dataDir + "DeleteRedundantSpaces_out.xlsx";
 
             // Save the workbook
             workbook.Save(dataDir, SaveFormat.Xlsx);

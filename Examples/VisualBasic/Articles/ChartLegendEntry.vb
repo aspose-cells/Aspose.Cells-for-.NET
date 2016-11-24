@@ -21,7 +21,7 @@ Namespace Articles
             chart.Legend.LegendEntries(1).IsTextNoFill = True
 
             ' Save the workbook in xlsx format
-            workbook.Save(dataDir & Convert.ToString("ChartLegendEntry_out_.xlsx"), SaveFormat.Xlsx)
+            workbook.Save(dataDir & Convert.ToString("ChartLegendEntry_out.xlsx"), SaveFormat.Xlsx)
             ' ExEnd:1
         End Sub
     End Class

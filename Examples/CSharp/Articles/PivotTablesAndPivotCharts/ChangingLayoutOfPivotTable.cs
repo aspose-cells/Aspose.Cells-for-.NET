@@ -31,7 +31,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.PivotTablesAndPivotCharts
             pivotTable.CalculateData();
 
             // Save the output
-            workbook.Save(dataDir + "CompactForm_out_.xlsx");
+            workbook.Save(dataDir + "CompactForm_out.xlsx");
 
             // 2 - Show the pivot table in outline form
             pivotTable.ShowInOutlineForm();
@@ -41,7 +41,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.PivotTablesAndPivotCharts
             pivotTable.CalculateData();
 
             // Save the output
-            workbook.Save(dataDir + "OutlineForm_out_.xlsx");
+            workbook.Save(dataDir + "OutlineForm_out.xlsx");
 
             // 3 - Show the pivot table in tabular form
             pivotTable.ShowInTabularForm();
@@ -51,7 +51,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.PivotTablesAndPivotCharts
             pivotTable.CalculateData();
 
             // Save the output
-            workbook.Save(dataDir + "TabularForm_out_.xlsx");
+            workbook.Save(dataDir + "TabularForm_out.xlsx");
             // ExEnd:ChangingLayoutOfPivotTable
         }
     }

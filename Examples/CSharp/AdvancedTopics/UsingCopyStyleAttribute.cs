@@ -49,7 +49,7 @@ namespace Aspose.Cells.Examples.CSharp.AdvancedTopics
             // Process the smart markers
             designer.Process();
 
-            dataDir = dataDir + "TestSmartMarkers_out_.xlsx";
+            dataDir = dataDir + "TestSmartMarkers_out.xlsx";
             // Save the Excel file
             workbook.Save(dataDir, SaveFormat.Xlsx);
            // ExEnd:1 

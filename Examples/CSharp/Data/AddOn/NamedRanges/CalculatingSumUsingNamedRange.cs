@@ -41,7 +41,7 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
             book.CalculateFormula();
 
             // Save the result in XLSX format
-            book.Save(dataDir + "output_out_.xlsx");
+            book.Save(dataDir + "output_out.xlsx");
             // ExEnd:CalculatingSumUsingNamedRangeOnDifferentSheets
         }
     }

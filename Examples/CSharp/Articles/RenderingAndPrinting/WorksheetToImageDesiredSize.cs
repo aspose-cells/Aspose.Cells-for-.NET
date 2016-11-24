@@ -27,7 +27,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
 
             // Render sheet into image
             Aspose.Cells.Rendering.SheetRender sr = new Aspose.Cells.Rendering.SheetRender(worksheet, opts);
-            sr.ToImage(0, dataDir + "ImageWithDesiredSize_out_.png");
+            sr.ToImage(0, dataDir + "ImageWithDesiredSize_out.png");
             // ExEnd:WorksheetToImageDesiredSize
         }
     }

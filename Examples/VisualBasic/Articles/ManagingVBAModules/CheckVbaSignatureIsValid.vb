@@ -21,10 +21,10 @@ Namespace Articles.ManagingVBAModules
             workbook.VbaProject.Modules(1).Codes = code
 
             ' Save
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsm"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsm"))
 
             ' Reload
-            workbook = New Workbook(dataDir & Convert.ToString("output_out_.xlsm"))
+            workbook = New Workbook(dataDir & Convert.ToString("output_out.xlsm"))
 
             ' Now the signature is invalid
             Console.WriteLine("Is VBA Code Project Valid Signed: " + workbook.VbaProject.IsValidSigned)

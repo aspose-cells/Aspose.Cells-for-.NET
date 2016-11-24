@@ -19,7 +19,7 @@ Namespace Articles.ManagingRowsColumnsCells
             cells("B2").PutValue("data4")
 
             ' Save workbook
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:PopulateDataFirstByRowThenColumns
         End Sub
     End Class

@@ -9,7 +9,7 @@ Class MainWindow
 
         Using stream = New MemoryStream(File.ReadAllBytes(dataDir & Convert.ToString("SampleBook.xlsx")))
             Me.grid.ImportExcelFile(stream)
-            Me.grid.ExportExcelFile(dataDir & Convert.ToString("SampleOutput_out_.xlsx"))
+            Me.grid.ExportExcelFile(dataDir & Convert.ToString("SampleOutput_out.xlsx"))
         End Using
         ' ExEnd:UsingGridDesktopInWpf
     End Sub

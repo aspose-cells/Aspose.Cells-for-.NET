@@ -37,7 +37,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             lineFormat.Weight = 0.0;
 
             // Save the excel file.
-            workbook.Save(dataDir + "output_out_.xlsx");
+            workbook.Save(dataDir + "output_out.xlsx");
             // ExEnd:AddWordArtWatermarkToChart
         }
     }

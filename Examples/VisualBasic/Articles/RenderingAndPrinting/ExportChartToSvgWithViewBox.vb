@@ -25,7 +25,7 @@ Namespace Articles.RenderingAndPrinting
             opts.SVGFitToViewPort = True
 
             ' Save the chart to svg format
-            chart.ToImage(dataDir & Convert.ToString("Image_out_.svg"), opts)
+            chart.ToImage(dataDir & Convert.ToString("Image_out.svg"), opts)
             ' ExEnd:ExportChartToSvgWithViewBox
         End Sub
     End Class

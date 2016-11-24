@@ -36,7 +36,7 @@ Namespace Articles.ManageConditionalFormatting
             Dim imgBytes As Byte() = dbar.ToImage(cell, opts)
 
             ' Write image bytes on the disk
-            File.WriteAllBytes(dataDir & Convert.ToString("databar_out_.png"), imgBytes)
+            File.WriteAllBytes(dataDir & Convert.ToString("databar_out.png"), imgBytes)
             ' ExEnd:GenerateDatabarImage
         End Sub
     End Class

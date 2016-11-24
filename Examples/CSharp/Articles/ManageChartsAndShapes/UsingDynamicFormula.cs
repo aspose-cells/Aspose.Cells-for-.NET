@@ -112,7 +112,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             chart.NSeries.CategoryData = "=$D$15:$I$15";
 
             // Save result on disc
-            workbook.Save(dataDir + "output_out_.xlsx");
+            workbook.Save(dataDir + "output_out.xlsx");
             // ExEnd:CreateDynamicChartsUsingDynamicFormula
         }
     }

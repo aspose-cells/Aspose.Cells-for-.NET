@@ -30,7 +30,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
             destination.Cells.CopyRows(source.Cells, 0, 0, source.Cells.MaxDisplayRange.RowCount, options);
 
             // Save workbook in xlsx format
-            wb.Save(dataDir + "output_out_.xlsx", SaveFormat.Xlsx);
+            wb.Save(dataDir + "output_out.xlsx", SaveFormat.Xlsx);
             // ExEnd:1           
             
         }

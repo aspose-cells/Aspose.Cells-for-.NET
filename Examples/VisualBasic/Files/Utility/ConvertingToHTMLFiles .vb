@@ -15,7 +15,7 @@ Namespace Files.Utility
             Dim wb As New Workbook(filePath)
 
             ' Save it in HTML format
-            wb.Save(dataDir & Convert.ToString("ConvertingToHTMLFiles_out_.html"), SaveFormat.Html)
+            wb.Save(dataDir & Convert.ToString("ConvertingToHTMLFiles_out.html"), SaveFormat.Html)
             ' ExEnd:1
         End Sub
     End Class

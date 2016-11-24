@@ -89,7 +89,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             chart.NSeries.CategoryData = "A2:B12";
 
             // Save spreadsheet
-            book.Save(dataDir + "output_out_.xlsx");
+            book.Save(dataDir + "output_out.xlsx");
             // ExEnd:CreateDynamicCharts
         }
     }

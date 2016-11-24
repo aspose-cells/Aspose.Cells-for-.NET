@@ -28,7 +28,7 @@ Namespace Articles.ManageChartsAndShapes
             pic.SignatureLine = s
 
             ' Save the workbook
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:CreateSignatureLineInWorkbook
         End Sub
     End Class

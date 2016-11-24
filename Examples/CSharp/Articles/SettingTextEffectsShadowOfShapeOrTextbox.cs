@@ -31,7 +31,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             tb.Font.Size = 16;
 
             // Save the output file
-            wb.Save(dataDir + "SettingTextEffectsShadowOfShapeOrTextbox_out_.xlsx", SaveFormat.Xlsx);
+            wb.Save(dataDir + "SettingTextEffectsShadowOfShapeOrTextbox_out.xlsx", SaveFormat.Xlsx);
             // ExEnd:SettingTextEffectsShadowOfShapeOrTextbox
         }
     }

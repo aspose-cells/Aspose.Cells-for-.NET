@@ -24,7 +24,7 @@ Namespace Articles
             workbook = New Workbook(ms, opts)
 
             ' Save the workbook in pdf format
-            workbook.Save(dataDir + "LoadWorkbookWithPrinterSize-a5_out_.pdf")
+            workbook.Save(dataDir + "LoadWorkbookWithPrinterSize-a5_out.pdf")
 
             ' Now load the workbook again from memory stream with A3 paper size
             ms.Position = 0
@@ -33,7 +33,7 @@ Namespace Articles
             workbook = New Workbook(ms, opts)
 
             ' Save the workbook in pdf format
-            workbook.Save(dataDir & Convert.ToString("LoadWorkbookWithPrinterSize-a3_out_.pdf"))
+            workbook.Save(dataDir & Convert.ToString("LoadWorkbookWithPrinterSize-a3_out.pdf"))
             ' ExEnd:1          
         End Sub
     End Class

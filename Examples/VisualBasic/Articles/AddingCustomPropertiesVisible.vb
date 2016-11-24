@@ -20,7 +20,7 @@ Namespace Articles
             workbook.ContentTypeProperties.Add("MK32", "04-Mar-2015", "DateTime")
 
             ' Save the workbook
-            workbook.Save(dataDir & Convert.ToString("AddingCustomPropertiesVisible_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("AddingCustomPropertiesVisible_out.xlsx"))
             ' ExEnd:1            
         End Sub
     End Class

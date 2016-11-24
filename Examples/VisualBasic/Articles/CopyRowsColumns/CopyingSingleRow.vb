@@ -21,7 +21,7 @@ Namespace Articles.CopyRowsColumns
                 cells.CopyRow(cells, 0, i)
             Next i
             ' Save the excel file
-            workbook.Save(dataDir & "output_out_.xlsx")
+            workbook.Save(dataDir & "output_out.xlsx")
             ' ExEnd:1
 
         End Sub

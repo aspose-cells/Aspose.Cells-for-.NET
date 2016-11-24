@@ -26,7 +26,7 @@ Namespace Articles
             se.Transparency = 0.3
 
             ' Save the workbook in xlsx format
-            wb.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            wb.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:ShadowEffectOfShape
         End Sub
     End Class

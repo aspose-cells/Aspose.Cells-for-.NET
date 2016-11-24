@@ -16,7 +16,7 @@ Namespace Articles.WorkingWithCalculationEngine
             workbook.Settings.CalcMode = CalcModeType.Manual
 
             ' Save the workbook
-            workbook.Save(dataDir & "output_out_.xlsx", SaveFormat.Xlsx)
+            workbook.Save(dataDir & "output_out.xlsx", SaveFormat.Xlsx)
             ' ExEnd:1
         End Sub
     End Class

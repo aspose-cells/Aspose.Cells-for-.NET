@@ -18,7 +18,7 @@ Namespace Articles.RenderingAndPrinting
             options.ExportHiddenWorksheet = False
 
             ' Save the workbook
-            workbook.Save(dataDir & Convert.ToString("HtmlWithoutHiddenContent_out_.html"), options)
+            workbook.Save(dataDir & Convert.ToString("HtmlWithoutHiddenContent_out.html"), options)
             ' ExEnd:PreventExportingHiddenContentWhileSavingToHTML
         End Sub
     End Class

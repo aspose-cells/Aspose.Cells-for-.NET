@@ -24,7 +24,7 @@ Namespace Articles
             fntSetting.SetWordArtStyle(PresetWordArtStyle.WordArtStyle3)
 
             ' Save the workbook in xlsx format
-            wb.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            wb.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:1
         End Sub
     End Class

@@ -35,7 +35,7 @@ Namespace Articles.UsingImageOrPrintOptions
             Dim bitmap As System.Drawing.Bitmap = sr.ToImage(0)
 
             ' Save the image file
-            bitmap.Save(dataDir & Convert.ToString("SheetImage_out_.jpg"))
+            bitmap.Save(dataDir & Convert.ToString("SheetImage_out.jpg"))
             ' ExEnd:1
         End Sub
     End Class

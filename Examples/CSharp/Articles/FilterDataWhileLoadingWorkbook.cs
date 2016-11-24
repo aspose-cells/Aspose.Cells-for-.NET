@@ -20,7 +20,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             Workbook wb = new Workbook( dataDir + "sample.xlsx", opts);
 
             //Save the output in pdf format
-            wb.Save(dataDir + "FilterDataWhileLoadingWorkbook_out_.pdf", SaveFormat.Pdf);
+            wb.Save(dataDir + "FilterDataWhileLoadingWorkbook_out.pdf", SaveFormat.Pdf);
             // ExEnd:1         
             
         }

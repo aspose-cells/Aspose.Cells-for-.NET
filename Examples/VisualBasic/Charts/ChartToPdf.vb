@@ -18,7 +18,7 @@ Namespace Charts
             Dim chart As Aspose.Cells.Charts.Chart = worksheet.Charts(0)
 
             ' Save the chart into pdf format
-            chart.ToPdf(dataDir & Convert.ToString("Output-Chart_out_.pdf"))
+            chart.ToPdf(dataDir & Convert.ToString("Output-Chart_out.pdf"))
 
             ' Save the chart into pdf format in stream
             Dim ms As New MemoryStream()

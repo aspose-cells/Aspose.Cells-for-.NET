@@ -17,7 +17,7 @@ Namespace Articles.RenderingAndPrinting
             Dim opts As New PdfSaveOptions()
             opts.OptimizationType = Aspose.Cells.Rendering.PdfOptimizationType.MinimumSize
 
-            workbook.Save(dataDir & Convert.ToString("OptimizedOutput_out_.pdf"), opts)
+            workbook.Save(dataDir & Convert.ToString("OptimizedOutput_out.pdf"), opts)
             ' ExEnd:SaveExcelIntoPdfWithOptimizedSize
         End Sub
     End Class

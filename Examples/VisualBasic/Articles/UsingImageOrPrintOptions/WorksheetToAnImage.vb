@@ -41,7 +41,7 @@ Namespace Articles.UsingImageOrPrintOptions
             Dim sr As New SheetRender(sheet, options)
 
             ' Render/save the image for the sheet
-            sr.ToImage(0, dataDir & Convert.ToString("SheetImage_out_.tiff"))
+            sr.ToImage(0, dataDir & Convert.ToString("SheetImage_out.tiff"))
             ' ExEnd:1
         End Sub
     End Class

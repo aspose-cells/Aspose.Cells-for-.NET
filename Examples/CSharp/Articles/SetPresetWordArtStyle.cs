@@ -30,7 +30,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             fntSetting.SetWordArtStyle(PresetWordArtStyle.WordArtStyle3);
 
             // Save the workbook in xlsx format
-            wb.Save(dataDir + "output_out_.xlsx");
+            wb.Save(dataDir + "output_out.xlsx");
             // ExEnd:1
         }
     }

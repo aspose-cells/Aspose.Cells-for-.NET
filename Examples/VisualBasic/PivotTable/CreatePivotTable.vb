@@ -92,7 +92,7 @@ Namespace PivotTableExamples
             pivotTable.AddFieldToArea(Aspose.Cells.Pivot.PivotFieldType.Data, 2)
 
             ' Saving the Excel file
-            workbook.Save(dataDir & "pivotTable_test_out_.xls")
+            workbook.Save(dataDir & "pivotTable_test_out.xls")
             ' ExEnd:1
         End Sub
     End Class

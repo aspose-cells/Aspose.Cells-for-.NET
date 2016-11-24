@@ -19,7 +19,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Utility
             Workbook wb = new Workbook(filePath);
 
             // Save it in HTML format
-            wb.Save(dataDir + "ConvertingToHTMLFiles_out_.html", SaveFormat.Html);
+            wb.Save(dataDir + "ConvertingToHTMLFiles_out.html", SaveFormat.Html);
             // ExEnd:1
         }
     }

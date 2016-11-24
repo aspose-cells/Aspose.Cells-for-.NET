@@ -84,7 +84,7 @@ Namespace Articles.ManageChartsAndShapes
             chart.NSeries.CategoryData = "A2:B12"
 
             ' Save spreadsheet
-            book.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            book.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:CreateDynamicCharts
         End Sub
     End Class

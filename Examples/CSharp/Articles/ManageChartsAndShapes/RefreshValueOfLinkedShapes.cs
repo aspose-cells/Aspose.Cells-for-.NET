@@ -27,7 +27,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             worksheet.Shapes.UpdateSelectedValue();
 
             // Save the workbook in pdf format
-            workbook.Save(dataDir + "output_out_.pdf", SaveFormat.Pdf);
+            workbook.Save(dataDir + "output_out.pdf", SaveFormat.Pdf);
             // ExEnd:1
         }
     }

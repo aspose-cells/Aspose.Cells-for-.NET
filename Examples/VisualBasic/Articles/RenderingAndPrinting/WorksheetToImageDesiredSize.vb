@@ -24,7 +24,7 @@ Namespace Articles.RenderingAndPrinting
 
             ' Render sheet into image
             Dim sr As New Aspose.Cells.Rendering.SheetRender(worksheet, opts)
-            sr.ToImage(0, dataDir & Convert.ToString("ImageWithDesiredSize_out_.png"))
+            sr.ToImage(0, dataDir & Convert.ToString("ImageWithDesiredSize_out.png"))
             ' ExEnd:WorksheetToImageDesiredSize
         End Sub
     End Class

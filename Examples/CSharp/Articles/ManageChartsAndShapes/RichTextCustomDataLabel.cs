@@ -36,7 +36,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             fntSetting.Font.IsBold = true;
 
             // Save the workbook
-            workbook.Save(dataDir + "output_out_.xlsx");
+            workbook.Save(dataDir + "output_out.xlsx");
             // ExEnd:RichTextCustomDataLabelOfChartPoint
         }
     }

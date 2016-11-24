@@ -27,7 +27,7 @@ Namespace Articles
             tb.Font.Size = 16
 
             ' Save the output file
-            wb.Save(dataDir & Convert.ToString("SettingTextEffectsShadowOfShapeOrTextbox_out_.xlsx"), SaveFormat.Xlsx)
+            wb.Save(dataDir & Convert.ToString("SettingTextEffectsShadowOfShapeOrTextbox_out.xlsx"), SaveFormat.Xlsx)
             ' ExEnd:SettingTextEffectsShadowOfShapeOrTextbox
         End Sub
     End Class

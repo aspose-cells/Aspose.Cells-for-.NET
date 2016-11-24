@@ -22,7 +22,7 @@ Namespace Articles.RenderingAndPrinting
             worksheet.PageSetup.PrintComments = PrintCommentsType.PrintSheetEnd
 
             ' Save workbook in pdf format
-            workbook.Save(dataDir & Convert.ToString("PrintCommentWhileSavingToPdf_out_.pdf"))
+            workbook.Save(dataDir & Convert.ToString("PrintCommentWhileSavingToPdf_out.pdf"))
             ' ExEnd:PrintCommentWhileSavingToPdf
         End Sub
     End Class

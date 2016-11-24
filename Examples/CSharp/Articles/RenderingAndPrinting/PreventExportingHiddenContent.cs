@@ -21,7 +21,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             options.ExportHiddenWorksheet = false;
 
             // Save the workbook
-            workbook.Save(dataDir + "HtmlWithoutHiddenContent_out_.html", options);
+            workbook.Save(dataDir + "HtmlWithoutHiddenContent_out.html", options);
             // ExEnd:PreventExportingHiddenContentWhileSavingAsHTML
         }
     }

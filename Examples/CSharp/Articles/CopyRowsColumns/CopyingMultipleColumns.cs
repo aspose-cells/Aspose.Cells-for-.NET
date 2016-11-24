@@ -23,7 +23,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.CopyRowsColumns
             cells.CopyColumns(cells, 0, 6, 3);
 
             // Save the result on disc
-            workbook.Save(dataDir + "output_out_.xlsx");
+            workbook.Save(dataDir + "output_out.xlsx");
             // ExEnd:1
         }
     }

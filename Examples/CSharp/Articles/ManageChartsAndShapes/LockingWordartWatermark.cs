@@ -47,7 +47,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             wordart.HasLine = false;
 
             // Save the file
-            workbook.Save(dataDir + "output_out_.xlsx");
+            workbook.Save(dataDir + "output_out.xlsx");
             // ExEnd:LockingWordartWatermark
         }
     }

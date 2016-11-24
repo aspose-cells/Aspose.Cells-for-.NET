@@ -23,7 +23,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             PdfSaveOptions options = new PdfSaveOptions();
             options.WarningCallback = new GetWarningsForFontSubstitution();
-            dataDir = dataDir + "output_out_.pdf";
+            dataDir = dataDir + "output_out.pdf";
             workbook.Save(dataDir, options);
         }
     }

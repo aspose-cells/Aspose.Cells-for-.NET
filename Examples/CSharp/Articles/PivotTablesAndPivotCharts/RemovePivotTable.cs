@@ -30,7 +30,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.PivotTablesAndPivotCharts
             //worksheet.PivotTables.RemoveAt(0);
 
             // Save the workbook
-            workbook.Save(dataDir + "output_out_.xlsx");
+            workbook.Save(dataDir + "output_out.xlsx");
             // ExEnd:RemovePivotTableFromWorksheet
         }
     }

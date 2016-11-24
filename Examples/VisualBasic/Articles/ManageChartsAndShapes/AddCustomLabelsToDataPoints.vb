@@ -59,7 +59,7 @@ Namespace Articles.ManageChartsAndShapes
                 pointIndex.DataLabels.Text = "Series 2" + vbLf + "Point " + i
             Next
 
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"), Aspose.Cells.SaveFormat.Xlsx)
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"), Aspose.Cells.SaveFormat.Xlsx)
             ' ExEnd:AddCustomLabelsToDataPointsInTheSeriesOfChart
         End Sub
     End Class

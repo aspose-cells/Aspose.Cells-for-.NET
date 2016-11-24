@@ -44,7 +44,7 @@
             pageSetup.Order = PrintOrderType.OverThenDown
 
             ' Save the workbook
-            workbook.Save(dataDir & Convert.ToString("PageSetup_Print_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("PageSetup_Print_out.xlsx"))
             ' ExEnd:1
         End Sub
 

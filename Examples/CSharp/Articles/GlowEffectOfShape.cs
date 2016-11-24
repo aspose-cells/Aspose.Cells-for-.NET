@@ -29,7 +29,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             ge.Transparency = 0.4;
 
             // Save the workbook in xlsx format
-            wb.Save(dataDir + "output_out_.xlsx");
+            wb.Save(dataDir + "output_out.xlsx");
             // ExEnd:GlowEffectOfShape
         }
     }

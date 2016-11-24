@@ -25,7 +25,7 @@ Namespace Articles
             c.LinkedCell = "A1"
 
             ' Save the worbook in xlsx format
-            wb.Save(dataDir & Convert.ToString("AddActiveXControls_out_.xlsx"), SaveFormat.Xlsx)
+            wb.Save(dataDir & Convert.ToString("AddActiveXControls_out.xlsx"), SaveFormat.Xlsx)
             ' ExEnd:1
         End Sub
     End Class

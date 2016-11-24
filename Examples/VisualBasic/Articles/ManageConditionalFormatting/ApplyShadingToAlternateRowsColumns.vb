@@ -44,7 +44,7 @@ Namespace Articles.ManageConditionalFormatting
             formatCondirion.Style.Pattern = BackgroundType.Solid
 
             ' Save the result on disk
-            book.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            book.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:1
         End Sub
     End Class

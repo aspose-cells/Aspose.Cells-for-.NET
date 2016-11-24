@@ -24,7 +24,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             workbook.ContentTypeProperties.Add("MK32", "04-Mar-2015", "DateTime");
 
             // Save the workbook
-            workbook.Save(dataDir + "AddingCustomPropertiesVisible_out_.xlsx");
+            workbook.Save(dataDir + "AddingCustomPropertiesVisible_out.xlsx");
             // ExEnd:1            
         }
     }

@@ -23,7 +23,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
             workbook.ImportXml(XML, "Sheet1", 0, 0);
 
             // Save workbook
-            workbook.Save(dataDir + "output_out_.xlsx");
+            workbook.Save(dataDir + "output_out.xlsx");
             // ExEnd:ImportXmlDataIntoWorkbook
         }
     }

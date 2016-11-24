@@ -23,7 +23,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
                 hl.Address = "http://www.aspose.com";
             }
 
-            workbook.Save(dataDir + "output_out_.xlsx");
+            workbook.Save(dataDir + "output_out.xlsx");
             // ExEnd:EditingHyperlinksOfWorksheet
         }
     }

@@ -26,7 +26,7 @@ Namespace Articles.ManageChartsAndShapes
             shape3.Geometry.ShapeAdjustValues(0).Value = 0.5
 
             ' Save the workbook
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:1
         End Sub
     End Class

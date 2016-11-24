@@ -140,7 +140,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             book.Worksheets.ActiveSheetIndex = chartSheetIdx;
 
             // Save the final result
-            book.Save(dataDir + "report_out_.xlsx");
+            book.Save(dataDir + "report_out.xlsx");
             // ExEnd:CreationOfChart
         }
     }

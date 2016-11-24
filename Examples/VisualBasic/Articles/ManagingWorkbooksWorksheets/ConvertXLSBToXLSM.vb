@@ -12,7 +12,7 @@ Namespace Articles.ManagingWorkbooksWorksheets
             Dim workbook As New Workbook(dataDir & Convert.ToString("sample.xlsb"))
 
             ' Save Workbook to XLSM format
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsm"), SaveFormat.Xlsm)
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsm"), SaveFormat.Xlsm)
             ' ExEnd:ConvertXLSBRevisionToXLSM
         End Sub
     End Class

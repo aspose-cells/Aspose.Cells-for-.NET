@@ -12,7 +12,7 @@
             wb.Worksheets.XmlMaps.Add(dataDir & Convert.ToString("sample.xml"))
 
             ' Save the workbook in xlsx format
-            wb.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            wb.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:AddXmlMapInsideWorkbook
         End Sub
     End Class

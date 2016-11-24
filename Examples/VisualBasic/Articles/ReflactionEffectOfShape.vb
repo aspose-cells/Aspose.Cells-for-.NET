@@ -26,7 +26,7 @@ Namespace Articles
             re.Distance = 80
 
             ' Save the workbook in xlsx format
-            wb.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            wb.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:ReflactionEffectOfShape
         End Sub
     End Class

@@ -27,7 +27,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             workbook.Worksheets["Result"].Pictures.Add(picturesource.UpperLeftRow, picturesource.UpperLeftColumn, ms, picturesource.WidthScale, picturesource.HeightScale);
 
             // Save the Worksheet
-            workbook.Save(dataDir + "PictureCopied_out_.xlsx");
+            workbook.Save(dataDir + "PictureCopied_out.xlsx");
             // ExEnd:CopyPictureBetweenWorksheets
 
             // ExStart:CopyChartBetweenWorksheets
@@ -40,7 +40,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             workbook.Worksheets["Result"].Shapes.AddCopy(cshape, 20, 0, 2, 0);
 
             // Save the Worksheet
-            workbook.Save(dataDir + "ChartCopied_out_.xlsx");
+            workbook.Save(dataDir + "ChartCopied_out.xlsx");
             // ExEnd:CopyChartBetweenWorksheets
 
             // ExStart:CopyControlsAndOtherDrawingObjects
@@ -57,7 +57,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             workbook.Worksheets["Result"].Shapes.AddCopy(shape[1], 10, 0, 2, 0);
 
             // Save the Worksheet
-            workbook.Save(dataDir + "ControlsCopied_out_.xlsx");
+            workbook.Save(dataDir + "ControlsCopied_out.xlsx");
             // ExEnd:CopyControlsAndOtherDrawingObjects
         }
     }

@@ -41,7 +41,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingRowsColumnsCells
             worksheet.Cells.SetRowHeightPixel(1, heightOfValue);
 
             // Save the output excel file
-            workbook.Save(dataDir + "output_out_.xlsx");
+            workbook.Save(dataDir + "output_out.xlsx");
             // ExEnd:CalculateWidthAndHeightOfCellValueInUnitOfPixel
         }
     }

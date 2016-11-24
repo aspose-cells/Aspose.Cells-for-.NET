@@ -21,7 +21,7 @@ Namespace Articles.ManageChartsAndShapes
             workbook.Worksheets("Result").Pictures.Add(picturesource.UpperLeftRow, picturesource.UpperLeftColumn, ms, picturesource.WidthScale, picturesource.HeightScale)
 
             ' Save the Worksheet
-            workbook.Save(dataDir & Convert.ToString("PictureCopied_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("PictureCopied_out.xlsx"))
             ' ExEnd:CopyPictureBetweenWorksheets
 
             ' ExStart:CopyChartBetweenWorksheets
@@ -34,7 +34,7 @@ Namespace Articles.ManageChartsAndShapes
             workbook.Worksheets("Result").Shapes.AddCopy(cshape, 20, 0, 2, 0)
 
             ' Save the Worksheet
-            workbook.Save(dataDir & Convert.ToString("ChartCopied_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("ChartCopied_out.xlsx"))
             ' ExEnd:CopyChartBetweenWorksheets
 
             ' ExStart:CopyControlsAndOtherDrawingObjects
@@ -51,7 +51,7 @@ Namespace Articles.ManageChartsAndShapes
             workbook.Worksheets("Result").Shapes.AddCopy(shape(1), 10, 0, 2, 0)
 
             ' Save the Worksheet
-            workbook.Save(dataDir & Convert.ToString("ControlsCopied_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("ControlsCopied_out.xlsx"))
             ' ExEnd:CopyControlsAndOtherDrawingObjects
         End Sub
     End Class

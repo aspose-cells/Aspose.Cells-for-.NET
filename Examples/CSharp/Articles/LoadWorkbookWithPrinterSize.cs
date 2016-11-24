@@ -28,7 +28,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             workbook = new Workbook(ms, opts);
 
             // Save the workbook in pdf format
-            workbook.Save(dataDir + "LoadWorkbookWithPrinterSize-a5_out_.pdf");
+            workbook.Save(dataDir + "LoadWorkbookWithPrinterSize-a5_out.pdf");
 
             // Now load the workbook again from memory stream with A3 paper size
             ms.Position = 0;
@@ -37,7 +37,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             workbook = new Workbook(ms, opts);
 
             // Save the workbook in pdf format
-            workbook.Save(dataDir + "LoadWorkbookWithPrinterSize-a3_out_.pdf");
+            workbook.Save(dataDir + "LoadWorkbookWithPrinterSize-a3_out.pdf");
             // ExEnd:1          
         }
     }

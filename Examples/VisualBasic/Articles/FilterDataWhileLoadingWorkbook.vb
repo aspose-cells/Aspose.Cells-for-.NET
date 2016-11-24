@@ -16,7 +16,7 @@ Namespace Articles
             Dim wb As New Workbook(dataDir & Convert.ToString("sample.xlsx"), opts)
 
             'Save the output in pdf format
-            wb.Save(dataDir & Convert.ToString("FilterDataWhileLoadingWorkbook_out_.pdf"), SaveFormat.Pdf)
+            wb.Save(dataDir & Convert.ToString("FilterDataWhileLoadingWorkbook_out.pdf"), SaveFormat.Pdf)
             ' ExEnd:1         
         End Sub
     End Class

@@ -24,7 +24,7 @@ Namespace Articles.ManagingVBAModules
             Next
 
             ' Save the output Excel file
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsm"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsm"))
             ' ExEnd:ModifyingVBAOrMacroCode
         End Sub
     End Class

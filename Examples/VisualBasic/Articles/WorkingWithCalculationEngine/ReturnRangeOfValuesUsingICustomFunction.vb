@@ -37,10 +37,10 @@ Namespace Articles.WorkingWithCalculationEngine
 
             ' Save to xlsx by setting the calc mode to manual
             wb.Settings.CalcMode = CalcModeType.Manual
-            wb.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            wb.Save(dataDir & Convert.ToString("output_out.xlsx"))
 
             ' Save to pdf
-            wb.Save(dataDir & Convert.ToString("output_out_.pdf"))
+            wb.Save(dataDir & Convert.ToString("output_out.pdf"))
             ' ExEnd:1
         End Sub
     End Class

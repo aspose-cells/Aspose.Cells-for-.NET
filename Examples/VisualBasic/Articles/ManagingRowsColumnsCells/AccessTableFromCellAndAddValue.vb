@@ -28,7 +28,7 @@ Namespace Articles.ManagingRowsColumnsCells
             table.PutCellValue(2, 2, "Offset [2,2]")
 
             ' Save the workbook
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:AccessTableFromCellAndAddValue
         End Sub
     End Class

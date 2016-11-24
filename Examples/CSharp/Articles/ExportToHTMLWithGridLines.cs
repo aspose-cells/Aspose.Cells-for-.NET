@@ -31,7 +31,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // Save your workbook in HTML format and export gridlines
             HtmlSaveOptions opts = new HtmlSaveOptions();
             opts.ExportGridLines = true;
-            wb.Save(dataDir + "ExportToHTMLWithGridLines_out_.html", opts);
+            wb.Save(dataDir + "ExportToHTMLWithGridLines_out.html", opts);
             // ExEnd:1           
             
         }

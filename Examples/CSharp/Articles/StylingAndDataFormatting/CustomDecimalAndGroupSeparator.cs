@@ -33,7 +33,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.StylingAndDataFormatting
             worksheet.AutoFitColumns();
 
             // Save workbook as pdf
-            workbook.Save(dataDir + "CustomSeparator_out_.pdf");
+            workbook.Save(dataDir + "CustomSeparator_out.pdf");
             // ExEnd:CustomDecimalAndGroupSeparator
         }
     }

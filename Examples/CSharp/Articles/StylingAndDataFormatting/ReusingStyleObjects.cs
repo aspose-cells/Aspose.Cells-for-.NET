@@ -35,7 +35,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.StylingAndDataFormatting
             cell2.PutValue("Hello World!!");
 
             // Save to Pdf without setting PdfSaveOptions.IsFontSubstitutionCharGranularity
-            workbook.Save(dataDir + "SampleOutput_out_.xlsx");
+            workbook.Save(dataDir + "SampleOutput_out.xlsx");
             // ExEnd:ReusingStyleObjects
         }
     }

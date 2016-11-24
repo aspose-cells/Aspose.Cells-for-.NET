@@ -59,7 +59,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
                 ws.AutoFitColumns();
 
                 // Save the workbook in xlsx format
-                wb.Save(dataDir + "DivTagsLayout_out_.xlsx", Aspose.Cells.SaveFormat.Xlsx);
+                wb.Save(dataDir + "DivTagsLayout_out.xlsx", Aspose.Cells.SaveFormat.Xlsx);
             }
             // ExEnd:1                        
         }

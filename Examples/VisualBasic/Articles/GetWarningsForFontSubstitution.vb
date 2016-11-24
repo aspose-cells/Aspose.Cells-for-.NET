@@ -15,7 +15,7 @@
 
             Dim options As New PdfSaveOptions()
             options.WarningCallback = New GetWarningsForFontSubstitution()
-            dataDir = dataDir & Convert.ToString("output_out_.pdf")
+            dataDir = dataDir & Convert.ToString("output_out.pdf")
             workbook.Save(dataDir, options)
         End Sub
     End Class

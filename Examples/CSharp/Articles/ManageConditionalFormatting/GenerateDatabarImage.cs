@@ -41,7 +41,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageConditionalFormatting
             byte[] imgBytes = dbar.ToImage(cell, opts);
 
             // Write image bytes on the disk
-            File.WriteAllBytes(dataDir + "databar_out_.png", imgBytes);
+            File.WriteAllBytes(dataDir + "databar_out.png", imgBytes);
             // ExEnd:GenerateDatabarImage
         }
     }

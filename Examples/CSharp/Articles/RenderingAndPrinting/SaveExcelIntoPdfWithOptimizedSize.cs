@@ -20,7 +20,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             PdfSaveOptions opts = new PdfSaveOptions();
             opts.OptimizationType = Aspose.Cells.Rendering.PdfOptimizationType.MinimumSize;
 
-            workbook.Save(dataDir + "OptimizedOutput_out_.pdf", opts);
+            workbook.Save(dataDir + "OptimizedOutput_out.pdf", opts);
             // ExEnd:SaveExcelIntoPdfWithOptimizedSize
         }
     }

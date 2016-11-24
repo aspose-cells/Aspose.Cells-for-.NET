@@ -25,7 +25,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             chart.Legend.LegendEntries[1].IsTextNoFill = true;
 
             // Save the workbook in xlsx format
-            workbook.Save(dataDir + "ChartLegendEntry_out_.xlsx", SaveFormat.Xlsx);
+            workbook.Save(dataDir + "ChartLegendEntry_out.xlsx", SaveFormat.Xlsx);
             // ExEnd:1
         }
     }

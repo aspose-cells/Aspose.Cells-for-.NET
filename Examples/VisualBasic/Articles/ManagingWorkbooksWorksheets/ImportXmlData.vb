@@ -18,7 +18,7 @@ Namespace Articles.ManagingWorkbooksWorksheets
             workbook.ImportXml(XML, "Sheet1", 0, 0)
 
             ' Save workbook
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:ImportXmlDataIntoWorkbook
         End Sub
     End Class

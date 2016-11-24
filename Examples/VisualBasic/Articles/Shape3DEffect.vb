@@ -22,7 +22,7 @@ Namespace Articles
             n3df.ExtrusionHeight = 32
 
             ' Save the output excel file in xlsx format
-            wb.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            wb.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:Shape3DEffect
         End Sub
     End Class

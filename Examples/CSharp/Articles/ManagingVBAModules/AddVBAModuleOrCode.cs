@@ -31,7 +31,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules
             "End Sub";
 
             // Save the workbook
-            workbook.Save(dataDir + "output_out_.xlsm", SaveFormat.Xlsm);
+            workbook.Save(dataDir + "output_out.xlsm", SaveFormat.Xlsm);
             // ExEnd:AddVBAModuleOrCode
         }
     }

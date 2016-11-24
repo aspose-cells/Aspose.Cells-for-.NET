@@ -32,7 +32,7 @@ Namespace Articles.ManageChartsAndShapes
             lineFormat.Weight = 0.0
 
             ' Save the excel file.
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:AddWordArtWatermarkToChart
         End Sub
     End Class

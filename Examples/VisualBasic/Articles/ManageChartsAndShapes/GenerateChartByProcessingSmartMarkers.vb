@@ -140,7 +140,7 @@ Namespace Articles.ManageChartsAndShapes
             book.Worksheets.ActiveSheetIndex = chartSheetIdx
 
             ' Save the final result
-            book.Save(dataDir & Convert.ToString("report_out_.xlsx"))
+            book.Save(dataDir & Convert.ToString("report_out.xlsx"))
             ' ExEnd:CreationOfChart
         End Sub
     End Class

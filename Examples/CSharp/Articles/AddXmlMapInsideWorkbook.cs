@@ -20,7 +20,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             wb.Worksheets.XmlMaps.Add(dataDir + "sample.xml");
 
             // Save the workbook in xlsx format
-            wb.Save(dataDir + "output_out_.xlsx");
+            wb.Save(dataDir + "output_out.xlsx");
             // ExEnd:AddXmlMapInsideWorkbook
         }
     }

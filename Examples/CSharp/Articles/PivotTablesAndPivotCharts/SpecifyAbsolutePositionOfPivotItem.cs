@@ -66,7 +66,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.PivotTablesAndPivotCharts
             pvtTable.RowFields["Item"].PivotItems["AAA3"].PositionInSameParentNode = 2;
 
             // Save file
-            wb.Save(dataDir + "output_out_.xlsx");
+            wb.Save(dataDir + "output_out.xlsx");
             // ExEnd:SpecifyAbsolutePositionOfPivotItem
         }
     }

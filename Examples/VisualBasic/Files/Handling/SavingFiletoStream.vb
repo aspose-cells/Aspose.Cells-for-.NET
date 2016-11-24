@@ -13,7 +13,7 @@ Namespace Files.Handling
 
             ' Load your source workbook
             Dim workbook As New Workbook(filePath)
-            Dim stream As New FileStream(dataDir & "output_out_.xlsx", FileMode.CreateNew)
+            Dim stream As New FileStream(dataDir & "output_out.xlsx", FileMode.CreateNew)
             workbook.Save(stream, New XlsSaveOptions(SaveFormat.Xlsx))
             stream.Close()
 

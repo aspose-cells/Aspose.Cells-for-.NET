@@ -72,7 +72,7 @@ Namespace Articles.ManageChartsAndShapes
             chart.Legend.LegendEntries(1).IsDeleted = True
 
             ' Save the workbook
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:1
         End Sub
     End Class

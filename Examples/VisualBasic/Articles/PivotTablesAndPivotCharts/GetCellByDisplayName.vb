@@ -33,7 +33,7 @@ Namespace Articles.PivotTablesAndPivotCharts
             pivotTable.Format(cell.Row, cell.Column, style)
 
             ' Save workbook
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:GetCellObjectByDisplayName
         End Sub
     End Class

@@ -28,7 +28,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             ws.Shapes.AddWordArt(PresetWordArtStyle.WordArtStyle5, "Aspose File Format APIs", 40, 0, 0, 0, 100, 800);
 
             // Save the workbook in xlsx format
-            wb.Save(dataDir + "output_out_.xlsx");
+            wb.Save(dataDir + "output_out.xlsx");
             // ExEnd:1
         }
     }

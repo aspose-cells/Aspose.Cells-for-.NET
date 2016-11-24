@@ -25,10 +25,10 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules
             workbook.VbaProject.Modules[1].Codes = code;
 
             // Save
-            workbook.Save(dataDir + "output_out_.xlsm");
+            workbook.Save(dataDir + "output_out.xlsm");
 
             // Reload
-            workbook = new Workbook(dataDir + "output_out_.xlsm");
+            workbook = new Workbook(dataDir + "output_out.xlsm");
 
             // Now the signature is invalid
             Console.WriteLine("Is VBA Code Project Valid Signed: " + workbook.VbaProject.IsValidSigned);

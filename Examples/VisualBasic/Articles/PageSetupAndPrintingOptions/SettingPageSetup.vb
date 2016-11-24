@@ -35,7 +35,7 @@
             worksheet.PageSetup.FirstPageNumber = 2
 
             ' Save the workbook
-            workbook.Save(dataDir & Convert.ToString("PageSetup_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("PageSetup_out.xlsx"))
             ' ExEnd:1
         End Sub
     End Class

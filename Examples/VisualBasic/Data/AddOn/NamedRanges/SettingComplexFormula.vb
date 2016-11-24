@@ -35,7 +35,7 @@ Namespace Data.AddOn.NamedRanges
             range.RefersTo = "=INDEX(data,Sheet1!$A$1,1):INDEX(data,Sheet1!$A$1,9)"
 
             ' Save the workbook
-            book.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            book.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:SettingComplexFormulaNamedRange
         End Sub
     End Class

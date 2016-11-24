@@ -11,7 +11,7 @@ Namespace Articles.StylingAndDataFormatting
             Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
             Dim workbook As New Workbook(dataDir & Convert.ToString("SourceFile.xlsx"))
-            workbook.Save(dataDir & Convert.ToString("CustomDateFormat_out_.pdf"))
+            workbook.Save(dataDir & Convert.ToString("CustomDateFormat_out.pdf"))
             ' ExEnd:RenderCustomDateFormatPatterngandgemmdd
         End Sub
     End Class

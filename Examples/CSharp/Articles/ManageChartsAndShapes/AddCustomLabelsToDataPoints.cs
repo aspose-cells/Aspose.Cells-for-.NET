@@ -66,7 +66,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
                 pointIndex.DataLabels.Text = "Series 2" + "\n" + "Point " + i;
             }
 
-            workbook.Save(dataDir + "output_out_.xlsx", Aspose.Cells.SaveFormat.Xlsx);
+            workbook.Save(dataDir + "output_out.xlsx", Aspose.Cells.SaveFormat.Xlsx);
             // ExEnd:AddCustomLabelsToDataPointsInTheSeriesOfChart
         }
     }

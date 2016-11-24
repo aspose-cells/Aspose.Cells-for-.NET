@@ -60,7 +60,7 @@ Namespace Articles.PivotTablesAndPivotCharts
             pvtTable.RowFields("Item").PivotItems("AAA3").PositionInSameParentNode = 2
 
             ' Save file
-            wb.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            wb.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:SpecifyAbsolutePositionOfPivotItem
         End Sub
     End Class

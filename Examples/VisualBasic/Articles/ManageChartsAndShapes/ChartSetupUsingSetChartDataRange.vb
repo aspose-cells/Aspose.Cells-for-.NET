@@ -46,7 +46,7 @@ Namespace Articles.ManageChartsAndShapes
             ch.SetChartDataRange("A1:D4", True)
 
             ' Save the workbook
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"), SaveFormat.Xlsx)
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"), SaveFormat.Xlsx)
             ' ExEnd:EasyWayToChartSetupUsingSetChartDataRange
         End Sub
     End Class

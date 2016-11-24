@@ -34,7 +34,7 @@ namespace UsingGridDesktopInWpf
             using (var stream = new MemoryStream(System.IO.File.ReadAllBytes(dataDir + "SampleBook.xlsx")))
             {
                 this.grid.ImportExcelFile(stream);
-                this.grid.ExportExcelFile(dataDir + "SampleOutput_out_.xlsx");
+                this.grid.ExportExcelFile(dataDir + "SampleOutput_out.xlsx");
             }
             // ExEnd:UsingGridDesktopInWpf
         }

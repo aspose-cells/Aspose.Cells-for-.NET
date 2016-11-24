@@ -17,7 +17,7 @@ Namespace Articles.StylingAndDataFormatting
                 workbook.Worksheets(i).Cells.ConvertStringToNumericValue()
             Next
 
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:ConvertTextNumericDatatoNumber
         End Sub
     End Class

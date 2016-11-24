@@ -38,7 +38,7 @@ Namespace Data.AddOn.NamedRanges
             book.CalculateFormula()
 
             ' Save the result in XLSX format
-            book.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            book.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:CalculatingSumUsingNamedRangeOnDifferentSheets
         End Sub
     End Class

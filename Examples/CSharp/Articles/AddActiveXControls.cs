@@ -28,7 +28,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             c.LinkedCell = "A1";
 
             // Save the worbook in xlsx format
-            wb.Save(dataDir + "AddActiveXControls_out_.xlsx", SaveFormat.Xlsx);
+            wb.Save(dataDir + "AddActiveXControls_out.xlsx", SaveFormat.Xlsx);
             // ExEnd:1            
         }
     }

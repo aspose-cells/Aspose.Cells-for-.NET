@@ -19,7 +19,7 @@ Namespace Files.Utility
             Dim chart As Chart = worksheet.Charts(0)
 
             ' Save the chart into pdf format
-            chart.ToPdf(dataDir & "Output-Chart_out_.pdf")
+            chart.ToPdf(dataDir & "Output-Chart_out.pdf")
 
             ' Save the chart into pdf format in stream
             Dim ms As New MemoryStream()

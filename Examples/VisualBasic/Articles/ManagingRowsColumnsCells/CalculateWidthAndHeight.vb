@@ -36,7 +36,7 @@ Namespace Articles.ManagingRowsColumnsCells
             worksheet.Cells.SetRowHeightPixel(1, heightOfValue)
 
             ' Save the output excel file
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:CalculateWidthAndHeightOfCellValueInUnitOfPixel
         End Sub
     End Class

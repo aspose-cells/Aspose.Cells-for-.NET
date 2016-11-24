@@ -37,12 +37,12 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             worksheet.AutoFitColumns();
 
             // Save to Pdf without setting PdfSaveOptions.IsFontSubstitutionCharGranularity
-            workbook.Save(dataDir + "SampleOutput_out_.pdf");
+            workbook.Save(dataDir + "SampleOutput_out.pdf");
 
             // Save to Pdf after setting PdfSaveOptions.IsFontSubstitutionCharGranularity to true
             PdfSaveOptions opts = new PdfSaveOptions();
             opts.IsFontSubstitutionCharGranularity = true;
-            workbook.Save(dataDir + "SampleOutput2_out_.pdf", opts);
+            workbook.Save(dataDir + "SampleOutput2_out.pdf", opts);
             // ExEnd:ChangeFontUnicodeCharacterWhileSavingToPdf
         }
     }

@@ -51,7 +51,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithHTMLFormat
             options.StreamProvider = new ExportStreamProvider(outputDir);
 
             // Save into .html using HtmlSaveOptions
-            wb.Save(dataDir + "output_out_.html", options);
+            wb.Save(dataDir + "output_out.html", options);
             // ExEnd:ImplementIStreamProvider
         }
     }

@@ -24,7 +24,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingRowsColumnsCells
             cells["B2"].PutValue("data4");
 
             // Save workbook
-            workbook.Save(dataDir + "output_out_.xlsx");
+            workbook.Save(dataDir + "output_out.xlsx");
             // ExEnd:PopulateDataFirstByRowThenColumns
         }
     }

@@ -26,10 +26,10 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
 
             // wb.SetDigitalSignature signs all signatures in dsc
             wb.SetDigitalSignature(dsc);
-            wb.Save(dataDir + @"newfile_out_.xlsx");
+            wb.Save(dataDir + @"newfile_out.xlsx");
 
             // open the file
-            wb = new Workbook(dataDir + @"newfile_out_.xlsx");
+            wb = new Workbook(dataDir + @"newfile_out.xlsx");
             System.Console.WriteLine(wb.IsDigitallySigned);
 
             // Get digitalSignature collection from workbook

@@ -49,7 +49,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageConditionalFormatting
             formatCondirion.Style.Pattern = BackgroundType.Solid;
 
             // Save the result on disk
-            book.Save(dataDir + "output_out_.xlsx");
+            book.Save(dataDir + "output_out.xlsx");
             // ExEnd:1
         }
     }

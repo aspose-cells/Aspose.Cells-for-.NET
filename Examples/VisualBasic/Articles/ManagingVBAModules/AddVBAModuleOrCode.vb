@@ -25,7 +25,7 @@ Namespace Articles.ManagingVBAModules
             [module].Codes = "Sub ShowMessage()" + vbCr & vbLf + "    MsgBox ""Welcome to Aspose!""" + vbCr & vbLf + "End Sub"
 
             ' Save the workbook
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsm"), SaveFormat.Xlsm)
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsm"), SaveFormat.Xlsm)
             ' ExEnd:AddVBAModuleOrCode
         End Sub
     End Class

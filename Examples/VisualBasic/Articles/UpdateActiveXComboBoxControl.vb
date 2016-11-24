@@ -32,7 +32,7 @@ Namespace Articles
             End If
 
             ' Save the workbook
-            wb.Save(dataDir & Convert.ToString("OutputFile_out_.xlsx"))
+            wb.Save(dataDir & Convert.ToString("OutputFile_out.xlsx"))
             ' ExEnd:UpdateActiveXComboBoxControl
         End Sub
     End Class

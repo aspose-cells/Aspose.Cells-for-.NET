@@ -52,7 +52,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.PageSetupAndPrintingOptions
             pageSetup.Order = PrintOrderType.OverThenDown;
 
             // Save the workbook
-            workbook.Save(dataDir + "PageSetup_Print_out_.xlsx");
+            workbook.Save(dataDir + "PageSetup_Print_out.xlsx");
             // ExEnd:1
         }
     }

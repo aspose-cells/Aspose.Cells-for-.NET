@@ -23,7 +23,7 @@ Namespace Articles.ManageChartsAndShapes
             dataLabels.ShowCellRange = True
 
             ' Save the workbook
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:ShowCellRangeAsDataLabels
         End Sub
     End Class

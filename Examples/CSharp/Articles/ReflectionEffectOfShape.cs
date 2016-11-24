@@ -31,7 +31,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             re.Distance = 80;
 
             // Save the workbook in xlsx format
-            wb.Save(dataDir + "output_out_.xlsx");
+            wb.Save(dataDir + "output_out.xlsx");
             // ExEnd:ReflactionEffectOfShape
         }
     }

@@ -41,7 +41,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.UsingImageOrPrintOptions
             Bitmap bitmap = sr.ToImage(0);
 
             // Save the image file
-            bitmap.Save(dataDir + "SheetImage_out_.jpg");
+            bitmap.Save(dataDir + "SheetImage_out.jpg");
             // ExEnd:1
         }
     }

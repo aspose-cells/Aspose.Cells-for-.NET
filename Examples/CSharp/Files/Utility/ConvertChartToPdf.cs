@@ -22,7 +22,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Utility
             Chart chart = worksheet.Charts[0];
 
             // Save the chart into pdf format
-            chart.ToPdf( dataDir + "Output-Chart_out_.pdf");
+            chart.ToPdf( dataDir + "Output-Chart_out.pdf");
 
             // Save the chart into pdf format in stream
             MemoryStream ms = new MemoryStream();

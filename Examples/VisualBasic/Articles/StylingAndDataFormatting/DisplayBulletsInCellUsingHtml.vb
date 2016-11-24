@@ -26,7 +26,7 @@ Namespace Articles.StylingAndDataFormatting
             worksheet.AutoFitColumns()
 
             ' Save the workbook
-            workbook.Save(dataDir & Convert.ToString("BulletsInCells_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("BulletsInCells_out.xlsx"))
             ' ExEnd:DisplayBulletsInCellUsingHtml
         End Sub
     End Class

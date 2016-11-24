@@ -22,7 +22,7 @@ Namespace Articles.WorkingWithCalculationEngine
             cells("B2").SetSharedFormula("=A2*0.09", 13, 1)
 
             ' Save the excel file
-            workbook.Save(dataDir & "Output_out_.xlsx", SaveFormat.Xlsx)
+            workbook.Save(dataDir & "Output_out.xlsx", SaveFormat.Xlsx)
             ' ExEnd:1
         End Sub
     End Class

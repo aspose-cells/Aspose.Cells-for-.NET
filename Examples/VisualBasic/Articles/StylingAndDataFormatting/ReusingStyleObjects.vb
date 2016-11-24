@@ -32,7 +32,7 @@ Namespace Articles.StylingAndDataFormatting
             cell2.PutValue("Hello World!!")
 
             ' Save to Pdf without setting PdfSaveOptions.IsFontSubstitutionCharGranularity
-            workbook.Save(dataDir & Convert.ToString("SampleOutput_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("SampleOutput_out.xlsx"))
             ' ExEnd:ReusingStyleObjects
         End Sub
     End Class

@@ -24,7 +24,7 @@ Namespace Articles.ManageChartsAndShapes
             chart.NSeries(2).DataLabels.IsTextWrapped = False
 
             ' Save the workbook
-            workbook.Save(dataDir & Convert.ToString("Output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("Output_out.xlsx"))
             ' ExEnd:DisableTextWrappingForDataLabels
         End Sub
     End Class

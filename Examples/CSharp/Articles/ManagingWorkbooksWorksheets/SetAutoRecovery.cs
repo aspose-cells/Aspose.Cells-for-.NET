@@ -23,10 +23,10 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
             workbook.Settings.AutoRecover = false;
 
             // Save the workbook
-            workbook.Save(dataDir + "output_out_.xlsx");
+            workbook.Save(dataDir + "output_out.xlsx");
 
             // Read the saved workbook again
-            workbook = new Workbook(dataDir + "output_out_.xlsx");
+            workbook = new Workbook(dataDir + "output_out.xlsx");
 
             // Read AutoRecover property
             Console.WriteLine("AutoRecover: " + workbook.Settings.AutoRecover);

@@ -40,7 +40,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             p.AlignmentType = TextAlignmentType.Right;
 
             // Save the workbook in xlsx format.
-            wb.Save(dataDir + "output_out_.xlsx", SaveFormat.Xlsx);            
+            wb.Save(dataDir + "output_out.xlsx", SaveFormat.Xlsx);            
             // ExEnd:1            
         }
     }

@@ -28,7 +28,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine
             cells["A2"].Formula = "='[" + dataDir + "book1.xlsx]Sheet1'!A8";
 
             // Save the workbook
-            workbook.Save(dataDir + "output_out_.xlsx");
+            workbook.Save(dataDir + "output_out.xlsx");
             // ExEnd:1
         }
     }

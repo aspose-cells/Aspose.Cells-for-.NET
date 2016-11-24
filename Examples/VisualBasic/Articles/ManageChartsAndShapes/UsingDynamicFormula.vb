@@ -107,7 +107,7 @@ Namespace Articles.ManageChartsAndShapes
             chart.NSeries.CategoryData = "=$D$15:$I$15"
 
             ' Save result on disc
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:CreateDynamicChartsUsingDynamicFormula
         End Sub
     End Class

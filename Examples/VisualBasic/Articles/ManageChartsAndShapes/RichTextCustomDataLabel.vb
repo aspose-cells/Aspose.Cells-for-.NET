@@ -31,7 +31,7 @@ Namespace Articles.ManageChartsAndShapes
             fntSetting.Font.IsBold = True
 
             ' Save the workbook
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:RichTextCustomDataLabelOfChartPoint
         End Sub
     End Class

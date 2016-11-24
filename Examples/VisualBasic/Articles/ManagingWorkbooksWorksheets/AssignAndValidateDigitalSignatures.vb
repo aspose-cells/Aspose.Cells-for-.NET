@@ -21,10 +21,10 @@ Namespace Articles.ManagingWorkbooksWorksheets
 
             ' wb.SetDigitalSignature signs all signatures in dsc
             wb.SetDigitalSignature(dsc)
-            wb.Save(dataDir & Convert.ToString("newfile_out_.xlsx"))
+            wb.Save(dataDir & Convert.ToString("newfile_out.xlsx"))
 
             ' open the file
-            wb = New Workbook(dataDir & Convert.ToString("newfile_out_.xlsx"))
+            wb = New Workbook(dataDir & Convert.ToString("newfile_out.xlsx"))
             System.Console.WriteLine(wb.IsDigitallySigned)
 
             ' Get digitalSignature collection from workbook

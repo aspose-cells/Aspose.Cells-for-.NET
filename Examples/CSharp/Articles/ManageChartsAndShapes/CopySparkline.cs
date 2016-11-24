@@ -30,7 +30,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             group.SparklineCollection.Add("D8:O8", 7, 15);
 
             // Save the workbook
-            workbook.Save(dataDir + "output_out_.xlsx");
+            workbook.Save(dataDir + "output_out.xlsx");
             // ExEnd:1
         }
     }

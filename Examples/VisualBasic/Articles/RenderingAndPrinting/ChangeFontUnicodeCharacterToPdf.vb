@@ -34,12 +34,12 @@ Namespace Articles.RenderingAndPrinting
             worksheet.AutoFitColumns()
 
             ' Save to Pdf without setting PdfSaveOptions.IsFontSubstitutionCharGranularity
-            workbook.Save(dataDir & Convert.ToString("SampleOutput_out_.pdf"))
+            workbook.Save(dataDir & Convert.ToString("SampleOutput_out.pdf"))
 
             ' Save to Pdf after setting PdfSaveOptions.IsFontSubstitutionCharGranularity to true
             Dim opts As New PdfSaveOptions()
             opts.IsFontSubstitutionCharGranularity = True
-            workbook.Save(dataDir & Convert.ToString("SampleOutput2_out_.pdf"), opts)
+            workbook.Save(dataDir & Convert.ToString("SampleOutput2_out.pdf"), opts)
             ' ExEnd:ChangeFontUnicodeCharacterToPdf
         End Sub
     End Class

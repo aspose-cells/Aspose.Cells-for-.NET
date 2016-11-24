@@ -65,7 +65,7 @@ Namespace Articles.WorkingWithHTMLFormat
                 If i = 0 Then
                     filePath = dirPath & Convert.ToString("Sheet1.html")
                 Else
-                    filePath = (dirPath & Convert.ToString("OtherSheets\Sheet")) + sheetIndex + "_out_.html"
+                    filePath = (dirPath & Convert.ToString("OtherSheets\Sheet")) + sheetIndex + "_out.html"
                 End If
 
                 ' Save the worksheet to html file

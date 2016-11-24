@@ -20,11 +20,11 @@ Namespace Articles.ManagingWorkbooksWorksheets
 
             ' Save ODS in ODF 1.2 version which is default
             Dim options As New OdsSaveOptions()
-            workbook.Save(dataDir & Convert.ToString("ODF1.2_out_.ods"), options)
+            workbook.Save(dataDir & Convert.ToString("ODF1.2_out.ods"), options)
 
             ' Save ODS in ODF 1.1 version
             options.IsStrictSchema11 = True
-            workbook.Save(dataDir & Convert.ToString("ODF1.1_out_.ods"), options)
+            workbook.Save(dataDir & Convert.ToString("ODF1.1_out.ods"), options)
             ' ExEnd:SaveODSFileinODF11and12Specifications
         End Sub
     End Class

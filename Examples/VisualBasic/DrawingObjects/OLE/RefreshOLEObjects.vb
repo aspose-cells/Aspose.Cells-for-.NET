@@ -18,7 +18,7 @@ Namespace DrawingObjects.OLE
             sheet.OleObjects(0).AutoLoad = True
 
             ' Save the worbook in xlsx format
-            wb.Save(dataDir & Convert.ToString("RefreshOLEObjects_out_.xlsx"), SaveFormat.Xlsx)
+            wb.Save(dataDir & Convert.ToString("RefreshOLEObjects_out.xlsx"), SaveFormat.Xlsx)
             ' ExEnd:1
 
         End Sub

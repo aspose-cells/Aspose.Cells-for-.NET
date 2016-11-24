@@ -24,7 +24,7 @@ Namespace Articles.ManagingVBAModules
             wb.VbaProject.Sign(ds)
 
             ' Save the workbook
-            wb.Save(dataDir & Convert.ToString("DigitallySigned_out_.xlsm"))
+            wb.Save(dataDir & Convert.ToString("DigitallySigned_out.xlsm"))
             ' ExEnd:1
         End Sub
     End Class

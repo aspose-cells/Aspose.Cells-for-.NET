@@ -8,7 +8,7 @@ bin/
 !/Examples.GridWeb/CSharp/bin/
 !/Examples.GridWeb/VisualBasic/bin/
 * Out*
-*_out_*
+*_out*
 * out*
 *.ldb
 Thumbs.db

@@ -25,11 +25,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
 
             // Save ODS in ODF 1.2 version which is default
             OdsSaveOptions options = new OdsSaveOptions();
-            workbook.Save(dataDir + "ODF1.2_out_.ods", options);
+            workbook.Save(dataDir + "ODF1.2_out.ods", options);
 
             // Save ODS in ODF 1.1 version
             options.IsStrictSchema11 = true;
-            workbook.Save(dataDir + "ODF1.1_out_.ods", options);
+            workbook.Save(dataDir + "ODF1.1_out.ods", options);
             // ExEnd:SaveODSFileinODF11and12Specifications
         }
     }

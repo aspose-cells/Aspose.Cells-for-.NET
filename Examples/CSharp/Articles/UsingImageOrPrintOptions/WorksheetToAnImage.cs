@@ -45,7 +45,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.UsingImageOrPrintOptions
             SheetRender sr = new SheetRender(sheet, options);
 
             // Render/save the image for the sheet
-            sr.ToImage(0, dataDir + @"SheetImage_out_.tiff");
+            sr.ToImage(0, dataDir + @"SheetImage_out.tiff");
             // ExEnd:1
         }
     }

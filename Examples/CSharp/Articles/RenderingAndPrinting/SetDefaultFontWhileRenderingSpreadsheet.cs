@@ -47,12 +47,12 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             // Render worksheet image with Courier New as default font.
             opts.DefaultFont = "Courier New";
             SheetRender sr = new SheetRender(ws, opts);
-            sr.ToImage(0, "out_courier_new_out_.png");
+            sr.ToImage(0, "out_courier_new_out.png");
 
             // Render worksheet image again with Times New Roman as default font.
             opts.DefaultFont = "Times New Roman";
             sr = new SheetRender(ws, opts);
-            sr.ToImage(0, "times_new_roman_out_.png");
+            sr.ToImage(0, "times_new_roman_out.png");
             // ExEnd:1           
             
         }

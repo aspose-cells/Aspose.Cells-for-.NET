@@ -22,7 +22,7 @@ Namespace Articles.WorkingWithCalculationEngine
             workbook.CalculateFormula()
 
             ' Save the workbook in pdf format
-            workbook.Save(dataDir & Convert.ToString("output_out_.pdf"))
+            workbook.Save(dataDir & Convert.ToString("output_out.pdf"))
             ' ExEnd:CalculateArrayFormula
         End Sub
     End Class

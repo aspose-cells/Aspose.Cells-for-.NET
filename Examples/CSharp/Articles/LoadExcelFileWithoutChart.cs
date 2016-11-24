@@ -21,7 +21,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             Workbook workbook = new Workbook(dataDir + "sample.xlsx", options);
 
             // Save the workbook in output format
-            workbook.Save(dataDir + "LoadExcelFileWithoutChart_out_.pdf", SaveFormat.Pdf);
+            workbook.Save(dataDir + "LoadExcelFileWithoutChart_out.pdf", SaveFormat.Pdf);
             // ExEnd:1           
             
         }

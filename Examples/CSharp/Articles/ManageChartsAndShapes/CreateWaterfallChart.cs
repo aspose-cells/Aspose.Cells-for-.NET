@@ -76,7 +76,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             chart.Legend.LegendEntries[1].IsDeleted = true;
 
             // Save the workbook
-            workbook.Save(dataDir + "output_out_.xlsx");
+            workbook.Save(dataDir + "output_out.xlsx");
             // ExEnd:1
         }
     }

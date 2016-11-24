@@ -114,10 +114,10 @@ Namespace Articles.ManageChartsAndShapes
             anOption.VerticalResolution = 200
 
             ' Render chart to image
-            chart.ToImage(dataDir & Convert.ToString("output_out_.png"), anOption)
+            chart.ToImage(dataDir & Convert.ToString("output_out.png"), anOption)
 
             ' Save the workbook to see chart inside the Excel
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:SaveChartInImageAndWorkbookInXLSX
         End Sub
     End Class

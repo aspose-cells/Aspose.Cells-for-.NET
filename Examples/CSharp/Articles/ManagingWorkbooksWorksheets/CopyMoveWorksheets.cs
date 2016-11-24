@@ -20,7 +20,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
             excelWorkbook1.Worksheets[2].Copy(excelWorkbook1.Worksheets["Copy"]);
 
             // Save the file.
-            excelWorkbook1.Save(dataDir + @"FirstWorkbookCopied_out_.xlsx");
+            excelWorkbook1.Save(dataDir + @"FirstWorkbookCopied_out.xlsx");
             // ExEnd:CopyWorksheets
 
             // ExStart:MoveWorksheets
@@ -31,7 +31,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
             excelWorkbook2.Worksheets["Move"].MoveTo(2);
 
             // Save the file.
-            excelWorkbook2.Save(dataDir + @"FirstWorkbookMoved_out_.xlsx");
+            excelWorkbook2.Save(dataDir + @"FirstWorkbookMoved_out.xlsx");
             // ExEnd:MoveWorksheets
 
             // ExStart:CopyWorksheetsBetweenWorkbooks
@@ -48,7 +48,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
             excelWorkbook4.Worksheets[1].Copy(excelWorkbook3.Worksheets["Copy"]);
 
             // Save the file.
-            excelWorkbook4.Save(dataDir + @"CopyWorksheetsBetweenWorkbooks_out_.xlsx");
+            excelWorkbook4.Save(dataDir + @"CopyWorksheetsBetweenWorkbooks_out.xlsx");
             // ExEnd:CopyWorksheetsBetweenWorkbooks
 
             // ExStart:MoveWorksheetsBetweenWorkbooks
@@ -68,10 +68,10 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
             excelWorkbook5.Worksheets.RemoveAt(2);
 
             //Save the file.
-            excelWorkbook5.Save(dataDir + @"FirstWorkbookWithMove_out_.xlsx");
+            excelWorkbook5.Save(dataDir + @"FirstWorkbookWithMove_out.xlsx");
 
             //Save the file.
-            excelWorkbook6.Save(dataDir + @"SecondWorkbookWithMove_out_.xlsx");
+            excelWorkbook6.Save(dataDir + @"SecondWorkbookWithMove_out.xlsx");
             // ExEnd:MoveWorksheetsBetweenWorkbooks
         }
     }

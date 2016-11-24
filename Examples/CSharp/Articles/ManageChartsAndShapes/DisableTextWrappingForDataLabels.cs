@@ -29,7 +29,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             chart.NSeries[2].DataLabels.IsTextWrapped = false;
 
             // Save the workbook
-            workbook.Save(dataDir + "Output_out_.xlsx");
+            workbook.Save(dataDir + "Output_out.xlsx");
             // ExEnd:DisableTextWrappingForDataLabels
         }
     }

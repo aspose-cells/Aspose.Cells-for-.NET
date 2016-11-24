@@ -41,7 +41,7 @@ Namespace Articles.WorkingWithHTMLFormat
             options.StreamProvider = New ExportStreamProvider(outputDir)
 
             ' Save into .html using HtmlSaveOptions
-            wb.Save(dataDir & Convert.ToString("output_out_.html"), options)
+            wb.Save(dataDir & Convert.ToString("output_out.html"), options)
             ' ExEnd:ImplementIStreamProvider
         End Sub
     End Class

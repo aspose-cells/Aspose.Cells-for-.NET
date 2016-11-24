@@ -51,7 +51,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             ch.SetChartDataRange("A1:D4", true);
 
             // Save the workbook
-            workbook.Save(dataDir + "output_out_.xlsx", SaveFormat.Xlsx);
+            workbook.Save(dataDir + "output_out.xlsx", SaveFormat.Xlsx);
             // ExEnd:EasyWayToChartSetupUsingSetChartDataRange
         }
     }

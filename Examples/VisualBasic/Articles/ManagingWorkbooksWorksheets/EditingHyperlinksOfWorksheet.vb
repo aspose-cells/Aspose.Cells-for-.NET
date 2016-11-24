@@ -17,7 +17,7 @@ Namespace Articles.ManagingWorkbooksWorksheets
                 hl.Address = "http://www.aspose.com"
             Next
 
-            workbook.Save(dataDir & Convert.ToString("output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("output_out.xlsx"))
             ' ExEnd:EditingHyperlinksOfWorksheet
         End Sub
     End Class

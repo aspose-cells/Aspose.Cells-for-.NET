@@ -29,7 +29,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.StylingAndDataFormatting
             worksheet.AutoFitColumns();
 
             // Save the workbook
-            workbook.Save(dataDir + "BulletsInCells_out_.xlsx");
+            workbook.Save(dataDir + "BulletsInCells_out.xlsx");
             // ExEnd:DisplayBulletsInCellUsingHtml
         }
     }

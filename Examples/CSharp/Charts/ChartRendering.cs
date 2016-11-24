@@ -39,11 +39,11 @@ namespace Aspose.Cells.Examples.CSharp.Charts
 
             // ExStart:ChartRenderingChartToImage
             // Converting chart to image
-            chart.ToImage(dataDir + "chartEMF_out_.emf", System.Drawing.Imaging.ImageFormat.Emf);
+            chart.ToImage(dataDir + "chartEMF_out.emf", System.Drawing.Imaging.ImageFormat.Emf);
 
             // Converting chart to Bitmap
             System.Drawing.Bitmap bitmap = chart.ToImage();
-            bitmap.Save(dataDir + "chartBMP_out_.bmp", System.Drawing.Imaging.ImageFormat.Bmp);
+            bitmap.Save(dataDir + "chartBMP_out.bmp", System.Drawing.Imaging.ImageFormat.Bmp);
             // ExEnd:ChartRenderingChartToImage
 
             // ExStart:ChartRenderingChartToImageWithAdvancedOptions
@@ -55,12 +55,12 @@ namespace Aspose.Cells.Examples.CSharp.Charts
                 SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias
             };
             // Convert chart to image with additional settings
-            chart.ToImage(dataDir + "chartPNG_out_.png", options);
+            chart.ToImage(dataDir + "chartPNG_out.png", options);
             // ExEnd:ChartRenderingChartToImageWithAdvancedOptions
 
             // ExStart:ChartRenderingChartToPDF
             // Converting chart to PDF
-            chart.ToPdf(dataDir + "chartPDF_out_.pdf");
+            chart.ToPdf(dataDir + "chartPDF_out.pdf");
             // ExEnd:ChartRenderingChartToPDF
         }
     }

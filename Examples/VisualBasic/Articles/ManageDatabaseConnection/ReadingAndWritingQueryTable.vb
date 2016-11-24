@@ -26,7 +26,7 @@ Namespace Articles.ManageDatabaseConnection
             qt.PreserveFormatting = True
 
             ' Save the workbook
-            workbook.Save(dataDir & Convert.ToString("Output_out_.xlsx"))
+            workbook.Save(dataDir & Convert.ToString("Output_out.xlsx"))
             ' ExEnd:ReadingAndWritingQueryTable
         End Sub
     End Class

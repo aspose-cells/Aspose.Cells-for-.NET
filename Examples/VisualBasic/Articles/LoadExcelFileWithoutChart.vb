@@ -17,7 +17,7 @@ Namespace Articles
             Dim workbook As New Workbook(dataDir & Convert.ToString("sample.xlsx"), options)
 
             ' Save the workbook in output format
-            workbook.Save(dataDir & Convert.ToString("LoadExcelFileWithoutChart_out_.pdf"), SaveFormat.Pdf)
+            workbook.Save(dataDir & Convert.ToString("LoadExcelFileWithoutChart_out.pdf"), SaveFormat.Pdf)
             ' ExEnd:1           
 
         End Sub

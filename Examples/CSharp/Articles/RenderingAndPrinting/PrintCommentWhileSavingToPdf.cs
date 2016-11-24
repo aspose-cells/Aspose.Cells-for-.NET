@@ -27,7 +27,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             worksheet.PageSetup.PrintComments = PrintCommentsType.PrintSheetEnd;
 
             // Save workbook in pdf format
-            workbook.Save(dataDir + "PrintCommentWhileSavingToPdf_out_.pdf");
+            workbook.Save(dataDir + "PrintCommentWhileSavingToPdf_out.pdf");
             // ExEnd:PrintCommentWhileSavingToPdf
         }
     }

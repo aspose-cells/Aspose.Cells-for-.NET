@@ -25,7 +25,7 @@ Namespace Articles
             ' Save your workbook in HTML format and export gridlines
             Dim opts As New HtmlSaveOptions()
             opts.ExportGridLines = True
-            wb.Save(dataDir & Convert.ToString("ExportToHTMLWithGridLines_out_.html"), opts)
+            wb.Save(dataDir & Convert.ToString("ExportToHTMLWithGridLines_out.html"), opts)
             ' ExEnd:1     
 
         End Sub

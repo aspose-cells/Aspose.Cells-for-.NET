@@ -43,7 +43,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             p.SpaceBefore = 10;
 
             // Save the workbook in xlsx format
-            wb.Save(dataDir + "output_out_.xlsx", SaveFormat.Xlsx);
+            wb.Save(dataDir + "output_out.xlsx", SaveFormat.Xlsx);
             // ExEnd:1
         }
     }

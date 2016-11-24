@@ -29,7 +29,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             n3df.ExtrusionHeight = 32;
 
             // Save the output excel file in xlsx format
-            wb.Save(dataDir + "output_out_.xlsx");
+            wb.Save(dataDir + "output_out.xlsx");
             // ExEnd:Shape3DEffect
         }
     }

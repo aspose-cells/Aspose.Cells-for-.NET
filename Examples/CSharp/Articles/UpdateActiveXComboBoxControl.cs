@@ -37,7 +37,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             }
 
             // Save the workbook
-            wb.Save(dataDir + "OutputFile_out_.xlsx");
+            wb.Save(dataDir + "OutputFile_out.xlsx");
             // ExEnd:UpdateActiveXComboBoxControl
         }
     }

@@ -26,7 +26,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
             worksheet.Cells.ImportCSV(dataDir + "sample.csv", opts, 3, 3);
 
             // Save your workbook in Xlsx format
-            workbook.Save(dataDir + "output_out_.xlsx");
+            workbook.Save(dataDir + "output_out.xlsx");
             // ExEnd:ImportCSVWithFormulas
         }
     }
