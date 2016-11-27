@@ -520,6 +520,9 @@
     <Compile Include="Formulas\ProcessDataUsingR1C1.cs" />
     <Compile Include="Formulas\ProcessDataUsingAddinfunction.cs" />
     <Compile Include="Formulas\ProcessDataUsingBuiltinfunction.cs" />
+    <Compile Include="Introduction\CheckVersionNumber.cs" />
+    <Compile Include="Introduction\FirstApplication.cs" />
+    <Compile Include="Introduction\OpenExistingFile.cs" />
     <Compile Include="PivotTable\ConsolidationFunctions.cs" />
     <Compile Include="PivotTable\SpecifyCompatibility.cs" />
     <Compile Include="PivotTable\RefreshAndCalculateItems.cs" />

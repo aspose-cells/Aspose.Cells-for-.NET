@@ -19,6 +19,7 @@ using Aspose.Cells.Examples.CSharp.Articles.WorkbookScopedNamedRanges;
 using Aspose.Cells.Examples.CSharp.Articles.WorkingWithHTMLFormat;
 using Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting;
 using Aspose.Cells.Examples.CSharp.Articles.PageSetupAndPrintingOptions;
+using Aspose.Cells.Examples.CSharp.Introduction;
 using Aspose.Cells.Examples.CSharp.Articles.StylingAndDataFormatting;
 using Aspose.Cells.Examples.CSharp.Articles.PivotTablesAndPivotCharts;
 using Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine;
@@ -88,6 +89,14 @@ namespace Aspose.Cells.Examples.CSharp
             Console.WriteLine("=====================================================");
             // Uncomment the one you want to try out        
 
+            // =====================================================
+            // =====================================================
+            // Introduction
+            // =====================================================
+            // =====================================================
+            //FirstApplication.Run();
+            //OpenExistingFile.Run();
+            //CheckVersionNumber.Run();
 
             // =====================================================
             // =====================================================

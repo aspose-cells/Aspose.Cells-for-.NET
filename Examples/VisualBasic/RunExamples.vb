@@ -70,6 +70,7 @@ Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Security.Protecting
 Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Security.Unprotect
 Imports Aspose.Cells.Examples.VisualBasic.Articles.PivotTablesAndPivotCharts
 Imports Aspose.Cells.Examples.VisualBasic.Articles.UsingImageOrPrintOptions
+Imports Aspose.Cells.Examples.VisualBasic.Introduction
 
 
 Friend Class RunExamples
@@ -80,6 +81,14 @@ Friend Class RunExamples
 
         ' Uncomment the one you want to try out     
 
+        '' =====================================================
+        '' =====================================================
+        '' Introduction
+        '' =====================================================
+        '' =====================================================
+        'FirstApplication.Run()
+        'CheckVersionNumber.Run()
+        'OpenExistingFile.Run()
 
         '' =====================================================
         '' =====================================================
