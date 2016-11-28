@@ -6,24 +6,18 @@
 <asp:Content ID="Content1" runat="server" ContentPlaceHolderID="MainContent">
 <script type="text/javascript" src="../acw_client/jquery-1.7.2.min.js"></script>
     <table class="componentDescriptionTxt" border="0" cellpadding="0" cellspacing="0"
-        style="text-align: center; width: 100%; font-family: Arial; font-size: small;">
+        style="text-align: center; width: 100%; font-size: small;">
         <tbody>
             <tr>
-                <td style="width: 19; vertical-align: top;">
-                    <img alt="" height="41" src="/Common/images/heading_lft.jpg" width="19" />
-                </td>
                 <td class="demos-heading-bg" style="width: 100%;">
                     <h2 class="demos-heading-bg">
                        Refresh Charts - Aspose.Cells Grid Suite Examples
                     </h2>
                 </td>
-                <td style="width: 19; vertical-align: top;">
-                    <img alt="" height="41" src="/Common/images/heading_rt.jpg" width="19" />
-                </td>
             </tr>
         </tbody>
     </table>
-    <div style="text-align: left; font-family: Arial; font-size: small;" class="componentDescriptionTxt">
+    <div style="text-align: left; font-size: small;" class="componentDescriptionTxt">
         <p>
             This example loads an existing file into an empty WebWorksheet to demonstrate how GridWeb
             display various of charts.Try edit the cell value,and click the submit button,then the chart image will refresh.        

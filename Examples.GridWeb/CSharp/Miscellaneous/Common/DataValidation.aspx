@@ -24,24 +24,18 @@
     </script>
 
     <table class="componentDescriptionTxt" border="0" cellpadding="0" cellspacing="0"
-        style="text-align: center; width: 100%; font-family: Arial; font-size: small;">
+        style="text-align: center; width: 100%; font-size: small;">
         <tbody>
             <tr>
-                <td style="width: 19; vertical-align: top;">
-                    <img alt="" height="41" src="/Common/images/heading_lft.jpg" width="19" />
-                </td>
                 <td class="demos-heading-bg" style="width: 100%;">
                     <h2 class="demos-heading-bg">
                         Data Protection / Data Validation - Aspose.Cells Grid Suite Demos
                     </h2>
                 </td>
-                <td style="width: 19; vertical-align: top;">
-                    <img alt="" height="41" src="/Common/images/heading_rt.jpg" width="19" />
-                </td>
             </tr>
         </tbody>
     </table>
-    <div style="text-align: left; font-family: Arial; font-size: small;" class="componentDescriptionTxt">
+    <div style="text-align: left; font-size: small;" class="componentDescriptionTxt">
         <p>
             Click <b>Reload</b> to see how demo reloads data and applies validation rules so
             that invalid (not matching certain RegExp) values could not be entered in the GridWeb

@@ -859,6 +859,24 @@
     <Content Include="Grid\acw_client\undo.gif" />
     <Content Include="Grid\acw_client\updating.gif" />
     <Content Include="Grid\acw_client\x.gif" />
+    <Content Include="images\logo.png" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\bootstrap.vertical-tabs.css" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\bootstrap.vertical-tabs.min.css" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\demo.html" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\Gruntfile.js" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\screenshot-v.png" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\screenshot.png" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\src\tabs.css" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\src\tabs.sideways.css" />
+    <Content Include="js\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="js\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="js\bootstrap\css\bootstrap.css" />
+    <Content Include="js\bootstrap\css\bootstrap.min.css" />
+    <Content Include="js\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="js\bootstrap\js\bootstrap.js" />
+    <Content Include="js\bootstrap\js\bootstrap.min.js" />
+    <Content Include="js\bootstrap\js\npm.js" />
+    <Content Include="js\jquery-1.12.4.min.js" />
     <Content Include="Miscellaneous\Ajax\AjaxUpdating.aspx" />
     <Content Include="Miscellaneous\Common\ConditionalFormatting.aspx" />
     <Content Include="GridWebBasics\ApplyPresetStyle.aspx" />
@@ -876,6 +894,7 @@
     <Content Include="RowsAndColumns\MakeRowsColumnsReadOnly.aspx" />
     <Content Include="RowsAndColumns\ResizeRowsColumns.aspx" />
     <Content Include="RowsAndColumns\RestrictContextMenu.aspx" />
+    <Content Include="Styles\Site.css" />
     <Content Include="Worksheets\AccessNamedRanges.aspx" />
     <Content Include="Worksheets\AddHyperlinks.aspx" />
     <Content Include="Worksheets\ExportDataTable.aspx" />
@@ -1034,7 +1053,6 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ClassDiagram1.cd" />
     <None Include="Articles\dataset1.xsc">
       <DependentUpon>dataset1.xsd</DependentUpon>
     </None>
@@ -1094,6 +1112,19 @@
     <None Include="images\Thumbs.db" />
     <None Include="images\tree\Thumbs.db" />
     <None Include="Image\Thumbs.db" />
+    <Content Include="js\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="js\bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="js\bootstrap\css\bootstrap.css.map" />
+    <Content Include="js\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="js\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="js\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="js\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="js\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\.gitignore" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\bower.json" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\LICENSE" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\package.json" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\README.md" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />

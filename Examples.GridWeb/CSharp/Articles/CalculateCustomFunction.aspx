@@ -7,7 +7,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
         <table class="componentDescriptionTxt" border="0" cellpadding="0" cellspacing="0"
-        style="text-align: center; width: 100%; font-family: Arial; font-size: small;">
+        style="text-align: center; width: 100%; font-size: small;">
         <tbody>
             <tr>
                 <td class="demos-heading-bg" style="width: 100%;">
@@ -18,7 +18,7 @@
             </tr>
         </tbody>
     </table>
-    <div style="text-align: left; font-family: Arial; font-size: small;" class="componentDescriptionTxt">
+    <div style="text-align: left; font-size: small;" class="componentDescriptionTxt">
         <p>
            A custom function is added to cell B3, which multiples a given number by 2.
         </p>

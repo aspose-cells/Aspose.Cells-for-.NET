@@ -8,24 +8,18 @@
  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.js"></script> 
  
     <table class="componentDescriptionTxt" border="0" cellpadding="0" cellspacing="0"
-        style="text-align: center; width: 100%; font-family: Arial; font-size: small;">
+        style="text-align: center; width: 100%; font-size: small;">
         <tbody>
             <tr>
-                <td style="width: 19; vertical-align: top;">
-                    <img alt="" height="41" src="/Common/images/heading_lft.jpg" width="19" />
-                </td>
                 <td class="demos-heading-bg" style="width: 100%;">
                     <h2 class="demos-heading-bg">
                         Import/Export Excel File - Aspose.Cells Grid Suite Examples
                     </h2>
                 </td>
-                <td style="width: 19; vertical-align: top;">
-                    <img alt="" height="41" src="/Common/images/heading_rt.jpg" width="19" />
-                </td>
             </tr>
         </tbody>
     </table>
-    <div style="text-align: left; font-family: Arial; font-size: small;" class="componentDescriptionTxt">
+    <div style="text-align: left; font-size: small;" class="componentDescriptionTxt">
         <p>
             Click <b>Load</b> to see how data loads from excel file and click <b>Save</b>
             button to see how data may be sent to user in a form of Excel file.

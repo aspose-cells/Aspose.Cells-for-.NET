@@ -109,7 +109,7 @@ Namespace Worksheets
 
         Protected Sub GridWeb1_SaveCommand(sender As Object, e As EventArgs)
             ' Generates a temporary file name.
-            Dim filename As String = Session.SessionID + "_out_.xls"
+            Dim filename As String = Session.SessionID + "_out.xls"
 
             Dim path As String = TryCast(Me.Master, Site).GetDataDir() + "\Worksheets\"
 

@@ -53,10 +53,10 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
             GridWeb1.ActiveTabStyle.ForeColor = System.Drawing.Color.Yellow;
 
             // Saving style information to an XML file
-            GridWeb1.SaveCustomStyleFile((this.Master as Site).GetDataDir() + "\\GridWebBasics\\CustomPresetStyle_out_.xml");
+            GridWeb1.SaveCustomStyleFile((this.Master as Site).GetDataDir() + "\\GridWebBasics\\CustomPresetStyle_out.xml");
             // ExEnd:SaveCustomStyle
 
-            lblMessage.Text = "Custom style xml file saved successfully at Data/GridWebBasics/CustomPresetStyle_out_.xml";
+            lblMessage.Text = "Custom style xml file saved successfully at Data/GridWebBasics/CustomPresetStyle_out.xml";
         }
 
      

@@ -206,6 +206,7 @@
     <Content Include="images\designer2.JPG" />
     <Content Include="images\guizhou_closeall.gif" />
     <Content Include="images\guizhou_openall.gif" />
+    <Content Include="images\logo.png" />
     <Content Include="images\Nav2.gif" />
     <Content Include="images\submit.gif" />
     <Content Include="images\tablebacground001.gif" />
@@ -280,7 +281,24 @@
     <Content Include="Image\StackedLine.jpg" />
     <Content Include="Image\Surface3D.jpg" />
     <Content Include="Image\wellcomeasposecells.gif" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\bootstrap.vertical-tabs.css" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\bootstrap.vertical-tabs.min.css" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\demo.html" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\Gruntfile.js" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\screenshot-v.png" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\screenshot.png" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\src\tabs.css" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\src\tabs.sideways.css" />
+    <Content Include="js\bootstrap\css\bootstrap-theme.css" />
+    <Content Include="js\bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="js\bootstrap\css\bootstrap.css" />
+    <Content Include="js\bootstrap\css\bootstrap.min.css" />
+    <Content Include="js\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="js\bootstrap\js\bootstrap.js" />
+    <Content Include="js\bootstrap\js\bootstrap.min.js" />
+    <Content Include="js\bootstrap\js\npm.js" />
     <Content Include="js\dtree.js" />
+    <Content Include="js\jquery-1.12.4.min.js" />
     <Content Include="js\oo.js" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -316,6 +334,19 @@
     <Content Include="Worksheets\RemoveWorksheets.aspx" />
     <Content Include="Worksheets\RenameWorksheets.aspx" />
     <Content Include="Worksheets\SortData.aspx" />
+    <Content Include="js\bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="js\bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="js\bootstrap\css\bootstrap.css.map" />
+    <Content Include="js\bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="js\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="js\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="js\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="js\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\.gitignore" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\bower.json" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\LICENSE" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\package.json" />
+    <Content Include="js\bootstrap\bootstrap-vertical-tabs\README.md" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

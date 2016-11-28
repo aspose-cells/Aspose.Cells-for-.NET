@@ -1,7 +1,6 @@
 ﻿/* DEFAULTS
 ----------------------------------------------------------*/
 
-
 html, body, form#topform
 {
     background: #b6b7bc;
@@ -13,22 +12,6 @@ html, body, form#topform
     min-height: 99%;
     height: 100%;
     overflow:hidden;
-}
-
-a:link, a:visited
-{
-    color: #034af3;
-}
-
-a:hover
-{
-    color: #1d60ff;
-    text-decoration: none;
-}
-
-a:active
-{
-    color: #034af3;
 }
 
 p
@@ -135,7 +118,8 @@ first child of the left and right table columns */
 
 .footer
 {
-    color: #4e5766;
+    color: #FFF;
+    background-color:#131313;
     padding: 8px 0px 0px 0px;
     margin: 0px auto;
     text-align: center;

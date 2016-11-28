@@ -7,24 +7,18 @@
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
     <table class="componentDescriptionTxt" border="0" cellpadding="0" cellspacing="0"
-        style="text-align: center; width: 100%; font-family: Arial; font-size: small;">
+        style="text-align: center; width: 100%; font-size: small;">
         <tbody>
             <tr>
-                <td style="width: 19; vertical-align: top;">
-                    <img alt="" height="41" src="/Common/images/heading_lft.jpg" width="19" />
-                </td>
                 <td class="demos-heading-bg" style="width: 100%;">
                     <h2 class="demos-heading-bg">
                        Access Named Ranges - Aspose.Cells Grid Suite Examples
                     </h2>
                 </td>
-                <td style="width: 19; vertical-align: top;">
-                    <img alt="" height="41" src="/Common/images/heading_rt.jpg" width="19" />
-                </td>
             </tr>
         </tbody>
     </table>
-    <div style="text-align: left; font-family: Arial; font-size: small;" class="componentDescriptionTxt">
+    <div style="text-align: left; font-size: small;" class="componentDescriptionTxt">
         <p>
             Click <b>Add Named Ranges</b> to add a named range and see its usage.
         </p>

@@ -5,7 +5,7 @@
 <%@ Register TagPrefix="agw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
       <table class="componentDescriptionTxt" border="0" cellpadding="0" cellspacing="0"
-        style="text-align: center; width: 100%; font-family: Arial; font-size: small;">
+        style="text-align: center; width: 100%; font-size: small;">
         <tbody>
             <tr>
                 <td class="demos-heading-bg" style="width: 100%;">
@@ -16,7 +16,7 @@
             </tr>
         </tbody>
     </table>
-    <div style="text-align: left; font-family: Arial; font-size: small;" class="componentDescriptionTxt">
+    <div style="text-align: left; font-size: small;" class="componentDescriptionTxt">
         <p>
             In this example, an existing worksheet is read into <b>WebWorksheet</b> using <b>ImportExcelFile</b>
             method of GridWeb. A <b>Pivot Table</b> is created on imported data. Then you can

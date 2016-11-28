@@ -2,25 +2,19 @@
     MasterPageFile="Site.Master" Title="Aspose.Cells" %>
 
 <asp:Content ID="Content" ContentPlaceHolderID="MainContent" runat="server">
-    <table class="componentDescriptionTxt" border="0" cellpadding="0" cellspacing="0"
-        style="text-align: center; width: 100%; font-family: Arial; font-size: small;">
+    <table border="0" cellpadding="0" cellspacing="0"
+        style="text-align: center; width: 100%; font-size: small;">
         <tbody>
             <tr>
-                <td style="width: 19; vertical-align: top;">
-                    <img alt="" height="41" src="/Common/images/heading_lft.jpg" width="19" />
-                </td>
                 <td class="demos-heading-bg" style="width: 100%;">
                     <h2 class="demos-heading-bg">
                         Welcome to the Aspose.Cells GridWeb Examples
                     </h2>
                 </td>
-                <td style="width: 19; vertical-align: top;">
-                    <img alt="" height="41" src="/Common/images/heading_rt.jpg" width="19" />
-                </td>
             </tr>
         </tbody>
     </table>
-    <div style="text-align: left; font-family: Arial; font-size: small;" class="componentDescriptionTxt">
+    <div style="text-align: left; font-size: small;">
         <p>
             <strong>Note</strong>: The default active sheet is the sheet to declare Evaluation
             Statement as these demos run with an Evaluation License. Please switch to other
@@ -35,8 +29,8 @@
             least a Microsoft Excel Viewer. It can be <a href="http://office.microsoft.com/downloads/2000/xlviewer.aspx">
                 downloaded</a> for free.
         </p>
-        <ul class="genericList">
-            <li class="genericList">
+        <ul class="list-group">
+            <li class="list-group-item">
                 <p class="productTitle">
                     <a href="Examples.aspx">Aspose.Cells Grid Suite Examples</a>
                 </p>
