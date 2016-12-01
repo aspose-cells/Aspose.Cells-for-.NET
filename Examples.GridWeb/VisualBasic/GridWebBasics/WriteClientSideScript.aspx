@@ -21,39 +21,22 @@
     </script>
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
-
-    <table class="componentDescriptionTxt" border="0" cellpadding="0" cellspacing="0"
-        style="text-align: center; width: 100%; font-size: small;">
-        <tbody>
-            <tr>
-                <td class="demos-heading-bg" style="width: 100%;">
-                    <h2 class="demos-heading-bg">
-                        Write Client Side Script - Aspose.Cells Grid Suite Examples
-                    </h2>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="componentDescriptionTxt" style="text-align: center; width: 100%; font-size: small;">                            
+        <h2 class="demos-heading-bg">                                                                 
+            Write Client Side Script - Aspose.Cells Grid Suite Examples                    
+        </h2>
+    </div>
     <div style="text-align: left; font-size: small;" class="componentDescriptionTxt">
         <p>
             Date Validation is added on cell C1. Valid date format is yyyy-mm-dd. Try entering an invalid date format and click <b>Save</b> <br />
             to see how the client side validation error function executes.
             <br /><br />
             Try to submit the GridWeb using any command buttons and see client side submit function result.
-        </p>
-        <br />
-        <div>
-            <table>
-
-                <tr>
-                    <td>
-                        <acw:GridWeb ID="GridWeb1" runat="server" Width="700" Height="400 "
-                           OnSaveCommand="GridWeb1_SaveCommand" ShowLoading="false">
-                        </acw:GridWeb>
-                    </td>
-                </tr>
-            </table>
-            <br />
-        </div>
+        </p>    
+    </div>
+    <div style="text-align: center; font-size: small;" class="componentDescriptionTxt">                        
+        <acw:GridWeb ID="GridWeb1" runat="server" Width="700" Height="400"                           
+            OnSaveCommand="GridWeb1_SaveCommand" ShowLoading="false">                        
+        </acw:GridWeb>
     </div>
 </asp:Content>

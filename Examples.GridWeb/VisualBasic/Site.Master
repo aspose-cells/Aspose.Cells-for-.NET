@@ -36,7 +36,7 @@
 		.demoDivPanel{border: thin groove; text-align: left; width: 544px;}
 		.demoDivPanelCollapsed { display: none; }
 
-        .footer { background-color:#131313; color:#FFF; height:60px; padding-top: 10px; }
+        .footer { background-color:#131313; color:#FFF; height:60px; padding-top: 10px; text-align:center; font-size:14px}
     </style>
 
     <!-- JS for Cells Examples -->
@@ -48,64 +48,52 @@
     <link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css" />
     <script src="js/bootstrap/js/bootstrap.min.js"></script>
 </head>
-<body bgcolor="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"
-    style="left: 0px; top: 0px;">    
-     <div class="container">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">    
-                <div class="navbar-header">      
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">        
-                        <span class="sr-only">Toggle navigation</span>        
-                        <span class="icon-bar"></span>        
-                        <span class="icon-bar"></span>        
-                        <span class="icon-bar"></span>      
-                    </button>      
-                    <a class="navbar-brand" href="http://aspose.com/">
-                        <img src='<%=ResolveUrl("~/images/logo.png") %>' />                        
-                    </a>    
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
-                    <ul class="nav navbar-nav navbar-right">                                                        
-                        <li>
-                            <asp:HyperLink ID="lnkHome" runat="server" Text="Home" NavigateUrl="~/Default.aspx"></asp:HyperLink>
-                        </li>
-                        <li>
-                            <asp:HyperLink ID="lnkExamples" runat="server" Text="Examples" NavigateUrl="~/Examples.aspx"></asp:HyperLink>
-                        </li>
-                    </ul>    
-                </div><!-- /.navbar-collapse -->  
-            </div><!-- /.container-fluid -->
-        </nav>            
-        <form id="Form1" method="post" runat="server">              
+<body>        
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">    
+            <div class="navbar-header">      
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">        
+                    <span class="sr-only">Toggle navigation</span>        
+                    <span class="icon-bar"></span>        
+                    <span class="icon-bar"></span>        
+                    <span class="icon-bar"></span>      
+                </button>      
+                <a class="navbar-brand" href="http://aspose.com/">
+                    <img src='<%=ResolveUrl("~/images/logo.png") %>' />                        
+                </a>    
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">      
+                <ul class="nav navbar-nav navbar-right">                                                        
+                    <li>
+                        <asp:HyperLink ID="lnkHome" runat="server" Text="Home" NavigateUrl="~/Default.aspx"></asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink ID="lnkExamples" runat="server" Text="Examples" NavigateUrl="~/Examples.aspx"></asp:HyperLink>
+                    </li>
+                </ul>    
+            </div><!-- /.navbar-collapse -->  
+        </div><!-- /.container-fluid -->
+    </nav>            
+    <div class="container">
+        <form id="Form1" method="post" runat="server">
             <div class="col-lg-12 col-md-12 col-sm-12" style="padding:20px">                                        
                 <asp:ContentPlaceHolder ID="MainContent" runat="server" />                                    
             </div>                      
         </form>
-        <div class="clearfix"></div>
-        <div class="footer">  
-            <table cellspacing="0" cellpadding="0" width="100%" border="0">
-                <tbody>                
-                    <tr>                    
-                        <td valign="top" align="center">                        
-                            Should you have any questions, problems or comments, feel free to make a note                         
-                            <a href="https://www.aspose.com/community/forums/default.aspx">here</a>.                    
-                        </td>                
-                    </tr>
-                    <tr>                    
-                        <td>
-                        </td>
-                    </tr>                
-                    <tr>
-                        <td valign="top" align="center">                        
-                            <a href="http://www.aspose.com/corporate/contact/default.aspx">Contact Us</a> .                         
-                            <a href="http://www.aspose.com/corporate/legal/privacy-policy.aspx"> Privacy Policy</a> .                         
-                            <a href="http://www.aspose.com/corporate/legal/terms-of-use.aspx">Terms of Use</a>.                  
-                            <span class="TxtDate">&#169; Aspose 2001-2016. All Rights Reserved.</span>
-                        </td>                        
-                    </tr>
-                </tbody>
-            </table>                
-        </div>
+    </div>    
+    <div class="clearfix"></div>
+    <div class="footer">  
+        <p>                              
+            Should you have any questions, problems or comments, feel free to make a note                                                     
+            <a href="https://www.aspose.com/community/forums/default.aspx">here</a>.                    
+        </p>
+        <p>                           
+            <a href="http://www.aspose.com/corporate/contact/default.aspx">Contact Us</a> .                                                     
+            <a href="http://www.aspose.com/corporate/legal/privacy-policy.aspx"> Privacy Policy</a> .                        
+            <a href="http://www.aspose.com/corporate/legal/terms-of-use.aspx">Terms of Use</a>.                                              
+            <span class="TxtDate">&#169; Aspose 2001-2016. All Rights Reserved.</span>
+        </p>                                   
     </div>
 </body>
+
 </html>

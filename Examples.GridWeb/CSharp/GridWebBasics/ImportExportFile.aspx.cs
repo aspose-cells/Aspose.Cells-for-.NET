@@ -64,9 +64,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
             Response.WriteFile(path + filename);
             Response.End();      
             // ExEnd:SaveExcelFile
-        }
-
-      
+        }     
     }
 }
 

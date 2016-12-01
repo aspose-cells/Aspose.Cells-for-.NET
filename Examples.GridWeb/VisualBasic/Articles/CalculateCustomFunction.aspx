@@ -23,15 +23,9 @@
             A custom function is added to cell B3, which multiplies a given number by 2.
         </p>
         <br />
-        <div style="text-align: left">
-            <table>
-                <tr>
-                    <td>
-                        <acw:GridWeb ID="GridWeb1" runat="server">
-                        </acw:GridWeb>
-                    </td>
-                </tr>
-            </table>
+        <div style="text-align: center">                        
+            <acw:GridWeb ID="GridWeb1" runat="server">                        
+            </acw:GridWeb>                   
         </div>
     </div>
 </asp:Content>

@@ -4,18 +4,11 @@
     Title="Aspose.Cells.GridWeb Designer  - Aspose.Cells.GridWeb Examples" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
-    <table class="componentDescriptionTxt" border="0" cellpadding="0" cellspacing="0"
-        style="text-align: center; width: 100%; font-size: small;">
-        <tbody>
-            <tr>
-                <td class="demos-heading-bg" style="width: 100%;">
-                    <h2 class="demos-heading-bg">
-                        Aspose.Cells.GridWeb Designer - Aspose.Cells.GridWeb Examples
-                    </h2>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="componentDescriptionTxt" style="text-align: center; width: 100%; font-size: small;">                            
+        <h2 class="demos-heading-bg">                          
+            Aspose.Cells.GridWeb Designer - Aspose.Cells.GridWeb Examples                    
+        </h2>                
+    </div>
     <div style="text-align: left; font-size: small;" class="componentDescriptionTxt">
         <p>
             The Aspose.Cells.GridWeb is shipped with a built-in Aspose.Cells.GridWeb Designer. You may activate
