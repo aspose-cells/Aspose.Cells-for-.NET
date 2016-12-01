@@ -16,7 +16,6 @@ namespace Aspose.Cells.Examples.CSharp.Formatting
             // Creating a file stream containing the Excel file to be opened
             FileStream fstream = new FileStream(dataDir + "Book1.xlsx", FileMode.Open);
 
-            // Instantiating a Workbook object
             // Opening the Excel file through the file stream
             Workbook workbook = new Workbook(fstream);
 

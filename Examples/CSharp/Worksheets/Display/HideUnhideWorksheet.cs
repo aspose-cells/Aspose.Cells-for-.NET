@@ -15,8 +15,7 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets.Display
             // Creating a file stream containing the Excel file to be opened
             FileStream fstream = new FileStream(dataDir + "book1.xls", FileMode.Open);
 
-            // Instantiating a Workbook object
-            // Opening the Excel file through the file stream
+            // Instantiating a Workbook object with opening the Excel file through the file stream
             Workbook workbook = new Workbook(fstream);
 
             // Accessing the first worksheet in the Excel file
@@ -26,8 +25,7 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets.Display
             worksheet.IsVisible = false;
 
             // Shows first worksheet of the Excel file
-            // Worksheet.IsVisible = true;
-
+            //Worksheet.IsVisible = true;
 
             // Saving the modified Excel file in default (that is Excel 2003) format
             workbook.Save(dataDir + "output.out.xls");

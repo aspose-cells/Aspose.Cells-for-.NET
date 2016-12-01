@@ -9,7 +9,7 @@ Namespace Articles
             ' ExStart:1
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
-            ' Instantiating a Workbook object
+
             ' Open an Excel file
             Dim workbook As New Workbook(dataDir & "Book_SourceData.xlsx")
 

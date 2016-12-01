@@ -11,7 +11,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // ExStart:1
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            // Instantiating a Workbook object
+            
             // Open an Excel file
             Workbook workbook = new Workbook(dataDir+ "Book_SourceData.xlsx");
 

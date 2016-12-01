@@ -14,7 +14,6 @@ Namespace Data.Handling
             ' Creating a file stream containing the Excel file to be opened
             Dim fstream As New FileStream(dataDir & "book1.xls", FileMode.Open)
 
-            ' Instantiating a Workbook object
             ' Opening the Excel file through the file stream
             Dim workbook As New Workbook(fstream)
 

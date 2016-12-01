@@ -10,7 +10,6 @@ Namespace Articles.CreatePivotTablesPivotCharts
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-            ' Instantiating an Workbook object
             ' Opening the excel file
             Dim workbook As New Workbook(dataDir & "pivotTable_test.xlsx")
             ' Adding a new sheet

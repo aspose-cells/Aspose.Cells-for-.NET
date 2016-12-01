@@ -14,7 +14,6 @@ Namespace PivotTableExamples
             ' Creating a file stream containing the Excel file to be opened
             Dim fstream As New FileStream(InputPath, FileMode.Open)
 
-            ' Instantiating a Workbook object
             ' Opening the Excel file through the file stream
             Dim workbook As New Workbook(fstream)
 

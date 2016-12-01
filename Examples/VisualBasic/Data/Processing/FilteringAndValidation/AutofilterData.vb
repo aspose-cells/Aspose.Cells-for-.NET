@@ -10,7 +10,6 @@ Namespace Data.Processing.FilteringAndValidation
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-            ' Instantiating a Workbook object
             ' Opening the Excel file through the file stream
             Dim workbook As New Workbook(dataDir & "book1.xls")
 

@@ -12,7 +12,6 @@ namespace Aspose.Cells.Examples.CSharp.DrawingObjects.OLE
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            // Instantiating a Workbook object
             // Open the template file.
             Workbook workbook = new Workbook(dataDir + "book1.xls");
 

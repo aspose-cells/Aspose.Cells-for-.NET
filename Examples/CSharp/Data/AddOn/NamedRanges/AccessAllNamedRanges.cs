@@ -13,7 +13,6 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            // Instantiating a Workbook object
             // Opening the Excel file through the file stream
             Workbook workbook = new Workbook(dataDir + "book1.xls");
 

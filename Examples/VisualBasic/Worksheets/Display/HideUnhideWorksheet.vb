@@ -12,8 +12,7 @@ Namespace Worksheets.Display
             ' Creating a file stream containing the Excel file to be opened
             Dim fstream As New FileStream(dataDir & "book1.xls", FileMode.Open)
 
-            ' Instantiating a Workbook object
-            ' Opening the Excel file through the file stream
+            ' Instantiating a Workbook object with opening the Excel file through the file stream
             Dim workbook As New Workbook(fstream)
 
             ' Accessing the first worksheet in the Excel file
@@ -22,11 +21,8 @@ Namespace Worksheets.Display
             ' Hiding the first worksheet of the Excel file
             worksheet.IsVisible = False
 
-
             ' shows first worksheet of the Excel file
-            ' worksheet.IsVisible = True
-
-
+            'worksheet.IsVisible = True
 
             ' Saving the modified Excel file in default (that is Excel 2003) format
             workbook.Save(dataDir & "output.xls")

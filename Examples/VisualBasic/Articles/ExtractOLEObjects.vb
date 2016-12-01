@@ -11,7 +11,6 @@ Namespace Articles
             ' The path to the documents directory.
             Dim dataDir As String = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType)
 
-            ' Instantiating a Workbook object
             ' Open the template file.
             Dim workbook As Workbook = New Workbook(dataDir & "oleFile.xlsx")
 
