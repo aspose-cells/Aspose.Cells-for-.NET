@@ -71,6 +71,7 @@ Imports Aspose.Cells.Examples.VisualBasic.Worksheets.Security.Unprotect
 Imports Aspose.Cells.Examples.VisualBasic.Articles.PivotTablesAndPivotCharts
 Imports Aspose.Cells.Examples.VisualBasic.Articles.UsingImageOrPrintOptions
 Imports Aspose.Cells.Examples.VisualBasic.Introduction
+Imports Aspose.Cells.Examples.VisualBasic.KnowledgeBase.FAQs
 
 
 Friend Class RunExamples
@@ -89,6 +90,17 @@ Friend Class RunExamples
         'FirstApplication.Run()
         'CheckVersionNumber.Run()
         'OpenExistingFile.Run()
+
+        '' =====================================================
+        '' =====================================================
+        '' KnowledgeBase
+        '' =====================================================
+        '' =====================================================
+
+        '''' FAQs
+        '''' =====================================================
+        'FixOutOfMemoryException.Run()
+        'FileFormatInformation.Run()
 
         '' =====================================================
         '' =====================================================

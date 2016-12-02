@@ -77,6 +77,8 @@ using Aspose.Cells.Examples.CSharp.Worksheets.PageSetupFeatures;
 using Aspose.Cells.Examples.CSharp.Worksheets.Security.Protecting;
 using Aspose.Cells.Examples.CSharp.Worksheets.Security.Unprotect;
 using Aspose.Cells.Examples.CSharp.Articles.UsingImageOrPrintOptions;
+using Aspose.Cells.Examples.CSharp.KnowledgeBase.ComparingVSTOWithAspose;
+using Aspose.Cells.Examples.CSharp.KnowledgeBase.FAQs;
 
 
 namespace Aspose.Cells.Examples.CSharp
@@ -448,6 +450,15 @@ namespace Aspose.Cells.Examples.CSharp
             //// Benchmarking
             //// =====================================================
             //Creating50XLSFiles.Run();
+
+            //// ComparingVSTOWithAspose
+            //// =====================================================
+            //UsingAsposeCells.Run();
+
+            //// FAQs
+            //// =====================================================
+            //FixOutOfMemoryException.Run();
+            //FileFormatInformation.Run();
 
             // =====================================================
             // =====================================================

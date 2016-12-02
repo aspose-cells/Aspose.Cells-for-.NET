@@ -539,6 +539,8 @@
     <Compile Include="Introduction\CheckVersionNumber.vb" />
     <Compile Include="Introduction\FirstApplication.vb" />
     <Compile Include="Introduction\OpenExistingFile.vb" />
+    <Compile Include="KnowledgeBase\FAQs\FileFormatInformation.vb" />
+    <Compile Include="KnowledgeBase\FAQs\FixOutOfMemoryException.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
