@@ -52,6 +52,7 @@ using Aspose.Cells.Examples.CSharp.DrawingObjects.Pictures.PositioningPictures;
 using Aspose.Cells.Examples.CSharp.Files.Handling;
 using Aspose.Cells.Examples.CSharp.Files.Utility;
 using Aspose.Cells.Examples.CSharp.Formatting;
+using Aspose.Cells.Examples.CSharp.KnowledgeBase.Benchmarking;
 using Aspose.Cells.Examples.CSharp.Formatting.ApproachesToFormatData;
 using Aspose.Cells.Examples.CSharp.Formatting.Borders;
 using Aspose.Cells.Examples.CSharp.Formatting.ConfiguringAlignmentSettings;
@@ -209,6 +210,12 @@ namespace Aspose.Cells.Examples.CSharp
             //GetSmartMarkerNotifications.Run();
             //WriteUsingLightCellsAPI.Run();
             //ReadUsingLightCellsApi.Run();
+            //CustomLabelsSubtotals.Run();
+            //CustomTextForLabels.Run();
+            //AbsolutePathOfExternalDataSourceFile.Run();
+            //MINIFSAndMAXIFS.Run();
+            //TotalsInOtherLanguages.Run();
+            //UsingCellsFactory.Run();
 
             //// Apply-Conditional-Formatting
             //// =====================================================
@@ -431,6 +438,16 @@ namespace Aspose.Cells.Examples.CSharp
             //IndexToName.Run();
             //MergeFiles.Run();
             //NameToIndex.Run();
+
+            // =====================================================
+            // =====================================================
+            // KnowledgeBase
+            // =====================================================
+            // =====================================================
+
+            //// Benchmarking
+            //// =====================================================
+            //Creating50XLSFiles.Run();
 
             // =====================================================
             // =====================================================

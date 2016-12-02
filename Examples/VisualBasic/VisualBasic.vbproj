@@ -48,8 +48,8 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=16.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.16.10.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=16.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.16.11.0\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -80,6 +80,7 @@
     <Compile Include="AdvancedTopics\SmartMarkers\UsingAnonymousTypes.vb" />
     <Compile Include="AdvancedTopics\SmartMarkers\UsingNestedObjects.vb" />
     <Compile Include="AdvancedTopics\UsingCopyStyleAttribute.vb" />
+    <Compile Include="Articles\AbsolutePathOfExternalDataSourceFile.vb" />
     <Compile Include="Articles\AccessTextBoxName.vb" />
     <Compile Include="Articles\AddActiveXControls.vb" />
     <Compile Include="Articles\AddConditionalIconsSet.vb" />
@@ -91,6 +92,8 @@
     <Compile Include="Articles\CheckHiddenExternalLinks.vb" />
     <Compile Include="Articles\CopyRowsColumns\CopyingMultipleColumns.vb" />
     <Compile Include="Articles\CopyRowsColumns\CopyingMultipleRows.vb" />
+    <Compile Include="Articles\CustomLabelsSubtotals.vb" />
+    <Compile Include="Articles\CustomTextForLabels.vb" />
     <Compile Include="Articles\GetSmartMarkerNotifications.vb" />
     <Compile Include="Articles\GetWarningsForFontSubstitution.vb" />
     <Compile Include="Articles\GlowEffectOfShape.vb" />
@@ -244,6 +247,7 @@
     <Compile Include="Articles\ManagingWorkbooksWorksheets\SetAutoRecovery.vb" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\VerifyPasswordUsedToProtectWorksheets.vb" />
     <Compile Include="Articles\MergeUnmergeRangeOfCells.vb" />
+    <Compile Include="Articles\MINIFSAndMAXIFS.vb" />
     <Compile Include="Articles\ModifyExistingStyle\ModifyThroughSampleExcelFile.vb" />
     <Compile Include="Articles\ModifyExistingStyle\ModifyThroughStyleObject.vb" />
     <Compile Include="Articles\MoveRangeOfCells.vb" />
@@ -291,7 +295,9 @@
     <Compile Include="Articles\Shape3DEffect.vb" />
     <Compile Include="Articles\StylingAndDataFormatting\ApplyingSubtotalChangeSummaryDirection.vb" />
     <Compile Include="Articles\StylingAndDataFormatting\ExtractThemeData.vb" />
+    <Compile Include="Articles\TotalsInOtherLanguages.vb" />
     <Compile Include="Articles\UsingBuiltinStyles.vb" />
+    <Compile Include="Articles\UsingCellsFactory.vb" />
     <Compile Include="Articles\UsingImageOrPrintOptions\SpecificPagesToImage.vb" />
     <Compile Include="Articles\UsingImageOrPrintOptions\UseWorkbookRenderForImageConversion.vb" />
     <Compile Include="Articles\UsingImageOrPrintOptions\WorksheetToAnImage.vb" />

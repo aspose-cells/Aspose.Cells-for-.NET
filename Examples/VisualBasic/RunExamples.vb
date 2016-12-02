@@ -202,6 +202,12 @@ Friend Class RunExamples
         'GetSmartMarkerNotifications.Run()
         'WriteUsingLightCellsAPI.Run()
         'ReadUsingLightCellsApi.Run()
+        'CustomLabelsSubtotals.Run()
+        'CustomTextForLabels.Run()
+        'AbsolutePathOfExternalDataSourceFile.Run()
+        'MINIFSAndMAXIFS.Run()
+        'TotalsInOtherLanguages.Run()
+        'UsingCellsFactory.Run()
 
         '''' Apply-Conditional-Formatting
         '''' =====================================================

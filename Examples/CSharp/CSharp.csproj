@@ -37,8 +37,8 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=16.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.16.10.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=16.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.16.11.0\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Articles\AbsolutePathOfExternalDataSourceFile.cs" />
     <Compile Include="Articles\AccessTextBoxName.cs" />
     <Compile Include="Articles\AddingCustomPropertiesVisible.cs" />
     <Compile Include="Articles\AddActiveXControls.cs" />
@@ -67,16 +68,21 @@
     <Compile Include="AdvancedTopics\SmartMarkers\UsingAnonymousTypes.cs" />
     <Compile Include="AdvancedTopics\SmartMarkers\UsingNestedObjects.cs" />
     <Compile Include="AdvancedTopics\UsingCopyStyleAttribute.cs" />
+    <Compile Include="Articles\UsingCellsFactory.cs" />
     <Compile Include="Articles\CheckHiddenExternalLinks.cs" />
     <Compile Include="Articles\CopyRowsColumns\CopyingMultipleColumns.cs" />
     <Compile Include="Articles\CopyRowsColumns\CopyingMultipleRows.cs" />
+    <Compile Include="Articles\CustomLabelsSubtotals.cs" />
+    <Compile Include="Articles\CustomTextForLabels.cs" />
     <Compile Include="Articles\GlowEffectOfShape.cs" />
     <Compile Include="Articles\ManageChartsAndShapes\CopySparkline.cs" />
     <Compile Include="Articles\ManageChartsAndShapes\ResizeChartDataLabelToFit.cs" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\CopyMoveWorksheets.cs" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\GetApplicationVersion.cs" />
+    <Compile Include="Articles\MINIFSAndMAXIFS.cs" />
     <Compile Include="Articles\PageSetupAndPrintingOptions\SettingPageSetup.cs" />
     <Compile Include="Articles\PageSetupAndPrintingOptions\SettingPrintingOptions.cs" />
+    <Compile Include="Articles\TotalsInOtherLanguages.cs" />
     <Compile Include="Articles\UsingImageOrPrintOptions\SpecificPagesToImage.cs" />
     <Compile Include="Articles\LinkCellsToXmlMapElements.cs" />
     <Compile Include="Articles\ManageConditionalFormatting\AddColorScales.cs" />
@@ -523,6 +529,7 @@
     <Compile Include="Introduction\CheckVersionNumber.cs" />
     <Compile Include="Introduction\FirstApplication.cs" />
     <Compile Include="Introduction\OpenExistingFile.cs" />
+    <Compile Include="KnowledgeBase\Benchmarking\Creating50XLSFiles.cs" />
     <Compile Include="PivotTable\ConsolidationFunctions.cs" />
     <Compile Include="PivotTable\SpecifyCompatibility.cs" />
     <Compile Include="PivotTable\RefreshAndCalculateItems.cs" />
