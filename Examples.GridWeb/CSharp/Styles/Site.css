@@ -14,22 +14,6 @@ html, body, form#topform
     overflow:hidden;
 }
 
-a:link, a:visited
-{
-    color: #034af3;
-}
-
-a:hover
-{
-    color: #1d60ff;
-    text-decoration: none;
-}
-
-a:active
-{
-    color: #034af3;
-}
-
 p
 {
     margin-bottom: 10px;
@@ -134,7 +118,8 @@ first child of the left and right table columns */
 
 .footer
 {
-    color: #4e5766;
+    color: #FFF;
+    background-color:#131313;
     padding: 8px 0px 0px 0px;
     margin: 0px auto;
     text-align: center;

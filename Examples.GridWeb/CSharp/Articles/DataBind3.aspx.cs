@@ -55,7 +55,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.DataBind
         protected void GridWeb1_SaveCommand(object sender, System.EventArgs e)
         {
             // Generates a temporary file name.
-            string filename = Session.SessionID + "_out_.xls";
+            string filename = Session.SessionID + "_out.xls";
 
             string path = (this.Master as Site).GetDataDir() + "\\";
 

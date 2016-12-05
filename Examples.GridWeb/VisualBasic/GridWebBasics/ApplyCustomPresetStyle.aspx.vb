@@ -42,16 +42,16 @@ Namespace GridWebBasics
             GridWeb1.ActiveTabStyle.ForeColor = System.Drawing.Color.Yellow
 
             ' Saving style information to an XML file
-            GridWeb1.SaveCustomStyleFile(TryCast(Me.Master, Site).GetDataDir() + "\GridWebBasics\CustomPresetStyle_out_.xml")
+            GridWeb1.SaveCustomStyleFile(TryCast(Me.Master, Site).GetDataDir() + "\GridWebBasics\CustomPresetStyle_out.xml")
             ' ExEnd:SaveCustomStyle
 
-            lblMessage.Text = "Custom style xml file saved successfully at Data/GridWebBasics/CustomPresetStyle_out_.xml"
+            lblMessage.Text = "Custom style xml file saved successfully at Data/GridWebBasics/CustomPresetStyle_out.xml"
         End Sub
 
 
         Protected Sub GridWeb1_SaveCommand(sender As Object, e As EventArgs)
             ' Generates a temporary file name.
-            Dim filename As String = Session.SessionID + "_out_.xls"
+            Dim filename As String = Session.SessionID + "_out.xls"
 
             Dim path As String = TryCast(Me.Master, Site).GetDataDir() + "\GridWebBasics\"
 

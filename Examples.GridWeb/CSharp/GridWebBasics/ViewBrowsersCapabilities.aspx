@@ -4,27 +4,13 @@
     Title="Browsers Capabilities - Aspose.Cells.GridWeb Examples" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
-    <table class="componentDescriptionTxt" border="0" cellpadding="0" cellspacing="0"
-        style="text-align: center; width: 100%; font-family: Arial; font-size: small;">
-        <tbody>
-            <tr>
-                <td style="width: 19; vertical-align: top;">
-                    <img alt="" height="41" src="/Common/images/heading_lft.jpg" width="19" />
-                </td>
-                <td class="demos-heading-bg" style="width: 100%;">
-                    <h2 class="demos-heading-bg">
-                        Browsers Capabilities - Aspose.Cells.GridWeb Examples
-                    </h2>
-                </td>
-                <td style="width: 19; vertical-align: top;">
-                    <img alt="" height="41" src="/Common/images/heading_rt.jpg" width="19" />
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <div style="text-align: left; font-family: Arial; font-size: small;" class="componentDescriptionTxt">
-        <p>
-            <b>Browsers Capabilities Chart</b></p>
+    <div class="componentDescriptionTxt" style="text-align: center; width: 100%; font-size: small;">                            
+        <h2 class="demos-heading-bg">                                                                    
+            Browsers Capabilities - Aspose.Cells.GridWeb Examples                    
+        </h2>
+    </div>
+    <div style="text-align: left; font-size: small;" class="componentDescriptionTxt">
+        <p><b>Browsers Capabilities Chart</b></p>
         <table class="i1" x:str border="0" cellpadding="0" cellspacing="0" width="504" style="border-collapse: collapse;
             width: 378pt" id="table1">
             <colgroup>

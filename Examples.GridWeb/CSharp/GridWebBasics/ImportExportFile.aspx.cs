@@ -51,7 +51,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
         {
             // ExStart:SaveExcelFile
             // Generates a temporary file name.
-            string filename = Session.SessionID + "_out_.xls";
+            string filename = Session.SessionID + "_out.xls";
 
             string path = (this.Master as Site).GetDataDir() + "\\GridWebBasics\\";
 
@@ -64,9 +64,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
             Response.WriteFile(path + filename);
             Response.End();      
             // ExEnd:SaveExcelFile
-        }
-
-      
+        }     
     }
 }
 
