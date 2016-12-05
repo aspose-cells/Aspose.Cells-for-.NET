@@ -7,7 +7,6 @@
 ' </auto-generated>
 '------------------------------------------------------------------------------
 
-
 Option Strict On
 Option Explicit On
 
@@ -31,7 +30,7 @@ Namespace Worksheets
         '''Auto-generated field.
         '''To modify move field declaration from designer file to code-behind file.
         '''</remarks>
-        Protected WithEvents trResult As Global.System.Web.UI.HtmlControls.HtmlTableRow
+        Protected WithEvents trResult As Global.System.Web.UI.HtmlControls.HtmlGenericControl
 
         '''<summary>
         '''GridView1 control.

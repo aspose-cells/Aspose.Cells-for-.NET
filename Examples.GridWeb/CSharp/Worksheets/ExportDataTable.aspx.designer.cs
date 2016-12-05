@@ -28,7 +28,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Worksheets {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTableRow trResult;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl trResult;
         
         /// <summary>
         /// GridView1 control.

@@ -15,7 +15,7 @@ Namespace Articles
             End Sub
         End Class
 
-        Protected Sub Page_Load(sender As Object, e As EventArgs)
+        Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
             If Page.IsPostBack = False AndAlso GridWeb1.IsPostBack = False Then
                 ' Assign your own custom calculation engine to GridWeb
                 GridWeb1.CustomCalculationEngine = New GridWebCustomCalculationEngine()

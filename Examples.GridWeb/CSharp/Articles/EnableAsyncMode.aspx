@@ -3,40 +3,22 @@
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="HeaderContent" runat="server">
-</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-  <table class="componentDescriptionTxt" border="0" cellpadding="0" cellspacing="0"
-        style="text-align: center; width: 100%; font-size: small;">
-        <tbody>
-            <tr>
-                <td class="demos-heading-bg" style="width: 100%;">
-                    <h2 class="demos-heading-bg">
-                       Enable Async Mode - Aspose.Cells Grid Suite Examples
-                    </h2>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="componentDescriptionTxt" style="text-align: center; width: 100%; font-size: small;">                            
+        <h2 class="demos-heading-bg">                                                      
+            Enable Async Mode - Aspose.Cells Grid Suite Examples                    
+        </h2>
+    </div>
     <div style="text-align: left; font-size: small;" class="componentDescriptionTxt">
         <p>
             Click <b>Enable Async Mode</b> to set processing of GridWeb in asynchronous mode.
         </p>
-        <br />
-        <div>
-            <table>
-                <tr>
-                    <td>              
-                        <asp:Button ID="btnEnableAsync" runat="server" Text="Enable Async Mode" OnClick="btnEnableAsync_Click" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <acw:GridWeb ID="GridWeb1" runat="server">
-                        </acw:GridWeb>
-                    </td>
-                </tr>
-            </table>
-        </div>
+        <p>
+            <asp:Button ID="btnEnableAsync" runat="server" Text="Enable Async Mode" OnClick="btnEnableAsync_Click" />
+        </p>
+    </div>
+    <div style="text-align: center; font-size: small;" class="componentDescriptionTxt">                        
+        <acw:GridWeb ID="GridWeb1" runat="server">                        
+        </acw:GridWeb>
     </div>       
 </asp:Content>

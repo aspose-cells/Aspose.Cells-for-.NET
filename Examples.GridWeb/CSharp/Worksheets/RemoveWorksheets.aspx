@@ -3,42 +3,26 @@
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="HeaderContent" runat="server">
-</asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
-    <table class="componentDescriptionTxt" border="0" cellpadding="0" cellspacing="0"
-        style="text-align: center; width: 100%; font-size: small;">
-        <tbody>
-            <tr>
-                <td class="demos-heading-bg" style="width: 100%;">
-                    <h2 class="demos-heading-bg">
-                       Remove Worksheets - Aspose.Cells Grid Suite Examples
-                    </h2>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="componentDescriptionTxt" style="text-align: center; width: 100%; font-size: small;">                            
+        <h2 class="demos-heading-bg">                                             
+            Remove Worksheets - Aspose.Cells Grid Suite Examples                    
+        </h2>
+    </div>
     <div style="text-align: left; font-size: small;" class="componentDescriptionTxt">
-        <p>
-          Click <b>Remove Worksheets</b> to see how GridWeb's worksheets can be removed using index or name.
+        <p>          
+            Click <b>Remove Worksheets</b> to see how GridWeb's worksheets can be removed using index or name.
         </p>
-        <br />
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <asp:Label ID="Label1" runat="server"></asp:Label>
-                        <asp:Button ID="btnRemoveWorksheets" runat="server" Text="Remove Worksheets" OnClick="btnRemoveWorksheets_Click" />
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <acw:GridWeb ID="GridWeb1" runat="server" PresetStyle="Colorful2">
-                        </acw:GridWeb>
-                    </td>
-                </tr>
-            </table>
-            <br />
-        </div>
+        <p>                                
+            <asp:Label ID="Label1" runat="server"></asp:Label>                        
+            <asp:Button ID="btnRemoveWorksheets" runat="server" Text="Remove Worksheets" OnClick="btnRemoveWorksheets_Click" />    
+        </p>
+        <p>
+
+        </p>
+    </div>
+    <div style="text-align: center; font-size: small;" class="componentDescriptionTxt">                        
+        <acw:GridWeb ID="GridWeb1" runat="server" PresetStyle="Colorful2">                        
+        </acw:GridWeb>
     </div>
 </asp:Content>

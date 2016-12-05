@@ -113,7 +113,6 @@
   <ItemGroup>
     <Content Include="App_Data\Northwind.mdb" />
     <Content Include="Articles\CalculateCustomFunction.aspx" />
-    <Content Include="Articles\CellDataPercentageFormat.aspx" />
     <Content Include="Articles\EnableAsyncMode.aspx" />
     <Content Include="Articles\ReadCellsClientSide.aspx" />
     <Content Include="Articles\SetCellPercentageFormat.aspx" />
@@ -361,13 +360,6 @@
     <Compile Include="Articles\CalculateCustomFunction.aspx.vb">
       <DependentUpon>CalculateCustomFunction.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Articles\CellDataPercentageFormat.aspx.designer.vb">
-      <DependentUpon>CellDataPercentageFormat.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Articles\CellDataPercentageFormat.aspx.vb">
-      <DependentUpon>CellDataPercentageFormat.aspx</DependentUpon>
-      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Articles\EnableAsyncMode.aspx.designer.vb">
       <DependentUpon>EnableAsyncMode.aspx</DependentUpon>
