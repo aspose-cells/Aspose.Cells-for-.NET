@@ -72,6 +72,7 @@ Imports Aspose.Cells.Examples.VisualBasic.Articles.PivotTablesAndPivotCharts
 Imports Aspose.Cells.Examples.VisualBasic.Articles.UsingImageOrPrintOptions
 Imports Aspose.Cells.Examples.VisualBasic.Introduction
 Imports Aspose.Cells.Examples.VisualBasic.KnowledgeBase.FAQs
+Imports Aspose.Cells.Examples.VisualBasic.KnowledgeBase.Benchmarking
 
 
 Friend Class RunExamples
@@ -96,6 +97,15 @@ Friend Class RunExamples
         '' KnowledgeBase
         '' =====================================================
         '' =====================================================
+
+        '''' Benchmarking
+        '''' =====================================================
+        'Creating50XLSFiles.Run()
+        'CreateAnExcelFileFiveSheets.Run()
+        'CreateAnExcelFileSingleWorksheet.Run()
+        'LoadLargeExcelScenario1.Run()
+        'LoadLargeExcelScenario2.Run()
+        'LoadLargeExcelScenario3.Run()
 
         '''' FAQs
         '''' =====================================================

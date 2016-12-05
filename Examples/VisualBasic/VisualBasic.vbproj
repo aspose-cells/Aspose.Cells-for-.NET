@@ -539,6 +539,12 @@
     <Compile Include="Introduction\CheckVersionNumber.vb" />
     <Compile Include="Introduction\FirstApplication.vb" />
     <Compile Include="Introduction\OpenExistingFile.vb" />
+    <Compile Include="KnowledgeBase\Benchmarking\CreateAnExcelFileFiveSheets.vb" />
+    <Compile Include="KnowledgeBase\Benchmarking\CreateAnExcelFileSingleWorksheet.vb" />
+    <Compile Include="KnowledgeBase\Benchmarking\Creating50XLSFiles.vb" />
+    <Compile Include="KnowledgeBase\Benchmarking\LoadLargeExcelScenario1.vb" />
+    <Compile Include="KnowledgeBase\Benchmarking\LoadLargeExcelScenario2.vb" />
+    <Compile Include="KnowledgeBase\Benchmarking\LoadLargeExcelScenario3.vb" />
     <Compile Include="KnowledgeBase\FAQs\FileFormatInformation.vb" />
     <Compile Include="KnowledgeBase\FAQs\FixOutOfMemoryException.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />

@@ -533,7 +533,12 @@
     <Compile Include="Introduction\CheckVersionNumber.cs" />
     <Compile Include="Introduction\FirstApplication.cs" />
     <Compile Include="Introduction\OpenExistingFile.cs" />
+    <Compile Include="KnowledgeBase\Benchmarking\CreateAnExcelFileFiveSheets.cs" />
+    <Compile Include="KnowledgeBase\Benchmarking\CreateAnExcelFileSingleWorksheet.cs" />
     <Compile Include="KnowledgeBase\Benchmarking\Creating50XLSFiles.cs" />
+    <Compile Include="KnowledgeBase\Benchmarking\LoadLargeExcelScenario1.cs" />
+    <Compile Include="KnowledgeBase\Benchmarking\LoadLargeExcelScenario2.cs" />
+    <Compile Include="KnowledgeBase\Benchmarking\LoadLargeExcelScenario3.cs" />
     <Compile Include="KnowledgeBase\ComparingVSTOWithAspose\UsingAsposeCells.cs" />
     <Compile Include="KnowledgeBase\ComparingVSTOWithAspose\VSTOCode.cs" />
     <Compile Include="KnowledgeBase\FAQs\FileFormatInformation.cs" />

@@ -450,6 +450,11 @@ namespace Aspose.Cells.Examples.CSharp
             //// Benchmarking
             //// =====================================================
             //Creating50XLSFiles.Run();
+            //CreateAnExcelFileFiveSheets.Run();
+            //CreateAnExcelFileSingleWorksheet.Run();
+            //LoadLargeExcelScenario1.Run();
+            //LoadLargeExcelScenario2.Run();
+            //LoadLargeExcelScenario3.Run();
 
             //// ComparingVSTOWithAspose
             //// =====================================================
