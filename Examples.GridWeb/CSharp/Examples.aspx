@@ -46,7 +46,7 @@
 			            </div>
                     </li> 
                     <li class="list-group-item" title="Enter Cell Data of GridWeb Worksheet in Percentage Format">
-			            <p class="productTitle"><a href="Articles/CellDataPercentageFormat.aspx">Enter Cell Data of GridWeb Worksheet in Percentage Format</a></p>
+			            <p class="productTitle"><a href="Articles/SetCellPercentageFormat.aspx">Enter Cell Data of GridWeb Worksheet in Percentage Format</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                           <p class="componentDescriptionTxt">
@@ -71,8 +71,35 @@
 				            This example exhibits how to read GridWeb cell values from client side.
 			              </p>
 			            </div>
+                    </li>         
+					<li class="list-group-item" title="Enable Async Mode">
+			            <p class="productTitle"><a href="Articles/EnableAsyncMode.aspx">Enable Async Mode</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				            This example shows how to read enable Async mode in GridWeb.
+			              </p>
+			            </div>
+                    </li>         
+					<li class="list-group-item" title="Specify Session store path">
+			            <p class="productTitle"><a href="Articles/SpecifySessionStorePath.aspx">Specify Session store path</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				            This example shows how to specify session store path in GridWeb.
+			              </p>
+			            </div>
+                    </li>                              
+					<li class="list-group-item" title="Using Client Side Range Functions">
+			            <p class="productTitle"><a href="Articles/UsingClientSideRangeFunctions.aspx">Using Client Side Range Functions</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				            This example shows how to use client side range selection functions of GridWeb.
+			              </p>
+			            </div>
                     </li>
-                 </ul>
+                 </ul>            
             </div>      
             <div class="tab-pane" id="basics">                               
                 <ul class="list-group">  
@@ -728,33 +755,6 @@
 			            <div class="componentDescriptionTxt">
                             <p class="componentDescriptionTxt">
 				                This example customizes a PivotTable in GridWeb. 
-			                </p>
-			            </div>
-                    </li>
-                    <li class="list-group-item" title="Binding DataSet using Designer">
-			            <p class="productTitle"><a href="Miscellaneous/Databind/Databind1.aspx">Binding DataSet using Designer</a></p>
-			            <p class="componentDescriptionCaption">Description</p>
-		            	<div class="componentDescriptionTxt">
-                            <p class="componentDescriptionTxt">
-				                This example demonstrates Data Binding Process utilizing Worksheets Designer, data stored in a database table is fetched to DataSet Object and linked to the GridWeb Control. 
-			                </p>
-		            	</div>
-                    </li>
-                    <li class="list-group-item" title="Binding DataSet at Runtime">
-			            <p class="productTitle"><a href="Miscellaneous/Databind/Databind2.aspx">Binding DataSet at Runtime</a></p>
-			            <p class="componentDescriptionCaption">Description</p>
-			            <div class="componentDescriptionTxt">
-                            <p class="componentDescriptionTxt">
-				                This example shows Data Binding Process at runtime without using Worksheets Designer, data stored in a database table is fetched to DataSet Object and linked to the GridWeb Control.
-			                </p>
-			            </div>
-                    </li>
-                    <li class="list-group-item" title="Binding to a custom collection">
-			            <p class="productTitle"><a href="Miscellaneous/Databind/Databind3.aspx">Binding to a Custom Collection</a></p>
-			            <p class="componentDescriptionCaption">Description</p>
-			            <div class="componentDescriptionTxt">
-                            <p class="componentDescriptionTxt">
-			                	This example demonstrates Binding Expressions with a custom collection at runtime. 
 			                </p>
 			            </div>
                     </li>

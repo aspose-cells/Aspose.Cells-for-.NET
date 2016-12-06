@@ -41,7 +41,7 @@
 			            </div>
                     </li> 
                     <li class="list-group-item" title="Enter Cell Data of GridWeb Worksheet in Percentage Format">
-			            <p class="productTitle"><a href="Articles/CellDataPercentageFormat.aspx">Enter Cell Data of GridWeb Worksheet in Percentage Format</a></p>
+			            <p class="productTitle"><a href="Articles/SetCellPercentageFormat.aspx">Enter Cell Data of GridWeb Worksheet in Percentage Format</a></p>
 			            <p class="componentDescriptionCaption">Description</p>
 			            <div class="componentDescriptionTxt">
                           <p class="componentDescriptionTxt">
@@ -64,6 +64,33 @@
 			            <div class="componentDescriptionTxt">
                           <p class="componentDescriptionTxt">
 				            This example exhibits how to read GridWeb cell values from client side.
+			              </p>
+			            </div>
+                    </li>         
+					<li class="list-group-item" title="Enable Async Mode">
+			            <p class="productTitle"><a href="Articles/EnableAsyncMode.aspx">Enable Async Mode</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				            This example shows how to read enable Async mode in GridWeb.
+			              </p>
+			            </div>
+                    </li>         
+					<li class="list-group-item" title="Specify Session store path">
+			            <p class="productTitle"><a href="Articles/SpecifySessionStorePath.aspx">Specify Session store path</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				            This example shows how to specify session store path in GridWeb.
+			              </p>
+			            </div>
+                    </li>                              
+					<li class="list-group-item" title="Using Client Side Range Functions">
+			            <p class="productTitle"><a href="Articles/UsingClientSideRangeFunctions.aspx">Using Client Side Range Functions</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                          <p class="componentDescriptionTxt">
+				            This example shows how to use client side range selection functions of GridWeb.
 			              </p>
 			            </div>
                     </li>

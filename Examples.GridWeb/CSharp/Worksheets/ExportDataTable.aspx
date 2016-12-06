@@ -3,52 +3,33 @@
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="HeaderContent" runat="server">
-</asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
-    <table class="componentDescriptionTxt" border="0" cellpadding="0" cellspacing="0"
-        style="text-align: center; width: 100%; font-size: small;">
-        <tbody>
-            <tr>
-                <td class="demos-heading-bg" style="width: 100%;">
-                    <h2 class="demos-heading-bg">
-                       Export DataTable - Aspose.Cells Grid Suite Examples
-                    </h2>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="componentDescriptionTxt" style="text-align: center; width: 100%; font-size: small;">                            
+        <h2 class="demos-heading-bg">                              
+            Export DataTable - Aspose.Cells Grid Suite Examples                    
+        </h2>
+    </div>   
     <div style="text-align: left; font-size: small;" class="componentDescriptionTxt">
-        <p>
-          Click <b>Export DataTable</b> to see how GridWeb's worksheets can be exported to DataTable.
+        <p>          
+            Click <b>Export DataTable</b> to see how GridWeb's worksheets can be exported to DataTable.
         </p>
-        <br />
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <asp:Button ID="btnExportDataTable" runat="server" Text="Export DataTable" OnClick="btnExportDataTable_Click" />
-                    </td>
-                </tr>
-                <tr id="trResult" runat="server" visible="false">
-                    <td>
-                        <b>Export to Specific DataTable </b>
-                        <asp:GridView ID="GridView1" runat="server">
-                        </asp:GridView>
-                        <br />
-                        <b>Export to New DataTable </b>
-                        <asp:GridView ID="GridView2" runat="server">
-                        </asp:GridView>
-                    </td>                   
-                </tr>
-                <tr>
-                    <td>
-                        <acw:GridWeb ID="GridWeb1" runat="server" PresetStyle="Colorful2" MaxColumn="3">
-                        </acw:GridWeb>
-                    </td>
-                </tr>               
-            </table>
+        <p>
+            <asp:Button ID="btnExportDataTable" runat="server" Text="Export DataTable" OnClick="btnExportDataTable_Click" />
+        </p>
+    </div>
+    <div style="text-align: center; font-size: small;" class="componentDescriptionTxt">                
+        <p id="trResult" runat="server" visible="false">                    
+            <b>Export to Specific DataTable </b>
+            <asp:GridView ID="GridView1" runat="server">
+            </asp:GridView>
             <br />
-        </div>
+            <b>Export to New DataTable </b>
+            <asp:GridView ID="GridView2" runat="server">
+            </asp:GridView>                   
+        </p>
+        <p>                        
+            <acw:GridWeb ID="GridWeb1" runat="server" PresetStyle="Colorful2" MaxColumn="3">                        
+            </acw:GridWeb>       
+        </p>                         
     </div>
 </asp:Content>

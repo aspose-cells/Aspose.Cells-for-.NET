@@ -136,13 +136,6 @@
     <Compile Include="Articles\CalculateCustomFunction.aspx.designer.cs">
       <DependentUpon>CalculateCustomFunction.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Articles\CellDataPercentageFormat.aspx.cs">
-      <DependentUpon>CellDataPercentageFormat.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Articles\CellDataPercentageFormat.aspx.designer.cs">
-      <DependentUpon>CellDataPercentageFormat.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Articles\EnableAsyncMode.aspx.cs">
       <DependentUpon>EnableAsyncMode.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -779,7 +772,6 @@
     </Compile>
     <Content Include="App_Data\dbDatabase.mdb" />
     <Content Include="Articles\CalculateCustomFunction.aspx" />
-    <Content Include="Articles\CellDataPercentageFormat.aspx" />
     <Content Include="Articles\EnableAsyncMode.aspx" />
     <Content Include="Articles\ReadCellsClientSide.aspx" />
     <Content Include="Articles\SetCellPercentageFormat.aspx" />
