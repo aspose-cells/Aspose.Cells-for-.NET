@@ -23,7 +23,7 @@ Namespace KnowledgeBase.ComparingVSTOWithAspose
                     Next
                 Next
 
-                excelApp.Save(dataDir & Convert.ToString("TempBook1.xls"))
+                excelApp.Save(dataDir & Convert.ToString("TempBook1_out.xls"))
                 excelApp.Quit()
                 Dim [end] As DateTime = DateTime.Now
                 Dim time As TimeSpan = [end] - start

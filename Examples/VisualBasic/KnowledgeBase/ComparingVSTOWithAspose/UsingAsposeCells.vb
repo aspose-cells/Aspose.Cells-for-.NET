@@ -16,7 +16,7 @@
                 Next
             Next
 
-            workbook.Save(dataDir & Convert.ToString("TempBook1.xls"))
+            workbook.Save(dataDir & Convert.ToString("TempBook1_out.xls"))
             Dim [end] As DateTime = DateTime.Now
             Dim time As TimeSpan = [end] - start
             Console.WriteLine("File Created! " + "Time consumed (Seconds): " + time.TotalSeconds.ToString())

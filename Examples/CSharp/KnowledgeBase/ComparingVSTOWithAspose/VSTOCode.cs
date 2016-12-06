@@ -39,7 +39,7 @@ namespace Aspose.Cells.Examples.CSharp.KnowledgeBase.ComparingVSTOWithAspose
                     }
                 }
 
-                excelApp.Save(dataDir + @"TempBook1.xls");
+                excelApp.Save(dataDir + @"TempBook1_out.xls");
                 excelApp.Quit();
                 DateTime end = DateTime.Now;
                 TimeSpan time = end - start;

@@ -26,7 +26,7 @@ namespace Aspose.Cells.Examples.CSharp.KnowledgeBase.ComparingVSTOWithAspose
                 }
             }
 
-            workbook.Save(dataDir + @"TempBook1.xls");
+            workbook.Save(dataDir + @"TempBook1_out.xls");
             DateTime end = DateTime.Now;
             TimeSpan time = end - start;
             Console.WriteLine("File Created! " + "Time consumed (Seconds): " + time.TotalSeconds.ToString());
