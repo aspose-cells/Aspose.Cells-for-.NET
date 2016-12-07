@@ -1,0 +1,22 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+@using System.Web.Mvc
+@using System.Web.Mvc.Html
+
+<html>
+<head>
+    <title>
+        FAQ Index
+    </title>
+</head>
+<body>
+    <h2>Index</h2>
+
+    @using (Html.BeginForm("Index", "GridWebFAQ", FormMethod.Post, new { enctype = "multipart/form-data"}))
+    {
+        <p>Please select a file:</p>
+        <input type="file" id="file" name="file" />
+        <input type="hidden" id="mode" value="" name="mode" />
+        <input type="submit" value="Submit" id="submit" />
+    }
+</body>
+</html>

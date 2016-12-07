@@ -5,7 +5,7 @@
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{4E407FEA-434B-4678-8525-7649D85A1792}</ProjectGuid>
-    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ApplicationIcon>
@@ -102,9 +102,17 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Aspose.Cells, Version=16.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.16.11.0\lib\net40\Aspose.Cells.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Aspose.Cells.GridWeb, Version=16.11.0.0, Culture=neutral, PublicKeyToken=699ccf88ff76f11a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\Program Files (x86)\Aspose\Aspose.Cells for .NET\Bin\net2.0\Aspose.Cells.GridWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
@@ -123,12 +131,37 @@
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml">
       <Name>System.XML</Name>
     </Reference>
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Articles\CalculateCustomFunction.aspx.cs">
       <DependentUpon>CalculateCustomFunction.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -184,6 +217,13 @@
     </Compile>
     <Compile Include="Articles\UsingCommonSubmitButton.aspx.designer.cs">
       <DependentUpon>UsingCommonSubmitButton.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\AccessCellHyperlink.aspx.cs">
+      <DependentUpon>AccessCellHyperlink.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cells\AccessCellHyperlink.aspx.designer.cs">
+      <DependentUpon>AccessCellHyperlink.aspx</DependentUpon>
     </Compile>
     <Compile Include="Cells\AccessCells.aspx.cs">
       <DependentUpon>AccessCells.aspx</DependentUpon>
@@ -275,6 +315,7 @@
     <Compile Include="Articles\dataset1.Designer.cs">
       <DependentUpon>dataset1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\GridWebFAQController.cs" />
     <Compile Include="databind\Aspose.Cells.GridWeb.DemosCS.DataBind.dataset11.Designer.cs" />
     <Compile Include="databind\Aspose.Cells.GridWeb.DemosCS.DataBind.dataset2.cs">
       <DependentUpon>Aspose.Cells.GridWeb.DemosCS.DataBind.dataset2.xsd</DependentUpon>
@@ -290,6 +331,13 @@
     </Compile>
     <Compile Include="databind\DemoDatabase2.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="KnowledgeBase\FAQ\RunGridWebInIE.aspx.cs">
+      <DependentUpon>RunGridWebInIE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KnowledgeBase\FAQ\RunGridWebInIE.aspx.designer.cs">
+      <DependentUpon>RunGridWebInIE.aspx</DependentUpon>
     </Compile>
     <Compile Include="GridWebBasics\AddRemoveContextMenuItem.aspx.cs">
       <DependentUpon>AddRemoveContextMenuItem.aspx</DependentUpon>
@@ -339,6 +387,27 @@
     </Compile>
     <Compile Include="GridWebBasics\PrintGridWeb.aspx.designer.cs">
       <DependentUpon>PrintGridWeb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KnowledgeBase\KnownIssues\HTTPCompression.aspx.cs">
+      <DependentUpon>HTTPCompression.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KnowledgeBase\KnownIssues\HTTPCompression.aspx.designer.cs">
+      <DependentUpon>HTTPCompression.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KnowledgeBase\KnownIssues\HTTPSSSLIssue.aspx.cs">
+      <DependentUpon>HTTPSSSLIssue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KnowledgeBase\KnownIssues\HTTPSSSLIssue.aspx.designer.cs">
+      <DependentUpon>HTTPSSSLIssue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KnowledgeBase\KnownIssues\PivotTableIssue.aspx.cs">
+      <DependentUpon>PivotTableIssue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KnowledgeBase\KnownIssues\PivotTableIssue.aspx.designer.cs">
+      <DependentUpon>PivotTableIssue.aspx</DependentUpon>
     </Compile>
     <Compile Include="RowsAndColumns\CopyRowsColumns.aspx.cs">
       <DependentUpon>CopyRowsColumns.aspx</DependentUpon>
@@ -779,6 +848,7 @@
     <Content Include="Articles\SpecifySessionStorePath.aspx" />
     <Content Include="Articles\UsingClientSideRangeFunctions.aspx" />
     <Content Include="Articles\UsingCommonSubmitButton.aspx" />
+    <Content Include="Cells\AccessCellHyperlink.aspx" />
     <Content Include="Cells\AccessCells.aspx" />
     <Content Include="Cells\AddCustomValidation.aspx" />
     <Content Include="Cells\AddDataValidation.aspx" />
@@ -794,6 +864,7 @@
     <Content Include="Data\GridWebBasics\CustomStyle1.xml" />
     <Content Include="Data\GridWebBasics\CustomStyle2.xml" />
     <Content Include="Examples.aspx" />
+    <Content Include="KnowledgeBase\FAQ\RunGridWebInIE.aspx" />
     <Content Include="GridWebBasics\ViewBrowsersCapabilities.aspx" />
     <Content Include="GridWebBasics\AboutGridWebDesigner.aspx" />
     <Content Include="GridWebBasics\AboutCustomCommandButtonsDesigner.aspx" />
@@ -869,6 +940,9 @@
     <Content Include="js\bootstrap\js\bootstrap.min.js" />
     <Content Include="js\bootstrap\js\npm.js" />
     <Content Include="js\jquery-1.12.4.min.js" />
+    <Content Include="KnowledgeBase\KnownIssues\HTTPCompression.aspx" />
+    <Content Include="KnowledgeBase\KnownIssues\HTTPSSSLIssue.aspx" />
+    <Content Include="KnowledgeBase\KnownIssues\PivotTableIssue.aspx" />
     <Content Include="Miscellaneous\Ajax\AjaxUpdating.aspx" />
     <Content Include="Miscellaneous\Common\ConditionalFormatting.aspx" />
     <Content Include="GridWebBasics\ApplyPresetStyle.aspx" />
@@ -1117,6 +1191,8 @@
     <Content Include="js\bootstrap\bootstrap-vertical-tabs\LICENSE" />
     <Content Include="js\bootstrap\bootstrap-vertical-tabs\package.json" />
     <Content Include="js\bootstrap\bootstrap-vertical-tabs\README.md" />
+    <Content Include="packages.config" />
+    <Content Include="Views\GridWebFAQ\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
