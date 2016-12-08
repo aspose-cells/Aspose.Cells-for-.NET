@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.ComponentModel;
 using System.Web;
+using System.Web.Routing;
 using System.Web.SessionState;
 
 namespace Aspose.Cells.GridWeb.Examples.CSharp 
@@ -18,7 +19,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp
 		
 		protected void Application_Start(Object sender, EventArgs e)
 		{
-
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
 		}
  
 		protected void Session_Start(Object sender, EventArgs e)
