@@ -24,7 +24,6 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.KnowledgeBase.KnownIssues
             byte[] data1 = new byte[fs1.Length];
             fs1.Read(data1, 0, data1.Length);
 
-
             this.Response.ContentType = "application/xls";
             Response.AddHeader("content-disposition", "inline;  filename=book1.xls");
             Response.BinaryWrite(data1);

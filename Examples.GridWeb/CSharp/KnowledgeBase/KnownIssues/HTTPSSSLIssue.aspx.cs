@@ -31,7 +31,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.KnowledgeBase.KnownIssues
             Response.AddHeader("content-disposition", "attachment;  filename=book1.xls");
 
             // This is same as OpenInBrowser option
-            //response.AddHeader( "content-disposition","inline;  filename=book1.xls");
+            // response.AddHeader("content-disposition", "inline;  filename=book1.xls");
 
             Response.BinaryWrite(stream.ToArray());
             // ExEnd:SSLIssue

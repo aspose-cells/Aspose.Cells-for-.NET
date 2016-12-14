@@ -17,6 +17,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Controllers
             return View();
         }
 
+        // ExStart:FixStackOverflowException
         private HttpPostedFileBase postedFile;
 
         [HttpPost]
@@ -37,5 +38,6 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Controllers
                 wbkMain.CalculateFormula();
             }
         }
+        // ExEnd:FixStackOverflowException
     }
 }
