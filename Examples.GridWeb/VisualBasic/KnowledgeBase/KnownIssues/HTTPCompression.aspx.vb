@@ -16,7 +16,6 @@ Namespace KnowledgeBase.KnownIssues
             Dim data1() As Byte = New Byte(fs1.Length) {}
             fs1.Read(data1, 0, data1.Length)
 
-
             Me.Response.ContentType = "application/xls"
             Response.AddHeader("content-disposition", "inline;  filename=book1.xls")
             Response.BinaryWrite(data1)
