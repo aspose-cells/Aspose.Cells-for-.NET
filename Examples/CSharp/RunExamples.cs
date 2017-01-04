@@ -79,7 +79,7 @@ using Aspose.Cells.Examples.CSharp.Worksheets.Security.Unprotect;
 using Aspose.Cells.Examples.CSharp.Articles.UsingImageOrPrintOptions;
 using Aspose.Cells.Examples.CSharp.KnowledgeBase.ComparingVSTOWithAspose;
 using Aspose.Cells.Examples.CSharp.KnowledgeBase.FAQs;
-
+using Aspose.Cells.Examples.CSharp.Articles.FilteringObjectsAtLoadTime;
 
 namespace Aspose.Cells.Examples.CSharp
 {
@@ -136,6 +136,7 @@ namespace Aspose.Cells.Examples.CSharp
             //ExportRangeofCells.Run();
             //ExportVisibleRowsData.Run();
             //ExtractImagesFromWorksheets.Run();
+            //ExportXmlMapFromWorkbook.Run();
             //FindCellsWithSpecificStyle.Run();
             //FindIfCellValueStartsWithSingleQuote.Run();
             //FindQueryTablesAndListObjectsOfExternalDataConnections.Run();
@@ -169,6 +170,7 @@ namespace Aspose.Cells.Examples.CSharp
             //SetBackgroundPicture.Run();
             //SetPixelFormatRenderedImage.Run();
             //SettingStrongEncryptionType.Run();
+            //SettingScaleCropAndLinksUpToDateProperties.Run();
             //SetWorksheetTabColor.Run();
             //ShowFormulasInsteadOfValues.Run();
             //SortData.Run();
@@ -182,6 +184,8 @@ namespace Aspose.Cells.Examples.CSharp
             //SettingTextEffectsShadowOfShapeOrTextbox.Run();
             //ImplementDirectCalculationOfCustomFunction.Run();
             //FilterDataWhileLoadingWorkbook.Run(); 
+            //FilteringObjects.Run();
+            //CustomFilteringPerWorksheet.Run();
             //AddActiveXControls.Run();
             //ChangeTextBoxOrShareCharacterSpacing.Run();
             //LoadExcelFileWithoutChart.Run();

@@ -73,7 +73,7 @@ Imports Aspose.Cells.Examples.VisualBasic.Articles.UsingImageOrPrintOptions
 Imports Aspose.Cells.Examples.VisualBasic.Introduction
 Imports Aspose.Cells.Examples.VisualBasic.KnowledgeBase.FAQs
 Imports Aspose.Cells.Examples.VisualBasic.KnowledgeBase.Benchmarking
-
+Imports Aspose.Cells.Examples.VisualBasic.Aspose.Cells.Examples.CSharp.Articles.FilteringObjectsAtLoadTime
 
 Friend Class RunExamples
     <STAThread()> _
@@ -230,6 +230,10 @@ Friend Class RunExamples
         'MINIFSAndMAXIFS.Run()
         'TotalsInOtherLanguages.Run()
         'UsingCellsFactory.Run()
+        'ExportXmlMapFromWorkbook.Run()
+        'CustomFilteringPerWorksheet.Run()
+        'FilteringObjects.Run()
+        'SettingScaleCropAndLinksUpToDateProperties.Run()
 
         '''' Apply-Conditional-Formatting
         '''' =====================================================
