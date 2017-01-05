@@ -1,4 +1,4 @@
-﻿Namespace Aspose.Cells.Examples.CSharp.Articles.FilteringObjectsAtLoadTime
+﻿Namespace Articles.FilteringObjectsAtLoadTime
     Friend Class FilteringObjects
         Public Shared Sub Run()
             ' ExStart:1

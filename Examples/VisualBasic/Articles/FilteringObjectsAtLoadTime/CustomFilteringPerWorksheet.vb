@@ -1,7 +1,7 @@
 ﻿Imports Aspose.Cells.Rendering
 Imports System.Drawing.Imaging
 
-Namespace Aspose.Cells.Examples.CSharp.Articles.FilteringObjectsAtLoadTime
+Namespace Articles.FilteringObjectsAtLoadTime
     ' ExStart:CustomLoadFilter
     Public Class CustomLoadFilter
         Inherits LoadFilter
