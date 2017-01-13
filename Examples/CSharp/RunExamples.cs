@@ -486,9 +486,9 @@ namespace Aspose.Cells.Examples.CSharp
 
             //// InsertingControlsintoCharts
             //// =====================================================
-            // Charts.InsertingControlsintoCharts.AddingLabelControl.Run();
+            //Charts.InsertingControlsintoCharts.AddingLabelControl.Run();
             //AddingPictureToChart.Run();
-            // Charts.InsertingControlsintoCharts.AddingTextBoxControl.Run();
+            //Charts.InsertingControlsintoCharts.AddingTextBoxControl.Run();
 
             //// ManipulateChart
             //// =====================================================
@@ -504,7 +504,7 @@ namespace Aspose.Cells.Examples.CSharp
             //// SettingChartsAppearance
             //// =====================================================
             //ApplyingThemes.Run();
-            // ChangingMajorGridlines.Run();
+            //ChangingMajorGridlines.Run();
             //MajorGridlines.Run();
             //SettingChartArea.Run();
             //SettingChartLines.Run();

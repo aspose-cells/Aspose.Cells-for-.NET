@@ -108,15 +108,8 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             // Instantiate LoadOptions specified by the LoadFormat
             LoadOptions loadOptions7 = new LoadOptions(LoadFormat.Xlsx);
 
-            // Set the LoadDataOption
-            LoadDataOption dataOption = new LoadDataOption();
-            // Specify the sheet(s) in the template file to be loaded
-            dataOption.SheetNames = new string[] { "Sheet2" };
-            dataOption.ImportFormula = true;
-            // Only data and formatting should be loaded.
-            loadOptions7.LoadDataAndFormatting = true;
-            // Specify the LoadDataOption
-            loadOptions7.LoadDataOptions = dataOption;
+            // Load only cell data, formulas & formatting
+            loadOptions7.LoadFilter = new LoadFilter(LoadDataFilterOptions.CellData);
 
             // Create a Workbook object and opening the file from its path
             Workbook wb = new Workbook(dataDir + "Book1.xlsx", loadOptions7);

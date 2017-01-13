@@ -25,11 +25,9 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             createWorkbook.Save(samplePath);
 
             // Load the sample workbook
-            LoadDataOption loadDataOption = new LoadDataOption();
-            loadDataOption.OnlyVisibleWorksheet = true;
+           
             LoadOptions loadOptions = new LoadOptions();
-            loadOptions.LoadDataAndFormatting = true;
-            loadOptions.LoadDataOptions = loadDataOption;
+            loadOptions.LoadFilter = new CustomLoad();
 
             Workbook loadWorkbook = new Workbook(samplePath, loadOptions);
             Console.WriteLine("Sheet1: A1: {0}", loadWorkbook.Worksheets["Sheet1"].Cells["A1"].Value);
@@ -38,4 +36,22 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             // ExEnd:1
         }
     }
+    // ExStart:2
+    class CustomLoad : LoadFilter
+    {
+        public override void StartSheet(Worksheet sheet)
+        {
+            if (sheet.IsVisible)
+            {
+                // Load everything from visible worksheet
+                this.m_LoadDataFilterOptions = LoadDataFilterOptions.All;
+            }
+            else
+            {
+                // Load nothing
+                this.m_LoadDataFilterOptions = LoadDataFilterOptions.None;
+            }
+        }
+    }
+    // ExEnd:2
 }

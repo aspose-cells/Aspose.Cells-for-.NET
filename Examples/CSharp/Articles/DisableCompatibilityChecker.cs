@@ -15,7 +15,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             Workbook workbook = new Workbook(dataDir+ "sample.xlsx");
 
             // Disable the compatibility checker
-            workbook.Settings.CheckComptiliblity = false;
+            workbook.Settings.CheckCompatibility = false;
 
             dataDir = dataDir+ "Output_BK_CompCheck.out.xlsx";
             // Saving the Excel file

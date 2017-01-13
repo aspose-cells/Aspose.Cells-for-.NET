@@ -14,11 +14,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Specify the load options and filter the data
             // We do not want to load charts
-            LoadOptions options = new LoadOptions();
-            options.LoadDataFilterOptions = LoadDataFilterOptions.All & ~LoadDataFilterOptions.Chart;
+            LoadOptions loadOptions = new LoadOptions();
+            loadOptions.LoadFilter = new LoadFilter(LoadDataFilterOptions.All & ~LoadDataFilterOptions.Chart);
 
             // Load the workbook with specified load options
-            Workbook workbook = new Workbook(dataDir + "sample.xlsx", options);
+            Workbook workbook = new Workbook(dataDir + "sample.xlsx", loadOptions);
 
             // Save the workbook in output format
             workbook.Save(dataDir + "LoadExcelFileWithoutChart_out.pdf", SaveFormat.Pdf);

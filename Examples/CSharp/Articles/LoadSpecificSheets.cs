@@ -14,14 +14,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // Define a new Workbook.
             Workbook workbook;
 
-            // Set the load data option with selected sheet(s).
-            LoadDataOption dataOption = new LoadDataOption();
-            dataOption.SheetNames = new string[] { "Sheet2" };
-
             // Load the workbook with the spcified worksheet only.
             LoadOptions loadOptions = new LoadOptions(LoadFormat.Xlsx);
-            loadOptions.LoadDataOptions = dataOption;
-            loadOptions.LoadDataAndFormatting = true;
+            loadOptions.LoadFilter = new CustomLoad();
 
             // Creat the workbook.
             workbook = new Workbook(dataDir+ "TestData.xlsx", loadOptions);
@@ -33,5 +28,23 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // ExEnd:1
             
         }
+        // ExStart:2
+        class CustomLoad : LoadFilter
+        {
+            public override void StartSheet(Worksheet sheet)
+            {
+                if (sheet.Name == "Sheet2")
+                {
+                    // Load everything from worksheet "Sheet2"
+                    this.m_LoadDataFilterOptions = LoadDataFilterOptions.All;
+                }
+                else
+                {
+                    // Load nothing
+                    this.m_LoadDataFilterOptions = LoadDataFilterOptions.None;
+                }
+            }
+        }
+        // ExEnd:2
     }
 }

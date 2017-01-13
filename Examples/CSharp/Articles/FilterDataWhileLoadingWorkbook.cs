@@ -13,14 +13,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             // Set the load options, we only want to load shapes and do not want to load data
-            LoadOptions opts = new LoadOptions(LoadFormat.Xlsx);
-            opts.LoadDataFilterOptions = LoadDataFilterOptions.Shape;
+            LoadOptions loadOptions = new LoadOptions(LoadFormat.Xlsx);
+            loadOptions.LoadFilter = new LoadFilter(LoadDataFilterOptions.Shape);
 
             // Create workbook object from sample excel file using load options
-            Workbook wb = new Workbook( dataDir + "sample.xlsx", opts);
+            Workbook book = new Workbook( dataDir + "sample.xlsx", loadOptions);
 
-            //Save the output in pdf format
-            wb.Save(dataDir + "FilterDataWhileLoadingWorkbook_out.pdf", SaveFormat.Pdf);
+            // Save the output in pdf format
+            book.Save(dataDir + "FilterDataWhileLoadingWorkbook_out.pdf", SaveFormat.Pdf);
             // ExEnd:1         
             
         }
