@@ -11,7 +11,7 @@ Namespace Articles
             ' Specify the load options and filter the data
             ' We do not want to load charts
             Dim options As New LoadOptions()
-            options.LoadDataFilterOptions = LoadDataFilterOptions.All And Not LoadDataFilterOptions.Chart
+            options.LoadFilter = New LoadFilter(LoadDataFilterOptions.All And Not LoadDataFilterOptions.Chart)
 
             ' Load the workbook with specified load options
             Dim workbook As New Workbook(dataDir & Convert.ToString("sample.xlsx"), options)

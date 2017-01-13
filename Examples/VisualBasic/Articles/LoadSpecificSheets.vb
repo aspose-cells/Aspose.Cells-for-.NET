@@ -12,14 +12,9 @@ Namespace Articles
             ' Define a new Workbook.
             Dim workbook As Workbook
 
-            ' Set the load data option with selected sheet(s).
-            Dim dataOption As New LoadDataOption()
-            dataOption.SheetNames = New String() {"Sheet2"}
-
             ' Load the workbook with the spcified worksheet only.
             Dim loadOptions As New LoadOptions(LoadFormat.Xlsx)
-            loadOptions.LoadDataOptions = dataOption
-            loadOptions.LoadDataAndFormatting = True
+            loadOptions.LoadFilter = New CustomLoad()
 
             ' Creat the workbook.
             workbook = New Workbook(dataDir & "TestData.xlsx", loadOptions)
@@ -27,8 +22,24 @@ Namespace Articles
             ' Perform your desired task.
 
             ' Save the workbook.
-            workbook.Save(dataDir & "output.xlsx")
+            workbook.Save(dataDir & "outputFile.out.xlsx")
             ' ExEnd:1
+
         End Sub
     End Class
+    ' ExStart:2
+    Class CustomLoad
+        Inherits LoadFilter
+        Public Overrides Sub StartSheet(ByVal sheet As Worksheet)
+            If sheet.Name = "Sheet2" Then
+                ' Load everything from worksheet "Sheet2"
+                Me.m_LoadDataFilterOptions = LoadDataFilterOptions.All
+            Else
+                ' Load nothing
+                Me.m_LoadDataFilterOptions = LoadDataFilterOptions.None
+            End If
+        End Sub
+    End Class
+    ' ExEnd:2
+
 End Namespace

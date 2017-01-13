@@ -73,7 +73,7 @@ Imports Aspose.Cells.Examples.VisualBasic.Articles.UsingImageOrPrintOptions
 Imports Aspose.Cells.Examples.VisualBasic.Introduction
 Imports Aspose.Cells.Examples.VisualBasic.KnowledgeBase.FAQs
 Imports Aspose.Cells.Examples.VisualBasic.KnowledgeBase.Benchmarking
-Imports Aspose.Cells.Examples.VisualBasic.Aspose.Cells.Examples.CSharp.Articles.FilteringObjectsAtLoadTime
+Imports Aspose.Cells.Examples.VisualBasic.Articles.FilteringObjectsAtLoadTime
 
 Friend Class RunExamples
     <STAThread()> _

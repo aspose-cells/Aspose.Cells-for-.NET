@@ -13,7 +13,7 @@ Namespace Articles
             Dim workbook As New Workbook(dataDir & "sample.xlsx")
 
             ' Disable the compatibility checker
-            workbook.Settings.CheckComptiliblity = False
+            workbook.Settings.CheckCompatibility = False
 
             ' Saving the Excel file
             workbook.Save(dataDir & "output.xlsx")

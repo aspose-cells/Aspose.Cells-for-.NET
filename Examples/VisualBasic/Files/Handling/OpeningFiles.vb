@@ -93,15 +93,8 @@ Namespace Files.Handling
             ' Instantiate LoadOptions specified by the LoadFormat
             Dim loadOptions7 As New LoadOptions(LoadFormat.Xlsx)
 
-            ' Set the LoadDataOption
-            Dim dataOption As New LoadDataOption()
-            ' Specify the sheet(s) in the template file to be loaded
-            dataOption.SheetNames = New String() {"Sheet2"}
-            dataOption.ImportFormula = True
-            ' Only data and formatting should be loaded.
-            loadOptions7.LoadDataAndFormatting = True
-            ' Specify the LoadDataOption
-            loadOptions7.LoadDataOptions = dataOption
+            ' Load only cell data, formulas & formatting
+            loadOptions7.LoadFilter = New LoadFilter(LoadDataFilterOptions.CellData)
 
             ' Create a Workbook object and opening the file from its path
             Dim wb As New Workbook(dataDir & "Book1.xlsx", loadOptions7)

@@ -22,11 +22,9 @@ Namespace Files.Handling
             createWorkbook.Save(samplePath)
 
             ' Load the sample workbook
-            Dim loadDataOption As New LoadDataOption()
-            loadDataOption.OnlyVisibleWorksheet = True
+
             Dim loadOptions As New LoadOptions()
-            loadOptions.LoadDataAndFormatting = True
-            loadOptions.LoadDataOptions = loadDataOption
+            loadOptions.LoadFilter = New CustomLoad()
 
             Dim loadWorkbook As New Workbook(samplePath, loadOptions)
             Console.WriteLine("Sheet1: A1: {0}", loadWorkbook.Worksheets("Sheet1").Cells("A1").Value)
@@ -35,4 +33,18 @@ Namespace Files.Handling
             ' ExEnd:1
         End Sub
     End Class
+    ' ExStart:2
+    Friend Class CustomLoad
+        Inherits LoadFilter
+        Public Overrides Sub StartSheet(ByVal sheet As Worksheet)
+            If sheet.IsVisible Then
+                ' Load everything from visible worksheet
+                Me.m_LoadDataFilterOptions = LoadDataFilterOptions.All
+            Else
+                ' Load nothing
+                Me.m_LoadDataFilterOptions = LoadDataFilterOptions.None
+            End If
+        End Sub
+    End Class
+    ' ExEnd:2
 End Namespace

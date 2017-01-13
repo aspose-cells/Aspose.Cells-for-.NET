@@ -10,7 +10,7 @@ Namespace Articles
 
             ' Set the load options, we only want to load shapes and do not want to load data
             Dim opts As New LoadOptions(LoadFormat.Xlsx)
-            opts.LoadDataFilterOptions = LoadDataFilterOptions.Shape
+            opts.LoadFilter = New LoadFilter(LoadDataFilterOptions.Shape)
 
             ' Create workbook object from sample excel file using load options
             Dim wb As New Workbook(dataDir & Convert.ToString("sample.xlsx"), opts)
