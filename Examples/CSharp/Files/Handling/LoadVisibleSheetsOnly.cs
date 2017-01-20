@@ -44,12 +44,12 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             if (sheet.IsVisible)
             {
                 // Load everything from visible worksheet
-                this.m_LoadDataFilterOptions = LoadDataFilterOptions.All;
+                this.LoadDataFilterOptions = LoadDataFilterOptions.All;
             }
             else
             {
                 // Load nothing
-                this.m_LoadDataFilterOptions = LoadDataFilterOptions.None;
+                this.LoadDataFilterOptions = LoadDataFilterOptions.None;
             }
         }
     }

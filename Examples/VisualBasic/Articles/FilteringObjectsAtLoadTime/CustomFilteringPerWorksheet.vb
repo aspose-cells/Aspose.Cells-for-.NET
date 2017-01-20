@@ -8,17 +8,17 @@ Namespace Articles.FilteringObjectsAtLoadTime
         Public Overrides Sub StartSheet(ByVal sheet As Worksheet)
             If sheet.Name = "NoCharts" Then
                 'Load everything and filter charts
-                Me.m_LoadDataFilterOptions = LoadDataFilterOptions.All And Not LoadDataFilterOptions.Chart
+                Me.LoadDataFilterOptions = LoadDataFilterOptions.All And Not LoadDataFilterOptions.Chart
             End If
 
             If sheet.Name = "NoShapes" Then
                 'Load everything and filter shapes
-                Me.m_LoadDataFilterOptions = LoadDataFilterOptions.All And Not LoadDataFilterOptions.Shape
+                Me.LoadDataFilterOptions = LoadDataFilterOptions.All And Not LoadDataFilterOptions.Shape
             End If
 
             If sheet.Name = "NoConditionalFormatting)" Then
                 'Load everything and filter conditional formatting
-                Me.m_LoadDataFilterOptions = LoadDataFilterOptions.All And Not LoadDataFilterOptions.ConditionalFormatting
+                Me.LoadDataFilterOptions = LoadDataFilterOptions.All And Not LoadDataFilterOptions.ConditionalFormatting
             End If
         End Sub
     End Class

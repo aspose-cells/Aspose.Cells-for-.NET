@@ -39,10 +39,10 @@ Namespace Files.Handling
         Public Overrides Sub StartSheet(ByVal sheet As Worksheet)
             If sheet.IsVisible Then
                 ' Load everything from visible worksheet
-                Me.m_LoadDataFilterOptions = LoadDataFilterOptions.All
+                Me.LoadDataFilterOptions = LoadDataFilterOptions.All
             Else
                 ' Load nothing
-                Me.m_LoadDataFilterOptions = LoadDataFilterOptions.None
+                Me.LoadDataFilterOptions = LoadDataFilterOptions.None
             End If
         End Sub
     End Class

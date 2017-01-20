@@ -11,19 +11,19 @@ namespace Aspose.Cells.Examples.CSharp.Articles.FilteringObjectsAtLoadTime
             if (sheet.Name == "NoCharts")
             {
                 //Load everything and filter charts
-                this.m_LoadDataFilterOptions = LoadDataFilterOptions.All & ~LoadDataFilterOptions.Chart;
+                this.LoadDataFilterOptions = LoadDataFilterOptions.All & ~LoadDataFilterOptions.Chart;
             }
 
             if (sheet.Name == "NoShapes")
             {
                 //Load everything and filter shapes
-                this.m_LoadDataFilterOptions = LoadDataFilterOptions.All & ~LoadDataFilterOptions.Shape;
+                this.LoadDataFilterOptions = LoadDataFilterOptions.All & ~LoadDataFilterOptions.Shape;
             }
 
             if (sheet.Name == "NoConditionalFormatting)")
             {
                 //Load everything and filter conditional formatting
-                this.m_LoadDataFilterOptions = LoadDataFilterOptions.All & ~LoadDataFilterOptions.ConditionalFormatting;
+                this.LoadDataFilterOptions = LoadDataFilterOptions.All & ~LoadDataFilterOptions.ConditionalFormatting;
             }
         }
     }

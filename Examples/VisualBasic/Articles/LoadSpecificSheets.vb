@@ -33,10 +33,10 @@ Namespace Articles
         Public Overrides Sub StartSheet(ByVal sheet As Worksheet)
             If sheet.Name = "Sheet2" Then
                 ' Load everything from worksheet "Sheet2"
-                Me.m_LoadDataFilterOptions = LoadDataFilterOptions.All
+                Me.LoadDataFilterOptions = LoadDataFilterOptions.All
             Else
                 ' Load nothing
-                Me.m_LoadDataFilterOptions = LoadDataFilterOptions.None
+                Me.LoadDataFilterOptions = LoadDataFilterOptions.None
             End If
         End Sub
     End Class

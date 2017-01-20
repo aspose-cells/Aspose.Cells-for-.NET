@@ -36,12 +36,12 @@ namespace Aspose.Cells.Examples.CSharp.Articles
                 if (sheet.Name == "Sheet2")
                 {
                     // Load everything from worksheet "Sheet2"
-                    this.m_LoadDataFilterOptions = LoadDataFilterOptions.All;
+                    this.LoadDataFilterOptions = LoadDataFilterOptions.All;
                 }
                 else
                 {
                     // Load nothing
-                    this.m_LoadDataFilterOptions = LoadDataFilterOptions.None;
+                    this.LoadDataFilterOptions = LoadDataFilterOptions.None;
                 }
             }
         }
