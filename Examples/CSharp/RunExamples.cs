@@ -107,6 +107,13 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
+            //NumberOfSignificantDigits.Run();
+            //GetPageDimensions.Run();
+            //CheckCustomFormatPattern.Run();
+            //RenderGradientFillToHTML.Run();
+            //LoadTemplateWithoutCharts.Run();
+            //ReadColorOfShapesGlowEffect.Run();
+            //ReadAndManipulateExcel2016Charts.Run();
             //AccessTextBoxName.Run();
             //AddConditionalIconsSet.Run();
             //AddImageHyperlinks.Run();
@@ -696,7 +703,11 @@ namespace Aspose.Cells.Examples.CSharp
             //ConvertingWorksheetToSVG.Run();
             //EncryptingFiles.Run();
             //Excel2PDFConversion.Run();
-            //ManagingDocumentProperties.Run();
+            //AccessingDocumentProperties.Run();
+            //AccessingValueOfDocumentProperties.Run();
+            //AddingDocumentProperties.Run();
+            //ConfigureLinktoContentDocumentProperty.Run();
+            //RemovingCustomProperties.Run();
             //SetPDFCreationTime.Run();
             //SettingImagePrefrencesforHTML.Run();
             //WorksheetToImage.Run();

@@ -77,7 +77,11 @@
     <Compile Include="Articles\ExportXmlMapFromWorkbook.cs" />
     <Compile Include="Articles\FilteringObjectsAtLoadTime\CustomFilteringPerWorksheet.cs" />
     <Compile Include="Articles\FilteringObjectsAtLoadTime\FilteringObjects.cs" />
+    <Compile Include="Articles\ManageChartsAndShapes\ReadAndManipulateExcel2016Charts.cs" />
+    <Compile Include="Articles\ManageChartsAndShapes\ReadColorOfShapesGlowEffect.cs" />
+    <Compile Include="Articles\ManagingWorkbooksWorksheets\LoadTemplateWithoutCharts.cs" />
     <Compile Include="Articles\SettingScaleCropAndLinksUpToDateProperties.cs" />
+    <Compile Include="Articles\StylingAndDataFormatting\CheckCustomFormatPattern.cs" />
     <Compile Include="Articles\UsingCellsFactory.cs" />
     <Compile Include="Articles\CheckHiddenExternalLinks.cs" />
     <Compile Include="Articles\CopyRowsColumns\CopyingMultipleColumns.cs" />
@@ -333,9 +337,11 @@
     <Compile Include="Articles\WorkingWithHTMLFormat\ExportedWorkSheetViaIFilePathProvider.cs" />
     <Compile Include="Articles\WorkingWithHTMLFormat\ExpandTextFromRightToLeft.cs" />
     <Compile Include="Articles\WorkingWithHTMLFormat\ImplementIStreamProvider.cs" />
+    <Compile Include="Articles\WorkingWithHTMLFormat\RenderGradientFillToHTML.cs" />
     <Compile Include="CellsHelperClass\MergeFiles.cs" />
     <Compile Include="CellsHelperClass\NameToIndex.cs" />
     <Compile Include="CellsHelperClass\IndexToName.cs" />
+    <Compile Include="CellsHelperClass\NumberOfSignificantDigits.cs" />
     <Compile Include="Charts\Applying3DFormat.cs" />
     <Compile Include="Charts\ChangeChartPosition.cs" />
     <Compile Include="Charts\ChartRendering.cs" />
@@ -475,10 +481,14 @@
     <Compile Include="Files\Handling\SavingFiletoSomeLocation.cs" />
     <Compile Include="Files\Handling\SavingFiletoStream.cs" />
     <Compile Include="Files\Handling\SavingTextFilewithCustomSeparator.cs" />
+    <Compile Include="Files\Utility\AccessingValueOfDocumentProperties.cs" />
+    <Compile Include="Files\Utility\AddingDocumentProperties.cs" />
     <Compile Include="Files\Utility\ChartToImage.cs" />
+    <Compile Include="Files\Utility\ConfigureLinktoContentDocumentProperty.cs" />
     <Compile Include="Files\Utility\ConvertChartToPdf.cs" />
     <Compile Include="Files\Utility\ConvertingToHTMLFiles .cs" />
     <Compile Include="Files\Utility\AdvancedConversiontoPdf.cs" />
+    <Compile Include="Files\Utility\RemovingCustomProperties.cs" />
     <Compile Include="Files\Utility\XlstoPDFDirectConversation.cs" />
     <Compile Include="Files\Utility\SetPDFCreationTime.cs" />
     <Compile Include="Files\Utility\SettingImagePrefrencesforHTML.cs" />
@@ -487,7 +497,7 @@
     <Compile Include="Files\Utility\ConvertingWorksheetToSVG.cs" />
     <Compile Include="Files\Utility\EncryptingFiles.cs" />
     <Compile Include="Files\Utility\Excel2PDFConversion.cs" />
-    <Compile Include="Files\Utility\ManagingDocumentProperties.cs" />
+    <Compile Include="Files\Utility\AccessingDocumentProperties.cs" />
     <Compile Include="Files\Utility\WorksheetToImage.cs" />
     <Compile Include="Formatting\ApproachesToFormatData\ApplyingGradientFillEffects.cs" />
     <Compile Include="Formatting\ApproachesToFormatData\UsingExcelPredefinedStyles.cs" />
@@ -623,6 +633,7 @@
     <Compile Include="Worksheets\Management\RemovingWorksheetsUsingSheetIndex.cs" />
     <Compile Include="Worksheets\Management\RemovingWorksheetsUsingSheetName.cs" />
     <Compile Include="Worksheets\PageSetupFeatures\FitToPagesOptions.cs" />
+    <Compile Include="Worksheets\PageSetupFeatures\GetPageDimensions.cs" />
     <Compile Include="Worksheets\PageSetupFeatures\InsertImageInHeaderFooter.cs" />
     <Compile Include="Worksheets\PageSetupFeatures\OtherPrintOptions.cs" />
     <Compile Include="Worksheets\PageSetupFeatures\SetPageOrder.cs" />

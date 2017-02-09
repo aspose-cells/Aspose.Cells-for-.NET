@@ -17,7 +17,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // Disable the compatibility checker
             workbook.Settings.CheckCompatibility = false;
 
-            dataDir = dataDir+ "Output_BK_CompCheck.out.xlsx";
+            dataDir = dataDir + "Output_BK_CompCheck.out.xlsx";
             // Saving the Excel file
             workbook.Save(dataDir);
             // ExEnd:1
