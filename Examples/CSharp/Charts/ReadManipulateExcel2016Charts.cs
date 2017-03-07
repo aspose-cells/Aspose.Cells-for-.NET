@@ -10,6 +10,8 @@ namespace Aspose.Cells.Examples.CSharp.Charts
     {
         public static void Run()
         {
+            // ExStart:ReadManipulateExcel2016Charts
+
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -35,6 +37,7 @@ namespace Aspose.Cells.Examples.CSharp.Charts
             //Save the workbook
             wb.Save(dataDir + "out_excel2016Charts.xlsx");
 
+            // ExStart:ReadManipulateExcel2016Charts
         }
     }
 }

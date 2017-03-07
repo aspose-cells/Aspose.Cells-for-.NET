@@ -90,7 +90,16 @@ namespace Aspose.Cells.Examples.CSharp
         {
             Console.WriteLine("Open RunExamples.cs. \nIn Main() method uncomment the example that you want to run.");
             Console.WriteLine("=====================================================");
+
             // Uncomment the one you want to try out        
+
+            //Charts.ReadManipulateExcel2016Charts.Run();
+            //Data.RenameDuplicateColumnsAutomaticallyWhileExportingWorksheetData.Run();
+            //Fonts.GetListOfFontsUsedInSpreadsheetOrWorkbook.Run();
+            //LoadingSavingConvertingAndManaging.AutoFitColumnsandRowsWhileLoadingHTMLInWorkbook.Run();
+            //LoadingSavingConvertingAndManaging.GetWarningsWhileLoadingExcelFile.Run();
+            //LoadingSavingConvertingAndManaging.TrimLeadingBlankRowsAndColumnsWhileExportingSpreadsheetsToCSVFormat.Run();
+            //RowsColumns.ConvertTextToColumns.Run();
 
             // =====================================================
             // =====================================================

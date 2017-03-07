@@ -37,8 +37,8 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=17.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.17.1.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=17.02.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.17.02.0\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
@@ -358,6 +358,7 @@
     <Compile Include="Charts\ManipulateChart\ModifyLineChart.cs" />
     <Compile Include="Charts\ManipulateChart\ModifyPieChart.cs" />
     <Compile Include="Charts\ManipulateChart\HowToCreatePieChart.cs" />
+    <Compile Include="Charts\ReadManipulateExcel2016Charts.cs" />
     <Compile Include="Charts\SettingChartsAppearance\ApplyingThemes.cs" />
     <Compile Include="Charts\SettingChartsAppearance\ChangingMajorGridlines.cs" />
     <Compile Include="Charts\SettingChartsAppearance\MajorGridlines.cs" />
@@ -427,6 +428,7 @@
     <Compile Include="Data\Processing\FilteringAndValidation\TextLengthDataValidation.cs" />
     <Compile Include="Data\Processing\FilteringAndValidation\TimeDataValidation.cs" />
     <Compile Include="Data\Processing\FilteringAndValidation\WholeNumberDataValidation.cs" />
+    <Compile Include="Data\RenameDuplicateColumnsAutomaticallyWhileExportingWorksheetData.cs" />
     <Compile Include="DrawingObjects\AccessNonPrimitiveShape.cs" />
     <Compile Include="DrawingObjects\Comments\AddImageToComment.cs" />
     <Compile Include="DrawingObjects\Comments\AddingComment.cs" />
@@ -499,6 +501,7 @@
     <Compile Include="Files\Utility\Excel2PDFConversion.cs" />
     <Compile Include="Files\Utility\AccessingDocumentProperties.cs" />
     <Compile Include="Files\Utility\WorksheetToImage.cs" />
+    <Compile Include="Fonts\GetListOfFontsUsedInSpreadsheetOrWorkbook.cs" />
     <Compile Include="Formatting\ApproachesToFormatData\ApplyingGradientFillEffects.cs" />
     <Compile Include="Formatting\ApproachesToFormatData\UsingExcelPredefinedStyles.cs" />
     <Compile Include="Formatting\ApproachesToFormatData\UsingGetStyleSetStyle.cs" />
@@ -559,6 +562,9 @@
     <Compile Include="KnowledgeBase\ComparingVSTOWithAspose\VSTOCode.cs" />
     <Compile Include="KnowledgeBase\FAQs\FileFormatInformation.cs" />
     <Compile Include="KnowledgeBase\FAQs\FixOutOfMemoryException.cs" />
+    <Compile Include="LoadingSavingConvertingAndManaging\AutoFitColumnsandRowsWhileLoadingHTMLInWorkbook.cs" />
+    <Compile Include="LoadingSavingConvertingAndManaging\GetWarningsWhileLoadingExcelFile.cs" />
+    <Compile Include="LoadingSavingConvertingAndManaging\TrimLeadingBlankRowsAndColumnsWhileExportingSpreadsheetsToCSVFormat.cs" />
     <Compile Include="PivotTable\ConsolidationFunctions.cs" />
     <Compile Include="PivotTable\SpecifyCompatibility.cs" />
     <Compile Include="PivotTable\RefreshAndCalculateItems.cs" />
@@ -575,6 +581,7 @@
     <Compile Include="RowsColumns\AutofitRowinSpecificRange.cs" />
     <Compile Include="RowsColumns\AutofitColumn.cs" />
     <Compile Include="RowsColumns\AutofitRowsandColumns.cs" />
+    <Compile Include="RowsColumns\ConvertTextToColumns.cs" />
     <Compile Include="RowsColumns\Grouping\SummaryRowRight.cs" />
     <Compile Include="RowsColumns\Grouping\SummaryRowBelow.cs" />
     <Compile Include="RunExamples.cs" />
@@ -672,7 +679,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="Microsoft.Office.Core">
