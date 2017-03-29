@@ -20,5 +20,5 @@ Aspose .NET Umbraco Data Exporter to Excel Module allows users to export data di
 
 Please check the links below to find instructions on downloading, installing, configuring and using the module.
 
-* [Downloading, Installing and Uninstalling](http://www.aspose.com/docs/display/cellsnet/3.2.1+Downloading+and+Installing)
-* [Using and Video Demo](http://www.aspose.com/docs/display/cellsnet/3.2.2+Using+and+Video+Demo)
+* [Downloading, Installing and Uninstalling](https://docs.aspose.com/display/cellsnet/Umbraco+Database+Data+Exporter+to+Excel)
+* [Umbraco Export Members to Excel](https://docs.aspose.com/display/cellsnet/Umbraco+Export+Members+to+Excel)
