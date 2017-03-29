@@ -25,5 +25,5 @@
 <h2>Start a Free Trial Today</h2>
 <p>Start a free trial today &ndash; all you need is to <a href="http://www.aspose.com/community/user/createuser.aspx">sign up</a> with Aspose. Once you have signed up, you are ready to try powerful file processing features offered by Aspose file format APIs.</p>
 <h2>Customer Feedback</h2>
-<p>Your feedback is very important to us. Please feel free to provide feedback and raise feature requirements. We are keen to implement customer driven features since we are a 100% customer driven company.</p>
+<p>Your feedback is very important to us. Please feel free to provide feedback and raise feature requirements. We are keen to implement customer driven features since we are a 100% customer driven company. </p>
 </div>
