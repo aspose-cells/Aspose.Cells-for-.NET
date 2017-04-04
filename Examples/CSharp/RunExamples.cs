@@ -352,6 +352,7 @@ namespace Aspose.Cells.Examples.CSharp
             //SpecifyAbsolutePositionOfPivotItem.Run();
             //RemovePivotTable.Run();
             //GetCellByDisplayName.Run();
+            //CustomizePivotTableGlobalSettings.Run();
 
             //// WorkingWithCalculationEngine
             //// =====================================================
