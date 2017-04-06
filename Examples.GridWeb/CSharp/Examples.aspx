@@ -273,6 +273,15 @@
 				                This example shows how to add/remove a custom context menu item command for GridWeb Control. 
                             </p>
 			            </div>
+                    </li>
+                    <li class="list-group-item" title="Call Client-side Script for GridWeb Control">
+			            <p class="productTitle"><a href="GridWebBasics/CallClientsideScriptforGridWeb.aspx">Call Client-side Script for GridWeb Control</a></p>
+			            <p class="componentDescriptionCaption">Description</p>
+			            <div class="componentDescriptionTxt">
+                            <p class="componentDescriptionTxt">
+				                This example shows how to call a client-side script for GridWeb control. 
+                            </p>
+			            </div>
                     </li>             
                  </ul>
             </div>      

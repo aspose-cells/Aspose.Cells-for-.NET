@@ -102,13 +102,13 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=16.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.16.11.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=17.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.17.3.0\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Aspose.Cells.GridWeb, Version=16.11.0.0, Culture=neutral, PublicKeyToken=699ccf88ff76f11a, processorArchitecture=MSIL">
+    <Reference Include="Aspose.Cells.GridWeb, Version=17.3.0.0, Culture=neutral, PublicKeyToken=699ccf88ff76f11a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files (x86)\Aspose\Aspose.Cells for .NET\Bin\net2.0\Aspose.Cells.GridWeb.dll</HintPath>
+      <HintPath>bin\Aspose.Cells.GridWeb.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
@@ -331,6 +331,13 @@
     </Compile>
     <Compile Include="databind\DemoDatabase2.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GridWebBasics\CallClientsideScriptforGridWeb.aspx.cs">
+      <DependentUpon>CallClientsideScriptforGridWeb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridWebBasics\CallClientsideScriptforGridWeb.aspx.designer.cs">
+      <DependentUpon>CallClientsideScriptforGridWeb.aspx</DependentUpon>
     </Compile>
     <Compile Include="KnowledgeBase\FAQ\RunGridWebInIE.aspx.cs">
       <DependentUpon>RunGridWebInIE.aspx</DependentUpon>
@@ -864,6 +871,7 @@
     <Content Include="Data\GridWebBasics\CustomStyle1.xml" />
     <Content Include="Data\GridWebBasics\CustomStyle2.xml" />
     <Content Include="Examples.aspx" />
+    <Content Include="GridWebBasics\CallClientsideScriptforGridWeb.aspx" />
     <Content Include="KnowledgeBase\FAQ\RunGridWebInIE.aspx" />
     <Content Include="GridWebBasics\ViewBrowsersCapabilities.aspx" />
     <Content Include="GridWebBasics\AboutGridWebDesigner.aspx" />
@@ -1102,7 +1110,9 @@
     <Content Include="Global.asax">
       <SubType>Component</SubType>
     </Content>
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="GridWebBasics\AboutWorksheetDesigner.aspx" />
     <Content Include="Worksheets\AccessWorksheets.aspx" />
     <Content Include="Worksheets\AddWorksheets.aspx" />
