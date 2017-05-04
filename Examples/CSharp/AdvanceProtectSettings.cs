@@ -10,7 +10,7 @@ namespace CSharp.Worksheets.Security
         {
             // ExStart:1
             // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            string dataDir = Aspose.Cells.Examples.CSharp.RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             // Instantiating a Workbook object
             // Opening the Excel file through the file stream

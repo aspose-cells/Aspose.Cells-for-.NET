@@ -37,8 +37,8 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=17.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.17.3.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=17.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.17.4.0\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdvanceProtectSettings.cs" />
     <Compile Include="Articles\AbsolutePathOfExternalDataSourceFile.cs" />
     <Compile Include="Articles\AccessTextBoxName.cs" />
     <Compile Include="Articles\AddingCustomPropertiesVisible.cs" />
@@ -390,6 +391,7 @@
     <Compile Include="Data\AddOn\NamedRanges\SettingComplexFormula.cs" />
     <Compile Include="Data\AddOn\NamedRanges\SettingSimpleFormula.cs" />
     <Compile Include="Data\AddOn\NamedRanges\UnionOfRanges.cs" />
+    <Compile Include="Data\CheckCustomNumberFormat.cs" />
     <Compile Include="Data\Handling\AccessingCells\AccessingMaximumDisplayRangeofWorksheet.cs" />
     <Compile Include="Data\Handling\ExportColumnContainingNonStronglyTypedData.cs" />
     <Compile Include="Data\Handling\Importing\ImportingFromDataGrid.cs" />
@@ -428,6 +430,8 @@
     <Compile Include="Data\Processing\FilteringAndValidation\TimeDataValidation.cs" />
     <Compile Include="Data\Processing\FilteringAndValidation\WholeNumberDataValidation.cs" />
     <Compile Include="Data\RenameDuplicateColumnsAutomaticallyWhileExportingWorksheetData.cs" />
+    <Compile Include="Data\SpecifyingDBNumCustomPatternFormatting.cs" />
+    <Compile Include="Data\SpecifyingSortWarningWhileSortingData.cs" />
     <Compile Include="DrawingObjects\AccessNonPrimitiveShape.cs" />
     <Compile Include="DrawingObjects\Comments\AddImageToComment.cs" />
     <Compile Include="DrawingObjects\Comments\AddingComment.cs" />
@@ -621,6 +625,9 @@
     <Compile Include="Tables\SetCommentOfTableOrListObject.cs" />
     <Compile Include="Tables\CreatingListObject.cs" />
     <Compile Include="Tables\FormataListObject.cs" />
+    <Compile Include="WorkbookVBAProject\CheckifVBAProjectisProtectedandLockedforViewing.cs" />
+    <Compile Include="WorkbookVBAProject\FindoutifVBAProjectisProtected.cs" />
+    <Compile Include="WorkbookVBAProject\PasswordProtecttheVBAProjectofExcelWorkbook.cs" />
     <Compile Include="Worksheets\Display\ControlTabBarWidth.cs" />
     <Compile Include="Worksheets\Display\DisplayHideGridlines.cs" />
     <Compile Include="Worksheets\Display\DisplayHideRowColumnHeaders.cs" />

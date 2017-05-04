@@ -93,6 +93,13 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out        
 
+			//Aspose.Cells for .NET v17.4.0
+			Data.SpecifyingDBNumCustomPatternFormatting.Run();
+			Data.SpecifyingSortWarningWhileSortingData.Run();
+			WorkbookVBAProject.CheckifVBAProjectisProtectedandLockedforViewing.Run();
+			WorkbookVBAProject.FindoutifVBAProjectisProtected.Run();
+			WorkbookVBAProject.PasswordProtecttheVBAProjectofExcelWorkbook.Run();
+
             //Charts.ReadManipulateExcel2016Charts.Run();
             //Data.RenameDuplicateColumnsAutomaticallyWhileExportingWorksheetData.Run();
             //Fonts.GetListOfFontsUsedInSpreadsheetOrWorkbook.Run();
@@ -100,6 +107,7 @@ namespace Aspose.Cells.Examples.CSharp
             //LoadingSavingConvertingAndManaging.GetWarningsWhileLoadingExcelFile.Run();
             //LoadingSavingConvertingAndManaging.TrimLeadingBlankRowsAndColumnsWhileExportingSpreadsheetsToCSVFormat.Run();
             //RowsColumns.ConvertTextToColumns.Run();
+
 
             // =====================================================
             // =====================================================
