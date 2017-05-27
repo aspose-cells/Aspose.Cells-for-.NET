@@ -34,7 +34,7 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Exception Occured");
+                Console.WriteLine("Exception Occured. Exception: " + ex.Message);
             }
 
             Console.WriteLine("Done");
