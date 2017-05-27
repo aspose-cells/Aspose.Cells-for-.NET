@@ -566,6 +566,7 @@
     <Compile Include="KnowledgeBase\FAQs\FileFormatInformation.cs" />
     <Compile Include="KnowledgeBase\FAQs\FixOutOfMemoryException.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\AutoFitColumnsandRowsWhileLoadingHTMLInWorkbook.cs" />
+    <Compile Include="LoadingSavingConvertingAndManaging\ConvertExcelFileToPDFA_1a.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\GetWarningsWhileLoadingExcelFile.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\TrimLeadingBlankRowsAndColumnsWhileExportingSpreadsheetsToCSVFormat.cs" />
     <Compile Include="PivotTable\ConsolidationFunctions.cs" />
@@ -634,6 +635,7 @@
     <Compile Include="Worksheets\Display\DisplayHideScrollBars.cs" />
     <Compile Include="Worksheets\Display\DisplayTab.cs" />
     <Compile Include="Worksheets\Display\FreezePanes.cs" />
+    <Compile Include="Worksheets\Display\GetPaperWidthHeight.cs" />
     <Compile Include="Worksheets\Display\HideTabs.cs" />
     <Compile Include="Worksheets\Display\HideUnhideWorksheet.cs" />
     <Compile Include="Worksheets\Display\PageBreakPreview.cs" />
@@ -650,6 +652,7 @@
     <Compile Include="Worksheets\PageSetupFeatures\GetPageDimensions.cs" />
     <Compile Include="Worksheets\PageSetupFeatures\InsertImageInHeaderFooter.cs" />
     <Compile Include="Worksheets\PageSetupFeatures\OtherPrintOptions.cs" />
+    <Compile Include="Worksheets\PageSetupFeatures\RemoveExistingPrinterSettingsOfWorksheets.cs" />
     <Compile Include="Worksheets\PageSetupFeatures\SetPageOrder.cs" />
     <Compile Include="Worksheets\PageSetupFeatures\SetPrintTitle.cs" />
     <Compile Include="Worksheets\PageSetupFeatures\SetPrintArea.cs" />
@@ -660,6 +663,7 @@
     <Compile Include="Worksheets\PageSetupFeatures\ManagePaperSize.cs" />
     <Compile Include="Worksheets\PageSetupFeatures\ScalingFactor.cs" />
     <Compile Include="Worksheets\PageSetupFeatures\PageOrientation.cs" />
+    <Compile Include="Worksheets\PageSetupFeatures\ImplementCustomPaperSizeOfWorksheetForRendering.cs" />
     <Compile Include="Worksheets\Security\LockCell.cs" />
     <Compile Include="Worksheets\Security\AdvancedProtectionSettings.cs" />
     <Compile Include="Worksheets\Security\AdvancedProtectionSettingsUsingAsposeCells.cs" />

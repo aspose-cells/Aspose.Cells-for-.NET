@@ -93,8 +93,15 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out        
 
-			//Aspose.Cells for .NET v17.4.0
-			Data.SpecifyingDBNumCustomPatternFormatting.Run();
+            //Aspose.Cells for .NET v17.5
+            //LoadingSavingConvertingAndManaging.ConvertExcelFileToPDFA_1a.Run();
+            //Worksheets.PageSetupFeatures.RemoveExistingPrinterSettingsOfWorksheets.Run();
+            Worksheets.PageSetupFeatures.ImplementCustomPaperSizeOfWorksheetForRendering.Run();
+
+            return;
+
+            //Aspose.Cells for .NET v17.4.0
+            Data.SpecifyingDBNumCustomPatternFormatting.Run();
 			Data.SpecifyingSortWarningWhileSortingData.Run();
 			WorkbookVBAProject.CheckifVBAProjectisProtectedandLockedforViewing.Run();
 			WorkbookVBAProject.FindoutifVBAProjectisProtected.Run();
@@ -1008,6 +1015,16 @@ namespace Aspose.Cells.Examples.CSharp
             }
 
             return p;
+        }
+
+        public static string Get_SourceDirectory()
+        {
+            return Path.GetFullPath("..\\..\\..\\Data\\01_SourceDirectory\\");
+        }
+
+        public static string Get_OutputDirectory()
+        {
+            return Path.GetFullPath("..\\..\\..\\Data\\02_OutputDirectory\\");
         }
     }
 }
