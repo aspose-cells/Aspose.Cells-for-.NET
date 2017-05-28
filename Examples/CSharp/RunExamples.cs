@@ -94,20 +94,19 @@ namespace Aspose.Cells.Examples.CSharp
             // Uncomment the one you want to try out        
 
             //Aspose.Cells for .NET v17.5
-            LoadingSavingConvertingAndManaging.ConvertExcelFileToPDFA_1a.Run();
-            Worksheets.PageSetupFeatures.RemoveExistingPrinterSettingsOfWorksheets.Run();
-            Worksheets.PageSetupFeatures.ImplementCustomPaperSizeOfWorksheetForRendering.Run();
-            Data.ShiftFirstRowDownWhenInsertingCellsDataTableRows.Run();
             Data.ExportHTMLStringValueOfCellsToDataTable.Run();
+            Data.ShiftFirstRowDownWhenInsertingCellsDataTableRows.Run();
+            LoadingSavingConvertingAndManaging.ConvertExcelFileToPDFA_1a.Run();
+            Worksheets.PageSetupFeatures.ImplementCustomPaperSizeOfWorksheetForRendering.Run();
+            Worksheets.PageSetupFeatures.RemoveExistingPrinterSettingsOfWorksheets.Run();
 
-            return;
 
             //Aspose.Cells for .NET v17.4.0
-            Data.SpecifyingDBNumCustomPatternFormatting.Run();
-			Data.SpecifyingSortWarningWhileSortingData.Run();
-			WorkbookVBAProject.CheckifVBAProjectisProtectedandLockedforViewing.Run();
-			WorkbookVBAProject.FindoutifVBAProjectisProtected.Run();
-			WorkbookVBAProject.PasswordProtecttheVBAProjectofExcelWorkbook.Run();
+            //Data.SpecifyingDBNumCustomPatternFormatting.Run();
+            //Data.SpecifyingSortWarningWhileSortingData.Run();
+            //WorkbookVBAProject.CheckifVBAProjectisProtectedandLockedforViewing.Run();
+            //WorkbookVBAProject.FindoutifVBAProjectisProtected.Run();
+            //WorkbookVBAProject.PasswordProtecttheVBAProjectofExcelWorkbook.Run();
 
             //Charts.ReadManipulateExcel2016Charts.Run();
             //Data.RenameDuplicateColumnsAutomaticallyWhileExportingWorksheetData.Run();
