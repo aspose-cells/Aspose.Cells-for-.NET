@@ -368,6 +368,8 @@
     <Compile Include="Charts\SettingCategoryData.cs" />
     <Compile Include="Charts\SettingChartsData.cs" />
     <Compile Include="Charts\UsingSparklines.cs" />
+    <Compile Include="Data\ExportHTMLStringValueOfCellsToDataTable.cs" />
+    <Compile Include="Data\ShiftFirstRowDownWhenInsertingCellsDataTableRows.cs" />
     <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToAnotherCell.cs" />
     <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToExternalFile.cs" />
     <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToURL.cs" />

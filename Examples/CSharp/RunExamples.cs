@@ -94,9 +94,11 @@ namespace Aspose.Cells.Examples.CSharp
             // Uncomment the one you want to try out        
 
             //Aspose.Cells for .NET v17.5
-            //LoadingSavingConvertingAndManaging.ConvertExcelFileToPDFA_1a.Run();
-            //Worksheets.PageSetupFeatures.RemoveExistingPrinterSettingsOfWorksheets.Run();
+            LoadingSavingConvertingAndManaging.ConvertExcelFileToPDFA_1a.Run();
+            Worksheets.PageSetupFeatures.RemoveExistingPrinterSettingsOfWorksheets.Run();
             Worksheets.PageSetupFeatures.ImplementCustomPaperSizeOfWorksheetForRendering.Run();
+            Data.ShiftFirstRowDownWhenInsertingCellsDataTableRows.Run();
+            Data.ExportHTMLStringValueOfCellsToDataTable.Run();
 
             return;
 
