@@ -650,6 +650,7 @@
     <Compile Include="Worksheets\Management\AddWorksheetsToExistingExcelFile.cs" />
     <Compile Include="Worksheets\Management\RemovingWorksheetsUsingSheetIndex.cs" />
     <Compile Include="Worksheets\Management\RemovingWorksheetsUsingSheetName.cs" />
+    <Compile Include="Worksheets\PageSetupFeatures\CopyPageSetupSettingsFromSourceWorksheetToDestinationWorksheet.cs" />
     <Compile Include="Worksheets\PageSetupFeatures\FitToPagesOptions.cs" />
     <Compile Include="Worksheets\PageSetupFeatures\GetPageDimensions.cs" />
     <Compile Include="Worksheets\PageSetupFeatures\InsertImageInHeaderFooter.cs" />

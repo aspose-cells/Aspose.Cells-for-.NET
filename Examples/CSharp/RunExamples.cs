@@ -97,9 +97,9 @@ namespace Aspose.Cells.Examples.CSharp
             Data.ExportHTMLStringValueOfCellsToDataTable.Run();
             Data.ShiftFirstRowDownWhenInsertingCellsDataTableRows.Run();
             LoadingSavingConvertingAndManaging.ConvertExcelFileToPDFA_1a.Run();
+            Worksheets.PageSetupFeatures.CopyPageSetupSettingsFromSourceWorksheetToDestinationWorksheet.Run();
             Worksheets.PageSetupFeatures.ImplementCustomPaperSizeOfWorksheetForRendering.Run();
             Worksheets.PageSetupFeatures.RemoveExistingPrinterSettingsOfWorksheets.Run();
-
 
             //Aspose.Cells for .NET v17.4.0
             //Data.SpecifyingDBNumCustomPatternFormatting.Run();
