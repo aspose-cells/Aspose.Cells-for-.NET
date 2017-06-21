@@ -29,6 +29,11 @@
             least a Microsoft Excel Viewer. It can be <a href="http://office.microsoft.com/downloads/2000/xlviewer.aspx">
                 downloaded</a> for free.
         </p>
+        <p>
+            <span style="color:deeppink">The Examples in this Project use the following Aspose.Cells for GridWeb Version:</span>
+            <strong><span style="color:red;font-size:larger"><%=Aspose.Cells.GridWeb.GridWeb.GetVersion()%></span></strong>
+            
+        </p>
         <ul class="list-group">
             <li class="list-group-item">
                 <p class="productTitle">
