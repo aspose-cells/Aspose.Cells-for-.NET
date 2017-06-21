@@ -91,15 +91,20 @@ namespace Aspose.Cells.Examples.CSharp
             Console.WriteLine("Open RunExamples.cs. \nIn Main() method uncomment the example that you want to run.");
             Console.WriteLine("=====================================================");
 
+            Console.WriteLine("Aspose.Cells for .NET v" + CellsHelper.GetVersion());
+            Console.WriteLine("");
+
             // Uncomment the one you want to try out        
+            //Aspose.Cells for .NET v17.6
+            DrawingObjects.TilePictureAsTextureInsideShape.Run();
 
             //Aspose.Cells for .NET v17.5
-            Data.ExportHTMLStringValueOfCellsToDataTable.Run();
-            Data.ShiftFirstRowDownWhenInsertingCellsDataTableRows.Run();
-            LoadingSavingConvertingAndManaging.ConvertExcelFileToPDFA_1a.Run();
-            Worksheets.PageSetupFeatures.CopyPageSetupSettingsFromSourceWorksheetToDestinationWorksheet.Run();
-            Worksheets.PageSetupFeatures.ImplementCustomPaperSizeOfWorksheetForRendering.Run();
-            Worksheets.PageSetupFeatures.RemoveExistingPrinterSettingsOfWorksheets.Run();
+            //Data.ExportHTMLStringValueOfCellsToDataTable.Run();
+            //Data.ShiftFirstRowDownWhenInsertingCellsDataTableRows.Run();
+            //LoadingSavingConvertingAndManaging.ConvertExcelFileToPDFA_1a.Run();
+            //Worksheets.PageSetupFeatures.CopyPageSetupSettingsFromSourceWorksheetToDestinationWorksheet.Run();
+            //Worksheets.PageSetupFeatures.ImplementCustomPaperSizeOfWorksheetForRendering.Run();
+            //Worksheets.PageSetupFeatures.RemoveExistingPrinterSettingsOfWorksheets.Run();
 
             //Aspose.Cells for .NET v17.4.0
             //Data.SpecifyingDBNumCustomPatternFormatting.Run();
