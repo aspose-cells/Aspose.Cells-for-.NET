@@ -98,8 +98,6 @@ namespace Aspose.Cells.Examples.CSharp
             //Aspose.Cells for .NET v17.6
             DrawingObjects.TilePictureAsTextureInsideShape.Run();
             SmartMarkers.UsingFormulaParameterInSmartMarkerField.Run();
-            Rendering.ExportRangeOfCellsInWorksheetToImage.Run();
-            
 
             //Aspose.Cells for .NET v17.5
             //Data.ExportHTMLStringValueOfCellsToDataTable.Run();
