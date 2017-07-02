@@ -1,28 +1,32 @@
 using System.IO;
-using System;
-using Aspose.Cells;
-using Aspose.Cells.Rendering;
-using System.Drawing.Imaging;
 
-namespace Aspose.Cells.Examples.CSharp.Articles
+using System.Drawing;
+using System.Drawing.Imaging;
+using Aspose.Cells;
+using Aspose.Cells.Drawing;
+using Aspose.Cells.Rendering;
+using System;
+
+namespace Aspose.Cells.Examples.CSharp.Rendering
 {
-    public class ExportRangeofCells
+    public class ExportRangeOfCellsInWorksheetToImage
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            string filePath = dataDir+ "aspose-sample.xlsx";
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create workbook from source file.
-            Workbook workbook = new Workbook(filePath);
+            Workbook workbook = new Workbook(sourceDir + "sampleExportRangeOfCellsInWorksheetToImage.xlsx");
 
             // Access the first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
 
             // Set the print area with your desired range
-            worksheet.PageSetup.PrintArea = "E12:H16";
+            worksheet.PageSetup.PrintArea = "D8:G16";
 
             // Set all margins as 0
             worksheet.PageSetup.LeftMargin = 0;
@@ -34,14 +38,15 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             ImageOrPrintOptions options = new ImageOrPrintOptions();
             options.OnePagePerSheet = true;
             options.ImageFormat = ImageFormat.Jpeg;
+            options.HorizontalResolution = 200;
+            options.VerticalResolution = 200;
 
             // Take the image of your worksheet
             SheetRender sr = new SheetRender(worksheet, options);
-            dataDir = dataDir+ "output.out.jpg";
-            sr.ToImage(0, dataDir);
-            // ExEnd:1
-            Console.WriteLine("\nProcess completed successfully.\nFile saved at " + dataDir);
-            
+            sr.ToImage(0, outputDir + "outputExportRangeOfCellsInWorksheetToImage.jpg");
+
+            Console.WriteLine("ExportRangeOfCellsInWorksheetToImage executed successfully.\r\n");
         }
     }
+
 }
