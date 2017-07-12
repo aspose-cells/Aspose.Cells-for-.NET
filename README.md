@@ -24,5 +24,5 @@ Directory | Description
 * **Product Home:** [Aspose.Cells for .NET](http://www.aspose.com/products/cells/net)
 * **Download:** [Download Aspose.Cells for .NET](https://downloads.aspose.com/cells/net)
 * **Documentation:** [Aspose.Cells for .NET Documentation](https://docs.aspose.com//display/cellsnet/Home)
-* **Forum:** [Aspose.Cells for .NET Forum](https://www.aspose.com/community/forums/aspose.cells-product-family/19/showforum.aspx)
+* **Forum:** [Aspose.Cells for .NET Forum](https://forum.aspose.com/c/cells)
 * **Blog:** [Aspose.Cells for .NET Blog](https://blog.aspose.com/category/aspose-products/aspose-cells-product-family/)
