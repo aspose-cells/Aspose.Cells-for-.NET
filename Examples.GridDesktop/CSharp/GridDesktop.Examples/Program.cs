@@ -16,8 +16,10 @@ namespace GridDesktop.Examples
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            //Comment or uncomment the lines to run different examples
+            // Uncomment the one you want to try out
             //Application.Run(new RunExamples());
+
+            //Aspose.Cells for .NET v17.7
             Application.Run(new Form_FindGridDesktopVersionAtRunTime());
             Application.Run(new Form_CustomRowAndCustomColumnCaptionOfGridDesktopWorksheet());
             Application.Run(new Form_RenderPivotTableInGridDesktop());
