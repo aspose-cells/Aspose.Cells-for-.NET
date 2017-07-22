@@ -1,6 +1,6 @@
 ﻿namespace GridDesktop.Examples
 {
-    partial class FormCustomRowAndCustomColumnCaption
+    partial class Form_RenderPivotTableInGridDesktop
     {
         /// <summary>
         /// Required designer variable.
@@ -38,22 +38,22 @@
             this.gridDesktop1.CommentDisplayingFont = new System.Drawing.Font("Arial", 9F);
             this.gridDesktop1.IsHorizontalScrollBarVisible = true;
             this.gridDesktop1.IsVerticalScrollBarVisible = true;
-            this.gridDesktop1.Location = new System.Drawing.Point(22, 26);
+            this.gridDesktop1.Location = new System.Drawing.Point(33, 12);
             this.gridDesktop1.Name = "gridDesktop1";
             this.gridDesktop1.SheetNameFont = new System.Drawing.Font("Verdana", 8F);
             this.gridDesktop1.SheetTabWidth = 400;
-            this.gridDesktop1.Size = new System.Drawing.Size(684, 435);
+            this.gridDesktop1.Size = new System.Drawing.Size(904, 440);
             this.gridDesktop1.TabIndex = 0;
             // 
-            // FormCustomRowAndCustomColumnCaption
+            // FormRenderPivotTableInGridDesktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(742, 500);
+            this.ClientSize = new System.Drawing.Size(956, 473);
             this.Controls.Add(this.gridDesktop1);
-            this.Name = "FormCustomRowAndCustomColumnCaption";
-            this.Text = "FormCustomRowAndCustomColumnCaption";
-            this.Load += new System.EventHandler(this.FormCustomRowAndCustomColumnCaption_Load);
+            this.Name = "FormRenderPivotTableInGridDesktop";
+            this.Text = "FormRenderPivotTableInGridDesktop";
+            this.Load += new System.EventHandler(this.FormRenderPivotTableInGridDesktop_Load);
             this.ResumeLayout(false);
 
         }

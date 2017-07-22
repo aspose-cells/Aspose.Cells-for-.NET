@@ -1,6 +1,6 @@
 ﻿namespace GridDesktop.Examples
 {
-    partial class FormGridDesktopVersion
+    partial class Form_FindGridDesktopVersionAtRunTime
     {
         /// <summary>
         /// Required designer variable.

@@ -62,23 +62,23 @@
     <Compile Include="Articles\DataBindingFeature.Designer.cs">
       <DependentUpon>DataBindingFeature.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCustomRowAndCustomColumnCaption.cs">
+    <Compile Include="Form_CustomRowAndCustomColumnCaptionOfGridDesktopWorksheet.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCustomRowAndCustomColumnCaption.Designer.cs">
-      <DependentUpon>FormCustomRowAndCustomColumnCaption.cs</DependentUpon>
+    <Compile Include="Form_CustomRowAndCustomColumnCaptionOfGridDesktopWorksheet.Designer.cs">
+      <DependentUpon>Form_CustomRowAndCustomColumnCaptionOfGridDesktopWorksheet.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormGridDesktopVersion.cs">
+    <Compile Include="Form_FindGridDesktopVersionAtRunTime.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormGridDesktopVersion.Designer.cs">
-      <DependentUpon>FormGridDesktopVersion.cs</DependentUpon>
+    <Compile Include="Form_FindGridDesktopVersionAtRunTime.Designer.cs">
+      <DependentUpon>Form_FindGridDesktopVersionAtRunTime.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRenderPivotTableInGridDesktop.cs">
+    <Compile Include="Form_RenderPivotTableInGridDesktop.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormRenderPivotTableInGridDesktop.Designer.cs">
-      <DependentUpon>FormRenderPivotTableInGridDesktop.cs</DependentUpon>
+    <Compile Include="Form_RenderPivotTableInGridDesktop.Designer.cs">
+      <DependentUpon>Form_RenderPivotTableInGridDesktop.cs</DependentUpon>
     </Compile>
     <Compile Include="RunExamples.cs">
       <SubType>Form</SubType>
@@ -359,14 +359,14 @@
     <EmbeddedResource Include="Articles\DataBindingFeature.resx">
       <DependentUpon>DataBindingFeature.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCustomRowAndCustomColumnCaption.resx">
-      <DependentUpon>FormCustomRowAndCustomColumnCaption.cs</DependentUpon>
+    <EmbeddedResource Include="Form_CustomRowAndCustomColumnCaptionOfGridDesktopWorksheet.resx">
+      <DependentUpon>Form_CustomRowAndCustomColumnCaptionOfGridDesktopWorksheet.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormGridDesktopVersion.resx">
-      <DependentUpon>FormGridDesktopVersion.cs</DependentUpon>
+    <EmbeddedResource Include="Form_FindGridDesktopVersionAtRunTime.resx">
+      <DependentUpon>Form_FindGridDesktopVersionAtRunTime.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormRenderPivotTableInGridDesktop.resx">
-      <DependentUpon>FormRenderPivotTableInGridDesktop.cs</DependentUpon>
+    <EmbeddedResource Include="Form_RenderPivotTableInGridDesktop.resx">
+      <DependentUpon>Form_RenderPivotTableInGridDesktop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

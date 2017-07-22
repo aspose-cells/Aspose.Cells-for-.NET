@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace GridDesktop.Examples
 {
-    public partial class FormGridDesktopVersion : Form
+    public partial class Form_FindGridDesktopVersionAtRunTime : Form
     {
-        public FormGridDesktopVersion()
+        public Form_FindGridDesktopVersionAtRunTime()
         {
             InitializeComponent();
         }

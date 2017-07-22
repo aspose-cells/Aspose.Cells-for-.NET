@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace GridDesktop.Examples
 {
-    public partial class FormRenderPivotTableInGridDesktop : Form
+    public partial class Form_RenderPivotTableInGridDesktop : Form
     {
-        public FormRenderPivotTableInGridDesktop()
+        public Form_RenderPivotTableInGridDesktop()
         {
             InitializeComponent();
         }

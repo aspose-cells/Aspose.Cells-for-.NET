@@ -11,7 +11,7 @@ using Aspose.Cells.GridDesktop;
 
 namespace GridDesktop.Examples
 {
-    public partial class FormCustomRowAndCustomColumnCaption : Form
+    public partial class Form_CustomRowAndCustomColumnCaptionOfGridDesktopWorksheet : Form
     {
         public class MyICustomColumnCaption : ICustomColumnCaption
         {
@@ -39,7 +39,7 @@ namespace GridDesktop.Examples
         }
 
 
-        public FormCustomRowAndCustomColumnCaption()
+        public Form_CustomRowAndCustomColumnCaptionOfGridDesktopWorksheet()
         {
             InitializeComponent();
         }

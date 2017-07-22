@@ -18,9 +18,9 @@ namespace GridDesktop.Examples
 
             //Comment or uncomment the lines to run different examples
             //Application.Run(new RunExamples());
-            //Application.Run(new FormGridDesktopVersion());
-            //Application.Run(new FormCustomRowAndCustomColumnCaption());
-            Application.Run(new FormRenderPivotTableInGridDesktop());
+            Application.Run(new Form_FindGridDesktopVersionAtRunTime());
+            Application.Run(new Form_CustomRowAndCustomColumnCaptionOfGridDesktopWorksheet());
+            Application.Run(new Form_RenderPivotTableInGridDesktop());
         }
     }
 }
