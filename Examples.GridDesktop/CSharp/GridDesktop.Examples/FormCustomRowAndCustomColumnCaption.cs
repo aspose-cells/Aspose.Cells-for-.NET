@@ -13,7 +13,7 @@ namespace GridDesktop.Examples
 {
     public partial class FormCustomRowAndCustomColumnCaption : Form
     {
-        public class myICustomColumnCaption : ICustomColumnCaption
+        public class MyICustomColumnCaption : ICustomColumnCaption
         {
             /// <summary> 
             /// get the custom column caption. 
@@ -25,7 +25,7 @@ namespace GridDesktop.Examples
                 return "Mine " + (column + 10);
             }
         }
-        public class myICustomRowCaption : ICustomRowCaption
+        public class MyICustomRowCaption : ICustomRowCaption
         {
             /// <summary> 
             /// get the custom row caption. 
@@ -48,8 +48,8 @@ namespace GridDesktop.Examples
         {
             Worksheet ws = this.gridDesktop1.Worksheets[0];
 
-            ws.CustomColumnCaption = new myICustomColumnCaption();
-            ws.CustomRowCaption = new myICustomRowCaption();
+            ws.CustomColumnCaption = new MyICustomColumnCaption();
+            ws.CustomRowCaption = new MyICustomRowCaption();
         }
     }
 }
