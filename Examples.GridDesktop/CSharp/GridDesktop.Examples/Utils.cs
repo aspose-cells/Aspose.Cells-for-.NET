@@ -38,5 +38,10 @@ namespace GridDesktop.Examples
             }
             return retDir + "\\";
         }
+
+        public static string Get_SourceDirectory()
+        {
+            return Path.GetFullPath("..\\..\\..\\..\\Data\\01_SourceDirectory\\");
+        }
     }
 }
