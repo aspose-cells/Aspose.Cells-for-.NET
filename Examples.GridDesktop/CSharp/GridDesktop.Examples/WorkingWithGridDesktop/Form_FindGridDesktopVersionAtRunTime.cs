@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 
 namespace GridDesktop.Examples
-{
+{  
     public partial class Form_FindGridDesktopVersionAtRunTime : Form
     {
         public Form_FindGridDesktopVersionAtRunTime()

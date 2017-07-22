@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Aspose.Cells.GridDesktop;
 
 namespace GridDesktop.Examples
-{
+{  
     public partial class Form_CustomRowAndCustomColumnCaptionOfGridDesktopWorksheet : Form
     {
         public class MyICustomColumnCaption : ICustomColumnCaption

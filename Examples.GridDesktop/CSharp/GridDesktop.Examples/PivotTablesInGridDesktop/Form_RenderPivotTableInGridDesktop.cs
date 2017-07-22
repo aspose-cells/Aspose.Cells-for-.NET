@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 
 namespace GridDesktop.Examples
-{
+{  
     public partial class Form_RenderPivotTableInGridDesktop : Form
     {
         public Form_RenderPivotTableInGridDesktop()
