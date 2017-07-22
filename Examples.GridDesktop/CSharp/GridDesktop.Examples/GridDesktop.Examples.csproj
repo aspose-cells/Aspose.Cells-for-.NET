@@ -62,6 +62,12 @@
     <Compile Include="Articles\DataBindingFeature.Designer.cs">
       <DependentUpon>DataBindingFeature.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCustomRowAndCustomColumnCaption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomRowAndCustomColumnCaption.Designer.cs">
+      <DependentUpon>FormCustomRowAndCustomColumnCaption.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormGridDesktopVersion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -346,6 +352,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Articles\DataBindingFeature.resx">
       <DependentUpon>DataBindingFeature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomRowAndCustomColumnCaption.resx">
+      <DependentUpon>FormCustomRowAndCustomColumnCaption.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGridDesktopVersion.resx">
       <DependentUpon>FormGridDesktopVersion.cs</DependentUpon>

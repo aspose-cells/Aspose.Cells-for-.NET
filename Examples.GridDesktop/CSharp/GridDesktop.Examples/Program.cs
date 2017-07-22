@@ -18,7 +18,8 @@ namespace GridDesktop.Examples
 
             //Comment or uncomment the lines to run different examples
             //Application.Run(new RunExamples());
-            Application.Run(new FormGridDesktopVersion());
+            //Application.Run(new FormGridDesktopVersion());
+            Application.Run(new FormCustomRowAndCustomColumnCaption());
         }
     }
 }
