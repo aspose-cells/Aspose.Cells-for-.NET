@@ -22,7 +22,7 @@ namespace GridDesktop.Examples
             string version = Aspose.Cells.GridDesktop.GridDesktop.GetVersion();
 
             //Show the version number in message box
-            MessageBox.Show("Version: " + version);
+            MessageBox.Show("GridDesktop Version: " + version, "GridDesktop Version");
         }
     }
 }

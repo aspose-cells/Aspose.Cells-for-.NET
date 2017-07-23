@@ -15,11 +15,7 @@ namespace GridDesktop.Examples
     {
         public class MyICustomColumnCaption : ICustomColumnCaption
         {
-            /// <summary> 
-            /// get the custom column caption. 
-            /// </summary> 
-            /// <param name="column">column index.</param> 
-            /// <returns>return the column caption.</returns> 
+            //Returns the Custom Column Caption
             public string GetCaption(int column)
             {
                 return "Mine " + (column + 10);
@@ -27,17 +23,12 @@ namespace GridDesktop.Examples
         }
         public class MyICustomRowCaption : ICustomRowCaption
         {
-            /// <summary> 
-            /// get the custom row caption. 
-            /// </summary> 
-            /// <param name="row">row index.</param> 
-            /// <returns>return the row caption.</returns> 
+            //Returns the Custom Row Caption
             public string GetCaption(int row)
             {
                 return "R" + (row + 10).ToString();
             }
         }
-
 
         public Form_CustomRowAndCustomColumnCaptionOfGridDesktopWorksheet()
         {
@@ -46,8 +37,10 @@ namespace GridDesktop.Examples
 
         private void FormCustomRowAndCustomColumnCaption_Load(object sender, EventArgs e)
         {
+            //Access the First GridDesktop Worksheet
             Worksheet ws = this.gridDesktop1.Worksheets[0];
 
+            //Assign the Worksheet Custom Column and Row Caption Instance
             ws.CustomColumnCaption = new MyICustomColumnCaption();
             ws.CustomRowCaption = new MyICustomRowCaption();
         }
