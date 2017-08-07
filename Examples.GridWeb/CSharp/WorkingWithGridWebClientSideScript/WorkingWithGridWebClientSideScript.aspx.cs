@@ -15,7 +15,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.WorkingWithGridWebClientSideScrip
             {
                 string filePath = Server.MapPath("~/01_SourceDirectory/sampleResizableGridWeb.xlsx");
 
-                GridWeb1.ImportExcelFile(filePath);
+                GridWeb1.ImportExcelFile(filePath); 
             }
 
 

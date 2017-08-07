@@ -13,7 +13,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.WorkingWithGridWebClientSideScrip
         {
             if (Page.IsPostBack == false && this.GridWeb1.IsPostBack == false)
             {
-                string filePath = Server.MapPath("~/01_SourceDirectory/sampleResizableGridWeb.xlsx");
+                string filePath = Server.MapPath("~/01_SourceDirectory/sampleResizableGridWeb.xlsx"); 
 
                 GridWeb1.ImportExcelFile(filePath);
             }

@@ -31,6 +31,6 @@
             <acw:GridWeb ID="GridWeb1" runat="server" XhtmlMode="True" Height="400px" Width="100%">
             </acw:GridWeb>
         </div>
-    </form>
+    </form> 
 </body>
 </html>
