@@ -602,6 +602,13 @@
     <Compile Include="Miscellaneous\Common\ShowHeaderBarAndCommandButton.aspx.designer.cs">
       <DependentUpon>ShowHeaderBarAndCommandButton.aspx</DependentUpon>
     </Compile>
+    <Compile Include="WorkingWithGridWebClientSideScript\WorkingWithGridWebClientSideScript.aspx.cs">
+      <DependentUpon>WorkingWithGridWebClientSideScript.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkingWithGridWebClientSideScript\WorkingWithGridWebClientSideScript.aspx.designer.cs">
+      <DependentUpon>WorkingWithGridWebClientSideScript.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Worksheets\AccessNamedRanges.aspx.cs">
       <DependentUpon>AccessNamedRanges.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -978,6 +985,7 @@
     <Content Include="RowsAndColumns\ResizeRowsColumns.aspx" />
     <Content Include="RowsAndColumns\RestrictContextMenu.aspx" />
     <Content Include="Styles\Site.css" />
+    <Content Include="WorkingWithGridWebClientSideScript\WorkingWithGridWebClientSideScript.aspx" />
     <Content Include="Worksheets\AccessNamedRanges.aspx" />
     <Content Include="Worksheets\AddHyperlinks.aspx" />
     <Content Include="Worksheets\ExportDataTable.aspx" />
