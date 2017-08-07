@@ -23,7 +23,7 @@
               );
         });
     </script>
-    <title>Test GridWeb</title>
+    <title>Making GridWeb resizable using resizable jquery ui feature</title>
 </head>
 <body>
     <form id="form1" runat="server">
