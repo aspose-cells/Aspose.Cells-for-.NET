@@ -100,6 +100,7 @@ namespace Aspose.Cells.Examples.CSharp
             Worksheets.PageSetupFeatures.DetermineIfPaperSizeOfWorksheetIsAutomatic.Run();
             Fonts.SetDefaultFontPropertyOfPdfSaveOptionsAndImageOrPrintOptions.Run();
             LoadingSavingConvertingAndManaging.ReadNumbersSpreadsheet.Run();
+            WorkbookSettings.ImplementErrorsAndBooleanValueInRussianOrAnyOtherLanguage.Run();
 
             //Aspose.Cells for .NET v17.6
             //DrawingObjects.TilePictureAsTextureInsideShape.Run();

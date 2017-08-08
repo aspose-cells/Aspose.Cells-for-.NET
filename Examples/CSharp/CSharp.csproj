@@ -633,6 +633,7 @@
     <Compile Include="Tables\SetCommentOfTableOrListObject.cs" />
     <Compile Include="Tables\CreatingListObject.cs" />
     <Compile Include="Tables\FormataListObject.cs" />
+    <Compile Include="WorkbookSettings\ImplementErrorsAndBooleanValueInRussianOrAnyOtherLanguage.cs" />
     <Compile Include="WorkbookVBAProject\CheckifVBAProjectisProtectedandLockedforViewing.cs" />
     <Compile Include="WorkbookVBAProject\FindoutifVBAProjectisProtected.cs" />
     <Compile Include="WorkbookVBAProject\PasswordProtecttheVBAProjectofExcelWorkbook.cs" />
