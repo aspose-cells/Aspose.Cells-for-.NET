@@ -99,6 +99,7 @@ namespace Aspose.Cells.Examples.CSharp
             Data.ApplyAdvancedFilterOfMicrosoftExcel.Run();
             Worksheets.PageSetupFeatures.DetermineIfPaperSizeOfWorksheetIsAutomatic.Run();
             Fonts.SetDefaultFontPropertyOfPdfSaveOptionsAndImageOrPrintOptions.Run();
+            LoadingSavingConvertingAndManaging.ReadNumbersSpreadsheet.Run();
 
             //Aspose.Cells for .NET v17.6
             //DrawingObjects.TilePictureAsTextureInsideShape.Run();
