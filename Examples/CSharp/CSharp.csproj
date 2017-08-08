@@ -368,6 +368,7 @@
     <Compile Include="Charts\SettingChartsData.cs" />
     <Compile Include="Charts\UsingSparklines.cs" />
     <Compile Include="Data\ApplyAdvancedFilterOfMicrosoftExcel.cs" />
+    <Compile Include="Data\DetermineIfPaperSizeOfWorksheetIsAutomatic.cs" />
     <Compile Include="Data\ExportHTMLStringValueOfCellsToDataTable.cs" />
     <Compile Include="Data\ShiftFirstRowDownWhenInsertingCellsDataTableRows.cs" />
     <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToAnotherCell.cs" />
