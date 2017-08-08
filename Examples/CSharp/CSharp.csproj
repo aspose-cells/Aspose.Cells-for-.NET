@@ -368,7 +368,6 @@
     <Compile Include="Charts\SettingChartsData.cs" />
     <Compile Include="Charts\UsingSparklines.cs" />
     <Compile Include="Data\ApplyAdvancedFilterOfMicrosoftExcel.cs" />
-    <Compile Include="Data\DetermineIfPaperSizeOfWorksheetIsAutomatic.cs" />
     <Compile Include="Data\ExportHTMLStringValueOfCellsToDataTable.cs" />
     <Compile Include="Data\ShiftFirstRowDownWhenInsertingCellsDataTableRows.cs" />
     <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToAnotherCell.cs" />
@@ -509,6 +508,7 @@
     <Compile Include="Files\Utility\AccessingDocumentProperties.cs" />
     <Compile Include="Files\Utility\WorksheetToImage.cs" />
     <Compile Include="Fonts\GetListOfFontsUsedInSpreadsheetOrWorkbook.cs" />
+    <Compile Include="Fonts\SetDefaultFontPropertyOfPdfSaveOptionsAndImageOrPrintOptions.cs" />
     <Compile Include="Formatting\ApproachesToFormatData\ApplyingGradientFillEffects.cs" />
     <Compile Include="Formatting\ApproachesToFormatData\UsingExcelPredefinedStyles.cs" />
     <Compile Include="Formatting\ApproachesToFormatData\UsingGetStyleSetStyle.cs" />
@@ -655,6 +655,7 @@
     <Compile Include="Worksheets\Management\RemovingWorksheetsUsingSheetIndex.cs" />
     <Compile Include="Worksheets\Management\RemovingWorksheetsUsingSheetName.cs" />
     <Compile Include="Worksheets\PageSetupFeatures\CopyPageSetupSettingsFromSourceWorksheetToDestinationWorksheet.cs" />
+    <Compile Include="Worksheets\PageSetupFeatures\DetermineIfPaperSizeOfWorksheetIsAutomatic.cs" />
     <Compile Include="Worksheets\PageSetupFeatures\FitToPagesOptions.cs" />
     <Compile Include="Worksheets\PageSetupFeatures\GetPageDimensions.cs" />
     <Compile Include="Worksheets\PageSetupFeatures\InsertImageInHeaderFooter.cs" />

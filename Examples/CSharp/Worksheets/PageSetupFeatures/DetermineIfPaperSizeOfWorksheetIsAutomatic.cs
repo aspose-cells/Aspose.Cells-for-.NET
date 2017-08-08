@@ -3,7 +3,7 @@ using System.IO;
 
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.CSharp.Data
+namespace Aspose.Cells.Examples.CSharp.Worksheets.PageSetupFeatures
 {
     public class DetermineIfPaperSizeOfWorksheetIsAutomatic
     {
