@@ -94,11 +94,14 @@ namespace Aspose.Cells.Examples.CSharp
             Console.WriteLine("Aspose.Cells for .NET v" + CellsHelper.GetVersion());
             Console.WriteLine("");
 
-            // Uncomment the one you want to try out        
+            // Uncomment the one you want to try out
+            //Aspose.Cells for .NET v17.7
+            Data.ApplyAdvancedFilterOfMicrosoftExcel.Run();
+
             //Aspose.Cells for .NET v17.6
-            DrawingObjects.TilePictureAsTextureInsideShape.Run();
-            SmartMarkers.UsingFormulaParameterInSmartMarkerField.Run();
-            Rendering.ExportRangeOfCellsInWorksheetToImage.Run();
+            //DrawingObjects.TilePictureAsTextureInsideShape.Run();
+            //SmartMarkers.UsingFormulaParameterInSmartMarkerField.Run();
+            //Rendering.ExportRangeOfCellsInWorksheetToImage.Run();
 
             //Aspose.Cells for .NET v17.5
             //Data.ExportHTMLStringValueOfCellsToDataTable.Run();
