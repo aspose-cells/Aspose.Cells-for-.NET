@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp.LoadingSavingConvertingAndManaging
 {
-    public class ReadNumbersSpreadsheet
+    public class ReadNumbersSpreadsheet 
     {
         public static void Run()
         {

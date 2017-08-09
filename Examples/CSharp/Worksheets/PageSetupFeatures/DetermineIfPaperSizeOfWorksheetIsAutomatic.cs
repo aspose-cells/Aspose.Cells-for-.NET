@@ -5,7 +5,7 @@ using Aspose.Cells;
 
 namespace Aspose.Cells.Examples.CSharp.Worksheets.PageSetupFeatures
 {
-    public class DetermineIfPaperSizeOfWorksheetIsAutomatic
+    public class DetermineIfPaperSizeOfWorksheetIsAutomatic 
     {
         public static void Run()
         {

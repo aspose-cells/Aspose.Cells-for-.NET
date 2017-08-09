@@ -5,7 +5,7 @@ using Aspose.Cells;
 
 namespace Aspose.Cells.Examples.CSharp.Data
 {
-    public class ApplyAdvancedFilterOfMicrosoftExcel
+    public class ApplyAdvancedFilterOfMicrosoftExcel 
     {
         public static void Run()
         {

@@ -26,7 +26,7 @@ namespace Aspose.Cells.Examples.CSharp.WorkbookSettings
         }
     }
 
-    public class ImplementErrorsAndBooleanValueInRussianOrAnyOtherLanguage
+    public class ImplementErrorsAndBooleanValueInRussianOrAnyOtherLanguage 
     {
         public static void Run()
         {

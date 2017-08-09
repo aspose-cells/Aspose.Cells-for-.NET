@@ -7,7 +7,7 @@ using System.Drawing.Imaging;
 
 namespace Aspose.Cells.Examples.CSharp.Fonts
 {
-    public class SetDefaultFontPropertyOfPdfSaveOptionsAndImageOrPrintOptions
+    public class SetDefaultFontPropertyOfPdfSaveOptionsAndImageOrPrintOptions 
     {
         public static void Run()
         {
