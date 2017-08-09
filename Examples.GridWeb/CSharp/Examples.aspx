@@ -865,7 +865,7 @@
             <div class="tab-pane active" id="WorkingWithGridWebClientSideScript">
                 <ul class="list-group">
                     <li class="list-group-item" title="Resize GridWeb in the browser window - Using GridWeb’s resize method">
-                        <p class="productTitle"><a href="WorkingWithGridWebClientSideScript/WorkingWithGridWebClientSideScript.aspx">Resize GridWeb in the browser window - Using GridWeb’s resize method</a></p>
+                        <p class="productTitle"><a href="WorkingWithGridWebClientSideScript/ResizeGridWebUsingResizeMethod.aspx">Resize GridWeb in the browser window - Using GridWeb’s resize method</a></p>
                         <p>
                             Sometimes you want Aspose.Cells.GridWeb should resize itself in accordance with browser window. Aspose.Cells.GridWeb provides client-side resize() function for this purpose.
                         </p>
