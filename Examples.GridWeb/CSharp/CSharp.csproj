@@ -609,12 +609,12 @@
     <Compile Include="WorkingWithGridWebClientSideScript\MakingGridWebResizableUsingResizablejQueryUiFeature.aspx.designer.cs">
       <DependentUpon>MakingGridWebResizableUsingResizablejQueryUiFeature.aspx</DependentUpon>
     </Compile>
-    <Compile Include="WorkingWithGridWebClientSideScript\WorkingWithGridWebClientSideScript.aspx.cs">
-      <DependentUpon>WorkingWithGridWebClientSideScript.aspx</DependentUpon>
+    <Compile Include="WorkingWithGridWebClientSideScript\ResizeGridWebUsingResizeMethod.aspx.cs">
+      <DependentUpon>ResizeGridWebUsingResizeMethod.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WorkingWithGridWebClientSideScript\WorkingWithGridWebClientSideScript.aspx.designer.cs">
-      <DependentUpon>WorkingWithGridWebClientSideScript.aspx</DependentUpon>
+    <Compile Include="WorkingWithGridWebClientSideScript\ResizeGridWebUsingResizeMethod.aspx.designer.cs">
+      <DependentUpon>ResizeGridWebUsingResizeMethod.aspx</DependentUpon>
     </Compile>
     <Compile Include="Worksheets\AccessNamedRanges.aspx.cs">
       <DependentUpon>AccessNamedRanges.aspx</DependentUpon>
@@ -993,7 +993,7 @@
     <Content Include="RowsAndColumns\RestrictContextMenu.aspx" />
     <Content Include="Styles\Site.css" />
     <Content Include="WorkingWithGridWebClientSideScript\MakingGridWebResizableUsingResizablejQueryUiFeature.aspx" />
-    <Content Include="WorkingWithGridWebClientSideScript\WorkingWithGridWebClientSideScript.aspx" />
+    <Content Include="WorkingWithGridWebClientSideScript\ResizeGridWebUsingResizeMethod.aspx" />
     <Content Include="Worksheets\AccessNamedRanges.aspx" />
     <Content Include="Worksheets\AddHyperlinks.aspx" />
     <Content Include="Worksheets\ExportDataTable.aspx" />

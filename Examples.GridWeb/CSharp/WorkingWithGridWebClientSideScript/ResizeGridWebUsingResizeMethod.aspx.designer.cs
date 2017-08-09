@@ -7,10 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Aspose.Cells.GridWeb.Examples.CSharp.WorkingWithGridWebClientSideScript {
+namespace Aspose.Cells.GridWeb.Examples.CSharp.WorkingWithGridWebClientSideScript
+{
     
     
-    public partial class WorkingWithGridWebClientSideScript {
+    public partial class ResizeGridWebUsingResizeMethod {
         
         /// <summary>
         /// form1 control.

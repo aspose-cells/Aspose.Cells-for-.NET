@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Aspose.Cells.GridWeb.Examples.CSharp.WorkingWithGridWebClientSideScript
 {
-    public partial class WorkingWithGridWebClientSideScript : System.Web.UI.Page
+    public partial class ResizeGridWebUsingResizeMethod : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

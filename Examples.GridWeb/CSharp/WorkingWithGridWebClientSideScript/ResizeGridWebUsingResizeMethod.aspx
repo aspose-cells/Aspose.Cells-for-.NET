@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WorkingWithGridWebClientSideScript.aspx.cs" Inherits="Aspose.Cells.GridWeb.Examples.CSharp.WorkingWithGridWebClientSideScript.WorkingWithGridWebClientSideScript" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ResizeGridWebUsingResizeMethod.aspx.cs" Inherits="Aspose.Cells.GridWeb.Examples.CSharp.WorkingWithGridWebClientSideScript.ResizeGridWebUsingResizeMethod" %>
 
 <%@ Register TagPrefix="acw" Namespace="Aspose.Cells.GridWeb" Assembly="Aspose.Cells.GridWeb" %>
 <!DOCTYPE html>
