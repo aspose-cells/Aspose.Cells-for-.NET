@@ -42,7 +42,7 @@
             resizeTimer = setTimeout(doResizing, 100);
         });
     </script>
-    <title>Using GridWeb’s resize method</title>
+    <title>Using GridWeb’s resize method</title> 
 </head>
 <body>
     <form id="form1" runat="server">
