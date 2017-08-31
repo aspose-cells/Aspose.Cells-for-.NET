@@ -95,12 +95,15 @@ namespace Aspose.Cells.Examples.CSharp
             Console.WriteLine("");
 
             // Uncomment the one you want to try out
+            //Aspose.Cells for .NET v17.8
+            LoadingSavingConvertingAndManaging.DisableDownlevelRevealedCommentsWhileSavingToHTML.Run();
+
             //Aspose.Cells for .NET v17.7
-            Data.ApplyAdvancedFilterOfMicrosoftExcel.Run();
-            Fonts.SetDefaultFontPropertyOfPdfSaveOptionsAndImageOrPrintOptions.Run();
-            LoadingSavingConvertingAndManaging.ReadNumbersSpreadsheet.Run();
-            WorkbookSettings.ImplementErrorsAndBooleanValueInRussianOrAnyOtherLanguage.Run();
-            Worksheets.PageSetupFeatures.DetermineIfPaperSizeOfWorksheetIsAutomatic.Run();
+            //Data.ApplyAdvancedFilterOfMicrosoftExcel.Run();
+            //Fonts.SetDefaultFontPropertyOfPdfSaveOptionsAndImageOrPrintOptions.Run();
+            //LoadingSavingConvertingAndManaging.ReadNumbersSpreadsheet.Run();
+            //WorkbookSettings.ImplementErrorsAndBooleanValueInRussianOrAnyOtherLanguage.Run();
+            //Worksheets.PageSetupFeatures.DetermineIfPaperSizeOfWorksheetIsAutomatic.Run();
 
             //Aspose.Cells for .NET v17.6
             //DrawingObjects.TilePictureAsTextureInsideShape.Run();

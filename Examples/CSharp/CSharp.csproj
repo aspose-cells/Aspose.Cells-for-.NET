@@ -571,6 +571,7 @@
     <Compile Include="KnowledgeBase\FAQs\FixOutOfMemoryException.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\AutoFitColumnsandRowsWhileLoadingHTMLInWorkbook.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\ConvertExcelFileToPDFA_1a.cs" />
+    <Compile Include="LoadingSavingConvertingAndManaging\DisableDownlevelRevealedCommentsWhileSavingToHTML.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\GetWarningsWhileLoadingExcelFile.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\ReadNumbersSpreadsheet.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\TrimLeadingBlankRowsAndColumnsWhileExportingSpreadsheetsToCSVFormat.cs" />
