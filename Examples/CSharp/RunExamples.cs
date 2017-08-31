@@ -96,7 +96,7 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out
             //Aspose.Cells for .NET v17.7
-            //Data.ApplyAdvancedFilterOfMicrosoftExcel.Run();
+            Data.ApplyAdvancedFilterOfMicrosoftExcel.Run();
             Fonts.SetDefaultFontPropertyOfPdfSaveOptionsAndImageOrPrintOptions.Run();
             LoadingSavingConvertingAndManaging.ReadNumbersSpreadsheet.Run();
             WorkbookSettings.ImplementErrorsAndBooleanValueInRussianOrAnyOtherLanguage.Run();
