@@ -36,6 +36,7 @@ namespace Aspose.Cells.Examples.CSharp._Workbook
             workbook.AddDigitalSignature(dsCollection);
 
             //Save the workbook and dispose it.
+            workbook.Save(outputDir + "outputDigitallySignedByCells.xlsx");
             workbook.Dispose();
 
             Console.WriteLine("AddDigitalSignatureToAnAlreadySignedExcelFile executed successfully.\r\n");
