@@ -99,6 +99,7 @@ namespace Aspose.Cells.Examples.CSharp
             LoadingSavingConvertingAndManaging.DisableDownlevelRevealedCommentsWhileSavingToHTML.Run();
             _Workbook.AddDigitalSignatureToAnAlreadySignedExcelFile.Run();
             LoadingSavingConvertingAndManaging.ExportCommentsWhileSavingExcelFileToHtml.Run();
+            Rendering.OutputBlankPageWhenThereIsNothingToPrint.Run();
 
             //Aspose.Cells for .NET v17.7
             //Data.ApplyAdvancedFilterOfMicrosoftExcel.Run();
