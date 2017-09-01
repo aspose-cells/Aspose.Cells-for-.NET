@@ -7,7 +7,7 @@ using System.IO;
 
 namespace Aspose.Cells.Examples.CSharp._CellsHelper
 {
-    public class UsingCustomImplementationFactoryToCreateCustomImplementationOfMemoryStream
+    public class UsingCustomImplementationFactoryToCreateCustomImplementationOfMemoryStream 
     {
         /*
         //Implement CustomImplementationFactory - CELLSNET-45461 - CELLSNET-45461 - CELLSNET-45461

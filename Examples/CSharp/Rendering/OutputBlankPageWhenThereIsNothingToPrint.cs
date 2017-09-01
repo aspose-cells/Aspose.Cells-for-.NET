@@ -6,7 +6,7 @@ using System.Text;
 using Aspose.Cells.Rendering;
 using System.Drawing.Imaging;
 
-namespace Aspose.Cells.Examples.CSharp.Rendering
+namespace Aspose.Cells.Examples.CSharp.Rendering 
 {
     public class OutputBlankPageWhenThereIsNothingToPrint 
     {

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp._Workbook
 {
-    public class AddDigitalSignatureToAnAlreadySignedExcelFile 
+    public class AddDigitalSignatureToAnAlreadySignedExcelFile
     {
         public static void Run()
         {
