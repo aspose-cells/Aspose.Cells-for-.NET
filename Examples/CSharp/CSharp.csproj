@@ -341,6 +341,7 @@
     <Compile Include="CellsHelperClass\NameToIndex.cs" />
     <Compile Include="CellsHelperClass\IndexToName.cs" />
     <Compile Include="CellsHelperClass\NumberOfSignificantDigits.cs" />
+    <Compile Include="CellsHelper\UsingCustomImplementationFactoryToCreateCustomImplementationOfMemoryStream.cs" />
     <Compile Include="Charts\Applying3DFormat.cs" />
     <Compile Include="Charts\ChangeChartPosition.cs" />
     <Compile Include="Charts\ChartRendering.cs" />
@@ -719,6 +720,7 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

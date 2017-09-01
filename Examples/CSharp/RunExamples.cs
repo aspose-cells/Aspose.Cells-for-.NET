@@ -97,10 +97,11 @@ namespace Aspose.Cells.Examples.CSharp
             // Uncomment the one you want to try out
             //Aspose.Cells for .NET v17.8
             LoadingSavingConvertingAndManaging.DisableDownlevelRevealedCommentsWhileSavingToHTML.Run();
-            _Workbook.AddDigitalSignatureToAnAlreadySignedExcelFile.Run();
             LoadingSavingConvertingAndManaging.ExportCommentsWhileSavingExcelFileToHtml.Run();
             Rendering.OutputBlankPageWhenThereIsNothingToPrint.Run();
-
+            _CellsHelper.UsingCustomImplementationFactoryToCreateCustomImplementationOfMemoryStream.Run();
+            _Workbook.AddDigitalSignatureToAnAlreadySignedExcelFile.Run();
+            
             //Aspose.Cells for .NET v17.7
             //Data.ApplyAdvancedFilterOfMicrosoftExcel.Run();
             //Fonts.SetDefaultFontPropertyOfPdfSaveOptionsAndImageOrPrintOptions.Run();
