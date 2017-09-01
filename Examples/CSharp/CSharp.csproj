@@ -638,6 +638,7 @@
     <Compile Include="WorkbookVBAProject\CheckifVBAProjectisProtectedandLockedforViewing.cs" />
     <Compile Include="WorkbookVBAProject\FindoutifVBAProjectisProtected.cs" />
     <Compile Include="WorkbookVBAProject\PasswordProtecttheVBAProjectofExcelWorkbook.cs" />
+    <Compile Include="Workbook\AddDigitalSignatureToAnAlreadySignedExcelFile.cs" />
     <Compile Include="Worksheets\Display\ControlTabBarWidth.cs" />
     <Compile Include="Worksheets\Display\DisplayHideGridlines.cs" />
     <Compile Include="Worksheets\Display\DisplayHideRowColumnHeaders.cs" />
