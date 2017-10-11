@@ -462,6 +462,7 @@
     <Compile Include="DrawingObjects\Pictures\PictureCellReference.cs" />
     <Compile Include="DrawingObjects\Pictures\PositioningPictures\AbsolutePositioning.cs" />
     <Compile Include="DrawingObjects\Pictures\PositioningPictures\ProportionalPositioning.cs" />
+    <Compile Include="DrawingObjects\SendShapeFrontOrBackInWorksheet.cs" />
     <Compile Include="DrawingObjects\TilePictureAsTextureInsideShape.cs" />
     <Compile Include="Files\Handling\LoadVisibleSheetsOnly.cs" />
     <Compile Include="Files\Handling\OpeningCSVFiles.cs" />
