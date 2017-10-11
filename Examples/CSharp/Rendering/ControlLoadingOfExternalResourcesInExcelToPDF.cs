@@ -9,7 +9,7 @@ using System;
 
 namespace Aspose.Cells.Examples.CSharp.Rendering
 {
-    public class ControlLoadingOfExternalResourcesInExcelToPDF
+    public class ControlLoadingOfExternalResourcesInExcelToPDF 
     {
         //Implement IStreamProvider
         class MyStreamProvider : IStreamProvider

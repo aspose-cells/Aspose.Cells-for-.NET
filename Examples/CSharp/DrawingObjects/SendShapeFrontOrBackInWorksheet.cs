@@ -5,7 +5,7 @@ using System;
 
 namespace Aspose.Cells.Examples.CSharp.DrawingObjects
 {
-    public class SendShapeFrontOrBackInWorksheet
+    public class SendShapeFrontOrBackInWorksheet 
     {
         public static void Run()
         {

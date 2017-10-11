@@ -9,7 +9,7 @@ using System.Drawing.Imaging;
 
 namespace Aspose.Cells.Examples.CSharp.Rendering 
 {
-    public class AddPDFBookmarksWithNamedDestinations
+    public class AddPDFBookmarksWithNamedDestinations 
     {
         public static void Run()
         {

@@ -7,7 +7,7 @@ using Aspose.Cells.Vba;
 
 namespace Aspose.Cells.Examples.CSharp.WorkbookVBAProject
 {
-    class CopyVBAMacroUserFormDesignerStorageToWorkbook
+    class CopyVBAMacroUserFormDesignerStorageToWorkbook 
     {
         public static void Run()
         {

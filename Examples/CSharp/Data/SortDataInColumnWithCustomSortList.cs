@@ -6,7 +6,7 @@ using System.Drawing;
 
 namespace Aspose.Cells.Examples.CSharp.Data
 {
-    public class SortDataInColumnWithCustomSortList
+    public class SortDataInColumnWithCustomSortList 
     {
         public static void Run()
         {
