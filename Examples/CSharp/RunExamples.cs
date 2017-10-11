@@ -98,7 +98,8 @@ namespace Aspose.Cells.Examples.CSharp
 
             //Aspose.Cells for .NET v17.9
             //Rendering.AddPDFBookmarksWithNamedDestinations.Run();
-            Rendering.ControlLoadingOfExternalResourcesInExcelToPDF.Run();
+            //Rendering.ControlLoadingOfExternalResourcesInExcelToPDF.Run();
+            WorkbookVBAProject.CopyVBAMacroUserFormDesignerStorageToWorkbook.Run();
 
 
             //Aspose.Cells for .NET v17.8
