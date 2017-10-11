@@ -433,6 +433,7 @@
     <Compile Include="Data\Processing\FilteringAndValidation\TimeDataValidation.cs" />
     <Compile Include="Data\Processing\FilteringAndValidation\WholeNumberDataValidation.cs" />
     <Compile Include="Data\RenameDuplicateColumnsAutomaticallyWhileExportingWorksheetData.cs" />
+    <Compile Include="Data\SortDataInColumnWithCustomSortList.cs" />
     <Compile Include="Data\SpecifyingDBNumCustomPatternFormatting.cs" />
     <Compile Include="Data\SpecifyingSortWarningWhileSortingData.cs" />
     <Compile Include="DrawingObjects\AccessNonPrimitiveShape.cs" />

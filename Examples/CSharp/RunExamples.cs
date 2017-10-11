@@ -100,7 +100,8 @@ namespace Aspose.Cells.Examples.CSharp
             //Rendering.AddPDFBookmarksWithNamedDestinations.Run();
             //Rendering.ControlLoadingOfExternalResourcesInExcelToPDF.Run();
             //WorkbookVBAProject.CopyVBAMacroUserFormDesignerStorageToWorkbook.Run();
-            DrawingObjects.SendShapeFrontOrBackInWorksheet.Run();
+            //DrawingObjects.SendShapeFrontOrBackInWorksheet.Run();
+            Data.SortDataInColumnWithCustomSortList.Run();
 
 
             //Aspose.Cells for .NET v17.8
