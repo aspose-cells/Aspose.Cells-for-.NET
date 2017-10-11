@@ -591,6 +591,7 @@
     <Compile Include="PivotTable\ChangeSourceData.cs" />
     <Compile Include="Rendering\ExportRangeOfCellsInWorksheetToImage.cs" />
     <Compile Include="Rendering\OutputBlankPageWhenThereIsNothingToPrint.cs" />
+    <Compile Include="Rendering\AddPDFBookmarksWithNamedDestinations.cs" />
     <Compile Include="RowsColumns\AutofitRowsforMergedCells.cs" />
     <Compile Include="RowsColumns\AutofitColumninSpecificRange.cs" />
     <Compile Include="RowsColumns\AutofitRowinSpecificRange.cs" />
