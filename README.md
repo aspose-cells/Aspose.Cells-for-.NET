@@ -1,8 +1,8 @@
 ## Aspose.Cells for .NET
 
-[Aspose.Cells for .NET](http://www.aspose.com/products/cells/net) is an Excel Spreadsheet Programming API allowing software developers to manipulate and convert spreadsheet files from within their own applications. A combination of APIs and GUI controls - Aspose.Cells for .NET speeds up Microsoft Excel programming and conversion.
+[Aspose.Cells for .NET](https://www.aspose.com/products/cells/net) is an Excel Spreadsheet Programming API allowing software developers to manipulate and convert spreadsheet files from within their own applications. A combination of APIs and GUI controls - Aspose.Cells for .NET speeds up Microsoft Excel programming and conversion.
 
-This repository contains [Examples](Examples), [Plugins](Plugins) and Showcases for [Aspose.Cells for .NET](http://www.aspose.com/products/cells/net) to help you learn and write your own applications.
+This repository contains [Examples](Examples), [Plugins](Plugins) and Showcases for [Aspose.Cells for .NET](https://www.aspose.com/products/cells/net) to help you learn and write your own applications.
 
 <p align="center">
   <a title="Download ZIP" href="https://github.com/aspose-cells/Aspose.Cells-for-.NET/archive/master.zip">
@@ -20,8 +20,8 @@ Directory | Description
 
 ## Resources
 
-* **Website:** [www.aspose.com](http://www.aspose.com)
-* **Product Home:** [Aspose.Cells for .NET](http://www.aspose.com/products/cells/net)
+* **Website:** [www.aspose.com](https://www.aspose.com)
+* **Product Home:** [Aspose.Cells for .NET](https://www.aspose.com/products/cells/net)
 * **Download:** [Download Aspose.Cells for .NET](https://downloads.aspose.com/cells/net)
 * **Documentation:** [Aspose.Cells for .NET Documentation](https://docs.aspose.com//display/cellsnet/Home)
 * **Forum:** [Aspose.Cells for .NET Forum](https://forum.aspose.com/c/cells)
