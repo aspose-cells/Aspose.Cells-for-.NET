@@ -30,7 +30,7 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets.PageSetupFeatures
             pageSetup.SetHeader(2, "&\"Times New Roman,Bold\"&12&F");
 
             // Setting a string at the left section of the footer and changing the font
-            // of the footer
+            // of a part of this string ("123")
             pageSetup.SetFooter(0, "Hello World! &\"Courier New\"&14 123");
 
             // Setting the current page number at the central section of the footer
