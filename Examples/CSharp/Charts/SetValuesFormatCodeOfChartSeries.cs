@@ -23,7 +23,7 @@ namespace Aspose.Cells.Examples.CSharp.Charts
             Workbook wb = new Workbook(sourceDir + "sampleSeries_ValuesFormatCode.xlsx");
 
             //Access first worksheet
-            Worksheet worksheet = wb.Worksheets[0];
+            Worksheet worksheet = wb.Worksheets[0]; 
 
             //Access first chart
             Chart ch = worksheet.Charts[0];
