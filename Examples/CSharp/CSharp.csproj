@@ -648,6 +648,7 @@
     <Compile Include="WorkbookVBAProject\PasswordProtecttheVBAProjectofExcelWorkbook.cs" />
     <Compile Include="WorkbookVBAProject\CopyVBAMacroUserFormDesignerStorageToWorkbook.cs" />
     <Compile Include="Workbook\AddDigitalSignatureToAnAlreadySignedExcelFile.cs" />
+    <Compile Include="Workbook\ReadAndWriteExternalConnectionOfXLSBFile.cs" />
     <Compile Include="Worksheets\UtilizeSheet_SheetId_PropertyOfOpenXml.cs" />
     <Compile Include="Worksheets\Display\ControlTabBarWidth.cs" />
     <Compile Include="Worksheets\Display\DisplayHideGridlines.cs" />
