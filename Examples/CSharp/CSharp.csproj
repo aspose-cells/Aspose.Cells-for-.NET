@@ -556,6 +556,7 @@
     <Compile Include="Formulas\CalculatingFormulas.cs" />
     <Compile Include="Formulas\CalculatingFormulasOnce.cs" />
     <Compile Include="Formulas\DirectCalculationFormula.cs" />
+    <Compile Include="Formulas\InterruptOrCancelFormulaCalculationOfWorkbook.cs" />
     <Compile Include="Formulas\ProcessDataUsingArrayFunction.cs" />
     <Compile Include="Formulas\ProcessDataUsingR1C1.cs" />
     <Compile Include="Formulas\ProcessDataUsingAddinfunction.cs" />
