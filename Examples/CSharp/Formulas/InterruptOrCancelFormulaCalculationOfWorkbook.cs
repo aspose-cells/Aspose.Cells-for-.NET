@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp.Formulas
 {
-    class InterruptOrCancelFormulaCalculationOfWorkbook
+    class InterruptOrCancelFormulaCalculationOfWorkbook 
     {
         //Implement calculation monitor class
         class clsCalculationMonitor : AbstractCalculationMonitor
