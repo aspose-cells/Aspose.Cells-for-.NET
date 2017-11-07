@@ -100,7 +100,8 @@ namespace Aspose.Cells.Examples.CSharp
             //Charts.SetValuesFormatCodeOfChartSeries.Run();
             //Worksheets.UtilizeSheet_SheetId_PropertyOfOpenXml.Run();
             //_Workbook.ReadAndWriteExternalConnectionOfXLSBFile.Run();
-            Formulas.InterruptOrCancelFormulaCalculationOfWorkbook.Run();
+            //Formulas.InterruptOrCancelFormulaCalculationOfWorkbook.Run();
+            LoadingSavingConvertingAndManaging.SpecifyHtmlCrossTypeInOutputHTML.Run();
 
             //Aspose.Cells for .NET v17.9
             //Rendering.AddPDFBookmarksWithNamedDestinations.Run();

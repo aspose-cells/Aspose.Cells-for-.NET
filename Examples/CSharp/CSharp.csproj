@@ -580,6 +580,7 @@
     <Compile Include="LoadingSavingConvertingAndManaging\ExportCommentsWhileSavingExcelFileToHtml.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\GetWarningsWhileLoadingExcelFile.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\ReadNumbersSpreadsheet.cs" />
+    <Compile Include="LoadingSavingConvertingAndManaging\SpecifyHtmlCrossTypeInOutputHTML.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\TrimLeadingBlankRowsAndColumnsWhileExportingSpreadsheetsToCSVFormat.cs" />
     <Compile Include="PivotTable\ConsolidationFunctions.cs" />
     <Compile Include="PivotTable\CustomizePivotTableGlobalSettings.cs" />
