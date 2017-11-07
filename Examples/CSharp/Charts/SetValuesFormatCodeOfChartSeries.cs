@@ -9,7 +9,7 @@ using Aspose.Cells.Charts;
 
 namespace Aspose.Cells.Examples.CSharp.Charts
 {
-    class SetValuesFormatCodeOfChartSeries 
+    class SetValuesFormatCodeOfChartSeries
     {
         public static void Run()
         {

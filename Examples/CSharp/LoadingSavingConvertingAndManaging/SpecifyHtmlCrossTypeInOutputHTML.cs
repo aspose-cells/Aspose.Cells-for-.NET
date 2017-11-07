@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp.LoadingSavingConvertingAndManaging
 {
-    class SpecifyHtmlCrossTypeInOutputHTML 
+    class SpecifyHtmlCrossTypeInOutputHTML
     {
         public static void Run()
         {
