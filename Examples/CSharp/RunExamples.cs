@@ -98,6 +98,7 @@ namespace Aspose.Cells.Examples.CSharp
 
             //Aspose.Cells for .NET v17.10
             Charts.SetValuesFormatCodeOfChartSeries.Run();
+            Worksheets.UtilizeSheet_SheetId_PropertyOfOpenXml.Run();
 
             //Aspose.Cells for .NET v17.9
             //Rendering.AddPDFBookmarksWithNamedDestinations.Run();
