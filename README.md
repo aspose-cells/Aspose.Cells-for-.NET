@@ -21,7 +21,7 @@ Directory | Description
 ## Resources
 
 * **Website:** [www.aspose.com](https://www.aspose.com)
-* **Product Home:** [Aspose.Cells for .NET](https://www.aspose.com/products/cells/net)
+* **Product Home:** [Aspose.Cells for .NET](https://products.aspose.com/cells/net)
 * **Download:** [Download Aspose.Cells for .NET](https://downloads.aspose.com/cells/net)
 * **Documentation:** [Aspose.Cells for .NET Documentation](https://docs.aspose.com//display/cellsnet/Home)
 * **Forum:** [Aspose.Cells for .NET Forum](https://forum.aspose.com/c/cells)
