@@ -96,6 +96,9 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out
 
+            //Aspose.Cells for .NET v17.11
+            DrawingObjects.ConvertSmartArtToGroupShape.Run();
+
             //Aspose.Cells for .NET v17.10
             //Charts.SetValuesFormatCodeOfChartSeries.Run();
             //Worksheets.UtilizeSheet_SheetId_PropertyOfOpenXml.Run();
