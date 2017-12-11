@@ -715,6 +715,7 @@
     <Compile Include="Worksheets\Value\CopyWorksheetFromWorkbookToOther.cs" />
     <Compile Include="Worksheets\Value\CopyWorksheetsBetweenWorkbooks.cs" />
     <Compile Include="Worksheets\Value\CopyWithinWorkbook.cs" />
+    <Compile Include="XmlMaps\FindRootElementNameOfXmlMap.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">

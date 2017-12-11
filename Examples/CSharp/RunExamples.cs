@@ -100,6 +100,7 @@ namespace Aspose.Cells.Examples.CSharp
             DrawingObjects.ConvertSmartArtToGroupShape.Run();
             DrawingObjects.DetermineIfShapeIsSmartArtShape.Run();
             _Workbook.CreateSharedWorkbook.Run();
+            XmlMaps.FindRootElementNameOfXmlMap.Run();
 
             //Aspose.Cells for .NET v17.10
             //Charts.SetValuesFormatCodeOfChartSeries.Run();
