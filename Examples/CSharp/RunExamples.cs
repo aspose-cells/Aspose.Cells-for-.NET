@@ -102,6 +102,7 @@ namespace Aspose.Cells.Examples.CSharp
             //_Workbook.CreateSharedWorkbook.Run();
             //_Workbook.PasswordProtectOrUnprotectSharedWorkbook.Run();
             //XmlMaps.FindRootElementNameOfXmlMap.Run();
+            XmlMaps.QueryCellAreasMappedToXmlMapPath.Run();
             //Rendering.IgnoreErrorsWhileRenderingExcelToPdf.Run();
 
             //Aspose.Cells for .NET v17.10

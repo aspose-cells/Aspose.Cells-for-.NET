@@ -718,6 +718,7 @@
     <Compile Include="Worksheets\Value\CopyWorksheetsBetweenWorkbooks.cs" />
     <Compile Include="Worksheets\Value\CopyWithinWorkbook.cs" />
     <Compile Include="XmlMaps\FindRootElementNameOfXmlMap.cs" />
+    <Compile Include="XmlMaps\QueryCellAreasMappedToXmlMapPath.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
