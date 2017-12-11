@@ -601,6 +601,7 @@
     <Compile Include="Rendering\IgnoreErrorsWhileRenderingExcelToPdf.cs" />
     <Compile Include="Rendering\OutputBlankPageWhenThereIsNothingToPrint.cs" />
     <Compile Include="Rendering\AddPDFBookmarksWithNamedDestinations.cs" />
+    <Compile Include="Rendering\RenderLimitedNoOfSequentialPages.cs" />
     <Compile Include="RowsColumns\AutofitRowsforMergedCells.cs" />
     <Compile Include="RowsColumns\AutofitColumninSpecificRange.cs" />
     <Compile Include="RowsColumns\AutofitRowinSpecificRange.cs" />
