@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp._Workbook
 {
-    class PasswordProtectOrUnprotectSharedWorkbook
+    class PasswordProtectOrUnprotectSharedWorkbook 
     {
         public static void Run()
         {

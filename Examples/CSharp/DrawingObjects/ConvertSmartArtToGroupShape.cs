@@ -7,7 +7,7 @@ using Aspose.Cells.Drawing;
 
 namespace Aspose.Cells.Examples.CSharp.DrawingObjects
 {
-    class ConvertSmartArtToGroupShape
+    class ConvertSmartArtToGroupShape 
     {
         public static void Run()
         {

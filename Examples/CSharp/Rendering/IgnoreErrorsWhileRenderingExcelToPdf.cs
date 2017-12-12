@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp.Rendering
 {
-    class IgnoreErrorsWhileRenderingExcelToPdf
+    class IgnoreErrorsWhileRenderingExcelToPdf 
     {
         public static void Run()
         {

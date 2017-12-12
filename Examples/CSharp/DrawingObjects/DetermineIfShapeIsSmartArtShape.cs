@@ -7,7 +7,7 @@ using Aspose.Cells.Drawing;
 
 namespace Aspose.Cells.Examples.CSharp.DrawingObjects
 {
-    class DetermineIfShapeIsSmartArtShape
+    class DetermineIfShapeIsSmartArtShape 
     {
         public static void Run()
         {

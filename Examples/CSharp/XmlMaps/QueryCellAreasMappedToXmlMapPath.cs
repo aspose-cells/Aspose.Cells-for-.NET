@@ -8,7 +8,7 @@ using System.Collections;
 
 namespace Aspose.Cells.Examples.CSharp.XmlMaps
 {
-    class QueryCellAreasMappedToXmlMapPath
+    class QueryCellAreasMappedToXmlMapPath 
     {
         public static void Run()
         {

@@ -7,7 +7,7 @@ using Aspose.Cells.Rendering;
 
 namespace Aspose.Cells.Examples.CSharp.Rendering
 {
-    class RenderLimitedNoOfSequentialPages
+    class RenderLimitedNoOfSequentialPages 
     {
         public static void Run()
         {

@@ -5,7 +5,7 @@ using Aspose.Cells;
 
 namespace Aspose.Cells.Examples.CSharp.XmlMaps
 {
-    public class FindRootElementNameOfXmlMap
+    public class FindRootElementNameOfXmlMap 
     {
         public static void Run()
         {

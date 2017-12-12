@@ -7,7 +7,7 @@ using Aspose.Cells;
 
 namespace Aspose.Cells.Examples.CSharp._Workbook
 {
-    class CreateSharedWorkbook
+    class CreateSharedWorkbook 
     {
         public static void Run()
         {
