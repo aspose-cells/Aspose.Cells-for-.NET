@@ -113,14 +113,14 @@ namespace Aspose.Cells.Examples.CSharp
             // Uncomment the one you want to try out
 
             //Aspose.Cells for .NET v17.11
-            //_Workbook.CreateSharedWorkbook.Run();
-            //_Workbook.PasswordProtectOrUnprotectSharedWorkbook.Run();
-            //DrawingObjects.ConvertSmartArtToGroupShape.Run();
-            //DrawingObjects.DetermineIfShapeIsSmartArtShape.Run();
-            //Rendering.IgnoreErrorsWhileRenderingExcelToPdf.Run();
-            //Rendering.RenderLimitedNoOfSequentialPages.Run();
-            //XmlMaps.FindRootElementNameOfXmlMap.Run();
-            //XmlMaps.QueryCellAreasMappedToXmlMapPath.Run();
+            _Workbook.CreateSharedWorkbook.Run();
+            _Workbook.PasswordProtectOrUnprotectSharedWorkbook.Run();
+            DrawingObjects.ConvertSmartArtToGroupShape.Run();
+            DrawingObjects.DetermineIfShapeIsSmartArtShape.Run();
+            Rendering.IgnoreErrorsWhileRenderingExcelToPdf.Run();
+            Rendering.RenderLimitedNoOfSequentialPages.Run();
+            XmlMaps.FindRootElementNameOfXmlMap.Run();
+            XmlMaps.QueryCellAreasMappedToXmlMapPath.Run();
 
             //Aspose.Cells for .NET v17.10
             //Charts.SetValuesFormatCodeOfChartSeries.Run();
@@ -192,8 +192,8 @@ namespace Aspose.Cells.Examples.CSharp
             //LoadTemplateWithoutCharts.Run();
             //ReadColorOfShapesGlowEffect.Run();
             //ReadAndManipulateExcel2016Charts.Run();
-            AccessTextBoxName.Run();
-            AddConditionalIconsSet.Run();
+            //AccessTextBoxName.Run();
+            //AddConditionalIconsSet.Run();
 
             // =====================================================
             // =====================================================
