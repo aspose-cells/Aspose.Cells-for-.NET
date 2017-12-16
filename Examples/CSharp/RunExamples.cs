@@ -191,10 +191,10 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            NumberOfSignificantDigits.Run();
-            GetPageDimensions.Run();
-            CheckCustomFormatPattern.Run();
-            //RenderGradientFillToHTML.Run();
+            //NumberOfSignificantDigits.Run();
+            //GetPageDimensions.Run();
+            //CheckCustomFormatPattern.Run();
+            RenderGradientFillToHTML.Run();
             //LoadTemplateWithoutCharts.Run();
             //ReadColorOfShapesGlowEffect.Run();
             //ReadAndManipulateExcel2016Charts.Run();

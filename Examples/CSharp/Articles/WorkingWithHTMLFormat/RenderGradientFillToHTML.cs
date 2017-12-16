@@ -9,16 +9,19 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithHTMLFormat
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Read the source excel file having text with gradient fill
-            Workbook book = new Workbook(dataDir + "sourceGradientFill.xlsx");
+            Workbook book = new Workbook(sourceDir + "sampleRenderGradientFillToHTML.xlsx");
 
             // Save workbook to html format
-            book.Save(dataDir + "out_sourceGradientFill.html");
-            // ExEnd:1
+            book.Save(outputDir + "outputRenderGradientFillToHTML.html");
+
+            Console.WriteLine("RenderGradientFillToHTML executed successfully.\r\n");
         }
     }
 }
