@@ -7,12 +7,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Load source excel file containing excel 2016 charts
-            Workbook book = new Workbook(dataDir + "excel2016Charts.xlsx");
+            Workbook book = new Workbook(sourceDir + "sampleReadAndManipulateExcel2016Charts.xlsx");
 
             // Access the first worksheet which contains the charts
             Worksheet sheet = book.Worksheets[0];
@@ -31,8 +33,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             }
 
             // Save the workbook
-            book.Save(dataDir + "out_excel2016Charts.xlsx");
-            // ExEnd:1
+            book.Save(outputDir + "outputReadAndManipulateExcel2016Charts.xlsx");
+
+            Console.WriteLine("ReadAndManipulateExcel2016Charts executed successfully.\r\n");
         }
     }
 }
