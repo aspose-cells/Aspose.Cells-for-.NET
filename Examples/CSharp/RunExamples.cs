@@ -184,18 +184,18 @@ namespace Aspose.Cells.Examples.CSharp
             //Introduction.FirstApplication.Run();
             //Introduction.OpenExistingFile.Run();
             //Introduction.CheckVersionNumber.Run();
+            //-----------
+            //NumberOfSignificantDigits.Run();
+            //GetPageDimensions.Run();
+            //CheckCustomFormatPattern.Run();
+            //RenderGradientFillToHTML.Run();
+            LoadTemplateWithoutCharts.Run();
 
             // =====================================================
             // =====================================================
             // Articles
             // =====================================================
             // =====================================================
-
-            //NumberOfSignificantDigits.Run();
-            //GetPageDimensions.Run();
-            //CheckCustomFormatPattern.Run();
-            RenderGradientFillToHTML.Run();
-            //LoadTemplateWithoutCharts.Run();
             //ReadColorOfShapesGlowEffect.Run();
             //ReadAndManipulateExcel2016Charts.Run();
             //AccessTextBoxName.Run();
