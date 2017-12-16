@@ -10,12 +10,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
             // Read the source excel file
-            Workbook book = new Workbook(dataDir + "sourceGlowEffectColor.xlsx");
+            Workbook book = new Workbook(sourceDir + "sampleReadColorOfShapesGlowEffect.xlsx");
 
             // Access first worksheet
             Worksheet sheet = book.Worksheets[0];
@@ -31,7 +30,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             Console.WriteLine("IsShapeColor: " + color.IsShapeColor);
             Console.WriteLine("Transparency: " + color.Transparency);
             Console.WriteLine("Type: " + color.Type);
-            // ExEnd:1
+
+            Console.WriteLine("ReadColorOfShapesGlowEffect executed successfully.\r\n");
         }
     }
 }

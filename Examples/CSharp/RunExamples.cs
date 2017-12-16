@@ -189,14 +189,15 @@ namespace Aspose.Cells.Examples.CSharp
             //GetPageDimensions.Run();
             //CheckCustomFormatPattern.Run();
             //RenderGradientFillToHTML.Run();
-            LoadTemplateWithoutCharts.Run();
+            //LoadTemplateWithoutCharts.Run();
+            ReadColorOfShapesGlowEffect.Run();
 
             // =====================================================
             // =====================================================
             // Articles
             // =====================================================
             // =====================================================
-            //ReadColorOfShapesGlowEffect.Run();
+
             //ReadAndManipulateExcel2016Charts.Run();
             //AccessTextBoxName.Run();
             //AddConditionalIconsSet.Run();
