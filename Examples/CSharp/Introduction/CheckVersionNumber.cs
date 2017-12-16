@@ -9,9 +9,8 @@ namespace Aspose.Cells.Examples.CSharp.Introduction
     {
         public static void Run()
         {
-            // ExStart:1
-            Console.WriteLine("Assembly Version Info: " + CellsHelper.GetVersion());
-            // ExEnd:1
+            Console.WriteLine("Aspose.Cells for .NET Version: " + CellsHelper.GetVersion());
+            Console.WriteLine("CheckVersionNumber executed successfully.\r\n");
         }
     }
 }

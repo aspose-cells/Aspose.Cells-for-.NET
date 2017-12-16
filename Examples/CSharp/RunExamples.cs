@@ -19,7 +19,6 @@ using Aspose.Cells.Examples.CSharp.Articles.WorkbookScopedNamedRanges;
 using Aspose.Cells.Examples.CSharp.Articles.WorkingWithHTMLFormat;
 using Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting;
 using Aspose.Cells.Examples.CSharp.Articles.PageSetupAndPrintingOptions;
-using Aspose.Cells.Examples.CSharp.Introduction;
 using Aspose.Cells.Examples.CSharp.Articles.StylingAndDataFormatting;
 using Aspose.Cells.Examples.CSharp.Articles.PivotTablesAndPivotCharts;
 using Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine;
@@ -94,17 +93,34 @@ namespace Aspose.Cells.Examples.CSharp
             Console.WriteLine("Aspose.Cells for .NET v" + CellsHelper.GetVersion());
             Console.WriteLine("");
 
+            //The following lines are setting Aspose.Cells license.
+            //Please place the license in 01_SourceDirectory directory 
+            //returned by Get_SourceDirectory() method as shown in the code
+            try
+            {
+                // Create a License object
+                Aspose.Cells.License license = new License();
+
+                // Set the license of Aspose.Cells to avoid the evaluation limitations
+                // Uncomment this line if you have a license
+                //license.SetLicense(Get_SourceDirectory() + "Aspose.Cells.lic");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
             // Uncomment the one you want to try out
 
             //Aspose.Cells for .NET v17.11
-            _Workbook.CreateSharedWorkbook.Run();
-            _Workbook.PasswordProtectOrUnprotectSharedWorkbook.Run();
-            DrawingObjects.ConvertSmartArtToGroupShape.Run();
-            DrawingObjects.DetermineIfShapeIsSmartArtShape.Run();
-            Rendering.IgnoreErrorsWhileRenderingExcelToPdf.Run();
-            Rendering.RenderLimitedNoOfSequentialPages.Run();
-            XmlMaps.FindRootElementNameOfXmlMap.Run();
-            XmlMaps.QueryCellAreasMappedToXmlMapPath.Run();
+            //_Workbook.CreateSharedWorkbook.Run();
+            //_Workbook.PasswordProtectOrUnprotectSharedWorkbook.Run();
+            //DrawingObjects.ConvertSmartArtToGroupShape.Run();
+            //DrawingObjects.DetermineIfShapeIsSmartArtShape.Run();
+            //Rendering.IgnoreErrorsWhileRenderingExcelToPdf.Run();
+            //Rendering.RenderLimitedNoOfSequentialPages.Run();
+            //XmlMaps.FindRootElementNameOfXmlMap.Run();
+            //XmlMaps.QueryCellAreasMappedToXmlMapPath.Run();
 
             //Aspose.Cells for .NET v17.10
             //Charts.SetValuesFormatCodeOfChartSeries.Run();
@@ -154,6 +170,7 @@ namespace Aspose.Cells.Examples.CSharp
             //WorkbookVBAProject.FindoutifVBAProjectisProtected.Run();
             //WorkbookVBAProject.PasswordProtecttheVBAProjectofExcelWorkbook.Run();
 
+            //Aspose.Cells for .NET v17.3.0
             //Charts.ReadManipulateExcel2016Charts.Run();
             //Data.RenameDuplicateColumnsAutomaticallyWhileExportingWorksheetData.Run();
             //Fonts.GetListOfFontsUsedInSpreadsheetOrWorkbook.Run();
@@ -163,14 +180,10 @@ namespace Aspose.Cells.Examples.CSharp
             //RowsColumns.ConvertTextToColumns.Run();
 
 
-            // =====================================================
-            // =====================================================
-            // Introduction
-            // =====================================================
-            // =====================================================
-            //FirstApplication.Run();
-            //OpenExistingFile.Run();
-            //CheckVersionNumber.Run();
+            //Aspose.Cells for .NET v17.2.0
+            Introduction.FirstApplication.Run();
+            Introduction.OpenExistingFile.Run();
+            Introduction.CheckVersionNumber.Run();
 
             // =====================================================
             // =====================================================

@@ -10,25 +10,14 @@ namespace Aspose.Cells.Examples.CSharp.Introduction
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            try
-            {
-                // Create a License object
-                License license = new License();
-
-                // Set the license of Aspose.Cells to avoid the evaluation limitations
-                license.SetLicense("Aspose.Cells.lic");
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Creating a file stream containing the Excel file to be opened
-            FileStream fstream = new FileStream(dataDir + "Sample.xlsx", FileMode.Open);
+            FileStream fstream = new FileStream(sourceDir + "sampleOpenExistingFile.xlsx", FileMode.Open);
 
             // Instantiate a Workbook object that represents the existing Excel file
             Workbook workbook = new Workbook(fstream);
@@ -40,11 +29,12 @@ namespace Aspose.Cells.Examples.CSharp.Introduction
             cell.PutValue("Hello World!");
 
             // Save the Excel file
-            workbook.Save(dataDir + "HelloWorld_out.xlsx");
+            workbook.Save(outputDir + "outputOpenExistingFile.xlsx");
 
             // Closing the file stream to free all resources
             fstream.Close();
-            // ExEnd:1
+
+            Console.WriteLine("OpenExistingFile executed successfully.\r\n");
         }
     }
 }
