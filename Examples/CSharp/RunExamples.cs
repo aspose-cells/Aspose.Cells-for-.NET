@@ -191,7 +191,9 @@ namespace Aspose.Cells.Examples.CSharp
             //RenderGradientFillToHTML.Run();
             //LoadTemplateWithoutCharts.Run();
             //ReadColorOfShapesGlowEffect.Run();
-            ReadAndManipulateExcel2016Charts.Run();
+            //ReadAndManipulateExcel2016Charts.Run();
+            AccessTextBoxName.Run();
+            AddConditionalIconsSet.Run();
 
             // =====================================================
             // =====================================================
@@ -199,8 +201,6 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            //AccessTextBoxName.Run();
-            //AddConditionalIconsSet.Run();
             //AddImageHyperlinks.Run();
             //AddingAnonymousCustomObject.Run();
             //AddPDFBookmarks.Run();

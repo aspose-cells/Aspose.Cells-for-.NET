@@ -8,7 +8,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:AccessTextBoxName
             // Create an object of the Workbook class
             Workbook workbook = new Workbook();
 
@@ -31,9 +30,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // Display the text of the TextBox accessed via name
             Console.WriteLine(tb2.Text);
 
-            Console.WriteLine("Press any key to continue...");
-            Console.ReadKey();
-            // ExEnd:AccessTextBoxName
+            Console.WriteLine("AccessTextBoxName executed successfully.\r\n");
         }
     }
 }
