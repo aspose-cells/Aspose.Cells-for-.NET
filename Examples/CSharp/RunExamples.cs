@@ -181,9 +181,9 @@ namespace Aspose.Cells.Examples.CSharp
 
 
             //Aspose.Cells for .NET v17.2.0
-            Introduction.FirstApplication.Run();
-            Introduction.OpenExistingFile.Run();
-            Introduction.CheckVersionNumber.Run();
+            //Introduction.FirstApplication.Run();
+            //Introduction.OpenExistingFile.Run();
+            //Introduction.CheckVersionNumber.Run();
 
             // =====================================================
             // =====================================================
@@ -191,8 +191,8 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            //NumberOfSignificantDigits.Run();
-            //GetPageDimensions.Run();
+            NumberOfSignificantDigits.Run();
+            GetPageDimensions.Run();
             //CheckCustomFormatPattern.Run();
             //RenderGradientFillToHTML.Run();
             //LoadTemplateWithoutCharts.Run();

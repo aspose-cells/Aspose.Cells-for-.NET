@@ -9,7 +9,7 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets.PageSetupFeatures
     {
         public static void Run()
         {
-            // ExStart:1
+            
             // Create an instance of Workbook class
             Workbook book = new Workbook();
 
@@ -31,7 +31,9 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets.PageSetupFeatures
             // Set paper size to Letter and print paper width and height in inches
             sheet.PageSetup.PaperSize = PaperSizeType.PaperLetter;
             Console.WriteLine("PaperLetter: " + sheet.PageSetup.PaperWidth + "x" + sheet.PageSetup.PaperHeight);
-            // ExEnd:1
+
+            Console.WriteLine("GetPageDimensions executed successfully.\r\n");
+
         }
     }
 }

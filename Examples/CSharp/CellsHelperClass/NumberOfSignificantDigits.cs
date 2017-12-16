@@ -9,9 +9,8 @@ namespace Aspose.Cells.Examples.CSharp.CellsHelperClass
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Set the number of significant digits
             CellsHelper.SignificantDigits = 15;
@@ -30,9 +29,9 @@ namespace Aspose.Cells.Examples.CSharp.CellsHelperClass
             cell.PutValue(1234567890.123451711);
 
             // Save the workbook
-            workbook.Save(dataDir + "out_SignificantDigits.xlsx");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputNumberOfSignificantDigits.xlsx");
 
+            Console.WriteLine("NumberOfSignificantDigits executed successfully.\r\n");
 
         }
     }
