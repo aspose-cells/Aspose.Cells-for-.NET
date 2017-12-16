@@ -193,7 +193,7 @@ namespace Aspose.Cells.Examples.CSharp
 
             NumberOfSignificantDigits.Run();
             GetPageDimensions.Run();
-            //CheckCustomFormatPattern.Run();
+            CheckCustomFormatPattern.Run();
             //RenderGradientFillToHTML.Run();
             //LoadTemplateWithoutCharts.Run();
             //ReadColorOfShapesGlowEffect.Run();

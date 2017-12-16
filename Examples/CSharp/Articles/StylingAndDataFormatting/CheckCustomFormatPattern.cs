@@ -9,7 +9,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles.StylingAndDataFormatting
     {
         public static void Run()
         {
-            // ExStart:1
             // Create an instance of Workbook class
             Workbook book = new Workbook();
 
@@ -29,7 +28,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.StylingAndDataFormatting
 
             // This line will throw exception if Workbook.Settings.CheckCustomNumberFormat is set to true
             style.Custom = "ggg @ fff"; //Invalid custom number format
-            // ExEnd:1           
+        
         }
     }
 }
