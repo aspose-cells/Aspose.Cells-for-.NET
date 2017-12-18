@@ -8,26 +8,27 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Define the first source
             // Open the first excel file.
-            Workbook SourceBook1 = new Workbook(dataDir+ "SampleChart.xlsx");
+            Workbook SourceBook1 = new Workbook(sourceDir + "sampleCombineMultipleWorkbooksSingleWorkbook_Chart.xlsx");
 
             // Define the second source book.
             // Open the second excel file.
-            Workbook SourceBook2 = new Workbook(dataDir+ "SampleImage.xlsx");
+            Workbook SourceBook2 = new Workbook(sourceDir + "sampleCombineMultipleWorkbooksSingleWorkbook_Image.xlsx");
 
             // Combining the two workbooks
             SourceBook1.Combine(SourceBook2);
 
-            dataDir = dataDir + "Combined.out.xlsx";
             // Save the target book file.
-            SourceBook1.Save(dataDir);
-            // ExEnd:1
-            Console.WriteLine("\nProcess completed successfully.\nFile saved at " + dataDir);
+            SourceBook1.Save(outputDir + "outputCombineMultipleWorkbooksSingleWorkbook.xlsx");
+
+            Console.WriteLine("CombineMultipleWorkbooksSingleWorkbook executed successfully.\r\n");
         }
     }
 }

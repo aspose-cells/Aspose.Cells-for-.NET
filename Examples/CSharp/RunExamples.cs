@@ -202,7 +202,8 @@ namespace Aspose.Cells.Examples.CSharp
             //AutoFitRowsMergedCells.Run();
             //AvoidExponentialNotationWhileImportingFromHtml.Run();
             //ChangeHtmlLinkTarget.Run();
-            ChangeTextDirection.Run();
+            //ChangeTextDirection.Run();
+            CombineMultipleWorkbooksSingleWorkbook.Run();
 
             // =====================================================
             // =====================================================
@@ -210,7 +211,6 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            //CombineMultipleWorkbooksSingleWorkbook.Run();
             //CombineMultipleWorksheetsSingleWorksheet.Run();
             //ConvertXLSFileToPDF.Run();
             //CopyRangeDataOnly.Run();
