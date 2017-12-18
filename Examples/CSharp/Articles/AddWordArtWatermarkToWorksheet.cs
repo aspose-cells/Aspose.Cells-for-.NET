@@ -8,14 +8,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            // Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir);
-            if (!IsExists)
-                System.IO.Directory.CreateDirectory(dataDir);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Instantiate a new Workbook
             Workbook workbook = new Workbook();
@@ -37,13 +31,10 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // Make the line invisible
             LineFormat lineFormat = wordart.Line;          
 
-            dataDir = dataDir + "Watermark_Test.out.xls";
             // Save the file
-            workbook.Save(dataDir);
-            // ExEnd:1     
+            workbook.Save(outputDir + "outputAddWordArtWatermarkToWorksheet.xlsx");
 
-            Console.WriteLine("\nProcess completed successfully.\nFile saved at " + dataDir);
-            
+            Console.WriteLine("AddWordArtWatermarkToWorksheet executed successfully.\r\n");
         }
     }
 }

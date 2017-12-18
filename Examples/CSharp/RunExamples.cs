@@ -197,7 +197,8 @@ namespace Aspose.Cells.Examples.CSharp
             //AddImageHyperlinks.Run();
             //AddingAnonymousCustomObject.Run();
             //AddPDFBookmarks.Run();
-            AddPictureToExcelComment.Run();
+            //AddPictureToExcelComment.Run();
+            AddWordArtWatermarkToWorksheet.Run();
 
             // =====================================================
             // =====================================================
@@ -205,7 +206,6 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            //AddWordArtWatermarkToWorksheet.Run();
             //AutoFitRowsMergedCells.Run();
             //AvoidExponentialNotationWhileImportingFromHtml.Run();
             //ChangeHtmlLinkTarget.Run();
