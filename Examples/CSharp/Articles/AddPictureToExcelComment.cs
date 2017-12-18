@@ -9,17 +9,17 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            // Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir);
-            if (!IsExists)
-                System.IO.Directory.CreateDirectory(dataDir);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Instantiate a Workbook
             Workbook workbook = new Workbook();
+
+            //Add some text in cell A1
+            workbook.Worksheets[0].Cells["A1"].PutValue("Here");
 
             // Get a reference of comments collection with the first sheet
             CommentCollection comments = workbook.Worksheets[0].Comments;
@@ -31,18 +31,17 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             comment.Font.Name = "Times New Roman";
 
             // Load an image into stream
-            Bitmap bmp = new Bitmap(dataDir + "image2.jpg");
+            Bitmap bmp = new Bitmap(sourceDir + "sampleAddPictureToExcelComment.jpg");
             MemoryStream ms = new MemoryStream();
             bmp.Save(ms, System.Drawing.Imaging.ImageFormat.Png);
 
             // Set image data to the shape associated with the comment
             comment.CommentShape.Fill.ImageData = ms.ToArray();
             
-            dataDir = dataDir + "commentwithpicture1.out.xlsx";
             // Save the workbook
-            workbook.Save(dataDir, Aspose.Cells.SaveFormat.Xlsx);            
-            // ExEnd:1
-            Console.WriteLine("\nProcess completed successfully.\nFile saved at " + dataDir);
+            workbook.Save(outputDir + "outputAddPictureToExcelComment.xlsx", Aspose.Cells.SaveFormat.Xlsx);
+
+            Console.WriteLine("AddPictureToExcelComment executed successfully.\r\n");
         }
     }
 }
