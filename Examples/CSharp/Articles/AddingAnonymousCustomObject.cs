@@ -5,18 +5,12 @@ using System.Collections;
 
 namespace Aspose.Cells.Examples.CSharp.Articles
 {
-    // ExStart:1
     public class AddingAnonymousCustomObject
     {
         public static void Run()
         {
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            // Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir);
-            if (!IsExists)
-                System.IO.Directory.CreateDirectory(dataDir);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Open a designer workbook
             WorkbookDesigner designer = new WorkbookDesigner();
@@ -38,29 +32,45 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // Add custom objects to the list
             list.Add(new Person("Simon", 30));
             list.Add(new Person("Johnson", 33));
+            list.Add(new Person("Peter", 36));
+            list.Add(new Person("Roy", 32));
+            list.Add(new Person("James", 37));
+            list.Add(new Person("Michael", 38));
+            list.Add(new Person("George", 34));
 
             // Add designer's datasource
             designer.SetDataSource("Person", list);
 
             // Process designer
-            designer.Process(false);
-            dataDir = dataDir + "result.out.xls";
-            // Save the resultant file
-            designer.Workbook.Save(dataDir);
+            designer.Process();
 
-            Console.WriteLine("\nProcess completed successfully.\nFile saved at " + dataDir);
+            // Save the resultant file
+            designer.Workbook.Save(outputDir + "outputAddingAnonymousCustomObject.xlsx");
+
+            Console.WriteLine("AddingAnonymousCustomObject executed successfully.\r\n");
         }
     }
 }
 
 public class Person
 {
-    public String Name;
-    public int Age;
-    internal Person(string name,int age)
+    String m_Name;
+    int m_Age;
+
+    internal Person(string name, int age)
     {
-        this.Name = name;
-        this.Age = age;
+        this.m_Name = name;
+        this.m_Age = age;
+    }
+
+    public String Name
+    {
+        get { return this.m_Name; }
+    }
+
+    public int Age
+    {
+        get { return this.m_Age; }
     }
 }
-// ExEnd:1
+
