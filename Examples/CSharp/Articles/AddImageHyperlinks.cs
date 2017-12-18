@@ -8,14 +8,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            // Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir);
-            if (!IsExists)
-                System.IO.Directory.CreateDirectory(dataDir);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Instantiate a new workbook
             Workbook workbook = new Workbook();
@@ -33,7 +30,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             worksheet.Cells.SetColumnWidth(2, 21);
 
             // Add a picture to the C4 cell
-            int index = worksheet.Pictures.Add(3, 2, 4, 3, dataDir+ "aspose-logo.jpg");
+            int index = worksheet.Pictures.Add(3, 2, 4, 3, sourceDir + "sampleAddImageHyperlinks.jpg");
 
             // Get the picture object
             Aspose.Cells.Drawing.Picture pic = worksheet.Pictures[index];
@@ -42,17 +39,15 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             pic.Placement = PlacementType.FreeFloating;
 
             // Add an image hyperlink
-            Aspose.Cells.Hyperlink hlink = pic.AddHyperlink("http:// Www.aspose.com/");
+            Aspose.Cells.Hyperlink hlink = pic.AddHyperlink("https://www.aspose.com");
 
             // Specify the screen tip
             hlink.ScreenTip = "Click to go to Aspose site";
-            dataDir = dataDir + "ImageHyperlink.out.xls";
+            
             // Save the Excel file
-            workbook.Save(dataDir);
-            // ExEnd:1
-            Console.WriteLine("\nProcess completed successfully.\nFile saved at " + dataDir);
-            
-            
+            workbook.Save(outputDir + "outputAddImageHyperlinks.xlsx");
+
+            Console.WriteLine("AddImageHyperlinks executed successfully.\r\n");
         }
     }
 }
