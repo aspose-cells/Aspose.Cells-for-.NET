@@ -8,13 +8,13 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            string filePath = dataDir+ "SampleInput.xlsx";
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
-            Workbook workbook = new Workbook(filePath);
+            Workbook workbook = new Workbook(sourceDir + "sampleCombineMultipleWorksheetsSingleWorksheet.xlsx");
 
             Workbook destWorkbook = new Workbook();
 
@@ -35,10 +35,10 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
                 TotalRowCount = sourceRange.RowCount + TotalRowCount;
             }
-            dataDir = dataDir + "Output.out.xlsx";
-            destWorkbook.Save(dataDir);
-            // ExEnd:1
-            Console.WriteLine("\nProcess completed successfully.\nFile saved at " + dataDir);            
+
+            destWorkbook.Save(outputDir + "outputCombineMultipleWorksheetsSingleWorksheet.xlsx");
+
+            Console.WriteLine("CombineMultipleWorksheetsSingleWorksheet executed successfully.\r\n");
         }
     }
 }

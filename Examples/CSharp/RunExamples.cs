@@ -203,7 +203,8 @@ namespace Aspose.Cells.Examples.CSharp
             //AvoidExponentialNotationWhileImportingFromHtml.Run();
             //ChangeHtmlLinkTarget.Run();
             //ChangeTextDirection.Run();
-            CombineMultipleWorkbooksSingleWorkbook.Run();
+            //CombineMultipleWorkbooksSingleWorkbook.Run();
+            CombineMultipleWorksheetsSingleWorksheet.Run();
 
             // =====================================================
             // =====================================================
@@ -211,7 +212,6 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            //CombineMultipleWorksheetsSingleWorksheet.Run();
             //ConvertXLSFileToPDF.Run();
             //CopyRangeDataOnly.Run();
             //CopyRangeDataWithStyle.Run();
