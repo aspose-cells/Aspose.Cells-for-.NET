@@ -195,7 +195,8 @@ namespace Aspose.Cells.Examples.CSharp
             //AccessTextBoxName.Run();
             //AddConditionalIconsSet.Run();
             //AddImageHyperlinks.Run();
-            AddingAnonymousCustomObject.Run();
+            //AddingAnonymousCustomObject.Run();
+            AddPDFBookmarks.Run();
 
             // =====================================================
             // =====================================================
@@ -203,7 +204,6 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            //AddPDFBookmarks.Run();
             //AddPictureToExcelComment.Run();
             //AddWordArtWatermarkToWorksheet.Run();
             //AutoFitRowsMergedCells.Run();
