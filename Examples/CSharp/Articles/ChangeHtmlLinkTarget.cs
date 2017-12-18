@@ -7,20 +7,20 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            string inputPath = dataDir + "Sample1.xlsx";
-            string outputPath = dataDir + "Output.out.html";
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            Workbook workbook = new Workbook(dataDir + "Sample1.xlsx");
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
+            Workbook workbook = new Workbook(sourceDir + "sampleChangeHtmlLinkTarget.xlsx");
 
             HtmlSaveOptions opts = new HtmlSaveOptions();
             opts.LinkTargetType = HtmlLinkTargetType.Self;
 
-            workbook.Save(outputPath, opts);
-            Console.WriteLine("File saved: {0}", outputPath);
-            // ExEnd:1
+            workbook.Save(outputDir + "outputChangeHtmlLinkTarget.html", opts);
+
+            Console.WriteLine("ChangeHtmlLinkTarget executed successfully.\r\n");
         }
     }
 }

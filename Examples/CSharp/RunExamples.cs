@@ -200,7 +200,8 @@ namespace Aspose.Cells.Examples.CSharp
             //AddPictureToExcelComment.Run();
             //AddWordArtWatermarkToWorksheet.Run();
             //AutoFitRowsMergedCells.Run();
-            AvoidExponentialNotationWhileImportingFromHtml.Run();
+            //AvoidExponentialNotationWhileImportingFromHtml.Run();
+            ChangeHtmlLinkTarget.Run();
 
             // =====================================================
             // =====================================================
@@ -208,7 +209,6 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            //ChangeHtmlLinkTarget.Run();
             //ChangeTextDirection.Run();
             //CombineMultipleWorkbooksSingleWorkbook.Run();
             //CombineMultipleWorksheetsSingleWorksheet.Run();
