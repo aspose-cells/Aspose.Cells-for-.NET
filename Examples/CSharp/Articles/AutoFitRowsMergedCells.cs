@@ -7,14 +7,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            // Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir);
-            if (!IsExists)
-                System.IO.Directory.CreateDirectory(dataDir);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Instantiate a new Workbook
             Workbook wb = new Workbook();
@@ -49,12 +43,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // Autofit rows in the sheet(including the merged cells)
             _worksheet.AutoFitRows(options);
 
-            dataDir = dataDir + "AutoFitMergedCells.out.xlsx";
             // Save the Excel file
-            wb.Save(dataDir);
-            // ExEnd:1
-            Console.WriteLine("\nProcess completed successfully.\nFile saved at " + dataDir);
-            
+            wb.Save(outputDir + "outputAutoFitRowsMergedCells.xlsx");
+
+            Console.WriteLine("AutoFitRowsMergedCells executed successfully.\r\n");
+
         }
     }
 }
