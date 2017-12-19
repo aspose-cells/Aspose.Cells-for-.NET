@@ -205,7 +205,8 @@ namespace Aspose.Cells.Examples.CSharp
             //ChangeTextDirection.Run();
             //CombineMultipleWorkbooksSingleWorkbook.Run();
             //CombineMultipleWorksheetsSingleWorksheet.Run();
-            ConvertXLSFileToPDF.Run();
+            //ConvertXLSFileToPDF.Run();
+            CopyRangeDataOnly.Run();
 
             // =====================================================
             // =====================================================
@@ -213,7 +214,6 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            //CopyRangeDataOnly.Run();
             //CopyRangeDataWithStyle.Run();
             //CopyRangeStyleOnly.Run();
             //CreateManipulateRemoveScenarios.Run();
