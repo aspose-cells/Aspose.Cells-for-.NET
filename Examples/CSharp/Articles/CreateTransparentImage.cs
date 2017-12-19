@@ -10,12 +10,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create workbook object from source file
-            Workbook wb = new Workbook(dataDir+ "aspose-sample.xlsx");
+            Workbook wb = new Workbook(sourceDir + "sampleCreateTransparentImage.xlsx");
 
             // Apply different image or print options
             var imgOption = new ImageOrPrintOptions();
@@ -29,11 +31,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Create image after apply image or print options
             var sr = new SheetRender(wb.Worksheets[0], imgOption);
+            sr.ToImage(0, outputDir + "outputCreateTransparentImage.png");
 
-            dataDir = dataDir+ "output.png";
-            sr.ToImage(0, dataDir);
-            // ExEnd:1
-            Console.WriteLine("\nProcess completed successfully.\nFile saved at " + dataDir);
+            Console.WriteLine("CreateTransparentImage executed successfully.\r\n");
         }
     }
 }

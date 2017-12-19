@@ -209,7 +209,8 @@ namespace Aspose.Cells.Examples.CSharp
             //CopyRangeDataOnly.Run();
             //CopyRangeDataWithStyle.Run();
             //CopyRangeStyleOnly.Run();
-            CreateManipulateRemoveScenarios.Run();
+            //CreateManipulateRemoveScenarios.Run();
+            CreateTransparentImage.Run();
 
             // =====================================================
             // =====================================================
@@ -217,7 +218,7 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            //CreateTransparentImage.Run();
+
             //CustomizingRibbonXML.Run();
             //CustomSliceSectorColorsPieChart.Run();
             //DataValidationRules.Run();
