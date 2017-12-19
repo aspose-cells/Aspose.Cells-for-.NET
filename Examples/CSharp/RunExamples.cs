@@ -208,7 +208,8 @@ namespace Aspose.Cells.Examples.CSharp
             //ConvertXLSFileToPDF.Run();
             //CopyRangeDataOnly.Run();
             //CopyRangeDataWithStyle.Run();
-            CopyRangeStyleOnly.Run();
+            //CopyRangeStyleOnly.Run();
+            CreateManipulateRemoveScenarios.Run();
 
             // =====================================================
             // =====================================================
@@ -216,7 +217,6 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            //CreateManipulateRemoveScenarios.Run();
             //CreateTransparentImage.Run();
             //CustomizingRibbonXML.Run();
             //CustomSliceSectorColorsPieChart.Run();
