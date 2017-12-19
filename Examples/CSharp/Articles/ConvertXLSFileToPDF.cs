@@ -6,33 +6,21 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 {
     public class ConvertXLSFileToPDF
     {
-
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            try
-            {
-                // Get the template excel file path.
-                string designerFile = dataDir + "SampleInput.xlsx";
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
-                // Specify the pdf file path.
-                string pdfFile = dataDir + "Output.out.pdf";
+            // Open the template excel file
+            Aspose.Cells.Workbook wb = new Aspose.Cells.Workbook(sourceDir + "sampleConvertXLSFileToPDF.xlsx");
 
-                // Open the template excel file
-                Aspose.Cells.Workbook wb = new Aspose.Cells.Workbook(designerFile);
+            // Save the pdf file.
+            wb.Save(outputDir + "outputConvertXLSFileToPDF.pdf", SaveFormat.Pdf);
 
-                // Save the pdf file.
-                wb.Save(pdfFile, SaveFormat.Pdf);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e.Message);
-                Console.ReadLine();
-            }
-            // ExEnd:1
+            Console.WriteLine("ConvertXLSFileToPDF executed successfully.\r\n");
         }
 
     }
