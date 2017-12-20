@@ -185,13 +185,13 @@ namespace Aspose.Cells.Examples.CSharp
             //Introduction.OpenExistingFile.Run();
             //Introduction.CheckVersionNumber.Run();
             //-----------
-            NumberOfSignificantDigits.Run();
-            GetPageDimensions.Run();
-            CheckCustomFormatPattern.Run();
-            RenderGradientFillToHTML.Run();
-            LoadTemplateWithoutCharts.Run();
-            ReadColorOfShapesGlowEffect.Run();
-            ReadAndManipulateExcel2016Charts.Run();
+            //NumberOfSignificantDigits.Run();
+            //GetPageDimensions.Run();
+            //CheckCustomFormatPattern.Run();
+            //RenderGradientFillToHTML.Run();
+            //LoadTemplateWithoutCharts.Run();
+            //ReadColorOfShapesGlowEffect.Run();
+            //ReadAndManipulateExcel2016Charts.Run();
             //AccessTextBoxName.Run();
             //AddConditionalIconsSet.Run();
             //AddImageHyperlinks.Run();
@@ -216,6 +216,7 @@ namespace Aspose.Cells.Examples.CSharp
             //DeleteRedundantSpacesWhileImportingFromHtml.Run();
             //DetectMergedCellsAndUnmerge.Run();
             //DisableCompatibilityChecker.Run();
+            WriteUsingLightCellsAPI.Run();
 
             // =====================================================
             // =====================================================
@@ -306,7 +307,6 @@ namespace Aspose.Cells.Examples.CSharp
             //RemoveUnusedStyles.Run();
             //ReadingCellValuesInMultipleThreadsSimultaneously.TestMultiThreadingRead();
             //GetSmartMarkerNotifications.Run();
-            //WriteUsingLightCellsAPI.Run();
             //ReadUsingLightCellsApi.Run();
             //CustomLabelsSubtotals.Run();
             //CustomTextForLabels.Run();
