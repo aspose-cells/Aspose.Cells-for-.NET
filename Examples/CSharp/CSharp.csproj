@@ -74,6 +74,7 @@
     <Compile Include="AdvancedTopics\SmartMarkers\UsingAnonymousTypes.cs" />
     <Compile Include="AdvancedTopics\SmartMarkers\UsingNestedObjects.cs" />
     <Compile Include="AdvancedTopics\UsingCopyStyleAttribute.cs" />
+    <Compile Include="Articles\DetectMergedCellsAndUnmerge.cs" />
     <Compile Include="Articles\ExportXmlMapFromWorkbook.cs" />
     <Compile Include="Articles\FilteringObjectsAtLoadTime\CustomFilteringPerWorksheet.cs" />
     <Compile Include="Articles\FilteringObjectsAtLoadTime\FilteringObjects.cs" />
@@ -149,7 +150,6 @@
     <Compile Include="Articles\DeleteBlankRowsColumns\DeletingBlankColumns.cs" />
     <Compile Include="Articles\DeleteBlankRowsColumns\DeletingBlankRows.cs" />
     <Compile Include="Articles\DeleteRedundantSpacesWhileImportingFromHtml.cs" />
-    <Compile Include="Articles\DetectMergedCells.cs" />
     <Compile Include="Articles\DisableCompatibilityChecker.cs" />
     <Compile Include="Articles\DivTagsLayout.cs" />
     <Compile Include="Articles\ErrorCheckingOptions.cs" />

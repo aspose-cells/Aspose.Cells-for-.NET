@@ -5,32 +5,35 @@ using System.Collections;
 
 namespace Aspose.Cells.Examples.CSharp.Articles
 {
-    public class DetectMergedCells
+    public class DetectMergedCellsAndUnmerge
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            // Instantiate a new Workbook
-            // Open an existing excel file
-            Workbook wkBook = new Workbook(dataDir+ "SampleInput.xlsx");
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
+            // Instantiate a new Workbook - Open an existing excel file
+            Workbook wkBook = new Workbook(sourceDir + "sampleDetectMergedCellsAndUnmerge.xlsx");
+
             // Get a worksheet in the workbook
-            Worksheet wkSheet = wkBook.Worksheets["Sheet2"];
-            // Clear its contents
-            wkSheet.Cells.Clear();
+            Worksheet wkSheet = wkBook.Worksheets["Sheet1"];
 
             // Create an arraylist object
             ArrayList al = new ArrayList();
+
             // Get the merged cells list to put it into the arraylist object
             al = wkSheet.Cells.MergedCells;
+            
             // Define cellarea
             CellArea ca;
+            
             // Define some variables
             int frow, fcol, erow, ecol, trows, tcols;
-            // Loop through the arraylist and get each cellarea
-            // To unmerge it
+            
+            // Loop through the arraylist and get each cellarea to unmerge it
             for (int i = 0; i < al.Count; i++)
             {
                 ca = new CellArea();
@@ -44,11 +47,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles
                 tcols = ecol - fcol + 1;
                 wkSheet.Cells.UnMerge(frow, fcol, trows, tcols);
             }
-            dataDir = dataDir+ "MergeTrial.out.xlsx";
+
             // Save the excel file
-            wkBook.Save(dataDir);
-            // ExEnd:1
-            Console.WriteLine("\nProcess completed successfully.\nFile saved at " + dataDir);
+            wkBook.Save(outputDir + "outputDetectMergedCellsAndUnmerge.xlsx");
+
+            Console.WriteLine("DetectMergedCellsAndUnmerge executed successfully.\r\n");
         }
     }
 }

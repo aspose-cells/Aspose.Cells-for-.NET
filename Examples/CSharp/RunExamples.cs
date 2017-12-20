@@ -213,7 +213,8 @@ namespace Aspose.Cells.Examples.CSharp
             //CreateTransparentImage.Run();
             //CustomSliceSectorColorsPieChart.Run();
             //DataValidationRules.Run();
-            DeleteRedundantSpacesWhileImportingFromHtml.Run();
+            //DeleteRedundantSpacesWhileImportingFromHtml.Run();
+            DetectMergedCellsAndUnmerge.Run();
 
             // =====================================================
             // =====================================================
@@ -221,8 +222,6 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            //DeleteRedundantSpacesWhileImportingFromHtml.Run();
-            //DetectMergedCells.Run();
             //DisableCompatibilityChecker.Run();
             //ErrorCheckingOptions.Run();           
             //ExportRangeofCells.Run();
