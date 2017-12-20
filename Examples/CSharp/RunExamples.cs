@@ -212,17 +212,14 @@ namespace Aspose.Cells.Examples.CSharp
             //CreateManipulateRemoveScenarios.Run();
             //CreateTransparentImage.Run();
             //CustomSliceSectorColorsPieChart.Run();
-            DataValidationRules.Run();
+            //DataValidationRules.Run();
+            DeleteRedundantSpacesWhileImportingFromHtml.Run();
 
             // =====================================================
             // =====================================================
             // Articles
             // =====================================================
             // =====================================================
-
-
-            ////CustomizingRibbonXML.Run();
-
 
             //DeleteRedundantSpacesWhileImportingFromHtml.Run();
             //DetectMergedCells.Run();
@@ -317,6 +314,7 @@ namespace Aspose.Cells.Examples.CSharp
             //MINIFSAndMAXIFS.Run();
             //TotalsInOtherLanguages.Run();
             //UsingCellsFactory.Run();
+            ////CustomizingRibbonXML.Run();
 
             //// Apply-Conditional-Formatting
             //// =====================================================
