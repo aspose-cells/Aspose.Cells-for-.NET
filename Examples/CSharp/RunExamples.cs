@@ -211,7 +211,8 @@ namespace Aspose.Cells.Examples.CSharp
             //CopyRangeStyleOnly.Run();
             //CreateManipulateRemoveScenarios.Run();
             //CreateTransparentImage.Run();
-            CustomSliceSectorColorsPieChart.Run();
+            //CustomSliceSectorColorsPieChart.Run();
+            DataValidationRules.Run();
 
             // =====================================================
             // =====================================================
@@ -222,7 +223,7 @@ namespace Aspose.Cells.Examples.CSharp
 
             ////CustomizingRibbonXML.Run();
 
-            //DataValidationRules.Run();
+
             //DeleteRedundantSpacesWhileImportingFromHtml.Run();
             //DetectMergedCells.Run();
             //DisableCompatibilityChecker.Run();

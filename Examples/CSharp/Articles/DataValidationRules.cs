@@ -7,11 +7,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
             // Instantiate the workbook from sample Excel file
-            Workbook workbook = new Workbook(dataDir+ "sample.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleDataValidationRules.xlsx");
 
             // Access the first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -41,9 +41,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Check if number 30 satisfies the Data Validation rule applied on this cell
             Console.WriteLine("Is 30 a Valid Value for this Cell: " + cell.GetValidationValue());
-            // ExEnd:1
 
-            
+            Console.WriteLine("DataValidationRules executed successfully.\r\n");
         }
     }
 }
