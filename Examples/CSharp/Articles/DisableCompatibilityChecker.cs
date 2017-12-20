@@ -8,21 +8,22 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
             // Open a template file
-            Workbook workbook = new Workbook(dataDir+ "sample.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleDisableCompatibilityChecker.xlsx");
 
             // Disable the compatibility checker
             workbook.Settings.CheckCompatibility = false;
 
-            dataDir = dataDir + "Output_BK_CompCheck.out.xlsx";
             // Saving the Excel file
-            workbook.Save(dataDir);
-            // ExEnd:1
-            Console.WriteLine("\nProcess completed successfully.\nFile saved at " + dataDir); 
-            
+            workbook.Save(outputDir + "outputDisableCompatibilityChecker.xlsx");
+
+            Console.WriteLine("DisableCompatibilityChecker executed successfully.\r\n");
         }
     }
 }

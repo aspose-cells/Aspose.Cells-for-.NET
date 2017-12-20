@@ -214,7 +214,7 @@ namespace Aspose.Cells.Examples.CSharp
             //CustomSliceSectorColorsPieChart.Run();
             //DataValidationRules.Run();
             //DeleteRedundantSpacesWhileImportingFromHtml.Run();
-            DetectMergedCellsAndUnmerge.Run();
+            //DetectMergedCellsAndUnmerge.Run();
 
             // =====================================================
             // =====================================================
@@ -222,7 +222,7 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            //DisableCompatibilityChecker.Run();
+            DisableCompatibilityChecker.Run();
             //ErrorCheckingOptions.Run();           
             //ExportRangeofCells.Run();
             //ExportVisibleRowsData.Run();
