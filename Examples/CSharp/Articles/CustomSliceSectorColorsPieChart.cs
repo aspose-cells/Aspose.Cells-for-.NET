@@ -9,9 +9,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create a workbook object from the template file
             Workbook workbook = new Workbook();
@@ -72,12 +71,10 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // Autofit all columns
             worksheet.AutoFitColumns();
 
-            dataDir = dataDir+ "output.out.xlsx";
             // Save the workbook
-            workbook.Save(dataDir, SaveFormat.Xlsx);
-            // ExEnd:1
-            Console.WriteLine("\nProcess completed successfully.\nFile saved at " + dataDir);            
-            
+            workbook.Save(outputDir + "outputCustomSliceSectorColorsPieChart.xlsx", SaveFormat.Xlsx);
+
+            Console.WriteLine("CustomSliceSectorColorsPieChart executed successfully.\r\n");
         }
     }
 }
