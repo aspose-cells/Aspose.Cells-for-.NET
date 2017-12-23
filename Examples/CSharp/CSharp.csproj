@@ -82,6 +82,8 @@
     <Compile Include="Articles\ManageChartsAndShapes\ReadColorOfShapesGlowEffect.cs" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\LoadTemplateWithoutCharts.cs" />
     <Compile Include="Articles\SettingScaleCropAndLinksUpToDateProperties.cs" />
+    <Compile Include="Articles\SettingSubscriptEffect.cs" />
+    <Compile Include="Articles\SettingSuperscripteffect.cs" />
     <Compile Include="Articles\StylingAndDataFormatting\CheckCustomFormatPattern.cs" />
     <Compile Include="Articles\UsingCellsFactory.cs" />
     <Compile Include="Articles\CheckHiddenExternalLinks.cs" />
@@ -110,8 +112,6 @@
     <Compile Include="Articles\AddWordArtWatermarkToWorksheet.cs" />
     <Compile Include="Articles\ApplyConditionalFormatting\ApplyConditionalFormattingCellValue.cs" />
     <Compile Include="Articles\ApplyConditionalFormatting\ApplyConditionalFormattingFormula.cs" />
-    <Compile Include="Articles\ApplySuperscriptAndSubscript\SettingSubscriptEffect.cs" />
-    <Compile Include="Articles\ApplySuperscriptAndSubscript\SettingSuperscripteffect.cs" />
     <Compile Include="Articles\ManagingVBAModules\AssignMacroToFormControl.cs" />
     <Compile Include="Articles\AssignValidateDigitalSignatures.cs" />
     <Compile Include="Articles\AutoFitRowsMergedCells.cs" />

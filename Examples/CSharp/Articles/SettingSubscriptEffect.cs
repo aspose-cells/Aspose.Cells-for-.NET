@@ -1,27 +1,19 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.CSharp.Articles.ApplySuperscriptAndSubscript
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     public class SettingSubscriptEffect
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            // Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir);
-            if (!IsExists)
-                System.IO.Directory.CreateDirectory(dataDir);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Instantiating a Workbook object
             Workbook workbook = new Workbook();
-
-            // Adding a new worksheet to the Excel object
-            workbook.Worksheets.Add();
 
             // Obtaining the reference of the newly added worksheet by passing its sheet index
             Worksheet worksheet = workbook.Worksheets[0];
@@ -37,10 +29,10 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ApplySuperscriptAndSubscript
             style.Font.IsSubscript = true;
             cell.SetStyle(style);
 
-
             // Saving the Excel file
-            workbook.Save(dataDir+ "Subscript.out.xls", SaveFormat.Auto);
-            // ExEnd:1
+            workbook.Save(outputDir + "outputSettingSubscriptEffect.xlsx");
+
+            Console.WriteLine("SettingSubscriptEffect executed successfully.\r\n");
         }
     }
 }

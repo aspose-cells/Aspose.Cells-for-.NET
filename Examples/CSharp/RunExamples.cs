@@ -323,8 +323,8 @@ namespace Aspose.Cells.Examples.CSharp
 
             //// Apply-Superscript And Subscript
             //// =====================================================
-            //Articles.ApplySuperscriptAndSubscript.SettingSubscriptEffect.Run();
-            //Articles.ApplySuperscriptAndSubscript.SettingSuperscripteffect.Run();
+            SettingSubscriptEffect.Run();
+            SettingSuperscripteffect.Run();
 
             //// ConvertExcelChartToImage
             //// =====================================================
