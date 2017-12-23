@@ -10,12 +10,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
             // Load your source excel file containing the external link
-            Workbook wb = new Workbook(dataDir + "sample.xlsx");
+            Workbook wb = new Workbook(sourceDir + "sampleAbsolutePathOfExternalDataSourceFile.xlsx");
 
             // Access the first external link
             ExternalLink externalLink = wb.Worksheets.ExternalLinks[0];
@@ -39,7 +38,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Now print the data source again
             Console.WriteLine("External Link Data Source After Changing Workbook.AbsolutePath to Remote Path: " + externalLink.DataSource);
-            // ExEnd:1
+
+            Console.WriteLine("\r\nAbsolutePathOfExternalDataSourceFile executed successfully.\r\n");
         }
     }
 }
