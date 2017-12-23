@@ -5,7 +5,6 @@ using System.Data;
 using System.Diagnostics;
 using System.IO;
 using Aspose.Cells.Examples.CSharp.Articles;
-using Aspose.Cells.Examples.CSharp.Articles.ApplyConditionalFormatting;
 using Aspose.Cells.Examples.CSharp.Articles.ConvertExcelChartToImage;
 using Aspose.Cells.Examples.CSharp.Articles.ConvertingWorksheetToImage;
 using Aspose.Cells.Examples.CSharp.Articles.CopyRowsColumns;
@@ -219,6 +218,11 @@ namespace Aspose.Cells.Examples.CSharp
             //WriteUsingLightCellsAPI.Run();
             //AbsolutePathOfExternalDataSourceFile.Run();
             //AddXmlMapInsideWorkbook.Run();
+            //ApplyConditionalFormattingCellValue.Run();
+            //ApplyConditionalFormattingFormula.Run();
+            //SettingSubscriptEffect.Run();
+            //SettingSuperscripteffect.Run();
+
 
             // =====================================================
             // =====================================================
@@ -315,16 +319,6 @@ namespace Aspose.Cells.Examples.CSharp
             //TotalsInOtherLanguages.Run();
             //UsingCellsFactory.Run();
             ////CustomizingRibbonXML.Run();
-
-            //// Apply-Conditional-Formatting
-            //// =====================================================
-            ApplyConditionalFormattingCellValue.Run();
-            ApplyConditionalFormattingFormula.Run();
-
-            //// Apply-Superscript And Subscript
-            //// =====================================================
-            //SettingSubscriptEffect.Run();
-            //SettingSuperscripteffect.Run();
 
             //// ConvertExcelChartToImage
             //// =====================================================
