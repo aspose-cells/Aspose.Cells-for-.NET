@@ -222,14 +222,14 @@ namespace Aspose.Cells.Examples.CSharp
             //ApplyConditionalFormattingFormula.Run();
             //SettingSubscriptEffect.Run();
             //SettingSuperscripteffect.Run();
-
+            ChangeTextBoxOrShapeCharacterSpacing.Run();
+            //AssignAndValidateDigitalSignatures.Run();
 
             // =====================================================
             // =====================================================
             // Articles
             // =====================================================
             // =====================================================
-
 
             //ErrorCheckingOptions.Run();           
             //ExportRangeofCells.Run();
@@ -286,7 +286,6 @@ namespace Aspose.Cells.Examples.CSharp
             //FilteringObjects.Run();
             //CustomFilteringPerWorksheet.Run();
             //AddActiveXControls.Run();
-            //ChangeTextBoxOrShareCharacterSpacing.Run();
             //LoadExcelFileWithoutChart.Run();
             //ExportToHTMLWithGridLines.Run();
             //DivTagsLayout.Run();
@@ -458,7 +457,6 @@ namespace Aspose.Cells.Examples.CSharp
             //// ManagingWorkbooksWorksheets
             //// =====================================================
             //ChangeChartDataSource.Run();
-            AssignAndValidateDigitalSignatures.Run();
             //SetAutoRecovery.Run();
             //OdsFileSaveOptions.Run();
             //CheckPasswordToModify.Run();
