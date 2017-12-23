@@ -217,7 +217,8 @@ namespace Aspose.Cells.Examples.CSharp
             //DetectMergedCellsAndUnmerge.Run();
             //DisableCompatibilityChecker.Run();
             //WriteUsingLightCellsAPI.Run();
-            AbsolutePathOfExternalDataSourceFile.Run();
+            //AbsolutePathOfExternalDataSourceFile.Run();
+            AddXmlMapInsideWorkbook.Run();
 
             // =====================================================
             // =====================================================
@@ -303,7 +304,6 @@ namespace Aspose.Cells.Examples.CSharp
             //PropagateFormulaInTable.Run();
             //AddWordArtTextWithBuiltinStyle.Run();
             //SetPresetWordArtStyle.Run();
-            //AddXmlMapInsideWorkbook.Run();
             //GetWarningsForFontSubstitution.Run();
             //RemoveUnusedStyles.Run();
             //ReadingCellValuesInMultipleThreadsSimultaneously.TestMultiThreadingRead();
