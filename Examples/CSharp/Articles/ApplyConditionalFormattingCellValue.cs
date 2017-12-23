@@ -4,9 +4,9 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace Aspose.Cells.Examples.CSharp.Articles.ApplyConditionalFormatting
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
-    public class ApplyConditionalFormattingFormula
+    public class ApplyConditionalFormattingCellValue
     {
         public static void Run()
         {
@@ -18,6 +18,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ApplyConditionalFormatting
 
             Worksheet sheet = workbook.Worksheets[0];
 
+            //Enter message in cell B4
+            sheet.Cells["B4"].PutValue("Cell A1 will become Red when you will enter some value between 50 and 100.");
+
             // Adds an empty conditional formatting
             int index = sheet.ConditionalFormattings.Add();
 
@@ -26,33 +29,25 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ApplyConditionalFormatting
             // Sets the conditional format range.
             CellArea ca = new CellArea();
 
-            ca = new CellArea();
-
-            ca.StartRow = 2;
-            ca.EndRow = 2;
-            ca.StartColumn = 1;
-            ca.EndColumn = 1;
+            ca.StartRow = 0;
+            ca.EndRow = 0;
+            ca.StartColumn = 0;
+            ca.EndColumn = 0;
 
             fcs.AddArea(ca);
 
             // Adds condition.
-            int conditionIndex = fcs.AddCondition(FormatConditionType.Expression);
+            int conditionIndex = fcs.AddCondition(FormatConditionType.CellValue, OperatorType.Between, "50", "100");
 
             // Sets the background color.
             FormatCondition fc = fcs[conditionIndex];
 
-            fc.Formula1 = "=IF(SUM(B1:B2)>100,TRUE,FALSE)";
-
             fc.Style.BackgroundColor = Color.Red;
 
-            sheet.Cells["B3"].Formula = "=SUM(B1:B2)";
-
-            sheet.Cells["C4"].PutValue("If Sum of B1:B2 is greater than 100, B3 will have Red background.");
-
             // Saving the Excel file
-            workbook.Save(outputDir + "outputApplyConditionalFormattingFormula.xlsx");
+            workbook.Save(outputDir + "outputApplyConditionalFormattingCellValue.xlsx");
 
-            Console.WriteLine("ApplyConditionalFormattingFormula executed successfully.\r\n");
+            Console.WriteLine("ApplyConditionalFormattingCellValue executed successfully.\r\n");
         }
     }
 }

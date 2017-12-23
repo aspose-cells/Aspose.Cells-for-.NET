@@ -74,6 +74,8 @@
     <Compile Include="AdvancedTopics\SmartMarkers\UsingAnonymousTypes.cs" />
     <Compile Include="AdvancedTopics\SmartMarkers\UsingNestedObjects.cs" />
     <Compile Include="AdvancedTopics\UsingCopyStyleAttribute.cs" />
+    <Compile Include="Articles\ApplyConditionalFormattingCellValue.cs" />
+    <Compile Include="Articles\ApplyConditionalFormattingFormula.cs" />
     <Compile Include="Articles\DetectMergedCellsAndUnmerge.cs" />
     <Compile Include="Articles\ExportXmlMapFromWorkbook.cs" />
     <Compile Include="Articles\FilteringObjectsAtLoadTime\CustomFilteringPerWorksheet.cs" />
@@ -110,8 +112,6 @@
     <Compile Include="Articles\AddPDFBookmarks.cs" />
     <Compile Include="Articles\AddPictureToExcelComment.cs" />
     <Compile Include="Articles\AddWordArtWatermarkToWorksheet.cs" />
-    <Compile Include="Articles\ApplyConditionalFormatting\ApplyConditionalFormattingCellValue.cs" />
-    <Compile Include="Articles\ApplyConditionalFormatting\ApplyConditionalFormattingFormula.cs" />
     <Compile Include="Articles\ManagingVBAModules\AssignMacroToFormControl.cs" />
     <Compile Include="Articles\AssignValidateDigitalSignatures.cs" />
     <Compile Include="Articles\AutoFitRowsMergedCells.cs" />
