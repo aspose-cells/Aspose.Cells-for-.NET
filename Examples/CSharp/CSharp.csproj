@@ -76,6 +76,7 @@
     <Compile Include="AdvancedTopics\UsingCopyStyleAttribute.cs" />
     <Compile Include="Articles\ApplyConditionalFormattingCellValue.cs" />
     <Compile Include="Articles\ApplyConditionalFormattingFormula.cs" />
+    <Compile Include="Articles\AssignAndValidateDigitalSignatures.cs" />
     <Compile Include="Articles\DetectMergedCellsAndUnmerge.cs" />
     <Compile Include="Articles\ExportXmlMapFromWorkbook.cs" />
     <Compile Include="Articles\FilteringObjectsAtLoadTime\CustomFilteringPerWorksheet.cs" />
@@ -226,9 +227,6 @@
     <Compile Include="Articles\ManagingVBAModules\DigitallySignVbaProjectWithCertificate.cs" />
     <Compile Include="Articles\ManagingVBAModules\ExportVBACertificateToFile.cs" />
     <Compile Include="Articles\ManagingVBAModules\ModifyingVBAOrMacroCode.cs" />
-    <Compile Include="Articles\ManagingWorkbooksWorksheets\AssignAndValidateDigitalSignatures.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Articles\ManagingWorkbooksWorksheets\CalculateScalingFactor.cs" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\ChangeChartDataSource.cs">
       <SubType>Code</SubType>

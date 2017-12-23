@@ -5,31 +5,33 @@ using System.Text;
 using Aspose.Cells.DigitalSignatures;
 using System.Security.Cryptography.X509Certificates;
 
-namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     public class AssignAndValidateDigitalSignatures
     {
         public static void Run()
         {
-            // ExStart:AssignAndValidateDigitalSignatures
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // dsc is signature collection contains one or more signature needed to sign
             DigitalSignatureCollection dsc = new DigitalSignatureCollection();
 
             // Cert must contain private key, it can be contructed from cert file or windows certificate collection. aa is password of cert
-            X509Certificate2 cert = new X509Certificate2(dataDir + "mykey2.pfx", "aa");
+            X509Certificate2 cert = new X509Certificate2(sourceDir + "keyAssignAndValidateDigitalSignatures.pfx", "aa");
             DigitalSignature ds = new DigitalSignature(cert, "test for sign", DateTime.Now);
             dsc.Add(ds);
             Workbook wb = new Workbook();
 
             // wb.SetDigitalSignature signs all signatures in dsc
             wb.SetDigitalSignature(dsc);
-            wb.Save(dataDir + @"newfile_out.xlsx");
+            wb.Save(outputDir + @"outputAssignAndValidateDigitalSignatures.xlsx");
 
             // open the file
-            wb = new Workbook(dataDir + @"newfile_out.xlsx");
+            wb = new Workbook(outputDir + @"outputAssignAndValidateDigitalSignatures.xlsx");
             System.Console.WriteLine(wb.IsDigitallySigned);
 
             // Get digitalSignature collection from workbook
@@ -40,7 +42,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
                 System.Console.WriteLine(dst.SignTime); //11/25/2010 1:22:01 PM -OK
                 System.Console.WriteLine(dst.IsValid); //True -OK
             }
-            // ExEnd:AssignAndValidateDigitalSignatures
+
+            Console.WriteLine("\r\nAssignAndValidateDigitalSignatures executed successfully.\r\n");
         }
     }
 }

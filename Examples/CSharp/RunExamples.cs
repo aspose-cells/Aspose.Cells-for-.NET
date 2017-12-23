@@ -458,7 +458,7 @@ namespace Aspose.Cells.Examples.CSharp
             //// ManagingWorkbooksWorksheets
             //// =====================================================
             //ChangeChartDataSource.Run();
-            //AssignAndValidateDigitalSignatures.Run();
+            AssignAndValidateDigitalSignatures.Run();
             //SetAutoRecovery.Run();
             //OdsFileSaveOptions.Run();
             //CheckPasswordToModify.Run();
