@@ -216,14 +216,14 @@ namespace Aspose.Cells.Examples.CSharp
             //DetectMergedCellsAndUnmerge.Run();
             //DisableCompatibilityChecker.Run();
             //WriteUsingLightCellsAPI.Run();
-            //AbsolutePathOfExternalDataSourceFile.Run();
-            //AddXmlMapInsideWorkbook.Run();
-            //ApplyConditionalFormattingCellValue.Run();
-            //ApplyConditionalFormattingFormula.Run();
-            //SettingSubscriptEffect.Run();
-            //SettingSuperscripteffect.Run();
+            AbsolutePathOfExternalDataSourceFile.Run();
+            AddXmlMapInsideWorkbook.Run();
+            ApplyConditionalFormattingCellValue.Run();
+            ApplyConditionalFormattingFormula.Run();
+            SettingSubscriptEffect.Run();
+            SettingSuperscripteffect.Run();
             ChangeTextBoxOrShapeCharacterSpacing.Run();
-            //AssignAndValidateDigitalSignatures.Run();
+            AssignAndValidateDigitalSignatures.Run();
 
             // =====================================================
             // =====================================================
