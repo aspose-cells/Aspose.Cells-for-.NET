@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -9,14 +10,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ApplyConditionalFormatting
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            // Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir);
-            if (!IsExists)
-                System.IO.Directory.CreateDirectory(dataDir);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Instantiating a Workbook object
             Workbook workbook = new Workbook();
@@ -40,7 +35,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ApplyConditionalFormatting
 
             fcs.AddArea(ca);
 
-
             // Adds condition.
             int conditionIndex = fcs.AddCondition(FormatConditionType.Expression);
 
@@ -53,13 +47,12 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ApplyConditionalFormatting
 
             sheet.Cells["B3"].Formula = "=SUM(B1:B2)";
 
-            sheet.Cells["C4"].PutValue("If Sum of B1:B2 is greater than 100, B3 will have RED background");
+            sheet.Cells["C4"].PutValue("If Sum of B1:B2 is greater than 100, B3 will have Red background.");
 
             // Saving the Excel file
-            workbook.Save(dataDir+ "output.out.xls", SaveFormat.Auto);
-            // ExEnd:1
-            
-            
+            workbook.Save(outputDir + "outputApplyConditionalFormattingFormula.xlsx");
+
+            Console.WriteLine("ApplyConditionalFormattingFormula executed successfully.\r\n");
         }
     }
 }

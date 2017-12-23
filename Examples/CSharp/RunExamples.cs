@@ -218,7 +218,7 @@ namespace Aspose.Cells.Examples.CSharp
             //DisableCompatibilityChecker.Run();
             //WriteUsingLightCellsAPI.Run();
             //AbsolutePathOfExternalDataSourceFile.Run();
-            AddXmlMapInsideWorkbook.Run();
+            //AddXmlMapInsideWorkbook.Run();
 
             // =====================================================
             // =====================================================
@@ -318,8 +318,8 @@ namespace Aspose.Cells.Examples.CSharp
 
             //// Apply-Conditional-Formatting
             //// =====================================================
-            //ApplyConditionalFormattingCellValue.Run();
-            //ApplyConditionalFormattingFormula.Run();
+            ApplyConditionalFormattingCellValue.Run();
+            ApplyConditionalFormattingFormula.Run();
 
             //// Apply-Superscript And Subscript
             //// =====================================================
