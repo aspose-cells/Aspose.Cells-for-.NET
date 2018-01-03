@@ -10,7 +10,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:FindIfCellValueStartsWithSingleQuote
             // Create workbook
             Workbook wb = new Workbook();
 
@@ -38,8 +37,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // Check if A1 and A2 has a quote prefix
             Console.WriteLine("A1 has a quote prefix: " + s1.QuotePrefix);
             Console.WriteLine("A2 has a quote prefix: " + s2.QuotePrefix);
-            // ExEnd:FindIfCellValueStartsWithSingleQuote           
-            
+
+            Console.WriteLine("FindIfCellValueStartsWithSingleQuote executed successfully.\r\n");
         }
     }
 }
