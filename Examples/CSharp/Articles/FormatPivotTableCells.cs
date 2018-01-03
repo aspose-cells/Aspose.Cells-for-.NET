@@ -10,19 +10,20 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            string filePath = dataDir + "pivotTable_test.xlsx";
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create workbook object from source file containing pivot table
-            Workbook workbook = new Workbook(filePath);
+            Workbook workbook = new Workbook(sourceDir + "sampleFormatPivotTableCells.xlsx");
 
             // Access the worksheet by its name
-            Worksheet worksheet = workbook.Worksheets["PivotTable"];
+            Worksheet worksheet = workbook.Worksheets[0];
 
             // Access the pivot table
-            // PivotTable pivotTable = worksheet.PivotTables[0];
+            PivotTable pivotTable = worksheet.PivotTables[0];
 
             // Create a style object with background color light blue
             Style style = workbook.CreateStyle();
@@ -30,7 +31,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             style.BackgroundColor = Color.LightBlue;
 
             // Format entire pivot table with light blue color
-           // worksheet.FormatAll(style);
+            pivotTable.FormatAll(style);
 
             // Create another style object with yellow color
             style = workbook.CreateStyle();
@@ -38,15 +39,19 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             style.BackgroundColor = Color.Yellow;
 
             // Format the cells of the first row of the pivot table with yellow color
-            for (int col = 0; col < 5; col++)
+            //Format the pivot table cells from H6 to M6
+            string[] cells_names = new string[] { "H6", "I6", "J6", "K6", "L6", "M6" };
+
+            for (int i =0; i < cells_names.Length; i++)
             {
-               // worksheet.Format(1, col, style);
+                Cell cell = worksheet.Cells[cells_names[i]];
+                pivotTable.Format(cell.Row, cell.Column, style);
             }
-            dataDir = dataDir + "output.out.xlsx";
+            
             // Save the workbook object
-            workbook.Save(dataDir);
-            // ExEnd:1
-            Console.WriteLine("\nProcess completed successfully.\nFile saved at " + dataDir);
+            workbook.Save(outputDir + "outputFormatPivotTableCells.xlsx");
+
+            Console.WriteLine("FormatPivotTableCells executed successfully.\r\n");
         }
     }
 }
