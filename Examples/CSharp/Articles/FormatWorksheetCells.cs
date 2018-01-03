@@ -17,23 +17,15 @@ namespace Aspose.Cells.Examples.CSharp.Articles
         [STAThread]
         public static void Run()
         {
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            string filename = dataDir + "FormatWorksheet.xls";            
+            string filename = RunExamples.Get_OutputDirectory() + "outputFormatWorksheetCells.xlsx";
+
             CreateSalesReport(filename);
+
+            Console.WriteLine("FormatWorksheetCells executed successfully.\r\n");
         }
 
         private static void CreateSalesReport(string filename)
         {
-            /*
-             * Uncomment the code below when you have purchased license
-             * for Aspose.Cells. You need to deploy the license in the
-             * same folder as your executable, alternatively you can add
-             * the license file as an embedded resource to your project.
-            */
-            Aspose.Cells.License cellsLicense = new
-            Aspose.Cells.License();
-            cellsLicense.SetLicense("Aspose.Cells.lic");
-
             // Create a new Workbook.
             Workbook workbook = new Workbook();
 
