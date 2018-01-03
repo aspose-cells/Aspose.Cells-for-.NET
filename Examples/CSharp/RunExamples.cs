@@ -230,7 +230,8 @@ namespace Aspose.Cells.Examples.CSharp
             //ExportXmlMapFromWorkbook.Run();
             //FindCellsWithSpecificStyle.Run();
             //FindIfCellValueStartsWithSingleQuote.Run();
-            FindQueryTablesAndListObjectsOfExternalDataConnections.Run();
+            //FindQueryTablesAndListObjectsOfExternalDataConnections.Run();
+            FitAllWorksheetColumns.Run();
 
             // =====================================================
             // =====================================================
@@ -238,8 +239,6 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-
-            //FitAllWorksheetColumns.Run();
             //FormatPivotTableCells.Run();
             //FormatWorksheetCells.Run();
             //GenerateThumbnailOfWorksheet.Run();
