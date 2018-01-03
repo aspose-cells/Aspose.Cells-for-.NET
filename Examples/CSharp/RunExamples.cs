@@ -225,7 +225,8 @@ namespace Aspose.Cells.Examples.CSharp
             //ChangeTextBoxOrShapeCharacterSpacing.Run();
             //AssignAndValidateDigitalSignatures.Run();
             //ErrorCheckingOptions.Run();
-            ExportVisibleRowsData.Run();
+            //ExportVisibleRowsData.Run();
+            ExtractImagesFromWorksheets.Run();
 
             // =====================================================
             // =====================================================
@@ -233,7 +234,6 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            //ExtractImagesFromWorksheets.Run();
             //ExportXmlMapFromWorkbook.Run();
             //FindCellsWithSpecificStyle.Run();
             //FindIfCellValueStartsWithSingleQuote.Run();
