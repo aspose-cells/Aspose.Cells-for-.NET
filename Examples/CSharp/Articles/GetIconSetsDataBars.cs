@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,11 +9,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
             // Open a template Excel file
-            Workbook workbook = new Workbook(dataDir+ "book1.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleGetIconSetsDataBars.xlsx");
 
             // Get the first worksheet in the workbook
             Worksheet sheet = workbook.Worksheets[0];
@@ -27,9 +31,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             ConditionalFormattingIcon icon = cfr.ConditionalFormattingIcon;
 
             // Create the image file based on the icon's image data
-            File.WriteAllBytes(dataDir+ "imgIcon.out.jpg", icon.ImageData);
-            // ExEnd:1
-            
+            File.WriteAllBytes(outputDir + "outputGetIconSetsDataBars.jpg", icon.ImageData);
+
+            Console.WriteLine("GetIconSetsDataBars executed successfully.\r\n");
         }
     }
 }

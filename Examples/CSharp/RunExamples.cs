@@ -234,7 +234,7 @@ namespace Aspose.Cells.Examples.CSharp
             //FitAllWorksheetColumns.Run();
             //FormatPivotTableCells.Run();
             //FormatWorksheetCells.Run();
-            GenerateThumbnailOfWorksheet.Run();
+            //GenerateThumbnailOfWorksheet.Run();
 
             // =====================================================
             // =====================================================
@@ -243,7 +243,7 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
 
 
-            //GetIconSetsDataBars.Run();
+            GetIconSetsDataBars.Run();
             //HidingDisplayOfZeroValues.Run();
             //HtmlExportFrameScripts.Run();
             //IgnoreHiddenColumnsDataTable.Run();
