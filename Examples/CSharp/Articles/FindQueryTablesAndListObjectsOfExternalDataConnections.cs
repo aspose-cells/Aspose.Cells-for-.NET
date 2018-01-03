@@ -12,12 +12,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:FindQueryTablesAndListObjectsOfExternalDataConnections
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
             // Load workbook object
-            Workbook workbook = new Workbook(dataDir + "sample.xlsm");
+            Workbook workbook = new Workbook(sourceDir + "sampleFindQueryTablesAndListObjectsOfExternalDataConnections.xlsm");
 
             // Check all the connections inside the workbook
             for (int i = 0; i < workbook.DataConnections.Count; i++)
@@ -28,12 +27,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
                 Console.WriteLine();
             }
 
-            Console.WriteLine("Press any key to continue...");
-            Console.ReadKey();
-            // ExEnd:FindQueryTablesAndListObjectsOfExternalDataConnections           
-
+            Console.WriteLine("FindQueryTablesAndListObjectsOfExternalDataConnections executed successfully.\r\n");
         }
-        // ExStart:PrintTables
+
         public static void PrintTables(Workbook workbook, Aspose.Cells.ExternalConnections.ExternalConnection ec)
         {
             // Iterate all the worksheets
@@ -63,7 +59,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
                             }
                         }
                     }
-                }
+                }//for
 
                 // Iterate all the list objects in this worksheet
                 for (int k = 0; k < worksheet.ListObjects.Count; k++)
@@ -86,9 +82,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
                             Console.WriteLine("refersto: " + worksheet.Name + "!" + CellsHelper.CellIndexToName(table.StartRow, table.StartColumn) + ":" + CellsHelper.CellIndexToName(table.EndRow, table.EndColumn));
                         }
                     }
-                }
+                }//for
             }
-        }
-        // ExEnd:PrintTables
+        }//PrintTables
     }
 }
