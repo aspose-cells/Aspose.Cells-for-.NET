@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,11 +9,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
             // Create a new Workbook object
-            Workbook workbook = new Workbook(dataDir + "book1.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleHidingDisplayOfZeroValues.xlsx");
 
             // Get First worksheet of the workbook
             Worksheet sheet = workbook.Worksheets[0];
@@ -21,8 +25,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             sheet.DisplayZeros = false;
 
             // Save the workbook
-            workbook.Save(dataDir + "outputfile.out.xlsx");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputHidingDisplayOfZeroValues.xlsx");
+
+            Console.WriteLine("HidingDisplayOfZeroValues executed successfully.\r\n");
         }
     }
 }

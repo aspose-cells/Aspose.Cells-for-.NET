@@ -235,6 +235,8 @@ namespace Aspose.Cells.Examples.CSharp
             //FormatPivotTableCells.Run();
             //FormatWorksheetCells.Run();
             //GenerateThumbnailOfWorksheet.Run();
+            //GetIconSetsDataBars.Run();
+            HidingDisplayOfZeroValues.Run();
 
             // =====================================================
             // =====================================================
@@ -242,9 +244,6 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-
-            GetIconSetsDataBars.Run();
-            //HidingDisplayOfZeroValues.Run();
             //HtmlExportFrameScripts.Run();
             //IgnoreHiddenColumnsDataTable.Run();
             //Implement1904DateSystem.Run();
