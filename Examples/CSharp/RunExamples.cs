@@ -224,7 +224,8 @@ namespace Aspose.Cells.Examples.CSharp
             //SettingSuperscripteffect.Run();
             //ChangeTextBoxOrShapeCharacterSpacing.Run();
             //AssignAndValidateDigitalSignatures.Run();
-            ErrorCheckingOptions.Run();
+            //ErrorCheckingOptions.Run();
+            ExportVisibleRowsData.Run();
 
             // =====================================================
             // =====================================================
@@ -232,8 +233,6 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            //ExportRangeofCells.Run();
-            //ExportVisibleRowsData.Run();
             //ExtractImagesFromWorksheets.Run();
             //ExportXmlMapFromWorkbook.Run();
             //FindCellsWithSpecificStyle.Run();

@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -9,13 +10,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            string filePath = dataDir+ "aspose-sample.xlsx";
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
             // Load the source workbook
-            Workbook workbook = new Workbook(filePath);
+            Workbook workbook = new Workbook(sourceDir + "sampleExportVisibleRowsData.xlsx");
 
             // Access the first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -27,8 +26,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Export the data from worksheet with export options
             DataTable dataTable = worksheet.Cells.ExportDataTable(0, 0, 10, 4, exportOptions);
-            // ExEnd:1
-            
+
+            Console.WriteLine("ExportVisibleRowsData executed successfully.\r\n");
         }
     }
 }
