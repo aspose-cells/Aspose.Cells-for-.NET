@@ -226,7 +226,8 @@ namespace Aspose.Cells.Examples.CSharp
             //AssignAndValidateDigitalSignatures.Run();
             //ErrorCheckingOptions.Run();
             //ExportVisibleRowsData.Run();
-            ExtractImagesFromWorksheets.Run();
+            //ExtractImagesFromWorksheets.Run();
+            ExportXmlMapFromWorkbook.Run();
 
             // =====================================================
             // =====================================================
@@ -234,7 +235,7 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            //ExportXmlMapFromWorkbook.Run();
+
             //FindCellsWithSpecificStyle.Run();
             //FindIfCellValueStartsWithSingleQuote.Run();
             //FindQueryTablesAndListObjectsOfExternalDataConnections.Run();

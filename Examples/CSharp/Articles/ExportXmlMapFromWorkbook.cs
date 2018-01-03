@@ -1,20 +1,19 @@
-﻿namespace Aspose.Cells.Examples.CSharp.Articles
+﻿using System;
+
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     class ExportXmlMapFromWorkbook
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            // Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir);
-            if (!IsExists)
-                System.IO.Directory.CreateDirectory(dataDir);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Instantiating a Workbook object
-            Workbook workbook = new Workbook(dataDir + "sample.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleExportXmlMapFromWorkbook.xlsx");
 
             // Export all XML data from all XML Maps from the Workbook
             for (int i = 0; i < workbook.Worksheets.XmlMaps.Count; i++)
@@ -23,9 +22,10 @@
                 XmlMap map = workbook.Worksheets.XmlMaps[i];
 
                 // Exports its XML Data to file
-                workbook.ExportXml(map.Name, dataDir + map.Name + ".xml");
+                workbook.ExportXml(map.Name, outputDir + map.Name + ".xml");
             }
-            // ExEnd:1
+
+            Console.WriteLine("ExportXmlMapFromWorkbook executed successfully.\r\n");
         }
     }
 }
