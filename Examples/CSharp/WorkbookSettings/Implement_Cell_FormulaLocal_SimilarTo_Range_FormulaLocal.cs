@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp.WorkbookSettings
 {
-    class Implement_Cell_FormulaLocal_SimilarTo_Range_FormulaLocal
+    class Implement_Cell_FormulaLocal_SimilarTo_Range_FormulaLocal 
     {
         //Implement GlobalizationSettings class
         class GS : GlobalizationSettings

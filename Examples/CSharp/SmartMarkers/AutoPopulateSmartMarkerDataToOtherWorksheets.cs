@@ -6,7 +6,7 @@ using System.Data;
 
 namespace Aspose.Cells.Examples.CSharp.SmartMarkers
 {
-    class AutoPopulateSmartMarkerDataToOtherWorksheets
+    class AutoPopulateSmartMarkerDataToOtherWorksheets 
     {
         public static void Run()
         {

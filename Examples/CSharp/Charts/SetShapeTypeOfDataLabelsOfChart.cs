@@ -8,7 +8,7 @@ using Aspose.Cells.Drawing;
 
 namespace Aspose.Cells.Examples.CSharp.Charts
 {
-    class SetShapeTypeOfDataLabelsOfChart
+    class SetShapeTypeOfDataLabelsOfChart 
     {
         public static void Run()
         {

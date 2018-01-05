@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp.Worksheets
 {
-    class UpdateDaysPreservingHistoryOfRevisionLogsInSharedWorkbook
+    class UpdateDaysPreservingHistoryOfRevisionLogsInSharedWorkbook 
     {
         public static void Run()
         {

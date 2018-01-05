@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp.Rendering
 {
-    class RenderOfficeAdd_InsWhileConvertingExcelToPdf
+    class RenderOfficeAdd_InsWhileConvertingExcelToPdf 
     {
         public static void Run()
         {

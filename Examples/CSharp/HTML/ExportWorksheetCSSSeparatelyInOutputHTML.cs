@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace Aspose.Cells.Examples.CSharp.HTML
 {
-    class ExportWorksheetCSSSeparatelyInOutputHTML
+    class ExportWorksheetCSSSeparatelyInOutputHTML 
     {
         public static void Run()
         {

@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace Aspose.Cells.Examples.CSharp.HTML
 {
-    class PrefixTableElementsStylesWithHtmlSaveOptions_TableCssIdProperty
+    class PrefixTableElementsStylesWithHtmlSaveOptions_TableCssIdProperty 
     {
         public static void Run()
         {
