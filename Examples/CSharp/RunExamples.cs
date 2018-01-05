@@ -236,7 +236,7 @@ namespace Aspose.Cells.Examples.CSharp
             //FormatWorksheetCells.Run();
             //GenerateThumbnailOfWorksheet.Run();
             //GetIconSetsDataBars.Run();
-            HidingDisplayOfZeroValues.Run();
+            //HidingDisplayOfZeroValues.Run();
 
             // =====================================================
             // =====================================================

@@ -30,8 +30,6 @@ namespace Aspose.Cells.Examples.CSharp.Data.Handling.Importing
             list.Add(new Person("Steve", 30));
             list.Add(new Person("Billy", 35));
 
-
-
             ImportTableOptions imp = new ImportTableOptions();
             imp.InsertRows = true;
 
