@@ -609,6 +609,7 @@
     <Compile Include="RowsColumns\Grouping\SummaryRowRight.cs" />
     <Compile Include="RowsColumns\Grouping\SummaryRowBelow.cs" />
     <Compile Include="RunExamples.cs" />
+    <Compile Include="SmartMarkers\AutoPopulateSmartMarkerDataToOtherWorksheets.cs" />
     <Compile Include="SmartMarkers\UsingFormulaParameterInSmartMarkerField.cs" />
     <Compile Include="SmartMarkers\AddCustomLabels.cs" />
     <Compile Include="SmartMarkers\CopyStyleWithSmartMarker.cs" />

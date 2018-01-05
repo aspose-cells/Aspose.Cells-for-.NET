@@ -111,6 +111,10 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out
 
+            //Aspose.Cells for .NET v17.12
+            SmartMarkers.AutoPopulateSmartMarkerDataToOtherWorksheets.Run();
+
+
             //Aspose.Cells for .NET v17.11
             //_Workbook.CreateSharedWorkbook.Run();
             //_Workbook.PasswordProtectOrUnprotectSharedWorkbook.Run();
