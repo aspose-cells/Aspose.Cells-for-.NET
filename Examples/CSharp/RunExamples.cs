@@ -112,7 +112,8 @@ namespace Aspose.Cells.Examples.CSharp
             // Uncomment the one you want to try out
 
             //Aspose.Cells for .NET v17.12
-            SmartMarkers.AutoPopulateSmartMarkerDataToOtherWorksheets.Run();
+            //SmartMarkers.AutoPopulateSmartMarkerDataToOtherWorksheets.Run();
+            HTML.ExportWorksheetCSSSeparatelyInOutputHTML.Run();
 
 
             //Aspose.Cells for .NET v17.11

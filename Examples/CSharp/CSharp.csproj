@@ -561,6 +561,7 @@
     <Compile Include="Formulas\ProcessDataUsingR1C1.cs" />
     <Compile Include="Formulas\ProcessDataUsingAddinfunction.cs" />
     <Compile Include="Formulas\ProcessDataUsingBuiltinfunction.cs" />
+    <Compile Include="HTML\ExportWorksheetCSSSeparatelyInOutputHTML.cs" />
     <Compile Include="Introduction\CheckVersionNumber.cs" />
     <Compile Include="Introduction\FirstApplication.cs" />
     <Compile Include="Introduction\OpenExistingFile.cs" />
