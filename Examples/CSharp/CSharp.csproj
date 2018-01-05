@@ -344,6 +344,7 @@
     <Compile Include="Charts\ChangeChartPosition.cs" />
     <Compile Include="Charts\ChartRendering.cs" />
     <Compile Include="Charts\ChartToPdf.cs" />
+    <Compile Include="Charts\SetShapeTypeOfDataLabelsOfChart.cs" />
     <Compile Include="Charts\SetValuesFormatCodeOfChartSeries.cs" />
     <Compile Include="Charts\HowToCreateChart.cs" />
     <Compile Include="Charts\InsertingControlsintoCharts\AddingLabelControl.cs" />
