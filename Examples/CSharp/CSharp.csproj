@@ -661,6 +661,7 @@
     <Compile Include="Workbook\CreateSharedWorkbook.cs" />
     <Compile Include="Workbook\PasswordProtectOrUnprotectSharedWorkbook.cs" />
     <Compile Include="Workbook\ReadAndWriteExternalConnectionOfXLSBFile.cs" />
+    <Compile Include="Worksheets\UpdateDaysPreservingHistoryOfRevisionLogsInSharedWorkbook.cs" />
     <Compile Include="Worksheets\UtilizeSheet_SheetId_PropertyOfOpenXml.cs" />
     <Compile Include="Worksheets\Display\ControlTabBarWidth.cs" />
     <Compile Include="Worksheets\Display\DisplayHideGridlines.cs" />
