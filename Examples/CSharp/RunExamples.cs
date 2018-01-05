@@ -115,7 +115,8 @@ namespace Aspose.Cells.Examples.CSharp
             //SmartMarkers.AutoPopulateSmartMarkerDataToOtherWorksheets.Run();
             //HTML.ExportWorksheetCSSSeparatelyInOutputHTML.Run();
             //WorkbookSettings.Implement_Cell_FormulaLocal_SimilarTo_Range_FormulaLocal.Run();
-            HTML.PrefixTableElementsStylesWithHtmlSaveOptions_TableCssIdProperty.Run();
+            //HTML.PrefixTableElementsStylesWithHtmlSaveOptions_TableCssIdProperty.Run();
+            Rendering.RenderOfficeAdd_InsWhileConvertingExcelToPdf.Run();
 
 
             //Aspose.Cells for .NET v17.11
