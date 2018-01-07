@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,12 +9,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            // Instantiate a Workbook object.
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
             // Load a template file.
-            Workbook workbook = new Workbook(dataDir+ "book1.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleInsertDeleteRows.xlsx");
 
             // Get the first worksheet in the book.
             Worksheet sheet = workbook.Worksheets[0];
@@ -21,15 +24,13 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // Insert 10 rows at row index 2 (insertion starts at 3rd row)
             sheet.Cells.InsertRows(2, 10);
 
-            // Delete 5 rows now. (8th row - 12th row)
-            sheet.Cells.DeleteRows(7, 5);
+            // Delete 5 rows now. (18th row - 22th row)
+            sheet.Cells.DeleteRows(17, 5);
 
             // Save the excel file.
-            workbook.Save(dataDir+ "out_book1.out.xlsx");
-            // ExEnd:1
- 
-            
-            
+            workbook.Save(outputDir + "outputInsertDeleteRows.xlsx");
+
+            Console.WriteLine("InsertDeleteRows executed successfully.");
         }
     }
 }
