@@ -255,8 +255,8 @@ namespace Aspose.Cells.Examples.CSharp
             //ChartLegendEntry.Run();
             //CheckHiddenExternalLinks.Run();
             //CreateTransparentImage.Run();
-
-            CustomizingRibbonXML.Run();
+            //CustomizingRibbonXML.Run();
+            CustomLabelsSubtotals.Run();
 
             // =====================================================
             // =====================================================
@@ -326,7 +326,7 @@ namespace Aspose.Cells.Examples.CSharp
             //ReadingCellValuesInMultipleThreadsSimultaneously.TestMultiThreadingRead();
             //GetSmartMarkerNotifications.Run();
             //ReadUsingLightCellsApi.Run();
-            //CustomLabelsSubtotals.Run();
+
             //CustomTextForLabels.Run();
             //MINIFSAndMAXIFS.Run();
             //TotalsInOtherLanguages.Run();
