@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,16 +9,22 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            Workbook wb = new Workbook(dataDir+ "aspose-sample.xlsx");
-            FileInfo fi = new FileInfo(dataDir+ "CustomUI.xml");
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
+            Workbook wb = new Workbook(sourceDir + "sampleCustomizingRibbonXML.xlsx");
+
+            FileInfo fi = new FileInfo(sourceDir + "customUI_CustomizingRibbonXML.xml");
             StreamReader sr = fi.OpenText();
             wb.RibbonXml = sr.ReadToEnd();
             sr.Close();
-            // ExEnd:1
+
+            wb.Save(outputDir + "outputCustomizingRibbonXML.xlsx");
+
+            Console.WriteLine("CustomizingRibbonXML executed successfully.");
         }
     }
 }

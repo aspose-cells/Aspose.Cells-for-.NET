@@ -218,7 +218,7 @@ namespace Aspose.Cells.Examples.CSharp
             //CopyRangeDataWithStyle.Run();
             //CopyRangeStyleOnly.Run();
             //CreateManipulateRemoveScenarios.Run();
-            
+
             //CustomSliceSectorColorsPieChart.Run();
             //DataValidationRules.Run();
             //DeleteRedundantSpacesWhileImportingFromHtml.Run();
@@ -253,8 +253,10 @@ namespace Aspose.Cells.Examples.CSharp
             //ImplementCustomCalculationEngine.Run();
             //InsertDeleteRows.Run();
             //ChartLegendEntry.Run();
-            CheckHiddenExternalLinks.Run();
-            CreateTransparentImage.Run();
+            //CheckHiddenExternalLinks.Run();
+            //CreateTransparentImage.Run();
+
+            CustomizingRibbonXML.Run();
 
             // =====================================================
             // =====================================================
@@ -329,7 +331,7 @@ namespace Aspose.Cells.Examples.CSharp
             //MINIFSAndMAXIFS.Run();
             //TotalsInOtherLanguages.Run();
             //UsingCellsFactory.Run();
-            ////CustomizingRibbonXML.Run();
+
 
             //// ConvertExcelChartToImage
             //// =====================================================
