@@ -264,6 +264,8 @@ namespace Aspose.Cells.Examples.CSharp
             //LimitNumberOfPagesGenerated.Run();
             //LoadWebImage.Run();
             //MergeUnmergeRangeOfCells.Run();
+            //SetBackgroundPicture.Run();
+            //MoveRangeOfCells.Run();
 
             // =====================================================
             // =====================================================
@@ -276,7 +278,7 @@ namespace Aspose.Cells.Examples.CSharp
             //LoadSpecificSheets.Run();
 
 
-            MoveRangeOfCells.Run();
+
             //ReadingCSVMultipleEncodings.Run();
             //RemoveWhitespaceAroundData.Run();
             //RenderOnePdfPagePerExcelWorksheet.Run();
@@ -284,7 +286,7 @@ namespace Aspose.Cells.Examples.CSharp
             //SaveEachWorksheetToDifferentPDF.Run();
             //SearchReplaceDataInRange.Run();
             //SecurePDFDocuments.Run();
-            //SetBackgroundPicture.Run();
+
             //SetPixelFormatRenderedImage.Run();
             //SettingStrongEncryptionType.Run();
             //SettingScaleCropAndLinksUpToDateProperties.Run();

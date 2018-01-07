@@ -9,9 +9,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Instantiate a new Workbook.
             Workbook workbook = new Workbook();
@@ -19,30 +21,16 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // Get the first worksheet.
             Worksheet sheet = workbook.Worksheets[0];
 
-            // Define a string variable to store the image path.
-            string ImageUrl = dataDir+ "aspose-logo.jpg";
-
-            // Get the picture into the streams.
-            FileStream fs = File.OpenRead(ImageUrl);
-
-            // Define a byte array.
-            byte[] imageData = new Byte[fs.Length];
-
-            // Obtain the picture into the array of bytes from streams.
-            fs.Read(imageData, 0, imageData.Length);
-
-            // Close the stream.
-            fs.Close();
-
             // Set the background image for the sheet.
-            sheet.BackgroundImage = imageData;
+            sheet.BackgroundImage = File.ReadAllBytes(sourceDir + "sampleSetBackgroundPicture.jpg");
 
             // Save the Excel file
-            workbook.Save(dataDir + "BackImageSheet.out.xlsx");
+            workbook.Save(outputDir + "outputBackImageSheet.xlsx");
 
             // Save the HTML file
-            workbook.Save(dataDir + "BackImageSheet1.out.html", SaveFormat.Html);
-            // ExEnd:1
+            workbook.Save(outputDir + "outputBackImageSheet.html", SaveFormat.Html);
+
+            Console.WriteLine("SetBackgroundPicture executed successfully.");
         }
     }
 }
