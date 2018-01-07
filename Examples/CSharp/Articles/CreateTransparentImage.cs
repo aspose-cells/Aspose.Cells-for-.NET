@@ -33,7 +33,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             var sr = new SheetRender(wb.Worksheets[0], imgOption);
             sr.ToImage(0, outputDir + "outputCreateTransparentImage.png");
 
-            Console.WriteLine("CreateTransparentImage executed successfully.\r\n");
+            Console.WriteLine("CreateTransparentImage executed successfully.");
         }
     }
 }
