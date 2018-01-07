@@ -9,12 +9,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:CheckHiddenExternalLinks
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
             // Loads the workbook which contains hidden external links
-            Workbook workbook = new Workbook(dataDir + "sample.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleCheckHiddenExternalLinks.xlsx");
 
             // Access the external link collection of the workbook
             ExternalLinkCollection links = workbook.Worksheets.ExternalLinks;
@@ -27,7 +26,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
                 Console.WriteLine("Is Visible: " + links[i].IsVisible);
                 Console.WriteLine();
             }
-            // ExEnd:CheckHiddenExternalLinks
+
+            Console.WriteLine("CheckHiddenExternalLinks executed successfully.");
         }
     }
 }

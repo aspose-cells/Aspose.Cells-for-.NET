@@ -252,7 +252,8 @@ namespace Aspose.Cells.Examples.CSharp
             //Implement1904DateSystem.Run();
             //ImplementCustomCalculationEngine.Run();
             //InsertDeleteRows.Run();
-            ChartLegendEntry.Run();
+            //ChartLegendEntry.Run();
+            CheckHiddenExternalLinks.Run();
 
             // =====================================================
             // =====================================================
@@ -310,7 +311,7 @@ namespace Aspose.Cells.Examples.CSharp
             //LoadWorkbookWithSpecificCultureInfoDateFormat.Run();
             //ReflactionEffectOfShape.Run();
             //ShadowEffectOfShape.Run();
-            //CheckHiddenExternalLinks.Run();
+
             //GlowEffectOfShape.Run();
             //Shape3DEffect.Run();
             //LinkCellsToXmlMapElements.Run();
