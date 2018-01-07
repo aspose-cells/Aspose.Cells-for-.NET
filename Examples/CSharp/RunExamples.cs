@@ -266,6 +266,7 @@ namespace Aspose.Cells.Examples.CSharp
             //MergeUnmergeRangeOfCells.Run();
             //SetBackgroundPicture.Run();
             //MoveRangeOfCells.Run();
+            //ReadingCSVMultipleEncodings.Run();
 
             // =====================================================
             // =====================================================
@@ -279,7 +280,7 @@ namespace Aspose.Cells.Examples.CSharp
 
 
 
-            ReadingCSVMultipleEncodings.Run();
+
             //RemoveWhitespaceAroundData.Run();
             //RenderOnePdfPagePerExcelWorksheet.Run();
             //ResamplingAddedImages.Run();
