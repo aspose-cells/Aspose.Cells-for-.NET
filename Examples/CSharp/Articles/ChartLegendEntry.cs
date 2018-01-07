@@ -8,12 +8,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Open the template file.
-            Workbook workbook = new Workbook(dataDir + "Sample.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleChartLegendEntry.xlsx");
 
             // Access the first worksheet
             Worksheet sheet = workbook.Worksheets[0];
@@ -25,8 +27,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             chart.Legend.LegendEntries[1].IsTextNoFill = true;
 
             // Save the workbook in xlsx format
-            workbook.Save(dataDir + "ChartLegendEntry_out.xlsx", SaveFormat.Xlsx);
-            // ExEnd:1
+            workbook.Save(outputDir + "outputChartLegendEntry.xlsx", SaveFormat.Xlsx);
+
+            Console.WriteLine("ChartLegendEntry executed successfully.");
         }
     }
 }

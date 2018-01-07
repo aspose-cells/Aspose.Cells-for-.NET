@@ -252,6 +252,7 @@ namespace Aspose.Cells.Examples.CSharp
             //Implement1904DateSystem.Run();
             //ImplementCustomCalculationEngine.Run();
             //InsertDeleteRows.Run();
+            ChartLegendEntry.Run();
 
             // =====================================================
             // =====================================================
@@ -298,7 +299,7 @@ namespace Aspose.Cells.Examples.CSharp
             //LoadExcelFileWithoutChart.Run();
             //ExportToHTMLWithGridLines.Run();
             //DivTagsLayout.Run();
-            //ChartLegendEntry.Run();
+
             //LoadWorkbookWithPrinterSize.Run();
             //CreateTextBoxWithDifferentHorizontalAlignment.Run();
             //SetTextboxOrShapeParagraphLineSpacing.Run();
