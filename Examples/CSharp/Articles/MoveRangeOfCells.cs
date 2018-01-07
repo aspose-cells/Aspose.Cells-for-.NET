@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,28 +9,27 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            // Instantiate the workbook object
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+            
             // Open the Excel file
-            Workbook workbook = new Workbook(dataDir+ "book1.xls");
+            Workbook workbook = new Workbook(sourceDir + "sampleMoveRangeOfCells.xlsx");
 
             Cells cells = workbook.Worksheets[0].Cells;
 
             // Create Cell's area
-            CellArea ca = new CellArea();
-            ca.StartColumn = 0;
-            ca.EndColumn = 1;
-            ca.StartRow = 0;
-            ca.EndRow = 4;
-
+            CellArea ca = CellArea.CreateCellArea("A1", "C5");
+            
             // Move Range
-            cells.MoveRange(ca, 0, 2);
+            cells.MoveRange(ca, 7, 5);
 
             // Save the resultant file
-            workbook.Save(dataDir+ "book2.out.xls");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputMoveRangeOfCells.xlsx");
+
+            Console.WriteLine("MoveRangeOfCells executed successfully.");
         }
     }
 }
