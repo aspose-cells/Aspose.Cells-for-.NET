@@ -1,4 +1,5 @@
-﻿using Aspose.Cells;
+﻿using System;
+using Aspose.Cells;
 
 namespace Aspose.Cells.Examples.CSharp.Articles
 {
@@ -6,20 +7,23 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Open the required workbook to convert
-            Workbook w = new Workbook(dataDir + "Sample1.xlsx");
+            Workbook wb = new Workbook(sourceDir + "sampleHtmlExportFrameScripts.xlsx");
 
             // Disable exporting frame scripts and document properties
             HtmlSaveOptions options = new HtmlSaveOptions();
             options.ExportFrameScriptsAndProperties = false;
 
             // Save workbook as HTML
-            w.Save(dataDir + "output.out.html", options);
-            // ExEnd:1
+            wb.Save(outputDir + "outputHtmlExportFrameScripts.html", options);
+
+            Console.WriteLine("DetermineIfShapeIsSmartArtShape executed successfully.");
         }
     }
 }
