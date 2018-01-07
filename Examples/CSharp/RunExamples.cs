@@ -247,15 +247,16 @@ namespace Aspose.Cells.Examples.CSharp
             //GetIconSetsDataBars.Run();
             //HidingDisplayOfZeroValues.Run();
 
+            //HtmlExportFrameScripts.Run();
+            //IgnoreHiddenColumnsDataTable.Run();
+
             // =====================================================
             // =====================================================
             // Articles
             // =====================================================
             // =====================================================
 
-            HtmlExportFrameScripts.Run();
-            IgnoreHiddenColumnsDataTable.Run();
-            //Implement1904DateSystem.Run();
+            Implement1904DateSystem.Run();
             //ImplementCustomCalculationEngine.Run();
             //ImplementingNonSequencedRanges.Run();
             //InsertDeleteRows.Run();
