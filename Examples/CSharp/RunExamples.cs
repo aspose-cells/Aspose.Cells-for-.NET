@@ -261,6 +261,8 @@ namespace Aspose.Cells.Examples.CSharp
             //InsertOleObject_WAVFile.Run();
             //InsertLinkedPicture.Run();
             //InsertPictureCellReference.Run();
+            //LimitNumberOfPagesGenerated.Run();
+            LoadWebImage.Run();
 
             // =====================================================
             // =====================================================
@@ -269,9 +271,9 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
 
 
-            LimitNumberOfPagesGenerated.Run();
+
             //LoadSpecificSheets.Run();
-            //LoadWebImage.Run();
+
             //MergeUnmergeRangeOfCells.Run();
             //MoveRangeOfCells.Run();
             //ReadingCSVMultipleEncodings.Run();
