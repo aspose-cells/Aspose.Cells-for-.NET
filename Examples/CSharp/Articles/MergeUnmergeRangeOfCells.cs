@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,9 +9,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
             // Create a workbook
             Workbook workbook = new Workbook();
 
@@ -24,8 +25,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             range.Merge();
 
             // Save the workbook
-            workbook.Save(dataDir+ "output.out.xlsx");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputMergeUnmergeRangeOfCells.xlsx");
+
+            Console.WriteLine("MergeUnmergeRangeOfCells executed successfully.");
         }
     }
 }

@@ -262,7 +262,8 @@ namespace Aspose.Cells.Examples.CSharp
             //InsertLinkedPicture.Run();
             //InsertPictureCellReference.Run();
             //LimitNumberOfPagesGenerated.Run();
-            LoadWebImage.Run();
+            //LoadWebImage.Run();
+            MergeUnmergeRangeOfCells.Run();
 
             // =====================================================
             // =====================================================
@@ -274,7 +275,7 @@ namespace Aspose.Cells.Examples.CSharp
 
             //LoadSpecificSheets.Run();
 
-            //MergeUnmergeRangeOfCells.Run();
+
             //MoveRangeOfCells.Run();
             //ReadingCSVMultipleEncodings.Run();
             //RemoveWhitespaceAroundData.Run();
