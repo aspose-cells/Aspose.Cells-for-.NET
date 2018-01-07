@@ -260,7 +260,7 @@ namespace Aspose.Cells.Examples.CSharp
             //ImplementingNonSequencedRanges.Run();
             //InsertOleObject_WAVFile.Run();
             //InsertLinkedPicture.Run();
-            InsertPictureCellReference.Run();
+            //InsertPictureCellReference.Run();
 
             // =====================================================
             // =====================================================
@@ -269,7 +269,7 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
 
 
-            //LimitNumberOfPagesGenerated.Run();
+            LimitNumberOfPagesGenerated.Run();
             //LoadSpecificSheets.Run();
             //LoadWebImage.Run();
             //MergeUnmergeRangeOfCells.Run();

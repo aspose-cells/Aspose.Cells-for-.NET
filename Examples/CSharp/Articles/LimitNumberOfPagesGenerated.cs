@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,25 +9,26 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
             // Open an Excel file
-            Workbook wb = new Workbook(dataDir+ "TestBook.xlsx");
+            Workbook wb = new Workbook(sourceDir + "sampleLimitNumberOfPagesGenerated.xlsx");
+            
             // Instantiate the PdfSaveOption
             PdfSaveOptions options = new PdfSaveOptions();
 
-            // Print only Page 3 and Page 4 in the output PDF
-            // Starting page index (0-based index)
+            // Print pages 3, 4, 5, 6
             options.PageIndex = 3;
-            // Number of pages to be printed
-            options.PageCount = 2;
+            options.PageCount = 4;
 
             // Save the PDF file
-            wb.Save(dataDir+ "outPDF1.out.pdf", options);
-            // ExEnd:1
-            
-            
+            wb.Save(outputDir + "outputLimitNumberOfPagesGenerated.pdf", options);
+
+            Console.WriteLine("LimitNumberOfPagesGenerated executed successfully.");
         }
     }
 }
