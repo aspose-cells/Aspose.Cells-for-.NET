@@ -249,6 +249,7 @@ namespace Aspose.Cells.Examples.CSharp
 
             //HtmlExportFrameScripts.Run();
             //IgnoreHiddenColumnsDataTable.Run();
+            //Implement1904DateSystem.Run();
 
             // =====================================================
             // =====================================================
@@ -256,8 +257,8 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            Implement1904DateSystem.Run();
-            //ImplementCustomCalculationEngine.Run();
+
+            ImplementCustomCalculationEngine.Run();
             //ImplementingNonSequencedRanges.Run();
             //InsertDeleteRows.Run();
             //InsertingWAVFile.Run();

@@ -3,7 +3,6 @@ using Aspose.Cells;
 
 namespace Aspose.Cells.Examples.CSharp.Articles
 {
-    // ExStart:ImplementCustomCalculationEngine
     // Create a new class derived from AbstractCalculationEngine
     class CustomEngine : AbstractCalculationEngine
     {
@@ -61,9 +60,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // The result of A1 will be 50 as per custom calculation engine
             Console.WriteLine("The value of A1 with custom calculation engine: " + a1.StringValue);
 
-            Console.WriteLine("Press any key to continue...");
-            Console.ReadKey();
+            Console.WriteLine("ImplementCustomCalculationEngine executed successfully.");
         }
     }
-    // ExEnd:ImplementCustomCalculationEngine
 }
