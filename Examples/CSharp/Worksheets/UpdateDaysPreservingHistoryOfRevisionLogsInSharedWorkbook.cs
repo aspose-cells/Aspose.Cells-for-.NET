@@ -24,7 +24,7 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets
             //Save the workbook
             wb.Save(outputDir + "outputShared_DaysPreservingHistory.xlsx");
 
-            Console.WriteLine("UpdateDaysPreservingHistoryOfRevisionLogsInSharedWorkbook executed successfully.\r\n");
+            Console.WriteLine("UpdateDaysPreservingHistoryOfRevisionLogsInSharedWorkbook executed successfully.");
         }
     }
 }

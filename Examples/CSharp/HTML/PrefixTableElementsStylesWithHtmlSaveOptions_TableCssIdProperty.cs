@@ -36,7 +36,7 @@ namespace Aspose.Cells.Examples.CSharp.HTML
             //Save the workbook in html 
             wb.Save(outputDir + "outputTableCssId.html", opts);
 
-            Console.WriteLine("PrefixTableElementsStylesWithHtmlSaveOptions_TableCssIdProperty executed successfully.\r\n");
+            Console.WriteLine("PrefixTableElementsStylesWithHtmlSaveOptions_TableCssIdProperty executed successfully.");
         }
     }
 }

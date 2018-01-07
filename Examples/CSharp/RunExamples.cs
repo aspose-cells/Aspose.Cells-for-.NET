@@ -246,7 +246,6 @@ namespace Aspose.Cells.Examples.CSharp
             //GenerateThumbnailOfWorksheet.Run();
             //GetIconSetsDataBars.Run();
             //HidingDisplayOfZeroValues.Run();
-
             //HtmlExportFrameScripts.Run();
             //IgnoreHiddenColumnsDataTable.Run();
             //Implement1904DateSystem.Run();
@@ -256,7 +255,7 @@ namespace Aspose.Cells.Examples.CSharp
             //CheckHiddenExternalLinks.Run();
             //CreateTransparentImage.Run();
             //CustomizingRibbonXML.Run();
-            CustomLabelsSubtotals.Run();
+            //CustomLabelsSubtotals.Run();
 
             // =====================================================
             // =====================================================
@@ -303,7 +302,6 @@ namespace Aspose.Cells.Examples.CSharp
             //LoadExcelFileWithoutChart.Run();
             //ExportToHTMLWithGridLines.Run();
             //DivTagsLayout.Run();
-
             //LoadWorkbookWithPrinterSize.Run();
             //CreateTextBoxWithDifferentHorizontalAlignment.Run();
             //SetTextboxOrShapeParagraphLineSpacing.Run();
@@ -314,7 +312,6 @@ namespace Aspose.Cells.Examples.CSharp
             //LoadWorkbookWithSpecificCultureInfoDateFormat.Run();
             //ReflactionEffectOfShape.Run();
             //ShadowEffectOfShape.Run();
-
             //GlowEffectOfShape.Run();
             //Shape3DEffect.Run();
             //LinkCellsToXmlMapElements.Run();
@@ -326,7 +323,6 @@ namespace Aspose.Cells.Examples.CSharp
             //ReadingCellValuesInMultipleThreadsSimultaneously.TestMultiThreadingRead();
             //GetSmartMarkerNotifications.Run();
             //ReadUsingLightCellsApi.Run();
-
             //CustomTextForLabels.Run();
             //MINIFSAndMAXIFS.Run();
             //TotalsInOtherLanguages.Run();

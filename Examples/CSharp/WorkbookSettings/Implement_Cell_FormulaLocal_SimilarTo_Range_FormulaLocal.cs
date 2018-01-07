@@ -50,7 +50,7 @@ namespace Aspose.Cells.Examples.CSharp.WorkbookSettings
             cell.Formula = "=AVERAGE(B1:B2, B5)";
             Console.WriteLine("Formula Local: " + cell.FormulaLocal);
 
-            Console.WriteLine("Implement_Cell_FormulaLocal_SimilarTo_Range_FormulaLocal executed successfully.\r\n");
+            Console.WriteLine("Implement_Cell_FormulaLocal_SimilarTo_Range_FormulaLocal executed successfully.");
         }
     }
 }

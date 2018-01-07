@@ -21,7 +21,7 @@ namespace Aspose.Cells.Examples.CSharp.Rendering
             //Save it to Pdf format
             wb.Save(outputDir + "output-" + CellsHelper.GetVersion() + ".pdf");
 
-            Console.WriteLine("RenderOfficeAdd_InsWhileConvertingExcelToPdf executed successfully.\r\n");
+            Console.WriteLine("RenderOfficeAdd_InsWhileConvertingExcelToPdf executed successfully.");
         }
     }
 }

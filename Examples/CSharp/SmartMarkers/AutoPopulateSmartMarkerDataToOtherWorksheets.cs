@@ -68,7 +68,7 @@ namespace Aspose.Cells.Examples.CSharp.SmartMarkers
             //Save the workbook
             wb.Save(outputDir + "outputAutoPopulateSmartMarkerDataToOtherWorksheets.xlsx");
 
-            Console.WriteLine("AutoPopulateSmartMarkerDataToOtherWorksheets executed successfully.\r\n");
+            Console.WriteLine("AutoPopulateSmartMarkerDataToOtherWorksheets executed successfully.");
         }
     }
 }

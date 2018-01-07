@@ -36,7 +36,7 @@ namespace Aspose.Cells.Examples.CSharp.Charts
             //Save the output Excel file
             wb.Save(outputDir + "outputSetShapeTypeOfDataLabelsOfChart.xlsx");
 
-            Console.WriteLine("SetShapeTypeOfDataLabelsOfChart executed successfully.\r\n");
+            Console.WriteLine("SetShapeTypeOfDataLabelsOfChart executed successfully.");
         }
     }
 }

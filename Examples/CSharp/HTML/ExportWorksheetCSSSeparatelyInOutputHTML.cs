@@ -36,7 +36,7 @@ namespace Aspose.Cells.Examples.CSharp.HTML
             //Save the workbook in html 
             wb.Save(outputDir + "outputExportWorksheetCSSSeparately.html", opts);
 
-            Console.WriteLine("ExportWorksheetCSSSeparatelyInOutputHTML executed successfully.\r\n");
+            Console.WriteLine("ExportWorksheetCSSSeparatelyInOutputHTML executed successfully.");
         }
     }
 }
