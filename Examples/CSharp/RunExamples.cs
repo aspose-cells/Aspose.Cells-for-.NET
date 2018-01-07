@@ -254,7 +254,7 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
 
             HtmlExportFrameScripts.Run();
-            //IgnoreHiddenColumnsDataTable.Run();
+            IgnoreHiddenColumnsDataTable.Run();
             //Implement1904DateSystem.Run();
             //ImplementCustomCalculationEngine.Run();
             //ImplementingNonSequencedRanges.Run();

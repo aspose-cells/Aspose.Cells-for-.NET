@@ -8,22 +8,22 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            string inputPath = dataDir + "Sample.xlsx";
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            Workbook workbook = new Workbook(inputPath);
+            Workbook workbook = new Workbook(sourceDir + "sampleIgnoreHiddenColumnsDataTable.xlsx");
 
             Worksheet worksheet = workbook.Worksheets[0];
 
             ExportTableOptions opts = new ExportTableOptions();
+            opts.ExportColumnName = true;
             opts.PlotVisibleColumns = true;
 
             int totalRows = worksheet.Cells.MaxRow + 1;
             int totalColumns = worksheet.Cells.MaxColumn + 1;
 
             DataTable dt = worksheet.Cells.ExportDataTable(0, 0, totalRows, totalColumns, opts);
-            // ExEnd:1
+
+            Console.WriteLine("IgnoreHiddenColumnsDataTable executed successfully.");
         }
     }
 }

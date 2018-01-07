@@ -23,7 +23,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // Save workbook as HTML
             wb.Save(outputDir + "outputHtmlExportFrameScripts.html", options);
 
-            Console.WriteLine("DetermineIfShapeIsSmartArtShape executed successfully.");
+            Console.WriteLine("HtmlExportFrameScripts executed successfully.");
         }
     }
 }
