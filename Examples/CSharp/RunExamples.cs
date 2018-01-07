@@ -257,7 +257,8 @@ namespace Aspose.Cells.Examples.CSharp
             //CustomizingRibbonXML.Run();
             //CustomLabelsSubtotals.Run();
 
-            ImplementingNonSequencedRanges.Run();
+            //ImplementingNonSequencedRanges.Run();
+            InsertOleObject_WAVFile.Run();
 
             // =====================================================
             // =====================================================
@@ -265,8 +266,6 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-
-            //InsertingWAVFile.Run();
             //InsertLinkedPicture.Run();
             //InsertPictureCellReference.Run();
             //LimitNumberOfPagesGenerated.Run();

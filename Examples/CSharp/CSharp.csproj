@@ -82,6 +82,7 @@
     <Compile Include="Articles\ExportXmlMapFromWorkbook.cs" />
     <Compile Include="Articles\FilteringObjectsAtLoadTime\CustomFilteringPerWorksheet.cs" />
     <Compile Include="Articles\FilteringObjectsAtLoadTime\FilteringObjects.cs" />
+    <Compile Include="Articles\InsertOleObject_WAVFile.cs" />
     <Compile Include="Articles\ManageChartsAndShapes\ReadAndManipulateExcel2016Charts.cs" />
     <Compile Include="Articles\ManageChartsAndShapes\ReadColorOfShapesGlowEffect.cs" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\LoadTemplateWithoutCharts.cs" />
@@ -180,7 +181,6 @@
     <Compile Include="Articles\ImplementCustomCalculationEngine.cs" />
     <Compile Include="Articles\ImplementingNonSequencedRanges.cs" />
     <Compile Include="Articles\InsertDeleteRows.cs" />
-    <Compile Include="Articles\InsertingWAVFile.cs" />
     <Compile Include="Articles\InsertLinkedPicture.cs" />
     <Compile Include="Articles\InsertPictureCellReference.cs" />
     <Compile Include="Articles\LimitNumberOfPagesGenerated.cs" />
