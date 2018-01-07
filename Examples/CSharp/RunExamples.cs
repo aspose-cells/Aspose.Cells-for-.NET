@@ -279,7 +279,7 @@ namespace Aspose.Cells.Examples.CSharp
 
 
 
-            //ReadingCSVMultipleEncodings.Run();
+            ReadingCSVMultipleEncodings.Run();
             //RemoveWhitespaceAroundData.Run();
             //RenderOnePdfPagePerExcelWorksheet.Run();
             //ResamplingAddedImages.Run();
