@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -9,12 +10,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            // Instantiate a workbook
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
             // Open the template file
-            Workbook book = new Workbook(dataDir+ "MyTestBook1.xlsx");
+            Workbook book = new Workbook(sourceDir + "sampleRemoveWhitespaceAroundData.xlsx");
 
             // Get the first worksheet
             Worksheet sheet = book.Worksheets[0];
@@ -31,6 +34,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // Define ImageOrPrintOptions
             ImageOrPrintOptions imgOptions = new ImageOrPrintOptions();
             imgOptions.ImageFormat = System.Drawing.Imaging.ImageFormat.Emf;
+
             // Set only one page would be rendered for the image
             imgOptions.OnePagePerSheet = true;
             imgOptions.PrintingPage = PrintingPageType.IgnoreBlank;
@@ -38,9 +42,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // Create the SheetRender object based on the sheet with its
             // ImageOrPrintOptions attributes
             SheetRender sr = new SheetRender(sheet, imgOptions);
+            
             // Convert the image
-            sr.ToImage(0, dataDir+ "img_MyTestBook1.out.emf");
-            // ExEnd:1
+            sr.ToImage(0, outputDir + "outputRemoveWhitespaceAroundData.emf");
+
+            Console.WriteLine("RemoveWhitespaceAroundData executed successfully.");
         }
     }
 }

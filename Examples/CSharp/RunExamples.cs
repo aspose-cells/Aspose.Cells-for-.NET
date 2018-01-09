@@ -282,7 +282,7 @@ namespace Aspose.Cells.Examples.CSharp
 
 
 
-            //RemoveWhitespaceAroundData.Run();
+            RemoveWhitespaceAroundData.Run();
             //RenderOnePdfPagePerExcelWorksheet.Run();
             //ResamplingAddedImages.Run();
             //SaveEachWorksheetToDifferentPDF.Run();
