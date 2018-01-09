@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,15 +9,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            // Get the Excel file path
-            string filePath = dataDir + "input.xlsx";
-
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+            
             // Instantiage a new workbook and open the Excel, File from its location
-            Workbook workbook = new Workbook(filePath);
+            Workbook workbook = new Workbook(sourceDir + "sampleSaveEachWorksheetToDifferentPDF.xlsx");
 
             // Get the count of the worksheets in the workbook
             int sheetCount = workbook.Worksheets.Count;
@@ -31,7 +31,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             for (int j = 0; j < workbook.Worksheets.Count; j++)
             {
                 Worksheet ws = workbook.Worksheets[j];
-                workbook.Save(dataDir + "worksheet-" + ws.Name + ".out.pdf");
+                workbook.Save(outputDir + "outputSaveEachWorksheetToDifferentPDF-" + ws.Name + ".pdf");
 
                 if (j < workbook.Worksheets.Count - 1)
                 {
@@ -39,7 +39,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
                     workbook.Worksheets[j].IsVisible = false;
                 }
             }
-            // ExEnd:1
+
+            Console.WriteLine("SaveEachWorksheetToDifferentPDF executed successfully.");
         }
     }
 }

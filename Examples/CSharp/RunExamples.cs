@@ -272,7 +272,8 @@ namespace Aspose.Cells.Examples.CSharp
             //LoadSpecificSheets.Run();
             //RemoveWhitespaceAroundData.Run();
             //RenderOnePdfPagePerExcelWorksheet.Run();
-            ResamplingAddedImages.Run();
+            //ResamplingAddedImages.Run();
+            SaveEachWorksheetToDifferentPDF.Run();
 
             // =====================================================
             // =====================================================
@@ -280,9 +281,6 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-
-
-            //SaveEachWorksheetToDifferentPDF.Run();
             //SearchReplaceDataInRange.Run();
             //SecurePDFDocuments.Run();
 
