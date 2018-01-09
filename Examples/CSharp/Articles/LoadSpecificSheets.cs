@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,27 +9,28 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            // Define a new Workbook.
-            Workbook workbook;
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Load the workbook with the spcified worksheet only.
             LoadOptions loadOptions = new LoadOptions(LoadFormat.Xlsx);
             loadOptions.LoadFilter = new CustomLoad();
 
             // Creat the workbook.
-            workbook = new Workbook(dataDir+ "TestData.xlsx", loadOptions);
+            Workbook workbook = new Workbook(sourceDir + "sampleLoadSpecificSheets.xlsx", loadOptions);
 
             // Perform your desired task.
 
             // Save the workbook.
-            workbook.Save(dataDir+ "outputFile.out.xlsx");
-            // ExEnd:1
-            
+            workbook.Save(outputDir + "outputLoadSpecificSheets.xlsx");
+
+            Console.WriteLine("LoadSpecificSheets executed successfully.");
+
         }
-        // ExStart:2
+
         class CustomLoad : LoadFilter
         {
             public override void StartSheet(Worksheet sheet)
@@ -41,10 +43,10 @@ namespace Aspose.Cells.Examples.CSharp.Articles
                 else
                 {
                     // Load nothing
-                    this.LoadDataFilterOptions = LoadDataFilterOptions.None;
+                    this.LoadDataFilterOptions = LoadDataFilterOptions.Structure;
                 }
             }
-        }
-        // ExEnd:2
+        }//CustomLoad
+
     }
 }
