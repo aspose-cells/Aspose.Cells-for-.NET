@@ -283,7 +283,7 @@ namespace Aspose.Cells.Examples.CSharp
             //ShowFormulasInsteadOfValues.Run();
             //SortData.Run();
             //UpdateRichTextCells.Run();
-            UsePresentationPreferenceOption.Run();
+            //UsePresentationPreferenceOption.Run();
 
             // =====================================================
             // =====================================================
@@ -291,7 +291,7 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            //UsingCustomXmlParts.Run();
+            UsingCustomXmlParts.Run();
             //UsingImageMarkersWhileGroupingDataInSmartMarkers.Run();
             //UsingWorkbookMetadata.Run();
             //RenderUnicodeInOutput.Run();

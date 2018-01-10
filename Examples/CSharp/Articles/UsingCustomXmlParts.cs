@@ -7,9 +7,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:UsingCustomXmlParts
-            // The path to the documents directory
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // The sample XML that will be injected to Workbook
             string booksXML = @"<catalog>
@@ -42,8 +41,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             workbook.ContentTypeProperties.Add("BookStore", booksXML);
 
             // Save the resultant spreadsheet
-            workbook.Save(dataDir + "output.xlsx");
-            // ExEnd:UsingCustomXmlParts
+            workbook.Save(outputDir + "outputUsingCustomXmlParts.xlsx");
+
+            Console.WriteLine("UsingCustomXmlParts executed successfully.");
         }
     }
 }
