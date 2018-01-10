@@ -281,7 +281,8 @@ namespace Aspose.Cells.Examples.CSharp
             //SettingScaleCropAndLinksUpToDateProperties.Run();
             //SetWorksheetTabColor.Run();
             //ShowFormulasInsteadOfValues.Run();
-            SortData.Run();
+            //SortData.Run();
+            UpdateRichTextCells.Run();
 
             // =====================================================
             // =====================================================
@@ -289,7 +290,7 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            //UpdateRichTextCells.Run();
+
             //UsePresentationPreferenceOption.Run();
             //UsingCustomXmlParts.Run();
             //UsingImageMarkersWhileGroupingDataInSmartMarkers.Run();

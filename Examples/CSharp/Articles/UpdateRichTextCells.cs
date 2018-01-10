@@ -7,13 +7,13 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            string inputPath = dataDir + "Sample.xlsx";
-            string outputPath = dataDir + "Output.out.xlsx";
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            Workbook workbook = new Workbook(inputPath);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+            
+            Workbook workbook = new Workbook(sourceDir + "sampleUpdateRichTextCells.xlsx");
 
             Worksheet worksheet = workbook.Worksheets[0];
 
@@ -46,8 +46,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             }
 
             // Save workbook
-            workbook.Save(outputPath);
-            // ExEnd:1
+            workbook.Save(outputDir + "outputUpdateRichTextCells.xlsx");
+
+            Console.WriteLine("UpdateRichTextCells executed successfully.");
         }
     }
 }
