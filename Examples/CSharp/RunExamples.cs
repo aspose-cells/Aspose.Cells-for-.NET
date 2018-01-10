@@ -278,7 +278,8 @@ namespace Aspose.Cells.Examples.CSharp
             //SecurePDFDocuments.Run();
             //SetPixelFormatRenderedImage.Run();
             //SettingStrongEncryptionType.Run();
-            SettingScaleCropAndLinksUpToDateProperties.Run();
+            //SettingScaleCropAndLinksUpToDateProperties.Run();
+            SetWorksheetTabColor.Run();
 
             // =====================================================
             // =====================================================
@@ -286,9 +287,6 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-
-
-            //SetWorksheetTabColor.Run();
             //ShowFormulasInsteadOfValues.Run();
             //SortData.Run();
             //UpdateRichTextCells.Run();

@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -9,13 +10,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            // Instantiate a new Workbook
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
             // Open an Excel file
-            Workbook workbook = new Workbook(dataDir+ "Book1.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleSetWorksheetTabColor.xlsx");
 
             // Get the first worksheet in the book
             Worksheet worksheet = workbook.Worksheets[0];
@@ -24,8 +26,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             worksheet.TabColor = Color.Red;
 
             // Save the Excel file
-            workbook.Save(dataDir+ "worksheettabcolor.out.xls");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputSetWorksheetTabColor.xlsx");
+
+            Console.WriteLine("SetWorksheetTabColor executed successfully.");
         }
     }
 }
