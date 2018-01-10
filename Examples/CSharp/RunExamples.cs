@@ -286,7 +286,8 @@ namespace Aspose.Cells.Examples.CSharp
             //UsePresentationPreferenceOption.Run();
             //UsingCustomXmlParts.Run();
             //UsingImageMarkersWhileGroupingDataInSmartMarkers.Run();
-            UsingWorkbookMetadata.Run();
+            //UsingWorkbookMetadata.Run();
+            RenderUnicodeInOutput.Run();
 
             // =====================================================
             // =====================================================
@@ -294,8 +295,6 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-
-            //RenderUnicodeInOutput.Run();
             //UpdateReferenceInWorksheets.Run();
             //SettingTextEffectsShadowOfShapeOrTextbox.Run();
             //ImplementDirectCalculationOfCustomFunction.Run();

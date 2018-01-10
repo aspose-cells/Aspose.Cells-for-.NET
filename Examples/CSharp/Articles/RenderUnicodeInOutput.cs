@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,16 +9,19 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:RenderUnicodeInOutput
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType); 
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Load your source excel file containing Unicode Supplementary characters
-            Workbook wb = new Workbook(dataDir + "unicode-supplementary-characters.xlsx");
+            Workbook wb = new Workbook(sourceDir + "sampleRenderUnicodeInOutput_UnicodeSupplementaryCharacters.xlsx");
 
             // Save the workbook
-            wb.Save(dataDir + "RenderUnicodeInOutput_out.pdf");
-            // ExEnd:RenderUnicodeInOutput
+            wb.Save(outputDir + "outputRenderUnicodeInOutput_UnicodeSupplementaryCharacters.pdf");
+
+            Console.WriteLine("RenderUnicodeInOutput executed successfully.");
         }
     }
 }
