@@ -7,10 +7,8 @@ using System.Collections;
 
 namespace Aspose.Cells.Examples.CSharp.Articles
 {
-    // ExStart:UsingImageMarkersWhileGroupingDataInSmartMarkers
     public class UsingImageMarkersWhileGroupingDataInSmartMarkers
     {
-
         class Person
         {
             // Create Name, City and Photo properties
@@ -47,12 +45,15 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
         public static void Run()
         {
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Get the images
-            byte[] photo1 = File.ReadAllBytes(dataDir + "moon.png");
-            byte[] photo2 = File.ReadAllBytes(dataDir + "moon2.png");
+            byte[] photo1 = File.ReadAllBytes(sourceDir + "sampleUsingImageMarkersWhileGroupingDataInSmartMarkers_Moon1.png");
+            byte[] photo2 = File.ReadAllBytes(sourceDir + "sampleUsingImageMarkersWhileGroupingDataInSmartMarkers_Moon2.png");
 
             // Create a new workbook and access its worksheet
             Workbook workbook = new Workbook();
@@ -107,10 +108,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             designer.Process();
 
             // Save the workbook
-            workbook.Save(dataDir + "UsingImageMarkersWhileGroupingDataInSmartMarkers.xlsx", SaveFormat.Xlsx);
-                   
+            workbook.Save(outputDir + "outputUsingImageMarkersWhileGroupingDataInSmartMarkers.xlsx", SaveFormat.Xlsx);
+
+            Console.WriteLine("UsingImageMarkersWhileGroupingDataInSmartMarkers executed successfully.");
+
         }
 
     }
-    // ExEnd:UsingImageMarkersWhileGroupingDataInSmartMarkers    
 }
