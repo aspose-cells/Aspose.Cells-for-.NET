@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,16 +9,20 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
             // Open an Excel file
-            Workbook workbook = new Workbook(dataDir+ "input.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleSecurePDFDocuments.xlsx");
 
             // Instantiate PDFSaveOptions to manage security attributes
             PdfSaveOptions saveOption = new PdfSaveOptions();
 
             saveOption.SecurityOptions = new Aspose.Cells.Rendering.PdfSecurity.PdfSecurityOptions();
+            
             // Set the user password
             saveOption.SecurityOptions.UserPassword = "user";
 
@@ -31,8 +36,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             saveOption.SecurityOptions.PrintPermission = false;
 
             // Save the PDF document with encrypted settings
-            workbook.Save(dataDir+ "securepdf_test.out.pdf", saveOption);
-            // ExEnd:1
+            workbook.Save(outputDir + "outputSecurePDFDocuments.pdf", saveOption);
+
+            Console.WriteLine("SecurePDFDocuments executed successfully.");
         }
     }
 }

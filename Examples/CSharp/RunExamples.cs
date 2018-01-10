@@ -274,15 +274,14 @@ namespace Aspose.Cells.Examples.CSharp
             //RenderOnePdfPagePerExcelWorksheet.Run();
             //ResamplingAddedImages.Run();
             //SaveEachWorksheetToDifferentPDF.Run();
-            SearchReplaceDataInRange.Run();
+            //SearchReplaceDataInRange.Run();
+            SecurePDFDocuments.Run();
 
             // =====================================================
             // =====================================================
             // Articles
             // =====================================================
             // =====================================================
-
-            //SecurePDFDocuments.Run();
 
             //SetPixelFormatRenderedImage.Run();
             //SettingStrongEncryptionType.Run();
