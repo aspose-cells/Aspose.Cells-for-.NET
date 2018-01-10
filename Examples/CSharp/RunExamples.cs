@@ -280,6 +280,8 @@ namespace Aspose.Cells.Examples.CSharp
             //SettingStrongEncryptionType.Run();
             //SettingScaleCropAndLinksUpToDateProperties.Run();
             //SetWorksheetTabColor.Run();
+            //ShowFormulasInsteadOfValues.Run();
+            SortData.Run();
 
             // =====================================================
             // =====================================================
@@ -287,8 +289,6 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            ShowFormulasInsteadOfValues.Run();
-            //SortData.Run();
             //UpdateRichTextCells.Run();
             //UsePresentationPreferenceOption.Run();
             //UsingCustomXmlParts.Run();

@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,12 +9,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+           
             // Open an Excel file
-            Workbook workbook = new Workbook(dataDir+ "Book_SourceData.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleSortData.xlsx");
 
             // Accessing the first worksheet in the Excel file
             Worksheet worksheet = workbook.Worksheets[0];
@@ -49,8 +52,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             sorter.Sort(workbook.Worksheets[0].Cells, ca);
 
             // Saving the excel file in the default (that is Excel 2003) format
-            workbook.Save(dataDir+ "outBook_SortedData.out.xlsx");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputSortData.xlsx");
+
+            Console.WriteLine("SortData executed successfully.");
         }
     }
 }
