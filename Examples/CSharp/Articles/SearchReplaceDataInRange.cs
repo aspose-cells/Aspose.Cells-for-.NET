@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,12 +9,13 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            string filePath = dataDir+ "input.xlsx";
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            Workbook workbook = new Workbook(filePath);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
+            Workbook workbook = new Workbook(sourceDir + "sampleSearchReplaceDataInRange.xlsx");
 
             Worksheet worksheet = workbook.Worksheets[0];
 
@@ -44,8 +46,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             } while (true);
 
             // Save the workbook
-            workbook.Save(dataDir+ "output.out.xlsx");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputSearchReplaceDataInRange.xlsx");
+
+            Console.WriteLine("SearchReplaceDataInRange executed successfully.");
         }
     }
 }
