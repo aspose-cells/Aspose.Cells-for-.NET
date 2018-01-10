@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,14 +9,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            string filePath = dataDir+ "source.xlsx";
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Load the source workbook
-            Workbook workbook = new Workbook(filePath);
+            Workbook workbook = new Workbook(sourceDir + "sampleShowFormulasInsteadOfValues.xlsx");
 
             // Access the first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -24,8 +25,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             worksheet.ShowFormulas = true;
 
             // Save the workbook
-            workbook.Save(dataDir+ ".out.xlsx");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputShowFormulasInsteadOfValues.xlsx");
+
+            Console.WriteLine("ShowFormulasInsteadOfValues executed successfully.");
         }
     }
 }
