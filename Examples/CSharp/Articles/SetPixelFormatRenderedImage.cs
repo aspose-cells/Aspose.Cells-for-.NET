@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -10,19 +11,30 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            // Instantiate a new Workbook
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
             // Load an Excel file
-            Workbook wb = new Workbook(dataDir + "Book1.xlsx");
-            // Instantiate SheetRender object based on the first worksheet
+            Workbook wb = new Workbook(sourceDir + "sampleSetPixelFormatRenderedImage.xlsx");
+
+            //Access first worksheet
+            Worksheet ws = wb.Worksheets[0];
+
             // Set the ImageOrPrintOptions with desired pixel format (24 bits per pixel) and image format type
-            SheetRender sr = new SheetRender(wb.Worksheets[0], new ImageOrPrintOptions { PixelFormat = PixelFormat.Format24bppRgb, ImageFormat = ImageFormat.Tiff });
+            ImageOrPrintOptions opts = new ImageOrPrintOptions();
+            opts.PixelFormat = PixelFormat.Format24bppRgb;
+            opts.ImageFormat = ImageFormat.Tiff;
+
+            // Instantiate SheetRender object based on the first worksheet
+            SheetRender sr = new SheetRender(ws, opts);
+
             // Save the image (first page of the sheet) with the specified options
-            sr.ToImage(0, dataDir + "outImage1.out.tiff");
-            // ExEnd:1
+            sr.ToImage(0, outputDir + "outputSetPixelFormatRenderedImage.tiff");
+
+            Console.WriteLine("SetPixelFormatRenderedImage executed successfully.");
         }
     }
 }
