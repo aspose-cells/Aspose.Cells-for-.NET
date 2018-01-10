@@ -1,17 +1,13 @@
-﻿namespace Aspose.Cells.Examples.CSharp.Articles
+﻿using System;
+
+namespace Aspose.Cells.Examples.CSharp.Articles
 {
     class SettingScaleCropAndLinksUpToDateProperties
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            // Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir);
-            if (!IsExists)
-                System.IO.Directory.CreateDirectory(dataDir);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Instantiating a Workbook object
             Workbook workbook = new Workbook();
@@ -21,10 +17,9 @@
             workbook.BuiltInDocumentProperties.LinksUpToDate = true;
 
             // Saving the Excel file
-            workbook.Save(dataDir + "output.xls", SaveFormat.Auto);
-            // ExEnd:1
+            workbook.Save(outputDir + "outputSettingScaleCropAndLinksUpToDateProperties.xlsx", SaveFormat.Xlsx);
 
-
+            Console.WriteLine("SettingScaleCropAndLinksUpToDateProperties executed successfully.");
         }
     }
 }
