@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,21 +9,25 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            // Instantiate the Workbook
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
             // Load an Excel file
-            Workbook workbook = new Workbook(dataDir+ "sample.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleUsePresentationPreferenceOption.xlsx");
 
             // Create HtmlSaveOptions object
             HtmlSaveOptions options = new HtmlSaveOptions();
+
             // Set the Presenation preference option
             options.PresentationPreference = true;
 
             // Save the Excel file to HTML with specified option
-            workbook.Save(dataDir+ "outPresentationlayout1.out.html", options);
-            // ExEnd:1
+            workbook.Save(outputDir + "outputUsePresentationPreferenceOption.html", options);
+
+            Console.WriteLine("UsePresentationPreferenceOption executed successfully.");
         }
     }
 }
