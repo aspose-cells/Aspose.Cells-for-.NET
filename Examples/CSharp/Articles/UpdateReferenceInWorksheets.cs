@@ -8,7 +8,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:UpdateReferenceInWorksheets
             // Create workbook
             Workbook wb = new Workbook();
 
@@ -52,7 +51,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             Console.WriteLine("--------------------------------------------------------");
             Console.WriteLine("Cell Formula: " + sht2.Cells["E3"].Formula);
             Console.WriteLine("Cell Value: " + sht2.Cells["E3"].StringValue);
-            // ExEnd:UpdateReferenceInWorksheets
+
+            Console.WriteLine("UpdateReferenceInWorksheets executed successfully.");
         }
     }
 }
