@@ -290,7 +290,8 @@ namespace Aspose.Cells.Examples.CSharp
             //ImplementDirectCalculationOfCustomFunction.Run();
             //FilterDataWhileLoadingWorkbook.Run();
             //FilteringObjects.Run();
-            CustomFilteringPerWorksheet.Run();
+            //CustomFilteringPerWorksheet.Run();
+            AddActiveXControls.Run();
 
             // =====================================================
             // =====================================================
@@ -300,7 +301,7 @@ namespace Aspose.Cells.Examples.CSharp
 
 
 
-            //AddActiveXControls.Run();
+
             //LoadExcelFileWithoutChart.Run();
             //ExportToHTMLWithGridLines.Run();
             //DivTagsLayout.Run();

@@ -10,9 +10,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create workbook object
             Workbook wb = new Workbook();
@@ -28,8 +27,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             c.LinkedCell = "A1";
 
             // Save the worbook in xlsx format
-            wb.Save(dataDir + "AddActiveXControls_out.xlsx", SaveFormat.Xlsx);
-            // ExEnd:1            
+            wb.Save(outputDir + "outputAddActiveXControls.xlsx", SaveFormat.Xlsx);
+
+            Console.WriteLine("AddActiveXControls executed successfully.");
         }
     }
 }
