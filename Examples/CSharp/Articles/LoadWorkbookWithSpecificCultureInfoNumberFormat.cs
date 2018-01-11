@@ -12,7 +12,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:LoadWorkbookWithSpecificCultureInfoNumberFormat
             using (var inputStream = new MemoryStream())
             {
                 using (var writer = new StreamWriter(inputStream))
@@ -35,8 +34,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
                         Assert.AreEqual(1234.56, cell.DoubleValue);
                     }
                 }
-            }
-            // ExEnd:LoadWorkbookWithSpecificCultureInfoNumberFormat
+            }//using
+
+            Console.WriteLine("LoadWorkbookWithSpecificCultureInfoNumberFormat executed successfully.");
         }
     }
 }

@@ -300,8 +300,8 @@ namespace Aspose.Cells.Examples.CSharp
             //SetTextboxOrShapeParagraphLineSpacing.Run();
             //UpdateActiveXComboBoxControl.Run();
             //FindDataPointsInPieBar.Run();
-            GetSetClassIdentifierEmbedOleObject.Run();
-            //LoadWorkbookWithSpecificCultureInfoNumberFormat.Run();
+            //GetSetClassIdentifierEmbedOleObject.Run();
+            LoadWorkbookWithSpecificCultureInfoNumberFormat.Run();
 
             // =====================================================
             // =====================================================
