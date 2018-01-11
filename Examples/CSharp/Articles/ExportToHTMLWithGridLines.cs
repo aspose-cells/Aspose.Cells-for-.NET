@@ -10,9 +10,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
             // Create your workbook
             Workbook wb = new Workbook();
 
@@ -31,9 +31,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // Save your workbook in HTML format and export gridlines
             HtmlSaveOptions opts = new HtmlSaveOptions();
             opts.ExportGridLines = true;
-            wb.Save(dataDir + "ExportToHTMLWithGridLines_out.html", opts);
-            // ExEnd:1           
-            
+            wb.Save(outputDir + "outputExportToHTMLWithGridLines.html", opts);
+
+            Console.WriteLine("ExportToHTMLWithGridLines executed successfully.");
         }
     }
 }

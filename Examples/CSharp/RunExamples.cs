@@ -292,7 +292,8 @@ namespace Aspose.Cells.Examples.CSharp
             //FilteringObjects.Run();
             //CustomFilteringPerWorksheet.Run();
             //AddActiveXControls.Run();
-            LoadExcelFileWithoutChart.Run();
+            //LoadExcelFileWithoutChart.Run();
+            ExportToHTMLWithGridLines.Run();
 
             // =====================================================
             // =====================================================
@@ -304,7 +305,7 @@ namespace Aspose.Cells.Examples.CSharp
 
 
 
-            //ExportToHTMLWithGridLines.Run();
+
             //DivTagsLayout.Run();
             //LoadWorkbookWithPrinterSize.Run();
             //CreateTextBoxWithDifferentHorizontalAlignment.Run();
