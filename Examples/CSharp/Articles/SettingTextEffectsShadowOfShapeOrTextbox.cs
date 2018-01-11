@@ -10,9 +10,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:SettingTextEffectsShadowOfShapeOrTextbox
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create workbook object
             Workbook wb = new Workbook();
@@ -31,8 +30,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             tb.Font.Size = 16;
 
             // Save the output file
-            wb.Save(dataDir + "SettingTextEffectsShadowOfShapeOrTextbox_out.xlsx", SaveFormat.Xlsx);
-            // ExEnd:SettingTextEffectsShadowOfShapeOrTextbox
+            wb.Save(outputDir + "outputSettingTextEffectsShadowOfShapeOrTextbox.xlsx", SaveFormat.Xlsx);
+
+            Console.WriteLine("SettingTextEffectsShadowOfShapeOrTextbox executed successfully.");
         }
     }
 }
