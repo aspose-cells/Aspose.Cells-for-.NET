@@ -1,9 +1,9 @@
 ﻿using Aspose.Cells.Rendering;
 using System.Drawing.Imaging;
+using System;
 
 namespace Aspose.Cells.Examples.CSharp.Articles.FilteringObjectsAtLoadTime
 {
-    // ExStart:CustomLoadFilter
     public class CustomLoadFilter : LoadFilter
     {
         public override void StartSheet(Worksheet sheet)
@@ -27,27 +27,23 @@ namespace Aspose.Cells.Examples.CSharp.Articles.FilteringObjectsAtLoadTime
             }
         }
     }
-    // ExEnd:CustomLoadFilter
 
     class CustomFilteringPerWorksheet
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            // Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir);
-            if (!IsExists)
-                System.IO.Directory.CreateDirectory(dataDir);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Filter worksheets using CustomLoadFilter class
             LoadOptions loadOpts = new LoadOptions();
             loadOpts.LoadFilter = new CustomLoadFilter();
 
             // Load the workbook with filter defined in CustomLoadFilter class
-            Workbook workbook = new Workbook(dataDir + "sampleCustomFilter.xlsx", loadOpts);
+            Workbook workbook = new Workbook(sourceDir + "sampleCustomFilteringPerWorksheet.xlsx", loadOpts);
 
             // Take the image of all worksheets one by one
             for (int i = 0; i < workbook.Worksheets.Count; i++)
@@ -63,12 +59,10 @@ namespace Aspose.Cells.Examples.CSharp.Articles.FilteringObjectsAtLoadTime
 
                 // Convert worksheet to image
                 SheetRender render = new SheetRender(worksheet, imageOpts);
-                render.ToImage(0, dataDir + worksheet.Name + ".png");
+                render.ToImage(0, outputDir + "outputCustomFilteringPerWorksheet_" + worksheet.Name + ".png");
             }
 
-            // ExEnd:1
-
-
+            Console.WriteLine("CustomFilteringPerWorksheet executed successfully.");
         }
     }
 }
