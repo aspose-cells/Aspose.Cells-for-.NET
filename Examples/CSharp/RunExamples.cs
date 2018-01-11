@@ -302,6 +302,7 @@ namespace Aspose.Cells.Examples.CSharp
             //FindDataPointsInPieBar.Run();
             //GetSetClassIdentifierEmbedOleObject.Run();
             LoadWorkbookWithSpecificCultureInfoNumberFormat.Run();
+            LoadWorkbookWithSpecificCultureInfoDateFormat.Run();
 
             // =====================================================
             // =====================================================
@@ -311,7 +312,7 @@ namespace Aspose.Cells.Examples.CSharp
 
 
 
-            //LoadWorkbookWithSpecificCultureInfoDateFormat.Run();
+
             //ReflactionEffectOfShape.Run();
             //ShadowEffectOfShape.Run();
             //GlowEffectOfShape.Run();
