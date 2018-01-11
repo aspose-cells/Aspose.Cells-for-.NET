@@ -10,12 +10,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:FindDataPointsInPieBar
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+            
             //Load source excel file containing Bar of Pie chart
-            Workbook wb = new Workbook(dataDir + "PieBars.xlsx");
+            Workbook wb = new Workbook(sourceDir + "sampleFindDataPointsInPieBar.xlsx");
 
             // Access first worksheet
             Worksheet ws = wb.Worksheets[0];
@@ -50,7 +49,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
                 Console.WriteLine("IsInSecondaryPlot: " + cp.IsInSecondaryPlot);
                 Console.WriteLine();
             }
-            // ExEnd:FindDataPointsInPieBar
+
+            Console.WriteLine("FindDataPointsInPieBar executed successfully.");
         }
     }
 }

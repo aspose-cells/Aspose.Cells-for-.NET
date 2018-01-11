@@ -306,7 +306,7 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
 
             UpdateActiveXComboBoxControl.Run();
-            //FindDataPointsInPieBar.Run();
+            FindDataPointsInPieBar.Run();
             //GetSetClassIdentifierEmbedOleObject.Run();
             //LoadWorkbookWithSpecificCultureInfoNumberFormat.Run();
             //LoadWorkbookWithSpecificCultureInfoDateFormat.Run();
