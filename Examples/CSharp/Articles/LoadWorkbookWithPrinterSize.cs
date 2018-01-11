@@ -8,9 +8,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run() 
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create a sample workbook and add some data inside the first worksheet
             Workbook workbook = new Workbook();
@@ -28,7 +27,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             workbook = new Workbook(ms, opts);
 
             // Save the workbook in pdf format
-            workbook.Save(dataDir + "LoadWorkbookWithPrinterSize-a5_out.pdf");
+            workbook.Save(outputDir + "outputLoadWorkbookWithPrinterSize-A5.pdf");
 
             // Now load the workbook again from memory stream with A3 paper size
             ms.Position = 0;
@@ -37,8 +36,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             workbook = new Workbook(ms, opts);
 
             // Save the workbook in pdf format
-            workbook.Save(dataDir + "LoadWorkbookWithPrinterSize-a3_out.pdf");
-            // ExEnd:1          
+            workbook.Save(outputDir + "outputLoadWorkbookWithPrinterSize-A3.pdf");
+
+            Console.WriteLine("LoadWorkbookWithPrinterSize executed successfully.");
         }
     }
 }
