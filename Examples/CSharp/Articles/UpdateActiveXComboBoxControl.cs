@@ -11,12 +11,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:UpdateActiveXComboBoxControl
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create a workbook
-            Workbook wb = new Workbook(dataDir + "SourceFile.xlsx");
+            Workbook wb = new Workbook(sourceDir + "sampleUpdateActiveXComboBoxControl.xlsx");
 
             // Access first shape from first worksheet
             Shape shape = wb.Worksheets[0].Shapes[0];
@@ -37,8 +39,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             }
 
             // Save the workbook
-            wb.Save(dataDir + "OutputFile_out.xlsx");
-            // ExEnd:UpdateActiveXComboBoxControl
+            wb.Save(outputDir + "outputUpdateActiveXComboBoxControl.xlsx");
+
+            Console.WriteLine("UpdateActiveXComboBoxControl executed successfully.");
         }
     }
 }
