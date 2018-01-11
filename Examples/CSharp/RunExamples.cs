@@ -301,8 +301,10 @@ namespace Aspose.Cells.Examples.CSharp
             //UpdateActiveXComboBoxControl.Run();
             //FindDataPointsInPieBar.Run();
             //GetSetClassIdentifierEmbedOleObject.Run();
-            LoadWorkbookWithSpecificCultureInfoNumberFormat.Run();
-            LoadWorkbookWithSpecificCultureInfoDateFormat.Run();
+            //LoadWorkbookWithSpecificCultureInfoNumberFormat.Run();
+            //LoadWorkbookWithSpecificCultureInfoDateFormat.Run();
+            //ReflactionEffectOfShape.Run();
+            ShadowEffectOfShape.Run();
 
             // =====================================================
             // =====================================================
@@ -313,8 +315,8 @@ namespace Aspose.Cells.Examples.CSharp
 
 
 
-            //ReflactionEffectOfShape.Run();
-            //ShadowEffectOfShape.Run();
+
+
             //GlowEffectOfShape.Run();
             //Shape3DEffect.Run();
             //LinkCellsToXmlMapElements.Run();

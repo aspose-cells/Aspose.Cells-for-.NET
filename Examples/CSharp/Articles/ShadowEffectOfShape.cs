@@ -10,12 +10,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:ShadowEffectOfShape
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Load your source excel file
-            Workbook wb = new Workbook(dataDir + "sample.xlsx");
+            Workbook wb = new Workbook(sourceDir + "sampleShadowEffectOfShape.xlsx");
 
             // Access first worksheet
             Worksheet ws = wb.Worksheets[0];
@@ -31,8 +33,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             se.Transparency = 0.3;
 
             // Save the workbook in xlsx format
-            wb.Save(dataDir + "output_out.xlsx");
-            // ExEnd:ShadowEffectOfShape
+            wb.Save(outputDir + "outputShadowEffectOfShape.xlsx");
+
+            Console.WriteLine("ShadowEffectOfShape executed successfully.");
         }
     }
 }
