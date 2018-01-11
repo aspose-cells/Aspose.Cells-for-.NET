@@ -10,12 +10,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:GetSetClassIdentifierEmbedOleObject
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
             // Load your sample workbook which contains embedded PowerPoint ole object
-            Workbook wb = new Workbook(dataDir + "sample.xls");
+            Workbook wb = new Workbook(sourceDir + "sampleGetSetClassIdentifierEmbedOleObject.xls");
 
             // Access its first worksheet
             Worksheet ws = wb.Worksheets[0];
@@ -28,7 +27,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Print the GUID
             Console.WriteLine(guid.ToString().ToUpper());
-            // ExEnd:GetSetClassIdentifierEmbedOleObject
+
+            Console.WriteLine("GetSetClassIdentifierEmbedOleObject executed successfully.");
         }
     }
 }

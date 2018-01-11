@@ -298,6 +298,10 @@ namespace Aspose.Cells.Examples.CSharp
             //LoadWorkbookWithPrinterSize.Run();
             //CreateTextBoxWithDifferentHorizontalAlignment.Run();
             //SetTextboxOrShapeParagraphLineSpacing.Run();
+            //UpdateActiveXComboBoxControl.Run();
+            //FindDataPointsInPieBar.Run();
+            GetSetClassIdentifierEmbedOleObject.Run();
+            //LoadWorkbookWithSpecificCultureInfoNumberFormat.Run();
 
             // =====================================================
             // =====================================================
@@ -305,10 +309,8 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-            UpdateActiveXComboBoxControl.Run();
-            FindDataPointsInPieBar.Run();
-            //GetSetClassIdentifierEmbedOleObject.Run();
-            //LoadWorkbookWithSpecificCultureInfoNumberFormat.Run();
+
+
             //LoadWorkbookWithSpecificCultureInfoDateFormat.Run();
             //ReflactionEffectOfShape.Run();
             //ShadowEffectOfShape.Run();
