@@ -296,7 +296,8 @@ namespace Aspose.Cells.Examples.CSharp
             //ExportToHTMLWithGridLines.Run();
             //DivTagsLayout.Run();
             //LoadWorkbookWithPrinterSize.Run();
-            CreateTextBoxWithDifferentHorizontalAlignment.Run();
+            //CreateTextBoxWithDifferentHorizontalAlignment.Run();
+            SetTextboxOrShapeParagraphLineSpacing.Run();
 
             // =====================================================
             // =====================================================
@@ -304,15 +305,6 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-
-
-
-
-
-
-
-
-            //SetTextboxOrShapeParagraphLineSpacing.Run();
             //UpdateActiveXComboBoxControl.Run();
             //FindDataPointsInPieBar.Run();
             //GetSetClassIdentifierEmbedOleObject.Run();
