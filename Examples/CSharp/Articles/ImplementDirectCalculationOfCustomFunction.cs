@@ -3,7 +3,6 @@ using Aspose.Cells;
 
 namespace Aspose.Cells.Examples.CSharp.Articles
 {
-    // ExStart:ImplementDirectCalculationOfCustomFunction
     class ICustomEngine : AbstractCalculationEngine
     {
         // Override the Calculate method with custom logic
@@ -42,7 +41,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Print the calculated value on Console
             Console.WriteLine("Calculated Value: " + ret);
+
+            Console.WriteLine("ImplementDirectCalculationOfCustomFunction executed successfully.");
         }
     }
-    // ExEnd:ImplementDirectCalculationOfCustomFunction
 }

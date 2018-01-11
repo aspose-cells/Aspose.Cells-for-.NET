@@ -285,8 +285,9 @@ namespace Aspose.Cells.Examples.CSharp
             //UsingWorkbookMetadata.Run();
             //RenderUnicodeInOutput.Run();
             //-----
-            UpdateReferenceInWorksheets.Run();
-            //SettingTextEffectsShadowOfShapeOrTextbox.Run();
+            //UpdateReferenceInWorksheets.Run();
+            SettingTextEffectsShadowOfShapeOrTextbox.Run();
+            ImplementDirectCalculationOfCustomFunction.Run();
 
 
             // =====================================================
@@ -295,9 +296,6 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // =====================================================
 
-
-
-            //ImplementDirectCalculationOfCustomFunction.Run();
             //FilterDataWhileLoadingWorkbook.Run(); 
             //FilteringObjects.Run();
             //CustomFilteringPerWorksheet.Run();
