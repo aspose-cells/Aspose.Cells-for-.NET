@@ -101,26 +101,26 @@ namespace Aspose.Cells.Examples.CSharp.Articles
         }
         #endregion
     }
-    // ExEnd:WritingLargeExcelFile
-
-    // ExStart:ReadingLargeExcelFile
+    
     public class ReadUsingLightCellsApi
     {
         public static void Run()
         {
-            // ExStart:ExampleTitle
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            LoadOptions opts = new LoadOptions();
             LightCellsDataHandlerVisitCells v = new LightCellsDataHandlerVisitCells();
+            LoadOptions opts = new LoadOptions();
             opts.LightCellsDataHandler = v;
-            Workbook wb = new Workbook(dataDir + "LargeBook1.xlsx", opts);
+
+            Workbook wb = new Workbook(sourceDir + "sampleReadUsingLightCellsApi.xlsx", opts);
+
             int sheetCount = wb.Worksheets.Count;
-            Console.WriteLine("Total sheets: " + sheetCount + ", cells: " + v.CellCount
-                + ", strings: " + v.StringCount + ", formulas: " + v.FormulaCount);
+            Console.WriteLine("Total sheets: " + sheetCount + ", cells: " + v.CellCount + ", strings: " + v.StringCount + ", formulas: " + v.FormulaCount);
+
+            Console.WriteLine("ReadUsingLightCellsApi executed successfully.");
         }
-    }
+    }//ReadUsingLightCellsApi
 
     class LightCellsDataHandlerVisitCells : LightCellsDataHandler
     {
@@ -184,8 +184,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             }
             return false;
         }
-    }
-    // ExEnd:ReadingLargeExcelFile
+    }//LightCellsDataHandlerVisitCells
 }
             
 
