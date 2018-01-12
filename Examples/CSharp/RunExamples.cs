@@ -310,28 +310,17 @@ namespace Aspose.Cells.Examples.CSharp
             //PropagateFormulaInTable.Run();
             //AddWordArtTextWithBuiltinStyle.Run();
             //SetPresetWordArtStyle.Run();
+            //GetWarningsForFontSubstitution.Run();
             //-----
-            GetWarningsForFontSubstitution.Run();
+            RemoveUnusedStyles.Run();
 
             // =====================================================
             // =====================================================
             // Articles
             // =====================================================
             // =====================================================
+            
 
-
-
-
-
-
-
-
-
-
-
-
-
-            //RemoveUnusedStyles.Run();
             //ReadingCellValuesInMultipleThreadsSimultaneously.TestMultiThreadingRead();
             //GetSmartMarkerNotifications.Run();
             //ReadUsingLightCellsApi.Run();
