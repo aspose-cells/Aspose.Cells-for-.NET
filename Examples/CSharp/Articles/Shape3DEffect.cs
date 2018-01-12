@@ -10,12 +10,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:Shape3DEffect
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Load excel file containing a shape
-            Workbook wb = new Workbook(dataDir + "sample.xlsx");
+            Workbook wb = new Workbook(sourceDir + "sampleShape3DEffect.xlsx");
 
             // Access first worksheet
             Worksheet ws = wb.Worksheets[0];
@@ -29,8 +31,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             n3df.ExtrusionHeight = 32;
 
             // Save the output excel file in xlsx format
-            wb.Save(dataDir + "output_out.xlsx");
-            // ExEnd:Shape3DEffect
+            wb.Save(outputDir + "outputShape3DEffect.xlsx");
+
+            Console.WriteLine("Shape3DEffect executed successfully.");
         }
     }
 }
