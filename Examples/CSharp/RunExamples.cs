@@ -311,7 +311,7 @@ namespace Aspose.Cells.Examples.CSharp
             //AddWordArtTextWithBuiltinStyle.Run();
             //SetPresetWordArtStyle.Run();
             //-----
-
+            GetWarningsForFontSubstitution.Run();
 
             // =====================================================
             // =====================================================
@@ -330,7 +330,7 @@ namespace Aspose.Cells.Examples.CSharp
 
 
 
-            //GetWarningsForFontSubstitution.Run();
+
             //RemoveUnusedStyles.Run();
             //ReadingCellValuesInMultipleThreadsSimultaneously.TestMultiThreadingRead();
             //GetSmartMarkerNotifications.Run();
