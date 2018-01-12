@@ -8,9 +8,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            string outputPath = dataDir + "Output.out.xlsx";
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Creating a DataTable that will serve as data source for designer spreadsheet
             DataTable table = new DataTable("OppLineItems");
@@ -23,7 +25,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             table.Rows.Add(new object[] { "AAA", "P1" });
 
             // Loading the designer spreadsheet in an instance of Workbook
-            Workbook workbook = new Workbook(dataDir + "source.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleGetSmartMarkerNotifications.xlsx");
 
             // Loading the instance of Workbook in an instance of WorkbookDesigner
             WorkbookDesigner designer = new WorkbookDesigner(workbook);
@@ -38,12 +40,12 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             designer.Process(false);
 
             // Save the result
-            workbook.Save(outputPath);
-            // ExEnd:1
+            workbook.Save(outputDir + "outputGetSmartMarkerNotifications.xlsx");
+
+            Console.WriteLine("GetSmartMarkerNotifications executed successfully.");
         }
     }
 
-    // ExStart:ISmartMarkerCallBack
     class SmartMarkerCallBack: ISmartMarkerCallBack
     {
         Workbook workbook;
@@ -57,5 +59,4 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             Console.WriteLine("Processing Marker: " + tableName + "." + columnName);
         }
     }
-    // ExEnd:ISmartMarkerCallBack
 }

@@ -323,7 +323,7 @@ namespace Aspose.Cells.Examples.CSharp
 
 
 
-            //GetSmartMarkerNotifications.Run();
+            GetSmartMarkerNotifications.Run();
             //ReadUsingLightCellsApi.Run();
             //CustomTextForLabels.Run();
             //MINIFSAndMAXIFS.Run();
