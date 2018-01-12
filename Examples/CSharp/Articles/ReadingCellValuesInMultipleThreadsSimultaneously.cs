@@ -8,11 +8,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 {
     public class ReadingCellValuesInMultipleThreadsSimultaneously
     {
-        // ExStart:1
         public static void Main()
         {
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         }
 
         public static Workbook testWorkbook;
@@ -46,8 +43,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
                 for (var col = 0; col < 100; col++)
                     testWorkbook.Worksheets[0].Cells[row, col].Value = "R" + row + "C" + col;
 
-            // Commenting this line will show a pop-up message
-            // testWorkbook.Worksheets[0].Cells.MultiThreadReading = true;
+            //Uncomment this line to remove the pop-up message on console
+            //testWorkbook.Worksheets[0].Cells.MultiThreadReading = true;
 
             Thread myThread1;
             myThread1 = new Thread(new ThreadStart(ThreadLoop));
@@ -60,7 +57,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             System.Threading.Thread.Sleep(5 * 1000);
             myThread1.Abort();
             myThread2.Abort();
+
+            Console.WriteLine("ReadingCellValuesInMultipleThreadsSimultaneously executed successfully.");
         }
     }
-    // ExEnd:1
 }

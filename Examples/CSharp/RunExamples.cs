@@ -312,16 +312,17 @@ namespace Aspose.Cells.Examples.CSharp
             //SetPresetWordArtStyle.Run();
             //GetWarningsForFontSubstitution.Run();
             //-----
-            RemoveUnusedStyles.Run();
+            //RemoveUnusedStyles.Run();
+            //ReadingCellValuesInMultipleThreadsSimultaneously.TestMultiThreadingRead();
 
             // =====================================================
             // =====================================================
             // Articles
             // =====================================================
             // =====================================================
-            
 
-            //ReadingCellValuesInMultipleThreadsSimultaneously.TestMultiThreadingRead();
+
+
             //GetSmartMarkerNotifications.Run();
             //ReadUsingLightCellsApi.Run();
             //CustomTextForLabels.Run();
