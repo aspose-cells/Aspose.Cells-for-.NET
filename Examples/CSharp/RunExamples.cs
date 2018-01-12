@@ -308,8 +308,10 @@ namespace Aspose.Cells.Examples.CSharp
             //Shape3DEffect.Run();
             //LinkCellsToXmlMapElements.Run();
             //PropagateFormulaInTable.Run();
+            //AddWordArtTextWithBuiltinStyle.Run();
+            //SetPresetWordArtStyle.Run();
             //-----
-            AddWordArtTextWithBuiltinStyle.Run();
+
 
             // =====================================================
             // =====================================================
@@ -327,7 +329,7 @@ namespace Aspose.Cells.Examples.CSharp
 
 
 
-            //SetPresetWordArtStyle.Run();
+
             //GetWarningsForFontSubstitution.Run();
             //RemoveUnusedStyles.Run();
             //ReadingCellValuesInMultipleThreadsSimultaneously.TestMultiThreadingRead();

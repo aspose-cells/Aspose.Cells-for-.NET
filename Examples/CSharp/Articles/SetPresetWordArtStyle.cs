@@ -10,9 +10,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create workbook object
             Workbook wb = new Workbook();
@@ -30,8 +29,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             fntSetting.SetWordArtStyle(PresetWordArtStyle.WordArtStyle3);
 
             // Save the workbook in xlsx format
-            wb.Save(dataDir + "output_out.xlsx");
-            // ExEnd:1
+            wb.Save(outputDir + "outputSetPresetWordArtStyle.xlsx");
+
+            Console.WriteLine("SetPresetWordArtStyle executed successfully.");
         }
     }
 }
