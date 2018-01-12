@@ -10,12 +10,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:GlowEffectOfShape
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Load your source excel file
-            Workbook wb = new Workbook(dataDir + "sample.xlsx");
+            Workbook wb = new Workbook(sourceDir + "sampleGlowEffectOfShape.xlsx");
 
             // Access first worksheet
             Worksheet ws = wb.Worksheets[0];
@@ -29,8 +31,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             ge.Transparency = 0.4;
 
             // Save the workbook in xlsx format
-            wb.Save(dataDir + "output_out.xlsx");
-            // ExEnd:GlowEffectOfShape
+            wb.Save(outputDir + "outputGlowEffectOfShape.xlsx");
+
+            Console.WriteLine("GlowEffectOfShape executed successfully.");
         }
     }
 }
