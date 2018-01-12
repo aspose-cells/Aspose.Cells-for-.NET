@@ -9,12 +9,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:LinkCellsToXmlMapElements
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Load sample workbook
-            Workbook wb = new Workbook(dataDir + "sample.xlsx");
+            Workbook wb = new Workbook(sourceDir + "sampleLinkCellsToXmlMapElements.xlsx");
 
             // Access the Xml Map inside it
             XmlMap map = wb.Worksheets.XmlMaps[0];
@@ -35,8 +37,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             ws.Cells.LinkToXmlMap(map.Name, 5, 5, "/root/row/FIELD8");
 
             // Save the workbook in xlsx format
-            wb.Save(dataDir + "output.xlsx");
-            // ExEnd:LinkCellsToXmlMapElements
+            wb.Save(outputDir + "outputLinkCellsToXmlMapElements.xlsx");
+
+            Console.WriteLine("LinkCellsToXmlMapElements executed successfully.");
         }
     }
 }

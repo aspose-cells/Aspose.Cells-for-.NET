@@ -305,7 +305,8 @@ namespace Aspose.Cells.Examples.CSharp
             //ShadowEffectOfShape.Run();
             //-----
             //GlowEffectOfShape.Run();
-            Shape3DEffect.Run();
+            //Shape3DEffect.Run();
+            LinkCellsToXmlMapElements.Run();
 
             // =====================================================
             // =====================================================
@@ -320,7 +321,7 @@ namespace Aspose.Cells.Examples.CSharp
 
 
 
-            //LinkCellsToXmlMapElements.Run();
+
             //PropagateFormulaInTable.Run();
             //AddWordArtTextWithBuiltinStyle.Run();
             //SetPresetWordArtStyle.Run();
