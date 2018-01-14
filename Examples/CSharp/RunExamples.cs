@@ -345,7 +345,7 @@ namespace Aspose.Cells.Examples.CSharp
             //// DeleteBlankRowsColumns
             //// =====================================================
             DeletingBlankColumns.Run();
-            //DeletingBlankRows.Run();
+            DeletingBlankRows.Run();
 
             //// LineBreakTextWrapping
             //// =====================================================
