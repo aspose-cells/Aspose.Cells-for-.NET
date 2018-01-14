@@ -327,7 +327,7 @@ namespace Aspose.Cells.Examples.CSharp
 
             //ExtractOLEObjects.Run();
             //GenerateDatabarImage.Run();
-            SetPictureBackGroundFillChart.Run();
+            //SetPictureBackGroundFillChart.Run();
 
             //// CopyRowsColumns
             //// =====================================================
