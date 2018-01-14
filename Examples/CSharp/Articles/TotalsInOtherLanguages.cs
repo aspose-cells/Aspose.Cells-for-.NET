@@ -9,12 +9,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:UsingGlobalizationSettings
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Load your source workbook
-            Workbook wb = new Workbook(dataDir + "sample.xlsx");
+            Workbook wb = new Workbook(sourceDir + "sampleTotalsInOtherLanguages.xlsx");
 
             // Set the glorbalization setting to change subtotal and grand total names
             GlobalizationSettings gsi = new GlobalizationSettingsImp();
@@ -31,8 +33,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             ws.Cells.SetColumnWidth(0, 40);
 
             // Save the output excel file
-            wb.Save(dataDir + "output_out.xlsx");
-            // ExEnd:UsingGlobalizationSettings
+            wb.Save(outputDir + "outputTotalsInOtherLanguages.xlsx");
+
+            Console.WriteLine("TotalsInOtherLanguages executed successfully.");
         }
 
         // ExStart:GlobalizationSettings

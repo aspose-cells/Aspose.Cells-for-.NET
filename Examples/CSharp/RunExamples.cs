@@ -316,6 +316,7 @@ namespace Aspose.Cells.Examples.CSharp
             //ReadUsingLightCellsApi.Run();
             //----
             //CustomTextForLabels.Run();
+            //MINIFSAndMAXIFS.Run();
 
             // =====================================================
             // =====================================================
@@ -324,8 +325,8 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
 
 
-            MINIFSAndMAXIFS.Run();
-            //TotalsInOtherLanguages.Run();
+
+            TotalsInOtherLanguages.Run();
             //UsingCellsFactory.Run();
 
 
