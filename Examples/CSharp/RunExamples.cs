@@ -318,14 +318,14 @@ namespace Aspose.Cells.Examples.CSharp
             //CustomTextForLabels.Run();
             //MINIFSAndMAXIFS.Run();
             //TotalsInOtherLanguages.Run();
-            UsingCellsFactory.Run();
+            //UsingCellsFactory.Run();
 
             // =====================================================
             // =====================================================
             // Articles
             // =====================================================
             // =====================================================
-
+            
 
 
 
@@ -334,7 +334,7 @@ namespace Aspose.Cells.Examples.CSharp
 
             //// ConvertExcelChartToImage
             //// =====================================================
-            //ConvertingColumnChartToImage.Run();
+            ConvertingColumnChartToImage.Run();
             //ConvertingPieChartToImageFile.Run();
 
             //// ConvertingWorksheetToImage

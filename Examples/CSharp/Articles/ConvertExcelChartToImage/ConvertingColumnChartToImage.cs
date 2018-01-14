@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,22 +9,24 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ConvertExcelChartToImage
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Open the existing excel file which contains the column chart.
-            Workbook workbook = new Workbook(dataDir+ "ColumnChart.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleConvertingColumnChartToImage.xlsx");
+
+            Worksheet ws = workbook.Worksheets[0];
 
             // Get the designer chart (first chart) in the first worksheet of the workbook.
-            Aspose.Cells.Charts.Chart chart = workbook.Worksheets[0].Charts[0];
+            Aspose.Cells.Charts.Chart chart = ws.Charts[0];
 
             // Convert the chart to an image file.
-            chart.ToImage(dataDir+ "ColumnChart.out.jpeg", System.Drawing.Imaging.ImageFormat.Jpeg);
-            // ExEnd:1
-            
-            
+            chart.ToImage(outputDir + "outputConvertingColumnChartToImage.jpeg", System.Drawing.Imaging.ImageFormat.Jpeg);
+
+            Console.WriteLine("ConvertingColumnChartToImage executed successfully.");
         }
     }
 }
