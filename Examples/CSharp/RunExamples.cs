@@ -112,13 +112,13 @@ namespace Aspose.Cells.Examples.CSharp
             // Uncomment the one you want to try out
 
             //Aspose.Cells for .NET v17.12
-            //Charts.SetShapeTypeOfDataLabelsOfChart.Run();
-            //HTML.ExportWorksheetCSSSeparatelyInOutputHTML.Run();
-            //HTML.PrefixTableElementsStylesWithHtmlSaveOptions_TableCssIdProperty.Run();
-            //Rendering.RenderOfficeAdd_InsWhileConvertingExcelToPdf.Run();
-            //SmartMarkers.AutoPopulateSmartMarkerDataToOtherWorksheets.Run();
-            //WorkbookSettings.Implement_Cell_FormulaLocal_SimilarTo_Range_FormulaLocal.Run();
-            //Worksheets.UpdateDaysPreservingHistoryOfRevisionLogsInSharedWorkbook.Run();
+            Charts.SetShapeTypeOfDataLabelsOfChart.Run();
+            HTML.ExportWorksheetCSSSeparatelyInOutputHTML.Run();
+            HTML.PrefixTableElementsStylesWithHtmlSaveOptions_TableCssIdProperty.Run();
+            Rendering.RenderOfficeAdd_InsWhileConvertingExcelToPdf.Run();
+            SmartMarkers.AutoPopulateSmartMarkerDataToOtherWorksheets.Run();
+            WorkbookSettings.Implement_Cell_FormulaLocal_SimilarTo_Range_FormulaLocal.Run();
+            Worksheets.UpdateDaysPreservingHistoryOfRevisionLogsInSharedWorkbook.Run();
 
             //Aspose.Cells for .NET v17.11
             //_Workbook.CreateSharedWorkbook.Run();
@@ -314,7 +314,6 @@ namespace Aspose.Cells.Examples.CSharp
             //ReadingCellValuesInMultipleThreadsSimultaneously.TestMultiThreadingRead();
             //GetSmartMarkerNotifications.Run();
             //ReadUsingLightCellsApi.Run();
-            //----
             //CustomTextForLabels.Run();
             //MINIFSAndMAXIFS.Run();
             //TotalsInOtherLanguages.Run();
@@ -323,6 +322,8 @@ namespace Aspose.Cells.Examples.CSharp
             //ConvertingPieChartToImageFile.Run();
             //ConvertWorksheetToImageByPage.Run();
             //ConvertWorksheettoImageFile.Run();
+            //DeletingBlankColumns.Run();
+            //DeletingBlankRows.Run();
 
             //// CopyRowsColumns
             //// =====================================================
@@ -341,11 +342,6 @@ namespace Aspose.Cells.Examples.CSharp
             //// =====================================================
             //CreatePivotChart.Run();
             //Articles.CreatePivotTablesPivotCharts.CreatePivotTable.Run();
-
-            //// DeleteBlankRowsColumns
-            //// =====================================================
-            DeletingBlankColumns.Run();
-            DeletingBlankRows.Run();
 
             //// LineBreakTextWrapping
             //// =====================================================
