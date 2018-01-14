@@ -11,12 +11,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:UsingGlobalizationSettings
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Loads an existing spreadsheet containing a pie chart
-            Workbook book = new Workbook(dataDir + "sample.xlsx");
+            Workbook book = new Workbook(sourceDir + "sampleCustomTextForLabels.xlsx");
 
             // Assigns the GlobalizationSettings property of the WorkbookSettings class to the class created in first step
             book.Settings.GlobalizationSettings = new CustomSettings();
@@ -31,11 +33,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             chart.Calculate();
 
             // Renders the chart to image
-            chart.ToImage(dataDir + "output_out.png", new ImageOrPrintOptions());
-            // ExEnd:UsingGlobalizationSettings
+            chart.ToImage(outputDir + "outputCustomTextForLabels.png", new ImageOrPrintOptions());
+
+            Console.WriteLine("CustomTextForLabels executed successfully.");
         }
 
-        // ExStart:GlobalizationSettings
         // Defines a custom class inherited by GlobalizationSettings class
         class CustomSettings : GlobalizationSettings
         {
@@ -60,7 +62,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles
                         return base.GetOtherName();
                 }
             }
-        }
-        // ExEnd:GlobalizationSettings
+        }//GlobalizationSettings
     }
 }
