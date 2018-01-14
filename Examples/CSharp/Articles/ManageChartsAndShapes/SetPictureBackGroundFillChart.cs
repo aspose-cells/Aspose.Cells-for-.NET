@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -9,9 +10,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
     {
         public static void Run()
         {
-            // ExStart:SetPictureBackGroundFillChart
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create a new Workbook.
             Workbook workbook = new Workbook();
@@ -57,7 +60,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
 
             // Set some properties of chart plot area.
             // To set a picture as fill format and make the border invisible.
-            FileStream fs = File.OpenRead(dataDir+ "aspose.png");
+            FileStream fs = File.OpenRead(sourceDir + "sampleSetPictureBackGroundFillChart.png");
             byte[] data = new byte[fs.Length];
             fs.Read(data, 0, data.Length);
             chart.PlotArea.Area.FillFormat.ImageData = data;
@@ -79,8 +82,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             legend.Position = Aspose.Cells.Charts.LegendPositionType.Top;
 
             // Save the excel file
-            workbook.Save(dataDir + "column_chart_out.xls");
-            // ExEnd:SetPictureBackGroundFillChart
+            workbook.Save(outputDir + "outputSetPictureBackGroundFillChart.xlsx");
+
+            Console.WriteLine("SetPictureBackGroundFillChart executed successfully.");
         }
     }
 }
