@@ -343,7 +343,7 @@ namespace Aspose.Cells.Examples.CSharp
             //// ConvertingWorksheetToImage
             //// =====================================================
             ConvertWorksheetToImageByPage.Run();
-            //ConvertWorksheettoImageFile.Run();
+            ConvertWorksheettoImageFile.Run();
 
             //// CopyRowsColumns
             //// =====================================================

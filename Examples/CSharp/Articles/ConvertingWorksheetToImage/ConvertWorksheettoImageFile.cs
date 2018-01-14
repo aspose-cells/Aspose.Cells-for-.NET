@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -10,29 +11,35 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ConvertingWorksheetToImage
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Open a template excel file
-            Workbook book = new Workbook(dataDir+ "Testbook.xlsx");
+            Workbook book = new Workbook(sourceDir + "sampleConvertWorksheettoImageFile.xlsx");
+
             // Get the first worksheet.
             Worksheet sheet = book.Worksheets[0];
 
             // Define ImageOrPrintOptions
             ImageOrPrintOptions imgOptions = new ImageOrPrintOptions();
+            imgOptions.OnePagePerSheet = true;
+            
             // Specify the image format
             imgOptions.ImageFormat = System.Drawing.Imaging.ImageFormat.Jpeg;
+            
             // Render the sheet with respect to specified image/print options
             SheetRender sr = new SheetRender(sheet, imgOptions);
+            
             // Render the image for the sheet
             Bitmap bitmap = sr.ToImage(0);
 
             // Save the image file
-            bitmap.Save(dataDir+ "SheetImage.out.jpg");
-            // ExEnd:1
-            
-            
+            bitmap.Save(outputDir + "outputConvertWorksheettoImageFile.jpg");
+
+            Console.WriteLine("ConvertWorksheettoImageFile executed successfully.");
         }
     }
 }
