@@ -325,7 +325,8 @@ namespace Aspose.Cells.Examples.CSharp
             //DeletingBlankColumns.Run();
             //DeletingBlankRows.Run();
 
-            ExtractOLEObjects.Run();
+            //ExtractOLEObjects.Run();
+            GenerateDatabarImage.Run();
 
             //// CopyRowsColumns
             //// =====================================================
