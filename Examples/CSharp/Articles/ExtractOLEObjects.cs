@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -9,12 +10,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Open the template file.
-            Workbook workbook = new Workbook(dataDir + "oleFile.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleExtractOLEObjects.xlsx");
 
             // Get the OleObject Collection in the first worksheet.
             Aspose.Cells.Drawing.OleObjectCollection oles = workbook.Worksheets[0].OleObjects;
@@ -23,55 +26,68 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             for (int i = 0; i < oles.Count; i++)
             {
                 Aspose.Cells.Drawing.OleObject ole = oles[i];
+
+                byte[] oleData = ole.ObjectData;
+
                 // Specify the output filename.
-                string fileName = dataDir+ "outOle" + i + ".";
+                string fileName = outputDir + "outputExtractOLEObjects" + (i+1) + ".";
+                
                 // Specify each file format based on the oleobject format type.
                 switch (ole.FileFormatType)
                 {
                     case FileFormatType.Doc:
                         fileName += "doc";
                         break;
+                    case FileFormatType.Docx:
+                        fileName += "docx";
+                        break;
                     case FileFormatType.Excel97To2003:
-                        fileName += "Xlsx";
+                        fileName += "xls";
+                        break;
+                    case FileFormatType.Xlsx:
+                        fileName += "xlsx";
+
+                        MemoryStream ms = new MemoryStream();
+                        ms.Write(ole.ObjectData, 0, ole.ObjectData.Length);
+                        Workbook oleBook = new Workbook(ms);
+                        oleBook.Settings.IsHidden = false;
+
+                        ms = new MemoryStream();
+                        oleBook.Save(ms, SaveFormat.Xlsx);
+
+                        ms.Position = 0;
+                        byte[] bts = new byte[ms.Length];
+                        ms.Read(bts, 0, (int)ms.Length);
+                        oleData = bts;
+
                         break;
                     case FileFormatType.Ppt:
-                        fileName += "Ppt";
+                        fileName += "ppt";
                         break;
                     case FileFormatType.Pdf:
-                        fileName += "Pdf";
+                        fileName += "pdf";
                         break;
                     case FileFormatType.Unknown:
-                        fileName += "Jpg";
+                        Guid g = new Guid(ole.ClassIdentifier);
+
+                        if (g.ToString() == "b801ca65-a1fc-11d0-85ad-444553540000")
+                        {
+                            fileName += "pdf";
+                        }
+                        else
+                        {
+                            fileName += "jpg";
+                        }                      
                         break;
                     default:
                         //........
                         break;
                 }
-                // Save the oleobject as a new excel file if the object type is xls.
-                if (ole.FileFormatType == FileFormatType.Xlsx)
-                {
-                    MemoryStream ms = new MemoryStream();
-                    if (ole.ObjectData != null)
-                    {
-                        ms.Write(ole.ObjectData, 0, ole.ObjectData.Length);
-                        Workbook oleBook = new Workbook(ms);
-                        oleBook.Settings.IsHidden = false;
-                        oleBook.Save(dataDir + "outOle" + i + ".out.xlsx");
-                    }
-                }
 
-                // Create the files based on the oleobject format types.
-                else
-                {
-                    if (ole.ObjectData != null)
-                    {
-                        FileStream fs = File.Create(fileName);
-                        fs.Write(ole.ObjectData, 0, ole.ObjectData.Length);
-                        fs.Close();
-                    }
-                }
-                // ExEnd:1
-            }
+                File.WriteAllBytes(fileName, oleData);
+            }//for
+
+            Console.WriteLine("ExtractOLEObjects executed successfully.");
         }
     }
 }
