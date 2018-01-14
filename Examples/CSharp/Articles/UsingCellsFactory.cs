@@ -10,9 +10,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create a Style object using CellsFactory class
             CellsFactory cf = new CellsFactory();
@@ -27,8 +26,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             wb.DefaultStyle = st;
 
             // Save the workbook
-            wb.Save(dataDir + "output_out.xlsx");
-            // ExEnd:1
+            wb.Save(outputDir + "outputUsingCellsFactory.xlsx");
+
+            Console.WriteLine("UsingCellsFactory executed successfully.");
         }
     }
 }

@@ -317,6 +317,8 @@ namespace Aspose.Cells.Examples.CSharp
             //----
             //CustomTextForLabels.Run();
             //MINIFSAndMAXIFS.Run();
+            //TotalsInOtherLanguages.Run();
+            UsingCellsFactory.Run();
 
             // =====================================================
             // =====================================================
@@ -326,8 +328,8 @@ namespace Aspose.Cells.Examples.CSharp
 
 
 
-            TotalsInOtherLanguages.Run();
-            //UsingCellsFactory.Run();
+
+
 
 
             //// ConvertExcelChartToImage
