@@ -320,8 +320,8 @@ namespace Aspose.Cells.Examples.CSharp
             //TotalsInOtherLanguages.Run();
             //UsingCellsFactory.Run();
             //---
-            ConvertingColumnChartToImage.Run();
-            ConvertingPieChartToImageFile.Run();
+            //ConvertingColumnChartToImage.Run();
+            //ConvertingPieChartToImageFile.Run();
 
             // =====================================================
             // =====================================================
@@ -342,7 +342,7 @@ namespace Aspose.Cells.Examples.CSharp
 
             //// ConvertingWorksheetToImage
             //// =====================================================
-            //ConvertWorksheetToImageByPage.Run();
+            ConvertWorksheetToImageByPage.Run();
             //ConvertWorksheettoImageFile.Run();
 
             //// CopyRowsColumns
