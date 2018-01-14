@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,22 +9,24 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ConvertExcelChartToImage
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Open the existing excel file which contains the pie chart.
-            Workbook workbook = new Workbook(dataDir+ "PieChart.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleConvertingPieChartToImageFile.xlsx");
+
+            Worksheet ws = workbook.Worksheets[0];
 
             // Get the designer chart (first chart) in the first worksheet of the workbook.
-            Aspose.Cells.Charts.Chart chart = workbook.Worksheets[0].Charts[0];
+            Aspose.Cells.Charts.Chart chart = ws.Charts[0];
 
             // Convert the chart to an image file.
-            chart.ToImage(dataDir+ "PieChart.out.emf", System.Drawing.Imaging.ImageFormat.Emf);
-            // ExEnd:1
- 
-            
-            
+            chart.ToImage(outputDir + "outputConvertingPieChartToImageFile.emf", System.Drawing.Imaging.ImageFormat.Emf);
+
+            Console.WriteLine("ConvertingPieChartToImageFile executed successfully.");
         }
     }
 }
