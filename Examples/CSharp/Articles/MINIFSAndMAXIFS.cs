@@ -9,12 +9,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Load your source workbook containing MINIFS and MAXIFS functions
-            Workbook wb = new Workbook(dataDir + "sample_MINIFS_MAXIFS.xlsx");
+            Workbook wb = new Workbook(sourceDir + "sampleMINIFSAndMAXIFS.xlsx");
 
             // Perform Aspose.Cells formula calculation
             wb.CalculateFormula();
@@ -22,8 +24,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // Save the calculations result in pdf format
             PdfSaveOptions opts = new PdfSaveOptions();
             opts.OnePagePerSheet = true;
-            wb.Save(dataDir + "output_out.pdf", opts);
-            // ExEnd:1
+            wb.Save(outputDir + "outputMINIFSAndMAXIFS.pdf", opts);
+
+            Console.WriteLine("MINIFSAndMAXIFS executed successfully.");
         }
     }
 }

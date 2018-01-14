@@ -315,7 +315,7 @@ namespace Aspose.Cells.Examples.CSharp
             //GetSmartMarkerNotifications.Run();
             //ReadUsingLightCellsApi.Run();
             //----
-            CustomTextForLabels.Run();
+            //CustomTextForLabels.Run();
 
             // =====================================================
             // =====================================================
@@ -324,7 +324,7 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
 
 
-            //MINIFSAndMAXIFS.Run();
+            MINIFSAndMAXIFS.Run();
             //TotalsInOtherLanguages.Run();
             //UsingCellsFactory.Run();
 
