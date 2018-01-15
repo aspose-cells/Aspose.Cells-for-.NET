@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,9 +9,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.LineBreakTextWrapping
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
             // Create Workbook Object
             Workbook wb = new Workbook();
 
@@ -35,10 +36,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.LineBreakTextWrapping
             cell[0, 0].SetStyle(style);
 
             // Save Excel File
-            wb.Save(dataDir+ "WrappingText.out.xlsx");
-            // ExEnd:1
-            
-            
+            wb.Save(outputDir + "outputWrapText.xlsx");
+
+            Console.WriteLine("WrapText executed successfully.");
         }
     }
 }
