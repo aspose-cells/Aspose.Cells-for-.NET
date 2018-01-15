@@ -10,12 +10,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
     {
         public static void Run()
         {
-            // ExStart:AddWordArtWatermarkToChart
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Open the existing excel file.
-            Workbook workbook = new Workbook(dataDir + "sample.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleAddWordArtWatermarkToChart.xlsx");
 
             // Get the chart in the first worksheet.
             Aspose.Cells.Charts.Chart chart = workbook.Worksheets[0].Charts[0];
@@ -37,8 +39,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             lineFormat.Weight = 0.0;
 
             // Save the excel file.
-            workbook.Save(dataDir + "output_out.xlsx");
-            // ExEnd:AddWordArtWatermarkToChart
+            workbook.Save(outputDir + "outputAddWordArtWatermarkToChart.xlsx");
+
+            Console.WriteLine("AddWordArtWatermarkToChart executed successfully.");
         }
     }
 }
