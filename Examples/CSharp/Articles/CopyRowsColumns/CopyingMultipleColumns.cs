@@ -9,22 +9,25 @@ namespace Aspose.Cells.Examples.CSharp.Articles.CopyRowsColumns
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create an instance of Workbook class by loading the existing spreadsheet
-            Workbook workbook = new Workbook(dataDir + "aspose-sample.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleCopyingMultipleColumns.xlsx");
 
             // Get the cells collection of worksheet by name Columns
-            Cells cells = workbook.Worksheets["Columns"].Cells;
+            Cells cells = workbook.Worksheets[0].Cells;
 
             // Copy the first 3 columns 7th column
             cells.CopyColumns(cells, 0, 6, 3);
 
             // Save the result on disc
-            workbook.Save(dataDir + "output_out.xlsx");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputCopyingMultipleColumns.xlsx");
+
+            Console.WriteLine("CopyingMultipleColumns executed successfully.");
         }
     }
 }
