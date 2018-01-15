@@ -345,6 +345,9 @@ namespace Aspose.Cells.Examples.CSharp
             //UseExplicitLineBreaks.Run();
             //WrapText.Run();
 
+
+            AbsolutePositionOfShapeInsideWorksheet.Run();
+
             //// CopyShapesBetweenWorksheets
             //// =====================================================
             // CopyChart.Run();

@@ -10,12 +10,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
             // Load the sample Excel file inside the workbook object
-            Workbook workbook = new Workbook(dataDir + "sample.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleAbsolutePositionOfShapeInsideWorksheet.xlsx");
 
             // Access the first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -24,8 +23,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             Shape shape = worksheet.Shapes[0];
 
             // Displays the absolute position of the shape
-            Console.WriteLine("Absolute Position of this Shape is ({0} , {1})", shape.LeftToCorner, shape.TopToCorner);
-            // ExEnd:1
+            Console.WriteLine("Absolute Position of this Shape is ({0}, {1})", shape.LeftToCorner, shape.TopToCorner);
+
+            Console.WriteLine("AbsolutePositionOfShapeInsideWorksheet executed successfully.");
         }
     }
 }
