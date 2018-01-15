@@ -340,7 +340,9 @@ namespace Aspose.Cells.Examples.CSharp
             //CopyingPicture.Run();
 
             //CreatePivotChart.Run();
-            CreatePivotTableWithFormatting.Run();
+            //CreatePivotTableWithFormatting.Run();
+
+            UseExplicitLineBreaks.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================

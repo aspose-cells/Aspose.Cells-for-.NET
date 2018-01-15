@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,37 +9,35 @@ namespace Aspose.Cells.Examples.CSharp.Articles.LineBreakTextWrapping
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
             // Create Workbook Object
             Workbook wb = new Workbook();
 
             // Open first Worksheet in the workbook
             Worksheet ws = wb.Worksheets[0];
 
+            Cell c5 = ws.Cells["C5"];
+
             // Get Worksheet Cells Collection
             Aspose.Cells.Cells cell = ws.Cells;
 
-            // Increase the width of First Column Width
-            cell.SetColumnWidth(0, 35);
-
-            // Increase the height of first row
-            cell.SetRowHeight(0, 65);
+            // Increase the width of the column C
+            cell.SetColumnWidth(c5.Column, 30);
 
             // Add Text to the Firts Cell with Explicit Line Breaks
-            cell[0, 0].PutValue("I am using\nthe latest version of \nAspose.Cells to \ntest this functionality");
+            c5.PutValue("I am using\nthe latest version of \nAspose.Cells to \ntest this functionality");
 
             // Make Cell's Text wrap
-            Style style = cell[0, 0].GetStyle();
+            Style style = c5.GetStyle();
             style.IsTextWrapped = true;
-            cell[0, 0].SetStyle(style);
+            c5.SetStyle(style);
 
             // Save Excel File
-            wb.Save(dataDir+ "WrappingText.out.xlsx");
-            // ExEnd:1
-            
-            
+            wb.Save(outputDir + "outputUseExplicitLineBreaks.xlsx");
+
+            Console.WriteLine("UseExplicitLineBreaks executed successfully.");
         }
     }
 }
