@@ -346,8 +346,10 @@ namespace Aspose.Cells.Examples.CSharp
             //WrapText.Run();
             //AbsolutePositionOfShapeInsideWorksheet.Run();
             //AddWordArtWatermarkToChart.Run();
-            ChangeShapesAdjustmentValues.Run();
+            //ChangeShapesAdjustmentValues.Run();
 
+
+            CopyShapesBetweenWorksheets.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================
