@@ -337,7 +337,9 @@ namespace Aspose.Cells.Examples.CSharp
 
             //CopyChart.Run();
             //CopyControls.Run();
-            CopyingPicture.Run();
+            //CopyingPicture.Run();
+
+            CreatePivotChart.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================
