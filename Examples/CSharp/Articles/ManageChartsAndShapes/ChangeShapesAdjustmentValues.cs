@@ -10,12 +10,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create workbook object from source excel file
-            Workbook workbook = new Workbook(dataDir + "source.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleChangeShapesAdjustmentValues.xlsx");
 
             // Access first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -31,8 +33,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             shape3.Geometry.ShapeAdjustValues[0].Value = 0.5d;
 
             // Save the workbook
-            workbook.Save(dataDir + "output_out.xlsx");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputChangeShapesAdjustmentValues.xlsx");
+
+            Console.WriteLine("ChangeShapesAdjustmentValues executed successfully.");
         }
     }
 }
