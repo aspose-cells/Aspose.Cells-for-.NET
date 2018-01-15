@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Drawing;
 
@@ -9,13 +10,15 @@ namespace Aspose.Cells.Examples.CSharp.Articles.CopyShapesBetweenWorksheets
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create a workbook object
             // Open the template file
-            Workbook workbook = new Workbook(dataDir+ "aspose-sample.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleCopyingPicture.xlsx");
 
             // Get the Picture from the "Picture" worksheet.
             Aspose.Cells.Drawing.Picture source = workbook.Worksheets["Sheet1"].Pictures[0];
@@ -27,9 +30,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.CopyShapesBetweenWorksheets
             workbook.Worksheets["Sheet2"].Pictures.Add(source.UpperLeftRow, source.UpperLeftColumn, ms, source.WidthScale, source.HeightScale);
 
             // Save the Worksheet
-            workbook.Save(dataDir+ "Shapes.out.xlsx");
-            // ExEnd:1
-            
+            workbook.Save(outputDir + "outputCopyingPicture.xlsx");
+
+            Console.WriteLine("CopyingPicture executed successfully.");
         }
     }
 }
