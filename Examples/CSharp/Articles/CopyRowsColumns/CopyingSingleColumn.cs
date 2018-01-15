@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,13 +9,15 @@ namespace Aspose.Cells.Examples.CSharp.Articles.CopyRowsColumns
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Instantiate a new Workbook
             // Open an existing excel file
-            Workbook workbook = new Workbook(dataDir+ "aspose-sample.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleCopyingSingleColumn.xlsx");
 
             // Get the first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -28,8 +31,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.CopyRowsColumns
             }
 
             // Save the excel file
-            workbook.Save(dataDir+ "outaspose-sample.out.xlsx");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputCopyingSingleColumn.xlsx");
+
+            Console.WriteLine("CopyingSingleColumn executed successfully.");
         }
     }
 }

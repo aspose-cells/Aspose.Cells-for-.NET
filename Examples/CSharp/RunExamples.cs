@@ -330,7 +330,11 @@ namespace Aspose.Cells.Examples.CSharp
             //SetPictureBackGroundFillChart.Run();
 
 
-            CopyingMultipleColumns.Run();
+            //CopyingMultipleColumns.Run();
+            //CopyingMultipleRows.Run();
+            //CopyingSingleRow.Run();
+            CopyingSingleColumn.Run();
+
             //// CopyRowsColumns
             //// =====================================================
             //CopyingSingleColumn.Run();
