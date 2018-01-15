@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,25 +9,29 @@ namespace Aspose.Cells.Examples.CSharp.Articles.CopyShapesBetweenWorksheets
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            // Create a workbook object
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
             // Open the template file
-            Workbook workbook = new Workbook(dataDir+ "aspose-sample.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleCopyChart.xlsx");
+
+            Worksheet worksheet = workbook.Worksheets[0];
 
             // Get the Chart from the "Chart" worksheet.
-            Aspose.Cells.Charts.Chart source = workbook.Worksheets["Sheet2"].Charts[0];
+            Aspose.Cells.Charts.Chart source = worksheet.Charts[0];
 
             Aspose.Cells.Drawing.ChartShape cshape = source.ChartObject;
 
             // Copy the Chart to the Result Worksheet
-            workbook.Worksheets["Sheet3"].Shapes.AddCopy(cshape, 20, 0, 2, 0);
+            worksheet.Shapes.AddCopy(cshape, 4, 0, 8, 0);
 
             // Save the Worksheet
-            workbook.Save(dataDir+ "Shapes.out.xlsx");
-            // ExEnd:1
-            
+            workbook.Save(outputDir + "outputCopyChart.xlsx");
+
+            Console.WriteLine("CopyChart executed successfully.");
         }
     }
 }
