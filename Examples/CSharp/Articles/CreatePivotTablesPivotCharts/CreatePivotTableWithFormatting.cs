@@ -1,26 +1,28 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
 
 namespace Aspose.Cells.Examples.CSharp.Articles.CreatePivotTablesPivotCharts
 {
-    public class CreatePivotTable
+    public class CreatePivotTableWithFormatting
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Instantiating an Workbook object
             Workbook workbook = new Workbook();
+            
             // Obtaining the reference of the first worksheet
             Worksheet sheet = workbook.Worksheets[0];
+            
             // Name the sheet
             sheet.Name = "Data";
-            Cells cells = sheet.Cells;
 
             // Setting the values to the cells
+            Cells cells = sheet.Cells;
             Cell cell = cells["A1"];
             cell.PutValue("Employee");
             cell = cells["B1"];
@@ -390,38 +392,51 @@ namespace Aspose.Cells.Examples.CSharp.Articles.CreatePivotTablesPivotCharts
 
             // Adding a new sheet
             Worksheet sheet2 = workbook.Worksheets[workbook.Worksheets.Add()];
+
             // Naming the sheet
             sheet2.Name = "PivotTable";
+            
             // Getting the pivottables collection in the sheet
             Aspose.Cells.Pivot.PivotTableCollection pivotTables = sheet2.PivotTables;
+            
             // Adding a PivotTable to the worksheet
             int index = pivotTables.Add("=Data!A1:F30", "B3", "PivotTable1");
+            
             // Accessing the instance of the newly added PivotTable
             Aspose.Cells.Pivot.PivotTable pivotTable = pivotTables[index];
+            
             // Showing the grand totals
             pivotTable.RowGrand = true;
             pivotTable.ColumnGrand = true;
+            
             // Setting the PivotTable report is automatically formatted
             pivotTable.IsAutoFormat = true;
+            
             // Setting the PivotTable autoformat type.
             pivotTable.AutoFormatType = Aspose.Cells.Pivot.PivotTableAutoFormatType.Report6;
+            
             // Draging the first field to the row area.
             pivotTable.AddFieldToArea(Aspose.Cells.Pivot.PivotFieldType.Row, 0);
+            
             // Draging the third field to the row area.
             pivotTable.AddFieldToArea(Aspose.Cells.Pivot.PivotFieldType.Row, 2);
+            
             // Draging the second field to the row area.
             pivotTable.AddFieldToArea(Aspose.Cells.Pivot.PivotFieldType.Row, 1);
+            
             // Draging the fourth field to the column area.
             pivotTable.AddFieldToArea(Aspose.Cells.Pivot.PivotFieldType.Column, 3);
+            
             // Draging the fifth field to the data area.
             pivotTable.AddFieldToArea(Aspose.Cells.Pivot.PivotFieldType.Data, 5);
+            
             // Setting the number format of the first data field
             pivotTable.DataFields[0].NumberFormat = "$#,##0.00";
+            
             // Saving the Excel file
-            workbook.Save(dataDir+ "pivotTable_test.out.xlsx");
-            // ExEnd:1
-            
-            
+            workbook.Save(outputDir + "outputCreatePivotTableWithFormatting.xlsx");
+
+            Console.WriteLine("CreatePivotTableWithFormatting executed successfully.");
         }
     }
 }

@@ -144,7 +144,7 @@
     <Compile Include="Articles\CreateTextBoxWithDifferentHorizontalAlignment.cs" />
     <Compile Include="Articles\CreateManipulateRemoveScenarios.cs" />
     <Compile Include="Articles\CreatePivotTablesPivotCharts\CreatePivotChart.cs" />
-    <Compile Include="Articles\CreatePivotTablesPivotCharts\CreatePivotTable.cs" />
+    <Compile Include="Articles\CreatePivotTablesPivotCharts\CreatePivotTableWithFormatting.cs" />
     <Compile Include="Articles\CreateTransparentImage.cs" />
     <Compile Include="Articles\CustomizingRibbonXML.cs" />
     <Compile Include="Articles\CustomSliceSectorColorsPieChart.cs" />
