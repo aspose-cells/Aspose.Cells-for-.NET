@@ -358,8 +358,10 @@ namespace Aspose.Cells.Examples.CSharp
             //ReadingAndWritingQueryTable.Run();
             //RetrievingSQLConnectionData.Run();
 
-            AccessTableFromCellAndAddValue.Run();
-            GetValidationAppliedOnCell.Run();
+            //AccessTableFromCellAndAddValue.Run();
+            //GetValidationAppliedOnCell.Run();
+
+            HowAndWhereToUseEnumerators.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================

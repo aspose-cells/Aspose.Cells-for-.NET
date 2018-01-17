@@ -10,12 +10,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingRowsColumnsCells
     {
         public static void Run()
         {
-            // ExStart:CellsEnumerator
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
             // Load a file in an instance of Workbook
-            var book = new Workbook(dataDir + "sample.xlsx");
+            var book = new Workbook(sourceDir + "sampleHowAndWhereToUseEnumerators.xlsx");
 
             // Get the enumerator from Cells collection
             IEnumerator cellEnumerator = book.Worksheets[0].Cells.GetEnumerator();
@@ -98,7 +97,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingRowsColumnsCells
                     Console.WriteLine(cells2[row, col].StringValue);
                 }
             }
-            // ExEnd:UsingMaxDataRowAndMaxDataColumn
+
+            Console.WriteLine("HowAndWhereToUseEnumerators executed successfully.");
         }
     }
 }
