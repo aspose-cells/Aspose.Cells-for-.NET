@@ -10,14 +10,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            if (!System.IO.Directory.Exists(dataDir))
-            {
-                System.IO.Directory.CreateDirectory(dataDir); 
-            }
-
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+            
             Aspose.Cells.Workbook workbook = new Aspose.Cells.Workbook();
             Aspose.Cells.Worksheet sheet = workbook.Worksheets[0];
 
@@ -37,10 +32,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules
 
             button.MacroName = sheet.Name + ".ShowMessage";
 
-            dataDir = dataDir + "Output.out.xlsm";
-            workbook.Save(dataDir);            
-            // ExEnd:1
-            Console.WriteLine("\nProcess completed successfully.\nFile saved at " + dataDir);
+            workbook.Save(outputDir + "outputAssignMacroToFormControl.xlsm");
+
+            Console.WriteLine("AssignMacroToFormControl executed successfully.");
         }
     }
 }

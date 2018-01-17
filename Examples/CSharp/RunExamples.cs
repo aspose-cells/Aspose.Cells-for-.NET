@@ -357,12 +357,13 @@ namespace Aspose.Cells.Examples.CSharp
             //ModifyingExistingDataConnection.Run();
             //ReadingAndWritingQueryTable.Run();
             //RetrievingSQLConnectionData.Run();
-
             //AccessTableFromCellAndAddValue.Run();
             //GetValidationAppliedOnCell.Run();
+            //HowAndWhereToUseEnumerators.Run();
+            //VerifyCellValidation.Run();
 
-            HowAndWhereToUseEnumerators.Run();
-            VerifyCellValidation.Run();
+
+            AssignMacroToFormControl.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================
