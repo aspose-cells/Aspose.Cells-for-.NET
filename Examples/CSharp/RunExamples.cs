@@ -346,7 +346,8 @@ namespace Aspose.Cells.Examples.CSharp
             //CopySparkline.Run();
             //CreateSignatureLineInWorkbook.Run();
             //DetermineAxisInChart.Run();
-            DisableTextWrappingForDataLabels.Run();
+            //DisableTextWrappingForDataLabels.Run();
+            GetEquationTextOfChartTrendLine.Run();
 
 
 
