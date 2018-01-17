@@ -15,7 +15,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             // Create workbook object
-            Workbook workbook = new Workbook(dataDir + "source.xlsx");
+            Workbook workbook = new Workbook(dataDir + "sampleDetermineAxisInChart.xlsx");
 
             // Access the first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -35,7 +35,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
 
             ret = chart.HasAxis(AxisType.Value, false);
             Console.WriteLine("Has Seconary Value Axis: " + ret);
-            // ExEnd:DetermineAxisInChart
+
+            Console.WriteLine("DetermineAxisInChart executed successfully.");
         }
     }
 }
