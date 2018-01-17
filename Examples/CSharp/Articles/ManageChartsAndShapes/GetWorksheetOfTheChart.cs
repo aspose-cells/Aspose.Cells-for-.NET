@@ -10,12 +10,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
     {
         public static void Run()
         {
-            // ExStart:GetWorksheetOfTheChart
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
             // Create workbook from sample Excel file
-            Workbook workbook = new Workbook(dataDir + "sample.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleGetWorksheetOfTheChart.xlsx");
 
             // Access first worksheet of the workbook
             Worksheet worksheet = workbook.Worksheets[0];
@@ -28,7 +27,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
 
             // Access the chart's sheet and display its name again
             Console.WriteLine("Chart's Sheet Name: " + chart.Worksheet.Name);
-            // ExEnd:GetWorksheetOfTheChart
+
+            Console.WriteLine("GetWorksheetOfTheChart executed successfully.");
         }
     }
 }
