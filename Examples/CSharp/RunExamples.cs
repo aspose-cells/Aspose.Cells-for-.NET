@@ -349,7 +349,8 @@ namespace Aspose.Cells.Examples.CSharp
             //DisableTextWrappingForDataLabels.Run();
             //GetEquationTextOfChartTrendLine.Run();
             //GetWorksheetOfTheChart.Run();
-            RefreshValueOfLinkedShapes.Run();
+            //RefreshValueOfLinkedShapes.Run();
+            ResizeChartDataLabelToFit.Run();
 
 
 

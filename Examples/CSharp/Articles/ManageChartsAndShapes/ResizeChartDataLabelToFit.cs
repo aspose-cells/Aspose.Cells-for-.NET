@@ -10,12 +10,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create an instance of Workbook containing the Chart
-            var book = new Workbook(dataDir + "source.xlsx");
+            var book = new Workbook(sourceDir + "sampleResizeChartDataLabelToFit.xlsx");
 
             // Access the Worksheet that contains the Chart
             var sheet = book.Worksheets[0];
@@ -27,17 +29,18 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
                     // Access the DataLabels of indexed NSeries
                     var labels = chart.NSeries[index].DataLabels;
 
-                    // Set ResizeShapeToFitText property to true
-                    labels.IsResizeShapeToFitText = true;
+                    // Set ResizeShapeToFitText property to false
+                    labels.IsResizeShapeToFitText = false;
                 }
 
                 // Calculate Chart
                 chart.Calculate();
             }
 
-            // Save the result
-            book.Save(dataDir + "output_out.xlsx");
-            // ExEnd:1
+             // Save the result
+             book.Save(outputDir + "outputResizeChartDataLabelToFit.xlsx");
+
+            Console.WriteLine("ResizeChartDataLabelToFit executed successfully.");
         }
     }
 }
