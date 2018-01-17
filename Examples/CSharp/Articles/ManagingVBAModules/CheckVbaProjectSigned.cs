@@ -6,13 +6,13 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            Workbook workbook = new Workbook(dataDir + "Sample1.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleCheckVbaProjectSigned.xlsm");
             Console.WriteLine("VBA Project is Signed: " + workbook.VbaProject.IsSigned);
-            // ExEnd:1
+
+            Console.WriteLine("CheckVbaProjectSigned executed successfully.");
         }
     }
 }
