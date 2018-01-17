@@ -350,7 +350,8 @@ namespace Aspose.Cells.Examples.CSharp
             //GetEquationTextOfChartTrendLine.Run();
             //GetWorksheetOfTheChart.Run();
             //RefreshValueOfLinkedShapes.Run();
-            ResizeChartDataLabelToFit.Run();
+            //ResizeChartDataLabelToFit.Run();
+            RichTextCustomDataLabel.Run();
 
 
 

@@ -11,12 +11,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
     {
         public static void Run()
         {
-            // ExStart:RichTextCustomDataLabelOfChartPoint
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create a workbook from source Excel file
-            Workbook workbook = new Workbook(dataDir + "sample.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleRichTextCustomDataLabel.xlsx");
 
             // Access first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -36,8 +38,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             fntSetting.Font.IsBold = true;
 
             // Save the workbook
-            workbook.Save(dataDir + "output_out.xlsx");
-            // ExEnd:RichTextCustomDataLabelOfChartPoint
+            workbook.Save(outputDir + "outputRichTextCustomDataLabel.xlsx");
+
+            Console.WriteLine("RichTextCustomDataLabel executed successfully.");
         }
     }
 }
