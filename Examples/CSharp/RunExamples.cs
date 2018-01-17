@@ -362,6 +362,7 @@ namespace Aspose.Cells.Examples.CSharp
             //GetValidationAppliedOnCell.Run();
 
             HowAndWhereToUseEnumerators.Run();
+            VerifyCellValidation.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================
