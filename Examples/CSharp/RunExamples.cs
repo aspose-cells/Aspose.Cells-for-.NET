@@ -359,7 +359,7 @@ namespace Aspose.Cells.Examples.CSharp
             //RetrievingSQLConnectionData.Run();
 
             AccessTableFromCellAndAddValue.Run();
-
+            GetValidationAppliedOnCell.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================

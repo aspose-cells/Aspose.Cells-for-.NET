@@ -9,12 +9,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingRowsColumnsCells
     {
         public static void Run()
         {
-            // ExStart:GetValidationAppliedOnCell
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
             // Instantiate the workbook from sample Excel file
-            Workbook workbook = new Workbook(dataDir + "sample.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleGetValidationAppliedOnCell.xlsx");
 
             // Access its first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -33,7 +32,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingRowsColumnsCells
             Console.WriteLine("Formula1: " + validation.Formula1);
             Console.WriteLine("Formula2: " + validation.Formula2);
             Console.WriteLine("Ignore blank: " + validation.IgnoreBlank);
-            // ExEnd:GetValidationAppliedOnCell
+
+            Console.WriteLine("GetValidationAppliedOnCell executed successfully.");
         }
     }
 }
