@@ -8,11 +8,10 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageDatabaseConnection
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            Workbook workbook = new Workbook(dataDir + "WebQuerySample.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleGetDataConnection_WebQuery.xlsx");
 
             ExternalConnection connection = workbook.DataConnections[0];
 
@@ -21,7 +20,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageDatabaseConnection
                 WebQueryConnection webQuery = (WebQueryConnection)connection;
                 Console.WriteLine("Web Query URL: " + webQuery.Url);
             }
-            // ExEnd:1
+
+            Console.WriteLine("GetDataConnection executed successfully.");
         }
     }
 }
