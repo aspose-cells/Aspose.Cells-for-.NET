@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,11 +10,10 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules
     {
         public static void Run()
         {
-            // ExStart:CheckVbaSignatureIsValid
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            Workbook workbook = new Workbook(dataDir + "sampleVBAProjectSigned.xlsm");
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+            
+            Workbook workbook = new Workbook(sourceDir + "sampleCheckVbaSignatureIsValid.xlsm");
 
             // Signature is valid
             Console.WriteLine("Is VBA Code Project Valid Signed: " + workbook.VbaProject.IsValidSigned);
@@ -25,14 +25,17 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules
             workbook.VbaProject.Modules[1].Codes = code;
 
             // Save
-            workbook.Save(dataDir + "output_out.xlsm");
+            MemoryStream ms = new MemoryStream();
+            workbook.Save(ms, SaveFormat.Xlsm);
 
             // Reload
-            workbook = new Workbook(dataDir + "output_out.xlsm");
+            ms.Position = 0;
+            workbook = new Workbook(ms, new LoadOptions(LoadFormat.Xlsx));
 
             // Now the signature is invalid
             Console.WriteLine("Is VBA Code Project Valid Signed: " + workbook.VbaProject.IsValidSigned);
-            // ExEnd:CheckVbaSignatureIsValid
+
+            Console.WriteLine("CheckVbaSignatureIsValid executed successfully.");
         }
     }
 }

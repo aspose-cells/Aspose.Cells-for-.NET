@@ -363,7 +363,10 @@ namespace Aspose.Cells.Examples.CSharp
             //VerifyCellValidation.Run();
 
             //AssignMacroToFormControl.Run();
-            CheckVbaCodeIsSigned.Run();
+            //CheckVbaCodeIsSigned.Run();
+            //CheckVbaProjectSigned.Run();
+            CheckVbaSignatureIsValid.Run();
+
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================
