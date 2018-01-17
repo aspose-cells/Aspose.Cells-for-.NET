@@ -10,12 +10,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageDatabaseConnection
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
             // Create a workbook object from source file
-            Workbook workbook = new Workbook(dataDir+ "connection.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleRetrievingSQLConnectionData.xlsx");
 
             // Access the external collections
             ExternalConnectionCollection connections = workbook.DataConnections;
@@ -50,7 +49,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageDatabaseConnection
                     Console.WriteLine("Info: " + dbConn.ConnectionInfo);
 
                     // Retrieve DB Connection Credentials
-                    Console.WriteLine("Credentials: " + dbConn.Credentials);
+                    Console.WriteLine("Credentials: " + dbConn.CredentialsMethodType);
 
                     // Retrieve DB Connection Name
                     Console.WriteLine("Name: " + dbConn.Name);
@@ -95,7 +94,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageDatabaseConnection
                     }// End for
                 }// End if
             }// End for
-            // ExEnd:1
+
+            Console.WriteLine("RetrievingSQLConnectionData executed successfully.");
         }
     }
 }
