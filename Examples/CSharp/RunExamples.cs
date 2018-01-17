@@ -362,8 +362,8 @@ namespace Aspose.Cells.Examples.CSharp
             //HowAndWhereToUseEnumerators.Run();
             //VerifyCellValidation.Run();
 
-
-            AssignMacroToFormControl.Run();
+            //AssignMacroToFormControl.Run();
+            CheckVbaCodeIsSigned.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================

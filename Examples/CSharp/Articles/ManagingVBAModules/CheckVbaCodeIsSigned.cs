@@ -9,14 +9,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules
     {
         public static void Run()
         {
-            // ExStart:CheckVbaCodeIsSigned
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            Workbook workbook = new Workbook(dataDir + "sampleVBAProjectSigned.xlsm");
+            Workbook workbook = new Workbook(sourceDir + "sampleCheckVbaCodeIsSigned.xlsm");
 
             Console.WriteLine("Is VBA Code Project Signed: " + workbook.VbaProject.IsSigned);
-            // ExEnd:CheckVbaCodeIsSigned
+
+            Console.WriteLine("CheckVbaCodeIsSigned executed successfully.");
         }
     }
 }
