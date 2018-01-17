@@ -356,7 +356,9 @@ namespace Aspose.Cells.Examples.CSharp
             //GetDataConnection.Run();
             //ModifyingExistingDataConnection.Run();
             //ReadingAndWritingQueryTable.Run();
-            RetrievingSQLConnectionData.Run();
+            //RetrievingSQLConnectionData.Run();
+
+            AccessTableFromCellAndAddValue.Run();
 
 
             //// CopyShapesBetweenWorksheets

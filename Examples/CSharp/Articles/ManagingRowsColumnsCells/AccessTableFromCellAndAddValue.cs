@@ -10,12 +10,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingRowsColumnsCells
     {
         public static void Run()
         {
-            // ExStart:AccessTableFromCellAndAddValue
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+            
             // Create workbook from source Excel file
-            Workbook workbook = new Workbook(dataDir + "source.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleAccessTableFromCellAndAddValue.xlsx");
 
             // Access first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -33,8 +35,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingRowsColumnsCells
             table.PutCellValue(2, 2, "Offset [2,2]");
 
             // Save the workbook
-            workbook.Save(dataDir + "output_out.xlsx");
-            // ExEnd:AccessTableFromCellAndAddValue
+            workbook.Save(outputDir + "outputAccessTableFromCellAndAddValue.xlsx");
+
+            Console.WriteLine("AccessTableFromCellAndAddValue executed successfully.");
         }
     }
 }
