@@ -351,7 +351,8 @@ namespace Aspose.Cells.Examples.CSharp
             //GetWorksheetOfTheChart.Run();
             //RefreshValueOfLinkedShapes.Run();
             //ResizeChartDataLabelToFit.Run();
-            RichTextCustomDataLabel.Run();
+            //RichTextCustomDataLabel.Run();
+            ShowCellRangeAsDataLabels.Run();
 
 
 
