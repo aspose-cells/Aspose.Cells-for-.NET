@@ -10,12 +10,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageDatabaseConnection
     {
         public static void Run()
         {
-            // ExStart:ModifyingExistingDataConnection
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create workbook object
-            Workbook workbook = new Workbook(dataDir + "DataConnection.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleModifyingExistingDataConnection.xlsx");
 
             // Access first Data Connection
             ExternalConnection conn = workbook.DataConnections[0];
@@ -31,8 +33,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageDatabaseConnection
             dbConn.ConnectionInfo = "Server=myServerAddress;Database=myDataBase;User ID=myUsername;Password=myPassword;Trusted_Connection=False";
 
             // Save the workbook
-            workbook.Save(dataDir + "output_out.xlsx");
-            // ExEnd:ModifyingExistingDataConnection
+            workbook.Save(outputDir + "outputModifyingExistingDataConnection.xlsx");
+
+            Console.WriteLine("ModifyingExistingDataConnection executed successfully.");
         }
     }
 }

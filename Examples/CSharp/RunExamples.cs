@@ -353,7 +353,8 @@ namespace Aspose.Cells.Examples.CSharp
             //RichTextCustomDataLabel.Run();
             //ShowCellRangeAsDataLabels.Run();
 
-            GetDataConnection.Run();
+            //GetDataConnection.Run();
+            ModifyingExistingDataConnection.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================
