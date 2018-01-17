@@ -354,7 +354,9 @@ namespace Aspose.Cells.Examples.CSharp
             //ShowCellRangeAsDataLabels.Run();
 
             //GetDataConnection.Run();
-            ModifyingExistingDataConnection.Run();
+            //ModifyingExistingDataConnection.Run();
+            //ReadingAndWritingQueryTable.Run();
+
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================

@@ -9,12 +9,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageDatabaseConnection
     {
         public static void Run()
         {
-            // ExStart:ReadingAndWritingQueryTable
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create workbook from source excel file
-            Workbook workbook = new Workbook(dataDir + "Sample.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleReadingAndWritingQueryTable.xlsx");
 
             // Access first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -30,8 +32,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageDatabaseConnection
             qt.PreserveFormatting = true;
 
             // Save the workbook
-            workbook.Save(dataDir + "Output_out.xlsx");
-            // ExEnd:ReadingAndWritingQueryTable
+            workbook.Save(outputDir + "outputReadingAndWritingQueryTable.xlsx");
+
+            Console.WriteLine("ReadingAndWritingQueryTable executed successfully.");
         }
     }
 }
