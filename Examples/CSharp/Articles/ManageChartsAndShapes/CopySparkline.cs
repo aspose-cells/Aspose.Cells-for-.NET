@@ -10,12 +10,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create workbook from source Excel file
-            Workbook workbook = new Workbook(dataDir + "source.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleCopySparkline.xlsx");
 
             // Access first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -30,8 +32,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             group.SparklineCollection.Add("D8:O8", 7, 15);
 
             // Save the workbook
-            workbook.Save(dataDir + "output_out.xlsx");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputCopySparkline.xlsx");
+
+            Console.WriteLine("CopySparkline executed successfully.");
         }
     }
 }
