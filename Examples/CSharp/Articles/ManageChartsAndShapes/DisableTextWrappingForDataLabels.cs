@@ -10,12 +10,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
     {
         public static void Run()
         {
-            // ExStart:DisableTextWrappingForDataLabels
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Load the sample Excel file inside the workbook object
-            Workbook workbook = new Workbook(dataDir + "sample.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleDisableTextWrappingForDataLabels.xlsx");
 
             // Access the first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -29,8 +31,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             chart.NSeries[2].DataLabels.IsTextWrapped = false;
 
             // Save the workbook
-            workbook.Save(dataDir + "Output_out.xlsx");
-            // ExEnd:DisableTextWrappingForDataLabels
+            workbook.Save(outputDir + "outputDisableTextWrappingForDataLabels.xlsx");
+
+            Console.WriteLine("DisableTextWrappingForDataLabels executed successfully.");
         }
     }
 }

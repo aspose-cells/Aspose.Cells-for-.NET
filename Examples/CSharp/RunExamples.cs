@@ -343,9 +343,12 @@ namespace Aspose.Cells.Examples.CSharp
             //ChangeShapesAdjustmentValues.Run();
             //CopyShapesBetweenWorksheets.Run();
 
-            CopySparkline.Run();
-            CreateSignatureLineInWorkbook.Run();
-            DetermineAxisInChart.Run();
+            //CopySparkline.Run();
+            //CreateSignatureLineInWorkbook.Run();
+            //DetermineAxisInChart.Run();
+            DisableTextWrappingForDataLabels.Run();
+
+
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================
