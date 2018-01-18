@@ -11,15 +11,17 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create workbook object from excel file
-            Workbook wb = new Workbook(dataDir + "Book1.xlsm");
+            Workbook wb = new Workbook(sourceDir + "sampleDigitallySignVbaProjectWithCertificate.xlsm");
 
             // Please use System.Security.Cryptography.X509Certificates namespace for X509Certificate2 class
-            X509Certificate2 cert = new X509Certificate2(dataDir + "SampleCert.pfx", "1234");
+            X509Certificate2 cert = new X509Certificate2(sourceDir + "sampleDigitallySignVbaProjectWithCertificate.pfx", "1234");
 
             // Create a Digital Signature
             DigitalSignature ds = new DigitalSignature(cert, "Signing Digital Signature using Aspose.Cells", DateTime.Now);
@@ -28,8 +30,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules
             wb.VbaProject.Sign(ds);
 
             // Save the workbook
-            wb.Save(dataDir + "DigitallySigned_out.xlsm");
-            // ExEnd:1
+            wb.Save(outputDir + "outputDigitallySignVbaProjectWithCertificate.xlsm");
+
+            Console.WriteLine("DigitallySignVbaProjectWithCertificate executed successfully.");
         }
     }
 }
