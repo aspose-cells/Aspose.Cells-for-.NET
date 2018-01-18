@@ -10,12 +10,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules
     {
         public static void Run()
         {
-            // ExStart:ModifyingVBAOrMacroCode
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create workbook object from source Excel file
-            Workbook workbook = new Workbook(dataDir + "sample.xlsm");
+            Workbook workbook = new Workbook(sourceDir + "sampleModifyingVBAOrMacroCode.xlsm");
 
             // Change the VBA Module Code
             foreach (VbaModule module in workbook.VbaProject.Modules)
@@ -31,8 +33,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules
             }
 
             // Save the output Excel file
-            workbook.Save(dataDir + "output_out.xlsm");
-            // ExEnd:ModifyingVBAOrMacroCode
+            workbook.Save(outputDir + "outputModifyingVBAOrMacroCode.xlsm");
+
+            Console.WriteLine("ModifyingVBAOrMacroCode executed successfully.");
         }
     }
 }
