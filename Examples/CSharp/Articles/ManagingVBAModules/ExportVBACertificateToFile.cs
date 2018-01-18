@@ -10,19 +10,22 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules
     {
         public static void Run()
         {
-            // ExStart:ExportVBACertificateToFile
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Load your source excel file into workbook object
-            Workbook workbook = new Workbook(dataDir + "sampleVBAProjectSigned.xlsm");
+            Workbook workbook = new Workbook(sourceDir + "sampleExportVBACertificateToFile.xlsm");
 
             // Retrieve bytes data of Digital Certificate of VBA Project
             byte[] certBytes = workbook.VbaProject.CertRawData;
 
             // Save Certificate Data into FileStream
-            File.WriteAllBytes(dataDir + "Cert_out_", certBytes);
-            // ExEnd:ExportVBACertificateToFile
+            File.WriteAllBytes(outputDir + "outputExportVBACertificateToFile_Certificate", certBytes);
+
+            Console.WriteLine("ExportVBACertificateToFile executed successfully.");
         }
     }
 }
