@@ -21,7 +21,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             DigitalSignatureCollection dsc = new DigitalSignatureCollection();
 
             // Cert must contain private key, it can be contructed from cert file or windows certificate collection. aa is password of cert
-            X509Certificate2 cert = new X509Certificate2(sourceDir + "keyAssignAndValidateDigitalSignatures.pfx", "aa");
+            X509Certificate2 cert = new X509Certificate2(sourceDir + "sampleAssignAndValidateDigitalSignatures.pfx", "aa");
             DigitalSignature ds = new DigitalSignature(cert, "test for sign", DateTime.Now);
             dsc.Add(ds);
             Workbook wb = new Workbook();
@@ -43,7 +43,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
                 System.Console.WriteLine(dst.IsValid); //True -OK
             }
 
-            Console.WriteLine("\r\nAssignAndValidateDigitalSignatures executed successfully.\r\n");
+            Console.WriteLine("AssignAndValidateDigitalSignatures executed successfully.");
         }
     }
 }

@@ -367,7 +367,10 @@ namespace Aspose.Cells.Examples.CSharp
 
             //DigitallySignVbaProjectWithCertificate.Run();
             //ExportVBACertificateToFile.Run();
-            ModifyingVBAOrMacroCode.Run();
+            //ModifyingVBAOrMacroCode.Run();
+
+            AssignAndValidateDigitalSignatures.Run();
+
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================
