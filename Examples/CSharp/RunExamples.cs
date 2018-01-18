@@ -369,7 +369,8 @@ namespace Aspose.Cells.Examples.CSharp
             //ExportVBACertificateToFile.Run();
             //ModifyingVBAOrMacroCode.Run();
 
-            AssignAndValidateDigitalSignatures.Run();
+            //AssignAndValidateDigitalSignatures.Run();
+            ChangeChartDataSource.Run();
 
 
             //// CopyShapesBetweenWorksheets

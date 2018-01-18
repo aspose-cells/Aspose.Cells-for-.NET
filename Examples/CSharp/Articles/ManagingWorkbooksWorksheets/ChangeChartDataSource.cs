@@ -8,12 +8,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Load sample excel file
-            Workbook wb = new Workbook(dataDir + "sample.xlsx");
+            Workbook wb = new Workbook(sourceDir + "sampleChangeChartDataSource.xlsx");
 
             // Access the first sheet which contains chart
             Worksheet source = wb.Worksheets[0];
@@ -30,9 +32,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
             destination.Cells.CopyRows(source.Cells, 0, 0, source.Cells.MaxDisplayRange.RowCount, options);
 
             // Save workbook in xlsx format
-            wb.Save(dataDir + "output_out.xlsx", SaveFormat.Xlsx);
-            // ExEnd:1           
-            
+            wb.Save(outputDir + "outputChangeChartDataSource.xlsx", SaveFormat.Xlsx);
+
+            Console.WriteLine("ChangeChartDataSource executed successfully.");
         }
     }
 }
