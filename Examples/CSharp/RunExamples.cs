@@ -373,7 +373,9 @@ namespace Aspose.Cells.Examples.CSharp
             //ChangeChartDataSource.Run();
             //CheckIfPasswordProtected.Run();
             //CheckPasswordToModify.Run();
-            ConvertXLSBToXLSM.Run();
+            //ConvertXLSBToXLSM.Run();
+
+            CopyMoveWorksheets.Run();
 
 
             //// CopyShapesBetweenWorksheets
