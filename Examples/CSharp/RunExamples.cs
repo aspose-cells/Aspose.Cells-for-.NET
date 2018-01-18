@@ -376,7 +376,9 @@ namespace Aspose.Cells.Examples.CSharp
             //ConvertXLSBToXLSM.Run();
 
             //CopyMoveWorksheets.Run();
-            DetectEmptyWorksheets.Run();
+            //DetectEmptyWorksheets.Run();
+
+            DetectFileFormatAndEncryption.Run();
 
 
             //// CopyShapesBetweenWorksheets
