@@ -9,12 +9,12 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
     {
         public static void Run()
         {
-            // ExStart:DetectEmptyWorksheets
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
             // Create an instance of Workbook and load an existing spreadsheet
-            var book = new Workbook(dataDir + "sample.xlsx");
+            var book = new Workbook(sourceDir + "sampleDetectEmptyWorksheets.xlsx");
+
             // Loop over all worksheets in the workbook
             for (int i = 0; i < book.Worksheets.Count; i++)
             {
@@ -22,12 +22,12 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
                 // Check if worksheet has populated cells
                 if (sheet.Cells.MaxDataRow != -1)
                 {
-                    Console.WriteLine(sheet.Name + " is not empty because one or more cells are populated");
+                    Console.WriteLine(sheet.Name + " is not Empty because one or more Cells are Populated");
                 }
                 // Check if worksheet has shapes
                 else if (sheet.Shapes.Count > 0)
                 {
-                    Console.WriteLine(sheet.Name + " is not empty because there are one or more shapes");
+                    Console.WriteLine(sheet.Name + " is not Empty because there are one or more Shapes");
                 }
                 // Check if worksheet has empty initialized cells
                 else
@@ -36,11 +36,12 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
                     var rangeIterator = range.GetEnumerator();
                     if (rangeIterator.MoveNext())
                     {
-                        Console.WriteLine(sheet.Name + " is not empty because one or more cells are initialized");
+                        Console.WriteLine(sheet.Name + " is not Empty because one or more cells are Initialized");
                     }
                 }
             }
-            // ExEnd:DetectEmptyWorksheets
+
+            Console.WriteLine("DetectEmptyWorksheets executed successfully.");
         }
     }
 }
