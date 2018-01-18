@@ -9,12 +9,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
     {
         public static void Run()
         {
-            // ExStart:CheckIfPasswordProtected
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
             // Create an instance of Workbook and load a spreadsheet
-            var book = new Workbook(dataDir + "sample.xlsx");
+            var book = new Workbook(sourceDir + "sampleCheckIfPasswordProtected.xlsx");
 
             // Access the protected Worksheet
             var sheet = book.Worksheets[0];
@@ -22,13 +21,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
             // Check if Worksheet is password protected
             if (sheet.Protection.IsProtectedWithPassword)
             {
-                Console.WriteLine("Worksheet is password protected");
+                Console.WriteLine("Worksheet is Password Protected");
             }
             else
             {
-                Console.WriteLine("Worksheet is not password protected");
+                Console.WriteLine("Worksheet is Not Password Protected");
             }
-            // ExEnd:CheckIfPasswordProtected
+
+            Console.WriteLine("CheckIfPasswordProtected executed successfully.");
         }
     }
 }

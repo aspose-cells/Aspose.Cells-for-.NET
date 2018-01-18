@@ -370,7 +370,8 @@ namespace Aspose.Cells.Examples.CSharp
             //ModifyingVBAOrMacroCode.Run();
 
             //AssignAndValidateDigitalSignatures.Run();
-            ChangeChartDataSource.Run();
+            //ChangeChartDataSource.Run();
+            CheckIfPasswordProtected.Run();
 
 
             //// CopyShapesBetweenWorksheets
