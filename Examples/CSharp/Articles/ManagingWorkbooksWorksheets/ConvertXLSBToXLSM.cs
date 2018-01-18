@@ -9,16 +9,19 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
     {
         public static void Run()
         {
-            // ExStart:ConvertXLSBRevisionToXLSM
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Open workbook
-            Workbook workbook = new Workbook(dataDir + "sample.xlsb");
+            Workbook workbook = new Workbook(sourceDir + "sampleConvertXLSBToXLSM.xlsb");
 
             // Save Workbook to XLSM format
-            workbook.Save(dataDir + "output_out.xlsm", SaveFormat.Xlsm);
-            // ExEnd:ConvertXLSBRevisionToXLSM
+            workbook.Save(outputDir + "outputConvertXLSBToXLSM.xlsm", SaveFormat.Xlsm);
+
+            Console.WriteLine("ConvertXLSBToXLSM executed successfully.");
         }
     }
 }

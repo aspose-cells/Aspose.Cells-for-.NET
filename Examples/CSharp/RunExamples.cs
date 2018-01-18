@@ -372,7 +372,8 @@ namespace Aspose.Cells.Examples.CSharp
             //AssignAndValidateDigitalSignatures.Run();
             //ChangeChartDataSource.Run();
             //CheckIfPasswordProtected.Run();
-            CheckPasswordToModify.Run();
+            //CheckPasswordToModify.Run();
+            ConvertXLSBToXLSM.Run();
 
 
             //// CopyShapesBetweenWorksheets
