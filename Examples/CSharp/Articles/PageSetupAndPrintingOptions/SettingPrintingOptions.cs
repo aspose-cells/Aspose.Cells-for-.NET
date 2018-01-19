@@ -9,12 +9,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.PageSetupAndPrintingOptions
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Open the template workbook
-            Workbook workbook = new Workbook(dataDir + "PageSetup.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleSettingPrintingOptions.xlsx");
 
             // Accessing the first worksheet in the Excel file
             Worksheet worksheet = workbook.Worksheets[0];
@@ -52,8 +54,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.PageSetupAndPrintingOptions
             pageSetup.Order = PrintOrderType.OverThenDown;
 
             // Save the workbook
-            workbook.Save(dataDir + "PageSetup_Print_out.xlsx");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputSettingPrintingOptions.xlsx");
+
+            Console.WriteLine("SettingPrintingOptions executed successfully.");
         }
     }
 }

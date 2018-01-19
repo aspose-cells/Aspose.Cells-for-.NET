@@ -386,8 +386,8 @@ namespace Aspose.Cells.Examples.CSharp
 
             //ReadingLargeExcelFiles.Run();
             //WritingLargeExcelFiles.Run();
-            SettingPageSetup.Run();
-
+            //SettingPageSetup.Run();
+            SettingPrintingOptions.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================
