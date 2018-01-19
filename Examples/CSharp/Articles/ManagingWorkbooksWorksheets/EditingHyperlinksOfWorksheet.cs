@@ -9,11 +9,13 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
     {
         public static void Run()
         {
-            // ExStart:EditingHyperlinksOfWorksheet
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            Workbook workbook = new Workbook(dataDir + "Sample.xlsx");
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
+            Workbook workbook = new Workbook(sourceDir + "sampleEditingHyperlinksOfWorksheet.xlsx");
 
             Worksheet worksheet = workbook.Worksheets[0];
 
@@ -21,10 +23,13 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
             {
                 Hyperlink hl = worksheet.Hyperlinks[i];
                 hl.Address = "http://www.aspose.com";
+
+                hl.TextToDisplay += "_Modified";
             }
 
-            workbook.Save(dataDir + "output_out.xlsx");
-            // ExEnd:EditingHyperlinksOfWorksheet
+            workbook.Save(outputDir + "outputEditingHyperlinksOfWorksheet.xlsx");
+
+            Console.WriteLine("EditingHyperlinksOfWorksheet executed successfully.");
         }
     }
 }
