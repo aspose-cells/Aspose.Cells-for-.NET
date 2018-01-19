@@ -379,7 +379,9 @@ namespace Aspose.Cells.Examples.CSharp
             //EditingHyperlinksOfWorksheet.Run();
             //ImportCSVWithFormulas.Run();
             //ImportXmlData.Run();
-            VerifyPasswordUsedToProtectWorksheets.Run();
+            //VerifyPasswordUsedToProtectWorksheets.Run();
+
+            ModifyThroughSampleExcelFile.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================

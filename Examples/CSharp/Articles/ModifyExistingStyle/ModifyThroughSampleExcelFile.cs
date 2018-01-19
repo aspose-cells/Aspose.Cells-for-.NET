@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using System.Drawing;
 
@@ -9,34 +10,29 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ModifyExistingStyle
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            /*
-             * Create a workbook.
-             * Open a template file. 
-             * In the book1.xls file, we have applied Ms Excel's 
-             * Named style i.e., "Percent" to the range "A1:C8".
-            */
-            Workbook workbook = new Workbook(dataDir+ "book1.xlsx");
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
-            // We get the Percent style and create a style object.
-            Style style = workbook.GetNamedStyle("Percent");
+            //Load the workbook
+            Workbook workbook = new Workbook(sourceDir + "sampleModifyThroughSampleExcelFile.xlsx");
 
-            // Change the number format to "0.00%".
-            style.Number = 11;
+            // Get named style
+            Style style = workbook.GetNamedStyle("MyCustomStyle");
 
             // Set the font color.
             style.Font.Color = System.Drawing.Color.Red;
+            style.ForegroundColor = Color.Green;
 
-            // Update the style. so, the style of range "A1:C8" will be changed too.
+            // Update the style. 
             style.Update();
 
             // Save the excel file.	
-            workbook.Save(dataDir+ "book2.out.xlsx");
-            // ExEnd:1
-            
+            workbook.Save(outputDir + "outputModifyThroughSampleExcelFile.xlsx");
+
+            Console.WriteLine("ModifyThroughSampleExcelFile executed successfully.");
         }
     }
 }
