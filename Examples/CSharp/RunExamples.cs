@@ -112,13 +112,13 @@ namespace Aspose.Cells.Examples.CSharp
             // Uncomment the one you want to try out
 
             //Aspose.Cells for .NET v17.12
-            //Charts.SetShapeTypeOfDataLabelsOfChart.Run();
-            //HTML.ExportWorksheetCSSSeparatelyInOutputHTML.Run();
-            //HTML.PrefixTableElementsStylesWithHtmlSaveOptions_TableCssIdProperty.Run();
-            //Rendering.RenderOfficeAdd_InsWhileConvertingExcelToPdf.Run();
-            //SmartMarkers.AutoPopulateSmartMarkerDataToOtherWorksheets.Run();
-            //WorkbookSettings.Implement_Cell_FormulaLocal_SimilarTo_Range_FormulaLocal.Run();
-            //Worksheets.UpdateDaysPreservingHistoryOfRevisionLogsInSharedWorkbook.Run();
+            Charts.SetShapeTypeOfDataLabelsOfChart.Run();
+            HTML.ExportWorksheetCSSSeparatelyInOutputHTML.Run();
+            HTML.PrefixTableElementsStylesWithHtmlSaveOptions_TableCssIdProperty.Run();
+            Rendering.RenderOfficeAdd_InsWhileConvertingExcelToPdf.Run();
+            SmartMarkers.AutoPopulateSmartMarkerDataToOtherWorksheets.Run();
+            WorkbookSettings.Implement_Cell_FormulaLocal_SimilarTo_Range_FormulaLocal.Run();
+            Worksheets.UpdateDaysPreservingHistoryOfRevisionLogsInSharedWorkbook.Run();
 
             //Aspose.Cells for .NET v17.11
             //_Workbook.CreateSharedWorkbook.Run();
@@ -375,19 +375,16 @@ namespace Aspose.Cells.Examples.CSharp
             //CopyMoveWorksheets.Run();
             //DetectEmptyWorksheets.Run();
             //DetectFileFormatAndEncryption.Run();
-
             //EditingHyperlinksOfWorksheet.Run();
             //ImportCSVWithFormulas.Run();
             //ImportXmlData.Run();
             //VerifyPasswordUsedToProtectWorksheets.Run();
-
             //ModifyThroughSampleExcelFile.Run();
             //ModifyThroughStyleObject.Run();
-
             //ReadingLargeExcelFiles.Run();
             //WritingLargeExcelFiles.Run();
             //SettingPageSetup.Run();
-            SettingPrintingOptions.Run();
+            //SettingPrintingOptions.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================
