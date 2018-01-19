@@ -9,25 +9,28 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
     {
         public static void Run()
         {
-            // ExStart:ImportCSVWithFormulas
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             TxtLoadOptions opts = new TxtLoadOptions();
             opts.Separator = ',';
             opts.HasFormula = true;
 
             // Load your CSV file with formulas in a Workbook object
-            Workbook workbook = new Workbook(dataDir + "sample.csv", opts);
+            Workbook workbook = new Workbook(sourceDir + "sampleImportCSVWithFormulas.csv", opts);
 
             // You can also import your CSV file like this
             // The code below is importing CSV file starting from cell D4
             Worksheet worksheet = workbook.Worksheets[0];
-            worksheet.Cells.ImportCSV(dataDir + "sample.csv", opts, 3, 3);
+            worksheet.Cells.ImportCSV(sourceDir + "sampleImportCSVWithFormulas.csv", opts, 3, 3);
 
             // Save your workbook in Xlsx format
-            workbook.Save(dataDir + "output_out.xlsx");
-            // ExEnd:ImportCSVWithFormulas
+            workbook.Save(outputDir + "outputImportCSVWithFormulas.xlsx");
+
+            Console.WriteLine("ImportCSVWithFormulas executed successfully.");
         }
     }
 }
