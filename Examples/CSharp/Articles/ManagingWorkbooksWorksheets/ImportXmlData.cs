@@ -9,22 +9,22 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
     {
         public static void Run()
         {
-            // ExStart:ImportXmlDataIntoWorkbook
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create a workbook
             Workbook workbook = new Workbook();
 
-            // URL that contains your XML data for mapping
-            string XML = "http://www.aspose.com/docs/download/attachments/434475650/sampleXML.txt";
-
             // Import your XML Map data starting from cell A1
-            workbook.ImportXml(XML, "Sheet1", 0, 0);
+            workbook.ImportXml(sourceDir + "sampleImportXmlData.xml", "Sheet1", 0, 0);
 
             // Save workbook
-            workbook.Save(dataDir + "output_out.xlsx");
-            // ExEnd:ImportXmlDataIntoWorkbook
+            workbook.Save(outputDir + "outputImportXmlData.xlsx");
+
+            Console.WriteLine("ImportXmlData executed successfully.");
         }
     }
 }
