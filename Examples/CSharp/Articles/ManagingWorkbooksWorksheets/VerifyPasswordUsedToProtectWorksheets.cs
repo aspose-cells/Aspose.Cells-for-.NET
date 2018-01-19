@@ -9,12 +9,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
     {
         public static void Run()
         {
-            // ExStart:VerifyPasswordUsedToProtectWorksheets
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            // Create an instance of Workbook and load a spreadsheet
-            var book = new Workbook(dataDir + "Sample.xlsx");
+            // Load a spreadsheet
+            var book = new Workbook(sourceDir + "sampleVerifyPasswordUsedToProtectWorksheets.xlsx");
 
             // Access the protected Worksheet
             var sheet = book.Worksheets[0];
@@ -32,7 +31,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
                     Console.WriteLine("Specified password has not matched");
                 }
             }
-            // ExEnd:VerifyPasswordUsedToProtectWorksheets
+
+            Console.WriteLine("VerifyPasswordUsedToProtectWorksheets executed successfully.");
         }
     }
 }
