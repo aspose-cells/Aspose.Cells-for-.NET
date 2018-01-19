@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -6,11 +7,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles.OptimizingMemoryUsage
 {
     public class WritingLargeExcelFiles
     {
-        public static void Main()
+        public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             // Instantiate a new Workbook
             Workbook wb = new Workbook();
@@ -34,7 +32,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles.OptimizingMemoryUsage
             // Input large dataset into the cells of the worksheet.
             // Your code goes here.
             // .........
-            // ExEnd:1
+
+            Console.WriteLine("WritingLargeExcelFiles executed successfully.");
         }
     }
 }
