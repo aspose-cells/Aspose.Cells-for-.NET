@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,9 +9,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ModifyExistingStyle
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
             // Create a workbook.
             Workbook workbook = new Workbook();
 
@@ -22,9 +23,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ModifyExistingStyle
 
             // Set the font color to red color.
             style.Font.Color = System.Drawing.Color.Red;
+            style.Pattern = BackgroundType.Solid;
+            style.ForegroundColor = System.Drawing.Color.Yellow;
 
             // Name the style.
-            style.Name = "Date1";
+            style.Name = "MyCustomDate";
 
             // Get the first worksheet cells.
             Cells cells = workbook.Worksheets[0].Cells;
@@ -33,7 +36,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ModifyExistingStyle
             cells["A1"].SetStyle(style);
 
             // Create a range (B1:D1).
-            Range range = cells.CreateRange("B1", "D1");
+            Range range = cells.CreateRange("B6", "D10");
 
             // Initialize styleflag object.
             StyleFlag flag = new StyleFlag();
@@ -41,21 +44,17 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ModifyExistingStyle
             // Set all formatting attributes on.
             flag.All = true;
 
+            Style style2 = workbook.GetNamedStyle("MyCustomDate");
+
             // Apply the style (described above)to the range.
-            range.ApplyStyle(style, flag);
+            range.ApplyStyle(style2, flag);
 
-            // Modify the style (described above) and change the font color from red to black.
-            style.Font.Color = System.Drawing.Color.Black;
-
-            // Done! Since the named style (described above) has been set to a cell and range, 
-            // The change would be Reflected(new modification is implemented) to cell(A1) and // Range (B1:D1).
-            style.Update();
+            cells["C8"].PutValue(43105);
 
             // Save the excel file. 
-            workbook.Save(dataDir+ "book_styles.out.xls");
-            // ExEnd:1
-            
-            
+            workbook.Save(outputDir + "outputModifyThroughStyleObject.xlsx");
+
+            Console.WriteLine("ModifyThroughStyleObject executed successfully.");
         }
     }
 }

@@ -381,7 +381,8 @@ namespace Aspose.Cells.Examples.CSharp
             //ImportXmlData.Run();
             //VerifyPasswordUsedToProtectWorksheets.Run();
 
-            ModifyThroughSampleExcelFile.Run();
+            //ModifyThroughSampleExcelFile.Run();
+            ModifyThroughStyleObject.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================
