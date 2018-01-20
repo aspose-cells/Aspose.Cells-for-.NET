@@ -9,12 +9,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
     {
         public static void Run()
         {
-            // ExStart:PrintCommentWhileSavingToPdf
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create a workbook from source Excel file
-            Workbook workbook = new Workbook(dataDir + "SampleWorkbookWithComments.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "samplePrintCommentWhileSavingToPdf.xlsx");
 
             // Access first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -27,8 +29,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             worksheet.PageSetup.PrintComments = PrintCommentsType.PrintSheetEnd;
 
             // Save workbook in pdf format
-            workbook.Save(dataDir + "PrintCommentWhileSavingToPdf_out.pdf");
-            // ExEnd:PrintCommentWhileSavingToPdf
+            workbook.Save(outputDir + "outputPrintCommentWhileSavingToPdf.pdf");
+
+            Console.WriteLine("PrintCommentWhileSavingToPdf executed successfully.");
         }
     }
 }
