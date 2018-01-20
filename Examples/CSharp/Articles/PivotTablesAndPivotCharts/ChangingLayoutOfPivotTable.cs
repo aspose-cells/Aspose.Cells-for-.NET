@@ -10,12 +10,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.PivotTablesAndPivotCharts
     {
         public static void Run()
         {
-            // ExStart:ChangingLayoutOfPivotTable
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create workbook object from source excel file
-            Workbook workbook = new Workbook(dataDir + "pivotTable_sample.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleChangingLayoutOfPivotTable.xlsx");
 
             // Access first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -31,7 +33,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.PivotTablesAndPivotCharts
             pivotTable.CalculateData();
 
             // Save the output
-            workbook.Save(dataDir + "CompactForm_out.xlsx");
+            workbook.Save(outputDir + "outputChangingLayoutOfPivotTable_CompactForm.xlsx");
 
             // 2 - Show the pivot table in outline form
             pivotTable.ShowInOutlineForm();
@@ -41,7 +43,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.PivotTablesAndPivotCharts
             pivotTable.CalculateData();
 
             // Save the output
-            workbook.Save(dataDir + "OutlineForm_out.xlsx");
+            workbook.Save(outputDir + "outputChangingLayoutOfPivotTable_OutlineForm.xlsx");
 
             // 3 - Show the pivot table in tabular form
             pivotTable.ShowInTabularForm();
@@ -51,8 +53,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.PivotTablesAndPivotCharts
             pivotTable.CalculateData();
 
             // Save the output
-            workbook.Save(dataDir + "TabularForm_out.xlsx");
-            // ExEnd:ChangingLayoutOfPivotTable
+            workbook.Save(outputDir + "outputChangingLayoutOfPivotTable_TabularForm.xlsx");
+
+            Console.WriteLine("ChangingLayoutOfPivotTable executed successfully.");
         }
     }
 }
