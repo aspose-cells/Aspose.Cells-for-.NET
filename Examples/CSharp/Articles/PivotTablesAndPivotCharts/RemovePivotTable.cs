@@ -10,12 +10,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.PivotTablesAndPivotCharts
     {
         public static void Run()
         {
-            // ExStart:RemovePivotTableFromWorksheet
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create workbook object from source Excel file
-            Workbook workbook = new Workbook(dataDir + "source.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleRemovePivotTable.xlsx");
 
             // Access the first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -30,8 +32,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.PivotTablesAndPivotCharts
             //worksheet.PivotTables.RemoveAt(0);
 
             // Save the workbook
-            workbook.Save(dataDir + "output_out.xlsx");
-            // ExEnd:RemovePivotTableFromWorksheet
+            workbook.Save(outputDir + "outputRemovePivotTable.xlsx");
+
+            Console.WriteLine("RemovePivotTable executed successfully.");
         }
     }
 }
