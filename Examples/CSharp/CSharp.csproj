@@ -275,7 +275,7 @@
     <Compile Include="Articles\RenderingAndPrinting\PrintingUsingSheetRender.cs" />
     <Compile Include="Articles\RenderingAndPrinting\PrintingUsingWorkbookRender.cs" />
     <Compile Include="Articles\RenderingAndPrinting\RenderWorksheetToGraphicContext.cs" />
-    <Compile Include="Articles\RenderingAndPrinting\SaveExcelIntoPdfWithOptimizedSize.cs" />
+    <Compile Include="Articles\RenderingAndPrinting\SaveExcelIntoPdfWithMinimumSize.cs" />
     <Compile Include="Articles\RenderingAndPrinting\SetCustomFontFolders.cs" />
     <Compile Include="Articles\RenderingAndPrinting\SetDefaultFontWhileRenderingSpreadsheet.cs" />
     <Compile Include="Articles\RenderingAndPrinting\SpecifyJobWhilePrinting.cs" />

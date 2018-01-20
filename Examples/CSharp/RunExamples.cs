@@ -398,8 +398,8 @@ namespace Aspose.Cells.Examples.CSharp
             //PrintingRangeOfPages.Run();
             //PrintingUsingSheetRender.Run();
             //PrintingUsingWorkbookRender.Run();
-            RenderWorksheetToGraphicContext.Run();
-
+            //RenderWorksheetToGraphicContext.Run();
+            SaveExcelIntoPdfWithMinimumSize.Run();
 
 
 
