@@ -10,11 +10,13 @@ namespace Aspose.Cells.Examples.CSharp.Articles.PivotTablesAndPivotCharts
     {
         public static void Run()
         {
-            // ExStart:SpecifyAbsolutePositionOfPivotItem
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            Workbook wb = new Workbook(dataDir + "source.xlsx");
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
+            Workbook wb = new Workbook(sourceDir + "sampleSpecifyAbsolutePositionOfPivotItem.xlsx");
             Worksheet wsPivot = wb.Worksheets.Add("pvtNew Hardware");
             Worksheet wsData = wb.Worksheets["New Hardware - Yearly"];
 
@@ -66,8 +68,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.PivotTablesAndPivotCharts
             pvtTable.RowFields["Item"].PivotItems["AAA3"].PositionInSameParentNode = 2;
 
             // Save file
-            wb.Save(dataDir + "output_out.xlsx");
-            // ExEnd:SpecifyAbsolutePositionOfPivotItem
+            wb.Save(outputDir + "outputSpecifyAbsolutePositionOfPivotItem.xlsx");
+
+            Console.WriteLine("SpecifyAbsolutePositionOfPivotItem executed successfully.");
         }
     }
 }
