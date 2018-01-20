@@ -390,7 +390,8 @@ namespace Aspose.Cells.Examples.CSharp
             //GetPivotTableCellByDisplayName.Run();
             //RemovePivotTable.Run();
             //SettingPivotTableOption.Run();
-
+            //SpecifyAbsolutePositionOfPivotItem.Run();
+            ConvertChartToSvgImage.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================
