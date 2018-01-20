@@ -5,24 +5,31 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
 {
-    public class PreventExportingHiddenContent
+    public class ExportHiddenWorksheetInHTML
     {
         public static void Run()
         {
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
             // ExStart:PreventExportingHiddenContentWhileSavingAsHTML
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
             // Create workbook object
-            Workbook workbook = new Workbook(dataDir + "WorkbookWithHiddenContent.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleExportHiddenWorksheetInHTML.xlsx");
 
             // Do not export hidden worksheet contents
             HtmlSaveOptions options = new HtmlSaveOptions();
-            options.ExportHiddenWorksheet = false;
+            options.ExportHiddenWorksheet = true;
 
             // Save the workbook
-            workbook.Save(dataDir + "HtmlWithoutHiddenContent_out.html", options);
-            // ExEnd:PreventExportingHiddenContentWhileSavingAsHTML
+            workbook.Save(outputDir + "outputExportHiddenWorksheetInHTML.html", options);
+
+            Console.WriteLine("ExportHiddenWorksheetInHTML executed successfully.");
         }
     }
 }

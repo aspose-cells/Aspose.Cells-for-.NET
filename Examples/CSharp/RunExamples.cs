@@ -392,7 +392,8 @@ namespace Aspose.Cells.Examples.CSharp
             //SettingPivotTableOption.Run();
             //SpecifyAbsolutePositionOfPivotItem.Run();
             //ConvertChartToSvgImage.Run();
-            ExportChartToSvgWithViewBox.Run();
+            //ExportChartToSvgWithViewBox.Run();
+            ExportHiddenWorksheetInHTML.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================

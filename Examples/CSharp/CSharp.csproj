@@ -269,7 +269,7 @@
     <Compile Include="Articles\RenderingAndPrinting\ChangeFontUnicodeCharacterToPdf.cs" />
     <Compile Include="Articles\RenderingAndPrinting\ConvertChartToSvgImage.cs" />
     <Compile Include="Articles\RenderingAndPrinting\ExportChartToSvgWithViewBox.cs" />
-    <Compile Include="Articles\RenderingAndPrinting\PreventExportingHiddenContent.cs" />
+    <Compile Include="Articles\RenderingAndPrinting\ExportHiddenWorksheetInHTML.cs" />
     <Compile Include="Articles\RenderingAndPrinting\PrintCommentWhileSavingToPdf.cs" />
     <Compile Include="Articles\RenderingAndPrinting\PrintingRangeOfPages.cs" />
     <Compile Include="Articles\RenderingAndPrinting\PrintingUsingSheetRender.cs" />
