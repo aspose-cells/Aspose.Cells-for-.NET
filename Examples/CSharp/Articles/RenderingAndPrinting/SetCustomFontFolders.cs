@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using Aspose.Cells;
 
@@ -7,14 +8,13 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
             // Defining string variables to store paths to font folders & font file
-            string fontFolder1 =  dataDir + "Arial";
-            string fontFolder2 =  dataDir + "Calibri";
-            string fontFile = dataDir + "arial.ttf"; 
+            string fontFolder1 = sourceDir + "Arial";
+            string fontFolder2 = sourceDir + "Calibri";
+            string fontFile = sourceDir + "Arial.ttf"; 
 
             // Setting first font folder with SetFontFolder method
             // Second parameter directs the API to search the subfolders for font files
@@ -35,15 +35,13 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
 
             // Setting font sources
             FontConfigs.SetFontSources(new FontSourceBase[] { sourceFolder, sourceFile, sourceMemory });
-            // ExEnd:1          
-            
+
+            Console.WriteLine("SetCustomFontFolders executed successfully.");
         }
         public static void FontSubstitution()
         {
-            // ExStart:FontSubstitution
             // Substituting the Arial font with Times New Roman & Calibri
-            FontConfigs.SetFontSubstitutes("Arial", new string[] { "Times New Roman", "Calibri" });
-            // ExEnd:FontSubstitution
+            FontConfigs.SetFontSubstitutes("Arial", new string[] { "Times New Roman", "Calibri" });          
         }
     }
 }
