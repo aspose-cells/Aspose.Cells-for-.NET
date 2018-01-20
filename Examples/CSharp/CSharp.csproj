@@ -257,7 +257,7 @@
     <Compile Include="Articles\OptimizingMemoryUsage\ReadingLargeExcelFiles.cs" />
     <Compile Include="Articles\OptimizingMemoryUsage\WritingLargeExcelFiles.cs" />
     <Compile Include="Articles\PivotTablesAndPivotCharts\ChangingLayoutOfPivotTable.cs" />
-    <Compile Include="Articles\PivotTablesAndPivotCharts\GetCellByDisplayName.cs" />
+    <Compile Include="Articles\PivotTablesAndPivotCharts\GetPivotTableCellByDisplayName.cs" />
     <Compile Include="Articles\PivotTablesAndPivotCharts\RemovePivotTable.cs" />
     <Compile Include="Articles\PivotTablesAndPivotCharts\SpecifyAbsolutePositionOfPivotItem.cs" />
     <Compile Include="Articles\PropagateFormulaInTable.cs" />

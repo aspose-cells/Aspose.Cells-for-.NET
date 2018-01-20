@@ -386,7 +386,8 @@ namespace Aspose.Cells.Examples.CSharp
             //SettingPageSetup.Run();
             //SettingPrintingOptions.Run();
 
-            ChangingLayoutOfPivotTable.Run();
+            //ChangingLayoutOfPivotTable.Run();
+            GetPivotTableCellByDisplayName.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================
