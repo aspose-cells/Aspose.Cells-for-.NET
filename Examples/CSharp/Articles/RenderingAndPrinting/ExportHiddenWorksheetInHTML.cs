@@ -15,10 +15,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             //Output directory
             string outputDir = RunExamples.Get_OutputDirectory();
 
-            // ExStart:PreventExportingHiddenContentWhileSavingAsHTML
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
             // Create workbook object
             Workbook workbook = new Workbook(sourceDir + "sampleExportHiddenWorksheetInHTML.xlsx");
 
