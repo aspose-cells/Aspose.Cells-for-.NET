@@ -10,31 +10,30 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
     {
         public static void Run()
         {
-            // ExStart:PrintingSpecificRangeOfPages
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
             // Create workbook from source Excel file
-            Workbook workbook = new Workbook(dataDir + "SampleBook.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "samplePrintingRangeOfPages.xlsx");
 
-            string printerName = "";
+            string printerName = "doPDF 8";
 
-            while (string.IsNullOrEmpty(printerName) && string.IsNullOrWhiteSpace(printerName))
-            {
-                Console.WriteLine("Please Enter Your Printer Name:");
-                printerName = Console.ReadLine();
-            }
+            Console.Write("PrintingRangeOfPages example with WorkbookRender: ");
 
             // Print the worbook specifying the range of pages. Here we are printing pages 2-3
             WorkbookRender wr = new WorkbookRender(workbook, new ImageOrPrintOptions());
+
             try
             {
-                wr.ToPrinter(printerName, 1, 2);
+                wr.ToPrinter(printerName, 3, 4);
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
+
+            Console.Write("Press Enter to continue - PrintingRangeOfPages example with SheetRender");
+            Console.ReadLine();
 
             // Access first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -49,7 +48,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             {
                 Console.WriteLine(ex.Message);
             }
-            // ExEnd:PrintingSpecificRangeOfPages
+
+            Console.WriteLine("PrintingRangeOfPages executed successfully.");
         }
     }
 }

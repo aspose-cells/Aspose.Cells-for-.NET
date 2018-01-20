@@ -394,7 +394,10 @@ namespace Aspose.Cells.Examples.CSharp
             //ConvertChartToSvgImage.Run();
             //ExportChartToSvgWithViewBox.Run();
             //ExportHiddenWorksheetInHTML.Run();
-            PrintCommentWhileSavingToPdf.Run();
+            //PrintCommentWhileSavingToPdf.Run();
+            //PrintingRangeOfPages.Run();
+
+
 
 
 
