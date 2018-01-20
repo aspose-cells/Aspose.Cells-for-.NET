@@ -397,7 +397,7 @@ namespace Aspose.Cells.Examples.CSharp
             //PrintCommentWhileSavingToPdf.Run();
             //PrintingRangeOfPages.Run();
             //PrintingUsingSheetRender.Run();
-
+            PrintingUsingWorkbookRender.Run();
 
 
 
