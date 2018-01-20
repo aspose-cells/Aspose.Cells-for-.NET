@@ -9,12 +9,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
     {
         public static void Run()
         {
-            // ExStart:ExportChartToSvgWithViewBox
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create workbook object from source file
-            Workbook workbook = new Workbook(dataDir + "SampleChartBook.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleExportChartToSvgWithViewBox.xlsx");
 
             // Access first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -28,8 +30,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             opts.SVGFitToViewPort = true;
 
             // Save the chart to svg format
-            chart.ToImage(dataDir + "Image_out.svg", opts);
-            // ExEnd:ExportChartToSvgWithViewBox
+            chart.ToImage(outputDir + "outputExportChartToSvgWithViewBox.svg", opts);
+
+            Console.WriteLine("ExportChartToSvgWithViewBox executed successfully.");
         }
     }
 }
