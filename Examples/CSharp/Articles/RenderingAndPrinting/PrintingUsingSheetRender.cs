@@ -10,44 +10,33 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
     {
         public static void Run()
         {
-            // ExStart:PrintingExcelWorkbookUsingSheetRender
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
             // Instantiate a workbook with Excel file.
-            Workbook workbook = new Workbook(dataDir + "SampleBook.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "samplePrintingUsingSheetRender.xlsx");
 
-            string printerName = "";
+            string printerName = "doPDF 8";
 
-            while (string.IsNullOrEmpty(printerName) && string.IsNullOrWhiteSpace(printerName))
-            {
-                Console.WriteLine("Please Enter Your Printer Name:");
-                printerName = Console.ReadLine();
-            }
-
-            // Define a worksheet.
-            Worksheet worksheet;
-
-            // Get the second sheet.
-            worksheet = workbook.Worksheets[1];
+            // Access first worksheet
+            Worksheet worksheet = workbook.Worksheets[0];
 
             // Apply different Image/Print options.
             Aspose.Cells.Rendering.ImageOrPrintOptions options = new Aspose.Cells.Rendering.ImageOrPrintOptions();
             options.PrintingPage = PrintingPageType.Default;
             SheetRender sr = new SheetRender(worksheet, options);
 
-            Console.WriteLine("Printing SampleBook.xlsx");
             // Print the sheet.
             try
             {
                 sr.ToPrinter(printerName);
-                Console.WriteLine("Pinting finished.");
             }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }
-            // ExEnd:PrintingExcelWorkbookUsingSheetRender
+
+            Console.WriteLine("PrintingUsingSheetRender executed successfully.");
         }
     }
 }

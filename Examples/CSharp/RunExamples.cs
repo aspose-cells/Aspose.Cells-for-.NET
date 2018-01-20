@@ -396,7 +396,7 @@ namespace Aspose.Cells.Examples.CSharp
             //ExportHiddenWorksheetInHTML.Run();
             //PrintCommentWhileSavingToPdf.Run();
             //PrintingRangeOfPages.Run();
-
+            //PrintingUsingSheetRender.Run();
 
 
 

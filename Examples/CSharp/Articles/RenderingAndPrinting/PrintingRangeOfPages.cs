@@ -32,7 +32,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
                 Console.WriteLine(ex.Message);
             }
 
-            Console.Write("Press Enter to continue - PrintingRangeOfPages example with SheetRender");
+            Console.WriteLine();
+            Console.Write("Press Enter to continue - PrintingRangeOfPages example with SheetRender: ");
             Console.ReadLine();
 
             // Access first worksheet
