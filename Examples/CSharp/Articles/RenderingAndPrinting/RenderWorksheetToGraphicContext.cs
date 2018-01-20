@@ -9,12 +9,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
     {
         public static void Run()
         {
-            // ExStart:RenderWorksheetToGraphicContext
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create workbook object from source file
-            Workbook workbook = new Workbook(dataDir + "SampleBook.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleRenderWorksheetToGraphicContext.xlsx");
 
             // Access first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -35,8 +37,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             sr.ToImage(0, g, 0, 0);
 
             // Save the graphics context image in Png format
-            bmp.Save(dataDir + "OutputImage_out.png", System.Drawing.Imaging.ImageFormat.Png);
-            //ExEnd:RenderWorksheetToGraphicContext
+            bmp.Save(outputDir + "outputRenderWorksheetToGraphicContext.png", System.Drawing.Imaging.ImageFormat.Png);
+
+            Console.WriteLine("RenderWorksheetToGraphicContext executed successfully.");
         }
     }
 }
