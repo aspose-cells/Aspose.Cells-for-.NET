@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -9,11 +10,13 @@ namespace Aspose.Cells.Examples.CSharp.Articles.PivotTablesAndPivotCharts
     {
         public static void Run()
         {
-            // ExStart:SettingPivotTableOption
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            Workbook wb = new Workbook(dataDir + "input.xlsx");
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
+            Workbook wb = new Workbook(sourceDir + "sampleSettingPivotTableOption.xlsx");
 
             PivotTable pt = wb.Worksheets[0].PivotTables[0];
 
@@ -26,8 +29,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.PivotTablesAndPivotCharts
 
             pt.RefreshDataOnOpeningFile = false;
 
-            wb.Save(dataDir+ "output_out.xlsx");
-            // ExEnd:SettingPivotTableOption
+            wb.Save(outputDir + "outputSettingPivotTableOption.xlsx");
+
+            Console.WriteLine("SettingPivotTableOption executed successfully.");
         }
     }
 }
