@@ -404,7 +404,8 @@ namespace Aspose.Cells.Examples.CSharp
             //SetCustomFontFolders.Run();
             //SpecifyJobWhilePrinting.Run();
             //WorksheetToImageDesiredSize.Run();
-            WorksheetToImageUsingTiffCompression.Run();
+            //WorksheetToImageUsingTiffCompression.Run();
+            ApplyingSubtotalChangeSummaryDirection.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================

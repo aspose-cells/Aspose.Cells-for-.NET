@@ -9,12 +9,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.StylingAndDataFormatting
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create workbook from source Excel file
-            Workbook workbook = new Workbook(dataDir + "Book1.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleApplyingSubtotalChangeSummaryDirection.xlsx");
 
             // Access the first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -32,8 +34,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.StylingAndDataFormatting
             worksheet.Outline.SummaryRowBelow = true;
 
             // Save the excel file
-            workbook.Save(dataDir + "output_out.xlsx");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputApplyingSubtotalChangeSummaryDirection.xlsx");
+
+            Console.WriteLine("ApplyingSubtotalChangeSummaryDirection executed successfully.");
         }
     }
 }
