@@ -10,22 +10,17 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
     {
         public static void Run()
         {
-            // ExStart:SpecifyJobNameWhilePrinting
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            Console.WriteLine("SpecifyJobWhilePrinting Started Now.");
+
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
             // Create workbook object from source Excel file
-            Workbook workbook = new Workbook(dataDir + "SampleBook.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleSpecifyJobWhilePrinting.xlsx");
 
-            string printerName = "";
+            string printerName = "doPDF 8";
 
-            while (string.IsNullOrEmpty(printerName) && string.IsNullOrWhiteSpace(printerName))
-            {
-                Console.WriteLine("Please Enter Your Printer Name:");
-                printerName = Console.ReadLine();
-            }
-
-            string jobName = "Job Name while Printing with Aspose.Cells";
+            string jobName = "My Job Name";
 
             // Print workbook using WorkbookRender
             WorkbookRender wr = new WorkbookRender(workbook, new ImageOrPrintOptions());
@@ -38,8 +33,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
                 Console.WriteLine(ex.Message);
             }
 
+            Console.Write("Press Enter to continue...");
+            Console.ReadLine();
+
             // Access first worksheet
-            Worksheet worksheet = workbook.Worksheets[0];
+            Worksheet worksheet = workbook.Worksheets[1];
 
             // Print worksheet using SheetRender
             SheetRender sr = new SheetRender(worksheet, new ImageOrPrintOptions());
@@ -51,7 +49,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             {
                 Console.WriteLine(ex.Message);
             }
-            // ExEnd:SpecifyJobNameWhilePrinting
+
+            Console.WriteLine("SpecifyJobWhilePrinting executed successfully.");
         }
     }
 }
