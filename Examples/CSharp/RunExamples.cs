@@ -402,7 +402,8 @@ namespace Aspose.Cells.Examples.CSharp
             //SaveExcelIntoPdfWithMinimumSize.Run();
 
             //SetCustomFontFolders.Run();
-            SpecifyJobWhilePrinting.Run();
+            //SpecifyJobWhilePrinting.Run();
+            WorksheetToImageDesiredSize.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================

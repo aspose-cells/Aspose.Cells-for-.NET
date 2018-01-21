@@ -9,12 +9,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
     {
         public static void Run()
         {
-            // ExStart:WorksheetToImageDesiredSize
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create workbook object from source file
-            Workbook workbook = new Workbook(dataDir + "SampleBook.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleWorksheetToImageDesiredSize.xlsx");
 
             // Access first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -27,8 +29,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
 
             // Render sheet into image
             Aspose.Cells.Rendering.SheetRender sr = new Aspose.Cells.Rendering.SheetRender(worksheet, opts);
-            sr.ToImage(0, dataDir + "ImageWithDesiredSize_out.png");
-            // ExEnd:WorksheetToImageDesiredSize
+            sr.ToImage(0, outputDir + "outputWorksheetToImageDesiredSize.png");
+
+            Console.WriteLine("WorksheetToImageDesiredSize executed successfully.");
         }
     }
 }
