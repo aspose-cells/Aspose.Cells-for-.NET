@@ -414,6 +414,8 @@ namespace Aspose.Cells.Examples.CSharp
             //ExportedWorkSheetViaIFilePathProvider.Run();
             //ExpandTextFromRightToLeft.Run();
             //SpecificPagesToImage.Run();
+            //UseWorkbookRenderForImageConversion.Run();
+            WorksheetToAnImage.Run();
 
 
             //// CopyShapesBetweenWorksheets

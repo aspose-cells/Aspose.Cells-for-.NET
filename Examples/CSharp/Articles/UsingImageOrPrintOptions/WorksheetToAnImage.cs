@@ -10,12 +10,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.UsingImageOrPrintOptions
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             //Open template
-            Workbook book = new Workbook(dataDir + "Testbook1.xlsx");
+            Workbook book = new Workbook(sourceDir + "sampleWorksheetToAnImage.xlsx");
 
             // Get the first worksheet
             Worksheet sheet = book.Worksheets[0];
@@ -45,8 +47,10 @@ namespace Aspose.Cells.Examples.CSharp.Articles.UsingImageOrPrintOptions
             SheetRender sr = new SheetRender(sheet, options);
 
             // Render/save the image for the sheet
-            sr.ToImage(0, dataDir + @"SheetImage_out.tiff");
-            // ExEnd:1
+            int pageIndex = 3;
+            sr.ToImage(pageIndex, outputDir + @"outputWorksheetToAnImage_"+ (pageIndex + 1) + ".tiff");
+
+            Console.WriteLine("WorksheetToAnImage executed successfully.");
         }
     }
 }
