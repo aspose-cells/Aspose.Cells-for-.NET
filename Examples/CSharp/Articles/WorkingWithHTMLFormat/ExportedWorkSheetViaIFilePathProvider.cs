@@ -57,7 +57,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithHTMLFormat
                 // Creat html save option
                 HtmlSaveOptions options = new HtmlSaveOptions();
                 options.ExportActiveWorksheetOnly = true;
-                options.FilePathProvider = new FilePathProvider();
+                options.FilePathProvider = new FilePathProvider(outputDir);
 
                 // Sheet actual index which starts from 1 not from 0
                 int sheetIndex = i + 1;
@@ -83,9 +83,12 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithHTMLFormat
     // Implementation of IFilePathProvider interface
     public class FilePathProvider : IFilePathProvider
     {
+        string outputFPDir;
+
         // Constructor
-        public FilePathProvider()
+        public FilePathProvider(string outputDir)
         {
+            this.outputFPDir = outputDir;
         }
 
         // Gets the full path of the file by worksheet name when exporting worksheet to html separately.
@@ -94,11 +97,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithHTMLFormat
         {
             if ("Sheet2".Equals(sheetName))
             {
-                return @"file:///"  + "OtherSheets\\Sheet2.html";
+                return @"file:///"  + this.outputFPDir + "OtherSheets\\Sheet2_out.html";
             }
             else if ("Sheet3".Equals(sheetName))
             {
-                return @"file:///"  + "OtherSheets\\Sheet3.html";
+                return @"file:///" + this.outputFPDir + "OtherSheets\\Sheet3_out.html";
             }
 
             return "";
