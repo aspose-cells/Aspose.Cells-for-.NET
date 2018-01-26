@@ -410,7 +410,8 @@ namespace Aspose.Cells.Examples.CSharp
             //RenderCustomDateFormat.Run();
 
             //RenderGradientFillToHTML.Run();
-            ImplementIStreamProvider.Run();
+            //ImplementIStreamProvider.Run();
+            ExportedWorkSheetViaIFilePathProvider.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================
