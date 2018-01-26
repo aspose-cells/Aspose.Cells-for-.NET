@@ -112,13 +112,13 @@ namespace Aspose.Cells.Examples.CSharp
             // Uncomment the one you want to try out
 
             //Aspose.Cells for .NET v17.12
-            Charts.SetShapeTypeOfDataLabelsOfChart.Run();
-            HTML.ExportWorksheetCSSSeparatelyInOutputHTML.Run();
-            HTML.PrefixTableElementsStylesWithHtmlSaveOptions_TableCssIdProperty.Run();
-            Rendering.RenderOfficeAdd_InsWhileConvertingExcelToPdf.Run();
-            SmartMarkers.AutoPopulateSmartMarkerDataToOtherWorksheets.Run();
-            WorkbookSettings.Implement_Cell_FormulaLocal_SimilarTo_Range_FormulaLocal.Run();
-            Worksheets.UpdateDaysPreservingHistoryOfRevisionLogsInSharedWorkbook.Run();
+            //Charts.SetShapeTypeOfDataLabelsOfChart.Run();
+            //HTML.ExportWorksheetCSSSeparatelyInOutputHTML.Run();
+            //HTML.PrefixTableElementsStylesWithHtmlSaveOptions_TableCssIdProperty.Run();
+            //Rendering.RenderOfficeAdd_InsWhileConvertingExcelToPdf.Run();
+            //SmartMarkers.AutoPopulateSmartMarkerDataToOtherWorksheets.Run();
+            //WorkbookSettings.Implement_Cell_FormulaLocal_SimilarTo_Range_FormulaLocal.Run();
+            //Worksheets.UpdateDaysPreservingHistoryOfRevisionLogsInSharedWorkbook.Run();
 
             //Aspose.Cells for .NET v17.11
             //_Workbook.CreateSharedWorkbook.Run();
@@ -385,7 +385,6 @@ namespace Aspose.Cells.Examples.CSharp
             //WritingLargeExcelFiles.Run();
             //SettingPageSetup.Run();
             //SettingPrintingOptions.Run();
-
             //ChangingLayoutOfPivotTable.Run();
             //GetPivotTableCellByDisplayName.Run();
             //RemovePivotTable.Run();
@@ -400,12 +399,13 @@ namespace Aspose.Cells.Examples.CSharp
             //PrintingUsingWorkbookRender.Run();
             //RenderWorksheetToGraphicContext.Run();
             //SaveExcelIntoPdfWithMinimumSize.Run();
-
             //SetCustomFontFolders.Run();
             //SpecifyJobWhilePrinting.Run();
             //WorksheetToImageDesiredSize.Run();
             //WorksheetToImageUsingTiffCompression.Run();
             //ApplyingSubtotalChangeSummaryDirection.Run();
+
+            ConvertStringToNumericValue.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================
