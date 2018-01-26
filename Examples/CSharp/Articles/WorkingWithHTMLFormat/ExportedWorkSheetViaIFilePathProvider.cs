@@ -21,7 +21,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithHTMLFormat
         static void SetLicense()
         {
             string licPath = @"Aspose.Cells.lic";
-            licPath = "F:/Download/Misc/Aspose/Licenses/Aspose.Total.lic";
+            //licPath = "F:/Download/Misc/Aspose/Licenses/Aspose.Total.lic";//<<<<<<<You can also give your own license path
 
             Aspose.Cells.License lic = new Aspose.Cells.License();
             lic.SetLicense(licPath);
