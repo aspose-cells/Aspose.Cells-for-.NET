@@ -4,7 +4,6 @@ using Aspose.Cells;
 
 namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithHTMLFormat
 {
-    // ExStart:ExportedWorkSheetViaIFilePathProvider
     public class ExportedWorkSheetViaIFilePathProvider
     {        
         public static void Run()
