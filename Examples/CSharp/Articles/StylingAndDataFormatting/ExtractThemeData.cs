@@ -9,12 +9,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles.StylingAndDataFormatting
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
             // Create workbook object
-            Workbook workbook = new Workbook(dataDir + "source.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleExtractThemeData.xlsx");
 
             // Extract theme name applied to this workbook
             Console.WriteLine(workbook.Theme);
@@ -35,7 +34,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.StylingAndDataFormatting
             }
             else
             {
-                Console.WriteLine("Theme has not foreground color defined.");
+                Console.WriteLine("Theme has no Foreground Color defined.");
             }
 
             // Extract theme color applied to the bottom border of the cell if theme has border color defined
@@ -46,9 +45,10 @@ namespace Aspose.Cells.Examples.CSharp.Articles.StylingAndDataFormatting
             }
             else
             {
-                Console.WriteLine("Theme has not Border color defined.");
+                Console.WriteLine("Theme has no Border Color defined.");
             }
-            // ExEnd:1
+
+            Console.WriteLine("ExtractThemeData executed successfully.");
         }
     }
 }

@@ -405,7 +405,8 @@ namespace Aspose.Cells.Examples.CSharp
             //WorksheetToImageUsingTiffCompression.Run();
             //ApplyingSubtotalChangeSummaryDirection.Run();
 
-            ConvertStringToNumericValue.Run();
+            //ConvertStringToNumericValue.Run();
+            ExtractThemeData.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================
