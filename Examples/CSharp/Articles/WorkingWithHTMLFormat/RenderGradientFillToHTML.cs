@@ -21,7 +21,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithHTMLFormat
             // Save workbook to html format
             book.Save(outputDir + "outputRenderGradientFillToHTML.html");
 
-            Console.WriteLine("RenderGradientFillToHTML executed successfully.\r\n");
+            Console.WriteLine("RenderGradientFillToHTML executed successfully.");
         }
     }
 }
