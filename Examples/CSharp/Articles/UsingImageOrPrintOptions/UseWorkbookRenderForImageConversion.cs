@@ -11,18 +11,21 @@ namespace Aspose.Cells.Examples.CSharp.Articles.UsingImageOrPrintOptions
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            Aspose.Cells.Workbook wb = new Aspose.Cells.Workbook(dataDir + "Testbook1.xlsx", new Aspose.Cells.LoadOptions(Aspose.Cells.LoadFormat.Xlsx));
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
-            foreach (Worksheet ws in wb.Worksheets)
-            {
-                SheetRender sr = new SheetRender(ws, new ImageOrPrintOptions() { OnePagePerSheet = true, ImageFormat = ImageFormat.Jpeg });
-                sr.ToImage(0, dataDir  + "Img_" + ws.Index + "_out.jpg");
-            }
-            // ExEnd:1
+            Aspose.Cells.Workbook wb = new Aspose.Cells.Workbook(sourceDir + "sampleUseWorkbookRenderForImageConversion.xlsx");
+
+            ImageOrPrintOptions opts = new ImageOrPrintOptions();
+            opts.ImageFormat = ImageFormat.Tiff;
+
+            WorkbookRender wr = new WorkbookRender(wb, opts);
+            wr.ToImage(outputDir + "outputUseWorkbookRenderForImageConversion.tiff");
+
+            Console.WriteLine("UseWorkbookRenderForImageConversion executed successfully.");
         }
     }
 }

@@ -413,7 +413,7 @@ namespace Aspose.Cells.Examples.CSharp
             //ImplementIStreamProvider.Run();
             //ExportedWorkSheetViaIFilePathProvider.Run();
             //ExpandTextFromRightToLeft.Run();
-            SpecificPagesToImage.Run();
+            //SpecificPagesToImage.Run();
 
 
             //// CopyShapesBetweenWorksheets
