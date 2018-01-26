@@ -38,21 +38,22 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithHTMLFormat
     {
         public static void Run()
         {
-            // ExStart:ImplementIStreamProvider
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            string outputDir = dataDir + @"out\";
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create workbook
-            Workbook wb = new Workbook(dataDir + "sample.xlsx");
+            Workbook wb = new Workbook(sourceDir + "sampleImplementIStreamProvider.xlsx");
 
             HtmlSaveOptions options = new HtmlSaveOptions();
-            options.StreamProvider = new ExportStreamProvider(outputDir);
+            options.StreamProvider = new ExportStreamProvider(outputDir + @"out\");
 
             // Save into .html using HtmlSaveOptions
-            wb.Save(dataDir + "output_out.html", options);
-            // ExEnd:ImplementIStreamProvider
+            wb.Save(outputDir + "outputImplementIStreamProvider.html", options);
+
+            Console.WriteLine("ImplementIStreamProvider executed successfully.");
         }
     }
 }
