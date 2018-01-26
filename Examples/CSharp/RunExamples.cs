@@ -412,7 +412,8 @@ namespace Aspose.Cells.Examples.CSharp
             //RenderGradientFillToHTML.Run();
             //ImplementIStreamProvider.Run();
             //ExportedWorkSheetViaIFilePathProvider.Run();
-            ExpandTextFromRightToLeft.Run();
+            //ExpandTextFromRightToLeft.Run();
+            SpecificPagesToImage.Run();
 
 
             //// CopyShapesBetweenWorksheets

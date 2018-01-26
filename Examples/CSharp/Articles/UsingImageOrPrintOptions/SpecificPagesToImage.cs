@@ -12,18 +12,17 @@ namespace Aspose.Cells.Examples.CSharp.Articles.UsingImageOrPrintOptions
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Open a template excel file
-            Workbook book = new Workbook(dataDir + "Testbook1.xlsx");
+            Workbook book = new Workbook(sourceDir + "sampleSpecificPagesToImages.xlsx");
 
             // Get the first worksheet.
             Worksheet sheet = book.Worksheets[0];
-
-            // Get the second worksheet.
-            // Worksheet sheet = book.Worksheets[1];
 
             // Define ImageOrPrintOptions
             ImageOrPrintOptions imgOptions = new ImageOrPrintOptions();
@@ -31,18 +30,19 @@ namespace Aspose.Cells.Examples.CSharp.Articles.UsingImageOrPrintOptions
             // Specify the image format
             imgOptions.ImageFormat = System.Drawing.Imaging.ImageFormat.Jpeg;
 
-            // If you want entire sheet as a singe image
-            imgOptions.OnePagePerSheet = true;
-
             // Render the sheet with respect to specified image/print options
             SheetRender sr = new SheetRender(sheet, imgOptions);
 
-            // Render the image for the sheet
-            Bitmap bitmap = sr.ToImage(0);
+            //Specify page index to be rendered
+            int idxPage = 3;
+
+            // Render the third image for the sheet
+            Bitmap bitmap = sr.ToImage(idxPage);
 
             // Save the image file
-            bitmap.Save(dataDir + "SheetImage_out.jpg");
-            // ExEnd:1
+            bitmap.Save(outputDir + "outputSpecificPagesToImage_"+ (idxPage+1)+".jpg");
+
+            Console.WriteLine("SpecificPagesToImage executed successfully.");
         }
     }
 }
