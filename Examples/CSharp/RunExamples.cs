@@ -406,7 +406,8 @@ namespace Aspose.Cells.Examples.CSharp
             //ApplyingSubtotalChangeSummaryDirection.Run();
 
             //ConvertStringToNumericValue.Run();
-            ExtractThemeData.Run();
+            //ExtractThemeData.Run();
+            RenderCustomDateFormat.Run();
 
             //// CopyShapesBetweenWorksheets
             //// =====================================================

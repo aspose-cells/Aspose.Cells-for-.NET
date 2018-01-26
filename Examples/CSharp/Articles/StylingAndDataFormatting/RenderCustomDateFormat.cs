@@ -9,13 +9,16 @@ namespace Aspose.Cells.Examples.CSharp.Articles.StylingAndDataFormatting
     {
         public static void Run()
         {
-            // ExStart:RenderCustomDateFormatPatterngandgemmdd
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
 
-            Workbook workbook = new Workbook(dataDir + "SourceFile.xlsx");
-            workbook.Save(dataDir + "CustomDateFormat_out.pdf");
-            // ExEnd:RenderCustomDateFormatPatterngandgemmdd
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
+
+            Workbook workbook = new Workbook(sourceDir + "sampleRenderCustomDateFormat.xlsx");
+            workbook.Save(outputDir + "outputRenderCustomDateFormat.pdf");
+
+            Console.WriteLine("RenderCustomDateFormat executed successfully.");
         }
     }
 }
