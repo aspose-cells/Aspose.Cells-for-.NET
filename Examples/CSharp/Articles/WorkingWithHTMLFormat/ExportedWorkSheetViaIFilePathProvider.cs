@@ -21,7 +21,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithHTMLFormat
         static void SetLicense()
         {
             string licPath = @"Aspose.Cells.lic";
-            //licPath = "F:/Download/Misc/Aspose/Licenses/Aspose.Total.lic";//<<<<<<<You can also give your own license path
+            licPath = "F:/Download/Misc/Aspose/Licenses/Aspose.Total.lic";//<<<<<<<You can also give your own license path
 
             Aspose.Cells.License lic = new Aspose.Cells.License();
             lic.SetLicense(licPath);
@@ -45,7 +45,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithHTMLFormat
             Directory.CreateDirectory(outputDir + "OtherSheets");
 
             // Load sample workbook from your directory
-            Workbook wb = new Workbook(sourceDir + "sampleTestFilePathProvider.xlsx");
+            Workbook wb = new Workbook(sourceDir + "sampleExportedWorkSheetViaIFilePathProvider.xlsx");
 
             // Save worksheets to separate html files
             // Because of IFilePathProvider, hyperlinks will not be broken.
