@@ -112,13 +112,13 @@ namespace Aspose.Cells.Examples.CSharp
             // Uncomment the one you want to try out
 
             //Aspose.Cells for .NET v17.12
-            //Charts.SetShapeTypeOfDataLabelsOfChart.Run();
-            //HTML.ExportWorksheetCSSSeparatelyInOutputHTML.Run();
-            //HTML.PrefixTableElementsStylesWithHtmlSaveOptions_TableCssIdProperty.Run();
-            //Rendering.RenderOfficeAdd_InsWhileConvertingExcelToPdf.Run();
-            //SmartMarkers.AutoPopulateSmartMarkerDataToOtherWorksheets.Run();
-            //WorkbookSettings.Implement_Cell_FormulaLocal_SimilarTo_Range_FormulaLocal.Run();
-            //Worksheets.UpdateDaysPreservingHistoryOfRevisionLogsInSharedWorkbook.Run();
+            Charts.SetShapeTypeOfDataLabelsOfChart.Run();
+            HTML.ExportWorksheetCSSSeparatelyInOutputHTML.Run();
+            HTML.PrefixTableElementsStylesWithHtmlSaveOptions_TableCssIdProperty.Run();
+            Rendering.RenderOfficeAdd_InsWhileConvertingExcelToPdf.Run();
+            SmartMarkers.AutoPopulateSmartMarkerDataToOtherWorksheets.Run();
+            WorkbookSettings.Implement_Cell_FormulaLocal_SimilarTo_Range_FormulaLocal.Run();
+            Worksheets.UpdateDaysPreservingHistoryOfRevisionLogsInSharedWorkbook.Run();
 
             //Aspose.Cells for .NET v17.11
             //_Workbook.CreateSharedWorkbook.Run();
@@ -186,7 +186,6 @@ namespace Aspose.Cells.Examples.CSharp
             //LoadingSavingConvertingAndManaging.GetWarningsWhileLoadingExcelFile.Run();
             //LoadingSavingConvertingAndManaging.TrimLeadingBlankRowsAndColumnsWhileExportingSpreadsheetsToCSVFormat.Run();
             //RowsColumns.ConvertTextToColumns.Run();
-
 
             //Aspose.Cells for .NET v17.2.0
             //Introduction.FirstApplication.Run();
@@ -404,18 +403,16 @@ namespace Aspose.Cells.Examples.CSharp
             //WorksheetToImageDesiredSize.Run();
             //WorksheetToImageUsingTiffCompression.Run();
             //ApplyingSubtotalChangeSummaryDirection.Run();
-
             //ConvertStringToNumericValue.Run();
             //ExtractThemeData.Run();
             //RenderCustomDateFormat.Run();
-
             //RenderGradientFillToHTML.Run();
             //ImplementIStreamProvider.Run();
             //ExportedWorkSheetViaIFilePathProvider.Run();
             //ExpandTextFromRightToLeft.Run();
             //SpecificPagesToImage.Run();
             //UseWorkbookRenderForImageConversion.Run();
-            WorksheetToAnImage.Run();
+            //WorksheetToAnImage.Run();
 
 
             //// CopyShapesBetweenWorksheets
