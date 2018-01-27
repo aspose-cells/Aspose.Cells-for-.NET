@@ -9,12 +9,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine
     {
         public static void Run()
         {
-            // ExStart:CalculateArrayFormula
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create workbook from source excel file
-            Workbook workbook = new Workbook(dataDir + "DataTable.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleCalculationOfArrayFormula.xlsx");
 
             // Access first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -26,8 +28,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine
             workbook.CalculateFormula();
 
             // Save the workbook in pdf format
-            workbook.Save(dataDir + "output_out.pdf");
-            // ExEnd:CalculateArrayFormula
+            workbook.Save(outputDir + "outputCalculationOfArrayFormula.pdf");
+
+            Console.WriteLine("CalculationOfArrayFormula executed successfully.");
         }
     }
 }
