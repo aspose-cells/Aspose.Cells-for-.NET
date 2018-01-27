@@ -414,7 +414,8 @@ namespace Aspose.Cells.Examples.CSharp
             //UseWorkbookRenderForImageConversion.Run();
             //WorksheetToAnImage.Run();
 
-            AddWorkbookScopedNamedRange.Run();
+            //AddWorkbookScopedNamedRange.Run();
+            WorksheetNamedRange.Run();
 
 
             //// CopyShapesBetweenWorksheets

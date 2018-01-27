@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -8,9 +9,8 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkbookScopedNamedRanges
     {
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Output directory
+            string outputDir = RunExamples.Get_OutputDirectory();
 
             // Create a new Workbook object
             Workbook workbook = new Workbook();
@@ -27,10 +27,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkbookScopedNamedRanges
             localRange.Name = "Sheet1!local";
 
             // Save the workbook
-            workbook.Save(dataDir+ "ouput.out.xls");
-            // ExEnd:1
-            
-            
+            workbook.Save(outputDir + "outputWorksheetNamedRange.xlsx");
+
+            Console.WriteLine("WorksheetNamedRange executed successfully.");
         }
     }
 }
