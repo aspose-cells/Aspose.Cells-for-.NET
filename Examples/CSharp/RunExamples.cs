@@ -416,7 +416,8 @@ namespace Aspose.Cells.Examples.CSharp
 
             //AddWorkbookScopedNamedRange.Run();
             //WorksheetNamedRange.Run();
-            CalculationOfArrayFormula.Run();
+            //CalculationOfArrayFormula.Run();
+            DecreaseCalculationTime.Run();
 
 
             //// CopyShapesBetweenWorksheets

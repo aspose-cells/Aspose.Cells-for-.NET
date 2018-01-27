@@ -15,16 +15,18 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine
 
             // Test calculation time after setting recursive false
             TestCalcTimeRecursive(false);
-            // ExEnd:1           
-            
+
+            Console.WriteLine("DecreaseCalculationTime executed successfully.");
+
         }
         // ExStart:TestCalcTimeRecursive
         static void TestCalcTimeRecursive(bool rec)
         {
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+            //Source directory
+            string sourceDir = RunExamples.Get_SourceDirectory();
+            
             // Load your sample workbook
-            Workbook wb = new Workbook(dataDir + "sample.xlsx");
+            Workbook wb = new Workbook(sourceDir + "sampleDecreaseCalculationTime.xlsx");
 
             // Access first worksheet
             Worksheet ws = wb.Worksheets[0];
@@ -54,6 +56,6 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine
             Console.WriteLine("Recursive " + rec + ": " + estimatedTime + " seconds");
 
         }
-        // ExEnd:TestCalcTimeRecursive
+        
     }
 }
