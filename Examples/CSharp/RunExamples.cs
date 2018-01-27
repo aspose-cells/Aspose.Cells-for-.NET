@@ -418,7 +418,8 @@ namespace Aspose.Cells.Examples.CSharp
             //WorksheetNamedRange.Run();
             //CalculationOfArrayFormula.Run();
             //DecreaseCalculationTime.Run();
-            SetExternalLinksInFormulas.Run();
+            //SetExternalLinksInFormulas.Run();
+            SettingSharedFormula.Run();
 
 
             //// CopyShapesBetweenWorksheets
