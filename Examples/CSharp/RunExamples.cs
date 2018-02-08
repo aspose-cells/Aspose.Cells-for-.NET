@@ -113,7 +113,7 @@ namespace Aspose.Cells.Examples.CSharp
 
             //Aspose.Cells for .NET v18.1
             //Charts.HandleAutomaticUnitsOfChartAxisLikeMicrosoftExcel.Run();
-            HTML.ExcludeUnusedStylesInExcelToHTML.Run();
+            //HTML.ExcludeUnusedStylesInExcelToHTML.Run();
             HTML.ExportDocumentWorkbookAndWorksheetPropertiesInHTML.Run();
             PivotTables.FindAndRefreshNestedOrChildrenPivotTables.Run();
             PivotTables.ParsingPivotCachedRecordsWhileLoadingExcelFile.Run();
