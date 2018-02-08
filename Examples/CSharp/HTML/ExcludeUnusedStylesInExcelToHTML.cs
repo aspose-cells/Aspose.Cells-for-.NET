@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp.HTML
 {
-    class ExcludeUnusedStylesInExcelToHTML 
+    class ExcludeUnusedStylesInExcelToHTML
     {
         public static void Run()
         {

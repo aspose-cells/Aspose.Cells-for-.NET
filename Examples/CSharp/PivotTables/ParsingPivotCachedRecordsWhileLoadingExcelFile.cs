@@ -8,7 +8,7 @@ using Aspose.Cells.Pivot;
 
 namespace Aspose.Cells.Examples.CSharp.PivotTables
 {
-    class ParsingPivotCachedRecordsWhileLoadingExcelFile 
+    class ParsingPivotCachedRecordsWhileLoadingExcelFile
     {
         public static void Run()
         {
