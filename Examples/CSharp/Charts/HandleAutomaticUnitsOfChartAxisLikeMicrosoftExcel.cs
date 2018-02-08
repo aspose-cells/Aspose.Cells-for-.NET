@@ -8,7 +8,7 @@ using Aspose.Cells.Charts;
 
 namespace Aspose.Cells.Examples.CSharp.Charts
 {
-    class HandleAutomaticUnitsOfChartAxisLikeMicrosoftExcel
+    class HandleAutomaticUnitsOfChartAxisLikeMicrosoftExcel 
     {
         public static void Run()
         {
