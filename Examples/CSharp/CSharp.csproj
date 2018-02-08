@@ -344,6 +344,7 @@
     <Compile Include="Charts\ChangeChartPosition.cs" />
     <Compile Include="Charts\ChartRendering.cs" />
     <Compile Include="Charts\ChartToPdf.cs" />
+    <Compile Include="Charts\HandleAutomaticUnitsOfChartAxisLikeMicrosoftExcel.cs" />
     <Compile Include="Charts\SetShapeTypeOfDataLabelsOfChart.cs" />
     <Compile Include="Charts\SetValuesFormatCodeOfChartSeries.cs" />
     <Compile Include="Charts\HowToCreateChart.cs" />
@@ -562,6 +563,8 @@
     <Compile Include="Formulas\ProcessDataUsingR1C1.cs" />
     <Compile Include="Formulas\ProcessDataUsingAddinfunction.cs" />
     <Compile Include="Formulas\ProcessDataUsingBuiltinfunction.cs" />
+    <Compile Include="HTML\ExcludeUnusedStylesInExcelToHTML.cs" />
+    <Compile Include="HTML\ExportDocumentWorkbookAndWorksheetPropertiesInHTML.cs" />
     <Compile Include="HTML\ExportWorksheetCSSSeparatelyInOutputHTML.cs" />
     <Compile Include="HTML\PrefixTableElementsStylesWithHtmlSaveOptions_TableCssIdProperty.cs" />
     <Compile Include="Introduction\CheckVersionNumber.cs" />
@@ -585,6 +588,8 @@
     <Compile Include="LoadingSavingConvertingAndManaging\ReadNumbersSpreadsheet.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\SpecifyHtmlCrossTypeInOutputHTML.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\TrimLeadingBlankRowsAndColumnsWhileExportingSpreadsheetsToCSVFormat.cs" />
+    <Compile Include="PivotTables\FindAndRefreshNestedOrChildrenPivotTables.cs" />
+    <Compile Include="PivotTables\ParsingPivotCachedRecordsWhileLoadingExcelFile.cs" />
     <Compile Include="PivotTable\ConsolidationFunctions.cs" />
     <Compile Include="PivotTable\CustomizePivotTableGlobalSettings.cs" />
     <Compile Include="PivotTable\SpecifyCompatibility.cs" />
@@ -598,6 +603,7 @@
     <Compile Include="PivotTable\CreatePivotTable.cs" />
     <Compile Include="PivotTable\ChangeSourceData.cs" />
     <Compile Include="Rendering\ControlLoadingOfExternalResourcesInExcelToPDF.cs" />
+    <Compile Include="Rendering\CreatePdfBookmarkEntryForChartSheet.cs" />
     <Compile Include="Rendering\ExportRangeOfCellsInWorksheetToImage.cs" />
     <Compile Include="Rendering\IgnoreErrorsWhileRenderingExcelToPdf.cs" />
     <Compile Include="Rendering\OutputBlankPageWhenThereIsNothingToPrint.cs" />
