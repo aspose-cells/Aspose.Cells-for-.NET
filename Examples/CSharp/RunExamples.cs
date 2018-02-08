@@ -115,7 +115,7 @@ namespace Aspose.Cells.Examples.CSharp
             //Charts.HandleAutomaticUnitsOfChartAxisLikeMicrosoftExcel.Run();
             //HTML.ExcludeUnusedStylesInExcelToHTML.Run();
             //HTML.ExportDocumentWorkbookAndWorksheetPropertiesInHTML.Run();
-            PivotTables.FindAndRefreshNestedOrChildrenPivotTables.Run();
+            //PivotTables.FindAndRefreshNestedOrChildrenPivotTables.Run();
             PivotTables.ParsingPivotCachedRecordsWhileLoadingExcelFile.Run();
             //Rendering.CreatePdfBookmarkEntryForChartSheet.Run();
 
