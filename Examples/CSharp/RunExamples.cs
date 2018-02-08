@@ -112,12 +112,12 @@ namespace Aspose.Cells.Examples.CSharp
             // Uncomment the one you want to try out
 
             //Aspose.Cells for .NET v18.1
-            Charts.HandleAutomaticUnitsOfChartAxisLikeMicrosoftExcel.Run();
+            //Charts.HandleAutomaticUnitsOfChartAxisLikeMicrosoftExcel.Run();
             HTML.ExcludeUnusedStylesInExcelToHTML.Run();
             HTML.ExportDocumentWorkbookAndWorksheetPropertiesInHTML.Run();
             PivotTables.FindAndRefreshNestedOrChildrenPivotTables.Run();
             PivotTables.ParsingPivotCachedRecordsWhileLoadingExcelFile.Run();
-            Rendering.CreatePdfBookmarkEntryForChartSheet.Run();
+            //Rendering.CreatePdfBookmarkEntryForChartSheet.Run();
 
 
             //Aspose.Cells for .NET v17.12
