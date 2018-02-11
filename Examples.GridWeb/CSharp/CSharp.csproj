@@ -1224,7 +1224,6 @@
     <Content Include="js\bootstrap\bootstrap-vertical-tabs\LICENSE" />
     <Content Include="js\bootstrap\bootstrap-vertical-tabs\package.json" />
     <Content Include="js\bootstrap\bootstrap-vertical-tabs\README.md" />
-    <Content Include="Views\GridWebFAQ\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Start\" />
