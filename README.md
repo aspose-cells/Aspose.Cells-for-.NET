@@ -22,7 +22,7 @@ Directory | Description
 
 * **Website:** [www.aspose.com](https://www.aspose.com)
 * **Product Home:** [Aspose.Cells for .NET](https://products.aspose.com/cells/net)
-* **Download:** [Download Aspose.Cells for .NET](http://maven.aspose.com/repository/simple/ext-release-local/com/aspose/aspose-cells/)
+* **Download:** [Download Aspose.Cells for .NET](https://www.nuget.org/packages/Aspose.Cells)
 * **Documentation:** [Aspose.Cells for .NET Documentation](https://docs.aspose.com//display/cellsnet/Home)
 * **Forum:** [Aspose.Cells for .NET Forum](https://forum.aspose.com/c/cells)
 * **Blog:** [Aspose.Cells for .NET Blog](https://blog.aspose.com/category/aspose-products/aspose-cells-product-family/)
