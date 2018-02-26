@@ -39,7 +39,7 @@
   <ItemGroup>
     <Reference Include="Aspose.Cells">
       <SpecificVersion>False</SpecificVersion>
-	  <HintPath>..\packages\Aspose.Cells.18.1.0\lib\net40\Aspose.Cells.dll</HintPath>
+      <HintPath>..\packages\Aspose.Cells.18.2.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
@@ -657,6 +657,7 @@
     <Compile Include="Tables\SetCommentOfTableOrListObject.cs" />
     <Compile Include="Tables\CreatingListObject.cs" />
     <Compile Include="Tables\FormataListObject.cs" />
+    <Compile Include="WorkbookSettings\ControlExternalResourcesUsingWorkbookSetting_StreamProvider.cs" />
     <Compile Include="WorkbookSettings\ImplementErrorsAndBooleanValueInRussianOrAnyOtherLanguage.cs" />
     <Compile Include="WorkbookSettings\Implement_Cell_FormulaLocal_SimilarTo_Range_FormulaLocal.cs" />
     <Compile Include="WorkbookVBAProject\CheckifVBAProjectisProtectedandLockedforViewing.cs" />
