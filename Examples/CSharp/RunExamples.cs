@@ -115,6 +115,7 @@ namespace Aspose.Cells.Examples.CSharp
             //WorkbookSettings.ControlExternalResourcesUsingWorkbookSetting_StreamProvider.Run();
             //_Workbook.FilterDefinedNamesWhileLoadingWorkbook.Run();
             DrawingObjects.SetMarginsOfCommentOrShapeInsideTheWorksheet.Run();
+            Data.SpecifyFormulaFieldsWhileImportingDataToWorksheet.Run();
 
 
             //Aspose.Cells for .NET v18.1
