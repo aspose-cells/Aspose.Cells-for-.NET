@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp._Workbook
 {
-    class FilterDefinedNamesWhileLoadingWorkbook
+    class FilterDefinedNamesWhileLoadingWorkbook 
     {
         //Source directory
         static string sourceDir = RunExamples.Get_SourceDirectory();

@@ -565,6 +565,7 @@
     <Compile Include="Formulas\ProcessDataUsingR1C1.cs" />
     <Compile Include="Formulas\ProcessDataUsingAddinfunction.cs" />
     <Compile Include="Formulas\ProcessDataUsingBuiltinfunction.cs" />
+    <Compile Include="Formulas\SpecifyMaximumRowsOfSharedFormula.cs" />
     <Compile Include="HTML\ExcludeUnusedStylesInExcelToHTML.cs" />
     <Compile Include="HTML\ExportDocumentWorkbookAndWorksheetPropertiesInHTML.cs" />
     <Compile Include="HTML\ExportWorksheetCSSSeparatelyInOutputHTML.cs" />
