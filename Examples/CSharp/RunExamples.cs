@@ -112,7 +112,8 @@ namespace Aspose.Cells.Examples.CSharp
             // Uncomment the one you want to try out
 
             //Aspose.Cells for .NET v18.2
-            WorkbookSettings.ControlExternalResourcesUsingWorkbookSetting_StreamProvider.Run();
+            //WorkbookSettings.ControlExternalResourcesUsingWorkbookSetting_StreamProvider.Run();
+            _Workbook.FilterDefinedNamesWhileLoadingWorkbook.Run();
 
 
             //Aspose.Cells for .NET v18.1

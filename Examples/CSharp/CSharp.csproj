@@ -666,6 +666,7 @@
     <Compile Include="WorkbookVBAProject\CopyVBAMacroUserFormDesignerStorageToWorkbook.cs" />
     <Compile Include="Workbook\AddDigitalSignatureToAnAlreadySignedExcelFile.cs" />
     <Compile Include="Workbook\CreateSharedWorkbook.cs" />
+    <Compile Include="Workbook\FilterDefinedNamesWhileLoadingWorkbook.cs" />
     <Compile Include="Workbook\PasswordProtectOrUnprotectSharedWorkbook.cs" />
     <Compile Include="Workbook\ReadAndWriteExternalConnectionOfXLSBFile.cs" />
     <Compile Include="Worksheets\UpdateDaysPreservingHistoryOfRevisionLogsInSharedWorkbook.cs" />
