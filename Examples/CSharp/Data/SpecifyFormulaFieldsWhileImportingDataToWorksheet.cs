@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp.Data
 {
-    class SpecifyFormulaFieldsWhileImportingDataToWorksheet 
+    class SpecifyFormulaFieldsWhileImportingDataToWorksheet
     {
         //Output directory
         static string outputDir = RunExamples.Get_OutputDirectory();

@@ -6,7 +6,7 @@ using Aspose.Cells.Drawing;
 
 namespace Aspose.Cells.Examples.CSharp.DrawingObjects
 {
-    class SetMarginsOfCommentOrShapeInsideTheWorksheet 
+    class SetMarginsOfCommentOrShapeInsideTheWorksheet
     {
         //Source directory
         static string sourceDir = RunExamples.Get_SourceDirectory();

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp.Formulas
 {
-    class SpecifyMaximumRowsOfSharedFormula 
+    class SpecifyMaximumRowsOfSharedFormula
     {
         //Output directory
         static string outputDir = RunExamples.Get_OutputDirectory();

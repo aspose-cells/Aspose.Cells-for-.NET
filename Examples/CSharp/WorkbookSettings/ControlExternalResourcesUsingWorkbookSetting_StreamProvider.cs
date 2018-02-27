@@ -8,7 +8,7 @@ using System.Drawing.Imaging;
 
 namespace Aspose.Cells.Examples.CSharp.WorkbookSettings
 {
-    class ControlExternalResourcesUsingWorkbookSetting_StreamProvider 
+    class ControlExternalResourcesUsingWorkbookSetting_StreamProvider
     {
         //Source directory
         static string sourceDir = RunExamples.Get_SourceDirectory();
