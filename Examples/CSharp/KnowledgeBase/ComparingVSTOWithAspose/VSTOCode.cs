@@ -1,4 +1,13 @@
-﻿using System;
+﻿/*
+<?xml version="1.0" encoding="utf-8"?>
+<packages>
+  <package id="Aspose.Cells" version="18.2" targetFramework="net40" />
+  <package id="Microsoft.Office.Interop.Excel" version="15.0.4795.1000" targetFramework="net40" />
+</packages>*/
+
+
+/*
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -53,3 +62,4 @@ namespace Aspose.Cells.Examples.CSharp.KnowledgeBase.ComparingVSTOWithAspose
         }
     }
 }
+*/
