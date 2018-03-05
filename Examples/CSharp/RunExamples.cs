@@ -126,7 +126,8 @@ namespace Aspose.Cells.Examples.CSharp
             //ReadManipulateExcel2016Charts.Run();
             //SetShapeTypeOfDataLabelsOfChart.Run();
             //SettingCategoryData.Run();
-            SettingChartsData.Run();
+            //SettingChartsData.Run();
+            SetValuesFormatCodeOfChartSeries.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();
