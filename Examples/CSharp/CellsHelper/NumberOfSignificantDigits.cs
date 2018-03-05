@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Aspose.Cells.Examples.CSharp.CellsHelperClass
+namespace Aspose.Cells.Examples.CSharp._CellsHelper
 {
     class NumberOfSignificantDigits
     {
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            //Output directory
-            string outputDir = RunExamples.Get_OutputDirectory();
-
             // Set the number of significant digits
             CellsHelper.SignificantDigits = 15;
 
@@ -31,8 +31,7 @@ namespace Aspose.Cells.Examples.CSharp.CellsHelperClass
             // Save the workbook
             workbook.Save(outputDir + "outputNumberOfSignificantDigits.xlsx");
 
-            Console.WriteLine("NumberOfSignificantDigits executed successfully.\r\n");
-
+            Console.WriteLine("NumberOfSignificantDigits executed successfully.");
         }
     }
 }

@@ -27,7 +27,6 @@ using Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes;
 using Aspose.Cells.Examples.CSharp.Articles.ManageDatabaseConnection;
 using Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules;
 using Aspose.Cells.Examples.CSharp.Articles.ManageConditionalFormatting;
-using Aspose.Cells.Examples.CSharp.CellsHelperClass;
 using Aspose.Cells.Examples.CSharp.Charts;
 using Aspose.Cells.Examples.CSharp.Charts.InsertingControlsintoCharts;
 using Aspose.Cells.Examples.CSharp.Charts.ManipulateChart;
@@ -109,7 +108,14 @@ namespace Aspose.Cells.Examples.CSharp
                 Console.WriteLine(ex.Message);
             }
 
-            DynamicFormulas.Run();
+            int iii = 0;
+
+            //DrawingObjects.SetMarginsOfCommentOrShapeInsideTheWorksheet.Run();
+            _CellsHelper.IndexToName.Run();
+            _CellsHelper.MergeFiles.Run();
+            _CellsHelper.NameToIndex.Run();
+            _CellsHelper.NumberOfSignificantDigits.Run();
+            _CellsHelper.UsingCustomImplementationFactoryToCreateCustomImplementationOfMemoryStream.Run();
 
             return;
 

@@ -325,10 +325,10 @@
     <Compile Include="Articles\WorkingWithHTMLFormat\ExpandTextFromRightToLeft.cs" />
     <Compile Include="Articles\WorkingWithHTMLFormat\ImplementIStreamProvider.cs" />
     <Compile Include="Articles\WorkingWithHTMLFormat\RenderGradientFillToHTML.cs" />
-    <Compile Include="CellsHelperClass\MergeFiles.cs" />
-    <Compile Include="CellsHelperClass\NameToIndex.cs" />
-    <Compile Include="CellsHelperClass\IndexToName.cs" />
-    <Compile Include="CellsHelperClass\NumberOfSignificantDigits.cs" />
+    <Compile Include="CellsHelper\MergeFiles.cs" />
+    <Compile Include="CellsHelper\NameToIndex.cs" />
+    <Compile Include="CellsHelper\IndexToName.cs" />
+    <Compile Include="CellsHelper\NumberOfSignificantDigits.cs" />
     <Compile Include="CellsHelper\UsingCustomImplementationFactoryToCreateCustomImplementationOfMemoryStream.cs" />
     <Compile Include="Charts\Applying3DFormat.cs" />
     <Compile Include="Charts\ChangeChartPosition.cs" />
@@ -735,9 +735,7 @@
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="AdvancedTopics\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
