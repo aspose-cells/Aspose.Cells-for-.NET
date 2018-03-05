@@ -10,14 +10,14 @@ namespace Aspose.Cells.Examples.CSharp.Charts
 {
     class SetShapeTypeOfDataLabelsOfChart 
     {
+        //Source directory
+        static string sourceDir = RunExamples.Get_SourceDirectory();
+
+        //Output directory
+
+        static string outputDir = RunExamples.Get_OutputDirectory();
         public static void Run()
         {
-            //Source directory
-            string sourceDir = RunExamples.Get_SourceDirectory();
-
-            //Output directory
-            string outputDir = RunExamples.Get_OutputDirectory();
-
             //Load source Excel file
             Workbook wb = new Workbook(sourceDir + "sampleSetShapeTypeOfDataLabelsOfChart.xlsx");
 
