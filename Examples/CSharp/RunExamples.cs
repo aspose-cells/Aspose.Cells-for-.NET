@@ -108,33 +108,8 @@ namespace Aspose.Cells.Examples.CSharp
                 Console.WriteLine(ex.Message);
             }
 
-            int iii = 0;
-
-            //_CellsHelper.IndexToName.Run();
-            //_CellsHelper.MergeFiles.Run();
-            //_CellsHelper.NameToIndex.Run();
-            //_CellsHelper.NumberOfSignificantDigits.Run();
-            //_CellsHelper.UsingCustomImplementationFactoryToCreateCustomImplementationOfMemoryStream.Run();
-
-            //UsingSparklines.Run();
-            //Applying3DFormat.Run();
-            //ChangeChartSizeAndPosition.Run();
-            //ChartRendering.Run();
-            //ChartToPdf.Run();
-            //HandleAutomaticUnitsOfChartAxisLikeMicrosoftExcel.Run();
-            //HowToCreateChart.Run();
-            //ReadManipulateExcel2016Charts.Run();
-            //SetShapeTypeOfDataLabelsOfChart.Run();
-            //SettingCategoryData.Run();
-            //SettingChartsData.Run();
-            SetValuesFormatCodeOfChartSeries.Run();
-
-            Console.Write("Press key...");
-            Console.ReadKey();
-            return;
 
             // Uncomment the one you want to try out
-
             //Aspose.Cells for .NET v18.2
             //WorkbookSettings.ControlExternalResourcesUsingWorkbookSetting_StreamProvider.Run();
             //_Workbook.FilterDefinedNamesWhileLoadingWorkbook.Run();
@@ -458,6 +433,32 @@ namespace Aspose.Cells.Examples.CSharp
             //DecreaseCalculationTime.Run();
             //SetExternalLinksInFormulas.Run();
             //SettingSharedFormula.Run();
+
+
+            //int iii = 0;
+
+            //_CellsHelper.IndexToName.Run();
+            //_CellsHelper.MergeFiles.Run();
+            //_CellsHelper.NameToIndex.Run();
+            //_CellsHelper.NumberOfSignificantDigits.Run();
+            //_CellsHelper.UsingCustomImplementationFactoryToCreateCustomImplementationOfMemoryStream.Run();
+
+            //UsingSparklines.Run();
+            //Applying3DFormat.Run();
+            //ChangeChartSizeAndPosition.Run();
+            //ChartRendering.Run();
+            //ChartToPdf.Run();
+            //HandleAutomaticUnitsOfChartAxisLikeMicrosoftExcel.Run();
+            //HowToCreateChart.Run();
+            //ReadManipulateExcel2016Charts.Run();
+            //SetShapeTypeOfDataLabelsOfChart.Run();
+            //SettingCategoryData.Run();
+            //SettingChartsData.Run();
+            //SetValuesFormatCodeOfChartSeries.Run();
+
+            //Console.Write("Press key...");
+            //Console.ReadKey();
+            //return;
 
 
             //// CopyShapesBetweenWorksheets
