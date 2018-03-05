@@ -8,15 +8,16 @@ namespace Aspose.Cells.Examples.CSharp.Charts
 {
     public class ReadManipulateExcel2016Charts
     {
+        //Source directory
+        static string sourceDir = RunExamples.Get_SourceDirectory();
+
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:ReadManipulateExcel2016Charts
-
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
             //Load source excel file containing excel 2016 charts
-            Workbook wb = new Workbook(dataDir + "excel2016Charts.xlsx");
+            Workbook wb = new Workbook(sourceDir + "sampleReadManipulateExcel2016Charts.xlsx");
 
             //Access the first worksheet which contains the charts
             Worksheet ws = wb.Worksheets[0];
@@ -35,9 +36,9 @@ namespace Aspose.Cells.Examples.CSharp.Charts
             }
 
             //Save the workbook
-            wb.Save(dataDir + "out_excel2016Charts.xlsx");
+            wb.Save(outputDir + "outputReadManipulateExcel2016Charts.xlsx");
 
-            // ExStart:ReadManipulateExcel2016Charts
+            Console.WriteLine("ReadManipulateExcel2016Charts executed successfully.");
         }
     }
 }

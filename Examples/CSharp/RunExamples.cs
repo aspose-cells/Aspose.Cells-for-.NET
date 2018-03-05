@@ -122,7 +122,8 @@ namespace Aspose.Cells.Examples.CSharp
             //ChartRendering.Run();
             //ChartToPdf.Run();
             //HandleAutomaticUnitsOfChartAxisLikeMicrosoftExcel.Run();
-            HowToCreateChart.Run();
+            //HowToCreateChart.Run();
+            ReadManipulateExcel2016Charts.Run();
 
             Console.ReadKey();
             return;
