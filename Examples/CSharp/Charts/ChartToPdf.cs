@@ -9,14 +9,16 @@ namespace Aspose.Cells.Examples.CSharp.Charts
 {
     public class ChartToPdf
     {
+        //Source directory
+        static string sourceDir = RunExamples.Get_SourceDirectory();
+
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
             // Load excel file containing charts
-            Workbook workbook = new Workbook(dataDir + "Sample1.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleChartToPdf.xlsx");
 
             // Access first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -25,12 +27,13 @@ namespace Aspose.Cells.Examples.CSharp.Charts
             Chart chart = worksheet.Charts[0];
 
             // Save the chart into pdf format
-            chart.ToPdf(dataDir + "Output-Chart_out.pdf");
+            chart.ToPdf(outputDir + "outputChartToPdf.pdf");
 
             // Save the chart into pdf format in stream
             MemoryStream ms = new MemoryStream();
             chart.ToPdf(ms);
-            // ExEnd:1
+
+            Console.WriteLine("ChartToPdf executed successfully.");
         }
     }
 }

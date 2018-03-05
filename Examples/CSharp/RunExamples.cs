@@ -121,8 +121,10 @@ namespace Aspose.Cells.Examples.CSharp
             //UsingSparklines.Run();
             //Applying3DFormat.Run();
             //ChangeChartSizeAndPosition.Run();
-            ChartRendering.Run();
+            //ChartRendering.Run();
+            ChartToPdf.Run();
 
+            Console.ReadKey();
             return;
 
             // Uncomment the one you want to try out
