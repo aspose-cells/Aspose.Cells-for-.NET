@@ -122,7 +122,8 @@ namespace Aspose.Cells.Examples.CSharp
             //Applying3DFormat.Run();
             //ChangeChartSizeAndPosition.Run();
             //ChartRendering.Run();
-            ChartToPdf.Run();
+            //ChartToPdf.Run();
+            HandleAutomaticUnitsOfChartAxisLikeMicrosoftExcel.Run();
 
             Console.ReadKey();
             return;
