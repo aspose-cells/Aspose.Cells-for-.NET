@@ -331,7 +331,7 @@
     <Compile Include="CellsHelper\NumberOfSignificantDigits.cs" />
     <Compile Include="CellsHelper\UsingCustomImplementationFactoryToCreateCustomImplementationOfMemoryStream.cs" />
     <Compile Include="Charts\Applying3DFormat.cs" />
-    <Compile Include="Charts\ChangeChartPosition.cs" />
+    <Compile Include="Charts\ChangeChartSizeAndPosition.cs" />
     <Compile Include="Charts\ChartRendering.cs" />
     <Compile Include="Charts\ChartToPdf.cs" />
     <Compile Include="Charts\HandleAutomaticUnitsOfChartAxisLikeMicrosoftExcel.cs" />
