@@ -88,7 +88,7 @@ namespace Aspose.Cells.Examples.CSharp.Charts
             // Save the Excel file
             book.Save(outputDir + "outputApplying3DFormat.xlsx");
 
-            Console.WriteLine("SetMarginsOfCommentOrShapeInsideTheWorksheet executed successfully.");
+            Console.WriteLine("Applying3DFormat executed successfully.");
         }
     }
 }

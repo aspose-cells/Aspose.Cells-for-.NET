@@ -116,14 +116,13 @@ namespace Aspose.Cells.Examples.CSharp
             //_CellsHelper.NumberOfSignificantDigits.Run();
             //_CellsHelper.UsingCustomImplementationFactoryToCreateCustomImplementationOfMemoryStream.Run();
 
-            //DrawingObjects.SetMarginsOfCommentOrShapeInsideTheWorksheet.Run();
-
             //UsingSparklines.Run();
             //Applying3DFormat.Run();
             //ChangeChartSizeAndPosition.Run();
             //ChartRendering.Run();
             //ChartToPdf.Run();
-            HandleAutomaticUnitsOfChartAxisLikeMicrosoftExcel.Run();
+            //HandleAutomaticUnitsOfChartAxisLikeMicrosoftExcel.Run();
+            HowToCreateChart.Run();
 
             Console.ReadKey();
             return;
