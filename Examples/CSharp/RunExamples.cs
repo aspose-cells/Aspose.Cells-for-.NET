@@ -120,7 +120,8 @@ namespace Aspose.Cells.Examples.CSharp
 
             //UsingSparklines.Run();
             //Applying3DFormat.Run();
-            ChangeChartSizeAndPosition.Run();
+            //ChangeChartSizeAndPosition.Run();
+            ChartRendering.Run();
 
             return;
 
