@@ -110,12 +110,15 @@ namespace Aspose.Cells.Examples.CSharp
 
             int iii = 0;
 
+            //_CellsHelper.IndexToName.Run();
+            //_CellsHelper.MergeFiles.Run();
+            //_CellsHelper.NameToIndex.Run();
+            //_CellsHelper.NumberOfSignificantDigits.Run();
+            //_CellsHelper.UsingCustomImplementationFactoryToCreateCustomImplementationOfMemoryStream.Run();
+
             //DrawingObjects.SetMarginsOfCommentOrShapeInsideTheWorksheet.Run();
-            _CellsHelper.IndexToName.Run();
-            _CellsHelper.MergeFiles.Run();
-            _CellsHelper.NameToIndex.Run();
-            _CellsHelper.NumberOfSignificantDigits.Run();
-            _CellsHelper.UsingCustomImplementationFactoryToCreateCustomImplementationOfMemoryStream.Run();
+
+            UsingSparklines.Run();
 
             return;
 
