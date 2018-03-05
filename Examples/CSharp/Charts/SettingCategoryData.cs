@@ -1,28 +1,20 @@
+using System;
 using System.IO;
 using Aspose.Cells;
 namespace Aspose.Cells.Examples.CSharp.Charts
 {
     public class SettingCategoryData
     {
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            // Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir);
-            if (!IsExists)
-                System.IO.Directory.CreateDirectory(dataDir);
-
             // Instantiating a Workbook object
             Workbook workbook = new Workbook();
-
-            // Adding a new worksheet to the Excel object
-            int sheetIndex = workbook.Worksheets.Add();
-
-            // Obtaining the reference of the newly added worksheet by passing its sheet index
-            Worksheet worksheet = workbook.Worksheets[sheetIndex];
+            
+            // Obtaining the reference of the first worksheet
+            Worksheet worksheet = workbook.Worksheets[0];
 
             // Adding sample values to cells
             worksheet.Cells["A1"].PutValue(10);
@@ -53,8 +45,9 @@ namespace Aspose.Cells.Examples.CSharp.Charts
             chart.NSeries.CategoryData = "C1:C4";
 
             // Saving the Excel file
-            workbook.Save(dataDir + "output.xls");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputSettingCategoryData.xlsx");
+
+            Console.WriteLine("SettingCategoryData executed successfully.");
         }
     }
 }

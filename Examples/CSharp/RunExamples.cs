@@ -124,8 +124,10 @@ namespace Aspose.Cells.Examples.CSharp
             //HandleAutomaticUnitsOfChartAxisLikeMicrosoftExcel.Run();
             //HowToCreateChart.Run();
             //ReadManipulateExcel2016Charts.Run();
-            SetShapeTypeOfDataLabelsOfChart.Run();
+            //SetShapeTypeOfDataLabelsOfChart.Run();
+            SettingCategoryData.Run();
 
+            Console.Write("Press key...");
             Console.ReadKey();
             return;
 
