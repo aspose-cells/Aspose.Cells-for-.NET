@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 using Aspose.Cells;
 using Aspose.Cells.Drawing;
@@ -8,22 +9,19 @@ namespace Aspose.Cells.Examples.CSharp.Charts
 {
     public class Applying3DFormat
     {
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            // Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir);
-            if (!IsExists)
-                System.IO.Directory.CreateDirectory(dataDir);
-
             // Instantiate a new Workbook
             Workbook book = new Workbook();
 
+            //Rename the first worksheet
+            book.Worksheets[0].Name = "DataSheet";
+
             // Add a Data Worksheet
-            Worksheet dataSheet = book.Worksheets.Add("DataSheet");
+            Worksheet dataSheet = book.Worksheets["DataSheet"];
 
             // Add Chart Worksheet
             Worksheet sheet = book.Worksheets.Add("MyChart");
@@ -43,7 +41,7 @@ namespace Aspose.Cells.Examples.CSharp.Charts
             int chartSheetIdx = charts.Add(ChartType.Column, 5, 0, 25, 15);
 
             // Get the newly added Chart
-            Aspose.Cells.Charts.Chart chart = book.Worksheets[2].Charts[0];
+            Aspose.Cells.Charts.Chart chart = book.Worksheets["MyChart"].Charts[0];
 
             // Set the background/foreground color for PlotArea/ChartArea
             chart.PlotArea.Area.BackgroundColor = Color.White;
@@ -56,6 +54,7 @@ namespace Aspose.Cells.Examples.CSharp.Charts
 
             // Add Data Series for the Chart
             chart.NSeries.Add("DataSheet!B1:B3", true);
+
             // Specify the Category Data
             chart.NSeries.CategoryData = "DataSheet!A1:A3";
 
@@ -87,9 +86,9 @@ namespace Aspose.Cells.Examples.CSharp.Charts
             ser.Border.Color = Color.Maroon;
 
             // Save the Excel file
-            book.Save(dataDir + "3d_format.out.xlsx");
-            // ExEnd:1
+            book.Save(outputDir + "outputApplying3DFormat.xlsx");
 
+            Console.WriteLine("SetMarginsOfCommentOrShapeInsideTheWorksheet executed successfully.");
         }
     }
 }

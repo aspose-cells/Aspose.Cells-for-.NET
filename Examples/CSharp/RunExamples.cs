@@ -118,7 +118,8 @@ namespace Aspose.Cells.Examples.CSharp
 
             //DrawingObjects.SetMarginsOfCommentOrShapeInsideTheWorksheet.Run();
 
-            UsingSparklines.Run();
+            //UsingSparklines.Run();
+            Applying3DFormat.Run();
 
             return;
 
