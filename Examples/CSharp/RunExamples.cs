@@ -459,9 +459,10 @@ namespace Aspose.Cells.Examples.CSharp
             //AddingLabelControlInChart.Run();
             //AddingPictureInChart.Run();
             //AddingTextBoxControlInChart.Run();
+            //HowToCreateBubbleChart.Run();
+            //HowToCreateCustomChart.Run();
 
-            HowToCreateBubbleChart.Run();
-            HowToCreateCustomChart.Run();
+            HowToCreateLineChart.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();
