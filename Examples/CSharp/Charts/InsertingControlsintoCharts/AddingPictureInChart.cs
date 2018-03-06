@@ -5,7 +5,7 @@ using System.Drawing;
 
 namespace Aspose.Cells.Examples.CSharp.Charts
 {
-    public class AddingPictureToChart
+    public class AddingPictureInChart
     {
         //Source directory
         static string sourceDir = RunExamples.Get_SourceDirectory();
@@ -16,10 +16,10 @@ namespace Aspose.Cells.Examples.CSharp.Charts
         public static void Run()
         {
             // Open the existing file.
-            Workbook workbook = new Workbook(sourceDir + "sampleAddingPictureToChart.xls");
+            Workbook workbook = new Workbook(sourceDir + "sampleAddingPictureInChart.xls");
 
             // Get an image file to the stream.
-            FileStream stream = new FileStream(sourceDir + "sampleAddingPictureToChart.png", FileMode.Open, FileAccess.Read);
+            FileStream stream = new FileStream(sourceDir + "sampleAddingPictureInChart.png", FileMode.Open, FileAccess.Read);
 
             // Get the designer chart in the second sheet.
             Worksheet sheet = workbook.Worksheets[0];
@@ -38,9 +38,9 @@ namespace Aspose.Cells.Examples.CSharp.Charts
             lineformat.Weight = 4;    
 
             // Save the excel file.
-            workbook.Save(outputDir + "outputAddingPictureToChart.xls");
+            workbook.Save(outputDir + "outputAddingPictureInChart.xls");
 
-            Console.WriteLine("AddingPictureToChart executed successfully.");
+            Console.WriteLine("AddingPictureInChart executed successfully.");
         }
     }
 }
