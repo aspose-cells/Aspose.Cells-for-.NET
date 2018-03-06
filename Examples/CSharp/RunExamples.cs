@@ -442,7 +442,6 @@ namespace Aspose.Cells.Examples.CSharp
             //_CellsHelper.NameToIndex.Run();
             //_CellsHelper.NumberOfSignificantDigits.Run();
             //_CellsHelper.UsingCustomImplementationFactoryToCreateCustomImplementationOfMemoryStream.Run();
-
             //UsingSparklines.Run();
             //Applying3DFormat.Run();
             //ChangeChartSizeAndPosition.Run();
@@ -455,20 +454,18 @@ namespace Aspose.Cells.Examples.CSharp
             //SettingCategoryData.Run();
             //SettingChartsData.Run();
             //SetValuesFormatCodeOfChartSeries.Run();
-
             //AddingLabelControlInChart.Run();
             //AddingPictureInChart.Run();
             //AddingTextBoxControlInChart.Run();
             //HowToCreateBubbleChart.Run();
             //HowToCreateCustomChart.Run();
-
             //HowToCreateLineChart.Run();
             //HowToCreatePieChart.Run();
-            HowToCreatePyramidChart.Run();
+            //HowToCreatePyramidChart.Run();
 
-            Console.Write("Press key...");
-            Console.ReadKey();
-            return;
+            //Console.Write("Press key...");
+            //Console.ReadKey();
+            //return;
 
 
             //// CopyShapesBetweenWorksheets
