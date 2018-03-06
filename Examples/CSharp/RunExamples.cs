@@ -457,7 +457,8 @@ namespace Aspose.Cells.Examples.CSharp
             //SettingChartsData.Run();
             //SetValuesFormatCodeOfChartSeries.Run();
 
-            AddingLabelControlInChart.Run();
+            //AddingLabelControlInChart.Run();
+            AddingPictureToChart.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();

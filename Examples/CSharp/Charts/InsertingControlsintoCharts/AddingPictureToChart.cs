@@ -1,30 +1,32 @@
+using System;
 using System.IO;
-
 using Aspose.Cells;
 using System.Drawing;
 
-namespace Aspose.Cells.Examples.CSharp.Charts.InsertingControlsintoCharts
+namespace Aspose.Cells.Examples.CSharp.Charts
 {
     public class AddingPictureToChart
     {
+        //Source directory
+        static string sourceDir = RunExamples.Get_SourceDirectory();
+
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
             // Open the existing file.
-            Workbook workbook = new Workbook(dataDir + "chart.xls");
+            Workbook workbook = new Workbook(sourceDir + "sampleAddingPictureToChart.xls");
 
             // Get an image file to the stream.
-            FileStream stream = new FileStream(dataDir + "logo.jpg", FileMode.Open, FileAccess.Read);
+            FileStream stream = new FileStream(sourceDir + "sampleAddingPictureToChart.png", FileMode.Open, FileAccess.Read);
 
             // Get the designer chart in the second sheet.
             Worksheet sheet = workbook.Worksheets[0];
             Aspose.Cells.Charts.Chart chart = sheet.Charts[0];
 
             // Add a new picture to the chart.
-            Aspose.Cells.Drawing.Picture pic0 = chart.Shapes.AddPictureInChart(50, 50, stream, 40, 40);
+            Aspose.Cells.Drawing.Picture pic0 = chart.Shapes.AddPictureInChart(50, 50, stream, 200, 200);
 
             // Get the lineformat type of the picture.
             Aspose.Cells.Drawing.LineFormat lineformat = pic0.Line;          
@@ -36,9 +38,9 @@ namespace Aspose.Cells.Examples.CSharp.Charts.InsertingControlsintoCharts
             lineformat.Weight = 4;    
 
             // Save the excel file.
-            workbook.Save(dataDir + "chart.out.xls");
-            // ExEnd:1
-        
+            workbook.Save(outputDir + "outputAddingPictureToChart.xls");
+
+            Console.WriteLine("AddingPictureToChart executed successfully.");
         }
     }
 }
