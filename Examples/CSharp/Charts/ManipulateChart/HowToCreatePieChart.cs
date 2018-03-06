@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -5,15 +6,15 @@ using Aspose.Cells.Drawing;
 using System.Drawing;
 using Aspose.Cells.Charts;
 
-namespace Aspose.Cells.Examples.CSharp.Charts.ManipulateChart
+namespace Aspose.Cells.Examples.CSharp.Charts
 {
     public class HowToCreatePieChart
     {
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             // Create a new Workbook.
             Workbook workbook = new Workbook();
 
@@ -53,7 +54,7 @@ namespace Aspose.Cells.Examples.CSharp.Charts.ManipulateChart
 
             // Create chart
             int chartIndex = 0;
-            chartIndex = sheet.Charts.Add(Aspose.Cells.Charts.ChartType.Pie, 1, 1, 25, 10);
+            chartIndex = sheet.Charts.Add(Aspose.Cells.Charts.ChartType.Pie, 5, 0, 25, 10);
             Aspose.Cells.Charts.Chart chart = sheet.Charts[chartIndex];
 
             // Set some properties of chart plot area.
@@ -106,10 +107,9 @@ namespace Aspose.Cells.Examples.CSharp.Charts.ManipulateChart
             fillformat.Texture = Aspose.Cells.Drawing.TextureType.Bouquet;
 
             // Save the excel file
-            workbook.Save(dataDir + "output.xls");
+            workbook.Save(outputDir + "outputHowToCreatePieChart.xlsx");
 
-            // ExEnd:1
-
+            Console.WriteLine("HowToCreatePieChart executed successfully.");
         }
     }
 }

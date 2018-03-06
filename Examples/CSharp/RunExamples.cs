@@ -462,7 +462,8 @@ namespace Aspose.Cells.Examples.CSharp
             //HowToCreateBubbleChart.Run();
             //HowToCreateCustomChart.Run();
 
-            HowToCreateLineChart.Run();
+            //HowToCreateLineChart.Run();
+            HowToCreatePieChart.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();
