@@ -28,7 +28,6 @@ using Aspose.Cells.Examples.CSharp.Articles.ManageDatabaseConnection;
 using Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules;
 using Aspose.Cells.Examples.CSharp.Articles.ManageConditionalFormatting;
 using Aspose.Cells.Examples.CSharp.Charts;
-using Aspose.Cells.Examples.CSharp.Charts.InsertingControlsintoCharts;
 using Aspose.Cells.Examples.CSharp.Charts.ManipulateChart;
 using Aspose.Cells.Examples.CSharp.Charts.SettingChartsAppearance;
 using Aspose.Cells.Examples.CSharp.Data.AddOn.Hyperlinks;
@@ -458,7 +457,8 @@ namespace Aspose.Cells.Examples.CSharp
             //SetValuesFormatCodeOfChartSeries.Run();
 
             //AddingLabelControlInChart.Run();
-            AddingPictureToChart.Run();
+            //AddingPictureToChart.Run();
+            AddingTextBoxControlInChart.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();

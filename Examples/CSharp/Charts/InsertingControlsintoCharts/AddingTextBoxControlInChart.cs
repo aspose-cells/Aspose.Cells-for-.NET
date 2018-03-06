@@ -1,27 +1,30 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
 using System.Drawing;
 
-namespace Aspose.Cells.Examples.CSharp.Charts.InsertingControlsintoCharts
+namespace Aspose.Cells.Examples.CSharp.Charts
 {
-    public class AddingTextBoxControl
+    public class AddingTextBoxControlInChart
     {
+        //Source directory
+        static string sourceDir = RunExamples.Get_SourceDirectory();
+
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
             // Open the existing file.
-            Workbook workbook = new Workbook(dataDir + "chart.xls");
+            Workbook workbook = new Workbook(sourceDir + "sampleAddingTextBoxControlInChart.xls");
              
             // Get the designer chart in the second sheet.
-            Worksheet sheet = workbook.Worksheets[1];
+            Worksheet sheet = workbook.Worksheets[0];
             Aspose.Cells.Charts.Chart chart = sheet.Charts[0];
 
             // Add a new textbox to the chart.
-            Aspose.Cells.Drawing.TextBox textbox0 = chart.Shapes.AddTextBoxInChart(100, 1100, 350, 2550);
+            Aspose.Cells.Drawing.TextBox textbox0 = chart.Shapes.AddTextBoxInChart(400, 1100, 350, 2550);
 
             // Fill the text.
             textbox0.Text = "Sales By Region";
@@ -57,9 +60,9 @@ namespace Aspose.Cells.Examples.CSharp.Charts.InsertingControlsintoCharts
             lineformat.DashStyle = Aspose.Cells.Drawing.MsoLineDashStyle.Solid;
 
             // Save the excel file.
-            workbook.Save(dataDir + "chart.out.xls");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputAddingTextBoxControlInChart.xls");
 
+            Console.WriteLine("AddingTextBoxControlInChart executed successfully.");
         }
     }
 }

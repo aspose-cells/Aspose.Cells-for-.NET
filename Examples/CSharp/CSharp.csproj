@@ -340,7 +340,7 @@
     <Compile Include="Charts\HowToCreateChart.cs" />
     <Compile Include="Charts\InsertingControlsintoCharts\AddingLabelControlInChart.cs" />
     <Compile Include="Charts\InsertingControlsintoCharts\AddingPictureToChart.cs" />
-    <Compile Include="Charts\InsertingControlsintoCharts\AddingTextBoxControl.cs" />
+    <Compile Include="Charts\InsertingControlsintoCharts\AddingTextBoxControlInChart.cs" />
     <Compile Include="Charts\ManipulateChart\HowToCreateCustomChart.cs" />
     <Compile Include="Charts\ManipulateChart\HowToCreatePyramidChart.cs" />
     <Compile Include="Charts\ManipulateChart\HowToCreateLineChart.cs" />
