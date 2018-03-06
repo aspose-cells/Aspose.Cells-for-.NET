@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -9,12 +10,11 @@ namespace Aspose.Cells.Examples.CSharp.Charts.ManipulateChart
 {
     public class HowToCreateBubbleChart
     {
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
-        {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-           
+        {        
             // Instantiating a Workbook object
             Workbook workbook = new Workbook();
 
@@ -36,7 +36,7 @@ namespace Aspose.Cells.Examples.CSharp.Charts.ManipulateChart
             worksheet.Cells[2, 3].PutValue(3);
 
             // Adding a chart to the worksheet
-            int chartIndex = worksheet.Charts.Add(Aspose.Cells.Charts.ChartType.Bubble, 5, 0, 15, 5);
+            int chartIndex = worksheet.Charts.Add(Aspose.Cells.Charts.ChartType.Bubble, 5, 0, 25, 10);
 
             // Accessing the instance of the newly added chart
             Aspose.Cells.Charts.Chart chart = worksheet.Charts[chartIndex];
@@ -54,9 +54,9 @@ namespace Aspose.Cells.Examples.CSharp.Charts.ManipulateChart
             chart.NSeries[0].Values = "B1:D1";
 
             // Saving the Excel file
-            workbook.Save(dataDir + "output.xls");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputHowToCreateBubbleChart.xlsx");
 
+            Console.WriteLine("HowToCreateBubbleChart executed successfully.");
         }
     }
 }
