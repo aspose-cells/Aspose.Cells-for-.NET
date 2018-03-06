@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -5,23 +6,20 @@ using Aspose.Cells.Drawing;
 using System.Drawing;
 using Aspose.Cells.Charts;
 
-namespace Aspose.Cells.Examples.CSharp.Charts.ManipulateChart
+namespace Aspose.Cells.Examples.CSharp.Charts
 {
     public class HowToCreateCustomChart
     {
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             // Instantiating a Workbook object
             Workbook workbook = new Workbook();
 
-            // Adding a new worksheet to the Workbook object
-            int sheetIndex = workbook.Worksheets.Add();
-
             // Obtaining the reference of the newly added worksheet by passing its sheet index
-            Worksheet worksheet = workbook.Worksheets[sheetIndex];
+            Worksheet worksheet = workbook.Worksheets[0];
 
             // Adding sample values to cells
             worksheet.Cells["A1"].PutValue(50);
@@ -34,7 +32,7 @@ namespace Aspose.Cells.Examples.CSharp.Charts.ManipulateChart
             worksheet.Cells["B4"].PutValue(100);
 
             // Adding a chart to the worksheet
-            int chartIndex = worksheet.Charts.Add(Aspose.Cells.Charts.ChartType.Column, 5, 0, 15, 5);
+            int chartIndex = worksheet.Charts.Add(Aspose.Cells.Charts.ChartType.Column, 5, 0, 25, 10);
 
             // Accessing the instance of the newly added chart
             Aspose.Cells.Charts.Chart chart = worksheet.Charts[chartIndex];
@@ -46,9 +44,9 @@ namespace Aspose.Cells.Examples.CSharp.Charts.ManipulateChart
             chart.NSeries[1].Type = Aspose.Cells.Charts.ChartType.Line;
                        
             // Saving the Excel file
-            workbook.Save(dataDir + "output.xls");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputHowToCreateCustomChart.xlsx");
 
+            Console.WriteLine("HowToCreateCustomChart executed successfully.");
         }
     }
 }
