@@ -112,11 +112,11 @@ namespace Aspose.Cells.Examples.CSharp
             // Uncomment the one you want to try out
             
             //Aspose.Cells for .NET v18.2
-            WorkbookSettings.ControlExternalResourcesUsingWorkbookSetting_StreamProvider.Run();
-            _Workbook.FilterDefinedNamesWhileLoadingWorkbook.Run();
-            DrawingObjects.SetMarginsOfCommentOrShapeInsideTheWorksheet.Run();
-            Data.SpecifyFormulaFieldsWhileImportingDataToWorksheet.Run();
-            Formulas.SpecifyMaximumRowsOfSharedFormula.Run();
+            //WorkbookSettings.ControlExternalResourcesUsingWorkbookSetting_StreamProvider.Run();
+            //_Workbook.FilterDefinedNamesWhileLoadingWorkbook.Run();
+            //DrawingObjects.SetMarginsOfCommentOrShapeInsideTheWorksheet.Run();
+            //Data.SpecifyFormulaFieldsWhileImportingDataToWorksheet.Run();
+            //Formulas.SpecifyMaximumRowsOfSharedFormula.Run();
 
             //Aspose.Cells for .NET v18.1
             //Charts.HandleAutomaticUnitsOfChartAxisLikeMicrosoftExcel.Run();
@@ -436,7 +436,7 @@ namespace Aspose.Cells.Examples.CSharp
             //SettingSharedFormula.Run();
 
 
-            //int iii = 0;
+            int iii = 0;
 
             //_CellsHelper.IndexToName.Run();
             //_CellsHelper.MergeFiles.Run();
@@ -457,9 +457,11 @@ namespace Aspose.Cells.Examples.CSharp
             //SettingChartsData.Run();
             //SetValuesFormatCodeOfChartSeries.Run();
 
-            //Console.Write("Press key...");
-            //Console.ReadKey();
-            //return;
+            AddingLabelControlInChart.Run();
+
+            Console.Write("Press key...");
+            Console.ReadKey();
+            return;
 
 
             //// CopyShapesBetweenWorksheets
