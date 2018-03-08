@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -5,18 +6,20 @@ using Aspose.Cells.Drawing;
 using System.Drawing;
 using Aspose.Cells.Charts;
 
-namespace Aspose.Cells.Examples.CSharp.Charts.ManipulateChart
+namespace Aspose.Cells.Examples.CSharp.Charts
 {
     public class ModifyLineChart
     {
+        //Source directory
+        static string sourceDir = RunExamples.Get_SourceDirectory();
+
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
             // Open the existing file.
-            Workbook workbook = new Workbook(dataDir + "Book1.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleModifyLineChart.xlsx");
 
             // Get the designer chart in the first worksheet.
             Aspose.Cells.Charts.Chart chart = workbook.Worksheets[0].Charts[0];
@@ -40,9 +43,9 @@ namespace Aspose.Cells.Examples.CSharp.Charts.ManipulateChart
             chart.SecondValueAxis.IsVisible = true;
 
             // Save the excel file.
-            workbook.Save(dataDir + "output.xls");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputModifyLineChart.xlsx");
 
+            Console.WriteLine("ModifyLineChart executed successfully.");
         }
     }
 }

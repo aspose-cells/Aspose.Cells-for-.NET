@@ -463,7 +463,8 @@ namespace Aspose.Cells.Examples.CSharp
             //HowToCreatePieChart.Run();
             //HowToCreatePyramidChart.Run();
 
-            MicrosoftThemeColorInChartSeries.Run();
+            //MicrosoftThemeColorInChartSeries.Run();
+            ModifyLineChart.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();
