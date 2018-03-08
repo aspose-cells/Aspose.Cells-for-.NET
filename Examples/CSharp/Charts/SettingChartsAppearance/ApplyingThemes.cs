@@ -1,23 +1,26 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
 using Aspose.Cells.Charts;
 
-namespace Aspose.Cells.Examples.CSharp.Charts.SettingChartsAppearance
+namespace Aspose.Cells.Examples.CSharp.Charts
 {
-    public class ApplyingThemes
+    public class ApplyingThemesInChart
     {
+        //Source directory
+        static string sourceDir = RunExamples.Get_SourceDirectory();
+
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
             // Instantiate the workbook to open the file that contains a chart
-            Workbook workbook = new Workbook(dataDir + "book1.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleApplyingThemesInChart.xlsx");
 
             // Get the first worksheet
-            Worksheet worksheet = workbook.Worksheets[1];
+            Worksheet worksheet = workbook.Worksheets[0];
 
             // Get the first chart in the sheet
             Chart chart = worksheet.Charts[0];
@@ -35,9 +38,9 @@ namespace Aspose.Cells.Examples.CSharp.Charts.SettingChartsAppearance
             chart.NSeries[0].Area.FillFormat.SolidFill.CellsColor = cc;
 
             // Save the Excel file
-            workbook.Save(dataDir + "output.out.xlsx");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputApplyingThemesInChart.xlsx");
 
+            Console.WriteLine("ApplyingThemesInChart executed successfully.");
         }
     }
 }
