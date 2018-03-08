@@ -464,7 +464,8 @@ namespace Aspose.Cells.Examples.CSharp
             //HowToCreatePyramidChart.Run();
 
             //MicrosoftThemeColorInChartSeries.Run();
-            ModifyLineChart.Run();
+            //ModifyLineChart.Run();
+            ModifyPieChart.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();

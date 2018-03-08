@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -9,14 +10,16 @@ namespace Aspose.Cells.Examples.CSharp.Charts.ManipulateChart
 {
     public class ModifyPieChart
     {
+        //Source directory
+        static string sourceDir = RunExamples.Get_SourceDirectory();
+
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
-        {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-           
+        {          
             // Open the existing file.
-            Workbook workbook = new Workbook(dataDir + "piechart.xls");
+            Workbook workbook = new Workbook(sourceDir + "sampleModifyPieChart.xlsx");
 
             // Get the designer chart in the second sheet.
             Worksheet sheet = workbook.Worksheets[1];
@@ -29,9 +32,9 @@ namespace Aspose.Cells.Examples.CSharp.Charts.ManipulateChart
             datalabels.Text = "Unided Kingdom, 400K ";
 
             // Save the excel file.
-            workbook.Save(dataDir + "output.xls");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputModifyPieChart.xlsx");
 
+            Console.WriteLine("ModifyPieChart executed successfully.");
         }
     }
 }
