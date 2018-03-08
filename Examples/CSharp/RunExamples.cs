@@ -462,18 +462,16 @@ namespace Aspose.Cells.Examples.CSharp
             //HowToCreateLineChart.Run();
             //HowToCreatePieChart.Run();
             //HowToCreatePyramidChart.Run();
-
             //MicrosoftThemeColorInChartSeries.Run();
             //ModifyLineChart.Run();
             //ModifyPieChart.Run();
-
             //ApplyingThemesInChart.Run();
             //ChangingMajorGridlinesInChart.Run();
-            MajorGridlinesOfChart.Run();
+            //MajorGridlinesOfChart.Run();
 
-            Console.Write("Press key...");
-            Console.ReadKey();
-            return;
+            //Console.Write("Press key...");
+            //Console.ReadKey();
+            //return;
 
 
             //// CopyShapesBetweenWorksheets
