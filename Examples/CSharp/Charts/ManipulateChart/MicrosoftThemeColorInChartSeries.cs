@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -5,18 +6,20 @@ using Aspose.Cells.Drawing;
 using System.Drawing;
 using Aspose.Cells.Charts;
 
-namespace Aspose.Cells.Examples.CSharp.Charts.ManipulateChart
+namespace Aspose.Cells.Examples.CSharp.Charts
 {
-    public class MicrosoftTheme
+    public class MicrosoftThemeColorInChartSeries
     {
+        //Source directory
+        static string sourceDir = RunExamples.Get_SourceDirectory();
+
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
-        {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-                        
+        {                       
             // Instantiate the workbook to open the file that contains a chart
-            Workbook workbook = new Workbook(dataDir + "Book1.xlsx" );
+            Workbook workbook = new Workbook(sourceDir + "sampleMicrosoftThemeColorInChartSeries.xlsx");
 
             // Get the first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
@@ -37,10 +40,9 @@ namespace Aspose.Cells.Examples.CSharp.Charts.ManipulateChart
             chart.NSeries[0].Area.FillFormat.SolidFill.CellsColor = cc;
 
             // Save the Excel file
-            workbook.Save(dataDir + "output.xlsx");
+            workbook.Save(outputDir + "outputMicrosoftThemeColorInChartSeries.xlsx");
 
-            // ExEnd:1
-
+            Console.WriteLine("MicrosoftThemeColorInChartSeries executed successfully.");
         }
     }
 }

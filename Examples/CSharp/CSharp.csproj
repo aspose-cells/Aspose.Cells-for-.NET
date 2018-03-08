@@ -345,7 +345,7 @@
     <Compile Include="Charts\ManipulateChart\HowToCreatePyramidChart.cs" />
     <Compile Include="Charts\ManipulateChart\HowToCreateLineChart.cs" />
     <Compile Include="Charts\ManipulateChart\HowToCreateBubbleChart .cs" />
-    <Compile Include="Charts\ManipulateChart\MicrosoftTheme.cs" />
+    <Compile Include="Charts\ManipulateChart\MicrosoftThemeColorInChartSeries.cs" />
     <Compile Include="Charts\ManipulateChart\ModifyLineChart.cs" />
     <Compile Include="Charts\ManipulateChart\ModifyPieChart.cs" />
     <Compile Include="Charts\ManipulateChart\HowToCreatePieChart.cs" />
