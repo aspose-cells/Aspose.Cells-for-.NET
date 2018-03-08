@@ -1,3 +1,4 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
@@ -5,27 +6,18 @@ using System.Drawing;
 
 namespace Aspose.Cells.Examples.CSharp.Charts.SettingChartsAppearance
 {
-    public class ChangingMajorGridlines
+    public class ChangingMajorGridlinesInChart
     {
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            // Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir);
-            if (!IsExists)
-                System.IO.Directory.CreateDirectory(dataDir);
-
             // Instantiating a Workbook object
             Workbook workbook = new Workbook();
 
-            // Adding a new worksheet to the Workbook object
-            int sheetIndex = workbook.Worksheets.Add();
-
             // Obtaining the reference of the newly added worksheet by passing its sheet index
-            Worksheet worksheet = workbook.Worksheets[sheetIndex];
+            Worksheet worksheet = workbook.Worksheets[0];
 
             // Adding sample values to cells
             worksheet.Cells["A1"].PutValue(50);
@@ -36,7 +28,7 @@ namespace Aspose.Cells.Examples.CSharp.Charts.SettingChartsAppearance
             worksheet.Cells["B3"].PutValue(50);
 
             // Adding a chart to the worksheet
-            int chartIndex = worksheet.Charts.Add(Aspose.Cells.Charts.ChartType.Column, 5, 0, 15, 5);
+            int chartIndex = worksheet.Charts.Add(Aspose.Cells.Charts.ChartType.Column, 5, 0, 25, 10);
 
             // Accessing the instance of the newly added chart
             Aspose.Cells.Charts.Chart chart = worksheet.Charts[chartIndex];
@@ -65,11 +57,10 @@ namespace Aspose.Cells.Examples.CSharp.Charts.SettingChartsAppearance
             // Setting the color of Value Axis' major gridlines to red
             chart.ValueAxis.MajorGridLines.Color = Color.Red;
 
-
             // Saving the Excel file
-            workbook.Save(dataDir + "book1.out.xls");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputChangingMajorGridlinesInChart.xlsx");
 
+            Console.WriteLine("ChangingMajorGridlinesInChart executed successfully.");
         }
     }
 }
