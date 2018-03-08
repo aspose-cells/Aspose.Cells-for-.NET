@@ -350,7 +350,7 @@
     <Compile Include="Charts\ManipulateChart\ModifyPieChart.cs" />
     <Compile Include="Charts\ManipulateChart\HowToCreatePieChart.cs" />
     <Compile Include="Charts\ReadManipulateExcel2016Charts.cs" />
-    <Compile Include="Charts\SettingChartsAppearance\ApplyingThemes.cs" />
+    <Compile Include="Charts\SettingChartsAppearance\ApplyingThemesInChart.cs" />
     <Compile Include="Charts\SettingChartsAppearance\ChangingMajorGridlines.cs" />
     <Compile Include="Charts\SettingChartsAppearance\MajorGridlines.cs" />
     <Compile Include="Charts\SettingChartsAppearance\SettingChartArea.cs" />

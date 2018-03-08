@@ -467,6 +467,7 @@ namespace Aspose.Cells.Examples.CSharp
             //ModifyLineChart.Run();
             //ModifyPieChart.Run();
 
+            ApplyingThemesInChart.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();
