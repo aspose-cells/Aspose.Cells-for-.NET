@@ -469,9 +469,10 @@ namespace Aspose.Cells.Examples.CSharp
             //SettingChartArea.Run();
             //SettingChartLines.Run();
             //SettingTitlesAxes.Run();
-
-            AddingLinkToOtherSheetCell.Run();
-            AddingLinkToExternalFile.Run();
+            //AddingLinkToOtherSheetCell.Run();
+            //AddingLinkToExternalFile.Run();
+            //AddingLinkToURL.Run();
+            //AddingLinkToURL2.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();

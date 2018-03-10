@@ -1,24 +1,20 @@
+using System;
 using System.IO;
 using System.Drawing;
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.CSharp.Data.AddOn.Hyperlinks
+namespace Aspose.Cells.Examples.CSharp.Data
 {
     public class AddingLinkToURL2
     {
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            // Instantiating a Workbook object
             Workbook workbook = new Workbook();
-
-            // Adding a new worksheet to the Workbook object
-            int i = workbook.Worksheets.Add();
-
-            // Obtaining the reference of the newly added worksheet by passing its sheet index
-            Worksheet worksheet = workbook.Worksheets[i];
+            
+            Worksheet worksheet = workbook.Worksheets[0];
 
             // Putting a value to the "A1" cell
             worksheet.Cells["A1"].PutValue("Visit Aspose");
@@ -30,13 +26,12 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.Hyperlinks
             worksheet.Cells["A1"].GetStyle().Font.Underline = FontUnderlineType.Single;
 
             // Adding a hyperlink to a URL at "A1" cell
-            worksheet.Hyperlinks.Add("A1", 1, 1, "http:// Www.aspose.com");
+            worksheet.Hyperlinks.Add("A1", 1, 1, "https://www.aspose.com");
 
             // Saving the Excel file
-            workbook.Save(dataDir + "book1.xls");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputAddingLinkToURL2.xlsx");
 
-
+            Console.WriteLine("AddingLinkToURL2 executed successfully.");
         }
     }
 }
