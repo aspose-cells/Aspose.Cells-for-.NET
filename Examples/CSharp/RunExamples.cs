@@ -29,7 +29,6 @@ using Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules;
 using Aspose.Cells.Examples.CSharp.Articles.ManageConditionalFormatting;
 using Aspose.Cells.Examples.CSharp.Charts;
 using Aspose.Cells.Examples.CSharp.Data;
-using Aspose.Cells.Examples.CSharp.Data.AddOn.Merging;
 using Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges;
 using Aspose.Cells.Examples.CSharp.Data.Handling;
 using Aspose.Cells.Examples.CSharp.Data.Handling.AccessingCells;
@@ -475,6 +474,7 @@ namespace Aspose.Cells.Examples.CSharp
             //AddingLinkToURL2.Run();
 
             MergingCellsInWorksheet.Run();
+            UnMergingtheMergedCells.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();

@@ -1,20 +1,22 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.CSharp.Data.AddOn.Merging
+namespace Aspose.Cells.Examples.CSharp.Data
 {
     public class UnMergingtheMergedCells
     {
+        //Source directory
+        static string sourceDir = RunExamples.Get_SourceDirectory();
+
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
             // Create a Workbook.
-            // Open the excel file.
-            Workbook wbk = new Aspose.Cells.Workbook(dataDir + "mergingcells.xls");
+            Workbook wbk = new Aspose.Cells.Workbook(sourceDir + "sampleUnMergingtheMergedCells.xlsx");
 
             // Create a Worksheet and get the first sheet.
             Worksheet worksheet = wbk.Worksheets[0];
@@ -26,10 +28,9 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.Merging
             cells.UnMerge(5, 2, 2, 3);
 
             // Save the file.
-            wbk.Save(dataDir + "unmergingcells.out.xls");
-            // ExEnd:1
+            wbk.Save(outputDir + "outputUnMergingtheMergedCells.xlsx");
 
-
+            Console.WriteLine("UnMergingtheMergedCells executed successfully.");
         }
     }
 }
