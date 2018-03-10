@@ -471,6 +471,7 @@ namespace Aspose.Cells.Examples.CSharp
 
 
             SettingChartArea.Run();
+            SettingChartLines.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();
