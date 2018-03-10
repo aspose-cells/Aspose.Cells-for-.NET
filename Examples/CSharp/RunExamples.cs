@@ -463,30 +463,30 @@ namespace Aspose.Cells.Examples.CSharp
             //ChangingMajorGridlinesInChart.Run();
             //MajorGridlinesOfChart.Run();
 
-            int ii = 0;
+            //SettingChartArea.Run();
+            //SettingChartLines.Run();
+            //SettingTitlesAxes.Run();
+            //AddingLinkToOtherSheetCell.Run();
+            //AddingLinkToExternalFile.Run();
+            //AddingLinkToURL.Run();
+            //AddingLinkToURL2.Run();
+            //MergingCellsInWorksheet.Run();
+            //UnMergingtheMergedCells.Run();
+            //AccessAllNamedRanges.Run();
+            //AccessSpecificNamedRange.Run();
+            //CopyNamedRanges.Run();
+            //CreateNamedRangeofCells.Run();
+            //FormatRanges1.Run();
+            //FormatRanges2.Run();
+            //IdentifyCellsInNamedRange.Run();
+            //InputDataInCellsInRange.Run();
+            //IntersectionOfRanges.Run();
 
-            SettingChartArea.Run();
-            SettingChartLines.Run();
-            SettingTitlesAxes.Run();
-            AddingLinkToOtherSheetCell.Run();
-            AddingLinkToExternalFile.Run();
-            AddingLinkToURL.Run();
-            AddingLinkToURL2.Run();
-            MergingCellsInWorksheet.Run();
-            UnMergingtheMergedCells.Run();
-            AccessAllNamedRanges.Run();
-            AccessSpecificNamedRange.Run();
-            CopyNamedRanges.Run();
-            CreateNamedRangeofCells.Run();
-            FormatRanges1.Run();
-            FormatRanges2.Run();
-            IdentifyCellsInNamedRange.Run();
-            InputDataInCellsInRange.Run();
-            IntersectionOfRanges.Run();
+            //int ii = 0;
 
-            Console.Write("Press key...");
-            Console.ReadKey();
-            return;
+            //Console.Write("Press key...");
+            //Console.ReadKey();
+            //return;
 
 
             //// CopyShapesBetweenWorksheets
