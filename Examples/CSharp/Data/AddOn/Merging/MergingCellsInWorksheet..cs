@@ -1,22 +1,17 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.CSharp.Data.AddOn.Merging
+namespace Aspose.Cells.Examples.CSharp.Data
 {
     public class MergingCellsInWorksheet
     {
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            // Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir);
-            if (!IsExists)
-                System.IO.Directory.CreateDirectory(dataDir);
-
             // Create a Workbook.
             Workbook wbk = new Workbook();
 
@@ -61,9 +56,9 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.Merging
             cells[5, 2].SetStyle(style);
 
             // Save the Workbook.
-            wbk.Save(dataDir + "mergingcells.out.xls");
-            // ExEnd:1
+            wbk.Save(outputDir + "outputMergingCellsInWorksheet.xlsx");
 
+            Console.WriteLine("MergingCellsInWorksheet executed successfully.");
         }
     }
 }
