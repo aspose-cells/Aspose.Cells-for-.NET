@@ -484,8 +484,10 @@ namespace Aspose.Cells.Examples.CSharp
             //FormatRanges1.Run();
             //FormatRanges2.Run();
 
-            IdentifyCellsinNamedRange.Run();
-            InputDataInCellsInRange.Run();
+            //IdentifyCellsinNamedRange.Run();
+            //InputDataInCellsInRange.Run();
+
+            IntersectionOfRanges.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();

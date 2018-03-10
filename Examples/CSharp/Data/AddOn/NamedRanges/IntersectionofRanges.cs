@@ -1,21 +1,24 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
 using System.Drawing;
 
-namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
+namespace Aspose.Cells.Examples.CSharp.Data
 {
-    public class IntersectionofRanges
+    public class IntersectionOfRanges
     {
+        //Source directory
+        static string sourceDir = RunExamples.Get_SourceDirectory();
+
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
             // Instantiate a workbook object.
             // Open an existing excel file.
-            Workbook workbook = new Workbook(dataDir + "book1.xls");
+            Workbook workbook = new Workbook(sourceDir + "sampleIntersectionOfRanges.xlsx");
 
             // Get the named ranges.
             Range[] ranges = workbook.Worksheets.GetNamedRanges();
@@ -27,7 +30,7 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
             Style style = workbook.CreateStyle();
 
             // Set the shading color with solid pattern type.
-            style.ForegroundColor = Color.Yellow;
+            style.ForegroundColor = Color.Red;
             style.Pattern = BackgroundType.Solid;
 
             // Create a styleflag object.
@@ -47,12 +50,12 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
 
                 // Apply the style to the range.
                 intersection.ApplyStyle(style, flag);
-
             }
 
             // Save the excel file.
-            workbook.Save(dataDir + "rngIntersection.out.xls");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputIntersectionOfRanges.xlsx");
+
+            Console.WriteLine("IntersectionOfRanges executed successfully.");
         }
     }
 }
