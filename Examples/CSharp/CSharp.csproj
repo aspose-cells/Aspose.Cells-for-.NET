@@ -362,7 +362,7 @@
     <Compile Include="Data\ApplyAdvancedFilterOfMicrosoftExcel.cs" />
     <Compile Include="Data\ExportHTMLStringValueOfCellsToDataTable.cs" />
     <Compile Include="Data\ShiftFirstRowDownWhenInsertingCellsDataTableRows.cs" />
-    <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToAnotherCell.cs" />
+    <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToOtherSheetCell.cs" />
     <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToExternalFile.cs" />
     <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToURL.cs" />
     <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToURL2.cs" />

@@ -28,7 +28,7 @@ using Aspose.Cells.Examples.CSharp.Articles.ManageDatabaseConnection;
 using Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules;
 using Aspose.Cells.Examples.CSharp.Articles.ManageConditionalFormatting;
 using Aspose.Cells.Examples.CSharp.Charts;
-using Aspose.Cells.Examples.CSharp.Data.AddOn.Hyperlinks;
+using Aspose.Cells.Examples.CSharp.Data;
 using Aspose.Cells.Examples.CSharp.Data.AddOn.Merging;
 using Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges;
 using Aspose.Cells.Examples.CSharp.Data.Handling;
@@ -466,9 +466,11 @@ namespace Aspose.Cells.Examples.CSharp
 
             int ii = 0;
 
-            SettingChartArea.Run();
-            SettingChartLines.Run();
-            SettingTitlesAxes.Run();
+            //SettingChartArea.Run();
+            //SettingChartLines.Run();
+            //SettingTitlesAxes.Run();
+
+            AddingLinkToOtherSheetCell.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();

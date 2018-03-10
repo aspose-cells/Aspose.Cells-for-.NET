@@ -1,22 +1,17 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.CSharp.Data.AddOn.Hyperlinks
+namespace Aspose.Cells.Examples.CSharp.Data
 {
-    public class AddingLinkToAnotherCell
+    public class AddingLinkToOtherSheetCell
     {
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            // Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir);
-            if (!IsExists)
-                System.IO.Directory.CreateDirectory(dataDir);
-
             // Instantiating a Workbook object
             Workbook workbook = new Workbook();
 
@@ -29,11 +24,12 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.Hyperlinks
             // Adding an internal hyperlink to the "B9" cell of the other worksheet "Sheet2" in
             // The same Excel file
             worksheet.Hyperlinks.Add("B3", 1, 1, "Sheet2!B9");
+            worksheet.Hyperlinks[0].TextToDisplay = "Link To Other Sheet Cell";
 
             // Saving the Excel file
-            workbook.Save(dataDir + "output.out.xls");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputAddingLinkToOtherSheetCell.xlsx");
 
+            Console.WriteLine("AddingLinkToOtherSheetCell executed successfully.");
         }
     }
 }
