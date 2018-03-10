@@ -476,7 +476,8 @@ namespace Aspose.Cells.Examples.CSharp
             //MergingCellsInWorksheet.Run();
             //UnMergingtheMergedCells.Run();
 
-            AccessAllNamedRanges.Run();
+            //AccessAllNamedRanges.Run();
+            AccessSpecificNamedRange.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();

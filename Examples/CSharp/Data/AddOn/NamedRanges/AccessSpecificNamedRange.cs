@@ -6,22 +6,21 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
 {
     public class AccessSpecificNamedRange
     {
+        //Source directory
+        static string sourceDir = RunExamples.Get_SourceDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
             // Opening the Excel file through the file stream
-            Workbook workbook = new Workbook(dataDir + "book1.xls");
+            Workbook workbook = new Workbook(sourceDir + "sampleAccessSpecificNamedRange.xlsx");
 
             // Getting the specified named range
-            Range range = workbook.Worksheets.GetRangeByName("TestRange");
+            Range range = workbook.Worksheets.GetRangeByName("MyRangeTwo");
 
             if (range != null)
                 Console.WriteLine("Named Range : " + range.RefersTo);
-                // ExEnd:1
-            
+
+            Console.WriteLine("AccessSpecificNamedRange executed successfully.");
         }
     }
 }
