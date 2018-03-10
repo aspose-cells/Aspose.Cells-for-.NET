@@ -1,43 +1,31 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
 using System.Drawing;
 
-namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
+namespace Aspose.Cells.Examples.CSharp.Data
 {
     public class FormatRanges2
     {
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            // Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir);
-            if (!IsExists)
-                System.IO.Directory.CreateDirectory(dataDir);
-
             // Instantiating a Workbook object
             Workbook workbook = new Workbook();
 
-            // Clears the worksheets
-            workbook.Worksheets.Clear();
-
-            // Adding a new worksheet to the Workbook object
-            workbook.Worksheets.Add();
-
-            // Obtaining the reference of the newly added worksheet by passing its sheet index
             Worksheet worksheet = workbook.Worksheets[0];
 
-            // Accessing the "A1" cell from the worksheet
-            Cell cell = worksheet.Cells["A1"];
+            // Accessing the "G8" cell from the worksheet
+            Cell cell = worksheet.Cells["G8"];
 
-            // Adding some value to the "A1" cell
+            // Adding some value to the "G8" cell
             cell.PutValue("Hello World From Aspose");
 
-            // Creating a range of cells starting from "A1" cell to 3rd column in a row
-            Range range = worksheet.Cells.CreateRange(0, 0, 1, 3);
+            // Creating a range of cells 
+            Range range = worksheet.Cells.CreateRange(5, 5, 5, 5);
 
             // Adding a thick top border with blue line
             range.SetOutlineBorder(BorderType.TopBorder, CellBorderType.Thick, Color.Blue);
@@ -52,8 +40,9 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
             range.SetOutlineBorder(BorderType.RightBorder, CellBorderType.Thick, Color.Blue);
 
             // Saving the Excel file
-            workbook.Save(dataDir + "book1.out.xls"); 
-            // ExEnd:1
+            workbook.Save(outputDir + "outputFormatRanges2.xlsx");
+
+            Console.WriteLine("FormatRanges2 executed successfully.");
         }
     }
 }
