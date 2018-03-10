@@ -471,6 +471,7 @@ namespace Aspose.Cells.Examples.CSharp
             //SettingTitlesAxes.Run();
 
             AddingLinkToOtherSheetCell.Run();
+            AddingLinkToExternalFile.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();
