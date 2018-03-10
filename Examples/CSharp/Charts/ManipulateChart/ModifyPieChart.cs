@@ -6,7 +6,7 @@ using Aspose.Cells.Drawing;
 using System.Drawing;
 using Aspose.Cells.Charts;
 
-namespace Aspose.Cells.Examples.CSharp.Charts.ManipulateChart
+namespace Aspose.Cells.Examples.CSharp.Charts
 {
     public class ModifyPieChart
     {

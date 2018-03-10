@@ -28,8 +28,6 @@ using Aspose.Cells.Examples.CSharp.Articles.ManageDatabaseConnection;
 using Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules;
 using Aspose.Cells.Examples.CSharp.Articles.ManageConditionalFormatting;
 using Aspose.Cells.Examples.CSharp.Charts;
-using Aspose.Cells.Examples.CSharp.Charts.ManipulateChart;
-using Aspose.Cells.Examples.CSharp.Charts.SettingChartsAppearance;
 using Aspose.Cells.Examples.CSharp.Data.AddOn.Hyperlinks;
 using Aspose.Cells.Examples.CSharp.Data.AddOn.Merging;
 using Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges;
@@ -109,7 +107,7 @@ namespace Aspose.Cells.Examples.CSharp
 
 
             // Uncomment the one you want to try out
-            
+
             //Aspose.Cells for .NET v18.2
             //WorkbookSettings.ControlExternalResourcesUsingWorkbookSetting_StreamProvider.Run();
             //_Workbook.FilterDefinedNamesWhileLoadingWorkbook.Run();
@@ -434,9 +432,6 @@ namespace Aspose.Cells.Examples.CSharp
             //SetExternalLinksInFormulas.Run();
             //SettingSharedFormula.Run();
 
-
-            int iii = 0;
-
             //_CellsHelper.IndexToName.Run();
             //_CellsHelper.MergeFiles.Run();
             //_CellsHelper.NameToIndex.Run();
@@ -469,9 +464,11 @@ namespace Aspose.Cells.Examples.CSharp
             //ChangingMajorGridlinesInChart.Run();
             //MajorGridlinesOfChart.Run();
 
+            int ii = 0;
 
             SettingChartArea.Run();
             SettingChartLines.Run();
+            SettingTitlesAxes.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();
