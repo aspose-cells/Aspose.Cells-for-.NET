@@ -479,7 +479,9 @@ namespace Aspose.Cells.Examples.CSharp
             //AccessAllNamedRanges.Run();
             //AccessSpecificNamedRange.Run();
 
-            CopyNamedRanges.Run();
+            //CopyNamedRanges.Run();
+            //CreateNamedRangeofCells.Run();
+            FormatRanges1.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();

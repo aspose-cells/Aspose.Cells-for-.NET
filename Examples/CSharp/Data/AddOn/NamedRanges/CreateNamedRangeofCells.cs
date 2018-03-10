@@ -1,19 +1,19 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
+namespace Aspose.Cells.Examples.CSharp.Data
 {
     public class CreateNamedRangeofCells
     {
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
             // Opening the Excel file through the file stream
-            Workbook workbook = new Workbook(dataDir + "book1.xls");
+            Workbook workbook = new Workbook();
 
             // Accessing the first worksheet in the Excel file
             Worksheet worksheet = workbook.Worksheets[0];
@@ -24,10 +24,15 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
             // Setting the name of the named range
             range.Name = "TestRange";
 
-            // Saving the modified Excel file
-            workbook.Save(dataDir + "output.out.xls");
-            // ExEnd:1
+            Style st = workbook.CreateStyle();
+            st.Pattern = BackgroundType.Solid;
+            st.ForegroundColor = System.Drawing.Color.Yellow;
+            range.SetStyle(st);
 
+            // Saving the modified Excel file
+            workbook.Save(outputDir + "outputCreateNamedRangeofCells.xlsx");
+
+            Console.WriteLine("CreateNamedRangeofCells executed successfully.");
         }
     }
 }

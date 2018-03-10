@@ -1,23 +1,18 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
 using System.Drawing;
 
-namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
+namespace Aspose.Cells.Examples.CSharp.Data
 {
     public class FormatRanges1
     {
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            // Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir);
-            if (!IsExists)
-                System.IO.Directory.CreateDirectory(dataDir);
-
             // Instantiate a new Workbook.
             Workbook workbook = new Workbook();
 
@@ -25,7 +20,7 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
             Worksheet WS = workbook.Worksheets[0];
 
             // Create a range of cells.
-            Aspose.Cells.Range range = WS.Cells.CreateRange(1, 1, 1, 18);
+            Aspose.Cells.Range range = WS.Cells.CreateRange(1, 1, 5, 5);
 
             // Name the range.
             range.Name = "MyRange";
@@ -58,8 +53,9 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
             range.ApplyStyle(stl, flg);
 
             // Save the excel file.
-            workbook.Save(dataDir + "rangestyles.out.xls"); 
-            // ExEnd:1
+            workbook.Save(outputDir + "outputFormatRanges1.xlsx");
+
+            Console.WriteLine("FormatRanges1 executed successfully.");
         }
     }
 }
