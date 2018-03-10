@@ -473,8 +473,10 @@ namespace Aspose.Cells.Examples.CSharp
             //AddingLinkToURL.Run();
             //AddingLinkToURL2.Run();
 
-            MergingCellsInWorksheet.Run();
-            UnMergingtheMergedCells.Run();
+            //MergingCellsInWorksheet.Run();
+            //UnMergingtheMergedCells.Run();
+
+            AccessAllNamedRanges.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();
