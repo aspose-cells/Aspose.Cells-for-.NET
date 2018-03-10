@@ -1,23 +1,18 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
 using System.Drawing;
 
-namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
+namespace Aspose.Cells.Examples.CSharp.Data
 {
     public class CopyNamedRanges
     {
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            // Create directory if it is not already present.
-            bool IsExists = System.IO.Directory.Exists(dataDir);
-            if (!IsExists)
-                System.IO.Directory.CreateDirectory(dataDir);
-
             // Instantiate a new Workbook.
             Workbook workbook = new Workbook();
 
@@ -54,8 +49,9 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
             range2.Copy(range1);
 
             // Save the excel file.
-            workbook.Save(dataDir + "copyranges.out.xls");
-            // ExEnd:1
+            workbook.Save(outputDir + "outputCopyNamedRanges.xlsx");
+
+            Console.WriteLine("CopyNamedRanges executed successfully.");
         }
     }
 }
