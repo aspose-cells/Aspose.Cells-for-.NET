@@ -375,7 +375,7 @@
     <Compile Include="Data\AddOn\NamedRanges\CreateNamedRangeofCells.cs" />
     <Compile Include="Data\AddOn\NamedRanges\FormatRanges1.cs" />
     <Compile Include="Data\AddOn\NamedRanges\FormatRanges2.cs" />
-    <Compile Include="Data\AddOn\NamedRanges\IdentifyCellsinNamedRange.cs" />
+    <Compile Include="Data\AddOn\NamedRanges\IdentifyCellsInNamedRange.cs" />
     <Compile Include="Data\AddOn\NamedRanges\InputDataInCellsInRange.cs" />
     <Compile Include="Data\AddOn\NamedRanges\IntersectionOfRanges.cs" />
     <Compile Include="Data\AddOn\NamedRanges\MergeCellsInNamedRange.cs" />

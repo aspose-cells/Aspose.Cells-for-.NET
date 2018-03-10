@@ -465,28 +465,23 @@ namespace Aspose.Cells.Examples.CSharp
 
             int ii = 0;
 
-            //SettingChartArea.Run();
-            //SettingChartLines.Run();
-            //SettingTitlesAxes.Run();
-            //AddingLinkToOtherSheetCell.Run();
-            //AddingLinkToExternalFile.Run();
-            //AddingLinkToURL.Run();
-            //AddingLinkToURL2.Run();
-
-            //MergingCellsInWorksheet.Run();
-            //UnMergingtheMergedCells.Run();
-
-            //AccessAllNamedRanges.Run();
-            //AccessSpecificNamedRange.Run();
-
-            //CopyNamedRanges.Run();
-            //CreateNamedRangeofCells.Run();
-            //FormatRanges1.Run();
-            //FormatRanges2.Run();
-
-            //IdentifyCellsinNamedRange.Run();
-            //InputDataInCellsInRange.Run();
-
+            SettingChartArea.Run();
+            SettingChartLines.Run();
+            SettingTitlesAxes.Run();
+            AddingLinkToOtherSheetCell.Run();
+            AddingLinkToExternalFile.Run();
+            AddingLinkToURL.Run();
+            AddingLinkToURL2.Run();
+            MergingCellsInWorksheet.Run();
+            UnMergingtheMergedCells.Run();
+            AccessAllNamedRanges.Run();
+            AccessSpecificNamedRange.Run();
+            CopyNamedRanges.Run();
+            CreateNamedRangeofCells.Run();
+            FormatRanges1.Run();
+            FormatRanges2.Run();
+            IdentifyCellsInNamedRange.Run();
+            InputDataInCellsInRange.Run();
             IntersectionOfRanges.Run();
 
             Console.Write("Press key...");
