@@ -484,6 +484,7 @@ namespace Aspose.Cells.Examples.CSharp
 
             RenameNamedRange.Run();
             SetBorderAroundEachCell.Run();
+            UnionOfRanges.Run();
 
             int ii = 0;
             
