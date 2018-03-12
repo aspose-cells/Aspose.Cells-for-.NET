@@ -482,9 +482,11 @@ namespace Aspose.Cells.Examples.CSharp
             //InputDataInCellsInRange.Run();
             //IntersectionOfRanges.Run();
 
-            RenameNamedRange.Run();
-            SetBorderAroundEachCell.Run();
-            UnionOfRanges.Run();
+            //RenameNamedRange.Run();
+            //SetBorderAroundEachCell.Run();
+            //UnionOfRanges.Run();
+
+            CalculatingSumUsingNamedRange.Run();
 
             int ii = 0;
             
