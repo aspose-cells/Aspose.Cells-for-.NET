@@ -483,6 +483,7 @@ namespace Aspose.Cells.Examples.CSharp
             //IntersectionOfRanges.Run();
 
             RenameNamedRange.Run();
+            SetBorderAroundEachCell.Run();
 
             int ii = 0;
             

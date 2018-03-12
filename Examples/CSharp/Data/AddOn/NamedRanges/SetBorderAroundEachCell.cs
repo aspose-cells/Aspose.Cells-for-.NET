@@ -1,18 +1,18 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
 using System.Drawing;
 
-namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
+namespace Aspose.Cells.Examples.CSharp.Data
 {
     public class SetBorderAroundEachCell
     {
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
-        {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-          
+        {         
             // Instantiate a new Workbook.
             Workbook workbook = new Workbook();
 
@@ -20,7 +20,7 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
             Cells cells = workbook.Worksheets[0].Cells;
 
             // Create a range of cells.
-            Range range = cells.CreateRange("A6", "P216");
+            Range range = cells.CreateRange("D6", "M16");
 
             // Declare style.
             Style stl;
@@ -34,13 +34,13 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
             stl.Font.Color = Color.Blue;
 
             // Set the borders
-            stl.Borders[BorderType.TopBorder].LineStyle = CellBorderType.Thin;
+            stl.Borders[BorderType.TopBorder].LineStyle = CellBorderType.Thick;
             stl.Borders[BorderType.TopBorder].Color = Color.Blue;
-            stl.Borders[BorderType.LeftBorder].LineStyle = CellBorderType.Thin;
+            stl.Borders[BorderType.LeftBorder].LineStyle = CellBorderType.Thick;
             stl.Borders[BorderType.LeftBorder].Color = Color.Blue;
-            stl.Borders[BorderType.BottomBorder].LineStyle = CellBorderType.Thin;
+            stl.Borders[BorderType.BottomBorder].LineStyle = CellBorderType.Thick;
             stl.Borders[BorderType.BottomBorder].Color = Color.Blue;
-            stl.Borders[BorderType.RightBorder].LineStyle = CellBorderType.Thin;
+            stl.Borders[BorderType.RightBorder].LineStyle = CellBorderType.Thick;
             stl.Borders[BorderType.RightBorder].Color = Color.Blue;
 
 
@@ -54,9 +54,9 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
             range.ApplyStyle(stl, flg);
 
             // Save the excel file.
-            workbook.Save( dataDir + "output.xls");
+            workbook.Save(outputDir + "outputSetBorderAroundEachCell.xlsx");
 
-            // ExEnd:1
+            Console.WriteLine("SetBorderAroundEachCell executed successfully.");
         }
     }
 }
