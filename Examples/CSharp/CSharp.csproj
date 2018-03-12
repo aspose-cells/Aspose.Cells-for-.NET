@@ -382,7 +382,7 @@
     <Compile Include="Data\AddOn\NamedRanges\RemoveNamedRange.cs" />
     <Compile Include="Data\AddOn\NamedRanges\RenameNamedRange.cs" />
     <Compile Include="Data\AddOn\NamedRanges\SetBorderAroundEachCell.cs" />
-    <Compile Include="Data\AddOn\NamedRanges\SettingComplexFormula.cs" />
+    <Compile Include="Data\AddOn\NamedRanges\SettingComplexFormulaOfRange.cs" />
     <Compile Include="Data\AddOn\NamedRanges\SettingSimpleFormula.cs" />
     <Compile Include="Data\AddOn\NamedRanges\UnionOfRanges.cs" />
     <Compile Include="Data\CheckCustomNumberFormat.cs" />

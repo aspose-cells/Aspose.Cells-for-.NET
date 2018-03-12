@@ -491,6 +491,7 @@ namespace Aspose.Cells.Examples.CSharp
             //CalculatingSumUsingNamedRange.Run();
             //MergeCellsInNamedRange.Run();
             RemoveNamedRange.Run();
+            SettingComplexFormulaOfRange.Run();
 
 
             Console.Write("Press key...");

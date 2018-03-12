@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
+namespace Aspose.Cells.Examples.CSharp.Data
 {
-    public class SettingComplexFormula
+    public class SettingComplexFormulaOfRange
     {
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:SettingComplexFormulaNamedRange
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
             // Create an instance of Workbook
             Workbook book = new Workbook();
 
@@ -38,8 +37,9 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
             range.RefersTo = "=INDEX(data,Sheet1!$A$1,1):INDEX(data,Sheet1!$A$1,9)";
 
             // Save the workbook
-            book.Save(dataDir + "output_out.xlsx");
-            // ExEnd:SettingComplexFormulaNamedRange
+            book.Save(outputDir + "outputSettingComplexFormulaOfRange.xlsx");
+
+            Console.WriteLine("SettingComplexFormulaOfRange executed successfully.");
         }
     }
 }
