@@ -486,7 +486,8 @@ namespace Aspose.Cells.Examples.CSharp
             //SetBorderAroundEachCell.Run();
             //UnionOfRanges.Run();
 
-            CalculatingSumUsingNamedRange.Run();
+            //CalculatingSumUsingNamedRange.Run();
+            MergeCellsInNamedRange.Run();
 
             int ii = 0;
             
