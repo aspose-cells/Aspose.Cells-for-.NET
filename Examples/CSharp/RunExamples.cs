@@ -481,22 +481,20 @@ namespace Aspose.Cells.Examples.CSharp
             //IdentifyCellsInNamedRange.Run();
             //InputDataInCellsInRange.Run();
             //IntersectionOfRanges.Run();
-
             //RenameNamedRange.Run();
             //SetBorderAroundEachCell.Run();
             //UnionOfRanges.Run();
-
-            int ii = 0;
-
             //CalculatingSumUsingNamedRange.Run();
             //MergeCellsInNamedRange.Run();
-            RemoveNamedRange.Run();
-            SettingComplexFormulaOfRange.Run();
+            //RemoveNamedRange.Run();
+            //SettingComplexFormulaOfRange.Run();
 
+            //int ii = 0;
 
-            Console.Write("Press key...");
-            Console.ReadKey();
-            return;
+            
+            //Console.Write("Press key...");
+            //Console.ReadKey();
+            //return;
 
 
             //// CopyShapesBetweenWorksheets
