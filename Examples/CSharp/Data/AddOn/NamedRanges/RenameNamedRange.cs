@@ -1,19 +1,22 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
+namespace Aspose.Cells.Examples.CSharp.Data
 {
     public class RenameNamedRange
     {
+        //Source directory
+        static string sourceDir = RunExamples.Get_SourceDirectory();
+
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            // Open an existing Excel file that has a (global) named range "TestRange" in it
-            Workbook workbook = new Workbook(dataDir + "book1.xls");
+            // Open an existing Excel file 
+            Workbook workbook = new Workbook(sourceDir + "sampleRenameNamedRange.xlsx");
 
             // Get the first worksheet
             Worksheet sheet = workbook.Worksheets[0];
@@ -22,14 +25,15 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
             Cells cells = sheet.Cells;
 
             // Get the named range "MyRange"
-            Name name = workbook.Worksheets.Names["TestRange"];
+            Name name = workbook.Worksheets.Names["MyTestRange"];
 
             // Rename it
-            name.Text = "NewRange";
+            name.Text = "MyNewRange";
 
             // Save the Excel file
-            workbook.Save(dataDir + "RenamingRange.out.xlsx"); 
-            // ExEnd:1
+            workbook.Save(outputDir + "outputRenameNamedRange.xlsx");
+
+            Console.WriteLine("RenameNamedRange executed successfully.");
         }
     }
 }
