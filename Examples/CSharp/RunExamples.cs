@@ -486,11 +486,13 @@ namespace Aspose.Cells.Examples.CSharp
             //SetBorderAroundEachCell.Run();
             //UnionOfRanges.Run();
 
-            //CalculatingSumUsingNamedRange.Run();
-            MergeCellsInNamedRange.Run();
-
             int ii = 0;
-            
+
+            //CalculatingSumUsingNamedRange.Run();
+            //MergeCellsInNamedRange.Run();
+            RemoveNamedRange.Run();
+
+
             Console.Write("Press key...");
             Console.ReadKey();
             return;
