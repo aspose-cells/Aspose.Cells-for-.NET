@@ -492,11 +492,11 @@ namespace Aspose.Cells.Examples.CSharp
 
             //SettingSimpleFormulaWithRange.Run();
             //CheckCustomNumberFormat.Run();
-            //AccessingMaximumDisplayRangeofWorksheet.Run();
-            AccessCellByRowAndColumnIndex.Run();
 
+            AccessCellByRowAndColumnIndex.Run();
             AccessCellUsingCellIndexInCellsCollection.Run();
             AccessCellUsingCellName.Run();
+            AccessingMaximumDisplayRangeofWorksheet.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();
