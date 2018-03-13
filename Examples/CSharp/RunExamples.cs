@@ -498,8 +498,8 @@ namespace Aspose.Cells.Examples.CSharp
             //AccessCellUsingCellName.Run();
             //AccessingMaximumDisplayRangeofWorksheet.Run();
 
-            //FindCellsContainingFormula.Run();
-            
+            FindCellsContainingFormula.Run();
+            FindCellsStringNumber.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();

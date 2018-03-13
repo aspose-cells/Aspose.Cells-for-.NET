@@ -7,14 +7,13 @@ namespace Aspose.Cells.Examples.CSharp.Data.Handling.Find
 {
     public class FindCellsStringNumber
     {
+        //Source directory
+        static string sourceDir = RunExamples.Get_SourceDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
             // Instantiate the workbook object
-            Workbook workbook = new Workbook(dataDir + "book1.xls");
+            Workbook workbook = new Workbook(sourceDir + "sampleFindCellsStringNumber.xlsx");
 
             // Get Cells collection
             Cells cells = workbook.Worksheets[0].Cells;
@@ -60,7 +59,8 @@ namespace Aspose.Cells.Examples.CSharp.Data.Handling.Find
                 Console.WriteLine("Record not found ");
                 
             }
-            // ExEnd:1
+
+            Console.WriteLine("FindCellsStringNumber executed successfully.");
         }
     }
 }
