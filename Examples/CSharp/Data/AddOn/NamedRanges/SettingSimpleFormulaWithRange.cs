@@ -3,16 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
+namespace Aspose.Cells.Examples.CSharp.Data
 {
-    public class SettingSimpleFormula
+    public class SettingSimpleFormulaWithRange
     {
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Run()
         {
-            // ExStart:SettingSimpleFormulaForNamedRanges
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
             // Create an instance of Workbook
             Workbook book = new Workbook();
 
@@ -38,8 +37,9 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
             book.CalculateFormula();
 
             // Save the result in XLSX format
-            book.Save(dataDir + "output_out.xlsx");
-            // ExEnd:SettingSimpleFormulaForNamedRanges
+            book.Save(outputDir + "outputSettingSimpleFormulaWithRange.xlsx");
+
+            Console.WriteLine("SettingSimpleFormulaWithRange executed successfully.");
         }
     }
 }
