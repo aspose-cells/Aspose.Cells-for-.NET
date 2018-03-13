@@ -492,6 +492,8 @@ namespace Aspose.Cells.Examples.CSharp
 
             SettingSimpleFormulaWithRange.Run();
             CheckCustomNumberFormat.Run();
+            AccessingMaximumDisplayRangeofWorksheet.Run();
+
 
             Console.Write("Press key...");
             Console.ReadKey();

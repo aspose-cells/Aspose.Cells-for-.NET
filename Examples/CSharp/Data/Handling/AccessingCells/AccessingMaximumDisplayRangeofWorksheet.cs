@@ -8,21 +8,13 @@ namespace Aspose.Cells.Examples.CSharp.Data.Handling.AccessingCells
 {
     public class AccessingMaximumDisplayRangeofWorksheet
     {
+        //Source directory
+        static string sourceDir = RunExamples.Get_SourceDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-           
-
-            // Path to source file
-            string filePath = dataDir + "Book1.xlsx";
             // Instantiating a Workbook object
-            Workbook workbook = new Workbook(filePath);
-
-            // Instantiate a workbook from source file
-            Workbook wb = new Workbook(filePath);
+            Workbook wb = new Workbook(sourceDir + "sampleAccessingMaximumDisplayRangeofWorksheet.xlsx");
 
             // Access the first workbook
             Worksheet worksheet = wb.Worksheets[0];
@@ -32,7 +24,8 @@ namespace Aspose.Cells.Examples.CSharp.Data.Handling.AccessingCells
 
             // Print the Maximum Display Range RefersTo property
             Console.WriteLine("Maximum Display Range: " + range.RefersTo);
-            // ExEnd:1
+
+            Console.WriteLine("AccessingMaximumDisplayRangeofWorksheet executed successfully.");
         }
     }
 }
