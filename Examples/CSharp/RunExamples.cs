@@ -490,10 +490,10 @@ namespace Aspose.Cells.Examples.CSharp
 
             int ii = 0;
 
-            SettingSimpleFormulaWithRange.Run();
-            CheckCustomNumberFormat.Run();
-            AccessingMaximumDisplayRangeofWorksheet.Run();
-
+            //SettingSimpleFormulaWithRange.Run();
+            //CheckCustomNumberFormat.Run();
+            //AccessingMaximumDisplayRangeofWorksheet.Run();
+            AccessCellByRowAndColumnIndex.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();
