@@ -393,9 +393,8 @@
     <Compile Include="Data\Processing\TracingDependents.cs" />
     <Compile Include="Data\Processing\TracingPrecedents.cs" />
     <Compile Include="Data\Handling\AccessingCells\AccessCellByRowAndColumnIndex.cs" />
-    <Compile Include="Data\Handling\AccessingCells\UsingCellIndex.cs" />
     <Compile Include="Data\Handling\AccessingCells\UsingCellIndexInCellsCollection.cs" />
-    <Compile Include="Data\Handling\AccessingCells\UsingCellName.cs" />
+    <Compile Include="Data\Handling\AccessingCells\AccessCellUsingCellName.cs" />
     <Compile Include="Data\Handling\AccessingCells\UsingRowAndColumnIndexOfCell.cs" />
     <Compile Include="Data\Handling\AddingDataToCells.cs" />
     <Compile Include="Data\Handling\DataSorting.cs" />

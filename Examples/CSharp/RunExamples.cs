@@ -495,6 +495,9 @@ namespace Aspose.Cells.Examples.CSharp
             //AccessingMaximumDisplayRangeofWorksheet.Run();
             AccessCellByRowAndColumnIndex.Run();
 
+            AccessCellUsingCellIndexInCellsCollection.Run();
+            AccessCellUsingCellName.Run();
+
             Console.Write("Press key...");
             Console.ReadKey();
             return;
