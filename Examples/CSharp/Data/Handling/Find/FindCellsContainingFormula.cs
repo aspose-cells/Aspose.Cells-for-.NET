@@ -1,36 +1,30 @@
+using System;
 using System.IO;
 
 using Aspose.Cells;
 
-namespace Aspose.Cells.Examples.CSharp.Data.Handling.Find
+namespace Aspose.Cells.Examples.CSharp.Data
 {
     public class FindCellsContainingFormula
     {
+        //Source directory
+        static string sourceDir = RunExamples.Get_SourceDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
-            // Creating a file stream containing the Excel file to be opened
-            FileStream fstream = new FileStream(dataDir + "book1.xls", FileMode.Open);
-
             // Opening the Excel file through the file stream
-            Workbook workbook = new Workbook(fstream);
+            Workbook workbook = new Workbook(sourceDir + "sampleFindCellsContainingFormula.xlsx");
 
             // Accessing the first worksheet in the Excel file
             Worksheet worksheet = workbook.Worksheets[0];
 
             // Finding the cell containing the specified formula
-            Cell cell = worksheet.Cells.FindFormula("=SUM(A5:A10)", null);
+            Cell cell = worksheet.Cells.FindFormula("=SUM(A1:A20)", null);
 
             // Printing the name of the cell found after searching worksheet
-            System.Console.WriteLine("Name of the cell containing formula: " + cell.Name);
+            Console.WriteLine("Name of the cell containing formula: " + cell.Name);
 
-            // Closing the file stream to free all resources
-            fstream.Close();
-            // ExEnd:1
-
+            Console.WriteLine("FindCellsContainingFormula executed successfully.");
         }
     }
 }

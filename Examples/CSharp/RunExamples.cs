@@ -493,10 +493,13 @@ namespace Aspose.Cells.Examples.CSharp
             //SettingSimpleFormulaWithRange.Run();
             //CheckCustomNumberFormat.Run();
 
-            AccessCellByRowAndColumnIndex.Run();
-            AccessCellUsingCellIndexInCellsCollection.Run();
-            AccessCellUsingCellName.Run();
-            AccessingMaximumDisplayRangeofWorksheet.Run();
+            //AccessCellByRowAndColumnIndex.Run();
+            //AccessCellUsingCellIndexInCellsCollection.Run();
+            //AccessCellUsingCellName.Run();
+            //AccessingMaximumDisplayRangeofWorksheet.Run();
+
+            //FindCellsContainingFormula.Run();
+            
 
             Console.Write("Press key...");
             Console.ReadKey();
