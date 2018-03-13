@@ -29,7 +29,6 @@ using Aspose.Cells.Examples.CSharp.Articles.ManagingVBAModules;
 using Aspose.Cells.Examples.CSharp.Articles.ManageConditionalFormatting;
 using Aspose.Cells.Examples.CSharp.Charts;
 using Aspose.Cells.Examples.CSharp.Data;
-using Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges;
 using Aspose.Cells.Examples.CSharp.Data.Handling;
 using Aspose.Cells.Examples.CSharp.Data.Handling.AccessingCells;
 using Aspose.Cells.Examples.CSharp.Data.Handling.Find;
@@ -492,6 +491,7 @@ namespace Aspose.Cells.Examples.CSharp
             int ii = 0;
 
             SettingSimpleFormulaWithRange.Run();
+            CheckCustomNumberFormat.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();

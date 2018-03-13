@@ -4,7 +4,7 @@ using System.IO;
 using Aspose.Cells;
 using System.Drawing;
 
-namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
+namespace Aspose.Cells.Examples.CSharp.Data
 {
     public class CheckCustomNumberFormat
     {
@@ -37,8 +37,7 @@ namespace Aspose.Cells.Examples.CSharp.Data.AddOn.NamedRanges
                 Console.WriteLine("Exception Occured. Exception: " + ex.Message);
             }
 
-            Console.WriteLine("Done");
-
+            Console.WriteLine("CheckCustomNumberFormat executed successfully.");
         }
     }
 }
