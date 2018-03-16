@@ -3,18 +3,19 @@ using System.IO;
 using Aspose.Cells;
 using System;
 
-namespace Aspose.Cells.Examples.CSharp.Data.Handling.Find
+namespace Aspose.Cells.Examples.CSharp.Data
 {
     public class FindDataOrFormulas
     {
+        //Source directory
+        static string sourceDir = RunExamples.Get_SourceDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
             // Instantiate the workbook object
-            Workbook workbook = new Workbook(dataDir + "book1.xls");
+            Workbook workbook = new Workbook(sourceDir + "sampleFindDataOrFormulas.xlsx");
+
+            workbook.CalculateFormula();
 
             // Get Cells collection
             Cells cells = workbook.Worksheets[0].Cells;
@@ -43,7 +44,7 @@ namespace Aspose.Cells.Examples.CSharp.Data.Handling.Find
             findOptions.LookAtType = LookAtType.EntireContent;
 
             // Find the cell with value
-            Cell cell = cells.Find(205, null, findOptions);
+            Cell cell = cells.Find(276, null, findOptions);
 
             if (cell != null)
             {
@@ -53,7 +54,8 @@ namespace Aspose.Cells.Examples.CSharp.Data.Handling.Find
             {
                 Console.WriteLine("Record not found ");
             }
-            // ExEnd:1
+
+            Console.WriteLine("FindDataOrFormulas executed successfully.");
         }
     }
 }

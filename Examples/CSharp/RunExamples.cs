@@ -492,14 +492,14 @@ namespace Aspose.Cells.Examples.CSharp
 
             //SettingSimpleFormulaWithRange.Run();
             //CheckCustomNumberFormat.Run();
-
             //AccessCellByRowAndColumnIndex.Run();
             //AccessCellUsingCellIndexInCellsCollection.Run();
             //AccessCellUsingCellName.Run();
             //AccessingMaximumDisplayRangeofWorksheet.Run();
+            //FindCellsContainingFormula.Run();
+            //FindCellsStringNumber.Run();
 
-            FindCellsContainingFormula.Run();
-            FindCellsStringNumber.Run();
+            FindDataOrFormulas.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();
