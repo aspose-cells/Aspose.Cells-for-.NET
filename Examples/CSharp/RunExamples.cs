@@ -106,11 +106,11 @@ namespace Aspose.Cells.Examples.CSharp
             // Uncomment the one you want to try out
 
             //Aspose.Cells for .NET v18.2
-            //WorkbookSettings.ControlExternalResourcesUsingWorkbookSetting_StreamProvider.Run();
-            //_Workbook.FilterDefinedNamesWhileLoadingWorkbook.Run();
-            //DrawingObjects.SetMarginsOfCommentOrShapeInsideTheWorksheet.Run();
-            //Data.SpecifyFormulaFieldsWhileImportingDataToWorksheet.Run();
-            //Formulas.SpecifyMaximumRowsOfSharedFormula.Run();
+            WorkbookSettings.ControlExternalResourcesUsingWorkbookSetting_StreamProvider.Run();
+            _Workbook.FilterDefinedNamesWhileLoadingWorkbook.Run();
+            DrawingObjects.SetMarginsOfCommentOrShapeInsideTheWorksheet.Run();
+            Data.SpecifyFormulaFieldsWhileImportingDataToWorksheet.Run();
+            Formulas.SpecifyMaximumRowsOfSharedFormula.Run();
 
             //Aspose.Cells for .NET v18.1
             //Charts.HandleAutomaticUnitsOfChartAxisLikeMicrosoftExcel.Run();
