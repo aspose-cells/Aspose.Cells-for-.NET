@@ -502,6 +502,7 @@ namespace Aspose.Cells.Examples.CSharp
             FindDataOrFormulas.Run();
             FindingCellsContainingFormula.Run();
             FindingCellsContainingStringValueOrNumber.Run();
+            FindingCellsWithStringOrNumber.Run();
 
             Console.Write("Press key...");
             Console.ReadKey();

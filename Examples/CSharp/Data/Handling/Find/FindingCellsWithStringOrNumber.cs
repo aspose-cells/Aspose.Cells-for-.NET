@@ -3,18 +3,19 @@ using System.IO;
 using Aspose.Cells;
 using System;
 
-namespace Aspose.Cells.Examples.CSharp.Data.Handling.Find
+namespace Aspose.Cells.Examples.CSharp.Data
 {
     public class FindingCellsWithStringOrNumber
     {
+        //Source directory
+        static string sourceDir = RunExamples.Get_SourceDirectory();
+
         public static void Run()
         {
-            // ExStart:1
-            // The path to the documents directory.
-            string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-
             // Instantiate the workbook object
-            Workbook workbook = new Workbook(dataDir + "book1.xls");
+            Workbook workbook = new Workbook(sourceDir + "sampleFindingCellsWithStringOrNumber.xlsx");
+
+            workbook.CalculateFormula();
 
             // Get Cells collection
             Cells cells = workbook.Worksheets[0].Cells;
@@ -24,7 +25,7 @@ namespace Aspose.Cells.Examples.CSharp.Data.Handling.Find
             opts.LookAtType = LookAtType.EntireContent;
 
             // Find the cell with the input integer or double
-            Cell cell1 = cells.Find(205, null, opts);
+            Cell cell1 = cells.Find(224, null, opts);
 
             if (cell1 != null)
             {
@@ -36,7 +37,7 @@ namespace Aspose.Cells.Examples.CSharp.Data.Handling.Find
             }
 
             // Find the cell with the input string
-            Aspose.Cells.Cell cell2 = cells.Find("Items A", null, opts);
+            Aspose.Cells.Cell cell2 = cells.Find("Items E", null, opts);
 
             if (cell2 != null)
             {
@@ -53,13 +54,15 @@ namespace Aspose.Cells.Examples.CSharp.Data.Handling.Find
 
             if (cell3 != null)
             {
-                Console.WriteLine("Name of the cell containing the value: " + cell3.Name);
+                Console.WriteLine("NameSha of the cell containing the value: " + cell3.Name);
             }
             else
             {
                 Console.WriteLine("Record not found ");
             }
-            // ExEnd:1
+
+            Console.WriteLine("FindingCellsWithStringOrNumber executed successfully.");
+
         }
     }
 }
