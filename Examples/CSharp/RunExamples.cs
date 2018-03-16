@@ -31,7 +31,6 @@ using Aspose.Cells.Examples.CSharp.Charts;
 using Aspose.Cells.Examples.CSharp.Data;
 using Aspose.Cells.Examples.CSharp.Data.Handling;
 using Aspose.Cells.Examples.CSharp.Data.Handling.AccessingCells;
-using Aspose.Cells.Examples.CSharp.Data.Handling.Find;
 using Aspose.Cells.Examples.CSharp.Data.Handling.Importing;
 using Aspose.Cells.Examples.CSharp.Data.Processing;
 using Aspose.Cells.Examples.CSharp.Data.Processing.FilteringAndValidation;
@@ -488,7 +487,7 @@ namespace Aspose.Cells.Examples.CSharp
             //RemoveNamedRange.Run();
             //SettingComplexFormulaOfRange.Run();
 
-            int ii = 0;
+            //int ii = 0;
 
             //SettingSimpleFormulaWithRange.Run();
             //CheckCustomNumberFormat.Run();
@@ -498,16 +497,15 @@ namespace Aspose.Cells.Examples.CSharp
             //AccessingMaximumDisplayRangeofWorksheet.Run();
             //FindCellsContainingFormula.Run();
             //FindCellsStringNumber.Run();
+            //FindDataOrFormulas.Run();
+            //FindingCellsContainingFormula.Run();
+            //FindingCellsContainingStringValueOrNumber.Run();
+            //FindingCellsWithStringOrNumber.Run();
+            //FindingDataOrFormulasUsingFindOptions.Run();
 
-            FindDataOrFormulas.Run();
-            FindingCellsContainingFormula.Run();
-            FindingCellsContainingStringValueOrNumber.Run();
-            FindingCellsWithStringOrNumber.Run();
-            FindingDataOrFormulasUsingFindOptions.Run();
-
-            Console.Write("Press key...");
-            Console.ReadKey();
-            return;
+            //Console.Write("Press key...");
+            //Console.ReadKey();
+            //return;
 
 
             //// CopyShapesBetweenWorksheets

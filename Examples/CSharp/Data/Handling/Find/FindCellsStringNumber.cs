@@ -3,7 +3,7 @@ using System.IO;
 using Aspose.Cells;
 using System;
 
-namespace Aspose.Cells.Examples.CSharp.Data.Handling.Find
+namespace Aspose.Cells.Examples.CSharp.Data
 {
     public class FindCellsStringNumber
     {
