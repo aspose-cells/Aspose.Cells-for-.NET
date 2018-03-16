@@ -54,7 +54,7 @@ namespace Aspose.Cells.Examples.CSharp.Data
 
             if (cell3 != null)
             {
-                Console.WriteLine("NameSha of the cell containing the value: " + cell3.Name);
+                Console.WriteLine("Name of the cell containing the value: " + cell3.Name);
             }
             else
             {
