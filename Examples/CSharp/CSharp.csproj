@@ -39,7 +39,7 @@
   <ItemGroup>
     <Reference Include="Aspose.Cells">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Aspose.Cells.18.2.0\lib\net40\Aspose.Cells.dll</HintPath>
+      <HintPath>..\packages\Aspose.Cells.18.3.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -660,6 +660,7 @@
     <Compile Include="Workbook\FilterDefinedNamesWhileLoadingWorkbook.cs" />
     <Compile Include="Workbook\PasswordProtectOrUnprotectSharedWorkbook.cs" />
     <Compile Include="Workbook\ReadAndWriteExternalConnectionOfXLSBFile.cs" />
+    <Compile Include="Workbook\StopConversionOrLoadingUsingInterruptMonitor.cs" />
     <Compile Include="Worksheets\UpdateDaysPreservingHistoryOfRevisionLogsInSharedWorkbook.cs" />
     <Compile Include="Worksheets\UtilizeSheet_SheetId_PropertyOfOpenXml.cs" />
     <Compile Include="Worksheets\Display\ControlTabBarWidth.cs" />
