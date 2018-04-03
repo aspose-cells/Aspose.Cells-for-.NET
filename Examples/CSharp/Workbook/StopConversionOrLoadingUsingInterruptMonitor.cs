@@ -50,7 +50,7 @@ namespace Aspose.Cells.Examples.CSharp._Workbook
             im.Interrupt();
         }
 
-        public void Run(int arg)
+        public void TestRun()
         {
             ThreadStart ts1 = new ThreadStart(this.CreateWorkbookAndConvertItToPdfFormat);
             Thread t1 = new Thread(ts1);
@@ -67,16 +67,7 @@ namespace Aspose.Cells.Examples.CSharp._Workbook
       
         public static void Run()
         {
-            try
-            {
-                new StopConversionOrLoadingUsingInterruptMonitor().Run(0);
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-
-            
+            new StopConversionOrLoadingUsingInterruptMonitor().TestRun();
 
             Console.WriteLine("StopConversionOrLoadingUsingInterruptMonitor executed successfully.");
         }
