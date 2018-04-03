@@ -34,7 +34,7 @@ namespace Aspose.Cells.Examples.CSharp._Workbook
             try
             {
                 //Save the workbook to Pdf format
-                wb.Save(outputDir + "output.pdf");
+                wb.Save(outputDir + "output_InterruptMonitor.pdf");
             }
             catch (Aspose.Cells.CellsException ex)
             {
