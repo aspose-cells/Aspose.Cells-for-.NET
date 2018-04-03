@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp.LoadingSavingConvertingAndManaging
 {
-    class SpecifyDocumentVersionOfExcelFile 
+    class SpecifyDocumentVersionOfExcelFile
     {
         //Output directory
         static string outputDir = RunExamples.Get_OutputDirectory();

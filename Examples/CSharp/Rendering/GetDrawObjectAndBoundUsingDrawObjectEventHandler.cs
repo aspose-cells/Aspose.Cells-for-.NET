@@ -6,7 +6,7 @@ using Aspose.Cells.Rendering;
 
 namespace Aspose.Cells.Examples.CSharp.Rendering
 {
-    class GetDrawObjectAndBoundUsingDrawObjectEventHandler 
+    class GetDrawObjectAndBoundUsingDrawObjectEventHandler
     {
         //Source directory
         static string sourceDir = RunExamples.Get_SourceDirectory();

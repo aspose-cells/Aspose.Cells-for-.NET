@@ -6,7 +6,7 @@ using System.IO;
 
 namespace Aspose.Cells.Examples.CSharp.DrawingObjects
 {
-    class AccessAndModifyLabelOfOleObject 
+    class AccessAndModifyLabelOfOleObject
     {
         //Source directory
         static string sourceDir = RunExamples.Get_SourceDirectory();

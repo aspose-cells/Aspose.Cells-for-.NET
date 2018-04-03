@@ -8,7 +8,7 @@ using System.Collections;
 
 namespace Aspose.Cells.Examples.CSharp.Charts
 {
-    class ReadAxisLabelsAfterCalculatingTheChart 
+    class ReadAxisLabelsAfterCalculatingTheChart
     {
         //Source directory
         static string sourceDir = RunExamples.Get_SourceDirectory();

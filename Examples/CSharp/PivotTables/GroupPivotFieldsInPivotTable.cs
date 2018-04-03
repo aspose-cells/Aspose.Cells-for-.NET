@@ -7,7 +7,7 @@ using System.Collections;
 
 namespace Aspose.Cells.Examples.CSharp.PivotTables
 {
-    class GroupPivotFieldsInPivotTable 
+    class GroupPivotFieldsInPivotTable
     {
         //Source directory
         static string sourceDir = RunExamples.Get_SourceDirectory();
