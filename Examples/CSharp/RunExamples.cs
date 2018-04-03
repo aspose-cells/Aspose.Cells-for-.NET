@@ -108,6 +108,7 @@ namespace Aspose.Cells.Examples.CSharp
             _Workbook.StopConversionOrLoadingUsingInterruptMonitor.Run();
             DrawingObjects.AccessAndModifyLabelOfOleObject.Run();
             HTML.ExportSimilarBorderStyle.Run();
+            Worksheets.FindIfWorksheetIsDialogSheet.Run();
 
 
             //Aspose.Cells for .NET v18.2
