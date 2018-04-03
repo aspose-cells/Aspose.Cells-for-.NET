@@ -598,6 +598,7 @@
     <Compile Include="Rendering\ControlLoadingOfExternalResourcesInExcelToPDF.cs" />
     <Compile Include="Rendering\CreatePdfBookmarkEntryForChartSheet.cs" />
     <Compile Include="Rendering\ExportRangeOfCellsInWorksheetToImage.cs" />
+    <Compile Include="Rendering\GetDrawObjectAndBoundUsingDrawObjectEventHandler.cs" />
     <Compile Include="Rendering\IgnoreErrorsWhileRenderingExcelToPdf.cs" />
     <Compile Include="Rendering\OutputBlankPageWhenThereIsNothingToPrint.cs" />
     <Compile Include="Rendering\AddPDFBookmarksWithNamedDestinations.cs" />
