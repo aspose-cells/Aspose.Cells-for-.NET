@@ -7,7 +7,7 @@ using System.IO;
 
 namespace Aspose.Cells.Examples.CSharp._Workbook
 {
-    class StopConversionOrLoadingUsingInterruptMonitor
+    class StopConversionOrLoadingUsingInterruptMonitor 
     {
         //Output directory
         static string outputDir = RunExamples.Get_OutputDirectory();

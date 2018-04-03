@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp.Data
 {
-    class PreserveSingleQuotePrefixOfCellValueOrRange
+    class PreserveSingleQuotePrefixOfCellValueOrRange 
     {
         //Source directory
         static string sourceDir = RunExamples.Get_SourceDirectory();
