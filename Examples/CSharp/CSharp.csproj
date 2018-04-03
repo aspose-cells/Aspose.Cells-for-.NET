@@ -582,6 +582,7 @@
     <Compile Include="LoadingSavingConvertingAndManaging\SpecifyHtmlCrossTypeInOutputHTML.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\TrimLeadingBlankRowsAndColumnsWhileExportingSpreadsheetsToCSVFormat.cs" />
     <Compile Include="PivotTables\FindAndRefreshNestedOrChildrenPivotTables.cs" />
+    <Compile Include="PivotTables\GroupPivotFieldsInPivotTable.cs" />
     <Compile Include="PivotTables\ParsingPivotCachedRecordsWhileLoadingExcelFile.cs" />
     <Compile Include="PivotTable\ConsolidationFunctions.cs" />
     <Compile Include="PivotTable\CustomizePivotTableGlobalSettings.cs" />
