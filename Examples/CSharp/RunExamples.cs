@@ -110,7 +110,8 @@ namespace Aspose.Cells.Examples.CSharp
             //HTML.ExportSimilarBorderStyle.Run();
             //Worksheets.FindIfWorksheetIsDialogSheet.Run();
             //Rendering.GetDrawObjectAndBoundUsingDrawObjectEventHandler.Run();
-            PivotTables.GroupPivotFieldsInPivotTable.Run();
+            //PivotTables.GroupPivotFieldsInPivotTable.Run();
+            Data.PreserveSingleQuotePrefixOfCellValueOrRange.Run();
 
             //Aspose.Cells for .NET v18.2
             //WorkbookSettings.ControlExternalResourcesUsingWorkbookSetting_StreamProvider.Run();
