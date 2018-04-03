@@ -112,6 +112,8 @@ namespace Aspose.Cells.Examples.CSharp
             //Rendering.GetDrawObjectAndBoundUsingDrawObjectEventHandler.Run();
             //PivotTables.GroupPivotFieldsInPivotTable.Run();
             Data.PreserveSingleQuotePrefixOfCellValueOrRange.Run();
+            Charts.ReadAxisLabelsAfterCalculatingTheChart.Run();
+            LoadingSavingConvertingAndManaging.SpecifyDocumentVersionOfExcelFile.Run();
 
             //Aspose.Cells for .NET v18.2
             //WorkbookSettings.ControlExternalResourcesUsingWorkbookSetting_StreamProvider.Run();

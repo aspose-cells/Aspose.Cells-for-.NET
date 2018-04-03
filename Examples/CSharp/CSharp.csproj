@@ -335,6 +335,7 @@
     <Compile Include="Charts\ChartRendering.cs" />
     <Compile Include="Charts\ChartToPdf.cs" />
     <Compile Include="Charts\HandleAutomaticUnitsOfChartAxisLikeMicrosoftExcel.cs" />
+    <Compile Include="Charts\ReadAxisLabelsAfterCalculatingTheChart.cs" />
     <Compile Include="Charts\SetShapeTypeOfDataLabelsOfChart.cs" />
     <Compile Include="Charts\SetValuesFormatCodeOfChartSeries.cs" />
     <Compile Include="Charts\HowToCreateChart.cs" />
@@ -580,6 +581,7 @@
     <Compile Include="LoadingSavingConvertingAndManaging\ExportCommentsWhileSavingExcelFileToHtml.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\GetWarningsWhileLoadingExcelFile.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\ReadNumbersSpreadsheet.cs" />
+    <Compile Include="LoadingSavingConvertingAndManaging\SpecifyDocumentVersionOfExcelFile.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\SpecifyHtmlCrossTypeInOutputHTML.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\TrimLeadingBlankRowsAndColumnsWhileExportingSpreadsheetsToCSVFormat.cs" />
     <Compile Include="PivotTables\FindAndRefreshNestedOrChildrenPivotTables.cs" />
