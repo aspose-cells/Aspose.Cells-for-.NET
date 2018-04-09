@@ -34,7 +34,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Cells
             sheet.Cells.SetColumnWidth(1, 30);
 
             // Assigning the name of JavaScript function to OnValidationErrorClientFunction property of GridWeb
-            GridWeb1.OnValidationErrorClientFunction = "ValidationErrorFunction";
+            //GridWeb1.OnValidationErrorClientFunction = "ValidationErrorFunction";
         }
     }
 }

@@ -27,7 +27,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.GridWebBasics
             GridWeb1.OnSubmitClientFunction = "ConfirmFunction";
 
             // Assigning the name of JavaScript function to OnValidationErrorClientFunction property of GridWeb
-            GridWeb1.OnValidationErrorClientFunction = "ValidationErrorFunction";
+            //GridWeb1.OnValidationErrorClientFunction = "ValidationErrorFunction";
 
             // Accessing the cells collection of the worksheet that is currently active
             GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
