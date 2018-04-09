@@ -9,10 +9,7 @@
 </asp:Content>
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
     <div class="componentDescriptionTxt">
-        <p class="productTitle">Welcome to the Aspose.Cells.GridWeb Featured Examples!</p>
-        <p class="componentDescriptionTxt">
-            Note: These examples support the following browsers: IE(or any IE kernel browsers), Mozilla, Mozilla Firefox and Opera. The IE 6.0 or new version is recommended.
-        </p>
+        <p><strong>Welcome to the Aspose.Cells.GridWeb Featured Examples!</strong></p>
     </div>
     <div class="col-xs-3">
         <ul class="nav nav-tabs tabs-left">
