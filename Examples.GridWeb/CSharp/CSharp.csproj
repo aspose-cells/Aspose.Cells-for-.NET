@@ -577,6 +577,13 @@
     <Compile Include="Miscellaneous\Common\ShowHeaderBarAndCommandButton.aspx.designer.cs">
       <DependentUpon>ShowHeaderBarAndCommandButton.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
     <Compile Include="WorkingWithGridWebClientSideScript\MakingGridWebResizableUsingResizablejQueryUiFeature.aspx.cs">
       <DependentUpon>MakingGridWebResizableUsingResizablejQueryUiFeature.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1202,6 +1209,7 @@
     <Content Include="js\bootstrap\bootstrap-vertical-tabs\LICENSE" />
     <Content Include="js\bootstrap\bootstrap-vertical-tabs\package.json" />
     <Content Include="js\bootstrap\bootstrap-vertical-tabs\README.md" />
+    <Content Include="Site1.Master" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Start\" />
