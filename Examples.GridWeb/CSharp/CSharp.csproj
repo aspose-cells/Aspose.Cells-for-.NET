@@ -203,6 +203,12 @@
     <Compile Include="Cells\AccessCells.aspx.designer.cs">
       <DependentUpon>AccessCells.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Cells\AddCustomServerSideFunctionValidation.aspx.cs">
+      <DependentUpon>AddCustomServerSideFunctionValidation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\AddCustomServerSideFunctionValidation.aspx.designer.cs">
+      <DependentUpon>AddCustomServerSideFunctionValidation.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Cells\AddCustomValidation.aspx.cs">
       <DependentUpon>AddCustomValidation.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -848,6 +854,7 @@
     <Content Include="Articles\UsingCommonSubmitButton.aspx" />
     <Content Include="Cells\AccessCellHyperlink.aspx" />
     <Content Include="Cells\AccessCells.aspx" />
+    <Content Include="Cells\AddCustomServerSideFunctionValidation.aspx" />
     <Content Include="Cells\AddCustomValidation.aspx" />
     <Content Include="Cells\AddDataValidation.aspx" />
     <Content Include="Cells\AddDropdownListValidation.aspx" />

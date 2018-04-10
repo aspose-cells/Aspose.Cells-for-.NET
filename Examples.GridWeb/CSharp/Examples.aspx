@@ -26,6 +26,14 @@
         <div class="tab-content">
             <div class="tab-pane active" id="articles">
                 <ul class="list-group">
+                    <li class="list-group-item" title="Add Custom Server-Side Function Validation">
+                        <p class="productTitle">
+                            <a href="Cells/AddCustomServerSideFunctionValidation.aspx">Add Custom Server-Side Function Validation</a>
+                        </p>
+                        <p>
+                            Sometimes, you might require to implement data validation on server-side. Aspose.Cells.GridWeb allows you to add custom server-side data validation. You have to specify the cell range or area. You can also set client-side validation functions for callbacks with custom server side validation.
+                        </p>
+                    </li>
                     <li class="list-group-item" title="Using a Common Button to Submit Grid Data">
                         <p class="productTitle"><a href="Articles/UsingCommonSubmitButton.aspx">Using a Common Button to Submit Grid Data</a></p>
                         <p class="componentDescriptionCaption">Description</p>
