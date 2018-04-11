@@ -34,6 +34,14 @@
                             Sometimes, you might require to implement data validation on server-side. Aspose.Cells.GridWeb allows you to add custom server-side data validation. You have to specify the cell range or area. You can also set client-side validation functions for callbacks with custom server side validation.
                         </p>
                     </li>
+                    <li class="list-group-item" title="Change the Decimal Separator from Numeric Keypad">
+                        <p class="productTitle">
+                            <a href="Worksheets/ChangeDecimalSeparatorFromNumericKeypad.aspx">Change the Decimal Separator from Numeric Keypad</a>
+                        </p>
+                        <p>
+                            By default, Aspose.Cells.GridWeb displays numeric data accordingly based on the locale/regional settings on the machine. You can change the decimal separator from Numeric keypad programmatically using Aspose.Cells.GridWeb API. So, when a file is imported into GridWeb matrix or you input some numeric data (from the numeric keypad) into a new worksheet cell, it should have your desired decimal separator set visually. 
+                        </p>
+                    </li>
                     <li class="list-group-item" title="Using a Common Button to Submit Grid Data">
                         <p class="productTitle"><a href="Articles/UsingCommonSubmitButton.aspx">Using a Common Button to Submit Grid Data</a></p>
                         <p class="componentDescriptionCaption">Description</p>

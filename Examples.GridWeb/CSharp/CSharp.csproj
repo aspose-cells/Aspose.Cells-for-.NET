@@ -612,6 +612,13 @@
     <Compile Include="Worksheets\AddHyperlinks.aspx.designer.cs">
       <DependentUpon>AddHyperlinks.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Worksheets\ChangeDecimalSeparatorFromNumericKeypad.aspx.cs">
+      <DependentUpon>ChangeDecimalSeparatorFromNumericKeypad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Worksheets\ChangeDecimalSeparatorFromNumericKeypad.aspx.designer.cs">
+      <DependentUpon>ChangeDecimalSeparatorFromNumericKeypad.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Worksheets\ExportDataTable.aspx.cs">
       <DependentUpon>ExportDataTable.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -979,6 +986,7 @@
     <Content Include="WorkingWithGridWebClientSideScript\ResizeGridWebUsingResizeMethod.aspx" />
     <Content Include="Worksheets\AccessNamedRanges.aspx" />
     <Content Include="Worksheets\AddHyperlinks.aspx" />
+    <Content Include="Worksheets\ChangeDecimalSeparatorFromNumericKeypad.aspx" />
     <Content Include="Worksheets\ExportDataTable.aspx" />
     <Content Include="Worksheets\ImportDataView.aspx" />
     <Content Include="GridWebBasics\ImportExportFile.aspx" />
