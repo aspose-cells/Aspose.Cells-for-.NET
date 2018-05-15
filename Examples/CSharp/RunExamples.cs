@@ -108,6 +108,7 @@ namespace Aspose.Cells.Examples.CSharp
             Rendering.AvoidBlankPageInOutputPdfWhenThereIsNothingToPrint.Main();
             Charts.FindTypeOfXandYValuesOfPointsInChartSeries.Main();
             HTML.GetHTML5StringFromCell.Main();
+            HTML.HidingOverlaidContentWithCrossHideRightWhileSavingToHtml.Main();
 
             //Aspose.Cells for .NET v18.3
             //Charts.ReadAxisLabelsAfterCalculatingTheChart.Run();
