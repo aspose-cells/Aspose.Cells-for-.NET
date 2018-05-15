@@ -429,6 +429,7 @@
     <Compile Include="Data\SpecifyFormulaFieldsWhileImportingDataToWorksheet.cs" />
     <Compile Include="Data\SpecifyingDBNumCustomPatternFormatting.cs" />
     <Compile Include="Data\SpecifyingSortWarningWhileSortingData.cs" />
+    <Compile Include="DocumentProperties\SpecifyLanguageOfExcelFileUsingBuiltInDocumentProperties.cs" />
     <Compile Include="DrawingObjects\AccessAndModifyLabelOfOleObject.cs" />
     <Compile Include="DrawingObjects\AccessNonPrimitiveShape.cs" />
     <Compile Include="DrawingObjects\Comments\AddImageToComment.cs" />
