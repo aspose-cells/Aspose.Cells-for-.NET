@@ -562,6 +562,7 @@
     <Compile Include="HTML\ExportDocumentWorkbookAndWorksheetPropertiesInHTML.cs" />
     <Compile Include="HTML\ExportSimilarBorderStyle.cs" />
     <Compile Include="HTML\ExportWorksheetCSSSeparatelyInOutputHTML.cs" />
+    <Compile Include="HTML\GetHTML5StringFromCell.cs" />
     <Compile Include="HTML\PrefixTableElementsStylesWithHtmlSaveOptions_TableCssIdProperty.cs" />
     <Compile Include="Introduction\CheckVersionNumber.cs" />
     <Compile Include="Introduction\FirstApplication.cs" />
