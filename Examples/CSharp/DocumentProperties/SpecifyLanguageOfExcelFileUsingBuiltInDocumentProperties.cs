@@ -6,7 +6,7 @@ using System.Text;
 namespace Aspose.Cells.Examples.CSharp.DocumentProperties
 {
     class SpecifyLanguageOfExcelFileUsingBuiltInDocumentProperties
-    {
+    { 
         //Output directory
         static string outputDir = RunExamples.Get_OutputDirectory();
 

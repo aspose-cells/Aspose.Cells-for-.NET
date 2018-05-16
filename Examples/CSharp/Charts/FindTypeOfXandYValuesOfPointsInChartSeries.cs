@@ -8,7 +8,7 @@ using Aspose.Cells.Charts;
 namespace Aspose.Cells.Examples.CSharp.Charts
 {
     class FindTypeOfXandYValuesOfPointsInChartSeries
-    {
+    { 
         //Source directory
         static string sourceDir = RunExamples.Get_SourceDirectory();
 

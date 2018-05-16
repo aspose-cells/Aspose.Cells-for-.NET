@@ -6,7 +6,7 @@ using System.Text;
 namespace Aspose.Cells.Examples.CSharp.HTML
 {
     class HidingOverlaidContentWithCrossHideRightWhileSavingToHtml
-    {
+    { 
         //Source directory
         static string sourceDir = RunExamples.Get_SourceDirectory();
 

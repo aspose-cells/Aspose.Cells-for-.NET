@@ -7,7 +7,7 @@ using System.Text;
 namespace Aspose.Cells.Examples.CSharp.Rendering
 {
     class AvoidBlankPageInOutputPdfWhenThereIsNothingToPrint
-    {
+    { 
         public static void Main()
         {
             //Create empty workbook.

@@ -6,7 +6,7 @@ using System.Text;
 namespace Aspose.Cells.Examples.CSharp.HTML
 {
     class GetHTML5StringFromCell
-    {
+    { 
         public static void Main()
         {
             //Create workbook.
