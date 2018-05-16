@@ -111,6 +111,7 @@ namespace Aspose.Cells.Examples.CSharp
             HTML.GetHTML5StringFromCell.Main();
             //HTML.HidingOverlaidContentWithCrossHideRightWhileSavingToHtml.Main();
             DocumentProperties.SpecifyLanguageOfExcelFileUsingBuiltInDocumentProperties.Main();
+            Data.GetAllHiddenRowsIndicesAfterRefreshingAutoFilter.Main();
 
             //Aspose.Cells for .NET v18.3
             //Charts.ReadAxisLabelsAfterCalculatingTheChart.Run();
