@@ -334,6 +334,7 @@
     <Compile Include="Charts\ChangeChartSizeAndPosition.cs" />
     <Compile Include="Charts\ChartRendering.cs" />
     <Compile Include="Charts\ChartToPdf.cs" />
+    <Compile Include="Charts\CreateChartPDFWithDesiredPageSize.cs" />
     <Compile Include="Charts\FindTypeOfXandYValuesOfPointsInChartSeries.cs" />
     <Compile Include="Charts\HandleAutomaticUnitsOfChartAxisLikeMicrosoftExcel.cs" />
     <Compile Include="Charts\ReadAxisLabelsAfterCalculatingTheChart.cs" />
