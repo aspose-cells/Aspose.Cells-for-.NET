@@ -513,6 +513,7 @@
     <Compile Include="Files\Utility\WorksheetToImage.cs" />
     <Compile Include="Fonts\GetListOfFontsUsedInSpreadsheetOrWorkbook.cs" />
     <Compile Include="Fonts\SetDefaultFontPropertyOfPdfSaveOptionsAndImageOrPrintOptions.cs" />
+    <Compile Include="Fonts\SpecifyIndividualOrPrivateSetOfFontsForWorkbookRendering.cs" />
     <Compile Include="Formatting\ApproachesToFormatData\ApplyingGradientFillEffects.cs" />
     <Compile Include="Formatting\ApproachesToFormatData\UsingExcelPredefinedStyles.cs" />
     <Compile Include="Formatting\ApproachesToFormatData\UsingGetStyleSetStyle.cs" />
