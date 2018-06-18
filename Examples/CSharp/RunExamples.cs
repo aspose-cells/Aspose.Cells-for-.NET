@@ -107,6 +107,7 @@ namespace Aspose.Cells.Examples.CSharp
             //Aspose.Cells for .NET v18.5
             LoadingSavingConvertingAndManaging.SaveWorkbookToStrictOpenXMLSpreadsheetFormat.Main();
             Fonts.SpecifyIndividualOrPrivateSetOfFontsForWorkbookRendering.Main();
+            DrawingObjects.SpecifyFarEastAndLatinNameOfFontInTextOptionsOfShape.Main();
 
 
             //Aspose.Cells for .NET v18.4
