@@ -104,15 +104,18 @@ namespace Aspose.Cells.Examples.CSharp
 
 
             // Uncomment the one you want to try out
+            //Aspose.Cells for .NET v18.5
+            LoadingSavingConvertingAndManaging.SaveWorkbookToStrictOpenXMLSpreadsheetFormat.Main();
+
             //Aspose.Cells for .NET v18.4
-            Charts.CreateChartPDFWithDesiredPageSize.Main();
-            Charts.FindTypeOfXandYValuesOfPointsInChartSeries.Main();
-            Data.GetAllHiddenRowsIndicesAfterRefreshingAutoFilter.Main();
-            DocumentProperties.SpecifyLanguageOfExcelFileUsingBuiltInDocumentProperties.Main();
-            DrawingObjects.RotateTextWithShapeInsideWorksheet.Main();
-            HTML.GetHTML5StringFromCell.Main();
+            //Charts.CreateChartPDFWithDesiredPageSize.Main();
+            //Charts.FindTypeOfXandYValuesOfPointsInChartSeries.Main();
+            //Data.GetAllHiddenRowsIndicesAfterRefreshingAutoFilter.Main();
+            //DocumentProperties.SpecifyLanguageOfExcelFileUsingBuiltInDocumentProperties.Main();
+            //DrawingObjects.RotateTextWithShapeInsideWorksheet.Main();
+            //HTML.GetHTML5StringFromCell.Main();
             //HTML.HidingOverlaidContentWithCrossHideRightWhileSavingToHtml.Main();
-            Rendering.AvoidBlankPageInOutputPdfWhenThereIsNothingToPrint.Main();
+            //Rendering.AvoidBlankPageInOutputPdfWhenThereIsNothingToPrint.Main();
 
             //Aspose.Cells for .NET v18.3
             //Charts.ReadAxisLabelsAfterCalculatingTheChart.Run();

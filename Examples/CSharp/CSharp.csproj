@@ -39,7 +39,7 @@
   <ItemGroup>
     <Reference Include="Aspose.Cells">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Aspose.Cells.18.4.0\lib\net40\Aspose.Cells.dll</HintPath>
+      <HintPath>..\packages\Aspose.Cells.18.5.1\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -588,6 +588,7 @@
     <Compile Include="LoadingSavingConvertingAndManaging\ExportCommentsWhileSavingExcelFileToHtml.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\GetWarningsWhileLoadingExcelFile.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\ReadNumbersSpreadsheet.cs" />
+    <Compile Include="LoadingSavingConvertingAndManaging\SaveWorkbookToStrictOpenXMLSpreadsheetFormat.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\SpecifyDocumentVersionOfExcelFile.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\SpecifyHtmlCrossTypeInOutputHTML.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\TrimLeadingBlankRowsAndColumnsWhileExportingSpreadsheetsToCSVFormat.cs" />
