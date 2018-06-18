@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp.Fonts
 {
-    class SpecifyIndividualOrPrivateSetOfFontsForWorkbookRendering
+    class SpecifyIndividualOrPrivateSetOfFontsForWorkbookRendering 
     {
         //Source directory
         static string sourceDir = RunExamples.Get_SourceDirectory();
