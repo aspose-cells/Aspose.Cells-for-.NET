@@ -455,6 +455,7 @@
     <Compile Include="DrawingObjects\Controls\ManipulatingTextBoxControls.cs" />
     <Compile Include="DrawingObjects\ConvertSmartArtToGroupShape.cs" />
     <Compile Include="DrawingObjects\DetermineIfShapeIsSmartArtShape.cs" />
+    <Compile Include="DrawingObjects\ExtractTextFromGearTypeSmartArtShape.cs" />
     <Compile Include="DrawingObjects\OLE\ExtractingOLEObjects.cs" />
     <Compile Include="DrawingObjects\OLE\RefreshOLEObjects.cs" />
     <Compile Include="DrawingObjects\OLE\InsertingOLEObjects.cs" />
