@@ -555,6 +555,7 @@
     <Compile Include="Formatting\SetPattern.cs" />
     <Compile Include="Formatting\SettingDisplayFormats\UsingBuiltInNumberFormats.cs" />
     <Compile Include="Formatting\SettingDisplayFormats\UsingCustomNumber.cs" />
+    <Compile Include="Formulas\AddCellsToMicrosoftExcelFormulaWatchWindow.cs" />
     <Compile Include="Formulas\CalculatingFormulas.cs" />
     <Compile Include="Formulas\CalculatingFormulasOnce.cs" />
     <Compile Include="Formulas\DirectCalculationFormula.cs" />

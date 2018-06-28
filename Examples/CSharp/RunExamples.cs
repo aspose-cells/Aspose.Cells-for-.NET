@@ -105,11 +105,12 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out
             //Aspose.Cells for .NET v18.6
-            Slicers.CreateSlicerToPivotTable.Main();
-            Slicers.FormattingSlicer.Main();
-            Slicers.RemovingSlicer.Main();
-            Slicers.RenderingSlicer.Main();
-            Slicers.UpdatingSlicer.Main();
+            //Slicers.CreateSlicerToPivotTable.Main();
+            //Slicers.FormattingSlicer.Main();
+            //Slicers.RemovingSlicer.Main();
+            //Slicers.RenderingSlicer.Main();
+            //Slicers.UpdatingSlicer.Main();
+            Formulas.AddCellsToMicrosoftExcelFormulaWatchWindow.Main();
 
             //Aspose.Cells for .NET v18.5
             //LoadingSavingConvertingAndManaging.SaveWorkbookToStrictOpenXMLSpreadsheetFormat.Main();
