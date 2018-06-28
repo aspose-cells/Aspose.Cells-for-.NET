@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp.Slicers
 {
-    class RemovingSlicer
+    class RemovingSlicer 
     {
         //Source directory
         static string sourceDir = RunExamples.Get_SourceDirectory();
