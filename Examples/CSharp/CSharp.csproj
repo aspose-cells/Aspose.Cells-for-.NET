@@ -631,6 +631,7 @@
     <Compile Include="Slicers\CreateSlicerToPivotTable.cs" />
     <Compile Include="Slicers\FormattingSlicer.cs" />
     <Compile Include="Slicers\RemovingSlicer.cs" />
+    <Compile Include="Slicers\RenderingSlicer.cs" />
     <Compile Include="SmartMarkers\AutoPopulateSmartMarkerDataToOtherWorksheets.cs" />
     <Compile Include="SmartMarkers\UsingFormulaParameterInSmartMarkerField.cs" />
     <Compile Include="SmartMarkers\AddCustomLabels.cs" />
