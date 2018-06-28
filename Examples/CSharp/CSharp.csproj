@@ -39,7 +39,7 @@
   <ItemGroup>
     <Reference Include="Aspose.Cells">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Aspose.Cells.18.5.1\lib\net40\Aspose.Cells.dll</HintPath>
+      <HintPath>..\packages\Aspose.Cells.18.6.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -628,6 +628,7 @@
     <Compile Include="RowsColumns\Grouping\SummaryRowRight.cs" />
     <Compile Include="RowsColumns\Grouping\SummaryRowBelow.cs" />
     <Compile Include="RunExamples.cs" />
+    <Compile Include="Slicers\CreateSlicerToPivotTable.cs" />
     <Compile Include="SmartMarkers\AutoPopulateSmartMarkerDataToOtherWorksheets.cs" />
     <Compile Include="SmartMarkers\UsingFormulaParameterInSmartMarkerField.cs" />
     <Compile Include="SmartMarkers\AddCustomLabels.cs" />

@@ -104,11 +104,13 @@ namespace Aspose.Cells.Examples.CSharp
 
 
             // Uncomment the one you want to try out
-            //Aspose.Cells for .NET v18.5
-            LoadingSavingConvertingAndManaging.SaveWorkbookToStrictOpenXMLSpreadsheetFormat.Main();
-            Fonts.SpecifyIndividualOrPrivateSetOfFontsForWorkbookRendering.Main();
-            DrawingObjects.SpecifyFarEastAndLatinNameOfFontInTextOptionsOfShape.Main();
+            //Aspose.Cells for .NET v18.6
+            Slicers.CreateSlicerToPivotTable.Main();
 
+            //Aspose.Cells for .NET v18.5
+            //LoadingSavingConvertingAndManaging.SaveWorkbookToStrictOpenXMLSpreadsheetFormat.Main();
+            //Fonts.SpecifyIndividualOrPrivateSetOfFontsForWorkbookRendering.Main();
+            //DrawingObjects.SpecifyFarEastAndLatinNameOfFontInTextOptionsOfShape.Main();
 
             //Aspose.Cells for .NET v18.4
             //Charts.CreateChartPDFWithDesiredPageSize.Main();
