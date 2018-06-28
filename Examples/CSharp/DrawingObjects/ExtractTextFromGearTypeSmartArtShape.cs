@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp.DrawingObjects
 {
-    class ExtractTextFromGearTypeSmartArtShape 
+    class ExtractTextFromGearTypeSmartArtShape
     {
         //Source directory
         static string sourceDir = RunExamples.Get_SourceDirectory();
