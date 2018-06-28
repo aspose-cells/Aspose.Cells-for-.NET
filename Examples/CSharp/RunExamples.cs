@@ -111,6 +111,7 @@ namespace Aspose.Cells.Examples.CSharp
             //Slicers.RenderingSlicer.Main();
             //Slicers.UpdatingSlicer.Main();
             Formulas.AddCellsToMicrosoftExcelFormulaWatchWindow.Main();
+            _Workbook.AddCustomXMLPartsAndSelectThemByID.Main();
 
             //Aspose.Cells for .NET v18.5
             //LoadingSavingConvertingAndManaging.SaveWorkbookToStrictOpenXMLSpreadsheetFormat.Main();

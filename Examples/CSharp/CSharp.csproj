@@ -679,6 +679,7 @@
     <Compile Include="WorkbookVBAProject\FindoutifVBAProjectisProtected.cs" />
     <Compile Include="WorkbookVBAProject\PasswordProtecttheVBAProjectofExcelWorkbook.cs" />
     <Compile Include="WorkbookVBAProject\CopyVBAMacroUserFormDesignerStorageToWorkbook.cs" />
+    <Compile Include="Workbook\AddCustomXMLPartsAndSelectThemByID.cs" />
     <Compile Include="Workbook\AddDigitalSignatureToAnAlreadySignedExcelFile.cs" />
     <Compile Include="Workbook\CreateSharedWorkbook.cs" />
     <Compile Include="Workbook\FilterDefinedNamesWhileLoadingWorkbook.cs" />
