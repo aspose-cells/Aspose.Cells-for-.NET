@@ -107,6 +107,7 @@ namespace Aspose.Cells.Examples.CSharp
             //Aspose.Cells for .NET v18.6
             Slicers.CreateSlicerToPivotTable.Main();
             Slicers.FormattingSlicer.Main();
+            Slicers.RemovingSlicer.Main();
 
             //Aspose.Cells for .NET v18.5
             //LoadingSavingConvertingAndManaging.SaveWorkbookToStrictOpenXMLSpreadsheetFormat.Main();
