@@ -23,14 +23,14 @@ namespace Aspose.Cells.Examples.CSharp.Formulas
             ws.Cells["A2"].PutValue(30);
 
             // Access cell C1 and set its formula.
-            Cell c1 = ws.Cells["C1"]; ;
+            Cell c1 = ws.Cells["C1"];
             c1.Formula = "=Sum(A1,A2)";
 
             // Add cell C1 into cell watches by name.
             ws.CellWatches.Add(c1.Name);
 
             // Access cell E1 and set its formula.
-            Cell e1 = ws.Cells["E1"]; ;
+            Cell e1 = ws.Cells["E1"];
             e1.Formula = "=A2*A1";
 
             // Add cell E1 into cell watches by its row and column indices.
