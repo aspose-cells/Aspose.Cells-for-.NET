@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp.Data
 {
-    class GetAddressCellCountOffsetEntireColumnAndEntireRowOfTheRange 
+    class GetAddressCellCountOffsetEntireColumnAndEntireRowOfTheRange
     {
         public static void Main()
         {

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp.Slicers
 {
-    class UpdatingSlicer 
+    class UpdatingSlicer
     {
         //Source directory
         static string sourceDir = RunExamples.Get_SourceDirectory();
