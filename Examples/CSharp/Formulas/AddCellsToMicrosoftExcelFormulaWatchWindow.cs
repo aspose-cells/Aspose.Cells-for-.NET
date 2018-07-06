@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp.Formulas
 {
-    class AddCellsToMicrosoftExcelFormulaWatchWindow
+    class AddCellsToMicrosoftExcelFormulaWatchWindow 
     {
         //Output directory
         static string outputDir = RunExamples.Get_OutputDirectory();
