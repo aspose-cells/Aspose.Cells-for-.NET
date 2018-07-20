@@ -983,6 +983,7 @@ namespace Aspose.Cells.Examples.CSharp
             //ConvertingToXPS.Run();
             //ConvertingWorksheetToSVG.Run();
             //EncryptingFiles.Run();
+            //EncryptingODSFiles.Run();
             //Excel2PDFConversion.Run();
             //AccessingDocumentProperties.Run();
             //AccessingValueOfDocumentProperties.Run();
