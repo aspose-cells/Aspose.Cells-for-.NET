@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp.WorkbookSettings
 {
-    class FindMaximumRowsAndColumnsSupportedByXLSAndXLSXFormats 
+    class FindMaximumRowsAndColumnsSupportedByXLSAndXLSXFormats
     {
         public static void Main()
         {
