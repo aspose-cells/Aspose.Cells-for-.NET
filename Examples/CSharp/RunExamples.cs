@@ -103,10 +103,11 @@ namespace Aspose.Cells.Examples.CSharp
             }
 
             // Uncomment the one you want to try out
-            Worksheets.Security.SpecifyAuthorWhileWriteProtectingWorkbook.Main();
+            //Aspose.Cells for .NET v18.7
             Data.ChangeCellsAlignmentAndKeepExistingFormatting.Main();
+            WorkbookSettings.FindMaximumRowsAndColumnsSupportedByXLSAndXLSXFormats.Main();
+            Worksheets.Security.SpecifyAuthorWhileWriteProtectingWorkbook.Main();
 
-            
             //Aspose.Cells for .NET v18.6
             //DrawingObjects.ExtractTextFromGearTypeSmartArtShape.Main();
             //Data.GetAddressCellCountOffsetEntireColumnAndEntireRowOfTheRange.Main();

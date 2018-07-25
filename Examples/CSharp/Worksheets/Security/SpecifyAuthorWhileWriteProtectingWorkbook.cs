@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Aspose.Cells.Examples.CSharp.Worksheets.Security
 {
-    class SpecifyAuthorWhileWriteProtectingWorkbook
+    class SpecifyAuthorWhileWriteProtectingWorkbook 
     {
         //Source directory
         static string sourceDir = RunExamples.Get_SourceDirectory();
