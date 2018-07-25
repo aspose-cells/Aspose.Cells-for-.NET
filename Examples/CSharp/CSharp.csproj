@@ -363,6 +363,7 @@
     <Compile Include="Charts\SettingChartsData.cs" />
     <Compile Include="Charts\UsingSparklines.cs" />
     <Compile Include="Data\ApplyAdvancedFilterOfMicrosoftExcel.cs" />
+    <Compile Include="Data\ChangeCellsAlignmentAndKeepExistingFormatting.cs" />
     <Compile Include="Data\ExportHTMLStringValueOfCellsToDataTable.cs" />
     <Compile Include="Data\GetAddressCellCountOffsetEntireColumnAndEntireRowOfTheRange.cs" />
     <Compile Include="Data\GetAllHiddenRowsIndicesAfterRefreshingAutoFilter.cs" />

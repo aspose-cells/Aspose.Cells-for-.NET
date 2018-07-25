@@ -104,6 +104,7 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out
             Worksheets.Security.SpecifyAuthorWhileWriteProtectingWorkbook.Main();
+            Data.ChangeCellsAlignmentAndKeepExistingFormatting.Main();
 
             
             //Aspose.Cells for .NET v18.6
