@@ -690,6 +690,7 @@
     <Compile Include="Workbook\ReadAndWriteExternalConnectionOfXLSBFile.cs" />
     <Compile Include="Workbook\StopConversionOrLoadingUsingInterruptMonitor.cs" />
     <Compile Include="Worksheets\FindIfWorksheetIsDialogSheet.cs" />
+    <Compile Include="Worksheets\Security\SpecifyAuthorWhileWriteProtectingWorkbook.cs" />
     <Compile Include="Worksheets\UpdateDaysPreservingHistoryOfRevisionLogsInSharedWorkbook.cs" />
     <Compile Include="Worksheets\UtilizeSheet_SheetId_PropertyOfOpenXml.cs" />
     <Compile Include="Worksheets\Display\ControlTabBarWidth.cs" />

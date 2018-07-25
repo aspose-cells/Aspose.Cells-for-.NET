@@ -103,16 +103,19 @@ namespace Aspose.Cells.Examples.CSharp
             }
 
             // Uncomment the one you want to try out
+            Worksheets.Security.SpecifyAuthorWhileWriteProtectingWorkbook.Main();
+
+            
             //Aspose.Cells for .NET v18.6
-            DrawingObjects.ExtractTextFromGearTypeSmartArtShape.Main();
-            Data.GetAddressCellCountOffsetEntireColumnAndEntireRowOfTheRange.Main();
-            Formulas.AddCellsToMicrosoftExcelFormulaWatchWindow.Main();
-            Slicers.CreateSlicerToPivotTable.Main();
-            Slicers.FormattingSlicer.Main();
-            Slicers.RemovingSlicer.Main();
-            Slicers.RenderingSlicer.Main();
-            Slicers.UpdatingSlicer.Main();
-            _Workbook.AddCustomXMLPartsAndSelectThemByID.Main();
+            //DrawingObjects.ExtractTextFromGearTypeSmartArtShape.Main();
+            //Data.GetAddressCellCountOffsetEntireColumnAndEntireRowOfTheRange.Main();
+            //Formulas.AddCellsToMicrosoftExcelFormulaWatchWindow.Main();
+            //Slicers.CreateSlicerToPivotTable.Main();
+            //Slicers.FormattingSlicer.Main();
+            //Slicers.RemovingSlicer.Main();
+            //Slicers.RenderingSlicer.Main();
+            //Slicers.UpdatingSlicer.Main();
+            //_Workbook.AddCustomXMLPartsAndSelectThemByID.Main();
 
             //Aspose.Cells for .NET v18.5
             //LoadingSavingConvertingAndManaging.SaveWorkbookToStrictOpenXMLSpreadsheetFormat.Main();
