@@ -20,7 +20,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
 
             // Apply different Image/Print options.
             Aspose.Cells.Rendering.ImageOrPrintOptions options = new Aspose.Cells.Rendering.ImageOrPrintOptions();
-            options.ImageFormat = System.Drawing.Imaging.ImageFormat.Tiff;
+            options.ImageType = Drawing.ImageType.Tiff;
             options.PrintingPage = PrintingPageType.Default;
 
             // To print a whole workbook, iterate through the sheets and print them, or use the WorkbookRender class.

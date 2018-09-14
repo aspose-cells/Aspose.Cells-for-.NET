@@ -26,9 +26,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ConvertingWorksheetToImage
             // Define ImageOrPrintOptions
             ImageOrPrintOptions imgOptions = new ImageOrPrintOptions();
             imgOptions.OnePagePerSheet = true;
-            
+
             // Specify the image format
-            imgOptions.ImageFormat = System.Drawing.Imaging.ImageFormat.Jpeg;
+            imgOptions.ImageType = Drawing.ImageType.Jpeg;
             
             // Render the sheet with respect to specified image/print options
             SheetRender sr = new SheetRender(sheet, imgOptions);

@@ -23,16 +23,16 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Get the first Picture in the first worksheet
             Aspose.Cells.Drawing.Picture pic = worksheet.Pictures[0];
-            
+
             // Set the output image file path
-            string picformat = pic.ImageFormat.ToString();
+            string picformat = pic.ImageType.ToString();
             
             // Note: you may evaluate the image format before specifying the image path
             // Define ImageOrPrintOptions
             ImageOrPrintOptions printoption = new ImageOrPrintOptions();
-            
+
             // Specify the image format
-            printoption.ImageFormat = System.Drawing.Imaging.ImageFormat.Jpeg;
+            printoption.ImageType = Drawing.ImageType.Jpeg;
             
             // Save the image
             pic.ToImage(outputDir + "outputExtractImagesFromWorksheets.jpg", printoption);

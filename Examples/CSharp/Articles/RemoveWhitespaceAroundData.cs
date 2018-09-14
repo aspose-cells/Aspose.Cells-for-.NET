@@ -33,7 +33,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Define ImageOrPrintOptions
             ImageOrPrintOptions imgOptions = new ImageOrPrintOptions();
-            imgOptions.ImageFormat = System.Drawing.Imaging.ImageFormat.Emf;
+            imgOptions.ImageType = Drawing.ImageType.Emf;
 
             // Set only one page would be rendered for the image
             imgOptions.OnePagePerSheet = true;

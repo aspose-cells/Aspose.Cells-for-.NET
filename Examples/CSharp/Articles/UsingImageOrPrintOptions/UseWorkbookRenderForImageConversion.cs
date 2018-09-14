@@ -20,7 +20,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.UsingImageOrPrintOptions
             Aspose.Cells.Workbook wb = new Aspose.Cells.Workbook(sourceDir + "sampleUseWorkbookRenderForImageConversion.xlsx");
 
             ImageOrPrintOptions opts = new ImageOrPrintOptions();
-            opts.ImageFormat = ImageFormat.Tiff;
+            opts.ImageType = Drawing.ImageType.Tiff;
 
             WorkbookRender wr = new WorkbookRender(wb, opts);
             wr.ToImage(outputDir + "outputUseWorkbookRenderForImageConversion.tiff");

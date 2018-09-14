@@ -26,7 +26,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // Set the ImageOrPrintOptions with desired pixel format (24 bits per pixel) and image format type
             ImageOrPrintOptions opts = new ImageOrPrintOptions();
             opts.PixelFormat = PixelFormat.Format24bppRgb;
-            opts.ImageFormat = ImageFormat.Tiff;
+            opts.ImageType = Drawing.ImageType.Tiff;
 
             // Instantiate SheetRender object based on the first worksheet
             SheetRender sr = new SheetRender(ws, opts);

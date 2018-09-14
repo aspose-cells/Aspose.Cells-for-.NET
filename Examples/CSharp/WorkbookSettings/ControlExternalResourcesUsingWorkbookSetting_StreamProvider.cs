@@ -47,7 +47,7 @@ namespace Aspose.Cells.Examples.CSharp.WorkbookSettings
             //Specify image or print options, we need one page per sheet and png output
             ImageOrPrintOptions opts = new ImageOrPrintOptions();
             opts.OnePagePerSheet = true;
-            opts.ImageFormat = ImageFormat.Png;
+            opts.ImageType = Drawing.ImageType.Png;
 
             //Create sheet render by passing required parameters
             SheetRender sr = new SheetRender(ws, opts);

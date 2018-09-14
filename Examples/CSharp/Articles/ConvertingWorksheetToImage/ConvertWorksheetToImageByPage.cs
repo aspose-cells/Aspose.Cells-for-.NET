@@ -23,7 +23,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ConvertingWorksheetToImage
             Aspose.Cells.Rendering.ImageOrPrintOptions options = new Aspose.Cells.Rendering.ImageOrPrintOptions();
             options.HorizontalResolution = 200;
             options.VerticalResolution = 200;
-            options.ImageFormat = System.Drawing.Imaging.ImageFormat.Tiff;
+            options.ImageType = Drawing.ImageType.Tiff;
 
             // Sheet2Image By Page conversion
             SheetRender sr = new SheetRender(sheet, options);

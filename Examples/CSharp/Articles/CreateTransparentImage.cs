@@ -21,7 +21,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Apply different image or print options
             var imgOption = new ImageOrPrintOptions();
-            imgOption.ImageFormat = ImageFormat.Png;
+            imgOption.ImageType = Drawing.ImageType.Png;
             imgOption.HorizontalResolution = 200;
             imgOption.VerticalResolution = 200;
             imgOption.OnePagePerSheet = true;

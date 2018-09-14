@@ -28,7 +28,7 @@ namespace Aspose.Cells.Examples.CSharp.Rendering
             //Since the sheet is blank, we will set OutputBlankPageWhenNothingToPrint to true
             //So that empty page gets printed
             ImageOrPrintOptions opts = new ImageOrPrintOptions();
-            opts.ImageFormat = ImageFormat.Png;
+            opts.ImageType = Drawing.ImageType.Png;
             opts.OutputBlankPageWhenNothingToPrint = true;
 
             //Render empty sheet to png image

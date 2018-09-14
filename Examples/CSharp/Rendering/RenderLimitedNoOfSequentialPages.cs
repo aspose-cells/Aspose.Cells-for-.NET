@@ -28,7 +28,7 @@ namespace Aspose.Cells.Examples.CSharp.Rendering
             ImageOrPrintOptions opts = new ImageOrPrintOptions();
             opts.PageIndex = 3;
             opts.PageCount = 4;
-            opts.ImageFormat = System.Drawing.Imaging.ImageFormat.Png;
+            opts.ImageType = Drawing.ImageType.Png;
 
             //Create sheet render object
             SheetRender sr = new SheetRender(ws, opts);

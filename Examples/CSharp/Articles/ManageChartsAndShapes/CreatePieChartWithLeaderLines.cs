@@ -112,7 +112,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             ImageOrPrintOptions anOption = new ImageOrPrintOptions();
 
             // Set image format
-            anOption.ImageFormat = System.Drawing.Imaging.ImageFormat.Png;
+            anOption.ImageType = Drawing.ImageType.Png;
 
             // Set resolution
             anOption.HorizontalResolution = 200;

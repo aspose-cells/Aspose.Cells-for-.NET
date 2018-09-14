@@ -28,7 +28,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.UsingImageOrPrintOptions
             ImageOrPrintOptions imgOptions = new ImageOrPrintOptions();
 
             // Specify the image format
-            imgOptions.ImageFormat = System.Drawing.Imaging.ImageFormat.Jpeg;
+            imgOptions.ImageType = Drawing.ImageType.Jpeg;
 
             // Render the sheet with respect to specified image/print options
             SheetRender sr = new SheetRender(sheet, imgOptions);

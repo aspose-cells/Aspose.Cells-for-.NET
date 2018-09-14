@@ -81,7 +81,7 @@ namespace Aspose.Cells.Examples.CSharp.Data.Processing.FilteringAndValidation
             cellArea.EndColumn = 1;
 
             // Add the validation area.
-            validation.AreaList.Add(cellArea);
+            validation.AddArea(cellArea);
 
             // Save the Excel file.
             workbook.Save(dataDir + "output.out.xls");

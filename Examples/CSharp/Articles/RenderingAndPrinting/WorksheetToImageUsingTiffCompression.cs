@@ -38,7 +38,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             options.IsCellAutoFit = false;
 
             // Set Image Format
-            options.ImageFormat = System.Drawing.Imaging.ImageFormat.Tiff;
+            options.ImageType = Drawing.ImageType.Tiff;
 
             // Set printing page type
             options.PrintingPage = PrintingPageType.Default;

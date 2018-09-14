@@ -49,7 +49,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             else
             {
                 // Load nothing
-                this.LoadDataFilterOptions = LoadDataFilterOptions.None;
+                this.LoadDataFilterOptions = LoadDataFilterOptions.Structure;
             }
         }
     }

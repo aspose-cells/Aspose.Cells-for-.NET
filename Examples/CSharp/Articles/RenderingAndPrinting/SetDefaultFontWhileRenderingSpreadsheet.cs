@@ -42,7 +42,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             // Create image or print options.
             ImageOrPrintOptions opts = new ImageOrPrintOptions();
             opts.OnePagePerSheet = true;
-            opts.ImageFormat = ImageFormat.Png;
+            opts.ImageType = Drawing.ImageType.Png;
 
             // Render worksheet image with Courier New as default font.
             opts.DefaultFont = "Courier New";

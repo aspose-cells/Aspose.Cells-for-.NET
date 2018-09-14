@@ -38,7 +38,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageConditionalFormatting
 
             // Create image or print options
             ImageOrPrintOptions opts = new ImageOrPrintOptions();
-            opts.ImageFormat = ImageFormat.Png;
+            opts.ImageType = Drawing.ImageType.Png;
 
             // Get the image bytes of the databar
             byte[] imgBytes = dbar.ToImage(cell, opts);

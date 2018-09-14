@@ -37,7 +37,7 @@ namespace Aspose.Cells.Examples.CSharp.Rendering
             // Set OnePagePerSheet option as true
             ImageOrPrintOptions options = new ImageOrPrintOptions();
             options.OnePagePerSheet = true;
-            options.ImageFormat = ImageFormat.Jpeg;
+            options.ImageType = ImageType.Jpeg;
             options.HorizontalResolution = 200;
             options.VerticalResolution = 200;
 

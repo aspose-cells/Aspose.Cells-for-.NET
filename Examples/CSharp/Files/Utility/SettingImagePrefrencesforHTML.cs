@@ -21,7 +21,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Utility
             HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html);
 
             // Set the ImageFormat to PNG
-            saveOptions.ImageOptions.ImageFormat = System.Drawing.Imaging.ImageFormat.Jpeg;
+            saveOptions.ImageOptions.ImageType = Drawing.ImageType.Png;
 
             // Set SmoothingMode to AntiAlias
             saveOptions.ImageOptions.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;

@@ -55,7 +55,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.FilteringObjectsAtLoadTime
                 // Render entire worksheet to image
                 ImageOrPrintOptions imageOpts = new ImageOrPrintOptions();
                 imageOpts.OnePagePerSheet = true;
-                imageOpts.ImageFormat = ImageFormat.Png;
+                imageOpts.ImageType = Drawing.ImageType.Png;
 
                 // Convert worksheet to image
                 SheetRender render = new SheetRender(worksheet, imageOpts);

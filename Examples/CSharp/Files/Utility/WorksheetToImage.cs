@@ -22,7 +22,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Utility
             // Define ImageOrPrintOptions
             ImageOrPrintOptions imgOptions = new ImageOrPrintOptions();
             // Specify the image format
-            imgOptions.ImageFormat = System.Drawing.Imaging.ImageFormat.Jpeg;
+            imgOptions.ImageType = Drawing.ImageType.Jpeg;
             // Only one page for the whole sheet would be rendered
             imgOptions.OnePagePerSheet = true;
 

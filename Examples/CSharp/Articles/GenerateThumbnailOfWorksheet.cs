@@ -22,9 +22,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Define ImageOrPrintOptions
             ImageOrPrintOptions imgOptions = new ImageOrPrintOptions();
-            
+
             // Specify the image format
-            imgOptions.ImageFormat = System.Drawing.Imaging.ImageFormat.Jpeg;
+            imgOptions.ImageType = Drawing.ImageType.Jpeg;
             
             // Set the vertical and horizontal resolution
             imgOptions.VerticalResolution = 200;

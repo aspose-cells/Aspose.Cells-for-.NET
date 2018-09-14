@@ -37,9 +37,9 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=18.7.1.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Aspose.Cells.18.7.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=18.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.18.8.0\lib\net40\Aspose.Cells.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -62,12 +62,15 @@
     <Compile Include="Articles\AddConditionalIconsSet.cs" />
     <Compile Include="Articles\AddImageHyperlinks.cs" />
     <Compile Include="Articles\AddingAnonymousCustomObject.cs" />
+    <Compile Include="Articles\ContentCopyForAccessibilityOption.cs" />
     <Compile Include="Articles\AddWordArtTextWithBuiltinStyle.cs" />
     <Compile Include="Articles\AddXmlMapInsideWorkbook.cs" />
     <Compile Include="Articles\ApplyConditionalFormattingCellValue.cs" />
     <Compile Include="Articles\ApplyConditionalFormattingFormula.cs" />
+    <Compile Include="Articles\ApplyingTextAlignmentToPartialTextInsideTheTextBox.cs" />
     <Compile Include="Articles\AssignAndValidateDigitalSignatures.cs" />
     <Compile Include="Articles\ChangeTextBoxOrShapeCharacterSpacing.cs" />
+    <Compile Include="Articles\CopyRowsColumns\PastingRowsColumnsWithPasteOptions.cs" />
     <Compile Include="Articles\DetectMergedCellsAndUnmerge.cs" />
     <Compile Include="Articles\ExportXmlMapFromWorkbook.cs" />
     <Compile Include="Articles\FilteringObjectsAtLoadTime\CustomFilteringPerWorksheet.cs" />
@@ -367,6 +370,7 @@
     <Compile Include="Data\ExportHTMLStringValueOfCellsToDataTable.cs" />
     <Compile Include="Data\GetAddressCellCountOffsetEntireColumnAndEntireRowOfTheRange.cs" />
     <Compile Include="Data\GetAllHiddenRowsIndicesAfterRefreshingAutoFilter.cs" />
+    <Compile Include="Data\Handling\ExportRangeWithFlagToSkipColumnName.cs" />
     <Compile Include="Data\PreserveSingleQuotePrefixOfCellValueOrRange.cs" />
     <Compile Include="Data\ShiftFirstRowDownWhenInsertingCellsDataTableRows.cs" />
     <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToOtherSheetCell.cs" />
@@ -603,6 +607,7 @@
     <Compile Include="PivotTables\GroupPivotFieldsInPivotTable.cs" />
     <Compile Include="PivotTables\ParsingPivotCachedRecordsWhileLoadingExcelFile.cs" />
     <Compile Include="PivotTable\ConsolidationFunctions.cs" />
+    <Compile Include="PivotTable\DisablePivotTableRibbon.cs" />
     <Compile Include="PivotTable\CustomizePivotTableGlobalSettings.cs" />
     <Compile Include="PivotTable\SpecifyCompatibility.cs" />
     <Compile Include="PivotTable\RefreshAndCalculateItems.cs" />
