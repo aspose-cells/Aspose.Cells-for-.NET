@@ -71,6 +71,8 @@ using Aspose.Cells.Examples.CSharp.Articles.UsingImageOrPrintOptions;
 using Aspose.Cells.Examples.CSharp.KnowledgeBase.ComparingVSTOWithAspose;
 using Aspose.Cells.Examples.CSharp.KnowledgeBase.FAQs;
 using Aspose.Cells.Examples.CSharp.Articles.FilteringObjectsAtLoadTime;
+using Aspose.Cells.Examples.CSharp.XmlMaps;
+using Aspose.Cells.Examples.CSharp._CellsHelper;
 
 namespace Aspose.Cells.Examples.CSharp
 {
@@ -103,12 +105,22 @@ namespace Aspose.Cells.Examples.CSharp
             }
 
             // Uncomment the one you want to try out
+            //Aspose.Cells for .NET v18.9
+            ExportCustomPropertiesToPDF.Main();
+            GetXMLPathFromListObjectTable.Main();
+            CreateSafeSheetNames.Main();
+            AutofilterBlank.Main();
+            AutofilterNonBlank.Main();
+            AutofilterContains.Main();
+            AutofilterNotContains.Main();
+            RetrieveQueryTableResultRange.Main();
+
             //Aspose.Cells for .NET v18.8
-            ApplyingTextAlignmentToPartialTextInsideTheTextBox.Main();
-            ContentCopyForAccessibilityOption.Main();
-            DisablePivotTableRibbon.Main();
-            ExportRangeWithFlagToSkipColumnName.Main();
-            PastingRowsColumnsWithPasteOptions.Main();
+            //ApplyingTextAlignmentToPartialTextInsideTheTextBox.Main();
+            //ContentCopyForAccessibilityOption.Main();
+            //DisablePivotTableRibbon.Main();
+            //ExportRangeWithFlagToSkipColumnName.Main();
+            //PastingRowsColumnsWithPasteOptions.Main();
 
 
             //Aspose.Cells for .NET v18.7

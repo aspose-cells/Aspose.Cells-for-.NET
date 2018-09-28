@@ -37,8 +37,8 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=18.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.18.8.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=18.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.18.9.0\lib\net35\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -78,6 +78,7 @@
     <Compile Include="Articles\InsertOleObject_WAVFile.cs" />
     <Compile Include="Articles\ManageChartsAndShapes\ReadAndManipulateExcel2016Charts.cs" />
     <Compile Include="Articles\ManageChartsAndShapes\ReadColorOfShapesGlowEffect.cs" />
+    <Compile Include="Articles\ManageDatabaseConnection\RetrieveQueryTableResultRange .cs" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\LoadTemplateWithoutCharts.cs" />
     <Compile Include="Articles\SettingScaleCropAndLinksUpToDateProperties.cs" />
     <Compile Include="Articles\SettingSubscriptEffect.cs" />
@@ -328,6 +329,7 @@
     <Compile Include="Articles\WorkingWithHTMLFormat\ExpandTextFromRightToLeft.cs" />
     <Compile Include="Articles\WorkingWithHTMLFormat\ImplementIStreamProvider.cs" />
     <Compile Include="Articles\WorkingWithHTMLFormat\RenderGradientFillToHTML.cs" />
+    <Compile Include="CellsHelper\CreateSafeSheetNames.cs" />
     <Compile Include="CellsHelper\MergeFiles.cs" />
     <Compile Include="CellsHelper\NameToIndex.cs" />
     <Compile Include="CellsHelper\IndexToName.cs" />
@@ -372,6 +374,10 @@
     <Compile Include="Data\GetAllHiddenRowsIndicesAfterRefreshingAutoFilter.cs" />
     <Compile Include="Data\Handling\ExportRangeWithFlagToSkipColumnName.cs" />
     <Compile Include="Data\PreserveSingleQuotePrefixOfCellValueOrRange.cs" />
+    <Compile Include="Data\Processing\FilteringAndValidation\AutofilterNotContains.cs" />
+    <Compile Include="Data\Processing\FilteringAndValidation\AutofilterContains.cs" />
+    <Compile Include="Data\Processing\FilteringAndValidation\AutofilterNonBlank.cs" />
+    <Compile Include="Data\Processing\FilteringAndValidation\AutofilterBlank.cs" />
     <Compile Include="Data\ShiftFirstRowDownWhenInsertingCellsDataTableRows.cs" />
     <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToOtherSheetCell.cs" />
     <Compile Include="Data\AddOn\Hyperlinks\AddingLinkToExternalFile.cs" />
@@ -492,6 +498,7 @@
     <Compile Include="Files\Handling\SaveInExcel2007xlsxFormat.cs" />
     <Compile Include="Files\Handling\SaveInHtmlFormat.cs" />
     <Compile Include="Files\Handling\SaveInODSFormat.cs" />
+    <Compile Include="Files\Handling\ExportCustomPropertiesToPDF.cs" />
     <Compile Include="Files\Handling\SaveInPdfFormat.cs" />
     <Compile Include="Files\Handling\SaveInSpreadsheetMLFormat.cs" />
     <Compile Include="Files\Handling\SaveXLSFile.cs" />
@@ -761,6 +768,7 @@
     <Compile Include="Worksheets\Value\CopyWorksheetsBetweenWorkbooks.cs" />
     <Compile Include="Worksheets\Value\CopyWithinWorkbook.cs" />
     <Compile Include="XmlMaps\FindRootElementNameOfXmlMap.cs" />
+    <Compile Include="XmlMaps\GetXMLPathFromListObjectTable.cs" />
     <Compile Include="XmlMaps\QueryCellAreasMappedToXmlMapPath.cs" />
   </ItemGroup>
   <ItemGroup>

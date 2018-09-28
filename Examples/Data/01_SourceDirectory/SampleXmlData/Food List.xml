@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Foods>
+    <Food>Pizza</Food>
+  </Foods>
+  <Foods>
+    <Food>Burger</Food>
+  </Foods>
+  <Foods>
+    <Food>Sandwitch</Food>
+  </Foods>
+  <Foods>
+    <Food>Cake</Food>
+  </Foods>
+  <Foods>
+    <Food>Pastry</Food>
+  </Foods>
+</DocumentElement>

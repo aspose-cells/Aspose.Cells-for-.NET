@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="yes"?>
+<DocumentElement>
+  <Countries>
+    <Country>USA</Country>
+  </Countries>
+  <Countries>
+    <Country>Australia</Country>
+  </Countries>
+  <Countries>
+    <Country>Germany</Country>
+  </Countries>
+  <Countries>
+    <Country>UK</Country>
+  </Countries>
+  <Countries>
+    <Country>France</Country>
+  </Countries>
+</DocumentElement>
