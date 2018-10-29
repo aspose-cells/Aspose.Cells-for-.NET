@@ -8,20 +8,13 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 {
     public class ApplyingTextAlignmentToPartialTextInsideTheTextBox
     {
+
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
+
         public static void Main()
         {
-            //Input directory
-            string sourceDir = RunExamples.Get_SourceDirectory();
-
-            //Output directory
-            string outputDir = RunExamples.Get_OutputDirectory();
-
-			// Intialize an object of the Workbook class to load template file
-			Workbook sourceWb = new Workbook(sourceDir + "sampleTextboxPartialTextAllignment.xlsx");
-
-			// Access the target textbox whose text is to be aligned
-			var sourceTextBox = sourceWb.Worksheets[0].Shapes[0];
-
+            // ExStart:
 			// Create and object of the target workbook
 			var destWb = new Workbook();
 
@@ -31,15 +24,12 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 			//Create new textbox
 			TextBox _textBox = (TextBox)_sheet.Shapes.AddShape( MsoDrawingType.TextBox,1, 0, 1, 0, 200, 200);
 
-			// Alternatively text box can be added using following line as well
-			// TextBox _textBox = _sheet.Shapes.AddTextBox(1, 0, 1, 0, 200, 200);
+            // Use Html string
+            _textBox.HtmlText = "<Font Style=\"FONT-FAMILY: Arial;FONT-SIZE: 12pt;COLOR: #ff0000;TEXT-ALIGN: left;\">Hello</Font><Font Style=\"FONT-WEIGHT: bold;FONT-FAMILY: Arial;FONT-SIZE: 28pt;COLOR: #ff0000;TEXT-ALIGN: center;\">Hello</Font><Font Style=\"FONT-WEIGHT: bold;FONT-FAMILY: Arial;FONT-SIZE: 12pt;COLOR: #00b050;TEXT-ALIGN: right;\">Hello</Font>";
 
-			// Use Html string from a template file textbox
-			_textBox.HtmlText = sourceTextBox.HtmlText;
-
-			// Save the workbook on disc
-			destWb.Save(outputDir + "outputSampleTextboxPartialTextAllignment.xlsx");
-
+            // Save the workbook on disc
+            destWb.Save(outputDir + "outputSampleTextboxPartialTextAllignment.xlsx");
+            // ExEnd:
             Console.WriteLine("ApplyingTextAlignmentToPartialTextInsideTheTextBox executed successfully.\r\n");
         }
     }

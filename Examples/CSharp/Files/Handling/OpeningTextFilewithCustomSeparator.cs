@@ -7,7 +7,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
 {
     public class OpeningTextFilewithCustomSeparator
     {
-        public static void Run()
+        public static void Main()
         {
             // ExStart:1
             // The path to the documents directory.
@@ -28,7 +28,9 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
 
             // Save file
             wb.Save(dataDir+ "output.txt");
-           // ExEnd:1
+            // ExEnd:1
+
+            Console.WriteLine("OpeningTextFilewithCustomSeparator executed successfully.\r\n");
 
         }
     }

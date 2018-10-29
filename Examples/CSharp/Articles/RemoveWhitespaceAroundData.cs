@@ -21,7 +21,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Get the first worksheet
             Worksheet sheet = book.Worksheets[0];
-
+            LoadDataOption dataOption = new LoadDataOption();
+            LoadOptions options = new LoadOptions();
+            options.LoadFilter = new LoadFilter(LoadDataFilterOptions.All);
             // Specify your print area if you want
             // Sheet.PageSetup.PrintArea = "A1:H8";
 

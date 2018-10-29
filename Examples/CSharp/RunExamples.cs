@@ -73,6 +73,8 @@ using Aspose.Cells.Examples.CSharp.KnowledgeBase.FAQs;
 using Aspose.Cells.Examples.CSharp.Articles.FilteringObjectsAtLoadTime;
 using Aspose.Cells.Examples.CSharp.XmlMaps;
 using Aspose.Cells.Examples.CSharp._CellsHelper;
+using Aspose.Cells.Examples.CSharp.HTML;
+using Aspose.Cells.Examples.CSharp.WorkbookSettings;
 
 namespace Aspose.Cells.Examples.CSharp
 {
@@ -105,15 +107,26 @@ namespace Aspose.Cells.Examples.CSharp
             }
 
             // Uncomment the one you want to try out
+            //Aspose.Cells for .NET v18.10
+            GetShapeConnectionPoints.Main();
+            SetScalableColumnWidth.Main();
+            RecognizeSelfClosingTags.Main();
+            OpeningCSVFilesWithPreferredParser.Main();
+            SupportNamedRangeFormulasInGermanLocale.Main();
+            AutofilterBeginsWith.Main();
+            AutofilterEndsWith.Main();
+            EvaluateIsBlank.Main();
+
+
             //Aspose.Cells for .NET v18.9
-            ExportCustomPropertiesToPDF.Main();
-            GetXMLPathFromListObjectTable.Main();
-            CreateSafeSheetNames.Main();
-            AutofilterBlank.Main();
-            AutofilterNonBlank.Main();
-            AutofilterContains.Main();
-            AutofilterNotContains.Main();
-            RetrieveQueryTableResultRange.Main();
+            //ExportCustomPropertiesToPDF.Main();
+            //GetXMLPathFromListObjectTable.Main();
+            //CreateSafeSheetNames.Main();
+            //AutofilterBlank.Main();
+            //AutofilterNonBlank.Main();
+            //AutofilterContains.Main();
+            //AutofilterNotContains.Main();
+            //RetrieveQueryTableResultRange.Main();
 
             //Aspose.Cells for .NET v18.8
             //ApplyingTextAlignmentToPartialTextInsideTheTextBox.Main();
@@ -983,7 +996,7 @@ namespace Aspose.Cells.Examples.CSharp
             //OpeningMicrosoftExcel972003Files.Run();
             //OpeningSpreadsheetMLFiles.Run();
             //OpeningTabDelimitedFiles.Run();
-            //OpeningTextFilewithCustomSeparator.Run();
+            //OpeningTextFilewithCustomSeparator.Main();
             //SaveFileInExcel972003format.Run();
             //SaveInExcel2007xlsbFormat.Run();
             //SaveInExcel2007xlsxFormat.Run();

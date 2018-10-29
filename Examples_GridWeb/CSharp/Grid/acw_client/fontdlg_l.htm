@@ -1,0 +1,169 @@
+<html>
+	<head>
+		<title>Font</title> 
+		<!--Create the Dialog Helper Object--></head>
+	<BODY style="FONT-SIZE: 9pt; FONT-FAMILY: Arial" bgColor="#dbd8d1" leftMargin="5" topMargin="5" onload="initDlg()" onunload="closeDlg()">
+		<script language="javascript" src="fontdlg_l.js"></script>
+		<table id="table3" style="BORDER-TOP: white 1px solid; FONT-SIZE: 9pt; WIDTH: 100%; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: Arial; BORDER-COLLAPSE: collapse; BACKGROUND-COLOR: gray" cellSpacing="2" cellPadding="2" border="0">
+			<tr>
+				<td width="30"><span id="btnFont" style="BORDER-RIGHT: white 1px inset; BORDER-TOP: white 1px inset; BORDER-LEFT: white 1px inset; CURSOR: pointer; BORDER-BOTTOM: white 1px inset; BACKGROUND-COLOR: #dbd8d1" onclick="showFont();">Font </span></td>
+				<td width="50"><span id="btnBorders" style="BORDER-RIGHT: white 1px outset; BORDER-TOP: white 1px outset; BORDER-LEFT: white 1px outset; CURSOR: pointer; BORDER-BOTTOM: white 1px outset; BACKGROUND-COLOR: #dbd8d1" onclick="showBorders();">Borders </span></td>
+				<td></td>
+			</tr>
+		</table>
+		<table id="table1" style="FONT-SIZE: 9pt; FONT-FAMILY: Arial; BORDER-COLLAPSE: collapse" cellPadding="2" border="0">
+			<tr>
+				<td>Font:<br>
+					<input id="txtFont" style="FONT-SIZE: 9pt; WIDTH: 150px; FONT-FAMILY: Arial" type="text" onchange="OnFontChange1()" size="20">
+				</td>
+				<td>Style:<br>
+					<input id="txtStyle" style="FONT-SIZE: 9pt; WIDTH: 100px; FONT-FAMILY: Arial" readOnly type="text" size="20">
+				</td>
+				<td>Size:<br>
+					<input id="txtSize" style="FONT-SIZE: 9pt; WIDTH: 80px; FONT-FAMILY: Arial" type="text" onchange="OnSizeChange1()" size="20">
+				</td>
+			</tr>
+			<tr>
+				<td><select id="selFont" style="FONT-SIZE: 9pt; WIDTH: 150px; FONT-FAMILY: Arial; HEIGHT: 150px" onchange="OnFontChange()" size="10"></select>
+				</td>
+				<td><select id="selStyle" style="FONT-SIZE: 9pt; WIDTH: 100px; FONT-FAMILY: Arial; HEIGHT: 150px" onchange="OnStyleChange()" size="10">
+						<option>Regular</option>
+						<option>Italic</option>
+						<option>Bold</option>
+						<option>Italic Bold</option>
+					</select></td>
+				<td><select id="selSize" style="FONT-SIZE: 9pt; WIDTH: 80px; FONT-FAMILY: Arial; HEIGHT: 150px" onchange="OnSizeChange()" size="10">
+						<option>6pt</option>
+						<option>8pt</option>
+						<option>9pt</option>
+						<option>10pt</option>
+						<option>11pt</option>
+						<option>12pt</option>
+						<option>14pt</option>
+						<option>16pt</option>
+						<option>18pt</option>
+						<option>20pt</option>
+						<option>22pt</option>
+						<option>24pt</option>
+						<option>26pt</option>
+						<option>28pt</option>
+						<option>36pt</option>
+						<option>48pt</option>
+						<option>72pt</option>
+					</select></td>
+			</tr>
+			<tr>
+				<td><input id="chkUnderline" onclick="OnUnderline()" type="checkbox" value="un">Underline<br>
+					<input id="chkStrike" onclick="OnLineThrough()" type="checkbox" value="st">Strikethrough<br>
+				</td>
+				<td colSpan="2">
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td colSpan="2"></td>
+			</tr>
+			<tr>
+				<td>Horizontal alignment:<br>
+					<select id="selHalign" style="FONT-SIZE: 9pt; WIDTH: 150px; FONT-FAMILY: Arial">
+						<option selected></option>
+						<option value="left">Left</option>
+						<option value="center">Center</option>
+						<option value="right">Right</option>
+						<option value="justify">Justify</option>
+					</select><br>
+				</td>
+				<td colSpan="2">Vertical alignment:<br>
+					<select id="selValign" style="FONT-SIZE: 9pt; WIDTH: 150px; FONT-FAMILY: Arial">
+						<option selected></option>
+						<option value="top">Top</option>
+						<option value="middle">Middle</option>
+						<option value="bottom">Bottom</option>
+					</select><br>
+				</td>
+			</tr>
+			<tr>
+				<td><input id="btnFC" style="BORDER-RIGHT: 1px outset; BORDER-TOP: 1px outset; BORDER-LEFT: 1px outset; WIDTH: 40px; BORDER-BOTTOM: 1px outset; HEIGHT: 20px" onclick="chooseColor();" type="button">
+					Font color<br>
+					<input id="btnBG" style="BORDER-RIGHT: 1px outset; BORDER-TOP: 1px outset; BORDER-LEFT: 1px outset; WIDTH: 40px; BORDER-BOTTOM: 1px outset; HEIGHT: 20px" onclick="chooseBgColor();" type="button">
+					Background<br>
+				</td>
+				<td colSpan="2">Preview:<br>
+					<div id="preview" contentEditable="true" style="BORDER-RIGHT: 2px inset; BORDER-TOP: 2px inset; OVERFLOW: auto; BORDER-LEFT: 2px inset; WIDTH: 178px; BORDER-BOTTOM: 2px inset; HEIGHT: 85px">Sample 
+						Text
+						<div></div>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<table id="table2" style="DISPLAY: none; FONT-SIZE: 9pt; FONT-FAMILY: Arial; BORDER-COLLAPSE: collapse" cellPadding="2" border="0">
+			<tr height="50">
+				<td valign="top">Border Line Style:</td>
+				<td valign="top">
+					<SELECT id="borderStyle" size="8" style="width:200px; font-size: 9pt; font-family: Arial;" onchange="setBorderWidthSelect(this.value)">
+						<OPTION>Dashed</OPTION>
+						<OPTION>Dotted</OPTION>
+						<OPTION selected>Solid</OPTION>
+						<OPTION>Double</OPTION>
+					<!--	<OPTION>Groove</OPTION>
+						<OPTION>Inset</OPTION>
+						<OPTION>Outset</OPTION>
+						<OPTION>Ridge</OPTION>-->
+						
+						
+					</SELECT>
+				</td>
+			</tr>
+			<tr height="25">
+				<td valign="top"><span id="borderlinelabel">Border Line Width:</span></td>
+				<td valign="top">
+					<SELECT id="borderWidth" size="1" style="width:200px; font-size: 9pt; font-family: Arial;">
+						<OPTION value="1px" selected>thin</OPTION>
+						<OPTION value="2px" >medium</OPTION>
+						<OPTION value="3px">thick</OPTION>
+					<!--	<OPTION>3px</OPTION>
+						<OPTION>4px</OPTION>
+						<OPTION>5px</OPTION>
+						<OPTION>6px</OPTION>
+						<OPTION>7px</OPTION>
+						<OPTION>8px</OPTION>    -->
+					</SELECT>
+				</td>
+			</tr>
+			<tr height="25">
+				<td valign="top">Border Line Color:</span></td>
+				<td valign="top">
+					<input id="btnBorderColor" style="BORDER-RIGHT: 1px outset; BORDER-TOP: 1px outset; BORDER-LEFT: 1px outset; WIDTH: 40px; BORDER-BOTTOM: 1px outset; HEIGHT: 20px; background-color:black;" onclick="chooseBorderColor();" type="button">
+				</td>
+			</tr>
+			<tr height="50">
+				<td colspan="2">
+					<table width="100%">
+						<tr>
+							<td align="right"><img id="b1" src="b1.gif" style="border:3px ridge white; cursor:pointer; width:45px; height:45px;" onclick="clickBorderBtn(event);"></td>
+							<td align="right"><img id="b2" src="b2.gif" style="border:3px ridge white; cursor:pointer; width:45px; height:45px;" onclick="clickBorderBtn(event);"></td>
+							<td align="right"><img id="b3" src="b3.gif" style="border:3px ridge white; cursor:pointer; width:45px; height:45px;" onclick="clickBorderBtn(event);"></td>
+							<td align="right"><img id="b4" src="b4.gif" style="border:3px ridge white; cursor:pointer; width:45px; height:45px;" onclick="clickBorderBtn(event);"></td>
+						</tr>
+						<tr>
+							<td align="right"><img id="b5" src="b5.gif" style="border:3px ridge white; cursor:pointer; width:45px; height:45px;" onclick="clickBorderBtn(event);"></td>
+							<td align="right"><img id="b6" src="b6.gif" style="border:3px ridge white; cursor:pointer; width:45px; height:45px;" onclick="clickBorderBtn(event);"></td>
+							<td align="right"><img id="b7" src="b7.gif" style="border:3px ridge white; cursor:pointer; width:45px; height:45px;" onclick="clickBorderBtn(event);"></td>
+							<td align="right"><img id="b8" src="b8.gif" style="border:3px ridge white; cursor:pointer; width:45px; height:45px;" onclick="clickBorderBtn(event);"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+			</tr>
+		</table>
+		<table width="343" border="0" cellpadding="5" style="FONT-SIZE: 9pt; FONT-FAMILY: Arial; BORDER-COLLAPSE: collapse">
+			<tr>
+				<td width="100%" align="right">
+					<input type="button" value="OK" style="FONT-SIZE: 9pt; WIDTH: 90px; FONT-FAMILY: Arial; HEIGHT: 25px" onclick="FontOk()">
+					<input type="button" value="Cancel" style="FONT-SIZE: 9pt; WIDTH: 90px; FONT-FAMILY: Arial; HEIGHT: 25px" onclick="window.close()">
+				</td>
+			</tr>
+		</table>
+	</BODY>
+</html>

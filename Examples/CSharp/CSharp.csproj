@@ -37,8 +37,8 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=18.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.18.9.0\lib\net35\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=18.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.18.10.0\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -374,6 +374,8 @@
     <Compile Include="Data\GetAllHiddenRowsIndicesAfterRefreshingAutoFilter.cs" />
     <Compile Include="Data\Handling\ExportRangeWithFlagToSkipColumnName.cs" />
     <Compile Include="Data\PreserveSingleQuotePrefixOfCellValueOrRange.cs" />
+    <Compile Include="Data\Processing\FilteringAndValidation\AutofilterEndsWith.cs" />
+    <Compile Include="Data\Processing\FilteringAndValidation\AutofilterBeginsWith.cs" />
     <Compile Include="Data\Processing\FilteringAndValidation\AutofilterNotContains.cs" />
     <Compile Include="Data\Processing\FilteringAndValidation\AutofilterContains.cs" />
     <Compile Include="Data\Processing\FilteringAndValidation\AutofilterNonBlank.cs" />
@@ -463,6 +465,7 @@
     <Compile Include="DrawingObjects\Controls\AddingRectangleControl.cs" />
     <Compile Include="DrawingObjects\Controls\AddingScrollBarControl.cs" />
     <Compile Include="DrawingObjects\Controls\AddingSpinnerControl.cs" />
+    <Compile Include="DrawingObjects\Controls\GetShapeConnectionPoints.cs" />
     <Compile Include="DrawingObjects\Controls\AddingTextBoxControl.cs" />
     <Compile Include="DrawingObjects\Controls\ManipulatingTextBoxControls.cs" />
     <Compile Include="DrawingObjects\ConvertSmartArtToGroupShape.cs" />
@@ -481,6 +484,7 @@
     <Compile Include="DrawingObjects\SpecifyFarEastAndLatinNameOfFontInTextOptionsOfShape.cs" />
     <Compile Include="DrawingObjects\TilePictureAsTextureInsideShape.cs" />
     <Compile Include="Files\Handling\LoadVisibleSheetsOnly.cs" />
+    <Compile Include="Files\Handling\OpeningCSVFilesWithPreferredParser.cs" />
     <Compile Include="Files\Handling\OpeningCSVFiles.cs" />
     <Compile Include="Files\Handling\OpeningEncryptedExcelFiles.cs" />
     <Compile Include="Files\Handling\OpeningFiles.cs" />
@@ -580,6 +584,8 @@
     <Compile Include="Formulas\ProcessDataUsingAddinfunction.cs" />
     <Compile Include="Formulas\ProcessDataUsingBuiltinfunction.cs" />
     <Compile Include="Formulas\SpecifyMaximumRowsOfSharedFormula.cs" />
+    <Compile Include="HTML\RecognizeSelfClosingTags.cs" />
+    <Compile Include="HTML\SetScalableColumnWidth.cs" />
     <Compile Include="HTML\ExcludeUnusedStylesInExcelToHTML.cs" />
     <Compile Include="HTML\ExportDocumentWorkbookAndWorksheetPropertiesInHTML.cs" />
     <Compile Include="HTML\ExportSimilarBorderStyle.cs" />
@@ -650,6 +656,7 @@
     <Compile Include="Slicers\RemovingSlicer.cs" />
     <Compile Include="Slicers\RenderingSlicer.cs" />
     <Compile Include="Slicers\UpdatingSlicer.cs" />
+    <Compile Include="SmartMarkers\EvaluateIsBlank.cs" />
     <Compile Include="SmartMarkers\AutoPopulateSmartMarkerDataToOtherWorksheets.cs" />
     <Compile Include="SmartMarkers\UsingFormulaParameterInSmartMarkerField.cs" />
     <Compile Include="SmartMarkers\AddCustomLabels.cs" />
@@ -688,6 +695,7 @@
     <Compile Include="Tables\SetCommentOfTableOrListObject.cs" />
     <Compile Include="Tables\CreatingListObject.cs" />
     <Compile Include="Tables\FormataListObject.cs" />
+    <Compile Include="WorkbookSettings\SupportNamedRangeFormulasInGermanLocale.cs" />
     <Compile Include="WorkbookSettings\ControlExternalResourcesUsingWorkbookSetting_StreamProvider.cs" />
     <Compile Include="WorkbookSettings\ImplementErrorsAndBooleanValueInRussianOrAnyOtherLanguage.cs" />
     <Compile Include="WorkbookSettings\Implement_Cell_FormulaLocal_SimilarTo_Range_FormulaLocal.cs" />

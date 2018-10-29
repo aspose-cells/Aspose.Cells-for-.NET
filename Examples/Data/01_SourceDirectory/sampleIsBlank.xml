@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<GRS_NOTIONAL_COMPARISON_RPT>
+  <comparison>
+    <PosRiskNotionalByStrike>9.314999999999999999</PosRiskNotionalByStrike>
+  </comparison>
+  <comparison>
+    <PosRiskNotionalByStrike>9.9999999999999995e-7</PosRiskNotionalByStrike>
+  </comparison>
+  <comparison>
+    <PosRiskNotionalByStrike></PosRiskNotionalByStrike>
+  </comparison>
+</GRS_NOTIONAL_COMPARISON_RPT>
