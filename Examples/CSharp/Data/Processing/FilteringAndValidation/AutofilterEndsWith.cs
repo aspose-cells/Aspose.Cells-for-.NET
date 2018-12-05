@@ -26,7 +26,7 @@ namespace Aspose.Cells.Examples.CSharp.Data.Processing.FilteringAndValidation
             worksheet.AutoFilter.Range = "A1:A18";
 
             // Initialize filter for rows end with string "ia"
-            worksheet.AutoFilter.Custom(0, FilterOperatorType.BeginsWith, "ia");
+            worksheet.AutoFilter.Custom(0, FilterOperatorType.EndsWith, "ia");
 
             //Refresh the filter to show/hide filtered rows
             worksheet.AutoFilter.Refresh();

@@ -24,7 +24,7 @@ namespace Aspose.Cells.Examples.CSharp.DrawingObjects.Controls
             Shape shape = workbook.Worksheets[0].Shapes[0];
 
             // Get all the connection points in this shape
-            var ConnectionPoints = shape.GetConnectionPoints();
+            var ConnectionPoints = shape.ConnectionPoints;
 
             // Display all the shape points
             foreach (var pt in ConnectionPoints)

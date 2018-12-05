@@ -107,15 +107,23 @@ namespace Aspose.Cells.Examples.CSharp
             }
 
             // Uncomment the one you want to try out
+
+            //Aspose.Cells for .NET v18.11
+            DetectCircularReference.Main();
+            GetPivotTableRefreshDate.Main();
+            ReplaceTextInSmartArt.Main();
+            DataValidationRules.Main();
+            ConvertExcelFileToSVG.Main();
+
             //Aspose.Cells for .NET v18.10
-            GetShapeConnectionPoints.Main();
-            SetScalableColumnWidth.Main();
-            RecognizeSelfClosingTags.Main();
-            OpeningCSVFilesWithPreferredParser.Main();
-            SupportNamedRangeFormulasInGermanLocale.Main();
-            AutofilterBeginsWith.Main();
-            AutofilterEndsWith.Main();
-            EvaluateIsBlank.Main();
+            //GetShapeConnectionPoints.Main();
+            //SetScalableColumnWidth.Main();
+            //RecognizeSelfClosingTags.Main();
+            //OpeningCSVFilesWithPreferredParser.Main();
+            //SupportNamedRangeFormulasInGermanLocale.Main();
+            //AutofilterBeginsWith.Main();
+            //AutofilterEndsWith.Main();
+            //EvaluateIsBlank.Main();
 
 
             //Aspose.Cells for .NET v18.9
@@ -299,7 +307,6 @@ namespace Aspose.Cells.Examples.CSharp
             //CopyRangeStyleOnly.Run();
             //CreateManipulateRemoveScenarios.Run();
             //CustomSliceSectorColorsPieChart.Run();
-            //DataValidationRules.Run();
             //DeleteRedundantSpacesWhileImportingFromHtml.Run();
             //DetectMergedCellsAndUnmerge.Run();
             //DisableCompatibilityChecker.Run();

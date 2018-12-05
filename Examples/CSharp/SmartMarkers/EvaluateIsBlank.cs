@@ -14,7 +14,6 @@ namespace Aspose.Cells.Examples.CSharp.SmartMarkers
         static string outputDir = RunExamples.Get_OutputDirectory();
         public static void Main()
         {
-
             // ExStart:1
             // Initialize DataSet object
             DataSet ds1 = new DataSet();
