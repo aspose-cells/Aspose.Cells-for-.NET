@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GridDesktop.Examples.WorkingWithGrid;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
@@ -20,9 +21,10 @@ namespace GridDesktop.Examples
             //Application.Run(new RunExamples());
 
             //Aspose.Cells for .NET v17.7
-            Application.Run(new Form_FindGridDesktopVersionAtRunTime());
-            Application.Run(new Form_CustomRowAndCustomColumnCaptionOfGridDesktopWorksheet());
-            Application.Run(new Form_RenderPivotTableInGridDesktop());
+            //Application.Run(new Form_FindGridDesktopVersionAtRunTime());
+            //Application.Run(new Form_CustomRowAndCustomColumnCaptionOfGridDesktopWorksheet());
+            //Application.Run(new Form_RenderPivotTableInGridDesktop());
+            Application.Run(new OpeningExcelFile());
         }
     }
 }

@@ -103,12 +103,13 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells">
+    <Reference Include="Aspose.Cells, Version=18.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.18.11.0\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Aspose.Cells.GridWeb">
+    <Reference Include="Aspose.Cells.GridWeb, Version=18.9.0.0, Culture=neutral, PublicKeyToken=699ccf88ff76f11a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Aspose.Cells.GridWeb.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\AsposeRelease\DotNET\Cells\Aspose.Cells for .NET 18.11.0\net2.0\Aspose.Cells.GridWeb.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
@@ -1218,6 +1219,7 @@
     <Content Include="js\bootstrap\bootstrap-vertical-tabs\package.json" />
     <Content Include="js\bootstrap\bootstrap-vertical-tabs\README.md" />
     <Content Include="Site1.Master" />
+    <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Start\" />
@@ -1240,7 +1242,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>40056</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

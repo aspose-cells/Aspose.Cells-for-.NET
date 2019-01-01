@@ -107,13 +107,21 @@ namespace Aspose.Cells.Examples.CSharp
             }
 
             // Uncomment the one you want to try out
+            //Aspose.Cells for .NET v18.12
+            CreateLineWithDataMarkerChart.Main();
+            SetSingleSheetTabNameInHtml.Main();
+            FilterVBAMacrosWhileLoadingWorkbook.Main();
+            ReplaceTagWithTextInTextBox.Main();
+            ExportPrintAreaToHtml.Main();
+            CheckIfValidationInCellDropDown.Main();
+
 
             //Aspose.Cells for .NET v18.11
-            DetectCircularReference.Main();
-            GetPivotTableRefreshDate.Main();
-            ReplaceTextInSmartArt.Main();
-            DataValidationRules.Main();
-            ConvertExcelFileToSVG.Main();
+            //DetectCircularReference.Main();
+            //GetPivotTableRefreshDate.Main();
+            //ReplaceTextInSmartArt.Main();
+            //DataValidationRules.Main();
+            //ConvertExcelFileToSVG.Main();
 
             //Aspose.Cells for .NET v18.10
             //GetShapeConnectionPoints.Main();
