@@ -103,13 +103,13 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=18.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.18.11.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=18.12.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.18.12.0\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Aspose.Cells.GridWeb, Version=18.9.0.0, Culture=neutral, PublicKeyToken=699ccf88ff76f11a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\AsposeRelease\DotNET\Cells\Aspose.Cells for .NET 18.11.0\net2.0\Aspose.Cells.GridWeb.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Users\Test\Downloads\Aspose.Cells_18.12\net2.0\Aspose.Cells.GridWeb.dll</HintPath>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>

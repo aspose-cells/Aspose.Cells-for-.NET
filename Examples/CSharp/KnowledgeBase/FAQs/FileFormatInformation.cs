@@ -15,7 +15,17 @@ namespace Aspose.Cells.Examples.CSharp.KnowledgeBase.FAQs
 
             // Load File
             FileFormatInfo finfo = FileFormatUtil.DetectFileFormat(dataDir + "sample.xls");
-            Console.WriteLine(finfo.FileFormatType == FileFormatType.Excel95);
+            Console.WriteLine(finfo.FileFormatType);
+            finfo = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.xlsx");
+            Console.WriteLine(finfo.FileFormatType);
+            finfo = FileFormatUtil.DetectFileFormat(dataDir + "Test data.docx");
+            Console.WriteLine(finfo.FileFormatType);
+            finfo = FileFormatUtil.DetectFileFormat(dataDir + "Test data encrypted.docx");
+            Console.WriteLine(finfo.FileFormatType);
+            finfo = FileFormatUtil.DetectFileFormat(dataDir + "Test data.pptx");
+            Console.WriteLine(finfo.FileFormatType);
+            finfo = FileFormatUtil.DetectFileFormat(dataDir + "Test data encrypted.pptx");
+            Console.WriteLine(finfo.FileFormatType);
             // ExEnd:1
         }
     }

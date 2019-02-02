@@ -7,13 +7,11 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
 {
     public class OpeningFiles
     {
-        public static void Run()
+        public static void Main()
         {
             // Exstart:1
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
-            
-            
 
             // 1.
             // Opening through Path
@@ -113,7 +111,17 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
 
             // Create a Workbook object and opening the file from its path
             Workbook wb = new Workbook(dataDir + "Book1.xlsx", loadOptions7);
-            Console.WriteLine("File data imported successfully!");
+
+
+            // 10.
+            // Opening Excel95/5.0 XLS Files
+            // Instantiate LoadOptions specified by the LoadFormat.
+            LoadOptions loadOptionsExcel95 = new LoadOptions(LoadFormat.Auto);
+
+            // Create a Workbook object and opening the file from its path
+            Workbook wbExcel95 = new Workbook(dataDir + "Excel95_5.0.xls", loadOptionsExcel95);
+
+            Console.WriteLine("Excel95/5.0 XLS opened successfully!");
             // ExEnd:1
         }
     }

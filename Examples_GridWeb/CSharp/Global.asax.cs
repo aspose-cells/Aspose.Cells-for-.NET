@@ -25,9 +25,9 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp
 		protected void Session_Start(Object sender, EventArgs e)
 		{
 #if SITE_BUILD
-			// NOTE that in production you would want to call 
+            // NOTE that in production you would want to call 
             // new License().SetLicense("path-to-license-file")
-			try
+            try
 			{
 				//Aspose.Cells.License lic = new Aspose.Cells.License();
                 //Aspose.Demos.Common.WebOperationsBridge.InitLicense(lic);

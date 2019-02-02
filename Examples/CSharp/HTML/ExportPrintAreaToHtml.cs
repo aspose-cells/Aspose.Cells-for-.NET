@@ -15,6 +15,7 @@ namespace Aspose.Cells.Examples.CSharp.HTML
 
         public static void Main()
         {
+            // ExStart:1
             // Load the Excel file.
             Workbook wb = new Workbook(sourceDir + "sampleInlineCharts.xlsx");
 
@@ -32,7 +33,7 @@ namespace Aspose.Cells.Examples.CSharp.HTML
 
             //Save to HTML format
             wb.Save(outputDir + "outputInlineCharts.html", options);
-
+            // ExEnd:1
             Console.WriteLine("ExportPrintAreaToHtml executed successfully.");
         }
     }

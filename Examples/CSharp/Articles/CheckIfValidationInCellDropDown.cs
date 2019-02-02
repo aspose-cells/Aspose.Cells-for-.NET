@@ -9,7 +9,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
         static string sourceDir = RunExamples.Get_SourceDirectory();
         public static void Main()
         {
-            // ExStart:DataValidationRules
+            // ExStart:1
             Workbook book = new Workbook(sourceDir + "sampleValidation.xlsx");
             Worksheet sheet = book.Worksheets["Sheet1"];
             Cells cells = sheet.Cells;
@@ -43,7 +43,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             {
                 Console.WriteLine("C2 is NOT a dropdown");
             }
-
+            // ExEnd:1
             Console.WriteLine("CheckIfValidationInCellDropDown executed successfully.\r\n");
         }
     }

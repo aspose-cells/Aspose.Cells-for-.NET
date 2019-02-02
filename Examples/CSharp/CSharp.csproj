@@ -37,8 +37,8 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=18.12.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.18.12.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=19.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.19.1.0\lib\net40\Aspose.Cells.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -447,6 +447,7 @@
     <Compile Include="Data\Processing\FilteringAndValidation\TimeDataValidation.cs" />
     <Compile Include="Data\Processing\FilteringAndValidation\WholeNumberDataValidation.cs" />
     <Compile Include="Data\RenameDuplicateColumnsAutomaticallyWhileExportingWorksheetData.cs" />
+    <Compile Include="Data\SortDataInColumnWithBackgroundColor.cs" />
     <Compile Include="Data\SortDataInColumnWithCustomSortList.cs" />
     <Compile Include="Data\SpecifyFormulaFieldsWhileImportingDataToWorksheet.cs" />
     <Compile Include="Data\SpecifyingDBNumCustomPatternFormatting.cs" />
@@ -581,6 +582,7 @@
     <Compile Include="Formatting\SetPattern.cs" />
     <Compile Include="Formatting\SettingDisplayFormats\UsingBuiltInNumberFormats.cs" />
     <Compile Include="Formatting\SettingDisplayFormats\UsingCustomNumber.cs" />
+    <Compile Include="Formulas\RegisterAndCallFuncFromAddIn.cs" />
     <Compile Include="Formulas\DetectCircularReference.cs" />
     <Compile Include="Formulas\AddCellsToMicrosoftExcelFormulaWatchWindow.cs" />
     <Compile Include="Formulas\CalculatingFormulas.cs" />
@@ -629,6 +631,7 @@
     <Compile Include="PivotTables\FindAndRefreshNestedOrChildrenPivotTables.cs" />
     <Compile Include="PivotTables\GroupPivotFieldsInPivotTable.cs" />
     <Compile Include="PivotTables\ParsingPivotCachedRecordsWhileLoadingExcelFile.cs" />
+    <Compile Include="PivotTable\ShowReportFilterPagesOption.cs" />
     <Compile Include="PivotTable\ConsolidationFunctions.cs" />
     <Compile Include="PivotTable\DisablePivotTableRibbon.cs" />
     <Compile Include="PivotTable\CustomizePivotTableGlobalSettings.cs" />
@@ -650,6 +653,7 @@
     <Compile Include="Rendering\IgnoreErrorsWhileRenderingExcelToPdf.cs" />
     <Compile Include="Rendering\OutputBlankPageWhenThereIsNothingToPrint.cs" />
     <Compile Include="Rendering\AddPDFBookmarksWithNamedDestinations.cs" />
+    <Compile Include="Rendering\RenderUsingTextCrossType.cs" />
     <Compile Include="Rendering\RenderLimitedNoOfSequentialPages.cs" />
     <Compile Include="Rendering\RenderOfficeAdd_InsWhileConvertingExcelToPdf.cs" />
     <Compile Include="RowsColumns\AutofitRowsforMergedCells.cs" />

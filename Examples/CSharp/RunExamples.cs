@@ -75,6 +75,7 @@ using Aspose.Cells.Examples.CSharp.XmlMaps;
 using Aspose.Cells.Examples.CSharp._CellsHelper;
 using Aspose.Cells.Examples.CSharp.HTML;
 using Aspose.Cells.Examples.CSharp.WorkbookSettings;
+using Aspose.Cells.Examples.CSharp.Rendering;
 
 namespace Aspose.Cells.Examples.CSharp
 {
@@ -107,13 +108,20 @@ namespace Aspose.Cells.Examples.CSharp
             }
 
             // Uncomment the one you want to try out
+            //Aspose.Cells for .NET v19.1
+            ShowReportFilterPagesOption.Main();
+            OpeningFiles.Main();
+            RegisterAndCallFuncFromAddIn.Main();
+            RenderUsingTextCrossType.Main();
+            SortDataInColumnWithBackgroundColor.Main();
+
             //Aspose.Cells for .NET v18.12
-            CreateLineWithDataMarkerChart.Main();
-            SetSingleSheetTabNameInHtml.Main();
-            FilterVBAMacrosWhileLoadingWorkbook.Main();
-            ReplaceTagWithTextInTextBox.Main();
-            ExportPrintAreaToHtml.Main();
-            CheckIfValidationInCellDropDown.Main();
+            //CreateLineWithDataMarkerChart.Main();
+            //SetSingleSheetTabNameInHtml.Main();
+            //FilterVBAMacrosWhileLoadingWorkbook.Main();
+            //ReplaceTagWithTextInTextBox.Main();
+            //ExportPrintAreaToHtml.Main();
+            //CheckIfValidationInCellDropDown.Main();
 
 
             //Aspose.Cells for .NET v18.11

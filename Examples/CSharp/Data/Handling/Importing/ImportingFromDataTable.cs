@@ -58,7 +58,7 @@ namespace Aspose.Cells.Examples.CSharp.Data.Handling.Importing
             // Importing the contents of DataTable to the worksheet starting from "A1" cell,
             // Where true specifies that the column names of the DataTable would be added to
             // The worksheet as a header row
-            worksheet.Cells.ImportDataTable(dataTable, true, "A1");
+            worksheet.Cells.ImportData(dataTable, 0,0,new ImportTableOptions() {  });
 
             // Saving the Excel file
             workbook.Save(dataDir + "DataImport.out.xls");

@@ -17,6 +17,7 @@ namespace Aspose.Cells.Examples.CSharp.DrawingObjects
 
         public static void Main()
         {
+            // ExStart:1
             Workbook wb = new Workbook(sourceDir + "sampleReplaceTagWithText.xlsx");
             string tag = "TAG_2$TAG_1";
             string replace = "1$ys";
@@ -28,8 +29,10 @@ namespace Aspose.Cells.Examples.CSharp.DrawingObjects
             PdfSaveOptions opts = new PdfSaveOptions();
 
             wb.Save(outputDir + "outputReplaceTagWithText.pdf", opts);
+            // ExEnd:1
             Console.WriteLine("ReplaceTagWithTextInTextBox executed successfully.");
         }
+        // ExStart:2
         public static void sheetReplace(Workbook workbook, string sFind, string sReplace)
         {
             string finding = sFind;
@@ -73,6 +76,6 @@ namespace Aspose.Cells.Examples.CSharp.DrawingObjects
                 }
             }
         }
-
+        // ExEnd:2
     }
 }

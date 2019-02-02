@@ -13,6 +13,7 @@ namespace Aspose.Cells.Examples.CSharp.Charts
 
         public static void Main()
         {
+            // ExStart:1
             // Instantiate a workbook
             Workbook workbook = new Workbook();
 
@@ -89,7 +90,7 @@ namespace Aspose.Cells.Examples.CSharp.Charts
 
             // Save the workbook
             workbook.Save(outputDir + @"LineWithDataMarkerChart.xlsx", Aspose.Cells.SaveFormat.Xlsx);
-
+            // ExEnd:1
             Console.WriteLine("CreateLineWithDataMarkerChart executed successfully.");
         }
     }

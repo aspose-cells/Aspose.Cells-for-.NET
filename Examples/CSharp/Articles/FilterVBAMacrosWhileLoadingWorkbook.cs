@@ -6,14 +6,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 {
     public class FilterVBAMacrosWhileLoadingWorkbook
     {
+        //Source directory
+        static string sourceDir = RunExamples.Get_SourceDirectory();
+
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
         public static void Main()
         {
-            //Source directory
-            string sourceDir = RunExamples.Get_SourceDirectory();
-
-            //Output directory
-            string outputDir = RunExamples.Get_OutputDirectory();
-
+            // ExStart:1
             // Set the load options, we do not want to load VBA
             LoadOptions loadOptions = new LoadOptions(LoadFormat.Auto);
             loadOptions.LoadFilter = new LoadFilter(LoadDataFilterOptions.All & ~LoadDataFilterOptions.VBA);
@@ -23,7 +23,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Save the output in pdf format
             book.Save(outputDir + "OutputSampleMacroEnabledWorkbook.xlsm", SaveFormat.Xlsm);
-
+            // ExEnd:1
             Console.WriteLine("FilterVBAMacrosWhileLoadingWorkbook executed successfully.");
         }
     }
