@@ -76,6 +76,7 @@ using Aspose.Cells.Examples.CSharp._CellsHelper;
 using Aspose.Cells.Examples.CSharp.HTML;
 using Aspose.Cells.Examples.CSharp.WorkbookSettings;
 using Aspose.Cells.Examples.CSharp.Rendering;
+using Aspose.Cells.Examples.CSharp.Worksheets;
 
 namespace Aspose.Cells.Examples.CSharp
 {
@@ -1009,6 +1010,7 @@ namespace Aspose.Cells.Examples.CSharp
             //// =====================================================
             //LoadVisibleSheetsOnly.Run();
             //OpeningCSVFiles.Run();
+            OpeningCSVFilesAndReplacingInvalidCharacters.Run();
             //OpeningEncryptedExcelFiles.Run();
             //OpeningFiles.Run();
             //OpeningFilesThroughPath.Run();
@@ -1055,6 +1057,8 @@ namespace Aspose.Cells.Examples.CSharp
             //SettingImagePrefrencesforHTML.Run();
             //WorksheetToImage.Run();
             //XlstoPDFDirectConversation.Run();
+            GetHyperlinksInRange.Run();
+            DetectFileFormatOfEncryptedFiles.Run();
 
             // =====================================================
             // =====================================================
@@ -1309,6 +1313,8 @@ namespace Aspose.Cells.Examples.CSharp
             //UnprotectingSimplyProtectedWorksheet.Run();
             //UnprotectSimpleSheet.Run();
             //UnprotectingProtectedWorksheet.Run();
+
+            CountNumberOfCells.Run();
 
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");

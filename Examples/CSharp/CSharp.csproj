@@ -37,9 +37,8 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=19.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.19.1.0\lib\net40\Aspose.Cells.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Aspose.Cells, Version=19.2.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.19.2.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -492,6 +491,8 @@
     <Compile Include="DrawingObjects\SpecifyFarEastAndLatinNameOfFontInTextOptionsOfShape.cs" />
     <Compile Include="DrawingObjects\TilePictureAsTextureInsideShape.cs" />
     <Compile Include="Files\Handling\LoadVisibleSheetsOnly.cs" />
+    <Compile Include="Files\Utility\DetectFileFormatOfEncryptedFiles.cs" />
+    <Compile Include="Files\Handling\OpeningCSVFilesAndReplacingInvalidCharacters.cs" />
     <Compile Include="Files\Handling\OpeningCSVFilesWithPreferredParser.cs" />
     <Compile Include="Files\Handling\OpeningCSVFiles.cs" />
     <Compile Include="Files\Handling\OpeningEncryptedExcelFiles.cs" />
@@ -520,6 +521,7 @@
     <Compile Include="Files\Handling\SavingFiletoSomeLocation.cs" />
     <Compile Include="Files\Handling\SavingFiletoStream.cs" />
     <Compile Include="Files\Handling\SavingTextFilewithCustomSeparator.cs" />
+    <Compile Include="Files\Utility\GetHyperlinksInRange.cs" />
     <Compile Include="Files\Utility\AccessingValueOfDocumentProperties.cs" />
     <Compile Include="Files\Utility\AddingDocumentProperties.cs" />
     <Compile Include="Files\Utility\ChartToImage.cs" />
@@ -728,6 +730,7 @@
     <Compile Include="Worksheets\FindIfWorksheetIsDialogSheet.cs" />
     <Compile Include="Worksheets\Security\SpecifyAuthorWhileWriteProtectingWorkbook.cs" />
     <Compile Include="Worksheets\UpdateDaysPreservingHistoryOfRevisionLogsInSharedWorkbook.cs" />
+    <Compile Include="Worksheets\CountNumberOfCells.cs" />
     <Compile Include="Worksheets\UtilizeSheet_SheetId_PropertyOfOpenXml.cs" />
     <Compile Include="Worksheets\Display\ControlTabBarWidth.cs" />
     <Compile Include="Worksheets\Display\DisplayHideGridlines.cs" />
