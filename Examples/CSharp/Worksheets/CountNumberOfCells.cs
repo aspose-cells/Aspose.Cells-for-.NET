@@ -9,6 +9,7 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets
     {
         public static void Run()
         {
+            // ExStart:1
             //Source directory
             string sourceDir = RunExamples.Get_SourceDirectory();
 
@@ -18,11 +19,12 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets
             //Access first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
 
-            //Print number of cell in the Worksheet
+            //Print number of cells in the Worksheet
             Console.WriteLine("Number of Cells: " + worksheet.Cells.Count);
 
-            // In the number of cells is greater than 2147483647, use CountLarge
+            // If the number of cells is greater than 2147483647, use CountLarge
             Console.WriteLine("Number of Cells (CountLarge): " + worksheet.Cells.CountLarge);
+            // ExEnd:1
         }
     }
 }

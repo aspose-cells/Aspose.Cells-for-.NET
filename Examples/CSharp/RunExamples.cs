@@ -1207,6 +1207,7 @@ namespace Aspose.Cells.Examples.CSharp
             //InsertingAColumn.Run();
             //InsertingARow.Run();
             //InsertingMultipleRows.Run();
+            //InsertingARowWithFormating.Run();
 
             // =====================================================
             // =====================================================
