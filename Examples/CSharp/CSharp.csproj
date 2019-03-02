@@ -666,7 +666,7 @@
     <Compile Include="RowsColumns\ConvertTextToColumns.cs" />
     <Compile Include="RowsColumns\Grouping\SummaryRowRight.cs" />
     <Compile Include="RowsColumns\Grouping\SummaryRowBelow.cs" />
-    <Compile Include="RowsColumns\InsertingAndDeleting\InsertingARowWithFormating.cs" />
+    <Compile Include="RowsColumns\InsertingAndDeleting\InsertingARowWithFormatting.cs" />
     <Compile Include="RunExamples.cs" />
     <Compile Include="Slicers\CreateSlicerToPivotTable.cs" />
     <Compile Include="Slicers\FormattingSlicer.cs" />

@@ -4,7 +4,7 @@ using Aspose.Cells;
 
 namespace Aspose.Cells.Examples.CSharp.RowsColumns.InsertingAndDeleting
 {
-    public class InsertingARowWithFormating
+    public class InsertingARowWithFormatting
     {
         public static void Run()
         {
@@ -22,13 +22,15 @@ namespace Aspose.Cells.Examples.CSharp.RowsColumns.InsertingAndDeleting
             // Accessing the first worksheet in the Excel file
             Worksheet worksheet = workbook.Worksheets[0];
 
-            // Inserting a row into the worksheet at 3rd position
+            // Setting Formatting options
             InsertOptions insertOptions = new InsertOptions();
             insertOptions.CopyFormatType = CopyFormatType.SameAsAbove;
+
+            // Inserting a row into the worksheet at 3rd position
             worksheet.Cells.InsertRows(2, 1, insertOptions);
 
             // Saving the modified Excel file
-            workbook.Save(dataDir + "InsertingARowWithFormating.out.xls");
+            workbook.Save(dataDir + "InsertingARowWithFormatting.out.xls");
 
             // Closing the file stream to free all resources
             fstream.Close();
