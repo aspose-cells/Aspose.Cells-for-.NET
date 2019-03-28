@@ -109,12 +109,26 @@ namespace Aspose.Cells.Examples.CSharp
             }
 
             // Uncomment the one you want to try out
+
+            //Aspose.Cells for .NET v19.3
+            //GetRangeWithExternalLinks.Run();
+            //KeepSeparatorsForBlankRow.Run();
+            //ImportingFromJson.Run();
+            ConvertTableToRangeWithOptions.Run();
+
+            //Aspose.Cells for .NET v19.2
+            //GetHyperlinksInRange.Run();
+            //DetectFileFormatOfEncryptedFiles.Run();
+            //CountNumberOfCells.Run();
+            //OpeningCSVFilesAndReplacingInvalidCharacters.Run();
+            //InsertingARowWithFormatting.Run();
+
             //Aspose.Cells for .NET v19.1
-            ShowReportFilterPagesOption.Main();
-            OpeningFiles.Main();
-            RegisterAndCallFuncFromAddIn.Main();
-            RenderUsingTextCrossType.Main();
-            SortDataInColumnWithBackgroundColor.Main();
+            //ShowReportFilterPagesOption.Main();
+            //OpeningFiles.Main();
+            //RegisterAndCallFuncFromAddIn.Main();
+            //RenderUsingTextCrossType.Main();
+            //SortDataInColumnWithBackgroundColor.Main();
 
             //Aspose.Cells for .NET v18.12
             //CreateLineWithDataMarkerChart.Main();
@@ -312,7 +326,7 @@ namespace Aspose.Cells.Examples.CSharp
             //AddPDFBookmarks.Run();
             //AddPictureToExcelComment.Run();
             //AddWordArtWatermarkToWorksheet.Run();
-            //AutoFitRowsMergedCells.Run();
+            AutoFitRowsMergedCells.Run();
             //AvoidExponentialNotationWhileImportingFromHtml.Run();
             //ChangeHtmlLinkTarget.Run();
             //ChangeTextDirection.Run();
@@ -1010,7 +1024,6 @@ namespace Aspose.Cells.Examples.CSharp
             //// =====================================================
             //LoadVisibleSheetsOnly.Run();
             //OpeningCSVFiles.Run();
-            OpeningCSVFilesAndReplacingInvalidCharacters.Run();
             //OpeningEncryptedExcelFiles.Run();
             //OpeningFiles.Run();
             //OpeningFilesThroughPath.Run();
@@ -1057,8 +1070,6 @@ namespace Aspose.Cells.Examples.CSharp
             //SettingImagePrefrencesforHTML.Run();
             //WorksheetToImage.Run();
             //XlstoPDFDirectConversation.Run();
-            GetHyperlinksInRange.Run();
-            DetectFileFormatOfEncryptedFiles.Run();
 
             // =====================================================
             // =====================================================
@@ -1169,7 +1180,7 @@ namespace Aspose.Cells.Examples.CSharp
             //AutofitColumninSpecificRange.Run();
             //AutofitRowinSpecificRange.Run();
             //AutofitRowsandColumns.Run();
-            //AutofitRowsforMergedCells.Run();
+            AutofitRowsforMergedCells.Run();
 
             //// Copying
             //// =====================================================
@@ -1207,7 +1218,6 @@ namespace Aspose.Cells.Examples.CSharp
             //InsertingAColumn.Run();
             //InsertingARow.Run();
             //InsertingMultipleRows.Run();
-            InsertingARowWithFormatting.Run();
 
             // =====================================================
             // =====================================================
@@ -1315,7 +1325,7 @@ namespace Aspose.Cells.Examples.CSharp
             //UnprotectSimpleSheet.Run();
             //UnprotectingProtectedWorksheet.Run();
 
-            CountNumberOfCells.Run();
+
 
             // Stop before exiting
             Console.WriteLine("\n\nProgram Finished. Press any key to exit....");

@@ -38,7 +38,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             AutoFitterOptions options = new AutoFitterOptions();
 
             // Set auto-fit for merged cells
-            options.AutoFitMergedCells = true;
+            options.AutoFitMergedCellsType = AutoFitMergedCellsType.EachLine;
 
             // Autofit rows in the sheet(including the merged cells)
             _worksheet.AutoFitRows(options);
