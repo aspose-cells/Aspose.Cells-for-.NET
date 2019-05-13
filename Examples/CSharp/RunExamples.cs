@@ -77,6 +77,7 @@ using Aspose.Cells.Examples.CSharp.HTML;
 using Aspose.Cells.Examples.CSharp.WorkbookSettings;
 using Aspose.Cells.Examples.CSharp.Rendering;
 using Aspose.Cells.Examples.CSharp.Worksheets;
+using Aspose.Cells.Examples.CSharp.LoadingSavingConvertingAndManaging;
 
 namespace Aspose.Cells.Examples.CSharp
 {
@@ -110,11 +111,20 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out
 
+            //Aspose.Cells for .NET v19.4
+            //ConvertExcelFileToMarkdown.Run();
+            //CutAndPasteCells.Run();
+            //ReadThreadedComments.Run();
+            //RemoveThreadedComments.Run();
+            //GetChartSubTitleForODSFile.Run();
+            //AccessWebExtensionInformation.Run();
+            //SetColumnViewWidthInPixels.Run();
+
             //Aspose.Cells for .NET v19.3
             //GetRangeWithExternalLinks.Run();
             //KeepSeparatorsForBlankRow.Run();
             //ImportingFromJson.Run();
-            ConvertTableToRangeWithOptions.Run();
+            //ConvertTableToRangeWithOptions.Run();
 
             //Aspose.Cells for .NET v19.2
             //GetHyperlinksInRange.Run();
@@ -326,7 +336,7 @@ namespace Aspose.Cells.Examples.CSharp
             //AddPDFBookmarks.Run();
             //AddPictureToExcelComment.Run();
             //AddWordArtWatermarkToWorksheet.Run();
-            AutoFitRowsMergedCells.Run();
+            //AutoFitRowsMergedCells.Run();
             //AvoidExponentialNotationWhileImportingFromHtml.Run();
             //ChangeHtmlLinkTarget.Run();
             //ChangeTextDirection.Run();
@@ -384,7 +394,7 @@ namespace Aspose.Cells.Examples.CSharp
             //MoveRangeOfCells.Run();
             //ReadingCSVMultipleEncodings.Run();
             //LoadSpecificSheets.Run();
-            //RemoveWhitespaceAroundData.Run();
+            RemoveWhitespaceAroundData.Run();
             //RenderOnePdfPagePerExcelWorksheet.Run();
             //ResamplingAddedImages.Run();
             //SaveEachWorksheetToDifferentPDF.Run();
@@ -1180,7 +1190,7 @@ namespace Aspose.Cells.Examples.CSharp
             //AutofitColumninSpecificRange.Run();
             //AutofitRowinSpecificRange.Run();
             //AutofitRowsandColumns.Run();
-            AutofitRowsforMergedCells.Run();
+            //AutofitRowsforMergedCells.Run();
 
             //// Copying
             //// =====================================================
