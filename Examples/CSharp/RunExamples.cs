@@ -78,6 +78,7 @@ using Aspose.Cells.Examples.CSharp.WorkbookSettings;
 using Aspose.Cells.Examples.CSharp.Rendering;
 using Aspose.Cells.Examples.CSharp.Worksheets;
 using Aspose.Cells.Examples.CSharp.LoadingSavingConvertingAndManaging;
+using Aspose.Cells.Examples.CSharp._Workbook;
 
 namespace Aspose.Cells.Examples.CSharp
 {
@@ -114,11 +115,14 @@ namespace Aspose.Cells.Examples.CSharp
             //Aspose.Cells for .NET v19.4
             //ConvertExcelFileToMarkdown.Run();
             //CutAndPasteCells.Run();
+            //AddThreadedComments.Run();
+            //EditThreadedComments.Run();
             //ReadThreadedComments.Run();
             //RemoveThreadedComments.Run();
             //GetChartSubTitleForODSFile.Run();
+            //AddWebExtension.Run();
             //AccessWebExtensionInformation.Run();
-            //SetColumnViewWidthInPixels.Run();
+            SetColumnViewWidthInPixels.Run();
 
             //Aspose.Cells for .NET v19.3
             //GetRangeWithExternalLinks.Run();
@@ -394,7 +398,7 @@ namespace Aspose.Cells.Examples.CSharp
             //MoveRangeOfCells.Run();
             //ReadingCSVMultipleEncodings.Run();
             //LoadSpecificSheets.Run();
-            RemoveWhitespaceAroundData.Run();
+            //RemoveWhitespaceAroundData.Run();
             //RenderOnePdfPagePerExcelWorksheet.Run();
             //ResamplingAddedImages.Run();
             //SaveEachWorksheetToDifferentPDF.Run();
@@ -1191,6 +1195,7 @@ namespace Aspose.Cells.Examples.CSharp
             //AutofitRowinSpecificRange.Run();
             //AutofitRowsandColumns.Run();
             //AutofitRowsforMergedCells.Run();
+            //SetColumnWidthInPixels.Run();
 
             //// Copying
             //// =====================================================

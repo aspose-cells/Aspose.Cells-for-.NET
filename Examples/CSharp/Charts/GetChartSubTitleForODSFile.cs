@@ -19,7 +19,7 @@ namespace Aspose.Cells.Examples.CSharp.Charts
             // Access first chart inside the worksheet
             Chart chart = worksheet.Charts[0];
 
-            Console.WriteLine(chart.SubTitle.Text);
+            Console.WriteLine("Chart Subtitle: " + chart.SubTitle.Text);
             // ExEnd:1
 
             Console.WriteLine("GetChartSubTitleForODSFile executed successfully.");

@@ -494,7 +494,8 @@
     <Compile Include="DrawingObjects\TilePictureAsTextureInsideShape.cs" />
     <Compile Include="Files\Handling\LoadVisibleSheetsOnly.cs" />
     <Compile Include="Files\Handling\KeepSeparatorsForBlankRow.cs" />
-    <Compile Include="Files\Utility\AccessWebExtensionInformation.cs" />
+    <Compile Include="Workbook\AddWebExtension.cs" />
+    <Compile Include="Workbook\AccessWebExtensionInformation.cs" />
     <Compile Include="Files\Utility\DetectFileFormatOfEncryptedFiles.cs" />
     <Compile Include="Files\Handling\OpeningCSVFilesAndReplacingInvalidCharacters.cs" />
     <Compile Include="Files\Handling\OpeningCSVFilesWithPreferredParser.cs" />
@@ -671,6 +672,8 @@
     <Compile Include="RowsColumns\ConvertTextToColumns.cs" />
     <Compile Include="RowsColumns\Grouping\SummaryRowRight.cs" />
     <Compile Include="RowsColumns\Grouping\SummaryRowBelow.cs" />
+    <Compile Include="RowsColumns\HeightAndWidth\SetColumnWidthInPixels.cs" />
+    <Compile Include="RowsColumns\HeightAndWidth\SetColumnViewWidthInPixels.cs" />
     <Compile Include="RowsColumns\InsertingAndDeleting\InsertingARowWithFormatting.cs" />
     <Compile Include="RunExamples.cs" />
     <Compile Include="Slicers\CreateSlicerToPivotTable.cs" />
@@ -734,10 +737,11 @@
     <Compile Include="Workbook\PasswordProtectOrUnprotectSharedWorkbook.cs" />
     <Compile Include="Workbook\ReadAndWriteExternalConnectionOfXLSBFile.cs" />
     <Compile Include="Workbook\StopConversionOrLoadingUsingInterruptMonitor.cs" />
-    <Compile Include="Worksheets\SetColumnViewWidthInPixels.cs" />
     <Compile Include="Worksheets\CutAndPasteCells.cs" />
-    <Compile Include="Worksheets\RemoveThreadedComments.cs" />
+    <Compile Include="Worksheets\EditThreadedComments.cs" />
     <Compile Include="Worksheets\ReadThreadedComments.cs" />
+    <Compile Include="Worksheets\RemoveThreadedComments.cs" />
+    <Compile Include="Worksheets\AddThreadedComments.cs" />
     <Compile Include="Worksheets\GetRangeWithExternalLinks.cs" />
     <Compile Include="Worksheets\FindIfWorksheetIsDialogSheet.cs" />
     <Compile Include="Worksheets\Security\SpecifyAuthorWhileWriteProtectingWorkbook.cs" />

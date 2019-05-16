@@ -17,12 +17,16 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets
             Worksheet worksheet = workbook.Worksheets[0];
 
             CommentCollection comments = worksheet.Comments;
-            ThreadedCommentCollection threadedComments = worksheet.Comments.GetThreadedComments("I4");
-            ThreadedCommentAuthor author = threadedComments[0].Author;
 
-            comments.RemoveAt("I4");
+            // Get Author of first comment in A1
+            ThreadedCommentAuthor author = worksheet.Comments.GetThreadedComments("A1")[0].Author;
+
+            // Remove Comments in A1
+            comments.RemoveAt("A1");
 
             ThreadedCommentAuthorCollection authors = workbook.Worksheets.ThreadedCommentAuthors;
+
+            // Remove Author of first comment in A1
             authors.RemoveAt(authors.IndexOf(author));
 
             workbook.Save(outDir + "ThreadedCommentsSample_Out.xlsx");

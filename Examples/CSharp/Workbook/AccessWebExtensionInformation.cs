@@ -1,7 +1,7 @@
 using Aspose.Cells.WebExtensions;
 using System;
 
-namespace Aspose.Cells.Examples.CSharp.Files.Utility
+namespace Aspose.Cells.Examples.CSharp._Workbook
 {
     public class AccessWebExtensionInformation
     {

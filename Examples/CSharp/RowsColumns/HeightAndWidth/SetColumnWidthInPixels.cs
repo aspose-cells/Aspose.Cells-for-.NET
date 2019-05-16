@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 
-namespace Aspose.Cells.Examples.CSharp.Worksheets
+namespace Aspose.Cells.Examples.CSharp.RowsColumns.HeightAndWidth
 {
-    class SetColumnViewWidthInPixels
+    public class SetColumnWidthInPixels
     {
         public static void Run()
         {
@@ -17,13 +17,13 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets
             //Access first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
 
-            // Set the width of the cell in pixels
-            worksheet.Cells.SetViewColumnWidthPixel(7, 200);
+            // Set the width of the column in pixels
+            worksheet.Cells.SetColumnWidthPixel(7, 200);
 
-            workbook.Save(outDir + "SetColumnViewWidthInPixels_Out.xlsx");
+            workbook.Save(outDir + "SetColumnWidthInPixels_Out.xlsx");
             // ExEnd:1
 
-            Console.WriteLine("SetColumnViewWidthInPixels executed successfully.");
+            Console.WriteLine("SetColumnWidthInPixels executed successfully.");
         }
     }
 }
