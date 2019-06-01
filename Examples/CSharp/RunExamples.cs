@@ -112,6 +112,12 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out
 
+            //Aspose.Cells for .NET v19.5
+            ReadODSBackground.Run();
+            SetODSColoredBackground.Run();
+            SetODSGraphicBackground.Run();
+            ConvertDatesToJapaneseDates.Run();
+
             //Aspose.Cells for .NET v19.4
             //ConvertExcelFileToMarkdown.Run();
             //CutAndPasteCells.Run();
@@ -122,7 +128,7 @@ namespace Aspose.Cells.Examples.CSharp
             //GetChartSubTitleForODSFile.Run();
             //AddWebExtension.Run();
             //AccessWebExtensionInformation.Run();
-            SetColumnViewWidthInPixels.Run();
+            //SetColumnViewWidthInPixels.Run();
 
             //Aspose.Cells for .NET v19.3
             //GetRangeWithExternalLinks.Run();
