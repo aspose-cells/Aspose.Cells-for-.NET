@@ -23,8 +23,8 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets
 
             ODSPageBackground background = worksheet.PageSetup.ODSPageBackground;
 
-            Console.WriteLine(background.Type.ToString());
-            Console.WriteLine(background.GraphicPositionType.ToString());
+            Console.WriteLine("Background Type: " + background.Type.ToString());
+            Console.WriteLine("Backgorund Position: " + background.GraphicPositionType.ToString());
 
             //Save background image
             Bitmap image = new Bitmap(new MemoryStream(background.GraphicData));

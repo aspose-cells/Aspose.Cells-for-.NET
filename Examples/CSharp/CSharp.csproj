@@ -374,6 +374,7 @@
     <Compile Include="Charts\SettingCategoryData.cs" />
     <Compile Include="Charts\SettingChartsData.cs" />
     <Compile Include="Charts\UsingSparklines.cs" />
+    <Compile Include="Data\Handling\Importing\ImportCustomObjectsToMergedArea.cs" />
     <Compile Include="Data\ApplyAdvancedFilterOfMicrosoftExcel.cs" />
     <Compile Include="Data\ChangeCellsAlignmentAndKeepExistingFormatting.cs" />
     <Compile Include="Data\ExportHTMLStringValueOfCellsToDataTable.cs" />

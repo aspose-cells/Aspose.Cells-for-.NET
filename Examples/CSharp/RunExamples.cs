@@ -113,10 +113,11 @@ namespace Aspose.Cells.Examples.CSharp
             // Uncomment the one you want to try out
 
             //Aspose.Cells for .NET v19.5
-            ReadODSBackground.Run();
-            SetODSColoredBackground.Run();
-            SetODSGraphicBackground.Run();
-            ConvertDatesToJapaneseDates.Run();
+            //ReadODSBackground.Run();
+            //SetODSColoredBackground.Run();
+            //SetODSGraphicBackground.Run();
+            //ConvertDatesToJapaneseDates.Run();
+            //ImportCustomObjectsToMergedArea.Run();
 
             //Aspose.Cells for .NET v19.4
             //ConvertExcelFileToMarkdown.Run();
