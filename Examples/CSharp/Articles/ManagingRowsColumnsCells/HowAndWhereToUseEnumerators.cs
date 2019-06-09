@@ -87,16 +87,23 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingRowsColumnsCells
             // ExStart:UsingMaxDataRowAndMaxDataColumn
             // Get Cells collection of first worksheet
             var cells2 = book.Worksheets[0].Cells;
+            int maxDataRow = cells2.MaxDataRow;
+            int maxDataColumn = cells2.MaxDataColumn;
 
             // Loop over all cells
-            for (int row = 0; row < cells2.MaxDataRow; row++)
+            for (int row = 0; row <= maxDataRow; row++)
             {
-                for (int col = 0; col < cells2.MaxDataColumn; col++)
+                for (int col = 0; col <= maxDataColumn; col++)
                 {
                     // Read the Cell value
-                    Console.WriteLine(cells2[row, col].StringValue);
+                    var currentCell = cells2.CheckCell(row, col);
+                    if (currentCell != null)
+                    {
+                        Console.WriteLine(currentCell.StringValue);
+                    }
                 }
             }
+            // ExEnd:UsingMaxDataRowAndMaxDataColumn
 
             Console.WriteLine("HowAndWhereToUseEnumerators executed successfully.");
         }
