@@ -1,7 +1,4 @@
 using System;
-using System.IO;
-
-using Aspose.Cells;
 using Aspose.Cells.Rendering;
 
 namespace Aspose.Cells.Examples.CSharp.Articles
@@ -17,11 +14,10 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             string outputDir = RunExamples.Get_OutputDirectory();
 
             // Open the template file
-            Workbook book = new Workbook(sourceDir + "sampleRemoveWhitespaceAroundData.xlsx");
+            Workbook book = new Workbook(sourceDir + "Book1.xlsx");
 
             // Get the first worksheet
             Worksheet sheet = book.Worksheets[0];
-            LoadDataOption dataOption = new LoadDataOption();
             LoadOptions options = new LoadOptions();
             options.LoadFilter = new LoadFilter(LoadDataFilterOptions.All);
             // Specify your print area if you want

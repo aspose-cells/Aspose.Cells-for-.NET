@@ -60,13 +60,15 @@ namespace Aspose.Cells.Examples.CSharp.Data.Handling.Importing
             importOptions.IsHtmlString = true;
 
             // Importing the values of 2nd column of the data table
+            int[] columns = { 0, 1 };
+            importOptions.ColumnIndexes = columns;
+
+            // Inserting data to 2nd row and column
             sheet.Cells.ImportData(dataTable, 1, 1, importOptions);
 
             // Save workbook
             book.Save(dataDir + "DataImport.out.xls");
             // ExEnd:1
-
-
         }
     }
 }
