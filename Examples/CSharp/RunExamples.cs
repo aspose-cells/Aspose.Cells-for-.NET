@@ -112,6 +112,11 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out
 
+            //Aspose.Cells for .NET v19.6
+            //OpeningSXCFiles.Run();
+            //OpeningFODSFiles.Run();
+            //SaveFODSFiles.Run();
+
             //Aspose.Cells for .NET v19.5
             //ReadODSBackground.Run();
             //SetODSColoredBackground.Run();
@@ -993,7 +998,9 @@ namespace Aspose.Cells.Examples.CSharp
             // =====================================================
             // DrawingObjects
             // =====================================================
-            // =====================================================      
+            // =====================================================     
+
+            //AccessNonPrimitiveShape.Run();
 
             //// Comments
             //// =====================================================

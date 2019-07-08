@@ -36,7 +36,7 @@ namespace Aspose.Cells.Examples.CSharp.Data.Handling.Importing
             workbook.Worksheets[0].Cells.ImportCustomObjects((ICollection)productList, 1, 0, tableOptions);
             workbook.Save(outputDir + "sampleMergedTemplate_out.xlsx", SaveFormat.Xlsx);
 
-            Console.WriteLine("ImportCustomObectsToMergedArea executed successfully.\r\n");
+            Console.WriteLine("ImportCustomObjectsToMergedArea executed successfully.\r\n");
         }
     }
 
