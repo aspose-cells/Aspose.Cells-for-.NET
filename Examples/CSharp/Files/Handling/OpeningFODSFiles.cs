@@ -17,19 +17,11 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             LoadOptions loadOptions = new LoadOptions(LoadFormat.FODS);
 
             // Create a Workbook object and opening the file from its path
-            //Workbook workbook = new Workbook(sourceDir + "Book_CSV.csv", loadOptions);
-            Workbook workbook = new Workbook(sourceDir + "SampleFods.fods");
+            Workbook workbook = new Workbook(sourceDir + "SampleFods.fods", loadOptions);
 
-            // Using the Sheet 1 in Workbook
-            Worksheet worksheet = workbook.Worksheets[0];
-
-            // Accessing a cell using its name
-            Cell cell = worksheet.Cells["A1"];
-
-            Console.WriteLine("Cell Name: " + cell.Name + " Value: " + cell.StringValue);
+            Console.WriteLine("FODS file opened successfully!");
 
             // ExEnd:1
-            Console.WriteLine("OpeningFODSFiles executed successfully!");
             }
           }
         }

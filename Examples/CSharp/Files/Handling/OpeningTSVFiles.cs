@@ -5,7 +5,7 @@ using System;
 
 namespace Aspose.Cells.Examples.CSharp.Files.Handling
 {
-    public class OpeningSXCFiles
+    public class OpeningTSVFiles
     {
         public static void Run()
         {
@@ -14,10 +14,10 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             string sourceDir = RunExamples.Get_SourceDirectory();
 
             // Instantiate LoadOptions specified by the LoadFormat.
-            LoadOptions loadOptions = new LoadOptions(LoadFormat.SXC);
+            LoadOptions loadOptions = new LoadOptions(LoadFormat.TSV);
 
             // Create a Workbook object and opening the file from its path
-            Workbook workbook = new Workbook(sourceDir + "SampleSXC.sxc", loadOptions);
+            Workbook workbook = new Workbook(sourceDir + "SampleTSVFile.tsv", loadOptions);
 
             // Using the Sheet 1 in Workbook
             Worksheet worksheet = workbook.Worksheets[0];
@@ -28,7 +28,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             Console.WriteLine("Cell Name: " + cell.Name + " Value: " + cell.StringValue);
 
             // ExEnd:1
-            Console.WriteLine("OpeningSXCFiles executed successfully!");
+            Console.WriteLine("OpeningTSVFiles executed successfully!");
             }
           }
         }

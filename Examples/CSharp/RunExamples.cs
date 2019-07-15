@@ -79,6 +79,7 @@ using Aspose.Cells.Examples.CSharp.Rendering;
 using Aspose.Cells.Examples.CSharp.Worksheets;
 using Aspose.Cells.Examples.CSharp.LoadingSavingConvertingAndManaging;
 using Aspose.Cells.Examples.CSharp._Workbook;
+using Aspose.Cells.Examples.CSharp.Slicers;
 
 namespace Aspose.Cells.Examples.CSharp
 {
@@ -115,7 +116,9 @@ namespace Aspose.Cells.Examples.CSharp
             //Aspose.Cells for .NET v19.6
             //OpeningSXCFiles.Run();
             //OpeningFODSFiles.Run();
-            //SaveFODSFiles.Run();
+            //ExportSlicerToPDF.Run();
+
+            //OpeningTSVFiles.Run();
 
             //Aspose.Cells for .NET v19.5
             //ReadODSBackground.Run();
