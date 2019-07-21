@@ -51,7 +51,10 @@ namespace Aspose.Cells.Examples.CSharp.Data.Handling.Importing
             dataTable.Rows.Add(dr);
 
             // Importing the contents of the data view to the worksheet
-            worksheet.Cells.ImportDataView(dataTable.DefaultView, true, 0, 0, false);
+            ImportTableOptions options = new ImportTableOptions();
+            options.IsFieldNameShown = true;
+
+            worksheet.Cells.ImportData(dataTable.DefaultView, 0, 0, options);
 
             // Saving the Excel file
             workbook.Save(dataDir + "output.xls");

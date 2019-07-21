@@ -9,8 +9,9 @@ using System;
 
 namespace Aspose.Cells.Examples.CSharp.Rendering
 {
-    public class ControlLoadingOfExternalResourcesInExcelToPDF 
+    public class ControlLoadingOfExternalResourcesInExcelToPDF
     {
+        // ExStart:1
         //Implement IStreamProvider
         class MyStreamProvider : IStreamProvider
         {
@@ -46,13 +47,15 @@ namespace Aspose.Cells.Examples.CSharp.Rendering
             //Specify Pdf Save Options - Stream Provider
             PdfSaveOptions opts = new PdfSaveOptions();
             opts.OnePagePerSheet = true;
-            opts.StreamProvider = new MyStreamProvider();
+
+            wb.Settings.StreamProvider = new MyStreamProvider();
 
             //Save the workbook to Pdf
             wb.Save(outputDir + "outputPdfSaveOptions_StreamProvider.pdf", opts);
 
             Console.WriteLine("ControlLoadingOfExternalResourcesInExcelToPDF executed successfully.\r\n");
         }
+        // ExEnd:1
     }
 
 }

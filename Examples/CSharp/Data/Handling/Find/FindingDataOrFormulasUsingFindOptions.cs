@@ -12,6 +12,7 @@ namespace Aspose.Cells.Examples.CSharp.Data
 
         public static void Run()
         {
+            // ExStart:1
             // Instantiate the workbook object
             Workbook workbook = new Workbook(sourceDir + "sampleFindingDataOrFormulasUsingFindOptions.xlsx");
 
@@ -34,7 +35,7 @@ namespace Aspose.Cells.Examples.CSharp.Data
             findOptions.SetRange(ca);
 
             // Set searching properties
-            findOptions.SearchNext = true;
+            findOptions.SearchBackward = false;
             findOptions.SeachOrderByRows = true;
 
             // Set the lookintype, you may specify, values, formulas, comments etc.
@@ -54,6 +55,7 @@ namespace Aspose.Cells.Examples.CSharp.Data
             {
                 Console.WriteLine("Record not found ");
             }
+            // ExEnd:1
 
             Console.WriteLine("FindingDataOrFormulasUsingFindOptions executed successfully.");
         }
