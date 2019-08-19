@@ -15,16 +15,18 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             //Output directory
             string outputDir = RunExamples.Get_OutputDirectory();
 
+            // ExStart:1
             // Load your source workbook containing MINIFS and MAXIFS functions
-            Workbook wb = new Workbook(sourceDir + "sampleMINIFSAndMAXIFS.xlsx");
+            Workbook workbook = new Workbook(sourceDir + "sampleMINIFSAndMAXIFS.xlsx");
 
             // Perform Aspose.Cells formula calculation
-            wb.CalculateFormula();
+            workbook.CalculateFormula();
 
             // Save the calculations result in pdf format
-            PdfSaveOptions opts = new PdfSaveOptions();
-            opts.OnePagePerSheet = true;
-            wb.Save(outputDir + "outputMINIFSAndMAXIFS.pdf", opts);
+            PdfSaveOptions options = new PdfSaveOptions();
+            options.OnePagePerSheet = true;
+            workbook.Save(outputDir + "outputMINIFSAndMAXIFS.pdf", options);
+            // ExEnd:1
 
             Console.WriteLine("MINIFSAndMAXIFS executed successfully.");
         }

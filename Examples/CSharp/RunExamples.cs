@@ -113,6 +113,9 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out
 
+            //Aspose.Cells for .NET v19.7
+            //DocumentConversionProgress.Run();
+
             //Aspose.Cells for .NET v19.6
             //OpeningSXCFiles.Run();
             //OpeningFODSFiles.Run();

@@ -16,7 +16,7 @@ namespace Aspose.Cells.Examples.CSharp.HTML
             string outputDir = RunExamples.Get_OutputDirectory();
             // ExStart:1
             // Set Html load options and keep precision true
-            HTMLLoadOptions loadOptions = new HTMLLoadOptions(LoadFormat.Html);
+            HtmlLoadOptions loadOptions = new HtmlLoadOptions(LoadFormat.Html);
 
             // Load sample source file
             Workbook wb = new Workbook(sourceDir + "sampleSelfClosingTags.html", loadOptions);

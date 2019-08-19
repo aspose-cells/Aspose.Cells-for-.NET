@@ -10,7 +10,7 @@ namespace Aspose.Cells.Examples.CSharp.LoadingSavingConvertingAndManaging
     {
         public static void Run()
         {
-            // ExStart:AutoFitColumnsandRowsWhileLoadingHTMLInWorkbook
+            // ExStart:1
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
@@ -27,7 +27,7 @@ namespace Aspose.Cells.Examples.CSharp.LoadingSavingConvertingAndManaging
             wb.Save(dataDir + "outputWithout_AutoFitColsAndRows.xlsx");
 
             //Specify the HTMLLoadOptions and set AutoFitColsAndRows = true.
-            HTMLLoadOptions opts = new HTMLLoadOptions();
+            HtmlLoadOptions opts = new HtmlLoadOptions();
             opts.AutoFitColsAndRows = true;
 
             //Load memory stream into workbook with the above HTMLLoadOptions.
@@ -35,7 +35,7 @@ namespace Aspose.Cells.Examples.CSharp.LoadingSavingConvertingAndManaging
 
             //Save the workbook in xlsx format.
             wb.Save(dataDir + "outputWith_AutoFitColsAndRows.xlsx");
-            // ExEnd:AutoFitColumnsandRowsWhileLoadingHTMLInWorkbook
+            // ExEnd:1
         }
     }
 }

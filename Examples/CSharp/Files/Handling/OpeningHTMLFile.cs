@@ -17,7 +17,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             string filePath = dataDir + "Book1.html";
 
             // Instantiate LoadOptions specified by the LoadFormat.
-            HTMLLoadOptions loadOptions = new HTMLLoadOptions(LoadFormat.Html);
+            HtmlLoadOptions loadOptions = new HtmlLoadOptions(LoadFormat.Html);
 
             // Create a Workbook object and opening the file from its path
             Workbook wb = new Workbook(filePath, loadOptions);

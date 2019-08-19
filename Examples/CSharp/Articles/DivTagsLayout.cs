@@ -14,6 +14,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             //Output directory
             string outputDir = RunExamples.Get_OutputDirectory();
 
+            // ExStart:1
             var export_html = @"<html>
                                 <body>
                                     <table>
@@ -48,7 +49,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             MemoryStream ms = new MemoryStream(System.Text.Encoding.UTF8.GetBytes(export_html));
 
             // Specify HTML load options, support div tag layouts
-            Aspose.Cells.HTMLLoadOptions loadOptions = new HTMLLoadOptions(LoadFormat.Html);
+            Aspose.Cells.HtmlLoadOptions loadOptions = new HtmlLoadOptions(LoadFormat.Html);
             loadOptions.SupportDivTag = true;
 
             // Create workbook object from the html using load options
@@ -61,6 +62,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Save the workbook in xlsx format
             wb.Save(outputDir + "outputDivTagsLayout.xlsx", Aspose.Cells.SaveFormat.Xlsx);
+            // ExEnd:1
 
             Console.WriteLine("DivTagsLayout executed successfully.");
         }

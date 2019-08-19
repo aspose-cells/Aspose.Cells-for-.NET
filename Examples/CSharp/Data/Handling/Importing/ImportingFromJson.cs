@@ -33,7 +33,7 @@ namespace Aspose.Cells.Examples.CSharp.Data.Handling.Importing
             options.ArrayAsTable = true;
 
             // Import JSON Data
-            JSONUtility.ImportData(jsonInput, worksheet.Cells, 0, 0, options);
+            JsonUtility.ImportData(jsonInput, worksheet.Cells, 0, 0, options);
 
             // Save Excel file
             workbook.Save(dataDir + "ImportingFromJson.out.xlsx");

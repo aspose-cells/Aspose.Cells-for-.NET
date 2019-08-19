@@ -1,4 +1,4 @@
-﻿using Aspose.Cells.ODS;
+﻿using Aspose.Cells.Ods;
 using System;
 using System.Drawing;
 
@@ -31,10 +31,10 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets
             worksheet.Cells[4, 1].Value = 11;
             worksheet.Cells[5, 1].Value = 12;
 
-            ODSPageBackground background = worksheet.PageSetup.ODSPageBackground;
+            OdsPageBackground background = worksheet.PageSetup.ODSPageBackground;
 
             background.Color = Color.Azure;
-            background.Type = ODSPageBackgroundType.Color;
+            background.Type = OdsPageBackgroundType.Color;
 
             workbook.Save(outputDir + "ColoredBackground.ods", SaveFormat.ODS);
             // ExEnd:1

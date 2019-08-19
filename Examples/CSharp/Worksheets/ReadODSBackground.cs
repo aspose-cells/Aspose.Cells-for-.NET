@@ -1,4 +1,4 @@
-﻿using Aspose.Cells.ODS;
+﻿using Aspose.Cells.Ods;
 using System;
 using System.Drawing;
 using System.IO;
@@ -21,7 +21,7 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets
             //Access first worksheet
             Worksheet worksheet = workbook.Worksheets[0];
 
-            ODSPageBackground background = worksheet.PageSetup.ODSPageBackground;
+            OdsPageBackground background = worksheet.PageSetup.ODSPageBackground;
 
             Console.WriteLine("Background Type: " + background.Type.ToString());
             Console.WriteLine("Backgorund Position: " + background.GraphicPositionType.ToString());

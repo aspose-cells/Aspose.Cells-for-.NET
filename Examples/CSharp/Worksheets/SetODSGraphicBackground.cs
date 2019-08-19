@@ -1,4 +1,4 @@
-﻿using Aspose.Cells.ODS;
+﻿using Aspose.Cells.Ods;
 using System;
 using System.IO;
 
@@ -33,11 +33,11 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets
             worksheet.Cells[4, 1].Value = 11;
             worksheet.Cells[5, 1].Value = 12;
 
-            ODSPageBackground background = worksheet.PageSetup.ODSPageBackground;
+            OdsPageBackground background = worksheet.PageSetup.ODSPageBackground;
 
-            background.Type = ODSPageBackgroundType.Graphic;
+            background.Type = OdsPageBackgroundType.Graphic;
             background.GraphicData = File.ReadAllBytes(sourceDir + "background.jpg");
-            background.GraphicType = ODSPageBackgroundGraphicType.Area;
+            background.GraphicType = OdsPageBackgroundGraphicType.Area;
 
             workbook.Save(outputDir + "GraphicBackground.ods", SaveFormat.ODS);
             // ExEnd:1
