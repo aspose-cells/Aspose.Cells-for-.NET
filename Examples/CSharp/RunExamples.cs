@@ -113,6 +113,11 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out
 
+            //Aspose.Cells for .NET v19.8
+            //DetectLinkTypes.Run();
+            //ExtractEmbeddedMolFile.Run();
+            //PrintPreview.Run();
+
             //Aspose.Cells for .NET v19.7
             //DocumentConversionProgress.Run();
 
