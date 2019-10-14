@@ -37,8 +37,8 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=19.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.19.8.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=19.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.19.9.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -56,6 +56,7 @@
     <Compile Include="AdvanceProtectSettings.cs" />
     <Compile Include="Articles\ConvertDatesToJapaneseDates.cs" />
     <Compile Include="Articles\CheckIfValidationInCellDropDown.cs" />
+    <Compile Include="Articles\ConvertingWorksheetToImage\ConvertWorksheetToSVG.cs" />
     <Compile Include="Articles\FilterVBAMacrosWhileLoadingWorkbook.cs" />
     <Compile Include="Articles\ManagingWorkbooksWorksheets\ConvertExcelFileToSVG.cs" />
     <Compile Include="Articles\ReplaceTextInSmartArt.cs" />
@@ -501,6 +502,7 @@
     <Compile Include="Files\Handling\OpeningSXCFiles.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\DocumentConversionProgress.cs" />
     <Compile Include="Slicers\ExportSlicerToPDF.cs" />
+    <Compile Include="Workbook\AdjustCompressionLevel.cs" />
     <Compile Include="Workbook\PrintPreview.cs" />
     <Compile Include="Workbook\DetectLinkTypes.cs" />
     <Compile Include="Workbook\AddWebExtension.cs" />
@@ -747,6 +749,7 @@
     <Compile Include="Workbook\PasswordProtectOrUnprotectSharedWorkbook.cs" />
     <Compile Include="Workbook\ReadAndWriteExternalConnectionOfXLSBFile.cs" />
     <Compile Include="Workbook\StopConversionOrLoadingUsingInterruptMonitor.cs" />
+    <Compile Include="Worksheets\PrintSheetWithAdditionalSettings.cs" />
     <Compile Include="Worksheets\SetODSGraphicBackground.cs" />
     <Compile Include="Worksheets\SetODSColoredBackground.cs" />
     <Compile Include="Worksheets\ReadODSBackground.cs" />
