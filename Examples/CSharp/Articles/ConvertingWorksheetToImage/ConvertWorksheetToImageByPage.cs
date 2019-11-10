@@ -10,6 +10,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ConvertingWorksheetToImage
     {
         public static void Run()
         {
+            // ExStart:1
             //Source directory
             string sourceDir = RunExamples.Get_SourceDirectory();
 
@@ -31,6 +32,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ConvertingWorksheetToImage
             {
                 sr.ToImage(j, outputDir + "outputConvertWorksheetToImageByPage_" + (j + 1) + ".tif");
             }
+            // ExEnd:1
 
             Console.WriteLine("ConvertWorksheetToImageByPage executed successfully.");
 

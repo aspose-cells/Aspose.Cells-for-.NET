@@ -10,6 +10,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
+            // ExStart:1
             //Output directory
             string outputDir = RunExamples.Get_OutputDirectory();
 
@@ -23,7 +24,13 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             TextBox tb = ws.Shapes.AddTextBox(2, 0, 2, 0, 100, 400);
 
             // Set the text of the textbox
-            tb.Text = "This text has the following settings.\n\nText Effects > Shadow > Offset Bottom";            
+            tb.Text = "This text has the following settings.\n\nText Effects > Shadow > Offset Bottom";
+
+            // Set all the text runs shadow to preset offset bottom
+            for (int i = 0; i < tb.TextBody.Count; i++)
+            {
+                tb.TextBody[i].TextOptions.Shadow.PresetType = PresetShadowType.OffsetBottom;
+            }
 
             // Set the font color and size of the textbox
             tb.Font.Color = Color.Red;
@@ -31,6 +38,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Save the output file
             wb.Save(outputDir + "outputSettingTextEffectsShadowOfShapeOrTextbox.xlsx", SaveFormat.Xlsx);
+            // ExEnd:1
 
             Console.WriteLine("SettingTextEffectsShadowOfShapeOrTextbox executed successfully.");
         }

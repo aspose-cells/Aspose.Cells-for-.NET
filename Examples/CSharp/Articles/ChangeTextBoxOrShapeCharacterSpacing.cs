@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
+            // ExStart:1
             //Source directory
             string sourceDir = RunExamples.Get_SourceDirectory();
 
@@ -28,6 +29,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
 
             // Save the workbook in xlsx format
             wb.Save(outputDir + "outputChangeTextBoxOrShapeCharacterSpacing.xlsx", SaveFormat.Xlsx);
+            // ExEnd:1
 
             Console.WriteLine("ChangeTextBoxOrShapeCharacterSpacing executed successfully.\r\n");
         }

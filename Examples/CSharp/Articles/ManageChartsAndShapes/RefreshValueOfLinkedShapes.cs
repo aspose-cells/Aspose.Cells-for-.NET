@@ -9,6 +9,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
     {
         public static void Run()
         {
+            // ExStart:1
             //Source directory
             string sourceDir = RunExamples.Get_SourceDirectory();
 
@@ -28,8 +29,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             // Update the value of the Linked Picture which is linked to cell B4
             worksheet.Shapes.UpdateSelectedValue();
 
-            // Save the workbook in pdf format
+            // Save the workbook in PDF format
             workbook.Save(outputDir + "outputRefreshValueOfLinkedShapes.pdf", SaveFormat.Pdf);
+            // ExEnd:1
 
             Console.WriteLine("RefreshValueOfLinkedShapes executed successfully.");
         }

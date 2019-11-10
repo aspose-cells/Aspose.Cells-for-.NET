@@ -9,6 +9,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
+            // ExStart:1
             //Source directory
             string sourceDir = RunExamples.Get_SourceDirectory();
 
@@ -22,13 +23,14 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             Worksheet sheet = workbook.Worksheets[0];
 
             // Set the background image for the sheet.
-            sheet.BackgroundImage = File.ReadAllBytes(sourceDir + "sampleSetBackgroundPicture.jpg");
+            sheet.BackgroundImage = File.ReadAllBytes(sourceDir + "background.jpg");
 
             // Save the Excel file
             workbook.Save(outputDir + "outputBackImageSheet.xlsx");
 
             // Save the HTML file
             workbook.Save(outputDir + "outputBackImageSheet.html", SaveFormat.Html);
+            // ExEnd:1
 
             Console.WriteLine("SetBackgroundPicture executed successfully.");
         }

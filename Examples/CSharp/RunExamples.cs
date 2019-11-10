@@ -113,6 +113,13 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out
 
+            //Aspose.Cells for .NET v19.9
+            //DocumentConversionProgressForTiff.Run();
+
+            //Aspose.Cells for .NET v19.9
+            //PrintSheetWithAdditionalSettings.Run();
+            //AdjustCompressionLevel.Run();
+
             //Aspose.Cells for .NET v19.8
             //DetectLinkTypes.Run();
             //ExtractEmbeddedMolFile.Run();
@@ -477,6 +484,7 @@ namespace Aspose.Cells.Examples.CSharp
             //ConvertingColumnChartToImage.Run();
             //ConvertingPieChartToImageFile.Run();
             //ConvertWorksheetToImageByPage.Run();
+            //ConvertWorksheetToSVG.Run();
             //ConvertWorksheettoImageFile.Run();
             //DeletingBlankColumns.Run();
             //DeletingBlankRows.Run();
