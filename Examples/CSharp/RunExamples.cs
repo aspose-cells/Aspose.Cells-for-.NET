@@ -113,8 +113,10 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out
 
-            //Aspose.Cells for .NET v19.9
+            //Aspose.Cells for .NET v19.10
             //DocumentConversionProgressForTiff.Run();
+            //ICellsDataTableDataSourceForWorkbookDesigner.Run();
+            //WorkingWithContentTypeProperties.Run();
 
             //Aspose.Cells for .NET v19.9
             //PrintSheetWithAdditionalSettings.Run();

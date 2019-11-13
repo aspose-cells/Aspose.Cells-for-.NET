@@ -503,6 +503,8 @@
     <Compile Include="LoadingSavingConvertingAndManaging\DocumentConversionProgressForTiff.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\DocumentConversionProgress.cs" />
     <Compile Include="Slicers\ExportSlicerToPDF.cs" />
+    <Compile Include="Workbook\WorkingWithContentTypeProperties.cs" />
+    <Compile Include="Workbook\ICellsDataTableDataSourceForWorkbookDesigner.cs" />
     <Compile Include="Workbook\AdjustCompressionLevel.cs" />
     <Compile Include="Workbook\PrintPreview.cs" />
     <Compile Include="Workbook\DetectLinkTypes.cs" />
