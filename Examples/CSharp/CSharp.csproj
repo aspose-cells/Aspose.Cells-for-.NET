@@ -502,6 +502,7 @@
     <Compile Include="Files\Handling\OpeningSXCFiles.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\DocumentConversionProgressForTiff.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\DocumentConversionProgress.cs" />
+    <Compile Include="PivotTables\PivotTableCustomSort.cs" />
     <Compile Include="Slicers\ExportSlicerToPDF.cs" />
     <Compile Include="Workbook\WorkingWithContentTypeProperties.cs" />
     <Compile Include="Workbook\ICellsDataTableDataSourceForWorkbookDesigner.cs" />

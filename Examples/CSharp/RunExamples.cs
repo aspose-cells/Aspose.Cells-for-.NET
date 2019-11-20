@@ -80,6 +80,7 @@ using Aspose.Cells.Examples.CSharp.Worksheets;
 using Aspose.Cells.Examples.CSharp.LoadingSavingConvertingAndManaging;
 using Aspose.Cells.Examples.CSharp._Workbook;
 using Aspose.Cells.Examples.CSharp.Slicers;
+using Aspose.Cells.Examples.CSharp.PivotTables;
 
 namespace Aspose.Cells.Examples.CSharp
 {
@@ -117,6 +118,7 @@ namespace Aspose.Cells.Examples.CSharp
             //DocumentConversionProgressForTiff.Run();
             //ICellsDataTableDataSourceForWorkbookDesigner.Run();
             //WorkingWithContentTypeProperties.Run();
+            //PivotTableCustomSort.Run();
 
             //Aspose.Cells for .NET v19.9
             //PrintSheetWithAdditionalSettings.Run();

@@ -2,6 +2,7 @@ using System.IO;
 
 using Aspose.Cells;
 using System.Data;
+using System;
 
 namespace Aspose.Cells.Examples.CSharp.SmartMarkers
 
@@ -19,15 +20,15 @@ namespace Aspose.Cells.Examples.CSharp.SmartMarkers
 
             // Export data from the first worksheet to fill a data table
             DataTable dt = workbook.Worksheets[0].Cells.ExportDataTable(0, 0, 11, 5, true);
-            
+
+            // Set the table name
+            dt.TableName = "Report";
+
             // Instantiate a new WorkbookDesigner
             WorkbookDesigner d = new WorkbookDesigner();
 
             // Specify the workbook to the designer book
-            d.Workbook = workbook;
-
-            // Set the table name
-            dt.TableName = "Report";
+            d.Workbook = designer;
 
             // Set the data source
             d.SetDataSource(dt);
@@ -36,9 +37,10 @@ namespace Aspose.Cells.Examples.CSharp.SmartMarkers
             d.Process();
 
             // Save the Excel file
-            workbook.Save(dataDir + "output.xlsx", SaveFormat.Xlsx);
+            designer.Save(dataDir + "output.xlsx", SaveFormat.Xlsx);
             // ExEnd:1
 
+            Console.WriteLine("AddCustomLabels executed successfully.");
         }
     }
 }
