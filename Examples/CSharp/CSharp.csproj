@@ -37,8 +37,8 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=19.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.19.10.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=19.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.19.11.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -337,6 +337,7 @@
     <Compile Include="Articles\WorkingWithHTMLFormat\RenderGradientFillToHTML.cs" />
     <Compile Include="CellsHelper\CreateSafeSheetNames.cs" />
     <Compile Include="CellsHelper\MergeFiles.cs" />
+    <Compile Include="CellsHelper\GetTextWidth.cs" />
     <Compile Include="CellsHelper\NameToIndex.cs" />
     <Compile Include="CellsHelper\IndexToName.cs" />
     <Compile Include="CellsHelper\NumberOfSignificantDigits.cs" />
@@ -455,6 +456,7 @@
     <Compile Include="Data\SortDataInColumnWithCustomSortList.cs" />
     <Compile Include="Data\SpecifyFormulaFieldsWhileImportingDataToWorksheet.cs" />
     <Compile Include="Data\SpecifyingDBNumCustomPatternFormatting.cs" />
+    <Compile Include="Data\AddValidationArea.cs" />
     <Compile Include="Data\SpecifyingSortWarningWhileSortingData.cs" />
     <Compile Include="DocumentProperties\SpecifyLanguageOfExcelFileUsingBuiltInDocumentProperties.cs" />
     <Compile Include="DrawingObjects\AccessAndModifyLabelOfOleObject.cs" />
@@ -502,8 +504,11 @@
     <Compile Include="Files\Handling\OpeningSXCFiles.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\DocumentConversionProgressForTiff.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\DocumentConversionProgress.cs" />
+    <Compile Include="PivotTables\PivotTableSortAndHide.cs" />
     <Compile Include="PivotTables\PivotTableCustomSort.cs" />
     <Compile Include="Slicers\ExportSlicerToPDF.cs" />
+    <Compile Include="Tables\ReadAndWriteTableWithQueryTableDataSource.cs" />
+    <Compile Include="Workbook\GetOdataDetails.cs" />
     <Compile Include="Workbook\WorkingWithContentTypeProperties.cs" />
     <Compile Include="Workbook\ICellsDataTableDataSourceForWorkbookDesigner.cs" />
     <Compile Include="Workbook\AdjustCompressionLevel.cs" />

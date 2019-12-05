@@ -114,6 +114,13 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out
 
+            //Aspose.Cells for .NET v19.11
+            //GetTextWidth.Run();
+            //ReadAndWriteTableWithQueryTableDataSource.Run();
+            //PivotTableSortAndHide.Run();
+            //GetOdataDetails.Run();
+            //AddValidationArea.Run();
+
             //Aspose.Cells for .NET v19.10
             //DocumentConversionProgressForTiff.Run();
             //ICellsDataTableDataSourceForWorkbookDesigner.Run();
