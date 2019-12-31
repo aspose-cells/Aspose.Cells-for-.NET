@@ -4,6 +4,7 @@ using System;
 
 namespace Aspose.Cells.Examples.CSharp.Articles.FilteringObjectsAtLoadTime
 {
+    // ExStart:1
     public class CustomLoadFilter : LoadFilter
     {
         public override void StartSheet(Worksheet sheet)
@@ -17,7 +18,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.FilteringObjectsAtLoadTime
             if (sheet.Name == "NoShapes")
             {
                 //Load everything and filter shapes
-                this.LoadDataFilterOptions = LoadDataFilterOptions.All & ~LoadDataFilterOptions.Shape;
+                this.LoadDataFilterOptions = LoadDataFilterOptions.All & ~LoadDataFilterOptions.Drawing;
             }
 
             if (sheet.Name == "NoConditionalFormatting)")
@@ -27,9 +28,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles.FilteringObjectsAtLoadTime
             }
         }
     }
+    // ExEnd:1
 
     class CustomFilteringPerWorksheet
     {
+        // ExStart:2
         public static void Run()
         {
             //Source directory
@@ -61,6 +64,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.FilteringObjectsAtLoadTime
                 SheetRender render = new SheetRender(worksheet, imageOpts);
                 render.ToImage(0, outputDir + "outputCustomFilteringPerWorksheet_" + worksheet.Name + ".png");
             }
+            // ExEnd:2
 
             Console.WriteLine("CustomFilteringPerWorksheet executed successfully.");
         }

@@ -114,6 +114,10 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out
 
+            //Aspose.Cells for .NET v19.12
+            //AllowLeadingApostrophe.Run();
+            //ConvertExcelFileToHtmlWithTooltip.Run();
+
             //Aspose.Cells for .NET v19.11
             //GetTextWidth.Run();
             //ReadAndWriteTableWithQueryTableDataSource.Run();
