@@ -61,7 +61,7 @@ namespace Aspose.Cells.Examples.CSharp.Data.Processing.FilteringAndValidation
 
 
             // Save the workbook.
-            workbook.Save(dataDir + "output.out.xls");
+            workbook.Save(dataDir + "output.out.xlsx");
             // ExEnd:1
 
             

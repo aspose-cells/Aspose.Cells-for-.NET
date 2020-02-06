@@ -114,6 +114,14 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out
 
+            //Aspose.Cells for .NET v20.1
+            //InsertCheckboxInChartSheet.Run();
+            //XAdESSignatureSupport.Run();
+            //RegexReplace.Run();
+            //PrintHeadings.Run();
+            //PivotTableDataDisplayFormatRanking.Run();
+            //GetCellValidationInODS.Run();
+
             //Aspose.Cells for .NET v19.12
             //AllowLeadingApostrophe.Run();
             //ConvertExcelFileToHtmlWithTooltip.Run();
