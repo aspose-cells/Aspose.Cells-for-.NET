@@ -114,6 +114,8 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out
 
+            //ChangeCommentFontColor.Run();
+
             //Aspose.Cells for .NET v20.1
             //InsertCheckboxInChartSheet.Run();
             //XAdESSignatureSupport.Run();

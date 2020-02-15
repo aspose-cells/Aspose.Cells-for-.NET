@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdvanceProtectSettings.cs" />
+    <Compile Include="Articles\ChangeCommentFontColor.cs" />
     <Compile Include="Articles\ConvertDatesToJapaneseDates.cs" />
     <Compile Include="Articles\CheckIfValidationInCellDropDown.cs" />
     <Compile Include="Articles\ConvertingWorksheetToImage\ConvertWorksheetToSVG.cs" />
