@@ -114,6 +114,11 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out
 
+            //Aspose.Cells for .NET v20.2
+            //PivotTableGetExternalConnectionDataSource.Run();
+            //ConvertJsonToCsv.Run();
+            //ConvertCsvToJson.Run();
+
             //ChangeCommentFontColor.Run();
 
             //Aspose.Cells for .NET v20.1

@@ -37,8 +37,8 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=20.1.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.20.1.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=20.2.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.20.2.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -506,9 +506,12 @@
     <Compile Include="Files\Handling\OpeningSXCFiles.cs" />
     <Compile Include="HTML\PrintHeadings.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\ConvertExcelFileToHtmlWithTooltip.cs" />
+    <Compile Include="LoadingSavingConvertingAndManaging\ConvertCsvToJson.cs" />
+    <Compile Include="LoadingSavingConvertingAndManaging\ConvertJsonToCsv.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\DocumentConversionProgressForTiff.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\DocumentConversionProgress.cs" />
     <Compile Include="PivotTables\PivotTableDataDisplayFormatRanking.cs" />
+    <Compile Include="PivotTables\PivotTableGetExternalConnectionDataSource.cs" />
     <Compile Include="PivotTables\PivotTableSortAndHide.cs" />
     <Compile Include="PivotTables\PivotTableCustomSort.cs" />
     <Compile Include="Slicers\ExportSlicerToPDF.cs" />

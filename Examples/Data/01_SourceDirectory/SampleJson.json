@@ -1,0 +1,42 @@
+{
+"book":
+[
+  {
+"id": "01",
+"language": "Java",
+"edition": "third",
+"author": "Herbert Schildt",
+"address":
+{
+"streetAddress": "126",
+"city": "San Jone",
+"state": "CA",
+"postalCode": "394221"
+}
+},
+{
+"id": "02",
+"language": "C++",
+"edition": "second",
+"author": "EAAAA",
+"address": {
+"streetAddress": "126",
+"city": "San Jone",
+"state": "CA",
+"postalCode": "394221"
+}
+},
+{
+"id": "03",
+"language": ".Net",
+"edition": "second",
+"author": "E.Balagurusamy",
+"address": {
+"streetAddress": "126",
+"city": "San Jone",
+"state": "CA",
+"postalCode": "394221"
+}
+}
+]
+}
