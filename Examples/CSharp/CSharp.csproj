@@ -37,8 +37,8 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=20.2.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.20.2.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=20.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.20.3.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -91,6 +91,7 @@
     <Compile Include="Articles\SettingSubscriptEffect.cs" />
     <Compile Include="Articles\SettingSuperscripteffect.cs" />
     <Compile Include="Articles\StylingAndDataFormatting\CheckCustomFormatPattern.cs" />
+    <Compile Include="Articles\RemoveActiveXControl.cs" />
     <Compile Include="Articles\UsingCellsFactory.cs" />
     <Compile Include="Articles\CheckHiddenExternalLinks.cs" />
     <Compile Include="Articles\CopyRowsColumns\CopyingMultipleColumns.cs" />
@@ -344,6 +345,7 @@
     <Compile Include="CellsHelper\NumberOfSignificantDigits.cs" />
     <Compile Include="CellsHelper\UsingCustomImplementationFactoryToCreateCustomImplementationOfMemoryStream.cs" />
     <Compile Include="Charts\Applying3DFormat.cs" />
+    <Compile Include="Charts\ChangeTickLabelDirection.cs" />
     <Compile Include="Charts\GetChartSubTitleForODSFile.cs" />
     <Compile Include="Charts\CreateLineWithDataMarkerChart.cs" />
     <Compile Include="Charts\ChangeChartSizeAndPosition.cs" />
@@ -769,8 +771,10 @@
     <Compile Include="Workbook\PasswordProtectOrUnprotectSharedWorkbook.cs" />
     <Compile Include="Workbook\ReadAndWriteExternalConnectionOfXLSBFile.cs" />
     <Compile Include="Workbook\StopConversionOrLoadingUsingInterruptMonitor.cs" />
+    <Compile Include="Worksheets\GetWorksheetUniqueId.cs" />
     <Compile Include="Worksheets\PrintSheetWithAdditionalSettings.cs" />
     <Compile Include="Worksheets\GetCellValidationInODS.cs" />
+    <Compile Include="Worksheets\ReadThreadedCommentCreatedTime.cs" />
     <Compile Include="Worksheets\SetODSGraphicBackground.cs" />
     <Compile Include="Worksheets\SetODSColoredBackground.cs" />
     <Compile Include="Worksheets\ReadODSBackground.cs" />
