@@ -37,8 +37,8 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=20.3.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.20.3.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=20.4.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.20.4.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -380,6 +380,7 @@
     <Compile Include="Charts\SettingChartsData.cs" />
     <Compile Include="Charts\InsertingControlsintoCharts\InsertCheckboxInChartSheet.cs" />
     <Compile Include="Charts\UsingSparklines.cs" />
+    <Compile Include="Data\CreateUnionRange.cs" />
     <Compile Include="Data\Handling\Importing\ImportCustomObjectsToMergedArea.cs" />
     <Compile Include="Data\ApplyAdvancedFilterOfMicrosoftExcel.cs" />
     <Compile Include="Data\ChangeCellsAlignmentAndKeepExistingFormatting.cs" />
@@ -521,6 +522,7 @@
     <Compile Include="Workbook\GetOdataDetails.cs" />
     <Compile Include="Workbook\AllowLeadingApostrophe.cs" />
     <Compile Include="Workbook\RegexReplace.cs" />
+    <Compile Include="Workbook\UpdatePowerQueryFormulaItem.cs" />
     <Compile Include="Workbook\XAdESSignatureSupport.cs" />
     <Compile Include="Workbook\WorkingWithContentTypeProperties.cs" />
     <Compile Include="Workbook\ICellsDataTableDataSourceForWorkbookDesigner.cs" />

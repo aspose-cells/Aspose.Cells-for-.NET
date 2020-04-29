@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
@@ -114,8 +114,11 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out
 
-            //Aspose.Cells for .NET v20.3
+            //Aspose.Cells for .NET v20.4
+            //CreateUnionRange.Run();
+            //UpdatePowerQueryFormulaItem.Run();
 
+            //Aspose.Cells for .NET v20.3
             //GetWorksheetUniqueId.Run();
             //ReadThreadedCommentCreatedTime.Run();
             //RemoveActiveXControl.Run();
