@@ -1,0 +1,77 @@
+﻿
+@model  LandingPageModel
+
+@{
+	Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container-fluid header1 header2 minify-header appfamily-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<h1>Microsoft Excel File Format Solution </h1>
+				<h2>Take advantage of scalable reporting, comprehensive charting & reliable calculations - without depending on Microsoft Excel.  </h2>
+			</div>
+			<div class="col-md-4 tc">
+				<img class=" col-xs-12" src="../img/aspose_cells-brand.png" alt="Aspose.Cells" width="320" />
+			</div>
+			<!--/col6 -->
+		</div>
+		<!--/row -->
+	</div>
+	<!--/container -->
+</div>
+<div class="container-fluid productfamilypage bg-white pdb-5">
+	<div class="row">
+		<div class="container tc">
+			<div class="clearfix">&nbsp;</div>
+			<div class="clearfix">&nbsp;</div>
+			<h3>@string.Format(@Model.Resources["AsposeProductFamilyInclude"], @Model.Resources["AsposeCells"]) </h3>
+			<div class="clearfix">&nbsp;</div>
+			<div class="clearfix">&nbsp;</div>
+
+			<div class="col-lg-4 productfamily_box">
+				<div class="productfamilytitle">
+					<div class="imgblock">
+						<img src="../img/aspose_viewer-app.png" alt="Aspose.Cells for .NET" />
+					</div>
+					<a href="/cells/viewer"><span class="spanclass">@Model.Resources["AsposeCells"] @Model.Resources["AsposeProductFor"]<em>Viewer</em></span><em>View spreadsheet files including XLS, XLSX, XLSM, XLSB & ODS in your favorite browser from anywhere.</em></a>
+				</div>
+
+			</div>
+			<div class="col-lg-4 productfamily_box">
+				<div class="productfamilytitle">
+					<div class="imgblock">
+						<img src="../img/aspose_conversion-app.png" alt="Aspose.Cells for .NET" />
+					</div>
+					<a href="/cells/conversion"><span class="spanclass">@Model.Resources["AsposeCells"] @Model.Resources["AsposeProductFor"]<em>@Model.Resources["Conversionh4"]</em></span><em>Easily convert Microsoft Excel files to PDF, HTML, images and many other popular file formats without leaving your favorite browser.</em></a>
+				</div>
+
+			</div>
+
+			<div class="col-lg-4 productfamily_box">
+				<div class="productfamilytitle">
+					<div class="imgblock">
+						<img src="../img/aspose_search-app.png" alt="Aspose.Cells for .NET" />
+					</div>
+					<a href="/cells/search"><span class="spanclass">@Model.Resources["AsposeCells"] @Model.Resources["AsposeProductFor"]<em>Search</em></span><em>Search text inside Microsoft Excel and Open Document files.</em></a>
+				</div>
+
+			</div>
+			<div class="col-lg-4 productfamily_box">
+				<div class="productfamilytitle">
+					<div class="imgblock">
+						<img src="../img/aspose_unlock-app.png" alt="Aspose.Cells for .NET" />
+					</div>
+					<a href="/cells/unlock"><span class="spanclass">@Model.Resources["AsposeCells"] @Model.Resources["AsposeProductFor"]<em>Unlock</em></span><em>Unlock your password protected MS Excel and Open Document Spreadsheet (ODS) online.</em></a>
+				</div>
+
+			</div>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+<div class="spacer">&nbsp;</div>
