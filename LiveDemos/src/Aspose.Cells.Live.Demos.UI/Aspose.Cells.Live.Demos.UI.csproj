@@ -213,6 +213,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assembly\app.controller.main.js" />
+    <Content Include="Assembly\app.js" />
+    <Content Include="Assembly\app.run.js" />
+    <Content Include="Assembly\AssemblyApp.aspx" />
+    <Content Include="Assembly\cellsHelpDataSource.html" />
+    <Content Include="Assembly\cellsHelpTemplate.html" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -325,6 +331,9 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
+    <Content Include="Assembly\Invitation.pdf" />
+    <Content Include="Assembly\SampleTemplates\Data.xlsx" />
+    <Content Include="Assembly\SampleTemplates\Template.xlsx" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -501,7 +510,7 @@
     <Content Include="Views\Parser\Parser.cshtml" />
     <Content Include="Views\Viewer\Viewer.cshtml" />
     <Content Include="Views\Unlock\Unlock.cshtml" />
-    <Content Include="Views\Unlock\UnlockControls.cshtml" />
+    <Content Include="Views\Shared\UnlockControls.cshtml" />
     <Content Include="Views\Search\SearchControls.cshtml" />
     <Content Include="Views\Search\Search.cshtml" />
     <Content Include="site.Master" />
@@ -521,6 +530,7 @@
     <Content Include="ViewerApp\qi\js\quantumui-all.min.js.map" />
     <Content Include="ViewerApp\qi\js\quantumui-nojq.min.js.map" />
     <Content Include="ViewerApp\qi\js\quantumui.min.js.map" />
+    <Content Include="Views\Protect\Protect.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -530,8 +540,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Assembly\AssemblyApp.aspx.cs">
+      <DependentUpon>AssemblyApp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Assembly\AssemblyApp.aspx.designer.cs">
+      <DependentUpon>AssemblyApp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AsposeCellsAssemblyController.cs" />
     <Compile Include="Controllers\AsposeViewerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MergerController.cs" />
+    <Compile Include="Controllers\ParserController.cs" />
+    <Compile Include="Controllers\ProtectController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\UnlockController.cs" />
     <Compile Include="Controllers\BaseController.cs" />
@@ -546,6 +567,9 @@
     <Compile Include="Helpers\HttpHelper.cs" />
     <Compile Include="Helpers\MultipartFormDataStreamProviderSafe.cs" />
     <Compile Include="Helpers\PathSafe.cs" />
+    <Compile Include="Models\AsposeCellsMerger.cs" />
+    <Compile Include="Models\AsposeCellsParser.cs" />
+    <Compile Include="Models\AsposeCellsProtect.cs" />
     <Compile Include="Models\AsposeCellsSearch.cs" />
     <Compile Include="Models\AsposeCellsUnlock.cs" />
     <Compile Include="Models\FileSafeResult.cs" />

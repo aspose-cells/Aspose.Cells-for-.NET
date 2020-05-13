@@ -109,8 +109,6 @@
 	<res name="HowtoUnlockFeature1">Click inside the file drop area to upload file or drag &amp; drop file.</res>
 	<res name="HowtoUnlockFeature2">Your document file will be rendered automatically to unlock.</res>
 	<res name="HowtoUnlockFeature3">Download link of document file will be available instantly after unlock.</res>
-
-
 	<res name="cellsUnlockPageTitle">Free Online Excel and ODS file Unlocker</res>
 	<res name="cellsUnlockMetaDescription">Unlock password protected Excel documents online for free. Remove password online.</res>
 	<res name="cellsUnlockTitle">Free Online Excel and ODS file Unlocker</res>
@@ -118,16 +116,119 @@
 	<res name="cellsUnlockLiFeature1">Remove password in multiple files</res>
 	<res name="cellsUnlockLiFeature2">We don't decrypt or recover your documents</res>
 	<res name="cellsUnlockValidationExpression">.xls|.xlsx|.xlsm|.xlsb|.ods</res>
-
 	<res name="UnlockFeature1">Fast and Easy Unlock</res>
 	<res name="UnlockFeature1Description">Upload your password protected file, enter current password and click on "UNLOCK NOW" button. You will get unlocked file as soon as the unlocking is performed</res>
 	<res name="UnlockFeature2">Unlock from Anywhere</res>
 	<res name="UnlockFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
-	<res name="UnlockFeature3">Unlock Quality</res>
-	
+	<res name="UnlockFeature3">Unlock Quality</res>	
 	<res name="UnlockAnotherFile">Unlock another file</res>
 	<res name="UnlockSuccessMessage">Your file has been unlocked successfully</res>
 	<res name="UnlockAction">Unlock</res>
+	<res name="ParserAPPName">Parser</res>
+	
+	<res name="cellsParserPageTitle">Parse Microsoft Excel &amp; OpenOffice Calc Spreadsheets</res>
+	<res name="cellsParserMetaDescription">Free app to parse &amp; extract text &amp; images from XLS, XLSX, XLSM, XLSB &amp; ODS file formats.</res>
+	<res name="cellsParserTitle">Online Spreadsheet Parser App</res>
+	<res name="cellsParserSubTitle">Parse text &amp; images from Microsoft Excel XLS, XLSX, XLSM, XLSB and OpenDocument ODS files.</res>
+	<res name="cellsParserValidationExpression">.xls|.xlsx|.xlsm|.xlsb|.ods</res>
+	<res name="cellsParserLiFeature1">Quick way to extract text and images</res>
+	<res name="cellsParserLiFeature2">Extract from multiple files</res>
+	
+
+	<res name="ParserButton">PARSE NOW</res>
+	
+	<res name="ParserFeature1">Fast and Easy Parser</res>
+	<res name="ParserFeature1Description">Upload your document and click on “PARSE NOW” button. You will get the text file or zip-file with text and images as soon as the Parsing is performed</res>
+	<res name="ParserFeature2">Parse from Anywhere</res>
+	<res name="ParserFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="ParserFeature3">Parse Quality</res>
+	<res name="ParserLiFeature1">Instantly download or send output file as an email</res>
+	<res name="ParserAnotherFile">Parse other document</res>
+	<res name="ParserSuccessMessage">Your file has been processed successfully</res>
+	<res name="ParserSentEmailSuccessMessage">Your file has been parsed successfully, please check your email to download parsed files</res>
+	<res name="ParserAction">Parse</res>
+	<res name="HowtoParserTitle">How to Parse {0} files using {1}</res>
+	<res name="HowtoParserFeature1">Click inside the file drop area to upload file or drag &amp; drop file.</res>
+	<res name="HowtoParserFeature2">Click on "PARSE NOW" button, file will be automatically uploaded to parse.</res>
+	<res name="HowtoParserFeature3">Download link of document file will be available instantly after parse.</res>
+
+	<res name="ProtectAPPName">Protect</res>
+	<res name="ProtectButton">PROTECT NOW</res>
+	<res name="ProtectFeature1">Fast and Easy Protection</res>
+	<res name="ProtectFeature1Description">Upload your file, enter new password and click on "PROTECT NOW" button. You will get protected file as soon as the protection is performed</res>
+	<res name="ProtectFeature2">Protect from Anywhere</res>
+	<res name="ProtectFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="ProtectFeature3">Protection Quality</res>
+	<res name="ProtectLiFeature1">Protect your Excel documents with password</res>
+	<res name="ProtectAnotherFile">Protect another file</res>
+	<res name="ProtectSuccessMessage">Your file has been protected successfully</res>
+	<res name="ProtectPasswordPlaceholder">Type Password</res>
+	<res name="ProtectAction">Protect</res>
+	<!-- Protect Apps - How To-->
+	<res name="cellsProtectTitle">Free Online Excel and ODS file Protection</res>
+	<res name="cellsProtectSubTitle">Protect MS Excel and OpenOffice worksheets by making them password protected.</res>
+	<res name="HowtoProtectTitle">How to Protect Word Documents using {1} App</res>
+	<res name="HowtoProtectFeature1">Click inside the file drop area to upload a file or drag &amp; drop a file.</res>
+	<res name="HowtoProtectFeature2">Enter new password in Password input field to make your word document password protected.</res>
+	<res name="HowtoProtectFeature3">Click on Protect Now button. Download link of password protected word document will be shown.</res>
+	<res name="cellsProtectPageTitle">Free Online Excel and ODS file Protection</res>
+	<res name="cellsProtectMetaDescription">Free Online Excel and ODS file Protection.</res>
+
+	<res name="MergerAPPName">Merger</res>
+	<res name="cellsMergerPageTitle">Merge Excel &amp; Calc Spreadsheets | Combine Workbooks Online</res>
+	<res name="cellsMergerMetaDescription">Combine Microsoft Excel XLS, XLSX, XLSM, XLSB &amp; OpenOffice Calc ODS spreadsheet files on any platform, via any browser.</res>
+	<res name="cellsMergerTitle">Spreadsheet Merger App for Excel &amp; Calc Files</res>
+	<res name="cellsMergerSubTitle">Merge/Combine Excel documents.</res>
+	
+	<res name="cellsMergerLiFeature1">Combine different files into one</res>
+
+	<res name="cellsMergerLiFeature2">Choose the order of merged files</res>
+
+	<!-- Conversion App - How To-->
+	<res name="HowtoMergerTitle">How to merger {0} file using {1}</res>
+	<res name="HowtoMergerFeature1">Click inside the file drop area to upload files or drag &amp; drop files.</res>
+	<res name="HowtoMergerFeature2">Click the "MERGE NOW" button to start merging files.</res>
+	<res name="HowtoMergerFeature3">Download link of merged file will be available instantly after merger.</res>
+
+	<res name="MergerButton">MERGE NOW</res>
+	
+	<res name="MergerFeature1">Fast and Easy Way to Merge</res>
+	<res name="MergerFeature1Description">Upload your documents and click on “MERGE NOW” button. It will merge your document files into one and provide you a download link to download merged document. The output format will be the output format of your first document</res>
+	<res name="MergerFeature2">Merge from Anywhere</res>
+	<res name="MergerFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="MergerFeature3">Merge Quality</res>
+	
+	<res name="MergerAnotherFile">Merge other documents</res>
+	<res name="MergerSuccessMessage">Your files have been processed successfully</res>
+	
+	<res name="MergerViewer">VIEW DOCUMENT</res>
+	<res name="MergerFileAmountMessage">Please select between two and ten files</res>	
+	<res name="MergerAction">Merge</res>
+	<res name="AssemblyAPPName">Assembly</res>
+
+
+	<res name="cellsAssemblyPageTitle">Assemble Microsoft Excel &amp; OpenOffice Calc Spreadsheets</res>
+	<res name="cellsAssemblyMetaDescription">Free app to generate reports in XLS, XLSX, XLSM, XLSB &amp; ODS files using the template &amp; data sheet. Process Smart Markers in template to fill data from another data sheet.</res>
+	<res name="cellsAssemblyH1">Assemble Excel Document</res>
+	<res name="cellsAssemblyH4">Assemble data in Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files.</res>
+	<res name="cellsAssemblyTitle">Assemble Excel Document</res>
+	<res name="cellsAssemblyTitleSub">Assemble data in Microsoft Excel (XLS, XLSX, XLSM, XLSB) and Open Document Spreadsheet (ODS) files.</res>
+	<res name="cellsAssemblyValidationExpression">.xls|.xlsx|.xlsm|.xlsb|.ods</res>
+	<res name="AssemblyButton">ASSEMBLE NOW</res>
+	<res name="AssemblyFeature1">Fast and Easy Assemble Data</res>
+	<res name="AssemblyFeature1Description">Upload your template and data-source files, choose the appropriate options and click on “ASSEMBLE NOW” button. You will get the output file as soon as the files are assembled.</res>
+	<res name="AssemblyFeature2">Assemble from Anywhere</res>
+	<res name="AssemblyFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you.</res>
+	<res name="AssemblyFeature3">Assemble Quality</res>
+	<res name="AssemblyLiFeature1">Instantly download the assembled file</res>
+	<res name="AssemblyAnotherFile">Assemble another document</res>
+	<res name="AssemblySuccessMessage">Your document has been assembled successfully</res>
+	<res name="AssemblyReady">Your document is ready to be assembled</res>
+	<res name="AssemblyDropTemplate">Drop or upload your template file</res>
+	<res name="AssemblyDropDataSource">Drop or upload your data-source file</res>
+	<res name="ErrorFileSizeMax">File size should be less than</res>
+	<res name="AssemblyAction">Generate report</res>
+	<res name="QualityDescMetadata">All files are processed using Aspose APIs, which are being used by many Fortune 100 companies across 114 countries</res>
 </resources>
 
 

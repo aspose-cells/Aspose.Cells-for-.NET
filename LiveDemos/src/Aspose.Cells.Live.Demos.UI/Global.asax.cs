@@ -69,6 +69,21 @@ namespace Aspose.Cells.Live.Demos.UI
 				 new { controller = "Search", action = "Search" }
 			);
 			routes.MapRoute(
+				"AsposeCellsParserRoute",
+				"{product}/parser",
+				 new { controller = "Parser", action = "Parser" }
+			);
+			routes.MapRoute(
+				"AsposeCellsMergerRoute",
+				"{product}/merger",
+				 new { controller = "Merger", action = "Merger" }
+			);
+			routes.MapRoute(
+				"AsposeCellsProtectRoute",
+				"{product}/protect",
+				 new { controller = "Protect", action = "Protect" }
+			);
+			routes.MapRoute(
 				"AsposeCellsViewerRoute",
 				"{product}/viewer",
 				 new { controller = "Viewer", action = "Viewer" }
@@ -77,6 +92,11 @@ namespace Aspose.Cells.Live.Demos.UI
 			  "AsposeCellsDefaultViewerRoute",
 			  "cells/view",
 			  "~/ViewerApp/Default.aspx"
+			);
+			routes.MapPageRoute(
+			  "AsposeCellsAssemblyRoute",
+			  "{Product}/assembly",
+			  "~/Assembly/AssemblyApp.aspx"
 			);
 			routes.MapRoute(
 				"DownloadFileRoute",

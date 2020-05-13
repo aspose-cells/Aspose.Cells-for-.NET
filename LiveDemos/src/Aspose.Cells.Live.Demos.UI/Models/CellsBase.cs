@@ -605,5 +605,31 @@ namespace Aspose.Cells.Live.Demos.UI.Models
 			/// </summary>
 			public Workbook Workbook { get; set; }
 		}
+
+		/// <summary>
+		/// Prepare upload files and return as documents
+		/// </summary>
+		protected async Task<DocumentInfo[]> UploadWorkBooks()
+		{
+			
+			try
+			{
+				var folderName = Guid.NewGuid().ToString();
+				var pathProcessor = new PathProcessor(folderName);
+				var uploadProvider = new MultipartFormDataStreamProviderSafe(pathProcessor.SourceFolder);
+				await Request.Content.ReadAsMultipartAsync(uploadProvider);
+				return uploadProvider.FileData.Select(x => new DocumentInfo
+				{
+					FolderName = folderName,
+					FileName = x.LocalFileName,
+					Workbook = new Workbook(x.LocalFileName)
+				}).ToArray();
+			}
+			catch (Exception ex)
+			{
+
+				return new DocumentInfo[0];
+			}
+		}
 	}
 }
