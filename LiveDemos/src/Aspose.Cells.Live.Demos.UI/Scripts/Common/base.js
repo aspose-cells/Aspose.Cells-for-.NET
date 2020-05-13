@@ -270,6 +270,25 @@ function request(url, data) {
 		}
 	});
 }
+function validateWatermark() {
+	if ($("#textWatermark").val().length)
+		return true;
+	showAlert(o.validationWatermark);
+	return false;
+}
+
+function requestWatermark() {
+	let data = fileDrop.prepareFormData();
+	if (data === null)
+		return;
+
+	if (!validateWatermark())
+		return;
+
+	let url = o.UIBasePath + 'Watermark/Watermark?watermarkText=' + encodeURI($("#textWatermark").val()) +
+		"&watermarkColor=" + encodeURI($("#pickcolor").val().substr(1));
+	request(url, data);
+}
 function requestMerger() {
 	let data = fileDrop.prepareFormData(2, o.MaximumUploadFiles);
 	if (data === null)

@@ -1,0 +1,22 @@
+﻿@model  ViewModel
+
+@{
+	Layout = "~/Views/Shared/Layout.cshtml";
+}
+
+@Html.Partial("Main")
+
+@Html.Partial("FooterProduct", Model)
+
+@section scripts {
+	<link rel="stylesheet" href="~/css/colorpicker.css" type="text/css" />
+	<script src="~/js/colorpicker.js"></script>
+	<script type="text/javascript">
+        var o = @Html.Raw(Model.JSOptions);
+        $.extend(o, {
+            Method: requestWatermark,
+            validationWatermark: "@Html.Raw(Model.Resources["cellsWatermarkTextMessage"])"
+        });
+
+	</script>
+}

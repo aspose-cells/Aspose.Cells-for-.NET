@@ -18,7 +18,7 @@
 	<res name="PageNotFound">404 Page not found</res>
 	<res name="BrokenLinkTitle">The link you followed probably broken or the page has been moved</res>
 	<res name="btnBackHome">Back to Home</res>
-	<res name="FileSelectMessage">Please select a file to convert</res>
+	<res name="FileSelectMessage">Please select a file to process</res>
 	<res name="SaveAs">Save as</res>
 	<res name="ViewerAPPName">Viewer</res>
 	<res name="cellsConversionSaveAsOptions">PDF,CSV,TIFF,XLSB,XLSM,XLSX,XLTM,XLTX,XLS,ODS</res>
@@ -206,7 +206,27 @@
 	<res name="MergerAction">Merge</res>
 	<res name="AssemblyAPPName">Assembly</res>
 
-
+	<res name="WatermarkButton">Add Watermark</res>
+	<res name="WatermarkAction">Watermark</res>
+	
+	<res name="cellsWatermarkPageTitle">Add Text Watermark to Microsoft Excel &amp; OpenOffice Calc Files</res>
+	<res name="cellsWatermarkMetaDescription">Free app to add text based Watermark to XLS, XLSX, XLSM, XLSB &amp; ODS file formats. Save watermarked spreadsheet in TIFF, PDF &amp; other formats.</res>
+	<res name="cellsWatermarkTitle">Add Text Watermark to Microsoft Excel &amp; OpenOffice Calc Files</res>
+	<res name="cellsWatermarkSubTitle">Upload spreadsheets to add watermark to worksheets in any specified color.</res>
+	<res name="HowtoWatermarkTitle">How to Add Watermark in {0} file using {1}</res>
+	<res name="HowtoWatermarkFeature1">Click inside the file drop area to upload a file or drag &amp; drop a file.</res>
+	<res name="HowtoWatermarkFeature2">Your file will be rendered automatically to add watermark.</res>
+	<res name="HowtoWatermarkFeature3">Download link of file will be available instantly after add watermark.</res>
+	<res name="cellsWatermarkTextMessage">Please enter watermark text</res>
+	<res name="WatermarkFeature1">Fast and Easy Add</res>
+	<res name="cellsWatermarkAddText">Add</res>
+	<res name="cellsWatermarkRemoveText">Remove</res>
+	<res name="WatermarkAnotherFile">Add watermark in another file</res>
+	<res name="WatermarkFeature1Description">Upload your file, enter watermark text and click on “Add Watermark” button. You will get the download link as soon as the watermark text is added.</res>
+	<res name="WatermarkFeature2">Add Watermark from Anywhere</res>
+	<res name="WatermarkFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="WatermarkFeature3">Watermark Quality</res>
+	<res name="WatermarkViewer">VIEW RESULTS</res>
 	<res name="cellsAssemblyPageTitle">Assemble Microsoft Excel &amp; OpenOffice Calc Spreadsheets</res>
 	<res name="cellsAssemblyMetaDescription">Free app to generate reports in XLS, XLSX, XLSM, XLSB &amp; ODS files using the template &amp; data sheet. Process Smart Markers in template to fill data from another data sheet.</res>
 	<res name="cellsAssemblyH1">Assemble Excel Document</res>
@@ -229,6 +249,27 @@
 	<res name="ErrorFileSizeMax">File size should be less than</res>
 	<res name="AssemblyAction">Generate report</res>
 	<res name="QualityDescMetadata">All files are processed using Aspose APIs, which are being used by many Fortune 100 companies across 114 countries</res>
+
+	<res name="cellsAnnotationPageTitle">Free App to remove Annotations from Excle file</res>
+	<res name="cellsAnnotationMetaDescription">Free App to remove Annotations from Excle file</res>
+	<res name="cellsAnnotationTitle">Free App to remove Annotations from Excle file</res>
+	<res name="cellsAnnotationSubTitle">Remove Annotations from Excel and Open Office files. Perform operations in your favoritre browser on any platform including mobile.</res>
+	<res name="HowtoAnnotationTitle">How to remove annotations from Excel File using {1}</res>
+	<res name="HowtoAnnotationFeature1">Click inside the file drop area to upload a document file or drag &amp; drop a document file.</res>
+	<res name="HowtoAnnotationFeature2">Your document file will be rendered automatically to remove annotations.</res>
+	<res name="HowtoAnnotationFeature3">Download link of document file will be available instantly after remove annotations.</res>
+	<res name="AnnotationFeature1">Fast and Easy Annotation</res>
+	<res name="AnnotationFeature1Description">Upload your document and click on “REMOVE” button. You will get the download link as soon as the annotations are removed.</res>
+	<res name="AnnotationFeature1DescriptionChoice">Upload your document and click on “{0}” button. You will get the download link as soon as the annotations are removed.</res>
+	<res name="AnnotationFeature2">Remove Annotations from Anywhere</res>
+	<res name="AnnotationFeature2Choice">{0} Annotations from Anywhere</res>
+	<res name="AnnotationFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you</res>
+	<res name="AnnotationFeature3">Annotation Quality</res>
+	<res name="pdfAnnotationLiFeature1">Fast and Easy Remove Annotation</res>
+
+	<res name="AnnotationAnotherFile">Remove annotations from other documents</res>
+	<res name="AnnotationSuccessMessage">Annotations removed successfully</res>
+	<res name="AnnotationButton">REMOVE</res>
 </resources>
 
 

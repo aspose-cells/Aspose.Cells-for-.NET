@@ -59,6 +59,11 @@ namespace Aspose.Cells.Live.Demos.UI
 				 new { controller = "Conversion", action = "Conversion" }
 			);
 			routes.MapRoute(
+				"AsposeCellsRemoveAnnotationRoute",
+				"annotation/remove",
+				 new { controller = "Annotation", action = "Remove" }
+			);
+			routes.MapRoute(
 				"AsposeCellsUnlockRoute",
 				"{product}/unlock",
 				 new { controller = "Unlock", action = "Unlock" }
@@ -69,9 +74,19 @@ namespace Aspose.Cells.Live.Demos.UI
 				 new { controller = "Search", action = "Search" }
 			);
 			routes.MapRoute(
+				"AsposeCellsWatermarkRoute",
+				"{product}/watermark",
+				 new { controller = "Watermark", action = "Watermark" }
+			);
+			routes.MapRoute(
 				"AsposeCellsParserRoute",
 				"{product}/parser",
 				 new { controller = "Parser", action = "Parser" }
+			);
+			routes.MapRoute(
+				"AsposeCellsAnnotationRoute",
+				"{product}/annotation",
+				 new { controller = "Annotation", action = "Annotation" }
 			);
 			routes.MapRoute(
 				"AsposeCellsMergerRoute",

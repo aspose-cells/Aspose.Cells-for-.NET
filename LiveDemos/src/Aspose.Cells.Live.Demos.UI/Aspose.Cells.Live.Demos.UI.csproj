@@ -531,6 +531,9 @@
     <Content Include="ViewerApp\qi\js\quantumui-nojq.min.js.map" />
     <Content Include="ViewerApp\qi\js\quantumui.min.js.map" />
     <Content Include="Views\Protect\Protect.cshtml" />
+    <Content Include="Views\Watermark\Watermark.cshtml" />
+    <Content Include="Views\Watermark\WatermarkControls.cshtml" />
+    <Content Include="Views\Annotation\Annotation.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -551,7 +554,9 @@
     <Compile Include="Controllers\AsposeViewerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MergerController.cs" />
+    <Compile Include="Controllers\AnnotationController.cs" />
     <Compile Include="Controllers\ParserController.cs" />
+    <Compile Include="Controllers\WatermarkController.cs" />
     <Compile Include="Controllers\ProtectController.cs" />
     <Compile Include="Controllers\SearchController.cs" />
     <Compile Include="Controllers\UnlockController.cs" />
@@ -568,7 +573,9 @@
     <Compile Include="Helpers\MultipartFormDataStreamProviderSafe.cs" />
     <Compile Include="Helpers\PathSafe.cs" />
     <Compile Include="Models\AsposeCellsMerger.cs" />
+    <Compile Include="Models\AsposeCellsAnnotation.cs" />
     <Compile Include="Models\AsposeCellsParser.cs" />
+    <Compile Include="Models\AsposeCellsWatermark.cs" />
     <Compile Include="Models\AsposeCellsProtect.cs" />
     <Compile Include="Models\AsposeCellsSearch.cs" />
     <Compile Include="Models\AsposeCellsUnlock.cs" />
