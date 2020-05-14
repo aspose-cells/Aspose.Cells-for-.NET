@@ -89,6 +89,11 @@ namespace Aspose.Cells.Live.Demos.UI
 				 new { controller = "Annotation", action = "Annotation" }
 			);
 			routes.MapRoute(
+				"AsposeCellsMetadataRoute",
+				"{product}/metadata",
+				 new { controller = "Metadata", action = "Metadata" }
+			);
+			routes.MapRoute(
 				"AsposeCellsMergerRoute",
 				"{product}/merger",
 				 new { controller = "Merger", action = "Merger" }

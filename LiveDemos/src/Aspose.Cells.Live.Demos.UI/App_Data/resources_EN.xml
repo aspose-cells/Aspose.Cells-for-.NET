@@ -14,6 +14,8 @@
 	<res name="FileAmountMessageLessTen">Please select less than ten files</res>
 	<res name="btnConvertNow">CONVERT NOW</res>
 	<res name="AsposeCells">Aspose.Cells</res>
+	<res name="MetadataViewer">VIEW DOCUMENT</res>
+	<res name="Save">Save</res>
 	<res name="EditorReturnQuestion">Are you sure you want to return?</res>	
 	<res name="PageNotFound">404 Page not found</res>
 	<res name="BrokenLinkTitle">The link you followed probably broken or the page has been moved</res>
@@ -93,6 +95,7 @@
 	<res name="NoSearchResultsMessage">No search results</res>
 	<res name="WrongRegExpMessage">Wrong regular expression</res>
 	<res name="SearchQueryErrorMessage">Search query can&apos;t be empty</res>
+	<res name="Cancel">Cancel</res>
 	<res name="cellsSearchPageTitle">Search Text in Excel Files | Text Searching App for Spreadsheets</res>
 	<res name="cellsSearchMetaDescription">Search text in Microsoft Excel XLS, XLSX, XLSM, XLSB, CSV, Tab Delimited, TSV and OpenDocument ODS files.</res>
 	<res name="cellsSearchTitle">Search Text in Microsoft Excel &amp; OpenOffice Calc Files</res>
@@ -248,7 +251,7 @@
 	<res name="AssemblyDropDataSource">Drop or upload your data-source file</res>
 	<res name="ErrorFileSizeMax">File size should be less than</res>
 	<res name="AssemblyAction">Generate report</res>
-	<res name="QualityDescMetadata">All files are processed using Aspose APIs, which are being used by many Fortune 100 companies across 114 countries</res>
+	
 
 	<res name="cellsAnnotationPageTitle">Free App to remove Annotations from Excle file</res>
 	<res name="cellsAnnotationMetaDescription">Free App to remove Annotations from Excle file</res>
@@ -270,6 +273,33 @@
 	<res name="AnnotationAnotherFile">Remove annotations from other documents</res>
 	<res name="AnnotationSuccessMessage">Annotations removed successfully</res>
 	<res name="AnnotationButton">REMOVE</res>
+
+	<res name="MetadataAPPName">Metadata</res>
+	<res name="MetadataSavedTitle">File successfully saved</res>
+	<res name="MetadataFeature1">Fast and Easy Metadata</res>
+	<res name="MetadataFeature1Description">Upload your document, update the Metadata and click on "Save" button. You will get the download link as soon as the file is saved</res>
+	<res name="MetadataFeature2">Edit Metadata from Anywhere</res>
+	<res name="MetadataFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required by you</res>
+	<res name="MetadataFeature3">Metadata Quality</res>
+	<res name="QualityDescMetadata">All files are processed using Aspose APIs, which are being used by many Fortune 100 companies across 114 countries</res>
+	<res name="btnViewMetadata">View Metadata</res>
+	<res name="MetadataSuccessMessage">Metadata has been saved successfully</res>
+	<res name="FindAndEdit">View and edit metadata information in</res>	
+	<res name="MetadataAction">Edit metadata in</res>
+	<res name="MetadataAnotherFile">Edit metadata in another document</res>
+	<res name="MetadataClearButton">Clear All</res>
+
+	<res name="cellsMetadataPageTitle">Free Metadata Viewer &amp; Editor for Spreadsheets</res>
+	<res name="cellsMetadataMetaDescription">Inspect and edit metadata information of Microsoft Excel XLS, XLSX &amp; OpenDocument ODS workbooks from anywhere.</res>
+	<res name="cellsMetadataTitle">Metadata Viewer &amp; Editor for Spreadsheets</res>
+	<res name="cellsMetadataSubTitle">Upload your spreadsheets files to easily view &amp; edit the metadata information.</res>
+	<res name="HowtoMetadataTitle">How to edit document metadata using {1}</res>
+	<res name="HowtoMetadataFeature1">Click inside the file drop area to upload files or drag &amp; drop files.</res>
+	<res name="HowtoMetadataFeature2">File will be automatically rendered for you to view &amp; edit metadata instantly.</res>
+	<res name="HowtoMetadataFeature3">Download updated document file with metadata.</res>
+	<res name="wordsMetadataLiFeature1">Quick way to change document properties</res>
+	<res name="wordsMetadataLiFeature2">Clean metadata</res>
+	<res name="wordsMetadataLiFeature3">Add custom document properties</res>
 </resources>
 
 

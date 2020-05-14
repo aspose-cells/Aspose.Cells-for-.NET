@@ -376,8 +376,6 @@
     <Content Include="Scripts\popper.js" />
     <Content Include="Scripts\popper.min.js" />
     <Content Include="Scripts\Shared\metadata.js" />
-    <Content Include="Scripts\Shared\signature.js" />
-    <Content Include="Scripts\Shared\splitter.js" />
     <Content Include="Scripts\src\index.js" />
     <Content Include="Scripts\src\methods\defaults.js" />
     <Content Include="Scripts\src\methods\destroy.js" />
@@ -534,6 +532,8 @@
     <Content Include="Views\Watermark\Watermark.cshtml" />
     <Content Include="Views\Watermark\WatermarkControls.cshtml" />
     <Content Include="Views\Annotation\Annotation.cshtml" />
+    <Content Include="Views\Metadata\Metadata.cshtml" />
+    <Content Include="Views\Metadata\MetadataControls.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -551,11 +551,13 @@
       <DependentUpon>AssemblyApp.aspx</DependentUpon>
     </Compile>
     <Compile Include="Controllers\AsposeCellsAssemblyController.cs" />
+    <Compile Include="Controllers\AsposeCellsMetadataController.cs" />
     <Compile Include="Controllers\AsposeViewerController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MergerController.cs" />
     <Compile Include="Controllers\AnnotationController.cs" />
     <Compile Include="Controllers\ParserController.cs" />
+    <Compile Include="Controllers\MetadataController.cs" />
     <Compile Include="Controllers\WatermarkController.cs" />
     <Compile Include="Controllers\ProtectController.cs" />
     <Compile Include="Controllers\SearchController.cs" />

@@ -307,7 +307,7 @@
 
         var onSave = function() {
             showLoader();
-			const url = o.UIBasePath + 'api/AsposeWordsMetadata/download';
+			const url = o.UIBasePath + 'api/AsposeCellsMetadata/download';
 
             const properties = {
                 BuiltIn: data.BuiltIn.map(p => {
@@ -354,7 +354,7 @@
         var onClearAll = function() {
             if (window.confirm('Are you sure you want to clear all metadata?')) {
                 showLoader();
-                const url = o.UIBasePath + 'api/AsposeWordsMetadata/clear';
+                const url = o.UIBasePath + 'api/AsposeCellsMetadata/clear';
 
                 $.ajax({
                     method: 'POST',
