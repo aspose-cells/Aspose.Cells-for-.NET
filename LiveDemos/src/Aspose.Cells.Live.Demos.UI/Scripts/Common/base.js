@@ -73,16 +73,7 @@ function generateViewerLink(data) {
 		'&CallbackURL=' +
 		o.AppURL);
 }
-function generateEditorLink(data) {
-	var response = data.split('|');
-	return encodeURI(o.EditorPath +
-		'FileName=' +
-		response[1] +
-		'&FolderName=' +
-		response[2] +
-		'&CallbackURL=' +
-		o.AppURL);
-}
+
 function sendPageView(url) {
 	if ('ga' in window)
 		try {
@@ -347,21 +338,7 @@ function requestMetadata(data) {
 		});
 	}
 }
-function requestRedaction() {
-	if (!validateSearch())
-		return;
-	let data = fileDrop.prepareFormData();
-	if (data === null)
-		return;
-	let url = o.UIBasePath + 'Redaction/Redaction?outputType=' + $('#saveAs').val() +
-		'&searchQuery=' + encodeURI($('#searchQuery').val()) +
-		'&replaceText=' + encodeURI($('#replaceText').val()) +
-		'&caseSensitive=' + $('#caseSensitive').prop('checked') +
-		'&text=' + $('#text').prop('checked') +
-		'&comments=' + $('#comments').prop('checked') +
-		'&metadata=' + $('#metadata').prop('checked');
-	request(url, data);
-}
+
 function validateSearch() {
 	if ($("#searchQuery").val().length)
 		return true;
@@ -403,36 +380,14 @@ function requestProtect() {
 		
 	request(url, data);
 }
-function validateComparison() {
-	if (fileDrop.droppedFiles.length === 1 && fileDrop.droppedFiles.length === 1)
-		return true;
-	showAlert(o.FileSelectMessage);
-	return false;
-}
-function requestComparison() {
-	if (!validateComparison())
-		return;
-	let data = fileDrop.prepareFormData();
-	if (data === null)
-		return;	
-	let data2 = fileDrop2.prepareFormData();
-	if (data2 === null)
-		return;
-	for (var entry of data2.entries())
-		data.append(entry[0], entry[1]);
-	let url = o.UIBasePath + 'Comparison/Comparison';
-	request(url, data);
-}
+
 
 function requestViewer(data) {
 	
 	var url = generateViewerLink(data);
 	openIframe(url, '/cells/viewer', '/cells/view');
 }
-function requestEditor(data) {
-	var url = generateEditorLink(data);
-	openIframe(url, '/cells/editor', '/cells/edit');
-}
+
 function prepareDownloadUrl() {
 	o.AppDownloadURL = o.AppURL;
 	var pos = o.AppDownloadURL.indexOf(':');

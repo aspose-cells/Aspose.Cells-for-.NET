@@ -23,7 +23,7 @@
 	<res name="FileSelectMessage">Please select a file to process</res>
 	<res name="SaveAs">Save as</res>
 	<res name="ViewerAPPName">Viewer</res>
-	<res name="cellsConversionSaveAsOptions">PDF,CSV,TIFF,XLSB,XLSM,XLSX,XLTM,XLTX,XLS,ODS</res>
+	<res name="cellsConversionSaveAsOptions">PDF,XLS,XLSX,XLSB,XLSM,CSV,JPG,HTML,BMP,ODS,PNG,SVG,TIFF,XPS</res>
 	<res name="DropOrUploadFile">Drop or upload your file</res>
 	<res name="DropOrUploadFiles">Drop or upload your files</res>
 	<res name="cellsValidationExpression">.xls|.xlsx|.xlsm|.xlsb|.ods</res>
@@ -92,6 +92,7 @@
 	<res name="SearchAnotherFile">Search in other document</res>
 	<res name="SearchSuccessMessage">Your file has been processed successfully</res>	
 	<res name="SearchViewer">VIEW RESULTS</res>
+	<res name="ConversionViewer">VIEW RESULTS</res>
 	<res name="NoSearchResultsMessage">No search results</res>
 	<res name="WrongRegExpMessage">Wrong regular expression</res>
 	<res name="SearchQueryErrorMessage">Search query can&apos;t be empty</res>
