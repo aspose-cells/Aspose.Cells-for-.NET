@@ -2,7 +2,7 @@
 
 [Aspose.Cells for .NET](https://products.aspose.com/cells/net) is an Excel Spreadsheet Programming API allowing software developers to manipulate and convert spreadsheet files from within their applications. A combination of APIs and GUI controls - Aspose.Cells for .NET speeds up Microsoft Excel programming and conversion.
 
-This repository contains [Examples](Examples), [LiveDemos](LiveDemos), [Plugins](Plugins), and Showcases for [Aspose.Cells for .NET](https://products.aspose.com/cells/net) to help you learn and write your applications.
+This repository contains [Examples](Examples), [LiveDemos](LiveDemos), [Plugins](Plugins) and Showcases for [Aspose.Cells for .NET](https://products.aspose.com/cells/net) to help you learn and write your applications.
 
 <p align="center">
   <a title="Download ZIP" href="https://github.com/aspose-cells/Aspose.Cells-for-.NET/archive/master.zip">
