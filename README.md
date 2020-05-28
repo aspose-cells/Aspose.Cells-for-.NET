@@ -2,7 +2,7 @@
 
 [Aspose.Cells for .NET](https://products.aspose.com/cells/net) is an Excel Spreadsheet Programming API allowing software developers to manipulate and convert spreadsheet files from within their applications. A combination of APIs and GUI controls - Aspose.Cells for .NET speeds up Microsoft Excel programming and conversion.
 
-This repository contains [Examples](Examples), [Demos](Demos), [Plugins](Plugins) and Showcases for [Aspose.Cells for .NET](https://products.aspose.com/cells/net) to help you learn and write your applications.
+This repository contains [Demos](Demos), [Examples](Examples), [Plugins](Plugins) and Showcases for [Aspose.Cells for .NET](https://products.aspose.com/cells/net) to help you learn and write your applications.
 
 <p align="center">
   <a title="Download ZIP" href="https://github.com/aspose-cells/Aspose.Cells-for-.NET/archive/master.zip">
@@ -13,10 +13,10 @@ This repository contains [Examples](Examples), [Demos](Demos), [Plugins](Plugins
 
 Directory | Description
 --------- | -----------
+[Demos](Demos)  | Aspose.Cells for .NET Live Demos Source Code
 [Examples](Examples)  | A collection of .NET examples that help you learn and explore the API features
 [Examples_GridDesktop](Examples_GridDesktop)  | A collection of .NET examples that help you learn and use Aspose.Cells.GridDesktop
 [Examples_GridWeb](Examples_GridWeb)  | A collection of .NET examples that help you learn and use Aspose.Cells.GridWeb
-[Demos](Demos)  | Aspose.Cells for .NET Live Demos Source Code
 [Plugins](Plugins)  | Plugins that will demonstrate one or more features of Aspose.Cells for .NET
 
 ## How to Run the Examples
