@@ -10,6 +10,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.UsingImageOrPrintOptions
     {
         public static void Run()
         {
+            // ExStart:1
             //Source directory
             string sourceDir = RunExamples.Get_SourceDirectory();
 
@@ -49,6 +50,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.UsingImageOrPrintOptions
             // Render/save the image for the sheet
             int pageIndex = 3;
             sr.ToImage(pageIndex, outputDir + @"outputWorksheetToAnImage_"+ (pageIndex + 1) + ".tiff");
+            // ExEnd:1
 
             Console.WriteLine("WorksheetToAnImage executed successfully.");
         }

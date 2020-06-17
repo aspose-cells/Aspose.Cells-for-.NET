@@ -11,6 +11,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.UsingImageOrPrintOptions
     {
         public static void Run()
         {
+            // ExStart:1
             //Source directory
             string sourceDir = RunExamples.Get_SourceDirectory();
 
@@ -24,6 +25,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.UsingImageOrPrintOptions
 
             WorkbookRender wr = new WorkbookRender(wb, opts);
             wr.ToImage(outputDir + "outputUseWorkbookRenderForImageConversion.tiff");
+            // ExEnd:1
 
             Console.WriteLine("UseWorkbookRenderForImageConversion executed successfully.");
         }

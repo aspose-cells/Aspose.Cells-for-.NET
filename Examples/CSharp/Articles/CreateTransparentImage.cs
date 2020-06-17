@@ -10,6 +10,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
+            // ExStart:1
             //Source directory
             string sourceDir = RunExamples.Get_SourceDirectory();
 
@@ -32,6 +33,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             // Create image after apply image or print options
             var sr = new SheetRender(wb.Worksheets[0], imgOption);
             sr.ToImage(0, outputDir + "outputCreateTransparentImage.png");
+            // ExEnd:1
 
             Console.WriteLine("CreateTransparentImage executed successfully.");
         }

@@ -7,6 +7,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
 {
     public class WorksheetToImageDesiredSize
     {
+        // ExStart:1
         public static void Run()
         {
             //Source directory
@@ -30,6 +31,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
             // Render sheet into image
             Aspose.Cells.Rendering.SheetRender sr = new Aspose.Cells.Rendering.SheetRender(worksheet, opts);
             sr.ToImage(0, outputDir + "outputWorksheetToImageDesiredSize.png");
+            // ExEnd:1
 
             Console.WriteLine("WorksheetToImageDesiredSize executed successfully.");
         }

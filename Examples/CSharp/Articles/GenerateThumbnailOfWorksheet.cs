@@ -11,6 +11,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
+            // ExStart:1
             //Source directory
             string sourceDir = RunExamples.Get_SourceDirectory();
 
@@ -56,6 +57,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             
             // Save the thumbnail
             thumb.Save(outputDir + "outputGenerateThumbnailOfWorksheet.bmp");
+            // ExEnd:1
 
             Console.WriteLine("GenerateThumbnailOfWorksheet executed successfully.\r\n");
         }

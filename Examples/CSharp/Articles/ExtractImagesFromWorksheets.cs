@@ -9,6 +9,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
     {
         public static void Run()
         {
+            // ExStart:1
             //Source directory
             string sourceDir = RunExamples.Get_SourceDirectory();
 
@@ -36,6 +37,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             
             // Save the image
             pic.ToImage(outputDir + "outputExtractImagesFromWorksheets.jpg", printoption);
+            // ExEnd:1
 
             Console.WriteLine("ExtractImagesFromWorksheets executed successfully.\r\n");
         }

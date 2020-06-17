@@ -11,6 +11,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ConvertingWorksheetToImage
     {
         public static void Run()
         {
+            // ExStart: 1
             //Source directory
             string sourceDir = RunExamples.Get_SourceDirectory();
 
@@ -38,6 +39,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ConvertingWorksheetToImage
 
             // Save the image file
             bitmap.Save(outputDir + "outputConvertWorksheettoImageFile.jpg");
+            // ExEnd: 1
 
             Console.WriteLine("ConvertWorksheettoImageFile executed successfully.");
         }

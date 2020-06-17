@@ -12,6 +12,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.UsingImageOrPrintOptions
     {
         public static void Run()
         {
+            // ExStart:1
             //Source directory
             string sourceDir = RunExamples.Get_SourceDirectory();
 
@@ -41,6 +42,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.UsingImageOrPrintOptions
 
             // Save the image file
             bitmap.Save(outputDir + "outputSpecificPagesToImage_"+ (idxPage+1)+".jpg");
+            // ExEnd:1
 
             Console.WriteLine("SpecificPagesToImage executed successfully.");
         }
