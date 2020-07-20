@@ -1,4 +1,5 @@
-﻿using GridDesktop.Examples.WorkingWithGrid;
+﻿using GridDesktop.Examples.WorkingWithCells;
+using GridDesktop.Examples.WorkingWithGrid;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,7 +25,7 @@ namespace GridDesktop.Examples
             //Application.Run(new Form_FindGridDesktopVersionAtRunTime());
             //Application.Run(new Form_CustomRowAndCustomColumnCaptionOfGridDesktopWorksheet());
             //Application.Run(new Form_RenderPivotTableInGridDesktop());
-            Application.Run(new OpeningExcelFile());
+            Application.Run(new FilteringData());
         }
     }
 }

@@ -37,8 +37,8 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=20.6.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.20.6.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=20.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.20.7.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -773,6 +773,7 @@
     <Compile Include="Workbook\PasswordProtectOrUnprotectSharedWorkbook.cs" />
     <Compile Include="Workbook\ReadAndWriteExternalConnectionOfXLSBFile.cs" />
     <Compile Include="Workbook\StopConversionOrLoadingUsingInterruptMonitor.cs" />
+    <Compile Include="Worksheets\DetectInternationalMacroSheet.cs" />
     <Compile Include="Worksheets\GetWorksheetUniqueId.cs" />
     <Compile Include="Worksheets\PrintSheetWithAdditionalSettings.cs" />
     <Compile Include="Worksheets\GetCellValidationInODS.cs" />

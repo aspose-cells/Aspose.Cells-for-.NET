@@ -114,6 +114,9 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out
 
+            //Aspose.Cells for .NET v20.7
+            //DetectInternationalMacroSheet.Run();
+
             //Aspose.Cells for .NET v20.4
             //CreateUnionRange.Run();
             //UpdatePowerQueryFormulaItem.Run();
