@@ -22,7 +22,7 @@ namespace Aspose.Cells.Examples.CSharp.RowsColumns.InsertingAndDeleting
             // Accessing the first worksheet in the Excel file
             Worksheet worksheet = workbook.Worksheets[0];
 
-            // Deleting a column from the worksheet at 2nd position
+            // Deleting a column from the worksheet at 5th position
             worksheet.Cells.DeleteColumn(4);
 
             // Saving the modified Excel file
