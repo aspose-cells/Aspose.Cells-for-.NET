@@ -46,6 +46,7 @@
     </SccProvider>
     <UseGlobalApplicationHostFile />
     <MvcProjectUpgradeChecked>true</MvcProjectUpgradeChecked>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\</OutputPath>
@@ -103,9 +104,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=18.12.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.18.12.0\lib\net40\Aspose.Cells.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="Aspose.Cells, Version=20.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.20.8.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="Aspose.Cells.GridWeb, Version=18.9.0.0, Culture=neutral, PublicKeyToken=699ccf88ff76f11a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -606,6 +606,27 @@
     <Compile Include="Worksheets\AccessNamedRanges.aspx.designer.cs">
       <DependentUpon>AccessNamedRanges.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Worksheets\AddRemoveHyperlinkFromClientSide.aspx.cs">
+      <DependentUpon>AddRemoveHyperlinkFromClientSide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Worksheets\AddRemoveHyperlinkFromClientSide.aspx.designer.cs">
+      <DependentUpon>AddRemoveHyperlinkFromClientSide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Worksheets\UpdateFontFromClientSide.aspx.cs">
+      <DependentUpon>UpdateFontFromClientSide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Worksheets\UpdateFontFromClientSide.aspx.designer.cs">
+      <DependentUpon>UpdateFontFromClientSide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Worksheets\ShowAddButton.aspx.cs">
+      <DependentUpon>ShowAddButton.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Worksheets\ShowAddButton.aspx.designer.cs">
+      <DependentUpon>ShowAddButton.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Worksheets\AddHyperlinks.aspx.cs">
       <DependentUpon>AddHyperlinks.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -986,6 +1007,9 @@
     <Content Include="WorkingWithGridWebClientSideScript\MakingGridWebResizableUsingResizablejQueryUiFeature.aspx" />
     <Content Include="WorkingWithGridWebClientSideScript\ResizeGridWebUsingResizeMethod.aspx" />
     <Content Include="Worksheets\AccessNamedRanges.aspx" />
+    <Content Include="Worksheets\AddRemoveHyperlinkFromClientSide.aspx" />
+    <Content Include="Worksheets\UpdateFontFromClientSide.aspx" />
+    <Content Include="Worksheets\ShowAddButton.aspx" />
     <Content Include="Worksheets\AddHyperlinks.aspx" />
     <Content Include="Worksheets\ChangeDecimalSeparatorFromNumericKeypad.aspx" />
     <Content Include="Worksheets\ExportDataTable.aspx" />
@@ -1219,7 +1243,7 @@
     <Content Include="js\bootstrap\bootstrap-vertical-tabs\package.json" />
     <Content Include="js\bootstrap\bootstrap-vertical-tabs\README.md" />
     <Content Include="Site1.Master" />
-    <Content Include="packages.config" />
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Start\" />

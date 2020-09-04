@@ -1,16 +1,6 @@
 using System;
-using System.Data;
-using System.Configuration;
 using System.Collections;
-using System.Web;
-using System.Web.Security;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Web.UI.HtmlControls;
 using Aspose.Cells.GridWeb.Data;
-using Aspose.Cells.GridWeb.DemosCS;
-using Aspose.Cells.GridWeb;
 using Aspose.Cells.GridWeb.DemosCS.DataBind;
 
 namespace Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.DataBind
@@ -36,7 +26,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.DataBind
                 }
 
                 // Create web worksheet object
-                WebWorksheet sheet = GridWeb1.WebWorksheets[0];
+                GridWorksheet sheet = GridWeb1.WorkSheets[0];
 
                 // Uses the collection as datasource.
                 sheet.DataSource = list;
@@ -96,7 +86,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.DataBind
         }
 
         // Initialize new bind row.
-        private void GridWeb1_InitializeNewBindRow(WebWorksheet sender, object bindObject)
+        private void GridWeb1_InitializeNewBindRow(GridWorksheet sender, object bindObject)
         {
             // Handles the initialize new bind row event.
             MyCustomRecord rec = (MyCustomRecord)bindObject;

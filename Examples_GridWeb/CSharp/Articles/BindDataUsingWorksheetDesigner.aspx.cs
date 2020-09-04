@@ -43,7 +43,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Articles
                 db.oleDbDataAdapter1.Fill(dataSet11);
 
                 // Create webworksheet object
-                WebWorksheet sheet = GridWeb1.WebWorksheets[0];
+                GridWorksheet sheet = GridWeb1.WorkSheets[0];
 
                 // Clears the sheet.
                 sheet.Cells.Clear();
@@ -56,11 +56,11 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Articles
 
                 // Creates some title cells.
                 sheet.Cells["A1"].PutValue("The Product Table");
-                sheet.Cells["A1"].GetStyle().Font.Size = new FontUnit("20pt");
-                sheet.Cells["A1"].GetStyle().HorizontalAlign = HorizontalAlign.Center;
-                sheet.Cells["A1"].GetStyle().VerticalAlign = VerticalAlign.Middle;
-                sheet.Cells["A1"].GetStyle().BackColor = Color.SkyBlue;
-                sheet.Cells["A1"].GetStyle().ForeColor = Color.Blue;
+                sheet.Cells["A1"].Style.Font.Size = new FontUnit("20pt");
+                sheet.Cells["A1"].Style.HorizontalAlign = HorizontalAlign.Center;
+                sheet.Cells["A1"].Style.VerticalAlign = VerticalAlign.Middle;
+                sheet.Cells["A1"].Style.BackColor = Color.SkyBlue;
+                sheet.Cells["A1"].Style.ForeColor = Color.Blue;
                 sheet.Cells.Merge(0, 0, 2, 11);
 
                 // Freezes the header rows.
@@ -95,7 +95,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Articles
                 db.oleDbDataAdapter1.Fill(dataSet11);
 
                 // Create web worksheet object
-                WebWorksheet sheet = GridWeb1.WebWorksheets[0];
+                GridWorksheet sheet = GridWeb1.WorkSheets[0];
 
                 // Clears the sheet.
                 sheet.Cells.Clear();
@@ -108,7 +108,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Articles
                 sheet.BindStartRow = 0;
 
                 // Unfreezes the header rows.
-                sheet.UnfreezePanes();
+                sheet.UnFreezePanes();
                 
                 // Bind the sheet to the dataset.
                 sheet.DataBind();

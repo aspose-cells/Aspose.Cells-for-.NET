@@ -13,9 +13,9 @@
         <p>
             This example demonstrates the <b>DataBind</b> funcationality with database using Datasets.
             Data is fetched into three <b>Datasets</b> using <b>OleDbAdapter</b> and primary
-            Dataset [Customer] is binded with empty <b>WebWorksheet</b>.On selection [Expand
+            Dataset [Customer] is binded with empty <b>GridWorksheet</b>.On selection [Expand
             Button] of any record from Customer, it's child record [Order] will be loaded, further
-            slection of Order will load child record [OrderDetail].
+            selection of Order will load child record [OrderDetail].
         </p>
         <p>
             GridWeb by default provides the functionality to <b>Sort</b> items in a Column by

@@ -1,13 +1,6 @@
 using System;
 using System.Data;
-using System.Configuration;
-using System.Collections;
-using System.Web;
-using System.Web.Security;
-using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Web.UI.HtmlControls;
 using System.Data.OleDb;
 using System.Drawing;
 using Aspose.Cells.GridWeb.Data;
@@ -82,7 +75,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
         protected void btnCreate_Click(object sender, System.EventArgs e)
         {
             // Fill web worksheet object
-            WebWorksheet sheet = GridWeb1.WebWorksheets[0];
+            GridWorksheet sheet = GridWeb1.WorkSheets[0];
 
             // Removes the created subtotal first.
             //sheet.RemoveSubtotal();
@@ -95,10 +88,10 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
                 groupByIndex = 2;
 
             // Creates GrandTotal and Subtotal style.
-            Aspose.Cells.GridWeb.TableItemStyle grandStyle = new Aspose.Cells.GridWeb.TableItemStyle();
+            GridTableItemStyle grandStyle = new GridTableItemStyle();
             grandStyle.BackColor = Color.Gray;
             grandStyle.ForeColor = Color.Black;
-            Aspose.Cells.GridWeb.TableItemStyle subtotalStyle = new Aspose.Cells.GridWeb.TableItemStyle();
+            GridTableItemStyle subtotalStyle = new GridTableItemStyle();
             subtotalStyle.BackColor = Color.SkyBlue;
             subtotalStyle.ForeColor = Color.Black;
 

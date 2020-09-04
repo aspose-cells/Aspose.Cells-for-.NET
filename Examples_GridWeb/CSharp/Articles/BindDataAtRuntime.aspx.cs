@@ -28,7 +28,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Articles
                 this.dataSet11 = new DataSet1();
 
                 // Create web worksheet object
-                WebWorksheet sheet = GridWeb1.WebWorksheets[0];
+                GridWorksheet sheet = GridWeb1.WorkSheets[0];
 
                 // Specifies the datasource for the sheet.
                 sheet.DataSource = dataSet11;
@@ -45,11 +45,6 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Articles
 
                 // Modifies a column's number type.
                 sheet.BindColumns["UnitPrice"].NumberType = NumberType.Currency3;
-
-                // The "product name" field is required.
-                Aspose.Cells.GridWeb.Validation v = new Aspose.Cells.GridWeb.Validation();
-                v.IsRequired = true;
-                sheet.BindColumns["ProductName"].Validation = v;
 
                 // Modifies column headers' background color.
                 for (int i = 0; i < sheet.BindColumns.Count; i++)

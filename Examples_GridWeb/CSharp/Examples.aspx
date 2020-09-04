@@ -26,6 +26,22 @@
         <div class="tab-content">
             <div class="tab-pane active" id="articles">
                 <ul class="list-group">
+                    <li class="list-group-item" title="Add/Remove Hyperlinks From Client Side">
+                        <p class="productTitle">
+                            <a href="Worksheets/AddRemoveHyperlinkFromClientSide.aspx">Add/Remove Hyperlinks From Client Side</a>
+                        </p>
+                        <p>
+                            Add/Remove Hyperlinks From Client Side
+                        </p>
+                    </li>
+                    <li class="list-group-item" title="Update Font Settings From Client Side">
+                        <p class="productTitle">
+                            <a href="Worksheets/UpdateFontFromClientSide.aspx">Update Font Settings From Client Side</a>
+                        </p>
+                        <p>
+                            Update Font Settings From Client Side
+                        </p>
+                    </li>
                     <li class="list-group-item" title="Add Custom Server-Side Function Validation">
                         <p class="productTitle">
                             <a href="Cells/AddCustomServerSideFunctionValidation.aspx">Add Custom Server-Side Function Validation</a>
@@ -311,6 +327,14 @@
             </div>
             <div class="tab-pane" id="worksheets">
                 <ul class="list-group">
+                    <li class="list-group-item" title="Show Add/Delete buttons">
+                        <p class="productTitle">
+                            <a href="Worksheets/ShowAddButton.aspx">Show Add/Delete buttons to Add/Delete worksheet</a>
+                        </p>
+                        <p>
+                            Show Add/Delete buttons to Add/Delete worksheet
+                        </p>
+                    </li>
                     <li class="list-group-item" title="Access Worksheets">
                         <p class="productTitle"><a href="Worksheets/AccessWorksheets.aspx">Access Worksheets</a></p>
                         <p class="componentDescriptionCaption">Description</p>

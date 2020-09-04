@@ -7,9 +7,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
 {
     public class WorksheetToImageDesiredSize
     {
-        // ExStart:1
         public static void Run()
         {
+            // ExStart:1
             //Source directory
             string sourceDir = RunExamples.Get_SourceDirectory();
 

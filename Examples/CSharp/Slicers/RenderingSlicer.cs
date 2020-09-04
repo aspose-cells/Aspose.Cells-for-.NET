@@ -15,6 +15,7 @@ namespace Aspose.Cells.Examples.CSharp.Slicers
 
         public static void Main()
         {
+            // ExStart: 1
             // Load sample Excel file containing slicer.
             Workbook wb = new Workbook(sourceDir + "sampleRenderingSlicer.xlsx");
 
@@ -35,6 +36,7 @@ namespace Aspose.Cells.Examples.CSharp.Slicers
             // Create sheet render object and render worksheet to image.
             Aspose.Cells.Rendering.SheetRender sr = new Aspose.Cells.Rendering.SheetRender(ws, imgOpts);
             sr.ToImage(0, outputDir + "outputRenderingSlicer.png");
+            // ExEnd: 1
 
             Console.WriteLine("RenderingSlicer executed successfully.");
         }

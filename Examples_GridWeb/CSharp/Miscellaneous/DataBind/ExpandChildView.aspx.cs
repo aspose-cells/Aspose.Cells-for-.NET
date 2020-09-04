@@ -1,14 +1,5 @@
 using System;
 using System.Data;
-using System.Configuration;
-using System.Collections;
-using System.Web;
-using System.Web.Security;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Web.UI.HtmlControls;
-using Aspose.Cells.GridWeb;
 using Aspose.Cells.GridWeb.Data;
 using Aspose.Cells.GridWeb.DemosCS.DataBind;
 
@@ -51,7 +42,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.DataBind
                 db.oleDbDataAdapter3.Fill(dataSet21);
 
                 // Create web worksheet object 
-                WebWorksheet sheet = GridWeb1.WebWorksheets[0];
+                GridWorksheet sheet = GridWeb1.WorkSheets[0];
 
                 // Clears the sheet.
                 sheet.Cells.Clear();
@@ -80,7 +71,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.DataBind
         }
 
         // Handles the BindingChildView event to set the UnitPrice column.
-        protected void GridWeb1_BindingChildView(Aspose.Cells.GridWeb.GridWeb childGrid, Aspose.Cells.GridWeb.Data.WebWorksheet childSheet)
+        protected void GridWeb1_BindingChildView(Aspose.Cells.GridWeb.GridWeb childGrid, Aspose.Cells.GridWeb.Data.GridWorksheet childSheet)
         {
             DataView view = (DataView)childSheet.DataSource;
             if (view.Table.TableName == "Order Details")

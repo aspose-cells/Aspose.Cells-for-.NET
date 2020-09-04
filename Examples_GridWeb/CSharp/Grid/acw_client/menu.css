@@ -6,6 +6,7 @@ position:absolute;
 border:1px solid gray;
 background-color:#DBD8D1;
 filter:alpha(opacity='95');
+width:130px;
 }
 
 TD.menu_over
@@ -18,8 +19,8 @@ background-color:#006699;
 word-wrap:normal;
 padding-left:5px;
 padding-right:15px;
-padding-top:1px;
-padding-bottom:1px;
+padding-top:6px;
+padding-bottom:6px;
 }
 
 TD.menu_out
@@ -32,8 +33,8 @@ background-color:#DBD8D1;
 word-wrap:normal;
 padding-left:5px;
 padding-right:15px;
-padding-top:1px;
-padding-bottom:1px;
+padding-top:6px;
+padding-bottom:6px;
 }
 
 TD.menu_separator
@@ -42,6 +43,11 @@ cursor:default;
 color:#000000;
 background-color:#DBD8D1;
 word-wrap:normal;
+width:130px;
+}
+TD.menu_separator>hr{
+    margin-top:10px !important;
+    margin-bottom:10px !important;
 }
 
 
@@ -151,4 +157,7 @@ border-right-color:#BFBFBF;
 border-bottom-color:#BFBFBF;
 width:14%;
 cursor:pointer;
+}
+#GridWeb1_AC{
+    overflow:hidden !important;
 }

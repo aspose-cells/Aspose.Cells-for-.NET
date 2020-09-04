@@ -1,16 +1,6 @@
 using System;
 using System.Data;
-using System.Configuration;
-using System.Collections;
-using System.Web;
-using System.Web.Security;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Web.UI.HtmlControls;
 using Aspose.Cells.GridWeb.Data;
-using Aspose.Cells.GridWeb.DemosCS;
-using Aspose.Cells.GridWeb.DemosCS.DataBind;
 using System.Data.OleDb;
 
 namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
@@ -64,10 +54,16 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
                         if (GridWeb1.SelectCells != null && GridWeb1.SelectCells.Count > 0)
                         {
                             // Get Cell Selected CellArea
-                            WebCellArea SelectedCells = (WebCellArea)GridWeb1.SelectCells[0];
+                            GridCellArea SelectedCells = (GridCellArea)GridWeb1.SelectCells[0];
 
                             // Group rows from starting cell to ending cell
-                            GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex].GroupRows(SelectedCells.StartRow, SelectedCells.EndRow);
+                            //GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex].GroupRows(SelectedCells.StartRow, SelectedCells.EndRow);
+
+                            // Accessing the reference of the worksheet that is currently active
+                            GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
+
+                            // Group the rows
+                            sheet.Cells.GroupRows(1, 9);
                         }
                         break;
 
@@ -75,7 +71,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
                         if (GridWeb1.SelectCells != null && GridWeb1.SelectCells.Count > 0)
                         {
                             // Get Cell Selected CellArea
-                            WebCellArea SelectedCells = (WebCellArea)GridWeb1.SelectCells[0];
+                            GridCellArea SelectedCells = (GridCellArea)GridWeb1.SelectCells[0];
 
                             // Group rows from starting cell to ending cell
                             GridWeb1.WebWorksheets[GridWeb1.ActiveSheetIndex].UngroupRows(SelectedCells.StartRow, SelectedCells.EndRow); ;

@@ -1,14 +1,4 @@
 using System;
-using System.Data;
-using System.Configuration;
-using System.Collections;
-using System.Web;
-using System.Web.Security;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Web.UI.HtmlControls;
-using Aspose.Cells.GridWeb;
 using Aspose.Cells.GridWeb.Data;
 using System.Collections.Specialized;
 
@@ -17,7 +7,8 @@ public partial class demos_Common_DataValidation : System.Web.UI.Page
     protected void Page_Load(object sender, EventArgs e)
     {
         Aspose.Cells.License lic = new Aspose.Cells.License();
-        lic.SetLicense(@"C:\CellLicense\Aspose.Total.NET.lic");
+        //lic.SetLicense(@"C:\CellLicense\Aspose.Total.NET.lic");
+        lic.SetLicense(@"D:\DotNet Projects\Aspose\2019\Aspose.Total.NET.lic");
 
         if (!IsPostBack && !GridWeb1.IsPostBack)
         {
@@ -48,35 +39,29 @@ public partial class demos_Common_DataValidation : System.Web.UI.Page
         GridValidationCollection gridValidationCollection = sheets[0].Validations;
 
         // Regular expression.
-        GridValidation C5 = gridValidationCollection.Add();
-        C5.AddACell("C5");
+        GridValidation C5 = gridValidationCollection.Add("C5");
         //C5.Operator = OperatorType.BETWEEN;
         C5.ValidationType = GridValidationType.CustomExpression;
         C5.RegEx = @"\d{6}";
 
         // Number.
-        GridValidation C6 = gridValidationCollection.Add();
-        C6.AddACell("C6");
+        GridValidation C6 = gridValidationCollection.Add("C6");
         C6.ValidationType = GridValidationType.Decimal;
 
         // Integer.
-        GridValidation C7 = gridValidationCollection.Add();
-        C7.AddACell("C7");
+        GridValidation C7 = gridValidationCollection.Add("C7");
         C7.ValidationType = GridValidationType.WholeNumber;
 
         // Date.
-        GridValidation C8 = gridValidationCollection.Add();
-        C8.AddACell("C8");
+        GridValidation C8 = gridValidationCollection.Add("C8");
         C8.ValidationType = GridValidationType.Date;
 
         // DateTime
-        GridValidation C9 = gridValidationCollection.Add();
-        C9.AddACell("C9");
+        GridValidation C9 = gridValidationCollection.Add("C9");
         C9.ValidationType = GridValidationType.DateTime;
 
         // List.
-        GridValidation C10 = gridValidationCollection.Add();
-        C10.AddACell("C10");
+        GridValidation C10 = gridValidationCollection.Add("C10");
         C10.ValidationType = GridValidationType.List;
         StringCollection value = new StringCollection();
         value.Add("Fortran");
@@ -89,8 +74,7 @@ public partial class demos_Common_DataValidation : System.Web.UI.Page
         value.Clear();
 
         // DropDownList.
-        GridValidation C11 = gridValidationCollection.Add();
-        C11.AddACell("C11");
+        GridValidation C11 = gridValidationCollection.Add("C11");
         C11.ValidationType = GridValidationType.DropDownList;
         value.Add("Bachelor");
         value.Add("Master");
@@ -98,8 +82,7 @@ public partial class demos_Common_DataValidation : System.Web.UI.Page
         C11.ValueList = value;
 
         // FreeList
-        GridValidation C12 = gridValidationCollection.Add();
-        C12.AddACell("C12");
+        GridValidation C12 = gridValidationCollection.Add("C12");
         C12.ValidationType = GridValidationType.FreeList;
         value.Add("US");
         value.Add("Britain");
@@ -107,14 +90,12 @@ public partial class demos_Common_DataValidation : System.Web.UI.Page
         C12.ValueList = value;
 
         // Custom function
-        GridValidation C13 = gridValidationCollection.Add();
-        C13.AddACell("C13");
+        GridValidation C13 = gridValidationCollection.Add("C13");
         C13.ValidationType = GridValidationType.CustomFunction;
         C13.ClientValidationFunction = "myvalidation1";
 
         // CheckBox
-        GridValidation C14 = gridValidationCollection.Add();
-        C14.AddACell("C14");
+        GridValidation C14 = gridValidationCollection.Add("C14");
         C14.ValidationType = GridValidationType.CheckBox;
     }
 

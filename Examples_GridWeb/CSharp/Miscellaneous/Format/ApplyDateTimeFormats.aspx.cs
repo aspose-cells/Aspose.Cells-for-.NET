@@ -1,20 +1,11 @@
 using System;
-using System.Data;
-using System.Configuration;
-using System.Collections;
-using System.Web;
-using System.Web.Security;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Web.UI.WebControls.WebParts;
-using System.Web.UI.HtmlControls;
 using Aspose.Cells.GridWeb.Data;
 
 namespace Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.Format
 {
     public partial class ApplyDateTimeFormats : System.Web.UI.Page
     {
-        Aspose.Cells.GridWeb.TableItemStyle style = null;
+        Aspose.Cells.GridWeb.GridTableItemStyle style = null;
 
         protected void Page_Load(object sender, EventArgs e)
         {

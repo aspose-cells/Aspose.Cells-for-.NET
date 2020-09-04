@@ -114,6 +114,14 @@ namespace Aspose.Cells.Examples.CSharp
 
             // Uncomment the one you want to try out
 
+
+            //Aspose.Cells for .NET v20.8
+            //CreateSlicerToExcelTable.Main();
+            //PivotTableSaveInODS.Run();
+            //ConvertExcelFileToDocx.Run();
+            //ConvertExcelFileToPptx.Run();
+            //ConvertTableToOds.Run();
+
             //Aspose.Cells for .NET v20.7
             //DetectInternationalMacroSheet.Run();
 

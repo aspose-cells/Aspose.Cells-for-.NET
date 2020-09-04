@@ -26,7 +26,7 @@
             any cell from column "CreatedDate" and see how the Calender Control popup. You can
             ADD/UPDATE/DELETE records using the GridWeb Control Bar. Any Changes made in GridWeb
             will also be reflected in binded database. You can also Save/Open the output in
-            <b>XLS</b>Format by clicking the Save Button on GridWeb Control Bar.
+            <b>XLS</b> Format by clicking the Save Button on GridWeb Control Bar.
         </p>
         <p>
                                 
