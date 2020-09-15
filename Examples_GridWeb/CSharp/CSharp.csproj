@@ -104,8 +104,8 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=20.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.20.8.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=20.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.20.9.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="Aspose.Cells.GridWeb, Version=18.9.0.0, Culture=neutral, PublicKeyToken=699ccf88ff76f11a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -606,6 +606,13 @@
     <Compile Include="Worksheets\AccessNamedRanges.aspx.designer.cs">
       <DependentUpon>AccessNamedRanges.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Worksheets\AddRemoveCommentsFromClientSide.aspx.cs">
+      <DependentUpon>AddRemoveCommentsFromClientSide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Worksheets\AddRemoveCommentsFromClientSide.aspx.designer.cs">
+      <DependentUpon>AddRemoveCommentsFromClientSide.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Worksheets\AddRemoveHyperlinkFromClientSide.aspx.cs">
       <DependentUpon>AddRemoveHyperlinkFromClientSide.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1007,6 +1014,7 @@
     <Content Include="WorkingWithGridWebClientSideScript\MakingGridWebResizableUsingResizablejQueryUiFeature.aspx" />
     <Content Include="WorkingWithGridWebClientSideScript\ResizeGridWebUsingResizeMethod.aspx" />
     <Content Include="Worksheets\AccessNamedRanges.aspx" />
+    <Content Include="Worksheets\AddRemoveCommentsFromClientSide.aspx" />
     <Content Include="Worksheets\AddRemoveHyperlinkFromClientSide.aspx" />
     <Content Include="Worksheets\UpdateFontFromClientSide.aspx" />
     <Content Include="Worksheets\ShowAddButton.aspx" />

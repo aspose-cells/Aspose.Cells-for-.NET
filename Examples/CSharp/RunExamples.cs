@@ -115,6 +115,10 @@ namespace Aspose.Cells.Examples.CSharp
             // Uncomment the one you want to try out
 
 
+            //Aspose.Cells for .NET v20.9
+            //ChangeSlicerProperties.Run();
+
+
             //Aspose.Cells for .NET v20.8
             //CreateSlicerToExcelTable.Main();
             //PivotTableSaveInODS.Run();
@@ -536,7 +540,7 @@ namespace Aspose.Cells.Examples.CSharp
             //ConvertingPieChartToImageFile.Run();
             //ConvertWorksheetToImageByPage.Run();
             //ConvertWorksheetToSVG.Run();
-            //ConvertWorksheettoImageFile.Run();
+            //ConvertWorksheettoImageFile.Run(); 
             //DeletingBlankColumns.Run();
             //DeletingBlankRows.Run();
             //ExtractOLEObjects.Run();

@@ -26,6 +26,14 @@
         <div class="tab-content">
             <div class="tab-pane active" id="articles">
                 <ul class="list-group">
+                    <li class="list-group-item" title="Add/Remove Comments From Client Side">
+                        <p class="productTitle">
+                            <a href="Worksheets/AddRemoveCommentsFromClientSide.aspx">Add/Remove Comments From Client Side</a>
+                        </p>
+                        <p>
+                            Add/Remove Comments From Client Side
+                        </p>
+                    </li>
                     <li class="list-group-item" title="Add/Remove Hyperlinks From Client Side">
                         <p class="productTitle">
                             <a href="Worksheets/AddRemoveHyperlinkFromClientSide.aspx">Add/Remove Hyperlinks From Client Side</a>

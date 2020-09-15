@@ -37,8 +37,8 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=20.8.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.20.8.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=20.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.20.9.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -520,6 +520,7 @@
     <Compile Include="PivotTables\PivotTableSaveInODS.cs" />
     <Compile Include="PivotTables\PivotTableSortAndHide.cs" />
     <Compile Include="PivotTables\PivotTableCustomSort.cs" />
+    <Compile Include="Slicers\ChangeSlicerProperties.cs" />
     <Compile Include="Slicers\CreateSlicerToExcelTable.cs" />
     <Compile Include="Slicers\ExportSlicerToPDF.cs" />
     <Compile Include="Tables\ConvertTableToRange.cs" />
