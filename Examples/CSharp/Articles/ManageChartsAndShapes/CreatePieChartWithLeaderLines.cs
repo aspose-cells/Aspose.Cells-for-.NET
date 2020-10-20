@@ -84,7 +84,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             dataLabels.Position = LabelPositionType.OutsideEnd;
 
             // Set separator
-            dataLabels.Separator = DataLablesSeparatorType.Comma;
+            dataLabels.SeparatorType = DataLabelsSeparatorType.Comma;
             // ExEnd:CreateWorkbook
 
             // ExStart:TurnOnLeaderLines
