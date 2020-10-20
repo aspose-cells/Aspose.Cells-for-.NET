@@ -8,6 +8,7 @@ namespace Aspose.Cells.Examples.CSharp.PivotTableExamples
 {
     public class CustomizePivotTableGlobalSettings
     {
+        // ExStart:CustomizePivotTableGlobalSettings
         private class CustomPivotTableGlobalizationSettings : GlobalizationSettings
         {
             //Gets the name of "Total" label in the PivotTable.
@@ -39,19 +40,18 @@ namespace Aspose.Cells.Examples.CSharp.PivotTableExamples
                 return "AsposeGetAllName";
             }
 
-
             //Gets the name of "Column Labels" label in the PivotTable.
-            public override string GetColumnLablesName()
+            public override string GetColumnLabelsOfPivotTable()
             {
-                Console.WriteLine("---------GetColumnLablesName-------------");
-                return "AsposeGetColumnLablesName";
+                Console.WriteLine("---------GetColumnLabelsOfPivotTable-------------");
+                return "AsposeGetColumnLabelsOfPivotTable";
             }
 
             //Gets the name of "Row Labels" label in the PivotTable.
-            public override string GetRowLablesName()
+            public override string GetRowLabelsNameOfPivotTable()
             {
-                Console.WriteLine("---------GetRowLablesName-------------");
-                return "AsposeGetRowLablesName";
+                Console.WriteLine("---------GetRowLabelsNameOfPivotTable-------------");
+                return "AsposeGetRowLabelsNameOfPivotTable";
             }
 
             //Gets the name of "(blank)" label in the PivotTable.
@@ -100,15 +100,13 @@ namespace Aspose.Cells.Examples.CSharp.PivotTableExamples
 
                     case PivotFieldSubtotalType.Varp:
                         return "AsposeVarp";
-
                 }
 
                 return "AsposeSubTotalName";
             }
-        }//End CustomPivotTableGlobalizationSettings
+        }
         public static void Run()
         {
-            // ExStart:CustomizePivotTableGlobalSettings
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
                         
@@ -137,8 +135,7 @@ namespace Aspose.Cells.Examples.CSharp.PivotTableExamples
 
             //Save the output pdf 
             wb.Save(dataDir + "outputPivotTableGlobalizationSettings.pdf", options);
-
-            // ExEnd:CustomizePivotTableGlobalSettings
         }
+        // ExEnd:CustomizePivotTableGlobalSettings
     }
 }

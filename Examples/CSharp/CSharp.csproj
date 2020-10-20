@@ -37,8 +37,8 @@
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=20.9.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.20.9.0\lib\net40\Aspose.Cells.dll</HintPath>
+    <Reference Include="Aspose.Cells, Version=20.10.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aspose.Cells.20.10.0\lib\net40\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
@@ -300,7 +300,7 @@
     <Compile Include="Articles\StylingAndDataFormatting\ExtractThemeData.cs" />
     <Compile Include="Articles\WorkingWithCalculationEngine\CalculateIFNAFunction.cs" />
     <Compile Include="Articles\WorkingWithCalculationEngine\CalculationOfArrayFormula.cs" />
-    <Compile Include="Articles\WorkingWithCalculationEngine\ReturnRangeOfValuesUsingICustomFunction.cs" />
+    <Compile Include="Articles\WorkingWithCalculationEngine\ReturnRangeOfValuesUsingAbstractCalculationEngine.cs" />
     <Compile Include="Articles\WorkingWithCalculationEngine\SetExternalLinksInFormulas.cs" />
     <Compile Include="Articles\ManageChartsAndShapes\SetPictureBackGroundFillChart.cs" />
     <Compile Include="Articles\SetPixelFormatRenderedImage.cs" />
@@ -323,7 +323,7 @@
     <Compile Include="Articles\UsePresentationPreferenceOption.cs" />
     <Compile Include="Articles\UsingCustomXmlParts.cs" />
     <Compile Include="Articles\WorkingWithCalculationEngine\UsingFormulaTextFunction.cs" />
-    <Compile Include="Articles\WorkingWithCalculationEngine\UsingICustomFunctionfeature.cs" />
+    <Compile Include="Articles\WorkingWithCalculationEngine\UsingAbstractCalculationEnginefeature.cs" />
     <Compile Include="Articles\UsingImageMarkersWhileGroupingDataInSmartMarkers.cs" />
     <Compile Include="Articles\UsingLightCellsAPI.cs" />
     <Compile Include="Articles\UsingBuiltinStyles.cs" />
@@ -507,6 +507,7 @@
     <Compile Include="Files\Handling\OpeningTSVFiles.cs" />
     <Compile Include="Files\Handling\OpeningFODSFiles.cs" />
     <Compile Include="Files\Handling\OpeningSXCFiles.cs" />
+    <Compile Include="Files\Utility\VerifyPassword.cs" />
     <Compile Include="HTML\PrintHeadings.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\ConvertExcelFileToHtmlWithTooltip.cs" />
     <Compile Include="LoadingSavingConvertingAndManaging\ConvertCsvToJson.cs" />

@@ -807,7 +807,7 @@ namespace Aspose.Cells.Examples.CSharp
             //DecreaseCalculationTime.Run();
             //SettingSharedFormula.Run();
             //SetExternalLinksInFormulas.Run();
-            //UsingICustomFunctionfeature.Run();
+            //UsingAbstractCalculationEnginefeature.Run();
             //CalculateIFNAFunction.Run();
             //ReturnRangeOfValuesUsingICustomFunction.Run();
             //UsingFormulaTextFunction.Run();
@@ -1172,6 +1172,7 @@ namespace Aspose.Cells.Examples.CSharp
             //SettingImagePrefrencesforHTML.Run();
             //WorksheetToImage.Run();
             //XlstoPDFDirectConversation.Run();
+            //VerifyPassword.Run();
 
             // =====================================================
             // =====================================================
