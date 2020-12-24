@@ -8,63 +8,56 @@ namespace Aspose.Cells.Examples.CSharp.SmartMarkers
 {
     public class UsingGenericList
     {
-        
-        public class Husband
+
+      public  class Person
         {
-            private String m_Name;
-
-            public String Name
-            {
-                get { return m_Name; }
-                set { m_Name = value; }
-            }
-
-            private int m_Age;
-
+            int _age;
+            string _name;
             public int Age
             {
-                get { return m_Age; }
-                set { m_Age = value; }
+                get
+                {
+                    return _age;
+                }
+                set
+                {
+                    _age = value;
+                }
             }
-
-            internal Husband(string name, int age)
-            {
-                this.Name = name;
-                this.Age = age;
-            }
-
-            // Accepting a generic List as a Nested Object
-            private List<Wife> m_Wives;
-
-            public List<Wife> Wives
-            {
-                get { return m_Wives; }
-                set { m_Wives = value; }
-            }
-
-        }
-
-        public class Wife
-        {
-            public Wife(string name, int age)
-            {
-                this.m_name = name;
-                this.m_age = age;
-            }
-
-            private string m_name;
-
             public string Name
             {
-                get { return m_name; }
-                set { m_name = value; }
+                get
+                {
+                    return _name;
+                }
+                set
+                {
+                    _name = value;
+                }
             }
-            private int m_age;
 
-            public int Age
+            public Person(string name, int age)
             {
-                get { return m_age; }
-                set { m_age = value; }
+                _age = age;
+                _name = name;
+            }
+            // ExEnd:1
+        }
+
+        public class Teacher : Person
+        {
+
+
+            public Teacher(string name, int age) : base(name, age)
+            {
+                m_students = new List<Person>();
+            }
+            private IList<Person> m_students;
+
+            public IList<Person> Students
+            {
+                get { return m_students; }
+                set { m_students = value; }
             }
         }
 
@@ -74,23 +67,23 @@ namespace Aspose.Cells.Examples.CSharp.SmartMarkers
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
             Workbook workbook = new Workbook();
-            
+
             // Create a designer workbook
 
             // Workbook workbook = new Workbook();
             Worksheet worksheet = workbook.Worksheets[0];
 
-            worksheet.Cells["A1"].PutValue("Husband Name");
-            worksheet.Cells["A2"].PutValue("&=Husband.Name");
+            worksheet.Cells["A1"].PutValue("Teacher Name");
+            worksheet.Cells["A2"].PutValue("&=Teacher.Name");
 
-            worksheet.Cells["B1"].PutValue("Husband Age");
-            worksheet.Cells["B2"].PutValue("&=Husband.Age");
+            worksheet.Cells["B1"].PutValue("Teacher Age");
+            worksheet.Cells["B2"].PutValue("&=Teacher.Age");
 
-            worksheet.Cells["C1"].PutValue("Wife's Name");
-            worksheet.Cells["C2"].PutValue("&=Husband.Wives.Name");
+            worksheet.Cells["C1"].PutValue("Student Name");
+            worksheet.Cells["C2"].PutValue("&=Teacher.Students.Name");
 
-            worksheet.Cells["D1"].PutValue("Wife's Age");
-            worksheet.Cells["D2"].PutValue("&=Husband.Wives.Age");
+            worksheet.Cells["D1"].PutValue("Student Age");
+            worksheet.Cells["D2"].PutValue("&=Teacher.Students.Age");
 
             // Apply Style to A1:D1
             Range range = worksheet.Cells.CreateRange("A1:D1");
@@ -108,32 +101,32 @@ namespace Aspose.Cells.Examples.CSharp.SmartMarkers
             // Load the template file
             designer.Workbook = workbook;
 
-            System.Collections.Generic.List<Husband> list = new System.Collections.Generic.List<Husband>();
+            System.Collections.Generic.List<Teacher> list = new System.Collections.Generic.List<Teacher>();
 
-            // Create an object for the Husband class
-            Husband h1 = new Husband("Mark John", 30);
+            // Create an object for the Teacher class
+            Teacher h1 = new Teacher("Mark John", 30);
 
-            // Create the relevant Wife objects for the Husband object
-            h1.Wives = new List<Wife>();
-            h1.Wives.Add(new Wife("Chen Zhao", 34));
-            h1.Wives.Add(new Wife("Jamima Winfrey", 28));
-            h1.Wives.Add(new Wife("Reham Smith", 35));
+            // Create the relevant student objects for the Teacher object
+            h1.Students = new List<Person>();
+            h1.Students.Add(new Person("Chen Zhao", 14));
+            h1.Students.Add(new Person("Jamima Winfrey", 18));
+            h1.Students.Add(new Person("Reham Smith", 15));
 
-            // Create another object for the Husband class
-            Husband h2 = new Husband("Masood Shankar", 40);
+            // Create another object for the Teacher class
+            Teacher h2 = new Teacher("Masood Shankar", 40);
 
-            // Create the relevant Wife objects for the Husband object
-            h2.Wives = new List<Wife>();
-            h2.Wives.Add(new Wife("Karishma Jathool", 36));
-            h2.Wives.Add(new Wife("Angela Rose", 33));
-            h2.Wives.Add(new Wife("Hina Khanna", 45));
+            // Create the relevant student objects for the Teacher object
+            h2.Students = new List<Person>();
+            h2.Students.Add(new Person("Karishma Jathool", 16));
+            h2.Students.Add(new Person("Angela Rose", 13));
+            h2.Students.Add(new Person("Hina Khanna", 15));
 
             // Add the objects to the list
             list.Add(h1);
             list.Add(h2);
 
             // Specify the DataSource
-            designer.SetDataSource("Husband", list);
+            designer.SetDataSource("Teacher", list);
 
             // Process the markers
             designer.Process();
