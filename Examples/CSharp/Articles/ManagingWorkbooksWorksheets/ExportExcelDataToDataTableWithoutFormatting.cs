@@ -31,8 +31,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
             // Display the cell values as it displays in excel
             Console.WriteLine("Cell String Value: " + cell.StringValue);
 
-            // Display the cell value without any format
-            Console.WriteLine("Cell String Value without Format: " + cell.StringValueWithoutFormat);
+           
 
             // Export Data Table Options with FormatStrategy as CellStyle
             ExportTableOptions opts = new ExportTableOptions();
