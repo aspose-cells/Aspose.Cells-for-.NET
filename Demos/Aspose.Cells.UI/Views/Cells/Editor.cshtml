@@ -1,0 +1,24 @@
+﻿@model ViewModel
+
+@{
+    Layout = "~/Views/Shared/Cells/Layout.cshtml";
+}
+@{
+    ViewBag.Title = "Editor";
+}
+@Html.Partial("Cells/Main")
+@Html.Partial("Cells/FooterProduct", Model)
+
+@section scripts {
+
+    <script type="text/javascript">
+        let o = @Html.Raw(Model.JSOptions);
+        $.extend(o, {
+            NewMethod: requestNewEditor,
+            EditMethod: requestEditEditor,
+            FileAmountMessage: '@Model.Resources["FileAmountMessageOne"]',
+            MaximumUploadFiles: 1,
+            Multiple: false
+        });
+    </script>
+}

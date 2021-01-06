@@ -1,0 +1,23 @@
+﻿@model ViewModel
+
+@{
+    Layout = "~/Views/Shared/Cells/Layout.cshtml";
+}
+@{
+    ViewBag.Title = "Assembly";
+}
+@Html.Partial("Cells/Assembly")
+@Html.Partial("Cells/FooterProduct")
+
+@section scripts {
+
+    <script type="text/javascript">
+        const o = @Html.Raw(Model.JSOptions);
+        $.extend(o, {
+            Method: requestAssembly,
+            validationDatasourceMessage: "Data Source Name can't be empty",
+            FileAmountMessage:'Please select only two files',
+            MaximumUploadFiles:2
+        });
+    </script>
+}

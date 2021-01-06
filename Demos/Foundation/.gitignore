@@ -1,0 +1,8 @@
+/*.suo
+/src/bin
+/src/obj
+/packages
+/src/*.user
+/test/bin
+/test/obj
+/test/test.csproj.user

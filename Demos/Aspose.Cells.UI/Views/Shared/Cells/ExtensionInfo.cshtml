@@ -1,0 +1,36 @@
+﻿@model ViewModel
+
+@* Extension Description Box *@
+<div class="col-md-12 pull-left d-flex d-wrap bg-gray appfeaturesectionlist" data-nosnippet>
+    @if (!Model.ShowExtensionInfo2)
+    {
+        <div class="col-md-6 cardbox col-md-offset-3 b6 tc">
+            <h3>
+                <em class="icofile"><b>@Model.Extension.ToUpper()</b></em>
+                <span>@Model.ExtensionInfoModel.Name</span>
+            </h3>
+            <p>@Model.ExtensionInfoModel.Description</p>
+            <a target="_blank" href="@Model.ExtensionInfoModel.URL" class="btn btn-success btn-sm">Read More</a>
+        </div>
+    }
+    else
+    {
+        <div class="col-md-4 cardbox col-md-offset-2 b6 tc" style="margin-right: 20px">
+            <h3>
+                <em class="icofile"><b>@Model.Extension.ToUpper()</b></em>
+                <span>@Model.ExtensionInfoModel.Name</span>
+            </h3>
+            <p>@Model.ExtensionInfoModel.Description</p>
+            <a target="_blank" href="@Model.ExtensionInfoModel.URL" class="btn btn-success btn-sm">Read More</a>
+        </div>
+
+        <div class="col-md-4 cardbox b6 tc" style="margin-left: 20px">
+            <h3>
+                <em class="icofile"><b>@Model.Extension2.ToUpper()</b></em>
+                <span>@Model.ExtensionInfoModel2.Name</span>
+            </h3>
+            <p>@Model.ExtensionInfoModel2.Description</p>
+            <a target="_blank" href="@Model.ExtensionInfoModel2.URL" class="btn btn-success btn-sm">Read More</a>
+        </div>
+    }
+</div>

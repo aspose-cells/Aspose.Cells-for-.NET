@@ -1,0 +1,16 @@
+﻿@model OtherFeaturesModel
+
+<div class="col-md-12 pt-5 pb-5 convertypes">
+    <div class="container">
+        <h4>@Model.Title</h4>
+        <p>@Model.TitleSub</p>
+        <ul class="@Model.UlClass">
+            @foreach (var item in Model.Items)
+            {
+                <li>
+                    <a href='@item.URL'>@item.Title</a>@item.TitleSub
+                </li>
+            }
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,340 @@
+﻿﻿.omrRow {
+    margin: 40px auto;
+    text-align: center;
+}
+
+.omrRowSmallerMargin {
+    margin: 20px auto;
+    text-align: center;
+}
+
+.omrRowLeft {
+    margin: 40px auto;
+    text-align: left;
+}
+
+.desccontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calculator {
+    padding: 15px;
+    /*max-width: 500px;*/
+}
+
+.omrCalculatorForm {
+    display: table;
+    margin: auto;
+    background: #2072a7;
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.omrChart tbody .omrChartRow:nth-child(even) {
+    background: #277DE5 !important;
+    color: #ffffff !important;
+}
+.omrChart tbody .omrChartRow:nth-child(odd) {
+    /*background: #bb0000 !important;*/
+    color: #ffffff !important;
+}
+
+.omrChart th {
+    color: white;
+    font-weight: normal;
+}
+
+.omrInput {
+    padding: 5px;
+    width: 100%;
+    /*font-size: 16px;*/
+}
+
+.omrTypes.btn-group > .btn:first-child {
+    background: #2072a7;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-height: 55px;
+    font-size: 18px;
+    color: #FFFFFF;
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom-left-radius: 4px !important;
+    border-top-left-radius: 4px !important;
+    text-align: center;
+    min-width: 100px;
+    box-shadow: none;
+}
+
+.omrTypes.btn-group > .btn:last-child {
+    background: #2072a7;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-height: 55px;
+    font-size: 18px;
+    color: #FFFFFF;
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom-right-radius: 4px !important;
+    border-top-right-radius: 4px !important;
+    text-align: center;
+    min-width: 100px;
+    box-shadow: none;
+}
+
+.omrTypes.btn-group > .btn {
+    background: #2072a7;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-height: 55px;
+    font-size: 18px;
+    color: #FFFFFF;
+    border: none !important;
+    border-radius: 0 !important;
+    text-align: center;
+    min-width: 100px;
+    box-shadow: none;
+}
+
+.omrTypes.btn-group > .btn.selected {
+    background: #65c621;
+}
+
+.omrOptions.btn-group > .btn {
+    min-height: 40px;
+    padding: 0px;
+    min-width: 70px;
+}
+
+.omrOptions.btn-group > .btn:first-child {
+    min-height: 40px;
+    padding: 0px;
+    min-width: 70px;
+}
+
+.omrOptions.btn-group > .btn:last-child {
+    min-height: 40px;
+    padding: 0px;
+    min-width: 70px;
+}
+
+#barcodeLoader {
+    margin: 45%;
+}
+
+#omrResultContainer {
+    overflow-x: auto;
+}
+
+.OMRText {
+    font-size: 18px;
+    font-style: normal;
+    margin: 0 10px;
+    color: #fff
+}
+
+.OMRTextNoMargin {
+    font-size: 18px;
+    font-style: normal;
+    color: #fff
+}
+
+#templateDescList {
+    color: #ffffff;
+    font-size: 18px;
+    flex: 1;
+    color: white;
+    /*padding-top: 40px;*/
+    padding-top: 60px;
+}
+
+.omrListItem {
+    padding-bottom: 40px;
+}
+
+#recognitionResult {
+    background: #ffffff;
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/*custom checkbox*/
+
+/* Customize the label (the container) */
+.omrCheckboxContainer {
+    display: block;
+    position: relative;
+    /*padding-left: 40px;*/
+    /*margin-bottom: 12px;*/
+    margin-top: 5px;
+    cursor: pointer;
+    /*font-size: 22px;*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.omrCheckboxContainer input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    /*margin-left: 5px;*/
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.omrCheckboxContainer:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.omrCheckboxContainer input:checked ~ .checkmark {
+    background-color: #65c621;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.omrCheckboxContainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.omrCheckboxContainer .checkmark:after {
+    left: 10px;
+    top: 6px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.otherapps {
+    margin-top: -60px;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.otherapps .app-icon {
+    text-align: center;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.otherapps .app-icon div {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.otherapps a {
+    display: inline-block;
+    text-align: center;
+}
+
+.otherapps a span {
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px !important;
+    color: #333333;
+}
+
+.otherapps a img {
+    display: block;
+    max-width: 60px;
+    margin: auto;
+}
+
+.otherapps h4 {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.otherapps .row {
+    max-width: 800px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+div#otherapps-panel {
+    position: fixed;
+    left: 0;
+    top: 70px;
+    width: 150px;
+    min-height: 90px;
+    z-index: 50000;
+}
+div#otherapps-panel > a.otherapps-panel__button {
+    display: block;
+    width: 150px;
+    height: 30px;
+    margin: 0 0 5px 0;
+    background-color: #fff;
+    background-size: 15%;
+    background-position: right 4px center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: 0.5;
+    border-radius: 0 4px 4px 0;
+    transform: translateX(-120px);
+    transition: transform 0.4s ease-out, opacity 0.4s ease-in;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 3px 0 0 10px;
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+div#otherapps-panel > a.otherapps-panel__button:hover {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+div#otherapps-panel {
+    width: 200px;
+}
+div#otherapps-panel > a.otherapps-panel__button {
+    display: block;
+    width: 150px;
+    height: 25px;
+    margin: 0 0 3px 0;
+    background-size: 12%;
+    opacity: 0.6;
+    border-radius: 0 4px 4px 0;
+    transform: translateX(-125px);
+    padding: 0 0 0 10px;
+}
+
+div#otherapps-panel > a.otherapps-panel__button_current {
+        opacity: 0.8;
+    }

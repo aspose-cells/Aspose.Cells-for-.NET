@@ -1,0 +1,20 @@
+﻿@model ViewModel
+
+@{
+    Layout = "~/Views/Shared/Cells/Layout.cshtml";
+}
+@{
+    ViewBag.Title = "Conversion";
+}
+@Html.Partial("Cells/Main")
+@Html.Partial("Cells/FooterProduct")
+@section scripts {
+
+    <script type="text/javascript">
+        var o = @Html.Raw(Model.JSOptions);
+        $.extend(o, {
+            Method: requestConversion
+        });
+    </script>
+}
+

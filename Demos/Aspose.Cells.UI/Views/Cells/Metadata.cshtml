@@ -1,0 +1,21 @@
+﻿@model ViewModel
+
+@{
+    Layout = "~/Views/Shared/Cells/Layout.cshtml";
+}
+@{
+    ViewBag.Title = "Metadata";
+}
+@Html.Partial("Cells/Main")
+@Html.Partial("Cells/FooterProduct")
+
+@section scripts {
+    @Scripts.Render("~/cells/scripts/metadata.js")
+
+    <script type="text/javascript">
+        var o = @Html.Raw(Model.JSOptions);
+        $.extend(o, {
+            Method: requestMetadata
+        });
+    </script>
+}

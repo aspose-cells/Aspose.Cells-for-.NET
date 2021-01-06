@@ -1,0 +1,32 @@
+﻿.app-product-section a, .app-product-section a:hover, .app-product-section a:visited {
+    color: #2a6496;
+}
+
+.app-product-section li {
+    color: #333;
+}
+
+.app-product-section ul {
+    padding-top: 7px;
+}
+
+.pull-left {
+    width: 100%;
+}
+
+.RawHtmlOverview {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#errorModal .modal-dialog {
+    top: 200px;
+}
+
+#reportResultModal .modal-dialog {
+    top: 200px;
+}
+
+#delModal .modal-dialog, #delResModal .modal-dialog {
+    top: 200px;
+}

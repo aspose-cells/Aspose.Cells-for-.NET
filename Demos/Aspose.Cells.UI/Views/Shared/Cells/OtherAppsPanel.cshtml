@@ -1,0 +1,13 @@
+@model ViewModel
+<div id="otherapps-panel">
+    @foreach (var app in Model.OtherApps)
+    {
+        <a href="@app.Href"
+           title="@Model.Resources[Model.Product + app.AppName + "Desc"]"
+           onclick="otherAppClick('@app.AppName', true)"
+           class="otherapps-panel__button @(Model.AppName == app.AppName ? "otherapps-panel__button_current" : "")"
+           style="background-image: url('@app.ImageSource')">
+            @app.AppName
+        </a>
+    }
+</div>

@@ -1,0 +1,173 @@
+﻿@model ViewModel
+
+@Html.Partial("Cells/OtherApps")
+
+<div class="col-md-12 pt-5 app-product-section tl" style="background-color:#d6d6d6;">
+    <div class="container">
+        <h4 style="font-size:30px;font-weight:bold;margin-bottom: 0px;">
+            <span class="spanclass">
+                <img src="~/cells/img/aspose_cells-for-jasperreports.png" style="width:42px;height:42px;" alt="Aspose.Cells for .NET">
+            </span>
+            @Html.Raw(Model.PageProductTitleURL) Excel @($"{Model.AppName}")
+        </h4>
+
+        <div class="">&nbsp;</div>
+        <p style="font-size: 20px;margin-bottom: 10px !important;color:#333;">
+            @Html.Raw(Model["RawHtmlOverview"])
+        </p>
+
+        <div class="col-md-9 pull-left">
+            <div class="col-md-3 pull-right">
+                <img id="ProductImage" src="~/cells/img/aspose-@Model.Product-app.png" alt="@Model.PageProductTitle "/>
+            </div>
+            <ul>
+                @if (Model.AppFeatures != null)
+                {
+                    foreach (var feature in Model.AppFeatures)
+                    {
+                        <li>@Html.Raw(feature)</li>
+                    }
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+
+@if (Model.ShowExtensionInfo)
+{
+    @Html.Partial("Cells/ExtensionInfo")
+}
+
+@if (Model.HowTo)
+{
+    @Html.Partial("Cells/HowTo", Model.HowToModel)
+}
+
+@if (Model.IsCanonical)
+{
+    <div class="col-md-12 pt-5 app-features-section">
+        <div class="container tc pt-5">
+            <div class="col-md-4">
+                <div class="imgcircle fasteasy">
+                    <img src="/cells/img/fast-easy.png" alt="@Model.Resources[string.Format("{0}{1}Feature1", Model.Product, Model.AppName)]"/>
+                </div>
+                <h4>@Model.Resources[string.Format("{0}{1}Feature1", Model.Product, Model.AppName)]</h4>
+                <p>@(Model.Resources[string.Format("{0}{1}Feature1Description", Model.Product, Model.AppName)]).</p>
+            </div>
+
+            <div class="col-md-4">
+                <div class="imgcircle anywhere">
+                    <img src="/cells/img/anywhere.png" alt="@Model.Resources[string.Format("{0}{1}Feature2", Model.Product, Model.AppName)]"/>
+                </div>
+                <h4>@Model.Resources[string.Format("{0}{1}Feature2", Model.Product, Model.AppName)]</h4>
+                <p>@(Model.Resources[string.Format("{0}{1}Feature2Description", Model.Product, Model.AppName)]).</p>
+            </div>
+
+            <div class="col-md-4">
+                <div class="imgcircle quality">
+                    <img src="/cells/img/quality.png" alt="@Model.Resources[string.Format("{0}{1}Feature3", Model.Product, Model.AppName)]"/>
+                </div>
+                <h4>@Model.Resources[string.Format("{0}Feature3", Model.AppName)]</h4>
+                <p>@Model.Resources["PoweredBy"] <a target="_blank" id="PoweredBy" href="@string.Format("https://products.aspose.com/{0}", Model.Product)" rel="noopener">@Model.PageProductTitle</a>@(Model.Resources["Feature3Description"]).</p>
+            </div>
+        </div>
+    </div>
+}
+
+@if (Model.ShowOtherFeatures)
+{
+    @Html.Partial("Cells/OtherFeatures", Model.OtherFeaturesModel)
+}
+
+<div class="modal fade" tabindex="-1" role="dialog" id="errorModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" style="color:#FF1616">Oops! An error has occurred.</h4>
+                <h5 class="modal-title" id="errorTitle">Invalid file, please ensure that uploading correct file</h5>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" id="errorForm">
+                    <p style="font-size:16px;font-weight:600;font-style:italic">Would you like to report this error to the forum, so that we can look into it and resolve the issue? You will get the notification email when error is fixed.</p>
+
+                    <div class="form-group">
+                        <label class="col-sm-2 control-label">Email:</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" name="Email" id="errorEmail" placeholder="example@example.com"/>
+                        </div>
+                        <div style="display:none">
+                            <input type="text" name="ErrorAction" id="errorAction"/>
+                            <input type="text" name="ErrorFolderName" id="errorFolderName"/>
+                            <input type="text" name="ErrorMessage" id="errorMessage"/>
+                            <input type="text" name="Private" id="errorPrivate"/>
+                        </div>
+                    </div>
+                    <p><input type="checkbox" id="forumPrivate" checked="checked">Make this forum private, so that it will only be accessible to you and our developers</p>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="requestErrorReport()" id="reportError">Report Error</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="reportResultModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" style="color:green">Error has been reported successfully.</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    <b>
+                        <i>You have successfully reported the error, You will get the notification email when error is fixed.</i>
+                    </b>
+                    Click <a id="lnkForums" target="_blank" href="https://forum.aspose.com/">this link</a> to visit the forums.
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="delModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title">
+                    Immediately delete the uploaded & processed files.
+                </h5>
+            </div>
+            <div class="modal-body">
+                <p style="font-size:16px;font-weight:600;font-style:italic">
+                    Are you sure to delete the files?
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" id="confirmDelBtn">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" id="delResModal">
+    <div class="modal-dialog" role="document" style="width: fit-content;">
+        <div class="modal-content">
+            <p id="delResModalBody" style="font-size:16px;font-weight:600;font-style:italic;margin: 0;padding: 20px;"></p>
+        </div>
+    </div>
+</div>

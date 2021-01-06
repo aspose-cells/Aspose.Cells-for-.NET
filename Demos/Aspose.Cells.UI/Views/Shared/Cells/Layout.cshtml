@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>@ViewBag.PageTitle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="@ViewBag.MetaDescription" />
+    <meta name="theme-color" content="#3C7DE7" />
+    @if (Request.Url.AbsoluteUri.Contains("cells"))
+    {
+        <link rel="manifest" href="/manifest_cells.json">
+    }
+    @if (!string.IsNullOrEmpty(ViewBag.CanonicalTag))
+    {
+        @Html.Raw(ViewBag.CanonicalTag)
+    }
+    <link href="@Url.Content("~/cells/img/favicon.ico")" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
+    <!-- Bootstrap & Font CSS -->
+    <link rel="stylesheet" href="https://cms.dynabic.com/templates/aspose/css/bootstrap.css?v=331" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" type="text/css" />
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="https://cms.dynabic.com/templates/aspose/css/common.css" type="text/css" />
+    <link rel="stylesheet" href="https://products.aspose.app/css/error404.css" type="text/css" />
+
+    <!-- Dynabic.Menu CSS -->
+    <script src="https://menu.containerize.com/Scripts/Containerize.Menu.min.js"></script>
+    <link href="https://cms.admin.containerize.com/templates/aspose/css/AsposePtyLtdMenu.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cms.admin.containerize.com/templates/aspose/css/font-awesome.css" type="text/css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script src="https://products.aspose.app/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/cells/css/asposeapp.css" type="text/css" />
+    <link rel="stylesheet" href="~/cells/css/cells.css" type="text/css" />
+    @if (IsSectionDefined("styles"))
+    {
+        @RenderSection("styles", false)
+    }
+
+    @if (ViewBag.SaveAsComponent)
+    {
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.10/dist/css/select2.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.0.10/dist/js/select2.min.js"></script>
+    }
+
+    @if (ViewBag.JsonLd != null)
+    {
+        foreach (var item in ViewBag.JsonLd as List<string>)
+        {
+            <script type="application/ld+json">
+                @Html.Raw(item)
+            </script>
+        }
+    }
+
+    @using Aspose.Cells.UI.Config
+    @if (Configuration.ProductsAsposeToolsURL.Contains("products.aspose.app") ||
+        Configuration.ProductsAsposeToolsURL.Contains("cells.aspose.app"))
+    {
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3109235-5"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-3109235-5');
+        </script>
+    }
+    @* For Aspose.Cells testing purpose *@
+    @if (Configuration.ProductsAsposeToolsURL.Contains("localhost"))
+    {
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-148901772-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-148901772-1');
+        </script>
+    }
+</head>
+<body>
+<div id='DynabicMenuInnerDiv'></div>
+
+@RenderBody()
+
+<div id='DynabicMenuFooter'></div>
+
+<script>
+    LoadMenu("AsposeApp");
+</script>
+
+@Scripts.Render("~/bundles/jquery")
+
+@Scripts.Render("~/cells/scripts/base.js")
+@Scripts.Render("~/cells/scripts/filedrop.js")
+
+@if (IsSectionDefined("scripts"))
+{
+    @RenderSection("scripts", false)
+}
+@if (ViewBag.SaveAsComponent)
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#saveAs').select2();
+            var val = $('#saveAs option:eq(0)').val();
+            $('#saveAs').val(val);
+            $('#saveAs').change();
+        });
+    </script>
+}
+</body>
+</html>

@@ -1,0 +1,74 @@
+<div class="share-button share-button__facebook" onClick="shareApp('facebook')">@Model.Resources["ShareFacebook"]</div>
+<div class="share-button share-button__twitter" onClick="shareApp('twitter')">@Model.Resources["ShareTwitter"]</div>
+<div class="share-button share-button__linkedin" onClick="shareApp('linkedin')">@Model.Resources["ShareLinkedIn"]</div>
+<div class="share-button share-button__cellsotherapp" onClick="shareApp('otherapp')">@Model.Resources["SeeOtherApps"]</div>
+<div class="share-button share-button__cloud" onClick="shareApp('cloud')">
+    <a href="https://products.aspose.cloud/cells/family" target="_blank">@Model.Resources["TryCloudAPI"]</a>
+</div>
+<div class="share-button share-button__github" onClick="shareApp('github')"><a href="https://github.com/aspose-cells/Aspose.Cells-for-.NET" target="_blank">@Model.Resources["GitHub"]</a></div>
+<div class="share-button share-button__feedback" onClick="shareApp('feedback')">@Model.Resources["LeaveFeedback"]</div>
+<div class="share-button share-button__bookmark" onClick="shareApp('bookmark')">@Model.Resources["BookmarkApp"]</div>
+<div class="modal fade" id="bookmarkModal" tabindex="-1" role="dialog" aria-labelledby="bookmarkModalLabel" style="justify-content:center;align-items:center;z-index:5100;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="bookmarkModalLabel">@Model.Resources["BookmarkApp"]</h4>
+            </div>
+            <div class="modal-body">
+                @Model.Resources["BookmarkText"]
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="sendEmailModal" tabindex="-1" role="dialog" aria-labelledby="sendEmailModalLabel" style="justify-content:center;align-items:center;z-index:5100;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="sendEmailModalLabel">@Model.Resources["SendDownloadLink"]</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <input id="EmailToInput" type="email" name="email" class="form-control" placeholder="@Model.Resources["EmailAddress"]" value="@Model.EmailTo" autocomplete="true"/>
+                    </div>
+                    <div class="form-group text-right">
+                        <button type="button" class="btn btn-default" style="min-width:80px" data-dismiss="modal">@Model.Resources["Cancel"]</button>
+                        <button type="button" class="btn btn-success" style="min-width:80px" onclick="sendEmail()">@Model.Resources["Send"]</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="feedbackModal" tabindex="-1" role="dialog" aria-labelledby="feedbackModalLabel" style="justify-content:center;align-items:center;z-index:5100;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="feedbackModalLabel">@Model.Resources["FeedbackHeader"]</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <textarea id="feedbackBody" name="feedbackBody" rows="7" maxlength="1000" class="form-control" style="resize:none" placeholder="@Model.Resources["FeedbackPlaceholder"]"></textarea>
+                        <div class="small">@Model.Resources["FeedbackMaximumSize"]</div>
+                    </div>
+                    <div class="form-group text-right">
+                        <button type="button" class="btn btn-default" style="min-width:80px" data-dismiss="modal">@Model.Resources["Cancel"]</button>
+                        <button type="button" class="btn btn-success" style="min-width:80px" onclick="sendFeedbackExtended()">@Model.Resources["Send"]</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

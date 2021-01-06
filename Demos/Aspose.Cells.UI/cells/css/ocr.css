@@ -1,0 +1,30 @@
+﻿﻿/*REDEFINE*/
+.hiddenData {
+    display: none;
+    max-height: 0;
+    max-width: 0;
+}
+
+.app-product-section li {
+    font-size: 19px;
+}
+
+.ocrAppRow {
+    margin: 40px auto;
+    text-align: center;
+}
+
+#ocrLoader {
+    margin: 45%;
+}
+
+#recognitionResult {
+    background: #ffffff;
+    padding: 15px;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+div#main_action {
+    padding-top: 40px;
+}

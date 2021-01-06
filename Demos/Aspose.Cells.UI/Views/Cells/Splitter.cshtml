@@ -1,0 +1,25 @@
+﻿@model ViewModel
+
+@{
+    Layout = "~/Views/Shared/Cells/Layout.cshtml";
+}
+@{
+    ViewBag.Title = "Splitter";
+}
+@Html.Partial("Cells/Main")
+@Html.Partial("Cells/FooterProduct")
+
+@section scripts {
+    <script type="text/javascript">
+        let o = @Html.Raw(Model.JSOptions);
+        $.extend(o,
+            {
+                Method: requestSplitter,
+                validationNumberMessage: "@Html.Raw(Model.Resources["cellsSplitterNumberException"])",
+                validationRangeMessage: "@Html.Raw(Model.Resources["cellsSplitterRangeException"])",
+                FileAmountMessage:'@Model.Resources["FileAmountMessageOne"]',
+                MaximumUploadFiles:1,
+                Multiple: false
+            });
+    </script>
+}
