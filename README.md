@@ -1,3 +1,4 @@
+![Nuget](https://img.shields.io/nuget/v/Aspose.Cells) ![Nuget](https://img.shields.io/nuget/dt/Aspose.Cells) ![GitHub](https://img.shields.io/github/license/aspose-cells/Aspose.Cells-for-.NET)
 # .NET API for Excel Files
 
 [Aspose.Cells for .NET](https://products.aspose.com/cells/net) is an Excel Spreadsheet Programming API to speed up spreadsheet management and processing tasks. Excel .NET API supports to build cross-platform applications having the ability to generate, modify, convert, render and print spreadsheets.
