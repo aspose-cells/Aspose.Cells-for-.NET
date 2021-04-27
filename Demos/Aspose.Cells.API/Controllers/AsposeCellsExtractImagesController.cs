@@ -12,6 +12,8 @@ namespace Aspose.Cells.API.Controllers
     ///</Summary>
     public class AsposeCellsExtractImagesController : ApiControllerBase
     {
+        private const string App = "ExtractImages";
+
         /// <summary>
         /// Check the workbook for the presence of images
         /// </summary>
@@ -45,6 +47,7 @@ namespace Aspose.Cells.API.Controllers
         /// <returns></returns>
         public async Task<Response> ExtractImages(string fileName, string folderName)
         {
+            // license.SetAsposeCellsLicense();
             string statusValue;
             int statusCodeValue;
             var fileProcessingErrorCode = FileProcessingErrorCode.OK;
@@ -52,7 +55,7 @@ namespace Aspose.Cells.API.Controllers
             try
             {
                 if (HasImages(fileName, folderName))
-                    return await Process(GetType().Name, fileName, folderName, "", true, false, AsposeCells + ImageApp, ProductFamilyNameKeysEnum.cells, "ExtractImages",
+                    return await Process(fileName, folderName, "", true,
                         (inFilePath, outPath, zipOutFolder) =>
                         {
                             var index = outPath.LastIndexOf("/", StringComparison.Ordinal);
@@ -74,9 +77,9 @@ namespace Aspose.Cells.API.Controllers
                                     var fmt = pic.ImageType.ToString().ToLower();
 
                                     var outFilePath = outPath + i + "--" + ws.Name + "--Pic" + j + "." + fmt;
-                                    var fout = new FileStream(outFilePath, FileMode.OpenOrCreate, FileAccess.Write);
-                                    fout.Write(picData, 0, picData.Length);
-                                    fout.Close();
+                                    var fileStream = new FileStream(outFilePath, FileMode.OpenOrCreate, FileAccess.Write);
+                                    fileStream.Write(picData, 0, picData.Length);
+                                    fileStream.Close();
                                 }
                             }
                         });
@@ -85,10 +88,13 @@ namespace Aspose.Cells.API.Controllers
                 statusValue = "OK";
                 fileProcessingErrorCode = FileProcessingErrorCode.NoImagesFound;
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
+                var message = $"{e.Message} | fileName = {fileName}";
+                NLogger.LogError(App, "ExtractImages", message, folderName);
+
                 statusCodeValue = 500;
-                statusValue = "500 " + ex.Message;
+                statusValue = "500 " + e.Message;
             }
 
             return await Task.FromResult(new Response

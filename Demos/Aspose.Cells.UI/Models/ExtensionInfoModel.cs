@@ -15,7 +15,7 @@ namespace Aspose.Cells.UI.Models
 
         public string Name { get; set; }
         public string Description { get; set; }
-        public string URL { get; set; }
+        public string Url { get; set; }
 
         public string AppName => Parent.AppName;
 
@@ -33,7 +33,7 @@ namespace Aspose.Cells.UI.Models
             var fileformat = FileFormat.GetByExtension(Extension.ToLower());
             Name = fileformat.Name;
             Description = fileformat.Description;
-            URL = fileformat.FileFormat_Com_URL;
+            Url = fileformat.FileFormatComUrl;
         }
     }
 }

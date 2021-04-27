@@ -2,7 +2,7 @@ using System.IO;
 using System.Net.Http;
 using System.Net.Http.Headers;
 
-namespace Aspose.Cells.API.Helpers
+namespace Aspose.Cells.API.Models
 {
     ///<Summary>
     /// MultipartFormDataStreamProviderSafe  class
@@ -22,27 +22,30 @@ namespace Aspose.Cells.API.Helpers
         public override string GetLocalFileName(HttpContentHeaders headers)
         {
             var fileName = headers?.ContentDisposition?.FileName;
-            if (fileName == null) return base.GetLocalFileName(headers);
-            fileName = fileName.TrimEnd('"').TrimStart('"');
-            try
+            if (fileName != null)
             {
-                fileName = Path.GetFileName(fileName);
-                if (!string.IsNullOrEmpty(fileName))
+                fileName = fileName.TrimEnd('"').TrimStart('"');
+                try
                 {
-                    var name = Path.GetFileNameWithoutExtension(fileName);
-                    var extension = Path.GetExtension(fileName);
-                    if (!File.Exists(Path.Combine(RootPath, name + extension))) return name + extension;
-                    var i = 2;
-                    while (File.Exists(Path.Combine(RootPath, name + " " + i + extension)))
-                        i++;
-                    name += " " + i;
+                    fileName = Path.GetFileName(fileName);
+                    if (!string.IsNullOrEmpty(fileName))
+                    {
+                        var name = Path.GetFileNameWithoutExtension(fileName);
+                        var extension = Path.GetExtension(fileName);
+                        if (System.IO.File.Exists(Path.Combine(RootPath, name + extension)))
+                        {
+                            var i = 2;
+                            while (System.IO.File.Exists(Path.Combine(RootPath, name + " " + i + extension)))
+                                i++;
+                            name += " " + i;
+                        }
 
-                    return name + extension;
+                        return name + extension;
+                    }
                 }
-            }
-            catch
-            {
-                // ignored
+                catch
+                {
+                }
             }
 
             return base.GetLocalFileName(headers);

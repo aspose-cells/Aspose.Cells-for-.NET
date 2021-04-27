@@ -4,33 +4,41 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Mvc;
+using Aspose.Cells.API.Config;
 using Aspose.Cells.API.Models;
 using Tools.Foundation.Models;
 
 namespace Aspose.Cells.API.Controllers
 {
-    ///<Summary>
-    /// AsposeCellsConversionController class to convert cells files to different formats
-    ///</Summary>
     public class AsposeCellsConversionController : AsposeCellsBaseController
     {
+        private const string App = "Conversion";
+
         [MimeMultipart]
         [HttpPost]
         [ActionName("Convert")]
         public async Task<Response> Convert(string outputType)
         {
             var sessionId = Guid.NewGuid().ToString();
-            var action = $"Convert to {outputType.Trim().ToLower()}";
+            var action = $"Convert to {outputType}";
 
             try
             {
-                var docs = await UploadWorkBooks(sessionId);
+                var taskUpload = Task.Run(() => UploadWorkbooks(sessionId));
+                taskUpload.Wait(Api.Configuration.MillisecondsTimeout);
+                if (!taskUpload.IsCompleted)
+                {
+                    NLogger.LogError($"Convert UploadWorkbooks=>{sessionId}=>{AppSettings.ProcessingTimedout}");
+                    throw new TimeoutException(AppSettings.ProcessingTimedout);
+                }
+
+                var docs = taskUpload.Result;
                 if (docs == null)
                     return PasswordProtectedResponse;
                 if (docs.Length == 0 || docs.Length > MaximumUploadFiles)
                     return MaximumFileLimitsResponse;
                 SetDefaultOptions(docs);
-                Opts.AppName = ConversionApp;
+                Opts.AppName = "Conversion";
                 Opts.MethodName = "Convert";
                 Opts.ZipFileName = docs.Length > 1 ? "Converted files" : Path.GetFileNameWithoutExtension(docs[0].FileName);
                 Opts.OutputType = outputType.Trim().ToLower();
@@ -53,24 +61,33 @@ namespace Aspose.Cells.API.Controllers
                     var stopWatch = new Stopwatch();
 
                     stopWatch.Start();
-                    NLogger.LogInfo($"Convert to {outputType.Trim().ToLower()}=>{string.Join(",", docs.Select(t => t.FileName))}=>Start", AsposeCells, ProductFamilyNameKeysEnum.cells, outPath);
+                    NLogger.LogInfo($"Convert to {outputType.Trim().ToLower()}=>{string.Join(",", docs.Select(t => t.FileName))}=>Start");
 
                     var tasks = docs.Select(doc => Task.Factory.StartNew(() => SaveDocument(doc, outPath, zipOutFolder, saveOpt))).ToArray();
-                    Task.WaitAll(tasks);
+                    var isCompleted = Task.WaitAll(tasks, Api.Configuration.MillisecondsTimeout);
+                    if (!isCompleted)
+                    {
+                        NLogger.LogError($"Convert to {outputType.Trim().ToLower()}=>{string.Join(",", docs.Select(t => t.FileName))}=>{AppSettings.ProcessingTimedout}");
+                        throw new TimeoutException(AppSettings.ProcessingTimedout);
+                    }
 
                     stopWatch.Stop();
-                    NLogger.LogInfo($"Convert to {outputType.Trim().ToLower()}=>{string.Join(",", docs.Select(t => t.FileName))}=>cost seconds:{stopWatch.Elapsed.TotalSeconds}", AsposeCells, ProductFamilyNameKeysEnum.cells, outPath);
+                    NLogger.LogInfo($"Convert to {outputType.Trim().ToLower()}=>{string.Join(",", docs.Select(t => t.FileName))}=>cost seconds:{stopWatch.Elapsed.TotalSeconds}");
                 });
             }
-            catch (AppException ex)
+            catch (Exception e)
             {
-                NLogger.LogError(ex, $"{sessionId}-{action}");
-                return AppErrorResponse(ex.Message, sessionId, action);
-            }
-            catch (Exception ex)
-            {
-                NLogger.LogError(ex, $"{sessionId}-{action}");
-                return InternalServerErrorResponse(sessionId, action);
+                var exception = e.InnerException ?? e;
+                var message = $"{exception.Message} | outputType = {outputType}";
+                NLogger.LogError(App, "Convert", message, sessionId);
+
+                return new Response
+                {
+                    StatusCode = 500,
+                    Status = exception.Message,
+                    FolderName = sessionId,
+                    Text = action
+                };
             }
         }
     }

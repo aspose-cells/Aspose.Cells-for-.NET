@@ -1,4 +1,4 @@
-﻿var drawCanvas = null;
+var drawCanvas = null;
 var pickerDraw = null;
 var pickerText = null;
 var points_count = 0;

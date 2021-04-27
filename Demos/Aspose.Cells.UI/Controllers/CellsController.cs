@@ -13,7 +13,7 @@ namespace Aspose.Cells.UI.Controllers
     public class CellsController : BaseController
     {
         public override string Product => "cells";
-        private readonly string[] _feedbackEmails = {"xxxx@xxxx.xxxx"};
+        private readonly string[] _feedbackEmails = {"nick.liu@aspose.com"};
 
         internal readonly Dictionary<string, string[]> SupportedFormats = new Dictionary<string, string[]>
         {
@@ -28,7 +28,8 @@ namespace Aspose.Cells.UI.Controllers
             {"mht", new[] {"pdf", "docx", "pptx", "xlsx", "xls", "xlsm", "xlsb", "ods", "csv", "tsv", "html", "bmp", "jpg", "png", "emf", "wmf", "svg", "tiff", "xps", "mhtml", "md"}},
             {"mhtml", new[] {"pdf", "docx", "pptx", "xlsx", "xls", "xlsm", "xlsb", "ods", "csv", "tsv", "html", "bmp", "jpg", "png", "emf", "wmf", "svg", "tiff", "xps", "md"}},
             {"jpg", new[] {"xlsx", "pdf", "docx", "pptx", "xls", "xlsm", "xlsb", "ods", "html", "bmp", "png", "emf", "wmf", "svg", "tiff", "xps", "mhtml"}},
-            {"png", new[] {"xlsx", "pdf", "docx", "pptx", "xls", "xlsm", "xlsb", "ods", "html", "bmp", "jpg", "emf", "wmf", "svg", "tiff", "xps", "mhtml"}}
+            {"jpeg", new[] {"xlsx", "pdf", "docx", "pptx", "xls", "xlsm", "xlsb", "ods", "html", "bmp", "jpg", "emf", "wmf", "svg", "tiff", "xps", "mhtml"}},
+            {"png", new[] {"xlsx", "pdf", "docx", "pptx", "xls", "xlsm", "xlsb", "ods", "html", "bmp", "jpg", "emf", "wmf", "svg", "tiff", "xps", "mhtml"}},
         };
 
         internal readonly Dictionary<string, string[]> SupportedMergerFormats = new Dictionary<string, string[]>
@@ -234,6 +235,32 @@ namespace Aspose.Cells.UI.Controllers
                 SaveAsOriginal = false,
                 ControlsView = "ChartControls"
             };
+            if (model.RedirectToMainApp)
+                return Redirect("/cells/" + model.AppName.ToLower());
+            return View(model);
+        }
+
+        public ActionResult Translation()
+        {
+            var languagesCode = Resources["LanguagesCode"].Split(',');
+            var languages = Resources["Languages"].Split(',');
+            var languagesList = languagesCode.Select((t, i) => new Languages {Code = t, Language = languages[i]}).ToList();
+
+            var model = new ViewModel(this, "Translation")
+            {
+                SaveAsComponent = true,
+                SaveAsOriginal = false,
+                ShowViewerButton = false,
+                Languages = languagesList
+            };
+            if (model.RedirectToMainApp)
+                return Redirect("/cells/" + model.AppName.ToLower());
+            return View(model);
+        }
+
+        public ActionResult Comparison()
+        {
+            var model = new ViewModel(this, "Comparison");
             if (model.RedirectToMainApp)
                 return Redirect("/cells/" + model.AppName.ToLower());
             return View(model);

@@ -86,20 +86,6 @@
   </url>
   <url>
     <loc>
-      https://products.aspose.app/cells/conversion/xlsx-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/conversion/xlsx-to-wmf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
       https://products.aspose.app/cells/conversion/xlsx-to-svg
     </loc>
     <lastmod>2020-07-07</lastmod>
@@ -241,20 +227,6 @@
   <url>
     <loc>
       https://products.aspose.app/cells/conversion/xls-to-png
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/conversion/xls-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/conversion/xls-to-wmf
     </loc>
     <lastmod>2020-07-07</lastmod>
 		<priority>0.5</priority>
@@ -408,20 +380,6 @@
   </url>
   <url>
     <loc>
-      https://products.aspose.app/cells/conversion/xlsm-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/conversion/xlsm-to-wmf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
       https://products.aspose.app/cells/conversion/xlsm-to-svg
     </loc>
     <lastmod>2020-07-07</lastmod>
@@ -563,20 +521,6 @@
   <url>
     <loc>
       https://products.aspose.app/cells/conversion/xlsb-to-png
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/conversion/xlsb-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/conversion/xlsb-to-wmf
     </loc>
     <lastmod>2020-07-07</lastmod>
 		<priority>0.5</priority>
@@ -730,20 +674,6 @@
   </url>
   <url>
     <loc>
-      https://products.aspose.app/cells/conversion/ods-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/conversion/ods-to-wmf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
       https://products.aspose.app/cells/conversion/ods-to-svg
     </loc>
     <lastmod>2020-07-07</lastmod>
@@ -885,20 +815,6 @@
   <url>
     <loc>
       https://products.aspose.app/cells/conversion/csv-to-png
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/conversion/csv-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/conversion/csv-to-wmf
     </loc>
     <lastmod>2020-07-07</lastmod>
 		<priority>0.5</priority>
@@ -1052,20 +968,6 @@
   </url>
   <url>
     <loc>
-      https://products.aspose.app/cells/conversion/tsv-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/conversion/tsv-to-wmf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
       https://products.aspose.app/cells/conversion/tsv-to-svg
     </loc>
     <lastmod>2020-07-07</lastmod>
@@ -1207,20 +1109,6 @@
   <url>
     <loc>
       https://products.aspose.app/cells/conversion/html-to-png
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/conversion/html-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/conversion/html-to-wmf
     </loc>
     <lastmod>2020-07-07</lastmod>
 		<priority>0.5</priority>
@@ -1381,20 +1269,6 @@
   </url>
   <url>
     <loc>
-      https://products.aspose.app/cells/conversion/mht-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/conversion/mht-to-wmf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
       https://products.aspose.app/cells/conversion/mht-to-svg
     </loc>
     <lastmod>2020-07-07</lastmod>
@@ -1549,20 +1423,6 @@
   </url>
   <url>
     <loc>
-      https://products.aspose.app/cells/conversion/mhtml-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/conversion/mhtml-to-wmf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
       https://products.aspose.app/cells/conversion/mhtml-to-svg
     </loc>
     <lastmod>2020-07-07</lastmod>
@@ -1628,8 +1488,8 @@
     <loc>
       https://products.aspose.app/cells/conversion/excel-to-pdf
     </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
+    <lastmod>2021-02-02</lastmod>
+		<priority>0.8</priority>
   </url>
   <url>
     <loc>
@@ -1752,6 +1612,139 @@
   </url>
   <url>
     <loc>
+      https://products.aspose.app/cells/conversion/jpeg-to-pdf
+    </loc>
+    <lastmod>2021-02-02</lastmod>
+		<priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/conversion/jpeg-to-xls
+    </loc>
+    <lastmod>2021-02-02</lastmod>
+		<priority>0.5</priority>
+  </url>
+<url>
+    <loc>
+      https://products.aspose.app/cells/conversion/jpeg-to-excel
+    </loc>
+    <lastmod>2021-02-02</lastmod>
+		<priority>0.8</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/conversion/jpeg-to-xlsx
+    </loc>
+    <lastmod>2021-02-02</lastmod>
+		<priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/conversion/jpeg-to-xlsm
+    </loc>
+    <lastmod>2021-02-02</lastmod>
+		<priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/conversion/jpeg-to-xlsb
+    </loc>
+    <lastmod>2021-02-02</lastmod>
+		<priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/conversion/jpeg-to-ods
+    </loc>
+    <lastmod>2021-02-02</lastmod>
+		<priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/conversion/jpeg-to-html
+    </loc>
+    <lastmod>2021-02-02</lastmod>
+		<priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/conversion/jpeg-to-bmp
+    </loc>
+    <lastmod>2021-02-02</lastmod>
+		<priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/conversion/jpeg-to-png
+    </loc>
+    <lastmod>2021-02-02</lastmod>
+		<priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/conversion/jpeg-to-svg
+    </loc>
+    <lastmod>2021-02-02</lastmod>
+		<priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/conversion/jpeg-to-tiff
+    </loc>
+    <lastmod>2021-02-02</lastmod>
+		<priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/conversion/jpeg-to-xps
+    </loc>
+    <lastmod>2021-02-02</lastmod>
+		<priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/conversion/jpeg-to-mhtml
+    </loc>
+    <lastmod>2021-02-02</lastmod>
+		<priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/conversion/jpeg-to-word
+    </loc>
+    <lastmod>2021-02-02</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/conversion/jpeg-to-docx
+    </loc>
+    <lastmod>2021-02-02</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/conversion/jpeg-to-ppt
+    </loc>
+    <lastmod>2021-02-02</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/conversion/jpeg-to-pptx
+    </loc>
+    <lastmod>2021-02-02</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/conversion/jpeg-to-powerpoint
+    </loc>
+    <lastmod>2021-02-02</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
       https://products.aspose.app/cells/conversion/jpg-to-pdf
     </loc>
     <lastmod>2020-07-07</lastmod>
@@ -1763,6 +1756,13 @@
     </loc>
     <lastmod>2020-07-07</lastmod>
 		<priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/conversion/jpg-to-excel
+    </loc>
+    <lastmod>2021-02-02</lastmod>
+		<priority>0.8</priority>
   </url>
   <url>
     <loc>
@@ -1809,20 +1809,6 @@
   <url>
     <loc>
       https://products.aspose.app/cells/conversion/jpg-to-png
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/conversion/jpg-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/conversion/jpg-to-wmf
     </loc>
     <lastmod>2020-07-07</lastmod>
 		<priority>0.5</priority>
@@ -1906,6 +1892,13 @@
   </url>
   <url>
     <loc>
+      https://products.aspose.app/cells/conversion/png-to-excel
+    </loc>
+    <lastmod>2021-02-02</lastmod>
+		<priority>0.8</priority>
+  </url>
+  <url>
+    <loc>
       https://products.aspose.app/cells/conversion/png-to-xlsx
     </loc>
     <lastmod>2020-07-07</lastmod>
@@ -1949,20 +1942,6 @@
   <url>
     <loc>
       https://products.aspose.app/cells/conversion/png-to-jpg
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/conversion/png-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/conversion/png-to-wmf
     </loc>
     <lastmod>2020-07-07</lastmod>
 		<priority>0.5</priority>
@@ -2038,6 +2017,13 @@
     </loc>
     <lastmod>2020-07-07</lastmod>
 		<priority>1.0</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/viewer/excel
+    </loc>
+    <lastmod>2021-02-21</lastmod>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>
@@ -2511,20 +2497,6 @@
   </url>
   <url>
     <loc>
-      https://products.aspose.app/cells/merger/xlsx-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/merger/xlsx-to-wmf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
       https://products.aspose.app/cells/merger/xlsx-to-svg
     </loc>
     <lastmod>2020-07-07</lastmod>
@@ -2673,20 +2645,6 @@
   <url>
     <loc>
       https://products.aspose.app/cells/merger/xls-to-png
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/merger/xls-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/merger/xls-to-wmf
     </loc>
     <lastmod>2020-07-07</lastmod>
 		<priority>0.5</priority>
@@ -2847,20 +2805,6 @@
   </url>
   <url>
     <loc>
-      https://products.aspose.app/cells/merger/xlsm-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/merger/xlsm-to-wmf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
       https://products.aspose.app/cells/merger/xlsm-to-svg
     </loc>
     <lastmod>2020-07-07</lastmod>
@@ -3009,20 +2953,6 @@
   <url>
     <loc>
       https://products.aspose.app/cells/merger/xlsb-to-png
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/merger/xlsb-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/merger/xlsb-to-wmf
     </loc>
     <lastmod>2020-07-07</lastmod>
 		<priority>0.5</priority>
@@ -3183,20 +3113,6 @@
   </url>
   <url>
     <loc>
-      https://products.aspose.app/cells/merger/ods-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/merger/ods-to-wmf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
       https://products.aspose.app/cells/merger/ods-to-svg
     </loc>
     <lastmod>2020-07-07</lastmod>
@@ -3345,20 +3261,6 @@
   <url>
     <loc>
       https://products.aspose.app/cells/merger/csv-to-png
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/merger/csv-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/merger/csv-to-wmf
     </loc>
     <lastmod>2020-07-07</lastmod>
 		<priority>0.5</priority>
@@ -3519,20 +3421,6 @@
   </url>
   <url>
     <loc>
-      https://products.aspose.app/cells/merger/tsv-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/merger/tsv-to-wmf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
       https://products.aspose.app/cells/merger/tsv-to-svg
     </loc>
     <lastmod>2020-07-07</lastmod>
@@ -3681,20 +3569,6 @@
   <url>
     <loc>
       https://products.aspose.app/cells/merger/html-to-png
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/merger/html-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/merger/html-to-wmf
     </loc>
     <lastmod>2020-07-07</lastmod>
 		<priority>0.5</priority>
@@ -3855,20 +3729,6 @@
   </url>
   <url>
     <loc>
-      https://products.aspose.app/cells/merger/mht-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/merger/mht-to-wmf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
       https://products.aspose.app/cells/merger/mht-to-svg
     </loc>
     <lastmod>2020-07-07</lastmod>
@@ -4023,20 +3883,6 @@
   </url>
   <url>
     <loc>
-      https://products.aspose.app/cells/merger/mhtml-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/merger/mhtml-to-wmf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
       https://products.aspose.app/cells/merger/mhtml-to-svg
     </loc>
     <lastmod>2020-07-07</lastmod>
@@ -4177,20 +4023,6 @@
   </url>
   <url>
     <loc>
-      https://products.aspose.app/cells/merger/jpg-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/merger/jpg-to-wmf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
       https://products.aspose.app/cells/merger/jpg-to-svg
     </loc>
     <lastmod>2020-07-07</lastmod>
@@ -4318,20 +4150,6 @@
   <url>
     <loc>
       https://products.aspose.app/cells/merger/png-to-png
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/merger/png-to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/merger/png-to-wmf
     </loc>
     <lastmod>2020-07-07</lastmod>
 		<priority>0.5</priority>
@@ -4507,6 +4325,13 @@
     </loc>
     <lastmod>2020-07-07</lastmod>
 		<priority>1.0</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/editor/excel
+    </loc>
+    <lastmod>2021-02-22</lastmod>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>
@@ -4715,20 +4540,6 @@
   </url>
   <url>
     <loc>
-      https://products.aspose.app/cells/chart/emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/chart/wmf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
       https://products.aspose.app/cells/chart/svg
     </loc>
     <lastmod>2020-07-07</lastmod>
@@ -4772,20 +4583,6 @@
   <url>
     <loc>
       https://products.aspose.app/cells/chart/to-png
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/chart/to-emf
-    </loc>
-    <lastmod>2020-07-07</lastmod>
-		<priority>0.5</priority>
-  </url>
-  <url>
-    <loc>
-      https://products.aspose.app/cells/chart/to-wmf
     </loc>
     <lastmod>2020-07-07</lastmod>
 		<priority>0.5</priority>
@@ -4852,6 +4649,177 @@
       https://products.aspose.app/cells/protect/ods
     </loc>
     <lastmod>2020-07-22</lastmod>
+    <priority>0.5</priority>
+  </url>
+
+  <!--Translation URLs-->
+  <url>
+    <loc>
+      https://products.aspose.app/cells/translation
+    </loc>
+    <lastmod>2021-02-22</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/translation/excel
+    </loc>
+    <lastmod>2021-02-22</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/translation/xls
+    </loc>
+    <lastmod>2021-02-22</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/translation/xlsx
+    </loc>
+    <lastmod>2021-02-22</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/translation/xlsm
+    </loc>
+    <lastmod>2021-02-22</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/translation/xlsb
+    </loc>
+    <lastmod>2021-02-22</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/translation/ods
+    </loc>
+    <lastmod>2021-02-22</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/translation/csv
+    </loc>
+    <lastmod>2021-02-22</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/translation/tsv
+    </loc>
+    <lastmod>2021-02-22</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/translation/html
+    </loc>
+    <lastmod>2021-02-22</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/translation/mht
+    </loc>
+    <lastmod>2021-02-22</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/translation/mhtml
+    </loc>
+    <lastmod>2021-02-22</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <!--Comparison URLs-->
+  <url>
+    <loc>
+      https://products.aspose.app/cells/comparison
+    </loc>
+    <lastmod>2021-03-15</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/comparison/excel
+    </loc>
+    <lastmod>2021-03-15</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/comparison/xls
+    </loc>
+    <lastmod>2021-03-15</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/comparison/xlsx
+    </loc>
+    <lastmod>2021-03-15</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/comparison/xlsm
+    </loc>
+    <lastmod>2021-03-15</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/comparison/xlsb
+    </loc>
+    <lastmod>2021-03-15</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/comparison/ods
+    </loc>
+    <lastmod>2021-03-15</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/comparison/csv
+    </loc>
+    <lastmod>2021-03-15</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/comparison/tsv
+    </loc>
+    <lastmod>2021-03-15</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/comparison/html
+    </loc>
+    <lastmod>2021-03-15</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/comparison/mht
+    </loc>
+    <lastmod>2021-03-15</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>
+      https://products.aspose.app/cells/comparison/mhtml
+    </loc>
+    <lastmod>2021-03-15</lastmod>
     <priority>0.5</priority>
   </url>
 </urlset>

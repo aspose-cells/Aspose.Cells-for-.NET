@@ -12,10 +12,9 @@ namespace Aspose.Cells.UI.Models
         public string FolderId { get; set; }
         public long FileLength { get; set; }
 
-        public string DownloadURL()
+        public string DownloadUrl()
         {
             var url = new StringBuilder(Configuration.FileDownloadLink);
-
             url.Append("?FileName=");
             url.Append(HttpUtility.UrlPathEncode(FileName));
             url.Append("&Time=");

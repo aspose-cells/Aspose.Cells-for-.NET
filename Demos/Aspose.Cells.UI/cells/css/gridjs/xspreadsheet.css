@@ -1064,10 +1064,49 @@ form fieldset select {
 }
 .x-spreadsheet-icon .x-spreadsheet-icon-img.pagination {
   left: -108px;
-  top: -72px;
+  top: -54px;
 }
 .x-spreadsheet-icon .x-spreadsheet-icon-img.search {
   left: -144px;
   top: -54px;
+}
+.x-spreadsheet-formula-bar {
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  background: #f5f6f7;
+  border-bottom: 1px solid #e0e2e4;
+  display: flex;
+}
+.x-spreadsheet-bar-label {
+  flex: 0 0 auto;
+  display: inline-block;
+  width: 60px;
+  height: 100%;
+  box-sizing: border-box;
+  border-right: 1px solid #e0e2e4;
+  text-align: center;
+  line-height: inherit;
+  background-color: #fff;
+  color: #777;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 0 4px;
+}
+.x-spreadsheet-formula-input {
+  flex: auto;
+  padding: 4px 8px;
+  line-height: 17px;
+  font-size: 12px;
+  overflow-y: auto;
+  background: #fff;
+  border: none;
+  outline: none;
 }
 

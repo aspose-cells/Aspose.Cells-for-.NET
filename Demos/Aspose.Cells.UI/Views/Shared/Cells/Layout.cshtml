@@ -30,7 +30,7 @@
     <link href="https://cms.admin.containerize.com/templates/aspose/css/AsposePtyLtdMenu.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cms.admin.containerize.com/templates/aspose/css/font-awesome.css" type="text/css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://products.aspose.app/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="/cells/css/asposeapp.css" type="text/css" />
@@ -42,13 +42,13 @@
 
     @if (ViewBag.SaveAsComponent)
     {
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/select2@4.0.10/dist/css/select2.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/select2@4.0.10/dist/js/select2.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/css/select2.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.10/js/select2.full.min.js"></script>
     }
 
     @if (ViewBag.JsonLd != null)
     {
-        foreach (var item in ViewBag.JsonLd as List<string>)
+        foreach (string item in ViewBag.JsonLd as List<string>)
         {
             <script type="application/ld+json">
                 @Html.Raw(item)
@@ -90,12 +90,19 @@
 <div id='DynabicMenuFooter'></div>
 
 <script>
+    @*var url = window.location.href;
+    if (url.includes("zh."))
+        LoadMenu("AsposeApp", "Chinese");
+    else
+        LoadMenu("AsposeApp");
+    *@
     LoadMenu("AsposeApp");
 </script>
 
 @Scripts.Render("~/bundles/jquery")
 
-@Scripts.Render("~/cells/scripts/base.js")
+@* todo modify version *@
+@Scripts.Render("~/cells/scripts/base.js?v1.2.6")
 @Scripts.Render("~/cells/scripts/filedrop.js")
 
 @if (IsSectionDefined("scripts"))

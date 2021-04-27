@@ -16,6 +16,8 @@ namespace Aspose.Cells.API.Config
         private static string _forumCategoryId = ConfigurationManager.AppSettings["ForumCategoryId"];
         private static string _forumUrl = ConfigurationManager.AppSettings["ForumUrl"];
         private static string _forumKey = ConfigurationManager.AppSettings["ForumKey"];
+        private static string _fileCache = ConfigurationManager.AppSettings["FileCache"];
+        private static string _imageCache = ConfigurationManager.AppSettings["ImageCache"];
 
         /// <summary>
         /// Get Output Directory
@@ -49,5 +51,11 @@ namespace Aspose.Cells.API.Config
         public static string ForumUrl => _forumUrl;
 
         public static string ForumKey => _forumKey;
+
+        public static string FileCache => _fileCache;
+
+        public static string ImageCache => _imageCache;
+
+        public static string ProcessingTimedout => "Your file processing timed out";
     }
 }

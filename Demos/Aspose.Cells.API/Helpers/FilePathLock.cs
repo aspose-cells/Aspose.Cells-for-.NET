@@ -28,7 +28,7 @@ namespace Aspose.Cells.API.Helpers
         {
             private readonly Action dispose;
 
-            public void Dispose() => dispose();
+            public void Dispose() => this.dispose();
 
             public Disposable(Action dispose)
             {

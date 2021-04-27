@@ -54,11 +54,18 @@
     <TypeScriptMapRoot />
     <TypeScriptSourceRoot />
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release-Production|AnyCPU' ">
+    <MvcBuildViews>true</MvcBuildViews>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;NO_DATABASE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells.GridWeb, Version=20.6.0.0, Culture=neutral, PublicKeyToken=699ccf88ff76f11a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>GridWeb\Aspose.Cells.GridWeb.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.1.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
       <Private>True</Private>
@@ -118,6 +125,9 @@
     <Compile Include="Config\BaseRootPage.cs">
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="Config\BaseUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Config\Configuration.cs" />
     <Compile Include="Config\Context.cs" />
     <Compile Include="Config\EmailManager.cs" />
@@ -133,16 +143,15 @@
     <Compile Include="Models\DTO\SEOApi\FileFormat.cs" />
     <Compile Include="Models\DTO\SEOApi\GeneratedPage.cs" />
     <Compile Include="Models\DTO\SEOApi\ResourcesUsage.cs" />
-    <Compile Include="Models\DTO\SEOApi\SitemapUrl.cs" />
     <Compile Include="Models\ExtensionInfoModel.cs" />
     <Compile Include="Models\FileFormat.cs" />
-    <Compile Include="Models\FileManager.cs" />
     <Compile Include="Models\FileProcessingErrorCode.cs" />
     <Compile Include="Models\FileUploadResult.cs" />
     <Compile Include="Models\FlexibleResources.cs" />
     <Compile Include="Models\GeneratedPage.cs" />
     <Compile Include="Models\HowToModel.cs" />
     <Compile Include="Models\JSOptions.cs" />
+    <Compile Include="Models\Languages.cs" />
     <Compile Include="Models\OtherFeaturesItem.cs" />
     <Compile Include="Models\OtherFeaturesModel.cs" />
     <Compile Include="Models\Product.cs" />
@@ -152,6 +161,7 @@
     <Compile Include="Models\SEO\BreadcrumbForApps.cs" />
     <Compile Include="Models\SEO\HowTo.cs" />
     <Compile Include="Models\SEO\LocalBusiness.cs" />
+    <Compile Include="Models\SEO\OpenGraph.cs" />
     <Compile Include="Models\SEO\Organization.cs" />
     <Compile Include="Models\SEO\SeoElement.cs" />
     <Compile Include="Models\SEO\Service.cs" />
@@ -161,11 +171,10 @@
     <Compile Include="Models\UploadFileModel.cs" />
     <Compile Include="Models\ViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\BaseAPICacheService.cs" />
+    <Compile Include="Services\BaseApiCacheService.cs" />
     <Compile Include="Services\FileFormatService.cs" />
     <Compile Include="Services\GeneratedPagesService.cs" />
     <Compile Include="Services\ResourcesService.cs" />
-    <Compile Include="Services\SitemapService.cs" />
     <Compile Include="Default.aspx.cs">
       <SubType>ASPXCodeBehind</SubType>
       <DependentUpon>Default.aspx</DependentUpon>
@@ -176,6 +185,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\EmailTemplate.html" />
+    <Content Include="App_Data\file_format.json" />
+    <Content Include="App_Data\generated_pages.json" />
     <Content Include="App_Data\resources_EN.xml">
       <SubType>Designer</SubType>
     </Content>
@@ -183,6 +194,7 @@
     <Content Include="cells\Assembly\cellsHelpTemplate.html" />
     <Content Include="cells\Assembly\SampleTemplates\Data.xlsx" />
     <Content Include="cells\Assembly\SampleTemplates\Template.xlsx" />
+    <Content Include="cells\Comparison\index.html" />
     <Content Include="cells\Content\bootstrap-theme.css" />
     <Content Include="cells\Content\bootstrap-theme.css.map" />
     <Content Include="cells\Content\bootstrap-theme.min.css" />
@@ -246,6 +258,7 @@
     <Content Include="cells\img\apps\aspose_viewer-app.png" />
     <Content Include="cells\img\apps\aspose_watermark-app.png" />
     <Content Include="cells\img\apps\aspose_xfa-app.png" />
+    <Content Include="cells\img\apps\aspose_translation-app.png" />
     <Content Include="cells\img\aspose-cells-app.png" />
     <Content Include="cells\img\asposetools-logo.png" />
     <Content Include="cells\img\asposetools.png" />
@@ -324,7 +337,6 @@
     <Content Include="cells\img\quality.png" />
     <Content Include="cells\img\rotation.png" />
     <Content Include="cells\img\sprite_meta.png" />
-    <Content Include="cells\qi\config\icons.js" />
     <Content Include="cells\qi\css\addon\effect-light.min.css" />
     <Content Include="cells\qi\css\bootstrap-quantumui.css" />
     <Content Include="cells\qi\css\bootstrap-quantumui.css.map" />
@@ -333,11 +345,6 @@
     <Content Include="cells\qi\css\quantumui.css" />
     <Content Include="cells\qi\css\quantumui.css.map" />
     <Content Include="cells\qi\css\quantumui.min.css" />
-    <Content Include="cells\qi\doc\js\app.js" />
-    <Content Include="cells\qi\doc\js\custom.js" />
-    <Content Include="cells\qi\js\quantumui-all.js" />
-    <Content Include="cells\qi\js\quantumui-all.min.js" />
-    <Content Include="cells\qi\js\quantumui-all.min.js.map" />
     <Content Include="cells\qi\js\quantumui-nojq.js" />
     <Content Include="cells\qi\js\quantumui-nojq.min.js" />
     <Content Include="cells\qi\js\quantumui-nojq.min.js.map" />
@@ -358,8 +365,10 @@
     <Content Include="cells\scripts\filedrop.js" />
     <Content Include="cells\scripts\filedrop.min.js" />
     <Content Include="cells\scripts\GoogleDrive.js" />
+    <Content Include="cells\scripts\gridjs\grid-compare.js" />
     <Content Include="cells\scripts\gridjs\grid-edit.js" />
     <Content Include="cells\scripts\gridjs\grid-view.js" />
+    <Content Include="cells\scripts\gridjs\pako-2.0.3.min.js" />
     <Content Include="cells\scripts\gridjs\xspreadsheet.js" />
     <Content Include="cells\scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="cells\scripts\jquery-1.10.2.js" />
@@ -385,14 +394,21 @@
     <Content Include="Global.asax" />
     <Content Include="manifest_cells.json" />
     <Content Include="robots.txt" />
+    <Content Include="Aspose.Total.lic">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="App_Data\client_secret.json" />
     <None Include="cells\scripts\jquery-3.3.1.intellisense.js" />
     <None Include="cells\scripts\jquery.validate-vsdoc.js" />
+    <None Include="Properties\PublishProfiles\Release-Production-UI.pubxml" />
+    <None Include="Properties\PublishProfiles\Release-QA-UI.pubxml" />
     <Content Include="Default.aspx" />
     <Content Include="cells\sitemap.xml" />
     <Content Include="Views\Cells\Annotation.cshtml" />
     <Content Include="Views\Cells\Assembly.cshtml" />
     <Content Include="Views\Cells\Chart.cshtml" />
     <Content Include="Views\Cells\ChartControls.cshtml" />
+    <Content Include="Views\Cells\Comparison.cshtml" />
     <Content Include="Views\Cells\Conversion.cshtml" />
     <Content Include="Views\Cells\Editor.cshtml" />
     <Content Include="Views\Cells\Merger.cshtml" />
@@ -404,6 +420,7 @@
     <Content Include="Views\Cells\Search.cshtml" />
     <Content Include="Views\Cells\SearchControls.cshtml" />
     <Content Include="Views\Cells\Splitter.cshtml" />
+    <Content Include="Views\Cells\Translation.cshtml" />
     <Content Include="Views\Cells\Unlock.cshtml" />
     <Content Include="Views\Cells\UnlockControls.cshtml" />
     <Content Include="Views\Cells\Viewer.cshtml" />
@@ -413,6 +430,7 @@
     <Content Include="Views\Shared\Cells\ExtensionInfo.cshtml" />
     <Content Include="Views\Shared\Cells\FooterProduct.cshtml" />
     <Content Include="Views\Shared\Cells\HowTo.cshtml" />
+    <Content Include="Views\Shared\Cells\TranslateTo.cshtml" />
     <Content Include="Views\Shared\Cells\Layout.cshtml" />
     <Content Include="Views\Shared\Cells\Main.cshtml" />
     <Content Include="Views\Shared\Cells\MergeTo.cshtml" />
@@ -479,6 +497,16 @@
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-QA|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;NO_DATABASE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />

@@ -4,11 +4,11 @@
 
 <div class="col-md-12 pt-5 app-product-section tl" style="background-color:#d6d6d6;">
     <div class="container">
-        <h4 style="font-size:30px;font-weight:bold;margin-bottom: 0px;">
+        <h4 style="font-size:30px;font-weight:bold;margin-bottom: 0;">
             <span class="spanclass">
                 <img src="~/cells/img/aspose_cells-for-jasperreports.png" style="width:42px;height:42px;" alt="Aspose.Cells for .NET">
             </span>
-            @Html.Raw(Model.PageProductTitleURL) Excel @($"{Model.AppName}")
+            @Html.Raw(Model.PageProductTitleUrl) Excel @($"{Model.AppName}")
         </h4>
 
         <div class="">&nbsp;</div>
@@ -49,26 +49,26 @@
         <div class="container tc pt-5">
             <div class="col-md-4">
                 <div class="imgcircle fasteasy">
-                    <img src="/cells/img/fast-easy.png" alt="@Model.Resources[string.Format("{0}{1}Feature1", Model.Product, Model.AppName)]"/>
+                    <img src="/cells/img/fast-easy.png" alt="@Model.Resources[$"{Model.Product}{Model.AppName}Feature1"]"/>
                 </div>
-                <h4>@Model.Resources[string.Format("{0}{1}Feature1", Model.Product, Model.AppName)]</h4>
-                <p>@(Model.Resources[string.Format("{0}{1}Feature1Description", Model.Product, Model.AppName)]).</p>
+                <h4>@Model.Resources[$"{Model.Product}{Model.AppName}Feature1"]</h4>
+                <p>@(Model.Resources[$"{Model.Product}{Model.AppName}Feature1Description"]).</p>
             </div>
 
             <div class="col-md-4">
                 <div class="imgcircle anywhere">
-                    <img src="/cells/img/anywhere.png" alt="@Model.Resources[string.Format("{0}{1}Feature2", Model.Product, Model.AppName)]"/>
+                    <img src="/cells/img/anywhere.png" alt="@Model.Resources[$"{Model.Product}{Model.AppName}Feature2"]"/>
                 </div>
-                <h4>@Model.Resources[string.Format("{0}{1}Feature2", Model.Product, Model.AppName)]</h4>
-                <p>@(Model.Resources[string.Format("{0}{1}Feature2Description", Model.Product, Model.AppName)]).</p>
+                <h4>@Model.Resources[$"{Model.Product}{Model.AppName}Feature2"]</h4>
+                <p>@(Model.Resources[$"{Model.Product}{Model.AppName}Feature2Description"]).</p>
             </div>
 
             <div class="col-md-4">
                 <div class="imgcircle quality">
-                    <img src="/cells/img/quality.png" alt="@Model.Resources[string.Format("{0}{1}Feature3", Model.Product, Model.AppName)]"/>
+                    <img src="/cells/img/quality.png" alt="@Model.Resources[$"{Model.Product}{Model.AppName}Feature3"]"/>
                 </div>
-                <h4>@Model.Resources[string.Format("{0}Feature3", Model.AppName)]</h4>
-                <p>@Model.Resources["PoweredBy"] <a target="_blank" id="PoweredBy" href="@string.Format("https://products.aspose.com/{0}", Model.Product)" rel="noopener">@Model.PageProductTitle</a>@(Model.Resources["Feature3Description"]).</p>
+                <h4>@Model.Resources[$"{Model.AppName}Feature3"]</h4>
+                <p>@Model.Resources["PoweredBy"] <a target="_blank" id="PoweredBy" href="@($"https://products.aspose.com/{Model.Product}")" rel="noopener">@Model.PageProductTitle</a>@(Model.Resources["Feature3Description"]).</p>
             </div>
         </div>
     </div>

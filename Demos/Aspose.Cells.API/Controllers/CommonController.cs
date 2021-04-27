@@ -14,8 +14,6 @@ using Aspose.Cells.API.Helpers;
 using Aspose.Cells.API.Models;
 using Aspose.Cells.API.Services;
 using Newtonsoft.Json.Linq;
-using Tools.Foundation.Models;
-using File = System.IO.File;
 
 namespace Aspose.Cells.API.Controllers
 {
@@ -75,7 +73,7 @@ namespace Aspose.Cells.API.Controllers
         /// <returns>HTTP response with file.</returns>
         [ApiExplorerSettings(IgnoreApi = true)]
         [NonAction]
-        private HttpResponseMessage Download(string folder, string file)
+        private static HttpResponseMessage Download(string folder, string file)
         {
             var pathProcessor = new PathProcessor(folder, file);
             var stream = new FileStream(pathProcessor.DefaultOutFile, FileMode.Open, FileAccess.Read, FileShare.None, 4096, true);
@@ -95,23 +93,34 @@ namespace Aspose.Cells.API.Controllers
         /// <summary>
         /// Sends download url to specified email.
         /// </summary>
-        /// <param name="product">Product.</param>
         /// <param name="action">Action.</param>
         /// <param name="folder">Folder inside OutputDirectory.</param>
         /// <param name="file">File.</param>
         /// <param name="email">Email.</param>
         [ApiExplorerSettings(IgnoreApi = true)]
         [NonAction]
-        private string SendDownloadUrlToEmail(ProductFamilyNameKeysEnum product, string action, string folder, string file, string email)
+        private string SendDownloadUrlToEmail(string action, string folder, string file, string email)
         {
             throw new NotImplementedException("Too many dependencies from Resources. Need to refactor first.");
-        }
+            /*var pathProcessor = new PathProcessor(folder, file: file);
 
-        /// <summary>
-        /// Default constructor.
-        /// </summary>
-        public CommonController() : base(ProductFamilyNameKeysEnum.unassigned)
-        {
+            var url = this.Url?.Link(
+                "DefaultApi",
+                new
+                {
+                    Controller = nameof(CommonController),
+                    Action = nameof(Download),
+                    folder,
+                    file
+                }
+            ) ?? "localhostUrl";
+
+            var productTitle = Resources[$"{product}{action}Title"];
+            var successMessage = Resources[$"{action}SuccessMessage"];
+
+            var emailBody = EmailManager.PopulateBody(productTitle, url, successMessage);
+            EmailManager.SendEmail(email, Configuration.FromEmailAddress, Resources["EmailTitle"], emailBody, "");
+            return Resources["SendEmailToDownloadLink"];*/
         }
 
         /// <summary>
@@ -170,7 +179,6 @@ namespace Aspose.Cells.API.Controllers
         /// <summary>
         /// Sends download url to specified email.
         /// </summary>
-        /// <param name="product">Product.</param>
         /// <param name="action">Action.</param>
         /// <param name="id">Download id.</param>
         /// <param name="file">File name.</param>
@@ -178,7 +186,7 @@ namespace Aspose.Cells.API.Controllers
         [MimeMultipart]
         [HttpPost]
         [ActionName("UrlToEmail")]
-        public void UrlToEmail(ProductFamilyNameKeysEnum product, string action, string id, string file, string email) => SendDownloadUrlToEmail(product, action, id, file, email);
+        public void UrlToEmail(string action, string id, string file, string email) => SendDownloadUrlToEmail(action, id, file, email);
 
         /// <summary>
         /// Test fail inside controller.

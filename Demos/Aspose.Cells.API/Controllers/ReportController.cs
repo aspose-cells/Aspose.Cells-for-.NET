@@ -14,21 +14,19 @@ namespace Aspose.Cells.API.Controllers
         {
             try
             {
-                return ReportService.Submit(model);
+                return await Task.Run(() => ReportService.Submit(model));
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                NLogger.LogError(ex, "Report Error Forum");
+                var exception = e.InnerException ?? e;
+                NLogger.LogError("Report", "Error", exception.Message, "null");
+
                 return new ReportResult
                 {
                     StatusCode = 500,
-                    Status = ex.Message
+                    Status = exception.Message
                 };
             }
-        }
-
-        public ReportController() : base(ProductFamilyNameKeysEnum.unassigned)
-        {
         }
     }
 }

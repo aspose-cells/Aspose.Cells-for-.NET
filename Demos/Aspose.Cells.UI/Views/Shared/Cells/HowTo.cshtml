@@ -12,7 +12,7 @@
                 <ul>
                     @foreach (var el in Model.List)
                     {
-                        <li>@el.Text</li>
+                    <li>@Html.Raw(@el.Text)</li>
                     }
                 </ul>
             </div>

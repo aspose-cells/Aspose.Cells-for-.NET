@@ -19,6 +19,8 @@ namespace Aspose.Cells.API
         ///</Summary>
         protected void Application_Start()
         {
+            //License awLic = new License();
+            //awLic.SetLicense("Aspose.Total.lic");
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11;
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
@@ -30,13 +32,7 @@ namespace Aspose.Cells.API
         private void Application_Error(object sender, EventArgs e)
         {
             var ex = ((HttpApplication) sender).Context.Error;
-            NLogger.LogError(
-                ex,
-                $"ControllerName = {nameof(WebApiApplication)}, MethodName = {nameof(Application_Error)}",
-                "",
-                ProductFamilyNameKeysEnum.unassigned,
-                ""
-            );
+            NLogger.LogError(ex.Message + "\n" + ex.StackTrace);
         }
     }
 }

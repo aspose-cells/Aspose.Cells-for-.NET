@@ -1,0 +1,4955 @@
+﻿[
+  {
+    "Url": "/cells/conversion/xlsx-to-pdf",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to PDF",
+    "Extension1": "xlsx",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-xls",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to XLS",
+    "Extension1": "xlsx",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-xlsm",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to XLSM",
+    "Extension1": "xlsx",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-xlsb",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to XLSB",
+    "Extension1": "xlsx",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-ods",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to ODS",
+    "Extension1": "xlsx",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-csv",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to CSV",
+    "Extension1": "xlsx",
+    "Extension2": "csv"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-tsv",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to TSV",
+    "Extension1": "xlsx",
+    "Extension2": "tsv"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-html",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to HTML",
+    "Extension1": "xlsx",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-bmp",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to BMP",
+    "Extension1": "xlsx",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-jpg",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to JPG",
+    "Extension1": "xlsx",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-png",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to PNG",
+    "Extension1": "xlsx",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-emf",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to EMF",
+    "Extension1": "xlsx",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-wmf",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to WMF",
+    "Extension1": "xlsx",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-svg",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to SVG",
+    "Extension1": "xlsx",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-tiff",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to TIFF",
+    "Extension1": "xlsx",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-xps",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to XPS",
+    "Extension1": "xlsx",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-mhtml",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to MHTML",
+    "Extension1": "xlsx",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-md",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to MD",
+    "Extension1": "xlsx",
+    "Extension2": "md"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-word",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to WORD",
+    "Extension1": "xlsx",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-docx",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to DOCX",
+    "Extension1": "xlsx",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-ppt",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to PPT",
+    "Extension1": "xlsx",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-pptx",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to PPTX",
+    "Extension1": "xlsx",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/conversion/xlsx-to-powerpoint",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSX to POWERPOINT",
+    "Extension1": "xlsx",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-pdf",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to PDF",
+    "Extension1": "xls",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-xlsx",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to XLSX",
+    "Extension1": "xls",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-xlsm",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to XLSM",
+    "Extension1": "xls",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-xlsb",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to XLSB",
+    "Extension1": "xls",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-ods",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to ODS",
+    "Extension1": "xls",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-csv",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to CSV",
+    "Extension1": "xls",
+    "Extension2": "csv"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-tsv",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to TSV",
+    "Extension1": "xls",
+    "Extension2": "tsv"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-html",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to HTML",
+    "Extension1": "xls",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-bmp",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to BMP",
+    "Extension1": "xls",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-jpg",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to JPG",
+    "Extension1": "xls",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-png",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to PNG",
+    "Extension1": "xls",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-emf",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to EMF",
+    "Extension1": "xls",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-wmf",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to WMF",
+    "Extension1": "xls",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-svg",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to SVG",
+    "Extension1": "xls",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-tiff",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to TIFF",
+    "Extension1": "xls",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-xps",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to XPS",
+    "Extension1": "xls",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-mhtml",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to MHTML",
+    "Extension1": "xls",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-md",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to MD",
+    "Extension1": "xls",
+    "Extension2": "md"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-word",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to WORD",
+    "Extension1": "xls",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-docx",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to DOCX",
+    "Extension1": "xls",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-ppt",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to PPT",
+    "Extension1": "xls",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-pptx",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to PPTX",
+    "Extension1": "xls",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/conversion/xls-to-powerpoint",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLS to POWERPOINT",
+    "Extension1": "xls",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-pdf",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to PDF",
+    "Extension1": "xlsm",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-xls",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to XLS",
+    "Extension1": "xlsm",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-xlsx",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to XLSX",
+    "Extension1": "xlsm",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-xlsb",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to XLSB",
+    "Extension1": "xlsm",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-ods",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to ODS",
+    "Extension1": "xlsm",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-csv",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to CSV",
+    "Extension1": "xlsm",
+    "Extension2": "csv"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-tsv",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to TSV",
+    "Extension1": "xlsm",
+    "Extension2": "tsv"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-html",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to HTML",
+    "Extension1": "xlsm",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-bmp",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to BMP",
+    "Extension1": "xlsm",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-jpg",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to JPG",
+    "Extension1": "xlsm",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-png",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to PNG",
+    "Extension1": "xlsm",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-emf",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to EMF",
+    "Extension1": "xlsm",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-wmf",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to WMF",
+    "Extension1": "xlsm",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-svg",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to SVG",
+    "Extension1": "xlsm",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-tiff",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to TIFF",
+    "Extension1": "xlsm",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-xps",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to XPS",
+    "Extension1": "xlsm",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-mhtml",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to MHTML",
+    "Extension1": "xlsm",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-md",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to MD",
+    "Extension1": "xlsm",
+    "Extension2": "md"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-word",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to WORD",
+    "Extension1": "xlsm",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-docx",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to DOCX",
+    "Extension1": "xlsm",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-ppt",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to PPT",
+    "Extension1": "xlsm",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-pptx",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to PPTX",
+    "Extension1": "xlsm",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/conversion/xlsm-to-powerpoint",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSM to POWERPOINT",
+    "Extension1": "xlsm",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-pdf",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to PDF",
+    "Extension1": "xlsb",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-xls",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to XLS",
+    "Extension1": "xlsb",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-xlsx",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to XLSX",
+    "Extension1": "xlsb",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-xlsm",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to XLSM",
+    "Extension1": "xlsb",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-ods",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to ODS",
+    "Extension1": "xlsb",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-csv",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to CSV",
+    "Extension1": "xlsb",
+    "Extension2": "csv"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-tsv",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to TSV",
+    "Extension1": "xlsb",
+    "Extension2": "tsv"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-html",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to HTML",
+    "Extension1": "xlsb",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-bmp",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to BMP",
+    "Extension1": "xlsb",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-jpg",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to JPG",
+    "Extension1": "xlsb",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-png",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to PNG",
+    "Extension1": "xlsb",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-emf",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to EMF",
+    "Extension1": "xlsb",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-wmf",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to WMF",
+    "Extension1": "xlsb",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-svg",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to SVG",
+    "Extension1": "xlsb",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-tiff",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to TIFF",
+    "Extension1": "xlsb",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-xps",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to XPS",
+    "Extension1": "xlsb",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-mhtml",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to MHTML",
+    "Extension1": "xlsb",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-md",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to MD",
+    "Extension1": "xlsb",
+    "Extension2": "md"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-word",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to WORD",
+    "Extension1": "xlsb",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-docx",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to DOCX",
+    "Extension1": "xlsb",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-ppt",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to PPT",
+    "Extension1": "xlsb",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-pptx",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to PPTX",
+    "Extension1": "xlsb",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/conversion/xlsb-to-powerpoint",
+    "AppUrl": "/cells/conversion",
+    "Name": "XLSB to POWERPOINT",
+    "Extension1": "xlsb",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-pdf",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to PDF",
+    "Extension1": "ods",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-xls",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to XLS",
+    "Extension1": "ods",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-xlsx",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to XLSX",
+    "Extension1": "ods",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-xlsm",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to XLSM",
+    "Extension1": "ods",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-xlsb",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to XLSB",
+    "Extension1": "ods",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-csv",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to CSV",
+    "Extension1": "ods",
+    "Extension2": "csv"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-tsv",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to TSV",
+    "Extension1": "ods",
+    "Extension2": "tsv"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-html",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to HTML",
+    "Extension1": "ods",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-bmp",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to BMP",
+    "Extension1": "ods",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-jpg",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to JPG",
+    "Extension1": "ods",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-png",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to PNG",
+    "Extension1": "ods",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-emf",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to EMF",
+    "Extension1": "ods",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-wmf",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to WMF",
+    "Extension1": "ods",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-svg",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to SVG",
+    "Extension1": "ods",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-tiff",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to TIFF",
+    "Extension1": "ods",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-xps",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to XPS",
+    "Extension1": "ods",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-mhtml",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to MHTML",
+    "Extension1": "ods",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-md",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to MD",
+    "Extension1": "ods",
+    "Extension2": "md"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-word",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to WORD",
+    "Extension1": "ods",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-docx",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to DOCX",
+    "Extension1": "ods",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-ppt",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to PPT",
+    "Extension1": "ods",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-pptx",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to PPTX",
+    "Extension1": "ods",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/conversion/ods-to-powerpoint",
+    "AppUrl": "/cells/conversion",
+    "Name": "ODS to POWERPOINT",
+    "Extension1": "ods",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-pdf",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to PDF",
+    "Extension1": "csv",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-xls",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to XLS",
+    "Extension1": "csv",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-xlsx",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to XLSX",
+    "Extension1": "csv",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-xlsm",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to XLSM",
+    "Extension1": "csv",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-xlsb",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to XLSB",
+    "Extension1": "csv",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-ods",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to ODS",
+    "Extension1": "csv",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-tsv",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to TSV",
+    "Extension1": "csv",
+    "Extension2": "tsv"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-html",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to HTML",
+    "Extension1": "csv",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-bmp",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to BMP",
+    "Extension1": "csv",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-jpg",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to JPG",
+    "Extension1": "csv",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-png",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to PNG",
+    "Extension1": "csv",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-emf",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to EMF",
+    "Extension1": "csv",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-wmf",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to WMF",
+    "Extension1": "csv",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-svg",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to SVG",
+    "Extension1": "csv",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-tiff",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to TIFF",
+    "Extension1": "csv",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-xps",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to XPS",
+    "Extension1": "csv",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-mhtml",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to MHTML",
+    "Extension1": "csv",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-md",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to MD",
+    "Extension1": "csv",
+    "Extension2": "md"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-word",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to WORD",
+    "Extension1": "csv",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-docx",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to DOCX",
+    "Extension1": "csv",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-ppt",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to PPT",
+    "Extension1": "csv",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-pptx",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to PPTX",
+    "Extension1": "csv",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/conversion/csv-to-powerpoint",
+    "AppUrl": "/cells/conversion",
+    "Name": "CSV to POWERPOINT",
+    "Extension1": "csv",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-pdf",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to PDF",
+    "Extension1": "tsv",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-xls",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to XLS",
+    "Extension1": "tsv",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-xlsx",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to XLSX",
+    "Extension1": "tsv",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-xlsm",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to XLSM",
+    "Extension1": "tsv",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-xlsb",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to XLSB",
+    "Extension1": "tsv",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-ods",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to ODS",
+    "Extension1": "tsv",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-csv",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to CSV",
+    "Extension1": "tsv",
+    "Extension2": "csv"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-html",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to HTML",
+    "Extension1": "tsv",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-bmp",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to BMP",
+    "Extension1": "tsv",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-jpg",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to JPG",
+    "Extension1": "tsv",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-png",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to PNG",
+    "Extension1": "tsv",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-emf",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to EMF",
+    "Extension1": "tsv",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-wmf",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to WMF",
+    "Extension1": "tsv",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-svg",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to SVG",
+    "Extension1": "tsv",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-tiff",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to TIFF",
+    "Extension1": "tsv",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-xps",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to XPS",
+    "Extension1": "tsv",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-mhtml",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to MHTML",
+    "Extension1": "tsv",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-md",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to MD",
+    "Extension1": "tsv",
+    "Extension2": "md"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-word",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to WORD",
+    "Extension1": "tsv",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-docx",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to DOCX",
+    "Extension1": "tsv",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-ppt",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to PPT",
+    "Extension1": "tsv",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-pptx",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to PPTX",
+    "Extension1": "tsv",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/conversion/tsv-to-powerpoint",
+    "AppUrl": "/cells/conversion",
+    "Name": "TSV to POWERPOINT",
+    "Extension1": "tsv",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/conversion/html-to-pdf",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to PDF",
+    "Extension1": "html",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/conversion/html-to-xls",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to XLS",
+    "Extension1": "html",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/conversion/html-to-xlsx",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to XLSX",
+    "Extension1": "html",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/conversion/html-to-xlsm",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to XLSM",
+    "Extension1": "html",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/conversion/html-to-xlsb",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to XLSB",
+    "Extension1": "html",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/conversion/html-to-ods",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to ODS",
+    "Extension1": "html",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/conversion/html-to-csv",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to CSV",
+    "Extension1": "html",
+    "Extension2": "csv"
+  },
+  {
+    "Url": "/cells/conversion/html-to-tsv",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to TSV",
+    "Extension1": "html",
+    "Extension2": "tsv"
+  },
+  {
+    "Url": "/cells/conversion/html-to-bmp",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to BMP",
+    "Extension1": "html",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/conversion/html-to-jpg",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to JPG",
+    "Extension1": "html",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/conversion/html-to-png",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to PNG",
+    "Extension1": "html",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/conversion/html-to-emf",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to EMF",
+    "Extension1": "html",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/conversion/html-to-wmf",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to WMF",
+    "Extension1": "html",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/conversion/html-to-svg",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to SVG",
+    "Extension1": "html",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/conversion/html-to-tiff",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to TIFF",
+    "Extension1": "html",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/conversion/html-to-xps",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to XPS",
+    "Extension1": "html",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/conversion/html-to-mhtml",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to MHTML",
+    "Extension1": "html",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/conversion/html-to-md",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to MD",
+    "Extension1": "html",
+    "Extension2": "md"
+  },
+  {
+    "Url": "/cells/conversion/html-to-word",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to WORD",
+    "Extension1": "html",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/conversion/html-to-docx",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to DOCX",
+    "Extension1": "html",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/conversion/html-to-ppt",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to PPT",
+    "Extension1": "html",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/conversion/html-to-pptx",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to PPTX",
+    "Extension1": "html",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/conversion/html-to-powerpoint",
+    "AppUrl": "/cells/conversion",
+    "Name": "HTML to POWERPOINT",
+    "Extension1": "html",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-pdf",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to PDF",
+    "Extension1": "mht",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-xls",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to XLS",
+    "Extension1": "mht",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-xlsx",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to XLSX",
+    "Extension1": "mht",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-xlsm",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to XLSM",
+    "Extension1": "mht",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-xlsb",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to XLSB",
+    "Extension1": "mht",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-ods",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to ODS",
+    "Extension1": "mht",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-csv",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to CSV",
+    "Extension1": "mht",
+    "Extension2": "csv"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-tsv",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to TSV",
+    "Extension1": "mht",
+    "Extension2": "tsv"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-html",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to HTML",
+    "Extension1": "mht",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-bmp",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to BMP",
+    "Extension1": "mht",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-jpg",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to JPG",
+    "Extension1": "mht",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-png",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to PNG",
+    "Extension1": "mht",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-emf",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to EMF",
+    "Extension1": "mht",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-wmf",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to WMF",
+    "Extension1": "mht",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-svg",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to SVG",
+    "Extension1": "mht",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-tiff",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to TIFF",
+    "Extension1": "mht",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-xps",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to XPS",
+    "Extension1": "mht",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-mhtml",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to MHTML",
+    "Extension1": "mht",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-md",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to MD",
+    "Extension1": "mht",
+    "Extension2": "md"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-word",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to WORD",
+    "Extension1": "mht",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-docx",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to DOCX",
+    "Extension1": "mht",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-ppt",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to PPT",
+    "Extension1": "mht",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-pptx",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to PPTX",
+    "Extension1": "mht",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/conversion/mht-to-powerpoint",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHT to POWERPOINT",
+    "Extension1": "mht",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-pdf",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to PDF",
+    "Extension1": "mhtml",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-xls",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to XLS",
+    "Extension1": "mhtml",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-xlsx",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to XLSX",
+    "Extension1": "mhtml",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-xlsm",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to XLSM",
+    "Extension1": "mhtml",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-xlsb",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to XLSB",
+    "Extension1": "mhtml",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-ods",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to ODS",
+    "Extension1": "mhtml",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-csv",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to CSV",
+    "Extension1": "mhtml",
+    "Extension2": "csv"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-tsv",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to TSV",
+    "Extension1": "mhtml",
+    "Extension2": "tsv"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-html",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to HTML",
+    "Extension1": "mhtml",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-bmp",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to BMP",
+    "Extension1": "mhtml",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-jpg",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to JPG",
+    "Extension1": "mhtml",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-png",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to PNG",
+    "Extension1": "mhtml",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-emf",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to EMF",
+    "Extension1": "mhtml",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-wmf",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to WMF",
+    "Extension1": "mhtml",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-svg",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to SVG",
+    "Extension1": "mhtml",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-tiff",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to TIFF",
+    "Extension1": "mhtml",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-xps",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to XPS",
+    "Extension1": "mhtml",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-md",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to MD",
+    "Extension1": "mhtml",
+    "Extension2": "md"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-word",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to WORD",
+    "Extension1": "mhtml",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-docx",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to DOCX",
+    "Extension1": "mhtml",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-ppt",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to PPT",
+    "Extension1": "mhtml",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-pptx",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to PPTX",
+    "Extension1": "mhtml",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/conversion/mhtml-to-powerpoint",
+    "AppUrl": "/cells/conversion",
+    "Name": "MHTML to POWERPOINT",
+    "Extension1": "mhtml",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/conversion/excel-to-pdf",
+    "AppUrl": "/cells/conversion",
+    "Name": "EXCEL to PDF",
+    "Extension1": "excel",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/conversion/excel-to-ods",
+    "AppUrl": "/cells/conversion",
+    "Name": "EXCEL to ODS",
+    "Extension1": "excel",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/conversion/excel-to-csv",
+    "AppUrl": "/cells/conversion",
+    "Name": "EXCEL to CSV",
+    "Extension1": "excel",
+    "Extension2": "csv"
+  },
+  {
+    "Url": "/cells/conversion/excel-to-tsv",
+    "AppUrl": "/cells/conversion",
+    "Name": "EXCEL to TSV",
+    "Extension1": "excel",
+    "Extension2": "tsv"
+  },
+  {
+    "Url": "/cells/conversion/excel-to-html",
+    "AppUrl": "/cells/conversion",
+    "Name": "EXCEL to HTML",
+    "Extension1": "excel",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/conversion/excel-to-bmp",
+    "AppUrl": "/cells/conversion",
+    "Name": "EXCEL to BMP",
+    "Extension1": "excel",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/conversion/excel-to-jpg",
+    "AppUrl": "/cells/conversion",
+    "Name": "EXCEL to JPG",
+    "Extension1": "excel",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/conversion/excel-to-png",
+    "AppUrl": "/cells/conversion",
+    "Name": "EXCEL to PNG",
+    "Extension1": "excel",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/conversion/excel-to-svg",
+    "AppUrl": "/cells/conversion",
+    "Name": "EXCEL to SVG",
+    "Extension1": "excel",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/conversion/excel-to-tiff",
+    "AppUrl": "/cells/conversion",
+    "Name": "EXCEL to TIFF",
+    "Extension1": "excel",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/conversion/excel-to-xps",
+    "AppUrl": "/cells/conversion",
+    "Name": "EXCEL to XPS",
+    "Extension1": "excel",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/conversion/excel-to-mhtml",
+    "AppUrl": "/cells/conversion",
+    "Name": "EXCEL to MHTML",
+    "Extension1": "excel",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/conversion/excel-to-md",
+    "AppUrl": "/cells/conversion",
+    "Name": "EXCEL to MD",
+    "Extension1": "excel",
+    "Extension2": "md"
+  },
+  {
+    "Url": "/cells/conversion/excel-to-word",
+    "AppUrl": "/cells/conversion",
+    "Name": "EXCEL to WORD",
+    "Extension1": "excel",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/conversion/excel-to-docx",
+    "AppUrl": "/cells/conversion",
+    "Name": "EXCEL to DOCX",
+    "Extension1": "excel",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/conversion/excel-to-ppt",
+    "AppUrl": "/cells/conversion",
+    "Name": "EXCEL to PPT",
+    "Extension1": "excel",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/conversion/excel-to-pptx",
+    "AppUrl": "/cells/conversion",
+    "Name": "EXCEL to PPTX",
+    "Extension1": "excel",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/conversion/excel-to-powerpoint",
+    "AppUrl": "/cells/conversion",
+    "Name": "EXCEL to POWERPOINT",
+    "Extension1": "excel",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/conversion/jpeg-to-pdf",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPEG to PDF",
+    "Extension1": "jpeg",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/conversion/jpeg-to-xls",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPEG to XLS",
+    "Extension1": "jpeg",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/conversion/jpeg-to-excel",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPEG to EXCEL",
+    "Extension1": "jpeg",
+    "Extension2": "excel"
+  },
+  {
+    "Url": "/cells/conversion/jpeg-to-xlsx",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPEG to XLSX",
+    "Extension1": "jpeg",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/conversion/jpeg-to-xlsm",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPEG to XLSM",
+    "Extension1": "jpeg",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/conversion/jpeg-to-xlsb",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPEG to XLSB",
+    "Extension1": "jpeg",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/conversion/jpeg-to-ods",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPEG to ODS",
+    "Extension1": "jpeg",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/conversion/jpeg-to-html",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPEG to HTML",
+    "Extension1": "jpeg",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/conversion/jpeg-to-bmp",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPEG to BMP",
+    "Extension1": "jpeg",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/conversion/jpeg-to-png",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPEG to PNG",
+    "Extension1": "jpeg",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/conversion/jpeg-to-emf",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPEG to EMF",
+    "Extension1": "jpeg",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/conversion/jpeg-to-wmf",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPEG to WMF",
+    "Extension1": "jpeg",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/conversion/jpeg-to-svg",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPEG to SVG",
+    "Extension1": "jpeg",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/conversion/jpeg-to-tiff",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPEG to TIFF",
+    "Extension1": "jpeg",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/conversion/jpeg-to-xps",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPEG to XPS",
+    "Extension1": "jpeg",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/conversion/jpeg-to-mhtml",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPEG to MHTML",
+    "Extension1": "jpeg",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/conversion/jpeg-to-word",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPEG to WORD",
+    "Extension1": "jpeg",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/conversion/jpeg-to-docx",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPEG to DOCX",
+    "Extension1": "jpeg",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/conversion/jpeg-to-ppt",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPEG to PPT",
+    "Extension1": "jpeg",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/conversion/jpeg-to-pptx",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPEG to PPTX",
+    "Extension1": "jpeg",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/conversion/jpeg-to-powerpoint",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPEG to POWERPOINT",
+    "Extension1": "jpeg",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/conversion/jpg-to-pdf",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPG to PDF",
+    "Extension1": "jpg",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/conversion/jpg-to-xls",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPG to XLS",
+    "Extension1": "jpg",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/conversion/jpg-to-excel",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPG to EXCEL",
+    "Extension1": "jpg",
+    "Extension2": "excel"
+  },
+  {
+    "Url": "/cells/conversion/jpg-to-xlsx",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPG to XLSX",
+    "Extension1": "jpg",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/conversion/jpg-to-xlsm",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPG to XLSM",
+    "Extension1": "jpg",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/conversion/jpg-to-xlsb",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPG to XLSB",
+    "Extension1": "jpg",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/conversion/jpg-to-ods",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPG to ODS",
+    "Extension1": "jpg",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/conversion/jpg-to-html",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPG to HTML",
+    "Extension1": "jpg",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/conversion/jpg-to-bmp",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPG to BMP",
+    "Extension1": "jpg",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/conversion/jpg-to-png",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPG to PNG",
+    "Extension1": "jpg",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/conversion/jpg-to-emf",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPG to EMF",
+    "Extension1": "jpg",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/conversion/jpg-to-wmf",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPG to WMF",
+    "Extension1": "jpg",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/conversion/jpg-to-svg",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPG to SVG",
+    "Extension1": "jpg",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/conversion/jpg-to-tiff",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPG to TIFF",
+    "Extension1": "jpg",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/conversion/jpg-to-xps",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPG to XPS",
+    "Extension1": "jpg",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/conversion/jpg-to-mhtml",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPG to MHTML",
+    "Extension1": "jpg",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/conversion/jpg-to-word",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPG to WORD",
+    "Extension1": "jpg",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/conversion/jpg-to-docx",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPG to DOCX",
+    "Extension1": "jpg",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/conversion/jpg-to-ppt",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPG to PPT",
+    "Extension1": "jpg",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/conversion/jpg-to-pptx",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPG to PPTX",
+    "Extension1": "jpg",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/conversion/jpg-to-powerpoint",
+    "AppUrl": "/cells/conversion",
+    "Name": "JPG to POWERPOINT",
+    "Extension1": "jpg",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/conversion/png-to-pdf",
+    "AppUrl": "/cells/conversion",
+    "Name": "PNG to PDF",
+    "Extension1": "png",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/conversion/png-to-xls",
+    "AppUrl": "/cells/conversion",
+    "Name": "PNG to XLS",
+    "Extension1": "png",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/conversion/png-to-excel",
+    "AppUrl": "/cells/conversion",
+    "Name": "PNG to EXCEL",
+    "Extension1": "png",
+    "Extension2": "excel"
+  },
+  {
+    "Url": "/cells/conversion/png-to-xlsx",
+    "AppUrl": "/cells/conversion",
+    "Name": "PNG to XLSX",
+    "Extension1": "png",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/conversion/png-to-xlsm",
+    "AppUrl": "/cells/conversion",
+    "Name": "PNG to XLSM",
+    "Extension1": "png",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/conversion/png-to-xlsb",
+    "AppUrl": "/cells/conversion",
+    "Name": "PNG to XLSB",
+    "Extension1": "png",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/conversion/png-to-ods",
+    "AppUrl": "/cells/conversion",
+    "Name": "PNG to ODS",
+    "Extension1": "png",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/conversion/png-to-html",
+    "AppUrl": "/cells/conversion",
+    "Name": "PNG to HTML",
+    "Extension1": "png",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/conversion/png-to-bmp",
+    "AppUrl": "/cells/conversion",
+    "Name": "PNG to BMP",
+    "Extension1": "png",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/conversion/png-to-jpg",
+    "AppUrl": "/cells/conversion",
+    "Name": "PNG to JPG",
+    "Extension1": "png",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/conversion/png-to-emf",
+    "AppUrl": "/cells/conversion",
+    "Name": "PNG to EMF",
+    "Extension1": "png",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/conversion/png-to-wmf",
+    "AppUrl": "/cells/conversion",
+    "Name": "PNG to WMF",
+    "Extension1": "png",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/conversion/png-to-svg",
+    "AppUrl": "/cells/conversion",
+    "Name": "PNG to SVG",
+    "Extension1": "png",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/conversion/png-to-tiff",
+    "AppUrl": "/cells/conversion",
+    "Name": "PNG to TIFF",
+    "Extension1": "png",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/conversion/png-to-xps",
+    "AppUrl": "/cells/conversion",
+    "Name": "PNG to XPS",
+    "Extension1": "png",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/conversion/png-to-mhtml",
+    "AppUrl": "/cells/conversion",
+    "Name": "PNG to MHTML",
+    "Extension1": "png",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/conversion/png-to-word",
+    "AppUrl": "/cells/conversion",
+    "Name": "PNG to WORD",
+    "Extension1": "png",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/conversion/png-to-docx",
+    "AppUrl": "/cells/conversion",
+    "Name": "PNG to DOCX",
+    "Extension1": "png",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/conversion/png-to-ppt",
+    "AppUrl": "/cells/conversion",
+    "Name": "PNG to PPT",
+    "Extension1": "png",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/conversion/png-to-pptx",
+    "AppUrl": "/cells/conversion",
+    "Name": "PNG to PPTX",
+    "Extension1": "png",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/conversion/png-to-powerpoint",
+    "AppUrl": "/cells/conversion",
+    "Name": "PNG to POWERPOINT",
+    "Extension1": "png",
+    "Extension2": "powerpoint"
+  },
+
+  {
+    "Url": "/cells/viewer/excel",
+    "AppUrl": "/cells/viewer",
+    "Extension1": "excel",
+    "Name": "EXCEL Viewer"
+  },
+  {
+    "Url": "/cells/viewer/xls",
+    "AppUrl": "/cells/viewer",
+    "Extension1": "xls",
+    "Name": "XLS Viewer"
+  },
+  {
+    "Url": "/cells/viewer/xlsx",
+    "AppUrl": "/cells/viewer",
+    "Extension1": "xlsx",
+    "Name": "XLSX Viewer"
+  },
+  {
+    "Url": "/cells/viewer/xlsm",
+    "AppUrl": "/cells/viewer",
+    "Extension1": "xlsm",
+    "Name": "XLSM Viewer"
+  },
+  {
+    "Url": "/cells/viewer/xlsb",
+    "AppUrl": "/cells/viewer",
+    "Extension1": "xlsb",
+    "Name": "XLSB Viewer"
+  },
+  {
+    "Url": "/cells/viewer/ods",
+    "AppUrl": "/cells/viewer",
+    "Extension1": "ods",
+    "Name": "ODS Viewer"
+  },
+  {
+    "Url": "/cells/viewer/csv",
+    "AppUrl": "/cells/viewer",
+    "Extension1": "csv",
+    "Name": "CSV Viewer"
+  },
+  {
+    "Url": "/cells/viewer/tsv",
+    "AppUrl": "/cells/viewer",
+    "Extension1": "tsv",
+    "Name": "TSV Viewer"
+  },
+  {
+    "Url": "/cells/viewer/html",
+    "AppUrl": "/cells/viewer",
+    "Extension1": "html",
+    "Name": "HTML Viewer"
+  },
+  {
+    "Url": "/cells/viewer/mht",
+    "AppUrl": "/cells/viewer",
+    "Extension1": "mht",
+    "Name": "MHT Viewer"
+  },
+  {
+    "Url": "/cells/viewer/mhtml",
+    "AppUrl": "/cells/viewer",
+    "Extension1": "mhtml",
+    "Name": "MHTML Viewer"
+  },
+
+  {
+    "Url": "/cells/metadata/xls",
+    "AppUrl": "/cells/metadata",
+    "Extension1": "xls",
+    "Name": "XLS Metadata"
+  },
+  {
+    "Url": "/cells/metadata/xlsx",
+    "AppUrl": "/cells/metadata",
+    "Extension1": "xlsx",
+    "Name": "XLSX Metadata"
+  },
+  {
+    "Url": "/cells/metadata/xlsm",
+    "AppUrl": "/cells/metadata",
+    "Extension1": "xlsm",
+    "Name": "XLSM Metadata"
+  },
+  {
+    "Url": "/cells/metadata/xlsb",
+    "AppUrl": "/cells/metadata",
+    "Extension1": "xlsb",
+    "Name": "XLSB Metadata"
+  },
+  {
+    "Url": "/cells/metadata/ods",
+    "AppUrl": "/cells/metadata",
+    "Extension1": "ods",
+    "Name": "ODS Metadata"
+  },
+
+  {
+    "Url": "/cells/search/xls",
+    "AppUrl": "/cells/search",
+    "Extension1": "xls",
+    "Name": "XLS Search"
+  },
+  {
+    "Url": "/cells/search/xlsx",
+    "AppUrl": "/cells/search",
+    "Extension1": "xlsx",
+    "Name": "XLSX Search"
+  },
+  {
+    "Url": "/cells/search/xlsm",
+    "AppUrl": "/cells/search",
+    "Extension1": "xlsm",
+    "Name": "XLSM Search"
+  },
+  {
+    "Url": "/cells/search/xlsb",
+    "AppUrl": "/cells/search",
+    "Extension1": "xlsb",
+    "Name": "XLSB Search"
+  },
+  {
+    "Url": "/cells/search/ods",
+    "AppUrl": "/cells/search",
+    "Extension1": "ods",
+    "Name": "ODS Search"
+  },
+  {
+    "Url": "/cells/search/csv",
+    "AppUrl": "/cells/search",
+    "Extension1": "csv",
+    "Name": "CSV Search"
+  },
+  {
+    "Url": "/cells/search/txt",
+    "AppUrl": "/cells/search",
+    "Extension1": "txt",
+    "Name": "TXT Search"
+  },
+  {
+    "Url": "/cells/search/tsv",
+    "AppUrl": "/cells/search",
+    "Extension1": "tsv",
+    "Name": "TSV Search"
+  },
+
+  {
+    "Url": "/cells/watermark/xls",
+    "AppUrl": "/cells/watermark",
+    "Extension1": "xls",
+    "Name": "XLS Watermark"
+  },
+  {
+    "Url": "/cells/watermark/xlsx",
+    "AppUrl": "/cells/watermark",
+    "Extension1": "xlsx",
+    "Name": "XLSX Watermark"
+  },
+  {
+    "Url": "/cells/watermark/xlsm",
+    "AppUrl": "/cells/watermark",
+    "Extension1": "xlsm",
+    "Name": "XLSM Watermark"
+  },
+  {
+    "Url": "/cells/watermark/xlsb",
+    "AppUrl": "/cells/watermark",
+    "Extension1": "xlsb",
+    "Name": "XLSB Watermark"
+  },
+  {
+    "Url": "/cells/watermark/ods",
+    "AppUrl": "/cells/watermark",
+    "Extension1": "ods",
+    "Name": "ODS Watermark"
+  },
+
+  {
+    "Url": "/cells/annotation/xls",
+    "AppUrl": "/cells/annotation",
+    "Extension1": "xls",
+    "Name": "XLS Annotation"
+  },
+  {
+    "Url": "/cells/annotation/xlsx",
+    "AppUrl": "/cells/annotation",
+    "Extension1": "xlsx",
+    "Name": "XLSX Annotation"
+  },
+  {
+    "Url": "/cells/annotation/xlsm",
+    "AppUrl": "/cells/annotation",
+    "Extension1": "xlsm",
+    "Name": "XLSM Annotation"
+  },
+  {
+    "Url": "/cells/annotation/xlsb",
+    "AppUrl": "/cells/annotation",
+    "Extension1": "xlsb",
+    "Name": "XLSB Annotation"
+  },
+  {
+    "Url": "/cells/annotation/ods",
+    "AppUrl": "/cells/annotation",
+    "Extension1": "ods",
+    "Name": "ODS Annotation"
+  },
+
+  {
+    "Url": "/cells/parser/xls",
+    "AppUrl": "/cells/parser",
+    "Extension1": "xls",
+    "Name": "XLS Parser"
+  },
+  {
+    "Url": "/cells/parser/xlsx",
+    "AppUrl": "/cells/parser",
+    "Extension1": "xlsx",
+    "Name": "XLSX Parser"
+  },
+  {
+    "Url": "/cells/parser/xlsm",
+    "AppUrl": "/cells/parser",
+    "Extension1": "xlsm",
+    "Name": "XLSM Parser"
+  },
+  {
+    "Url": "/cells/parser/xlsb",
+    "AppUrl": "/cells/parser",
+    "Extension1": "xlsb",
+    "Name": "XLSB Parser"
+  },
+  {
+    "Url": "/cells/parser/ods",
+    "AppUrl": "/cells/parser",
+    "Extension1": "ods",
+    "Name": "ODS Parser"
+  },
+
+  {
+    "Url": "/cells/assembly/xls",
+    "AppUrl": "/cells/assembly",
+    "Extension1": "xls",
+    "Name": "XLS Assembly"
+  },
+  {
+    "Url": "/cells/assembly/xlsx",
+    "AppUrl": "/cells/assembly",
+    "Extension1": "xlsx",
+    "Name": "XLSX Assembly"
+  },
+  {
+    "Url": "/cells/assembly/xlsm",
+    "AppUrl": "/cells/assembly",
+    "Extension1": "xlsm",
+    "Name": "XLSM Assembly"
+  },
+  {
+    "Url": "/cells/assembly/xlsb",
+    "AppUrl": "/cells/assembly",
+    "Extension1": "xlsb",
+    "Name": "XLSB Assembly"
+  },
+  {
+    "Url": "/cells/assembly/ods",
+    "AppUrl": "/cells/assembly",
+    "Extension1": "ods",
+    "Name": "ODS Assembly"
+  },
+
+  {
+    "Url": "/cells/unlock/xls",
+    "AppUrl": "/cells/unlock",
+    "Extension1": "xls",
+    "Name": "XLS Unlock"
+  },
+  {
+    "Url": "/cells/unlock/xlsx",
+    "AppUrl": "/cells/unlock",
+    "Extension1": "xlsx",
+    "Name": "XLSX Unlock"
+  },
+  {
+    "Url": "/cells/unlock/xlsm",
+    "AppUrl": "/cells/unlock",
+    "Extension1": "xlsm",
+    "Name": "XLSM Unlock"
+  },
+  {
+    "Url": "/cells/unlock/xlsb",
+    "AppUrl": "/cells/unlock",
+    "Extension1": "xlsb",
+    "Name": "XLSB Unlock"
+  },
+  {
+    "Url": "/cells/unlock/ods",
+    "AppUrl": "/cells/unlock",
+    "Extension1": "ods",
+    "Name": "ODS Unlock"
+  },
+
+  {
+    "Url": "/cells/editor/excel",
+    "AppUrl": "/cells/editor",
+    "Extension1": "excel",
+    "Name": "EXCEL Editor"
+  },
+  {
+    "Url": "/cells/editor/xls",
+    "AppUrl": "/cells/editor",
+    "Extension1": "xls",
+    "Name": "XLS Editor"
+  },
+  {
+    "Url": "/cells/editor/xlsx",
+    "AppUrl": "/cells/editor",
+    "Extension1": "xlsx",
+    "Name": "XLSX Editor"
+  },
+  {
+    "Url": "/cells/editor/xlsm",
+    "AppUrl": "/cells/editor",
+    "Extension1": "xlsm",
+    "Name": "XLSM Editor"
+  },
+  {
+    "Url": "/cells/editor/xlsb",
+    "AppUrl": "/cells/editor",
+    "Extension1": "xlsb",
+    "Name": "XLSB Editor"
+  },
+  {
+    "Url": "/cells/editor/ods",
+    "AppUrl": "/cells/editor",
+    "Extension1": "ods",
+    "Name": "ODS Editor"
+  },
+  {
+    "Url": "/cells/editor/csv",
+    "AppUrl": "/cells/editor",
+    "Extension1": "csv",
+    "Name": "CSV Editor"
+  },
+  {
+    "Url": "/cells/editor/tsv",
+    "AppUrl": "/cells/editor",
+    "Extension1": "tsv",
+    "Name": "TSV Editor"
+  },
+  {
+    "Url": "/cells/editor/html",
+    "AppUrl": "/cells/editor",
+    "Extension1": "html",
+    "Name": "HTML Editor"
+  },
+  {
+    "Url": "/cells/editor/mht",
+    "AppUrl": "/cells/editor",
+    "Extension1": "mht",
+    "Name": "MHT Editor"
+  },
+  {
+    "Url": "/cells/editor/mhtml",
+    "AppUrl": "/cells/editor",
+    "Extension1": "mhtml",
+    "Name": "MHTML Editor"
+  },
+
+  {
+    "Url": "/cells/splitter/xls",
+    "AppUrl": "/cells/splitter",
+    "Extension1": "xls",
+    "Name": "XLS Splitter"
+  },
+  {
+    "Url": "/cells/splitter/xlsx",
+    "AppUrl": "/cells/splitter",
+    "Extension1": "xlsx",
+    "Name": "XLSX Splitter"
+  },
+  {
+    "Url": "/cells/splitter/xlsm",
+    "AppUrl": "/cells/splitter",
+    "Extension1": "xlsm",
+    "Name": "XLSM Splitter"
+  },
+  {
+    "Url": "/cells/splitter/xlsb",
+    "AppUrl": "/cells/splitter",
+    "Extension1": "xlsb",
+    "Name": "XLSB Splitter"
+  },
+  {
+    "Url": "/cells/splitter/ods",
+    "AppUrl": "/cells/splitter",
+    "Extension1": "ods",
+    "Name": "ODS Splitter"
+  },
+
+  {
+    "Url": "/cells/protect/xls",
+    "AppUrl": "/cells/protect",
+    "Extension1": "xls",
+    "Name": "XLS Protect"
+  },
+  {
+    "Url": "/cells/protect/xlsx",
+    "AppUrl": "/cells/protect",
+    "Extension1": "xlsx",
+    "Name": "XLSX Protect"
+  },
+  {
+    "Url": "/cells/protect/xlsm",
+    "AppUrl": "/cells/protect",
+    "Extension1": "xlsm",
+    "Name": "XLSM Protect"
+  },
+  {
+    "Url": "/cells/protect/xlsb",
+    "AppUrl": "/cells/protect",
+    "Extension1": "xlsb",
+    "Name": "XLSB Protect"
+  },
+  {
+    "Url": "/cells/protect/ods",
+    "AppUrl": "/cells/protect",
+    "Extension1": "ods",
+    "Name": "ODS Protect"
+  },
+
+  {
+    "Url": "/cells/translation/excel",
+    "AppUrl": "/cells/translation",
+    "Extension1": "excel",
+    "Name": "EXCEL Translation"
+  },
+  {
+    "Url": "/cells/translation/xls",
+    "AppUrl": "/cells/translation",
+    "Extension1": "xls",
+    "Name": "XLS Translation"
+  },
+  {
+    "Url": "/cells/translation/xlsx",
+    "AppUrl": "/cells/translation",
+    "Extension1": "xlsx",
+    "Name": "XLSX Translation"
+  },
+  {
+    "Url": "/cells/translation/xlsm",
+    "AppUrl": "/cells/translation",
+    "Extension1": "xlsm",
+    "Name": "XLSM Translation"
+  },
+  {
+    "Url": "/cells/translation/xlsb",
+    "AppUrl": "/cells/translation",
+    "Extension1": "xlsb",
+    "Name": "XLSB Translation"
+  },
+  {
+    "Url": "/cells/translation/ods",
+    "AppUrl": "/cells/translation",
+    "Extension1": "ods",
+    "Name": "ODS Translation"
+  },
+  {
+    "Url": "/cells/translation/csv",
+    "AppUrl": "/cells/translation",
+    "Extension1": "csv",
+    "Name": "CSV Translation"
+  },
+  {
+    "Url": "/cells/translation/tsv",
+    "AppUrl": "/cells/translation",
+    "Extension1": "tsv",
+    "Name": "TSV Translation"
+  },
+  {
+    "Url": "/cells/translation/html",
+    "AppUrl": "/cells/translation",
+    "Extension1": "html",
+    "Name": "HTML Translation"
+  },
+  {
+    "Url": "/cells/translation/mht",
+    "AppUrl": "/cells/translation",
+    "Extension1": "mht",
+    "Name": "MHT Translation"
+  },
+  {
+    "Url": "/cells/translation/mhtml",
+    "AppUrl": "/cells/translation",
+    "Extension1": "mhtml",
+    "Name": "MHTML Translation"
+  },
+
+  {
+    "Url": "/cells/chart/excel",
+    "AppUrl": "/cells/chart",
+    "Extension1": "excel",
+    "Name": "EXCEL Chart"
+  },
+  {
+    "Url": "/cells/chart/xls",
+    "AppUrl": "/cells/chart",
+    "Extension1": "xls",
+    "Name": "XLS Chart"
+  },
+  {
+    "Url": "/cells/chart/xlsx",
+    "AppUrl": "/cells/chart",
+    "Extension1": "xlsx",
+    "Name": "XLSX Chart"
+  },
+  {
+    "Url": "/cells/chart/xlsm",
+    "AppUrl": "/cells/chart",
+    "Extension1": "xlsm",
+    "Name": "XLSM Chart"
+  },
+  {
+    "Url": "/cells/chart/xlsb",
+    "AppUrl": "/cells/chart",
+    "Extension1": "xlsb",
+    "Name": "XLSB Chart"
+  },
+  {
+    "Url": "/cells/chart/ods",
+    "AppUrl": "/cells/chart",
+    "Extension1": "ods",
+    "Name": "ODS Chart"
+  },
+  {
+    "Url": "/cells/chart/image",
+    "AppUrl": "/cells/chart",
+    "Extension1": "image",
+    "Name": "IMAGE Chart"
+  },
+  {
+    "Url": "/cells/chart/to-image",
+    "AppUrl": "/cells/chart",
+    "Extension1": "image",
+    "Name": "IMAGE Chart"
+  },
+  {
+    "Url": "/cells/chart/pdf",
+    "AppUrl": "/cells/chart",
+    "Extension1": "pdf",
+    "Name": "PDF Chart"
+  },
+  {
+    "Url": "/cells/chart/bmp",
+    "AppUrl": "/cells/chart",
+    "Extension1": "bmp",
+    "Name": "BMP Chart"
+  },
+  {
+    "Url": "/cells/chart/jpg",
+    "AppUrl": "/cells/chart",
+    "Extension1": "jpg",
+    "Name": "JPG Chart"
+  },
+  {
+    "Url": "/cells/chart/png",
+    "AppUrl": "/cells/chart",
+    "Extension1": "png",
+    "Name": "PNG Chart"
+  },
+  {
+    "Url": "/cells/chart/emf",
+    "AppUrl": "/cells/chart",
+    "Extension1": "emf",
+    "Name": "EMF Chart"
+  },
+  {
+    "Url": "/cells/chart/wmf",
+    "AppUrl": "/cells/chart",
+    "Extension1": "wmf",
+    "Name": "WMF Chart"
+  },
+  {
+    "Url": "/cells/chart/svg",
+    "AppUrl": "/cells/chart",
+    "Extension1": "svg",
+    "Name": "SVG Chart"
+  },
+  {
+    "Url": "/cells/chart/tiff",
+    "AppUrl": "/cells/chart",
+    "Extension1": "tiff",
+    "Name": "TIFF Chart"
+  },
+  {
+    "Url": "/cells/chart/xps",
+    "AppUrl": "/cells/chart",
+    "Extension1": "xps",
+    "Name": "XPS Chart"
+  },
+  {
+    "Url": "/cells/chart/to-pdf",
+    "AppUrl": "/cells/chart",
+    "Extension1": "pdf",
+    "Name": "PDF Chart"
+  },
+  {
+    "Url": "/cells/chart/to-bmp",
+    "AppUrl": "/cells/chart",
+    "Extension1": "bmp",
+    "Name": "BMP Chart"
+  },
+  {
+    "Url": "/cells/chart/to-jpg",
+    "AppUrl": "/cells/chart",
+    "Extension1": "jpg",
+    "Name": "JPG Chart"
+  },
+  {
+    "Url": "/cells/chart/to-png",
+    "AppUrl": "/cells/chart",
+    "Extension1": "png",
+    "Name": "PNG Chart"
+  },
+  {
+    "Url": "/cells/chart/to-emf",
+    "AppUrl": "/cells/chart",
+    "Extension1": "emf",
+    "Name": "EMF Chart"
+  },
+  {
+    "Url": "/cells/chart/to-wmf",
+    "AppUrl": "/cells/chart",
+    "Extension1": "wmf",
+    "Name": "WMF Chart"
+  },
+  {
+    "Url": "/cells/chart/to-svg",
+    "AppUrl": "/cells/chart",
+    "Extension1": "svg",
+    "Name": "SVG Chart"
+  },
+  {
+    "Url": "/cells/chart/to-tiff",
+    "AppUrl": "/cells/chart",
+    "Extension1": "tiff",
+    "Name": "TIFF Chart"
+  },
+  {
+    "Url": "/cells/chart/to-xps",
+    "AppUrl": "/cells/chart",
+    "Extension1": "xps",
+    "Name": "XPS Chart"
+  },
+
+  {
+    "Url": "/cells/merger/xlsx",
+    "AppUrl": "/cells/merger",
+    "Extension1": "xlsx",
+    "Name": "XLSX Merger"
+  },
+  {
+    "Url": "/cells/merger/xls",
+    "AppUrl": "/cells/merger",
+    "Extension1": "xls",
+    "Name": "XLS Merger"
+  },
+  {
+    "Url": "/cells/merger/xlsm",
+    "AppUrl": "/cells/merger",
+    "Extension1": "xlsm",
+    "Name": "XLSM Merger"
+  },
+  {
+    "Url": "/cells/merger/xlsb",
+    "AppUrl": "/cells/merger",
+    "Extension1": "xlsb",
+    "Name": "XLSB Merger"
+  },
+  {
+    "Url": "/cells/merger/ods",
+    "AppUrl": "/cells/merger",
+    "Extension1": "ods",
+    "Name": "ODS Merger"
+  },
+  {
+    "Url": "/cells/merger/csv",
+    "AppUrl": "/cells/merger",
+    "Extension1": "csv",
+    "Name": "CSV Merger"
+  },
+  {
+    "Url": "/cells/merger/tsv",
+    "AppUrl": "/cells/merger",
+    "Extension1": "tsv",
+    "Name": "TSV Merger"
+  },
+  {
+    "Url": "/cells/merger/html",
+    "AppUrl": "/cells/merger",
+    "Extension1": "html",
+    "Name": "HTML Merger"
+  },
+  {
+    "Url": "/cells/merger/mht",
+    "AppUrl": "/cells/merger",
+    "Extension1": "mht",
+    "Name": "MHT Merger"
+  },
+  {
+    "Url": "/cells/merger/mhtml",
+    "AppUrl": "/cells/merger",
+    "Extension1": "mhtml",
+    "Name": "MHTML Merger"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-pdf",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to PDF Merger",
+    "Extension1": "xlsx",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-xls",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to XLS Merger",
+    "Extension1": "xlsx",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-xlsx",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to XLSX Merger",
+    "Extension1": "xlsx",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-xlsm",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to XLSM Merger",
+    "Extension1": "xlsx",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-xlsb",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to XLSB Merger",
+    "Extension1": "xlsx",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-ods",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to ODS Merger",
+    "Extension1": "xlsx",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-csv",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to CSV Merger",
+    "Extension1": "xlsx",
+    "Extension2": "csv"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-tsv",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to TSV Merger",
+    "Extension1": "xlsx",
+    "Extension2": "tsv"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-html",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to HTML Merger",
+    "Extension1": "xlsx",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-bmp",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to BMP Merger",
+    "Extension1": "xlsx",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-jpg",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to JPG Merger",
+    "Extension1": "xlsx",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-png",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to PNG Merger",
+    "Extension1": "xlsx",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-emf",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to EMF Merger",
+    "Extension1": "xlsx",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-wmf",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to WMF Merger",
+    "Extension1": "xlsx",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-svg",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to SVG Merger",
+    "Extension1": "xlsx",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-tiff",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to TIFF Merger",
+    "Extension1": "xlsx",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-xps",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to XPS Merger",
+    "Extension1": "xlsx",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-mhtml",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to MHTML Merger",
+    "Extension1": "xlsx",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-md",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to MD Merger",
+    "Extension1": "xlsx",
+    "Extension2": "md"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-word",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to WORD Merger",
+    "Extension1": "xlsx",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-docx",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to DOCX Merger",
+    "Extension1": "xlsx",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-ppt",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to PPT Merger",
+    "Extension1": "xlsx",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-pptx",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to PPTX Merger",
+    "Extension1": "xlsx",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/merger/xlsx-to-powerpoint",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSX to POWERPOINT Merger",
+    "Extension1": "xlsx",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/merger/xls-to-pdf",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to PDF Merger",
+    "Extension1": "xls",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/merger/xls-to-xls",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to XLS Merger",
+    "Extension1": "xls",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/merger/xls-to-xlsx",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to XLSX Merger",
+    "Extension1": "xls",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/merger/xls-to-xlsm",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to XLSM Merger",
+    "Extension1": "xls",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/merger/xls-to-xlsb",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to XLSB Merger",
+    "Extension1": "xls",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/merger/xls-to-ods",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to ODS Merger",
+    "Extension1": "xls",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/merger/xls-to-csv",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to CSV Merger",
+    "Extension1": "xls",
+    "Extension2": "csv"
+  },
+  {
+    "Url": "/cells/merger/xls-to-tsv",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to TSV Merger",
+    "Extension1": "xls",
+    "Extension2": "tsv"
+  },
+  {
+    "Url": "/cells/merger/xls-to-html",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to HTML Merger",
+    "Extension1": "xls",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/merger/xls-to-bmp",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to BMP Merger",
+    "Extension1": "xls",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/merger/xls-to-jpg",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to JPG Merger",
+    "Extension1": "xls",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/merger/xls-to-png",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to PNG Merger",
+    "Extension1": "xls",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/merger/xls-to-emf",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to EMF Merger",
+    "Extension1": "xls",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/merger/xls-to-wmf",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to WMF Merger",
+    "Extension1": "xls",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/merger/xls-to-svg",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to SVG Merger",
+    "Extension1": "xls",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/merger/xls-to-tiff",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to TIFF Merger",
+    "Extension1": "xls",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/merger/xls-to-xps",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to XPS Merger",
+    "Extension1": "xls",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/merger/xls-to-mhtml",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to MHTML Merger",
+    "Extension1": "xls",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/merger/xls-to-md",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to MD Merger",
+    "Extension1": "xls",
+    "Extension2": "md"
+  },
+  {
+    "Url": "/cells/merger/xls-to-word",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to WORD Merger",
+    "Extension1": "xls",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/merger/xls-to-docx",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to DOCX Merger",
+    "Extension1": "xls",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/merger/xls-to-ppt",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to PPT Merger",
+    "Extension1": "xls",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/merger/xls-to-pptx",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to PPTX Merger",
+    "Extension1": "xls",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/merger/xls-to-powerpoint",
+    "AppUrl": "/cells/merger",
+    "Name": "XLS to POWERPOINT Merger",
+    "Extension1": "xls",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-pdf",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to PDF Merger",
+    "Extension1": "xlsm",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-xls",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to XLS Merger",
+    "Extension1": "xlsm",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-xlsx",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to XLSX Merger",
+    "Extension1": "xlsm",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-xlsm",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to XLSM Merger",
+    "Extension1": "xlsm",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-xlsb",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to XLSB Merger",
+    "Extension1": "xlsm",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-ods",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to ODS Merger",
+    "Extension1": "xlsm",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-csv",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to CSV Merger",
+    "Extension1": "xlsm",
+    "Extension2": "csv"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-tsv",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to TSV Merger",
+    "Extension1": "xlsm",
+    "Extension2": "tsv"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-html",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to HTML Merger",
+    "Extension1": "xlsm",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-bmp",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to BMP Merger",
+    "Extension1": "xlsm",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-jpg",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to JPG Merger",
+    "Extension1": "xlsm",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-png",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to PNG Merger",
+    "Extension1": "xlsm",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-emf",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to EMF Merger",
+    "Extension1": "xlsm",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-wmf",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to WMF Merger",
+    "Extension1": "xlsm",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-svg",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to SVG Merger",
+    "Extension1": "xlsm",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-tiff",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to TIFF Merger",
+    "Extension1": "xlsm",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-xps",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to XPS Merger",
+    "Extension1": "xlsm",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-mhtml",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to MHTML Merger",
+    "Extension1": "xlsm",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-md",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to MD Merger",
+    "Extension1": "xlsm",
+    "Extension2": "md"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-word",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to WORD Merger",
+    "Extension1": "xlsm",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-docx",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to DOCX Merger",
+    "Extension1": "xlsm",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-ppt",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to PPT Merger",
+    "Extension1": "xlsm",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-pptx",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to PPTX Merger",
+    "Extension1": "xlsm",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/merger/xlsm-to-powerpoint",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSM to POWERPOINT Merger",
+    "Extension1": "xlsm",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-pdf",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to PDF Merger",
+    "Extension1": "xlsb",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-xls",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to XLS Merger",
+    "Extension1": "xlsb",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-xlsx",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to XLSX Merger",
+    "Extension1": "xlsb",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-xlsm",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to XLSM Merger",
+    "Extension1": "xlsb",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-xlsb",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to XLSB Merger",
+    "Extension1": "xlsb",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-ods",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to ODS Merger",
+    "Extension1": "xlsb",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-csv",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to CSV Merger",
+    "Extension1": "xlsb",
+    "Extension2": "csv"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-tsv",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to TSV Merger",
+    "Extension1": "xlsb",
+    "Extension2": "tsv"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-html",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to HTML Merger",
+    "Extension1": "xlsb",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-bmp",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to BMP Merger",
+    "Extension1": "xlsb",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-jpg",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to JPG Merger",
+    "Extension1": "xlsb",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-png",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to PNG Merger",
+    "Extension1": "xlsb",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-emf",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to EMF Merger",
+    "Extension1": "xlsb",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-wmf",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to WMF Merger",
+    "Extension1": "xlsb",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-svg",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to SVG Merger",
+    "Extension1": "xlsb",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-tiff",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to TIFF Merger",
+    "Extension1": "xlsb",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-xps",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to XPS Merger",
+    "Extension1": "xlsb",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-mhtml",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to MHTML Merger",
+    "Extension1": "xlsb",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-md",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to MD Merger",
+    "Extension1": "xlsb",
+    "Extension2": "md"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-word",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to WORD Merger",
+    "Extension1": "xlsb",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-docx",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to DOCX Merger",
+    "Extension1": "xlsb",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-ppt",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to PPT Merger",
+    "Extension1": "xlsb",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-pptx",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to PPTX Merger",
+    "Extension1": "xlsb",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/merger/xlsb-to-powerpoint",
+    "AppUrl": "/cells/merger",
+    "Name": "XLSB to POWERPOINT Merger",
+    "Extension1": "xlsb",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/merger/ods-to-pdf",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to PDF Merger",
+    "Extension1": "ods",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/merger/ods-to-xls",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to XLS Merger",
+    "Extension1": "ods",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/merger/ods-to-xlsx",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to XLSX Merger",
+    "Extension1": "ods",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/merger/ods-to-xlsm",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to XLSM Merger",
+    "Extension1": "ods",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/merger/ods-to-xlsb",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to XLSB Merger",
+    "Extension1": "ods",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/merger/ods-to-ods",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to ODS Merger",
+    "Extension1": "ods",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/merger/ods-to-csv",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to CSV Merger",
+    "Extension1": "ods",
+    "Extension2": "csv"
+  },
+  {
+    "Url": "/cells/merger/ods-to-tsv",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to TSV Merger",
+    "Extension1": "ods",
+    "Extension2": "tsv"
+  },
+  {
+    "Url": "/cells/merger/ods-to-html",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to HTML Merger",
+    "Extension1": "ods",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/merger/ods-to-bmp",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to BMP Merger",
+    "Extension1": "ods",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/merger/ods-to-jpg",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to JPG Merger",
+    "Extension1": "ods",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/merger/ods-to-png",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to PNG Merger",
+    "Extension1": "ods",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/merger/ods-to-emf",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to EMF Merger",
+    "Extension1": "ods",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/merger/ods-to-wmf",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to WMF Merger",
+    "Extension1": "ods",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/merger/ods-to-svg",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to SVG Merger",
+    "Extension1": "ods",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/merger/ods-to-tiff",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to TIFF Merger",
+    "Extension1": "ods",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/merger/ods-to-xps",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to XPS Merger",
+    "Extension1": "ods",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/merger/ods-to-mhtml",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to MHTML Merger",
+    "Extension1": "ods",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/merger/ods-to-md",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to MD Merger",
+    "Extension1": "ods",
+    "Extension2": "md"
+  },
+  {
+    "Url": "/cells/merger/ods-to-word",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to WORD Merger",
+    "Extension1": "ods",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/merger/ods-to-docx",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to DOCX Merger",
+    "Extension1": "ods",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/merger/ods-to-ppt",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to PPT Merger",
+    "Extension1": "ods",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/merger/ods-to-pptx",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to PPTX Merger",
+    "Extension1": "ods",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/merger/ods-to-powerpoint",
+    "AppUrl": "/cells/merger",
+    "Name": "ODS to POWERPOINT Merger",
+    "Extension1": "ods",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/merger/csv-to-pdf",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to PDF Merger",
+    "Extension1": "csv",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/merger/csv-to-xls",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to XLS Merger",
+    "Extension1": "csv",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/merger/csv-to-xlsx",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to XLSX Merger",
+    "Extension1": "csv",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/merger/csv-to-xlsm",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to XLSM Merger",
+    "Extension1": "csv",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/merger/csv-to-xlsb",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to XLSB Merger",
+    "Extension1": "csv",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/merger/csv-to-ods",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to ODS Merger",
+    "Extension1": "csv",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/merger/csv-to-csv",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to CSV Merger",
+    "Extension1": "csv",
+    "Extension2": "csv"
+  },
+  {
+    "Url": "/cells/merger/csv-to-tsv",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to TSV Merger",
+    "Extension1": "csv",
+    "Extension2": "tsv"
+  },
+  {
+    "Url": "/cells/merger/csv-to-html",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to HTML Merger",
+    "Extension1": "csv",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/merger/csv-to-bmp",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to BMP Merger",
+    "Extension1": "csv",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/merger/csv-to-jpg",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to JPG Merger",
+    "Extension1": "csv",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/merger/csv-to-png",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to PNG Merger",
+    "Extension1": "csv",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/merger/csv-to-emf",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to EMF Merger",
+    "Extension1": "csv",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/merger/csv-to-wmf",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to WMF Merger",
+    "Extension1": "csv",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/merger/csv-to-svg",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to SVG Merger",
+    "Extension1": "csv",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/merger/csv-to-tiff",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to TIFF Merger",
+    "Extension1": "csv",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/merger/csv-to-xps",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to XPS Merger",
+    "Extension1": "csv",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/merger/csv-to-mhtml",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to MHTML Merger",
+    "Extension1": "csv",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/merger/csv-to-md",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to MD Merger",
+    "Extension1": "csv",
+    "Extension2": "md"
+  },
+  {
+    "Url": "/cells/merger/csv-to-word",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to WORD Merger",
+    "Extension1": "csv",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/merger/csv-to-docx",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to DOCX Merger",
+    "Extension1": "csv",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/merger/csv-to-ppt",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to PPT Merger",
+    "Extension1": "csv",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/merger/csv-to-pptx",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to PPTX Merger",
+    "Extension1": "csv",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/merger/csv-to-powerpoint",
+    "AppUrl": "/cells/merger",
+    "Name": "CSV to POWERPOINT Merger",
+    "Extension1": "csv",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-pdf",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to PDF Merger",
+    "Extension1": "tsv",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-xls",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to XLS Merger",
+    "Extension1": "tsv",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-xlsx",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to XLSX Merger",
+    "Extension1": "tsv",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-xlsm",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to XLSM Merger",
+    "Extension1": "tsv",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-xlsb",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to XLSB Merger",
+    "Extension1": "tsv",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-ods",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to ODS Merger",
+    "Extension1": "tsv",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-csv",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to CSV Merger",
+    "Extension1": "tsv",
+    "Extension2": "csv"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-tsv",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to TSV Merger",
+    "Extension1": "tsv",
+    "Extension2": "tsv"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-html",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to HTML Merger",
+    "Extension1": "tsv",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-bmp",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to BMP Merger",
+    "Extension1": "tsv",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-jpg",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to JPG Merger",
+    "Extension1": "tsv",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-png",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to PNG Merger",
+    "Extension1": "tsv",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-emf",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to EMF Merger",
+    "Extension1": "tsv",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-wmf",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to WMF Merger",
+    "Extension1": "tsv",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-svg",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to SVG Merger",
+    "Extension1": "tsv",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-tiff",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to TIFF Merger",
+    "Extension1": "tsv",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-xps",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to XPS Merger",
+    "Extension1": "tsv",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-mhtml",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to MHTML Merger",
+    "Extension1": "tsv",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-md",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to MD Merger",
+    "Extension1": "tsv",
+    "Extension2": "md"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-word",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to WORD Merger",
+    "Extension1": "tsv",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-docx",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to DOCX Merger",
+    "Extension1": "tsv",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-ppt",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to PPT Merger",
+    "Extension1": "tsv",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-pptx",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to PPTX Merger",
+    "Extension1": "tsv",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/merger/tsv-to-powerpoint",
+    "AppUrl": "/cells/merger",
+    "Name": "TSV to POWERPOINT Merger",
+    "Extension1": "tsv",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/merger/html-to-pdf",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to PDF Merger",
+    "Extension1": "html",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/merger/html-to-xls",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to XLS Merger",
+    "Extension1": "html",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/merger/html-to-xlsx",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to XLSX Merger",
+    "Extension1": "html",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/merger/html-to-xlsm",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to XLSM Merger",
+    "Extension1": "html",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/merger/html-to-xlsb",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to XLSB Merger",
+    "Extension1": "html",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/merger/html-to-ods",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to ODS Merger",
+    "Extension1": "html",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/merger/html-to-csv",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to CSV Merger",
+    "Extension1": "html",
+    "Extension2": "csv"
+  },
+  {
+    "Url": "/cells/merger/html-to-tsv",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to TSV Merger",
+    "Extension1": "html",
+    "Extension2": "tsv"
+  },
+  {
+    "Url": "/cells/merger/html-to-html",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to HTML Merger",
+    "Extension1": "html",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/merger/html-to-bmp",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to BMP Merger",
+    "Extension1": "html",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/merger/html-to-jpg",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to JPG Merger",
+    "Extension1": "html",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/merger/html-to-png",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to PNG Merger",
+    "Extension1": "html",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/merger/html-to-emf",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to EMF Merger",
+    "Extension1": "html",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/merger/html-to-wmf",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to WMF Merger",
+    "Extension1": "html",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/merger/html-to-svg",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to SVG Merger",
+    "Extension1": "html",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/merger/html-to-tiff",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to TIFF Merger",
+    "Extension1": "html",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/merger/html-to-xps",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to XPS Merger",
+    "Extension1": "html",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/merger/html-to-mhtml",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to MHTML Merger",
+    "Extension1": "html",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/merger/html-to-md",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to MD Merger",
+    "Extension1": "html",
+    "Extension2": "md"
+  },
+  {
+    "Url": "/cells/merger/html-to-word",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to WORD Merger",
+    "Extension1": "html",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/merger/html-to-docx",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to DOCX Merger",
+    "Extension1": "html",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/merger/html-to-ppt",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to PPT Merger",
+    "Extension1": "html",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/merger/html-to-pptx",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to PPTX Merger",
+    "Extension1": "html",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/merger/html-to-powerpoint",
+    "AppUrl": "/cells/merger",
+    "Name": "HTML to POWERPOINT Merger",
+    "Extension1": "html",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/merger/mht-to-pdf",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to PDF Merger",
+    "Extension1": "mht",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/merger/mht-to-xls",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to XLS Merger",
+    "Extension1": "mht",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/merger/mht-to-xlsx",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to XLSX Merger",
+    "Extension1": "mht",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/merger/mht-to-xlsm",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to XLSM Merger",
+    "Extension1": "mht",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/merger/mht-to-xlsb",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to XLSB Merger",
+    "Extension1": "mht",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/merger/mht-to-ods",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to ODS Merger",
+    "Extension1": "mht",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/merger/mht-to-csv",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to CSV Merger",
+    "Extension1": "mht",
+    "Extension2": "csv"
+  },
+  {
+    "Url": "/cells/merger/mht-to-tsv",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to TSV Merger",
+    "Extension1": "mht",
+    "Extension2": "tsv"
+  },
+  {
+    "Url": "/cells/merger/mht-to-html",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to HTML Merger",
+    "Extension1": "mht",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/merger/mht-to-bmp",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to BMP Merger",
+    "Extension1": "mht",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/merger/mht-to-jpg",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to JPG Merger",
+    "Extension1": "mht",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/merger/mht-to-png",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to PNG Merger",
+    "Extension1": "mht",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/merger/mht-to-emf",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to EMF Merger",
+    "Extension1": "mht",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/merger/mht-to-wmf",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to WMF Merger",
+    "Extension1": "mht",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/merger/mht-to-svg",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to SVG Merger",
+    "Extension1": "mht",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/merger/mht-to-tiff",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to TIFF Merger",
+    "Extension1": "mht",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/merger/mht-to-xps",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to XPS Merger",
+    "Extension1": "mht",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/merger/mht-to-mhtml",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to MHTML Merger",
+    "Extension1": "mht",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/merger/mht-to-md",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to MD Merger",
+    "Extension1": "mht",
+    "Extension2": "md"
+  },
+  {
+    "Url": "/cells/merger/mht-to-word",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to WORD Merger",
+    "Extension1": "mht",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/merger/mht-to-docx",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to DOCX Merger",
+    "Extension1": "mht",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/merger/mht-to-ppt",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to PPT Merger",
+    "Extension1": "mht",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/merger/mht-to-pptx",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to PPTX Merger",
+    "Extension1": "mht",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/merger/mht-to-powerpoint",
+    "AppUrl": "/cells/merger",
+    "Name": "MHT to POWERPOINT Merger",
+    "Extension1": "mht",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-pdf",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to PDF Merger",
+    "Extension1": "mhtml",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-xls",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to XLS Merger",
+    "Extension1": "mhtml",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-xlsx",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to XLSX Merger",
+    "Extension1": "mhtml",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-xlsm",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to XLSM Merger",
+    "Extension1": "mhtml",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-xlsb",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to XLSB Merger",
+    "Extension1": "mhtml",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-ods",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to ODS Merger",
+    "Extension1": "mhtml",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-csv",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to CSV Merger",
+    "Extension1": "mhtml",
+    "Extension2": "csv"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-tsv",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to TSV Merger",
+    "Extension1": "mhtml",
+    "Extension2": "tsv"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-html",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to HTML Merger",
+    "Extension1": "mhtml",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-bmp",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to BMP Merger",
+    "Extension1": "mhtml",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-jpg",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to JPG Merger",
+    "Extension1": "mhtml",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-png",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to PNG Merger",
+    "Extension1": "mhtml",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-emf",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to EMF Merger",
+    "Extension1": "mhtml",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-wmf",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to WMF Merger",
+    "Extension1": "mhtml",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-svg",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to SVG Merger",
+    "Extension1": "mhtml",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-tiff",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to TIFF Merger",
+    "Extension1": "mhtml",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-xps",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to XPS Merger",
+    "Extension1": "mhtml",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-mhtml",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to MHTML Merger",
+    "Extension1": "mhtml",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-md",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to MD Merger",
+    "Extension1": "mhtml",
+    "Extension2": "md"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-word",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to WORD Merger",
+    "Extension1": "mhtml",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-docx",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to DOCX Merger",
+    "Extension1": "mhtml",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-ppt",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to PPT Merger",
+    "Extension1": "mhtml",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-pptx",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to PPTX Merger",
+    "Extension1": "mhtml",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/merger/mhtml-to-powerpoint",
+    "AppUrl": "/cells/merger",
+    "Name": "MHTML to POWERPOINT Merger",
+    "Extension1": "mhtml",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/merger/jpg-to-pdf",
+    "AppUrl": "/cells/merger",
+    "Name": "JPG to PDF Merger",
+    "Extension1": "jpg",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/merger/jpg-to-xls",
+    "AppUrl": "/cells/merger",
+    "Name": "JPG to XLS Merger",
+    "Extension1": "jpg",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/merger/jpg-to-xlsx",
+    "AppUrl": "/cells/merger",
+    "Name": "JPG to XLSX Merger",
+    "Extension1": "jpg",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/merger/jpg-to-xlsm",
+    "AppUrl": "/cells/merger",
+    "Name": "JPG to XLSM Merger",
+    "Extension1": "jpg",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/merger/jpg-to-xlsb",
+    "AppUrl": "/cells/merger",
+    "Name": "JPG to XLSB Merger",
+    "Extension1": "jpg",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/merger/jpg-to-ods",
+    "AppUrl": "/cells/merger",
+    "Name": "JPG to ODS Merger",
+    "Extension1": "jpg",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/merger/jpg-to-html",
+    "AppUrl": "/cells/merger",
+    "Name": "JPG to HTML Merger",
+    "Extension1": "jpg",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/merger/jpg-to-bmp",
+    "AppUrl": "/cells/merger",
+    "Name": "JPG to BMP Merger",
+    "Extension1": "jpg",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/merger/jpg-to-jpg",
+    "AppUrl": "/cells/merger",
+    "Name": "JPG to JPG Merger",
+    "Extension1": "jpg",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/merger/jpg-to-png",
+    "AppUrl": "/cells/merger",
+    "Name": "JPG to PNG Merger",
+    "Extension1": "jpg",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/merger/jpg-to-emf",
+    "AppUrl": "/cells/merger",
+    "Name": "JPG to EMF Merger",
+    "Extension1": "jpg",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/merger/jpg-to-wmf",
+    "AppUrl": "/cells/merger",
+    "Name": "JPG to WMF Merger",
+    "Extension1": "jpg",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/merger/jpg-to-svg",
+    "AppUrl": "/cells/merger",
+    "Name": "JPG to SVG Merger",
+    "Extension1": "jpg",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/merger/jpg-to-tiff",
+    "AppUrl": "/cells/merger",
+    "Name": "JPG to TIFF Merger",
+    "Extension1": "jpg",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/merger/jpg-to-xps",
+    "AppUrl": "/cells/merger",
+    "Name": "JPG to XPS Merger",
+    "Extension1": "jpg",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/merger/jpg-to-mhtml",
+    "AppUrl": "/cells/merger",
+    "Name": "JPG to MHTML Merger",
+    "Extension1": "jpg",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/merger/jpg-to-word",
+    "AppUrl": "/cells/merger",
+    "Name": "JPG to WORD Merger",
+    "Extension1": "jpg",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/merger/jpg-to-docx",
+    "AppUrl": "/cells/merger",
+    "Name": "JPG to DOCX Merger",
+    "Extension1": "jpg",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/merger/jpg-to-ppt",
+    "AppUrl": "/cells/merger",
+    "Name": "JPG to PPT Merger",
+    "Extension1": "jpg",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/merger/jpg-to-pptx",
+    "AppUrl": "/cells/merger",
+    "Name": "JPG to PPTX Merger",
+    "Extension1": "jpg",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/merger/jpg-to-powerpoint",
+    "AppUrl": "/cells/merger",
+    "Name": "JPG to POWERPOINT Merger",
+    "Extension1": "jpg",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/merger/png-to-pdf",
+    "AppUrl": "/cells/merger",
+    "Name": "PNG to PDF Merger",
+    "Extension1": "png",
+    "Extension2": "pdf"
+  },
+  {
+    "Url": "/cells/merger/png-to-xls",
+    "AppUrl": "/cells/merger",
+    "Name": "PNG to XLS Merger",
+    "Extension1": "png",
+    "Extension2": "xls"
+  },
+  {
+    "Url": "/cells/merger/png-to-xlsx",
+    "AppUrl": "/cells/merger",
+    "Name": "PNG to XLSX Merger",
+    "Extension1": "png",
+    "Extension2": "xlsx"
+  },
+  {
+    "Url": "/cells/merger/png-to-xlsm",
+    "AppUrl": "/cells/merger",
+    "Name": "PNG to XLSM Merger",
+    "Extension1": "png",
+    "Extension2": "xlsm"
+  },
+  {
+    "Url": "/cells/merger/png-to-xlsb",
+    "AppUrl": "/cells/merger",
+    "Name": "PNG to XLSB Merger",
+    "Extension1": "png",
+    "Extension2": "xlsb"
+  },
+  {
+    "Url": "/cells/merger/png-to-ods",
+    "AppUrl": "/cells/merger",
+    "Name": "PNG to ODS Merger",
+    "Extension1": "png",
+    "Extension2": "ods"
+  },
+  {
+    "Url": "/cells/merger/png-to-html",
+    "AppUrl": "/cells/merger",
+    "Name": "PNG to HTML Merger",
+    "Extension1": "png",
+    "Extension2": "html"
+  },
+  {
+    "Url": "/cells/merger/png-to-bmp",
+    "AppUrl": "/cells/merger",
+    "Name": "PNG to BMP Merger",
+    "Extension1": "png",
+    "Extension2": "bmp"
+  },
+  {
+    "Url": "/cells/merger/png-to-jpg",
+    "AppUrl": "/cells/merger",
+    "Name": "PNG to JPG Merger",
+    "Extension1": "png",
+    "Extension2": "jpg"
+  },
+  {
+    "Url": "/cells/merger/png-to-png",
+    "AppUrl": "/cells/merger",
+    "Name": "PNG to PNG Merger",
+    "Extension1": "png",
+    "Extension2": "png"
+  },
+  {
+    "Url": "/cells/merger/png-to-emf",
+    "AppUrl": "/cells/merger",
+    "Name": "PNG to EMF Merger",
+    "Extension1": "png",
+    "Extension2": "emf"
+  },
+  {
+    "Url": "/cells/merger/png-to-wmf",
+    "AppUrl": "/cells/merger",
+    "Name": "PNG to WMF Merger",
+    "Extension1": "png",
+    "Extension2": "wmf"
+  },
+  {
+    "Url": "/cells/merger/png-to-svg",
+    "AppUrl": "/cells/merger",
+    "Name": "PNG to SVG Merger",
+    "Extension1": "png",
+    "Extension2": "svg"
+  },
+  {
+    "Url": "/cells/merger/png-to-tiff",
+    "AppUrl": "/cells/merger",
+    "Name": "PNG to TIFF Merger",
+    "Extension1": "png",
+    "Extension2": "tiff"
+  },
+  {
+    "Url": "/cells/merger/png-to-xps",
+    "AppUrl": "/cells/merger",
+    "Name": "PNG to XPS Merger",
+    "Extension1": "png",
+    "Extension2": "xps"
+  },
+  {
+    "Url": "/cells/merger/png-to-mhtml",
+    "AppUrl": "/cells/merger",
+    "Name": "PNG to MHTML Merger",
+    "Extension1": "png",
+    "Extension2": "mhtml"
+  },
+  {
+    "Url": "/cells/merger/png-to-word",
+    "AppUrl": "/cells/merger",
+    "Name": "PNG to WORD Merger",
+    "Extension1": "png",
+    "Extension2": "word"
+  },
+  {
+    "Url": "/cells/merger/png-to-docx",
+    "AppUrl": "/cells/merger",
+    "Name": "PNG to DOCX Merger",
+    "Extension1": "png",
+    "Extension2": "docx"
+  },
+  {
+    "Url": "/cells/merger/png-to-ppt",
+    "AppUrl": "/cells/merger",
+    "Name": "PNG to PPT Merger",
+    "Extension1": "png",
+    "Extension2": "ppt"
+  },
+  {
+    "Url": "/cells/merger/png-to-pptx",
+    "AppUrl": "/cells/merger",
+    "Name": "PNG to PPTX Merger",
+    "Extension1": "png",
+    "Extension2": "pptx"
+  },
+  {
+    "Url": "/cells/merger/png-to-powerpoint",
+    "AppUrl": "/cells/merger",
+    "Name": "PNG to POWERPOINT Merger",
+    "Extension1": "png",
+    "Extension2": "powerpoint"
+  },
+  {
+    "Url": "/cells/merger/jpg",
+    "AppUrl": "/cells/merger",
+    "Extension1": "jpg",
+    "Name": "JPG Merger"
+  },
+  {
+    "Url": "/cells/merger/png",
+    "AppUrl": "/cells/merger",
+    "Extension1": "png",
+    "Name": "PNG Merger"
+  },
+
+  {
+    "Url": "/cells/comparison/excel",
+    "AppUrl": "/cells/comparison",
+    "Extension1": "excel",
+    "Name": "EXCEL Comparison"
+  },
+  {
+    "Url": "/cells/comparison/xls",
+    "AppUrl": "/cells/comparison",
+    "Extension1": "xls",
+    "Name": "XLS Comparison"
+  },
+  {
+    "Url": "/cells/comparison/xlsx",
+    "AppUrl": "/cells/comparison",
+    "Extension1": "xlsx",
+    "Name": "XLSX Comparison"
+  },
+  {
+    "Url": "/cells/comparison/xlsm",
+    "AppUrl": "/cells/comparison",
+    "Extension1": "xlsm",
+    "Name": "XLSM Comparison"
+  },
+  {
+    "Url": "/cells/comparison/xlsb",
+    "AppUrl": "/cells/comparison",
+    "Extension1": "xlsb",
+    "Name": "XLSB Comparison"
+  },
+  {
+    "Url": "/cells/comparison/ods",
+    "AppUrl": "/cells/comparison",
+    "Extension1": "ods",
+    "Name": "ODS Comparison"
+  },
+  {
+    "Url": "/cells/comparison/csv",
+    "AppUrl": "/cells/comparison",
+    "Extension1": "csv",
+    "Name": "CSV Comparison"
+  },
+  {
+    "Url": "/cells/comparison/tsv",
+    "AppUrl": "/cells/comparison",
+    "Extension1": "tsv",
+    "Name": "TSV Comparison"
+  },
+  {
+    "Url": "/cells/comparison/html",
+    "AppUrl": "/cells/comparison",
+    "Extension1": "html",
+    "Name": "HTML Comparison"
+  },
+  {
+    "Url": "/cells/comparison/mht",
+    "AppUrl": "/cells/comparison",
+    "Extension1": "mht",
+    "Name": "MHT Comparison"
+  },
+  {
+    "Url": "/cells/comparison/mhtml",
+    "AppUrl": "/cells/comparison",
+    "Extension1": "mhtml",
+    "Name": "MHTML Comparison"
+  }
+]

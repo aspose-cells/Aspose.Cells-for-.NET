@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.Diagnostics.CodeAnalysis;
@@ -8,10 +9,10 @@ using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Web.Http;
+using System.Web.Http.Controllers;
 using System.Web.Http.Description;
 using Aspose.Cells.API.Areas.HelpPage.ModelDescriptions;
 using Aspose.Cells.API.Areas.HelpPage.Models;
-using Aspose.Cells.API.Areas.HelpPage.SampleGeneration;
 
 namespace Aspose.Cells.API.Areas.HelpPage
 {
@@ -49,7 +50,7 @@ namespace Aspose.Cells.API.Areas.HelpPage
         /// <param name="actionName">Name of the action.</param>
         public static void SetSampleRequest(this HttpConfiguration config, object sample, MediaTypeHeaderValue mediaType, string controllerName, string actionName)
         {
-            config.GetHelpPageSampleGenerator().ActionSamples.Add(new HelpPageSampleKey(mediaType, SampleDirection.Request, controllerName, actionName, new[] {"*"}), sample);
+            config.GetHelpPageSampleGenerator().ActionSamples.Add(new HelpPageSampleKey(mediaType, SampleDirection.Request, controllerName, actionName, new[] { "*" }), sample);
         }
 
         /// <summary>
@@ -76,7 +77,7 @@ namespace Aspose.Cells.API.Areas.HelpPage
         /// <param name="actionName">Name of the action.</param>
         public static void SetSampleResponse(this HttpConfiguration config, object sample, MediaTypeHeaderValue mediaType, string controllerName, string actionName)
         {
-            config.GetHelpPageSampleGenerator().ActionSamples.Add(new HelpPageSampleKey(mediaType, SampleDirection.Response, controllerName, actionName, new[] {"*"}), sample);
+            config.GetHelpPageSampleGenerator().ActionSamples.Add(new HelpPageSampleKey(mediaType, SampleDirection.Response, controllerName, actionName, new[] { "*" }), sample);
         }
 
         /// <summary>
@@ -126,7 +127,7 @@ namespace Aspose.Cells.API.Areas.HelpPage
         /// <param name="actionName">Name of the action.</param>
         public static void SetActualRequestType(this HttpConfiguration config, Type type, string controllerName, string actionName)
         {
-            config.GetHelpPageSampleGenerator().ActualHttpMessageTypes.Add(new HelpPageSampleKey(SampleDirection.Request, controllerName, actionName, new[] {"*"}), type);
+            config.GetHelpPageSampleGenerator().ActualHttpMessageTypes.Add(new HelpPageSampleKey(SampleDirection.Request, controllerName, actionName, new[] { "*" }), type);
         }
 
         /// <summary>
@@ -153,7 +154,7 @@ namespace Aspose.Cells.API.Areas.HelpPage
         /// <param name="actionName">Name of the action.</param>
         public static void SetActualResponseType(this HttpConfiguration config, Type type, string controllerName, string actionName)
         {
-            config.GetHelpPageSampleGenerator().ActualHttpMessageTypes.Add(new HelpPageSampleKey(SampleDirection.Response, controllerName, actionName, new[] {"*"}), type);
+            config.GetHelpPageSampleGenerator().ActualHttpMessageTypes.Add(new HelpPageSampleKey(SampleDirection.Response, controllerName, actionName, new[] { "*" }), type);
         }
 
         /// <summary>
@@ -177,7 +178,7 @@ namespace Aspose.Cells.API.Areas.HelpPage
         /// <returns>The help page sample generator.</returns>
         public static HelpPageSampleGenerator GetHelpPageSampleGenerator(this HttpConfiguration config)
         {
-            return (HelpPageSampleGenerator) config.Properties.GetOrAdd(
+            return (HelpPageSampleGenerator)config.Properties.GetOrAdd(
                 typeof(HelpPageSampleGenerator),
                 k => new HelpPageSampleGenerator());
         }
@@ -202,7 +203,7 @@ namespace Aspose.Cells.API.Areas.HelpPage
         /// <returns>The <see cref="ModelDescriptionGenerator"/></returns>
         public static ModelDescriptionGenerator GetModelDescriptionGenerator(this HttpConfiguration config)
         {
-            return (ModelDescriptionGenerator) config.Properties.GetOrAdd(
+            return (ModelDescriptionGenerator)config.Properties.GetOrAdd(
                 typeof(ModelDescriptionGenerator),
                 k => InitializeModelDescriptionGenerator(config));
         }
@@ -217,26 +218,31 @@ namespace Aspose.Cells.API.Areas.HelpPage
         /// </returns>
         public static HelpPageApiModel GetHelpPageApiModel(this HttpConfiguration config, string apiDescriptionId)
         {
-            var modelId = ApiModelPrefix + apiDescriptionId;
-            if (config.Properties.TryGetValue(modelId, out var model)) return (HelpPageApiModel) model;
-            var apiDescriptions = config.Services.GetApiExplorer().ApiDescriptions;
-            var apiDescription = apiDescriptions.FirstOrDefault(api => string.Equals(api.GetFriendlyId(), apiDescriptionId, StringComparison.OrdinalIgnoreCase));
-            if (apiDescription == null) return (HelpPageApiModel) model;
-            model = GenerateApiModel(apiDescription, config);
-            config.Properties.TryAdd(modelId, model);
+            object model;
+            string modelId = ApiModelPrefix + apiDescriptionId;
+            if (!config.Properties.TryGetValue(modelId, out model))
+            {
+                Collection<ApiDescription> apiDescriptions = config.Services.GetApiExplorer().ApiDescriptions;
+                ApiDescription apiDescription = apiDescriptions.FirstOrDefault(api => String.Equals(api.GetFriendlyId(), apiDescriptionId, StringComparison.OrdinalIgnoreCase));
+                if (apiDescription != null)
+                {
+                    model = GenerateApiModel(apiDescription, config);
+                    config.Properties.TryAdd(modelId, model);
+                }
+            }
 
-            return (HelpPageApiModel) model;
+            return (HelpPageApiModel)model;
         }
 
         private static HelpPageApiModel GenerateApiModel(ApiDescription apiDescription, HttpConfiguration config)
         {
-            var apiModel = new HelpPageApiModel
+            HelpPageApiModel apiModel = new HelpPageApiModel()
             {
                 ApiDescription = apiDescription,
             };
 
-            var modelGenerator = config.GetModelDescriptionGenerator();
-            var sampleGenerator = config.GetHelpPageSampleGenerator();
+            ModelDescriptionGenerator modelGenerator = config.GetModelDescriptionGenerator();
+            HelpPageSampleGenerator sampleGenerator = config.GetHelpPageSampleGenerator();
             GenerateUriParameters(apiModel, modelGenerator);
             GenerateRequestModelDescription(apiModel, modelGenerator, sampleGenerator);
             GenerateResourceDescription(apiModel, modelGenerator);
@@ -247,68 +253,94 @@ namespace Aspose.Cells.API.Areas.HelpPage
 
         private static void GenerateUriParameters(HelpPageApiModel apiModel, ModelDescriptionGenerator modelGenerator)
         {
-            var apiDescription = apiModel.ApiDescription;
-            foreach (var apiParameter in apiDescription.ParameterDescriptions)
+            ApiDescription apiDescription = apiModel.ApiDescription;
+            foreach (ApiParameterDescription apiParameter in apiDescription.ParameterDescriptions)
             {
-                if (apiParameter.Source != ApiParameterSource.FromUri) continue;
-                var parameterDescriptor = apiParameter.ParameterDescriptor;
-                Type parameterType = null;
-                ModelDescription typeDescription = null;
-                ComplexTypeModelDescription complexTypeDescription = null;
-                if (parameterDescriptor != null)
+                if (apiParameter.Source == ApiParameterSource.FromUri)
                 {
-                    parameterType = parameterDescriptor.ParameterType;
-                    typeDescription = modelGenerator.GetOrCreateModelDescription(parameterType);
-                    complexTypeDescription = typeDescription as ComplexTypeModelDescription;
-                }
-
-                // Regular complex class Point will have properties X and Y added to UriParameters collection.
-                if (complexTypeDescription != null
-                    && !IsBindableWithTypeConverter(parameterType))
-                {
-                    foreach (var uriParameter in complexTypeDescription.Properties)
+                    HttpParameterDescriptor parameterDescriptor = apiParameter.ParameterDescriptor;
+                    Type parameterType = null;
+                    ModelDescription typeDescription = null;
+                    ComplexTypeModelDescription complexTypeDescription = null;
+                    if (parameterDescriptor != null)
                     {
-                        apiModel.UriParameters.Add(uriParameter);
-                    }
-                }
-                else if (parameterDescriptor != null)
-                {
-                    var uriParameter =
-                        AddParameterDescription(apiModel, apiParameter, typeDescription);
-
-                    if (!parameterDescriptor.IsOptional)
-                    {
-                        uriParameter.Annotations.Add(new ParameterAnnotation {Documentation = "Required"});
+                        parameterType = parameterDescriptor.ParameterType;
+                        typeDescription = modelGenerator.GetOrCreateModelDescription(parameterType);
+                        complexTypeDescription = typeDescription as ComplexTypeModelDescription;
                     }
 
-                    var defaultValue = parameterDescriptor.DefaultValue;
-                    if (defaultValue != null)
+                    // Example:
+                    // [TypeConverter(typeof(PointConverter))]
+                    // public class Point
+                    // {
+                    //     public Point(int x, int y)
+                    //     {
+                    //         X = x;
+                    //         Y = y;
+                    //     }
+                    //     public int X { get; set; }
+                    //     public int Y { get; set; }
+                    // }
+                    // Class Point is bindable with a TypeConverter, so Point will be added to UriParameters collection.
+                    // 
+                    // public class Point
+                    // {
+                    //     public int X { get; set; }
+                    //     public int Y { get; set; }
+                    // }
+                    // Regular complex class Point will have properties X and Y added to UriParameters collection.
+                    if (complexTypeDescription != null
+                        && !IsBindableWithTypeConverter(parameterType))
                     {
-                        uriParameter.Annotations.Add(new ParameterAnnotation {Documentation = "Default value is " + Convert.ToString(defaultValue, CultureInfo.InvariantCulture)});
+                        foreach (ParameterDescription uriParameter in complexTypeDescription.Properties)
+                        {
+                            apiModel.UriParameters.Add(uriParameter);
+                        }
                     }
-                }
-                else
-                {
-                    Debug.Assert(parameterDescriptor == null);
+                    else if (parameterDescriptor != null)
+                    {
+                        ParameterDescription uriParameter =
+                            AddParameterDescription(apiModel, apiParameter, typeDescription);
 
-                    // If parameterDescriptor is null, this is an undeclared route parameter which only occurs
-                    // when source is FromUri. Ignored in request model and among resource parameters but listed
-                    // as a simple string here.
-                    var modelDescription = modelGenerator.GetOrCreateModelDescription(typeof(string));
-                    AddParameterDescription(apiModel, apiParameter, modelDescription);
+                        if (!parameterDescriptor.IsOptional)
+                        {
+                            uriParameter.Annotations.Add(new ParameterAnnotation() { Documentation = "Required" });
+                        }
+
+                        object defaultValue = parameterDescriptor.DefaultValue;
+                        if (defaultValue != null)
+                        {
+                            uriParameter.Annotations.Add(new ParameterAnnotation() { Documentation = "Default value is " + Convert.ToString(defaultValue, CultureInfo.InvariantCulture) });
+                        }
+                    }
+                    else
+                    {
+                        Debug.Assert(parameterDescriptor == null);
+
+                        // If parameterDescriptor is null, this is an undeclared route parameter which only occurs
+                        // when source is FromUri. Ignored in request model and among resource parameters but listed
+                        // as a simple string here.
+                        ModelDescription modelDescription = modelGenerator.GetOrCreateModelDescription(typeof(string));
+                        AddParameterDescription(apiModel, apiParameter, modelDescription);
+                    }
                 }
             }
         }
 
         private static bool IsBindableWithTypeConverter(Type parameterType)
         {
-            return parameterType != null && TypeDescriptor.GetConverter(parameterType).CanConvertFrom(typeof(string));
+            if (parameterType == null)
+            {
+                return false;
+            }
+
+            return TypeDescriptor.GetConverter(parameterType).CanConvertFrom(typeof(string));
         }
 
         private static ParameterDescription AddParameterDescription(HelpPageApiModel apiModel,
             ApiParameterDescription apiParameter, ModelDescription typeDescription)
         {
-            var parameterDescription = new ParameterDescription
+            ParameterDescription parameterDescription = new ParameterDescription
             {
                 Name = apiParameter.Name,
                 Documentation = apiParameter.Documentation,
@@ -321,19 +353,19 @@ namespace Aspose.Cells.API.Areas.HelpPage
 
         private static void GenerateRequestModelDescription(HelpPageApiModel apiModel, ModelDescriptionGenerator modelGenerator, HelpPageSampleGenerator sampleGenerator)
         {
-            var apiDescription = apiModel.ApiDescription;
-            foreach (var apiParameter in apiDescription.ParameterDescriptions)
+            ApiDescription apiDescription = apiModel.ApiDescription;
+            foreach (ApiParameterDescription apiParameter in apiDescription.ParameterDescriptions)
             {
                 if (apiParameter.Source == ApiParameterSource.FromBody)
                 {
-                    var parameterType = apiParameter.ParameterDescriptor.ParameterType;
+                    Type parameterType = apiParameter.ParameterDescriptor.ParameterType;
                     apiModel.RequestModelDescription = modelGenerator.GetOrCreateModelDescription(parameterType);
                     apiModel.RequestDocumentation = apiParameter.Documentation;
                 }
                 else if (apiParameter.ParameterDescriptor != null &&
-                         apiParameter.ParameterDescriptor.ParameterType == typeof(HttpRequestMessage))
+                    apiParameter.ParameterDescriptor.ParameterType == typeof(HttpRequestMessage))
                 {
-                    var parameterType = sampleGenerator.ResolveHttpRequestMessageType(apiDescription);
+                    Type parameterType = sampleGenerator.ResolveHttpRequestMessageType(apiDescription);
 
                     if (parameterType != null)
                     {
@@ -345,8 +377,8 @@ namespace Aspose.Cells.API.Areas.HelpPage
 
         private static void GenerateResourceDescription(HelpPageApiModel apiModel, ModelDescriptionGenerator modelGenerator)
         {
-            var response = apiModel.ApiDescription.ResponseDescription;
-            var responseType = response.ResponseType ?? response.DeclaredType;
+            ResponseDescription response = apiModel.ApiDescription.ResponseDescription;
+            Type responseType = response.ResponseType ?? response.DeclaredType;
             if (responseType != null && responseType != typeof(void))
             {
                 apiModel.ResourceDescription = modelGenerator.GetOrCreateModelDescription(responseType);
@@ -372,7 +404,7 @@ namespace Aspose.Cells.API.Areas.HelpPage
             }
             catch (Exception e)
             {
-                apiModel.ErrorMessages.Add(string.Format(CultureInfo.CurrentCulture,
+                apiModel.ErrorMessages.Add(String.Format(CultureInfo.CurrentCulture,
                     "An exception has occurred while generating the sample. Exception message: {0}",
                     HelpPageSampleGenerator.UnwrapException(e).Message));
             }
@@ -382,7 +414,7 @@ namespace Aspose.Cells.API.Areas.HelpPage
         {
             parameterDescription = apiDescription.ParameterDescriptions.FirstOrDefault(
                 p => p.Source == ApiParameterSource.FromBody ||
-                     p.ParameterDescriptor != null && p.ParameterDescriptor.ParameterType == typeof(HttpRequestMessage));
+                    (p.ParameterDescriptor != null && p.ParameterDescriptor.ParameterType == typeof(HttpRequestMessage)));
 
             if (parameterDescription == null)
             {
@@ -394,34 +426,39 @@ namespace Aspose.Cells.API.Areas.HelpPage
 
             if (resourceType == typeof(HttpRequestMessage))
             {
-                var sampleGenerator = config.GetHelpPageSampleGenerator();
+                HelpPageSampleGenerator sampleGenerator = config.GetHelpPageSampleGenerator();
                 resourceType = sampleGenerator.ResolveHttpRequestMessageType(apiDescription);
             }
 
-            if (resourceType != null) return true;
-            parameterDescription = null;
-            return false;
+            if (resourceType == null)
+            {
+                parameterDescription = null;
+                return false;
+            }
 
+            return true;
         }
 
         private static ModelDescriptionGenerator InitializeModelDescriptionGenerator(HttpConfiguration config)
         {
-            var modelGenerator = new ModelDescriptionGenerator(config);
-            var apis = config.Services.GetApiExplorer().ApiDescriptions;
-            foreach (var api in apis)
+            ModelDescriptionGenerator modelGenerator = new ModelDescriptionGenerator(config);
+            Collection<ApiDescription> apis = config.Services.GetApiExplorer().ApiDescriptions;
+            foreach (ApiDescription api in apis)
             {
-                if (TryGetResourceParameter(api, config, out var parameterDescription, out var parameterType))
+                ApiParameterDescription parameterDescription;
+                Type parameterType;
+                if (TryGetResourceParameter(api, config, out parameterDescription, out parameterType))
                 {
                     modelGenerator.GetOrCreateModelDescription(parameterType);
                 }
             }
-
             return modelGenerator;
         }
 
         private static void LogInvalidSampleAsError(HelpPageApiModel apiModel, object sample)
         {
-            if (sample is InvalidSample invalidSample)
+            InvalidSample invalidSample = sample as InvalidSample;
+            if (invalidSample != null)
             {
                 apiModel.ErrorMessages.Add(invalidSample.ErrorMessage);
             }

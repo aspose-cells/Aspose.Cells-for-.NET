@@ -1,4 +1,4 @@
-﻿let xs;
+let xs;
 let uniqueid;
 const imagediv = "imagedive";
 const basiczorder = 5678;
@@ -14,8 +14,8 @@ $(function () {
     const baseUrl = `${APIBasePath}AsposeCellsViewer/DetailJson`;
     const finalUrl = `${baseUrl}?file=${encodeURIComponent(file)}&folderName=${encodeURIComponent(folderName)}`;
     $.ajax({
-        url: finalUrl,
-        timeout: 59000,
+        url: encodeURI(finalUrl),
+        timeout: 600000,
         cache: false,
         beforeSend: LoadFunction,
         error: errorFunction,
@@ -25,8 +25,22 @@ $(function () {
     function LoadFunction() {
     }
 
-    function errorFunction() {
-        alert("error");
+    function errorFunction(err) {
+        console.error(err);
+
+        if (err !== undefined && err.Status !== undefined) {
+            alert(err.Status);
+            closeWindow();
+            return;
+        }
+
+        if (err.responseJSON !== undefined && err.responseJSON.Status !== undefined) {
+            alert(err.responseJSON.Status);
+            closeWindow();
+            return;
+        }
+
+        alert("Error");
         closeWindow();
     }
 
@@ -62,6 +76,7 @@ function load(jsonData) {
     // x.spreadsheet.locale('zh-cn');
     xs = x_spreadsheet('#xs-div', {
         showToolbar: false,
+        showPartToolbar: true,
         showGrid: true,
         mode: 'read',
         showContextmenu: false,
@@ -88,7 +103,7 @@ function load(jsonData) {
             xs.sheet.data.deleteExceptRowHideForAutoFilter();
         }
     }
-    xs.setActiveSheet(jsonData.actsheet).setActiveCell(jsonData.actrow, jsonData.actcol);
+    xs.setActiveSheetByName(jsonData.actname).setActiveCell(jsonData.actrow, jsonData.actcol);
 
     // var i1=new resizeableImage($('#img1'),0);
     // xs.loadData(jsondata);
@@ -133,37 +148,6 @@ function load(jsonData) {
 
 function save(isImage = false) {
     window.location = encodeURI(APIBasePath + `AsposeCellsViewer/DownloadDocument?file=${encodeURIComponent(file)}&folderName=${encodeURIComponent(folderName)}&isImage=${isImage}`);
-}
-
-function print() {
-    const zoom = 1;
-    const chrome = true;
-    const newWin = window.open("", "");
-    if (chrome) {
-        newWin.window.focus();
-        newWin.onbeforeunload = function () {
-            return 'Please use the cancel button on the left side of the print preview to close this window.\n';
-        }
-    }
-    newWin.document.writeln('<html lang="en"><head><title>Print Preview</title>');
-    newWin.document.writeln('</head>');
-    newWin.document.writeln('<body style=\"zoom:' + zoom + ';\" onload="window.print();" style="margin: 0">');
-    newWin.document.writeln('<form>');
-
-    let gHtml;
-    const vt = document.getElementById("xs-div");
-    const fCol = document.getElementById("aaaa_FCOL");
-    if (fCol == null) {
-        gHtml = "<TABLE>" + "<TR>" + "<TD>" + vt.outerHTML + "</TD>" + "</TR>" + "</TABLE>";
-    }
-
-    newWin.document.writeln(gHtml);
-    newWin.document.writeln('</form></body></HTML>');
-    if (chrome) {
-        newWin.document.close();
-    } else {
-        newWin.location.reload();
-    }
 }
 
 function fallbackCopyTextToClipboard(text) {

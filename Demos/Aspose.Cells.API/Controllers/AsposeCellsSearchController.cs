@@ -7,7 +7,6 @@ using System.Web.Mvc;
 using Aspose.Cells.API.Config;
 using Aspose.Cells.API.Models;
 using Tools.Foundation.Models;
-using File = System.IO.File;
 
 namespace Aspose.Cells.API.Controllers
 {
@@ -16,6 +15,8 @@ namespace Aspose.Cells.API.Controllers
     ///</Summary>
     public class AsposeCellsSearchController : AsposeCellsBaseController
     {
+        private const string App = "Search";
+
         /// <summary>
         /// Search method call search controller based on product name
         /// </summary>
@@ -28,14 +29,22 @@ namespace Aspose.Cells.API.Controllers
 
             try
             {
-                var docs = await UploadWorkBooks(sessionId);
+                var taskUpload = Task.Run(() => UploadWorkbooks(sessionId));
+                taskUpload.Wait(Api.Configuration.MillisecondsTimeout);
+                if (!taskUpload.IsCompleted)
+                {
+                    NLogger.LogError($"Search UploadWorkbooks=>{sessionId}=>{AppSettings.ProcessingTimedout}");
+                    throw new TimeoutException(AppSettings.ProcessingTimedout);
+                }
+
+                var docs = taskUpload.Result;
                 if (docs == null)
                     return PasswordProtectedResponse;
                 if (docs.Length == 0 || docs.Length > MaximumUploadFiles)
                     return MaximumFileLimitsResponse;
 
                 SetDefaultOptions(docs);
-                Opts.AppName = SearchApp;
+                Opts.AppName = "Search";
                 Opts.MethodName = "Search";
                 Opts.OutputType = ".xlsx";
                 Opts.ResultFileName = "Search Results";
@@ -46,15 +55,19 @@ namespace Aspose.Cells.API.Controllers
 
                 return await Search(fileName, folderName, query);
             }
-            catch (AppException ex)
+            catch (Exception e)
             {
-                NLogger.LogError(ex, $"{sessionId}-{action}");
-                return AppErrorResponse(ex.Message, sessionId, action);
-            }
-            catch (Exception ex)
-            {
-                NLogger.LogError(ex, $"{sessionId}-{action}");
-                return InternalServerErrorResponse(sessionId, action);
+                var exception = e.InnerException ?? e;
+                var message = $"{exception.Message} | query = {query}";
+                NLogger.LogError(App, "Search", message, sessionId);
+
+                return new Response
+                {
+                    StatusCode = 500,
+                    Status = exception.Message,
+                    FolderName = sessionId,
+                    Text = action
+                };
             }
         }
 
@@ -74,7 +87,7 @@ namespace Aspose.Cells.API.Controllers
             var wb = new Workbook(fn);
 
             // Specify the find options.
-            var opts = new FindOptions {LookAtType = LookAtType.Contains, LookInType = LookInType.Values};
+            // var opts = new FindOptions {LookAtType = LookAtType.Contains, LookInType = LookInType.Values};
 
             var findText = query;
             var found = new StringBuilder();
@@ -126,20 +139,27 @@ namespace Aspose.Cells.API.Controllers
         ///</Summary>
         public async Task<Response> Search(string fileName, string folderName, string query)
         {
-            var taskResp = Process(GetType().Name, "SearchResults", folderName, ".txt", false, false,
-                AsposeCells + SearchApp, ProductFamilyNameKeysEnum.cells, "Search",
+            // License.SetAsposeCellsLicense();
+
+            var taskResp = Process("SearchResults", folderName, ".txt", false,
                 (inFilePath, outPath, zipOutFolder) =>
                 {
                     var fn = AppSettings.WorkingDirectory + folderName + "/" + fileName;
                     var stopWatch = new Stopwatch();
                     stopWatch.Start();
-                    NLogger.LogInfo($"Search {query}=>{fn}=>Start", AsposeCells, ProductFamilyNameKeysEnum.cells, outPath);
+                    NLogger.LogInfo($"Search {query}=>{fn}=>Start");
 
                     var task = Task.Run(() => { SearchQuery(fileName, folderName, query, outPath); });
-                    Task.WaitAll(task);
+                    var isCompleted = task.Wait(Api.Configuration.MillisecondsTimeout);
+
+                    if (!isCompleted)
+                    {
+                        NLogger.LogError($"Search {query}=>{fn}=>{AppSettings.ProcessingTimedout}");
+                        throw new TimeoutException(AppSettings.ProcessingTimedout);
+                    }
 
                     stopWatch.Stop();
-                    NLogger.LogInfo($"Search {query}=>{fn}=>cost seconds:{stopWatch.Elapsed.TotalSeconds}", AsposeCells, ProductFamilyNameKeysEnum.cells, outPath);
+                    NLogger.LogInfo($"Search {query}=>{fn}=>cost seconds:{stopWatch.Elapsed.TotalSeconds}");
                 });
 
             if (MFoundNothing)

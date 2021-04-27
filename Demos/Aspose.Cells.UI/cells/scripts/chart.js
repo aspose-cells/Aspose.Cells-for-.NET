@@ -1,4 +1,4 @@
-﻿(function ($) {
+(function ($) {
     $.chart = function (data) {
         const display = function () {
             let div, img, span, url, imgFolderName, imgFileName;

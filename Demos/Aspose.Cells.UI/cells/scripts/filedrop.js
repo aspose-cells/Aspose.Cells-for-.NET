@@ -267,7 +267,8 @@
 			}
 		};
 
-		var twoBlocks = o.AppName === "Comparison";
+		// var twoBlocks = o.AppName === "Comparison";
+		const twoBlocks = false;
 		var fileDropBlockStr = '\
             <div class="filedrop filedrop-mvc fileplacement" id="filedrop-' + randomId + '"' + (twoBlocks ? 'style="padding:30px 0"': '') + '>\
                 <label for="UploadFileInput-' + randomId + '" style="margin-top: 50px;text-decoration: underline">' + options.DropFilesPrompt + '</label>\

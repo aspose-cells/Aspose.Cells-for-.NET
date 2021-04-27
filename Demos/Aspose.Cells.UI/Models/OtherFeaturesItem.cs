@@ -5,23 +5,17 @@
         /// <summary>
         /// Url for anchor
         /// </summary>
-        public string URL { get; set; }
+        public string Url { get; set; }
 
         /// <summary>
         /// Title
         /// </summary>
         public string Title { get; set; }
 
-        /// <summary>
-        /// TitleSub
-        /// </summary>
-        public string TitleSub { get; set; }
-
         public OtherFeaturesItem(GeneratedPage page)
         {
-            URL = page.URL;
+            Url = page.Url;
             Title = page.Name;
-            TitleSub = $"({page.MainHeadline})";
         }
     }
 }

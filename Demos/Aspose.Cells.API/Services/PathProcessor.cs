@@ -95,7 +95,7 @@ namespace Aspose.Cells.API.Services
         public PathProcessor(string id, string file, bool checkDefaultSourceFileExistence)
         {
             this.id = id;
-            File = file;
+            this.File = file;
 
             if (checkDefaultSourceFileExistence && !System.IO.File.Exists(DefaultSourceFile))
                 throw HttpHelper.Http404();
@@ -123,7 +123,7 @@ namespace Aspose.Cells.API.Services
         public PathProcessor(string id, string file)
         {
             this.id = id;
-            File = file;
+            this.File = file;
 
             if (!System.IO.File.Exists(DefaultOutFile))
                 throw HttpHelper.Http404();
@@ -144,7 +144,7 @@ namespace Aspose.Cells.API.Services
             )
             {
                 id = id,
-                FileName = file ?? File
+                FileName = file != null ? file : File
             };
         }
 

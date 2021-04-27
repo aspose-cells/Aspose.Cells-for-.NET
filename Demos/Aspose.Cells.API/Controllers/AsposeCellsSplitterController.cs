@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web.Mvc;
+using Aspose.Cells.API.Config;
 using Aspose.Cells.API.Models;
 using Tools.Foundation.Models;
 
@@ -11,6 +12,8 @@ namespace Aspose.Cells.API.Controllers
 {
     public class AsposeCellsSplitterController : AsposeCellsBaseController
     {
+        private const string App = "Splitter";
+
         ///<Summary>
         /// Split method
         ///</Summary>
@@ -20,16 +23,23 @@ namespace Aspose.Cells.API.Controllers
         public async Task<Response> Split(string outputType)
         {
             var sessionId = Guid.NewGuid().ToString();
-            var action = $"Split to {outputType.Trim().ToLower()}";
-
+            var action = $"Split to {outputType}";
             try
             {
-                var docs = await UploadWorkBooks(sessionId);
+                var taskUpload = Task.Run(() => UploadWorkbooks(sessionId));
+                taskUpload.Wait(Api.Configuration.MillisecondsTimeout);
+                if (!taskUpload.IsCompleted)
+                {
+                    NLogger.LogError($"Splitter UploadWorkbooks=>{sessionId}=>{AppSettings.ProcessingTimedout}");
+                    throw new TimeoutException(AppSettings.ProcessingTimedout);
+                }
+
+                var docs = taskUpload.Result;
                 if (docs.Length == 0 || docs.Length > MaximumUploadFiles)
                     return MaximumFileLimitsResponse;
 
                 SetDefaultOptions(docs);
-                Opts.AppName = SplitterApp;
+                Opts.AppName = "Splitter";
                 Opts.MethodName = "Split";
                 Opts.CreateZip = true;
                 Opts.ZipFileName = "Splitted files";
@@ -40,17 +50,17 @@ namespace Aspose.Cells.API.Controllers
                 {
                     var stopWatch = new Stopwatch();
                     stopWatch.Start();
-                    NLogger.LogInfo($"Split to {outputType.Trim().ToLower()}=>{string.Join(",", docs.Select(t => t.FileName))}=>Start", AsposeCells, ProductFamilyNameKeysEnum.cells, outPath);
+                    NLogger.LogInfo($"Split to {outputType.Trim().ToLower()}=>{string.Join(",", docs.Select(t => t.FileName))}=>Start");
 
-                    var tasks = docs.Select(doc => Task.Factory.StartNew(() =>
+                    var task = Task.Run(() =>
                     {
-                        var workbook = doc.Workbook;
-                        var worksheetCollection = workbook.Worksheets;
-                        var i = worksheetCollection.Count;
-
-                        for (var j = 0; j < i; j++)
+                        foreach (var doc in docs)
                         {
-                            try
+                            var workbook = doc.Workbook;
+                            var worksheetCollection = workbook.Worksheets;
+                            var i = worksheetCollection.Count;
+
+                            for (var j = 0; j < i; j++)
                             {
                                 var sheet = worksheetCollection[j];
                                 var newWorkbook = new Workbook();
@@ -75,28 +85,33 @@ namespace Aspose.Cells.API.Controllers
 
                                 SaveDocument(documentInfo, newOutPath, zipOutFolder, saveOpt);
                             }
-                            catch (Exception e)
-                            {
-                                Console.WriteLine(e);
-                                throw;
-                            }
                         }
-                    })).ToArray();
-                    Task.WaitAll(tasks);
+                    });
+                    var isCompleted = task.Wait(Api.Configuration.MillisecondsTimeout);
+
+                    if (!isCompleted)
+                    {
+                        NLogger.LogError($"Split to {outputType.Trim().ToLower()}=>{string.Join(",", docs.Select(t => t.FileName))}=>{AppSettings.ProcessingTimedout}");
+                        throw new TimeoutException(AppSettings.ProcessingTimedout);
+                    }
 
                     stopWatch.Stop();
-                    NLogger.LogInfo($"Split to {outputType.Trim().ToLower()}=>{string.Join(",", docs.Select(t => t.FileName))}=>cost seconds:{stopWatch.Elapsed.TotalSeconds}", AsposeCells, ProductFamilyNameKeysEnum.cells, outPath);
+                    NLogger.LogInfo($"Split to {outputType.Trim().ToLower()}=>{string.Join(",", docs.Select(t => t.FileName))}=>cost seconds:{stopWatch.Elapsed.TotalSeconds}");
                 });
             }
-            catch (AppException ex)
+            catch (Exception e)
             {
-                NLogger.LogError(ex, $"{sessionId}-{action}");
-                return AppErrorResponse(ex.Message, sessionId, action);
-            }
-            catch (Exception ex)
-            {
-                NLogger.LogError(ex, $"{sessionId}-{action}");
-                return InternalServerErrorResponse(sessionId, action);
+                var exception = e.InnerException ?? e;
+                var message = $"{exception.Message} | outputType = {outputType}";
+                NLogger.LogError(App, "Split", message, sessionId);
+
+                return new Response
+                {
+                    StatusCode = 500,
+                    Status = exception.Message,
+                    FolderName = sessionId,
+                    Text = action
+                };
             }
         }
 

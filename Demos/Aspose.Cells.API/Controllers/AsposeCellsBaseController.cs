@@ -3,16 +3,18 @@ using System.IO;
 using System.Linq;
 using System.Net.Http;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Aspose.Cells.API.Config;
-using Aspose.Cells.API.Helpers;
 using Aspose.Cells.API.Models;
 using Aspose.Cells.API.Services;
 using Aspose.Cells.Drawing;
+using Aspose.Cells.GridJs;
 using Aspose.Cells.Rendering;
 using Aspose.Pdf;
 using Tools.Foundation.Models;
 using Image = System.Drawing.Image;
+using license = Aspose.Cells.API.Models.License;
 
 namespace Aspose.Cells.API.Controllers
 {
@@ -174,15 +176,17 @@ namespace Aspose.Cells.API.Controllers
         protected static readonly Encoding UTF8WithoutBom = new UTF8Encoding(false);
 
         /// <summary>
-        /// ProductFamily
+        /// initialize AsposeCellsBaseController
         /// </summary>
-        public ProductFamilyNameKeysEnum ProductFamily => ProductFamilyNameKeysEnum.cells;
+        public AsposeCellsBaseController()
+        {
+            license.SetCellsLicense();
+        }
 
         /// <summary>
         /// Prepare upload files and return as documents
         /// </summary>
-        /// <exception cref="AppException"></exception>
-        protected async Task<DocumentInfo[]> UploadWorkBooks(string sessionId)
+        protected async Task<DocumentInfo[]> UploadWorkbooks(string sessionId)
         {
             try
             {
@@ -192,19 +196,38 @@ namespace Aspose.Cells.API.Controllers
                 await Request.Content.ReadAsMultipartAsync(uploadProvider);
                 return uploadProvider.FileData.Select(x =>
                 {
-                    var workbook = IsImage(x.LocalFileName) ? new Workbook() : new Workbook(x.LocalFileName);
-
-                    return new DocumentInfo
+                    var options = new LoadOptions {CheckExcelRestriction = false};
+                    var interruptMonitor = new InterruptMonitor();
+                    options.InterruptMonitor = interruptMonitor;
+                    var t1 = new Thread(InterruptMonitor);
+                    try
                     {
-                        FolderName = folderName,
-                        FileName = x.LocalFileName,
-                        Workbook = workbook
-                    };
+                        t1.Start(new object[] {interruptMonitor, Api.Configuration.MillisecondsTimeout, x.LocalFileName});
+                        var workbook = IsImage(x.LocalFileName) ? new Workbook() : new Workbook(x.LocalFileName, options);
+                        return new DocumentInfo
+                        {
+                            FolderName = folderName,
+                            FileName = x.LocalFileName,
+                            Workbook = workbook
+                        };
+                    }
+                    finally
+                    {
+                        t1.Interrupt();
+                    }
                 }).ToArray();
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                throw new AppException("Invalid file, please ensure that uploading correct file");
+                if (e is CellsException cellsException && cellsException.Code == ExceptionType.Interrupted)
+                {
+                    NLogger.LogError($"UploadWorkbooks {sessionId}=>{AppSettings.ProcessingTimedout}");
+                    throw new TimeoutException(AppSettings.ProcessingTimedout);
+                }
+
+                if (string.IsNullOrEmpty(e.Message))
+                    throw new Exception("Invalid file, please ensure that uploading correct file");
+                throw;
             }
         }
 
@@ -415,13 +438,15 @@ namespace Aspose.Cells.API.Controllers
         protected SaveFormatType GetSaveFormatType(string filename)
         {
             var outputType = Path.GetExtension(filename);
-            if (string.IsNullOrEmpty(outputType)) return GetSaveOptions(outputType);
-            if (outputType[0] == '.')
+            if (!string.IsNullOrEmpty(outputType))
             {
-                outputType = outputType.Substring(1);
-            }
+                if (outputType[0] == '.')
+                {
+                    outputType = outputType.Substring(1);
+                }
 
-            outputType = outputType.ToLower();
+                outputType = outputType.ToLower();
+            }
 
             return GetSaveOptions(outputType);
         }
@@ -437,17 +462,41 @@ namespace Aspose.Cells.API.Controllers
                 var pathProcessor = new PathProcessor(folderName);
                 var uploadProvider = new MultipartFormDataStreamProviderSafe(pathProcessor.SourceFolder);
                 await Request.Content.ReadAsMultipartAsync(uploadProvider);
-                return uploadProvider.FileData.Select(x => new DocumentInfo
+
+                return uploadProvider.FileData.Select(x =>
                 {
-                    FolderName = folderName,
-                    FileName = x.LocalFileName,
-                    Workbook = new Workbook(x.LocalFileName, new LoadOptions {Password = password})
+                    var interruptMonitor = new InterruptMonitor();
+                    var options = new LoadOptions { CheckExcelRestriction = false, Password = password, InterruptMonitor = interruptMonitor };
+                    var thread = new Thread(InterruptMonitor);
+                    try
+                    {
+                        thread.Start(new object[] { interruptMonitor, Api.Configuration.MillisecondsTimeout, x.LocalFileName });
+                        var workbook = new Workbook(x.LocalFileName, options);
+                        return new DocumentInfo
+                        {
+                            FolderName = folderName,
+                            FileName = x.LocalFileName,
+                            Workbook = workbook
+                        };
+                    }
+                    finally
+                    {
+                        thread.Interrupt();
+                    }
                 }).ToArray();
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                LogError(ex);
-                throw new AppException("Invalid file, please ensure that uploading correct file");
+                if (e is CellsException cellsException && cellsException.Code == ExceptionType.Interrupted)
+                {
+                    NLogger.LogError($"UploadFiles {sessionId} password: {password}=>{AppSettings.ProcessingTimedout}");
+                    throw new TimeoutException(AppSettings.ProcessingTimedout);
+                }
+
+                if (string.IsNullOrEmpty(e.Message))
+                    throw new Exception("Invalid file, please ensure that uploading correct file");
+
+                throw;
             }
         }
 
@@ -465,15 +514,10 @@ namespace Aspose.Cells.API.Controllers
 
 
             return Process(
-                GetType().Name,
                 Opts.ResultFileName,
                 Opts.FolderName,
                 Opts.OutputType,
                 Opts.CreateZip,
-                Opts.CheckNumberOfPages,
-                AsposeCells + Opts.AppName,
-                ProductFamilyNameKeysEnum.cells,
-                Opts.MethodName,
                 action,
                 Opts.DeleteSourceFolder,
                 Opts.ZipFileName
@@ -520,75 +564,79 @@ namespace Aspose.Cells.API.Controllers
                 Directory.CreateDirectory(zipOutFolder);
 
             var worksheetCount = doc.Workbook.Worksheets.Count;
-            var outPath = zipOutFolder;
-            switch (saveOptions.SaveType)
+
+            doc.Workbook.InterruptMonitor = new InterruptMonitor();
+            var t1 = new Thread(InterruptMonitor);
+            try
             {
-                case SaveType.xls:
-                case SaveType.ods:
-                case SaveType.pdf:
-                case SaveType.xps:
-                case SaveType.xlsx:
-                case SaveType.xlsm:
-                case SaveType.xlsb:
-                case SaveType.xlam:
-                case SaveType.tabdelimited:
-                case SaveType.md:
-                    outPath += Opts.OutputType;
-                    doc.Workbook.Save(outPath);
-                    break;
-                case SaveType.csv:
-                case SaveType.tsv:
-                    outPath += Opts.OutputType;
-                    doc.Workbook.Save(outPath, saveOptions.SaveOptions);
-                    break;
-                case SaveType.tiff:
-                case SaveType.png:
-                case SaveType.jpg:
-                case SaveType.bmp:
-                case SaveType.emf:
-                case SaveType.wmf:
-                case SaveType.svg:
-                    SaveImage(doc, zipOutFolder, filename, saveOptions.ImageOrPrintOptions, worksheetCount);
-                    break;
-                case SaveType.html:
-                    if (worksheetCount > 1)
-                    {
-                        Opts.CreateZip = true;
-                    }
+                t1.Start(new object[] {doc.Workbook.InterruptMonitor, Api.Configuration.MillisecondsTimeout, doc.FileName});
+                var outPath = zipOutFolder;
+                switch (saveOptions.SaveType)
+                {
+                    case SaveType.xls:
+                    case SaveType.ods:
+                    case SaveType.pdf:
+                    case SaveType.xps:
+                    case SaveType.xlsx:
+                    case SaveType.xlsm:
+                    case SaveType.xlsb:
+                    case SaveType.xlam:
+                    case SaveType.tabdelimited:
+                    case SaveType.md:
+                        outPath += Opts.OutputType;
+                        doc.Workbook.Save(outPath);
+                        break;
+                    case SaveType.csv:
+                    case SaveType.tsv:
+                        outPath += Opts.OutputType;
+                        doc.Workbook.Save(outPath, saveOptions.SaveOptions);
+                        break;
+                    case SaveType.tiff:
+                    case SaveType.png:
+                    case SaveType.jpg:
+                    case SaveType.bmp:
+                    case SaveType.emf:
+                    case SaveType.wmf:
+                    case SaveType.svg:
+                        SaveImage(doc, zipOutFolder, filename, saveOptions.ImageOrPrintOptions, worksheetCount);
+                        break;
+                    case SaveType.html:
+                        if (worksheetCount > 1)
+                        {
+                            Opts.CreateZip = true;
+                        }
 
-                    doc.Workbook.Save(filename, saveOptions.SaveOptions);
-                    break;
-                case SaveType.mhtml:
-                    doc.Workbook.Save(filename, saveOptions.SaveOptions);
-                    break;
-                case SaveType.docx:
-                case SaveType.pptx:
-                    outPath += Opts.OutputType;
-                    doc.Workbook.CalculateFormula();
-                    using (var stream = new MemoryStream())
-                    {
-                        doc.Workbook.Save(stream, SaveFormat.Pdf);
-                        stream.Position = 0;
-                        var pdf = new Document(stream);
-                        pdf.Save(outPath, saveOptions.PdfSaveFileFormat);
-                    }
+                        doc.Workbook.Save(filename, saveOptions.SaveOptions);
+                        break;
+                    case SaveType.mhtml:
+                        doc.Workbook.Save(filename, saveOptions.SaveOptions);
+                        break;
+                    case SaveType.docx:
+                    case SaveType.pptx:
+                        outPath += Opts.OutputType;
+                        doc.Workbook.CalculateFormula();
+                        using (var stream = new MemoryStream())
+                        {
+                            var acLic = new Pdf.License();
+                            acLic.SetLicense("Aspose.Total.lic");
 
-                    break;
-                case null:
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
+                            doc.Workbook.Save(stream, SaveFormat.Pdf);
+                            stream.Position = 0;
+                            var pdf = new Document(stream);
+                            pdf.Save(outPath, saveOptions.PdfSaveFileFormat);
+                        }
+
+                        break;
+                    case null:
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
             }
-        }
-
-        /// <summary>
-        /// LogError method to log errors
-        /// </summary>
-        protected void LogError(Exception ex)
-        {
-            var logMsg = "ControllerName = " + Opts.ControllerName + ", " + "MethodName = " + Opts.MethodName + ", " +
-                         "Folder = " + Opts.FolderName;
-            NLogger.LogError(ex, logMsg, AsposeCells + Opts.AppName, ProductFamily, Opts.FileName);
+            finally
+            {
+                t1.Interrupt();
+            }
         }
 
         /// <summary>
@@ -608,7 +656,7 @@ namespace Aspose.Cells.API.Controllers
 
             public ImageOrPrintOptions ImageOrPrintOptions { get; set; }
 
-            public Pdf.SaveFormat PdfSaveFileFormat { get; set; }
+            public Aspose.Pdf.SaveFormat PdfSaveFileFormat { get; set; }
         }
 
         /// <summary>
@@ -721,26 +769,34 @@ namespace Aspose.Cells.API.Controllers
             }
         }
 
-        protected static Response InternalServerErrorResponse(string folderName, string text)
+        private void InterruptMonitor(object o)
         {
-            return new Response
+            var os = (object[]) o;
+            try
             {
-                Status = "Internal server error",
-                StatusCode = 500,
-                FolderName = folderName,
-                Text = text,
-            };
+                Thread.Sleep((int) os[1]);
+                var message = $"Failed to process file in given time: {os[1]}ms | filename : {os[2]}";
+                NLogger.LogError(message);
+                ((InterruptMonitor) os[0]).Interrupt();
+            }
+            catch (ThreadInterruptedException)
+            {
+            }
         }
 
-        protected static Response AppErrorResponse(string msg, string folderName, string text)
+        protected void GridInterruptMonitor(object o)
         {
-            return new Response
+            var os = (object[]) o;
+            try
             {
-                Status = msg,
-                StatusCode = 500,
-                FolderName = folderName,
-                Text = text,
-            };
+                Thread.Sleep((int) os[1]);
+                var message = $"GridJs failed to process file in given time: {os[1]}ms | filename : {os[2]}";
+                NLogger.LogError(message);
+                ((GridInterruptMonitor) os[0]).Interrupt();
+            }
+            catch (ThreadInterruptedException)
+            {
+            }
         }
     }
 }

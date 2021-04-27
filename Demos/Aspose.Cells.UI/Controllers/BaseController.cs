@@ -26,26 +26,12 @@ namespace Aspose.Cells.UI.Controllers
         /// <summary>
         /// Main context object to access all the dcContent specific context info
         /// </summary>
-        public AsposeToolsContext AsposeToolsContext
-        {
-            get
-            {
-                if (_atcContext == null) _atcContext = new AsposeToolsContext(HttpContext.ApplicationInstance.Context);
-                return _atcContext;
-            }
-        }
+        public AsposeToolsContext AsposeToolsContext => _atcContext ?? (_atcContext = new AsposeToolsContext(HttpContext.ApplicationInstance.Context));
 
         /// <summary>
         /// key/value pair containing all the error messages defined in resources.xml file
         /// </summary>
-        virtual public FlexibleResources Resources
-        {
-            get
-            {
-                if (_resources == null) _resources = AsposeToolsContext.Resources;
-                return _resources;
-            }
-        }
+        public virtual FlexibleResources Resources => _resources ?? (_resources = AsposeToolsContext.Resources);
 
         protected bool IsValidEmail(string email)
         {
@@ -58,12 +44,6 @@ namespace Aspose.Cells.UI.Controllers
             {
                 return false;
             }
-        }
-
-        protected void SetSEO(ResourcesModel model)
-        {
-            ViewBag.Title = model.SEOPageTitle;
-            ViewBag.MetaDescription = model.SEOMetaDescription;
         }
     }
 }

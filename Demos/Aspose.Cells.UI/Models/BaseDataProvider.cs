@@ -7,8 +7,7 @@ namespace Aspose.Cells.UI.Models
     /// </summary>
     public abstract class BaseDataProvider
     {
-        protected static GeneratedPagesService _GeneratedPagesService = new GeneratedPagesService();
-        protected static SitemapService _SitemapService = new SitemapService();
-        protected static FileFormatService _FileFormatService = new FileFormatService();
+        protected static GeneratedPagesService GeneratedPagesService = new GeneratedPagesService();
+        protected static FileFormatService FileFormatService = new FileFormatService();
     }
 }

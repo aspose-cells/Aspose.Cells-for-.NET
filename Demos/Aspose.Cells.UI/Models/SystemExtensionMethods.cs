@@ -18,12 +18,12 @@ namespace Aspose.Cells.UI.Models
 
         public static bool IsNullOrEmpty(this IEnumerable value)
         {
-            return value == null || !value.Cast<object>().Any();
+            return value == null || value.Cast<object>().Count() == 0;
         }
 
         public static bool IsNullOrEmpty<T>(this IEnumerable<T> value)
         {
-            return value == null || !value.Any();
+            return value == null || value.Count() == 0;
         }
 
         public static bool IsNullOrEmpty(this string value)
@@ -43,7 +43,9 @@ namespace Aspose.Cells.UI.Models
 
         public static B GetValueOrDefault<T, B>(IDictionary<T, B> dict, T key, B defaultValue = default(B))
         {
-            return dict.TryGetValue(key, out var value) ? value : defaultValue;
+            if (dict.TryGetValue(key, out B value))
+                return value;
+            return defaultValue;
         }
     }
 }

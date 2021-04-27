@@ -9,7 +9,7 @@ namespace Aspose.Cells.UI.Models
         private readonly ViewModel Parent;
         private FlexibleResources Resources => Parent.Resources;
 
-        public string AppURL => Parent.AppURL;
+        public string AppURL => Parent.AppUrl;
         public string AppName => Parent.AppName;
         public string AppRoute => Parent.AppRoute;
 
@@ -20,6 +20,7 @@ namespace Aspose.Cells.UI.Models
 
         public string ViewerPath => $"{UIBasePath}/{Parent.Product}/view?";
         public string EditorPath => $"{UIBasePath}/{Parent.Product}/edit?";
+        public string ComparisonPath => $"{UIBasePath}/{Parent.Product}/compare?";
 
         public string FileSelectMessage => Resources["cellsFileSelectMessage"];
 
@@ -40,7 +41,7 @@ namespace Aspose.Cells.UI.Models
 
         public string FileWrongTypeMessage { get; }
 
-        public Dictionary<int, string> FileProcessingErrorCodes => new Dictionary<int, string>
+        public Dictionary<int, string> FileProcessingErrorCodes => new Dictionary<int, string>()
         {
             {(int) FileProcessingErrorCode.NoSearchResults, Resources["cellsNoSearchResultsMessage"]},
             {(int) FileProcessingErrorCode.WrongRegExp, Resources["cellsWrongRegExpMessage"]}

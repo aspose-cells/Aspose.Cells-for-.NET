@@ -12,7 +12,7 @@
     <link href="cells/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
 
     <!-- Bootstrap & Font CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.1/dist/css/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cms.dynabic.com/templates/aspose/css/bootstrap.css?v=331" type="text/css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" type="text/css"/>
 
     <!-- Common CSS -->
@@ -23,9 +23,9 @@
     <!-- script src="https://code.jquery.com/jquery-1.10.2.js" -->
 
     <link href="https://cms.admin.containerize.com/templates/aspose/css/AsposePtyLtdMenu.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css"/>
+    <link rel="stylesheet" href="https://cms.admin.containerize.com/templates/aspose/css/font-awesome.css" type="text/css"/>
 
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
     <link rel="stylesheet" href="~/cells/css/asposeapp.css" type="text/css"/>
 
@@ -239,6 +239,32 @@
                             <span class="spanclass">
                                 <%= Resources["AsposeCells"] %> <% = Resources["AsposeProductFor"] %> <em><%= Resources["cellsChartAPPName"] %></em>
                             </span><em><%= Resources["cellsChartDesc"] %></em>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 productfamily_box">
+                    <div class="productfamilytitle">
+                        <div class="imgblock">
+                            <img src="/cells/img/aspose_cells-for-net.png" alt="Aspose.Cells for .NET"/>
+                        </div>
+                        <a href="/cells/translation">
+                            <span class="spanclass">
+                                <%= Resources["AsposeCells"] %> <% = Resources["AsposeProductFor"] %> <em><%= Resources["cellsTranslationAPPName"] %></em>
+                            </span><em><%= Resources["cellsTranslationDesc"] %>.</em>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 productfamily_box">
+                    <div class="productfamilytitle">
+                        <div class="imgblock">
+                            <img src="/cells/img/aspose_cells-for-net.png" alt="Aspose.Cells for .NET"/>
+                        </div>
+                        <a href="/cells/comparison">
+                            <span class="spanclass">
+                                <%= Resources["AsposeCells"] %> <% = Resources["AsposeProductFor"] %> <em><%= Resources["cellsComparisonAPPName"] %></em>
+                            </span><em><%= Resources["cellsComparisonDesc"] %>.</em>
                         </a>
                     </div>
                 </div>

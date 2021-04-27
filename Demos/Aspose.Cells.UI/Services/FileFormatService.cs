@@ -1,59 +1,52 @@
-using Aspose.Cells.UI.Config;
 using Aspose.Cells.UI.Models.DTO.SEOApi;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Net.Http;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
 
 namespace Aspose.Cells.UI.Services
 {
-	public class FileFormatService : BaseAPICacheService
-	{
-		public async Task<FileFormat> Get(
-			string extension
-		)
-		{
-			using (var response = await _httpClient.GetAsync($"{Configuration.OptimizationSEOUrl}/FileFormat?extension={extension}&AuthenticationToken={Configuration.OptimizationSEOKey}"))
-			{
-				response.EnsureSuccessStatusCode();
-				return await response.Content.ReadAsAsync<FileFormat>();
-			}
-		}
+    public class FileFormatService : BaseApiCacheService
+    {
+        public async Task<FileFormat> GetFromLocal(string extension)
+        {
+            var jsonFilePath = GetVirtualPath("~/App_Data/file_format.json");
+            using (var sr = new StreamReader(jsonFilePath))
+            {
+                var json = await sr.ReadToEndAsync();
+                var formats = JsonConvert.DeserializeObject<Dictionary<string, FileFormat>>(json);
 
-		public async Task<Dictionary<string, FileFormat>> GetAll()
-		{
-			using (var response = await _httpClient.GetAsync($"{Configuration.OptimizationSEOUrl}/FileFormat/All?AuthenticationToken={Configuration.OptimizationSEOKey}"))
-			{
-				response.EnsureSuccessStatusCode();
-				return await response.Content.ReadAsAsync<Dictionary<string, FileFormat>>();
-			}
-		}
+                return formats.Keys.Contains(extension) ? formats[extension] : null;
+            }
+        }
 
-		public FileFormat GetCached(string extension) =>
-			GetCached(_AllFileFormats ?? _FileFormats, extension, async () => await Get(extension));
+        public async Task<Dictionary<string, FileFormat>> GetAllFromLocal()
+        {
+            var jsonFilePath = GetVirtualPath("~/App_Data/file_format.json");
+            using (var sr = new StreamReader(jsonFilePath))
+            {
+                var json = await sr.ReadToEndAsync();
+                return JsonConvert.DeserializeObject<Dictionary<string, FileFormat>>(json);
+            }
+        }
 
-		object locker = new object();
-		public Dictionary<string, FileFormat> GetAllCached()
-		{
-			lock (locker)
-			{
-				if (_AllFileFormats == null)
-					_AllFileFormats = Task.Run(async () => await GetAll()).Result;
+        public FileFormat GetCached(string extension) => GetCached(_allFileFormats ?? FileFormats, extension, async () => await GetFromLocal(extension));
 
-				return _AllFileFormats.ToDictionary(k => k.Key, v => v.Value);
-			}
-		}
+        private readonly object _locker = new object();
 
-		static Dictionary<string, FileFormat> _FileFormats = new Dictionary<string, FileFormat>();
-		static Dictionary<string, FileFormat> _AllFileFormats = null;
+        public Dictionary<string, FileFormat> GetAllCached()
+        {
+            lock (_locker)
+            {
+                if (_allFileFormats == null)
+                    _allFileFormats = Task.Run(async () => await GetAllFromLocal()).Result;
 
-		public static void PurgeCache()
-		{
-			lock (_FileFormats)
-			{
-				_FileFormats.Clear();
-				_AllFileFormats?.Clear();
-			}
-		}
-	}
+                return _allFileFormats.ToDictionary(k => k.Key, v => v.Value);
+            }
+        }
+
+        private static readonly Dictionary<string, FileFormat> FileFormats = new Dictionary<string, FileFormat>();
+        private static Dictionary<string, FileFormat> _allFileFormats;
+    }
 }

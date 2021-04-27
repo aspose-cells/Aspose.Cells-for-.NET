@@ -13,13 +13,7 @@ namespace Aspose.Cells.UI
         protected void Application_Error(object sender, EventArgs e)
         {
             var ex = ((HttpApplication) sender).Context.Error;
-            NLogger.LogError(
-                ex,
-                $"ControllerName = {nameof(Global)}, MethodName = {nameof(Application_Error)}",
-                "",
-                ProductFamilyNameKeysEnum.unassigned,
-                ""
-            );
+            NLogger.LogError(nameof(Global), nameof(Application_Error), ex.Message, "null");
         }
 
         protected void Application_AcquireRequestState(object sender, EventArgs e)
@@ -33,9 +27,6 @@ namespace Aspose.Cells.UI
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             RegisterCustomRoutes(RouteTable.Routes);
-
-            // Set aspose cells gridweb font folder
-            GridWeb.GridWeb.SetFontFolder(Configuration.GridWebFontFolderPath, true);
         }
 
         private void Session_Start(object sender, EventArgs e)
@@ -190,6 +181,21 @@ namespace Aspose.Cells.UI
                 "CellsSplitterRoute",
                 "cells/splitter/{fileformat}",
                 new {controller = "Cells", action = "Splitter", fileformat = ""}
+            );
+            routes.MapRoute(
+                "CellsTranslationRoute",
+                "cells/translation/{fileformat}",
+                new {controller = "Cells", action = "Translation", fileformat = ""}
+            );
+            routes.MapRoute(
+                "CellsComparisonRoute",
+                "cells/comparison/{fileformat}",
+                new {controller = "Cells", action = "Comparison", fileformat = ""}
+            );
+            routes.MapPageRoute(
+                "AsposeToolsComparisonCells",
+                "cells/compare",
+                "~/cells/Comparison/index.html"
             );
 
             RegisterEmailDefaultRoutes(routes);

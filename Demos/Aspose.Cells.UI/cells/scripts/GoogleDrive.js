@@ -1,4 +1,4 @@
-﻿// The Browser API key obtained from the Google API Console.
+// The Browser API key obtained from the Google API Console.
 // Replace with your own Browser API key, or your own key.
 var developerKey = document.getElementById("hdnGoogleDeveloperID").value;
 

@@ -1,6 +1,6 @@
 using System;
 
-namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
+namespace Aspose.Cells.API.Areas.HelpPage
 {
     /// <summary>
     /// This represents an image sample on the help page. There's a display template named ImageSample associated with this class.
@@ -13,14 +13,19 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
         /// <param name="src">The URL of an image.</param>
         public ImageSample(string src)
         {
-            Src = src ?? throw new ArgumentNullException("src");
+            if (src == null)
+            {
+                throw new ArgumentNullException("src");
+            }
+            Src = src;
         }
 
         public string Src { get; private set; }
 
         public override bool Equals(object obj)
         {
-            return obj is ImageSample other && Src == other.Src;
+            ImageSample other = obj as ImageSample;
+            return other != null && Src == other.Src;
         }
 
         public override int GetHashCode()

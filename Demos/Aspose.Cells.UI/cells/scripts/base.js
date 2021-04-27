@@ -1,4 +1,4 @@
-﻿const VIEWABLE_EXTENSIONS = [
+const VIEWABLE_EXTENSIONS = [
     'XLS', 'XLSX', 'XLSM', 'XLSB', 'ODS'
 ];
 
@@ -43,14 +43,17 @@ function hideLoader() {
 
 function generateViewerLink(data) {
     var id = data.FolderName !== undefined ? data.FolderName : data.id;
-    return encodeURI(o.ViewerPath +
+    return encodeURI(
+        o.ViewerPath +
         'FolderName=' +
         id +
         '&CallbackURL=' +
         o.AppURL +
         "&APIBasePath=" +
-        o.APIBasePath) + '&FileName=' +
-        encodeURIComponent(data.FileName);
+        o.APIBasePath +
+        '&FileName=' +
+        encodeURIComponent(data.FileName)
+    );
 }
 
 function generateEditEditorLink(data) {
@@ -63,9 +66,10 @@ function generateEditEditorLink(data) {
         o.AppURL +
         "&APIBasePath=" +
         o.APIBasePath +
-        "&Method=edit"
-        ) + '&FileName=' +
-        encodeURIComponent(data.FileName);
+        "&Method=edit" +
+        '&FileName=' +
+        encodeURIComponent(data.FileName)
+    );
 }
 
 function generateNewEditorLink(data) {
@@ -148,7 +152,9 @@ function workSuccess(data, textStatus, xhr) {
         }
     } else {
         showAlert(data.Status);
-        ShowReportModal(data);
+
+        if (data.StatusCode === 500)
+            ShowReportModal(data);
     }
 }
 
@@ -604,13 +610,6 @@ function requestProtect() {
     request(url, data);
 }
 
-function validateComparison() {
-    if (fileDrop.droppedFiles.length === 1 && fileDrop.droppedFiles.length === 1)
-        return true;
-    showAlert(o.FileSelectMessage);
-    return false;
-}
-
 function requestEditEditor() {
     let data = fileDrop.prepareFormData();
     if (data === null)
@@ -703,6 +702,117 @@ function requestChart() {
             return myXhr;
         },
         error: function (err) {
+            if (err.responseJSON !== undefined && err.responseJSON.Status !== undefined) {
+                showAlert(err.responseJSON.Status);
+
+                if (err.responseJSON.StatusCode === 500)
+                    ShowReportModal(err.responseJSON);
+            } else {
+                showAlert("Error " + err.status + ": " + err.statusText);
+            }
+        }
+    });
+}
+
+function validateTranslation() {
+    if ($("#translateFrom").val() === "-") {
+        showAlert("Select Input Language");
+        return false;
+    }
+
+    if ($("#translateTo").val() === "-") {
+        showAlert("Select Output Language");
+        return false;
+    }
+
+    if ($("#saveAs").val() === "-") {
+        showAlert("Select Output Format");
+        return false;
+    }
+
+    return true;
+}
+
+function requestTranslation() {
+    let data = fileDrop.prepareFormData();
+    if (data === null)
+        return;
+
+    if (!validateTranslation())
+        return;
+
+    let url = o.APIBasePath + 'AsposeCellsTranslation/Translate?outputType=' + $('#saveAs').val()
+        + '&translateFrom=' + $("#translateFrom").val()
+        + '&translateTo=' + $("#translateTo").val();
+    request(url, data);
+}
+
+function validateComparison() {
+    if (fileDrop.droppedFiles.length === 2)
+        return true;
+    showAlert(o.FileAmountMessage);
+    return false;
+}
+
+function generateComparisonLink(data) {
+    const id = data.FolderName !== undefined ? data.FolderName : data.id;
+    return encodeURI(
+        o.ComparisonPath +
+        'FolderName=' +
+        id +
+        '&CallbackURL=' +
+        o.AppURL +
+        "&APIBasePath=" +
+        o.APIBasePath +
+        "&FileName1=" +
+        encodeURIComponent(data.FileName) +
+        '&FileName2=' +
+        encodeURIComponent(data.FileName2)
+    );
+}
+
+// todo CELLSAPP-223
+function requestComparison() {
+    let data = fileDrop.prepareFormData();
+    if (data === null)
+        return;
+
+    if (!validateComparison())
+        return;
+
+    showLoader();
+    let url = o.APIBasePath + 'AsposeCellsComparison/Compare';
+    $.ajax({
+        method: 'POST',
+        url: url,
+        data: data,
+        contentType: false,
+        processData: false,
+        cache: false,
+        timeout: 600000,
+        success: (res) => {
+            hideLoader();
+
+            if (res.StatusCode === 200) {
+                if (res.FileProcessingErrorCode !== undefined && res.FileProcessingErrorCode !== 0) {
+                    showAlert(o.FileProcessingErrorCodes[res.FileProcessingErrorCode]);
+                    return;
+                }
+
+                let pathname = window.location.pathname;
+                openIframe(generateComparisonLink(res), pathname, '/cells/compare');
+            } else {
+                showAlert(res.Status);
+                ShowReportModal(res);
+            }
+        },
+        xhr: function () {
+            let myXhr = $.ajaxSettings.xhr();
+            if (myXhr.upload)
+                myXhr.upload.addEventListener('progress', progress, false);
+            return myXhr;
+        },
+        error: (err) => {
             if (err.responseJSON !== undefined && err.responseJSON.Status !== undefined) {
                 showAlert(err.responseJSON.Status);
                 ShowReportModal(err.responseJSON);
@@ -853,14 +963,14 @@ $(document).ready(function () {
         progress: progress
     }, o));
 
-    if (o.AppName === "Comparison") {
+    /*if (o.AppName === "Comparison") {
         fileDrop2 = $('form#UploadFile').filedrop(Object.assign({
             showAlert: showAlert,
             hideAlert: hideAlert,
             showLoader: showLoader,
             progress: progress
         }, o));
-    }
+    }*/
 
     // close iframe if it was opened
     window.onpopstate = function (event) {

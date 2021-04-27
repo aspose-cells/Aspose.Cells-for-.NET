@@ -1,4 +1,4 @@
-﻿let xs;
+let xs;
 let uniqueid;
 const imagediv = "imagedive";
 const basiczorder = 5678;
@@ -22,8 +22,8 @@ function getDetailJson() {
     const baseUrl = `${APIBasePath}AsposeCellsEditor/DetailJson`;
     const finalUrl = `${baseUrl}?file=${encodeURIComponent(file)}&folderName=${encodeURIComponent(folderName)}`;
     $.ajax({
-        url: finalUrl,
-        timeout: 59000,
+        url: encodeURI(finalUrl),
+        timeout: 600000,
         cache: false,
         beforeSend: LoadFunction,
         error: errorFunction,
@@ -33,8 +33,22 @@ function getDetailJson() {
     function LoadFunction() {
     }
 
-    function errorFunction() {
-        alert("error");
+    function errorFunction(err) {
+        console.error(err);
+
+        if (err !== undefined && err.Status !== undefined) {
+            alert(err.Status);
+            closeWindow();
+            return;
+        }
+
+        if (err.responseJSON !== undefined && err.responseJSON.Status !== undefined) {
+            alert(err.responseJSON.Status);
+            closeWindow();
+            return;
+        }
+
+        alert("Error");
         closeWindow();
     }
 
@@ -54,12 +68,12 @@ function getNewWorkbook() {
     $.ajax({
         url: url,
         success: (data) => {
-            const jsonData = JSON.parse(data);
-            file = jsonData.FileName;
-            folderName = jsonData.FolderName;
+            file = data.FileName;
+            folderName = data.FolderName;
             getDetailJson();
         },
-        error: () => {
+        error: (e) => {
+            console.error(e);
             alert("error");
             closeWindow();
         }
@@ -94,7 +108,9 @@ function load(jsonData) {
                 return document.documentElement.clientHeight - 56;
             }
         }
-    }).loadData(sheets);
+    }).loadData(sheets).updateCellError((msg) => {
+        alert(msg);
+    });
 
     $(".x-spreadsheet-overlayer-content").append('<div id="' + imagediv + '" style="position:relative" /> ');
     const imageDivEl = $("#" + imagediv);
@@ -112,7 +128,7 @@ function load(jsonData) {
             xs.sheet.data.deleteExceptRowHideForAutoFilter();
         }
     }
-    xs.setActiveSheet(jsonData.actsheet).setActiveCell(jsonData.actrow, jsonData.actcol);
+    xs.setActiveSheetByName(jsonData.actname).setActiveCell(jsonData.actrow, jsonData.actcol);
 
     // var i1=new resizeableImage($('#img1'),0);
     // xs.loadData(jsondata);
@@ -174,64 +190,77 @@ function downloadDocument(outputTypeEnum, FolderName, FileName) {
             outputType = "Original";
     }
     window.location = encodeURI(APIBasePath + `AsposeCellsEditor/DownloadDocument?file=${encodeURIComponent(FileName)}&folderName=${encodeURIComponent(FolderName)}&outputType=${encodeURIComponent(outputType)}`);
+    closeMask().then();
+}
+
+async function zip(str) {
+    const geoJsonGz = pako.gzip(str);
+    return new Blob([geoJsonGz]);
 }
 
 function save(outputTypeEnum) {
-    const jsonData = {
-        "sheetname": xs.sheet.data.name,
-        "actrow": xs.sheet.data.selector.ri,
-        "actcol": xs.sheet.data.selector.ci,
-        "datas": xs.datas
-    };
-    const url = APIBasePath + "AsposeCellsEditor/Download";
-    $.ajax({
-        url: url,
-        type: "post",
-        data: {
+    if (!xs.buffer.isFinish()) {
+        showMask("The update operation is being processed, please try again later.");
+
+        setTimeout(() => {
+            closeMask().then();
+        }, 1500);
+        return;
+    }
+
+    try {
+        showMask();
+
+        const datas = xs.datas;
+        delete datas.history;
+        delete datas.search;
+        delete datas.images;
+        delete datas.shapes;
+        const jsonData = {
+            "sheetname": xs.sheet.data.name,
+            "actrow": xs.sheet.data.selector.ri,
+            "actcol": xs.sheet.data.selector.ci,
+            "datas": datas
+        };
+
+        const data = {
             "p": JSON.stringify(jsonData),
             "uid": uniqueid,
             "file": file,
-        },
-        success: (res) => {
-            const resData = JSON.parse(res);
-            const FolderName = resData.FolderName;
-            const FileName = resData.FileName;
-            downloadDocument(outputTypeEnum, FolderName, FileName);
-        },
-        error: () => {
+        };
+        zip(JSON.stringify(data)).then((zipData) => {
+            const url = APIBasePath + "AsposeCellsEditor/Download";
+            $.ajax({
+                url: url,
+                type: "post",
+                header: {
+                    'contentType': 'application/octet-stream',
+                    'Content-Encoding': 'gzip'
+                },
+                data: zipData,
+                processData: false,
+                success: (res) => {
+                    if (res.StatusCode === 200) {
+                        downloadDocument(outputTypeEnum, res.FolderName, res.FileName);
+                    } else {
+                        closeMask().then(() => {
+                            alert("Download failed, please try again");
+                        });
+                    }
+                },
+                error: (err) => {
+                    console.error(err);
+                    closeMask().then(() => {
+                        alert("Download failed, please try again");
+                    });
+                }
+            });
+        });
+    } catch (e) {
+        console.error(e);
+        closeMask().then(() => {
             alert("Download failed, please try again");
-        }
-    });
-}
-
-function print() {
-    const zoom = 1;
-    const chrome = true;
-    const newWin = window.open("", "");
-    if (chrome) {
-        newWin.window.focus();
-        newWin.onbeforeunload = function () {
-            return 'Please use the cancel button on the left side of the print preview to close this window.\n';
-        }
-    }
-    newWin.document.writeln('<html lang="en"><head><title>Print Preview</title>');
-    newWin.document.writeln('</head>');
-    newWin.document.writeln('<body style=\"zoom:' + zoom + ';\" onload="window.print();" style="margin: 0">');
-    newWin.document.writeln('<form>');
-
-    let gHtml;
-    const vt = document.getElementById("xs-div");
-    const fCol = document.getElementById("aaaa_FCOL");
-    if (fCol == null) {
-        gHtml = "<TABLE>" + "<TR>" + "<TD>" + vt.outerHTML + "</TD>" + "</TR>" + "</TABLE>";
-    }
-
-    newWin.document.writeln(gHtml);
-    newWin.document.writeln('</form></body></HTML>');
-    if (chrome) {
-        newWin.document.close();
-    } else {
-        newWin.location.reload();
+        });
     }
 }
 
@@ -275,4 +304,40 @@ function closeWindow() {
     } else {
         window.location.href = callbackURL;
     }
+}
+
+function showMask(msg = "Downloading, please wait...") {
+    const mask_bg = document.createElement("div");
+    mask_bg.id = "aspose_mask_bg";
+    mask_bg.style.position = "absolute";
+    mask_bg.style.top = "0px";
+    mask_bg.style.left = "0px";
+    mask_bg.style.width = "100%";
+    mask_bg.style.height = "100%";
+    mask_bg.style.backgroundColor = "#777";
+    mask_bg.style.opacity = "0.6";
+    mask_bg.style.zIndex = "10001";
+    document.body.appendChild(mask_bg);
+
+    const mask_msg = document.createElement("div");
+    mask_msg.style.width = "460px";
+    mask_msg.style.position = "absolute";
+    mask_msg.style.top = "33%";
+    mask_msg.style.backgroundColor = "white";
+    mask_msg.style.border = "#336699 1px solid";
+    mask_msg.style.textAlign = "center";
+    mask_msg.style.fontSize = "medium";
+    mask_msg.style.textAlign = "center";
+
+    mask_msg.style.padding = "1.5em 4em 1.5em 4em";
+    mask_msg.innerText = msg;
+    const left = (document.documentElement.clientWidth - 460) / 2;
+    mask_msg.style.left = left + "px";
+    mask_bg.appendChild(mask_msg);
+}
+
+async function closeMask() {
+    const mask_bg = document.getElementById("aspose_mask_bg");
+    if (mask_bg != null)
+        mask_bg.parentNode.removeChild(mask_bg);
 }

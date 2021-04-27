@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Web.WebPages;
 using Newtonsoft.Json;
 using Aspose.Cells.UI.Config;
 using Aspose.Cells.UI.Controllers;
@@ -11,7 +10,7 @@ using Tools.Foundation.Models;
 
 namespace Aspose.Cells.UI.Models
 {
-    public class ViewModel
+    public sealed class ViewModel
     {
         public const int MaximumUploadFiles = 10;
 
@@ -21,7 +20,7 @@ namespace Aspose.Cells.UI.Models
         /// String for using in titles, meta description and headers.
         /// "Excel"
         /// </summary>
-        public const string cellsDefaultTitleAddition = "Excel";
+        public const string CellsDefaultTitleAddition = "Excel";
 
         /// <summary>
         /// Name of the product (e.g., words)
@@ -37,24 +36,8 @@ namespace Aspose.Cells.UI.Models
 
         public FlexibleResources Resources { get; set; }
 
-        public string APIBasePath => Configuration.AsposeToolsAPIBasePath;
-
         public string PageProductTitle => Resources["Aspose" + TitleCase(Product)];
-        public string PageProductTitleURL => "<a href=\"https://products.aspose.com/cells\">Aspose.Cells</a>";
-
-        public string PageAppName
-        {
-            get
-            {
-                var res = AppName;
-                if ("xfa".Equals(AppName, StringComparison.InvariantCultureIgnoreCase))
-                {
-                    res = "Xfa to Acroform converter";
-                }
-
-                return res;
-            }
-        }
+        public string PageProductTitleUrl => "<a href=\"https://products.aspose.com/cells\">Aspose.Cells</a>";
 
         public string EmailTo { get; set; }
 
@@ -66,13 +49,12 @@ namespace Aspose.Cells.UI.Models
         /// <summary>
         /// The full address of the application without query string (e.g., https://products.aspose.app/words/conversion)
         /// </summary>
-        public string AppURL { get; set; }
+        public string AppUrl { get; set; }
 
         /// <summary>
         /// The full address of the application without query string (e.g., https://products.aspose.app/words/conversion)
         /// </summary>
-        public string AppRoute => new Uri(AppURL).PathAndQuery;
-
+        public string AppRoute => new Uri(AppUrl).PathAndQuery;
 
         /// <summary>
         /// File extension without dot received by "fileformat" value in RouteData (e.g. docx)
@@ -117,7 +99,6 @@ namespace Aspose.Cells.UI.Models
         public string Title { get; set; }
         public string TitleSub { get; set; }
 
-
         public string PageTitle
         {
             get => Controller.ViewBag.PageTitle;
@@ -147,7 +128,7 @@ namespace Aspose.Cells.UI.Models
         /// </summary>
         public bool UploadAndRedirect { get; set; }
 
-        protected string TitleCase(string value) => new System.Globalization.CultureInfo("en-US", false).TextInfo.ToTitleCase(value);
+        private static string TitleCase(string value) => new System.Globalization.CultureInfo("en-US", false).TextInfo.ToTitleCase(value);
 
         /// <summary>
         /// e.g., .doc|.docx|.dot|.dotx|.rtf|.odt|.ott|.txt|.html|.xhtml|.mhtml
@@ -158,7 +139,7 @@ namespace Aspose.Cells.UI.Models
 
         private bool _saveAsComponent;
 
-        public virtual bool SaveAsComponent
+        public bool SaveAsComponent
         {
             get => _saveAsComponent;
             set
@@ -210,7 +191,7 @@ namespace Aspose.Cells.UI.Models
                 var lifeAcuteKey = Product + "SaveAsLiFeature";
                 var ligatureExt = Product + "SaveAsLiFeatureExt";
 
-                if (Resources.ContainsKey(ligatureExt))
+                if (Resources.ContainsKey(ligatureExt) && !SaveAsOptions.IsNullOrEmpty())
                 {
                     var str = new StringBuilder();
                     foreach (var ext in SaveAsOptions)
@@ -234,6 +215,8 @@ namespace Aspose.Cells.UI.Models
         /// FileFormats in UpperCase
         /// </summary>
         public string[] SaveAsOptions { get; set; }
+
+        public List<Languages> Languages { get; set; }
 
         /// <summary>
         /// Original file format SaveAs option for multiple files uploading
@@ -286,8 +269,8 @@ namespace Aspose.Cells.UI.Models
 
             //var url = controller.Request.Url.AbsoluteUri;
             //fix for reverse proxy http://localhost/
-            var url = Configuration.ProductsAsposeToolsURL + controller.Request.Url.PathAndQuery;
-            AppURL = url.Substring(0, url.IndexOf("?", StringComparison.Ordinal) > 0 ? url.IndexOf("?", StringComparison.Ordinal) : url.Length);
+            var url = Configuration.ProductsAsposeToolsURL + controller.Request.Url?.PathAndQuery;
+            AppUrl = url.Substring(0, url.IndexOf("?", StringComparison.Ordinal) > 0 ? url.IndexOf("?", StringComparison.Ordinal) : url.Length);
 
             ProductAppName = Product + app;
             SetHtmlLocale();
@@ -316,11 +299,9 @@ namespace Aspose.Cells.UI.Models
 
             PrepareOtherFeaturesModel();
             PrepareHowToModel();
-            // PrepareFaqPageModel();
 
             SetTitles();
             SetAppFeatures(app);
-            // PrepareBreadcrumbList();
 
             if (_otherAppsStatic.ContainsKey(Product))
                 OtherApps = _otherAppsStatic[Product].Values;
@@ -334,7 +315,7 @@ namespace Aspose.Cells.UI.Models
             PrepareStructuralDataJson();
         }
 
-        protected virtual void SetExtensions()
+        private void SetExtensions()
         {
             var routeValues = Controller.RouteData.Values;
             if (routeValues.ContainsKey("fileformat") && !string.IsNullOrEmpty(routeValues["fileformat"].ToString()))
@@ -354,16 +335,22 @@ namespace Aspose.Cells.UI.Models
                     Extension = "xlsx";
                 }
 
-                if (!Extension2.IsEmpty())
+                if (!Extension2.IsNullOrEmpty())
                 {
-                    if (Extension2.Equals("word"))
+                    switch (Extension2)
                     {
-                        Extension2 = "docx";
-                    }
+                        case "word":
+                            Extension2 = "docx";
+                            break;
 
-                    if (Extension2.Equals("ppt") || Extension2.Equals("powerpoint"))
-                    {
-                        Extension2 = "pptx";
+                        case "ppt":
+                        case "powerpoint":
+                            Extension2 = "pptx";
+                            break;
+
+                        case "excel":
+                            Extension2 = "xlsx";
+                            break;
                     }
                 }
 
@@ -389,7 +376,7 @@ namespace Aspose.Cells.UI.Models
 
                 try
                 {
-                    GeneratedPage = GeneratedPage.GetByURL(Controller.Request.Url.AbsolutePath.ToLower());
+                    GeneratedPage = GeneratedPage.GetByUrl(Controller.Request.Url?.AbsolutePath.ToLower());
                 }
                 catch
                 {
@@ -424,7 +411,7 @@ namespace Aspose.Cells.UI.Models
             }
         }
 
-        protected virtual void PrepareOtherFeaturesModel()
+        private void PrepareOtherFeaturesModel()
         {
             if (!Resources.ContainsKey(ProductAppName + "OtherFeaturesTitle")) return;
 
@@ -438,7 +425,7 @@ namespace Aspose.Cells.UI.Models
             }
         }
 
-        protected virtual void PrepareHowToModel()
+        private void PrepareHowToModel()
         {
             if (string.IsNullOrEmpty(Extension) && !IsCanonical) return;
 
@@ -458,7 +445,7 @@ namespace Aspose.Cells.UI.Models
         /// <param name="extension"></param>
         /// <param name="defaultValue"></param>
         /// <returns></returns>
-        protected internal string DesktopAppNameByExtension(string extension, string defaultValue = null)
+        internal string DesktopAppNameByExtension(string extension, string defaultValue = null)
         {
             if (string.IsNullOrEmpty(extension)) return defaultValue;
 
@@ -473,15 +460,15 @@ namespace Aspose.Cells.UI.Models
             }
         }
 
-        virtual public string this[string key]
+        public string this[string key]
         {
             get
             {
                 var res = GetAppResourceOrDefault(key) ??
-                          GetResourceOrDefault(key) ?? $"NoKey:{ProductAppName + key}";
+                          GetResourceOrDefault(key) ?? ($"NoKey:{ProductAppName + key}");
                 if (res.Contains("{"))
                 {
-                    res = string.Format(res, cellsDefaultTitleAddition);
+                    res = string.Format(res, CellsDefaultTitleAddition);
                 }
 
                 return res;
@@ -504,7 +491,7 @@ namespace Aspose.Cells.UI.Models
             SetTitles_Impl();
         }
 
-        protected virtual void SetTitles_Impl()
+        private void SetTitles_Impl()
         {
             // H1 and H4 texts are bad for SEO
             //Title = Resources.ContainsKey(pm + "H1") ? Resources[pm + "H1"] : Resources[pm + "Title"];
@@ -530,7 +517,7 @@ namespace Aspose.Cells.UI.Models
                         ? Resources[ProductAppName + "MetaKeywords"]
                         : "";
 
-                var additional = cellsDefaultTitleAddition; // Excel
+                var additional = CellsDefaultTitleAddition; // Excel
                 if (!string.IsNullOrEmpty(Extension))
                 {
                     additional = Extension.ToUpper();
@@ -547,10 +534,17 @@ namespace Aspose.Cells.UI.Models
                 if (TitleSub.Contains("{"))
                     TitleSub = string.Format(TitleSub, additional);
             }
-            else // Extension2
+
+            if (!string.IsNullOrEmpty(Extension2))
             {
-                var additional = Extension.ToUpper();
+                var additional = CellsDefaultTitleAddition; // Excel
                 var additional2 = Extension2.ToUpper();
+
+                if (!Extension.ToUpper().Equals("XLSX") || !Extension2.ToUpper().Equals("PDF"))
+                    additional = Extension.ToUpper();
+
+                if (Extension2.ToUpper().Equals("XLSX"))
+                    additional2 = CellsDefaultTitleAddition;
 
                 PageTitle = string.Format(Resources[ProductAppName + "PageTitle2"], additional, additional2);
                 MetaDescription = string.Format(Resources[ProductAppName + "MetaDescription2"], additional, additional2);
@@ -558,13 +552,13 @@ namespace Aspose.Cells.UI.Models
                     ? string.Format(Resources[ProductAppName + "MetaKeywords2"], additional, additional2)
                     : "";
                 Title = string.Format(Resources[ProductAppName + "Title2"], additional, additional2);
-                TitleSub = string.Format(Resources[ProductAppName + "TitleSub2"], Extension.ToUpper(), additional2);
+                TitleSub = string.Format(Resources[ProductAppName + "TitleSub2"], additional, additional2);
             }
 
             Controller.ViewBag.CanonicalTag = null;
         }
 
-        protected virtual void SetAppFeatures(string app)
+        private void SetAppFeatures(string app)
         {
             AppFeatures = new List<string>();
 
@@ -583,7 +577,6 @@ namespace Aspose.Cells.UI.Models
             }
         }
 
-
         private string GetFromResources(string key, string defaultKey = null)
         {
             if (Resources.ContainsKey(key))
@@ -593,7 +586,7 @@ namespace Aspose.Cells.UI.Models
             return "";
         }
 
-        protected virtual void SetExtensionsString()
+        private void SetExtensionsString()
         {
             if (!ShowExtensionInfo)
             {
@@ -631,7 +624,7 @@ namespace Aspose.Cells.UI.Models
         /// </summary>
         private readonly Dictionary<string, Dictionary<string, AnotherApp>> _otherAppsStatic = new Dictionary<string, Dictionary<string, AnotherApp>>();
 
-        protected virtual void InitOtherApps(string product)
+        private void InitOtherApps(string product)
         {
             var appList = new Dictionary<string, AnotherApp>();
             _otherAppsStatic.Add(product, appList);
@@ -640,9 +633,22 @@ namespace Aspose.Cells.UI.Models
 
             var apps = new[]
             {
-                "Editor", "Conversion", "Parser", "Metadata", "Viewer",
-                "Watermark", "Merger", "Search",
-                "Assembly", "Annotation", "Unlock", "Protect", "Splitter", "Chart"
+                "Editor",
+                "Conversion",
+                "Parser",
+                "Metadata",
+                "Viewer",
+                "Watermark",
+                "Merger",
+                "Search",
+                "Assembly",
+                "Annotation",
+                "Unlock",
+                "Protect",
+                "Splitter",
+                "Chart",
+                "Translation",
+                "Comparison"
             };
             foreach (var appName in apps)
                 appList.Add(appName, new AnotherApp(appName));
@@ -720,56 +726,7 @@ namespace Aspose.Cells.UI.Models
             AppFeatures.Insert(0, str.ToString());
         }
 
-        protected virtual string PrepareJsonLdBreadcrumbList()
-        {
-            var list = new List<(string Name, string Href)> {("Aspose Product Family", "https://products.aspose.app/"), ("cells", "https://products.aspose.app/cells/family"), ($"{AppName}", "https://products.aspose.app/cells/" + AppName.ToLower())};
-
-            if (string.IsNullOrEmpty(Extension)) return Breadcrumb.GenerateJson(list.ToArray());
-            var add1 = Extension == null ? "" : Extension.ToUpper();
-            var add2 = Extension2 == null ? "" : Extension2.ToUpper();
-
-            string name;
-            switch (AppName)
-            {
-                case "Conversion":
-                    name = string.Format(Resources[$"{ProductAppName}Breadcrumb"], add1, add2);
-                    break;
-                case "Viewer":
-                    name = string.Format(Resources[$"{ProductAppName}Breadcrumb"], add1);
-                    break;
-                case "Merger":
-                    if (string.IsNullOrEmpty(add2))
-                    {
-                        name = string.Format(Resources[$"{ProductAppName}Breadcrumb1"], add1);
-                    }
-                    else
-                    {
-                        name = string.Format(Resources[$"{ProductAppName}Breadcrumb2"], add1, add2);
-                    }
-
-                    break;
-                case "Protect":
-                    name = string.Format(Resources[$"{ProductAppName}Breadcrumb"], add1);
-                    break;
-                case "Splitter":
-                    name = string.Format(Resources[$"{ProductAppName}Breadcrumb"], add1);
-                    break;
-                case "Editor":
-                    name = string.Format(Resources[$"{ProductAppName}Breadcrumb"], add1);
-                    break;
-                default:
-                    name = Resources.ContainsKey($"{ProductAppName}Breadcrumb")
-                        ? string.Format(Resources[$"{ProductAppName}Breadcrumb"], add1, add2)
-                        : $"{Resources[$"{AppName}Action"]} {add1}";
-                    break;
-            }
-
-            list.Add((name, "https://products.aspose.app" + Controller.Request.Url.PathAndQuery.ToLower()));
-
-            return Breadcrumb.GenerateJson(list.ToArray());
-        }
-
-        protected virtual string PrepareJsonLdSoftware()
+        private string PrepareJsonLdSoftware()
         {
             var obj = new SoftwareApplication
             {
@@ -781,15 +738,18 @@ namespace Aspose.Cells.UI.Models
             return JsonConvert.SerializeObject(obj);
         }
 
-        protected virtual string PrepareJsonLdHowTo()
+        private string PrepareJsonLdHowTo()
         {
             var obj = new HowTo(HowToModel, TitleSub, Title);
             return JsonConvert.SerializeObject(obj);
         }
 
-        protected virtual void PrepareStructuralDataJson()
+        private void PrepareStructuralDataJson()
         {
-            if (AppName != "Merger" && AppName != "Editor" && AppName != "Splitter" && AppName != "Protect")
+            if (AppName != "Merger"
+                && AppName != "Editor"
+                && AppName != "Splitter"
+                && AppName != "Protect")
             {
                 return;
             }
@@ -805,7 +765,7 @@ namespace Aspose.Cells.UI.Models
             }
             catch (Exception ex)
             {
-                NLogger.LogError(ex, ex.Message, "", ProductFamilyNameKeysEnum.cells, "");
+                NLogger.LogError(ex.Message + "\n" + ex.StackTrace);
             }
 
             Controller.ViewBag.JsonLd = list;

@@ -20,6 +20,8 @@ namespace Aspose.Cells.API.Controllers
 {
     public class AsposeCellsChartController : AsposeCellsBaseController
     {
+        private const string App = "Chart";
+
         [HttpPost]
         [ActionName("Download")]
         public HttpResponseMessage Download(JObject obj)
@@ -102,10 +104,10 @@ namespace Aspose.Cells.API.Controllers
 
             return Request.CreateResponse(HttpStatusCode.OK, new Response
             {
-                FileName = Path.GetFileName(outfileName),
-                FolderName = guid,
+                StatusCode = 200,
                 Status = "OK",
-                StatusCode = 200
+                FileName = Path.GetFileName(outfileName),
+                FolderName = guid
             });
         }
 
@@ -115,11 +117,18 @@ namespace Aspose.Cells.API.Controllers
         public async Task<HttpResponseMessage> PreChart(string outputType)
         {
             var sessionId = Guid.NewGuid().ToString();
-            var action = $"Chart to {outputType.Trim().ToLower()}";
-
+            var action = $"Chart to {outputType}";
             try
             {
-                var docs = await UploadWorkBooks(sessionId);
+                var taskUpload = Task.Run(() => UploadWorkbooks(sessionId));
+                taskUpload.Wait(Api.Configuration.MillisecondsTimeout);
+                if (!taskUpload.IsCompleted)
+                {
+                    NLogger.LogError($"Chart UploadWorkbooks=>{sessionId}=>{AppSettings.ProcessingTimedout}");
+                    throw new TimeoutException(AppSettings.ProcessingTimedout);
+                }
+
+                var docs = taskUpload.Result;
                 if (docs == null)
                     return Request.CreateResponse(HttpStatusCode.InternalServerError, PasswordProtectedResponse.Status);
                 if (docs.Length == 0 || docs.Length > MaximumUploadFiles)
@@ -135,27 +144,46 @@ namespace Aspose.Cells.API.Controllers
                 var charts = new List<PreviewChart>();
                 var stopWatch = new Stopwatch();
                 stopWatch.Start();
-                NLogger.LogInfo($"Chart to {outputType.Trim().ToLower()}=>{string.Join(",", docs.Select(t => t.FileName))}=>Start", AsposeCells, ProductFamilyNameKeysEnum.cells, outFolder);
+                NLogger.LogInfo($"Chart to {outputType.Trim().ToLower()}=>{string.Join(",", docs.Select(t => t.FileName))}=>Start");
 
                 var tasks = docs.Select(doc => Task.Factory.StartNew(() => { charts.AddRange(PreCharts(doc, outFolder, guid)); })).ToArray();
-                Task.WaitAll(tasks);
+                var isCompleted = Task.WaitAll(tasks, Api.Configuration.MillisecondsTimeout);
+
+                if (!isCompleted)
+                {
+                    NLogger.LogError($"Chart to {outputType.Trim().ToLower()}=>{string.Join(",", docs.Select(t => t.FileName))}=>{AppSettings.ProcessingTimedout}");
+                    throw new TimeoutException(AppSettings.ProcessingTimedout);
+                }
 
                 stopWatch.Stop();
-                NLogger.LogInfo($"Chart to {outputType.Trim().ToLower()}=>{string.Join(",", docs.Select(t => t.FileName))}=>cost seconds:{stopWatch.Elapsed.TotalSeconds}", AsposeCells, ProductFamilyNameKeysEnum.cells, outFolder);
+                NLogger.LogInfo($"Chart to {outputType.Trim().ToLower()}=>{string.Join(",", docs.Select(t => t.FileName))}=>cost seconds:{stopWatch.Elapsed.TotalSeconds}");
 
-                return charts.Count <= 0
-                    ? Request.CreateResponse(HttpStatusCode.InternalServerError, AppErrorResponse("There's no chart in the Excel file.", sessionId, action))
-                    : Request.CreateResponse(HttpStatusCode.OK, new {charts, outputType});
+                if (charts.Count > 0)
+                    return Request.CreateResponse(HttpStatusCode.OK, new {charts, outputType});
+
+                var response = new Response
+                {
+                    StatusCode = 404,
+                    Status = "There's no chart in the Excel file.",
+                    FolderName = sessionId,
+                    Text = "There's no chart in the Excel file."
+                };
+                return Request.CreateResponse(HttpStatusCode.NotFound, response);
             }
-            catch (AppException ex)
+            catch (Exception e)
             {
-                NLogger.LogError(ex, $"{sessionId}-{action}");
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, AppErrorResponse(ex.Message, sessionId, action));
-            }
-            catch (Exception ex)
-            {
-                NLogger.LogError(ex, $"{sessionId}-{action}");
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, InternalServerErrorResponse(sessionId, action));
+                var exception = e.InnerException ?? e;
+                var message = $"{exception.Message} | outputType = {outputType}";
+                NLogger.LogError(App, "PreChart", message, sessionId);
+
+                var response = new Response
+                {
+                    StatusCode = 500,
+                    Status = exception.Message,
+                    FolderName = sessionId,
+                    Text = action
+                };
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, response);
             }
         }
 

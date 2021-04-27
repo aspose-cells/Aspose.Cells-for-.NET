@@ -17,6 +17,13 @@
 
                 <div id="WorkPlaceHolder">
                     <form id="UploadFile" name="UploadFile" method="POST" enctype="multipart/form-data">
+                        <div class="terms-area">
+                            <span>*By uploading your files or using our service you agree with our </span>
+                            <a href="https://about.aspose.app/legal/tos" target="_blank">Terms of Service</a>
+                            <span> and </span>
+                            <a href="https://about.aspose.app/legal/privacy-policy" target="_blank">Privacy Policy</a>
+                            <span>.</span>
+                        </div>
                         @if (!string.IsNullOrEmpty(Model.ControlsView))
                         {
                             @Html.Partial(Model.ControlsView)

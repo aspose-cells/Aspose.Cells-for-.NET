@@ -1,6 +1,6 @@
 using System;
 
-namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
+namespace Aspose.Cells.API.Areas.HelpPage
 {
     /// <summary>
     /// This represents an invalid sample on the help page. There's a display template named InvalidSample associated with this class.
@@ -9,14 +9,19 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
     {
         public InvalidSample(string errorMessage)
         {
-            ErrorMessage = errorMessage ?? throw new ArgumentNullException("errorMessage");
+            if (errorMessage == null)
+            {
+                throw new ArgumentNullException("errorMessage");
+            }
+            ErrorMessage = errorMessage;
         }
 
         public string ErrorMessage { get; private set; }
 
         public override bool Equals(object obj)
         {
-            return obj is InvalidSample other && ErrorMessage == other.ErrorMessage;
+            InvalidSample other = obj as InvalidSample;
+            return other != null && ErrorMessage == other.ErrorMessage;
         }
 
         public override int GetHashCode()

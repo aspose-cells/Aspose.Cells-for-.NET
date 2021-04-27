@@ -41,6 +41,23 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release-Production|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release-QA|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -126,13 +143,27 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config\ConfigLoader.cs" />
     <Compile Include="Config\InternalConfigurations.cs" />
+    <Compile Include="Handler\Exceptions\IExceptionHandler.cs" />
+    <Compile Include="Handler\Exceptions\Local\LocalExceptionHandler.cs" />
+    <Compile Include="Handler\Input\IInputDataHandler.cs" />
+    <Compile Include="Handler\Output\IOutputDataHandler.cs" />
     <Compile Include="Helpers\Extensions.cs" />
+    <Compile Include="Models\Configs.cs" />
+    <Compile Include="Handler\Output\Local\LocalOutputDataHandler.cs" />
+    <Compile Include="Handler\Input\Local\LocalInputDataHandler.cs" />
+    <Compile Include="Handler\Exceptions\GdtDataBaseException.cs" />
+    <Compile Include="Handler\Exceptions\GdtFileNotFoundException.cs" />
+    <Compile Include="Handler\Exceptions\DocumentsToolsException.cs" />
+    <Compile Include="Handler\Exceptions\GdtNullReferenceException.cs" />
     <Compile Include="Models\DTO\LoggingApi\Log.cs" />
     <Compile Include="Models\NLogger.cs" />
-    <Compile Include="Helpers\NLogOptimizationApi.cs" />
+    <Compile Include="Models\OutputFileDescription.cs" />
+    <Compile Include="Models\FileDescription.cs" />
+    <Compile Include="Models\InputFileDescription.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\LogService.cs" />
+    <Compile Include="Services\EmailManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Locales\ru-ru.txt">
@@ -164,9 +195,6 @@
     <None Include="Web.Release-QA.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Handler\Exceptions\Local\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />

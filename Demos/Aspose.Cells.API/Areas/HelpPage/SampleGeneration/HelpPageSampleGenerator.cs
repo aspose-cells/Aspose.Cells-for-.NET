@@ -13,7 +13,7 @@ using System.Web.Http.Description;
 using System.Xml.Linq;
 using Newtonsoft.Json;
 
-namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
+namespace Aspose.Cells.API.Areas.HelpPage
 {
     /// <summary>
     /// This class will generate the samples for the help page.
@@ -93,34 +93,42 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
             {
                 throw new ArgumentNullException("api");
             }
-
-            var controllerName = api.ActionDescriptor.ControllerDescriptor.ControllerName;
-            var actionName = api.ActionDescriptor.ActionName;
-            var parameterNames = api.ParameterDescriptions.Select(p => p.Name);
-            var type = ResolveType(api, controllerName, actionName, parameterNames, sampleDirection, out var formatters);
+            string controllerName = api.ActionDescriptor.ControllerDescriptor.ControllerName;
+            string actionName = api.ActionDescriptor.ActionName;
+            IEnumerable<string> parameterNames = api.ParameterDescriptions.Select(p => p.Name);
+            Collection<MediaTypeFormatter> formatters;
+            Type type = ResolveType(api, controllerName, actionName, parameterNames, sampleDirection, out formatters);
+            var samples = new Dictionary<MediaTypeHeaderValue, object>();
 
             // Use the samples provided directly for actions
             var actionSamples = GetAllActionSamples(controllerName, actionName, parameterNames, sampleDirection);
-            var samples = actionSamples.ToDictionary(actionSample => actionSample.Key.MediaType, actionSample => WrapSampleIfString(actionSample.Value));
+            foreach (var actionSample in actionSamples)
+            {
+                samples.Add(actionSample.Key.MediaType, WrapSampleIfString(actionSample.Value));
+            }
 
             // Do the sample generation based on formatters only if an action doesn't return an HttpResponseMessage.
             // Here we cannot rely on formatters because we don't know what's in the HttpResponseMessage, it might not even use formatters.
-            if (type == null || typeof(HttpResponseMessage).IsAssignableFrom(type)) return samples;
-            var sampleObject = GetSampleObject(type);
-            foreach (var formatter in formatters)
+            if (type != null && !typeof(HttpResponseMessage).IsAssignableFrom(type))
             {
-                foreach (var mediaType in formatter.SupportedMediaTypes)
+                object sampleObject = GetSampleObject(type);
+                foreach (var formatter in formatters)
                 {
-                    if (samples.ContainsKey(mediaType)) continue;
-                    var sample = GetActionSample(controllerName, actionName, parameterNames, type, formatter, mediaType, sampleDirection);
-
-                    // If no sample found, try generate sample using formatter and sample object
-                    if (sample == null && sampleObject != null)
+                    foreach (MediaTypeHeaderValue mediaType in formatter.SupportedMediaTypes)
                     {
-                        sample = WriteSampleObjectUsingFormatter(formatter, sampleObject, type, mediaType);
-                    }
+                        if (!samples.ContainsKey(mediaType))
+                        {
+                            object sample = GetActionSample(controllerName, actionName, parameterNames, type, formatter, mediaType, sampleDirection);
 
-                    samples.Add(mediaType, WrapSampleIfString(sample));
+                            // If no sample found, try generate sample using formatter and sample object
+                            if (sample == null && sampleObject != null)
+                            {
+                                sample = WriteSampleObjectUsingFormatter(formatter, sampleObject, type, mediaType);
+                            }
+
+                            samples.Add(mediaType, WrapSampleIfString(sample));
+                        }
+                    }
                 }
             }
 
@@ -140,12 +148,14 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
         /// <returns>The sample that matches the parameters.</returns>
         public virtual object GetActionSample(string controllerName, string actionName, IEnumerable<string> parameterNames, Type type, MediaTypeFormatter formatter, MediaTypeHeaderValue mediaType, SampleDirection sampleDirection)
         {
+            object sample;
+
             // First, try to get the sample provided for the specified mediaType, sampleDirection, controllerName, actionName and parameterNames.
             // If not found, try to get the sample provided for the specified mediaType, sampleDirection, controllerName and actionName regardless of the parameterNames.
             // If still not found, try to get the sample provided for the specified mediaType and type.
             // Finally, try to get the sample provided for the specified mediaType.
-            if (ActionSamples.TryGetValue(new HelpPageSampleKey(mediaType, sampleDirection, controllerName, actionName, parameterNames), out var sample) ||
-                ActionSamples.TryGetValue(new HelpPageSampleKey(mediaType, sampleDirection, controllerName, actionName, new[] {"*"}), out sample) ||
+            if (ActionSamples.TryGetValue(new HelpPageSampleKey(mediaType, sampleDirection, controllerName, actionName, parameterNames), out sample) ||
+                ActionSamples.TryGetValue(new HelpPageSampleKey(mediaType, sampleDirection, controllerName, actionName, new[] { "*" }), out sample) ||
                 ActionSamples.TryGetValue(new HelpPageSampleKey(mediaType, type), out sample) ||
                 ActionSamples.TryGetValue(new HelpPageSampleKey(mediaType), out sample))
             {
@@ -167,26 +177,30 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
             Justification = "Even if all items in SampleObjectFactories throw, problem will be visible as missing sample.")]
         public virtual object GetSampleObject(Type type)
         {
-            if (SampleObjects.TryGetValue(type, out var sampleObject)) return sampleObject;
-            // No specific object available, try our factories.
-            foreach (var factory in SampleObjectFactories)
-            {
-                if (factory == null)
-                {
-                    continue;
-                }
+            object sampleObject;
 
-                try
+            if (!SampleObjects.TryGetValue(type, out sampleObject))
+            {
+                // No specific object available, try our factories.
+                foreach (Func<HelpPageSampleGenerator, Type, object> factory in SampleObjectFactories)
                 {
-                    sampleObject = factory(this, type);
-                    if (sampleObject != null)
+                    if (factory == null)
                     {
-                        break;
+                        continue;
                     }
-                }
-                catch
-                {
-                    // Ignore any problems encountered in the factory; go on to the next one (if any).
+
+                    try
+                    {
+                        sampleObject = factory(this, type);
+                        if (sampleObject != null)
+                        {
+                            break;
+                        }
+                    }
+                    catch
+                    {
+                        // Ignore any problems encountered in the factory; go on to the next one (if any).
+                    }
                 }
             }
 
@@ -200,10 +214,11 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
         /// <returns>The type.</returns>
         public virtual Type ResolveHttpRequestMessageType(ApiDescription api)
         {
-            var controllerName = api.ActionDescriptor.ControllerDescriptor.ControllerName;
-            var actionName = api.ActionDescriptor.ActionName;
-            var parameterNames = api.ParameterDescriptions.Select(p => p.Name);
-            return ResolveType(api, controllerName, actionName, parameterNames, SampleDirection.Request, out var formatters);
+            string controllerName = api.ActionDescriptor.ControllerDescriptor.ControllerName;
+            string actionName = api.ActionDescriptor.ActionName;
+            IEnumerable<string> parameterNames = api.ParameterDescriptions.Select(p => p.Name);
+            Collection<MediaTypeFormatter> formatters;
+            return ResolveType(api, controllerName, actionName, parameterNames, SampleDirection.Request, out formatters);
         }
 
         /// <summary>
@@ -220,19 +235,18 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
         {
             if (!Enum.IsDefined(typeof(SampleDirection), sampleDirection))
             {
-                throw new InvalidEnumArgumentException("sampleDirection", (int) sampleDirection, typeof(SampleDirection));
+                throw new InvalidEnumArgumentException("sampleDirection", (int)sampleDirection, typeof(SampleDirection));
             }
-
             if (api == null)
             {
                 throw new ArgumentNullException("api");
             }
-
-            if (ActualHttpMessageTypes.TryGetValue(new HelpPageSampleKey(sampleDirection, controllerName, actionName, parameterNames), out var type) ||
-                ActualHttpMessageTypes.TryGetValue(new HelpPageSampleKey(sampleDirection, controllerName, actionName, new[] {"*"}), out type))
+            Type type;
+            if (ActualHttpMessageTypes.TryGetValue(new HelpPageSampleKey(sampleDirection, controllerName, actionName, parameterNames), out type) ||
+                ActualHttpMessageTypes.TryGetValue(new HelpPageSampleKey(sampleDirection, controllerName, actionName, new[] { "*" }), out type))
             {
                 // Re-compute the supported formatters based on type
-                var newFormatters = new Collection<MediaTypeFormatter>();
+                Collection<MediaTypeFormatter> newFormatters = new Collection<MediaTypeFormatter>();
                 foreach (var formatter in api.ActionDescriptor.Configuration.Formatters)
                 {
                     if (IsFormatSupported(sampleDirection, formatter, type))
@@ -240,7 +254,6 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
                         newFormatters.Add(formatter);
                     }
                 }
-
                 formatters = newFormatters;
             }
             else
@@ -248,8 +261,8 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
                 switch (sampleDirection)
                 {
                     case SampleDirection.Request:
-                        var requestBodyParameter = api.ParameterDescriptions.FirstOrDefault(p => p.Source == ApiParameterSource.FromBody);
-                        type = requestBodyParameter?.ParameterDescriptor.ParameterType;
+                        ApiParameterDescription requestBodyParameter = api.ParameterDescriptions.FirstOrDefault(p => p.Source == ApiParameterSource.FromBody);
+                        type = requestBodyParameter == null ? null : requestBodyParameter.ParameterDescriptor.ParameterType;
                         formatters = api.SupportedRequestBodyFormatters;
                         break;
                     case SampleDirection.Response:
@@ -278,13 +291,12 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
             {
                 throw new ArgumentNullException("formatter");
             }
-
             if (mediaType == null)
             {
                 throw new ArgumentNullException("mediaType");
             }
 
-            object sample;
+            object sample = String.Empty;
             MemoryStream ms = null;
             HttpContent content = null;
             try
@@ -295,8 +307,8 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
                     content = new ObjectContent(type, value, formatter, mediaType);
                     formatter.WriteToStreamAsync(type, value, ms, content, null).Wait();
                     ms.Position = 0;
-                    var reader = new StreamReader(ms);
-                    var serializedSampleString = reader.ReadToEnd();
+                    StreamReader reader = new StreamReader(ms);
+                    string serializedSampleString = reader.ReadToEnd();
                     if (mediaType.MediaType.ToUpperInvariant().Contains("XML"))
                     {
                         serializedSampleString = TryFormatXml(serializedSampleString);
@@ -310,7 +322,7 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
                 }
                 else
                 {
-                    sample = new InvalidSample(string.Format(
+                    sample = new InvalidSample(String.Format(
                         CultureInfo.CurrentCulture,
                         "Failed to generate the sample for media type '{0}'. Cannot use formatter '{1}' to write type '{2}'.",
                         mediaType,
@@ -320,7 +332,7 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
             }
             catch (Exception e)
             {
-                sample = new InvalidSample(string.Format(
+                sample = new InvalidSample(String.Format(
                     CultureInfo.CurrentCulture,
                     "An exception has occurred while using the formatter '{0}' to generate sample for media type '{1}'. Exception message: {2}",
                     formatter.GetType().Name,
@@ -329,8 +341,14 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
             }
             finally
             {
-                ms?.Dispose();
-                content?.Dispose();
+                if (ms != null)
+                {
+                    ms.Dispose();
+                }
+                if (content != null)
+                {
+                    content.Dispose();
+                }
             }
 
             return sample;
@@ -338,11 +356,11 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
 
         internal static Exception UnwrapException(Exception exception)
         {
-            if (exception is AggregateException aggregateException)
+            AggregateException aggregateException = exception as AggregateException;
+            if (aggregateException != null)
             {
                 return aggregateException.Flatten().InnerException;
             }
-
             return exception;
         }
 
@@ -350,7 +368,7 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
         private static object DefaultSampleObjectFactory(HelpPageSampleGenerator sampleGenerator, Type type)
         {
             // Try to create a default sample object
-            var objectGenerator = new ObjectGenerator();
+            ObjectGenerator objectGenerator = new ObjectGenerator();
             return objectGenerator.GenerateObject(type);
         }
 
@@ -359,7 +377,7 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
         {
             try
             {
-                var parsedJson = JsonConvert.DeserializeObject(str);
+                object parsedJson = JsonConvert.DeserializeObject(str);
                 return JsonConvert.SerializeObject(parsedJson, Formatting.Indented);
             }
             catch
@@ -374,7 +392,7 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
         {
             try
             {
-                var xml = XDocument.Parse(str);
+                XDocument xml = XDocument.Parse(str);
                 return xml.ToString();
             }
             catch
@@ -393,19 +411,18 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
                 case SampleDirection.Response:
                     return formatter.CanWriteType(type);
             }
-
             return false;
         }
 
         private IEnumerable<KeyValuePair<HelpPageSampleKey, object>> GetAllActionSamples(string controllerName, string actionName, IEnumerable<string> parameterNames, SampleDirection sampleDirection)
         {
-            var parameterNamesSet = new HashSet<string>(parameterNames, StringComparer.OrdinalIgnoreCase);
+            HashSet<string> parameterNamesSet = new HashSet<string>(parameterNames, StringComparer.OrdinalIgnoreCase);
             foreach (var sample in ActionSamples)
             {
-                var sampleKey = sample.Key;
-                if (string.Equals(controllerName, sampleKey.ControllerName, StringComparison.OrdinalIgnoreCase) &&
-                    string.Equals(actionName, sampleKey.ActionName, StringComparison.OrdinalIgnoreCase) &&
-                    (sampleKey.ParameterNames.SetEquals(new[] {"*"}) || parameterNamesSet.SetEquals(sampleKey.ParameterNames)) &&
+                HelpPageSampleKey sampleKey = sample.Key;
+                if (String.Equals(controllerName, sampleKey.ControllerName, StringComparison.OrdinalIgnoreCase) &&
+                    String.Equals(actionName, sampleKey.ActionName, StringComparison.OrdinalIgnoreCase) &&
+                    (sampleKey.ParameterNames.SetEquals(new[] { "*" }) || parameterNamesSet.SetEquals(sampleKey.ParameterNames)) &&
                     sampleDirection == sampleKey.SampleDirection)
                 {
                     yield return sample;
@@ -415,7 +432,8 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
 
         private static object WrapSampleIfString(object sample)
         {
-            if (sample is string stringSample)
+            string stringSample = sample as string;
+            if (stringSample != null)
             {
                 return new TextSample(stringSample);
             }

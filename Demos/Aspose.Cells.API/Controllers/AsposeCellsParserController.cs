@@ -15,8 +15,10 @@ namespace Aspose.Cells.API.Controllers
     ///</Summary>
     public class AsposeCellsParserController : AsposeCellsBaseController
     {
+        private const string App = "Parser";
+
         ///<Summary>
-        /// Parse method to call parser controller basd on product name
+        /// Parse method to call parser controller based on product name
         ///</Summary>
         [HttpGet]
         [ActionName("Parse")]
@@ -24,44 +26,65 @@ namespace Aspose.Cells.API.Controllers
         {
             var sessionId = Guid.NewGuid().ToString();
             const string action = "Parse";
-
             try
             {
-                var docs = await UploadWorkBooks(sessionId);
+                var taskUpload = Task.Run(() => UploadWorkbooks(sessionId));
+                taskUpload.Wait(Api.Configuration.MillisecondsTimeout);
+                if (!taskUpload.IsCompleted)
+                {
+                    NLogger.LogError($"Parse UploadWorkbooks=>{sessionId}=>{AppSettings.ProcessingTimedout}");
+                    throw new TimeoutException(AppSettings.ProcessingTimedout);
+                }
+
+                var docs = taskUpload.Result;
                 if (docs == null)
                     return PasswordProtectedResponse;
                 if (docs.Length == 0 || docs.Length > MaximumUploadFiles)
                     return MaximumFileLimitsResponse;
 
                 SetDefaultOptions(docs);
-                Opts.AppName = ParserApp;
+                Opts.AppName = "Parser";
                 Opts.MethodName = "Parse";
                 Opts.ZipFileName = docs.Length > 1 ? "Parsed files" : Path.GetFileNameWithoutExtension(docs[0].FileName);
                 Opts.OutputType = ".txt";
                 Opts.CreateZip = true;
 
+                /*var fileName = Path.GetFileName(docs[0].FileName);
+                var folderName = docs[0].FolderName;
+    
+                return await Parse(fileName, folderName);*/
+
                 return await Process((inFilePath, outPath, zipOutFolder) =>
                 {
                     var stopWatch = new Stopwatch();
                     stopWatch.Start();
-                    NLogger.LogInfo($"Excel Parser=>{string.Join(",", docs.Select(t => t.FileName))}=>Start", AsposeCells, ProductFamilyNameKeysEnum.cells, outPath);
+                    NLogger.LogInfo($"Excel Parser=>{string.Join(",", docs.Select(t => t.FileName))}=>Start");
 
                     var tasks = docs.Select(doc => Task.Factory.StartNew(() => { ParseDocument(doc, zipOutFolder); })).ToArray();
-                    Task.WaitAll(tasks);
+                    var isCompleted = Task.WaitAll(tasks, Api.Configuration.MillisecondsTimeout);
+
+                    if (!isCompleted)
+                    {
+                        NLogger.LogError($"Excel Parser=>{string.Join(",", docs.Select(t => t.FileName))}=>{AppSettings.ProcessingTimedout}");
+                        throw new TimeoutException(AppSettings.ProcessingTimedout);
+                    }
 
                     stopWatch.Stop();
-                    NLogger.LogInfo($"Excel Parser=>{string.Join(",", docs.Select(t => t.FileName))}=>cost seconds:{stopWatch.Elapsed.TotalSeconds}", AsposeCells, ProductFamilyNameKeysEnum.cells, outPath);
+                    NLogger.LogInfo($"Excel Parser=>{string.Join(",", docs.Select(t => t.FileName))}=>cost seconds:{stopWatch.Elapsed.TotalSeconds}");
                 });
             }
-            catch (AppException ex)
+            catch (Exception e)
             {
-                NLogger.LogError(ex, $"{sessionId}-{action}");
-                return AppErrorResponse(ex.Message, sessionId, action);
-            }
-            catch (Exception ex)
-            {
-                NLogger.LogError(ex, $"{sessionId}-{action}");
-                return InternalServerErrorResponse(sessionId, action);
+                var exception = e.InnerException ?? e;
+                NLogger.LogError(App, "Parse", exception.Message, sessionId);
+
+                return new Response
+                {
+                    StatusCode = 500,
+                    Status = exception.Message,
+                    FolderName = sessionId,
+                    Text = action
+                };
             }
         }
 
@@ -72,16 +95,9 @@ namespace Aspose.Cells.API.Controllers
         /// <param name="outPath"></param>
         private void ParseDocument(DocumentInfo doc, string outPath)
         {
-            try
-            {
-                var (filename, folder) = PrepareFolder(doc, outPath);
-                doc.Workbook.Save($"{folder}/{Path.GetFileNameWithoutExtension(filename)}.txt");
-                ExtractImages(doc, folder);
-            }
-            catch (Exception ex)
-            {
-                LogError(ex);
-            }
+            var (filename, folder) = PrepareFolder(doc, outPath);
+            doc.Workbook.Save($"{folder}/{Path.GetFileNameWithoutExtension(filename)}.txt");
+            ExtractImages(doc, folder);
         }
 
         /// <summary>
@@ -91,7 +107,7 @@ namespace Aspose.Cells.API.Controllers
         /// <param name="doc"></param>
         /// <param name="path">Zip folder name</param>
         /// <returns>Tuple(original filename, output folder)</returns>
-        protected static (string, string) PrepareFolder(DocumentInfo doc, string path)
+        protected new static (string, string) PrepareFolder(DocumentInfo doc, string path)
         {
             var filename = Path.GetFileNameWithoutExtension(doc.FileName);
             var folder = path + "/";
@@ -108,46 +124,39 @@ namespace Aspose.Cells.API.Controllers
         ///</Summary>
         protected void ExtractImages(DocumentInfo doc, string outPath)
         {
-            try
+            var wb = doc.Workbook;
+            var sheetCount = wb.Worksheets.Count;
+
+            var strSheetIndexFormat =
+                sheetCount < 10 ? "0" : sheetCount < 100 ? "00" : sheetCount < 1000 ? "000" : "0000";
+
+            for (var i = 0; i < sheetCount; i++)
             {
-                var wb = doc.Workbook;
-                var sheetCount = wb.Worksheets.Count;
+                wb.Worksheets.ActiveSheetIndex = i;
 
-                var strSheetIndexFormat =
-                    sheetCount < 10 ? "0" : sheetCount < 100 ? "00" : sheetCount < 1000 ? "000" : "0000";
+                var sheetName = wb.Worksheets[i].Name;
+                wb.Save(outPath + "__" + (i + 1).ToString(strSheetIndexFormat) + "_" + sheetName + ".txt");
+            }
 
-                for (var i = 0; i < sheetCount; i++)
+            for (var i = 0; i < sheetCount; i++)
+            {
+                var ws = wb.Worksheets[i];
+                var picsCount = ws.Pictures.Count;
+
+                for (var j = 0; j < picsCount; j++)
                 {
-                    wb.Worksheets.ActiveSheetIndex = i;
+                    var pic = ws.Pictures[j];
+                    var picData = pic.Data;
+                    var fmt = pic.ImageType.ToString().ToLower();
 
-                    var sheetName = wb.Worksheets[i].Name;
-                    wb.Save(outPath + "__" + (i + 1).ToString(strSheetIndexFormat) + "_" + sheetName + ".txt");
-                }
+                    var outFilePath = outPath + "__" + (i + 1).ToString(strSheetIndexFormat) + "_" + ws.Name + "__Pic" +
+                                      j + "." + fmt;
 
-                for (var i = 0; i < sheetCount; i++)
-                {
-                    var ws = wb.Worksheets[i];
-                    var picsCount = ws.Pictures.Count;
-
-                    for (var j = 0; j < picsCount; j++)
+                    using (var flout = new FileStream(outFilePath, FileMode.OpenOrCreate, FileAccess.Write))
                     {
-                        var pic = ws.Pictures[j];
-                        var picData = pic.Data;
-                        var fmt = pic.ImageType.ToString().ToLower();
-
-                        var outFilePath = outPath + "__" + (i + 1).ToString(strSheetIndexFormat) + "_" + ws.Name + "__Pic" +
-                                          j + "." + fmt;
-
-                        using (var flout = new FileStream(outFilePath, FileMode.OpenOrCreate, FileAccess.Write))
-                        {
-                            flout.Write(picData, 0, picData.Length);
-                        }
+                        flout.Write(picData, 0, picData.Length);
                     }
                 }
-            }
-            catch (Exception ex)
-            {
-                LogError(ex);
             }
         }
 
@@ -184,23 +193,23 @@ namespace Aspose.Cells.API.Controllers
             {
                 extractOnlyText = IsSingleSheetWithoutAnyImages(fileName, folderName);
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                var logMsg = "ControllerName = AsposeCellsParserController, MethodName = Parse, Folder = " + folderName;
-                NLogger.LogError(ex, logMsg, AsposeCells + ParserApp, ProductFamilyNameKeysEnum.cells, fileName);
+                var message = $"{e.Message} | fileName = {fileName}";
+                NLogger.LogError(App, "Parse", message, folderName);
 
                 return await Task.FromResult(new Response
                 {
+                    StatusCode = 500,
+                    Status = e.Message,
                     FileName = "",
                     FolderName = "",
-                    Status = "500 " + ex.Message,
-                    StatusCode = 500,
+                    Text = "Parse"
                 });
             }
 
             if (extractOnlyText) // extracting only text
-                return await Process(GetType().Name, fileName, folderName, ".txt", false, false, AsposeCells + ParserApp,
-                    ProductFamilyNameKeysEnum.cells, "Parse",
+                return await Process(fileName, folderName, ".txt", false,
                     (inFilePath, outPath, zipOutFolder) =>
                     {
                         var wb = new Workbook(inFilePath);
@@ -208,8 +217,7 @@ namespace Aspose.Cells.API.Controllers
                     });
 
             // extracting text and images
-            return await Process(GetType().Name, fileName, folderName, "", true, false, AsposeCells + ParserApp,
-                ProductFamilyNameKeysEnum.cells, "Parse",
+            return await Process(fileName, folderName, "", true,
                 (inFilePath, outPath, zipOutFolder) =>
                 {
                     var wb = new Workbook(inFilePath);

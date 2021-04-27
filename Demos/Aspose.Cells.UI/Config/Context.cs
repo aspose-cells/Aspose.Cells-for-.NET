@@ -29,12 +29,18 @@ namespace Aspose.Cells.UI.Config
         /// <summary>
         /// simple cache wrapper
         /// </summary>
-        public Cache Cache => _context.Cache;
+        public Cache Cache
+        {
+            get { return _context.Cache; }
+        }
 
         /// <summary>
         /// simple session wrapper
         /// </summary>
-        public System.Web.SessionState.HttpSessionState Session => _context.Session;
+        public System.Web.SessionState.HttpSessionState Session
+        {
+            get { return _context.Session; }
+        }
 
         /// <summary>
         /// Stores the specified key value pair in the cache indefinitely, removed only on application reset or explicit removal
@@ -76,16 +82,25 @@ namespace Aspose.Cells.UI.Config
         /// <summary>
         /// Simple cookie wrapper
         /// </summary>
-        public HttpCookieCollection Cookies => _context.Request.Cookies;
+        public HttpCookieCollection Cookies
+        {
+            get { return _context.Request.Cookies; }
+        }
 
         /// <summary>
         /// Checks if the session is valid i.e. not expired
         /// </summary>
-        protected bool IsValid => _context.Session != null;
+        protected bool IsValid
+        {
+            get { return _context.Session != null; }
+        }
 
         /// <summary>
         /// Simple Application wrapper
         /// </summary>
-        private HttpApplicationState Application => _context.Application;
+        private HttpApplicationState Application
+        {
+            get { return _context.Application; }
+        }
     }
 }

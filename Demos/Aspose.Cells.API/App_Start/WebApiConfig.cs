@@ -1,4 +1,6 @@
-﻿using System.Web.Http;
+﻿using System.IO;
+using System.Web.Http;
+using Aspose.Cells.API.Config;
 
 namespace Aspose.Cells.API
 {
@@ -20,7 +22,22 @@ namespace Aspose.Cells.API
             config.EnableCors();
 
             // Set aspose cells font folder
-            FontConfigs.SetFontFolder(Config.AppSettings.FontFolderPath, true);
+            FontConfigs.SetFontFolder(AppSettings.FontFolderPath, true);
+
+            // Set GridJs cache/font folder
+            var imageCacheDir = AppSettings.ImageCache;
+            var fileCacheDir = AppSettings.FileCache;
+            if (!Directory.Exists(imageCacheDir))
+                Directory.CreateDirectory(imageCacheDir);
+            if (!Directory.Exists(fileCacheDir))
+                Directory.CreateDirectory(fileCacheDir);
+            GridJs.Config.PictureCacheDirectory = imageCacheDir;
+            GridJs.Config.FileCacheDirectory = fileCacheDir;
+            GridJs.Config.SetFontFolder(AppSettings.FontFolderPath, true);
+            
+            // Set GridJs license
+            var license = new GridJs.License();
+            license.SetLicense("Aspose.Total.lic");
         }
     }
 }

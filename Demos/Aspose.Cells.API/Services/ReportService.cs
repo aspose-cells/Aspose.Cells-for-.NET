@@ -5,7 +5,6 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using Aspose.Cells.API.Config;
-using Aspose.Cells.API.Models;
 using Newtonsoft.Json;
 
 namespace Aspose.Cells.API.Services
@@ -30,10 +29,10 @@ namespace Aspose.Cells.API.Services
             {
                 if (data.error != null)
                 {
-                    throw new AppException("forum bad gateway:" + data.error);
+                    throw new Exception("forum bad gateway:" + data.error);
                 }
 
-                throw new AppException("forum bad gateway");
+                throw new Exception("forum bad gateway");
             }
 
             if (data.error != null)
@@ -54,7 +53,7 @@ namespace Aspose.Cells.API.Services
                 };
             }
 
-            throw new AppException("forum api result error");
+            throw new Exception("forum api result error");
         }
 
         public static void UploadFile(ReportModel model)
@@ -69,7 +68,7 @@ namespace Aspose.Cells.API.Services
 
             foreach (var file in Directory.GetFiles(sourcePath))
             {
-                var fileInfo = new FileInfo(file);
+                var fileInfo = new System.IO.FileInfo(file);
                 fileInfo.CopyTo(Path.Combine(reportPath, fileInfo.Name));
             }
         }
@@ -103,7 +102,7 @@ namespace Aspose.Cells.API.Services
             };
             var topic = new ForumTopic
             {
-                title = DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + model.ErrorAction.Replace(" ", "-"),
+                title = model.ErrorAction.Replace(" ", "-") + "-" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss"),
                 category_id = int.Parse(AppSettings.ForumCategoryId),
                 notification = true,
                 posts = new[]

@@ -12,7 +12,7 @@ namespace Aspose.Cells.UI.Models
 
         public UploadFileModel(FlexibleResources resources)
         {
-            Resources = resources;
+            this.Resources = resources;
         }
     }
 }

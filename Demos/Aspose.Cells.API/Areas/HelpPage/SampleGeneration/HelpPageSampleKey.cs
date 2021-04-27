@@ -1,10 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Linq;
 using System.Net.Http.Headers;
 
-namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
+namespace Aspose.Cells.API.Areas.HelpPage
 {
     /// <summary>
     /// This is used to identify the place where the sample should be applied.
@@ -17,9 +16,14 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
         /// <param name="mediaType">The media type.</param>
         public HelpPageSampleKey(MediaTypeHeaderValue mediaType)
         {
-            ActionName = string.Empty;
-            ControllerName = string.Empty;
-            MediaType = mediaType ?? throw new ArgumentNullException("mediaType");
+            if (mediaType == null)
+            {
+                throw new ArgumentNullException("mediaType");
+            }
+
+            ActionName = String.Empty;
+            ControllerName = String.Empty;
+            MediaType = mediaType;
             ParameterNames = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
         }
 
@@ -50,16 +54,23 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
         {
             if (!Enum.IsDefined(typeof(SampleDirection), sampleDirection))
             {
-                throw new InvalidEnumArgumentException("sampleDirection", (int) sampleDirection, typeof(SampleDirection));
+                throw new InvalidEnumArgumentException("sampleDirection", (int)sampleDirection, typeof(SampleDirection));
             }
-
+            if (controllerName == null)
+            {
+                throw new ArgumentNullException("controllerName");
+            }
+            if (actionName == null)
+            {
+                throw new ArgumentNullException("actionName");
+            }
             if (parameterNames == null)
             {
                 throw new ArgumentNullException("parameterNames");
             }
 
-            ControllerName = controllerName ?? throw new ArgumentNullException("controllerName");
-            ActionName = actionName ?? throw new ArgumentNullException("actionName");
+            ControllerName = controllerName;
+            ActionName = actionName;
             ParameterNames = new HashSet<string>(parameterNames, StringComparer.OrdinalIgnoreCase);
             SampleDirection = sampleDirection;
         }
@@ -75,7 +86,12 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
         public HelpPageSampleKey(MediaTypeHeaderValue mediaType, SampleDirection sampleDirection, string controllerName, string actionName, IEnumerable<string> parameterNames)
             : this(sampleDirection, controllerName, actionName, parameterNames)
         {
-            MediaType = mediaType ?? throw new ArgumentNullException("mediaType");
+            if (mediaType == null)
+            {
+                throw new ArgumentNullException("mediaType");
+            }
+
+            MediaType = mediaType;
         }
 
         /// <summary>
@@ -116,38 +132,41 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
 
         public override bool Equals(object obj)
         {
-            if (!(obj is HelpPageSampleKey otherKey))
+            HelpPageSampleKey otherKey = obj as HelpPageSampleKey;
+            if (otherKey == null)
             {
                 return false;
             }
 
-            return string.Equals(ControllerName, otherKey.ControllerName, StringComparison.OrdinalIgnoreCase) &&
-                   string.Equals(ActionName, otherKey.ActionName, StringComparison.OrdinalIgnoreCase) &&
-                   (MediaType == otherKey.MediaType || MediaType != null && MediaType.Equals(otherKey.MediaType)) &&
-                   ParameterType == otherKey.ParameterType &&
-                   SampleDirection == otherKey.SampleDirection &&
-                   ParameterNames.SetEquals(otherKey.ParameterNames);
+            return String.Equals(ControllerName, otherKey.ControllerName, StringComparison.OrdinalIgnoreCase) &&
+                String.Equals(ActionName, otherKey.ActionName, StringComparison.OrdinalIgnoreCase) &&
+                (MediaType == otherKey.MediaType || (MediaType != null && MediaType.Equals(otherKey.MediaType))) &&
+                ParameterType == otherKey.ParameterType &&
+                SampleDirection == otherKey.SampleDirection &&
+                ParameterNames.SetEquals(otherKey.ParameterNames);
         }
 
         public override int GetHashCode()
         {
-            var hashCode = ControllerName.ToUpperInvariant().GetHashCode() ^ ActionName.ToUpperInvariant().GetHashCode();
+            int hashCode = ControllerName.ToUpperInvariant().GetHashCode() ^ ActionName.ToUpperInvariant().GetHashCode();
             if (MediaType != null)
             {
                 hashCode ^= MediaType.GetHashCode();
             }
-
             if (SampleDirection != null)
             {
                 hashCode ^= SampleDirection.GetHashCode();
             }
-
             if (ParameterType != null)
             {
                 hashCode ^= ParameterType.GetHashCode();
             }
+            foreach (string parameterName in ParameterNames)
+            {
+                hashCode ^= parameterName.ToUpperInvariant().GetHashCode();
+            }
 
-            return ParameterNames.Aggregate(hashCode, (current, parameterName) => current ^ parameterName.ToUpperInvariant().GetHashCode());
+            return hashCode;
         }
     }
 }

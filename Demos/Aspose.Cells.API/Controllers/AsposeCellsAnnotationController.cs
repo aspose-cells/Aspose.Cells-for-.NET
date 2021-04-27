@@ -6,6 +6,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.Mvc;
+using Aspose.Cells.API.Config;
 using Aspose.Cells.API.Models;
 using Tools.Foundation.Models;
 using File = System.IO.File;
@@ -17,6 +18,8 @@ namespace Aspose.Cells.API.Controllers
     ///</Summary>
     public class AsposeCellsAnnotationController : AsposeCellsBaseController
     {
+        private const string App = "Annotation";
+
         ///<Summary>
         /// Remove method to remove annotation from file based on product name
         ///</Summary>
@@ -29,14 +32,22 @@ namespace Aspose.Cells.API.Controllers
 
             try
             {
-                var docs = await UploadWorkBooks(sessionId);
+                var taskUpload = Task.Run(() => UploadWorkbooks(sessionId));
+                taskUpload.Wait(Api.Configuration.MillisecondsTimeout);
+                if (!taskUpload.IsCompleted)
+                {
+                    NLogger.LogError($"Annotation UploadWorkbooks=>{sessionId}=>{AppSettings.ProcessingTimedout}");
+                    throw new TimeoutException(AppSettings.ProcessingTimedout);
+                }
+
+                var docs = taskUpload.Result;
                 if (docs == null)
                     return PasswordProtectedResponse;
                 if (docs.Length == 0 || docs.Length > MaximumUploadFiles)
                     return MaximumFileLimitsResponse;
 
                 SetDefaultOptions(docs);
-                Opts.AppName = AnnotationApp;
+                Opts.AppName = "Annotation";
                 Opts.MethodName = "Remove";
                 Opts.ZipFileName = docs.Length > 1 ? "Removed Annotations" : Path.GetFileNameWithoutExtension(docs[0].FileName);
                 Opts.CreateZip = true;
@@ -45,26 +56,33 @@ namespace Aspose.Cells.API.Controllers
                 {
                     var stopWatch = new Stopwatch();
                     stopWatch.Start();
-                    NLogger.LogInfo($"Remove Annotations=>{string.Join(",", docs.Select(t => t.FileName))}=>Start", AsposeCells, ProductFamilyNameKeysEnum.cells, outPath);
+                    NLogger.LogInfo($"Remove Annotations=>{string.Join(",", docs.Select(t => t.FileName))}=>Start");
 
-                    var tasks = docs.Select(doc =>
-                        Task.Factory.StartNew(() => RemoveAnnotations(doc, zipOutFolder))
-                    ).ToArray();
-                    Task.WaitAll(tasks);
+                    var tasks = docs.Select(doc => Task.Factory.StartNew(() => RemoveAnnotations(doc, zipOutFolder))).ToArray();
+                    var isCompleted = Task.WaitAll(tasks, Api.Configuration.MillisecondsTimeout);
+
+                    if (!isCompleted)
+                    {
+                        NLogger.LogError($"Remove Annotations=>{string.Join(",", docs.Select(t => t.FileName))}=>{AppSettings.ProcessingTimedout}");
+                        throw new TimeoutException(AppSettings.ProcessingTimedout);
+                    }
 
                     stopWatch.Stop();
-                    NLogger.LogInfo($"Remove Annotations=>{string.Join(",", docs.Select(t => t.FileName))}=>cost seconds:{stopWatch.Elapsed.TotalSeconds}", AsposeCells, ProductFamilyNameKeysEnum.cells, outPath);
+                    NLogger.LogInfo($"Remove Annotations=>{string.Join(",", docs.Select(t => t.FileName))}=>cost seconds:{stopWatch.Elapsed.TotalSeconds}");
                 });
             }
-            catch (AppException ex)
+            catch (Exception e)
             {
-                NLogger.LogError(ex, $"{sessionId}-{action}");
-                return AppErrorResponse(ex.Message, sessionId, action);
-            }
-            catch (Exception ex)
-            {
-                NLogger.LogError(ex, $"{sessionId}-{action}");
-                return InternalServerErrorResponse(sessionId, action);
+                var exception = e.InnerException ?? e;
+                NLogger.LogError(App, "Remove", exception.Message, sessionId);
+
+                return new Response
+                {
+                    StatusCode = 500,
+                    Status = exception.Message,
+                    FolderName = sessionId,
+                    Text = action
+                };
             }
         }
 
@@ -73,7 +91,7 @@ namespace Aspose.Cells.API.Controllers
         /// </summary>
         /// <param name="doc"></param>
         /// <param name="outPath"></param>
-        private void RemoveAnnotations(DocumentInfo doc, string outPath)
+        private static void RemoveAnnotations(DocumentInfo doc, string outPath)
         {
             try
             {
@@ -107,9 +125,9 @@ namespace Aspose.Cells.API.Controllers
                 // wb.Save(outPath);
                 wb.Save($"{folder}/{filename}");
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                LogError(ex);
+                NLogger.LogError(App, "RemoveAnnotations", e.Message, outPath);
             }
         }
 
@@ -118,7 +136,7 @@ namespace Aspose.Cells.API.Controllers
         ///</Summary>
         public async Task<Response> Remove(string fileName, string folderName)
         {
-            Opts.AppName = AnnotationApp;
+            Opts.AppName = "Annotation";
             Opts.MethodName = MethodBase.GetCurrentMethod().Name;
             Opts.FolderName = folderName;
             Opts.FileName = fileName;

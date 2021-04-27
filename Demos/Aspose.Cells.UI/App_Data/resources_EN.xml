@@ -3,7 +3,7 @@
     <!-- =============================================  Other important public SEO resources START  ================================================ -->
     <res name="AsposeProductFamilyInclude">{0} Product Family Includes</res>
     <res name="AsposeCells">Aspose.Cells</res>
-    <res name="AsposeProductFor"></res>
+    <res name="AsposeProductFor"/>
     <res name="Conversionh4">Conversion</res>
     <res name="Viewerh4">Viewer</res>
     <res name="Watermarkh4">Watermark</res>
@@ -153,11 +153,11 @@
     <res name="cellsMetadataFeature2">Edit Metadata from Anywhere</res>
     <res name="cellsMetadataFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required by you</res>
     <res name="cellsMetadataFeature3">Metadata Quality</res>
-    <res name="cellsViewerDesc">View your Excel spreadsheet online</res>
-    <res name="cellsViewerPageTitle">View {0} Spreadsheet Online - Free Online Excel Viewer</res>
-    <res name="cellsViewerMetaDescription">Free online {0} spreadsheet viewer app. View Excel XLS, XLSX, XLSM, XLSB, TSV, CSV, HTML, MHT, MHTML &amp; OpenDocument ODS spreadsheets online.</res>
-    <res name="cellsViewerTitle">Free online {0} spreadsheet viewer</res>
-    <res name="cellsViewerTitleSub">View {0} spreadsheet as html from any device.</res>
+    <res name="cellsViewerDesc">View your Excel file online</res>
+    <res name="cellsViewerPageTitle">View {0} Online - Online {0} Viewer</res>
+    <res name="cellsViewerMetaDescription">Free online {0} viewer app. View Excel XLS, XLSX, XLSM, XLSB, TSV, CSV, HTML, MHT, MHTML &amp; OpenDocument ODS spreadsheets online.</res>
+    <res name="cellsViewerTitle">Open {0} online to view</res>
+    <res name="cellsViewerTitleSub">Free online {0} viewer</res>
     <res name="cellsViewerLiFeature1">Open your Excel spreadsheet online for free</res>
     <res name="cellsViewerLiFeature2">Save your Excel spreadsheet as html or image file</res>
     <res name="cellsViewerLiFeature3">View charts &amp; shapes as images</res>
@@ -249,10 +249,10 @@
     <res name="cellsUnlockAnotherFile">Unlock another file</res>
     <res name="cellsProtectAnotherFile">Protect another file</res>
     <res name="cellsEditorDesc">Edit your Excel Spreadsheet online</res>
-    <res name="cellsEditorPageTitle">Edit {0} Online - Free Online Excel Editor &amp; Viewer</res>
+    <res name="cellsEditorPageTitle">Edit {0} Online - Free Online Excel Editor</res>
     <res name="cellsEditorMetaDescription">Free online {0} editor &amp; viewer web app. View, edit Excel spreadsheets with advanced WYSIWYG editor.</res>
-    <res name="cellsEditorTitle">Free online {0} spreadsheet editor</res>
-    <res name="cellsEditorTitleSub">A web app to view &amp; edit {0} &amp; OpenDocument Spreadsheet online from anywhere.</res>
+    <res name="cellsEditorTitle">Open {0} online to edit</res>
+    <res name="cellsEditorTitleSub">Free online {0} editor</res>
     <res name="cellsEditorFeature1">Fast and Easy Editor</res>
     <res name="cellsEditorFeature1Description">Click on “Create New” button, a new Excel Spreadsheet will be rendered for you to edit. Upload your Excel file and click on “Edit Now” button, you will be redirected to the HTML Editor app with great user experience and many more features</res>
     <res name="cellsEditorFeature2">Edit from Anywhere</res>
@@ -678,17 +678,17 @@
     <!-- Overview -->
   <res name="cellsConversionRawHtmlOverview">Aspose &lt;strong&gt;{0} converter&lt;/strong&gt; is a free app to convert {0} format, also you can save the result to PDF, DOCX, PPTX, XLS, XLSX, XLSM, XLSB, ODS, CSV, TSV, HTML, JPG, BMP, PNG, EMF, WMF, SVG, TIFF, XPS, MHTML and Markdown. Convert {0} online from Mac OS, Linux, Android, iOs, and anywhere. &lt;/p&gt; &lt;p style="font-size: 20px; margin-bottom: 10px !important"&gt; If you want to convert programmatically please check &lt;a target="_blank" href="https://docs.aspose.com/display/cellsnet/Convert+Workbook+to+Different+Formats"&gt;&lt;strong&gt;Aspose.Cells documentation&lt;/strong&gt;&lt;/a&gt;.</res>
   <res name="cellsMergerRawHtmlOverview">Aspose &lt;strong&gt;{0} merger&lt;/strong&gt; is a free web app to combine multiple {0} files: combine to PDF, DOCX, PPTX, XLS, XLSX, XLSM, XLSB, ODS, CSV, TSV, HTML, JPG, BMP, PNG, EMF, WMF, SVG, TIFF, XPS, MHTML and Markdown. Merge Excel online from Mac OS, Linux, Android, iOs, and anywhere.</res>
-  <res name="cellsSplitterRawHtmlOverview"></res>
-  <res name="cellsParserRawHtmlOverview"></res>
-  <res name="cellsAnnotationRawHtmlOverview"></res>
-  <res name="cellsSearchRawHtmlOverview"></res>
-  <res name="cellsMetadataRawHtmlOverview"></res>
-  <res name="cellsUnlockRawHtmlOverview"></res>
-  <res name="cellsProtectRawHtmlOverview"></res>
-  <res name="cellsViewerRawHtmlOverview"></res>
-  <res name="cellsEditorRawHtmlOverview"></res>
-  <res name="cellsWatermarkRawHtmlOverview"></res>
-  <res name="cellsAssemblyRawHtmlOverview"></res>
+  <res name="cellsSplitterRawHtmlOverview"/>
+  <res name="cellsParserRawHtmlOverview"/>
+  <res name="cellsAnnotationRawHtmlOverview"/>
+  <res name="cellsSearchRawHtmlOverview"/>
+  <res name="cellsMetadataRawHtmlOverview"/>
+  <res name="cellsUnlockRawHtmlOverview"/>
+  <res name="cellsProtectRawHtmlOverview"/>
+  <res name="cellsViewerRawHtmlOverview"/>
+  <res name="cellsEditorRawHtmlOverview"/>
+  <res name="cellsWatermarkRawHtmlOverview"/>
+  <res name="cellsAssemblyRawHtmlOverview"/>
 
   <!--  Chart  -->
   <res name="cellsChartAPPName">Chart</res>
@@ -717,7 +717,7 @@
   <res name="ChartFeature3">Conversion Chart Quality</res>
   <res name="cellsChartButton">Render Chart</res>
   <res name="cellsChartAnotherFile">Convert Chart from other files</res>
-  <res name="cellsChartRawHtmlOverview"></res>
+  <res name="cellsChartRawHtmlOverview"/>
 
   <res name="cellsHowtoChartTitle">How to convert Excel Chart to image</res>
   <res name="cellsHowtoNameChartFeature1">Upload files</res>
@@ -740,4 +740,86 @@
   <res name="cellsHowtoChartFeature6">Note that file will be deleted from our servers after 24 hours and download links will stop working after this time period.</res>
   <res name="cellsChartOtherFeaturesTitle">Other Excel Chart Converters</res>
   <res name="cellsChartOtherFeaturesTitleSub">You can also convert charts from other Excel formats. Please see the list below.</res>
+
+  <!--  Translation  -->
+  <res name="cellsTranslationAPPName">Translation</res>
+  <res name="cellsTranslationDesc">Translate your Excel Spreadsheet online</res>
+  <res name="cellsTranslationMetaDescription">Free online {0} translation app. Translate Excel spreadsheets online.</res>
+  <res name="cellsTranslationMetaDescription2">Free online {0} translation app. Translate Excel spreadsheets online.</res>
+  <res name="cellsTranslationPageTitle">Translate {0} Online - Free Online Excel Translation app</res>
+  <res name="cellsTranslationPageTitle2">Translate {0} Online - Free Online Excel Translation app</res>
+  <res name="cellsTranslationTitle">Translate {0} online</res>
+  <res name="cellsTranslationTitle2">Translate {0} online</res>
+  <res name="cellsTranslationValidationExpression">.xls|.xlsx|.xlsm|.xlsb|.ods|.csv|.tsv|.html|.mht|.mhtml</res>
+  <res name="cellsTranslationTitleSub">Free online {0} translation app</res>
+  <res name="cellsTranslationTitleSub2">Free online {0} translation app</res>
+  <res name="cellsTranslationSaveAsOptions">XLSX, XLS, PDF, DOCX, PPTX, XLSM, XLSB, ODS, CSV, TSV, HTML, JPG, BMP, PNG, EMF, WMF, SVG, TIFF, XPS, MHTML, MD</res>
+  <res name="cellsTranslationAction">Translate</res>
+  <res name="cellsTranslationLiFeature1">Quick way to translate Excel files into multiple languages</res>
+  <res name="cellsTranslationLiFeature2">Support translation in 10 major languages: &lt;strong&gt;English, Arabic (العربية), Chinese (中文), French (Français), German (Deutsch), Italian (Italiano), Polish (Polski), Portuguese (Português), Russian (Русский), Spanish (Español)&lt;/strong&gt;</res>
+  <res name="cellsTranslationLiFeature3">Upload maximum 10 files and translate them simultaneously</res>
+  <res name="cellsTranslationFeature1">Fast and Easy Translation</res>
+  <res name="cellsTranslationFeature1Description">Upload your file, choose translation languages and output format, click on "Translate Now" button. You will get download link as soon as the file is translated</res>
+  <res name="cellsTranslationFeature2">Translate from Anywhere</res>
+  <res name="cellsTranslationFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you.</res>
+  <res name="cellsTranslationFeature3">Translation Quality</res>
+  <res name="TranslationFeature3">Translation Quality</res>
+  <res name="cellsTranslationButton">TRANSLATE NOW</res>
+  <res name="cellsTranslationAnotherFile">Translate other files</res>
+  <res name="TranslateFrom">Translate from</res>
+  <res name="TranslateTo">Translate to</res>
+  <res name="LanguagesCode">en, ar, zh, fr, de, it, pl, pt, ru, es</res>
+  <res name="Languages">English, Arabic (العربية), Chinese (中文), French (Français), German (Deutsch), Italian (Italiano), Polish (Polski), Portuguese (Português), Russian (Русский), Spanish (Español)</res>
+  <res name="cellsTranslationRawHtmlOverview"/>
+  <res name="cellsTranslationSuccessMessage">Your files have been processed successfully</res>
+  <res name="cellsHowtoTranslationTitle">How to translate {0} files using {1}</res>
+  <res name="cellsHowtoNameTranslationFeature1">Upload files</res>
+  <res name="cellsHowtoImageUrlTranslationFeature1">https://products.aspose.app/img/{0}/HowToExample/Step1.png</res>
+  <res name="cellsHowtoTranslationFeature1">Click inside the file drop area to upload {0} files or drag &amp; drop {0} files.</res>
+  <res name="cellsHowtoImageUrlTranslationFeature2">https://products.aspose.app/img/{0}/HowToExample/Step2.png</res>
+  <res name="cellsHowtoTranslationFeature2">Select language of your files in &lt;strong&gt;From language options&lt;/strong&gt;.</res>
+  <res name="cellsHowtoImageUrlTranslationFeature3">https://products.aspose.app/img/{0}/HowToExample/Step3.png</res>
+  <res name="cellsHowtoTranslationFeature3">Select language for translation in &lt;strong&gt;To language options&lt;/strong&gt;.</res>
+  <res name="cellsHowtoImageUrlTranslationFeature4">https://products.aspose.app/img/{0}/HowToExample/Step4.png</res>
+  <res name="cellsHowtoTranslationFeature4">If you want to receive translated file in another format, select format in &lt;strong&gt;Translated file format&lt;/strong&gt;.</res>
+  <res name="cellsHowtoImageUrlTranslationFeature5">https://products.aspose.app/img/{0}/HowToExample/Step5.png</res>
+  <res name="cellsHowtoTranslationFeature5">Click &lt;strong&gt;Translate Now&lt;/strong&gt; button.</res>
+  <res name="cellsHowtoImageUrlTranslationFeature6">https://products.aspose.app/img/{0}/HowToExample/Step6.png</res>
+  <res name="cellsHowtoTranslationFeature6">Once your document is translated click on Download Now button.</res>
+  <res name="cellsHowtoImageUrlTranslationFeature7">https://products.aspose.app/img/{0}/HowToExample/Step7.png</res>
+  <res name="cellsHowtoTranslationFeature7">You may also send the download link to any email address by clicking on Email button.</res>
+  <res name="cellsTranslationOtherFeaturesTitle">Other Supported Translations</res>
+  <res name="cellsTranslationOtherFeaturesTitleSub">You can also translate other file formats. Please see the list below.</res>
+  
+  <res name="cellsComparisonAPPName">Comparison</res>
+  <res name="cellsComparisonDesc">Compare your Excel Spreadsheets online</res>
+  <res name="cellsComparisonPageTitle">Compare {0} Online - Free Online Excel Comparison</res>
+  <res name="cellsComparisonMetaDescription">Free online {0} comparison web app. Compare Excel spreadsheets online.</res>
+  <res name="cellsComparisonTitle">{0} comparison online</res>
+  <res name="cellsComparisonTitleSub">Compare the contents of Excel spreadsheets online</res>
+  <res name="cellsComparisonValidationExpression">.xls|.xlsx|.xlsm|.xlsb|.ods|.csv|.tsv|.html|.mht|.mhtml</res>
+  <res name="cellsComparisonRawHtmlOverview"/>
+  <res name="cellsComparisonLiFeature1">Quick way to compare two Excel files and view the differences</res>
+  <res name="cellsComparisonLiFeature2">Compare different file formats of Excel</res>
+  <res name="cellsComparisonLiFeature3">Highlight the differences</res>
+  <res name="cellsComparisonFeature1">Fast and Easy Comparison</res>
+  <res name="cellsComparisonFeature1Description">Upload two Excel files, click the "Compare Now" button, and the differences will be highlighted in the viewer</res>
+  <res name="cellsComparisonFeature2">Compare from Anywhere</res>
+  <res name="cellsComparisonFeature2Description">It works from all platforms including Windows, Mac, Android and iOS. All files are processed on our servers. No plugin or software installation required for you.</res>
+  <res name="cellsComparisonFeature3">Comparison Quality</res>
+  <res name="ComparisonFeature3">Comparison Quality</res>
+  <res name="cellsComparisonAnotherFile">Compare other files</res>
+  <res name="cellsHowtoComparisonTitle">How to compare {0} files using {1}</res>
+  <res name="cellsHowtoNameComparisonFeature1">Upload files</res>
+  <res name="cellsHowtoImageUrlComparisonFeature1">https://products.aspose.app/img/{0}/HowToExample/Step1.png</res>
+  <res name="cellsHowtoComparisonFeature1">Click inside the file drop area to upload or drag &amp; drop two {0} files.</res>
+  <res name="cellsHowtoImageUrlComparisonFeature2">https://products.aspose.app/img/{0}/HowToExample/Step2.png</res>
+  <res name="cellsHowtoComparisonFeature2">Press the &lt;strong&gt;"COMPARE NOW"&lt;/strong&gt; button to compare Excel files.</res>
+  <res name="cellsHowtoImageUrlComparisonFeature3">https://products.aspose.app/img/{0}/HowToExample/Step3.png</res>
+  <res name="cellsHowtoComparisonFeature3">View two files and highlight differences.</res>
+  <res name="cellsComparisonOtherFeaturesTitle">Other Supported Comparisons</res>
+  <res name="cellsComparisonOtherFeaturesTitleSub">You can also compare other file formats. Please see the list below.</res>
+  <res name="cellsComparisonButton">COMPARE NOW</res>
+  <res name="CompareFileAmountMessage">Please select only two Excel files to upload</res>
+  <res name="cellsComparisonAction">Compare</res>
 </resources>

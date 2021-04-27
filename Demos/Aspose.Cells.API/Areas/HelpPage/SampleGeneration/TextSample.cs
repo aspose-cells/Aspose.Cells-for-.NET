@@ -1,6 +1,6 @@
 using System;
 
-namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
+namespace Aspose.Cells.API.Areas.HelpPage
 {
     /// <summary>
     /// This represents a preformatted text sample on the help page. There's a display template named TextSample associated with this class.
@@ -9,14 +9,19 @@ namespace Aspose.Cells.API.Areas.HelpPage.SampleGeneration
     {
         public TextSample(string text)
         {
-            Text = text ?? throw new ArgumentNullException("text");
+            if (text == null)
+            {
+                throw new ArgumentNullException("text");
+            }
+            Text = text;
         }
 
         public string Text { get; private set; }
 
         public override bool Equals(object obj)
         {
-            return obj is TextSample other && Text == other.Text;
+            TextSample other = obj as TextSample;
+            return other != null && Text == other.Text;
         }
 
         public override int GetHashCode()

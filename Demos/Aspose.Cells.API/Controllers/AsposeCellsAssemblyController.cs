@@ -17,6 +17,8 @@ namespace Aspose.Cells.API.Controllers
     ///</Summary>
     public class AsposeCellsAssemblyController : AsposeCellsBaseController
     {
+        private const string App = "Assembly";
+
         ///<Summary>
         /// Upload
         ///</Summary>
@@ -42,10 +44,10 @@ namespace Aspose.Cells.API.Controllers
 
                 return Request.CreateResponse(HttpStatusCode.OK);
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                NLogger.LogError(ex, "Error in AsposeCellsAssemblyController:Upload ", "", ProductFamilyNameKeysEnum.unassigned, "");
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex);
+                NLogger.LogError(App, "Upload", e.Message, folderName);
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, e);
             }
         }
 
@@ -54,7 +56,7 @@ namespace Aspose.Cells.API.Controllers
         ///</Summary>
         [HttpOptions]
         [ActionName("Upload")]
-        public HttpResponseMessage UploadCORS(string folderName)
+        public HttpResponseMessage UploadCors(string folderName)
         {
             return Request.CreateResponse(HttpStatusCode.OK);
         }
@@ -68,17 +70,24 @@ namespace Aspose.Cells.API.Controllers
         {
             var sessionId = Guid.NewGuid().ToString();
             const string action = "Assemble data";
-
             try
             {
-                var docs = await UploadWorkBooks(sessionId);
+                var taskUpload = Task.Run(() => UploadWorkbooks(sessionId));
+                taskUpload.Wait(Api.Configuration.MillisecondsTimeout);
+                if (!taskUpload.IsCompleted)
+                {
+                    NLogger.LogError($"Assembly UploadWorkbooks=>{sessionId}=>{AppSettings.ProcessingTimedout}");
+                    throw new TimeoutException(AppSettings.ProcessingTimedout);
+                }
+
+                var docs = taskUpload.Result;
                 if (docs == null)
                     return PasswordProtectedResponse;
                 if (docs.Length == 0 || docs.Length > MaximumUploadFiles)
                     return MaximumFileLimitsResponse;
 
                 SetDefaultOptions(docs);
-                Opts.AppName = AssemblyApp;
+                Opts.AppName = "Assembly";
                 Opts.MethodName = "Assemble";
                 Opts.OutputType = ".xlsx";
                 Opts.ResultFileName = "Assembled Result";
@@ -90,15 +99,17 @@ namespace Aspose.Cells.API.Controllers
 
                 return await Assemble(folderName, templateFilename, datasourceFilename, datasourceName);
             }
-            catch (AppException ex)
+            catch (Exception e)
             {
-                NLogger.LogError(ex, $"{sessionId}-{action}");
-                return AppErrorResponse(ex.Message, sessionId, action);
-            }
-            catch (Exception ex)
-            {
-                NLogger.LogError(ex, $"{sessionId}-{action}");
-                return InternalServerErrorResponse(sessionId, action);
+                var exception = e.InnerException ?? e;
+                NLogger.LogError(App, "Assemble", exception.Message, sessionId);
+                return new Response
+                {
+                    StatusCode = 500,
+                    Status = exception.Message,
+                    FolderName = sessionId,
+                    Text = action
+                };
             }
         }
 
@@ -107,7 +118,7 @@ namespace Aspose.Cells.API.Controllers
         ///</Summary>
         [HttpOptions]
         [ActionName("Assemble")]
-        public HttpResponseMessage AssembleCORS(string productName, string folderName, string templateFilename, string datasourceFilename, string datasourceName, int datasourceTableIndex = 0, string delimiter = ",")
+        public HttpResponseMessage AssembleCors(string productName, string folderName, string templateFilename, string datasourceFilename, string datasourceName, int datasourceTableIndex = 0, string delimiter = ",")
         {
             return Request.CreateResponse(HttpStatusCode.OK);
         }
@@ -117,7 +128,7 @@ namespace Aspose.Cells.API.Controllers
         ///</Summary>
         public async Task<Response> Assemble(string folderName, string templateFilename, string datasourceFilename, string datasourceName, int datasourceTableIndex = 0, string delimiter = ",")
         {
-            Opts.AppName = AssemblyApp;
+            Opts.AppName = "Assembly";
             Opts.MethodName = "AsposeCellsAssemblyController.Assemble()";
             Opts.FolderName = folderName;
             Opts.FileName = datasourceFilename;
@@ -127,10 +138,10 @@ namespace Aspose.Cells.API.Controllers
             Opts.ZipFileName = "";
             Opts.CalculateZipFileName = false;
 
-            return await Process((inFilePath, outPath, zipOutFolder) => { AssembleCellsData(inFilePath, outPath, folderName, templateFilename, datasourceFilename, datasourceName); });
+            return await Process((inFilePath, outPath, zipOutFolder) => { AssembleCellsData(inFilePath, outPath, templateFilename, datasourceFilename, datasourceName); });
         }
 
-        private static void AssembleCellsData(string inFilePath, string outPath, string folderName, string templateFilename, string datasourceFilename, string datasourceName)
+        private static void AssembleCellsData(string inFilePath, string outPath, string templateFilename, string datasourceFilename, string datasourceName)
         {
             var dirPath = Path.GetDirectoryName(inFilePath) + "/";
 
@@ -163,13 +174,19 @@ namespace Aspose.Cells.API.Controllers
 
             var stopWatch = new Stopwatch();
             stopWatch.Start();
-            NLogger.LogInfo($"Assemble=>dataXlsx:{dataXlsx}||templateXlsx:{templateXlsx}=>Start", "Aspose.Cells", ProductFamilyNameKeysEnum.cells, outPath);
+            NLogger.LogInfo($"Assemble=>dataXlsx:{dataXlsx}||templateXlsx:{templateXlsx}=>Start");
 
             var task = Task.Run(() => { wbTemplate.Save(outPath); });
-            Task.WaitAll(task);
+            var isCompleted = task.Wait(Api.Configuration.MillisecondsTimeout);
+
+            if (!isCompleted)
+            {
+                NLogger.LogError($"Assemble=>dataXlsx:{dataXlsx}||templateXlsx:{templateXlsx}=>{AppSettings.ProcessingTimedout}");
+                throw new TimeoutException(AppSettings.ProcessingTimedout);
+            }
 
             stopWatch.Stop();
-            NLogger.LogInfo($"Assemble=>dataXlsx:{dataXlsx}||templateXlsx:{templateXlsx}=>cost seconds:{stopWatch.Elapsed.TotalSeconds}", "Aspose.Cells", ProductFamilyNameKeysEnum.cells, outPath);
+            NLogger.LogInfo($"Assemble=>dataXlsx:{dataXlsx}||templateXlsx:{templateXlsx}=>cost seconds:{stopWatch.Elapsed.TotalSeconds}");
         }
     }
 }

@@ -9,6 +9,7 @@ using System.Net.Http;
 using System.Web.Http;
 using Aspose.Cells.API.Models;
 using Tools.Foundation.Models;
+using Aspose.Cells.API.Config;
 
 namespace Aspose.Cells.API.Controllers
 {
@@ -17,6 +18,8 @@ namespace Aspose.Cells.API.Controllers
     /// </summary>
     public class AsposeCellsMetadataController : AsposeCellsBaseController
     {
+        private const string App = "Metadata";
+
         ///<Summary>
         /// Properties method to get metadata
         ///</Summary>
@@ -25,7 +28,7 @@ namespace Aspose.Cells.API.Controllers
         [ActionName("Properties")]
         public HttpResponseMessage Properties(JObject obj)
         {
-            Opts.AppName = MetadataApp;
+            Opts.AppName = "Metadata";
             Opts.MethodName = "Properties";
             Opts.FileName = Convert.ToString(obj["FileName"]);
             Opts.FolderName = Convert.ToString(obj["id"]);
@@ -35,15 +38,19 @@ namespace Aspose.Cells.API.Controllers
                 var workbook = new Workbook(Opts.WorkingFileName);
                 return Request.CreateResponse(HttpStatusCode.OK, new PropertiesResponse(workbook));
             }
-            catch (AppException ex)
+            catch (Exception e)
             {
-                NLogger.LogError(ex, $"{Opts.FolderName}-{Opts.MethodName}");
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, AppErrorResponse(ex.Message, Opts.FolderName, Opts.MethodName));
-            }
-            catch (Exception ex)
-            {
-                NLogger.LogError(ex, $"{Opts.FolderName}-{Opts.MethodName}");
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, InternalServerErrorResponse(Opts.FolderName, Opts.MethodName));
+                var message = $"{e.Message} | FileName = {Convert.ToString(obj["FileName"])}";
+                NLogger.LogError(App, "Properties", message, Convert.ToString(obj["id"]));
+
+                var response = new Response
+                {
+                    StatusCode = 500,
+                    Status = e.Message,
+                    FolderName = Opts.FolderName,
+                    Text = "Metadata Properties"
+                };
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, response);
             }
         }
 
@@ -54,7 +61,7 @@ namespace Aspose.Cells.API.Controllers
         [ActionName("Download")]
         public async Task<Response> Download(JObject obj)
         {
-            Opts.AppName = MetadataApp;
+            Opts.AppName = "Metadata";
             Opts.MethodName = "Download";
             try
             {
@@ -72,22 +79,33 @@ namespace Aspose.Cells.API.Controllers
                 {
                     var stopWatch = new Stopwatch();
                     stopWatch.Start();
-                    NLogger.LogInfo($"Excel Metadata=>{outPath}=>Start", AsposeCells, ProductFamilyNameKeysEnum.cells, outPath);
+                    NLogger.LogInfo($"Excel Metadata=>{outPath}=>Start");
 
                     var task = Task.Run(() => { workbook.Save(outPath); });
-                    Task.WaitAll(task);
+                    var isCompleted = task.Wait(Api.Configuration.MillisecondsTimeout);
+
+                    if (!isCompleted)
+                    {
+                        NLogger.LogError($"Excel Metadata=>{outPath}=>{AppSettings.ProcessingTimedout}");
+                        throw new TimeoutException(AppSettings.ProcessingTimedout);
+                    }
 
                     stopWatch.Stop();
-                    NLogger.LogInfo($"Excel Metadata=>{outPath}=>cost seconds:{stopWatch.Elapsed.TotalSeconds}", AsposeCells, ProductFamilyNameKeysEnum.cells, outPath);
+                    NLogger.LogInfo($"Excel Metadata=>{outPath}=>cost seconds:{stopWatch.Elapsed.TotalSeconds}");
                 });
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                LogError(ex);
+                var exception = e.InnerException ?? e;
+                var message = $"{exception.Message} | FileName = {Convert.ToString(obj["FileName"])}";
+                NLogger.LogError(App, "Download", message, Convert.ToString(obj["id"]));
+
                 return await Task.FromResult(new Response
                 {
-                    Status = "500 " + ex.Message,
-                    StatusCode = 500
+                    StatusCode = 500,
+                    Status = exception.Message,
+                    FolderName = Convert.ToString(obj["id"]),
+                    Text = "Metadata Download"
                 });
             }
         }
@@ -99,7 +117,7 @@ namespace Aspose.Cells.API.Controllers
         [ActionName("Clear")]
         public async Task<Response> Clear(JObject obj)
         {
-            Opts.AppName = MetadataApp;
+            Opts.AppName = "Metadata";
             Opts.MethodName = "Clear";
             try
             {
@@ -113,13 +131,17 @@ namespace Aspose.Cells.API.Controllers
 
                 return await Process((inFilePath, outPath, zipOutFolder) => { workbook.Save(outPath); });
             }
-            catch (Exception ex)
+            catch (Exception e)
             {
-                LogError(ex);
+                var message = $"{e.Message} | FileName = {Convert.ToString(obj["FileName"])}";
+                NLogger.LogError(App, "Clear", message, Convert.ToString(obj["id"]));
+
                 return await Task.FromResult(new Response
                 {
-                    Status = "500 " + ex.Message,
-                    StatusCode = 500
+                    StatusCode = 500,
+                    Status = e.Message,
+                    FolderName = Convert.ToString(obj["id"]),
+                    Text = "Metadata Clear"
                 });
             }
         }
@@ -129,7 +151,7 @@ namespace Aspose.Cells.API.Controllers
         /// </summary>
         /// <param name="workbook"></param>
         /// <param name="pars"></param>
-        private void SetBuiltInProperties(Workbook workbook, List<DocProperty> pars)
+        private static void SetBuiltInProperties(Workbook workbook, List<DocProperty> pars)
         {
             var builtin = workbook.BuiltInDocumentProperties;
             var t = builtin.GetType();
@@ -158,13 +180,12 @@ namespace Aspose.Cells.API.Controllers
             }
         }
 
-
         /// <summary>
         /// SetCustomProperties
         /// </summary>
         /// <param name="workbook"></param>
         /// <param name="pars"></param>
-        private void SetCustomProperties(Workbook workbook, List<DocProperty> pars)
+        private static void SetCustomProperties(Workbook workbook, List<DocProperty> pars)
         {
             var custom = workbook.CustomDocumentProperties;
             custom.Clear();

@@ -2,25 +2,41 @@ using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace Aspose.Cells.UI.Services
 {
-	public abstract class BaseAPICacheService
-	{
-		protected static HttpClient _httpClient = new HttpClient();
+    public abstract class BaseApiCacheService
+    {
+        protected static HttpClient HttpClient = new HttpClient();
 
-		protected V GetCached<K, V>(Dictionary<K, V> dict, K key, Func<Task<V>> refresh)
-		{
-			lock (dict)
-			{
-				if (!dict.ContainsKey(key))
-				{
-					var result = Task.Run(async () => await refresh()).Result;
-					dict.Add(key, result);
-				}
+        protected TV GetCached<TK, TV>(Dictionary<TK, TV> dict, TK key, Func<Task<TV>> refresh)
+        {
+            lock (dict)
+            {
+                if (dict.ContainsKey(key)) return dict[key];
 
-				return dict[key];
-			}
-		}
-	}
+                var result = Task.Run(async () => await refresh()).Result;
+                dict.Add(key, result);
+
+                return dict[key];
+            }
+        }
+
+        protected string GetVirtualPath(string strPath)
+        {
+            if (HttpContext.Current != null)
+            {
+                return HttpContext.Current.Server.MapPath(strPath);
+            }
+
+            strPath = strPath.Replace("/", "\\");
+            if (strPath.StartsWith("\\") || strPath.StartsWith("~"))
+            {
+                strPath = strPath.Substring(strPath.IndexOf('\\', 1)).TrimStart('\\');
+            }
+
+            return System.IO.Path.Combine(HttpRuntime.AppDomainAppPath, strPath);
+        }
+    }
 }

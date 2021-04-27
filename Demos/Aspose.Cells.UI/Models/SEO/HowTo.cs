@@ -1,5 +1,6 @@
-using System.Collections.Generic;
 using Newtonsoft.Json;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Aspose.Cells.UI.Models.SEO
 {
@@ -9,20 +10,20 @@ namespace Aspose.Cells.UI.Models.SEO
         {
             Name = HowToModel.Title;
             Description = Title;
-            Supply = new[] {new HowToSupply(TitleSub)};
-            var steps = new List<HowToStep>();
+            Supply = new HowToSupply[] { new HowToSupply(TitleSub) };
+            List<HowToStep> steps = new List<HowToStep>();
             if (HowToModel.List != null && HowToModel.List.Count > 0)
             {
-                var i = 1;
-                foreach (var item in HowToModel.List)
+                int i = 1;
+                foreach (HowToItem item in HowToModel.List)
                 {
-                    steps.Add(new HowToStep
+                    steps.Add(new HowToStep()
                     {
                         Name = item.Name,
                         Text = item.Text,
                         Position = i.ToString(),
-                        Url = new URL {Id = item.UrlPath},
-                        Image = new ImageObject {Url = new URL {Id = item.ImageUrl}},
+                        Url = new URL() { Id = item.UrlPath },
+                        Image = new ImageObject() { Url = new URL() { Id = item.ImageUrl } },
                     });
                     i++;
                 }
@@ -32,41 +33,52 @@ namespace Aspose.Cells.UI.Models.SEO
         }
 
 
-        [JsonProperty("@type")] public override string Type { get; set; } = "HowTo";
+        [JsonProperty("@type")]
+        public override string Type { get; set; } = "HowTo";
 
         [JsonProperty("image")]
-        public override ImageObject Image { get; set; } = new ImageObject
+        public override ImageObject Image { get; set; } = new ImageObject()
         {
-            Url = new URL {Id = "https://products.aspose.app/img/howto.png"},
+            Url = new URL() { Id = "https://products.aspose.app/img/howto.png" },
             Width = "280",
             Height = "200"
         };
 
-        [JsonProperty("estimatedCost")] public MonetaryAmount EstimatedCost { get; set; } = new MonetaryAmount();
+        [JsonProperty("estimatedCost")]
+        public MonetaryAmount EstimatedCost { get; set; } = new MonetaryAmount();
 
-        [JsonProperty("totalTime")] public string TotalTime { get; set; } = "PT1M";
+        [JsonProperty("totalTime")]
+        public string TotalTime { get; set; } = "PT1M";
 
-        [JsonProperty("tool")] public HowToTool Tool { get; set; } = new HowToTool();
+        [JsonProperty("tool")]
+        public HowToTool Tool { get; set; } = new HowToTool();
 
-        [JsonProperty("supply")] public HowToSupply[] Supply { get; set; }
+        [JsonProperty("supply")]
+        public HowToSupply[] Supply { get; set; }
 
-        [JsonProperty("step")] public HowToStep[] Steps { get; set; }
+        [JsonProperty("step")]
+        public HowToStep[] Steps { get; set; }
     }
 
     public class HowToStep : CreativeWork
     {
-        [JsonProperty("@type")] public override string Type { get; set; } = "HowToStep";
+        [JsonProperty("@type")]
+        public override string Type { get; set; } = "HowToStep";
 
-        [JsonProperty("position")] public string Position { get; set; }
+        [JsonProperty("position")]
+        public string Position { get; set; }
 
-        [JsonProperty("text")] public string Text { get; set; }
+        [JsonProperty("text")]
+        public string Text { get; set; }
     }
 
     public class HowToTool : SeoElement
     {
-        [JsonProperty("@type")] public override string Type { get; set; } = "HowToTool";
+        [JsonProperty("@type")]
+        public override string Type { get; set; } = "HowToTool";
 
-        [JsonProperty("name")] public string Name { get; set; } = "A Web browser";
+        [JsonProperty("name")]
+        public string Name { get; set; } = "A Web browser";
     }
 
     public class HowToSupply
@@ -76,33 +88,43 @@ namespace Aspose.Cells.UI.Models.SEO
             Name = name;
         }
 
-        [JsonProperty("@type")] public string Type { get; set; } = "HowToSupply";
+        [JsonProperty("@type")]
+        public string Type { get; set; } = "HowToSupply";
 
-        [JsonProperty("name")] public string Name { get; set; }
+        [JsonProperty("name")]
+        public string Name { get; set; }
     }
 
     public class ImageObject : SeoElement
     {
-        [JsonProperty("@type")] public override string Type { get; set; } = "ImageObject";
+        [JsonProperty("@type")]
+        public override string Type { get; set; } = "ImageObject";
 
-        [JsonProperty("url")] public URL Url { get; set; }
+        [JsonProperty("url")]
+        public URL Url { get; set; }
 
-        [JsonProperty("height")] public string Height { get; set; }
+        [JsonProperty("height")]
+        public string Height { get; set; }
 
-        [JsonProperty("width")] public string Width { get; set; }
+        [JsonProperty("width")]
+        public string Width { get; set; }
     }
 
     public class MonetaryAmount : SeoElement
     {
-        [JsonProperty("@type")] public override string Type { get; set; } = "MonetaryAmount";
+        [JsonProperty("@type")]
+        public override string Type { get; set; } = "MonetaryAmount";
 
-        [JsonProperty("currency")] public string Currency { get; set; } = "USD";
+        [JsonProperty("currency")]
+        public string Currency { get; set; } = "USD";
 
-        [JsonProperty("value")] public string Value { get; set; } = "0";
+        [JsonProperty("value")]
+        public string Value { get; set; } = "0";
     }
 
     public class URL : SeoElement
     {
-        [JsonProperty("@type")] public override string Type { get; set; } = "URL";
+        [JsonProperty("@type")]
+        public override string Type { get; set; } = "URL";
     }
 }
