@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link href="https://products.aspose.com/templates/aspose/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+    <link href="/cells/comparison/content/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/cells/comparison/content/qi/css/addon/effect-light.min.css" rel="stylesheet"/>
+    <link href="/cells/comparison/content/qi/css/quantumui.min.css?v1.4" rel="stylesheet"/>
+    <link rel="stylesheet" href="/cells/comparison/content/css/gridjs/xspreadsheet.css">
+    <link rel="stylesheet" href="/cells/comparison/content/css/gridjs/component.css"/>
+    <script src="/cells/comparison/content/scripts/gridjs/xspreadsheet.js?v2.1.6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.6.0/dist/jszip.min.js"></script>
+    <script src="/cells/comparison/content/scripts/bootstrap.min.js"></script>
+    <script src="/cells/comparison/content/scripts/gridjs/grid-compare.js?v2.1.6"></script>
+    <style>
+        .resize-image {
+            background: transparent url('/cells/comparison/content/img/updating.gif') center no-repeat;
+        }
+     </style>
+</head>
+<body>
+<header>
+    <div class="navbar navbar-inverse navbar-fixed-top" style="margin: 0; background-color: #131313!important;">
+        <div class="container-fluid" style="padding-right: 5px!important;">
+            <div class="navbar-header-right" style="color: #fff;">
+                <button type="button" class="navbar-toggle" data-nq-collapse="" data-target-id=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="javascript:void(0);" style="padding: 5px 15px;">
+                    <img src="/cells/comparison/content/images/aspose-logo.jpg" alt="Aspose Document Comparison App"/>
+                </a>
+
+                <h3 class="navbar-text" style="margin-top: 15px;">
+                    Excel Comparison
+                </h3>
+            </div>
+            <div class="collapse navbar-collapse" style="color: #fff;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <button type="button" data-nq-modal-box="" data-box-type="confirm" class="navbar-toggle titip-left" onclick="closeWindow()" data-title="Close" style="border: none;">
+                            <i class="glyphicon glyphicon-remove"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="content-wrapper container-fluid" style="height: 100vh; padding: 56px 0 0; width: auto!important;overflow: auto!important; background: #fff url('/cells/comparison/content/images/loader.gif') no-repeat center;">
+    <div style="float:left;width:50%">
+        <div id="left-filename" style="height:20px;line-height:20px;text-align:center;background:linear-gradient(to left,#fff,#999);"></div>
+        <div id="xs-div1"></div>
+    </div>
+    <div style="float:right;width:50%">
+        <div id="right-filename" style="height:20px;line-height:20px;text-align:center;background:linear-gradient(to right,#fff,#999);"></div>
+        <div id="xs-div2"></div>
+    </div>
+</div>
+</body>
+</html>

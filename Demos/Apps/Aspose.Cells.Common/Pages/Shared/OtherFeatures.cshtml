@@ -1,0 +1,17 @@
+﻿@using Aspose.Cells.Common.Models
+@model OtherFeaturesModel
+
+<div class="col-md-12 pt-5 pb-5 convertypes">
+    <div class="container">
+        <h4>@Model.Title</h4>
+        <p style="margin-bottom:20px;">@Model.TitleSub</p>
+        <ul class="@Model.UlClass">
+            @foreach (var item in Model.Items)
+            {
+                <li>
+                    <a href='@item.Url'>@item.Title</a>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,260 @@
+@model Aspose.Cells.Common.Models.ViewModel
+
+@{
+    Layout = "~/Pages/Shared/Layout.cshtml";
+}
+@{
+    ViewBag.Title = "Mortgage";
+}
+
+<div class="container-fluid asposetools">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <h1 id="ProductTitle">@Model.Title</h1>
+                <h2 id="ProductTitleSub">@Model.TitleSub</h2>
+
+                <div id="WorkPlaceHolder">
+                    @if (!string.IsNullOrEmpty(Model.ControlsView))
+                    {
+                        @await Html.PartialAsync(Model.ControlsView)
+                    }
+                    <div class="col-md-12 terms-area">
+                        <br/>
+                        <span>*By uploading your files or using our service you agree with our </span>
+                        <a href="https://about.aspose.app/legal/tos" target="_blank">Terms of Service</a>
+                        <span> and </span>
+                        <a href="https://about.aspose.app/legal/privacy-policy" target="_blank">Privacy Policy</a>
+                        <span>.</span>
+                    </div>
+
+                    <div class="col-md-12">
+                        <div class="convertbtn">
+                            <input type="button" class="btn btn-success btn-lg" ID="uploadButton" value="@Model.UploadButtonText"/>
+                        </div>
+                    </div>
+
+                    @if (!string.IsNullOrEmpty(Model.ControlsView2))
+                    {
+                        @await Html.PartialAsync(Model.ControlsView2)
+                    }
+                    <div class="col-md-12 terms-area">
+                    </div>
+                    <div class="col-md-12 terms-area">
+                        @if (Model.SaveAsOptions != null)
+                        {
+                            @await Html.PartialAsync("SaveAs")
+                        }
+                        <div class="convertbtn">
+                            <input type="button" class="btn btn-success btn-lg" ID="DownloadButton" value="Download" onclick="requestMortgageDownload()"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="alertPlaceHolder" class="col-md-12">
+                    <br/>
+                    <p id="alertMessage" class="alert alert-danger hidden"></p>
+                    <p id="alertSuccess" class="alert alert-success hidden"></p>
+                </div>
+
+                <div id="loaderPlaceHolder">
+                    <div id="loader" class="hidden" role="status" aria-hidden="true">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" style="width: 15%">15%</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <p id="statProcessed" class="hidden">
+                        We've already processed
+                        <span id="processedFiles"></span>
+                        files with total size of
+                        <span id="processedBytes"></span>
+                        Mbyte
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+    </div>
+</div>
+
+@await Html.PartialAsync("OtherAppsPanel")
+@await Html.PartialAsync("Social")
+
+@await Html.PartialAsync("FooterProduct")
+
+@section scripts {
+    <script type="text/javascript">
+        const o = @Html.Raw(Model.JSOptions);
+        $.extend(o, {
+            Method: requestMortgage
+        });
+
+        function getValue(id) {
+            var val = $(id).val();
+            if (val == '') {
+                val = $(id).attr('placeholder');
+            }
+            return val;
+        }
+
+        function changeLoanAmount() {
+            var loanAmount;
+            var homeValue = parseFloat(getValue('#homeValue'));
+            var downPayment = parseFloat(getValue('#downPayment'));
+            if (isNaN(homeValue)) {
+                homeValue = 0;
+            }
+            if (isNaN(downPayment)) {
+                downPayment = 0;
+            }
+            if ($('input[name="downPaymentType"]:checked').val() == 'amount') {
+                loanAmount = homeValue - downPayment;
+            }
+            else {
+                if (downPayment != 0) {
+                    loanAmount = homeValue * (1 - downPayment / 100);
+                }
+            }
+            var s = loanAmount.toFixed(2);
+            if (s.toString().endsWith(".00")) {
+                $('#loanAmount').val(loanAmount.toFixed(0));
+            }
+            else {
+                $('#loanAmount').val(loanAmount.toFixed(2));
+            }
+        }
+
+        function init_motgage_calculator() {
+            $('#homeValue').on('input', changeLoanAmount);
+            $('#downPayment').on('input', changeLoanAmount);
+            $('input[name="downPaymentType"]').change(changeLoanAmount);
+
+            var d = new Date();
+            d.setDate(1);
+            $('#year').val(d.getFullYear());
+            $("select#month").prop('selectedIndex', d.getMonth());
+
+            var d1 = new Date(d.setMonth(d.getMonth() + getValue('#loanTerm') * 12 - 1));
+            $('#c18').text(d1.toLocaleString("en-us", { month: "short" }) + ", " + d1.getFullYear());
+        }
+        init_motgage_calculator();
+
+        function requestMortgage() {
+            const url = o.APIBasePath + 'MortgageApi/Mortgage';
+            
+            var info = {
+                homeValue: getValue('#homeValue'),
+                downPayment: getValue('#homeValue') - getValue('#loanAmount'),
+                interestRate: getValue('#interestRate') / 100,
+                loanTerm: getValue('#loanTerm'),
+                startDate: $('#year').val() + '/' + ($("select#month").prop('selectedIndex') + 1) + '/1',
+                propertyTax: getValue('#propertyTax'),
+                homeIns: getValue('#homeIns'),
+                monthlyHOA: getValue('#monthlyHOA'),
+            };
+            showLoader();
+            $('.progress > .progress-bar').html('100%');
+            $('.progress > .progress-bar').css('width', '100%');
+            $.ajax({
+                method: 'POST',
+                url: url,
+                data: info,
+                contentType: 'application/x-www-form-urlencoded',
+                cache: false,
+                timeout: 600000,
+                success: (d) => {
+                    hideLoader();
+                    if (d.code == 200) {
+                        var r = d.result;
+                        $('#b14').text(r.b14);
+                        $('#c14').text(r.c14);
+                        $('#b16').text(r.b16);
+                        $('#c16').text(r.c16);
+                        $('#b18').text(r.b18);
+                        $('#c18').text(r.c18);
+                        $('#b20').text(r.b20);
+                        $('#c20').text(r.c20);
+                        $('#b22').text(r.b22);
+                        $('#c22').text(r.c22);
+                        $('#b24').text(r.b24);
+                        $('#c24').text(r.c24);
+                        $('#b26').text(r.b26);
+                        $('#c26').text(r.c26);
+                    }
+                    else {
+                        showAlert(d.result);
+                    }
+                },
+                error: (err) => {
+                    if (err.responseJSON !== undefined && err.responseJSON.Status !== undefined) {
+                        showAlert(err.responseJSON.Status);
+                        ShowReportModal(err.responseJSON);
+                    } else {
+                        showAlert("Error " + err.status + ": " + err.statusText);
+                    }
+                }
+            });
+        }
+
+        function requestMortgageDownload() {
+            const url = o.APIBasePath + 'MortgageApi/Download?outputType=' + $('#saveAs').val();
+            const fileName = "mortgage-malculator." + $('#saveAs').val().toLowerCase();
+            var info = {
+                homeValue: getValue('#homeValue'),
+                downPayment: getValue('#homeValue') - getValue('#loanAmount'),
+                interestRate: getValue('#interestRate') / 100,
+                loanTerm: getValue('#loanTerm'),
+                startDate: $('#year').val() + '/' + ($("select#month").prop('selectedIndex') + 1) + '/1',
+                propertyTax: getValue('#propertyTax'),
+                homeIns: getValue('#homeIns'),
+                monthlyHOA: getValue('#monthlyHOA'),
+            };
+            $.ajax({
+                method: 'POST',
+                url: url,
+                data: info,
+                contentType: 'application/x-www-form-urlencoded',
+                cache: false,
+                timeout: 600000,
+                xhr: function () {
+                    var xhr = new XMLHttpRequest();
+                    xhr.responseType = 'blob';
+                    return xhr;
+                },
+                success: (res) => {
+                    downloadExportFile(res, fileName);
+                },
+                error: (err) => {
+                    if (err.responseJSON !== undefined && err.responseJSON.Status !== undefined) {
+                        showAlert(err.responseJSON.Status);
+                        ShowReportModal(err.responseJSON);
+                    } else {
+                        showAlert("Error " + err.status + ": " + err.statusText);
+                    }
+                }
+            });
+        }
+
+        function downloadExportFile(blob, tagFileName) {
+            const downloadElement = document.createElement('a');
+            let href = blob;
+            if (typeof blob == 'string') {
+                downloadElement.target = '_blank';
+            } else {
+                href = window.URL.createObjectURL(blob);
+            }
+            downloadElement.href = href;
+            downloadElement.download = tagFileName;
+            document.body.appendChild(downloadElement);
+            downloadElement.click();
+            document.body.removeChild(downloadElement);
+            if (typeof blob != 'string') {
+                window.URL.revokeObjectURL(href);
+            }
+        }
+    </script>
+}

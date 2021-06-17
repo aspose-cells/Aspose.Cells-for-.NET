@@ -1,0 +1,167 @@
+﻿@using Aspose.Cells.Common.Config
+@using Aspose.Cells.Common.Models
+@model ViewModel
+
+<div class="container-fluid asposetools">
+    <div class="container">
+        <div class="row">
+			<div class="col-md-12">
+
+				<h1 id="ProductTitle">@Model.Title</h1>
+				<h2 id="ProductTitleSub">@Model.TitleSub</h2>
+
+
+				<div id="WorkPlaceHolder">
+					<form id="UploadFile" name="UploadFile" method="POST" enctype="multipart/form-data">
+						@if (Model.AppName.Equals("Viewer"))
+						{
+							<div class="col-md-12 terms-area">
+								<span style="font-size: 24px;color: #0f0;">If you need to edit an Excel file, please use our </span>
+								<a href="~/cells/editor" target="_self" style="font-size: 30px;font-style: italic;color: #0f0;text-decoration: underline !important;">Editor</a>
+							</div>
+						}
+
+						@if (false)@*Configuration.IsAsposeCloudApp*@
+						{
+							@switch (Model.AppName)
+							{
+								case "Viewer":
+								case "Editor":
+								case "Translation":
+									break;
+								default:
+									<div class="table-responsive">
+										<h2 id="CloudAppTitleSub">
+											Use the following Aspose.Cells Cloud APIs to implement this App. Related
+											<a class="text-dark" href="@Configuration.CellsCloudAPIMethodDocument" target="_blank" style="color: #333333; font-weight: 700">
+												online documents.
+											</a>
+										</h2>
+										<table class="table table-condensed  center-block" style="width:65% ">
+											<tbody style="background: white;">
+												@foreach (var cellsCloudAPIDef in Model.CellsCloudAPIDefs)
+												{
+													<tr>
+														<td class="language-html text-left" title="@cellsCloudAPIDef.ApiName" style="text-overflow:ellipsis;width: 276px;">@cellsCloudAPIDef.ApiName</td>
+														<td class="language-html text-left" title="@cellsCloudAPIDef.ApiUri" style="text-overflow: ellipsis; width: 75%;
+">
+															<a href="@cellsCloudAPIDef.ApiReferenceUri" target="_blank" style="color: #333333">
+																@cellsCloudAPIDef.ApiUri
+															</a>
+														</td>
+													</tr>
+
+												}
+											</tbody>
+										</table>
+									</div>
+									break;
+							}
+						}
+
+						<div class="col-md-12 terms-area">
+							<span>*By uploading your files or using our service you agree with our </span>
+							<a href="https://about.aspose.app/legal/tos" target="_blank">Terms of Service</a>
+							<span> and </span>
+							<a href="https://about.aspose.app/legal/privacy-policy" target="_blank">Privacy Policy</a>
+							<span>.</span>
+						</div>
+
+						@if (!string.IsNullOrEmpty(Model.ControlsView))
+						{
+							@await Html.PartialAsync(Model.ControlsView)
+						}
+
+						@if (!Model.UploadAndRedirect && !Model.AppName.Equals("Editor"))
+						{
+							if (Model.AppName.Equals("Merger"))
+							{
+								<div class="col-md-12">
+									@await Html.PartialAsync("MergeTo")
+								</div>
+							}
+
+							if (Model.AppName.Equals("Translation"))
+							{
+								@await Html.PartialAsync("TranslateTo")
+							}
+							else
+							{
+								<div class="col-md-12">
+									@if (Model.SaveAsOptions != null)
+									{
+										@await Html.PartialAsync("SaveAs")
+									}
+									<div class="convertbtn">
+										<input type="button" class="btn btn-success btn-lg" ID="uploadButton" value="@Model.UploadButtonText" />
+									</div>
+								</div>
+							}
+						}
+
+						@if (Model.AppName.Equals("Conversion"))
+						{
+							<div class="col-md-12 terms-area" style="margin-top:25px;">
+								<span style="font-size: 19px;color: white;">Popular Converters: </span>
+								<a href="~/cells/conversion/excel-to-pdf" target="_self" class="underline-link">Excel to Pdf</a>
+								<span style="font-size: 24px;color: #0f0;">&nbsp;</span>
+								<a href="~/cells/conversion/excel-to-jpg" target="_self" class="underline-link">Excel to Jpg</a>
+								<span style="font-size: 24px;color: #0f0;">&nbsp;</span>
+								<a href="~/cells/conversion/excel-to-csv" target="_self" class="underline-link">Excel to Csv</a>
+								<span style="font-size: 24px;color: #0f0;">&nbsp;</span>
+								<a href="~/cells/conversion/excel-to-html" target="_self" class="underline-link">Excel to Html</a>
+								<span style="font-size: 24px;color: #0f0;">&nbsp;</span>
+								<a href="~/cells/conversion/jpg-to-excel" target="_self" class="underline-link">Jpg to Excel</a>
+							</div>
+						}
+						@if (Model.AppName.Equals("Editor"))
+						{
+							<div class="col-md-12">
+								<div class="convertbtn">
+									<input type="button" class="btn btn-success btn-lg" ID="newButton" value="Create New" />
+								</div>
+								<div class="convertbtn">
+									<input type="button" class="btn btn-success btn-lg" ID="editButton" value="Edit Now" />
+								</div>
+							</div>
+						}
+					</form>
+				</div>
+				@if (!Model.UploadAndRedirect || Model.AppName == "Metadata")
+				{
+					@await Html.PartialAsync("Download")
+				}
+
+
+				
+
+				<div id="alertPlaceHolder" class="col-md-12">
+					<br />
+					<p id="alertMessage" class="alert alert-danger hidden"></p>
+					<p id="alertSuccess" class="alert alert-success hidden"></p>
+				</div>
+
+				<div id="loaderPlaceHolder">
+					<div id="loader" class="hidden" role="status" aria-hidden="true">
+						<div class="progress">
+							<div class="progress-bar progress-bar-success progress-bar-striped active" role="progressbar" style="width: 15%">15%</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-12">
+					<p id="statProcessed" class="hidden">
+						We've already processed
+						<span id="processedFiles"></span>
+						files with total size of
+						<span id="processedBytes"></span>
+						Mbyte
+					</p>
+				</div>
+			</div>
+        </div>
+    </div>
+</div>
+
+@await Html.PartialAsync("OtherAppsPanel")
+@await Html.PartialAsync("Social")

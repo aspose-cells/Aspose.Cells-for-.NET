@@ -1,0 +1,173 @@
+﻿.app-product-section a, .app-product-section a:hover, .app-product-section a:visited {
+    color: #2a6496;
+}
+
+.app-product-section li {
+    color: #333;
+}
+
+.app-product-section ul {
+    padding-top: 7px;
+}
+
+.pull-left {
+    width: 100%;
+}
+
+.RawHtmlOverview {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+#errorModal .modal-dialog {
+    top: 200px;
+}
+
+#reportResultModal .modal-dialog {
+    top: 200px;
+}
+
+#delModal .modal-dialog, #delResModal .modal-dialog {
+    top: 200px;
+}
+
+.underline-link {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    font-size: 20px;
+    color: #0f0 !important;
+    border-bottom: 1px solid;
+}
+
+.right-box {
+    padding-bottom: 3px;
+    padding-top: 3px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.dual {
+    background-color: #1DA1F2;
+}
+
+.singular {
+    background-color: #4a95c5;
+}
+
+.select-month {
+    outline: none;
+    color: black;
+    font-size: 13px;
+    border: 0;
+}
+
+.rbx-left {
+    padding-left: 8px;
+    font-size: 15px;
+}
+
+.rbx-right {
+    float: left;
+    font-size: 14px;
+}
+
+.content-right {
+    margin-top: 15px;
+    color: #524c4c;
+}
+
+.content-right h2 {
+    font-size: 19px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.content-right h3 {
+    font-size: 15px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.content {
+    width: 900px;
+    margin: 30px auto 0;
+    font-size: 16px;
+}
+
+.content-left {
+    width: 100%;
+    color: white;
+    margin-top: 30px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #E8EAEC;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.singular2 {
+    background-color: white;
+}
+
+.dual2 {
+    background-color: #dee3e6;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.calculate-data {
+    text-align: center;
+    height: 40px;
+    border: 1px solid #c7e3ec;
+    line-height: 40px;
+    border-bottom: 0;
+}
+
+.calculate-data .mort-label {
+    display: inline-block;
+    width: 38%;
+    margin: 0;
+    text-align: right;
+    font-weight: 500;
+    padding: 0 3px 0 0;
+}
+
+.calculate-data .mort-input-text {
+    display: inline-block;
+    width: 38%;
+    height: 20px;
+    border: 0;
+    outline: none;
+    color: black;
+    padding: 0 0 0 3px;
+    font-size: 13px;
+    margin: 10px 0;
+}
+
+.calculate-data .mort-span {
+    display: inline-block;
+    width: 20%;
+    margin: 0;
+    padding: 0 0 0 3px;
+    text-align: left;
+}

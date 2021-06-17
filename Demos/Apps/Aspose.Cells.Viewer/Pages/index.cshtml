@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title></title>
+    <link href="https://products.aspose.com/templates/aspose/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"/>
+    <link href="/cells/viewer/content/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="/cells/viewer/content/qi/css/addon/effect-light.min.css" rel="stylesheet"/>
+    <link href="/cells/viewer/content/qi/css/quantumui.min.css?v1.4" rel="stylesheet"/>
+    <link rel="stylesheet" href="/cells/viewer/content/css/gridjs/xspreadsheet.css">
+    <link rel="stylesheet" href="/cells/viewer/content/css/gridjs/component.css"/>
+    <script src="/cells/viewer/content/scripts/gridjs/xspreadsheet.js?v2.1.6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jszip@3.6.0/dist/jszip.min.js"></script>
+    <script src="/cells/viewer/content/scripts/bootstrap.min.js"></script>
+    <script src="/cells/viewer/content/scripts/gridjs/grid-view.js?v2.1.6"></script>
+    <style>
+        .resize-image {
+            background: transparent url('/cells/viewer/content/img/updating.gif') center no-repeat;
+        }
+     </style>
+</head>
+<body>
+<header>
+    <div class="navbar navbar-inverse navbar-fixed-top" style="margin: 0; background-color: #131313!important;">
+        <div class="container-fluid" style="padding-right: 5px!important;">
+            <div class="navbar-header-right" style="color: #fff;">
+                <button type="button" class="navbar-toggle" data-nq-collapse="" data-target-id=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-header">
+                <a class="navbar-brand" href="javascript:void(0);" style="padding: 5px 15px;">
+                    <img src="/cells/viewer/content/images/aspose-logo.jpg" alt="Aspose Document Viewer App"/>
+                </a>
+
+                <h3 class="navbar-text" style="margin-top: 15px;">
+                    Viewer
+                </h3>
+                <p class="navbar-text navbar-center" style="margin-top: 18px;" id="file_name"></p>
+            </div>
+            <div class="collapse navbar-collapse" style="color: #fff;">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown" style="margin-top: 8px;">
+                        <button type="button" data-title="Downloads" role="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                            Download&nbsp;<span class="caret">&nbsp;</span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu" style="top: 43px">
+                            <li role="presentation" onclick="save(false)">
+                                <a role="menuitem" tabindex="-1" href="javascript:void(0);">
+                                    <i class="glyphicon glyphicon-download-alt"></i>&nbsp;Download As HTML
+                                </a>
+                            </li>
+                            <li role="presentation" onclick="save(true)">
+                                <a role="menuitem" tabindex="-1" href="javascript:void(0);">
+                                    <i class="glyphicon glyphicon-compressed"></i>&nbsp;Download As Images
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" data-nq-modal-box="" data-box-type="confirm" class="navbar-toggle titip-left" onclick="closeWindow()" data-title="Close" style="border: none;">
+                            <i class="glyphicon glyphicon-remove"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="content-wrapper container-fluid" style="height: 100vh; padding: 56px 0 0; width: auto!important;overflow: auto!important; background: #fff url('/cells/viewer/content/images/loader.gif') no-repeat center;">
+    <div id="xs-div"></div>
+</div>
+</body>
+</html>

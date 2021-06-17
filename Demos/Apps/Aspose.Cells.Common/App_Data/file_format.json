@@ -1,0 +1,954 @@
+{
+  "mppxml": {
+    "fileFormatComUrl": "https://docs.fileformat.com/web/xml/",
+    "description": "MS Project XML stands for Extensible Markup Language that is similar to HTML but different in using tags for defining objects. The whole idea behind creation of XML file format was to store and transport data without being dependent on software or hardware tools. Its popularity is due to it being both human as well as machine readable. This enables it to create common data protocols in the form of objects to be stored and shared over network such as World Wide Web (WWW).",
+    "name": "Extended Markup Language",
+    "extension": "mppxml",
+    "displayname": null
+  },
+  "docm": {
+    "fileFormatComUrl": "https://docs.fileformat.com/word-processing/docm/",
+    "description": "DOCM files are Microsoft Word 2007 or higher generated documents with the ability to run macros. It is similar to DOCX file format but the ability to run macros makes it different from DOCX. Like DOCX, DOCM files can be store text, images, tables, shapes, charts and other contents.The capability to run macros make it easy to save time by executing the series of commands in the form of recorded actions for automatic completion of a task. DOCM files can be opened and edited in Microsoft Word 2007 and above.",
+    "name": "Microsoft Word Macro-Enabled Document",
+    "extension": "docm",
+    "displayname": "Word"
+  },
+  "dib": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/dib/",
+    "description": "A DIB (Device Independent Bitmap) file is a raster image file that is similar in structure to the standard Bitmap files (BMP) but has a different header. It can be opened with almost all applications that can open a standard BMP file on Windows as well as macOS. DIB are binary files and have a complex file format similar to BMP.",
+    "name": "DIB",
+    "extension": "dib",
+    "displayname": null
+  },
+  "tif": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/tiff/",
+    "description": "TIF or TIFF, Tagged Image File Format, represents raster images that are meant for usage on a variety of devices that comply with this file format standard. It is capable of describing bilevel, grayscale, palette-color and full-color image data in several color spaces. It supports lossy as well as lossless compression schemes to choose between space and time for applications using the format.",
+    "name": "Tagged Image File Format",
+    "extension": "tif",
+    "displayname": "Tagged Image"
+  },
+  "vdx": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/vdx/",
+    "description": "Any drawing or chart created in Microsoft Visio, but saved in XML format have .VDX extension. A Visio drawing XML file is created in Visio software, which is developed by Microsoft. Microsoft Visio has the capability to generate visual documents that can be used in presentations and documents. The Visio drawing XML file contains the visual objects and metadata details of the visual elements.",
+    "name": "Microsoft Visio XML Drawing File Format",
+    "extension": "vdx",
+    "displayname": "Visio Drawing"
+  },
+  "latlong": {
+    "fileFormatComUrl": null,
+    "description": "The World Geodetic System WGS84 (also known as WGS 1984, EPSG:4326)  is one of the most popular spatial references. This system is supported by the United States National Geospatial-Intelligence Agency since 1984. And It is the preferred CRS in many specifications. Allowable ranges are X-axis from -180 to 180 and Y-axis from -90 to 90.",
+    "name": "Wgs84",
+    "extension": "latlong",
+    "displayname": null
+  },
+  "xlam": {
+    "fileFormatComUrl": "https://docs.fileformat.com/spreadsheet/xlam/",
+    "description": "XLAM files are used to extend the modules provided by Excel. They can be added to Excel 2007 or later, or to earlier versions of Excel with Open XML component support. File used by Microsoft Excel, a program that allows users to create and edit spreadsheets; contains a macro-enabled add-in, which provides extra functionality and tools that may execute macros.",
+    "name": "Microsoft Excel Macro-Enabled Add-In",
+    "extension": "xlam",
+    "displayname": "Excel"
+  },
+  "ps": {
+    "fileFormatComUrl": "https://docs.fileformat.com/page-description-language/ps/",
+    "description": "PostScript (PS) is a general-purpose page description language used in the business of desktop and electronic publishing. The main focus of PostScript (PS) is to facilitate the two-dimensional graphic design. Most languages require a distinct compilation stage before the code execution while Post Script (PS) format support a runtime straight forward interpretation.",
+    "name": "PostScript (PS)",
+    "extension": "ps",
+    "displayname": "PostScript"
+  },
+  "presentation": {
+    "fileFormatComUrl": "https://docs.fileformat.com/presentation/",
+    "description": "PowerPoint presentations files are files created with popular Microsoft PowerPoint application. This is common name for subset of file formats: ODP, OTP, POT, POTM, POTX, PPS, PPSM, PPSX, PPT, PPTM, PPTX",
+    "name": "PowerPoint Open XML Presentation",
+    "extension": "presentation",
+    "displayname": null
+  },
+  "ico": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/ico/",
+    "description": "Files with ICO extension are image file types used as icon for representation of an application on Microsoft Windows. These come in different size, colour support and resolution to suit the requirements of the display. Another similar image file format on Microsoft Windows is .CUR for cursor representation and defines a hotspot in the image header. On MacOS, ICNS file formats serve the same purpose as ICO files. Several online websites as well as applications provide the feature of creating such files and convert other image formats such as BMP, PNG, etc. to icon file format. The official IANA registered Internet media type for ICO files is image/vnd.microsoft.icon.",
+    "name": "Microsoft Icon File",
+    "extension": "ico",
+    "displayname": "Icon"
+  },
+  "dxf": {
+    "fileFormatComUrl": "https://docs.fileformat.com/cad/dxf/",
+    "description": "DXF, Drawing Interchange Format, or Drawing Exchange Format, is a tagged data representation of AutoCAD drawing file. Each element in the file has a prefix integer number called a group code. This group code actually represents the element that follows and indicates the meaning of a data element for a given object type. DXF makes it possible to represent almost all user-specified information in a drawing file.",
+    "name": "Autodesk Drawing Exchange File Format",
+    "extension": "dxf",
+    "displayname": "Drawing"
+  },
+  "png": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/png/",
+    "description": "PNG, Portable Network Graphics, refers to a type of raster image file format that use loseless compression. This file format was created as a replacement of Graphics Interchange Format (GIF) and has no copyright limitations. However, PNG file format does not support animations. PNG file format supports loseless image compression that makes it popular among its users. With the passage of time, PNG has evolved as one of the mostly used image file format.",
+    "name": "Portable Network Graphic",
+    "extension": "png",
+    "displayname": "Image"
+  },
+  "odg": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/odg/",
+    "description": "The ODG file format is used by Apache OpenOffice's Draw application to store drawing elements as a vector image. It follows the XML based file format specifications outlined by Advancement of Structural Information Standards (OASIS). ODG represents drawings as vector images using points, lines and curves. Besides OpenOffice, LibreOffice and other applications also provide support for working with ODG file format. Other formats supported by OpenOffice, for example, include ODT, ODF, ODP and ODS.",
+    "name": "OpenDocument Drawing File",
+    "extension": "odg",
+    "displayname": "Drawing File"
+  },
+  "dng": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/dng/",
+    "description": "DNG is a digital camera image format used for the storage of raw files. It has been developed by Adobe in September 2004. It was basically developed for digital photography. DNG is an extension of TIFF/EP standard format and uses metadata significantly. In order to manipulate raw data from digital cameras with ease of flexibility and artistic control, photographers opt camera raw files.",
+    "name": "Digital Camera Image Format",
+    "extension": "dng",
+    "displayname": "Camera Image"
+  },
+  "potx": {
+    "fileFormatComUrl": "https://docs.fileformat.com/presentation/potx/",
+    "description": "Files with .POTX extension represent Microsoft PowerPoint template presentations that are created with Microsoft PowerPoint 2007 and above. This format was created to replace the POT file format that is based on the binary file format and is supported with PowerPoint 97-2003. The files generated can be used to create presentations that have same layout and other settings required to be applied to new files. These settings can include styles, backgrounds, colour palette, fonts and defaults. Such files are generated in order to create ready-to-use template files for official use.",
+    "name": "Microsoft PowerPoint Open XML Template",
+    "extension": "potx",
+    "displayname": "PowerPoint"
+  },
+  "xltx": {
+    "fileFormatComUrl": "https://docs.fileformat.com/spreadsheet/xltx",
+    "description": "Files with XLTX extension represent Microsoft Excel Template files that are based on the Office OpenXML file format specifications. It is used to create a standard template file that can be utilized t",
+    "name": "Microsoft Excel Open XML Template",
+    "extension": "xltx",
+    "displayname": "Excel"
+  },
+  "html": {
+    "fileFormatComUrl": "https://docs.fileformat.com/web/html/",
+    "description": "HTML (Hyper Text Markup Language) is the extension for web pages created for display in browsers. Known as language of the web, HTML has evolved with requirements of new information requirements to be displayed as part of web pages. The latest variant is known as HTML 5 that gives a lot of flexibility for working with the language. HTML pages are either received from server, where these are hosted, or can be loaded from local system as well.",
+    "name": "Hyper Text Markup Language",
+    "extension": "html",
+    "displayname": "html"
+  },
+  "vstm": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/vstm/",
+    "description": "Files with VSTM extension are template files created with Microsoft Visio that support macros. Unlike VSDX files, files created from VSTM templates can run macros that are developed in Visual Basic for Applications (VBA)  code. A template file can be created in order to provide basic settings of the document that can be utilized to generate further documents with these settings.",
+    "name": "Visio Macro-Enabled Drawing Template",
+    "extension": "vstm",
+    "displayname": "Visio Drawing"
+  },
+  "wgs84": {
+    "fileFormatComUrl": null,
+    "description": "WGS 84 is one of the most popular geodetic reference systems. Use this system if you have no specific criteria.",
+    "name": "Wgs84",
+    "extension": "wgs84",
+    "displayname": null
+  },
+  "eps": {
+    "fileFormatComUrl": "https://docs.fileformat.com/page-description-language/eps/",
+    "description": "FIles with EPS extension essentially describe an Encapsulated PostScript language program that describes the appearance of a single page. The name \"Encapsulated\" because it can be included or encapsulated in another PostScript language page description. This script based file format may contain any combination of text, graphics and images.",
+    "name": "Encapsulated PostScript File",
+    "extension": "eps",
+    "displayname": "Page"
+  },
+  "xlsb": {
+    "fileFormatComUrl": "https://docs.fileformat.com/spreadsheet/xlsb/",
+    "description": "XLSB file format specifies the Excel Binary File Format, which is a collection of records and structures that specify Excel workbook content. The content can include unstructured or semi-structured tables of numbers, text, or both numbers and text, formulas, external data connections, charts and images. Unlike XLSX (which is based on Open XML file format), the XLSB represents binary Excel workbook file.",
+    "name": "Microsoft Excel Binary Spreadsheet File",
+    "extension": "xlsb",
+    "displayname": "Excel"
+  },
+  "bmp": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/bmp/",
+    "description": "Files having extension .BMP represent Bitmap Image files that are used to store bitmap digital images. These images are independent of graphics adapter and are also called device independent bitmap (DIB) file format. This independency serves the purpose of opening the file on multiple platforms such as Microsoft Windows and Mac. The BMP file format can store data as two-dimensional digital images  in both monochrome as well as color format with various colour depths.",
+    "name": "Bitmap Image File",
+    "extension": "bmp",
+    "displayname": null
+  },
+  "tex": {
+    "fileFormatComUrl": "https://docs.fileformat.com/page-description-language/tex/",
+    "description": "TeX is a language that comprises of programming as well as mark-up features, used to typeset documents. Donald Knuth from Stanford University, is the creator of this resourceful typesetting system. Across the world, TeX is the ultimate choice of authors and publishers to produce high quality technical documents. TeX performs an outstanding job of formatting complex mathematical expressions. In conjunction with a high-quality phototypesetter, TeX competes the results generated by the best traditional typesetting systems.",
+    "name": "LaTeX Source Document",
+    "extension": "tex",
+    "displayname": "LaTeX"
+  },
+  "dot": {
+    "fileFormatComUrl": "https://docs.fileformat.com/word-processing/dot/",
+    "description": "Files with .DOT extension are template files created by Microsoft Word to have pre-formatted settings for generation of further DOC or DOCX files. A template file is created in order to have specific user settings that should be applied to subsequent files created from these. These settings include page margins, borders, headers, footers, and other page settings. Such templates are used in official documents such as company letterheads and standardized forms.",
+    "name": "Microsoft Word Document Template",
+    "extension": "dot",
+    "displayname": "Word"
+  },
+  "ott": {
+    "fileFormatComUrl": "https://docs.fileformat.com/word-processing/ott/",
+    "description": "Files with OTT extension represent template documents generated by applications in compliance with the OASIS' OpenDocument standard format. These are created with word processor applications such as free OpenOffice Writer and can hold settings that can be used to generate new documents from these template files. These settings include page margins, borders, headers, footers, and other page settings. Such templates are used in official documents such as company letterheads and standardized forms.",
+    "name": "Open Document Template",
+    "extension": "ott",
+    "displayname": "OpenOffice"
+  },
+  "vrml": {
+    "fileFormatComUrl": "https://docs.fileformat.com/3d/vrml/",
+    "description": "The Virtual Reality Modeling Language (VRML) is a file format for representation of interactive 3D world objects over the World Wide Web (www). It finds its usage in creating three-dimensional representations of complex scenes such as illustrations, definition and virtual reality presentations. The format has been superseded by X3D. Many 3D modelling applications can  save objects and scenes in VRML format. ",
+    "name": "Virtual Reality Modeling Language",
+    "extension": "vrml",
+    "displayname": null
+  },
+  "topojson": {
+    "fileFormatComUrl": "https://docs.fileformat.com/gis/geojson/",
+    "description": "TopoJSON is a GeoJSON extension that encodes topology. JSON based format designed to represent the geographical features with their non-spatial attributes. This format defines different JSON (JavaScript Object Notation) objects and their joining fashion. JSON format represents a collective information about the Geographical features, their spatial extents, and properties.",
+    "name": "JavaScript Object Notation File",
+    "extension": "topojson",
+    "displayname": null
+  },
+  "mercator": {
+    "fileFormatComUrl": null,
+    "description": "The official name is \"WGS 84 / Pseudo-Mercator\" (more known as Web Mercator, Google Web Mercator, or EPSG:3857). It became famous when in 2005 he was accepted by Google Maps. This system is widely used for web applications (OpenStreetMap, Bing Maps, Mapbox, and so on). The allowable range is the same for X-axis and Y-axis: from -20037508.3427892 to 20037508.3427892 ",
+    "name": "Mercator",
+    "extension": "mercator",
+    "displayname": null
+  },
+  "xbrl": {
+    "fileFormatComUrl": "https://docs.fileformat.com/finance/xbrl/",
+    "description": "XBRL is a freely available and global framework for exchanging business information. XBRL allows the expression of semantic meaning commonly required in business reporting. The language is XML-based. XBRL is a standards-based way to communicate and exchange business information between business systems. These communications are defined by metadata set out in taxonomies, which capture the definition of individual reporting concepts as well as the relationships between concepts and other semantic meaning. Information being communicated or exchanged is provided within an XBRL instance.",
+    "name": "Extensible Business Reporting Language",
+    "extension": "xbrl",
+    "displayname": null
+  },
+  "psb": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/psb/",
+    "description": "Adobe photoshop saves files in two formats. Files having 30,000 by 30,000 pixels in size are saved with PSD extension and files larger than PSD upto 300,000 by 300,000 pixels are saved with PSB extension known as “Photoshop Big”. More specifically, PSB files can be as large as 4 EB (over 4.2 billion GB) with images that have a height and width of up to 300,000 pixels. PSDs, on the other hand, can be at maximum upto 2 GB and image dimensions of 30,000 pixels. PSB is also known as large format size for photoshop and supports all the photoshop features like layers, effects and filters.",
+    "name": "Adobe Photoshop Image File",
+    "extension": "psb",
+    "displayname": "Photoshop"
+  },
+  "jt": {
+    "fileFormatComUrl": "https://docs.fileformat.com/3d/jt/",
+    "description": "JT (Jupiter Tessellation) is an efficient, industry-focused and flexible ISO-standardized 3D data format developed by Siemens PLM Software. Mechanical CAD domains of Aerospace, automotive industry, and Heavy Equipment use JT as their most leading 3D visualization format.",
+    "name": "Open CAD file",
+    "extension": "jt",
+    "displayname": "CAD File"
+  },
+  "md": {
+    "fileFormatComUrl": "https://docs.fileformat.com/word-processing/md/",
+    "description": "Text files created with Markdown language dialects is saved with .MD or .MARKDOWN file extension. MD files are saved in plain text format that uses Markdown language which also includes inline text symbols, defining how a text can be formatted such as indentations, table formatting, fonts, and headers.  MD files can be converted to HTML with a program called Markdown. Markdown language is released by John Gruber.",
+    "name": "Markdown",
+    "extension": "md",
+    "displayname": "Plain Text"
+  },
+  "dwf": {
+    "fileFormatComUrl": "https://docs.fileformat.com/cad/dwf/",
+    "description": "Design Web Format (DWF) represents 2D/3D drawing in compressed format for viewing, reviewing or printing design files. It contains graphics and text as part of design data and reduce the size of the file due to its compressed format. The reduced file size makes the distribution and communication of rich design data efficient. DWF doesn't require the recipient to know about the usage of CAD software that created the original drawing.",
+    "name": "Design Web Format",
+    "extension": "dwf",
+    "displayname": "Web"
+  },
+  "drc": {
+    "fileFormatComUrl": "https://docs.fileformat.com/3d/drc/",
+    "description": "DRC FIle Extension and associated file format.",
+    "name": "DRM Rights Object",
+    "extension": "drc",
+    "displayname": "DRM"
+  },
+  "dae": {
+    "fileFormatComUrl": "https://docs.fileformat.com/3d/dae/",
+    "description": "A DAE file is a Digital Asset Exchange file format that is used for exchanging data between interactive 3D applications. This file format is based on the COLLADA (COLLAborative Design Activity) XML schema which is an open standard XML schema for the exchange of digital assets among graphics software applications. It has been adopted by ISO as a publicly available specification, ISO/pAS 17506.",
+    "name": "Digital Asset Exchange File Format",
+    "extension": "dae",
+    "displayname": null
+  },
+  "gif": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/gif/",
+    "description": "A GIF or Graphical Interchange Format is a type of highly compressed image. Owned by Unisys, GIF uses the LZW compression algorithm that does not degrade the image quality. For each image GIF typically allow up to 8 bits per pixel and up to 256 colours are allowed across the image. In contrast to a JPEG image, which can display up to 16 million colours and fairly touches the limits of the human eye.",
+    "name": "Graphical Interchange Format File",
+    "extension": "gif",
+    "displayname": "Graphical Image"
+  },
+  "vssm": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/vssm/",
+    "description": "Files with .VSSM extension are Microsoft Visio Stencil files that support provide support for macros. A VSSM file when opened allows to run the macros to achieve desired formatting and placement of shapes in a diagram. In general, Microsoft Visio is drawing software that allows to create files that can contain and represent user defined information in different shapes.",
+    "name": "Microsoft Visio Macro Enabled File Format",
+    "extension": "vssm",
+    "displayname": "Visio File"
+  },
+  "vssx": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/vssx/",
+    "description": "Files with .VSSX extension are drawing stencils created with Microsoft Visio 2013 and above. The VSSX file format can be opened with Visio 2013 and above. Visio files are known for representation of a variety of drawing elements such as collection of shapes, connectors, flowcharts, network layout, UML diagrams, software diagrams, database models, objects mapping and other similar information.",
+    "name": "Visio Stencil File Format",
+    "extension": "vssx",
+    "displayname": "Visio Drawing"
+  },
+  "fbx": {
+    "fileFormatComUrl": "https://docs.fileformat.com/3d/fbx/",
+    "description": "FBX, FilmBox, is a popular 3D file format that was originally developed by Kaydara for MotionBuilder. It was acquired by Autodesk Inc in 2006 and is now one of the main 3D exchange formats as used by many 3D tools. FBX is available in both binary and ASCII file format. The format was established to provided interoperability between digital content creation applications.",
+    "name": "Filmbox Interchange File",
+    "extension": "fbx",
+    "displayname": "3D"
+  },
+  "vsdm": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/vsdm/",
+    "description": "Files with VSDM extension are drawing files created with Microsoft Visio application that supports macros. VSDM files are OPC/XML drawings that are similar to VSDX but also provide the capability to run macros when the file is opened. Macros are user defined actions/steps that are developed in Visual Basic for Applications (VBA) and can be used to perform repeatitive tasks.",
+    "name": "Visio Macro-Enabled Drawing",
+    "extension": "vsdm",
+    "displayname": "Visio Drawing"
+  },
+  "j2k": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/j2k/",
+    "description": "A J2K file is an image that is compressed using the wavelet compression instead of DCT compression.",
+    "name": "JPEG 2000 Image",
+    "extension": "j2k",
+    "displayname": "Image"
+  },
+  "ifc": {
+    "fileFormatComUrl": "https://docs.fileformat.com/cad/ifc/",
+    "description": "Files with IFC extension refer to  Industry Foundation Classes (IFC) file format that establishes international standards to import and export building objects and their properties. This file format provides interoperability between different software applications. Specifications for this file format are developed and maintained by buildingSMART International as its Data Standard.",
+    "name": "Industry Foundation Classes (IFC) File Format",
+    "extension": "ifc",
+    "displayname": "Industry Foundation"
+  },
+  "dgn": {
+    "fileFormatComUrl": "https://docs.fileformat.com/cad/dgn/",
+    "description": "CAD drawing format is implemented by Bentley Systems MicroStation and is used for architectural and engineering designs.",
+    "name": "Bentley Systems MicroStation DesiGN File",
+    "extension": "dgn",
+    "displayname": null
+  },
+  "igs": {
+    "fileFormatComUrl": "https://docs.fileformat.com/cad/iges/",
+    "description": "vendor-neutral file format that allows the digital exchange of information among computer-aided design (CAD) systems",
+    "name": "Initial Graphics Exchange Specification file",
+    "extension": "igs",
+    "displayname": null
+  },
+  "eml": {
+    "fileFormatComUrl": "https://docs.fileformat.com/email/eml/",
+    "description": "EML file format represents email messages saved using Outlook and other relevant applications. Almost all emailing clients support this file format for its compliance with RFC-822 Internet Message Format Standard. Microsoft Outlook is default software for opening EML message types. EML files can be used for saving to disc as well as sending out to recipients using communication protocols.",
+    "name": "E-Mail Message File",
+    "extension": "eml",
+    "displayname": "E-Mail"
+  },
+  "hpgl": {
+    "fileFormatComUrl": "https://docs.fileformat.com/cad/hpgl/",
+    "description": "plotter languages developed by Hewlett Packard  to send vector graphics to its pen plotters",
+    "name": "Hewlett-Packard Graphics Language",
+    "extension": "hpgl",
+    "displayname": null
+  },
+  "one": {
+    "fileFormatComUrl": "https://docs.fileformat.com/note-taking/one/",
+    "description": "File represented by .ONE extension are created by Microsoft OneNote application. OneNote lets you gather information using the application as if you are using your draftpad for taking notes. OneNote files can contain different elements that can be placed at non-fixed locations on document pages. These elements may contain text, digitized handwriting, and objects copied from other applications including images, drawings and multimedia (audio/video) clips.",
+    "name": "Microsoft OneNote File Format",
+    "extension": "one",
+    "displayname": "OneNote"
+  },
+  "iges": {
+    "fileFormatComUrl": "https://docs.fileformat.com/cad/iges/",
+    "description": "vendor-neutral file format that allows the digital exchange of information among computer-aided design (CAD) systems",
+    "name": "Initial Graphics Exchange Specification file",
+    "extension": "iges",
+    "displayname": null
+  },
+  "potm": {
+    "fileFormatComUrl": "https://docs.fileformat.com/presentation/potm/",
+    "description": "Files with POTM extension are Microsoft PowerPoint template files with support for Macros. POTM files are created with PowerPoint 2007 or above and contains default settings that can be used to create further presentation files. These settings can include styles, backgrounds, colour palette, fonts and defaults along with macros that consist of custom functions for doing particular task. They may also be opened by a previous version of PowerPoint with Open XML document support installed. POTM files can be opened in Microsoft PowerPoint for editing like any other PowerPoint file. \r\n\r\n",
+    "name": "Microsoft PowerPoint Template",
+    "extension": "potm",
+    "displayname": "PowerPoint"
+  },
+  "xhtml": {
+    "fileFormatComUrl": "https://docs.fileformat.com/web/xhtml/",
+    "description": "The XHTML is a text based file format with markup in the XML, using a reformulation of HTML 4.0. These files are well suited to be open or viewed in a web browser. XHTML was designed to be more structured, less scripting, generic; using all the existing facilities of XML and more device independent. XHTML provides a generally worthwhile set of elements and attributes, with extension options in combination with style sheets.",
+    "name": "Extensible Hypertext Markup Language File",
+    "extension": "xhtml",
+    "displayname": "Hypertext"
+  },
+  "vsdx": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/vsdx/",
+    "description": "Files with .VSDX extension represent Microsoft Visio file format introduced from Microsoft Office 2013 onwards. It was developed to replace the binary file format, .VSD, which is supported by earlier versions of Microsoft Visio. It is also supported on Visio Services in Microsoft SharePoint Server 2013 and does not require an intermediary file format for publishing to SharePoint Server.",
+    "name": "Microsoft Visio File Format",
+    "extension": "vsdx",
+    "displayname": "Visio File"
+  },
+  "vsx": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/vsx/",
+    "description": "Files with .VSX extension refer to stencils that consist of drawings and shapes that are used for creating diagrams in Microsoft Visio. VSX files are saved in XML file format and was supported till Visio 2013. These are different than the primary VSDX file format that was introduced with Microsoft Visio 2013. VSX files can be opened in any text editor to view the contents.",
+    "name": "Vector Scalar Extension",
+    "extension": "vsx",
+    "displayname": "Vector"
+  },
+  "gltf": {
+    "fileFormatComUrl": "https://docs.fileformat.com/3d/gltf/",
+    "description": "glTF (GL Transmission Format) is a 3D file format that stores 3D model information in JSON format. The use of JSON minimizes both the size of 3D assets and the runtime processing needed to unpack and use those assets. It was adopted for the efficient transmission and loading of 3D scenes and models by applications.",
+    "name": "GL Transmisison Format",
+    "extension": "gltf",
+    "displayname": "GL Transmisison"
+  },
+  "dwt": {
+    "fileFormatComUrl": "https://docs.fileformat.com/cad/dwt/",
+    "description": "A DWT file is an AutoCAD drawing template file that is used as starter for creating drawings that can be saved as DWG files.",
+    "name": "AutoCAD Drawing Template",
+    "extension": "dwt",
+    "displayname": null
+  },
+  "xlsx": {
+    "fileFormatComUrl": "https://docs.fileformat.com/spreadsheet/xlsx/",
+    "description": "XLSX is well-known format for Microsoft Excel documents that was introduced by Microsoft with the release of Microsoft Office 2007. Based on structure organized according to the Open Packaging Conventions as outlined in Part 2 of the OOXML standard ECMA-376, the new format is a zip package that contains a number of XML files. The underlying structure and files can be examined by simply unzipping the .xlsx file.",
+    "name": "Microsoft Excel Open XML Spreadsheet",
+    "extension": "xlsx",
+    "displayname": "Excel"
+  },
+  "amf": {
+    "fileFormatComUrl": "https://docs.fileformat.com/3d/amf/",
+    "description": "Additive Manufacturing file format (AMF) defines open standards for objects description in order to be utilized by additive manufacturing processes such as 3D Printing. CAD programs use the AMF file format by making use of the information such as geometry, color and material of the objects. AMF is different than STL format as the lateral does not support color, materials, lattices, and constellations.",
+    "name": "Additive Manufacturing File",
+    "extension": "amf",
+    "displayname": null
+  },
+  "cf2": {
+    "fileFormatComUrl": "https://docs.fileformat.com/cad/cf2/",
+    "description": "CAD file that contains 3D package designs or other model data",
+    "name": "Common File Format 2 file",
+    "extension": "cf2",
+    "displayname": null
+  },
+  "dwfx": {
+    "fileFormatComUrl": "https://docs.fileformat.com/cad/dwfx/",
+    "description": "represents 2D/3D drawing formatted as XPS document. It contains graphics and text as part of design data",
+    "name": "Design Web Format XPS formatted",
+    "extension": "dwfx",
+    "displayname": null
+  },
+  "epub": {
+    "fileFormatComUrl": "https://docs.fileformat.com/ebook/epub/",
+    "description": "Files with .EPUB extension are an e-book file format that provide a standard digital publication format for publishers and consumers. The format has been so common by now that it is supported by many e-readers and software applications. For example, on Mac OS, the pre-installed Books software provides the support for opening such files. In addition, there are a lot of compatible software available for smartphones, tablets and computers.",
+    "name": "Digital E-Book File Format",
+    "extension": "epub",
+    "displayname": "Image"
+  },
+  "ply": {
+    "fileFormatComUrl": "https://docs.fileformat.com/3d/ply/",
+    "description": "PLY, Polygon File Format, represents 3D file format that stores graphical objects described as a collection of polygons. The purpose of this file format was to establish a simple and easy file type that is general enough to be useful for a wide range of models. PLY file format comes as ASCII as well as Binary format for compact storage and for rapid saving and loading.",
+    "name": "Polygon File Format",
+    "extension": "ply",
+    "displayname": "Polygon"
+  },
+  "ost": {
+    "fileFormatComUrl": "https://docs.fileformat.com/email/ost/",
+    "description": "OST or Offline Storage Files represent user's mailbox data in offline mode on local machine upon registration with Exchange Server using Microsoft Outlook. It is automatically created on the first use of Microsoft Outlook upon connectivity with server. Once the file is created, the data is synchronized with the email server so that it is available offline as well in case of disconnectivity from email server.",
+    "name": "Outlook Offline Storage File",
+    "extension": "ost",
+    "displayname": "Outlook"
+  },
+  "json": {
+    "fileFormatComUrl": "https://docs.fileformat.com/gis/geojson/",
+    "description": "JSON based format designed to represent the geographical features with their non-spatial attributes. This format defines different JSON (JavaScript Object Notation) objects and their joining fashion. JSON format represents a collective information about the Geographical features, their spatial extents, and properties.",
+    "name": "JavaScript Object Notation File",
+    "extension": "json",
+    "displayname": null
+  },
+  "xps": {
+    "fileFormatComUrl": "https://docs.fileformat.com/page-description-language/xps/",
+    "description": "An XPS file represents page layout files that are based on XML Paper Specifications created by Microsoft. This format was developed by Microsoft as replacement of EMF file format and is similar to PDF file format, but uses XML in layout, appearance, and printing information of a document. It is, in fact, more justified to say that XPS is an attempt on PDF, but couldn't get enough popularity as  owned by PDF for a number of reasons.",
+    "name": "Open XML Paper Specification",
+    "extension": "xps",
+    "displayname": "XML Paper"
+  },
+  "mbox": {
+    "fileFormatComUrl": "https://docs.fileformat.com/email/mbox/",
+    "description": "MBox file format is a generic term that represents a container for collection of electronic mail messages. The messages are stored inside the container along with their attachments. Messages from an entire folder are saved in a single database file and new messages are appended to the end of the file. Numerous applications and API provide support for MBox file format such as Apple Mail and Mozilla Thunderbird.",
+    "name": "Email Mailbox File",
+    "extension": "mbox",
+    "displayname": "E-Mail"
+  },
+  "tsv": {
+    "fileFormatComUrl": "https://docs.fileformat.com/spreadsheet/tsv/",
+    "description": "A Tab-Separated Values (TSV) file format represents data separated with tabs in plain text format. The file format, similar to CSV, is used for organization of data in a structured manner in order to import and export between different applications. The format is primarily used for data import/export and exchange in Spreadsheet applications and databases. ",
+    "name": "Tab Separated Values File",
+    "extension": "tsv",
+    "displayname": "Excel"
+  },
+  "rtf": {
+    "fileFormatComUrl": "https://docs.fileformat.com/word-processing/rtf/",
+    "description": "Introduced and documented by Microsoft, the Rich Text Format (RTF) represents a method of encoding formatted text and graphics for use within applications. The format facilitates cross-platform document exchange with other Microsoft Products, thus serving the purpose of interoperability. This capability makes it a standard of data transfer between word processing software and, hence, contents can be transferred from one operating system to another without losing document formatting.",
+    "name": "Rich Text File Format",
+    "extension": "rtf",
+    "displayname": "Rich Text"
+  },
+  "gpx": {
+    "fileFormatComUrl": "https://docs.fileformat.com/gis/gpx/",
+    "description": "Files with GPX extension represent GPS Exchange format for interchange of GPS data between applications and web services on the internet. It is a light-weight XML file format that contains GPS data i.e. waypoints, routes and tracks to be imported and red by multiple programs. GPX file format is open and is supported by variety of applications and GPS devices.",
+    "name": "Exchange File Format",
+    "extension": "gpx",
+    "displayname": "GPS Exchange"
+  },
+  "ixbrl": {
+    "fileFormatComUrl": "https://docs.fileformat.com/finance/ixbrl/",
+    "description": "iXBRL is a development of XBRL in which the XBRL metadata are embedded in an HTML document. It requires the HTML document to be well-formed but does not otherwise specify the required XML format. Typically, iXBRL is implemented within HTML documents, which are displayed or printed by web browsers without revealing the XBRL metadata inside the document. The specification does, however, provide a normative schema which requires that any schema-valid iXBRL document should be in XHTML format.",
+    "name": "Inline XBRL",
+    "extension": "ixbrl",
+    "displayname": null
+  },
+  "pptx": {
+    "fileFormatComUrl": "https://docs.fileformat.com/presentation/pptx/",
+    "description": "Files with PPTX extension are presentation files created with popular Microsoft PowerPoint application. Unlike the previous version of presentation file format PPT which was binary, the PPTX format is based on the Microsoft PowerPoint open XML presentation file format. A presentation file is a collection of slides where each slide can comprise of text, images, formatting, animations, and other media.",
+    "name": "PowerPoint Open XML Presentation",
+    "extension": "pptx",
+    "displayname": "PowerPoint"
+  },
+  "txt": {
+    "fileFormatComUrl": "https://docs.fileformat.com/word-processing/txt/",
+    "description": "A file with .TXT extension represents a text document that contains plain text in the form of lines. Paragraphs in a text document are recognized by carriage returns and are used for better arrangement of file contents. A standard text document can be opened in any text editor or word processing application on different operating systems. All the text contained in such a file is in human-readable format and represented by sequence of characters.",
+    "name": "Plain Text File Format",
+    "extension": "txt",
+    "displayname": "Plain Text"
+  },
+  "pst": {
+    "fileFormatComUrl": "https://docs.fileformat.com/email/pst/",
+    "description": "Files with .PST extension represent Outlook Personal Storage Files (also called Personal Storage Table) that store variety of user information. User information is stored in folders of different types that include emails, calendar items, notes, contacts, and several other file formats. PST files are used for archiving emailing data offline that can be later loaded and viewed in various applications.",
+    "name": "Personal Storage File",
+    "extension": "pst",
+    "displayname": "Outlook"
+  },
+  "msg": {
+    "fileFormatComUrl": "https://docs.fileformat.com/email/msg/",
+    "description": "MSG is a file format used by Microsoft Outlook and Exchange to store email messages, contact, appointment, or other tasks. Such messages may contain one or more email fields, with the sender, recipient, subject, date, and message body, or contact information, appointment particulars, and one or more task specifications. The properties that constitute the Message object, including are also a part of the MSG file.",
+    "name": "Microsoft Outlook Email Format",
+    "extension": "msg",
+    "displayname": "E-Mail"
+  },
+  "mpp": {
+    "fileFormatComUrl": "https://docs.fileformat.com/project-management/mpp/",
+    "description": "A file with MPP extension is Microsoft Project data file that stores information related to project management in an integrated manner. It is proprietary file format developed by Microsoft as file format for Microsoft Project (MSP) which is a project management application software. Besides MPP, MSP supports other file formats as well like project XML schema. Several APIs and applications provide the facility to convert MPP file format to others.",
+    "name": "Microsoft Project File",
+    "extension": "mpp",
+    "displayname": "Project File"
+  },
+  "tar": {
+    "fileFormatComUrl": "https://docs.fileformat.com/compression/tar/",
+    "description": "Files with .tar extension are archives created with Unix-based utility for collecting one or more files. Multiple files are stored in an uncompressed format with the support of adding files as well as folders to the archive. TAR utility on Unix is Command based, but files hence created are supported by most file archiving systems on almost all operating systems. It was first created in 1979 by the AT&T Bell Laboratories and subsequent versions were published with the passage of time.",
+    "name": "Tape Archive",
+    "extension": "tar",
+    "displayname": null
+  },
+  "3ds": {
+    "fileFormatComUrl": "https://docs.fileformat.com/3d/3ds/",
+    "description": "A file with 3DS extension represents 3D Sudio (DOS) mesh file format used by Autodesk 3D Studio. Autodesk 3D Studio has been in 3D file format market since 1990s and has now evolved to 3D Studio MAX for working with 3D modeling, animation and rendering. A 3DS file contains data for 3D representation of scenes and images and is one of the popular file formats for 3D data import and export.",
+    "name": "3D Studio Mesh File Format",
+    "extension": "3ds",
+    "displayname": null
+  },
+  "odt": {
+    "fileFormatComUrl": "https://docs.fileformat.com/word-processing/odt/",
+    "description": "ODT files are type of documents created with word processing applications that are based on OpenDocument Text File format. These are created with word processor applications such as free OpenOffice Writer and can hold content such as text, images, objects and styles. The ODT file is to Writer word processor what the DOCX is to Microsoft Word. Several applications including Google Docs and Google's web-based word processor included with Google Drive can open the ODT files for editing.",
+    "name": "Open Document Text",
+    "extension": "odt",
+    "displayname": "Word"
+  },
+  "xls": {
+    "fileFormatComUrl": "https://docs.fileformat.com/spreadsheet/xls/",
+    "description": "Files with XLS extension represent Excel Binary File Format. Such files can be created by Microsoft Excel as well as other similar spreadsheet programs such as OpenOffice Calc or Apple Numbers. File saved by Excel are known as Workbook where each workbook can have one or more worksheets. Data is stored and displayed to users in table format in worksheet and can span numeric values, text data, formulas, external data connections, images and charts.",
+    "name": "Microsoft Excel Binary File Format",
+    "extension": "xls",
+    "displayname": "Excel"
+  },
+  "odp": {
+    "fileFormatComUrl": "https://docs.fileformat.com/presentation/odp/",
+    "description": "Files with ODP extension represent presentation file format used by OpenOffice.org in the OASISOpen standard. A presentation file is a collection of slides where each slide can comprise of text, images, formatting, animations, and other media. These slides are presented to audience in the form of slideshows with custom presentation settings.",
+    "name": "OpenDocument Presentation File Format",
+    "extension": "odp",
+    "displayname": "Presentation File"
+  },
+  "u3d": {
+    "fileFormatComUrl": "https://docs.fileformat.com/3d/u3d/",
+    "description": "U3D (Universal 3D) is a compressed file format and data structure for 3D computer graphics. It contains 3D model information such as triangle meshes, lighting, shading, motion data, lines and points with color and structure. The format was accepted as ECMA-363 standard in August 2005. 3D PDF documents support U3D objects embedding and can be viewed in Adobe Reader (version 7 and onwards).",
+    "name": "Universal 3D File Format",
+    "extension": "u3d",
+    "displayname": null
+  },
+  "ppsx": {
+    "fileFormatComUrl": "https://docs.fileformat.com/presentation/ppsx/",
+    "description": "PPSX, Power Point Slide Show, file are created using Microsoft PowerPoint 2007 and above for Slide Show purpose. It is an update to the PPS file format that was supported by Microsoft PowerPoint 97-2003 versions. When a PPSX file is shared with another user and opened, it starts as PowerPoint show unlike PPTX file that opens in editable mode. The sequence of slide show is the same as in the original presentation. All the slides accompany the images, sounds and other embedded media accompany the presentation slides to the PPSX during the slideshow. ",
+    "name": "PowerPoint Open XML Slide Show",
+    "extension": "ppsx",
+    "displayname": "PowerPoint"
+  },
+  "svg": {
+    "fileFormatComUrl": "https://docs.fileformat.com/page-description-language/svg/",
+    "description": "SVG files are Scalable Vector Graphics Files that use XML based text format for describing the appearance of image. The word Scalable refers to the fact that the SVG can be scaled to different sizes without losing any quality. Text based description of such files make them independent of resolution. It is one of the mostly used format for building website and print graphics in order to achieve scalability.",
+    "name": "Scalable Vector Graphics File",
+    "extension": "svg",
+    "displayname": "Vector Graphics"
+  },
+  "xls2003": {
+    "fileFormatComUrl": "https://docs.fileformat.com/spreadsheet/xls",
+    "description": "Files with XLS extension represent Excel Binary File Format. Such files can be created by Microsoft Excel as well as other similar spreadsheet programs such as OpenOffice Calc or Apple Numbers. File saved by Excel are known as Workbook where each workbook can have one or more worksheets. Data is stored and displayed to users in table format in worksheet and can span numeric values, text data, formulas, external data connections, images and charts. Applications like Microsoft Excel lets you export workbook data to several different formats including PDF, CSV, XLSX, TXT, HTML, XPS and several others. The XLS file format was replaced with a more open and structured format, XLSX, with the release of Microsoft Excel 2007. The latest versions still provide support for creating and reading XLS files, though XLSX is the first choice of use now.",
+    "name": "Microsoft Excel Spreadsheet",
+    "extension": "xls2003",
+    "displayname": "Excel"
+  },
+  "ods": {
+    "fileFormatComUrl": "https://docs.fileformat.com/spreadsheet/ods/",
+    "description": "Files with ODS extension stand for OpenDocument Spreadsheet Document format that are editable by user. Data is stored inside ODF file into rows and columns. It is XML-based format and is one of the several subtypes in the Open Document Formats (ODF) family. The format is specified as part of the ODF 1.2 specifications published and maintained by OASIS.",
+    "name": "Open Document Spreadsheet",
+    "extension": "ods",
+    "displayname": "Excel"
+  },
+  "webp": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/webp/",
+    "description": "WebP, introduced by Google, is a modern raster web image file format that is based on lossless and lossy compression. It provides same image quality while considerably reducing the image size. Since most of the web pages use images as effective representation of data, the use of WebP images in web pages results in faster loading of web pages.",
+    "name": "Raster Web Image File Format",
+    "extension": "webp",
+    "displayname": "Web Image"
+  },
+  "otp": {
+    "fileFormatComUrl": "https://docs.fileformat.com/presentation/otp/",
+    "description": "Files with .OTP extension represent presentation template files created by applications in OASIS OpenDocument standard format. The contents of such a file include presentation information in the form of slides with text, images, shapes, multimedia content, transition effects and other slide elements. These template files are used for creating new presentations quickly based on the styling information stored in the template itself. OTP files can be created and saved with several different applications such as Impress that comes with OpenOffice suite and Microsoft PowerPoint. The OTP file format is similar to Microsoft PowerPoint template files .POT and .POTX.",
+    "name": "Origin Graph Template",
+    "extension": "otp",
+    "displayname": "Graph"
+  },
+  "xer": {
+    "fileFormatComUrl": "https://docs.fileformat.com/project-management/xer/",
+    "description": "The XER file format is a proprietary project file format used by Primavera P6 project planning and management application. Like MPP file format, this file format stores data related to project planning such as tasks, resources, timelines, and materials. Primavera is developed by Oracle and provides the capability of complete project planning and finds its applications in several practical fields such as oil and gas, construction, manufacturing, etc.",
+    "name": "Primavera P6 Project File",
+    "extension": "xer",
+    "displayname": "Project File"
+  },
+  "obj": {
+    "fileFormatComUrl": "https://docs.fileformat.com/3d/obj/",
+    "description": "OBJ files are used by Wavefront's Advanced Visualizer application to define and store the geometric objects. Backward and forward transmission of geometric data is made possible through OBJ files. Both polygonal geometry like points, lines, texture vertices, faces and free-form geometry (curves and surfaces) are supported by OBJ format.  This format does not support animation or information related to light and position of scenes.",
+    "name": "Geometry Definition File Format",
+    "extension": "obj",
+    "displayname": "Geometric Objects"
+  },
+  "3mf": {
+    "fileFormatComUrl": "https://docs.fileformat.com/3d/3mf/",
+    "description": "3MF, 3D Manufacturing Format, is used by applications to render 3D object models to a variety of other applications, platforms, services and printers. It was built to avoid the limitations and issues in other 3D file formats, like STL, for working with the latest versions of 3D printers. 3MF is relatively a new file format that has been developed and published by the 3MF consortium.",
+    "name": "3D Manufacturing File Format",
+    "extension": "3mf",
+    "displayname": null
+  },
+  "pps": {
+    "fileFormatComUrl": "https://docs.fileformat.com/presentation/pps/",
+    "description": "PPS, PowerPoint Slide Show, files are created using Microsoft PowerPoint for Slide Show purpose. PPS file reading and creation is supported by Microsoft PowerPoint 97-2003. The more latest version of this file format is PPSX which is based on Office OpenXML standards. PPS files can still be read by latest versions of Microsoft PowerPoint, but newly created files can only be saved in PPSX file format. When a PPS file is shared with another user and opened, it starts as Powerpoint show unlike PPT file which opens in editable mode. ",
+    "name": "Microsoft PowerPoint Slide Show",
+    "extension": "pps",
+    "displayname": "PowerPoint"
+  },
+  "jpeg": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/jpeg",
+    "description": "A JPEG is a type of image format that is saved using the method of lossy compression. The output image, as result of compression, is a trade-off between storage size and image quality. Users can adjust the compression level to achieve the desired quality level while at the same time reduce the storage size. Image quality is negligibly affected if 10:1 compression is applied to the image.  The higher the compression value, the higher the degradation in image quality. JPEG image file format was standardized by the Joint Photographic Experts Group and, hence, the name JPEG. The format has been the choice of storing and transmitting photographic images on the web. Almost all Operating systems now have viewers that support visualization of JPEG images, which are often stored with JPG extension as well. Even the web browsers support visualization of JPEG images.",
+    "name": "JPEG Image",
+    "extension": "jpeg",
+    "displayname": "Image"
+  },
+  "dotx": {
+    "fileFormatComUrl": "https://docs.fileformat.com/word-processing/dotx/",
+    "description": "Files with DOTX extension are template files created by Microsoft Word to have pre-formatted settings for generation of further DOCX files. A template file is created in order to have specific user settings that should be applied to subsequent flies created from these. These settings include page margins, borders, headers, footers, and other page settings. Such templates are used in official documents such as company letterheads and standardized forms.",
+    "name": "Word Open XML Document Template",
+    "extension": "dotx",
+    "displayname": "Word"
+  },
+  "mhtml": {
+    "fileFormatComUrl": "https://docs.fileformat.com/web/mhtml/",
+    "description": "Files with MHTML extension represent a web page archive format that can be created by a number of different applications. The format is known as archive format because it saves the web HTML code and associated resources in a single file. These resources include anything linked to the webpage such as images, applets, animations, audio files and so on. MHTML files can be opened in a variety of applications such as Internet Explorer and Microsoft Word.",
+    "name": "MIME Encapsulation of Aggregate HTML",
+    "extension": "mhtml",
+    "displayname": "MIME HTML"
+  },
+  "plt": {
+    "fileFormatComUrl": "https://docs.fileformat.com/cad/plt/",
+    "description": "Vector-based plotter file developed by Autodesk, Inc. to store plotting parts of CAD drawings",
+    "name": "Plotter file",
+    "extension": "plt",
+    "displayname": null
+  },
+  "dicom": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/dicom/",
+    "description": "DICOM is the acronym for Digital Imaging and Communications in Medicine and pertains to the field of Medical Informatics. DICOM is the combination of file format definition and a network communications protocol. DICOM uses the .DCM extension. .DCM exist in two different formats i.e. format 1.x and format 2.x. DCM Format 1.x is further available in two versions normal and extended.",
+    "name": "Digital Imaging and Communications in Medicine",
+    "extension": "dicom",
+    "displayname": "Digital Image"
+  },
+  "tar.bz2": {
+    "fileFormatComUrl": "https://docs.fileformat.com/compression/bz2/",
+    "description": "BZ2 are compressed files generated using the BZIP2 open source compression method, mostly on UNIX or Linux system. It is used for compression of a single file and is not meant for archiving of multiple files. This is in contrast to the TAR file format on the same platforms that archives multiple files into a single file but without compression. Files compressed as BZ2 can be decompressed with applications like WinZip. BZIP2 uses Run-Length Encoding (RLE) or Burrows-Wheeler compression algorithm to achieve high levels of compression.",
+    "name": "Bzip2 Compressed File",
+    "extension": "tar.bz2",
+    "displayname": null
+  },
+  "utm": {
+    "fileFormatComUrl": null,
+    "description": "The Universal Transverse Mercator (UTM) is a map projection system in which the Earth's surface is divided into 60 zones. In this case, we use a 31 zone (also known as WGS 84 / UTM zone 31N, EPSG:32631). It is a popular system for assigning coordinates to locations on the surface of the Earth.",
+    "name": "UTM",
+    "extension": "utm",
+    "displayname": null
+  },
+  "nad83": {
+    "fileFormatComUrl": null,
+    "description": "The North American Datum 1983 (NAD83) is a spatial refernce that was established in 1986 for the United States, Canada, Mexico, Central America, and the Caribbean. Hawaii and Greenland were also associated with this data. It is based on the horizontal correction of conventional survey data and the inclusion of satellite transit Doppler data and Very Long Baseline Interferometry (VLBI) data. Global Doppler and VLBI observations were used to orient the NAD83 frame of reference relative to the 1984 BIH ground system. The orientation of the ECEF coordinate axes of the NAD83 datum is identical to the orientation of the original WGS84 datum.",
+    "name": "Nad83",
+    "extension": "nad83",
+    "displayname": null
+  },
+  "dwg": {
+    "fileFormatComUrl": "https://docs.fileformat.com/specification/cad/dwg/",
+    "description": "Files with DWG extension represent proprietary binary files used for containing 2D and 3D design data. Like DXF, which are ASCII files, DWG represent the binary file format for CAD (Computer Aided Design) drawings. It contains vector image and metadata for representation of contents of CAD files.",
+    "name": "AutoCAD Drawing Database File",
+    "extension": "dwg",
+    "displayname": "Binary File"
+  },
+  "ppt": {
+    "fileFormatComUrl": "https://docs.fileformat.com/presentation/ppt/",
+    "description": "A file with PPT extension represents PowerPoint file that consists of a collection of slides for displaying as SlideShow. It specifies the Binary File Format used by Microsoft PowerPoint 97-2003. A PPT file can contain several different types of information such as text, bulleted points, images, multimedia and other embedded OLE objects. Microsoft came up with newer file format for PowerPoint, known as PPTX, from 2007 onwards that is based on Office OpenXML and is different from this binary file format.",
+    "name": "PowerPoint Presentation",
+    "extension": "ppt",
+    "displayname": "PowerPoint"
+  },
+  "stl": {
+    "fileFormatComUrl": "https://docs.fileformat.com/cad/stl/",
+    "description": "STL, abbreviation for stereolithrography, is an interchangeable file format that represents 3-dimensional surface geometry. The file format finds its usage in several fields such as rapid prototyping, 3D printing and computer-aided manufacturing. It represents a surface as a series of small triangles, known as facets, where each facet is described by a perpendicular direction and three points representing the vertices of the triangle.",
+    "name": "Stereolithography",
+    "extension": "stl",
+    "displayname": "Interchangeable File"
+  },
+  "prs92": {
+    "fileFormatComUrl": null,
+    "description": "The PRS92 Surveying Standard is commonly in the Philippines. A key component of PRS 92 is the establishment of permanent reference points, called “mohons,” throughout the country, which serve as reference points for all surveying activities of both public and private surveyors for the benefit of landowners.",
+    "name": "PRS92",
+    "extension": "prs92",
+    "displayname": null
+  },
+  "excel": {
+    "fileFormatComUrl": "https://docs.fileformat.com/spreadsheet/",
+    "description": "XLSX is well-known format for Microsoft Excel documents that was introduced by Microsoft with the release of Microsoft Office 2007. Based on structure organized according to the Open Packaging Conventions as outlined in Part 2 of the OOXML standard ECMA-376, the new format is a zip package that contains a number of XML files. The underlying structure and files can be examined by simply unzipping the .xlsx file.",
+    "name": "Microsoft Excel Open XML Spreadsheet",
+    "extension": "excel",
+    "displayname": null
+  },
+  "vsd": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/vsd/",
+    "description": "VSD files are drawings created with Microsoft Visio application to represent variety of graphical objects and the interconnection between these. Such drawings can contain visual objects such as visual objects, flow charts, UML diagram, information flow, organizational charts, software diagrams, network layout, database models, objects mapping and other similar information. Microsoft Visio offers the capability to convert Visio files to a number of different file formats including PNG, BMP, PDF and others.",
+    "name": "Visio Drawing File Format",
+    "extension": "vsd",
+    "displayname": "Drawing File"
+  },
+  "x": {
+    "fileFormatComUrl": "https://docs.fileformat.com/3d/x/",
+    "description": "X is a DirectX Model image file used by DirectX technology which is for 3D graphics rendering in games. The file format specifies 3D object structures for meshes, textures, animations, and objects.",
+    "name": "DirectX Model File",
+    "extension": "x",
+    "displayname": "Image"
+  },
+  "mht": {
+    "fileFormatComUrl": "https://docs.fileformat.com/web/mhtml/",
+    "description": "Files with MHT extension represent a web page archive format that can be created by a number of different applications. The format is known as archive format because it saves the web HTML code and associated resources in a single file. These resources include anything linked to the webpage such as images, applets, animations, audio files and so on.",
+    "name": "MIME Encapsulation of Aggregate HTML",
+    "extension": "mht",
+    "displayname": "Web Page"
+  },
+  "vtx": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/vtx/",
+    "description": "A file with VTX extension is a Microsoft Visio drawing template that is saved to disc in XML file format. The template is aimed to provide a file with basic settings that can be used to create multiple Visio files of the same settings. Another similar format is VST which is saved in binary format rather than XML. VTX files are supported with Visio 2010 and newer versions.",
+    "name": "Microsoft Visio Drawing Template",
+    "extension": "vtx",
+    "displayname": "Visio Drawing"
+  },
+  "glb": {
+    "fileFormatComUrl": "https://docs.fileformat.com/3d/glb/",
+    "description": "GLB is the binary file format representation of 3D models saved in the GL Transmission Format (glTF). Information about 3D models such as node hierarchy, cameras, materials, animations and meshes in binary format. This binary format stores the glTF asset (JSON, .bin and images) in a binary blob. It also avoids the issue of increase in file size which happens in case of glTF. GLB file format results in compact file sizes, fast loading, complete 3D scene representation, and extensibility for further development. The format uses model/gltf-binary as MIME type. ",
+    "name": "Binary File Format",
+    "extension": "glb",
+    "displayname": null
+  },
+  "7z": {
+    "fileFormatComUrl": "https://docs.fileformat.com/compression/7z/",
+    "description": "7z is an archiving format for compressing files and folders with a high compression ratio. It is based on Open Source architecture which makes it possible to use any compression and encryption algorithms. The format is now supported by a number of software applications such as 7-ZIP which is publicly available for download and usage to manipulate .7z files. Files with .7z extension have mime-type application/x-7z-compressed.",
+    "name": "7Z Compressed Archive",
+    "extension": "7z",
+    "displayname": null
+  },
+  "djvu": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/djvu/",
+    "description": "DjVu, pronounced as “déjà vu”, is a graphics file format intended for scanned documents and books especially those which contain the combination of text, drawings, images and photographs. It was developed by AT&T Labs. It uses multiple techniques like image layer separation of text and background images, progressive loading, arithmetic coding and lossy compression for bitonal images.",
+    "name": "Graphics File format",
+    "extension": "djvu",
+    "displayname": "Graphic File"
+  },
+  "ppsm": {
+    "fileFormatComUrl": "https://docs.fileformat.com/presentation/ppsm/",
+    "description": "Files with PPSM extension represent Macro-enabled Slide Show file format created with Microsoft PowerPoint 2007 or higher. Another similar file format is PPTM which differs in opening with Microsoft PowerPoint in editable format instead of running as Slide Show. When run as slide show, the PPSM file shows the presentation slides with contents intact in the slide show and is in read-only mode by default. PPSM files can still be edited in Microsoft PowerPoint by opening it in PowerPoint.",
+    "name": "Microsoft PowerPoint Slide Show",
+    "extension": "ppsm",
+    "displayname": "PowerPoint"
+  },
+  "csv": {
+    "fileFormatComUrl": "https://docs.fileformat.com/spreadsheet/csv/",
+    "description": "Files with CSV (Comma Separated Values) extension represent plain text files that contain records of data with comma separated values. Each line in a CSV file is a new record from the set of records contained in the file. Such files are generated when data transfer is intended from one storage system to another. Since all applications can recognize records separated by comma, import of such data files to database is done very conveniently.",
+    "name": "Comma Separated Values File",
+    "extension": "csv",
+    "displayname": "Excel"
+  },
+  "pdf": {
+    "fileFormatComUrl": "https://docs.fileformat.com/pdf/",
+    "description": "Portable Document Format (PDF) is a type of document created by Adobe back in 1990s. The purpose of this file format was to introduce a standard for representation of documents and other reference material in a format that is independent of application software, hardware as well as Operating System. PDF files can be opened in Adobe Acrobat Reader/Writer as well in most modern browsers like Chrome, Safari, Firefox via extensions/plug-ins.",
+    "name": "Portable Document",
+    "extension": "pdf",
+    "displayname": null
+  },
+  "dotm": {
+    "fileFormatComUrl": "https://docs.fileformat.com/word-processing/dotm/",
+    "description": "A file with DOTM extension represents template file created with Microsoft Word 2007 or higher. It is similar to the popular DOCX file format other than it retains the user defined settings for reuse in case of creating new documents. Such documents are more often used in offices where a standard template file is generated with settings like page information, margins, default layout and macros, and is used to create new documents from it when required. DOTM files, however, save macros, that are a series of commands in the form of recorded actions for automatic completion of a task. This helps save time in carrying out actions that are repeated in completion of a task.",
+    "name": "Microsoft Word Macro-Enabled Template",
+    "extension": "dotm",
+    "displayname": "Word"
+  },
+  "jpg": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/jpeg/",
+    "description": "A JPEG is a type of image format that is saved using the method of lossy compression. The output image, as result of compression, is a trade-off between storage size and image quality. Users can adjust the compression level to achieve the desired quality level while at the same time reduce the storage size. Image quality is negligibly affected if 10:1 compression is applied to the image.  The higher the compression value, the higher the degradation in image quality.",
+    "name": "Joint Photographic Expert Group Image File",
+    "extension": "jpg",
+    "displayname": "Image"
+  },
+  "docx": {
+    "fileFormatComUrl": "https://docs.fileformat.com/word-processing/docx/",
+    "description": "Docx is well-known format for Microsoft Word documents. Introduced from 2007 with the release of Microsoft Office 2007, the structure of this new Document format was changed from plain binary to a combination of XML and binary files. Docx files can be opened with Word 2007 and lateral versions but not with the earlier versions of MS Word.",
+    "name": "Microsoft Word Open XML Document",
+    "extension": "docx",
+    "displayname": "Word"
+  },
+  "psd": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/psd/",
+    "description": "PSD, Photoshop Document, represents Adobe Photoshop's native file format used for graphics designing and development. PSD files may include image layers, adjustment layers, layer masks, annotations, file information, keywords and other Photoshop-specific elements. Photoshop files have default extension as .PSD and has a maximum height and width of 30,000 pixels, and a length limit of two gigabytes.",
+    "name": "Adobe Photoshop Document",
+    "extension": "psd",
+    "displayname": "Photoshop"
+  },
+  "jp2": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/jp2/",
+    "description": "JPEG 2000 (JP2) is an image coding system and state-of-the-art image compression standard. Designed, using wavelet technology JPEG 2000 can code lossless content in any quality at once. Moreover, without any substantial penalty in coding efficiency, JPEG 2000  have the capability to access and decode the same content efficaciously into a variety of other resolutions and qualities. The code streams in JPEG 2000 is significantly scalable having regions of interest that provide the facility for spatial random access. Possessing Up to 16384 diverse components with the dimensions in terapixels, and precision that can be high as 38 bits/sample.",
+    "name": "JPEG 2000 Core Image File",
+    "extension": "jp2",
+    "displayname": "Image"
+  },
+  "cdr": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/cdr/",
+    "description": "A CDR file is a vector drawing image file that is natively created with CorelDRAW for storing digital image encoded and compressed. Such a drawing file contains text, lines, shapes, images, colours and effects for vector representation of image contents. CDR files can be opened with CorelDRAW as the primary application and can also be converted to other formats such as PDF, JPG, PNG, BMP and AI. It can be used for representation of various graphics data like brochures, tabloids, envelopes, and postcards.",
+    "name": "CorelDRAW Graphics Format",
+    "extension": "cdr",
+    "displayname": null
+  },
+  "doc": {
+    "fileFormatComUrl": "https://docs.fileformat.com/word-processing/doc/",
+    "description": "Files with .DOC extension represent documents generated by Microsoft Word or other word processing documents in binary file format. The extension was initially used for plain text documentation on several different operating systems. It can contain several different type of data such as images, formatted as well as plain text, graphs, charts, embedded objects, links, pages, page formatting, print settings and a lot others.",
+    "name": "Microsoft Word Document",
+    "extension": "doc",
+    "displayname": "Word"
+  },
+  "vstx": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/vstx/",
+    "description": "Files with VSTX extensions are drawing template files created with Microsoft Visio 2013 and above. These VSTX files provide starting point for creating Visio drawings, saved as .VSDX files, with default layout and settings. In general, Visio files are used to create drawings that contain visual objects, flow charts, UML diagram, information flow, organizational charts, software diagrams, network layout, database models, objects mapping and other similar information.",
+    "name": "Microsoft Visio File Format",
+    "extension": "vstx",
+    "displayname": "Visio File"
+  },
+  "pptm": {
+    "fileFormatComUrl": "https://docs.fileformat.com/presentation/pptm",
+    "description": "Files with PPTM extension are Macro-enabled Presentation files that are created with Microsoft PowerPoint 2007 or higher versions. They are similar to PPTX files with the difference that the lateral can't execute macros though they can contain macros. PPTM files can be edited by opening them in Microsoft PowerPoint and updating the contents. Another similar format is PPSM but it is read-only by default and starts the slideshow when opened. PPTM, like PPTX, contains slides for different presentation elements like text, images, videos, graphs and other related material.",
+    "name": "Microsoft PowerPoint Presentation",
+    "extension": "pptm",
+    "displayname": "PowerPoint"
+  },
+  "rvm": {
+    "fileFormatComUrl": "https://docs.fileformat.com/3d/rvm/",
+    "description": "RVM data files are related to AVEVA PDMS. RVM file is an AVEVA Plant Design Management System Model. AVEVA's Plant Design Management System (PDMS) is the most popular 3D design system using data-centric technology for managing projects.",
+    "name": "Revenant Archive",
+    "extension": "rvm",
+    "displayname": "AVEVA PDMS"
+  },
+  "otg": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/otg/",
+    "description": "An OTG file is a drawing template that is created using the OpenDocument standard that follows the OASIS Office Applications 1.0 specification. It represents the default organization of drawing elements for a vector image that can be used to further enhance the contents of the file.",
+    "name": "OTG",
+    "extension": "otg",
+    "displayname": null
+  },
+  "xltm": {
+    "fileFormatComUrl": "https://docs.fileformat.com/spreadsheet/xltm",
+    "description": "The XLTM file extension represents files that are generated by Microsoft Excel as Macro-enabled template files. XLTM files are similar to XLTX in structure other than that the later doesn't support creating template files with macros. Such template files are used to generate and set the layout, formatting, and other settings along with the macros to facilitate creating similar XLSX files then.",
+    "name": "Microsoft Excel Macro-Enabled Template",
+    "extension": "xltm",
+    "displayname": "Excel"
+  },
+  "xml": {
+    "fileFormatComUrl": "https://docs.fileformat.com/web/xml/",
+    "description": "XML stands for Extensible Markup Language that is similar to HTML but different in using tags for defining objects. The whole idea behind creation of XML file format was to store and transport data without being dependent on software or hardware tools. Its popularity is due to it being both human as well as machine readable. This enables it to create common data protocols in the form of objects to be stored and shared over network such as World Wide Web (WWW).",
+    "name": "Extended Markup Language",
+    "extension": "xml",
+    "displayname": "Extended Markup"
+  },
+  "kml": {
+    "fileFormatComUrl": "https://docs.fileformat.com/gis/kml/",
+    "description": "KML, Keyhole Markup Language) contains geospatial information in XML notation. Files saved as KML can be opened in Geographic Information System (GIS) applications provided they support it. Many applications have started providing support for KML file format after it has been adopted as international standard.",
+    "name": "Keyword Markup Language File",
+    "extension": "kml",
+    "displayname": "Markup"
+  },
+  "geojson": {
+    "fileFormatComUrl": "https://docs.fileformat.com/gis/geojson/",
+    "description": "GeoJSON is a JSON based format designed to represent the geographical features with their non-spatial attributes. This format defines different JSON (JavaScript Object Notation) objects and their joining fashion. JSON format represents a collective information about the Geographical features, their spatial extents, and properties.",
+    "name": "Json Open Standard Format",
+    "extension": "geojson",
+    "displayname": "Open Standard"
+  },
+  "mpx": {
+    "fileFormatComUrl": "https://docs.fileformat.com/project-management/mpx/",
+    "description": "MPX, Microsoft Exchange File Format, is an ASCII file format for transferring of project information between Microsoft Project (MSP) and other applications that support the MPX file format such as Primavera Project Planner, Sciforma and Timerline Precision Estimating. The MPX file format allows you to transfer project information that cannot appear in a table, such as detailed resource assignment information, calendar information, or information in the Project Info dialog box.  The initial version of Microsoft Project 4.0 started the support for creating and reading MPX file formats that continued till Microsoft Project 98. However, support for creating MPX files was discontinued with the release of Microsoft Project 2000 and the versions till Microsoft Project 2010 support only MPX reading. Versions later than MSP 2010 do not support reading of MPX file format.",
+    "name": "Microsoft Exchange File Format",
+    "extension": "mpx",
+    "displayname": null
+  },
+  "tiff": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/tiff/",
+    "description": "TIFF or TIF, Tagged Image File Format, represents raster images that are meant for usage on a variety of devices that comply with this file format standard. It is capable of describing bilevel, grayscale, palette-color and full-color image data in several color spaces. It supports lossy as well as lossless compression schemes to choose between space and time for applications using the format.",
+    "name": "Tagged Image File Format",
+    "extension": "tiff",
+    "displayname": "Tagged Image"
+  },
+  "shapefile": {
+    "fileFormatComUrl": "https://docs.fileformat.com/gis/shp/",
+    "description": "SHP is the file extension for one of the primary file types used for representation of ESRI Shapefile. It represents Geospatial information in the form of vector data to be used by Geographic Information Systems (GIS) applications. The format has been developed as open specifications in order to facilitate interoperability between ESRI and other software products.",
+    "name": "ESRI Shapefile",
+    "extension": "shapefile",
+    "displayname": null
+  },
+  "tar.gz": {
+    "fileFormatComUrl": "https://docs.fileformat.com/compression/gz/",
+    "description": "Files with .gz extension are compressed files created with gzip compression application. It can contain multiple compressed files and is commonly used on UNIX and Linux systems. GZIP was introduced as a free utility for replacing the Compress program used in Unix systems. Such files can be opened and extracted with a several applications such as WinZip which is available on both Windows and MacOS. While the format is similar to .ZIP compression in archiving, it differs in terms of compression applied to the archive instead of individual file.",
+    "name": "GZip Compressed File",
+    "extension": "tar.gz",
+    "displayname": null
+  },
+  "ase": {
+    "fileFormatComUrl": "https://docs.fileformat.com/3d/ase/",
+    "description": "An ASE file is a 2D animation or graphics that contain layers, frames, palettes, tags, and settings.",
+    "name": "Aseprite Sprite File",
+    "extension": "ase",
+    "displayname": null
+  },
+  "cmx": {
+    "fileFormatComUrl": "https://docs.fileformat.com/image/cmx/",
+    "description": "Files with CMX extension are Corel Exchange image file format that is used as presentation by CorelSuite applications. It contains image data as vector graphics as well as metadata that describes the image. CMX files can be opened by CorelDraw, Corel Presentations, Paint Shop Pro and some versions of Adobe Illustrator. ",
+    "name": "Corel Metafile Exchange Image",
+    "extension": "cmx",
+    "displayname": null
+  },
+  "xlsm": {
+    "fileFormatComUrl": "https://docs.fileformat.com/spreadsheet/xlsm/",
+    "description": "Files with XLSM extension is a type of Spreasheet files that support Macros. From application point of view, a Macro is set of instructions that are used for automating processes. A macro is used to record the steps that are performed repeatedly and facilitates performing the actions by running the macro again. Macros are programmed with Microsoft's Visual Basic for Applications (VBA) from within the Excel Workbook using the Visual Basic Editor and can be run/debug directly from there.",
+    "name": "Microsoft Excel Macro-Enabled Spreadsheet",
+    "extension": "xlsm",
+    "displayname": "Excel"
+  },
+  "zip": {
+    "fileFormatComUrl": "https://docs.fileformat.com/compression/zip/",
+    "description": "ZIP file extension represents archives that can hold one or more files or directories. The archive can have compression applied to the included files in order to reduce the ZIP file size. ZIP file format was made public back in February 1989 by Phil Katz for achieving archiving of files and folders. The format was made part of PKZIP utility, created by PKWARE, Inc.",
+    "name": "WinZIP Compressed Archive",
+    "extension": "zip",
+    "displayname": "Archives "
+  },
+  "rar": {
+    "fileFormatComUrl": "https://docs.fileformat.com/compression/rar/",
+    "description": "Files with .rar extension represent archive files that are created for storing information in compressed or normal form. RAR, Roshal ARchive file format, is a proprietary file format created by Eugene Roshal in 1995 who was a Russian software engineer. The format is used to archive files with different methods including various compression techniques. There are several application software available for Windows, Linux and MacOS for extraction of RAR files. WinRAR software, by RARLab, is the shareware file archiving utility (free for 40 days) for Microsoft Windows platform; the software was ported to Linux (only as extractor) by the same Author, Eugene Roshal.",
+    "name": "RAR Compressed Archive",
+    "extension": "rar",
+    "displayname": null
+  }
+}

@@ -1,0 +1,22 @@
+﻿@using Aspose.Cells.Common.Models
+@model ViewModel
+
+@{
+    Layout = "~/Pages/Shared/Layout.cshtml";
+}
+@{
+    ViewBag.Title = "Protect";
+}
+
+@await Html.PartialAsync("Main")
+@await Html.PartialAsync("FooterProduct")
+
+@section scripts {
+    <script type="text/javascript">
+        var o = @Html.Raw(Model.JSOptions);
+        $.extend(o, {
+            Method: requestProtect,
+            validationMessage: "@Html.Raw(Model.Resources["PasswordPlaceholderErrorMessage"])"
+        });
+    </script>
+}

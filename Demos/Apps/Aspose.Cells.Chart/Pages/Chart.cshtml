@@ -1,0 +1,23 @@
+﻿@using Aspose.Cells.Common.Models
+@model ViewModel
+
+@{
+    Layout = "~/Pages/Shared/Layout.cshtml";
+}
+@{
+    ViewBag.Title = "Chart";
+}
+
+@await Html.PartialAsync("Main")
+@await Html.PartialAsync("FooterProduct")
+
+<script src="~/cells/@Model.AppName.ToLower()/content/scripts/chart.js?v2.1.6"></script>
+
+@section scripts {
+    <script type="text/javascript">
+        const o = @Html.Raw(Model.JSOptions);
+        $.extend(o, {
+            Method: requestChart
+        });
+    </script>
+}

@@ -1,0 +1,68 @@
+@using Aspose.Cells.Common.Models
+@model ViewModel
+
+<div class="col-md-12" style="margin-bottom: 10px;">
+    <div class="saveas col-md-6" style="margin:0;padding:0 2px 0 0;text-align:right;">
+        <em>@Model.Resources["TranslateFrom"]</em>
+        <div class="btn-group">
+            <select id="translateFrom" name="translateFrom" style="display: none" onchange="">
+                <option value="-">Select Input Language</option>
+                @foreach (var ext in Model.Languages)
+                {
+                    <option value="@ext.Code.Trim()">@ext.Language.Trim()</option>
+                }
+            </select>
+        </div>
+    </div>
+
+    <div class="saveas col-md-6" style="margin:0;text-align:left;">
+        <em style="margin-left:0;">@Model.Resources["TranslateTo"]</em>
+        <div class="btn-group">
+            <select id="translateTo" name="translateTo" style="display: none" onchange="">
+                <option value="-">Select Output Language</option>
+                @foreach (var ext in Model.Languages)
+                {
+                    <option value="@ext.Code.Trim()">@ext.Language.Trim()</option>
+                }
+            </select>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-12">
+    <div class="saveas col-md-6" style="margin:0;padding:0;text-align:right;">
+        <em>Translated file format</em>
+        <div class="btn-group">
+            <select id="saveAs" name="saveAs" style="display: none" onchange="">
+                @foreach (var ext in Model.SaveAsOptions)
+                {
+                    <option value="@ext.ToUpper().Trim()">@ext.ToUpper().Trim()</option>
+                }
+            </select>
+        </div>
+    </div>
+    <div class="convertbtn col-md-6" style="margin:0;text-align:left;height:60px;line-height:56px;">
+        <input type="button" class="btn btn-success btn-lg" ID="uploadButton" value="@Model.UploadButtonText" style="padding:10px 84px;"/>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery.cookie@1.4.1/jquery.cookie.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        const translateFromDom = $('#translateFrom');
+        translateFromDom.select2();
+        const translateFrom = $.cookie("translateFrom") === undefined ? $('#translateFrom option:eq(0)').val() : $.cookie("translateFrom");
+        translateFromDom.val([translateFrom]).trigger('change');
+        translateFromDom.change(function() {
+            $.cookie("translateFrom", translateFromDom.val(), { expires: 365 });
+        });
+
+        const translateToDom = $('#translateTo');
+        translateToDom.select2();
+        const translateTo = $.cookie("translateTo") === undefined ? $('#translateTo option:eq(0)').val() : $.cookie("translateTo");
+        translateToDom.val([translateTo]).trigger('change');
+        translateToDom.change(function() {
+            $.cookie("translateTo", translateToDom.val(), { expires: 365 });
+        });
+    });
+</script>

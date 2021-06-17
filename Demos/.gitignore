@@ -349,10 +349,8 @@ healthchecksdb
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
 /Aspose.App/aspose.app.sln.DotSettings.user
-*.user
 .vshistory/
 /Aspose.App/src/Aspose.App.API/App_Data/XmlDocument.xml
-*.user
-*.user
 packages
 idea
+/.idea

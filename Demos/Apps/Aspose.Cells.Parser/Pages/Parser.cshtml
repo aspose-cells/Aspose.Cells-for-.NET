@@ -1,0 +1,20 @@
+@model Aspose.Cells.Common.Models.ViewModel
+
+@{
+    Layout = "~/Pages/Shared/Layout.cshtml";
+}
+@{
+    ViewBag.Title = "Parser";
+}
+
+@await Html.PartialAsync("Main")
+@await Html.PartialAsync("FooterProduct")
+
+@section scripts {
+    <script type="text/javascript">
+        const o = @Html.Raw(Model.JSOptions);
+        $.extend(o, {
+            Method: requestParser
+        });
+    </script>
+}

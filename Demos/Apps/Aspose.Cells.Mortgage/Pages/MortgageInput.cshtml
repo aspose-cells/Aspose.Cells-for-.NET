@@ -1,0 +1,59 @@
+@model Aspose.Cells.Common.Models.ViewModel
+
+<div class="content-left col-md-12">
+    <div class="calculate-data singular col-md-6">
+        <label class="mort-label">Home Value:</label>
+        <input type="number" id="homeValue" class="mort-input-text" placeholder="300000">
+        <span class="mort-span">$</span>
+    </div>
+    <div class="calculate-data singular col-md-6">
+        <label class="mort-label">Down payment:</label>
+        <input type="number" id="downPayment" class="mort-input-text" placeholder="60000">
+        <span class="mort-span"><input type="radio" name="downPaymentType" checked value="amount">$ <input type="radio" name="downPaymentType" value="percent">%</span>
+    </div>
+    <div class="calculate-data col-md-6">
+        <label class="mort-label">Loan Amount:</label> <input type="number" readonly id="loanAmount" class="mort-input-text" placeholder="240000">
+        <span class="mort-span">$</span>
+    </div>
+    <div class="calculate-data col-md-6">
+        <label class="mort-label">Interest Rate:</label> <input type="number" id="interestRate" class="mort-input-text" placeholder="3.8">
+        <span class="mort-span">%</span>
+    </div>
+    <div class="calculate-data singular col-md-6">
+        <label class="mort-label">Loan Term:</label> <input type="number" id="loanTerm" class="mort-input-text" placeholder="30">
+        <span class="mort-span">years</span>
+    </div>
+    <div class="calculate-data singular col-md-6">
+        <label class="mort-label">Start Month:</label> <input type="number" id="year" class="mort-input-text">
+        <span class="mort-span">
+            <select id="month" class="select-month">
+                <option value="">Jan</option>
+                <option value="">Feb</option>
+                <option value="">Mar</option>
+                <option value="">Apr</option>
+                <option value="">May</option>
+                <option value="">Jun</option>
+                <option value="">Jul</option>
+                <option value="">Aug</option>
+                <option value="">Sep</option>
+                <option value="">Oct</option>
+                <option value="">Nov</option>
+                <option value="">Dec</option>
+            </select>
+        </span>
+    </div>
+    <div class="calculate-data col-md-6">
+        <label class="mort-label">Property Tax:</label> <input type="number" id="propertyTax" class="mort-input-text" placeholder="2400">
+        <span class="mort-span">$/yr</span>
+    </div>
+    <div class="calculate-data col-md-6">
+        <label class="mort-label">Home Ins:</label> <input type="number" id="homeIns" class="mort-input-text" placeholder="1000">
+        <span class="mort-span">$/yr</span>
+    </div>
+    <div class="calculate-data singular col-md-6" style="border-bottom: 1px solid #c7e3ec;">
+        <label class="mort-label">Monthly HOA:</label> <input type="number" id="monthlyHOA" class="mort-input-text" placeholder="0">
+        <span class="mort-span">$</span>
+    </div>
+    <div class="calculate-data singular col-md-6" style="border-bottom: 1px solid #c7e3ec;">
+    </div>
+</div>
