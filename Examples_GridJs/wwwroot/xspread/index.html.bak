@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>x-spreadsheet</title>
+    <link rel="stylesheet" href="./xspreadsheet.css">
+ 
+    <script src="./xspreadsheet.js"></script>
+    <script type="text/javascript" src="jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="jszip.min.js"></script>
+  
+	
+ 
+</head>
+ 
+<body>
+<span id="status"></span> <button onclick="save()">save</button>
+<div id="gridjs-demo"></div>
+<!-- <button onclick="loadmore()">next</button> -->
+<!-- <button onclick="print()">print</button> -->
+
+ 
+ 
+<script>
+
+function getQueryVariable(variable)
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+}
+    //import Spreadsheet from "x-data-spreadsheet";
+    var xs;
+    var rdata;
+    var uniqueid;
+    var local = 'http://localhost:24262';
+    var imagediv = "imagedive";
+	var basiczorder=5678;
+    let sheets = [];
+
+    $(function () {
+
+        $.ajax({
+
+            url: local + '/GridJs2/DetailFileJson?filename='+getQueryVariable("file"),
+
+            type: 'GET',
+
+            dataType: 'text',
+
+            timeout: 59000,
+
+            cache: false,
+
+            beforeSend: LoadFunction,  
+
+            error: erryFunction,  
+
+            success: succFunction 
+
+        })
+
+        function LoadFunction() {
+
+            $("#status").html('loading...');
+
+        }
+
+        function erryFunction() {
+
+            alert("error");
+
+        }
+
+        function succFunction(tt) {
+            $("#status").html('success');
+
+           
+            var exceldata = tt;
+            //.replace(/\n/g,"\\\\n");
+            var jsondata = JSON.parse(exceldata);
+			if(jsondata.Error) 
+			{alert(jsondata.Error);
+			}
+			else{
+            load(jsondata);
+			}
+        }
+    });
+
+   
+
+   
+
+    function load(jsondata) {
+        //record uniqueid
+        uniqueid = jsondata.uniqueid;
+        sheets = jsondata.data;
+        var imageurl = local + "/GridJs2/ImageUrl";
+        // x.spreadsheet.locale('zh-cn');
+        xs = x_spreadsheet('#gridjs-demo', {
+			updateMode:'server',
+			updateUrl:local + '/GridJs2/UpdateCell',
+			showToolbar: true,
+            //showGrid: true,
+            mode: 'edit',
+            showContextmenu: true
+        }).loadData(sheets).change((cdata) => {
+                console.log(cdata);
+                console.log(xs.validate());
+            }
+        ).updateServerError((xhr, textStatus, errorThrown) => {
+				const s=("error---")+("code："+xhr.status)+("state:"+xhr.readyState)+("msg:"+xhr.statusText )+("text："+xhr.responseText )+("request status："+textStatus)+(errorThrown); 　　　　　　　　
+　　　　　　　　 console.log(s);
+               
+            }).updateCellError((msg) => {
+				 　　　　　　　
+　　　　　　　　 console.error(msg);
+                // xs.sheet.data.restoreLastCell();
+				alert(msg);
+               
+            });
+
+		if(!jsondata.showtabs)
+		{
+			xs.bottombar.hide();
+		}
+
+		 xs.on('cell-selected', (cell, ri, ci) => {
+          console.log('cell:', cell, ', ri:', ri, ', ci:', ci);
+        }).on('cell-edited', (text, ri, ci) => {
+          console.log('text:', text, ', ri: ', ri, ', ci:', ci);
+        });
+
+        $(".x-spreadsheet-overlayer-content").append('<div id="' + imagediv + '" style="position:relative" /> ');
+		let myimagediv= $("#" + imagediv);
+		   
+		    xs.uniqueid=uniqueid;
+            xs.setImageInfo(myimagediv,imageurl,basiczorder);
+          //  xs.sheet.data.loadImages();
+		//	xs.sheet.data.loadShapes();
+			//xs.sheet.data.loadConditionImage();
+        //need to extend swapfunction
+        var oldswapfunc = xs.bottombar.swapFunc;
+        xs.bottombar.swapFunc = function (id) {
+			 
+			//xs.sheet.data.settings.showGrid=sheets[id].showGrid;
+            oldswapfunc(id);
+			if(xs.sheet.data.autoFilter.filters.length>0)
+			{
+				xs.sheet.data.resetAutoFilter();
+                xs.sheet.data.deleteExceptRowHideForAutoFilter();
+			 }
+          
+		 
+			
+
+        }
+        xs.setActiveSheetByName(jsondata.actname).setActiveCell(jsondata.actrow,jsondata.actcol);
+ 
+    }
+
+   
+ 
+    function save() {
+		if(!xs.buffer.isFinish())
+		{
+			alert("updating is inprogress,please try later");
+			return;
+		}
+		let datas=xs.datas;
+		delete datas.history;
+        delete datas.search;
+		delete datas.images;
+		delete datas.shapes;
+ 
+        var jsondata = {
+			"sheetname":xs.sheet.data.name,
+			"actrow":xs.sheet.data.selector.ri,
+            "actcol":xs.sheet.data.selector.ci,
+            "datas": xs.getUpdateDatas()
+        };
+	 
+ const data = {
+            "p": JSON.stringify(jsondata),
+            "uid": uniqueid
+        };
+
+  
+  $.ajax({
+            url: local + '/GridJs2/Download',
+            type: "post",
+           
+            data: data,
+            success: function (datar, stutas, xhr) {
+				  console.log(datar);
+				 if(datar.startsWith("{")){
+					var ret = JSON.parse(datar);
+					if(ret.err)
+					{
+						alert(ret.err);
+					}
+				}
+                else{
+               // window.location = local + '/GridJs2/Download2/' + datar;
+			    window.location =datar;
+				}
+            }
+        });
+		 
+      
+    }
+ 
+   
+
+   
+
+   
+</script>
+
+</body>
+</html>
