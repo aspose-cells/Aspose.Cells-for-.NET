@@ -26,7 +26,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.RenderingAndPrinting
 
             // Set image or print options
             Aspose.Cells.Rendering.ImageOrPrintOptions opts = new Aspose.Cells.Rendering.ImageOrPrintOptions();
-            opts.SaveFormat = SaveFormat.SVG;
+            opts.SaveFormat = SaveFormat.Svg;
 
             // Save the chart to svg format
             chart.ToImage(outputDir + "outputConvertChartToSvgImage.svg", opts);

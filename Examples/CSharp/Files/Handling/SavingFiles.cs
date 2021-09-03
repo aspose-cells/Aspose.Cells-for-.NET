@@ -21,25 +21,25 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             workbook.Save(dataDir + "book1.out.xls");
 
             // OR
-            workbook.Save(dataDir + "book1.out.xls", new XlsSaveOptions(SaveFormat.Excel97To2003));
+            workbook.Save(dataDir + "book1.out.xls", SaveFormat.Excel97To2003);
 
             // Save in Excel2007 xlsx format
-            workbook.Save(dataDir + "book1.out.xlsx", SaveFormat.Xlsx);
+            workbook.Save(dataDir + "book1.out.xlsx");
 
             // Save in Excel2007 xlsb format
-            workbook.Save(dataDir + "book1.out.xlsb", SaveFormat.Xlsb);
+            workbook.Save(dataDir + "book1.out.xlsb");
 
             // Save in ODS format
-            workbook.Save(dataDir + "book1.out.ods", SaveFormat.ODS);
+            workbook.Save(dataDir + "book1.out.ods");
 
             // Save in Pdf format
-            workbook.Save(dataDir + "book1.out.pdf", SaveFormat.Pdf);
+            workbook.Save(dataDir + "book1.out.pdf");
 
             // Save in Html format
-            workbook.Save(dataDir + "book1.out.html", SaveFormat.Html);
+            workbook.Save(dataDir + "book1.out.html");
 
             // Save in SpreadsheetML format
-            workbook.Save(dataDir + "book1.out.xml", SaveFormat.SpreadsheetML); 
+            workbook.Save(dataDir + "book1.out.xml"); 
             // ExEnd:1
         }
     }

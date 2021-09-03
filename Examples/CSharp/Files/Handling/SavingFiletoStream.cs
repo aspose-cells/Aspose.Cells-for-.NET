@@ -15,11 +15,15 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             string filePath = dataDir + "Book1.xlsx";
 
             // Load your source workbook
-            Workbook workbook = new Workbook(filePath);
-            FileStream stream = new FileStream(dataDir + "output.xlsx", FileMode.CreateNew);
-            workbook.Save(stream, new XlsSaveOptions(SaveFormat.Xlsx));
-            stream.Close();
+            using (FileStream stream = new FileStream(dataDir + "output.xlsx", FileMode.CreateNew))
+            {
+                Workbook workbook = new Workbook(filePath);
 
+                workbook.Save(stream, SaveFormat.Xlsx);
+                stream.Close();
+
+
+            }
             // ExEnd:1
 
 

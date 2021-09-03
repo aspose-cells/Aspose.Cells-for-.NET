@@ -18,28 +18,28 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             // Load your source workbook
             Workbook workbook = new Workbook(filePath);
 
-            // Save in Excel 97 – 2003 format
+            // Save in Excel 97 ?2003 format
             workbook.Save(dataDir + ".output.xls");
             // OR
-            workbook.Save(dataDir + ".output..xls", new XlsSaveOptions(SaveFormat.Excel97To2003));
+            workbook.Save(dataDir + ".output..xls", SaveFormat.Excel97To2003);
 
             // Save in Excel2007 xlsx format
-            workbook.Save(dataDir + ".output.xlsx", SaveFormat.Xlsx);
+            workbook.Save(dataDir + ".output.xlsx");
 
             // Save in Excel2007 xlsb format
-            workbook.Save(dataDir + ".output.xlsb", SaveFormat.Xlsb);
+            workbook.Save(dataDir + ".output.xlsb");
 
             // Save in ODS format
-            workbook.Save(dataDir + ".output.ods", SaveFormat.ODS);
+            workbook.Save(dataDir + ".output.ods");
 
             // Save in Pdf format
-            workbook.Save(dataDir + ".output.pdf", SaveFormat.Pdf);
+            workbook.Save(dataDir + ".output.pdf");
 
             // Save in Html format
-            workbook.Save(dataDir + ".output.html", SaveFormat.Html);
+            workbook.Save(dataDir + ".output.html");
 
             // Save in SpreadsheetML format
-            workbook.Save(dataDir + ".output.xml", SaveFormat.SpreadsheetML);
+            workbook.Save(dataDir + ".output.xml");
 
             // ExEnd:1
 

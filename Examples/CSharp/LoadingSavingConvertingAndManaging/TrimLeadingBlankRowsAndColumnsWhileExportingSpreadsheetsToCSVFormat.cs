@@ -18,7 +18,7 @@ namespace Aspose.Cells.Examples.CSharp.LoadingSavingConvertingAndManaging
             Workbook wb = new Workbook(dataDir + "sampleTrimBlankColumns.xlsx");
 
             //Save in csv format
-            wb.Save(dataDir + "outputWithoutTrimBlankColumns.csv", SaveFormat.CSV);
+            wb.Save(dataDir + "outputWithoutTrimBlankColumns.csv");
 
             //Now save again with TrimLeadingBlankRowAndColumn as true
             TxtSaveOptions opts = new TxtSaveOptions();

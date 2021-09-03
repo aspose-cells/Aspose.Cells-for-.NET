@@ -13,11 +13,10 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             //Source directory
             string sourceDir = RunExamples.Get_SourceDirectory();
 
-            // Instantiate LoadOptions specified by the LoadFormat.
-            LoadOptions loadOptions = new LoadOptions(LoadFormat.SXC);
+          
 
             // Create a Workbook object and opening the file from its path
-            Workbook workbook = new Workbook(sourceDir + "SampleSXC.sxc", loadOptions);
+            Workbook workbook = new Workbook(sourceDir + "SampleSXC.sxc");
 
             // Using the Sheet 1 in Workbook
             Worksheet worksheet = workbook.Worksheets[0];

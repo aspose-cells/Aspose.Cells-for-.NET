@@ -68,7 +68,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             // 6.
             // Opening CSV Files
             // Instantiate LoadOptions specified by the LoadFormat.
-            LoadOptions loadOptions4 = new LoadOptions(LoadFormat.CSV);
+            LoadOptions loadOptions4 = new LoadOptions(LoadFormat.Csv);
 
             // Create a Workbook object and opening the file from its path
             Workbook wbCSV = new Workbook(dataDir + "Book_CSV.csv", loadOptions4);

@@ -21,7 +21,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             workbook.Save(dataDir + "output.xls");
 
             // OR
-            workbook.Save(dataDir + "output.xls", new XlsSaveOptions(SaveFormat.Excel97To2003));
+            workbook.Save(dataDir + "output.xls", SaveFormat.Excel97To2003);
             // ExEnd:1
            }
          }

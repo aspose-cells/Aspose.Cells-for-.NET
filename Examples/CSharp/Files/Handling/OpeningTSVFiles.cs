@@ -14,7 +14,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             string sourceDir = RunExamples.Get_SourceDirectory();
 
             // Instantiate LoadOptions specified by the LoadFormat.
-            LoadOptions loadOptions = new LoadOptions(LoadFormat.TSV);
+            LoadOptions loadOptions = new LoadOptions(LoadFormat.Tsv);
 
             // Create a Workbook object and opening the file from its path
             Workbook workbook = new Workbook(sourceDir + "SampleTSVFile.tsv", loadOptions);

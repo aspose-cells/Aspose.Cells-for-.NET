@@ -41,7 +41,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
         public static void Main()
         {
             // Initialize Text File's LoadFormat
-            LoadFormat oLoadFormat = LoadFormat.CSV;
+            LoadFormat oLoadFormat = LoadFormat.Csv;
 
             // Initialize Text File's Load options
             TxtLoadOptions oTxtLoadOptions = new TxtLoadOptions(oLoadFormat);

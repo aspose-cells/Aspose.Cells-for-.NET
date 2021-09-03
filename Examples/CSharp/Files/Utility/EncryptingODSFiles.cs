@@ -16,12 +16,11 @@ namespace Aspose.Cells.Examples.CSharp.Files.Utility
             //Encrypt an ODS file
             //Encrypted ODS file can only be opened in OpenOffice as Excel does not support encrypted ODS files
 
-            //Initialize loading options
-            LoadOptions loadOptions = new LoadOptions(LoadFormat.ODS);
+        
 
             // Instantiate a Workbook object.
             // Open an ODS file.
-            Workbook workbook = new Workbook(dataDir + "Book1.ods", loadOptions);
+            Workbook workbook = new Workbook(dataDir + "Book1.ods");
 
             //Encryption options are not effective for ODS files
 
@@ -35,6 +34,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Utility
             //Decrypted ODS file can be opened both in Excel and OpenOffice          
 
             // Set original password
+            OdsLoadOptions loadOptions = new OdsLoadOptions();
             loadOptions.Password = "1234";
 
             // Load the encrypted ODS file with the appropriate load options

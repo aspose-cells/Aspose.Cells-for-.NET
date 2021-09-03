@@ -36,7 +36,7 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets
             background.Color = Color.Azure;
             background.Type = OdsPageBackgroundType.Color;
 
-            workbook.Save(outputDir + "ColoredBackground.ods", SaveFormat.ODS);
+            workbook.Save(outputDir + "ColoredBackground.ods");
             // ExEnd:1
 
             Console.WriteLine("SetODSColoredBackground executed successfully.");

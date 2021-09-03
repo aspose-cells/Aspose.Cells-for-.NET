@@ -18,7 +18,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             Workbook book = new Workbook(sourceDir + "sampleFitAllWorksheetColumns.xlsx");
             
             // Create and initialize an instance of PdfSaveOptions
-            PdfSaveOptions saveOptions = new PdfSaveOptions(SaveFormat.Pdf);
+            PdfSaveOptions saveOptions = new PdfSaveOptions();
             
             // Set AllColumnsInOnePagePerSheet to true
             saveOptions.AllColumnsInOnePagePerSheet = true;

@@ -16,7 +16,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Utility
             Workbook workbook = new Workbook(inputPath);
 
             // Create an instance of PdfSaveOptions and pass SaveFormat to the constructor
-            PdfSaveOptions options = new PdfSaveOptions(SaveFormat.Pdf);
+            PdfSaveOptions options = new PdfSaveOptions();
             options.CreatedTime = DateTime.Now;
 
             // Save the workbook to PDF format while passing the object of PdfSaveOptions

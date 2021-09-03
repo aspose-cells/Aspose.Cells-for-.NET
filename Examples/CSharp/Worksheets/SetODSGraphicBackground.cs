@@ -39,7 +39,7 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets
             background.GraphicData = File.ReadAllBytes(sourceDir + "background.jpg");
             background.GraphicType = OdsPageBackgroundGraphicType.Area;
 
-            workbook.Save(outputDir + "GraphicBackground.ods", SaveFormat.ODS);
+            workbook.Save(outputDir + "GraphicBackground.ods");
             // ExEnd:1
 
             Console.WriteLine("SetODSGraphicBackground executed successfully.");

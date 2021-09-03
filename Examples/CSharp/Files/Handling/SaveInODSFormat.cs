@@ -16,7 +16,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             Workbook workbook = new Workbook();
 
  // Save in ODS format
-            workbook.Save(dataDir + "output.ods", SaveFormat.ODS);
+            workbook.Save(dataDir + "output.ods");
             // ExEnd:1
             }
         }

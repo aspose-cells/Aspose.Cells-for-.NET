@@ -23,7 +23,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             Workbook workbook = new Workbook(inputPath);
 
             // Create an instance of PdfSaveOptions and pass SaveFormat to the constructor
-            Aspose.Cells.PdfSaveOptions pdfSaveOpt = new Aspose.Cells.PdfSaveOptions(Aspose.Cells.SaveFormat.Pdf);
+            Aspose.Cells.PdfSaveOptions pdfSaveOpt = new Aspose.Cells.PdfSaveOptions();
 
             // Create an instance of PdfSecurityOptions
             PdfSecurityOptions securityOptions = new PdfSecurityOptions();

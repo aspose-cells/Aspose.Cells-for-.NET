@@ -21,7 +21,6 @@ namespace Aspose.Cells.Examples.CSharp.Data
 
             // Print range address and cell count.
             Console.WriteLine("Range Address: " + rng.Address);
-            Console.WriteLine("Cell Count: " + rng.CellCount);
 
             // Formatting console output.
             Console.WriteLine("----------------------");

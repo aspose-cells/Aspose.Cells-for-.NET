@@ -20,7 +20,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Utility
 
             // Convert each worksheet into svg format in a single page.
             ImageOrPrintOptions imgOptions = new ImageOrPrintOptions();
-            imgOptions.SaveFormat = SaveFormat.SVG;
+            imgOptions.SaveFormat = SaveFormat.Svg;
             imgOptions.OnePagePerSheet = true;
 
             // Convert each worksheet into svg format

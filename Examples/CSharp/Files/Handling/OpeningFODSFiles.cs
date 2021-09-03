@@ -13,11 +13,9 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             //Source directory
             string sourceDir = RunExamples.Get_SourceDirectory();
 
-            // Instantiate LoadOptions specified by the LoadFormat.
-            LoadOptions loadOptions = new LoadOptions(LoadFormat.FODS);
 
             // Create a Workbook object and opening the file from its path
-            Workbook workbook = new Workbook(sourceDir + "SampleFods.fods", loadOptions);
+            Workbook workbook = new Workbook(sourceDir + "SampleFods.fods");
 
             Console.WriteLine("FODS file opened successfully!");
 

@@ -22,7 +22,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Utility
             Aspose.Cells.Rendering.ImageOrPrintOptions options = new Aspose.Cells.Rendering.ImageOrPrintOptions();
             
             // Set the Format
-            options.SaveFormat = SaveFormat.XPS;
+            options.SaveFormat = SaveFormat.Xps;
             
             // Render the sheet with respect to specified printing options
             Aspose.Cells.Rendering.SheetRender sr = new Aspose.Cells.Rendering.SheetRender(sheet, options);

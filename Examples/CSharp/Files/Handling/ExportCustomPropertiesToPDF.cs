@@ -20,7 +20,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             Workbook workbook = new Workbook(sourceDir + "sampleWithCustProps.xlsx");
 
             // Create an instance of PdfSaveOptions and pass SaveFormat to the constructor
-            Aspose.Cells.PdfSaveOptions pdfSaveOpt = new Aspose.Cells.PdfSaveOptions(Aspose.Cells.SaveFormat.Pdf);
+            Aspose.Cells.PdfSaveOptions pdfSaveOpt = new Aspose.Cells.PdfSaveOptions();
 
             // Set CustomPropertiesExport property to PdfCustomPropertiesExport.Standard
             pdfSaveOpt.CustomPropertiesExport = Aspose.Cells.Rendering.PdfCustomPropertiesExport.Standard;
