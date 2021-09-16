@@ -857,7 +857,12 @@ form fieldset select {
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   .x-spreadsheet-toolbar {
-    display: none;
+    height: 40px;
+    padding: 0 12px;
+    text-align: left;
+    background: #f5f6f7;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 .x-spreadsheet-icon {
@@ -1129,5 +1134,17 @@ form fieldset select {
   content: attr(placeholder);
   position: initial;
   color: darkgray;
+}
+dialog {
+  left: 190px;
+  width: 300px;
+  border: 1px solid darkgray;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0;
+  background-color: #f9f9f9;
+}
+dialog p {
+  margin: 0 0 0 5px;
 }
 

@@ -1,14 +1,15 @@
 using System;
 using Aspose.Cells.GridWeb.Data;
 using System.Collections.Specialized;
+using Aspose.Cells.GridWeb;
 
 public partial class demos_Common_DataValidation : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        Aspose.Cells.License lic = new Aspose.Cells.License();
+        License lic = new  License();
         //lic.SetLicense(@"C:\CellLicense\Aspose.Total.NET.lic");
-        lic.SetLicense(@"D:\DotNet Projects\Aspose\2019\Aspose.Total.NET.lic");
+        //lic.SetLicense(@"D:\DotNet Projects\Aspose\2019\Aspose.Total.NET.lic");
 
         if (!IsPostBack && !GridWeb1.IsPostBack)
         {
