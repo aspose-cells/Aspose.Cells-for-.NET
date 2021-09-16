@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Aspose.Cells.GridDesktop;
+using Aspose.Cells.GridDesktop.Data;
 
 namespace GridDesktop.Examples.WorkingWithCells
 {

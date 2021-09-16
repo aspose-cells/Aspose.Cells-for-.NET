@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using Aspose.Cells.GridDesktop;
+using Aspose.Cells.GridDesktop.Data;
 
 namespace GridDesktop.Examples.WorkingWithCells
 {
@@ -53,7 +54,7 @@ namespace GridDesktop.Examples.WorkingWithCells
             Aspose.Cells.GridDesktop.Worksheet sheet = gridDesktop1.Worksheets[0];
 
             // Accessing "B2" cell and setting its value
-            Aspose.Cells.GridDesktop.GridCell cell = sheet.Cells["B2"];
+            GridCell cell = sheet.Cells["B2"];
             cell.Value = "None";
 
             // Accessing "D4" cell and setting its value & column width
@@ -129,7 +130,7 @@ namespace GridDesktop.Examples.WorkingWithCells
             System.Drawing.Font font = new System.Drawing.Font("MS Serif", 9f, FontStyle.Bold);
 
             // Accessing and adding values to cells
-            Aspose.Cells.GridDesktop.GridCell cell = sheet.Cells["B2"];
+            GridCell cell = sheet.Cells["B2"];
             cell.Value = "General";
             cell.SetFont(font);
             cell = sheet.Cells["C2"];
