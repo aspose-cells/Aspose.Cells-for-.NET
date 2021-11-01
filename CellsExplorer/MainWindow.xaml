@@ -1,0 +1,52 @@
+﻿<Window x:Class="CellsExplorer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Cells Explorer"
+        xmlns:src="clr-namespace:CellsExplorer"
+        Height="600" Width="800">
+
+   
+    <DockPanel LastChildFill="True" Grid.Row="0">
+        <Menu   Height="25"  Width="Auto" Name="menuTop" DockPanel.Dock="Top">
+            <MenuItem Header="File" HorizontalAlignment="Left">
+                <MenuItem Header="Open" Click="MenuItem_Open"/>
+                <MenuItem Header="Exit" Click="MenuItem_Exit"/>
+            </MenuItem>
+            <MenuItem Header="View" HorizontalAlignment="Left">
+                <MenuItem Header="Expand All" Click="MenuItem_ExpandAll"/>
+                <MenuItem Header="Collapse All" Click="MenuItem_CollapseAll"/>
+            </MenuItem>
+        </Menu>
+        
+        <Separator/>
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30*"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="70*"/>
+            </Grid.ColumnDefinitions>
+
+            <TreeView Name="leftTree" SelectedItemChanged="leftTree_SelectedItemChanged">                
+                <TreeView.Resources>
+                    <HierarchicalDataTemplate  DataType="{x:Type src:CellsNode}"
+                                               ItemsSource="{Binding ChildList,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+                        <StackPanel Orientation="Horizontal" Margin="0,2,0,2">
+                            <TextBlock Text="{Binding NodeName,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"
+                                       ToolTip="{Binding NodeName,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
+                        </StackPanel>
+                    </HierarchicalDataTemplate>
+                </TreeView.Resources>
+            </TreeView>            
+
+            <GridSplitter Grid.Column="1" Width="2" HorizontalAlignment="Center" VerticalAlignment="Stretch"/>
+
+            <ScrollViewer Grid.Column="2" VerticalScrollBarVisibility="Auto">
+                <TextBox  Name="rightTextBlock" IsReadOnly="True" TextWrapping="Wrap"  Margin="0,0,0,0">
+                </TextBox>
+            </ScrollViewer>
+                
+        </Grid>
+    </DockPanel>
+
+</Window>
