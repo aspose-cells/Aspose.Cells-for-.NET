@@ -66,7 +66,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
 
 
             // 6.
-            // Opening CSV Files
+            // Opening csv Files
             // Instantiate LoadOptions specified by the LoadFormat.
             LoadOptions loadOptions4 = new LoadOptions(LoadFormat.Csv);
 

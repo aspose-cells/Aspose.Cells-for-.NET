@@ -29,7 +29,7 @@ namespace Aspose.Cells.Examples.CSharp.Fonts
             SheetRender sr = new SheetRender(workbook.Worksheets[0], imgOpt);
             sr.ToImage(0, outputDir + "out1_imagePNG.png");
 
-            //Rendering to TIFF file format while setting the CheckWorkbookDefaultFont attribue to false.
+            //Rendering to tiff file format while setting the CheckWorkbookDefaultFont attribue to false.
             //So, "Times New Roman" font would be used for any missing (not installed) font in the workbook.
             imgOpt.ImageType = Drawing.ImageType.Tiff;
             WorkbookRender wr = new WorkbookRender(workbook, imgOpt);

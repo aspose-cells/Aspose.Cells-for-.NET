@@ -19,11 +19,11 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManagingWorkbooksWorksheets
             opts.Separator = ',';
             opts.HasFormula = true;
 
-            // Load your CSV file with formulas in a Workbook object
+            // Load your csv file with formulas in a Workbook object
             Workbook workbook = new Workbook(sourceDir + "sampleImportCSVWithFormulas.csv", opts);
 
-            // You can also import your CSV file like this
-            // The code below is importing CSV file starting from cell D4
+            // You can also import your csv file like this
+            // The code below is importing csv file starting from cell D4
             Worksheet worksheet = workbook.Worksheets[0];
             worksheet.Cells.ImportCSV(sourceDir + "sampleImportCSVWithFormulas.csv", opts, 3, 3);
 

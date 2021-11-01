@@ -58,7 +58,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             // Set the preferred parsers
             oTxtLoadOptions.PreferredParsers = new ICustomParser[] { new TextParser(), new DateParser() };
 
-            // Initialize the workbook object by passing CSV file and text load options
+            // Initialize the workbook object by passing csv file and text load options
             Workbook oExcelWorkBook = new Aspose.Cells.Workbook(sourceDir + "samplePreferredParser.csv", oTxtLoadOptions);
 
             // Get the first cell

@@ -13,7 +13,7 @@ namespace Aspose.Cells.Examples.CSharp.LoadingSavingConvertingAndManaging
             string sourceDir = RunExamples.Get_SourceDirectory();
 
             LoadOptions loadOptions = new LoadOptions(LoadFormat.Csv);
-            // Load CSV file
+            // Load csv file
             Workbook workbook = new Workbook(sourceDir + "SampleCsv.csv", loadOptions);
             Cell lastCell = workbook.Worksheets[0].Cells.LastCell;
 

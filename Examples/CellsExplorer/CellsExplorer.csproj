@@ -40,9 +40,9 @@
     <ApplicationIcon>Logo icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=21.10.2.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Aspose.Cells, Version=21.10.2.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Users\John.He\Desktop\Aspose.Cells.dll</HintPath>
+      <HintPath>..\lib\Aspose.Cells.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
