@@ -1,0 +1,70 @@
+GridWeb .net5 develop guide:
+0. add package reference in project file
+    
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.7.0" />
+    <PackageReference Include="Aspose.Cells.GridWeb" Version="21.11.0" />
+    
+
+1. _viewimport.cs
+@using Aspose.Cells.GridWeb
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, Aspose.Cells.GridWeb
+
+2. controller:
+put the below code in your desired controller to load gridweb view:
+                
+            GridWeb.SessionStorePath = @"E:\storage\tmp\";
+            GridWeb mw = new GridWeb();
+            mw.ID = "gid";
+
+            mw.SetSession(HttpContext.Session);
+            //mw.Request = HttpContext.Request;
+
+            mw.ImageFilePath = "/js/acw_client/";
+
+            mw.ImportExcelFile("C:\\Users\\peter\\Desktop\\ctest.xlsx");
+            mw.Width = Unit.Pixel(600);
+
+            return View(mw);
+
+
+3. view 
+index1.cshtml:
+add:
+<script src="~/js/acw_client/acwmain.js" asp-append-version="true"></script>
+<script src="~/js/acw_client/lang_en.js" asp-append-version="true"></script>
+<link href="~/js/acw_client/menu.css" rel="stylesheet" type="text/css">
+@model GridWeb
+<GridWebDiv mw=Model   ></GridWebDiv>
+ 
+4. add session support and GridScheduedService, (GridScheduedService will delete temporary files two days ago in the GridWeb.SessionStorePath )
+ startup.cs:
+ in ConfigureServices method£º
+ ....
+         services.AddSession(options =>
+            {
+                // Set a short timeout for easy testing.
+                options.IdleTimeout = TimeSpan.FromSeconds(3600);
+                options.Cookie.HttpOnly = true;
+                // Make the session cookie essential
+                options.Cookie.IsEssential = true;
+            });
+         
+            services.AddSingleton<Microsoft.Extensions.Hosting.IHostedService, GridScheduedService>();
+
+in Configure method
+....
+app.UseSession();
+ 
+
+5. put latest acw_client in directory: wwwroot/js
+
+6. add   acw route map in your controller,which can provide all the  operations for general edit action.
+   check the example in GridController.cs
+        [HttpGet("acw/{type}/{id}")]
+        [HttpPost("acw/{type}/{id}")]
+        public IActionResult Operation(string type, string id)
+        {
+            return Aspose.Cells.GridWeb.AcwController.DoAcwAction(this, type, id);
+        }
