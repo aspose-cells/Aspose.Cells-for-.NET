@@ -93,7 +93,7 @@ namespace Aspose.Cells.Examples.CSharp.PivotTables
 
             pivotTable.CalculateData();
 
-            // Saving the ODS file
+            // Saving the ods file
             workbook.Save(outputDir + "PivotTableSaveInODS_out.ods");
             // ExEnd:1
 

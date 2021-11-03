@@ -13,7 +13,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
- // Instantiate LoadOptions specified by the LoadFormat.
+            // Instantiate LoadOptions specified by the LoadFormat.
             LoadOptions loadOptions4 = new LoadOptions(LoadFormat.Csv);
 
             // Create a Workbook object and opening the file from its path

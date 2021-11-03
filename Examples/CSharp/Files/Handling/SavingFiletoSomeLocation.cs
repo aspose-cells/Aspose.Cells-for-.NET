@@ -29,7 +29,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Handling
             // Save in Excel2007 xlsb format
             workbook.Save(dataDir + ".output.xlsb");
 
-            // Save in ODS format
+            // Save in ods format
             workbook.Save(dataDir + ".output.ods");
 
             // Save in Pdf format

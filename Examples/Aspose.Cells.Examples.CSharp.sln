@@ -1,20 +1,92 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp", "CSharp\CSharp.csproj", "{B30E8542-08BA-45AB-8C96-A438C17E26C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CellsExplorer", "CellsExplorer\CellsExplorer.csproj", "{D2B52741-CA1D-4599-82D2-038C8437158C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Net35|Any CPU = Net35|Any CPU
+		Net35|Mixed Platforms = Net35|Mixed Platforms
+		Net35|x86 = Net35|x86
+		Net40|Any CPU = Net40|Any CPU
+		Net40|Mixed Platforms = Net40|Mixed Platforms
+		Net40|x86 = Net40|x86
+		Net45|Any CPU = Net45|Any CPU
+		Net45|Mixed Platforms = Net45|Mixed Platforms
+		Net45|x86 = Net45|x86
+		NetClient|Any CPU = NetClient|Any CPU
+		NetClient|Mixed Platforms = NetClient|Mixed Platforms
+		NetClient|x86 = NetClient|x86
 		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Net35|Any CPU.ActiveCfg = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Net35|Any CPU.Build.0 = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Net35|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Net35|Mixed Platforms.Build.0 = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Net35|x86.ActiveCfg = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Net40|Any CPU.ActiveCfg = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Net40|Any CPU.Build.0 = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Net40|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Net40|Mixed Platforms.Build.0 = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Net40|x86.ActiveCfg = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Net45|Any CPU.ActiveCfg = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Net45|Any CPU.Build.0 = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Net45|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Net45|Mixed Platforms.Build.0 = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Net45|x86.ActiveCfg = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.NetClient|Any CPU.ActiveCfg = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.NetClient|Any CPU.Build.0 = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.NetClient|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.NetClient|Mixed Platforms.Build.0 = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.NetClient|x86.ActiveCfg = Release|Any CPU
 		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B30E8542-08BA-45AB-8C96-A438C17E26C8}.Release|x86.ActiveCfg = Release|Any CPU
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Debug|x86.ActiveCfg = Debug|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Debug|x86.Build.0 = Debug|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Net35|Any CPU.ActiveCfg = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Net35|Mixed Platforms.ActiveCfg = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Net35|Mixed Platforms.Build.0 = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Net35|x86.ActiveCfg = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Net35|x86.Build.0 = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Net40|Any CPU.ActiveCfg = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Net40|Mixed Platforms.ActiveCfg = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Net40|Mixed Platforms.Build.0 = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Net40|x86.ActiveCfg = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Net40|x86.Build.0 = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Net45|Any CPU.ActiveCfg = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Net45|Mixed Platforms.ActiveCfg = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Net45|Mixed Platforms.Build.0 = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Net45|x86.ActiveCfg = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Net45|x86.Build.0 = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.NetClient|Any CPU.ActiveCfg = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.NetClient|Mixed Platforms.ActiveCfg = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.NetClient|Mixed Platforms.Build.0 = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.NetClient|x86.ActiveCfg = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.NetClient|x86.Build.0 = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Release|Any CPU.ActiveCfg = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Release|Mixed Platforms.Build.0 = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Release|x86.ActiveCfg = Release|x86
+		{D2B52741-CA1D-4599-82D2-038C8437158C}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -18,7 +18,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             TxtLoadOptions options = new TxtLoadOptions();
             options.IsMultiEncoded = true;
 
-            // Load the CSV file into Workbook
+            // Load the csv file into Workbook
             Workbook workbook = new Workbook(sourceDir + "sampleReadingCSVMultipleEncodings.csv", options);
 
             // Save it in XLSX format

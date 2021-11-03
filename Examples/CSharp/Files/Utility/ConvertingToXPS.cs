@@ -30,7 +30,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Utility
             // Save
             sr.ToImage(0, dataDir + "out_printingxps.out.xps");
 
-            // Export the whole workbook to XPS
+            // Export the whole workbook to xps
             Aspose.Cells.Rendering.WorkbookRender wr = new Aspose.Cells.Rendering.WorkbookRender(workbook, options);
             wr.ToImage(dataDir + "out_whole_printingxps.out.xps");
             // ExEnd:1

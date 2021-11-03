@@ -27,7 +27,7 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets
             ThreadedCommentAuthorCollection authors = workbook.Worksheets.ThreadedCommentAuthors;
 
             // Remove Author of first comment in A1
-            authors.RemoveAt(authors.IndexOf(author));
+            //authors.RemoveAt(authors.IndexOf(author));
 
             workbook.Save(outDir + "ThreadedCommentsSample_Out.xlsx");
             // ExEnd:1

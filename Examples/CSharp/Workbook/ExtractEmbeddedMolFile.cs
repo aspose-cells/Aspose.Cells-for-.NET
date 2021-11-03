@@ -19,7 +19,7 @@ namespace Aspose.Cells.Examples.CSharp._Workbook
             foreach (Worksheet sheet in workbook.Worksheets)
             {
                 OleObjectCollection oles = sheet.OleObjects;
-                foreach (var ole in oles)
+                foreach (OleObject ole in oles)
                 {
                     string fileName = outputDir + "OleObject" + index + ".mol ";
                     FileStream fs = File.Create(fileName);

@@ -13,16 +13,16 @@ namespace Aspose.Cells.Examples.CSharp.Files.Utility
             // The path to the documents directory.
             string dataDir = RunExamples.GetDataDir(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-            //Encrypt an ODS file
-            //Encrypted ODS file can only be opened in OpenOffice as Excel does not support encrypted ODS files
+            //Encrypt an ods file
+            //Encrypted ods file can only be opened in OpenOffice as Excel does not support encrypted ods files
 
         
 
             // Instantiate a Workbook object.
-            // Open an ODS file.
+            // Open an ods file.
             Workbook workbook = new Workbook(dataDir + "Book1.ods");
 
-            //Encryption options are not effective for ODS files
+            //Encryption options are not effective for ods files
 
             // Password protect the file.
             workbook.Settings.Password = "1234";
@@ -30,14 +30,14 @@ namespace Aspose.Cells.Examples.CSharp.Files.Utility
             // Save the excel file.
             workbook.Save(dataDir + "encryptedBook1.out.ods");
 
-            //Decrypt ODS file
-            //Decrypted ODS file can be opened both in Excel and OpenOffice          
+            //Decrypt ods file
+            //Decrypted ods file can be opened both in Excel and OpenOffice          
 
             // Set original password
             OdsLoadOptions loadOptions = new OdsLoadOptions();
             loadOptions.Password = "1234";
 
-            // Load the encrypted ODS file with the appropriate load options
+            // Load the encrypted ods file with the appropriate load options
             Workbook encrypted = new Workbook(dataDir + "encryptedBook1.out.ods", loadOptions);
 
             // Unprotect the workbook
@@ -46,7 +46,7 @@ namespace Aspose.Cells.Examples.CSharp.Files.Utility
             // Set the password to null
             encrypted.Settings.Password = null;
 
-            // Save the decrypted ODS file
+            // Save the decrypted ods file
             encrypted.Save(dataDir + "DencryptedBook1.out.ods");
 
             // ExEnd:1
