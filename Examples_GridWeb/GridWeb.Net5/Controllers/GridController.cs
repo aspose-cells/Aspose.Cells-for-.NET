@@ -28,12 +28,14 @@ namespace GridWeb.Demo.NET5._0.Controllers
         public IActionResult Index1()
         {
             //set a session store path
-            Aspose.Cells.GridWeb.GridWeb.SessionStorePath = @"E:\storage\tmp\";
+            Aspose.Cells.GridWeb.GridWeb.SessionStorePath = @"E:\storage\tmp\gridweb\filecache\";
             Aspose.Cells.GridWeb.GridWeb mw = new Aspose.Cells.GridWeb.GridWeb();
             mw.ID = "gid";
             mw.SetSession(HttpContext.Session);
             //set acw_client path
             mw.ResourceFilePath = "/js/acw_client/";
+			 //set the picture cache ,you need to create this directory
+            mw.PictureCachePath = @"E:\storage\tmp\gridweb\piccache";
             mw.EnableAsync = true;
             //load workbook
             String file = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\wb\test.xlsx");

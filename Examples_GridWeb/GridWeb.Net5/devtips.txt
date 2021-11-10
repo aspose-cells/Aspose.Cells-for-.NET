@@ -14,18 +14,22 @@ GridWeb .net5 develop guide:
 2. controller:
 put the below code in your desired controller to load gridweb view:
                 
-            GridWeb.SessionStorePath = @"E:\storage\tmp\";
+            Aspose.Cells.GridWeb.GridWeb.SessionStorePath = @"E:\storage\tmp\gridweb\filecache\";
             GridWeb mw = new GridWeb();
             mw.ID = "gid";
+			mw.SetSession(HttpContext.Session);
+            //set acw_client path
+            mw.ResourceFilePath = "/js/acw_client/";
+			 //set the picture cache ,you need to create this directory
+            mw.PictureCachePath = @"E:\storage\tmp\gridweb\piccache";
+            mw.EnableAsync = true;
+            //load workbook
+            String file = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\wb\test.xlsx");
+            mw.ImportExcelFile(file);
 
-            mw.SetSession(HttpContext.Session);
-            //mw.Request = HttpContext.Request;
-
-            mw.ImageFilePath = "/js/acw_client/";
-
-            mw.ImportExcelFile("C:\\Users\\peter\\Desktop\\ctest.xlsx");
-            mw.Width = Unit.Pixel(600);
-
+            //set width height
+            mw.Width = Unit.Pixel(800);
+            mw.Height = Unit.Pixel(500);
             return View(mw);
 
 
