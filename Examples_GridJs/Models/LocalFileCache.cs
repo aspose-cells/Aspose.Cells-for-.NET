@@ -13,8 +13,8 @@ namespace Aspose.Cells.GridJsDemo.Models
         /// <param name="s">the source stream </param>
         /// <param name="uid">he key id.</param>
         public override void SaveStream(Stream s, String uid)
-        {
-            String filepath = Path.Combine(Config.FileCacheDirectory + Path.DirectorySeparatorChar + "streamcache", uid.Replace('/', '.'));
+        {//make sure the directory is exist
+            String filepath = Path.Combine(Config.FileCacheDirectory , "streamcache", uid.Replace('/', '.'));
             using (FileStream fs = new FileStream(filepath, FileMode.Create))
             {
                 s.Position = 0;
@@ -29,8 +29,8 @@ namespace Aspose.Cells.GridJsDemo.Models
         /// <param name="uid">the key id</param>
         /// <returns>the stream from  the cache</returns>
         public override Stream LoadStream(String uid)
-        {
-            String filepath = Path.Combine(Config.FileCacheDirectory + Path.DirectorySeparatorChar + "streamcache", uid.Replace('/', '.'));
+        {//make sure the directory is exist
+            String filepath = Path.Combine(Config.FileCacheDirectory, "streamcache", uid.Replace('/', '.'));
             FileStream fs = new FileStream(filepath, FileMode.Open);
             return fs;
         }

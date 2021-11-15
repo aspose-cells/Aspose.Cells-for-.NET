@@ -90,8 +90,11 @@ namespace gridjs_demo_.netcore
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            //start here
+            //start here，setlicense
             License l = new License();
+			//set file cache directory
+            Config.FileCacheDirectory = TestConfig.TempDir;
+			//set cache implement
             LocalFileCache mwc = new LocalFileCache();
             GridJsWorkbook.CacheImp = mwc;
             //AwsCache awc = new AwsCache(new AwsStorageService());
