@@ -10,7 +10,8 @@ using System.Threading;
 using System.Collections;
 using Microsoft.AspNetCore.StaticFiles;
 using Aspose.Cells.GridJsDemo.Models;
- 
+using Newtonsoft.Json.Linq;
+using System.Text;
 
 namespace Aspose.Cells.GridJsDemo.Controllers
 {
@@ -116,6 +117,152 @@ namespace Aspose.Cells.GridJsDemo.Controllers
             return Content(ret, "text/plain", System.Text.Encoding.UTF8);
         }
 
+        [HttpPost]
+        public JsonResult AddImage()
+        {
+            string uid = HttpContext.Request.Form["uid"];
+            string p = HttpContext.Request.Form["p"];
+            IFormFile file = HttpContext.Request.Form.Files[0];
+
+            string ret = null;
+            GridJsWorkbook wb = new GridJsWorkbook();
+            if (file != null)
+            {
+
+                try
+                {
+                   
+                        using (var stream = file.OpenReadStream())
+                    {
+                        ret = wb.InsertImage(uid, p, stream, null);
+                    }
+                }
+                catch (Exception e)
+                {
+
+                    return Json(wb.ErrorJson(e.Message));
+                }
+
+
+
+                return Json(ret);
+            }
+            else
+            {
+                return Json(wb.ErrorJson("image is null"));
+            }
+
+
+
+
+        }
+
+        [HttpPost]
+        public JsonResult CopyImage( )
+        {
+
+            string uid = HttpContext.Request.Form["uid"];
+            string p = HttpContext.Request.Form["p"];
+            
+
+
+            GridJsWorkbook wb = new GridJsWorkbook();
+            string ret = wb.CopyImageOrShape(uid, p);
+
+            return Json(ret);
+
+        }
+        private static Stream GetStreamFromUrl(string url)
+        {
+            byte[] imageData = null;
+
+            using (var wc = new System.Net.WebClient())
+            {
+                imageData = wc.DownloadData(url);
+            }
+
+            return new MemoryStream(imageData);
+        }
+        [HttpPost]
+        public JsonResult AddImageByURL()
+        {
+            string uid = HttpContext.Request.Form["uid"];
+            string p = HttpContext.Request.Form["p"];
+            string imageurl = HttpContext.Request.Form["imageurl"];
+            string ret = null;
+            GridJsWorkbook wb = new GridJsWorkbook();
+            if (imageurl != null)
+            {
+
+
+                try
+                {
+                    using (var stream = GetStreamFromUrl(imageurl))
+                    {
+                        ret = wb.InsertImage(uid, p, stream, imageurl);
+                    }
+                }
+                catch (Exception e)
+                {
+
+                    return Json(wb.ErrorJson(e.Message));
+                }
+
+
+                return Json(ret);
+            }
+            else
+            {
+                return Json(wb.ErrorJson("image url is null"));
+            }
+
+
+
+
+        }
+        /// <summary>
+        /// get json from uid 
+        /// </summary>
+        /// <param name="uid"></param>
+        /// <returns></returns>
+        [HttpGet]
+        // post: /GridJs2/Load?uid=
+        public ActionResult Load(string uid, string filename)
+        {
+
+            GridJsWorkbook gwb = new GridJsWorkbook();
+
+            StringBuilder json = null;
+            try
+            {
+
+                json = gwb.GetJsonByUid(uid, filename);
+
+            }
+            catch (Exception ex)
+            {
+                // GridCellException eee;
+                // eee.Code
+                //  return Error(ex.Message);
+                if (ex is GridCellException)
+                {
+                    return Content(gwb.ErrorJson(((GridCellException)ex).Message + ((GridCellException)ex).Code), "text/plain", System.Text.Encoding.UTF8);
+                }
+                return Content(gwb.ErrorJson(ex.Message), "text/plain", System.Text.Encoding.UTF8);
+            }
+            if (json == null)
+            {
+                return Content(gwb.ErrorJson("cannot find the file"), "text/plain", System.Text.Encoding.UTF8);
+            }
+
+            Response.ContentType = "text/plain";
+
+            //Response.Write();
+
+            return Content(json.ToString(), "text/plain", System.Text.Encoding.UTF8);
+
+
+        }
 
         // GET: /GridJs2/Xspreadtml
         public ActionResult Xspreadtml(String filename)
