@@ -35,12 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells, Version=21.11.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Aspose.Cells.21.11.0\lib\net40\Aspose.Cells.dll</HintPath>
-    </Reference>
-    <Reference Include="Aspose.Cells.GridDesktop, Version=21.11.0.0, Culture=neutral, PublicKeyToken=699ccf88ff76f11a, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Aspose.Cells.GridDesktop.21.11.0\lib\net40\Aspose.Cells.GridDesktop.dll</HintPath>
-    </Reference>
+    <PackageReference Include="Aspose.Cells.GridDesktop" Version="21.12.0" />
+	<PackageReference Include="Aspose.Cells" Version="21.12.0" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
