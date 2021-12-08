@@ -104,9 +104,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Aspose.Cells.GridWeb, Version=21.11.0.0, Culture=neutral, PublicKeyToken=699ccf88ff76f11a, processorArchitecture=MSIL">
-      <HintPath>..\packages\Aspose.Cells.GridWeb.21.11.0\lib\net40\Aspose.Cells.GridWeb.dll</HintPath>
-    </Reference>
+    <PackageReference Include="Aspose.Cells.GridWeb" Version="21.12.0" />
     <Reference Include="System">
       <Name>System</Name>
     </Reference>
