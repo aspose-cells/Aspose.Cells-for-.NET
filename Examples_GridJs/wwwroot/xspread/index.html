@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>x-spreadsheet</title>
-    <link rel="stylesheet" href="./xspreadsheet.css">
+    <link rel="stylesheet" href="./xspreadsheet.css?20211228">
  
-    <script src="./xspreadsheet.js"></script>
+    <script src="./xspreadsheet.js?20211228"></script>
     <script type="text/javascript" src="jquery-2.1.1.js"></script>
     <script type="text/javascript" src="jszip.min.js"></script>
   
@@ -15,10 +15,11 @@
 </head>
  
 <body>
- <input type="file" name="imagef" id="imagef" >
+ <!--<input type="file" name="imagef" id="imagef" >
 <span id="status"></span> <button onclick="save()">save</button>
 <button onclick="addimage()">add image</button>
 <button onclick="addimagebyUrl()">add image from url</button>
+-->
 <div id="gridjs-demo"></div>
 <!-- <button onclick="loadmore()">next</button> -->
 <!-- <button onclick="print()">print</button> -->
@@ -105,6 +106,7 @@ function getQueryVariable(variable)
         uniqueid = jsondata.uniqueid;
         sheets = jsondata.data;
         const filename=jsondata.filename;
+        const fileDownloadUrl =  "/GridJs2/Download"
         const imageurl =  "/GridJs2/imageurl";
 		const imageuploadurl1 =  "/GridJs2/AddImage";
 		const imageuploadurl2 =   "/GridJs2/AddImageByURL";
@@ -149,7 +151,7 @@ function getQueryVariable(variable)
 		    xs.setUniqueId(uniqueid);
 			xs.setFileName(filename);
             xs.setImageInfo(myimagediv,imageurl,imageuploadurl1,imageuploadurl2,imagecopyurl,basiczorder);
-        
+            xs.setFileDownloadInfo(fileDownloadUrl)
         //need to extend swapfunction
         var oldswapfunc = xs.bottombar.swapFunc;
         xs.bottombar.swapFunc = function (id) {
