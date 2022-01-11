@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>x-spreadsheet</title>
-    <link rel="stylesheet" href="./xspreadsheet.css">
+    <link rel="stylesheet" href="./xspreadsheet.css?20211228">
  
-    <script src="./xspreadsheet.js"></script>
+    <script src="./xspreadsheet.js?20211228"></script>
     <script type="text/javascript" src="jquery-2.1.1.js"></script>
     <script type="text/javascript" src="jszip.min.js"></script>
   
@@ -15,7 +15,11 @@
 </head>
  
 <body>
+ <!--<input type="file" name="imagef" id="imagef" >
 <span id="status"></span> <button onclick="save()">save</button>
+<button onclick="addimage()">add image</button>
+<button onclick="addimagebyUrl()">add image from url</button>
+-->
 <div id="gridjs-demo"></div>
 <!-- <button onclick="loadmore()">next</button> -->
 <!-- <button onclick="print()">print</button> -->
@@ -38,7 +42,7 @@ function getQueryVariable(variable)
     var xs;
     var rdata;
     var uniqueid;
-    var local = 'http://localhost:24262';
+    //var local = 'http://localhost:24262';
     var imagediv = "imagedive";
 	var basiczorder=5678;
     let sheets = [];
@@ -47,7 +51,7 @@ function getQueryVariable(variable)
 
         $.ajax({
 
-            url: local + '/GridJs2/DetailFileJson?filename='+getQueryVariable("file"),
+            url:  '/GridJs2/DetailFileJson?filename='+getQueryVariable("file"),
 
             type: 'GET',
 
@@ -101,11 +105,15 @@ function getQueryVariable(variable)
         //record uniqueid
         uniqueid = jsondata.uniqueid;
         sheets = jsondata.data;
-        var imageurl = local + "/GridJs2/ImageUrl";
-        // x.spreadsheet.locale('zh-cn');
+        const filename=jsondata.filename;
+        const fileDownloadUrl =  "/GridJs2/Download"
+        const imageurl =  "/GridJs2/imageurl";
+		const imageuploadurl1 =  "/GridJs2/AddImage";
+		const imageuploadurl2 =   "/GridJs2/AddImageByURL";
+		const imagecopyurl =  "/GridJs2/CopyImage";        // x.spreadsheet.locale('zh-cn');
         xs = x_spreadsheet('#gridjs-demo', {
 			updateMode:'server',
-			updateUrl:local + '/GridJs2/UpdateCell',
+			updateUrl:  '/GridJs2/UpdateCell',
 			showToolbar: true,
             //showGrid: true,
             mode: 'edit',
@@ -140,11 +148,10 @@ function getQueryVariable(variable)
         $(".x-spreadsheet-overlayer-content").append('<div id="' + imagediv + '" style="position:relative" /> ');
 		let myimagediv= $("#" + imagediv);
 		   
-		    xs.uniqueid=uniqueid;
-            xs.setImageInfo(myimagediv,imageurl,basiczorder);
-          //  xs.sheet.data.loadImages();
-		//	xs.sheet.data.loadShapes();
-			//xs.sheet.data.loadConditionImage();
+		    xs.setUniqueId(uniqueid);
+			xs.setFileName(filename);
+            xs.setImageInfo(myimagediv,imageurl,imageuploadurl1,imageuploadurl2,imagecopyurl,basiczorder);
+            xs.setFileDownloadInfo(fileDownloadUrl)
         //need to extend swapfunction
         var oldswapfunc = xs.bottombar.swapFunc;
         xs.bottombar.swapFunc = function (id) {
@@ -164,8 +171,7 @@ function getQueryVariable(variable)
         xs.setActiveSheetByName(jsondata.actname).setActiveCell(jsondata.actrow,jsondata.actcol);
  
     }
-
-   
+ 
  
     function save() {
 		if(!xs.buffer.isFinish())

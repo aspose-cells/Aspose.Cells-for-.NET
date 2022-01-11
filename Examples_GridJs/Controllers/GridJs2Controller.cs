@@ -61,7 +61,7 @@ namespace Aspose.Cells.GridJsDemo.Controllers
         {
             GridJsWorkbook wbj = new GridJsWorkbook();
 
-            
+            string filename = Path.GetFileName(path);
             try
             {
                 GridInterruptMonitor m = new GridInterruptMonitor();
@@ -88,7 +88,7 @@ namespace Aspose.Cells.GridJsDemo.Controllers
                 return Content(wbj.ErrorJson(ex.Message), "text/plain", System.Text.Encoding.UTF8);
             }
             //return File(stream, "application/octet-stream", "streamfile");
-            return Content(wbj.ExportToJson(), "text/plain", System.Text.Encoding.UTF8);
+            return Content(wbj.ExportToJson(filename), "text/plain", System.Text.Encoding.UTF8);
         }
         private static void InterruptMonitor(object o)
         {
