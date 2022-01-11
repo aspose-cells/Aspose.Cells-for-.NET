@@ -73,6 +73,7 @@ namespace Aspose.Cells.GridJsDemo
 
 
         string GetUrl(double durationHours,string p);
+        bool CheckExist(string objectPath);
     }
 
     public class AwsStorageService : IStorageService
@@ -143,6 +144,7 @@ namespace Aspose.Cells.GridJsDemo
             try
             {
               var rr=  _client.PutObjectAsync(request).Result;
+                 
             }
             catch (Exception e)
             {
@@ -212,6 +214,30 @@ namespace Aspose.Cells.GridJsDemo
                 Console.WriteLine("Unknown encountered on server. Message:'{0}' when writing an object", e.Message);
             }
             return urlString;
+        }
+
+        public bool CheckExist(string objectPath)
+        {
+            try
+            {
+                GetObjectMetadataRequest request = new GetObjectMetadataRequest()
+                {
+                    BucketName = _bucket,
+                    Key = GetObjectPath(objectPath),
+                };
+               var response = _client.GetObjectMetadataAsync(request).Result;
+
+                return true;
+            }
+
+            catch (Amazon.S3.AmazonS3Exception ex)
+            {
+                if (ex.StatusCode == System.Net.HttpStatusCode.NotFound)
+                    return false;
+
+                //status wasn't not found, so throw the exception
+                throw;
+            }
         }
 
         

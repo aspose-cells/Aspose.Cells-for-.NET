@@ -73,5 +73,13 @@ namespace Aspose.Cells.GridJsDemo.Models
 
             return null;
         }
+
+        //TODO 
+        public override bool IsExisted(String uid)
+        {
+
+            return _storage.CheckExist(GetKey(uid));
+           
+        }
     }
 }

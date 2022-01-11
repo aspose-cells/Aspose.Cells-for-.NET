@@ -326,7 +326,7 @@ body {
 .x-spreadsheet-selector .hide-input input {
   padding: 0;
   width: 0;
-  border: none !important;
+  border: none!important;
 }
 .x-spreadsheet-selector .x-spreadsheet-selector-area {
   position: absolute;
@@ -427,7 +427,7 @@ body {
 }
 .x-spreadsheet-item.state,
 .x-spreadsheet-header.state {
-  padding-left: 35px !important;
+  padding-left: 35px!important;
   position: relative;
 }
 .x-spreadsheet-item.state:before,
@@ -459,7 +459,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0 !important;
+  opacity: 0!important;
   outline: 0;
   z-index: -1;
 }
@@ -969,6 +969,22 @@ form fieldset select {
     display: flex;
     justify-content: space-between;
   }
+  .x-spreadsheet {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .x-spreadsheet-bottombar {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 99999;
+  }
+  .x-spreadsheet-bottombar .x-spreadsheet-menu > li {
+    overflow-y: scroll;
+    max-width: 90px;
+  }
   .x-spreadsheet-form-checkbox {
     margin-left: -25px;
     cursor: pointer;
@@ -986,7 +1002,7 @@ form fieldset select {
   display: inline-block;
 }
 .x-spreadsheet-icon .x-spreadsheet-icon-img {
-  background-image: url(ea25f17590ec49dbcde719ad8f1fd113.svg);
+  background-image: url(fcd26d860686b72120a03ac93f3ad046.svg);
   position: absolute;
   width: 262px;
   height: 444px;
@@ -1281,3 +1297,5 @@ dialog p {
   margin: 0 0 0 5px;
 }
 
+
+/*# sourceMappingURL=xspreadsheet.css.map*/

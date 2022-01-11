@@ -43,6 +43,11 @@ namespace Aspose.Cells.GridJsDemo.Models
         {
             return "/GridJs2/GetFile?id=" + uid;
         }
+        public override bool IsExisted(String uid)
+        {
+            String filepath = Path.Combine(Config.FileCacheDirectory,   "streamcache", uid.Replace('/', '.'));
+            return File.Exists(filepath);
+        }
 
     }
 }
