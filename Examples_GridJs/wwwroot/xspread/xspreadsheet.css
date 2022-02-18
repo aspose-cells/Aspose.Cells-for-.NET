@@ -326,7 +326,7 @@ body {
 .x-spreadsheet-selector .hide-input input {
   padding: 0;
   width: 0;
-  border: none!important;
+  border: none !important;
 }
 .x-spreadsheet-selector .x-spreadsheet-selector-area {
   position: absolute;
@@ -427,7 +427,7 @@ body {
 }
 .x-spreadsheet-item.state,
 .x-spreadsheet-header.state {
-  padding-left: 35px!important;
+  padding-left: 35px !important;
   position: relative;
 }
 .x-spreadsheet-item.state:before,
@@ -459,7 +459,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0!important;
+  opacity: 0 !important;
   outline: 0;
   z-index: -1;
 }
@@ -969,6 +969,10 @@ form fieldset select {
     display: flex;
     justify-content: space-between;
   }
+  .x-spreadsheet-toolbar,
+  .x-spreadsheet-bottombar {
+    padding: 0 ;
+  }
   .x-spreadsheet {
     height: 100%;
     width: 100%;
@@ -981,9 +985,10 @@ form fieldset select {
     bottom: 0;
     z-index: 99999;
   }
-  .x-spreadsheet-bottombar .x-spreadsheet-menu > li {
-    overflow-y: scroll;
-    max-width: 90px;
+  .x-spreadsheet-bottombar .x-spreadsheet-menu {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
   }
   .x-spreadsheet-form-checkbox {
     margin-left: -25px;
@@ -1002,7 +1007,7 @@ form fieldset select {
   display: inline-block;
 }
 .x-spreadsheet-icon .x-spreadsheet-icon-img {
-  background-image: url(fcd26d860686b72120a03ac93f3ad046.svg);
+  background-image: url(e2f55e2916d19e8633f9899b77c53874.svg);
   position: absolute;
   width: 262px;
   height: 444px;
@@ -1204,6 +1209,10 @@ form fieldset select {
   left: -108px;
   top: -54px;
 }
+.x-spreadsheet-icon .x-spreadsheet-icon-img.insertSheet {
+  left: -108px;
+  top: -54px;
+}
 .x-spreadsheet-icon .x-spreadsheet-icon-img.search {
   left: -144px;
   top: -54px;
@@ -1234,6 +1243,22 @@ form fieldset select {
 }
 .x-spreadsheet-icon .x-spreadsheet-icon-img.insert-image-url {
   left: -36px;
+  top: -72px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.download {
+  left: -54px;
+  top: -72px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.insertComment {
+  left: -72px;
+  top: -72px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.insertColumn {
+  left: -90px;
+  top: -72px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.insertRow {
+  left: -108px;
   top: -72px;
 }
 .x-spreadsheet-icon .x-spreadsheet-icon-img.download {
@@ -1297,5 +1322,3 @@ dialog p {
   margin: 0 0 0 5px;
 }
 
-
-/*# sourceMappingURL=xspreadsheet.css.map*/
