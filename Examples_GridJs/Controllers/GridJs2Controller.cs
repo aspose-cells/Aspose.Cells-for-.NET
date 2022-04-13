@@ -74,7 +74,25 @@ namespace Aspose.Cells.GridJsDemo.Controllers
 
                 using (FileStream fs = new FileStream(path, FileMode.Open))
                 {
-                    wbj.ImportExcelFile(fs, GridJsWorkbook.GetGridLoadFormat(Path.GetExtension(path)));
+                   /*
+                    GridLoadFormat lf = GridJsWorkbook.GetGridLoadFormat(Path.GetExtension(path));
+                    if(lf!= GridLoadFormat.Csv&&lf!= GridLoadFormat.Tsv)
+                    {
+                        lf = GridLoadFormat.Auto;
+                    }
+                    wbj.ImportExcelFile(fs,lf);
+                    */
+                    GridLoadFormat lf = GridJsWorkbook.GetGridLoadFormat(Path.GetExtension(path));
+                    LoadFormat clf = LoadFormat.Auto;
+                    if (lf == GridLoadFormat.Csv  )
+                    {
+                        clf = LoadFormat.Csv;
+                    }else if (lf == GridLoadFormat.Tsv)
+                    {
+                        clf = LoadFormat.Tsv;
+                    }
+                    Workbook wb = new Workbook(fs, new LoadOptions(clf));
+                    wbj.ImportExcelFile(wb);
                 }
 
             }
@@ -302,13 +320,13 @@ namespace Aspose.Cells.GridJsDemo.Controllers
 
         // GET: /GridJs2/GetFile?id
         
-        public FileResult GetFile(string id)
+        public FileResult GetFile(string id,string filename)
         {
             
             string fileid = id;
-            string mimeType = GetMimeType(fileid);
-           
-            return File(GridJsWorkbook.CacheImp.LoadStream(fileid), mimeType, fileid.Replace('/', '.'));
+            string mimeType = filename != null ? GetMimeType(filename) :GetMimeType(fileid);
+            string name = filename != null ? filename : fileid.Replace('/', '.');
+            return File(GridJsWorkbook.CacheImp.LoadStream(fileid), mimeType, name);
         }
         
 
@@ -323,7 +341,7 @@ namespace Aspose.Cells.GridJsDemo.Controllers
 
             string p = HttpContext.Request.Form["p"];
             string uid = HttpContext.Request.Form["uid"];
-            string filename = "123.xlsx";
+            string filename = HttpContext.Request.Form["file"];
 
             GridJsWorkbook wb = new GridJsWorkbook();
             wb.MergeExcelFileFromJson(uid, p);
@@ -346,11 +364,13 @@ namespace Aspose.Cells.GridJsDemo.Controllers
                     return Json(((GridCellException)ex).Message + ((GridCellException)ex).Code);
                 }
             }
-            if (filename.EndsWith(".html"))
+
+            if (Config.SaveHtmlAsZip&&filename.EndsWith(".html"))
             {
                 filename += ".zip";
             }
             String fileurl= GridJsWorkbook.CacheImp.GetFileUrl(uid + "/" + filename);
+            fileurl += "&filename=" + HttpContext.Request.Form["file"];
             return new JsonResult(fileurl);
         }
 

@@ -13,6 +13,7 @@
 
 
   <ItemGroup>
+    <PackageReference Include="Aspose.Cells" Version="22.4.0" />
     <PackageReference Include="Aspose.Cells.GridJs" Version="22.4.0" />
     <PackageReference Include="AWSSDK.S3" Version="3.7.0.21" />
     <PackageReference Include="Microsoft.AspNetCore.App" />

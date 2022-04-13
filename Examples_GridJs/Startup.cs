@@ -90,8 +90,8 @@ namespace gridjs_demo_.netcore
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            //start here，setlicense
-            License l = new License();
+            //start here，setlicense,use cells.license ,GridJs does not provide single license entry anymore
+            Aspose.Cells.License l = new Aspose.Cells.License();
 			//set file cache directory
             Config.FileCacheDirectory = TestConfig.TempDir;
 			//set cache implement
