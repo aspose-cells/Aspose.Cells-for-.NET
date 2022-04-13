@@ -8,7 +8,7 @@
   <ItemGroup>
 	<PackageReference Include="System.Drawing.Common" Version="4.7.0" />
         <PackageReference Include="System.Text.Encoding.CodePages" Version="4.7.0" />
-	<PackageReference Include="Aspose.Cells.GridWeb" Version="22.3.0" />
+	<PackageReference Include="Aspose.Cells.GridWeb" Version="22.4.0" />
   </ItemGroup>
  
    
