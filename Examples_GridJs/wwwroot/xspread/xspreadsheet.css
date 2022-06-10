@@ -333,6 +333,9 @@ body {
   border: 2px solid #4b89ff;
   background: rgba(75, 137, 255, 0.1);
   z-index: 5;
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
 }
 .x-spreadsheet-selector .x-spreadsheet-selector-clipboard,
 .x-spreadsheet-selector .x-spreadsheet-selector-autofill {
@@ -364,8 +367,6 @@ body {
 .x-spreadsheet-editor .x-spreadsheet-editor-area {
   position: absolute;
   text-align: left;
-  border: 2px solid #4b89ff;
-  line-height: 0;
   z-index: 100;
   pointer-events: auto;
 }
@@ -383,6 +384,11 @@ body {
   word-wrap: break-word;
   line-height: 22px;
   margin: 0;
+}
+.x-spreadsheet-editor .x-spreadsheet-editor-area .htmlline {
+  outline: 1px solid #f3e0e0c9;
+  background: white;
+  margin: 2px;
 }
 .x-spreadsheet-editor .x-spreadsheet-editor-area .textline {
   overflow: hidden;
@@ -1310,7 +1316,8 @@ form fieldset select {
   font-size: 12px;
   background: #f5f6f7;
   border-bottom: 1px solid #e0e2e4;
-  display: flex;
+  resize: vertical;
+  overflow: hidden;
 }
 .x-spreadsheet-bar-label {
   flex: 0 0 auto;
@@ -1332,6 +1339,8 @@ form fieldset select {
   white-space: nowrap;
   text-overflow: ellipsis;
   padding: 0 4px;
+  position: relative;
+  float: left;
 }
 .x-spreadsheet-formula-input {
   flex: auto;
@@ -1342,6 +1351,7 @@ form fieldset select {
   background: #fff;
   border: none;
   outline: none;
+  height: 100%;
 }
 [contenteditable=true]:empty:before {
   content: attr(placeholder);
