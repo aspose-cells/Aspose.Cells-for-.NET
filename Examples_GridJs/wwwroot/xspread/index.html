@@ -117,6 +117,8 @@ function getQueryVariable(variable)
 			showToolbar: true,
             //showGrid: true,
             mode: 'edit',
+			//support multiple language ,the locale is: en cn es pt de ru nl
+			local: 'en',
             showContextmenu: true
         }).loadData(sheets).change((cdata) => {
                 console.log(cdata);
