@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>x-spreadsheet</title>
-    <link rel="stylesheet" href="./xspreadsheet.css?20211228">
+    <link rel="stylesheet" href="./xspreadsheet.css?20220111">
  
-    <script src="./xspreadsheet.js?20211228"></script>
+    <script src="./xspreadsheet.js?20220111"></script>
     <script type="text/javascript" src="jquery-2.1.1.js"></script>
     <script type="text/javascript" src="jszip.min.js"></script>
   
@@ -117,6 +117,8 @@ function getQueryVariable(variable)
 			showToolbar: true,
             //showGrid: true,
             mode: 'edit',
+			//en cn es pt de ru nl
+			local: 'en',
             showContextmenu: true
         }).loadData(sheets).change((cdata) => {
                 console.log(cdata);
