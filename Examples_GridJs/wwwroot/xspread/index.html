@@ -155,22 +155,23 @@
             isShowHighlight = true;
             sheet.showHighlights(highlightStyle);
             sheet.removeHighlightInverseRange();
-            const r = sheet.selector.range;
-            sheet.addHighlightRange(r.sri, r.sci, r.eri, r.eci);
-            sheet.table.render();
-            //for shape or image ，when trigger context menu,it will always select on cell area ,not on obj, 
-            //so if you want to highlight shape or image, ececute the below js after mouse left click on shape or image
-            /*
-             //getObj will return null when trigger context menu
+          
+             //check whether image/shape  is selected
              const img = sheet.selector.getObj();
              if (img) {
+                //add highlight for image/shape
                  if (img.type === 'Picture') {
                      sheet.addHighlightImage(img.id);
                  } else {
                      sheet.addHighlightShape(img.id);
                  }
+            } else {
+                //add highlight for area
+                const r = sheet.selector.range;
+                sheet.addHighlightRange(r.sri, r.sci, r.eri, r.eci);
+                sheet.table.render();
              }
-             */
+         
         };
         const highlightInverseRange = (sheet) => {
             sheet.delCustomContextMenuItems(['key4']);
@@ -189,6 +190,18 @@
             }
             sheet.table.render();
         };
+        //
+        const customHighlightImage = (ishighlight, imgobj) => {
+            imgobj.filters[0] = ishighlight ? new fabric.Image.filters.Sepia() : false;
+            imgobj.applyFilters();
+        }
+
+        const setCustomHighlighImageFunc = (sheet) => {
+            sheet.setCustomHighlightImgFunc(customHighlightImage);
+        }
+        const removeCustomHighlighImageFunc = (sheet) => {
+            sheet.setCustomHighlightImgFunc(undefined);
+        }
 
         const highlightAll = (sheet) => {
             isShowHighlight = true;
@@ -228,7 +241,7 @@
                     customItems: [{ 'key': 'key1', 'text': '↓↓↓this is a custom context menu↓↓↓', 'callback': onMyActionClick1 },
                     { 'key': 'key2', 'text': 'click to load normal context menu', 'callback': loadNormalContext },
                     { 'key': 'divider' },
-                    { 'key': 'key3', 'text': 'add select area to highlight  ', 'callback': highlightSelect },
+                    { 'key': 'key3', 'text': 'add select area or image/shape to highlight  ', 'callback': highlightSelect },
                     { 'key': 'key4', 'text': 'highlight inverse range for select ', 'callback': highlightInverseRange },
                     { 'key': 'key5', 'text': 'highlight all to be->' + !isHighlightAll, 'callback': highlightAll },
                     { 'key': 'key6', 'text': 'hide highlight  ', 'callback': showOrHideHighlight }]
@@ -294,6 +307,8 @@
           
         }
         xs.setActiveSheetByName(jsondata.actname).setActiveCell(jsondata.actrow,jsondata.actcol);
+            //add custom context menu items for image
+            xs.sheet.addCustomContextMenuItems([{ 'key': 'key7', 'text': 'set self defined image highlight function', 'callback': setCustomHighlighImageFunc }, { 'key': 'key8', 'text': 'use default highlight image func ', 'callback': removeCustomHighlighImageFunc }])
  
     }
  
