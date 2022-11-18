@@ -4,15 +4,33 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aspose.Cells.GridJs Demo For .NetCore</title>
-     
+    <link rel="stylesheet" href="~/xspread/jquery-ui.min.css" />
+
+    <script type="text/javascript" src="~/xspread/jquery-2.1.1.js"></script>
+
+    <script type="text/javascript" src="~/xspread/jquery-ui.min.js"></script>
+    <script>
+        $(function () {
+            $("input").checkboxradio();
+        });
+        function openfile(name) {
+            const url = ($('#radio-1:checked').val() ? '/GridJs2/Uidtml' : '/GridJs2/Xspreadtml') + '?filename=' + name;
+            window.open(url, "_blank");
+        }
+    </script>
+    <style>
+        body {
+            overflow-y:hidden;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Aspose.Cells.GridJs Demo For .NetCore</a>
+            <div class="container" style="text-align: center;">
+                <a class="navbar-brand" href="https://github.com/aspose-cells/Aspose.Cells-for-.NET/tree/master/Examples_GridJs">Aspose.Cells.GridJs Demo For .NetCore</a>
                
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                @*<div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
@@ -21,11 +39,11 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
-                </div>
+                </div>*@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="container" >
         <partial name="_CookieConsentPartial" />
         <main role="main" class="pb-3">
             @RenderBody()
@@ -33,7 +51,7 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
+        <div class="container" >
             &copy; 2021 - Aspose - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>

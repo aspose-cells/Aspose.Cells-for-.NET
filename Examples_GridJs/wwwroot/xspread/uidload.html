@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>x-spreadsheet-demo</title>
+    <script type="text/javascript" src="jquery-2.1.1.js"></script>
+    <link rel="stylesheet" href="./xspreadsheet.css?v=20220712" />
+    <link rel="stylesheet" href="./quantumui.min.22.5.5.2.css?v=20220312" />
+    <link rel="stylesheet" href="./bootstrap.min.22.5.5.2.css?v=20220315" />
+    <link rel="stylesheet" href="./jquery-ui.min.css" />
+
+    <script src="./xspreadsheet.js?v=20220712"></script>
+
+    <script type="text/javascript" src="jquery-ui.min.js"></script>
+    <script type="text/javascript" src="jszip.min.js"></script>
+    <script src="vconsole.min.js"></script>
+
+
+</head>
+
+    <body  >
+      
+    <div id="gridjs-demo-uid"></div>
+    
+
+    <script>
+        
+        // var vConsole = new window.VConsole();
+         function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split('&');
+        for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split('=');
+          if (pair[0] == variable) {
+            return pair[1];
+          }
+        }
+        return false;
+      }
+        let xs;
+        let rdata;
+        let uniqueid = getQueryVariable('uid');
+        //var local = 'http://localhost:24262';
+        let imagediv = 'imagedive';
+        let basiczorder = 5678;
+        let sheets = [];
+        let jsondata = null;
+        $(function () {
+
+            $.ajax({
+
+                url: '/GridJs2/DetailFileJsonWithUid?filename=' + getQueryVariable("file") + '&uid=' + uniqueid,
+
+                type: 'GET',
+
+                dataType: 'text',
+
+                timeout: 59000,
+
+                cache: false,
+
+                beforeSend: LoadFunction,
+
+                error: erryFunction,
+
+          success: succFunction,
+        });
+
+            function LoadFunction() {
+          $('#status').html('loading...');
+            }
+
+            function erryFunction() {
+          alert('error');
+            }
+
+            function succFunction(tt) {
+          $('#status').html('success');
+
+                var exceldata = tt;
+                //.replace(/\n/g,"\\\\n");
+                jsondata = JSON.parse(exceldata);
+                if (jsondata.Error) {
+                    alert(jsondata.Error);
+          } else {
+                    loadNormalContext(jsondata);
+                }
+            }
+        });
+
+       
+
+       
+        const loadNormalContext = (sheet) => {
+            const option = {
+                updateMode: 'server',
+                updateUrl: '/GridJs2/UpdateCell',
+                showToolbar: true,
+                //showGrid: true,
+                //mode: 'edit',
+                mode: 'edit',
+                //support multiple language ,the locale is: en zh es pt de ru nl
+               local: 'en',
+            };
+            loadWithOption(jsondata, option);
+        };
+
+      
+        function loadWithOption(jsondata, option) {
+            $('#gridjs-demo-uid').empty();
+            //record uniqueid
+            uniqueid = jsondata.uniqueid;
+            sheets = jsondata.data;
+            const filename = jsondata.filename;
+            const fileDownloadUrl = "/GridJs2/Download"
+            const imageurl = "/GridJs2/imageurl";
+            const imageuploadurl1 = "/GridJs2/AddImage";
+            const imageuploadurl2 = "/GridJs2/AddImageByURL";
+            const imagecopyurl = "/GridJs2/CopyImage";        // x.spreadsheet.locale('zh-cn');
+            xs = x_spreadsheet('#gridjs-demo-uid', option).loadData(sheets).change((cdata) => {
+                console.log(cdata);
+                console.log(xs.validate());
+            }
+            ).updateServerError((xhr, textStatus, errorThrown) => {
+                const s = ("error---") + ("code：" + xhr.status) + ("state:" + xhr.readyState) + ("msg:" + xhr.statusText) + ("text：" + xhr.responseText) + ("request status：" + textStatus) + (errorThrown);
+                console.log(s);
+
+            }).updateCellError((msg) => {
+
+                console.error(msg);
+                // xs.sheet.data.restoreLastCell();
+                alert(msg);
+
+            });
+
+            if (!jsondata.showtabs) {
+                xs.bottombar.hide();
+            }
+
+            xs.on('cell-selected', (cell, ri, ci) => {
+                console.log('cell:', cell, ', ri:', ri, ', ci:', ci);
+                if (ci === -1) {
+                    console.log('cell ci -1:');
+                }
+            }).on('cell-edited', (text, ri, ci) => {
+                console.log('text:', text, ', ri: ', ri, ', ci:', ci);
+            });
+
+            $(".x-spreadsheet-overlayer-content").append('<div id="' + imagediv + '" style="position:relative" /> ');
+            let myimagediv = $("#" + imagediv);
+
+            xs.setUniqueId(uniqueid);
+            xs.setFileName(filename);
+            xs.setImageInfo(myimagediv, imageurl, imageuploadurl1, imageuploadurl2, imagecopyurl, basiczorder);
+            xs.setFileDownloadInfo(fileDownloadUrl)
+            //need to extend swapfunction
+            var oldswapfunc = xs.bottombar.swapFunc;
+            xs.bottombar.swapFunc = function (id) {
+
+                //xs.sheet.data.settings.showGrid=sheets[id].showGrid;
+                oldswapfunc(id);
+                if (xs.sheet.data.autoFilter.filters.length > 0) {
+                    xs.sheet.data.resetAutoFilter();
+                    xs.sheet.data.deleteExceptRowHideForAutoFilter();
+                }
+            console.log(`activating sheet ${id}`);
+            };
+            xs.setActiveSheetByName(jsondata.actname).setActiveCell(jsondata.actrow, jsondata.actcol);
+           
+        }
+
+
+        function save() {
+            if (!xs.buffer.isFinish()) {
+          alert('updating is inprogress,please try later');
+                return;
+            }
+            let datas = xs.datas;
+            delete datas.history;
+            delete datas.search;
+            delete datas.images;
+            delete datas.shapes;
+
+        var jsondata = {
+          sheetname: xs.sheet.data.name,
+          actrow: xs.sheet.data.selector.ri,
+          actcol: xs.sheet.data.selector.ci,
+          datas: xs.getUpdateDatas(),
+        };
+
+        const data = {
+          p: JSON.stringify(jsondata),
+          uid: uniqueid,
+        };
+
+
+            $.ajax({
+                url: local + '/GridJs2/Download',
+                type: 'post',
+
+                data: data,
+                success: function (datar, stutas, xhr) {
+                    console.log(datar);
+                    if (datar.startsWith('{')) {
+                        var ret = JSON.parse(datar);
+                        if (ret.err) {
+                            alert(ret.err);
+                        }
+                    } else {
+                        // window.location = local + '/GridJs2/Download2/' + datar;
+                        window.location = datar;
+                    }
+                },
+            });
+
+
+        }
+
+    </script>
+
+    <div style="display: none;z-index: 999;">
+      <div title='text highlight' id="textselectform">
+        <div>
+          <textarea id='textselect' name='textselect' rows='4' cols='50'>
+          </textarea>
+        </div>
+      </div>'
+    </div>
+    </body>
+</html>

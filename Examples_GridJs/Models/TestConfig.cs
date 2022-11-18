@@ -15,7 +15,7 @@ namespace Aspose.Cells.GridJsDemo.Models
         /// </summary>
        internal static String ListDir = @"D:\codebase\customerissue\wb\2021_07_27\wb\";
         /// <summary>
-        /// temp directory to store files
+        /// temp directory to store file cache
         /// </summary>
        internal static String TempDir = @"D:\tmpdel\tmp\";
     }

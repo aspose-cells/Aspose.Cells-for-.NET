@@ -15,7 +15,30 @@ using System.Text;
 
 namespace Aspose.Cells.GridJsDemo.Controllers
 {
+    class CppWarningCallback : IWarningCallback
+    {
+        public void Warning(WarningInfo warningInfo)
+        {
+            switch (warningInfo.WarningType)
+            {
+                case WarningType.DuplicateDefinedName:
+                    return;
+                case WarningType.InvalidTextOfDefinedName:
+                    warningInfo.CorrectedObject = "_" + warningInfo.ErrorObject;
+                    return;
+                case WarningType.InvalidFontName:
+                // throw new CellsException(ExceptionType.InvalidData, warningInfo.Description);
+                case WarningType.UnsupportedFileFormat:
+                // throw new CellsException(ExceptionType.UnsupportedStream, "Unsupported file format.");
+                case WarningType.IO:
+                case WarningType.Limitation:
+                    return;
+                default:
+                    break;
     
+            }
+        }
+    }
     
     [Route("[controller]/[action]")]
     [ApiController]
@@ -56,11 +79,30 @@ namespace Aspose.Cells.GridJsDemo.Controllers
         }
 
 
+        // GET: /GridJs2/DetailFileJsonWithUid?filename=&uid=
+        public ActionResult DetailFileJsonWithUid(string filename,string uid)
+        {
+            String file = Path.Combine(TestConfig.ListDir, filename);
+            GridJsWorkbook wbj = new GridJsWorkbook();
+            //check if already in cache
+           StringBuilder sb= wbj.GetJsonByUid(uid, filename);
+            if(sb==null)
+            {
+                Workbook wb = new Workbook(file);
+                wbj.ImportExcelFile(uid, wb);
+                sb = wbj.ExportToJsonStringBuilder(filename);
+            }
+           
+           
+            return Content(sb.ToString(), "text/plain", System.Text.Encoding.UTF8);
+        }
+
+
 
         private ActionResult DetailJson(string path)
         {
             GridJsWorkbook wbj = new GridJsWorkbook();
-
+            wbj.WarningCallback = new CppWarningCallback();
             string filename = Path.GetFileName(path);
             try
             {
@@ -288,6 +330,13 @@ namespace Aspose.Cells.GridJsDemo.Controllers
             return Redirect("~/xspread/index.html?file=" + filename);
         }
         
+        // GET: /GridJs2/Uidtml
+        public ActionResult Uidtml(String filename)
+        {
+             
+            return Redirect("~/xspread/uidload.html?file=" + filename+"&uid="+ GridJsWorkbook.GetUidForFile(filename));
+        }
+
         // GET: /GridJs2/Image?uid=&id=
         
         public FileResult Image()

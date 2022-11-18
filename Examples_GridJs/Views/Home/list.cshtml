@@ -1,7 +1,20 @@
-﻿<div id="body" style="  width: 800px; height: 800px; border: 1px solid; overflow-y: scroll; SCROLLBAR-BASE-COLOR: #8ccc8c;">
+﻿
+<fieldset>
+    <legend>Select a demo: </legend>
+    <label for="radio-1">permanent url load demo</label>
+    <input type="radio" name="radio-1" id="radio-1" checked="true">
+    <label for="radio-2">highlight and custom context menu demo</label>
+    <input type="radio" name="radio-1" id="radio-2">
+
+</fieldset>
+<div id="cookieConsent" class="alert alert-info alert-dismissible fade show" role="alert">
+    <h3>navigate one of the below file to start show workbook <br /></h3>
+</div>
+<div   style="   height: 800px; border: 1px solid; overflow-y: scroll; SCROLLBAR-BASE-COLOR: #8ccc8c;">
+
+
+
 @foreach (var item in ViewBag.filelist)      
 {     
-    <a   href="Xspreadtml?filename=@item" target="_blank"><em> @item   </em>  </a> <br />
-      
-} 
+<a href="javascript:void(0)" target="_blank" onclick='openfile("@item")' ><em> @item   </em>  </a> <br />}
 </div>  
