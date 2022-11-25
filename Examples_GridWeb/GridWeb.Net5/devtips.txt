@@ -72,3 +72,8 @@ app.UseSession();
         {
             return Aspose.Cells.GridWeb.AcwController.DoAcwAction(this, type, id);
         }
+
+7.dependency package references in the demo project:
+jquery.js    v2.1.1
+jquery-ui.js v1.12.1 
+jquery-ui.css v1.12.1 
