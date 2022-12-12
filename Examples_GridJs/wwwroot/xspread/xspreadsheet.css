@@ -103,10 +103,24 @@ body {
   width: 90%;
   flex-direction: column;
 }
+.x-spreadsheet-banner-info-s {
+  display: flex;
+  height: 40px;
+  text-align: left;
+  width: 90%;
+  flex-direction: column;
+}
 .x-spreadsheet-banner-icon {
   width: 60px;
   height: 60px;
   margin: 10px;
+  background-repeat: no-repeat;
+  background-image: url(555f60323063f2b68b6eac7ce9c45b19.svg);
+}
+.x-spreadsheet-banner-icon-s {
+  width: 30px;
+  height: 30px;
+  margin: 5px;
   background-repeat: no-repeat;
   background-image: url(555f60323063f2b68b6eac7ce9c45b19.svg);
 }

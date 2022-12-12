@@ -164,13 +164,34 @@
                     xs.sheet.data.resetAutoFilter();
                     xs.sheet.data.deleteExceptRowHideForAutoFilter();
                 }
+                //if have bgcolor ,reverse the select area color
+                if (xs.sheet.data.bgcolor) {
+                    $('.x-spreadsheet-selector-area').css('border-color', ColorReverse(xs.sheet.data.bgcolor));
+                } else {
+                    //the default color
+                    $('.x-spreadsheet-selector-area').css('border-color', '#4b89ff');
+                }
             console.log(`activating sheet ${id}`);
             };
-            xs.setActiveSheetByName(jsondata.actname).setActiveCell(jsondata.actrow, jsondata.actcol);
+            let activeSheetName = jsondata.actname;
            
+            if (xs.bottombar.dataNames.indexOf(activeSheetName) >= 0) {
+                xs.setActiveSheetByName(activeSheetName).setActiveCell(jsondata.actrow, jsondata.actcol);
+
+            } else {
+                 //some times if the active sheet is invisible or chartworksheet ,just use the first worksheet
+                activeSheetName = xs.bottombar.dataNames[0];
+                xs.setActiveSheetByName(activeSheetName).setActiveCell(0,0);
         }
 
 
+        }
+
+        function ColorReverse(OldColorValue) {
+            var OldColorValue = '0x' + OldColorValue.replace(/#/g, "");
+            var str = '000000' + (0xFFFFFF - OldColorValue).toString(16);
+            return '#' + str.substring(str.length - 6, str.length);
+        }
         function save() {
             if (!xs.buffer.isFinish()) {
           alert('updating is inprogress,please try later');

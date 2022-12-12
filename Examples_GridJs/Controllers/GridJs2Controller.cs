@@ -353,10 +353,24 @@ namespace Aspose.Cells.GridJsDemo.Controllers
         public JsonResult ImageUrl(string id,string uid)
         {
             
-
+            if(GridJsWorkbook.CacheImp!=null)
+            { 
             return new JsonResult(GridJsWorkbook.GetImageUrl(uid, id, "."));
+            }
+            else
+            {
+                string file = uid + "." + id;
+             return new JsonResult("/GridJs2/GetZipFile?f="+ file);
+            }
              
         }
+        public FileResult GetZipFile(string f)
+        {
+            //  GridJsWorkbook.getzip
+            //GridJsWorkbook.CacheImp.LoadStream(fileid), mimeType, name
+            return File(new FileStream(Path.Combine(Config.FileCacheDirectory, f), FileMode.Open), "application/zip",f);
+        }
+
         private string GetMimeType(string FileName)
         {
             string contentType;
@@ -418,8 +432,15 @@ namespace Aspose.Cells.GridJsDemo.Controllers
             {
                 filename += ".zip";
             }
-            String fileurl= GridJsWorkbook.CacheImp.GetFileUrl(uid + "/" + filename);
-            fileurl += "&filename=" + HttpContext.Request.Form["file"];
+             String fileurl= null;
+            if (GridJsWorkbook.CacheImp != null)
+            {
+                fileurl = GridJsWorkbook.CacheImp.GetFileUrl(uid + "/" + filename);
+            }
+            else
+            {
+                fileurl = "/GridJs2/GetFile?id=" + uid + "&filename=" + filename;
+            }
             return new JsonResult(fileurl);
         }
 
