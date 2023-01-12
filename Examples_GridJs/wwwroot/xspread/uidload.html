@@ -113,7 +113,8 @@
             uniqueid = jsondata.uniqueid;
             sheets = jsondata.data;
             const filename = jsondata.filename;
-            const fileDownloadUrl = "/GridJs2/Download"
+            const fileDownloadUrl = "/GridJs2/Download";
+            const oleDownloadUrl = "/GridJs2/Ole";
             const imageurl = "/GridJs2/imageurl";
             const imageuploadurl1 = "/GridJs2/AddImage";
             const imageuploadurl2 = "/GridJs2/AddImageByURL";
@@ -154,6 +155,7 @@
             xs.setFileName(filename);
             xs.setImageInfo(myimagediv, imageurl, imageuploadurl1, imageuploadurl2, imagecopyurl, basiczorder);
             xs.setFileDownloadInfo(fileDownloadUrl)
+            xs.setOleDownloadInfo(oleDownloadUrl)
             //need to extend swapfunction
             var oldswapfunc = xs.bottombar.swapFunc;
             xs.bottombar.swapFunc = function (id) {

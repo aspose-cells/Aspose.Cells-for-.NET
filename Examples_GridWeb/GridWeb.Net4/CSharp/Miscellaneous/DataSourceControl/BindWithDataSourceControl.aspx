@@ -13,7 +13,7 @@
     <div style="text-align: left; font-size: small;" class="componentDescriptionTxt">
         <p>
             This example is to demonstrate the use of Access Data Source that further binded with
-            empty <b>WebWorksheet</b>. Insert, Update, Delete queries and their coresponding
+            empty <b>GridWorksheet</b>. Insert, Update, Delete queries and their coresponding
             parameters are defined in Access Data Source.
         </p>
         <p>
@@ -72,7 +72,7 @@
                                 </Style>
                             <AlternativeStyle RotationAngle="0" NumberType="0"></AlternativeStyle>
                             <ColumnHeaderStyle RotationAngle="0" NumberType="0"></ColumnHeaderStyle>
-                            <Validation ValidationType="Integer" />
+                            <Validation ValidationType="WholeNumber" />
                         </acw:BindColumn>
                         <acw:BindColumn Caption="ProductName" CommandName="" CommandText="" CustomFormat=""
                             DataField="ProductName" ImageUrl="" IsAutoCreated="True">
@@ -87,7 +87,7 @@
                                 </Style>
                             <AlternativeStyle RotationAngle="0" NumberType="0"></AlternativeStyle>
                             <ColumnHeaderStyle RotationAngle="0" NumberType="0"></ColumnHeaderStyle>
-                            <Validation ValidationType="Integer" />
+                            <Validation ValidationType="WholeNumber" />
                         </acw:BindColumn>
                         <acw:BindColumn Caption="CategoryID" CommandName="" CommandText="" CustomFormat=""
                             DataField="CategoryID" ImageUrl="" IsAutoCreated="True">
@@ -95,7 +95,7 @@
                                 </Style>
                             <AlternativeStyle RotationAngle="0" NumberType="0"></AlternativeStyle>
                             <ColumnHeaderStyle RotationAngle="0" NumberType="0"></ColumnHeaderStyle>
-                            <Validation ValidationType="Integer" />
+                            <Validation ValidationType="WholeNumber" />
                         </acw:BindColumn>
                         <acw:BindColumn Caption="QuantityPerUnit" CommandName="" CommandText="" CustomFormat=""
                             DataField="QuantityPerUnit" ImageUrl="" IsAutoCreated="True">
@@ -110,7 +110,7 @@
                                 </Style>
                             <AlternativeStyle RotationAngle="0" NumberType="0"></AlternativeStyle>
                             <ColumnHeaderStyle RotationAngle="0" NumberType="0"></ColumnHeaderStyle>
-                            <Validation ValidationType="Number" />
+                            <Validation ValidationType="WholeNumber" />
                         </acw:BindColumn>
                         <acw:BindColumn Caption="UnitsInStock" CommandName="" CommandText="" CustomFormat=""
                             DataField="UnitsInStock" ImageUrl="" IsAutoCreated="True">
@@ -118,7 +118,7 @@
                                 </Style>
                             <AlternativeStyle RotationAngle="0" NumberType="0"></AlternativeStyle>
                             <ColumnHeaderStyle RotationAngle="0" NumberType="0"></ColumnHeaderStyle>
-                            <Validation ValidationType="Integer" />
+                            <Validation ValidationType="WholeNumber" />
                         </acw:BindColumn>
                         <acw:BindColumn Caption="UnitsOnOrder" CommandName="" CommandText="" CustomFormat=""
                             DataField="UnitsOnOrder" ImageUrl="" IsAutoCreated="True">
@@ -126,7 +126,7 @@
                                 </Style>
                             <AlternativeStyle RotationAngle="0" NumberType="0"></AlternativeStyle>
                             <ColumnHeaderStyle RotationAngle="0" NumberType="0"></ColumnHeaderStyle>
-                            <Validation ValidationType="Integer" />
+                            <Validation ValidationType="WholeNumber" />
                         </acw:BindColumn>
                         <acw:BindColumn Caption="ReorderLevel" CommandName="" CommandText="" CustomFormat=""
                             DataField="ReorderLevel" ImageUrl="" IsAutoCreated="True">
@@ -134,7 +134,7 @@
                                 </Style>
                             <AlternativeStyle RotationAngle="0" NumberType="0"></AlternativeStyle>
                             <ColumnHeaderStyle RotationAngle="0" NumberType="0"></ColumnHeaderStyle>
-                            <Validation ValidationType="Integer" />
+                            <Validation ValidationType="WholeNumber" />
                         </acw:BindColumn>
                         <acw:BindColumn Caption="Discontinued" CommandName="" CommandText="" CustomFormat=""
                             DataField="Discontinued" ImageUrl="" IsAutoCreated="True">

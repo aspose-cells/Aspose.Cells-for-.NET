@@ -131,6 +131,13 @@
                     alert(jsondata.Error);
           } else {
                     loadWithCustomContextMenu(jsondata);
+                    const customImageItems = [
+                        { 'key': 'RemovePicHighlight', 'text': 'remove select image/shape to highlight  ', 'callback': removehighlightSelectImage },
+                        { 'key': 'PicHighlight', 'text': 'add select image/shape to highlight  ', 'callback': highlightSelectImage },
+                        { 'key': 'Hide', 'text': 'hide select image/shape    ', 'callback': hideSelectImage },
+                                             
+                                             ];
+                    xs.sheet.addImageContextMenuItems(customImageItems)
 			}
         }
     });
@@ -166,7 +173,50 @@
             }
            
         }
+        const hideSelectImage = (sheet,selectedObj) => {
+            
+            selectedObj.setVisible(false);
+        }
+        const highlightSelectImage = (sheet, selectedObj) => {
+            //enable the feature to see the result
+            enableHighlightFeature(sheet, true);
+            sheet.removeHighlightInverseRange();
 
+            //check whether image/shape  is selected
+            
+            if (selectedObj) {
+                //add highlight for image/shape
+                if (selectedObj.type === 'Picture') {
+                    sheet.addHighlightImage(selectedObj.id);
+                } else {
+                    sheet.addHighlightShape(selectedObj.id);
+                    if (selectedObj.type === 'TextBox') {
+                        //for example
+                        selectedObj.addHighlight(0, selectedObj.text.length / 2);
+                    }
+                }
+            } 
+
+        };
+        const removehighlightSelectImage = (sheet, selectedObj) => {
+            //enable the feature to see the result
+           
+            //check whether image/shape  is selected
+            
+            if (selectedObj) {
+                //add highlight for image/shape
+                if (selectedObj.type === 'Picture') {
+                    sheet.removeHighlightImage(selectedObj.id);
+                } else {
+                    sheet.removeHighlightShape(selectedObj.id);
+                    if (selectedObj.type === 'TextBox') {
+                        //for example
+                        selectedObj.removeHighlight(0, selectedObj.text.length / 2);
+                    }
+                }
+            }
+
+        };
         const highlightSelect = (sheet) => {
             //enable the feature to see the result
             enableHighlightFeature(sheet, true);
@@ -260,6 +310,7 @@
                   const e = textselect[0].selectionEnd;
                 //enable the feature to see the result
                 enableHighlightFeature(sheet, true);
+                  console.log("sheet.addHighlightText(" + range.sri + "," + range.sci + "," + s + "," + e+")");
                 sheet.addHighlightText(range.sri, range.sci, s, e);
                
                 me.dialog('close');
@@ -352,7 +403,8 @@
 		    xs.setUniqueId(uniqueid);
 			xs.setFileName(filename);
             xs.setImageInfo(myimagediv,imageurl,imageuploadurl1,imageuploadurl2,imagecopyurl,basiczorder);
-            xs.setFileDownloadInfo(fileDownloadUrl)
+            xs.setFileDownloadInfo(fileDownloadUrl);
+           // xs.setVisibleFilter((sheet,s) => { return false; });
         //need to extend swapfunction
         var oldswapfunc = xs.bottombar.swapFunc;
         xs.bottombar.swapFunc = function (id) {
@@ -373,7 +425,7 @@
             console.log(`activating sheet ${id}`);
             };
         xs.setActiveSheetByName(jsondata.actname).setActiveCell(jsondata.actrow,jsondata.actcol);
-            //add custom context menu items for image
+            //add custom context menu items for set highlight image function
             xs.sheet.addCustomContextMenuItems([{ 'key': 'key8', 'text': 'set self defined image highlight function', 'callback': setCustomHighlighImageFunc }, { 'key': 'key9', 'text': 'use default highlight image func ', 'callback': removeCustomHighlighImageFunc }])
  
     }

@@ -13,19 +13,20 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.Format
             {
                 initData();
 
-                //set sheets selectedIndex to 0
-                GridWeb1.ActiveSheetIndex = 0;
+                
             }
         }
 
         private void initData()
         {
 
-            GridWeb1.WorkSheets.Clear();
-            GridWeb1.WorkSheets.Add("Number Format");
+           
+            GridWorksheet sheet=GridWeb1.WorkSheets.Add("Number Format");
+            //set sheets selectedIndex to the added one
+            GridWeb1.ActiveSheetIndex = sheet.Index;
 
             GridCell cell;
-            GridCells cells = GridWeb1.WorkSheets[0].Cells;
+            GridCells cells = sheet.Cells;
             cells["A1"].PutValue("Number Type");
             cells["A2"].PutValue("General:");
             cells["A3"].PutValue("Decimal 1:");

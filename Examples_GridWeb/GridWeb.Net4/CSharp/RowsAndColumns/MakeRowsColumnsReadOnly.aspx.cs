@@ -19,10 +19,10 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.RowsAndColumns
         {
             // ExStart:MakeCellReadOnly
             // Accessing the first worksheet that is currently active
-            GridWorksheet sheet = GridWeb1.WorkSheets[GridWeb1.ActiveSheetIndex];
+            GridWorksheet sheet = GridWeb1.ActiveSheet;
 
             // Set the 1st cell (A1) read only
-            sheet.SetIsReadonly(sheet.Cells["A1"], true);
+            sheet.SetIsReadonly(0,0, true);
             // ExEnd:MakeCellReadOnly
         }
     }

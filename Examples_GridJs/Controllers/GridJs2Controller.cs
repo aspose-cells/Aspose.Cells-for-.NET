@@ -348,6 +348,27 @@ namespace Aspose.Cells.GridJsDemo.Controllers
             return new FileStreamResult(GridJsWorkbook.GetImageStream(uid, fileid), "image/png");
         }
 
+        //get ole object /GridJs2/Ole
+        public ActionResult Ole()
+        {
+            int oleid = int.Parse(HttpContext.Request.Query["id"]);
+            string uid = HttpContext.Request.Query["uid"];
+            string sheet = HttpContext.Request.Query["sheet"];
+            GridJsWorkbook gwb = new GridJsWorkbook();
+              string filename;
+            byte[] filebyte = gwb.GetOle(uid, sheet, oleid, out filename);
+            if (filename != null)
+            {
+                FileContentResult ret = new FileContentResult(filebyte, GetMimeType(filename));
+                ret.FileDownloadName = filename;
+                return ret;
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
         //if use GridCacheForStream you need to set this api
         // GET: /GridJs2/ImageUrl?uid=&id=
         public JsonResult ImageUrl(string id,string uid)
@@ -392,6 +413,11 @@ namespace Aspose.Cells.GridJsDemo.Controllers
             return File(GridJsWorkbook.CacheImp.LoadStream(fileid), mimeType, name);
         }
         
+
+      
+ 
+
+
 
       /// <summary>
       /// down load file

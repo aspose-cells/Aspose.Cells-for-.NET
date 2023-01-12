@@ -35,7 +35,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.DataBind
                 sheet.CreateAutoGenratedColumns();
 
                 // Sets the DateFiled1's validation to DateTime.
-                sheet.BindColumns["DateField1"].Validation.ValidationType = ValidationType.DateTime;
+                sheet.BindColumns["DateField1"].Validation.ValidationType = GridValidationType.DateTime;
 
                 // Binding.
                 sheet.DataBind();
