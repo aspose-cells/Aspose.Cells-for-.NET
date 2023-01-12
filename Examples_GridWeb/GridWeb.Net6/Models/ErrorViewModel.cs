@@ -1,6 +1,6 @@
 using System;
 
-namespace GridWeb.Demo.NET5._0.Models
+namespace GridWeb.Demo.Models
 {
     public class ErrorViewModel
     {

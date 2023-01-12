@@ -1,13 +1,9 @@
-﻿using GridWeb.Demo.NET5._0.Models;
+﻿using GridWeb.Demo.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace GridWeb.Demo.NET5._0.Controllers
+namespace GridWeb.Demo.Controllers
 {
     public class HomeController : Controller
     {

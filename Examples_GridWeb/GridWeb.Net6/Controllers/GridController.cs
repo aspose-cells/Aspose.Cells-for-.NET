@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace GridWeb.Demo.NET5._0.Controllers
+namespace GridWeb.Demo.Controllers
 {
     [Route("grid")]
     public class GridController : Controller
@@ -40,6 +40,8 @@ namespace GridWeb.Demo.NET5._0.Controllers
             //load workbook
             String file = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\wb\test.xlsx");
             mw.ImportExcelFile(file);
+            mw.ActiveSheet.Cells["B1"].PutValue("version:");
+            mw.ActiveSheet.Cells["C1"].PutValue(Aspose.Cells.GridWeb.GridWeb.GetVersion());
 
             //set width height
             mw.Width = Unit.Pixel(800);
