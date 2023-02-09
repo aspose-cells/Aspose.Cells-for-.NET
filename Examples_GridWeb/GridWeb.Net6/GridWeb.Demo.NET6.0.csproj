@@ -1,15 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>GridWeb.Demo.NET5._0</RootNamespace>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>GridWeb.Demo</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
 	<PackageReference Include="System.Drawing.Common" Version="4.7.0" />
         <PackageReference Include="System.Text.Encoding.CodePages" Version="4.7.0" />
 	<PackageReference Include="System.Security.Cryptography.Pkcs" Version="6.0.1" />
-	<PackageReference Include="Aspose.Cells.GridWeb" Version="23.1.0" />
+	<PackageReference Include="Aspose.Cells.GridWeb" Version="23.2.0" />
   </ItemGroup>
  
    
