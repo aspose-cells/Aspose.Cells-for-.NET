@@ -97,6 +97,8 @@
                 updateMode: 'server',
                 updateUrl: '/GridJs2/UpdateCell',
                 showToolbar: true,
+                
+               // showFileName:false,
                 //showGrid: true,
                 //mode: 'edit',
                 mode: 'edit',
@@ -154,8 +156,8 @@
             xs.setUniqueId(uniqueid);
             xs.setFileName(filename);
             xs.setImageInfo(myimagediv, imageurl, imageuploadurl1, imageuploadurl2, imagecopyurl, basiczorder);
-            xs.setFileDownloadInfo(fileDownloadUrl)
-            xs.setOleDownloadInfo(oleDownloadUrl)
+            xs.setFileDownloadInfo(fileDownloadUrl);
+            xs.setOleDownloadInfo(oleDownloadUrl);
             //need to extend swapfunction
             var oldswapfunc = xs.bottombar.swapFunc;
             xs.bottombar.swapFunc = function (id) {
