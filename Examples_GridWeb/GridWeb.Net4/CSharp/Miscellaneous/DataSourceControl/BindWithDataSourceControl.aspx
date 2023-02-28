@@ -62,8 +62,8 @@
                     runat="server">
                 </acw:CustomCommandButton>
             </CustomCommandButtons>
-            <WebWorksheets>
-                <acw:WorksheetDesign runat="server" DataMember="" DataSource="<%# AccessDataSource1 %>"
+            <WorkSheets>
+                <acw:GridWorksheetDesign runat="server" DataMember="" DataSource="<%# AccessDataSource1 %>"
                     Name="Sheet1">
                     <BindColumns>
                         <acw:BindColumn Caption="ProductID" CommandName="" CommandText="" CustomFormat=""
@@ -145,8 +145,8 @@
                             <Validation ValidationType="CheckBox" />
                         </acw:BindColumn>
                     </BindColumns>
-                </acw:WorksheetDesign>
-            </WebWorksheets>
+                </acw:GridWorksheetDesign>
+            </WorkSheets>
         </acw:GridWeb>
         <asp:AccessDataSource ID="AccessDataSource1" runat="server" DataFile="Northwind.mdb"
             DeleteCommand="DELETE FROM [Products] WHERE [ProductID] = ?" InsertCommand="INSERT INTO [Products] ([ProductID], [ProductName], [SupplierID], [CategoryID], [QuantityPerUnit], [UnitPrice], [UnitsInStock], [UnitsOnOrder], [ReorderLevel], [Discontinued]) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"

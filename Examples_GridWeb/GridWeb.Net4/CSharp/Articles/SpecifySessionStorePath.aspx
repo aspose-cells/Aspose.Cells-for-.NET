@@ -11,7 +11,7 @@
     </div>
     <div style="text-align: left; font-size: small;" class="componentDescriptionTxt">                
         <p>
-            Session store path is changed to mytempdir/session.
+            Session store path is changed to tmpstorecache/session.
         </p>
     </div>
     <div style="text-align: center; font-size: small;" class="componentDescriptionTxt">                        

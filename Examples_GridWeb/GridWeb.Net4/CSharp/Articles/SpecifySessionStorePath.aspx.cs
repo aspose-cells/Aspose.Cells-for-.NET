@@ -14,9 +14,9 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Articles
             if (!IsPostBack && !GridWeb1.IsPostBack)
             {
                 LoadData();
-
+                GridWeb1.SessionMode = SessionMode.File;
                 // ExStart:SpecifySessionStorePath
-                GridWeb1.SessionStorePath = "mytempdir/session";
+                GridWeb1.SessionStorePath = Server.MapPath("~")+ "/tmpstorecache/session";
                 // ExEnd:SpecifySessionStorePath
             }
         }
@@ -26,8 +26,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Articles
             // Gets the web application's path.
             string path = (this.Master as Site).GetDataDir();
 
-            // Clear the sheets
-            GridWeb1.WorkSheets.Clear();
+           
 
             // Load the file
             GridWeb1.ImportExcelFile(path + "\\Articles\\Data.xlsx");

@@ -33,7 +33,7 @@ namespace Aspose.Cells.GridWeb.Examples.CSharp.Miscellaneous.DataSourceControl
             {
                 case "UPDATE":
                     // Only available for local users.
-                    if (Request.UserHostAddress == "127.0.0.1")
+                    if (Request.UserHostAddress == "127.0.0.1"||Request.Url.ToString().Contains("localhost"))
                     {
                         // Update datasource
                         GridWeb1.WorkSheets[0].DataSourceControlUpdate(AccessDataSource1);
