@@ -560,7 +560,7 @@ body {
 }
 .x-spreadsheet-menu > li.active {
   background-color: #fff;
-  color: rgba(0, 0, 0, 0.65);
+  color: #3c763d !important;
 }
 .x-spreadsheet-menu > li .x-spreadsheet-icon {
   margin: 0 6px;
