@@ -192,12 +192,15 @@ body {
 .x-spreadsheet-dropdown .x-spreadsheet-dropdown-content {
   position: absolute;
   z-index: 200;
-  background: #fff;
+  background: #f6f7f8db;
   box-shadow: 1px 2px 5px 2px rgba(51, 51, 51, 0.15);
+  max-height: 600px;
+  overflow-y: auto;
 }
 .x-spreadsheet-dropdown.bottom-left .x-spreadsheet-dropdown-content {
   top: calc(100% + 5px);
   left: 0;
+  overflow-y: visible;
 }
 .x-spreadsheet-dropdown.bottom-left .x-spreadsheet-menubar-dropdown-content {
   top: -5px;
@@ -431,7 +434,7 @@ body {
 }
 .x-spreadsheet-item:hover,
 .x-spreadsheet-item.active {
-  background: rgba(0, 0, 0, 0.05);
+  background: rgba(224, 215, 215, 0.9);
 }
 .x-spreadsheet-item.divider {
   height: 0;
@@ -1046,8 +1049,6 @@ form fieldset select {
   }
   .x-spreadsheet-bottombar .x-spreadsheet-menu {
     display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
   }
   .x-spreadsheet-form-checkbox {
     margin-left: -25px;

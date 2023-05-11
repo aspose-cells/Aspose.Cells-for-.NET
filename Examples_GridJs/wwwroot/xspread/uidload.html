@@ -4,17 +4,39 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>x-spreadsheet-demo</title>
-    <script type="text/javascript" src="jquery-2.1.1.js"></script>
-    <link rel="stylesheet" href="./xspreadsheet.css?v=20220712" />
-    <link rel="stylesheet" href="./quantumui.min.22.5.5.2.css?v=20220312" />
+
+    <style>
+        ::-webkit-scrollbar, ::-webkit-scrollbar-button {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            background-color: #FFF;
+        }
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+            background-color: #AAA;
+        }
+    </style>
+
     <link rel="stylesheet" href="./bootstrap.min.22.5.5.2.css?v=20220315" />
+    <script src="jquery-2.1.1.js"></script>
     <link rel="stylesheet" href="./jquery-ui.min.css" />
+    <script src="jquery-ui.min.js"></script>
+    <script src="jszip.min.js"></script>
 
-    <script src="./xspreadsheet.js?v=20220712"></script>
+     <!--for local reference-->
+    <link rel="stylesheet" href="./xspreadsheet.css?v=202305" />
+    <script src="./xspreadsheet.js?v=202305"></script>
 
-    <script type="text/javascript" src="jquery-ui.min.js"></script>
-    <script type="text/javascript" src="jszip.min.js"></script>
-    <script src="vconsole.min.js"></script>
+    <!--for release reference-->
+    <!--<link rel="stylesheet" href="https://unpkg.com/gridjs-spreadsheet@23.5.0/xspreadsheet.css">
+    <script src="https://unpkg.com/gridjs-spreadsheet@23.5.0/xspreadsheet.js"></script>-->
+
+
 
 
 </head>
@@ -142,41 +164,33 @@
             }
 
             xs.on('cell-selected', (cell, ri, ci) => {
-                console.log('cell:', cell, ', ri:', ri, ', ci:', ci);
+                console.log('cell selected:', cell, ', ri:', ri, ', ci:', ci);
                 if (ci === -1) {
-                    console.log('cell ci -1:');
+                    console.log('ci === -1 means a row selected ',ri);
                 }
+                if (ri === -1) {
+                    console.log('ri === -1 means a column selected',ci);
+                }
+            }).on('cells-selected', (cell, range) => {
+                console.log('range   selected:', cell, ', rang:', range);
+
+            }).on('object-selected', (obj) => {
+                console.log('obj selected id:', obj.id, ', type: ', obj.type);
+            }).on('sheet-selected', (id,name) => {
+                console.log('sheet selected id:', id, ', name: ',name);
             }).on('cell-edited', (text, ri, ci) => {
                 console.log('text:', text, ', ri: ', ri, ', ci:', ci);
             });
 
-            $(".x-spreadsheet-overlayer-content").append('<div id="' + imagediv + '" style="position:relative" /> ');
-            let myimagediv = $("#" + imagediv);
+ 
 
             xs.setUniqueId(uniqueid);
             xs.setFileName(filename);
-            xs.setImageInfo(myimagediv, imageurl, imageuploadurl1, imageuploadurl2, imagecopyurl, basiczorder);
+           // xs.setImageInfo(imageurl, imageuploadurl1, imageuploadurl2, imagecopyurl, basiczorder, 'content/img/loading.gif');
+            xs.setImageInfo(imageurl, imageuploadurl1, imageuploadurl2, imagecopyurl, basiczorder);
             xs.setFileDownloadInfo(fileDownloadUrl);
             xs.setOleDownloadInfo(oleDownloadUrl);
-            //need to extend swapfunction
-            var oldswapfunc = xs.bottombar.swapFunc;
-            xs.bottombar.swapFunc = function (id) {
-
-                //xs.sheet.data.settings.showGrid=sheets[id].showGrid;
-                oldswapfunc(id);
-                if (xs.sheet.data.autoFilter.filters.length > 0) {
-                    xs.sheet.data.resetAutoFilter();
-                    xs.sheet.data.deleteExceptRowHideForAutoFilter();
-                }
-                //if have bgcolor ,reverse the select area color
-                if (xs.sheet.data.bgcolor) {
-                    $('.x-spreadsheet-selector-area').css('border-color', ColorReverse(xs.sheet.data.bgcolor));
-                } else {
-                    //the default color
-                    $('.x-spreadsheet-selector-area').css('border-color', '#4b89ff');
-                }
-            console.log(`activating sheet ${id}`);
-            };
+             
             let activeSheetName = jsondata.actname;
            
             if (xs.bottombar.dataNames.indexOf(activeSheetName) >= 0) {
@@ -186,7 +200,7 @@
                  //some times if the active sheet is invisible or chartworksheet ,just use the first worksheet
                 activeSheetName = xs.bottombar.dataNames[0];
                 xs.setActiveSheetByName(activeSheetName).setActiveCell(0,0);
-        }
+            }
 
 
         }
