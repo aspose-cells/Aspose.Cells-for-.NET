@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Aspose.Cells.GridJs;
@@ -96,6 +97,12 @@ namespace gridjs_demo_.netcore
             Config.FileCacheDirectory = TestConfig.TempDir;
 			//set cache implement
             LocalFileCache mwc = new LocalFileCache();
+            //if use LocalFileCache,need to create  streamcache path under Config.FileCacheDirectory
+            string streamdir =Path.Combine(Config.FileCacheDirectory, "streamcache");
+            if (!Directory.Exists(streamdir))
+            {
+                Directory.CreateDirectory(streamdir);
+            }
             GridJsWorkbook.CacheImp = mwc;
             //AwsCache awc = new AwsCache(new AwsStorageService());
             //GridJsWorkbook.CacheImp = awc;
