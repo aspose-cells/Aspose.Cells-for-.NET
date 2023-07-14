@@ -138,7 +138,7 @@
                         { 'key': 'Hide', 'text': 'hide select image/shape    ', 'callback': hideSelectImage },
                                              
                                              ];
-                    xs.sheet.addImageContextMenuItems(customImageItems)
+                    xs.sheet.addImageContextMenuItems(customImageItems);
 			}
         }
     });
@@ -408,6 +408,8 @@
                 console.log('obj selected id:', obj.id, ', type: ', obj.type);
             }).on('sheet-selected', (id,name) => {
                 console.log('sheet selected id:', id, ', name: ',name);
+            }).on('sheet-loaded', (id, name) => {
+                console.log('sheet is loaded id:', id, ', name: ', name);
         }).on('cell-edited', (text, ri, ci) => {
           console.log('text:', text, ', ri: ', ri, ', ci:', ci);
         });
