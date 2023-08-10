@@ -1067,7 +1067,7 @@ form fieldset select {
   display: inline-block;
 }
 .x-spreadsheet-icon .x-spreadsheet-icon-img {
-  background-image: url(05f087c9088a0b2278c09809fc7b57c7.svg);
+  background-image: url(177232cc7260a954bc9a091eea99d9c3.svg);
   position: absolute;
   width: 262px;
   height: 444px;
@@ -1324,6 +1324,34 @@ form fieldset select {
 .x-spreadsheet-icon .x-spreadsheet-icon-img.savetocloud {
   left: -144px;
   top: -72px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.insertTextBox {
+  left: -198px;
+  top: -72px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.insertSpinButton {
+  left: -162px;
+  top: -72px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.insertScrollBar {
+  left: -180px;
+  top: -72px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.insertRadioButton {
+  left: -216px;
+  top: -72px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.insertComboBox {
+  left: -234px;
+  top: -72px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.insertLabel {
+  left: 0px;
+  top: -90px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.insertCheckBox {
+  left: -18px;
+  top: -90px;
 }
 .x-spreadsheet-formula-bar {
   height: 25px;

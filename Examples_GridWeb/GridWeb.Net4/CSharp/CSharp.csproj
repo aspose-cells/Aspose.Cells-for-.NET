@@ -110,7 +110,7 @@
     </ProjectReference>
   </ItemGroup> -->
   <ItemGroup>
-     <PackageReference Include="Aspose.Cells.GridWeb" Version="23.7.0" />  
+     <PackageReference Include="Aspose.Cells.GridWeb" Version="23.8.0" />  
      <Reference Include="System">
       <Name>System</Name>
     </Reference>
