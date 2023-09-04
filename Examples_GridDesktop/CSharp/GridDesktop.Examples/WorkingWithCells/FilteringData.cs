@@ -25,7 +25,11 @@ namespace GridDesktop.Examples.WorkingWithCells
             gridDesktop1.Worksheets[0].RowFilter.EnableAutoFilter = true;
 
             // Set the header row.
+            gridDesktop1.Worksheets[0].RowFilter.StartCol = 0;
+            gridDesktop1.Worksheets[0].RowFilter.EndCol = gridDesktop1.Worksheets[0].Columns.Count-1;
             gridDesktop1.Worksheets[0].RowFilter.HeaderRow = 0;
+          
+
 
             gridDesktop1.Worksheets[0].RefreshFilter();
             // ExEnd:AutoFilter
