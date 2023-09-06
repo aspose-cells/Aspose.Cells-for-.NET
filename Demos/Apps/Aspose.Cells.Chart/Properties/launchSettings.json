@@ -38,7 +38,7 @@
         "ASPOSE_CLOUD_APP": "false"
       },
       "applicationUrl": "http://localhost:5000",
-      "launchUrl": "http://localhost:5000/cells/conversion"
+      "launchUrl": "http://localhost:5000/cells/chart"
     },
     "Docker": {
       "commandName": "Docker",
