@@ -1,0 +1,352 @@
+@using Aspose.Cells.Common.Config
+@using Aspose.Cells.Common.Models
+@model Aspose.Cells.Common.Models.ViewModel
+
+<div class="topheader">
+    <div class="topsection topsection-panel">
+        <button type="button" class="togglebtn" id="mobile-button">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+            <span class="icon-bar">
+            </span>
+        </button>
+        <div class="venturelogo">
+            <a rel="nofollow" href="https://www.aspose.app">
+                <img loading="lazy" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='313.5' height='100' viewBox='0 0 313.5 100'%3E%3Cg fill='%23FFF'%3E%3Cpath d='M92.576 61.574l-3.684 8.689h-6.764l16.993-38.498h6.654l16.828 38.498h-6.929l-3.685-8.689H92.576zm9.679-22.876l-7.259 17.103h14.518l-7.259-17.103zM153.513 35.453l-2.694 5.719c-4.18-2.529-8.359-3.574-11.273-3.574-3.795 0-6.27 1.43-6.27 4.014 0 8.414 20.788 3.905 20.732 17.763 0 6.874-6.049 11.107-14.518 11.107-6.049 0-11.769-2.477-15.728-6.104l2.805-5.608c3.959 3.631 8.909 5.608 13.033 5.608 4.51 0 7.204-1.704 7.204-4.674 0-8.579-20.787-3.795-20.787-17.488 0-6.599 5.664-10.724 14.023-10.724 5.004.002 9.899 1.597 13.473 3.961zM176.944 31.769c9.679 0 15.233 4.785 15.233 13.144 0 8.688-5.554 13.748-15.233 13.748h-8.854v11.604h-6.489V31.769h15.343zm-8.854 21.062h8.579c5.939 0 9.293-2.53 9.293-7.754 0-5.06-3.354-7.479-9.293-7.479h-8.579v15.233zM236.231 51.016c0 11-8.909 19.523-20.402 19.523s-20.402-8.523-20.402-19.523c0-11.053 8.909-19.412 20.402-19.412s20.402 8.414 20.402 19.412zm-34.206 0c0 7.646 6.324 13.693 13.858 13.693 7.534 0 13.693-6.049 13.693-13.693 0-7.644-6.159-13.583-13.693-13.583-7.589 0-13.858 5.939-13.858 13.583zM269.287 35.453l-2.695 5.719c-4.178-2.529-8.357-3.574-11.273-3.574-3.793 0-6.269 1.43-6.269 4.014 0 8.414 20.788 3.905 20.731 17.763 0 6.874-6.049 11.107-14.518 11.107-6.052 0-11.771-2.477-15.729-6.104l2.805-5.608c3.959 3.631 8.909 5.608 13.034 5.608 4.508 0 7.203-1.704 7.203-4.674 0-8.579-20.787-3.795-20.787-17.488 0-6.599 5.664-10.724 14.021-10.724 5.008.002 9.903 1.597 13.477 3.961zM283.865 37.598v10.394h18.807v5.828h-18.807v10.615h21.666v5.828h-28.156V31.769h27.496v5.83l-21.006-.001z'/%3E%3C/g%3E%3CradialGradient id='a' cx='561.64' cy='179.718' r='26.286' gradientTransform='matrix(0 1 1 0 -137.307 -506.377)' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='.143' stop-color='%23d5effc'/%3E%3Cstop offset='.842' stop-color='%233c8ec6'/%3E%3Cstop offset='1' stop-color='%2339c'/%3E%3C/radialGradient%3E%3Cpath fill='url(%23a)' d='M67.823 57.787c.154-1.553 1.451-20.462-14.797-29.05-7.596-4.018-17.848-3.964-23.477 1.74-9.948 10.068-1.514 20.621 1.642 21.669.12.035.075-.047.044-.174-4.996-19.942 29.742-23.512 35.881 5.71.218 1.035.615 1.011.707.105z'/%3E%3CradialGradient id='b' cx='475.332' cy='-726.447' r='19.084' gradientTransform='matrix(1 0 0 -1 -432 -666)' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='.143' stop-color='%23fee588'/%3E%3Cstop offset='.564' stop-color='%23f79b30'/%3E%3Cstop offset='.687' stop-color='%23f58b2d'/%3E%3Cstop offset='.888' stop-color='%23f3752a'/%3E%3Cstop offset='1' stop-color='%23f36c29'/%3E%3C/radialGradient%3E%3Cpath fill='url(%23b)' d='M27.743 81.9c1.55.147 20.459 1.439 29.049-14.805 4.018-7.599 3.963-17.853-1.737-23.479-10.073-9.947-20.625-1.516-21.673 1.646-.025.065.074.065.172.044 19.944-4.996 23.512 29.744-5.705 35.883-1.038.215-1.015.611-.106.711z'/%3E%3CradialGradient id='c' cx='-415.647' cy='-620.671' r='26.288' gradientTransform='matrix(0 -1 -1 0 -591.623 -371.307)' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23fcb116'/%3E%3Cstop offset='.193' stop-color='%23fbb318'/%3E%3Cstop offset='.335' stop-color='%23f9b91c'/%3E%3Cstop offset='.461' stop-color='%23f6c323'/%3E%3Cstop offset='.577' stop-color='%23f4d12d'/%3E%3Cstop offset='.673' stop-color='%23f0e03a'/%3E%3Cstop offset='.744' stop-color='%23e5d534'/%3E%3Cstop offset='.865' stop-color='%23cfbd24'/%3E%3Cstop offset='1' stop-color='%23b19e11'/%3E%3C/radialGradient%3E%3Cpath fill='url(%23c)' d='M3.634 41.813c-.155 1.552-1.448 20.46 14.801 29.052 7.595 4.018 17.848 3.962 23.476-1.741 9.948-10.069 1.518-20.621-1.645-21.669-.131-.047-.088 0-.045.172C45.22 67.57 10.48 71.137 4.34 41.919c-.219-1.038-.613-1.011-.706-.106z'/%3E%3CradialGradient id='d' cx='473.191' cy='-709.119' r='26.288' gradientTransform='matrix(1 0 0 -1 -432 -666)' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23a1c43a'/%3E%3Cstop offset='.455' stop-color='%23a0cc3a'/%3E%3Cstop offset='1' stop-color='%233c943a'/%3E%3C/radialGradient%3E%3Cpath fill='url(%23d)' d='M43.715 17.704c-1.549-.153-20.46-1.444-29.05 14.803-4.016 7.595-3.963 17.847 1.74 23.474 10.069 9.949 20.621 1.521 21.67-1.645.022-.09.022-.09-.172-.041-19.941 4.996-23.508-29.746 5.708-35.884 1.042-.216 1.01-.612.104-.707z'/%3E%3Cg opacity='.6'%3E%3CradialGradient id='e' cx='434.848' cy='-357.278' r='30.374' gradientTransform='matrix(1.0987 0 0 -1.6216 -441.9 -504.471)' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23f9e788'/%3E%3Cstop offset='1' stop-color='%23fff'/%3E%3C/radialGradient%3E%3Cpath opacity='.38' fill='url(%23e)' d='M35.729 30.865c-2.779 0-5.424.53-7.83 1.492-7.272 9.464.331 18.803 3.291 19.79.12.035.075-.047.044-.174-3.052-12.189 8.743-18.262 19.776-14.465-3.684-4.064-9.163-6.643-15.281-6.643z'/%3E%3CradialGradient id='f' cx='434.85' cy='-357.281' r='30.373' gradientTransform='matrix(1.0987 0 0 -1.6216 -441.9 -504.471)' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23f9e788'/%3E%3Cstop offset='1' stop-color='%23fff'/%3E%3C/radialGradient%3E%3Cpath opacity='.38' fill='url(%23f)' d='M33.381 45.264c-.025.065.074.065.172.044 12.048-3.02 18.119 8.458 14.6 19.377 4.67-3.473 7.668-8.848 7.668-14.88 0-2.354-.456-4.604-1.286-6.681-9.912-9.166-20.123-.97-21.154 2.14z'/%3E%3CradialGradient id='g' cx='434.851' cy='-357.277' r='30.368' gradientTransform='matrix(1.0987 0 0 -1.6216 -441.9 -504.471)' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23f9e788'/%3E%3Cstop offset='1' stop-color='%23fff'/%3E%3C/radialGradient%3E%3Cpath opacity='.38' fill='url(%23g)' d='M40.266 47.455c-.131-.047-.088 0-.045.172 3.055 12.193-8.742 18.262-19.775 14.465 3.684 4.063 9.164 6.643 15.284 6.643a21.15 21.15 0 0 0 7.828-1.484c7.275-9.468-.327-18.813-3.292-19.796z'/%3E%3CradialGradient id='h' cx='434.848' cy='-357.278' r='30.373' gradientTransform='matrix(1.0987 0 0 -1.6216 -441.9 -504.471)' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23f9e788'/%3E%3Cstop offset='1' stop-color='%23fff'/%3E%3C/radialGradient%3E%3Cpath opacity='.38' fill='url(%23h)' d='M38.075 54.336c.022-.09.022-.09-.172-.041-12.045 3.016-18.115-8.46-14.597-19.376-4.672 3.468-7.67 8.846-7.67 14.886 0 2.345.458 4.595 1.285 6.669 9.912 9.167 20.124.971 21.154-2.138z'/%3E%3C/g%3E%3C/svg%3E" alt="aspose" width="156.750" height="50">
+            </a>
+        </div>
+        <div class="menuitems">
+            <ul class="topheadermenus twocolmenu">
+                <li>
+                    <a rel="nofollow" href="https://products.aspose.app" class="mobileanchor">Products</a>
+                    <ul>
+                        <div class="productmenubox">
+                            <a rel="nofollow" href="https://products.aspose.app/total">
+                                <em>
+                                    Aspose.Total
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/words">
+                                <em>
+                                    Aspose.Words
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/pdf">
+                                <em>
+                                    Aspose.PDF
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/cells">
+                                <em>
+                                    Aspose.Cells
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/email">
+                                <em>
+                                    Aspose.Email
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/slides">
+                                <em>
+                                    Aspose.Slides
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/imaging">
+                                <em>
+                                    Aspose.Imaging
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/barcode">
+                                <em>
+                                    Aspose.BarCode
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/diagram">
+                                <em>
+                                    Aspose.Diagram
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/tasks">
+                                <em>
+                                    Aspose.Tasks
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/ocr">
+                                <em>
+                                    Aspose.OCR
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/note">
+                                <em>
+                                    Aspose.Note
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/cad">
+                                <em>
+                                    Aspose.CAD
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/3d">
+                                <em>
+                                    Aspose.3D
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/html">
+                                <em>
+                                    Aspose.HTML
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/gis">
+                                <em>
+                                    Aspose.GIS
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/zip">
+                                <em>
+                                    Aspose.ZIP
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/page">
+                                <em>
+                                    Aspose.Page
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/psd">
+                                <em>
+                                    Aspose.PSD
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/omr">
+                                <em>
+                                    Aspose.OMR
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/svg">
+                                <em>
+                                    Aspose.SVG
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/finance">
+                                <em>
+                                    Aspose.Finance
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/font">
+                                <em>
+                                    Aspose.Font
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/tex">
+                                <em>
+                                    Aspose.TeX
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/pub">
+                                <em>
+                                    Aspose.PUB
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/drawing">
+                                <em>
+                                    Aspose.Drawing
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/audio">
+                                <em>
+                                    Aspose.Audio
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/video">
+                                <em>
+                                    Aspose.Video
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                            <a rel="nofollow" href="https://products.aspose.app/ebook">
+                                <em>
+                                    Aspose.eBook
+                                    <b>
+                                        Product Solution
+                                    </b>
+                                </em>
+                            </a>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <a rel="nofollow" href="javascript:void(0)" class="mobileanchor">Support</a>
+                    <ul>
+                        <li>
+                            <a rel="nofollow" href="https://source.aspose.app">Source Code</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://forum.aspose.app">Free Support</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://aspose-free-consulting.github.io/">Free Consulting</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://blog.aspose.app">Blog</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://status.aspose.app">Status</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a rel="nofollow" href="https://websites.aspose.app" class="mobileanchor">Websites</a>
+                    <ul>
+                        <li>
+                            <a rel="nofollow" href="https://websites.aspose.app/aspose/com">aspose.com</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://websites.aspose.app/aspose/cloud">aspose.cloud</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://websites.aspose.app/aspose/app">aspose.app</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://websites.aspose.app/groupdocs/com">groupdocs.com</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://websites.aspose.app/groupdocs/cloud">groupdocs.cloud</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://websites.aspose.app/groupdocs/app">groupdocs.app</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://websites.aspose.app/conholdate/com">conholdate.com</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://websites.aspose.app/conholdate/cloud">conholdate.cloud</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://websites.aspose.app/conholdate/app">conholdate.app</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://websites.aspose.app/containerize/com">containerize.com</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://websites.aspose.app/codeporting/com">codeporting.com</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://websites.aspose.app/fileformat/com">fileformat.com</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a rel="nofollow" href="https://about.aspose.app/" class="mobileanchor">About</a>
+                    <ul>
+                        <li>
+                            <a rel="nofollow" href="https://about.aspose.app/">About Us</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://about.aspose.app/contact">Contact</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://about.aspose.app/legal">Legal</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://about.aspose.app/affiliates/">Affiliates</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://about.aspose.app/events/">Events</a>
+                        </li>
+                        <li>
+                            <a rel="nofollow" href="https://about.aspose.app/acquisition">Acquisition</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div id="DynabicMenuUserControlsclone"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

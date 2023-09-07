@@ -7,7 +7,305 @@ html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%
 }
+@media (max-width: 1024px) {
 
+    .topheader .menuitems {
+        margin-left: 0;
+        height: inherit
+    }
+
+}
+#DynabicMenuInnerDiv {
+    margin-bottom: 60px
+}
+
+.topheader ul, body, html {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.topheader ul {
+    list-style: none
+}
+
+.topheader ul li {
+    float: left;
+    list-style-image: none !important
+}
+
+.topheader {
+    float: left;
+    width: 100%;
+    min-width: 1000px;
+    height: 60px;
+    background: #111;
+    box-shadow: 0 -10px 10px -10px #000 inset;
+    font-family: Arial, Verdana, Tahoma, serif;
+    top: 0;
+    position: fixed;
+    z-index: 9999999
+}
+
+.topsection {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px
+}
+
+.venturelogo a {
+    float: left;
+    width: 270px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 5px;
+    background-size: 165px
+}
+
+.menuitems {
+    height: 60px;
+    float: left;
+    margin-left: 60px;
+    padding: 0 !important
+}
+
+.topheadermenus a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff !important;
+    display: block;
+    margin: 0 .25em;
+    line-height: 60px;
+    padding: 0 1em
+}
+
+.topheadermenus ul {
+    display: none
+}
+
+.userlogstatus {
+    float: right
+}
+
+.topheadermenus li:hover ul {
+    display: block;
+    float: left;
+    width: 175px;
+    position: absolute;
+    background: #333;
+    color: #fff
+}
+
+.topheadermenus li li {
+    width: 100%;
+    float: left;
+    font-size: 13px;
+    margin: 5px 0 0
+}
+
+.topheadermenus li li a {
+    font-size: 13px;
+    line-height: 32px !important;
+    margin: 0 !important
+}
+
+.topheadermenus li a:hover {
+    background: #2072a7;
+    color: #fff
+}
+
+.togglebtn {
+    cursor: pointer;
+    position: relative;
+    float: right;
+    border: 1px solid transparent;
+    outline: 0;
+    display: none;
+    background: #333;
+    margin: 0 0 0 5px;
+    min-height: 60px;
+    padding: 0 15px;
+    border-radius: 0
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0
+}
+
+.icon-bar {
+    transform: rotate(0);
+    padding: 0;
+    left: 0;
+    display: block;
+    top: 0;
+    transition: .3s all ease-in-out;
+    background: #888
+}
+
+.icon-bar, .icon-bar + .icon-bar {
+    margin-top: 4px
+}
+
+.togglebtn .icon-bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 1px
+}
+
+.topbutton .togglebtn .icon-bar {
+    width: 20px !important
+}
+@media (max-width: 1024px) and (min-width: 0px) {
+    .footer2anchor, .footer2col p {
+        display: table !important
+    }
+
+    .topbutton .icon-bar:nth-child(2) {
+        transform: rotate(45deg);
+        padding-left: 10px;
+        left: 0;
+        top: 5px;
+        transition: .3s all ease-in-out
+    }
+
+    .topbutton .icon-bar:nth-child(3) {
+        display: none
+    }
+
+    .topbutton .icon-bar:nth-child(4) {
+        transform: rotate(-45deg);
+        padding-right: 10px;
+        left: 0;
+        transition: .3s all ease-in-out;
+        margin-top: -2px
+    }
+
+    .menuitems li a.openmenu:after, .menuitems li a:after {
+        float: right;
+        font-size: 16px;
+        font-family: Fontawesome, serif;
+        content: "\f106";
+        color: #fff
+    }
+
+    .menuitems li a:after {
+        content: "\f107";
+        color: #999
+    }
+}
+@media (max-width: 1024px) {
+    .topheader, .topsection {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0 !important
+    }
+
+    .togglebtn {
+        display: block
+    }
+
+    .menuitems {
+        display: none
+    }
+
+    .topheader.topbutton .menuitems {
+        display: block;
+        margin: 0;
+        width: 100%;
+        background: #222
+    }
+
+    .venturelogo {
+        margin-left: 10px
+    }
+
+    .footer2bar {
+        background: #000 !important;
+        height: inherit
+    }
+
+    .footer2col, .footercol {
+        width: 100% !important
+    }
+
+    .footer2anchor, .footer2text {
+        display: block;
+        height: 20px
+    }
+
+    .footer2anchor, .footer2col p, .footer2text {
+        clear: both;
+        background: #000 !important
+    }
+
+    .footer2anchor, .footer2col p {
+        float: none !important;
+        text-align: center;
+        line-height: 16px;
+        width: 100%;
+        display: table
+    }
+}
+@media (max-width: 1024px) {
+    .topheader .menuitems, .topurlink.moblink, div#DynabicMenuUserControlsclone {
+        display: block !important
+    }
+
+    .desklink, .menuitems ul li:hover .productmenubox a:after, .topurlink.moblink:after {
+        display: none !important
+    }
+
+    .menuitems ul li a {
+        box-sizing: border-box !important
+    }
+
+    .topheader .menuitems {
+        transition: .5s all ease-in-out;
+        left: -300px !important;
+        background: #222
+    }
+
+    .topheader.topbutton .menuitems {
+        display: block !important;
+        transition: .5s all ease-in-out;
+        left: 0 !important
+    }
+}
+
+.twocolmenu.topheadermenus li:nth-child(1):hover ul {
+    width: inherit !important
+}
+
+.productmenubox {
+    max-width: 650px;
+    min-width: 650px;
+    width: 500px;
+    float: left;
+    display: block
+}
+
+.topheadermenus li .productmenubox a {
+    line-height: 20px !important;
+    margin: 10px 0 0;
+    float: left;
+    padding: 5px 15px !important;
+    display: inline-block;
+    width: 25%;
+    box-sizing: border-box
+}
+
+.topheadermenus li .productmenubox a:hover {
+    background: #3071a9 !important;
+    color: #fff !important
+}
 body {
     margin: 0;
     /*font-family: 'Open Sans',sans-serif;*/
