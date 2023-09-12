@@ -1,0 +1,11 @@
+@model Aspose.Cells.Common.Models.ViewModel
+
+<div class="options-div">
+    <label for="cert" style="min-width:150px">@Model["Certificate"]</label>
+    <input class="form-control options-input" type="file" id="cert" name="cert" accept="application/x-pkcs12,.pfx" placeholder="pkcs12,.pfx file">
+</div>
+
+<div class="options-div" style="margin-bottom: 20px">
+    <label for="password" style="min-width:150px">@Model["Password"]</label>
+    <input class="form-control options-input" type="password" id="password" name="password" placeholder="@Model["UnlockPasswordPlaceholder"]">
+</div>

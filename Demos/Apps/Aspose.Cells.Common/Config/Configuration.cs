@@ -50,6 +50,9 @@
 
         public static int MillisecondsTimeout => 300000;
 
+        public const long MaxRequestBodySize = 0x9600000; // 150M, unit B
+        public const int MaximumUploadFileSize = 20; // 20M, unit M
+        public const int MaximumUploadFiles = 10;
         public static string ProcessingTimeout => "Your file processing timed out";
 
         public static int MaxPageCount = 100;

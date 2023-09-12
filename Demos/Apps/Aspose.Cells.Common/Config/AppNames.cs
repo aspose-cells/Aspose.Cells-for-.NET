@@ -23,6 +23,8 @@ namespace Aspose.Cells.Common.Config
 		Translation,
 		Assembly,
 		Chart,
+		Repair,
+		Esign,
 		MortgageCalculator
 	}
 

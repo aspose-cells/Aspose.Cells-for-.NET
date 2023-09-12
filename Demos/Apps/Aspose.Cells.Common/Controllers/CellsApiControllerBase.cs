@@ -553,7 +553,7 @@ namespace Aspose.Cells.Common.Controllers
             }
         }
 
-        private async Task<FormFile[]> UploadLinks()
+        protected async Task<FormFile[]> UploadLinks()
         {
             var form = await HttpContext.Request.ReadFormAsync();
             var service = new WebClientService();

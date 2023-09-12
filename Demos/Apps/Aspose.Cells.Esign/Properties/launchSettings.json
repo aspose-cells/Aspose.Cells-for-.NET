@@ -1,0 +1,50 @@
+﻿{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:41576",
+      "sslPort": 44362
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation"
+      }
+    },
+    "Aspose.Cells.Esign": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation",
+        "FontFolderPath": "c:\\Windows\\Fonts",
+        "MailServerPort": "587",
+        "MailServer": "your email server",
+        "MailServerUserId": "your email account",
+        "MailServerPassword": "your password",
+        "SmtpTimeOut": "6000000",
+        "ForumKey": "xxx",
+        "ForumUrl": "https://forum-qa.aspose.com/port/import.json",
+        "ForumCategoryId": "7",
+        "RegionEndpoint": "your s3 RegionEndpoint",
+        "Bucket": "your s3 Bucket",
+        "AccessKeyId": "your s3 AccessKeyId",
+        "SecretAccessKey": "your s3 SecretAccessKey"
+      },
+      "applicationUrl": "http://localhost:5000",
+      "launchUrl": "http://localhost:5000/cells/esign"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "publishAllPorts": true,
+      "useSSL": true
+    }
+  }
+}

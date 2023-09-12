@@ -1,0 +1,73 @@
+@model Aspose.Cells.Common.Models.ViewModel
+
+@{
+    Layout = "~/Pages/Shared/Layout.cshtml";
+    ViewBag.PageTitle = Model.PageTitle;
+    ViewBag.MetaDescription = Model.MetaDescription;
+    ViewBag.Title = Model.Title;
+    ViewBag.TitleSub = Model.TitleSub;
+}
+
+@await Html.PartialAsync("Main")
+@await Html.PartialAsync("FooterProduct")
+
+@section styles
+{
+    <style>
+        .options-div {
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .options-input {
+            max-width: 30%;
+            display: inline-block!important;
+            height: auto;
+        }
+
+        @@media screen and (max-width: 768px) {
+            .options-div {
+                flex-direction: column;
+            }
+
+            .options-input {
+                max-width: 60%;
+            }
+        }
+    </style>
+}
+
+@section scripts {
+    <script>
+        var o = @Html.Raw(Model.JSOptions);
+        $.extend(o, {
+            Method: requestEsign,
+            validationMessage: "@Html.Raw(Model.Resources["PasswordPlaceholderErrorMessage"])"
+        });
+
+        function requestEsign() {
+            const data = fileDrop.prepareFormData();
+            if (data === null)
+                return;
+
+            const certs = $("#cert").prop("files");
+            if (certs.length < 1) {
+                showAlert("Please upload the certificate");
+                return;
+            }
+
+            const password = $("#password").val();
+            if (((password ?? "") === "") || password.length < 1) {
+                showAlert("Please type password");
+                return;
+            }
+
+            data.set("cert", certs[0], certs[0].name);
+            data.set("password", password);
+
+            const url = `${o.APIBasePath}EsignApi/Esign`;
+            request(url, data);
+        }
+    </script>
+}

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+
+
+    <ItemGroup>
+      <ProjectReference Include="..\Aspose.Cells.Common\Aspose.Cells.Common.csproj" />
+    </ItemGroup>
+    <ItemGroup>
+        <Reference Include="Aspose.Cells">
+            <HintPath>..\Aspose.Cells.Common\GridJs\Aspose.Cells.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+</Project>

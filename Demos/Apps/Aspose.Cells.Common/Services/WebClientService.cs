@@ -80,7 +80,7 @@ namespace Aspose.Cells.Common.Services
             return new FormFile(content, 0, content.Length, filename, filename);
         }
 
-        private void DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
+        private static void DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
         {
             var webClient = (WebClient) sender;
             if (e.TotalBytesToReceive > MaxFileSizeBytes)
