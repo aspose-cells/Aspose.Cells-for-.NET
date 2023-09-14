@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+	
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+	<PackageReference Include="System.Security.Cryptography.Pkcs" Version="6.0.3" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.7.0" />
+	<PackageReference Include="Aspose.Cells.GridWeb" Version="23.9.0" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,89 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+
+    String a = " <p>develop guide:</p>\r\n <p>0. add package reference in project file</p>\r\n"
+     + "\r\n"
+     + "\r\n"
+     + "<pre><code class=\"text syntaxhl\"><span class=\"CodeRay\">    &lt;PackageReference Include=\"System.Drawing.Common\" Version=\"7.0.0\" /&gt;\r\n"
+     + "    &lt;PackageReference Include=\"System.Text.Encoding.CodePages\" Version=\"4.7.0\" /&gt;\r\n"
+     + "    &lt;PackageReference Include=\"System.Security.Cryptography.Pkcs\" Version=\"6.0.1\" /&gt;\r\n"
+     + "    &lt;PackageReference Include=\"Aspose.Cells.GridWeb\" Version=\"23.1.0\" /&gt;\r\n"
+     + "</span></code></pre>\r\n"
+     + "\r\n"
+     + "	<p>1. import namespace</p>\r\n"
+     + "\r\n"
+     + "\r\n"
+     + "	<p> in  _viewimport.cs</p>\r\n"
+     + "	<p> @using Aspose.Cells.GridWeb<br> @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers<br>@addTagHelper *, Aspose.Cells.GridWeb</p>\r\n"
+     + "\r\n"
+     + "\r\n"
+     + "	<p>2. prepare in controller:</p>put the below code in your desired controller to load gridweb view:</p>\r\n"
+     + "\r\n"
+     + "\r\n"
+     + "<pre><code class=\"java syntaxhl\"><span class=\"CodeRay\">" 
+     + "  //set the file storage cache ,you need to create this directory or you may change this path to fit your envriment \r\n"
+     + "<span style=\"background: #cbedcb;\" >GridWeb.SessionStorePath = @\"E:\\storage\\tmp\\gridweb\\filecache\";</span>\r\n"
+     + " GridWeb mw = new GridWeb();\r\n"
+     + " mw.ID = </span><span class=\"delimiter\">\"</span></span>gid<span class=\"string\"><span class=\"delimiter\">\"</span><span class=\"content\">;\r\n"
+     + " mw.SetSession(HttpContext.Session);\r\n"
+     + " //set acw_client path\r\n"
+     + " mw.ResourceFilePath = </span><span class=\"delimiter\">\"</span></span>/js/acw_client/<span class=\"string\"><span class=\"delimiter\">\"</span><span class=\"content\">;\r\n"
+     + "  //set the picture storage cache ,you need to create this directory or you may change this path to fit your envriment\r\n"
+     + " <span style=\"background: #cbedcb;\" >mw.PictureCachePath = @\"E:\\storage\\tmp\\gridweb\\piccache\";</span>\r\n"
+     + "  //set the spread sheet file to open\r\n"
+     + " mw.ImportExcelFile(<span style=\"background: #cbedcb;\" >\"c:\\test.xlsx\"</span>);\r\n"
+     + " mw.Width = Unit.Pixel(600);\r\n"
+     + " return View(mw);\r\n"
+     + "</span></span></span></code></pre>\r\n"
+     + "\r\n"
+     + "	<p>3. view </p>   put latest acw_client which include the client side js of GridWeb  in the directory: wwwroot/js </br> in  index1.cshtml:<br>add:<br></p><pre><code class=\"javascript syntaxhl\"><span class=\"CodeRay\"><span class=\"tag\">&lt;script</span> <span class=\"attribute-name\">src</span>=<span class=\"string\"><span class=\"delimiter\">\"</span><span class=\"content\">~/js/acw_client/acwmain.js</span><span class=\"delimiter\">\"</span></span> <span class=\"attribute-name\">asp-append-version</span>=<span class=\"string\"><span class=\"delimiter\">\"</span><span class=\"content\">true</span><span class=\"delimiter\">\"</span></span><span class=\"tag\">&gt;</span><span class=\"tag\">&lt;/script&gt;</span>\r\n"
+     + "<span class=\"tag\">&lt;script</span> <span class=\"attribute-name\">src</span>=<span class=\"string\"><span class=\"delimiter\">\"</span><span class=\"content\">~/js/acw_client/lang_en.js</span><span class=\"delimiter\">\"</span></span> <span class=\"attribute-name\">asp-append-version</span>=<span class=\"string\"><span class=\"delimiter\">\"</span><span class=\"content\">true</span><span class=\"delimiter\">\"</span></span><span class=\"tag\">&gt;</span><span class=\"tag\">&lt;/script&gt;</span>\r\n"
+     + "&lt;link href=<span class=\"string\"><span class=\"delimiter\">\"</span><span class=\"content\">~/js/acw_client/menu.css</span><span class=\"delimiter\">\"</span></span> rel=<span class=\"string\"><span class=\"delimiter\">\"</span><span class=\"content\">stylesheet</span><span class=\"delimiter\">\"</span></span> type=<span class=\"string\"><span class=\"delimiter\">\"</span><span class=\"content\">text/css</span><span class=\"delimiter\">\"</span></span>&gt;\r\n"
+     + "<span class=\"error\">@</span>model GridWeb\r\n"
+     + "<span class=\"tag\">&lt;GridWebDiv</span> <span class=\"attribute-name\">mw</span>=<span class=\"attribute-value\">Model</span><span class=\"tag\">&gt;</span><span class=\"tag\">&lt;/GridWebDiv&gt;</span>\r\n"
+     + "</span></code></pre><p></p>\r\n"
+     + "\r\n"
+     + "\r\n"
+     + "	<p>4. config service </p> add session support and GridScheduedService, (GridScheduedService will delete temporary files two days ago in the GridWeb.SessionStorePath )<br> startup.cs:<br> in ConfigureServices method：<br> ....<br> </p><pre><code class=\"java syntaxhl\"><span class=\"CodeRay\"> \r\n"
+     + "         services.AddSession(options =&gt;\r\n"
+     + "            {\r\n"
+     + "                <span class=\"comment\">// Set a short timeout for easy testing.</span>\r\n"
+     + "                options.IdleTimeout = TimeSpan.FromSeconds(<span class=\"integer\">3600</span>);\r\n"
+     + "                options.Cookie.HttpOnly = <span class=\"predefined-constant\">true</span>;\r\n"
+     + "                <span class=\"comment\">// Make the session cookie essential</span>\r\n"
+     + "                options.Cookie.IsEssential = <span class=\"predefined-constant\">true</span>;\r\n"
+     + "            });\r\n"
+     + "\r\n"
+     + "            services.AddSingleton&lt;Microsoft.Extensions.Hosting.IHostedService, GridScheduedService&gt;();\r\n"
+     + "</span></code></pre><p></p>\r\n"
+     + "\r\n"
+     + "\r\n"
+     + "	<p>in Configure method<br>....<br> </p><pre><code class=\"java syntaxhl\"><span class=\"CodeRay\">app.UseSession();\r\n"
+     + "</span></code></pre><p></p>\r\n"
+     + "\r\n"
+     + "\r\n"
+     + "	"
+     + "\r\n"
+     + "\r\n"
+     + "	<p>5. config route</p> add acw route map in your controller,which can provide all the  operations for general update action.<br>   check the example in GridController.cs<br> </p><pre><code class=\"java syntaxhl\"><span class=\"CodeRay\">        [HttpGet(<span class=\"string\"><span class=\"delimiter\">\"</span><span class=\"content\">acw/{type}/{id}</span><span class=\"delimiter\">\"</span></span>)]\r\n"
+     + "        [HttpPost(<span class=\"string\"><span class=\"delimiter\">\"</span><span class=\"content\">acw/{type}/{id}</span><span class=\"delimiter\">\"</span></span>)]\r\n"
+     + "        <span class=\"directive\">public</span> IActionResult <span class=\"predefined-type\">Operation</span>(string type, string id)\r\n"
+     + "        {\r\n"
+     + "            <span class=\"keyword\">return</span> Aspose.Cells.GridWeb.AcwController.DoAcwAction(<span class=\"local-variable\">this</span>, type, id);\r\n"
+     + "        }\r\n"
+     + "</span></code></pre><p></p></div><br><br>";
+
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.aspose.com/cells/net/how-to-use-aspose-cells-gridweb-with-net-core/">building Web apps with GridWeb</a>.</p>
+
+
+
+
+
+
+
+</div>
+@Html.Raw(a);
