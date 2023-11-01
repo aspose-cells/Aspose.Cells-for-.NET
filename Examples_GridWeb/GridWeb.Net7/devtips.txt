@@ -1,4 +1,4 @@
-GridWeb .net6 develop guide:
+GridWeb .net7 develop guide:
 0. add package reference in project file
     
     <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
@@ -42,9 +42,9 @@ add:
 @model GridWeb
 <GridWebDiv mw=Model   ></GridWebDiv>
  
-4. add session support and GridScheduedService, (GridScheduedService will delete temporary files two days ago in the GridWeb.SessionStorePath )
- startup.cs:
- in ConfigureServices method£º
+4. add session support and GridScheduedService, (this is optional: GridScheduedService will delete temporary files two days ago in the GridWeb.SessionStorePath )
+ Program.cs:
+ 
  ....
          services.AddSession(options =>
             {
@@ -54,10 +54,10 @@ add:
                 // Make the session cookie essential
                 options.Cookie.IsEssential = true;
             });
-         
+            //optional
             services.AddSingleton<Microsoft.Extensions.Hosting.IHostedService, GridScheduedService>();
 
-in Configure method
+ 
 ....
 app.UseSession();
  
