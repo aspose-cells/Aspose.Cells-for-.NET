@@ -1067,7 +1067,7 @@ form fieldset select {
   display: inline-block;
 }
 .x-spreadsheet-icon .x-spreadsheet-icon-img {
-  background-image: url(177232cc7260a954bc9a091eea99d9c3.svg);
+  background-image: url(89e181872624b4accdbbe25ec1eb47dc.svg);
   position: absolute;
   width: 262px;
   height: 444px;
@@ -1351,6 +1351,10 @@ form fieldset select {
 }
 .x-spreadsheet-icon .x-spreadsheet-icon-img.insertCheckBox {
   left: -18px;
+  top: -90px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.insert-shape {
+  left: -36px;
   top: -90px;
 }
 .x-spreadsheet-formula-bar {
