@@ -110,8 +110,8 @@
     </ProjectReference>
   </ItemGroup> -->
   <ItemGroup>
-     <PackageReference Include="Aspose.Cells.GridWeb" Version="23.8.0" />  
-     <Reference Include="System">
+    <PackageReference Include="Aspose.Cells.GridWeb" Version="23.8.0" />
+    <Reference Include="System">
       <Name>System</Name>
     </Reference>
     <Reference Include="System.Data">
@@ -1256,12 +1256,6 @@
   <ItemGroup>
     <Folder Include="App_Start\" />
     <Folder Include="Properties\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\..\..\..\codebase\local\cellscode\GridWeb.csproj">
-      <Project>{67f9e98c-54f5-4bf1-aa94-a6cd45e20dec}</Project>
-      <Name>GridWeb</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

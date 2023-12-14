@@ -20,7 +20,13 @@ namespace GridWebNet7Demo.Controllers
         [HttpGet("acw/{type}/{id}")]
         [HttpPost("acw/{type}/{id}")]
         public IActionResult Operation(string type, string id)
-        {
+        {  /*
+            Aspose.Cells.GridWeb.GridWeb  mw = new Aspose.Cells.GridWeb.GridWeb();
+            //use this method to restore GridWeb instance and do your job for Cells if you wish
+            mw.RestoreBySession(HttpContext.Session);
+            string a1v = mw.ActiveSheet.Cells["A1"].StringValue;
+            */
+            //the default auto predefined post action 
             return Aspose.Cells.GridWeb.AcwController.DoAcwAction(this, type, id);
         }
 
