@@ -1067,7 +1067,7 @@ form fieldset select {
   display: inline-block;
 }
 .x-spreadsheet-icon .x-spreadsheet-icon-img {
-  background-image: url(89e181872624b4accdbbe25ec1eb47dc.svg);
+  background-image: url(b5d8fc4d54f7fb3ee2d20099bc0fd819.svg);
   position: absolute;
   width: 262px;
   height: 444px;
@@ -1357,6 +1357,30 @@ form fieldset select {
   left: -36px;
   top: -90px;
 }
+.x-spreadsheet-icon .x-spreadsheet-icon-img.text-rotate-rotate-text-up {
+  left: -108px;
+  top: -90px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.text-rotate-rotate-text-down {
+  left: -126px;
+  top: -90px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.text-rotate-vertical-text {
+  left: -90px;
+  top: -90px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.text-rotate-angle-counterclockwise {
+  left: -54px;
+  top: -90px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.text-rotate-angle-clockwise {
+  left: -72px;
+  top: -90px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.text-rotate-other-angle {
+  left: -144px;
+  top: -90px;
+}
 .x-spreadsheet-formula-bar {
   height: 25px;
   line-height: 25px;
@@ -1416,5 +1440,69 @@ dialog {
 }
 dialog p {
   margin: 0 0 0 5px;
+}
+#textRotateDegreeContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: unset;
+}
+#textRotateDegreeBoxContainer {
+  display: flex;
+  height: 200px;
+  align-items: stretch;
+}
+#textRotateDegreeBox {
+  width: 150px;
+  height: 200px;
+  border: 1px solid #000;
+  position: relative;
+  user-select: none;
+}
+#textRotateDegreeBox::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  /* 伪元素的宽度等于div的宽度 */
+  height: 197px;
+  /* 高度是宽度的一半，形成半圆 */
+  border-top-right-radius: 200px;
+  /* 右上半圆的半径 */
+  border-bottom-right-radius: 200px;
+  /* 右下半圆的半径 */
+  border-top: 2px dashed black;
+  /* 上边框是点线 */
+  border-right: 2px dashed black;
+  /* 右边框是点线 */
+  border-bottom: 2px dashed black;
+  /* 右边框是点线 */
+}
+#textRotateDegreePointer {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform-origin: 0 0;
+  display: flex;
+}
+#textRotateDegreeLine {
+  width: 35%;
+  height: 2px;
+  background-color: #000;
+}
+#textRotateDegreeText {
+  transform-origin: 0 0;
+  transform: translateX(-50%) translateY(-50%);
+  margin-left: 5%;
+}
+#textRotateDegreeResetButton {
+  margin-right: 20px;
+  width: 2.5rem;
+  word-break: break-all;
+  font-size: 1.5rem;
+}
+#textRotateDegreeInput {
+  margin-top: 10px;
+  width: 60px;
 }
 

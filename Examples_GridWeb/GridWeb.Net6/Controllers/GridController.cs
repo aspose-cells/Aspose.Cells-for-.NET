@@ -45,7 +45,8 @@ namespace GridWeb.Demo.Controllers
             mw.PictureCachePath = @"E:\storage\tmp\gridweb\piccache";
             mw.EnableAsync = true;
             //load workbook
-            String file = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\wb\test.xlsx");
+            //String file = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\wb\test.xlsx");
+            String file = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\wb\g74production_worksheet.xlsx");
             mw.ImportExcelFile(file);
             mw.ActiveSheet.Cells["B1"].PutValue("version:");
             mw.ActiveSheet.Cells["C1"].PutValue(Aspose.Cells.GridWeb.GridWeb.GetVersion());
