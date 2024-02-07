@@ -1067,7 +1067,7 @@ form fieldset select {
   display: inline-block;
 }
 .x-spreadsheet-icon .x-spreadsheet-icon-img {
-  background-image: url(b5d8fc4d54f7fb3ee2d20099bc0fd819.svg);
+  background-image: url(df0ac85291e8a4f9daef54c3c456ffa1.svg);
   position: absolute;
   width: 262px;
   height: 444px;
@@ -1379,6 +1379,10 @@ form fieldset select {
 }
 .x-spreadsheet-icon .x-spreadsheet-icon-img.text-rotate-other-angle {
   left: -144px;
+  top: -90px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.email {
+  left: -162px;
   top: -90px;
 }
 .x-spreadsheet-formula-bar {
