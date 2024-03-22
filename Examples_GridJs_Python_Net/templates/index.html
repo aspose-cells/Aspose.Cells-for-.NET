@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>x-spreadsheet-demo</title>
+   
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='./quantumui.min.22.5.5.2.css') }}" />
+      <link rel="stylesheet" href="{{ url_for('static', filename='./bootstrap.min.22.5.5.2.css') }}   " />
+    <script src="{{ url_for('static', filename='./jquery-2.1.1.js') }} "></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='./jquery-ui.min.css') }}" />
+    <script src="{{ url_for('static', filename='./jquery-ui.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='./jszip.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='./vconsole.min.js') }}"></script>
+    <!--for local reference-->
+	 <!--<link rel="stylesheet" href="{{ url_for('static', filename='./xspreadsheet.css') }}" />
+    <script src="{{ url_for('static', filename='./xspreadsheet.js') }}"></script>
+	-->
+    <!--for release reference-->
+    <link rel="stylesheet" href="https://unpkg.com/gridjs-spreadsheet@24.3.0/xspreadsheet.css">
+    <script src="https://unpkg.com/gridjs-spreadsheet@24.3.0/xspreadsheet.js"></script>
+
+
+
+</head>
+
+    <body  >
+        <!--
+         <input type="file" name="imagef" id="imagef" >
+        <span id="status"></span> <button onclick="save()">save</button>
+        <button onclick="addimage()">add image</button>
+        <button onclick="addimagebyUrl()">add image from url</button>-->
+    <div id="gridjs-demo"></div>
+    <!-- <button onclick="loadmore()">next</button> -->
+    <!-- <button onclick="print()">print</button> -->
+
+
+
+    <script>
+        function downLoad(url) {
+        var oA = document.createElement('a');
+            oA.download = '';// 设置下载的文件名，默认是'下载'
+            oA.href = url;
+            document.body.appendChild(oA);
+            oA.click();
+            oA.remove(); // 下载之后把创建的元素删除
+        }
+        function saveAsPNG(canvas) {
+        return canvas.toDataURL('image/png');
+            //return canvas.toDataURL("image/jpeg", 1.0);
+        }
+        function dcanvas(c){
+            downLoad( saveAsPNG(c));
+        }
+
+        function savepng() {
+        downLoad(
+          saveAsPNG(
+            document.querySelector(
+              '#gridjs-demo > div > div.x-spreadsheet-sheet > canvas'
+            )
+          )
+        );
+        }
+        function savepngwithsize(w, h) {
+        var x = document.createElement('CANVAS');
+            x.width = w;
+            x.height = h;
+            var imgdata = document.querySelector("#gridjs-demo > div > div.x-spreadsheet-sheet > canvas").getContext("2d").getImageData(0, 0, w, h);
+            var ctx = x.getContext("2d");
+            ctx.putImageData(imgdata, 0, 0);
+            downLoad(saveAsPNG(x));
+        }
+        function savepngwithsizeid(id, w, h) {
+        var x = document.createElement('CANVAS');
+            x.width = w;
+            x.height = h;
+            var imgdata = document.getElementById(id).getContext("2d").getImageData(0, 0, w, h);
+            var ctx = x.getContext("2d");
+            ctx.putImageData(imgdata, 0, 0);
+            downLoad(saveAsPNG(x));
+        }
+        // var vConsole = new window.VConsole();
+         function getQueryVariable(variable) {
+        var query = window.location.search.substring(1);
+        var vars = query.split('&');
+        for (var i = 0; i < vars.length; i++) {
+          var pair = vars[i].split('=');
+          if (pair[0] == variable) {
+            return pair[1];
+          }
+        }
+        return false;
+      }
+        let xs;
+        let rdata;
+        let uniqueid;
+        //var local = 'http://localhost:24262';
+      let imagediv = 'imagedive';
+        let basiczorder = 5678;
+        let sheets = [];
+        let jsondata = null;
+        $(function () {
+
+            $.ajax({
+
+                url: '/GridJs2/DetailFileJson?filename={{ filename }}' ,
+
+                type: 'GET',
+
+                dataType: 'text',
+
+                timeout: 59000,
+
+                cache: false,
+
+                beforeSend: LoadFunction,
+
+                error: erryFunction,
+
+          success: succFunction,
+        });
+
+            function LoadFunction() {
+          $('#status').html('loading...');
+            }
+
+            function erryFunction() {
+          alert('error');
+            }
+
+            function succFunction(tt) {
+                $('#status').html('success');
+
+                var exceldata = tt;
+                //.replace(/\n/g,"\\\\n");
+                jsondata = JSON.parse(exceldata);
+                if (jsondata.Error) {
+                    alert(jsondata.Error);
+                } else {
+                    loadWithCustomContextMenu(jsondata);
+                    const customImageItems = [
+                        { 'key': 'RemovePicHighlight', 'text': 'remove select image/shape to highlight  ', 'callback': removehighlightSelectImage },
+                        { 'key': 'PicHighlight', 'text': 'add select image/shape to highlight  ', 'callback': highlightSelectImage },
+                        { 'key': 'divider' },
+                        { 'key': 'Hide', 'text': 'hide select image/shape    ', 'callback': hideSelectImage },
+                                             
+                                             ];
+                    xs.sheet.addImageContextMenuItems(customImageItems);
+                }
+            }
+        });
+
+        let isHighlightAll = false;
+        let isShowHighlight = false;
+        const highlightStyle = { 'color': 'rgba(251, 12, 251, 0.2)' };
+
+        const onMyActionClick1 = (sheet) => {
+        console.log('my action clicked1' + sheet.data.name);
+        };
+        const loadNormalContext = (sheet) => {
+            const option = {
+                updateMode: 'server',
+                updateUrl: '/GridJs2/UpdateCell',
+                showToolbar: true,
+                //showGrid: true,
+                //mode: 'read',
+                mode: 'read',
+                //support multiple language ,the locale is: en zh es pt de ru nl
+                local: 'en',
+				loadingGif:'/static/content/img/updating.gif',
+            };
+            loadWithOption(jsondata, option);
+        };
+
+        const enableHighlightFeature = (sheet, isenable) => {
+            isShowHighlight = isenable;
+            if (isenable) {
+                sheet.showHighlights(highlightStyle);
+                sheet.updateCustomContextMenuItem('key6', {  'text': 'hide highlight  ', 'callback': showOrHideHighlight});
+            } else {
+                sheet.hideHighlights();
+                sheet.updateCustomContextMenuItem('key6', { 'text': 'enable highlight  ', 'callback': showOrHideHighlight });
+            }
+           
+        }
+        const hideSelectImage = (sheet,selectedObj) => {
+            
+            selectedObj.setVisible(false);
+        }
+        const highlightSelectImage = (sheet, selectedObj) => {
+            //enable the feature to see the result
+            enableHighlightFeature(sheet, true);
+            sheet.removeHighlightInverseRange();
+
+            //check whether image/shape  is selected
+            
+            if (selectedObj) {
+                //add highlight for image/shape
+                if (selectedObj.type === 'Picture') {
+                    sheet.addHighlightImage(selectedObj.id);
+                } else {
+                    sheet.addHighlightShape(selectedObj.id);
+                    if (selectedObj.type === 'TextBox') {
+                        //for example
+                        selectedObj.addHighlight(0, selectedObj.text.length / 2);
+                    }
+                }
+            } 
+
+        };
+        const removehighlightSelectImage = (sheet, selectedObj) => {
+            //enable the feature to see the result
+           
+            //check whether image/shape  is selected
+            
+            if (selectedObj) {
+                //add highlight for image/shape
+                if (selectedObj.type === 'Picture') {
+                    sheet.removeHighlightImage(selectedObj.id);
+                } else {
+                    sheet.removeHighlightShape(selectedObj.id);
+                    if (selectedObj.type === 'TextBox') {
+                        //for example
+                        selectedObj.removeHighlight(0, selectedObj.text.length / 2);
+                    }
+                }
+            }
+
+        };
+        const highlightSelect = (sheet) => {
+            //enable the feature to see the result
+            enableHighlightFeature(sheet, true);
+            sheet.removeHighlightInverseRange();
+          
+             //check whether image/shape  is selected
+            const img = sheet.selector.getObj();
+            if (img) {
+                //add highlight for image/shape
+                if (img.type === 'Picture') {
+                    sheet.addHighlightImage(img.id);
+                } else {
+                    sheet.addHighlightShape(img.id);
+                }
+            } else {
+                //add highlight for area
+                const r = sheet.selector.range;
+                sheet.addHighlightRange(r.sri, r.sci, r.eri, r.eci);
+                sheet.table.render();
+            }
+         
+        };
+        const highlightInverseRange = (sheet) => {
+            sheet.delCustomContextMenuItems(['key4']);
+            const range = sheet.getHighlightInverseRange();
+            if (range) {
+                //already set HighlightInverseRange
+                sheet.removeHighlightInverseRange();
+
+                sheet.insertCustomContextMenuItem({ 'key': 'key4', 'text': 'highlight inverse range for select ', 'callback': highlightInverseRange }, 4);
+            } else {
+                //set HighlightInverseRange
+                //enable the feature to see the result
+                enableHighlightFeature(sheet, true);
+
+                const r = sheet.selector.range;
+                sheet.setHighlightInverseRange(r.sri, r.sci, r.eri, r.eci);
+                sheet.insertCustomContextMenuItem({ 'key': 'key4', 'text': 'remove highlight inverse range  ', 'callback': highlightInverseRange }, 4);
+            }
+            sheet.table.render();
+        };
+        //
+        const customHighlightImage = (ishighlight, imgobj) => {
+            imgobj.filters[0] = ishighlight ? new fabric.Image.filters.Sepia() : false;
+            imgobj.applyFilters();
+        }
+
+        const setCustomHighlighImageFunc = (sheet) => {
+            sheet.setCustomHighlightImgFunc(customHighlightImage);
+        }
+        const removeCustomHighlighImageFunc = (sheet) => {
+            sheet.setCustomHighlightImgFunc(undefined);
+        }
+
+       
+
+        const highlightAll = (sheet) => {
+            //enable the feature to see the result
+            enableHighlightFeature(sheet,true);
+
+            isHighlightAll = !isHighlightAll;
+            sheet.setHighlightAll(isHighlightAll);
+            //update customcontext menu item
+            sheet.updateCustomContextMenuItem('key5', { 'text': 'highlight all to be->' + !isHighlightAll });
+            //sheet.addCustomContextMenuItems([{ 'key': 'key5', 'text': 'highlight all to be->' + !isHighlightAll, 'callback': highlightAll }]);
+        };
+        const showOrHideHighlight = (sheet) => {
+            enableHighlightFeature(sheet, !isShowHighlight);
+            sheet.table.render();
+
+        };
+          const showTextHighlightForm = (sheet) => {
+        const range = sheet.selector.range;
+        if(range.eci!= range.sci || range.eri != range.sri){
+          return;
+        }
+        const cell = sheet.data.getSelectedCell();
+        const text = cell.text;
+        const textselectform = $('#textselectform');
+        const textselect = textselectform.find('#textselect');
+        textselect.val(text);
+        const dialog = textselectform.dialog(
+          {
+          buttons: [
+            {
+              text: 'ok',
+              click: function () {
+                const me = $(this);
+                const textselect = me.find('#textselect');
+                const s = textselect[0].selectionStart;
+                  const e = textselect[0].selectionEnd;
+                //enable the feature to see the result
+                  enableHighlightFeature(sheet, true);
+                  console.log("sheet.addHighlightText(" + range.sri + "," + range.sci + "," + s + "," + e+")");
+                sheet.addHighlightText(range.sri, range.sci, s, e);
+               
+                me.dialog('close');
+
+              },
+            },
+          ],
+        });
+        dialog.show();
+        //.dialog({
+        //  resizable: false,
+        //  height: 140,
+        //  modal: true,
+        //  buttons: {
+        //    "Confirm": function () {
+        //      $(this).dialog("close");
+        //    },
+        //    Cancel: function () {
+        //      $(this).dialog("close");
+        //    }
+        //  }
+        //});
+      };
+        function loadWithCustomContextMenu(jsondata) {
+            const option = {
+                updateMode: 'server',
+                updateUrl: '/GridJs2/UpdateCell',
+                showToolbar: true,
+                //showGrid: true,
+                mode: 'read',
+                //support multiple language ,the locale is: en zh es pt de ru nl
+                local: 'en',
+				loadingGif:'/static/content/img/updating.gif',
+                showContextmenu: true,
+                allowSelectTextInTextBoxInReadMode:true,
+                contextMenuItems: {
+                    usedefault: false,
+                    customItems: [{ 'key': 'key1', 'text': '↓↓↓this is a custom context menu↓↓↓', 'callback': onMyActionClick1 },
+                    { 'key': 'key2', 'text': 'click to load normal context menu', 'callback': loadNormalContext },
+                    { 'key': 'divider' },
+                    { 'key': 'key3', 'text': 'add select area or image/shape to highlight  ', 'callback': highlightSelect },
+                    { 'key': 'key4', 'text': 'highlight inverse range for select ', 'callback': highlightInverseRange },
+                    { 'key': 'key5', 'text': 'highlight all to be->' + !isHighlightAll, 'callback': highlightAll },
+                    { 'key': 'key6', 'text': 'hide highlight  ', 'callback': showOrHideHighlight },
+                    { 'key': 'key7', 'text': 'text highlight  ', 'callback': showTextHighlightForm },
+                    ]
+                }
+            };
+            loadWithOption(jsondata, option);
+
+        }
+        function loadWithOption(jsondata, option) {
+            $('#gridjs-demo').empty();
+            //record uniqueid
+            uniqueid = jsondata.uniqueid;
+            sheets = jsondata.data;
+            const filename = jsondata.filename;
+            const fileDownloadUrl = "/GridJs2/Download";
+            const oleDownloadUrl = "/GridJs2/Ole";
+            const imageurl = "/GridJs2/ImageUrl";
+            const imageuploadurl1 = "/GridJs2/AddImage";
+            const imageuploadurl2 = "/GridJs2/AddImageByURL";
+            const imagecopyurl = "/GridJs2/CopyImage";        // x.spreadsheet.locale('zh-cn');
+            xs = x_spreadsheet('#gridjs-demo', option).loadData(sheets).change((cdata) => {
+                console.log(cdata);
+                console.log(xs.validate());
+            }
+            ).updateServerError((xhr, textStatus, errorThrown) => {
+                const s = ("error---") + ("code：" + xhr.status) + ("state:" + xhr.readyState) + ("msg:" + xhr.statusText) + ("text：" + xhr.responseText) + ("request status：" + textStatus) + (errorThrown);
+                console.log(s);
+
+            }).updateCellError((msg) => {
+
+                console.error(msg);
+                // xs.sheet.data.restoreLastCell();
+                alert(msg);
+
+            });
+
+            if (!jsondata.showtabs) {
+                xs.bottombar.hide();
+            }
+
+            xs.on('cell-selected', (cell, ri, ci) => {
+                console.log('cell selected:', cell, ', ri:', ri, ', ci:', ci);
+                if (ci === -1) {
+                    console.log('ci === -1 means a row selected ',ri);
+                }
+                if (ri === -1) {
+                    console.log('ri === -1 means a column selected',ci);
+                }
+            }).on('cells-selected', (cell, range) => {
+                console.log('range   selected:', cell, ', rang:', range);
+
+            }).on('object-selected', (obj) => {
+                console.log('obj selected id:', obj.id, ', type: ', obj.type);
+            }).on('sheet-selected', (id,name) => {
+                console.log('sheet selected id:', id, ', name: ', name);
+            }).on('sheet-loaded', (id, name) => {
+                console.log('sheet is loaded id:', id, ', name: ', name);
+            }).on('cell-edited', (text, ri, ci) => {
+                console.log('text:', text, ', ri: ', ri, ', ci:', ci);
+            });
+
+           
+
+            xs.setUniqueId(uniqueid);
+            xs.setFileName(filename);
+            xs.setImageInfo( imageurl, imageuploadurl1, imageuploadurl2, imagecopyurl, basiczorder);
+            xs.setFileDownloadInfo(fileDownloadUrl);
+            xs.setOleDownloadInfo(oleDownloadUrl);
+            xs.setVisibleFilter((sheet, s) => { console.log(" here we try enable visible filter for display textbox only:" + s.id + ",type:" + s.type); return (s.type === 'TextBox' && sheet.data.name === 'Sheet1 (2)') || sheet.data.name !== 'Sheet1 (2)'; });
+            
+            xs.setActiveSheetByName(jsondata.actname).setActiveCell(jsondata.actrow, jsondata.actcol);
+            //add custom context menu items for set highlight image function
+            xs.sheet.addCustomContextMenuItems([{ 'key': 'key8', 'text': 'set self defined image highlight function', 'callback': setCustomHighlighImageFunc }, { 'key': 'key9', 'text': 'use default highlight image func ', 'callback': removeCustomHighlighImageFunc }])
+
+        }
+
+        function ColorReverse(OldColorValue) {
+            var OldColorValue = '0x' + OldColorValue.replace(/#/g, "");
+            var str = '000000' + (0xFFFFFF - OldColorValue).toString(16);
+            return '#' + str.substring(str.length - 6, str.length);
+        }
+        function save() {
+            if (!xs.buffer.isFinish()) {
+          alert('updating is inprogress,please try later');
+                return;
+            }
+            let datas = xs.datas;
+            delete datas.history;
+            delete datas.search;
+            delete datas.images;
+            delete datas.shapes;
+
+        var jsondata = {
+          sheetname: xs.sheet.data.name,
+          actrow: xs.sheet.data.selector.ri,
+          actcol: xs.sheet.data.selector.ci,
+          datas: xs.getUpdateDatas(),
+        };
+
+        const data = {
+          p: JSON.stringify(jsondata),
+          uid: uniqueid,
+        };
+
+
+            $.ajax({
+                url: local + '/GridJs2/Download',
+                type: 'post',
+
+                data: data,
+                success: function (datar, stutas, xhr) {
+                    console.log(datar);
+                    if (datar.startsWith('{')) {
+                        var ret = JSON.parse(datar);
+                        if (ret.err) {
+                            alert(ret.err);
+                        }
+                    } else {
+                        // window.location = local + '/GridJs2/Download2/' + datar;
+                        window.location = datar;
+                    }
+                },
+            });
+
+
+        }
+
+    </script>
+
+    <div style="display: none;z-index: 999;">
+      <div title='text highlight' id="textselectform">
+        <div>
+          <textarea id='textselect' name='textselect' rows='4' cols='50'>
+          </textarea>
+        </div>
+      </div>'
+    </div>
+    </body>
+</html>

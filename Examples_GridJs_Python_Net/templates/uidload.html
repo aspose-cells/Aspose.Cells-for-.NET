@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>x-spreadsheet-demo</title>
+
+    <style>
+        ::-webkit-scrollbar, ::-webkit-scrollbar-button {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            background-color: #FFF;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+            background-color: #AAA;
+        }
+    </style>
+    <!--<link rel="stylesheet" href="./quantumui.min.22.5.5.2.css?v=20220312" />-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='./bootstrap.min.22.5.5.2.css') }}   " />
+    <script src="{{ url_for('static', filename='./jquery-2.1.1.js') }} "></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='./jquery-ui.min.css') }}" />
+    <script src="{{ url_for('static', filename='./jquery-ui.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='./jszip.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='./vconsole.min.js') }}"></script>
+    <!--for local reference
+    <link rel="stylesheet" href="{{ url_for('static', filename='./xspreadsheet.css') }}" />
+     <script src="{{ url_for('static', filename='./xspreadsheet.js') }}"></script>
+     -->
+    <!--for release reference-->
+    <link rel="stylesheet" href="https://unpkg.com/gridjs-spreadsheet@24.3.0/xspreadsheet.css">
+    <script src="https://unpkg.com/gridjs-spreadsheet@24.3.0/xspreadsheet.js"></script> 
+     
+
+
+
+</head>
+
+<body>
+    <!--<div style="height:300px"></div>
+    <div style="height:300px"></div>-->
+    <div id="gridjs-demo-uid"></div>
+
+
+    <script>
+        //vonsole print stack trace
+        function vtrace() {
+            let stack = (new Error()).stack
+            console.log(stack);
+        }
+
+        // var vConsole = new window.VConsole();
+        function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split('&');
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split('=');
+                if (pair[0] == variable) {
+                    return pair[1];
+                }
+            }
+            return false;
+        }
+        let xs;
+        let rdata;
+        let uniqueid = '{{ uid }}';
+        //var local = 'http://localhost:24262';
+        let imagediv = 'imagedive';
+        let basiczorder = 5678;
+        let sheets = [];
+        let jsondata = null;
+        $(function () {
+
+            $.ajax({
+
+                url: '/GridJs2/DetailFileJsonWithUid?filename={{ filename }}&uid={{ uid }}',
+
+                type: 'GET',
+
+                dataType: 'text',
+
+                timeout: 59000,
+
+                cache: false,
+
+                beforeSend: LoadFunction,
+
+                error: erryFunction,
+
+                success: succFunction,
+            });
+
+            function LoadFunction() {
+                $('#status').html('loading...');
+            }
+
+            function erryFunction() {
+                alert('error');
+            }
+
+            function succFunction(tt) {
+                $('#status').html('success');
+
+                var exceldata = tt;
+                //.replace(/\n/g,"\\\\n");
+                jsondata = JSON.parse(exceldata);
+                if (jsondata.Error) {
+                    alert(jsondata.Error);
+                } else {
+                    loadNormalContext(jsondata);
+                }
+            }
+        });
+
+
+
+
+        const loadNormalContext = (sheet) => {
+            const option = {
+                updateMode: 'server',
+                updateUrl: '/GridJs2/UpdateCell',
+                showToolbar: true,
+
+                // showFileName:false,
+                //showGrid: true,
+                //mode: 'edit',
+                mode: 'edit',
+                //support multiple language ,the locale is: en zh es pt de ru nl
+                local: 'en',
+				loadingGif:'/static/content/img/updating.gif',
+            };
+            loadWithOption(jsondata, option);
+        };
+
+
+        function loadWithOption(jsondata, option) {
+            $('#gridjs-demo-uid').empty();
+            //record uniqueid
+            uniqueid = jsondata.uniqueid;
+            sheets = jsondata.data;
+            const filename = jsondata.filename;
+            const fileDownloadUrl = "/GridJs2/Download";
+            const oleDownloadUrl = "/GridJs2/Ole";
+            const imageurl = "/GridJs2/ImageUrl";
+            const imageuploadurl1 = "/GridJs2/AddImage";
+            const imageuploadurl2 = "/GridJs2/AddImageByURL";
+            const imagecopyurl = "/GridJs2/CopyImage";        // x.spreadsheet.locale('zh-cn');
+            xs = x_spreadsheet('#gridjs-demo-uid', option).loadData(sheets).change((cdata) => {
+                console.log(cdata);
+                console.log(xs.validate());
+            }
+            ).updateServerError((xhr, textStatus, errorThrown) => {
+                const s = ("error---") + ("code：" + xhr.status) + ("state:" + xhr.readyState) + ("msg:" + xhr.statusText) + ("text：" + xhr.responseText) + ("request status：" + textStatus) + (errorThrown);
+                console.log(s);
+
+            }).updateCellError((msg) => {
+
+                console.error(msg);
+                // xs.sheet.data.restoreLastCell();
+                alert(msg);
+
+            });
+
+            if (!jsondata.showtabs) {
+                xs.bottombar.hide();
+            }
+
+            xs.on('cell-selected', (cell, ri, ci) => {
+                console.log('cell selected:', cell, ', ri:', ri, ', ci:', ci);
+                if (ci === -1) {
+                    console.log('ci === -1 means a row selected ', ri);
+                }
+                if (ri === -1) {
+                    console.log('ri === -1 means a column selected', ci);
+                }
+            }).on('cells-selected', (cell, range) => {
+                console.log('range   selected:', cell, ', rang:', range);
+
+            }).on('object-selected', (obj) => {
+                console.log('obj selected id:', obj.id, ', type: ', obj.type);
+            }).on('sheet-selected', (id, name) => {
+                console.log('sheet selected id:', id, ', name: ', name);
+            }).on('sheet-loaded', (id, name) => {
+                console.log('sheet is loaded id:', id, ', name: ', name);
+            }).on('cell-edited', (text, ri, ci) => {
+                console.log('text:', text, ', ri: ', ri, ', ci:', ci);
+            });
+
+
+
+            xs.setUniqueId(uniqueid);
+            xs.setFileName(filename);
+            // xs.setImageInfo(imageurl, imageuploadurl1, imageuploadurl2, imagecopyurl, basiczorder, 'content/img/loading.gif');
+            xs.setImageInfo(imageurl, imageuploadurl1, imageuploadurl2, imagecopyurl, basiczorder);
+            xs.setFileDownloadInfo(fileDownloadUrl);
+            xs.setOleDownloadInfo(oleDownloadUrl);
+
+            let activeSheetName = jsondata.actname;
+
+            if (xs.bottombar.dataNames.indexOf(activeSheetName) >= 0) {
+                xs.setActiveSheetByName(activeSheetName).setActiveCell(jsondata.actrow, jsondata.actcol);
+
+            } else {
+                //some times if the active sheet is invisible or chartworksheet ,just use the first worksheet
+                activeSheetName = xs.bottombar.dataNames[0];
+                xs.setActiveSheetByName(activeSheetName).setActiveCell(0, 0);
+            }
+
+
+        }
+
+        function ColorReverse(OldColorValue) {
+            var OldColorValue = '0x' + OldColorValue.replace(/#/g, "");
+            var str = '000000' + (0xFFFFFF - OldColorValue).toString(16);
+            return '#' + str.substring(str.length - 6, str.length);
+        }
+        function save() {
+            if (!xs.buffer.isFinish()) {
+                alert('updating is inprogress,please try later');
+                return;
+            }
+            let datas = xs.datas;
+            delete datas.history;
+            delete datas.search;
+            delete datas.images;
+            delete datas.shapes;
+
+            var jsondata = {
+                sheetname: xs.sheet.data.name,
+                actrow: xs.sheet.data.selector.ri,
+                actcol: xs.sheet.data.selector.ci,
+                datas: xs.getUpdateDatas(),
+            };
+
+            const data = {
+                p: JSON.stringify(jsondata),
+                uid: uniqueid,
+            };
+
+
+            $.ajax({
+                url: local + '/GridJs2/Download',
+                type: 'post',
+
+                data: data,
+                success: function (datar, stutas, xhr) {
+                    console.log(datar);
+                    if (datar.startsWith('{')) {
+                        var ret = JSON.parse(datar);
+                        if (ret.err) {
+                            alert(ret.err);
+                        }
+                    } else {
+                        // window.location = local + '/GridJs2/Download2/' + datar;
+                        window.location = datar;
+                    }
+                },
+            });
+
+
+        }
+
+    </script>
+
+    <div style="display: none;z-index: 999;">
+        <div title='text highlight' id="textselectform">
+            <div>
+                <textarea id='textselect' name='textselect' rows='4' cols='50'>
+          </textarea>
+            </div>
+        </div>'
+    </div>
+</body>
+</html>
