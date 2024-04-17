@@ -32,3 +32,7 @@ Plugins/Aspose_Cells_NET_for_PHP.zip
 .DS_Store
  
 Examples.GridWeb/.vs
+/Examples_GridWeb/GridWeb.Net7/Controllers/*.bak
+/Examples_GridWeb/GridWeb.Net7/Views/*.bak
+/Examples_GridWeb/GridWeb.Net7/Views/Shared/*.bak
+/Examples_GridWeb/GridWeb.Net7/wwwroot/js/acw_client/*.bak
