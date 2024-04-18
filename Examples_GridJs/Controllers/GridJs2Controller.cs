@@ -182,10 +182,21 @@ namespace Aspose.Cells.GridJsDemo.Controllers
         {
             string uid = HttpContext.Request.Form["uid"];
             string p = HttpContext.Request.Form["p"];
-            IFormFile file = HttpContext.Request.Form.Files[0];
+            string iscontrol= HttpContext.Request.Form["control"];
+           
 
             string ret = null;
             GridJsWorkbook wb = new GridJsWorkbook();
+            if (iscontrol == null)
+            {
+                if (HttpContext.Request.Form.Files.Count == 0)
+                {
+                    //for add shape,need to set p.type as one of AutoShapeType
+                    ret = wb.InsertImage(uid, p, null, null);
+                    return Json(ret);
+                }
+                else {
+                    IFormFile file = HttpContext.Request.Form.Files[0];
             if (file != null)
             {
 
@@ -209,7 +220,28 @@ namespace Aspose.Cells.GridJsDemo.Controllers
             }
             else
             {
-                return Json(wb.ErrorJson("image is null"));
+                        return Json(wb.ErrorJson("no file when add image"));
+                    }
+                }
+               
+            }
+            else
+            {
+                try
+                {
+
+                    ret = wb.InsertImage(uid, p, null, null);
+
+                }
+                catch (Exception e)
+                {
+
+                    return Json(wb.ErrorJson(e.Message));
+                }
+
+
+
+                return Json(ret);
             }
 
 
