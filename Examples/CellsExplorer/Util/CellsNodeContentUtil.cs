@@ -30,7 +30,7 @@ namespace CellsExplorer
 
             builder.Append("\nHeight: " + row.Height + "pt");
 
-            builder.Append(StyleUtil.GetStyleContent(row.Style));
+            builder.Append(StyleUtil.GetStyleContent(row.GetStyle()));
             return builder.ToString();
         }
 
@@ -42,7 +42,7 @@ namespace CellsExplorer
 
             builder.Append("\nWidth: " + col.Width + "pt");
 
-            builder.Append(StyleUtil.GetStyleContent(col.Style));
+            builder.Append(StyleUtil.GetStyleContent(col.GetStyle()));
             return builder.ToString();
         }
 

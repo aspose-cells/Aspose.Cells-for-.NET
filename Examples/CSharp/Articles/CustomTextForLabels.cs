@@ -21,7 +21,9 @@ namespace Aspose.Cells.Examples.CSharp.Articles
             Workbook book = new Workbook(sourceDir + "sampleCustomTextForLabels.xlsx");
 
             // Assigns the GlobalizationSettings property of the WorkbookSettings class to the class created in first step
-            book.Settings.GlobalizationSettings = new CustomSettings();
+            GlobalizationSettings globalSettings = new GlobalizationSettings();
+            globalSettings.ChartSettings = new CustomSettings();
+            book.Settings.GlobalizationSettings = globalSettings;
 
             // Accesses the 1st worksheet from the collection which contains pie chart
             Worksheet sheet = book.Worksheets[0];
@@ -39,7 +41,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles
         }
 
         // Defines a custom class inherited by GlobalizationSettings class
-        class CustomSettings : GlobalizationSettings
+        class CustomSettings : ChartGlobalizationSettings//GlobalizationSettings
         {
             // Overrides the GetOtherName method
             public override string GetOtherName()

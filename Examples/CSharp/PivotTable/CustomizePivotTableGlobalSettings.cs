@@ -1,4 +1,5 @@
 ﻿using Aspose.Cells.Pivot;
+using Aspose.Cells.Settings;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,60 +10,60 @@ namespace Aspose.Cells.Examples.CSharp.PivotTableExamples
     public class CustomizePivotTableGlobalSettings
     {
         // ExStart:CustomizePivotTableGlobalSettings
-        private class CustomPivotTableGlobalizationSettings : GlobalizationSettings
+        private class CustomPivotTableGlobalizationSettings : PivotGlobalizationSettings
         {
             //Gets the name of "Total" label in the PivotTable.
             //You need to override this method when the PivotTable contains two or more PivotFields in the data area.
-            public override string GetPivotTotalName()
+            public override string GetTextOfTotal()
             {
                 Console.WriteLine("---------GetPivotTotalName-------------");
                 return "AsposeGetPivotTotalName";
             }
 
             //Gets the name of "Grand Total" label in the PivotTable.
-            public override string GetPivotGrandTotalName()
+            public override string GetTextOfGrandTotal()
             {
                 Console.WriteLine("---------GetPivotGrandTotalName-------------");
                 return "AsposeGetPivotGrandTotalName";
             }
 
             //Gets the name of "(Multiple Items)" label in the PivotTable.
-            public override string GetMultipleItemsName()
+            public override string GetTextOfMultipleItems()
             {
                 Console.WriteLine("---------GetMultipleItemsName-------------");
                 return "AsposeGetMultipleItemsName";
             }
 
             //Gets the name of "(All)" label in the PivotTable.
-            public override string GetAllName()
+            public override string GetTextOfAll()
             {
                 Console.WriteLine("---------GetAllName-------------");
                 return "AsposeGetAllName";
             }
 
             //Gets the name of "Column Labels" label in the PivotTable.
-            public override string GetColumnLabelsOfPivotTable()
+            public override string GetTextOfColumnLabels()
             {
                 Console.WriteLine("---------GetColumnLabelsOfPivotTable-------------");
                 return "AsposeGetColumnLabelsOfPivotTable";
             }
 
             //Gets the name of "Row Labels" label in the PivotTable.
-            public override string GetRowLabelsNameOfPivotTable()
+            public override string GetTextOfRowLabels()
             {
                 Console.WriteLine("---------GetRowLabelsNameOfPivotTable-------------");
                 return "AsposeGetRowLabelsNameOfPivotTable";
             }
 
             //Gets the name of "(blank)" label in the PivotTable.
-            public override string GetEmptyDataName()
+            public override string GetTextOfEmptyData()
             {
                 Console.WriteLine("---------GetEmptyDataName-------------");
                 return "(blank)AsposeGetEmptyDataName";
             }
 
             //Gets the name of PivotFieldSubtotalType type in the PivotTable.
-            public override string GetSubTotalName(PivotFieldSubtotalType subTotalType)
+            public override string GetTextOfSubTotal(PivotFieldSubtotalType subTotalType)
             {
                 Console.WriteLine("---------GetSubTotalName-------------");
 
@@ -113,8 +114,10 @@ namespace Aspose.Cells.Examples.CSharp.PivotTableExamples
             //Load your excel file
             Workbook wb = new Workbook(dataDir + "samplePivotTableGlobalizationSettings.xlsx");
 
+            GlobalizationSettings settings = new GlobalizationSettings();
+            settings.PivotSettings = new CustomPivotTableGlobalizationSettings();
             //Setting Custom Pivot Table Globalization Settings
-            wb.Settings.GlobalizationSettings = new CustomPivotTableGlobalizationSettings();
+            wb.Settings.GlobalizationSettings = settings;
 
             //Hide first worksheet that contains the data of the pivot table
             wb.Worksheets[0].IsVisible = false;
