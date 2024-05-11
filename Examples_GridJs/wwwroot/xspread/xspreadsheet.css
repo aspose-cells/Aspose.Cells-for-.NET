@@ -256,6 +256,72 @@ body {
 .x-spreadsheet-dropdown .x-spreadsheet-dropdown-header .x-spreadsheet-icon.arrow-right .arrow-down {
   left: -130px;
 }
+.x-spreadsheet-autofill-option-group {
+  background-color: white;
+  position: absolute;
+  flex-direction: column;
+  display: flex;
+  width: max-content;
+  left: 0;
+  top: 25px;
+  border: 1px solid #ccc;
+  box-shadow: 4px 3px 2px 0 rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+.x-spreadsheet-autofill-option-radio {
+  display: flex;
+  align-items: baseline;
+  padding: 5px;
+}
+.x-spreadsheet-autofill-option-radio:hover {
+  background-color: #f5f6f7;
+}
+.x-spreadsheet-autofill-option {
+  width: 30px;
+  height: 23px;
+  position: absolute;
+  z-index: 999;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1px;
+  border: 1px solid #ccc;
+}
+.x-spreadsheet-chart-button-group {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  z-index: 1000;
+}
+.x-spreadsheet-chart-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-left: 1px;
+  padding-right: 1px;
+  background-color: white;
+  border: 1px solid #bbb;
+}
+.x-spreadsheet-chart-color-row {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  padding: 2px;
+}
+.x-spreadsheet-chart-color-row:hover {
+  background-color: #f5f6f7;
+  box-shadow: 0 0 0 1px #bbb;
+}
+.x-spreadsheet-chart-button-detail {
+  width: 180px;
+  background-color: white;
+  border: 1px solid #ccc;
+  position: absolute;
+  z-index: 1001;
+  padding: 5px;
+}
 /* resizer **/
 .x-spreadsheet-resizer {
   position: absolute;
