@@ -192,9 +192,13 @@ body {
 .x-spreadsheet-dropdown .x-spreadsheet-dropdown-content {
   position: absolute;
   z-index: 200;
-  background: #f6f7f8db;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 2px;
   box-shadow: 1px 2px 5px 2px rgba(51, 51, 51, 0.15);
   max-height: 600px;
+  font-size: medium;
+  font-weight: 500;
   overflow-y: auto;
 }
 .x-spreadsheet-dropdown.bottom-left .x-spreadsheet-dropdown-content {
@@ -643,6 +647,42 @@ body {
 .x-spreadsheet-toolbar.x-spreadsheet-menubar {
   padding: 0;
   justify-content: flex-start;
+}
+.x-spreadsheet-toolbar.x-spreadsheet-menubar .x-spreadsheet-menubar-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  /* 适当调整右侧间距 */
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid black;
+}
+.x-spreadsheet-toolbar.x-spreadsheet-menubar .x-spreadsheet-menubar-btn,
+.x-spreadsheet-toolbar.x-spreadsheet-menubar .x-spreadsheet-item {
+  line-height: 25px;
+  height: unset;
+  padding: 2px 10px;
+  position: relative;
+}
+.x-spreadsheet-toolbar.x-spreadsheet-menubar .x-spreadsheet-menubar-btn .x-spreadsheet-menu-icon-text,
+.x-spreadsheet-toolbar.x-spreadsheet-menubar .x-spreadsheet-item .x-spreadsheet-menu-icon-text {
+  align-items: center;
+  gap: 5px;
+  padding-right: 20px;
+}
+.x-spreadsheet-toolbar.x-spreadsheet-menubar .x-spreadsheet-menubar-btn .x-spreadsheet-menu-icon-text .x-spreadsheet-icon,
+.x-spreadsheet-toolbar.x-spreadsheet-menubar .x-spreadsheet-item .x-spreadsheet-menu-icon-text .x-spreadsheet-icon {
+  transform: scale(1.2);
+}
+.x-spreadsheet-toolbar.x-spreadsheet-menubar .x-spreadsheet-divider {
+  width: 90%;
+  height: 1px;
+  margin: 2px auto;
+  background: #e0e2e4;
 }
 .x-spreadsheet-toolbar {
   border-bottom: 1px solid #e0e2e4;
@@ -1133,11 +1173,11 @@ form fieldset select {
   display: inline-block;
 }
 .x-spreadsheet-icon .x-spreadsheet-icon-img {
-  background-image: url(df0ac85291e8a4f9daef54c3c456ffa1.svg);
+  background-image: url(d740084c6ca54e8e1fe35da0c088c135.svg);
   position: absolute;
   width: 262px;
   height: 444px;
-  opacity: 0.56;
+  opacity: 0.86;
 }
 .x-spreadsheet-icon .x-spreadsheet-icon-img.undo {
   left: 0;
@@ -1449,6 +1489,18 @@ form fieldset select {
 }
 .x-spreadsheet-icon .x-spreadsheet-icon-img.email {
   left: -162px;
+  top: -90px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.number {
+  left: -180px;
+  top: -90px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.font-name {
+  left: -198px;
+  top: -90px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.font-size {
+  left: -216px;
   top: -90px;
 }
 .x-spreadsheet-formula-bar {
