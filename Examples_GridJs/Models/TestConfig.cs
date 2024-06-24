@@ -13,11 +13,11 @@ namespace Aspose.Cells.GridJsDemo.Models
         /// <summary>
         /// the directory which contains workbook files
         /// </summary>
-       internal static String ListDir = @"D:\codebase\customerissue\wb\tempfromdownload\";
+       internal static String ListDir = "/app/wb";
         /// <summary>
         /// temp directory to store file cache
         /// </summary>
-       internal static String TempDir = @"D:\tmpdel\tmp\";
+       internal static String TempDir =  "/app/grid_cache";
     }
     public class AwsConfig
     {
