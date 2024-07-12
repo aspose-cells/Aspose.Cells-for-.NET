@@ -12,6 +12,8 @@ using Microsoft.AspNetCore.StaticFiles;
 using Aspose.Cells.GridJsDemo.Models;
 using Newtonsoft.Json.Linq;
 using System.Text;
+using System.IO.Compression;
+using System.Security.Cryptography;
 
 namespace Aspose.Cells.GridJsDemo.Controllers
 {
@@ -98,6 +100,60 @@ namespace Aspose.Cells.GridJsDemo.Controllers
         }
 
 
+        // GET: /GridJs2/DetailStreamJsonWithUid?filename=&uid=
+        public ActionResult DetailStreamJsonWithUid(string filename, string uid)
+        {
+            String file = Path.Combine(TestConfig.ListDir, filename);
+            GridJsWorkbook wbj = new GridJsWorkbook();
+
+            //GridWorkbookSettings setting = new GridWorkbookSettings();
+            //setting.ReCalculateOnOpen = true;
+            //wbj.Settings = setting;
+
+            //check if already in cache
+            
+            
+
+
+            Response.ContentType = "application/json";
+            Response.Headers.Add("Content-Encoding", "gzip");
+
+            using (GZipStream gzip = new GZipStream(Response.Body, CompressionLevel.Optimal))
+            {
+               bool isdone= wbj.JsonToStreamByUid(gzip,uid, filename);
+                if(!isdone)
+                {
+                    Workbook wb = new Workbook(file);
+                    wbj.ImportExcelFile(uid, wb);
+                    wbj.JsonToStream(gzip,filename);
+                }
+            }
+
+            return new EmptyResult();
+        }
+
+
+        // GET: /GridJs2/DetailStreamJson?filename=
+        public ActionResult DetailStreamJson(string filename)
+        {
+
+
+            String file = Path.Combine(TestConfig.ListDir, filename);
+            GridJsWorkbook wbj = new GridJsWorkbook();
+
+            Response.ContentType = "application/json";
+            Response.Headers.Add("Content-Encoding", "gzip");
+
+            using (GZipStream gzip = new GZipStream(Response.Body, CompressionLevel.Optimal))
+            {//simple way ,direct use file path
+                wbj.ImportExcelFile(file);
+                wbj.JsonToStream(gzip, filename);
+                
+            }
+            return new EmptyResult();
+        }
+
+
 
         private ActionResult DetailJson(string path)
         {
@@ -161,7 +217,7 @@ namespace Aspose.Cells.GridJsDemo.Controllers
             }
             catch (ThreadInterruptedException e)
             {
-                Console.WriteLine("Succeeded for load in give time.");
+                Console.WriteLine("Succeeded for load in given time.");
             }
         }
         [HttpPost]

@@ -13,8 +13,8 @@
    <!-- <link rel="stylesheet" href="./xspreadsheet.css?v=20220712" />
     <script src="./xspreadsheet.js?v=20220712"></script> -->
 
-	<link rel="stylesheet" href="https://unpkg.com/gridjs-spreadsheet@24.6.0/xspreadsheet.css">
-    <script src="https://unpkg.com/gridjs-spreadsheet@24.6.0/xspreadsheet.js"></script> 
+	<link rel="stylesheet" href="https://unpkg.com/gridjs-spreadsheet@24.7.0/xspreadsheet.css">
+    <script src="https://unpkg.com/gridjs-spreadsheet@24.7.0/xspreadsheet.js"></script> 
   
     <script type="text/javascript" src="jquery-ui.min.js"></script>
     <script type="text/javascript" src="jszip.min.js"></script>
@@ -100,7 +100,8 @@
 
         $.ajax({
 
-            url:  '/GridJs2/DetailFileJson?filename='+getQueryVariable("file"),
+                //url: '/GridJs2/DetailFileJson?filename=' + getQueryVariable("file"),
+                url: '/GridJs2/DetailStreamJson?filename=' + getQueryVariable("file"),
 
             type: 'GET',
 
