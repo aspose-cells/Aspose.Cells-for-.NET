@@ -3,7 +3,7 @@ GridWeb .net6 develop guide:
     
     <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
     <PackageReference Include="System.Text.Encoding.CodePages" Version="4.7.0" />
-    <PackageReference Include="Aspose.Cells.GridWeb" Version="23.10.0" />
+    <PackageReference Include="Aspose.Cells.GridWeb" Version="24.7.0" />
     
 
 1. _viewimport.cs
@@ -12,20 +12,39 @@ GridWeb .net6 develop guide:
 @addTagHelper *, Aspose.Cells.GridWeb
 
 2. controller:
+edit TestConfig.cs ,update the acutal path to match with your enviroment
+public class TestConfig
+    {
+        /// <summary>
+        /// the directory which contains workbook files
+        /// </summary>
+        internal static String File = "/app/wb/test.xlsx";
+        /// <summary>
+        /// temp directory to store file cache
+        /// </summary>
+        internal static String TempDir = "/app/filecache";
+        /// <summary>
+        /// temp directory to store picture cache
+        /// </summary>
+        internal static String PicDir = "/app/piccache";
+    }
 put the below code in your desired controller to load gridweb view:
                 
-            Aspose.Cells.GridWeb.GridWeb.SessionStorePath = @"E:\storage\tmp\gridweb\filecache\";
-            GridWeb mw = new GridWeb();
+             //set a session store path
+            Aspose.Cells.GridWeb.GridWeb.SessionStorePath = TestConfig.TempDir;
+            Aspose.Cells.GridWeb.GridWeb mw = new Aspose.Cells.GridWeb.GridWeb();
             mw.ID = "gid";
-			mw.SetSession(HttpContext.Session);
+            mw.SetSession(HttpContext.Session);
             //set acw_client path
             mw.ResourceFilePath = "/js/acw_client/";
 			 //set the picture cache ,you need to create this directory
-            mw.PictureCachePath = @"E:\storage\tmp\gridweb\piccache";
+            mw.PictureCachePath = TestConfig.PicDir;
             mw.EnableAsync = true;
             //load workbook
-            String file = Path.Combine(Directory.GetCurrentDirectory(), @"wwwroot\wb\test.xlsx");
+            String file = TestConfig.File;
             mw.ImportExcelFile(file);
+            mw.ActiveSheet.Cells["B1"].PutValue("version:");
+            mw.ActiveSheet.Cells["C1"].PutValue(Aspose.Cells.GridWeb.GridWeb.GetVersion());
 
             //set width height
             mw.Width = Unit.Pixel(800);
