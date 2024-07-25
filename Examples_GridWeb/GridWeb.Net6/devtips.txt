@@ -37,7 +37,7 @@ put the below code in your desired controller to load gridweb view:
             mw.SetSession(HttpContext.Session);
             //set acw_client path
             mw.ResourceFilePath = "/js/acw_client/";
-			 //set the picture cache ,you need to create this directory
+            //set the picture cache ,you need to create this directory
             mw.PictureCachePath = TestConfig.PicDir;
             mw.EnableAsync = true;
             //load workbook

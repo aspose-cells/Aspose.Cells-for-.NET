@@ -1,21 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>GridWeb.Net6.0.Demo</RootNamespace>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
+    <RootNamespace>GridWeb.Net6.0.windows.Demo</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Text.Encoding.CodePages" Version="4.7.0" />
 	<PackageReference Include="System.Security.Cryptography.Pkcs" Version="6.0.3" />
- 	<PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="2.88.8" />
+ 	<PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+	<PackageReference Include="Aspose.Cells.GridWeb" Version="24.7.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="Aspose.Cells.GridWeb">
-      <HintPath>dll\Aspose.Cells.GridWeb.dll</HintPath>
-    </Reference>
-  </ItemGroup>
+  
 
   <!-- <ItemGroup>
     <ProjectReference Include="..\..\..\..\..\..\..\codebase\local\cellscode\gridweb.net7.csproj" />
