@@ -1,26 +1,36 @@
 # Examples of Aspose.Cells.GridWeb in .Net6
 
-* Aspose.Cells.GridWeb examples are also included in Aspose.Cells GitHub repository and will be available as part of the ZIP file downloadable from here.
-* All examples are located in the [Examples_GridWeb](https://github.com/aspose-cells/Aspose.Cells-for-.NET/tree/master/Examples_GridWeb) folder.
+
 * GridWeb.Net6 examples has two kinds of project files  **GridWeb.Demo.NET6.0.csproj** for linux and **GridWeb.Demo.NET6.0.windows.csproj** for windows.
-* Open the solution project file in Visual Studio and build the project.
+* Open the  project file in Visual Studio and build the project.
 * All dependencies are included via nuget package reference in the examples project. 
 
 ## GridWeb .net6 develop guide:
 ### 0. add package reference in project file
-    
-    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+     for windows:
+
     <PackageReference Include="System.Text.Encoding.CodePages" Version="4.7.0" />
-    <PackageReference Include="Aspose.Cells.GridWeb" Version="24.7.0" />
+    <PackageReference Include="System.Security.Cryptography.Pkcs" Version="6.0.3" />
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+    <PackageReference Include="Aspose.Cells.GridWeb" Version="24.8.0" />
+
+    for linux:
+
+     <PackageReference Include="System.Text.Encoding.CodePages" Version="4.7.0" />
+     <<PackageReference Include="System.Security.Cryptography.Pkcs" Version="6.0.3" />
+     <<PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="2.88.8" />
+     <<PackageReference Include="Aspose.Cells.GridWeb" Version="24.8.0" />
     
 
-### 1. _viewimport.cs
+### 1. Views\_viewimport.cs
+add required packages:
 @using Aspose.Cells.GridWeb
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @addTagHelper *, Aspose.Cells.GridWeb
 
-### 2. controller:
-edit TestConfig.cs ,update the acutal path to match with your enviroment
+### 2. Config:
+edit Models/TestConfig.cs ,update the acutal path to match with your enviroment
+~~~c#
 public class TestConfig
     {
         /// <summary>
@@ -36,9 +46,11 @@ public class TestConfig
         /// </summary>
         internal static String PicDir = "/app/piccache";
     }
-put the below code in your desired controller to load gridweb view:
-                
-             //set a session store path
+~~~
+### 3. Controller:
+put the below code in your desired controller (etc. Controllers/GridController.cs) to load gridweb view:
+~~~c#           
+             //set the session store path
             Aspose.Cells.GridWeb.GridWeb.SessionStorePath = TestConfig.TempDir;
             Aspose.Cells.GridWeb.GridWeb mw = new Aspose.Cells.GridWeb.GridWeb();
             mw.ID = "gid";
@@ -58,18 +70,30 @@ put the below code in your desired controller to load gridweb view:
             mw.Width = Unit.Pixel(800);
             mw.Height = Unit.Pixel(500);
             return View(mw);
+~~~
 
-
-### 3. viewer 
-index1.cshtml:
+### 4. Viewer 
+Views\Grid\index1.cshtml:
 add:
+~~~html
 <script src="~/js/acw_client/acwmain.js" asp-append-version="true"></script>
 <script src="~/js/acw_client/lang_en.js" asp-append-version="true"></script>
 <link href="~/js/acw_client/menu.css" rel="stylesheet" type="text/css">
+~~~
+or just use npm js reference:
+~~~html
+<script type="text/javascript" language="javascript"
+	src="https://unpkg.com/gridweb-spreadsheet@24.8.0/acw_client/acwmain.js?t=202209"></script>
+<script type="text/javascript" language="javascript"
+	src="https://unpkg.com/gridweb-spreadsheet@24.8.0/acw_client/lang_en.js"></script>
+<link href="https://unpkg.com/gridweb-spreadsheet@24.8.0/acw_client/menu.css" rel="stylesheet"
+	type="text/css" />
+~~~
+
 @model GridWeb
 <GridWebDiv mw=Model   ></GridWebDiv>
  
-### 4. add session support and GridScheduedService, (GridScheduedService will delete temporary files two days ago in the GridWeb.SessionStorePath )
+### 5. add session support and GridScheduedService, (GridScheduedService will delete temporary files two days ago in the GridWeb.SessionStorePath )
  startup.cs:
  in ConfigureServices method£º
 ~~~c#
@@ -83,16 +107,17 @@ add:
             });
          
             services.AddSingleton<Microsoft.Extensions.Hosting.IHostedService, GridScheduedService>();
-
-in Configure method
 ~~~
+in Configure method
+~~~c#
 app.UseSession();
- 
+~~~ 
 
-### 5. put latest acw_client in directory: wwwroot/js
+### 6. put latest acw_client in directory: wwwroot/js
+You can find it from https://www.npmjs.com/package/gridweb-spreadsheet
 
-### 6. add   acw route map in your controller,which can provide all the  operations for general edit action.
-   check the example in GridController.cs
+### 7. add   acw route map in your Controller,which can provide all the  operations for general edit action.
+   Check the example in Controllers/GridController.cs
         [HttpGet("acw/{type}/{id}")]
         [HttpPost("acw/{type}/{id}")]
         public IActionResult Operation(string type, string id)
@@ -103,7 +128,7 @@ app.UseSession();
  
 
 
-### 7.dependency js/css lib references in the demo project:
+### 8.dependency js/css lib references in the demo project:
  
 | name        | version    |  
 | --------   | -----:   | 
