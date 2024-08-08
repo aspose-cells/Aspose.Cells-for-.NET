@@ -24,9 +24,11 @@
 
 ### 1. Views\_viewimport.cs
 add required packages:
+~~~c#
 @using Aspose.Cells.GridWeb
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 @addTagHelper *, Aspose.Cells.GridWeb
+~~~
 
 ### 2. Config:
 edit Models/TestConfig.cs ,update the acutal path to match with your enviroment
@@ -90,8 +92,10 @@ or just use npm js reference:
 	type="text/css" />
 ~~~
 
+~~~c#
 @model GridWeb
-<GridWebDiv mw=Model   ></GridWebDiv>
+<GridWebDiv mw=Model ></GridWebDiv>
+~~~
  
 ### 5. add session support and GridScheduedService, (GridScheduedService will delete temporary files two days ago in the GridWeb.SessionStorePath )
  startup.cs:
