@@ -122,12 +122,14 @@ You can find it from https://www.npmjs.com/package/gridweb-spreadsheet
 
 ### 7. add   acw route map in your Controller,which can provide all the  operations for general edit action.
    Check the example in Controllers/GridController.cs
+~~~c#
         [HttpGet("acw/{type}/{id}")]
         [HttpPost("acw/{type}/{id}")]
         public IActionResult Operation(string type, string id)
         {
             return Aspose.Cells.GridWeb.AcwController.DoAcwAction(this, type, id);
         }
+~~~ 
 
  
 
