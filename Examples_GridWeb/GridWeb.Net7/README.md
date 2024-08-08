@@ -97,7 +97,7 @@ or just use npm js reference:
 2.add  GridScheduedService (optional, GridScheduedService will delete temporary files two days ago in the GridWeb.SessionStorePath )
 
  startup.cs:
- in ConfigureServices method£º
+ in ConfigureServices method:
 ~~~c#
          services.AddSession(options =>
             {

@@ -97,9 +97,13 @@ or just use npm js reference:
 <GridWebDiv mw=Model ></GridWebDiv>
 ~~~
  
-### 5. add session support and GridScheduedService, (GridScheduedService will delete temporary files two days ago in the GridWeb.SessionStorePath )
+### 5. Service
+1.add session support 
+
+2.add  GridScheduedService (optional, GridScheduedService will delete temporary files two days ago in the GridWeb.SessionStorePath )
+
  startup.cs:
- in ConfigureServices method£º
+ in ConfigureServices method:
 ~~~c#
          services.AddSession(options =>
             {
@@ -109,7 +113,7 @@ or just use npm js reference:
                 // Make the session cookie essential
                 options.Cookie.IsEssential = true;
             });
-         
+           //config for GridScheduedService is optional
             services.AddSingleton<Microsoft.Extensions.Hosting.IHostedService, GridScheduedService>();
 ~~~
 in Configure method
