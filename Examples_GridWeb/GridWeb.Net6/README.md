@@ -1,0 +1,114 @@
+# Examples of Aspose.Cells.GridWeb in .Net6
+
+* Aspose.Cells.GridWeb examples are also included in Aspose.Cells GitHub repository and will be available as part of the ZIP file downloadable from here.
+* All examples are located in the [Examples_GridWeb](https://github.com/aspose-cells/Aspose.Cells-for-.NET/tree/master/Examples_GridWeb) folder.
+* GridWeb.Net6 examples has two kinds of project files  **GridWeb.Demo.NET6.0.csproj** for linux and **GridWeb.Demo.NET6.0.windows.csproj** for windows.
+* Open the solution project file in Visual Studio and build the project.
+* All dependencies are included via nuget package reference in the examples project. 
+
+## GridWeb .net6 develop guide:
+### 0. add package reference in project file
+    
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+    <PackageReference Include="System.Text.Encoding.CodePages" Version="4.7.0" />
+    <PackageReference Include="Aspose.Cells.GridWeb" Version="24.7.0" />
+    
+
+### 1. _viewimport.cs
+@using Aspose.Cells.GridWeb
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, Aspose.Cells.GridWeb
+
+### 2. controller:
+edit TestConfig.cs ,update the acutal path to match with your enviroment
+public class TestConfig
+    {
+        /// <summary>
+        /// the directory which contains workbook files
+        /// </summary>
+        internal static String File = "/app/wb/test.xlsx";
+        /// <summary>
+        /// temp directory to store file cache
+        /// </summary>
+        internal static String TempDir = "/app/filecache";
+        /// <summary>
+        /// temp directory to store picture cache
+        /// </summary>
+        internal static String PicDir = "/app/piccache";
+    }
+put the below code in your desired controller to load gridweb view:
+                
+             //set a session store path
+            Aspose.Cells.GridWeb.GridWeb.SessionStorePath = TestConfig.TempDir;
+            Aspose.Cells.GridWeb.GridWeb mw = new Aspose.Cells.GridWeb.GridWeb();
+            mw.ID = "gid";
+            mw.SetSession(HttpContext.Session);
+            //set acw_client path
+            mw.ResourceFilePath = "/js/acw_client/";
+            //set the picture cache ,you need to create this directory
+            mw.PictureCachePath = TestConfig.PicDir;
+            mw.EnableAsync = true;
+            //load workbook
+            String file = TestConfig.File;
+            mw.ImportExcelFile(file);
+            mw.ActiveSheet.Cells["B1"].PutValue("version:");
+            mw.ActiveSheet.Cells["C1"].PutValue(Aspose.Cells.GridWeb.GridWeb.GetVersion());
+
+            //set width height
+            mw.Width = Unit.Pixel(800);
+            mw.Height = Unit.Pixel(500);
+            return View(mw);
+
+
+### 3. viewer 
+index1.cshtml:
+add:
+<script src="~/js/acw_client/acwmain.js" asp-append-version="true"></script>
+<script src="~/js/acw_client/lang_en.js" asp-append-version="true"></script>
+<link href="~/js/acw_client/menu.css" rel="stylesheet" type="text/css">
+@model GridWeb
+<GridWebDiv mw=Model   ></GridWebDiv>
+ 
+### 4. add session support and GridScheduedService, (GridScheduedService will delete temporary files two days ago in the GridWeb.SessionStorePath )
+ startup.cs:
+ in ConfigureServices method£º
+~~~c#
+         services.AddSession(options =>
+            {
+                // Set a short timeout for easy testing.
+                options.IdleTimeout = TimeSpan.FromSeconds(3600);
+                options.Cookie.HttpOnly = true;
+                // Make the session cookie essential
+                options.Cookie.IsEssential = true;
+            });
+         
+            services.AddSingleton<Microsoft.Extensions.Hosting.IHostedService, GridScheduedService>();
+
+in Configure method
+~~~
+app.UseSession();
+ 
+
+### 5. put latest acw_client in directory: wwwroot/js
+
+### 6. add   acw route map in your controller,which can provide all the  operations for general edit action.
+   check the example in GridController.cs
+        [HttpGet("acw/{type}/{id}")]
+        [HttpPost("acw/{type}/{id}")]
+        public IActionResult Operation(string type, string id)
+        {
+            return Aspose.Cells.GridWeb.AcwController.DoAcwAction(this, type, id);
+        }
+
+ 
+
+
+### 7.dependency js/css lib references in the demo project:
+ 
+| name        | version    |  
+| --------   | -----:   | 
+| jquery.js        |  v2.1.1     |  
+| jquery-ui.js       | v1.12.1    |    
+| jquery-ui.css        |  v1.12.1      |  
+
+[Home](https://www.aspose.com/) | [Product Page](https://products.aspose.com/cells/net) | [Docs](https://docs.aspose.com/cells/net/) | [Demos](https://products.aspose.app/cells/family) | [API Reference](https://apireference.aspose.com/cells/net) | [Examples](https://github.com/aspose-cells/Aspose.Cells-for-.NET) | [Blog](https://blog.aspose.com/category/cells/) | [Free Support](https://forum.aspose.com/c/cells) |  [Temporary License](https://purchase.aspose.com/temporary-license)
