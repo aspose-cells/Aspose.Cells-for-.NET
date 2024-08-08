@@ -424,6 +424,9 @@ body {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
 }
+.x-spreadsheet-selector .x-spreadsheet-selector-area.dashed {
+  border: 2px dashed #4b89ff;
+}
 .x-spreadsheet-selector .x-spreadsheet-selector-validation-input-message {
   position: relative;
   z-index: 100;
@@ -436,13 +439,17 @@ body {
   box-shadow: 1px 2px 5px 2px rgba(51, 51, 51, 0.15);
 }
 .x-spreadsheet-selector .x-spreadsheet-selector-clipboard,
-.x-spreadsheet-selector .x-spreadsheet-selector-autofill {
+.x-spreadsheet-selector .x-spreadsheet-selector-autofill,
+.x-spreadsheet-selector .x-spreadsheet-selector-fixed-cell {
   position: absolute;
   background: transparent;
   z-index: 100;
 }
 .x-spreadsheet-selector .x-spreadsheet-selector-clipboard {
   border: 2px dashed #4b89ff;
+}
+.x-spreadsheet-selector .x-spreadsheet-selector-fixed-cell {
+  border: 2px solid #4b89ff;
 }
 .x-spreadsheet-selector .x-spreadsheet-selector-autofill {
   border: 1px dashed rgba(0, 0, 0, 0.45);
@@ -923,6 +930,12 @@ body {
   margin-left: 5px;
   background-color: #d9dc22;
   font-size: 8px;
+}
+.x-spreadsheet-modal-component-input-btn {
+  border: 1px solid #0078d4;
+  color: #0078d4;
+  background: white;
+  border-radius: 0 5px 5px 0;
 }
 .x-spreadsheet-form-input {
   font-size: 1em;
@@ -1539,7 +1552,7 @@ form fieldset select {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 5px 0 0 5px;
 }
 .x-spreadsheet-modal-component-input-div input[type="date"],
 .x-spreadsheet-modal-component-input-div input[type="time"] {
@@ -1561,7 +1574,7 @@ form fieldset select {
   transform: translate(-50%, -50%);
   background: #fff;
   border-radius: 5px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.5);
   z-index: 1000;
   display: flex;
   flex-direction: column;
@@ -1573,7 +1586,7 @@ form fieldset select {
   outline: none;
 }
 .x-spreadsheet-modal-component-content {
-  padding: 20px;
+  padding: 10px;
   flex-grow: 1;
   background: #f5f5f5;
   overflow-y: auto;
@@ -1645,6 +1658,9 @@ form fieldset select {
   height: 1px;
   background: lightgray;
   margin-left: 2px;
+}
+.modal-animate {
+  transition: top 0.5s ease, height 0.5s ease;
 }
 .x-spreadsheet-modal-component-section-content {
   padding: 0 5px;
