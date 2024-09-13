@@ -69,6 +69,32 @@ body {
   z-index: 1;
   box-shadow: 1px 1px 3px -1px rgba(255, 255, 0, 0.3);
 }
+.x-spreadsheet-formula-explain {
+  font-family: inherit;
+  position: absolute;
+  padding: 5px 10px;
+  color: #fff;
+  border-radius: 1px;
+  background: #FFF8DC;
+  opacity: 0.7;
+  font-size: 12px;
+  z-index: 201;
+  max-width: 300px;
+}
+.x-spreadsheet-formula-explain:before {
+  pointer-events: none;
+  position: absolute;
+  left: -4px;
+  top: calc(50% - 4px);
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: inherit;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  z-index: 1;
+  box-shadow: 1px 1px 3px -1px rgba(255, 255, 0, 0.3);
+}
 .x-spreadsheet-color-palette {
   padding: 5px;
 }
@@ -881,6 +907,33 @@ body {
   z-index: 10;
   width: auto;
 }
+.x-spreadsheet-timepicker {
+  position: absolute;
+  z-index: 1000;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  display: none;
+}
+.x-spreadsheet-timepicker select {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+.x-spreadsheet-timepicker-hours,
+.x-spreadsheet-timepicker-minutes,
+.x-spreadsheet-timepicker-seconds {
+  display: inline-block;
+}
+.x-spreadsheet-timepicker select:focus {
+  border-color: #105efb;
+  outline: none;
+}
+.x-spreadsheet-timepicker select:hover {
+  background-color: #e1e1e1;
+}
 .x-spreadsheet-buttons {
   display: flex;
   justify-content: flex-end;
@@ -1197,7 +1250,7 @@ form fieldset select {
   display: inline-block;
 }
 .x-spreadsheet-icon .x-spreadsheet-icon-img {
-  background-image: url(92a25d00d3c48133d57c1b98d48a688e.svg);
+  background-image: url(a3b683289420fd8ec937908397907279.svg);
   position: absolute;
   width: 262px;
   height: 444px;
@@ -1278,6 +1331,14 @@ form fieldset select {
 .x-spreadsheet-icon .x-spreadsheet-icon-img.textwrap {
   left: -72px;
   top: -18px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.syntaxstatus {
+  left: -18px;
+  top: -108px;
+}
+.x-spreadsheet-icon .x-spreadsheet-icon-img.showformulas {
+  left: -36px;
+  top: -108px;
 }
 .x-spreadsheet-icon .x-spreadsheet-icon-img.autofilter {
   left: -90px;
@@ -1531,6 +1592,10 @@ form fieldset select {
   left: -234px;
   top: -90px;
 }
+.x-spreadsheet-icon .x-spreadsheet-icon-img.openFile {
+  left: 0px;
+  top: -108px;
+}
 .x-spreadsheet-formula-bar {
   height: 25px;
   line-height: 25px;
@@ -1581,6 +1646,12 @@ form fieldset select {
   width: 50%;
   height: 50%;
   overflow: hidden;
+}
+@media screen and (max-width: 480px) {
+  .x-spreadsheet-modal-component {
+    width: 90% !important;
+    height: 70%;
+  }
 }
 .x-spreadsheet-modal-component:focus {
   outline: none;
