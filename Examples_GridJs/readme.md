@@ -9,7 +9,7 @@ Try our [free online apps](https://products.aspose.app/cells/family) demonstrati
 This is a  demo to show how we can use GridJs to implment a spreadsheet Editor.
 
 ## Step by step to run the demo
-Edit the properties in `TestConfig.cs` to match your enviroment.
+Edit the properties in `Models/TestConfig.cs` to match your enviroment.
 
 If you want to use Amazon Storage Service, edit the properties in AwsConfig class in TestConfig.cs.
 
