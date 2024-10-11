@@ -1792,6 +1792,10 @@ form fieldset select {
   transition: background-color 0.3s;
   font-size: 16px;
 }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+}
 /* Tab button when active */
 .x-spreadsheet-modal-component-tab-button.active {
   background-color: #ffffff;

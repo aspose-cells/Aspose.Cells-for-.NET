@@ -2,9 +2,50 @@
     ViewData["Title"] = "Home Page";
 }
 @model Aspose.Cells.GridWeb.GridWeb
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="~/js/acw_client/acwmain.js" asp-append-version="true"></script>
 <script src="~/js/acw_client/lang_en.js" asp-append-version="true"></script>
 <link href="~/js/acw_client/menu.css" rel="stylesheet" type="text/css">
-<div class="text-center">
+<style>
+    #result, #myButton {
+        display: inline-block;
+        vertical-align: top; /* 可以根据需要调整垂直对齐方式 */
+    }
+
+    #myButton {
+        margin-left: 10px; /* 给按钮添加一些左边距，使其不与div紧贴 */
+    }
+</style>
+<div >
     <GridWebDiv mw=Model></GridWebDiv>
 </div>
+<br />
+<br />
+<br />
+<br />
+
+<form asp-controller="Grid" asp-action="ButtonClickUpdateA1" method="post">
+    <input type="text" name="EnteredValue" placeholder="please enter value ,we will update cell A1 with this value" style="width:400px"/>
+    <button type="submit" style="width:300px">update cell A1 with entered value</button>
+</form>
+<div id="result">try get info from server</div>
+<button id="myButton" style="width:300px">query info for cell c3  </button>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#myButton').click(function () {
+            $.ajax({
+                url: '@Url.Action("QueryInfo", "Grid")',  
+                type: 'GET',
+                success: function (data) {
+                    
+                    $('#result').text(data);
+                },
+                error: function () {
+                    $('#result').text("fail");
+                }
+            });
+        });
+    });
+</script>

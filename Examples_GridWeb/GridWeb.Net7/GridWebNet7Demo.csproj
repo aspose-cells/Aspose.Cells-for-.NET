@@ -10,7 +10,7 @@
     <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
     <PackageReference Include="System.Security.Cryptography.Pkcs" Version="6.0.3" />
     <PackageReference Include="System.Text.Encoding.CodePages" Version="4.7.0" />
-    <PackageReference Include="Aspose.Cells.GridWeb" Version="24.9.0" />
+    <PackageReference Include="Aspose.Cells.GridWeb" Version="24.10.0" />
   </ItemGroup>
 
 </Project>
