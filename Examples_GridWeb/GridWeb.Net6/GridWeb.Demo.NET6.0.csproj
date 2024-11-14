@@ -9,7 +9,7 @@
     <PackageReference Include="System.Text.Encoding.CodePages" Version="4.7.0" />
 	<PackageReference Include="System.Security.Cryptography.Pkcs" Version="6.0.3" />
  	<PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="2.88.8" />
-	<PackageReference Include="Aspose.Cells.GridWeb" Version="24.10.0" />
+	<PackageReference Include="Aspose.Cells.GridWeb" Version="24.11.0" />
   </ItemGroup>
 
   <!-- <ItemGroup>
