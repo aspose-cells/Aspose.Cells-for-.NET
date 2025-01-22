@@ -31,6 +31,7 @@ WORKDIR /app
 # Install Fonts because the SDK image contains very few fonts. The command copies font files from local to docker image. Make sure you have a local ¡°fonts¡± directory that contains all the fonts you need to install. In this example, the local ¡°fonts¡± directory is put in the same directory as the Dockerfile.
 # COPY fonts/* /usr/share/fonts/
 RUN mkdir -p /app/wb
+RUN mkdir -p /app/uploads
 RUN mkdir -p /app/grid_cache
 COPY wb/*.xlsx /app/wb/
 

@@ -13,8 +13,8 @@
    <!-- <link rel="stylesheet" href="./xspreadsheet.css?v=20220712" />
     <script src="./xspreadsheet.js?v=20220712"></script> -->
 
-	<link rel="stylesheet" href="https://unpkg.com/gridjs-spreadsheet@24.12.0/xspreadsheet.css">
-    <script src="https://unpkg.com/gridjs-spreadsheet@24.12.0/xspreadsheet.js"></script> 
+	<link rel="stylesheet" href="https://unpkg.com/gridjs-spreadsheet@25.1.3/xspreadsheet.css">
+    <script src="https://unpkg.com/gridjs-spreadsheet@25.1.3/xspreadsheet.js"></script> 
   
     <script type="text/javascript" src="jquery-ui.min.js"></script>
     <script type="text/javascript" src="jszip.min.js"></script>
@@ -91,17 +91,17 @@
         let xs;
         let rdata;
         let uniqueid;
+    let fromUpload = getQueryVariable('fromUpload');
     //var local = 'http://localhost:24262';
       let imagediv = 'imagedive';
         let basiczorder = 5678;
     let sheets = [];
         let jsondata = null;
     $(function () {
-
+        const jsonurl = `/GridJs2/DetailStreamJson?filename=${getQueryVariable("file")}&fromUpload=${fromUpload || ''}`;
         $.ajax({
 
-                //url: '/GridJs2/DetailFileJson?filename=' + getQueryVariable("file"),
-                url: '/GridJs2/DetailStreamJson?filename=' + getQueryVariable("file"),
+            url: jsonurl,
 
             type: 'GET',
 
@@ -431,6 +431,7 @@
             xs.setActiveSheetByName(jsondata.actname).setActiveCell(jsondata.actrow,jsondata.actcol);
             //add custom context menu items for set highlight image function
             xs.sheet.addCustomContextMenuItems([{ 'key': 'key8', 'text': 'set self defined image highlight function', 'callback': setCustomHighlighImageFunc }, { 'key': 'key9', 'text': 'use default highlight image func ', 'callback': removeCustomHighlighImageFunc }])
+            xs.setOpenFileUrl("/GridJs2/List");
  
     }
  

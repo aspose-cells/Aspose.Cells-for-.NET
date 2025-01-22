@@ -33,8 +33,8 @@
     <script src="./xspreadsheet.js?v=202305"></script> -->
 
     <!--for release reference-->
-    <link rel="stylesheet" href="https://unpkg.com/gridjs-spreadsheet@24.12.0/xspreadsheet.css">
-    <script src="https://unpkg.com/gridjs-spreadsheet@24.12.0/xspreadsheet.js"></script> 
+    <link rel="stylesheet" href="https://unpkg.com/gridjs-spreadsheet@25.1.3/xspreadsheet.css">
+    <script src="https://unpkg.com/gridjs-spreadsheet@25.1.3/xspreadsheet.js"></script> 
 
 
 
@@ -63,17 +63,18 @@
         let xs;
         let rdata;
         let uniqueid = getQueryVariable('uid');
+        let fromUpload = getQueryVariable('fromUpload');
+
         //var local = 'http://localhost:24262';
         let imagediv = 'imagedive';
         let basiczorder = 5678;
         let sheets = [];
         let jsondata = null;
         $(function () {
-
+            const jsonurl = `/GridJs2/DetailStreamJsonWithUid?filename=${getQueryVariable("file")}&uid=${uniqueid}&fromUpload=${fromUpload || ''}`;
             $.ajax({
 
-                //url: '/GridJs2/DetailFileJsonWithUid?filename=' + getQueryVariable("file") + '&uid=' + uniqueid,
-                url: '/GridJs2/DetailStreamJsonWithUid?filename=' + getQueryVariable("file") + '&uid=' + uniqueid,
+                url: jsonurl,
 
                 type: 'GET',
 
@@ -144,6 +145,7 @@
             const imageuploadurl1 = "/GridJs2/AddImage";
             const imageuploadurl2 = "/GridJs2/AddImageByURL";
             const imagecopyurl = "/GridJs2/CopyImage";        // x.spreadsheet.locale('zh-cn');
+            const lazyLoadingUrl = "/GridJs2/LazyLoadingStreamJson";
             xs = x_spreadsheet('#gridjs-demo-uid', option).loadData(sheets).change((cdata) => {
                 console.log(cdata);
                 console.log(xs.validate());
@@ -182,7 +184,28 @@
             }).on('sheet-loaded', (id, name) => {
                 console.log('sheet is loaded id:', id, ', name: ', name);
             }).on('cell-edited', (text, ri, ci) => {
-                console.log('text:', text, ', ri: ', ri, ', ci:', ci);
+                console.log('edit text:', text, ', ri: ', ri, ', ci:', ci);
+            });
+            xs.on('cells-updated', (name, cells) => {
+                console.log('cells updated for sheet name:', name);
+                cells.forEach((acell, index, array) => {
+                    console.log('acell got updated:', acell);
+                })
+            }).on('cells-deleted', (range) => {
+                console.log('cells deleted :', range);
+
+            }).on('rows-deleted', (ri, n) => {
+                console.log('rows-deleted :', ri, ",size", n);
+
+            }).on('columns-deleted', (ci, n) => {
+                console.log('columns-deleted :', ci, ",size", n);
+
+            }).on('rows-inserted', (ri, n) => {
+                console.log('rows-inserted :', ri, ",size", n);
+
+            }).on('columns-inserted', (ci, n) => {
+                console.log('columns-inserted :', ci, ",size", n);
+
             });
 
  
@@ -193,6 +216,8 @@
             xs.setImageInfo(imageurl, imageuploadurl1, imageuploadurl2, imagecopyurl, basiczorder);
             xs.setFileDownloadInfo(fileDownloadUrl);
             xs.setOleDownloadInfo(oleDownloadUrl);
+            xs.setLazyLoadingUrl(lazyLoadingUrl);
+            xs.setOpenFileUrl("/GridJs2/List");
              
             let activeSheetName = jsondata.actname;
            

@@ -69,6 +69,10 @@ body {
   z-index: 1;
   box-shadow: 1px 1px 3px -1px rgba(255, 255, 0, 0.3);
 }
+.x-spreadsheet-html-tip {
+  position: absolute;
+  z-index: 997;
+}
 .x-spreadsheet-formula-explain {
   font-family: inherit;
   position: absolute;
@@ -562,6 +566,11 @@ body {
   opacity: 0.65;
   font-size: 1em;
 }
+.x-spreadsheet-item .labelcnt {
+  float: right;
+  color: green;
+  font-size: 1em;
+}
 .x-spreadsheet-item.state,
 .x-spreadsheet-header.state {
   padding-left: 35px !important;
@@ -984,11 +993,26 @@ body {
   background-color: #d9dc22;
   font-size: 8px;
 }
+.x-spreadsheet-button.primary.disabled {
+  background-color: #b0b8c1;
+  color: rgb(240 229 229);
+  pointer-events: none;
+  cursor: not-allowed;
+}
 .x-spreadsheet-modal-component-input-btn {
   border: 1px solid #0078d4;
   color: #0078d4;
   background: white;
   border-radius: 0 5px 5px 0;
+}
+.x-spreadsheet-gkeyinput {
+  width: 0px;
+  height: 0px;
+  font-size: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  top: -200px;
 }
 .x-spreadsheet-form-input {
   font-size: 1em;

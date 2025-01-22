@@ -12,8 +12,9 @@ using Microsoft.AspNetCore.StaticFiles;
 using Aspose.Cells.GridJsDemo.Models;
 using Newtonsoft.Json.Linq;
 using System.Text;
+using System.Threading.Tasks;
+using System.Globalization;
 using System.IO.Compression;
-using System.Security.Cryptography;
 
 namespace Aspose.Cells.GridJsDemo.Controllers
 {
@@ -47,6 +48,35 @@ namespace Aspose.Cells.GridJsDemo.Controllers
     public class GridJs2Controller : Controller 
     {
  
+        [HttpPost]
+        public async Task<ActionResult> Upload(IFormFile file )
+        {
+            if (file == null || file.Length == 0)
+            {
+                return Content("No file selected.");
+            }
+
+            var filename = Path.GetFileName(file.FileName);
+            var filePath = Path.Combine(TestConfig.UploadDir, filename);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
+
+            string demotype = HttpContext.Request.Form["demotype"];
+            if(demotype=="1")
+            {
+                return Redirect("~/xspread/uidload.html?fromUpload=1&file=" + filename + "&uid=" + GridJsWorkbook.GetUidForFile(filename));
+            }
+            else {
+                return Redirect("~/xspread/index.html?fromUpload=1&file=" + filename);
+            }
+           
+        }
+
+      
+
     
         public ActionResult List()
         {
@@ -99,22 +129,22 @@ namespace Aspose.Cells.GridJsDemo.Controllers
             return Content(sb.ToString(), "text/plain", System.Text.Encoding.UTF8);
         }
 
-
-        // GET: /GridJs2/DetailStreamJsonWithUid?filename=&uid=
-        public ActionResult DetailStreamJsonWithUid(string filename, string uid)
+        private void SetThreadculture(string cultureName)
         {
-            String file = Path.Combine(TestConfig.ListDir, filename);
+            CultureInfo culture = new CultureInfo(cultureName);
+            Thread.CurrentThread.CurrentCulture = culture;
+            Thread.CurrentThread.CurrentUICulture = culture;
+        }
+        // GET: /GridJs2/DetailStreamJsonWithUid?filename=&uid=
+        public ActionResult DetailStreamJsonWithUid(string filename, string uid,string fromUpload)
+        {
+            
+            String file =  Path.Combine(fromUpload != null? TestConfig.UploadDir:TestConfig.ListDir, filename);
             GridJsWorkbook wbj = new GridJsWorkbook();
+            
 
-            //GridWorkbookSettings setting = new GridWorkbookSettings();
-            //setting.ReCalculateOnOpen = true;
-            //wbj.Settings = setting;
 
             //check if already in cache
-            
-            
-
-
             Response.ContentType = "application/json";
             Response.Headers.Add("Content-Encoding", "gzip");
 
@@ -124,6 +154,9 @@ namespace Aspose.Cells.GridJsDemo.Controllers
                 if(!isdone)
                 {
                     Workbook wb = new Workbook(file);
+                    //do your business for first load 
+                    //wb.Worksheets[0].Cells["A1"].PutValue("first load directly from file");
+                    
                     wbj.ImportExcelFile(uid, wb);
                     wbj.JsonToStream(gzip,filename);
                 }
@@ -134,23 +167,58 @@ namespace Aspose.Cells.GridJsDemo.Controllers
 
 
         // GET: /GridJs2/DetailStreamJson?filename=
-        public ActionResult DetailStreamJson(string filename)
+        public ActionResult DetailStreamJson(string filename,string fromUpload)
         {
 
 
-            String file = Path.Combine(TestConfig.ListDir, filename);
+            String file = Path.Combine(fromUpload != null ? TestConfig.UploadDir : TestConfig.ListDir, filename);
             GridJsWorkbook wbj = new GridJsWorkbook();
 
             Response.ContentType = "application/json";
             Response.Headers.Add("Content-Encoding", "gzip");
 
             using (GZipStream gzip = new GZipStream(Response.Body, CompressionLevel.Optimal))
-            {//simple way ,direct use file path
+            {//simple way ,direct use file pathis also ok
                 wbj.ImportExcelFile(file);
                 wbj.JsonToStream(gzip, filename);
                 
             }
             return new EmptyResult();
+        }
+
+        [HttpPost]
+        // post: /GridJs2/LazyLoadingStreamJson?name=&uid=
+        public ActionResult LazyLoadingStreamJson()
+        {
+            string sheetName = HttpContext.Request.Form["name"];
+            string uid = HttpContext.Request.Form["uid"];
+            string locale = HttpContext.Request.Form["locale"];
+            SetThreadculture(locale);
+            GridJsWorkbook wbj = new GridJsWorkbook();
+
+
+            Response.ContentType = "application/json";
+            Response.Headers.Add("Content-Encoding", "gzip");
+
+            using (GZipStream gzip = new GZipStream(Response.Body, CompressionLevel.Optimal))
+            {
+               wbj.LazyLoadingStream(gzip, uid, sheetName);
+               
+            }
+
+            return new EmptyResult();
+        }
+
+        [HttpPost]
+        // post: /GridJs2/LazyLoadingJson?name=&uid=
+        public ActionResult LazyLoadingJson()
+        {
+            string sheetName = HttpContext.Request.Form["name"];
+            string uid = HttpContext.Request.Form["uid"];
+            GridJsWorkbook wbj = new GridJsWorkbook();
+ 
+ 
+            return Content(wbj.LazyLoadingJson(uid,sheetName).ToString(), "text/plain", System.Text.Encoding.UTF8);
         }
 
 

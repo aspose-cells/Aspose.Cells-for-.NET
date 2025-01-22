@@ -91,8 +91,9 @@ namespace gridjs_demo_.netcore
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            //start here，setlicense,use cells.license ,GridJs does not provide single license entry anymore
+            //start here，setlicense,use cells.license ,GridJs does not provide single license entry ,you need to set license for Aspose.Cells API
             Aspose.Cells.License l = new Aspose.Cells.License();
+            //l.SetLicense(@"D:\release\Aspose.Cells.lic");
 			//set file cache directory
             Config.FileCacheDirectory = TestConfig.TempDir;
 			//set cache implement
@@ -106,7 +107,7 @@ namespace gridjs_demo_.netcore
             GridJsWorkbook.CacheImp = mwc;
             //AwsCache awc = new AwsCache(new AwsStorageService());
             //GridJsWorkbook.CacheImp = awc;
-            //l.SetLicense(@"D:\release\Aspose.Cells.lic");
+
         }
     }
 }

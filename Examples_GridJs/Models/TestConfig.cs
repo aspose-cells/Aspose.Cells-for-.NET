@@ -18,6 +18,7 @@ namespace Aspose.Cells.GridJsDemo.Models
         /// temp directory to store file cache
         /// </summary>
        internal static String TempDir =  "/app/grid_cache";
+       internal static String UploadDir = "/app/uploads";
     }
     public class AwsConfig
     {
