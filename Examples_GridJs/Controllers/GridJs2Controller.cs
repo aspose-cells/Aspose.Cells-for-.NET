@@ -15,6 +15,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Globalization;
 using System.IO.Compression;
+using SkiaSharp;
 
 namespace Aspose.Cells.GridJsDemo.Controllers
 {
@@ -75,9 +76,42 @@ namespace Aspose.Cells.GridJsDemo.Controllers
            
         }
 
-      
+        public ActionResult ImageSaveTest()
+        {   
+            Workbook wb = new Workbook(Path.Combine(TestConfig.ListDir, "chart.xlsx"));
+            string ret = "";
+            try
+            {
+               
+                Aspose.Cells.License l = new Aspose.Cells.License();
+                String licenseFilePath = "/app/license";
+                if (System.IO.File.Exists(licenseFilePath))
+                {
+                    l.SetLicense(licenseFilePath);
+                    Console.WriteLine("set license successfully");
+                    Console.WriteLine($"SkiaSharp CheckNativeLibraryCompatible: {SkiaSharp.SkiaSharpVersion.CheckNativeLibraryCompatible()}");
+                    //Console.WriteLine($"Native Library Version: {SkiaSharpVersion.NativeMinimum.Minor}");
+                }
+                else
+                {
+                    ret = "no license/n";
+                }
+                // 使用 using 确保 MemoryStream 在使用后被正确释放
+                using (MemoryStream memoryStream = new MemoryStream())
+                {
+                    wb.Worksheets[0].Shapes[0].ToImage(memoryStream, Drawing.ImageType.Png);
+                }
+            }
+            catch (Exception ex)
+            {
+                return Content(ret+ex.StackTrace, "text/plain", System.Text.Encoding.UTF8);
+            }
+            return new EmptyResult();
 
-    
+        }
+
+
+
         public ActionResult List()
         {
             //this.ViewBag.list = new List<object>();
@@ -97,6 +131,7 @@ namespace Aspose.Cells.GridJsDemo.Controllers
           //  ViewData.
             ViewBag.dirlist = dirlistsss;
             ViewBag.filelist = filelistsss;
+            ViewBag.dirstr = TestConfig.ListDir;
             return View("~/Views/Home/list.cshtml");
         }
 

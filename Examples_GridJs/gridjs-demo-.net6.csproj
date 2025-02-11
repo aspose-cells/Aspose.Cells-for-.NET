@@ -16,11 +16,10 @@
     <PackageReference Include="Aspose.Cells" Version="25.1.1" />
     <PackageReference Include="Aspose.Cells.GridJs" Version="25.1.1" />
     <PackageReference Include="AWSSDK.S3" Version="3.7.0.21" />
-    <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.4.10" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="2.88.8" />
+    <PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="3.116.1" />
   </ItemGroup>
 
 </Project>

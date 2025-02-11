@@ -11,7 +11,15 @@
     <script type="text/javascript" src="~/xspread/jquery-ui.min.js"></script>
     <script>
         $(function () {
-            $("input").checkboxradio();
+            $("input[type='radio']").checkboxradio();
+            document.querySelector('#uploadForm input[type="file"]').addEventListener('change', function () {
+                // 当用户选择了文件时，自动提交表单
+                if (this.files.length > 0) {
+                    document.getElementById('demotype').value = $('#radio-1:checked').val() ? "1" : "";
+                    document.getElementById('uploadForm').submit();
+                 
+                }
+            });
         });
         function openfile(name) {
             const url = ($('#radio-1:checked').val() ? '/GridJs2/Uidtml' : '/GridJs2/Xspreadtml') + '?filename=' + name;
@@ -19,9 +27,33 @@
         }
     </script>
     <style>
+        
         body {
-            overflow-y:hidden;
+            overflow-y: hidden;
+            background-color: #f8f9fa; /* 设置浅灰色背景 */
         }
+
+        .file-list {
+            max-height: 600px;
+            overflow-y: auto;
+            border: 1px solid #ced4da;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f6f7ef;
+             
+        }
+
+        .file-item {
+            display: block;
+            color: #1e5a08
+            text-decoration: none;
+            margin-bottom: 5px;
+        }
+
+            .file-item:hover {
+                text-decoration: underline;
+            }
+    
     </style>
 </head>
 <body>
@@ -43,7 +75,7 @@
             </div>
         </nav>
     </header>
-    <div class="container" >
+    <div class="container mt-3">
         <partial name="_CookieConsentPartial" />
         <main role="main" class="pb-3">
             @RenderBody()
@@ -52,7 +84,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container" >
-            &copy; 2023 - Aspose - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2025 - <a href="https://products.aspose.com/cells">Aspose</a>  - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
 

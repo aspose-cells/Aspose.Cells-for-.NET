@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -61,6 +62,10 @@ namespace gridjs_demo_.netcore
             {
                 options.AllowSynchronousIO = true;
             });
+            services.Configure<KestrelServerOptions>(options =>
+            {
+                options.AllowSynchronousIO = true;
+            });
             services.AddMvc(options => options.EnableEndpointRouting = false).SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
         }
 
@@ -91,8 +96,14 @@ namespace gridjs_demo_.netcore
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            //start here，setlicense,use cells.license ,GridJs does not provide single license entry ,you need to set license for Aspose.Cells API
+            //start here，setlicense,use cells.license ,GridJs does not provide single license entry ,GridJs use  Aspose.Cells API, you need to set license for Aspose.Cells API
+            string licenseFilePath = "/app/license";
             Aspose.Cells.License l = new Aspose.Cells.License();
+            if(File.Exists(licenseFilePath))
+            {
+                l.SetLicense(licenseFilePath);
+                Console.WriteLine("set license successfully");
+            }
             //l.SetLicense(@"D:\release\Aspose.Cells.lic");
 			//set file cache directory
             Config.FileCacheDirectory = TestConfig.TempDir;

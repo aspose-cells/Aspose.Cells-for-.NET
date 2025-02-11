@@ -1,20 +1,33 @@
 ﻿
+<main role="main" class="pb-3">
 <fieldset>
     <legend>Select a demo: </legend>
     <label for="radio-1">permanent url load demo</label>
     <input type="radio" name="radio-1" id="radio-1" checked="true">
     <label for="radio-2">highlight and custom context menu demo</label>
     <input type="radio" name="radio-1" id="radio-2">
-
+       
 </fieldset>
-<div id="cookieConsent" class="alert alert-info alert-dismissible fade show" role="alert">
-    <h3>navigate one of the below file to start show workbook <br /></h3>
+    <div class="mt-3">
+        <h4>Upload a local file to start show workbook</h4>
+        <form id="uploadForm" method="post" action="/GridJs2/Upload" enctype="multipart/form-data">
+            
+            <input type="file" name="file" accept=".xlsx,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" required />
+            <input type="hidden" name="demotype" id="demotype" value="" />
+        </form>
+        
+    </div>
+<div id="cookieConsent" class="alert alert-info alert-dismissible fade show  mb-3" role="alert">
+        <h4> The specific file path  :  @ViewBag.dirstr </h4>
+        <h4>Navigate one of the below file to start show workbook <br /></h4>
 </div>
-<div   style="   height: 500px; border: 1px solid; overflow-y: scroll; SCROLLBAR-BASE-COLOR: #8ccc8c;">
+    <div style=" border: 1px solid; overflow-y: scroll; SCROLLBAR-BASE-COLOR: #8ccc8c;" class="file-list">
 
 
 
 @foreach (var item in ViewBag.filelist)      
-{     
-<a href="javascript:void(0)" target="_blank" onclick='openfile("@item")' ><em> @item   </em>  </a> <br />}
+{
+            <a href="javascript:void(0)" target="_blank" onclick='openfile("@item")' class="file-item"><em> @item   </em>  </a> <br />
+        }
 </div>  
+</main>
