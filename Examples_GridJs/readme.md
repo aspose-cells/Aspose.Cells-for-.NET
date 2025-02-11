@@ -8,6 +8,10 @@ Try our [free online apps](https://products.aspose.app/cells/family) demonstrati
 
 This is a  demo to show how we can use GridJs to implment a spreadsheet Editor.
 
+## Preview
+
+<img alt='demo' src='https://unpkg.com/gridjs-spreadsheet@25.1.0/preview.gif' />
+
 ## Step by step to run the demo
 Edit the properties in `Models/TestConfig.cs` to match your enviroment.
 
