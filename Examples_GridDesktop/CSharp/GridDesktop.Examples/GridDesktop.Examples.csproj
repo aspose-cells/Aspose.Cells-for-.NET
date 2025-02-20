@@ -35,8 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Aspose.Cells.GridDesktop" Version="25.1.1" />
-	<PackageReference Include="Aspose.Cells" Version="25.1.1" />
+    <PackageReference Include="Aspose.Cells.GridDesktop" Version="25.*" />
+	<PackageReference Include="Aspose.Cells" Version="25.*" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
