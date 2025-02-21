@@ -33,11 +33,15 @@ please feedback to the following website https://forum.aspose.com/c/cells/9
 
 2. run with aspose license file:
 
+```bash
       docker run -d -p 24262:80  -v C:/path/to/license.txt:/app/license gridjs-demo-net6
+```
 	  
    or just run the demo in trial mode:
    
+```bash
       docker run -d -p 24262:80 gridjs-demo-net6
+```
 
 3. open browser and enter the url:http://localhost:24262/GridJs2/List
 
@@ -54,4 +58,6 @@ jszip.min.js v3.6.0
 bootstrap.css   v22.5.5.2
 
 quantumui.css   v22.5.5.2
+
+
 
