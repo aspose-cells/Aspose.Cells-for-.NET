@@ -15,7 +15,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine
             Workbook workbook = new Workbook();
 
             // Set the Formula Calculation Mode to Manual
-            workbook.Settings.CalcMode = CalcModeType.Manual;
+            workbook.Settings.FormulaSettings.CalculationMode = CalcModeType.Manual;
 
             // Save the workbook
             workbook.Save(dataDir + "output_out.xlsx", SaveFormat.Xlsx);

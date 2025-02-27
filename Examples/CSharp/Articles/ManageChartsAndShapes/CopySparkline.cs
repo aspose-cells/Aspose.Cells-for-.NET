@@ -23,13 +23,13 @@ namespace Aspose.Cells.Examples.CSharp.Articles.ManageChartsAndShapes
             Worksheet worksheet = workbook.Worksheets[0];
 
             // Access the first sparkline group
-            SparklineGroup group = worksheet.SparklineGroupCollection[0];
+            SparklineGroup group = worksheet.SparklineGroups[0];
 
             // Add Data Ranges and Locations inside this sparkline group
-            group.SparklineCollection.Add("D5:O5", 4, 15);
-            group.SparklineCollection.Add("D6:O6", 5, 15);
-            group.SparklineCollection.Add("D7:O7", 6, 15);
-            group.SparklineCollection.Add("D8:O8", 7, 15);
+            group.Sparklines.Add("D5:O5", 4, 15);
+            group.Sparklines.Add("D6:O6", 5, 15);
+            group.Sparklines.Add("D7:O7", 6, 15);
+            group.Sparklines.Add("D8:O8", 7, 15);
 
             // Save the workbook
             workbook.Save(outputDir + "outputCopySparkline.xlsx");

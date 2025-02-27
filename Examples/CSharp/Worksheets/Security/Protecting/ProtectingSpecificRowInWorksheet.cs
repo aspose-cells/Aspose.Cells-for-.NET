@@ -41,7 +41,7 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets.Security.Protecting
             }
 
             // Get the first row style.
-            style = sheet.Cells.Rows[0].Style;
+            style = sheet.Cells.Rows[0].GetStyle();
 
             // Lock it.
             style.IsLocked = true;

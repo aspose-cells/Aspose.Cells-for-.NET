@@ -32,7 +32,7 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets.Security.Protecting
             // Loop through all the columns in the worksheet and unlock them.
             for (int i = 0; i <= 255; i++)
             {
-                style = sheet.Cells.Columns[(byte)i].Style;
+                style = sheet.Cells.Columns[(byte)i].GetStyle();
                 style.IsLocked = false;
                 flag = new StyleFlag();
                 flag.Locked = true;
@@ -41,7 +41,7 @@ namespace Aspose.Cells.Examples.CSharp.Worksheets.Security.Protecting
             }
 
             // Get the first row style.
-            style = sheet.Cells.Rows[0].Style;
+            style = sheet.Cells.Rows[0].GetStyle();
 
             // Lock it.
             style.IsLocked = true;

@@ -25,12 +25,12 @@ namespace Aspose.Cells.Examples.CSharp.Charts
 
             // Use the following lines if you need to read the Sparklines
             // Read the Sparklines from the template file (if it has)
-            foreach (SparklineGroup g in sheet.SparklineGroupCollection)
+            foreach (SparklineGroup g in sheet.SparklineGroups)
             {
                 // Display the Sparklines group information e.g type, number of sparklines items
-                Console.WriteLine("sparkline group: type:" + g.Type + ", sparkline items count:" + g.SparklineCollection.Count);
+                Console.WriteLine("sparkline group: type:" + g.Type + ", sparkline items count:" + g.Sparklines.Count);
 
-                foreach (Sparkline s in g.SparklineCollection)
+                foreach (Sparkline s in g.Sparklines)
                 {
                     // Display the individual Sparkines and the data ranges
                     Console.WriteLine("sparkline: row:" + s.Row + ", col:" + s.Column + ", dataRange:" + s.DataRange);
@@ -46,8 +46,8 @@ namespace Aspose.Cells.Examples.CSharp.Charts
             ca.EndRow = 7;
             
             // Add new Sparklines for a data range to a cell area
-            int idx = sheet.SparklineGroupCollection.Add(SparklineType.Column, "Sheet1!B2:D8", false, ca);
-            SparklineGroup group = sheet.SparklineGroupCollection[idx];
+            int idx = sheet.SparklineGroups.Add(SparklineType.Column, "Sheet1!B2:D8", false, ca);
+            SparklineGroup group = sheet.SparklineGroups[idx];
             
             // Create CellsColor
             CellsColor clr = book.CreateCellsColor();

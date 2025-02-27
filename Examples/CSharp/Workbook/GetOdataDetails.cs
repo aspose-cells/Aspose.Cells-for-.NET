@@ -12,7 +12,7 @@ namespace Aspose.Cells.Examples.CSharp._Workbook
             string SourceDir = RunExamples.Get_SourceDirectory();
 
             Workbook workbook = new Workbook(SourceDir + "ODataSample.xlsx");
-            PowerQueryFormulaCollction PQFcoll = workbook.DataMashup.PowerQueryFormulas;
+            PowerQueryFormulaCollection PQFcoll = workbook.DataMashup.PowerQueryFormulas;
             foreach (PowerQueryFormula PQF in PQFcoll)
             {
                 Console.WriteLine("Connection Name: " + PQF.Name);

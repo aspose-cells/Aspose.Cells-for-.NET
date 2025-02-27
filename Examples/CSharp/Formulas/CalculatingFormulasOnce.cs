@@ -22,7 +22,7 @@ namespace Aspose.Cells.Examples.CSharp.Formulas
             Console.WriteLine(DateTime.Now);
 
             // Set the CreateCalcChain as false
-            workbook.Settings.CreateCalcChain = false;
+            workbook.Settings.FormulaSettings.EnableCalculationChain = false;
 
             // Calculate the workbook formulas
             workbook.CalculateFormula();

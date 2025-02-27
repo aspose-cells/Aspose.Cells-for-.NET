@@ -45,7 +45,7 @@ namespace Aspose.Cells.Examples.CSharp.Articles.WorkingWithCalculationEngine
             workbook.CalculateFormula(calculationOptions);
 
             // Save to xlsx by setting the calc mode to manual
-            workbook.Settings.CalcMode = CalcModeType.Manual;
+            workbook.Settings.FormulaSettings.CalculationMode = CalcModeType.Manual;
             workbook.Save(dataDir + "output_out.xlsx");
 
             // Save to pdf

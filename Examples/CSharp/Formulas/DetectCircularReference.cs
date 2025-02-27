@@ -16,7 +16,7 @@ namespace Aspose.Cells.Examples.CSharp.Formulas
             // ExStart:1
             LoadOptions LoadOptions = new LoadOptions();
             var objWB = new Aspose.Cells.Workbook(sourceDir + "Circular Formulas.xls", LoadOptions);
-            objWB.Settings.Iteration = true;
+            objWB.Settings.FormulaSettings.EnableIterativeCalculation = true;
             CalculationOptions copts = new CalculationOptions();
             CircularMonitor cm = new CircularMonitor();
             copts.CalculationMonitor = cm;
