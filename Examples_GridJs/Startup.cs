@@ -57,6 +57,26 @@ namespace gridjs_demo_.netcore
                 options.Providers.Add<GzipCompressionProvider>();
                 options.Providers.Add<BrotliCompressionProvider>();
             });
+            //start here，setlicense,use cells.license ,GridJs does not provide single license entry ,GridJs use  Aspose.Cells API, you need to set license for Aspose.Cells API
+            string licenseFilePath = "/app/license";
+            Aspose.Cells.License l = new Aspose.Cells.License();
+            if(File.Exists(licenseFilePath))
+            {
+                l.SetLicense(licenseFilePath);
+                Console.WriteLine("set license successfully");
+            }
+            //add GridJsService 
+            services.AddScoped<IGridJsService, GridJsService>();
+            //set load options for GridJsService
+            services.Configure<GridJsOptions>(options =>
+            {
+                options.LazyLoading = true;
+                options.FileCacheDirectory = TestConfig.TempDir;
+
+                    
+                //options.CacheImp = YourCustomCacheImpl;
+                //options.BaseRouteName = "/YourControllerRouteNameForGridJsRestAPI";
+            });
 
             services.Configure<IISServerOptions>(options =>
             {
@@ -96,28 +116,8 @@ namespace gridjs_demo_.netcore
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            //start here，setlicense,use cells.license ,GridJs does not provide single license entry ,GridJs use  Aspose.Cells API, you need to set license for Aspose.Cells API
-            string licenseFilePath = "/app/license";
-            Aspose.Cells.License l = new Aspose.Cells.License();
-            if(File.Exists(licenseFilePath))
-            {
-                l.SetLicense(licenseFilePath);
-                Console.WriteLine("set license successfully");
-            }
-            //l.SetLicense(@"D:\release\Aspose.Cells.lic");
-			//set file cache directory
-            Config.FileCacheDirectory = TestConfig.TempDir;
-			//set cache implement
-            LocalFileCache mwc = new LocalFileCache();
-            //if use LocalFileCache,need to create  streamcache path under Config.FileCacheDirectory
-            string streamdir =Path.Combine(Config.FileCacheDirectory, "streamcache");
-            if (!Directory.Exists(streamdir))
-            {
-                Directory.CreateDirectory(streamdir);
-            }
-            GridJsWorkbook.CacheImp = mwc;
-            //AwsCache awc = new AwsCache(new AwsStorageService());
-            //GridJsWorkbook.CacheImp = awc;
+
+            
 
         }
     }
