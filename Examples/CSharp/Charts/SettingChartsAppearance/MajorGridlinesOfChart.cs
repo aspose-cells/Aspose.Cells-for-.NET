@@ -1,57 +1,66 @@
-import os
-import aspose.cells as cells
-from aspose.pydrawing import Color
-from aspose.cells.charts import ChartType
-from aspose.cells.drawing import GradientStyleType
+using System;
+using System.IO;
 
+using Aspose.Cells;
+using System.Drawing;
 
-def get_output_directory():
-    return os.path.abspath(
-        os.path.join(".", "..", "..", "..", "Data", "02_OutputDirectory")
-    )
+namespace Aspose.Cells.Examples.CSharp.Charts
+{
+    public class MajorGridlinesOfChart
+    {
+        //Output directory
+        static string outputDir = RunExamples.Get_OutputDirectory();
 
+        public static void Run()
+        {
+            // Instantiating a Workbook object
+            Workbook workbook = new Workbook();
 
-def run_setting_chart_area():
-    out_dir = get_output_directory()
-    if not os.path.isdir(out_dir):
-        os.makedirs(out_dir, exist_ok=True)
+            // Obtaining the reference of the newly added worksheet by passing its sheet index
+            Worksheet worksheet = workbook.Worksheets[0];
 
-    workbook = cells.Workbook()
-    worksheet = workbook.worksheets[0]
+            // Adding sample values to cells
+            worksheet.Cells["A1"].PutValue(50);
+            worksheet.Cells["A2"].PutValue(100);
+            worksheet.Cells["A3"].PutValue(150);
+            worksheet.Cells["B1"].PutValue(60);
+            worksheet.Cells["B2"].PutValue(32);
+            worksheet.Cells["B3"].PutValue(50);
 
-    # Populate sample data
-    worksheet.cells.get("A1").put_value(50)
-    worksheet.cells.get("A2").put_value(100)
-    worksheet.cells.get("A3").put_value(150)
-    worksheet.cells.get("B1").put_value(60)
-    worksheet.cells.get("B2").put_value(32)
-    worksheet.cells.get("B3").put_value(50)
+            // Adding a chart to the worksheet
+            int chartIndex = worksheet.Charts.Add(Aspose.Cells.Charts.ChartType.Column, 5, 0, 25, 10);
 
-    # Add a column chart
-    chart_index = worksheet.charts.add(ChartType.COLUMN, 5, 0, 25, 10)
-    chart = worksheet.charts[chart_index]
+            // Accessing the instance of the newly added chart
+            Aspose.Cells.Charts.Chart chart = worksheet.Charts[chartIndex];
 
-    # Set chart data source
-    chart.n_series.add("A1:B3", True)
+            // Adding SeriesCollection (chart data source) to the chart ranging from "A1" cell to "B3"
+            chart.NSeries.Add("A1:B3", true);
 
-    # Set foreground colors
-    chart.plot_area.area.foreground_color = Color.blue
-    chart.chart_area.area.foreground_color = Color.yellow
-    chart.n_series[0].area.foreground_color = Color.red
-    chart.n_series[0].points[0].area.foreground_color = Color.cyan
+            // Setting the foreground color of the plot area
+            chart.PlotArea.Area.ForegroundColor = Color.Yellow;
 
-    # Apply one‑color gradient to the second series area
-    chart.n_series[1].area.fill_format.set_one_color_gradient(
-        Color.lime,
-        1.0,
-        GradientStyleType.HORIZONTAL,
-        1,
-    )
+            // Setting the foreground color of the chart area
+            chart.ChartArea.Area.ForegroundColor = Color.Orange;
 
-    # Save the workbook
-    output_path = os.path.join(out_dir, "outputSettingChartArea.xlsx")
-    workbook.save(output_path)
+            // Setting the foreground color of the 1st SeriesCollection area
+            chart.NSeries[0].Area.ForegroundColor = Color.Red;
 
+            // Setting the foreground color of the area of the 1st SeriesCollection point
+            chart.NSeries[0].Points[0].Area.ForegroundColor = Color.Cyan;
 
-if __name__ == "__main__":
-    run_setting_chart_area()
+            // Filling the area of the 2nd SeriesCollection with a gradient
+            chart.NSeries[1].Area.FillFormat.SetOneColorGradient(Color.Lime, 1, Aspose.Cells.Drawing.GradientStyleType.Horizontal, 1);
+
+            // Show the major gridlines of Category Axis
+            chart.CategoryAxis.MajorGridLines.IsVisible = true;
+
+            // Show the major gridlines of Value Axis
+            chart.ValueAxis.MajorGridLines.IsVisible = true;
+
+            // Saving the Excel file
+            workbook.Save(outputDir + "outputMajorGridlinesOfChart.xlsx");
+
+            Console.WriteLine("MajorGridlinesOfChart executed successfully.");
+        }
+    }
+}
